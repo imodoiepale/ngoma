@@ -8,6 +8,8 @@ Makefile. Run with `uv run studio.py <task>`.
     skills-sync    mirror shared-skills/approved into every runtime's skills dir
     graph          rebuild the corpus knowledge graph
     plan           plan every calendar item across backends (costs nothing)
+    test           run the end-to-end suite (no key, no GPU, no network)
+    loop           full pipeline on fixture data: plan -> analytics -> memory -> curator
     doctor         what is installed, reachable and blocked, right now
 """
 from __future__ import annotations
@@ -88,6 +90,51 @@ def plan() -> int:
                  "packages/image-router/router.py", "--plan-all"]).returncode
 
 
+def test() -> int:
+    return _run(["uv", "run", "--quiet", "--with", "pytest", "--with", "pillow",
+                 "--with", "pyyaml", "python", "-m", "pytest", "tests/", "-q"]).returncode
+
+
+def loop() -> int:
+    """Exercise the whole learning loop on fixture data, end to end."""
+    brand = "ongea-pesa"
+    plan_md = REPO / "brands" / brand / "calendar" / "plan-loop.md"
+    data = REPO / "out" / "analytics" / f"{brand}-loop.jsonl"
+    steps = [
+        ("plan 180 days", ["uv", "run", "--quiet", "--with", "pyyaml",
+                           "packages/strategy/plan.py", "--brand", brand,
+                           "--days", "180", "--start", "2026-03-01",
+                           "--out", str(plan_md)]),
+        ("collect fixture analytics", ["uv", "run", "--quiet",
+                                       "packages/analytics/collect.py", "fixture",
+                                       "--brand", brand, "--plan",
+                                       str(plan_md.with_suffix(".json")),
+                                       "--out", str(data)]),
+        ("derive learnings -> memory", ["uv", "run", "--quiet",
+                                        "packages/analytics/learn.py", "--brand", brand,
+                                        "--data", str(data), "--metric", "saves",
+                                        "--audience", "kenyan professionals", "--write"]),
+        ("what memory believes", ["uv", "run", "--quiet", "packages/memory/store.py",
+                                  "believed", "--brand", brand]),
+        ("curator verdict", ["uv", "run", "--quiet",
+                             "packages/strategy/skill_curator.py", "evaluate",
+                             "--subject", "kenyan_meme_original"]),
+    ]
+    bar = "=" * 66
+    for i, (label, cmd) in enumerate(steps, 1):
+        print()
+        print(bar)
+        print(f"[{i}/{len(steps)}] {label}")
+        print(bar)
+        if _run(cmd).returncode != 0:
+            print(f"FAILED at step {i}")
+            return 1
+    print()
+    print("NOTE: analytics above are FIXTURE data, tagged source=fixture. "
+          "The loop is real; the numbers are not.")
+    return 0
+
+
 def doctor() -> int:
     print("=== tools ===")
     for t in ("docker", "node", "uv", "ffmpeg", "yt-dlp", "agent-reach", "opencli",
@@ -136,7 +183,7 @@ def doctor() -> int:
 
 
 TASKS = {"check": check, "skills-sync": skills_sync, "graph": graph,
-         "plan": plan, "doctor": doctor}
+         "plan": plan, "doctor": doctor, "test": test, "loop": loop}
 
 
 def main() -> None:

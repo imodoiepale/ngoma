@@ -110,6 +110,7 @@ def build(brand: Any, days: int, start: date, seed: int = 7,
     n_exp = max(0, days - n_proven - n_adj)
 
     constraints = (grammar or {}).get("constraints", [])
+    notes_global: list[str] = []
     briefs: list[Brief] = []
     pool = items[:]
     rng.shuffle(pool)
@@ -141,9 +142,17 @@ def build(brand: Any, days: int, start: date, seed: int = 7,
         return b
 
     day = 1
-    # proven: straight from the calendar
-    for it in pool[:n_proven]:
-        briefs.append(mk(day, "proven", it))
+    # Proven lane, straight from the calendar. The pool is CYCLED rather than truncated:
+    # asking for 180 days with 30 ideas silently produced 102 briefs, which is the kind of
+    # quiet shortfall you only notice when the schedule runs dry.
+    if n_proven > len(pool):
+        reuse = -(-n_proven // len(pool))
+        notes_global.append(
+            f"only {len(pool)} calendar idea(s) for {n_proven} proven slot(s); each idea is "
+            f"reused about {reuse}x. Reuse is fine - repetition is how a message lands - but "
+            f"vary the execution, and watch the fatigue facts in memory.")
+    for i in range(n_proven):
+        briefs.append(mk(day, "proven", pool[i % len(pool)]))
         day += 1
     # adjacent: one dimension varied from a proven parent
     parents = briefs[:] or [mk(0, "proven", pool[0])]
@@ -175,15 +184,19 @@ def build(brand: Any, days: int, start: date, seed: int = 7,
                        "same metric as the proven lane")
         briefs.append(b)
         day += 1
+    build.notes = notes_global  # type: ignore[attr-defined]
     return briefs
 
 
-def render(brand_key: str, briefs: list[Brief], grammar: dict[str, Any]) -> str:
+def render(brand_key: str, briefs: list[Brief], grammar: dict[str, Any],
+           notes: list[str] | None = None) -> str:
     from collections import Counter
     L = [f"# {brand_key} — {len(briefs)}-day content plan", "",
          f"lanes: {dict(Counter(b.lane for b in briefs))} · "
          f"blocked pending approval: {sum(1 for b in briefs if b.status == 'blocked_pending_approval')} · "
          f"format mismatches: {sum(1 for b in briefs if b.status == 'blocked_format_mismatch')}", ""]
+    for n in (notes or []):
+        L += [f"> {n}", ""]
     if grammar.get("sources"):
         L += ["## Grammar applied", f"derived from: {', '.join(grammar['sources'])}",
               *[f"- {c}" for c in grammar["constraints"][:8]], ""]
@@ -215,7 +228,7 @@ def main() -> None:
 
     grammar = load_grammar(b.root)
     briefs = build(b, a.days, date.fromisoformat(a.start), a.seed, grammar)
-    md = render(a.brand, briefs, grammar)
+    md = render(a.brand, briefs, grammar, getattr(build, 'notes', []))
     print(md)
 
     out = a.out or b.root / "calendar" / f"plan-{a.start}-{a.days}d.md"

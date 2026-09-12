@@ -89,9 +89,15 @@ Still genuinely absent:
   empty directory. The skill-promotion gates they were meant to enforce are implemented in
   `packages/strategy/skill_curator.py` regardless of which runtime calls it, so this is an
   optional control plane rather than a missing capability.
-- **Analytics ingestion.** `packages/memory` can hold performance facts but nothing yet
-  pulls them from Instagram Insights or Postiz. Until that exists, memory is populated by
-  hand and the skill curator has nothing real to evaluate.
+- ~~Analytics ingestion~~ — BUILT. `packages/analytics/` pulls from the Instagram Graph
+  API and Postiz, attributes posts to briefs, and derives learnings into memory. It still
+  needs the Instagram connection from item 5 before it sees real numbers; until then use
+  `--source fixture`, which tags everything `source=fixture` so nothing can be mistaken
+  for measurement.
+- **Enough posts to learn from.** The analysis refuses per-grammar claims below 6 posts
+  per grammar, and it is right to: at 3 posts it reported a deliberately under-performing
+  grammar as +28%. Expect roughly 4-6 weeks of consistent posting, in a NARROW rotation of
+  grammars, before the learning loop says anything trustworthy.
 - **A VLM pass in `packages/vision`.** Measurements work offline; semantic tagging
   ("this is a hands-at-work shot") still needs a model.
 

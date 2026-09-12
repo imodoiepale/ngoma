@@ -71,7 +71,7 @@ PROTECTED_PAT = re.compile("|".join(re.escape(p.split()[0]) for p in PROTECTED),
 @dataclass
 class Evidence:
     subject: str
-    audience: str | None
+    audience: str | None = None
     wins: int = 0
     days: int = 0
     items: int = 0
