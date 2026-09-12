@@ -20,10 +20,8 @@ import argparse
 import json
 import shutil
 import subprocess
-import sys
 from dataclasses import dataclass, asdict, field
 from pathlib import Path
-from typing import Any
 
 REPO = Path(__file__).resolve().parents[2]
 OUT = REPO / "out" / "voice"

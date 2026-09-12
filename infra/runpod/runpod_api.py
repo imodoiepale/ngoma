@@ -22,7 +22,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import sys
 import time
 import urllib.error
@@ -51,6 +50,16 @@ MAX_RETRIES = 4
 # Cloudflare fronts api.runpod.io and blocks urllib's default signature with error
 # 1010. Any conventional User-Agent gets through.
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) epalle-runpod-client/1.0"
+
+
+def _secret(name: str) -> str | None:
+    """Environment first, then the encrypted store. See packages/common/vault.py."""
+    common = next(str(p / "packages" / "common") for p in Path(__file__).resolve().parents
+                  if (p / "packages" / "common" / "vault.py").exists())
+    if common not in sys.path:
+        sys.path.insert(0, common)
+    import vault
+    return vault.get(name)
 
 
 def decode_secret(raw: bytes) -> str:
@@ -99,7 +108,7 @@ def read_dpapi(path: Path) -> str | None:
 
 
 def resolve_token() -> str:
-    token = os.environ.get("RUNPOD_API_KEY")
+    token = _secret("RUNPOD_API_KEY")
     if token:
         return token.strip()
     for candidate in TOKEN_CANDIDATES:

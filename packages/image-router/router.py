@@ -17,7 +17,6 @@ Every call is dry-run by default. Nothing is spent without --live.
 from __future__ import annotations
 
 import json
-import os
 import sys
 import time
 from dataclasses import dataclass, asdict
@@ -119,6 +118,16 @@ COMFY_ONLY = {
 }
 
 
+def _secret(name: str) -> str | None:
+    """Environment first, then the encrypted store. See packages/common/vault.py."""
+    common = next(str(p / "packages" / "common") for p in Path(__file__).resolve().parents
+                  if (p / "packages" / "common" / "vault.py").exists())
+    if common not in sys.path:
+        sys.path.insert(0, common)
+    import vault
+    return vault.get(name)
+
+
 class RouterError(RuntimeError):
     pass
 
@@ -175,7 +184,7 @@ def choose(req: GenRequest, backend: Backend = "auto", profile: str | None = Non
             raise RouterError(f"unknown hosted profile {prof!r}; have {sorted(HOSTED_PROFILES)}")
         spec = HOSTED_PROFILES[prof]
         target = spec["chain"][0]
-        if not os.environ.get("OPENROUTER_API_KEY"):
+        if not _secret("OPENROUTER_API_KEY"):
             notes.append("OPENROUTER_API_KEY not set — dry-run only until it is in the secret store.")
         # Real contract prices, not guesses. See packages/image-router/pricing.py.
         q = quote(target, spec["resolution"].lower())
@@ -238,7 +247,7 @@ def execute(plan: Plan, live: bool = False, out_dir: Path | None = None) -> dict
 def _execute_hosted(plan: Plan, out_dir: Path) -> dict[str, Any]:
     import urllib.request
 
-    key = os.environ.get("OPENROUTER_API_KEY")
+    key = _secret("OPENROUTER_API_KEY")
     if not key:
         raise RouterError("OPENROUTER_API_KEY is not set; refusing to call a paid endpoint.")
     req = plan.request

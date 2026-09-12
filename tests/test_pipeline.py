@@ -14,7 +14,6 @@ bug that has actually mattered here.
 from __future__ import annotations
 
 import json
-import subprocess
 import sys
 from pathlib import Path
 
@@ -147,7 +146,7 @@ def test_graph_answers_both_plan_gates():
 # --------------------------------------------------------------- strategy
 
 def test_study_refuses_too_few_samples():
-    from study import MIN_SAMPLES, derive
+    from study import derive
     g = derive([{"kind": "image", "aspect": "1:1", "mean_luma": 20, "saturation": 10,
                  "edge_density": 0.05, "palette": []}] * 4, "tiny")
     assert g.confidence == "insufficient" and not g.conventions

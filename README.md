@@ -6,7 +6,7 @@ Design spec: `docs/superpowers/specs/2026-09-12-epalle-ongea-content-company-des
 
 Standing rules: queued is not success · dry-run by default, allowlists not arbitrary input · composite the logo, never regenerate it · agents create, deterministic code validates, humans approve.
 
-Secrets live in Windows DPAPI via `infra/runpod/set_secret.py`. No `.env` with real values is ever committed.
+Secrets live in Windows DPAPI via `infra/runpod/set_secret.py` (stored outside the repo; `--list` shows what is set) and every adapter reads them through `packages/common/vault.py`. No `.env` with real values is ever committed.
 
 ## Start here
 

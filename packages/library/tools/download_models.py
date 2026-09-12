@@ -1,4 +1,10 @@
-import pathlib,json,urllib.request,urllib.parse,hashlib,time,concurrent.futures,os
+import pathlib
+import json
+import urllib.request
+import urllib.parse
+import hashlib
+import time
+import concurrent.futures
 ROOT=pathlib.Path('/workspace/epalle'); TOKEN=pathlib.Path('/tmp/epalle-hf-token').read_text().strip()
 class SafeRedirect(urllib.request.HTTPRedirectHandler):
  def redirect_request(self,req,fp,code,msg,headers,newurl):

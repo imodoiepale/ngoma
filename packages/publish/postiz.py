@@ -50,6 +50,16 @@ IG_CAPTION_LIMIT = 2200
 IG_CAROUSEL_MAX = 10
 
 
+def _secret(name: str) -> str | None:
+    """Environment first, then the encrypted store. See packages/common/vault.py."""
+    common = next(str(p / "packages" / "common") for p in Path(__file__).resolve().parents
+                  if (p / "packages" / "common" / "vault.py").exists())
+    if common not in sys.path:
+        sys.path.insert(0, common)
+    import vault
+    return vault.get(name)
+
+
 class PostizError(RuntimeError):
     pass
 
@@ -79,7 +89,7 @@ def _base_url(explicit: str | None = None) -> str:
 
 
 def _key() -> str:
-    k = os.environ.get("POSTIZ_API_KEY")
+    k = _secret("POSTIZ_API_KEY")
     if not k:
         raise PostizError("POSTIZ_API_KEY is not set; refusing to call the API.")
     return k

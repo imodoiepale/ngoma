@@ -12,7 +12,7 @@ from __future__ import annotations
 
 import json
 import sys
-from collections import defaultdict, deque
+from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
@@ -125,6 +125,10 @@ def stats() -> int:
 
 
 def main() -> None:
+    if len(sys.argv) >= 2 and sys.argv[1] in ("-h", "--help"):
+        print(__doc__)
+        print("usage: graph_query.py {deps|dependents|evidence|stats} [target]")
+        raise SystemExit(0)
     if len(sys.argv) < 2:
         print(__doc__)
         print("usage: graph_query.py {deps|dependents|evidence|stats} [target]")

@@ -21,11 +21,12 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import time
 import urllib.error
 import urllib.request
 import uuid
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Literal
 
@@ -39,6 +40,16 @@ DEFAULTS = {
     "local": "http://127.0.0.1:8188",
     "serverless_endpoint": "ugtmfoidpnh8pd",   # from infra/runpod/runpod-endpoint.json
 }
+
+
+def _secret(name: str) -> str | None:
+    """Environment first, then the encrypted store. See packages/common/vault.py."""
+    common = next(str(p / "packages" / "common") for p in Path(__file__).resolve().parents
+                  if (p / "packages" / "common" / "vault.py").exists())
+    if common not in sys.path:
+        sys.path.insert(0, common)
+    import vault
+    return vault.get(name)
 
 
 class ComfyError(RuntimeError):
@@ -143,7 +154,7 @@ class ComfyClient:
         self.timeout = timeout
         self.endpoint_id = endpoint_id or os.environ.get(
             "RUNPOD_ENDPOINT_ID", DEFAULTS["serverless_endpoint"])
-        self.api_key = api_key or os.environ.get("RUNPOD_API_KEY")
+        self.api_key = api_key or _secret("RUNPOD_API_KEY")
         if backend == "local":
             self.base_url = base_url or os.environ.get("COMFY_URL", DEFAULTS["local"])
         elif backend == "pod":
@@ -156,8 +167,10 @@ class ComfyClient:
 
     # ---- transport -------------------------------------------------------
     def _get(self, path: str) -> Any:
-        r = urllib.request.Request(f"{self.base_url}{path}",
-                                   headers={"User-Agent": "epalle-studio/1.0"})
+        headers = {"User-Agent": "epalle-studio/1.0"}
+        if self.backend == "serverless" and self.api_key:
+            headers["Authorization"] = f"Bearer {self.api_key}"
+        r = urllib.request.Request(f"{self.base_url}{path}", headers=headers)
         with urllib.request.urlopen(r, timeout=self.timeout) as resp:
             return json.loads(resp.read())
 
@@ -301,11 +314,44 @@ class ComfyClient:
         return {"status": "TIMEOUT", "elapsed_s": round(time.time() - t0, 1)}
 
 
+def smoke(live: bool, max_s: int = 1200) -> int:
+    """Prove the serverless endpoint completes a generation, not merely accepts one.
+
+    Runs the allowlisted `smoke-test` template (infra/runpod/smoke-test.json: an empty
+    256x256 image saved to disk). It must already be installed on the volume at
+    $EPALLE_ROOT/workflow-api/smoke-test.json, or the handler refuses it.
+    Passes only when the job reports COMPLETED *and* returns at least one file.
+    """
+    c = ComfyClient("serverless")
+    body = {"input": {"workflow_name": "smoke-test", "dry_run": False}}
+    if not live:
+        print(f"dry run: would POST {c.base_url}/runsync {json.dumps(body)}")
+        print("pass --live to spend one cold start and prove the endpoint")
+        return 0
+    res = c.submit({}, "smoke-test", dry_run=False)
+    t0 = time.time()
+    while res.get("status") in ("IN_QUEUE", "IN_PROGRESS") and res.get("id"):
+        if time.time() - t0 > max_s:
+            break
+        time.sleep(5)
+        res = c._get(f"/status/{res['id']}")
+    status = res.get("status")
+    output = res.get("output") if isinstance(res.get("output"), dict) else {}
+    files = output.get("files") or []
+    print(json.dumps({"status": status, "id": res.get("id"),
+                      "error": output.get("error"), "files": files}, indent=2)[:1500])
+    if status == "COMPLETED" and files and not output.get("error"):
+        print(f"PASS: serverless completed and returned {len(files)} file(s)")
+        return 0
+    print(f"FAIL: status={status}, files={len(files)}. Queued is not success.")
+    return 1
+
+
 def _cli() -> None:
     import argparse
 
     ap = argparse.ArgumentParser(description="Validate and run ComfyUI workflows.")
-    ap.add_argument("command", choices=["deps", "validate", "probe", "run"])
+    ap.add_argument("command", choices=["deps", "validate", "probe", "run", "smoke"])
     ap.add_argument("workflow", nargs="?", default="")
     ap.add_argument("--backend", choices=["local", "pod", "serverless"], default="local")
     ap.add_argument("--url")
@@ -331,6 +377,11 @@ def _cli() -> None:
         for m in r.model_files:
             print(f"    - {m}")
         raise SystemExit(0)
+
+    if a.command == "smoke":
+        if a.backend != "serverless":
+            raise SystemExit("smoke proves the serverless endpoint; pass --backend serverless")
+        raise SystemExit(smoke(a.live))
 
     c = ComfyClient(a.backend, a.url)
 

@@ -27,7 +27,6 @@ import argparse
 import json
 import re
 import statistics as stats
-import sys
 from collections import Counter
 from dataclasses import dataclass, asdict, field
 from pathlib import Path

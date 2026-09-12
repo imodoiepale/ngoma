@@ -32,8 +32,7 @@ import getpass
 import hashlib
 import json
 import sqlite3
-import sys
-from dataclasses import dataclass, asdict, field
+from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any

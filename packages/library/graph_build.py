@@ -18,7 +18,7 @@ from __future__ import annotations
 
 import json
 import re
-from collections import Counter, defaultdict
+from collections import Counter
 from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
@@ -268,6 +268,11 @@ def report(g: Graph) -> str:
 
 
 def main() -> None:
+    import sys
+    if len(sys.argv) >= 2 and sys.argv[1] in ("-h", "--help"):
+        print(__doc__)
+        print("usage: graph_build.py   (no arguments; rebuilds graph/ from the corpus)")
+        raise SystemExit(0)
     g = build()
     GRAPH.mkdir(exist_ok=True)
     (GRAPH / "graph.json").write_text(

@@ -187,6 +187,10 @@ TASKS = {"check": check, "skills-sync": skills_sync, "graph": graph,
 
 
 def main() -> None:
+    if len(sys.argv) >= 2 and sys.argv[1] in ("-h", "--help"):
+        print(__doc__)
+        print("usage: studio.py {" + ",".join(TASKS) + "}")
+        raise SystemExit(0)
     if len(sys.argv) < 2 or sys.argv[1] not in TASKS:
         print(__doc__)
         print("tasks:", ", ".join(TASKS))

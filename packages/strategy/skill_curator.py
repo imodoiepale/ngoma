@@ -31,11 +31,10 @@ Two hard rules, enforced in code:
 from __future__ import annotations
 
 import argparse
-import json
 import re
 import sqlite3
 import sys
-from dataclasses import dataclass, asdict, field
+from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
 from typing import Any

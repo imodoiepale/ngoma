@@ -14,7 +14,7 @@ valid. Rotate, then store new values via `infra/runpod/set_secret.py` (Windows D
 ## 2. RunPod serverless has never completed a generation — ME, Phase 4 follow-up
 Endpoint `ugtmfoidpnh8pd`. Only recorded result: `{"status":"IN_QUEUE"}`. Pod-side
 execution IS proven (364.87 s / 45 images). Prove serverless with
-`infra/runpod/smoke-test.json` before any scheduled workload depends on it.
+`infra/runpod/smoke-test.json` before any scheduled workload depends on it: `uv run packages/comfy-client/client.py smoke --backend serverless --live` passes only on COMPLETED with files.
 
 ## 3. FLUX.2 Klein 9B KV is licence-gated — YOU
 Blocks `carousel_pose`, which the router selects for 12 of the 30 seeded ideas. Accept the

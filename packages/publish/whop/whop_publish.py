@@ -34,7 +34,6 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 COURSE_PATH = HERE / "whop-course.json"
 ENV_PATH = HERE / ".env.whop"
-DPAPI_PATH = HERE / "whop-token.dpapi"
 
 API_BASE = "https://api.whop.com/api/v1"
 API_VERSION_DATE = "2026-07-01"
@@ -43,6 +42,16 @@ MAX_RETRIES = 4
 
 
 # --------------------------------------------------------------------------- creds
+
+
+def _secret(name: str) -> str | None:
+    """Environment first, then the encrypted store. See packages/common/vault.py."""
+    common = next(str(p / "packages" / "common") for p in Path(__file__).resolve().parents
+                  if (p / "packages" / "common" / "vault.py").exists())
+    if common not in sys.path:
+        sys.path.insert(0, common)
+    import vault
+    return vault.get(name)
 
 
 def _read_env_file() -> dict[str, str]:
@@ -58,42 +67,14 @@ def _read_env_file() -> dict[str, str]:
     return values
 
 
-def _read_dpapi() -> str | None:
-    """Decrypt a DPAPI-wrapped token. Windows only, current user only."""
-    if not DPAPI_PATH.exists() or sys.platform != "win32":
-        return None
-    try:
-        import ctypes
-        from ctypes import wintypes
-
-        class Blob(ctypes.Structure):
-            _fields_ = [("cbData", wintypes.DWORD),
-                        ("pbData", ctypes.POINTER(ctypes.c_char))]
-
-        raw = bytes.fromhex(DPAPI_PATH.read_text(encoding="utf-8").strip())
-        blob_in = Blob(len(raw), ctypes.cast(ctypes.create_string_buffer(raw),
-                                             ctypes.POINTER(ctypes.c_char)))
-        blob_out = Blob()
-        if not ctypes.windll.crypt32.CryptUnprotectData(
-            ctypes.byref(blob_in), None, None, None, None, 0, ctypes.byref(blob_out)
-        ):
-            return None
-        try:
-            return ctypes.string_at(blob_out.pbData, blob_out.cbData).decode("utf-8")
-        finally:
-            ctypes.windll.kernel32.LocalFree(blob_out.pbData)
-    except Exception:
-        return None
-
-
 def resolve_credentials(args) -> tuple[str, str]:
     env_file = _read_env_file()
 
     api_key = (
         args.api_key
-        or os.environ.get("WHOP_API_KEY")
+        or _secret("WHOP_API_KEY")
         or env_file.get("WHOP_API_KEY")
-        or _read_dpapi()
+        or _secret("WHOP_API_KEY")
     )
     experience_id = (
         args.experience_id

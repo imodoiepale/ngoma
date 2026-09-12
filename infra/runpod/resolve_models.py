@@ -20,13 +20,12 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-from runpod_api import USER_AGENT, read_dpapi
+from runpod_api import USER_AGENT
 
 HERE = Path(__file__).resolve().parent
 WORKSPACE = HERE.parent.parent
 GAP_REPORT = HERE / "model-gap-report.json"
 PLAN_PATH = HERE / "download-plan.json"
-HF_TOKEN_BLOB = WORKSPACE / "work" / "hf-token.dpapi"
 
 # Every upstream repo these workflows draw from.
 REPOS = [
@@ -69,8 +68,18 @@ CREATOR_PRIVATE = {
 }
 
 
+def _secret(name: str) -> str | None:
+    """Environment first, then the encrypted store. See packages/common/vault.py."""
+    common = next(str(p / "packages" / "common") for p in Path(__file__).resolve().parents
+                  if (p / "packages" / "common" / "vault.py").exists())
+    if common not in sys.path:
+        sys.path.insert(0, common)
+    import vault
+    return vault.get(name)
+
+
 def hf_token() -> str | None:
-    token = read_dpapi(HF_TOKEN_BLOB)
+    token = _secret("HF_TOKEN")
     return token.strip() if token else None
 
 

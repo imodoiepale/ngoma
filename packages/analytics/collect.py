@@ -26,14 +26,13 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import os
 import random
 import sys
 import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass, asdict, field
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, timedelta
 from pathlib import Path
 from typing import Any
 
@@ -55,6 +54,16 @@ IG_ALIASES = {
     "profile_visits": "profile_visits", "follows": "follows",
     "total_interactions": None,   # deliberately dropped: we compute engagement ourselves
 }
+
+
+def _secret(name: str) -> str | None:
+    """Environment first, then the encrypted store. See packages/common/vault.py."""
+    common = next(str(p / "packages" / "common") for p in Path(__file__).resolve().parents
+                  if (p / "packages" / "common" / "vault.py").exists())
+    if common not in sys.path:
+        sys.path.insert(0, common)
+    import vault
+    return vault.get(name)
 
 
 class AnalyticsError(RuntimeError):
@@ -137,8 +146,8 @@ def instagram_insights(media_id: str, token: str, media_type: str) -> dict[str, 
 
 
 def collect_instagram(brand: str, limit: int = 25) -> list[PostMetrics]:
-    token = os.environ.get("IG_ACCESS_TOKEN")
-    ig_id = os.environ.get("IG_USER_ID")
+    token = _secret("IG_ACCESS_TOKEN")
+    ig_id = _secret("IG_USER_ID")
     if not (token and ig_id):
         raise AnalyticsError(
             "IG_ACCESS_TOKEN and IG_USER_ID are not set. Both come from a Meta app with an "

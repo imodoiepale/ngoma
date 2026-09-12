@@ -23,12 +23,12 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 import shutil
 import subprocess
-import sys
 import urllib.error
 import urllib.request
-from dataclasses import dataclass, asdict, field
+from dataclasses import dataclass, asdict
 from pathlib import Path
 from typing import Any
 
@@ -79,6 +79,16 @@ SHENG_REFUSAL = (
 )
 
 
+def _secret(name: str) -> str | None:
+    """Environment first, then the encrypted store. See packages/common/vault.py."""
+    common = next(str(p / "packages" / "common") for p in Path(__file__).resolve().parents
+                  if (p / "packages" / "common" / "vault.py").exists())
+    if common not in sys.path:
+        sys.path.insert(0, common)
+    import vault
+    return vault.get(name)
+
+
 class TTSError(RuntimeError):
     pass
 
@@ -106,7 +116,7 @@ def available(provider: str) -> tuple[bool, str]:
     if provider == "edge-tts":
         return (shutil.which("edge-tts") is not None, "edge-tts on PATH")
     env = {"elevenlabs": "ELEVENLABS_API_KEY", "openai": "OPENAI_API_KEY"}[provider]
-    return (bool(os.environ.get(env)), env)
+    return (bool(_secret(env)), env)
 
 
 def _duration(p: Path) -> float | None:
@@ -132,7 +142,7 @@ def _edge_tts(text: str, lang: str, dest: Path) -> None:
 
 
 def _openai(text: str, lang: str, dest: Path, voice: str = "onyx") -> None:
-    key = os.environ.get("OPENAI_API_KEY")
+    key = _secret("OPENAI_API_KEY")
     if not key:
         raise TTSError("OPENAI_API_KEY not set")
     body = json.dumps({"model": "gpt-4o-mini-tts", "voice": voice, "input": text}).encode()
@@ -149,7 +159,7 @@ def _openai(text: str, lang: str, dest: Path, voice: str = "onyx") -> None:
 
 def _elevenlabs(text: str, lang: str, dest: Path,
                 voice_id: str = "21m00Tcm4TlvDq8ikWAM") -> None:
-    key = os.environ.get("ELEVENLABS_API_KEY")
+    key = _secret("ELEVENLABS_API_KEY")
     if not key:
         raise TTSError("ELEVENLABS_API_KEY not set")
     body = json.dumps({"text": text, "model_id": "eleven_multilingual_v2"}).encode()

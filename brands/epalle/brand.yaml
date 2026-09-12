@@ -36,6 +36,9 @@ palette:
     dominant:   "#000000"      # 45-53% of pixels — CRUSHED, violates the charcoal rule
     warm_mids:  ["#705040", "#806040", "#604030", "#403020"]
     lightest:   "#F0F0F0"      # clinical; should be warmed toward ivory
+    oxblood:    ["#3C0C0C", "#300C00", "#48180C"]   # ~1.3% of pixels; NOT in the stated
+                                                    # three-value palette
+    cast: "charcoal pushed toward warm amber"       # observed on all three covers
   rules:
     - "Three values only. Charcoal carries the frame, ivory is the light, dust gold is the accent."
     - "Dust gold is DUST: matte, aged, sun-worn. If it reads as shine or metal, it is wrong."

@@ -30,12 +30,10 @@ from __future__ import annotations
 import argparse
 import json
 import sqlite3
-import sys
-from contextlib import closing
-from dataclasses import dataclass, asdict, field
+from dataclasses import dataclass, field
 from datetime import date, datetime, timezone
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any
 
 REPO = Path(__file__).resolve().parents[2]
 DB = REPO / "packages" / "memory" / "memory.sqlite3"

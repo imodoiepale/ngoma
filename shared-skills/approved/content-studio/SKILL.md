@@ -241,7 +241,7 @@ when more than one person supervises.
 
 - **Credentials need rotating** before any live run — see `docs/BLOCKERS.md`.
 - **RunPod serverless has never completed a generation** (only `IN_QUEUE`). Pod-side
-  execution is proven. Prove serverless with `infra/runpod/smoke-test.json` first.
+  execution is proven. Prove serverless first: `uv run packages/comfy-client/client.py smoke --backend serverless --live` (passes only on COMPLETED with files).
 - **FLUX.2 Klein 9B KV is licence-gated on HuggingFace**, which blocks `carousel_pose`.
   The fp8 variant is accepted; accept the KV licence or use fp8.
 - **Postiz and OpenWA are not installed**; nothing publishes yet.

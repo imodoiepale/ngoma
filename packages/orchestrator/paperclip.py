@@ -42,6 +42,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sys
 import sqlite3
 import urllib.error
 import urllib.request
@@ -66,6 +67,16 @@ APPROVAL_MAP = {
 }
 
 
+def _secret(name: str) -> str | None:
+    """Environment first, then the encrypted store. See packages/common/vault.py."""
+    common = next(str(p / "packages" / "common") for p in Path(__file__).resolve().parents
+                  if (p / "packages" / "common" / "vault.py").exists())
+    if common not in sys.path:
+        sys.path.insert(0, common)
+    import vault
+    return vault.get(name)
+
+
 class PaperclipError(RuntimeError):
     pass
 
@@ -76,7 +87,7 @@ def base_url() -> str:
 
 def _headers() -> dict[str, str]:
     h = {"Content-Type": "application/json", "User-Agent": "epalle-studio/1.0"}
-    key = os.environ.get("PAPERCLIP_API_KEY")
+    key = _secret("PAPERCLIP_API_KEY")
     if key:
         h["Authorization"] = f"Bearer {key}"
     return h

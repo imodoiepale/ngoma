@@ -37,8 +37,8 @@ deliberately **not** copied into this repo, but they are still valid and still o
 Then store the new values in Windows DPAPI — never in a file:
 
 ```bash
-uv run infra/runpod/set_secret.py --name RUNPOD_API_KEY
-uv run infra/runpod/set_secret.py --name OPENROUTER_API_KEY
+uv run infra/runpod/set_secret.py runpod
+uv run infra/runpod/set_secret.py openrouter
 ```
 
 Verify nothing leaked into git:
@@ -120,7 +120,7 @@ Endpoint `ugtmfoidpnh8pd` has **never completed a generation**; the only recorde
 is `{"status": "IN_QUEUE"}`. Prove it with the trivial graph first:
 
 ```bash
-uv run infra/runpod/run_workflow.py --template smoke-test
+uv run packages/comfy-client/client.py smoke --backend serverless --live
 ```
 
 Queued is not success. Do not mark this working until a history returns outputs.

@@ -28,8 +28,7 @@ import json
 import statistics as stats
 import sys
 from collections import defaultdict
-from dataclasses import dataclass, field
-from datetime import date
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 

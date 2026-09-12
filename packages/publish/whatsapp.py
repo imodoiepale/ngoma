@@ -25,6 +25,7 @@ import argparse
 import hashlib
 import json
 import os
+import sys
 import time
 import urllib.error
 import urllib.request
@@ -43,6 +44,16 @@ StatusKind = Literal["text", "image", "video"]
 MAX_PER_DAY = 8
 MIN_GAP_SECONDS = 600
 MAX_CAPTION = 700
+
+
+def _secret(name: str) -> str | None:
+    """Environment first, then the encrypted store. See packages/common/vault.py."""
+    common = next(str(p / "packages" / "common") for p in Path(__file__).resolve().parents
+                  if (p / "packages" / "common" / "vault.py").exists())
+    if common not in sys.path:
+        sys.path.insert(0, common)
+    import vault
+    return vault.get(name)
 
 
 class WhatsAppError(RuntimeError):
@@ -72,7 +83,7 @@ def _base() -> str:
 
 def _headers() -> dict[str, str]:
     h = {"Content-Type": "application/json", "User-Agent": "epalle-studio/1.0"}
-    key = os.environ.get("OPENWA_API_KEY")
+    key = _secret("OPENWA_API_KEY")
     if key:
         h["api_key"] = key
     return h

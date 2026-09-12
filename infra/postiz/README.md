@@ -82,7 +82,7 @@ Put the app id/secret in `.env`, restart, then connect the channel in the Postiz
 Settings → Public API in the UI. Then on your workstation:
 
 ```bash
-uv run infra/runpod/set_secret.py --name POSTIZ_API_KEY
+uv run infra/runpod/set_secret.py postiz
 export POSTIZ_URL=https://postiz.yourdomain.com/api
 uv run packages/publish/postiz.py channels
 ```

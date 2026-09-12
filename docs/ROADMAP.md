@@ -19,7 +19,7 @@ this repo, but they are still valid and still on disk.
 | 0.2 | Revoke the RunPod API key | YOU | RunPod console → Settings → API Keys → revoke `rpa_…` |
 | 0.3 | Replace the SSH keypair | YOU | `ssh-keygen -t ed25519 -f ~/.ssh/epalle_runpod` then put the new `.pub` on the pod |
 | 0.4 | Delete the old plaintext files | YOU | `outputs/course/.env.whop`, `outputs/studio-ui/client/.env.local`, both `epalle_runpod_ed25519` |
-| 0.5 | Store new secrets in DPAPI | YOU | `uv run infra/runpod/set_secret.py --name RUNPOD_API_KEY` |
+| 0.5 | Store new secrets in DPAPI | YOU | `uv run infra/runpod/set_secret.py runpod` |
 | 0.6 | Confirm the repo is clean | YOU | `uv run studio.py check` → `no secrets tracked` |
 
 **Gate:** the three old credentials fail when used. Test one — don't assume.
@@ -33,7 +33,7 @@ The fastest path to something live uses hosted image models, which need only an 
 | # | Step | Owner | Command / action |
 |---|---|---|---|
 | 1.1 | Get an OpenRouter key and add credit | YOU | openrouter.ai/keys — $10 covers roughly 40 flagship 4K stills |
-| 1.2 | Store it | YOU | `uv run infra/runpod/set_secret.py --name OPENROUTER_API_KEY` |
+| 1.2 | Store it | YOU | `uv run infra/runpod/set_secret.py openrouter` |
 | 1.3 | Plan the month — costs nothing | ME | `uv run studio.py plan` |
 | 1.4 | Generate one single-still post | YOU | `uv run --with pyyaml packages/image-router/router.py --idea 6 --backend hosted --live` |
 | 1.5 | Composite the brand onto it | ME | `uv run --with pillow --with pyyaml packages/compositor/compositor.py --base out/<file>.png --idea 6 --ratio 4:5` |
@@ -105,7 +105,7 @@ Carousels, reels, character consistency and video all need ComfyUI.
 | 3.4 | Find what each workflow is missing | ME | `uv run infra/runpod/audit_models.py` |
 | 3.5 | Download the gap, on the pod | ME | `uv run infra/runpod/download_planned.py` |
 | 3.6 | Probe and validate | ME | `uv run packages/comfy-client/client.py validate --all --backend pod` |
-| 3.7 | **Prove serverless** with the trivial graph | ME | `uv run infra/runpod/run_workflow.py --template smoke-test` |
+| 3.7 | **Prove serverless** with the trivial graph | ME | `uv run packages/comfy-client/client.py smoke --backend serverless --live` |
 | 3.8 | Generate the first real carousel | YOU | `client.py run workflows/icekiub/Carousel_Pose_changer.json --backend pod --live` |
 
 **Gate:** `validate` reports `OK` — not `UNVERIFIED` — and the smoke test returns outputs.
@@ -144,7 +144,7 @@ deliberately under-performing grammar as **+28%**.
 
 | # | Step | Owner | Command / action |
 |---|---|---|---|
-| 5.1 | Store the Instagram insights token | YOU | `IG_ACCESS_TOKEN` and `IG_USER_ID` via `set_secret.py` |
+| 5.1 | Store the Instagram insights token | YOU | `uv run infra/runpod/set_secret.py ig-token`, then `ig-user` |
 | 5.2 | Pull real metrics | ME | `uv run packages/analytics/collect.py instagram --plan <plan.json>` |
 | 5.3 | Derive learnings into memory | ME | `uv run packages/analytics/learn.py --data <file> --write` |
 | 5.4 | Read what memory believes | YOU | `uv run packages/memory/store.py believed` |

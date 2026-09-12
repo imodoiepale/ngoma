@@ -30,12 +30,10 @@ import argparse
 import json
 import os
 import shutil
-import subprocess
 import sys
 import urllib.error
 import urllib.request
 from pathlib import Path
-from typing import Any
 
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -52,6 +50,16 @@ INSTALL = {
     "note": ("PyPI's `hermes-agent` lags the npm release, so `pip install` is NOT "
              "equivalent. Use the official installer."),
 }
+
+
+def _secret(name: str) -> str | None:
+    """Environment first, then the encrypted store. See packages/common/vault.py."""
+    common = next(str(p / "packages" / "common") for p in Path(__file__).resolve().parents
+                  if (p / "packages" / "common" / "vault.py").exists())
+    if common not in sys.path:
+        sys.path.insert(0, common)
+    import vault
+    return vault.get(name)
 
 
 class HermesError(RuntimeError):
@@ -87,7 +95,7 @@ def gateway_up() -> tuple[bool, str]:
 
 def _headers() -> dict[str, str]:
     h = {"Content-Type": "application/json", "User-Agent": "epalle-studio/1.0"}
-    key = os.environ.get("HERMES_API_KEY")
+    key = _secret("HERMES_API_KEY")
     if key:
         h["Authorization"] = f"Bearer {key}"
     return h
@@ -189,7 +197,7 @@ def main() -> None:
         print(f"skills dir      {'present' if SKILLS.exists() else 'absent'}  {SKILLS}")
         up, why = gateway_up()
         print(f"gateway         {'UP' if up else 'DOWN':<8} {gateway_url()}  ({why})")
-        print(f"HERMES_API_KEY  {'set' if os.environ.get('HERMES_API_KEY') else 'not set'}")
+        print(f"HERMES_API_KEY  {'set' if _secret("HERMES_API_KEY") else 'not set'}")
         if not ok:
             print("\nInstall:")
             print(f"  Windows:      {INSTALL['windows']}")

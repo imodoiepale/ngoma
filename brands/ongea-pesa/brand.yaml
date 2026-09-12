@@ -47,6 +47,27 @@ palette:
     logo_navy_mid: "#003F76"
     logo_cyan:     "#CCFFFF"
     logo_steel:    "#B0D5E8"
+    logo_teal:     "#005A5A"   # measured 2026-09-12; the lockup has deep teal, not emerald
+  # Two visual systems, measured separately. Every style grammar in styles/ targets `app`.
+  # Pick ONE system per asset; mixing the app's bright green with the marketing site's
+  # deep emerald-teal in a single frame reads as two different companies.
+  systems:
+    app:
+      source: assets/reference/screencapture-ongeapesa-nsait-co-ke-2026-07-18-16_04_52.png
+      what: the dark mobile app (App Permissions screen)
+      ground: "#0A0A0A"
+      raised: "#121212"
+      accent: "#22C55E"   # measured #18C054 at 12-step quantisation; matches
+    marketing:
+      source: assets/reference/ongeapesa.jpeg
+      what: the light marketing landing page
+      ground: "#FEFEFE"
+      accent: "#306054"   # deep emerald-teal, the page's dominant saturated green
+      panel: "#244848"    # its dark feature band
+      note: >
+        The earlier spec's #30E0A8 is a brighter cousin of this accent, not a match. It
+        described this surface loosely; it did not describe the app.
+  default_system: app
   extended:        # unverified — from prior spec, use only for exploratory (15%) lane
     emerald:       "#30E0A8"
     mint:          "#70E8C0"
