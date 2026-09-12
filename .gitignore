@@ -41,3 +41,7 @@ out/
 # pre-existing key material in repo root (do not commit)
 filer
 filer.pub
+
+# memory db is operational state, not source
+packages/memory/memory.sqlite3
+out/voice/

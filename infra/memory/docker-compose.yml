@@ -1,0 +1,51 @@
+# OPTIONAL. The studio's memory works without any of this — packages/memory/store.py is
+# SQLite and runs on a laptop with no key. Deploy this only when you want Neo4j's graph
+# view and Graphiti's LLM-driven entity extraction over the same facts.
+#
+# Read infra/memory/README.md before deciding. It costs an LLM key per ingested episode.
+
+services:
+  neo4j:
+    image: neo4j:5-community
+    container_name: epalle-neo4j
+    restart: unless-stopped
+    environment:
+      NEO4J_AUTH: "neo4j/${NEO4J_PASSWORD}"
+      NEO4J_server_memory_heap_max__size: "1G"
+      NEO4J_server_memory_pagecache_size: "512M"
+    ports:
+      # localhost only. Reach the browser over an SSH tunnel:
+      #   ssh -L 7474:127.0.0.1:7474 -L 7687:127.0.0.1:7687 user@vps
+      - "127.0.0.1:7474:7474"
+      - "127.0.0.1:7687:7687"
+    volumes:
+      - neo4j-data:/data
+      - neo4j-logs:/logs
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:7474 || exit 1"]
+      interval: 20s
+      timeout: 10s
+      retries: 10
+      start_period: 60s
+
+  graphiti-mcp:
+    image: zepai/knowledge-graph-mcp:latest
+    container_name: epalle-graphiti
+    restart: unless-stopped
+    environment:
+      NEO4J_URI: "bolt://neo4j:7687"
+      NEO4J_USER: "neo4j"
+      NEO4J_PASSWORD: "${NEO4J_PASSWORD}"
+      # Graphiti speaks the OpenAI API shape, so any compatible base works.
+      OPENAI_API_KEY: "${LLM_API_KEY}"
+      OPENAI_BASE_URL: "${LLM_BASE_URL:-https://openrouter.ai/api/v1}"
+      MODEL_NAME: "${LLM_MODEL:-openai/gpt-4o-mini}"
+      SEMAPHORE_LIMIT: "5"
+    ports:
+      - "127.0.0.1:8010:8000"
+    depends_on:
+      neo4j: {condition: service_healthy}
+
+volumes:
+  neo4j-data:
+  neo4j-logs:
