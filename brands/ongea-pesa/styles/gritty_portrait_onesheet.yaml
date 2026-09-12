@@ -1,0 +1,40 @@
+generates: base visual only
+text_policy: NONE - all copy composited in code
+logo_policy: COMPOSITE_ONLY - model must not render any mark
+disclosure_field: AI-assisted imagery. Demonstration only.
+accessibility:
+  min_contrast: 4.5:1 for composited copy
+  reserve_copy_zone: model must leave a clean low-detail area for headline
+  caption_required: true
+experiment_variables:
+- hook
+- first_slide
+- language
+- sheng_intensity
+- cta
+- subject
+key: gritty_portrait_onesheet
+mode: african_human
+audience: SME owners, fundis, traders
+campaigns:
+- testimonial
+- SME
+ratios:
+- '4:5'
+- '3:4'
+background: defocused real workplace
+composition: extreme close portrait filling the lower two-thirds, a clear band above for a large composited wordmark
+subject: a weathered, dignified Kenyan tradesperson looking to camera, real workwear, real dust
+light: overcast natural, no beauty light
+palette:
+- '#0A0A0A'
+- '#263331'
+- '#22C55E'
+accent_use: 'one small #22C55E object in frame'
+finish: photoreal documentary, visible grain and skin texture
+cultural: respectful, never pitying
+negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no numbers, no UI text, no watermark,
+  no signature, no telecom or bank branding, no crypto symbols, no fake phone screens with readable text, no poverty
+  stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
+  no readable account numbers
+brand: ongea-pesa

@@ -1,0 +1,40 @@
+generates: base visual only
+text_policy: NONE - all copy composited in code
+logo_policy: COMPOSITE_ONLY - model must not render any mark
+disclosure_field: AI-assisted imagery. Demonstration only.
+accessibility:
+  min_contrast: 4.5:1 for composited copy
+  reserve_copy_zone: model must leave a clean low-detail area for headline
+  caption_required: true
+experiment_variables:
+- hook
+- first_slide
+- language
+- sheng_intensity
+- cta
+- subject
+key: split_editorial_hero
+mode: split_editorial
+audience: broad
+campaigns:
+- launch
+- announcement
+ratios:
+- '4:5'
+- '16:9'
+background: 'hard 50/50 split: left #0A0A0A flat panel, right full-bleed photograph'
+composition: left panel entirely empty and flat for composited copy; right panel photographic
+subject: a cinematic portrait of a Kenyan user mid-speech, three-quarter turn
+light: rim light from the panel edge
+palette:
+- '#0A0A0A'
+- '#FEFEFE'
+- '#22C55E'
+accent_use: 'a single #22C55E hairline on the split seam'
+finish: editorial, restrained
+cultural: contemporary
+negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no numbers, no UI text, no watermark,
+  no signature, no telecom or bank branding, no crypto symbols, no fake phone screens with readable text, no poverty
+  stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
+  no readable account numbers
+brand: ongea-pesa

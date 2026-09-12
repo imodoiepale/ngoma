@@ -1,0 +1,3 @@
+# Never commit credentials
+.env.whop
+*.dpapi

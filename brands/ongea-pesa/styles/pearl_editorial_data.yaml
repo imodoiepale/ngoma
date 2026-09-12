@@ -1,0 +1,40 @@
+generates: base visual only
+text_policy: NONE - all copy composited in code
+logo_policy: COMPOSITE_ONLY - model must not render any mark
+disclosure_field: AI-assisted imagery. Demonstration only.
+accessibility:
+  min_contrast: 4.5:1 for composited copy
+  reserve_copy_zone: model must leave a clean low-detail area for headline
+  caption_required: true
+experiment_variables:
+- hook
+- first_slide
+- language
+- sheng_intensity
+- cta
+- subject
+key: pearl_editorial_data
+mode: pearl_editorial
+audience: Kenyan professionals who save and plan
+campaigns:
+- explainer
+- comparison
+ratios:
+- '4:5'
+- '1:1'
+background: '#FEFEFE with a faint #F8F9FB grid'
+composition: upper 40% reserved for headline and stat; subject lower right
+subject: an abstract editorial still life representing a transaction - hands, paper, produce - flat-lay or three-quarter
+light: even daylight, minimal shadow
+palette:
+- '#FEFEFE'
+- '#263331'
+- '#22C55E'
+accent_use: '#22C55E marks the single highlighted element'
+finish: magazine flat-lay, crisp
+cultural: Kenyan everyday objects
+negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no numbers, no UI text, no watermark,
+  no signature, no telecom or bank branding, no crypto symbols, no fake phone screens with readable text, no poverty
+  stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
+  no readable account numbers
+brand: ongea-pesa

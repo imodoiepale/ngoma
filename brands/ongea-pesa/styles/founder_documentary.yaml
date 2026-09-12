@@ -1,0 +1,40 @@
+generates: base visual only
+text_policy: NONE - all copy composited in code
+logo_policy: COMPOSITE_ONLY - model must not render any mark
+disclosure_field: AI-assisted imagery. Demonstration only.
+accessibility:
+  min_contrast: 4.5:1 for composited copy
+  reserve_copy_zone: model must leave a clean low-detail area for headline
+  caption_required: true
+experiment_variables:
+- hook
+- first_slide
+- language
+- sheng_intensity
+- cta
+- subject
+key: founder_documentary
+mode: african_human
+audience: investors, press, community
+campaigns:
+- founder
+- behind the scenes
+ratios:
+- '16:9'
+- '4:5'
+background: a real office or workshop, defocused
+composition: observational, subject off-centre, environmental
+subject: a founder-figure at work, candid and unposed
+light: available light only
+palette:
+- '#121212'
+- '#263331'
+- '#22C55E'
+accent_use: incidental
+finish: documentary, natural grain, slight handheld feel
+cultural: authentic workplace
+negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no numbers, no UI text, no watermark,
+  no signature, no telecom or bank branding, no crypto symbols, no fake phone screens with readable text, no poverty
+  stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
+  no readable account numbers
+brand: ongea-pesa

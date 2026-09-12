@@ -1,0 +1,4954 @@
+{
+  "id": "ff8e2db4-e058-467d-92d1-6e431f9d3223",
+  "revision": 0,
+  "last_node_id": 92,
+  "last_link_id": 83,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Label (rgthree)",
+      "pos": [
+        57.066121722318364,
+        -372.1369143961936
+      ],
+      "size": [
+        827.71875,
+        306
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "███╗   ███╗ █████╗ ████████╗██████╗ ██╗██╗  ██╗        ██╗      █████╗ ██████╗\n████╗ ████║██╔══██╗╚══██╔══╝██╔══██╗██║╚██╗██╔╝        ██║     ██╔══██╗██╔══██╗\n██╔████╔██║███████║   ██║   ██████╔╝██║ ╚███╔╝         ██║     ███████║██████╔╝\n██║╚██╔╝██║██╔══██║   ██║   ██╔══██╗██║ ██╔██╗         ██║     ██╔══██║██╔══██╗\n██║ ╚═╝ ██║██║  ██║   ██║   ██║  ██║██║██╔╝ ██╗        ███████╗██║  ██║██████╔╝\n╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝        ╚══════╝╚═╝  ╚═╝╚═════╝\n\n▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\n          AI DATASET API WORKFLOW v1.0.0  //  MATRIX LAB RELEASE\n▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\n\nYouTube  https://www.youtube.com/@MatrixLabAI\nDiscord  https://discord.com/invite/rV6wbJzwcH\n\nRun left to right: references -> API config -> selected FACE/BODY shots -> save.",
+      "properties": {
+        "fontSize": 18,
+        "fontFamily": "Consolas",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "#061507",
+        "padding": 18,
+        "borderRadius": 8,
+        "angle": 0
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 18,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        2200,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F01 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F01(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 19,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        2220,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 9
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            11,
+            13
+          ]
+        }
+      ],
+      "title": "01 — Frontal Neutral",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a shoulder-up portrait, facing the camera straight-on with a neutral expression and relaxed posture, wearing a plain black crew-neck t-shirt against a soft grey studio background. Use soft even studio lighting and clean sharp focus with the entire face clearly visible. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 20,
+      "type": "SaveImage",
+      "pos": [
+        2220,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 01",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_01_frontal_neutral"
+      ]
+    },
+    {
+      "id": 21,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        2590,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F02 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F02(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 22,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        2610,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 12
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            14,
+            16
+          ]
+        }
+      ],
+      "title": "02 — Frontal Smiling",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a shoulder-up portrait, facing the camera straight-on with a natural closed-mouth smile, wearing a plain black crew-neck t-shirt against a soft grey studio background. Use soft frontal studio lighting and clean sharp focus on the face. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 23,
+      "type": "SaveImage",
+      "pos": [
+        2610,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 02",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_02_frontal_smiling"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        2980,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F03 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F03(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 25,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        3000,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 46,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 15
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            17,
+            19
+          ]
+        }
+      ],
+      "title": "03 — Threequarter Left",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a shoulder-up portrait from a three-quarter left angle, looking toward the camera with a calm neutral expression, wearing a plain black crew-neck t-shirt against a soft grey studio background. Use soft window-like studio light from the front and keep the face in clean sharp focus. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 26,
+      "type": "SaveImage",
+      "pos": [
+        3000,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 47,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 17
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 03",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_03_threequarter_left"
+      ]
+    },
+    {
+      "id": 27,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        3370,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F04 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F04(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 28,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        3390,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 48,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 18
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            20,
+            22
+          ]
+        }
+      ],
+      "title": "04 — Threequarter Right",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a shoulder-up portrait from a three-quarter right angle, looking toward the camera with a calm neutral expression, wearing a plain black crew-neck t-shirt against a soft grey studio background. Use soft window-like studio light from the front and keep the face in clean sharp focus. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 29,
+      "type": "SaveImage",
+      "pos": [
+        3390,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 49,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 04",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_04_threequarter_right"
+      ]
+    },
+    {
+      "id": 30,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        3760,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F05 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F05(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 31,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        3780,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 50,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 21
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            23,
+            25
+          ]
+        }
+      ],
+      "title": "05 — Profile Left",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a shoulder-up portrait from a true left profile, head level and gaze directed straight ahead, wearing a plain black crew-neck t-shirt against a soft grey studio background. Use soft even studio lighting with the facial outline and visible eye sharply focused. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 32,
+      "type": "SaveImage",
+      "pos": [
+        3780,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 51,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 05",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_05_profile_left"
+      ]
+    },
+    {
+      "id": 33,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        4150,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F06 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F06(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 34,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        4170,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 52,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 24
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 25
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            26,
+            28
+          ]
+        }
+      ],
+      "title": "06 — Profile Right",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a shoulder-up portrait from a true right profile, head level and gaze directed straight ahead, wearing a plain black crew-neck t-shirt against a soft grey studio background. Use soft even studio lighting with the facial outline and visible eye sharply focused. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 35,
+      "type": "SaveImage",
+      "pos": [
+        4170,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 53,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 26
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 06",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_06_profile_right"
+      ]
+    },
+    {
+      "id": 36,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        4540,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F07 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F07(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 37,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        4560,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 54,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 27
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            29,
+            31
+          ]
+        }
+      ],
+      "title": "07 — Slight High Angle",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a shoulder-up portrait photographed from a slight high angle, looking up toward the camera with a relaxed neutral expression, wearing a plain black crew-neck t-shirt against a soft grey studio background. Use broad soft studio light and keep the face sharp without perspective exaggeration. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 38,
+      "type": "SaveImage",
+      "pos": [
+        4560,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 55,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 29
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 07",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_07_slight_high_angle"
+      ]
+    },
+    {
+      "id": 39,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        4930,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F08 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F08(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 40,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        4950,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 56,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 30
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 31
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            32,
+            34
+          ]
+        }
+      ],
+      "title": "08 — Slight Low Angle",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a shoulder-up portrait photographed from a slight low angle, looking down toward the camera with a relaxed neutral expression, wearing a plain black crew-neck t-shirt against a soft grey studio background. Use broad soft studio light and keep the face sharp without perspective exaggeration. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 41,
+      "type": "SaveImage",
+      "pos": [
+        4950,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 57,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 32
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 08",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_08_slight_low_angle"
+      ]
+    },
+    {
+      "id": 42,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        5320,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F09 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F09(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 43,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        5340,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 58,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 33
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 34
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            35,
+            37
+          ]
+        }
+      ],
+      "title": "09 — Looking Away",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a chest-up frontal portrait with the head turned slightly and the gaze directed just outside the frame, wearing a plain black crew-neck t-shirt against a plain white background. Use soft daylight-balanced studio lighting and clean sharp focus across the face. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 44,
+      "type": "SaveImage",
+      "pos": [
+        5340,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 59,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 35
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 09",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_09_looking_away"
+      ]
+    },
+    {
+      "id": 45,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        5710,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F10 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F10(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 46,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        5730,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 60,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 36
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 37
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            38,
+            40
+          ]
+        }
+      ],
+      "title": "10 — Natural Laugh",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a chest-up frontal portrait caught in a natural laugh, shoulders relaxed and face fully visible, wearing a plain black crew-neck t-shirt against a plain white background. Use soft even studio lighting with a candid expression and a sharply focused face. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 47,
+      "type": "SaveImage",
+      "pos": [
+        5730,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 61,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 38
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 10",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_10_natural_laugh"
+      ]
+    },
+    {
+      "id": 48,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        6100,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F11 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F11(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 49,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        6120,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 62,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 39
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 40
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            41,
+            43
+          ]
+        }
+      ],
+      "title": "11 — Hair Tucked",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a shoulder-up portrait from a gentle three-quarter angle, with the hair tucked behind both ears and a neutral attentive expression, wearing a plain black crew-neck t-shirt against a plain white background. Use soft diffused studio lighting and keep the face, ears and jawline in clean sharp focus. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 50,
+      "type": "SaveImage",
+      "pos": [
+        6120,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 63,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 41
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 11",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_11_hair_tucked"
+      ]
+    },
+    {
+      "id": 51,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        6490,
+        80
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "F12 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F12(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 52,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        6510,
+        205
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 64,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 42
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 43
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            44,
+            46
+          ]
+        }
+      ],
+      "title": "12 — Face Close Crop",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a tight straight-on crop with the face filling the frame from forehead to chin, holding a neutral expression, with only the neckline of a plain black crew-neck t-shirt visible against a plain white background. Use soft even frontal lighting and clinical-sharp focus across both eyes and the full face. Keep the same eye color as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 53,
+      "type": "SaveImage",
+      "pos": [
+        6510,
+        535
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 65,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 44
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 12",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_12_face_close_crop"
+      ]
+    },
+    {
+      "id": 54,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        2202.5116292490934,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B01 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B01(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 55,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        2222.5116292490934,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 66,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 45
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 46
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            47,
+            49
+          ]
+        }
+      ],
+      "title": "13 — Fullbody Frontal",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character full body from head to feet, the whole body inside the frame, from a frontal camera angle, standing straight with arms relaxed at the sides, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans with simple white sneakers, against a neutral soft grey studio background under soft even lighting. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 56,
+      "type": "SaveImage",
+      "pos": [
+        2222.5116292490934,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 67,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 47
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 13",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_13_fullbody_frontal"
+      ]
+    },
+    {
+      "id": 57,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        2592.5116292490934,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B02 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B02(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 58,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        2612.5116292490934,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 68,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 48
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 49
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            50,
+            52
+          ]
+        }
+      ],
+      "title": "14 — Fullbody Threequarter Left",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character full body from head to feet, the whole body inside the frame, from a three-quarter front left camera angle, standing straight with arms relaxed at the sides, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans with simple white sneakers, against a neutral soft grey studio background under soft even lighting. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 59,
+      "type": "SaveImage",
+      "pos": [
+        2612.5116292490934,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 69,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 50
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 14",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_14_fullbody_threequarter_left"
+      ]
+    },
+    {
+      "id": 60,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        2982.5116292490934,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B03 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B03(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 61,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        3002.5116292490934,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 70,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 51
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 52
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            53,
+            55
+          ]
+        }
+      ],
+      "title": "15 — Fullbody Threequarter Right",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character full body from head to feet, the whole body inside the frame, from a three-quarter front right camera angle, standing straight with arms relaxed at the sides, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans with simple white sneakers, against a neutral soft grey studio background under soft even lighting. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 62,
+      "type": "SaveImage",
+      "pos": [
+        3002.5116292490934,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 71,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 53
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 15",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_15_fullbody_threequarter_right"
+      ]
+    },
+    {
+      "id": 63,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        3372.5116292490934,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B04 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B04(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 64,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        3392.5116292490934,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 72,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 54
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 55
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            56,
+            58
+          ]
+        }
+      ],
+      "title": "16 — Fullbody Side Left",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character full body from head to feet, the whole body inside the frame, from a true left side camera angle, standing upright with arms resting naturally, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans with simple white sneakers, against a neutral soft grey studio background under soft even lighting. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 65,
+      "type": "SaveImage",
+      "pos": [
+        3392.5116292490934,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 73,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 56
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 16",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_16_fullbody_side_left"
+      ]
+    },
+    {
+      "id": 66,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        3762.5116292490934,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B05 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B05(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 67,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        3782.5116292490934,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 74,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 57
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 58
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            59,
+            61
+          ]
+        }
+      ],
+      "title": "17 — Fullbody Side Right",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character full body from head to feet, the whole body inside the frame, from a true right side camera angle, standing upright with arms resting naturally, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans with simple white sneakers, against a neutral soft grey studio background under soft even lighting. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 68,
+      "type": "SaveImage",
+      "pos": [
+        3782.5116292490934,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 75,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 59
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 17",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_17_fullbody_side_right"
+      ]
+    },
+    {
+      "id": 69,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        4152.511629249094,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B06 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B06(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 70,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        4172.511629249094,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 76,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 60
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 61
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            62,
+            64
+          ]
+        }
+      ],
+      "title": "18 — Fullbody From Behind",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character full body from head to feet, the whole body inside the frame, from directly behind, standing upright with arms relaxed at the sides and head level, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans with simple white sneakers, against a neutral soft grey studio background under soft even lighting. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 71,
+      "type": "SaveImage",
+      "pos": [
+        4172.511629249094,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 77,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 62
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 18",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_18_fullbody_from_behind"
+      ]
+    },
+    {
+      "id": 72,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        4542.511629249094,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B07 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B07(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 73,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        4562.511629249094,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 78,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 63
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 64
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            65,
+            67
+          ]
+        }
+      ],
+      "title": "19 — Fullbody Seated",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character full body from head to feet, the whole body inside the frame, seated upright on a plain backless studio stool at a slight frontal angle with both feet on the floor and hands resting naturally, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans with simple white sneakers, against a neutral soft grey studio background under soft even lighting. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 74,
+      "type": "SaveImage",
+      "pos": [
+        4562.511629249094,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 79,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 65
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 19",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_19_fullbody_seated"
+      ]
+    },
+    {
+      "id": 75,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        4932.511629249094,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B08 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B08(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 76,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        4952.511629249094,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 80,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 66
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 67
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            68,
+            70
+          ]
+        }
+      ],
+      "title": "20 — Fullbody Walking",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character full body from head to feet, the whole body inside the frame, walking naturally across the studio from left to right in a frontal three-quarter view with one foot mid-step, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans with simple white sneakers, against a neutral soft grey studio background with soft even lighting and only slight motion in the limbs while the face stays sharp. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 77,
+      "type": "SaveImage",
+      "pos": [
+        4952.511629249094,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 81,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 68
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 20",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_20_fullbody_walking"
+      ]
+    },
+    {
+      "id": 78,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        5322.511629249094,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B09 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B09(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 79,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        5342.511629249094,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 82,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 69
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 70
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            71,
+            73
+          ]
+        }
+      ],
+      "title": "21 — Fullbody Arms Crossed",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character full body from head to feet, the whole body inside the frame, facing the camera with arms crossed comfortably and weight balanced on both feet, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans with simple white sneakers, against a neutral soft grey studio background under soft even lighting. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 80,
+      "type": "SaveImage",
+      "pos": [
+        5342.511629249094,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 83,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 71
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 21",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_21_fullbody_arms_crossed"
+      ]
+    },
+    {
+      "id": 81,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        5712.511629249094,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B10 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B10(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 82,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        5732.511629249094,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 84,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 72
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 73
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            74,
+            76
+          ]
+        }
+      ],
+      "title": "22 — Fullbody Hands Pockets",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character full body from head to feet, the whole body inside the frame, from a slight three-quarter angle, standing casually with both hands in the front pockets and one knee relaxed, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans with simple white sneakers, against a neutral soft grey studio background under soft even lighting. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 83,
+      "type": "SaveImage",
+      "pos": [
+        5732.511629249094,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 85,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 74
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 22",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_22_fullbody_hands_pockets"
+      ]
+    },
+    {
+      "id": 84,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        6102.511629249094,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B11 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B11(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 85,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        6122.511629249094,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 86,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 75
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 76
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            77,
+            79
+          ]
+        }
+      ],
+      "title": "23 — Halfbody Front",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a half-body portrait from the hips up, facing the camera straight-on with arms resting naturally and posture upright, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans, against a neutral soft grey studio background under soft even lighting with the face and torso sharp. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 86,
+      "type": "SaveImage",
+      "pos": [
+        6122.511629249094,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 87,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 77
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 23",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_23_halfbody_front"
+      ]
+    },
+    {
+      "id": 87,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        6492.511629249094,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B12 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B12(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 88,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        6512.511629249094,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 88,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 78
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 79
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            80,
+            82
+          ]
+        }
+      ],
+      "title": "24 — Halfbody Threequarter",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character in a half-body portrait from the hips up at a three-quarter right camera angle, shoulders relaxed and hands loosely joined in front, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans, against a neutral soft grey studio background under soft even lighting with the face and torso sharp. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 89,
+      "type": "SaveImage",
+      "pos": [
+        6512.511629249094,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 89,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 80
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 24",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_24_halfbody_threequarter"
+      ]
+    },
+    {
+      "id": 90,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        6882.511629249094,
+        1178.4187106783827
+      ],
+      "size": [
+        360,
+        70
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "B13 · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B13(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 91,
+      "type": "MATRIX_DatasetImage",
+      "pos": [
+        6902.511629249094,
+        1303.4187106783827
+      ],
+      "size": [
+        320,
+        310
+      ],
+      "flags": {},
+      "order": 90,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "link": 81
+        },
+        {
+          "name": "after_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 82
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            83
+          ]
+        }
+      ],
+      "title": "25 — Fullbody Standing Relaxed",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetImage"
+      },
+      "widgets_values": [
+        "Show the character full body from head to feet, the whole body inside the frame, from a frontal camera angle, standing in a relaxed asymmetrical pose with weight on one leg and arms hanging naturally, dressed in a fitted black short-sleeve t-shirt and blue straight-leg jeans with simple white sneakers, against a neutral soft grey studio background under soft even lighting. Keep the same eye color as in the reference images. Keep the exact same body proportions as in the reference images. Realistic skin with natural texture, visible pores and subtle imperfections."
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    },
+    {
+      "id": 92,
+      "type": "SaveImage",
+      "pos": [
+        6902.511629249094,
+        1633.4187106783827
+      ],
+      "size": [
+        320,
+        270
+      ],
+      "flags": {},
+      "order": 91,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 83
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Save 25",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "SaveImage"
+      },
+      "widgets_values": [
+        "MatrixLab_API_Dataset_25_fullbody_standing_relaxed"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "Label (rgthree)",
+      "pos": [
+        1000.9165300299113,
+        885.5103650407998
+      ],
+      "size": [
+        619.892578125,
+        432
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 26,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "HOW TO USE\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nAPI KEY\nPaste the WaveSpeed key once in the masked field.\nThe saved workflow never contains the raw key.\n\nMODEL\nChoose one route in the MATRIX WaveSpeed API node.\n\nMONEY SAFETY\nLIVE is OFF by default. No paid request runs until enabled.\n\nREFERENCES\nR01 is required. Toggle R02–R08 in the rgthree panel.\nR02–R04 start enabled; R05–R08 start bypassed.\n\nSHOTS\nF01 starts enabled; all other shots start bypassed.\nUse the row panel or the switch above one shot card.\n\nRE-RUN\nChange one prompt to request only that image again.",
+      "properties": {
+        "fontSize": 18,
+        "fontFamily": "Consolas",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "#061507",
+        "padding": 18,
+        "borderRadius": 8,
+        "angle": 0
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 4,
+      "type": "LoadImage",
+      "pos": [
+        35.72752952856719,
+        240.83436029973277
+      ],
+      "size": [
+        298.54494094286565,
+        453.43811017170003
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            1,
+            10
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "title": "Reference 01",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ],
+      "color": "#111",
+      "bgcolor": "#020805"
+    },
+    {
+      "id": 5,
+      "type": "LoadImage",
+      "pos": [
+        386.45505905713435,
+        238.65177171403118
+      ],
+      "size": [
+        298.54494094286565,
+        456.34822828596884
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "title": "Reference 02",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ],
+      "color": "#111",
+      "bgcolor": "#020805"
+    },
+    {
+      "id": 6,
+      "type": "LoadImage",
+      "pos": [
+        35.72752952856719,
+        861.5618898282999
+      ],
+      "size": [
+        302.9101181142688,
+        452.71058064313297
+      ],
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            3
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "title": "Reference 03",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ],
+      "color": "#111",
+      "bgcolor": "#020805"
+    },
+    {
+      "id": 7,
+      "type": "LoadImage",
+      "pos": [
+        385,
+        863.0169488854342
+      ],
+      "size": [
+        300.7275295285672,
+        451.9830511145658
+      ],
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            4
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "title": "Reference 04",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ],
+      "color": "#111",
+      "bgcolor": "#020805"
+    },
+    {
+      "id": 8,
+      "type": "LoadImage",
+      "pos": [
+        35,
+        1481.4804065211003
+      ],
+      "size": [
+        300,
+        453.51959347889965
+      ],
+      "flags": {},
+      "order": 31,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            5
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "title": "Reference 05 — optional",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ],
+      "color": "#111",
+      "bgcolor": "#020805"
+    },
+    {
+      "id": 9,
+      "type": "LoadImage",
+      "pos": [
+        385,
+        1480.5120647185772
+      ],
+      "size": [
+        302.9050254075689,
+        454.4879352814228
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            6
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "title": "Reference 06 — optional",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ],
+      "color": "#111",
+      "bgcolor": "#020805"
+    },
+    {
+      "id": 10,
+      "type": "LoadImage",
+      "pos": [
+        35,
+        2100.512064718577
+      ],
+      "size": [
+        302.9050254075688,
+        454.4879352814228
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            7
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "title": "Reference 07 — optional",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ],
+      "color": "#111",
+      "bgcolor": "#020805"
+    },
+    {
+      "id": 11,
+      "type": "LoadImage",
+      "pos": [
+        385,
+        2104.3854319286693
+      ],
+      "size": [
+        301.936683605046,
+        450.6145680713307
+      ],
+      "flags": {},
+      "order": 34,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            8
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "slot_index": 1,
+          "links": null
+        }
+      ],
+      "title": "Reference 08 — optional",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.28.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "",
+        "image"
+      ],
+      "color": "#111",
+      "bgcolor": "#020805"
+    },
+    {
+      "id": 12,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        -295.44868608353227,
+        201.62345436457426
+      ],
+      "size": [
+        290,
+        550
+      ],
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "REFERENCE IMAGES · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^R0[2-8](?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 3,
+      "type": "Label (rgthree)",
+      "pos": [
+        19.982987009203132,
+        41.4649118197098
+      ],
+      "size": [
+        1848,
+        96
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 36,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "01 · REFERENCE IMAGES\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nR01 required · R02–R08 controlled by the rgthree reference panel",
+      "properties": {
+        "fontSize": 24,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "#0d211d",
+        "padding": 12,
+        "borderRadius": 8,
+        "angle": 0
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 17,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        1902.5116292490934,
+        1268.4187106783827
+      ],
+      "size": [
+        290,
+        670
+      ],
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "BODY SHOTS · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^B(?:0[1-9]|1[0-3])(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 15,
+      "type": "Label (rgthree)",
+      "pos": [
+        2206.772333180194,
+        1052.6161434190506
+      ],
+      "size": [
+        4224,
+        80
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 38,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "04 · BODY SHOTS  //  13 FULL- AND HALF-BODY SHOTS  //  ROW + INDIVIDUAL RGTHREE SWITCHES\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+      "properties": {
+        "fontSize": 28,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "#24102e",
+        "padding": 12,
+        "borderRadius": 8,
+        "angle": 0
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 14,
+      "type": "Label (rgthree)",
+      "pos": [
+        2203.8733672100916,
+        -50.35377373119189
+      ],
+      "size": [
+        4224,
+        80
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 39,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "03 · FACE SHOTS  //  12 PORTRAIT SHOTS  //  ROW + INDIVIDUAL RGTHREE SWITCHES\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+      "properties": {
+        "fontSize": 28,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "#24102e",
+        "padding": 12,
+        "borderRadius": 8,
+        "angle": 0
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 16,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        1900,
+        170
+      ],
+      "size": [
+        290,
+        670
+      ],
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": []
+        }
+      ],
+      "title": "FACE SHOTS · ON / OFF",
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "^F(?:0[1-9]|1[0-2])(?:\\s|$)",
+        "showNav": true,
+        "showAllGraphs": false,
+        "sort": "alphanumeric",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "Node name for S&R": "Fast Groups Bypasser (rgthree)"
+      },
+      "color": "#193d2a",
+      "bgcolor": "#0d2117"
+    },
+    {
+      "id": 13,
+      "type": "MATRIX_DatasetConfig",
+      "pos": [
+        927.1510374330805,
+        314.17110794224845
+      ],
+      "size": [
+        770,
+        518
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_1",
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 2
+        },
+        {
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 3
+        },
+        {
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 4
+        },
+        {
+          "name": "image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 5
+        },
+        {
+          "name": "image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 6
+        },
+        {
+          "name": "image_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 7
+        },
+        {
+          "name": "image_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 8
+        },
+        {
+          "name": "image_9",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_10",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_11",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_12",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_13",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image_14",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "config",
+          "type": "MATRIX_API_CONFIG",
+          "slot_index": 0,
+          "links": [
+            9,
+            12,
+            15,
+            18,
+            21,
+            24,
+            27,
+            30,
+            33,
+            36,
+            39,
+            42,
+            45,
+            48,
+            51,
+            54,
+            57,
+            60,
+            63,
+            66,
+            69,
+            72,
+            75,
+            78,
+            81
+          ]
+        }
+      ],
+      "title": "MATRIX — WaveSpeed API",
+      "properties": {
+        "Node name for S&R": "MATRIX_DatasetConfig"
+      },
+      "widgets_values": [
+        false,
+        "google/nano-banana-pro/edit",
+        "3:4",
+        null,
+        null,
+        "png",
+        null,
+        "4k"
+      ],
+      "color": "#0a150a",
+      "bgcolor": "#050a05",
+      "boxcolor": "#00ff41"
+    }
+  ],
+  "links": [
+    [
+      1,
+      4,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      5,
+      0,
+      13,
+      1,
+      "IMAGE"
+    ],
+    [
+      3,
+      6,
+      0,
+      13,
+      2,
+      "IMAGE"
+    ],
+    [
+      4,
+      7,
+      0,
+      13,
+      3,
+      "IMAGE"
+    ],
+    [
+      5,
+      8,
+      0,
+      13,
+      4,
+      "IMAGE"
+    ],
+    [
+      6,
+      9,
+      0,
+      13,
+      5,
+      "IMAGE"
+    ],
+    [
+      7,
+      10,
+      0,
+      13,
+      6,
+      "IMAGE"
+    ],
+    [
+      8,
+      11,
+      0,
+      13,
+      7,
+      "IMAGE"
+    ],
+    [
+      9,
+      13,
+      0,
+      19,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      10,
+      4,
+      0,
+      19,
+      1,
+      "IMAGE"
+    ],
+    [
+      11,
+      19,
+      0,
+      20,
+      0,
+      "IMAGE"
+    ],
+    [
+      12,
+      13,
+      0,
+      22,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      13,
+      19,
+      0,
+      22,
+      1,
+      "IMAGE"
+    ],
+    [
+      14,
+      22,
+      0,
+      23,
+      0,
+      "IMAGE"
+    ],
+    [
+      15,
+      13,
+      0,
+      25,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      16,
+      22,
+      0,
+      25,
+      1,
+      "IMAGE"
+    ],
+    [
+      17,
+      25,
+      0,
+      26,
+      0,
+      "IMAGE"
+    ],
+    [
+      18,
+      13,
+      0,
+      28,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      19,
+      25,
+      0,
+      28,
+      1,
+      "IMAGE"
+    ],
+    [
+      20,
+      28,
+      0,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      21,
+      13,
+      0,
+      31,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      22,
+      28,
+      0,
+      31,
+      1,
+      "IMAGE"
+    ],
+    [
+      23,
+      31,
+      0,
+      32,
+      0,
+      "IMAGE"
+    ],
+    [
+      24,
+      13,
+      0,
+      34,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      25,
+      31,
+      0,
+      34,
+      1,
+      "IMAGE"
+    ],
+    [
+      26,
+      34,
+      0,
+      35,
+      0,
+      "IMAGE"
+    ],
+    [
+      27,
+      13,
+      0,
+      37,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      28,
+      34,
+      0,
+      37,
+      1,
+      "IMAGE"
+    ],
+    [
+      29,
+      37,
+      0,
+      38,
+      0,
+      "IMAGE"
+    ],
+    [
+      30,
+      13,
+      0,
+      40,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      31,
+      37,
+      0,
+      40,
+      1,
+      "IMAGE"
+    ],
+    [
+      32,
+      40,
+      0,
+      41,
+      0,
+      "IMAGE"
+    ],
+    [
+      33,
+      13,
+      0,
+      43,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      34,
+      40,
+      0,
+      43,
+      1,
+      "IMAGE"
+    ],
+    [
+      35,
+      43,
+      0,
+      44,
+      0,
+      "IMAGE"
+    ],
+    [
+      36,
+      13,
+      0,
+      46,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      37,
+      43,
+      0,
+      46,
+      1,
+      "IMAGE"
+    ],
+    [
+      38,
+      46,
+      0,
+      47,
+      0,
+      "IMAGE"
+    ],
+    [
+      39,
+      13,
+      0,
+      49,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      40,
+      46,
+      0,
+      49,
+      1,
+      "IMAGE"
+    ],
+    [
+      41,
+      49,
+      0,
+      50,
+      0,
+      "IMAGE"
+    ],
+    [
+      42,
+      13,
+      0,
+      52,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      43,
+      49,
+      0,
+      52,
+      1,
+      "IMAGE"
+    ],
+    [
+      44,
+      52,
+      0,
+      53,
+      0,
+      "IMAGE"
+    ],
+    [
+      45,
+      13,
+      0,
+      55,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      46,
+      52,
+      0,
+      55,
+      1,
+      "IMAGE"
+    ],
+    [
+      47,
+      55,
+      0,
+      56,
+      0,
+      "IMAGE"
+    ],
+    [
+      48,
+      13,
+      0,
+      58,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      49,
+      55,
+      0,
+      58,
+      1,
+      "IMAGE"
+    ],
+    [
+      50,
+      58,
+      0,
+      59,
+      0,
+      "IMAGE"
+    ],
+    [
+      51,
+      13,
+      0,
+      61,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      52,
+      58,
+      0,
+      61,
+      1,
+      "IMAGE"
+    ],
+    [
+      53,
+      61,
+      0,
+      62,
+      0,
+      "IMAGE"
+    ],
+    [
+      54,
+      13,
+      0,
+      64,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      55,
+      61,
+      0,
+      64,
+      1,
+      "IMAGE"
+    ],
+    [
+      56,
+      64,
+      0,
+      65,
+      0,
+      "IMAGE"
+    ],
+    [
+      57,
+      13,
+      0,
+      67,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      58,
+      64,
+      0,
+      67,
+      1,
+      "IMAGE"
+    ],
+    [
+      59,
+      67,
+      0,
+      68,
+      0,
+      "IMAGE"
+    ],
+    [
+      60,
+      13,
+      0,
+      70,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      61,
+      67,
+      0,
+      70,
+      1,
+      "IMAGE"
+    ],
+    [
+      62,
+      70,
+      0,
+      71,
+      0,
+      "IMAGE"
+    ],
+    [
+      63,
+      13,
+      0,
+      73,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      64,
+      70,
+      0,
+      73,
+      1,
+      "IMAGE"
+    ],
+    [
+      65,
+      73,
+      0,
+      74,
+      0,
+      "IMAGE"
+    ],
+    [
+      66,
+      13,
+      0,
+      76,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      67,
+      73,
+      0,
+      76,
+      1,
+      "IMAGE"
+    ],
+    [
+      68,
+      76,
+      0,
+      77,
+      0,
+      "IMAGE"
+    ],
+    [
+      69,
+      13,
+      0,
+      79,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      70,
+      76,
+      0,
+      79,
+      1,
+      "IMAGE"
+    ],
+    [
+      71,
+      79,
+      0,
+      80,
+      0,
+      "IMAGE"
+    ],
+    [
+      72,
+      13,
+      0,
+      82,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      73,
+      79,
+      0,
+      82,
+      1,
+      "IMAGE"
+    ],
+    [
+      74,
+      82,
+      0,
+      83,
+      0,
+      "IMAGE"
+    ],
+    [
+      75,
+      13,
+      0,
+      85,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      76,
+      82,
+      0,
+      85,
+      1,
+      "IMAGE"
+    ],
+    [
+      77,
+      85,
+      0,
+      86,
+      0,
+      "IMAGE"
+    ],
+    [
+      78,
+      13,
+      0,
+      88,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      79,
+      85,
+      0,
+      88,
+      1,
+      "IMAGE"
+    ],
+    [
+      80,
+      88,
+      0,
+      89,
+      0,
+      "IMAGE"
+    ],
+    [
+      81,
+      13,
+      0,
+      91,
+      0,
+      "MATRIX_API_CONFIG"
+    ],
+    [
+      82,
+      88,
+      0,
+      91,
+      1,
+      "IMAGE"
+    ],
+    [
+      83,
+      91,
+      0,
+      92,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "00 Matrix Lab Header",
+      "bounding": [
+        27.066121722318353,
+        -402.1369143961935,
+        900,
+        370
+      ],
+      "color": "#17421f",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "02 WaveSpeed API · Model + Safety",
+      "bounding": [
+        897.1510374330805,
+        164.17110794224806,
+        837.5480969168848,
+        1199.2754272126688
+      ],
+      "color": "#21462f",
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "R01 REFERENCE · Required",
+      "bounding": [
+        20,
+        170,
+        330,
+        550
+      ],
+      "color": "#203a35",
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "R02 REFERENCE · Primary",
+      "bounding": [
+        370,
+        170,
+        330,
+        550
+      ],
+      "color": "#203a35",
+      "flags": {}
+    },
+    {
+      "id": 5,
+      "title": "R03 REFERENCE · Primary",
+      "bounding": [
+        20,
+        790,
+        330,
+        550
+      ],
+      "color": "#203a35",
+      "flags": {}
+    },
+    {
+      "id": 6,
+      "title": "R04 REFERENCE · Primary",
+      "bounding": [
+        370,
+        790,
+        330,
+        550
+      ],
+      "color": "#203a35",
+      "flags": {}
+    },
+    {
+      "id": 7,
+      "title": "R05 REFERENCE · Optional",
+      "bounding": [
+        20,
+        1410,
+        330,
+        550
+      ],
+      "color": "#203a35",
+      "flags": {}
+    },
+    {
+      "id": 8,
+      "title": "R06 REFERENCE · Optional",
+      "bounding": [
+        370,
+        1410,
+        330,
+        550
+      ],
+      "color": "#203a35",
+      "flags": {}
+    },
+    {
+      "id": 9,
+      "title": "R07 REFERENCE · Optional",
+      "bounding": [
+        20,
+        2030,
+        330,
+        550
+      ],
+      "color": "#203a35",
+      "flags": {}
+    },
+    {
+      "id": 10,
+      "title": "R08 REFERENCE · Optional",
+      "bounding": [
+        370,
+        2030,
+        330,
+        550
+      ],
+      "color": "#203a35",
+      "flags": {}
+    },
+    {
+      "id": 11,
+      "title": "F01 FACE · Frontal Neutral",
+      "bounding": [
+        2200,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 12,
+      "title": "F02 FACE · Frontal Smiling",
+      "bounding": [
+        2590,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 13,
+      "title": "F03 FACE · Threequarter Left",
+      "bounding": [
+        2980,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 14,
+      "title": "F04 FACE · Threequarter Right",
+      "bounding": [
+        3370,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 15,
+      "title": "F05 FACE · Profile Left",
+      "bounding": [
+        3760,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 16,
+      "title": "F06 FACE · Profile Right",
+      "bounding": [
+        4150,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 17,
+      "title": "F07 FACE · Slight High Angle",
+      "bounding": [
+        4540,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 18,
+      "title": "F08 FACE · Slight Low Angle",
+      "bounding": [
+        4930,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 19,
+      "title": "F09 FACE · Looking Away",
+      "bounding": [
+        5320,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 20,
+      "title": "F10 FACE · Natural Laugh",
+      "bounding": [
+        5710,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 21,
+      "title": "F11 FACE · Hair Tucked",
+      "bounding": [
+        6100,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 22,
+      "title": "F12 FACE · Face Close Crop",
+      "bounding": [
+        6490,
+        170,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 23,
+      "title": "B01 BODY · Fullbody Frontal",
+      "bounding": [
+        2202.5116292490934,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 24,
+      "title": "B02 BODY · Fullbody Threequarter Left",
+      "bounding": [
+        2592.5116292490934,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 25,
+      "title": "B03 BODY · Fullbody Threequarter Right",
+      "bounding": [
+        2982.5116292490934,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 26,
+      "title": "B04 BODY · Fullbody Side Left",
+      "bounding": [
+        3372.5116292490934,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 27,
+      "title": "B05 BODY · Fullbody Side Right",
+      "bounding": [
+        3762.5116292490934,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 28,
+      "title": "B06 BODY · Fullbody From Behind",
+      "bounding": [
+        4152.511629249094,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 29,
+      "title": "B07 BODY · Fullbody Seated",
+      "bounding": [
+        4542.511629249094,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 30,
+      "title": "B08 BODY · Fullbody Walking",
+      "bounding": [
+        4932.511629249094,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 31,
+      "title": "B09 BODY · Fullbody Arms Crossed",
+      "bounding": [
+        5322.511629249094,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 32,
+      "title": "B10 BODY · Fullbody Hands Pockets",
+      "bounding": [
+        5712.511629249094,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 33,
+      "title": "B11 BODY · Halfbody Front",
+      "bounding": [
+        6102.511629249094,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 34,
+      "title": "B12 BODY · Halfbody Threequarter",
+      "bounding": [
+        6492.511629249094,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    },
+    {
+      "id": 35,
+      "title": "B13 BODY · Fullbody Standing Relaxed",
+      "bounding": [
+        6882.511629249094,
+        1268.4187106783827,
+        360,
+        670
+      ],
+      "color": "#7341ff",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5829283922093517,
+      "offset": [
+        -805.3396749307085,
+        222.8668052005049
+      ]
+    },
+    "frontendVersion": "1.47.10"
+  },
+  "version": 0.4
+}

@@ -1,0 +1,1 @@
+{"1":{"class_type":"EmptyImage","inputs":{"width":256,"height":256,"batch_size":1,"color":13417376}},"2":{"class_type":"SaveImage","inputs":{"images":["1",0],"filename_prefix":"epalle/smoke"}}}

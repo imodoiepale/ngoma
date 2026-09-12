@@ -1,0 +1,40 @@
+generates: base visual only
+text_policy: NONE - all copy composited in code
+logo_policy: COMPOSITE_ONLY - model must not render any mark
+disclosure_field: AI-assisted imagery. Demonstration only.
+accessibility:
+  min_contrast: 4.5:1 for composited copy
+  reserve_copy_zone: model must leave a clean low-detail area for headline
+  caption_required: true
+experiment_variables:
+- hook
+- first_slide
+- language
+- sheng_intensity
+- cta
+- subject
+key: swiss_interleaved_type
+mode: editorial_experimental
+audience: design-literate, B2B
+campaigns:
+- brand
+- positioning
+ratios:
+- '4:5'
+- '1:1'
+background: '#FEFEFE'
+composition: subject centred with deliberate empty bands above and below where large type will interleave and occlude
+subject: a single sculptural object or portrait bust, hard-edged, high contrast
+light: single hard source, deep shadow
+palette:
+- '#FEFEFE'
+- '#0A0A0A'
+- '#22C55E'
+accent_use: one rule
+finish: high-contrast studio, no grain
+cultural: neutral
+negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no numbers, no UI text, no watermark,
+  no signature, no telecom or bank branding, no crypto symbols, no fake phone screens with readable text, no poverty
+  stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
+  no readable account numbers
+brand: ongea-pesa

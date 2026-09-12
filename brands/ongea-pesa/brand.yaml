@@ -1,0 +1,104 @@
+# Ongea Pesa — brand kit
+# PALETTE PROVENANCE: measured, not assumed.
+#   ground/accent  <- sampled from assets/reference/screencapture-ongeapesa-nsait-co-ke-2026-07-18.png
+#   surface        <- sampled from assets/reference/ongeapesa.jpeg (in-app)
+#   logo_*         <- sampled from assets/logo/ongea-pesa-lockup-transparent.png
+# The "extended" ramp comes from an earlier ChatGPT spec; it is NOT on the live product.
+# Do not use extended tokens as primaries without sign-off.
+brand: ongea-pesa
+display_name: Ongea Pesa
+legal_owner: NSAIT
+product: Voice-activated M-Pesa assistant
+site: https://ongeapesa.nsait.co.ke/
+
+positioning:
+  tagline: "Money, made natural."
+  promise: "Speak, send and manage money your way."
+  attribution_line: "ONGEA PESA — BY NSAIT"
+  ctas: ["Get started", "I already have an account"]
+
+palette:
+  measured:
+    ground:        "#0A0A0A"   # site canvas, 34% of pixels
+    ground_raised: "#121212"   # cards / raised surfaces, 39%
+    ground_tint:   "#0B130E"   # green-tinted panel
+    accent:        "#22C55E"   # THE brand green (Tailwind green-500) — sole action colour
+    accent_deep:   "#132419"   # accent at low alpha over ground
+    surface:       "#FEFEFE"   # in-app light surface
+    surface_alt:   "#F8F9FB"
+    hairline:      "#262626"
+    logo_navy:     "#002552"
+    logo_navy_mid: "#003F76"
+    logo_cyan:     "#CCFFFF"
+    logo_steel:    "#B0D5E8"
+  extended:        # unverified — from prior spec, use only for exploratory (15%) lane
+    emerald:       "#30E0A8"
+    mint:          "#70E8C0"
+    deep_emerald:  "#006C52"
+    cyan:          "#00A7C8"
+    ocean_blue:    "#075B94"
+    electric_blue: "#008CD6"
+    warm_gold:     "#D8B35A"
+    graphite:      "#263331"
+    pearl:         "#EEF1EE"
+
+  rules:
+    - "One accent per composition. #22C55E is the action colour; never pair it with extended.emerald in the same frame."
+    - "Warm gold is a rare signal (<=2% of area), never a fill."
+    - "Body text on ground must be >= #EDEDED; on surface <= #263331. Verify 4.5:1 before export."
+    - "Logo navy and cyan belong to the lockup. Do not reuse them as UI accents."
+
+logo:
+  master: assets/logo/ongea-pesa-lockup-transparent.png
+  intrinsic_size: [1232, 445]
+  rule: COMPOSITE_ONLY
+  note: >
+    The logo is never generated, redrawn, described to an image model, or approximated.
+    It is composited from the master after generation. Any output whose base image
+    contains logo-like marks is rejected, not patched.
+  min_width_pct: 12          # of canvas width
+  clear_space_ratio: 0.5     # of lockup height on all sides
+  safe_corners: [bottom_left, bottom_right]
+
+typography:
+  headline: {family_stack: ["Inter Tight", "Inter", "Helvetica Neue", sans-serif], weight: 800, case: upper, tracking: -0.02}
+  subhead:  {family_stack: ["Inter", "Helvetica Neue", sans-serif], weight: 600, case: sentence, tracking: 0}
+  body:     {family_stack: ["Inter", sans-serif], weight: 400}
+  micro:    {family_stack: ["IBM Plex Mono", monospace], weight: 400, case: upper, tracking: 0.08}
+  rule: "All copy is composited in code from the brief. Image models render NO text."
+
+languages:
+  primary: en-KE
+  supported: [en, en-KE, sw, sheng, fr]
+  sheng_policy: "Sheng only where the angle is informal/meme. Never in claims, disclosures, or CTAs involving money amounts."
+
+masters:
+  "1:1":  [3840, 3840]
+  "4:5":  [3072, 3840]
+  "3:4":  [2880, 3840]
+  "9:16": [2160, 3840]
+  "16:9": [3840, 2160]
+
+claim_safety:
+  source: packages/publish/whop/lessons/03-02-claim-safe-scripts.md
+  forbidden:
+    - "Any return, rate, yield, interest or guarantee claim."
+    - "Any statement implying Safaricom / M-Pesa endorsement, partnership or affiliation."
+    - "Any implication that funds are insured, protected or guaranteed by a third party."
+    - "Named real people, real till numbers, real phone numbers, or real transaction amounts."
+    - "Before/after wealth framing, or poverty stereotypes."
+  required:
+    - "Demo transactions are labelled as demonstrations."
+    - "AI-generated imagery carries the disclosure string below."
+    - "Accessibility claims describe what the product does, not medical or legal outcomes."
+  disclosure: "AI-assisted imagery. Demonstration only."
+  separation_of_duties: "A generating agent may not approve its own claim_class: sensitive or pitch item."
+
+portfolio_policy:
+  proven: 0.60
+  adjacent: 0.25
+  exploratory: 0.15
+  vary_one_factor_at_a_time:
+    [hook, language, sheng_intensity, style_family, character, pace, duration, cta, structure, trend, first_slide]
+
+modes: [orbital_dark, pearl_editorial, split_editorial, african_human, editorial_experimental, meme_local]

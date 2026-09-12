@@ -1,0 +1,44 @@
+generates: base visual only
+text_policy: NONE - all copy composited in code
+logo_policy: COMPOSITE_ONLY - model must not render any mark
+disclosure_field: AI-assisted imagery. Demonstration only.
+accessibility:
+  min_contrast: 4.5:1 for composited copy
+  reserve_copy_zone: model must leave a clean low-detail area for headline
+  caption_required: true
+experiment_variables:
+- hook
+- first_slide
+- language
+- sheng_intensity
+- cta
+- subject
+key: premium_african_editorial
+mode: african_human
+audience: Kenyan urban professional, 25-40, aspirational
+campaigns:
+- everyday payment
+- product benefit
+ratios:
+- '4:5'
+- '1:1'
+- '9:16'
+background: '#0A0A0A flat, very subtle film grain'
+composition: subject occupies right 55%; clean low-detail negative space upper-left reserved for headline; base
+  bleeds to bottom edge
+subject: a confident contemporary Kenyan small-business owner or professional in a refined Nairobi interior, mid-gesture,
+  speaking naturally
+light: elegant directional key from upper left, soft falloff, single warm practical behind
+palette:
+- '#0A0A0A'
+- '#121212'
+- '#22C55E'
+- '#FEFEFE'
+accent_use: '#22C55E only as a thin rim-light or a single object; never as fill'
+finish: photoreal editorial, fine grain, deep blacks, no HDR halos
+cultural: contemporary dress, real Nairobi materials; dignity over spectacle
+negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no numbers, no UI text, no watermark,
+  no signature, no telecom or bank branding, no crypto symbols, no fake phone screens with readable text, no poverty
+  stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
+  no readable account numbers
+brand: ongea-pesa

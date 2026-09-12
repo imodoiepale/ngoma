@@ -1,0 +1,18 @@
+{
+  "ran_at": "2026-09-06T14:35:19Z",
+  "mode": "check",
+  "sources_checked": 4,
+  "already_archived": 23,
+  "new_found": [],
+  "downloaded": [],
+  "download_failed": [],
+  "source_failures": [],
+  "not_enumerable": [
+    {
+      "url": "https://www.instagram.com/fanuel_leul/",
+      "platform": "instagram",
+      "reason": "not enumerable by this watcher"
+    }
+  ],
+  "index": ""
+}

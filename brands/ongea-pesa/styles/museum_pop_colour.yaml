@@ -1,0 +1,39 @@
+generates: base visual only
+text_policy: NONE - all copy composited in code
+logo_policy: COMPOSITE_ONLY - model must not render any mark
+disclosure_field: AI-assisted imagery. Demonstration only.
+accessibility:
+  min_contrast: 4.5:1 for composited copy
+  reserve_copy_zone: model must leave a clean low-detail area for headline
+  caption_required: true
+experiment_variables:
+- hook
+- first_slide
+- language
+- sheng_intensity
+- cta
+- subject
+key: museum_pop_colour
+mode: editorial_experimental
+audience: culture-forward
+campaigns:
+- campaign key art
+ratios:
+- '3:4'
+- '4:5'
+background: flat saturated single-hue field corner to corner, perfectly even, subtle print grain
+composition: subject in the right two-thirds, base at the bottom edge, long soft contact shadow
+subject: a single hero object - a carved stool, a kettle, a coin form - museum-mount quality, photoreal texture
+light: soft studio from upper left
+palette:
+- '#22C55E'
+- '#FEFEFE'
+- '#0A0A0A'
+accent_use: the field is the accent
+finish: museum key art, matte
+cultural: Kenyan material culture, generically credited
+negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no numbers, no UI text, no watermark,
+  no signature, no telecom or bank branding, no crypto symbols, no fake phone screens with readable text, no poverty
+  stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
+  no readable account numbers
+brand: ongea-pesa

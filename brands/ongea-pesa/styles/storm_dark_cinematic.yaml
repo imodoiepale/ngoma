@@ -1,0 +1,41 @@
+generates: base visual only
+text_policy: NONE - all copy composited in code
+logo_policy: COMPOSITE_ONLY - model must not render any mark
+disclosure_field: AI-assisted imagery. Demonstration only.
+accessibility:
+  min_contrast: 4.5:1 for composited copy
+  reserve_copy_zone: model must leave a clean low-detail area for headline
+  caption_required: true
+experiment_variables:
+- hook
+- first_slide
+- language
+- sheng_intensity
+- cta
+- subject
+key: storm_dark_cinematic
+mode: orbital_dark
+audience: broad
+campaigns:
+- resilience
+- security
+ratios:
+- '3:4'
+- '9:16'
+background: 'slate #121212 storm field'
+composition: centred chest-up subject, cloud mass behind, wide copy margins
+subject: a resolute contemporary figure, weather-lit, layered clothing
+light: cold moonlight key with a single warm accent
+palette:
+- '#121212'
+- '#0A0A0A'
+- '#B0D5E8'
+- '#22C55E'
+accent_use: '#22C55E as the only warm-side accent, tiny'
+finish: painterly-photoreal, heavy grain
+cultural: contemporary Kenyan, no costume drama
+negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no numbers, no UI text, no watermark,
+  no signature, no telecom or bank branding, no crypto symbols, no fake phone screens with readable text, no poverty
+  stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
+  no readable account numbers
+brand: ongea-pesa

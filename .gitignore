@@ -1,0 +1,43 @@
+# secrets — never commit
+.env
+.env.*
+!.env.example
+*.dpapi
+*_ed25519
+*_ed25519.pub
+*.pem
+id_rsa*
+known_hosts
+whop-token*
+runpod-token*
+hf-token*
+
+# build / deps
+node_modules/
+.next/
+dist/
+__pycache__/
+*.pyc
+.venv/
+.uv/
+
+# heavy binaries — stay out of git
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.mp4
+*.mov
+*.webm
+*.wav
+*.zip
+library.sqlite3
+graph/*.html
+renders/
+out/
+
+# pre-existing key material in repo root (do not commit)
+filer
+filer.pub

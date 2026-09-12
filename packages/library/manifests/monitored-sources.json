@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "timezone": "Africa/Nairobi",
+  "sources": [
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=IksoPQm7Sog",
+      "scope": "resolve_uploader_channel_then_monitor_new_public_videos"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/channel/UCxRwH7p6H8dmLTvkzz6jm_w/videos",
+      "name": "KiubAI",
+      "scope": "all_new_public_videos"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/fanuel_leul/",
+      "scope": "public_profile_and_new_public_posts"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=SMAaksR_1qg",
+      "scope": "video_and_uploader_context"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=mMfvaNZlf3Q",
+      "scope": "video_and_uploader_context"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "category": "NVIDIA",
+  "config": {
+    "templateId": "s7eg4zafj9"
+  },
+  "containerDiskInGb": 40,
+  "containerRegistryAuthId": "",
+  "dockerStartCmd": [
+    "bash",
+    "/runpod-volume/epalle/start-serverless.sh"
+  ],
+  "env": {
+    "EPALLE_ROOT": "/runpod-volume/epalle"
+  },
+  "id": "s7eg4zafj9",
+  "imageName": "runpod/pytorch:1.0.3-cu1281-torch291-ubuntu2404",
+  "isServerless": true,
+  "name": "epalle-comfy-serverless-v1",
+  "ports": [
+    "8888/http",
+    "22/tcp"
+  ],
+  "readme": "EPALLE controlled ComfyUI API runner. Persistent model volume. Default request is dry-run. MATRIX paid-provider workflows are rejected.",
+  "startJupyter": true,
+  "startSsh": true,
+  "volumeMountPath": "/workspace"
+}

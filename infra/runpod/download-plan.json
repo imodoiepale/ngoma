@@ -1,0 +1,377 @@
+{
+  "resolved": [
+    {
+      "file": "Wan21-14B-SCAIL-preview_fp8_scaled_mixed.safetensors",
+      "folder": "diffusion_models",
+      "workflow_count": 2,
+      "used_by": [
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "Kijai/WanVideo_comfy_fp8_scaled",
+      "repo_path": "SCAIL/Wan21-14B-SCAIL-preview_fp8_scaled_mixed.safetensors",
+      "all_matches": [
+        [
+          "Kijai/WanVideo_comfy_fp8_scaled",
+          "SCAIL/Wan21-14B-SCAIL-preview_fp8_scaled_mixed.safetensors"
+        ]
+      ]
+    },
+    {
+      "file": "dw-ll_ucoco_384_bs5.torchscript.pt",
+      "folder": "unknown",
+      "workflow_count": 2,
+      "used_by": [
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "hr16/DWPose-TorchScript-BatchSize5",
+      "repo_path": "dw-ll_ucoco_384_bs5.torchscript.pt",
+      "all_matches": [
+        [
+          "hr16/DWPose-TorchScript-BatchSize5",
+          "dw-ll_ucoco_384_bs5.torchscript.pt"
+        ]
+      ]
+    },
+    {
+      "file": "flux-2-klein-9b-fp8.safetensors",
+      "folder": "diffusion_models",
+      "workflow_count": 2,
+      "used_by": [
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "black-forest-labs/FLUX.2-klein-9b-fp8",
+      "repo_path": "flux-2-klein-9b-fp8.safetensors",
+      "all_matches": [
+        [
+          "black-forest-labs/FLUX.2-klein-9b-fp8",
+          "flux-2-klein-9b-fp8.safetensors"
+        ]
+      ]
+    },
+    {
+      "file": "flux-2-klein-9b-kv.safetensors",
+      "folder": "diffusion_models",
+      "workflow_count": 1,
+      "used_by": [
+        "local-comfy/IG Carousel pose generator/Carousel Pose changer.json"
+      ],
+      "repo": "black-forest-labs/FLUX.2-klein-9b-kv",
+      "repo_path": "flux-2-klein-9b-kv.safetensors",
+      "all_matches": [
+        [
+          "black-forest-labs/FLUX.2-klein-9b-kv",
+          "flux-2-klein-9b-kv.safetensors"
+        ]
+      ]
+    },
+    {
+      "file": "flux2-vae.safetensors",
+      "folder": "vae",
+      "workflow_count": 3,
+      "used_by": [
+        "local-comfy/IG Carousel pose generator/Carousel Pose changer.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "Comfy-Org/flux2-klein-9B",
+      "repo_path": "split_files/vae/flux2-vae.safetensors",
+      "all_matches": [
+        [
+          "Comfy-Org/flux2-klein-9B",
+          "split_files/vae/flux2-vae.safetensors"
+        ]
+      ]
+    },
+    {
+      "file": "minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+      "folder": "loras",
+      "workflow_count": 1,
+      "used_by": [
+        "aininja/MiniMax-Long-Video-&-Extend-Video/1-KeyFrames/1-KEYFRAMES.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "loras/minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+      "all_matches": [
+        [
+          "Comfy-Org/MiniMax-H3",
+          "loras/minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors"
+        ]
+      ]
+    },
+    {
+      "file": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "folder": "loras",
+      "workflow_count": 1,
+      "used_by": [
+        "aininja/MiniMax-Long-Video-&-Extend-Video/5-Video-Extend-No-Reference-Image.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "loras/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "all_matches": [
+        [
+          "Comfy-Org/MiniMax-H3",
+          "loras/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors"
+        ]
+      ]
+    },
+    {
+      "file": "minimax_h3_video_vae_fp16.safetensors",
+      "folder": "vae",
+      "workflow_count": 7,
+      "used_by": [
+        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1-updated.json",
+        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1.json",
+        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2-Updated.json",
+        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2.json",
+        "aininja/MiniMax-H3-Simple-WF/FLF-Workflow-With-Sol-Atten-&-Sage-Atten.json",
+        "aininja/MiniMax-H3-Simple-WF/IMG-&-Audio-To-Video.json",
+        "aininja/MiniMax-H3-Simple-WF/Video-Character-Replace.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "vae/minimax_h3_video_vae_fp16.safetensors",
+      "all_matches": [
+        [
+          "Comfy-Org/MiniMax-H3",
+          "vae/minimax_h3_video_vae_fp16.safetensors"
+        ]
+      ]
+    },
+    {
+      "file": "model.onnx",
+      "folder": "unknown",
+      "workflow_count": 2,
+      "used_by": [
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "Wan-AI/Wan2.2-Animate-14B",
+      "repo_path": "xlm-roberta-large/onnx/model.onnx",
+      "all_matches": [
+        [
+          "Wan-AI/Wan2.2-Animate-14B",
+          "xlm-roberta-large/onnx/model.onnx"
+        ]
+      ]
+    },
+    {
+      "file": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "folder": "diffusion_models",
+      "workflow_count": 14,
+      "used_by": [
+        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1-updated.json",
+        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1.json",
+        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2-Updated.json",
+        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2.json",
+        "aininja/MiniMax-H3-Simple-WF/FLF-Workflow-With-Sol-Atten-&-Sage-Atten.json",
+        "aininja/MiniMax-H3-Simple-WF/IMG-&-Audio-To-Video.json",
+        "aininja/MiniMax-H3-Simple-WF/Video-Character-Replace.json",
+        "aininja/MiniMax-Long-Video-&-Extend-Video/1-KeyFrames/1-KEYFRAMES.json",
+        "aininja/MiniMax-Long-Video-&-Extend-Video/2-Text-To-Long-Video.json",
+        "aininja/MiniMax-Long-Video-&-Extend-Video/3-Image-To-Long-Video/3-Image-To-Long-Video.json",
+        "aininja/MiniMax-Long-Video-&-Extend-Video/4-Video-Extend-with-Reference-Image/4-Video-Extend-with-Reference-Image.json",
+        "aininja/MiniMax-Long-Video-&-Extend-Video/5-Video-Extend-No-Reference-Image.json",
+        "h3/NEW - 2MP De-Rope Continuation - Working Example.json",
+        "h3/UTILITY - Custom Keyframes.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "all_matches": [
+        [
+          "Comfy-Org/MiniMax-H3",
+          "text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+        ]
+      ]
+    },
+    {
+      "file": "qwen_3_8b_fp8mixed.safetensors",
+      "folder": "text_encoders",
+      "workflow_count": 3,
+      "used_by": [
+        "local-comfy/IG Carousel pose generator/Carousel Pose changer.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "Comfy-Org/flux2-klein-9B",
+      "repo_path": "split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
+      "all_matches": [
+        [
+          "Comfy-Org/flux2-klein-9B",
+          "split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors"
+        ]
+      ]
+    },
+    {
+      "file": "umt5-xxl-enc-fp8_e4m3fn.safetensors",
+      "folder": "text_encoders",
+      "workflow_count": 2,
+      "used_by": [
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "Kijai/WanVideo_comfy",
+      "repo_path": "umt5-xxl-enc-fp8_e4m3fn.safetensors",
+      "all_matches": [
+        [
+          "Kijai/WanVideo_comfy",
+          "umt5-xxl-enc-fp8_e4m3fn.safetensors"
+        ]
+      ]
+    },
+    {
+      "file": "vitpose_h_wholebody_model.onnx",
+      "folder": "detection",
+      "workflow_count": 2,
+      "used_by": [
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "Kijai/vitpose_comfy",
+      "repo_path": "onnx/vitpose_h_wholebody_model.onnx",
+      "all_matches": [
+        [
+          "Kijai/vitpose_comfy",
+          "onnx/vitpose_h_wholebody_model.onnx"
+        ]
+      ]
+    },
+    {
+      "file": "yolox_l.torchscript.pt",
+      "folder": "detection",
+      "workflow_count": 2,
+      "used_by": [
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "hr16/yolox-onnx",
+      "repo_path": "yolox_l.torchscript.pt",
+      "all_matches": [
+        [
+          "hr16/yolox-onnx",
+          "yolox_l.torchscript.pt"
+        ]
+      ]
+    }
+  ],
+  "auto_download": [
+    {
+      "file": "rife47.pth",
+      "folder": "rife",
+      "workflow_count": 2,
+      "used_by": [
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ]
+    }
+  ],
+  "creator_private": [
+    {
+      "file": "Lora_lora_000000600.safetensors",
+      "folder": "loras",
+      "workflow_count": 1,
+      "used_by": [
+        "local-comfy/IG Carousel pose generator/Carousel Pose changer.json"
+      ]
+    },
+    {
+      "file": "my_first_lora_v1_000000600_low_noise.safetensors",
+      "folder": "loras",
+      "workflow_count": 3,
+      "used_by": [
+        "local-comfy/01.  NEW WORKFLOWS/SCAIL 2 overview/IcyMotion Free v3.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ]
+    },
+    {
+      "file": "slop_twerk_LowNoise_merged3_7_v2.safetensors",
+      "folder": "loras",
+      "workflow_count": 1,
+      "used_by": [
+        "local-comfy/01.  NEW WORKFLOWS/SCAIL 2 overview/IcyMotion Free v3.json"
+      ]
+    },
+    {
+      "file": "wan2.1_SCAIL_2_DPO_lora_bf16(1).safetensors",
+      "folder": "loras",
+      "workflow_count": 1,
+      "used_by": [
+        "local-comfy/01.  NEW WORKFLOWS/SCAIL 2 overview/IcyMotion Free v3.json"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "file": "Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors",
+      "folder": "loras",
+      "workflow_count": 2,
+      "used_by": [
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
+        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ]
+    },
+    {
+      "file": "minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy.safetensors",
+      "folder": "loras",
+      "workflow_count": 9,
+      "used_by": [
+        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2-Updated.json",
+        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2.json",
+        "aininja/MiniMax-Long-Video-&-Extend-Video/2-Text-To-Long-Video.json",
+        "aininja/MiniMax-Long-Video-&-Extend-Video/3-Image-To-Long-Video/3-Image-To-Long-Video.json",
+        "aininja/MiniMax-Long-Video-&-Extend-Video/4-Video-Extend-with-Reference-Image/4-Video-Extend-with-Reference-Image.json",
+        "h3/NEW - 2MP De-Rope Continuation - Working Example.json",
+        "h3/OLD - Hybrid Extension.json",
+        "h3/OLD - Motion Context - Advanced.json",
+        "h3/OLD - Motion Context - Simple.json"
+      ]
+    },
+    {
+      "file": "minimax_h3_fl2v_lightx2v_turbo_8step_v1.0_resized_avg_rank_24_bf16.safetensors",
+      "folder": "loras",
+      "workflow_count": 2,
+      "used_by": [
+        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1-updated.json",
+        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1.json"
+      ]
+    },
+    {
+      "file": "minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "folder": "loras",
+      "workflow_count": 1,
+      "used_by": [
+        "h3/NEW - V2V Latent Motion Transfer (with upscale and de-rope).json"
+      ]
+    },
+    {
+      "file": "minimax_h3_fl2va_pruned_INT4Q.safetensors",
+      "folder": "diffusion_models",
+      "workflow_count": 1,
+      "used_by": [
+        "aininja/MiniMax-H3-Simple-WF/FLF-Workflow-With-Sol-Atten-&-Sage-Atten.json"
+      ]
+    },
+    {
+      "file": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
+      "folder": "upscale_models",
+      "workflow_count": 2,
+      "used_by": [
+        "h3/NEW - 2MP De-Rope Continuation - Working Example.json",
+        "h3/NEW - V2V Latent Motion Transfer (with upscale and de-rope).json"
+      ]
+    },
+    {
+      "file": "wan2.2_i2v_A14b_low_noise_lora_rank64_lightx2v_4step_1022.safetensors",
+      "folder": "loras",
+      "workflow_count": 1,
+      "used_by": [
+        "local-comfy/01.  NEW WORKFLOWS/SCAIL 2 overview/IcyMotion Free v3.json"
+      ]
+    }
+  ],
+  "repo_errors": {
+    "styler00dollar/VSGAN-tensorrt-docker": "HTTP 404"
+  }
+}

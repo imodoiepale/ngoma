@@ -1,0 +1,153 @@
+brand: ongea-pesa
+count: 24
+principle: Fix the system (field, composition, light, palette, finish, negatives); vary only the subject and the
+  copy. Adapted from the TUDOR.AI poster-prompt method - see tudor-poster-prompts-source.pdf.
+hard_rules:
+- The model renders NO text and NO marks. All copy and the logo are composited in code.
+- One accent per composition.
+- Every style must reserve a low-detail zone for the headline.
+styles:
+- key: premium_african_editorial
+  mode: african_human
+  ratios:
+  - '4:5'
+  - '1:1'
+  - '9:16'
+  audience: Kenyan urban professional, 25-40, aspirational
+- key: cinematic_african_realism
+  mode: african_human
+  ratios:
+  - '9:16'
+  - '16:9'
+  audience: broad Kenyan consumer
+- key: apple_fintech_minimal
+  mode: pearl_editorial
+  ratios:
+  - '1:1'
+  - '4:5'
+  audience: premium and enterprise decision makers
+- key: pearl_editorial_data
+  mode: pearl_editorial
+  ratios:
+  - '4:5'
+  - '1:1'
+  audience: Kenyan professionals who save and plan
+- key: split_editorial_hero
+  mode: split_editorial
+  ratios:
+  - '4:5'
+  - '16:9'
+  audience: broad
+- key: orbital_dark_tech
+  mode: orbital_dark
+  ratios:
+  - '1:1'
+  - '9:16'
+  audience: tech-curious early adopters
+- key: product_ui_showcase
+  mode: orbital_dark
+  ratios:
+  - '9:16'
+  - '4:5'
+  audience: users evaluating the app
+- key: kenyan_meme_original
+  mode: meme_local
+  ratios:
+  - '1:1'
+  - '4:5'
+  audience: Gen Z Kenyan, social-native
+- key: sheng_culture_poster
+  mode: meme_local
+  ratios:
+  - '4:5'
+  - '1:1'
+  audience: Nairobi youth
+- key: data_magazine_graphic
+  mode: editorial_experimental
+  ratios:
+  - '4:5'
+  - '1:1'
+  audience: analytical readers
+- key: swiss_interleaved_type
+  mode: editorial_experimental
+  ratios:
+  - '4:5'
+  - '1:1'
+  audience: design-literate, B2B
+- key: museum_pop_colour
+  mode: editorial_experimental
+  ratios:
+  - '3:4'
+  - '4:5'
+  audience: culture-forward
+- key: mythology_red_editorial
+  mode: editorial_experimental
+  ratios:
+  - '3:4'
+  audience: broad, dramatic campaigns
+- key: storm_dark_cinematic
+  mode: orbital_dark
+  ratios:
+  - '3:4'
+  - '9:16'
+  audience: broad
+- key: gritty_portrait_onesheet
+  mode: african_human
+  ratios:
+  - '4:5'
+  - '3:4'
+  audience: SME owners, fundis, traders
+- key: crimson_monolith
+  mode: editorial_experimental
+  ratios:
+  - '3:4'
+  - '1:1'
+  audience: brand campaigns
+- key: retro_relic_print
+  mode: editorial_experimental
+  ratios:
+  - '4:5'
+  - '1:1'
+  audience: nostalgia and heritage
+- key: risograph_illustration
+  mode: editorial_experimental
+  ratios:
+  - '4:5'
+  - '1:1'
+  audience: Gen Z and community
+- key: luxury_fashion_campaign
+  mode: split_editorial
+  ratios:
+  - '4:5'
+  - '9:16'
+  audience: premium, executive
+- key: accessibility_story
+  mode: african_human
+  ratios:
+  - '4:5'
+  - '1:1'
+  audience: accessibility, older users, low-vision users
+- key: founder_documentary
+  mode: african_human
+  ratios:
+  - '16:9'
+  - '4:5'
+  audience: investors, press, community
+- key: chama_community_story
+  mode: african_human
+  ratios:
+  - '4:5'
+  - '1:1'
+  audience: groups, savings circles, families
+- key: future_african_fintech
+  mode: orbital_dark
+  ratios:
+  - '16:9'
+  - '1:1'
+  audience: tech, partners, press
+- key: kinetic_typography_plate
+  mode: editorial_experimental
+  ratios:
+  - '9:16'
+  - '1:1'
+  audience: social and motion

@@ -1,0 +1,406 @@
+brand: ongea-pesa
+source: OngeaPesa_Content_Calendar.xlsx
+count: 30
+note: style_family/format/language_mix are proposed mappings from the angle column; review before generation.
+items:
+- id: 1
+  idea: Mandazi Payment
+  angle: Everyday payment
+  hook: Can you buy mandazi by just talking?
+  cta: Tag mtu bado anapenda kutumia menus
+  style_family: premium_african_editorial
+  format: carousel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 2
+  idea: Stranger 100 Bob
+  angle: Street surprise
+  hook: Give me your number, I'll send you 100 bob by voice
+  cta: Would you trust this?
+  style_family: kenyan_meme_original
+  format: single
+  language_mix:
+  - en-KE
+  - sw
+  sheng_intensity: medium
+  claim_class: sensitive
+  lane: proven
+  status: seed
+- id: 3
+  idea: Matatu Fare
+  angle: Public transport
+  hook: Imagine paying fare by voice
+  cta: Share with a matatu owner
+  style_family: chama_community_story
+  format: carousel
+  language_mix:
+  - en-KE
+  - sw
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 4
+  idea: School Fees
+  angle: Parent convenience
+  hook: I paid school fees without filling anything
+  cta: Would this save you time?
+  style_family: pearl_editorial_data
+  format: carousel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: sensitive
+  lane: proven
+  status: seed
+- id: 5
+  idea: Scan Payment Teller
+  angle: Smart scan demo
+  hook: What if your phone could read a payment slip?
+  cta: Send to someone who hates typing
+  style_family: product_ui_showcase
+  format: reel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 6
+  idea: Fuel Station
+  angle: Fast payment
+  hook: No till number typing at the petrol station
+  cta: Should petrol stations use this?
+  style_family: apple_fintech_minimal
+  format: single
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 7
+  idea: Barber Shop
+  angle: Lifestyle
+  hook: Haircut paid by voice
+  cta: Tag your barber
+  style_family: kenyan_meme_original
+  format: single
+  language_mix:
+  - en-KE
+  - sw
+  sheng_intensity: medium
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 8
+  idea: Mama Mboga
+  angle: Informal economy
+  hook: Mama mboga receiving AI payments?
+  cta: AI reaches everyone
+  style_family: gritty_portrait_onesheet
+  format: reel
+  language_mix:
+  - en-KE
+  - sw
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 9
+  idea: Church Offering
+  angle: Community
+  hook: Offering by voice?
+  cta: Simple, respectful, fast
+  style_family: chama_community_story
+  format: carousel
+  language_mix:
+  - en-KE
+  - sw
+  sheng_intensity: none
+  claim_class: sensitive
+  lane: proven
+  status: seed
+- id: 10
+  idea: Rent Payment
+  angle: Serious use case
+  hook: Rent paid in 5 seconds
+  cta: Tag a tenant or landlord
+  style_family: apple_fintech_minimal
+  format: single
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: sensitive
+  lane: proven
+  status: seed
+- id: 11
+  idea: Mum Request
+  angle: Emotional
+  hook: Mum asked for money
+  cta: Send this to your mum
+  style_family: gritty_portrait_onesheet
+  format: reel
+  language_mix:
+  - en-KE
+  - sw
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 12
+  idea: Grandma Learns
+  angle: Accessibility
+  hook: My shosh learned this in 10 seconds
+  cta: Technology for everyone
+  style_family: accessibility_story
+  format: carousel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 13
+  idea: Gen Z vs Old Way
+  angle: Comparison
+  hook: Old M-Pesa vs OngeaPesa
+  cta: Which side are you?
+  style_family: data_magazine_graphic
+  format: carousel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 14
+  idea: CEO Walk Payment
+  angle: Executive
+  hook: Busy CEO pays while walking
+  cta: Built for busy people
+  style_family: luxury_fashion_campaign
+  format: single
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 15
+  idea: Chama Contribution
+  angle: Group payment
+  hook: Chama contribution in one sentence
+  cta: Tag your chama group
+  style_family: chama_community_story
+  format: carousel
+  language_mix:
+  - en-KE
+  - sw
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 16
+  idea: Hospital Bill
+  angle: Convenience
+  hook: Emergency payments simplified
+  cta: Share if useful
+  style_family: accessibility_story
+  format: carousel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: sensitive
+  lane: proven
+  status: seed
+- id: 17
+  idea: WhatsApp Screenshot
+  angle: Screenshot payment
+  hook: Watch this screenshot become a payment
+  cta: Share with WhatsApp users
+  style_family: product_ui_showcase
+  format: reel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 18
+  idea: QR + Voice
+  angle: Retail
+  hook: Scan QR, speak amount, done
+  cta: Future of checkout
+  style_family: product_ui_showcase
+  format: reel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 19
+  idea: Business Card Payment
+  angle: Networking
+  hook: Paid from a business card
+  cta: Entrepreneurs need this
+  style_family: swiss_interleaved_type
+  format: single
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 20
+  idea: Farmer Payment
+  angle: Rural inclusion
+  hook: AI payment at the farm
+  cta: Tech should reach mashinani
+  style_family: gritty_portrait_onesheet
+  format: reel
+  language_mix:
+  - en-KE
+  - sw
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 21
+  idea: Blind User Story
+  angle: Accessibility
+  hook: Why voice payments matter
+  cta: Share for accessibility
+  style_family: accessibility_story
+  format: carousel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 22
+  idea: Water Bill
+  angle: Utilities
+  hook: I paid my water bill by talking
+  cta: Bills should be this easy
+  style_family: data_magazine_graphic
+  format: carousel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 23
+  idea: Electricity Token
+  angle: Utilities
+  hook: Buying tokens without typing
+  cta: Tag someone who forgets meter numbers
+  style_family: data_magazine_graphic
+  format: carousel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 24
+  idea: Restaurant Bill
+  angle: Social
+  hook: Dinner bill settled by voice
+  cta: Who pays next time?
+  style_family: kenyan_meme_original
+  format: single
+  language_mix:
+  - en-KE
+  - sw
+  sheng_intensity: medium
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 25
+  idea: Construction Site
+  angle: SME
+  hook: Fundis can receive payments faster
+  cta: Built for SMEs
+  style_family: gritty_portrait_onesheet
+  format: single
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 26
+  idea: Roadside Mechanic
+  angle: Service payment
+  hook: Mechanic paid by voice
+  cta: Tag your mechanic
+  style_family: kenyan_meme_original
+  format: single
+  language_mix:
+  - en-KE
+  - sw
+  sheng_intensity: medium
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 27
+  idea: Event Ticket
+  angle: Events
+  hook: Paying at the gate without a queue
+  cta: Events need this
+  style_family: cinematic_african_realism
+  format: reel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 28
+  idea: Salon Payment
+  angle: Lifestyle
+  hook: Salon payment without searching till
+  cta: Tag your salon plug
+  style_family: kenyan_meme_original
+  format: single
+  language_mix:
+  - en-KE
+  - sw
+  sheng_intensity: medium
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 29
+  idea: Security Guard Demo
+  angle: Workplace
+  hook: Voice payment at the gate
+  cta: Smart offices need this
+  style_family: apple_fintech_minimal
+  format: single
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: standard
+  lane: proven
+  status: seed
+- id: 30
+  idea: Safaricom Demo
+  angle: Partnership pitch
+  hook: Safaricom needs to see this
+  cta: Tag Safaricom
+  style_family: data_magazine_graphic
+  format: carousel
+  language_mix:
+  - en-KE
+  sheng_intensity: none
+  claim_class: pitch
+  lane: proven
+  status: seed

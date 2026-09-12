@@ -1,0 +1,138 @@
+[
+  {
+    "name": "prompt-libary.md",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1509531888090484926/prompt-libary.md?ex=6a9e035f&is=6a9cb1df&hm=727ac5b7ee9c2ce6f5c562dddf492ecbb00c7a9f31dca7c90d423de4236f2e77&",
+    "path": "sources\\discord\\1509531888090484926\\prompt-libary.md",
+    "status": "downloaded",
+    "sha256": "a7d99c3daf81443ef788641f60a02ac680e7b16c770f059f92862cd57f02b2bb",
+    "bytes": 24807
+  },
+  {
+    "name": "MatrixLab_Free_Master_Workflow_v1.0.0.json",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1513353536937787463/MatrixLab_Free_Master_Workflow_v1.0.0.json?ex=6a9e12cf&is=6a9cc14f&hm=429f7bf39cb052f78e4cb16b59ffef5374bd2d0396fd063201ee8217ab1b25f1&",
+    "path": "sources\\discord\\1513353536937787463\\MatrixLab_Free_Master_Workflow_v1.0.0.json",
+    "status": "downloaded",
+    "sha256": "57a2ed6b0513710e891ed8d077888d1d5183ef17599cd3b847aedb231e8ec547",
+    "bytes": 19396
+  },
+  {
+    "name": "AI-Influencer-Skills.zip",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1515716308623429662/AI-Influencer-Skills.zip?ex=6a9e1990&is=6a9cc810&hm=29fbab48c471a88fc62d6258a9e96df8eada653d134b73b8fc6f2da726ffa390&",
+    "path": "sources\\discord\\1515716308623429662\\AI-Influencer-Skills.zip",
+    "status": "downloaded",
+    "sha256": "19d1e60b828326bce6e5921293e3533a9c0061d1b912771bd3deaf2410725551",
+    "bytes": 121142
+  },
+  {
+    "name": "PROMPTS-FROM-THE-VIDEO.md",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1515716308891734027/PROMPTS-FROM-THE-VIDEO.md?ex=6a9e1990&is=6a9cc810&hm=365e4b009c66b7db27dede48e1c0dc50b68d22f029a6e4cb11240ebf736d2e50&",
+    "path": "sources\\discord\\1515716308891734027\\PROMPTS-FROM-THE-VIDEO.md",
+    "status": "downloaded",
+    "sha256": "0f1cfa98c64ddcf7355f35abada9c8258a2fed30ece15c7220558c8c8c41ca9f",
+    "bytes": 1294
+  },
+  {
+    "name": "reel-machine.zip",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1522588094828908655/reel-machine.zip?ex=6a9e0cea&is=6a9cbb6a&hm=0ee9a3e7066af5d3f19164a21b76e0ca844df02ef01326886af78732b1c93e6e&",
+    "path": "sources\\discord\\1522588094828908655\\reel-machine.zip",
+    "status": "downloaded",
+    "sha256": "cba1123f8734881c0b084970995de84e68640a9fb8c25f59e671dd4d20dc3ae2",
+    "bytes": 57228
+  },
+  {
+    "name": "MatrixLab_Krea2_Free_Master_v1.0.0.json",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1527449025954058470/MatrixLab_Krea2_Free_Master_v1.0.0.json?ex=6a9defc2&is=6a9c9e42&hm=a2eb1921fd10cf3f1b51322cdcdb62a645bc146581d9373dac5b720b1b654e15&",
+    "path": "sources\\discord\\1527449025954058470\\MatrixLab_Krea2_Free_Master_v1.0.0.json",
+    "status": "downloaded",
+    "sha256": "64c5c94753f3756f1b4fcde5d590e2443085bd3da71a1302c6289d08037b624a",
+    "bytes": 20321
+  },
+  {
+    "name": "README.md",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1527449026138738809/README.md?ex=6a9defc2&is=6a9c9e42&hm=eae9488a853756f452087bbf26424c977a9d730b0e02f4f6e00607e676b6a932&",
+    "path": "sources\\discord\\1527449026138738809\\README.md",
+    "status": "downloaded",
+    "sha256": "c08646bd427555a20ce2769f8cfd579460cb04b42634b8e9d3140513150e0ff6",
+    "bytes": 2934
+  },
+  {
+    "name": "AGENT-INSTALL.md",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1527449026352382114/AGENT-INSTALL.md?ex=6a9defc2&is=6a9c9e42&hm=92e043b05535c4b2d8a169ee20d3d78c6df9f363e79cf88d6c87e993ca9eb01e&",
+    "path": "sources\\discord\\1527449026352382114\\AGENT-INSTALL.md",
+    "status": "downloaded",
+    "sha256": "4e8da6666333102e5b76c6b001c88861c99f5573b4246127ae2596ddcacb5b50",
+    "bytes": 2558
+  },
+  {
+    "name": "models.json",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1527449026578878614/models.json?ex=6a9defc2&is=6a9c9e42&hm=10c5bab140fcbb01763c6bd18b0c2251133cd284ee17b6499a0b04b84340e123&",
+    "path": "sources\\discord\\1527449026578878614\\models.json",
+    "status": "downloaded",
+    "sha256": "3848f51577700728a67d01713750424933c72a85b15e44c78ef261204e4c66a4",
+    "bytes": 1097
+  },
+  {
+    "name": "charackter-sheet-prompt.md",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1528011988255379597/charackter-sheet-prompt.md?ex=6a9e01cf&is=6a9cb04f&hm=fe37baedd8d6cd5e7c75064270f7b56beeae30ff6c73dadad23e474b56dceb77&",
+    "path": "sources\\discord\\1528011988255379597\\charackter-sheet-prompt.md",
+    "status": "downloaded",
+    "sha256": "f69e3d99abcf7bf4aab7f3445f2d798bef77011b8ed1a579105249decbf0998e",
+    "bytes": 2434
+  },
+  {
+    "name": "character-sheet-studio-v1.5.0.zip",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1536448815366807684/character-sheet-studio-v1.5.0.zip?ex=6a9db7f7&is=6a9c6677&hm=417b8a930249f09da5a69e65156d216674de680a3734a71567179278a6432a99&",
+    "path": "sources\\discord\\1536448815366807684\\character-sheet-studio-v1.5.0.zip",
+    "status": "downloaded",
+    "sha256": "4c8310cca0503d86c3d2d1c08ba323f0ac1547932b27f5be008594059e7ac69f",
+    "bytes": 32020
+  },
+  {
+    "name": "PROMPTS.md",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1536448815840759858/PROMPTS.md?ex=6a9db7f7&is=6a9c6677&hm=d611db4c302b48ad957d7220b6c76a348eceb6bcde891b4d89b6a8bd8351f32f&",
+    "path": "sources\\discord\\1536448815840759858\\PROMPTS.md",
+    "status": "downloaded",
+    "sha256": "e89a7c7a22c467e870d2f776daa8ac0903cbae2ec1643b2123c819abf94a5b6d",
+    "bytes": 9255
+  },
+  {
+    "name": "ComfyUI-LTX-2.5-Preset-Workflows.zip",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1537203977266139176/ComfyUI-LTX-2.5-Preset-Workflows.zip?ex=6a9dd444&is=6a9c82c4&hm=a6f5878d3d37caa2cd82084a8116a8d50ff9047067bcb0108892dbf12aa58164&",
+    "path": "sources\\discord\\1537203977266139176\\ComfyUI-LTX-2.5-Preset-Workflows.zip",
+    "status": "downloaded",
+    "sha256": "27399188bce365ec930d50dab4f12c70b3f476578543df3e65bd4530c2eac4dd",
+    "bytes": 37350
+  },
+  {
+    "name": "AIINF-I2V-01-Expression-Test.md",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1537203977467203765/AIINF-I2V-01-Expression-Test.md?ex=6a9dd444&is=6a9c82c4&hm=8535da35da6a9f370cb2015db34cd82ce300eee214bd2bbd72078a2a8d479763&",
+    "path": "sources\\discord\\1537203977467203765\\AIINF-I2V-01-Expression-Test.md",
+    "status": "downloaded",
+    "sha256": "9427d8f2be5eb7c8c6de03fe80e05bbd3138a7026b12abe0af755bd3b32e0ca7",
+    "bytes": 1151
+  },
+  {
+    "name": "AIINF-I2V-02-Body-Movement-Test.md",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1537203977698148432/AIINF-I2V-02-Body-Movement-Test.md?ex=6a9dd444&is=6a9c82c4&hm=33d1135fd6a52d4cb3c0f460d66054b3a64d2f2addd5c8d07e4f23a411f4e812&",
+    "path": "sources\\discord\\1537203977698148432\\AIINF-I2V-02-Body-Movement-Test.md",
+    "status": "downloaded",
+    "sha256": "44905bff6f9932cc737a673adef371d776f68188ba1a3a6030292342affa69e6",
+    "bytes": 1329
+  },
+  {
+    "name": "LTX-2.5-AI-Influencer-Test-Prompts.md",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1537203977911934976/LTX-2.5-AI-Influencer-Test-Prompts.md?ex=6a9dd444&is=6a9c82c4&hm=6165c2ac49645e71b2379018f116a75e4304cf29a04cbf79f5349b9e1c32346a&",
+    "path": "sources\\discord\\1537203977911934976\\LTX-2.5-AI-Influencer-Test-Prompts.md",
+    "status": "downloaded",
+    "sha256": "ea4f2ded12fce22b617c713fac090b65ac915e273a3b2bff1a67b808b7e1afc6",
+    "bytes": 2767
+  },
+  {
+    "name": "MatrixLab_AI_UGC_Video_Cloner_v1.2.0.zip",
+    "source": "https://cdn.discordapp.com/attachments/1507748774687019119/1539698070340771860/MatrixLab_AI_UGC_Video_Cloner_v1.2.0.zip?ex=6a9e5552&is=6a9d03d2&hm=a8b9cf5354327ae31bc9bff19117bb00b0d12e728a32ae3e280dc6d300f051d0&",
+    "path": "sources\\discord\\1539698070340771860\\MatrixLab_AI_UGC_Video_Cloner_v1.2.0.zip",
+    "status": "downloaded",
+    "sha256": "939b48221bd629921fae87b78ffaf2ce19b4d1a26878480a7103be888459b9b2",
+    "bytes": 28969
+  }
+]

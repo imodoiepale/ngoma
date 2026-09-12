@@ -1,0 +1,39 @@
+generates: base visual only
+text_policy: NONE - all copy composited in code
+logo_policy: COMPOSITE_ONLY - model must not render any mark
+disclosure_field: AI-assisted imagery. Demonstration only.
+accessibility:
+  min_contrast: 4.5:1 for composited copy
+  reserve_copy_zone: model must leave a clean low-detail area for headline
+  caption_required: true
+experiment_variables:
+- hook
+- first_slide
+- language
+- sheng_intensity
+- cta
+- subject
+key: product_ui_showcase
+mode: orbital_dark
+audience: users evaluating the app
+campaigns:
+- feature demo
+ratios:
+- '9:16'
+- '4:5'
+background: '#121212 with a soft radial vignette'
+composition: device angled 15 degrees, screen area left intentionally blank neutral grey for compositing
+subject: a modern smartphone held in a hand, screen blank neutral grey, no interface rendered
+light: soft studio plus green edge glow
+palette:
+- '#121212'
+- '#0A0A0A'
+- '#22C55E'
+accent_use: '#22C55E screen glow spill only'
+finish: product render, sharp
+cultural: neutral
+negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no numbers, no UI text, no watermark,
+  no signature, no telecom or bank branding, no crypto symbols, no fake phone screens with readable text, no poverty
+  stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
+  no readable account numbers, no user interface, no app screen, no icons, no status bar
+brand: ongea-pesa

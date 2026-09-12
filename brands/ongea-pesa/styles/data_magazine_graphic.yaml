@@ -1,0 +1,41 @@
+generates: base visual only
+text_policy: NONE - all copy composited in code
+logo_policy: COMPOSITE_ONLY - model must not render any mark
+disclosure_field: AI-assisted imagery. Demonstration only.
+accessibility:
+  min_contrast: 4.5:1 for composited copy
+  reserve_copy_zone: model must leave a clean low-detail area for headline
+  caption_required: true
+experiment_variables:
+- hook
+- first_slide
+- language
+- sheng_intensity
+- cta
+- subject
+key: data_magazine_graphic
+mode: editorial_experimental
+audience: analytical readers
+campaigns:
+- comparison
+- explainer
+ratios:
+- '4:5'
+- '1:1'
+background: '#FEFEFE with a faint 12-column grid'
+composition: abstract chart-like forms only - no numbers, no labels; copy composited later
+subject: abstract geometric bar and arc forms suggesting a comparison, dimensional paper-cut feel
+light: soft top light, real paper shadows
+palette:
+- '#FEFEFE'
+- '#263331'
+- '#22C55E'
+- '#B0D5E8'
+accent_use: '#22C55E marks the winning series'
+finish: paper-cut dimensional, clean
+cultural: neutral
+negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no numbers, no UI text, no watermark,
+  no signature, no telecom or bank branding, no crypto symbols, no fake phone screens with readable text, no poverty
+  stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
+  no readable account numbers, no numerals, no axis labels, no legends
+brand: ongea-pesa

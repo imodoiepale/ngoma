@@ -1,0 +1,31 @@
+{
+  "minCudaVersion": "12.0",
+  "createdAt": "2026-09-06T12:02:00.01Z",
+  "executionTimeoutMs": 3600000,
+  "flashboot": false,
+  "gpuCount": 1,
+  "gpuTypeIds": [
+    "NVIDIA A100-SXM4-80GB",
+    "NVIDIA H100 PCIe",
+    "NVIDIA H100 NVL",
+    "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "NVIDIA A40",
+    "NVIDIA RTX A6000",
+    "NVIDIA L40"
+  ],
+  "id": "ugtmfoidpnh8pd",
+  "idleTimeout": 5,
+  "name": "epalle-studio-api",
+  "networkVolumeId": "7y7jyghmua",
+  "networkVolumeIds": [
+    "7y7jyghmua"
+  ],
+  "scalerType": "QUEUE_DELAY",
+  "scalerValue": 4,
+  "templateId": "s7eg4zafj9",
+  "userId": "user_3Ig6Ftl4LO3m1HHrSH8b1vjPMXr",
+  "version": 2,
+  "workersMax": 1,
+  "workersMin": 0,
+  "workersStandby": 1
+}

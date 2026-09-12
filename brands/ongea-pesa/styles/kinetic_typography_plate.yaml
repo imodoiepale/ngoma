@@ -1,0 +1,39 @@
+generates: base visual only
+text_policy: NONE - all copy composited in code
+logo_policy: COMPOSITE_ONLY - model must not render any mark
+disclosure_field: AI-assisted imagery. Demonstration only.
+accessibility:
+  min_contrast: 4.5:1 for composited copy
+  reserve_copy_zone: model must leave a clean low-detail area for headline
+  caption_required: true
+experiment_variables:
+- hook
+- first_slide
+- language
+- sheng_intensity
+- cta
+- subject
+key: kinetic_typography_plate
+mode: editorial_experimental
+audience: social and motion
+campaigns:
+- hook
+- quote
+ratios:
+- '9:16'
+- '1:1'
+background: a flat graded field, single hue, no subject
+composition: an entirely empty plate built to receive animated type in the compositor
+subject: none - background plate only
+light: even
+palette:
+- '#0A0A0A'
+- '#22C55E'
+accent_use: gradient only
+finish: flat, clean, banding-free
+cultural: neutral
+negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no numbers, no UI text, no watermark,
+  no signature, no telecom or bank branding, no crypto symbols, no fake phone screens with readable text, no poverty
+  stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
+  no readable account numbers, no subject, no object, no figure, no texture detail
+brand: ongea-pesa

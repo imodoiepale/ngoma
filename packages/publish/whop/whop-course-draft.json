@@ -1,0 +1,14 @@
+{
+  "title": "EPALLE AI Creative Studio",
+  "tagline": "Build character, UGC and music-video pipelines on your own GPU studio",
+  "visibility": "hidden",
+  "require_completing_lessons_in_order": true,
+  "certificate_after_completion_enabled": true,
+  "chapters": [
+    {"title":"Foundation","lessons":["Safety, rights and the creative brief","Persistent RunPod architecture"]},
+    {"title":"Character Systems","lessons":["Dataset Workflow V1","SCAIL-2 motion and replacement","MiniMax H3 references and extension"]},
+    {"title":"Commercial Content","lessons":["Ten UGC formats","Claim-safe scripts","English, Kiswahili, Sheng and French timing"]},
+    {"title":"Music Direction","lessons":["EPALLE visual language","ASALI treatment and animatic","Long-form assembly and sound"]},
+    {"title":"Operations","lessons":["API jobs and cost control","Archive, search and daily source watch","Publishing QA"]}
+  ]
+}
