@@ -81,12 +81,19 @@ ComfyUI registry and live only in the old Codex tree: `work/h3` (GPL-3.0) and
 `packages/library/node_pack_sources.yaml` with the other 27 registry-installable packs.
 
 ## 12. Not yet built
-Phase 7 (voice control + TTS voiceover) and Phase 8 (temporal memory, analytics, skill
-promotion, Hermes + Paperclip orchestration). Hermes and Paperclip are NOT installed;
-`GitHub\paperclip` is an empty directory.
+Phases 0-8 are built: ingestion, knowledge graph, four generation backends, compositing,
+vision, strategy, publishing, voice and memory.
 
-Phases 0-6 are built. Phase 5 shipped vision + strategy; Phase 6 shipped Postiz and
-OpenWA adapters plus VPS infra, all dry-run verified.
+Still genuinely absent:
+- **Hermes and Paperclip orchestration.** Neither is installed; `GitHub\paperclip` is an
+  empty directory. The skill-promotion gates they were meant to enforce are implemented in
+  `packages/strategy/skill_curator.py` regardless of which runtime calls it, so this is an
+  optional control plane rather than a missing capability.
+- **Analytics ingestion.** `packages/memory` can hold performance facts but nothing yet
+  pulls them from Instagram Insights or Postiz. Until that exists, memory is populated by
+  hand and the skill curator has nothing real to evaluate.
+- **A VLM pass in `packages/vision`.** Measurements work offline; semantic tagging
+  ("this is a hands-at-work shot") still needs a model.
 
 ## 13. Deferred by decision
 Meta AI via OpenWA as an image provider. Region-gated, no job ids, ToS-fragile, and it
