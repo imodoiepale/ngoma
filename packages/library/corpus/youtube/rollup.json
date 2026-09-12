@@ -1,0 +1,58 @@
+{
+  "gpu": {
+    "5090": 3,
+    "4090": 1
+  },
+  "hardware": {
+    "24GB vram": 2,
+    "12GB vram": 1
+  },
+  "node_pack": {
+    "sage attention": 2,
+    "controlnet": 2,
+    "essentials": 1
+  },
+  "model": {
+    "veo": 3,
+    "minimax-h3": 2,
+    "scail-2": 1,
+    "ideogram": 1,
+    "kling": 1,
+    "nano-banana": 1,
+    "runway": 1,
+    "midjourney": 1
+  },
+  "technique": {
+    "text to video": 7,
+    "text to image": 2,
+    "upscale": 2,
+    "latent": 1,
+    "lora training": 1,
+    "lora": 1,
+    "dataset": 1,
+    "batch": 1
+  },
+  "setting": {
+    "frame=15": 1
+  },
+  "creative": {
+    "close up": 4,
+    "vertical": 4,
+    "wide shot": 4,
+    "low angle": 3,
+    "aspect ratio": 2,
+    "engagement": 2,
+    "orbit": 2,
+    "voice over": 2,
+    "thumbnail": 2,
+    "dolly": 1,
+    "ugc": 1,
+    "watch time": 1,
+    "volumetric lighting": 1,
+    "camera move": 1,
+    "golden hour": 1,
+    "pan": 1,
+    "green screen": 1,
+    "color grade": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "platform": "youtube",
+  "target": "2 channels",
+  "status": "partial",
+  "requested": 12,
+  "enumerated": 24,
+  "downloaded": 22,
+  "skipped_existing": 0,
+  "failures": [
+    {
+      "channel": "dgikaos",
+      "video": "yzc3HI5WhPY",
+      "error": "no subtitle track; needs faster-whisper fallback"
+    },
+    {
+      "channel": "dgikaos",
+      "video": "Jzwwqo7D4gE",
+      "error": "no subtitle track; needs faster-whisper fallback"
+    }
+  ],
+  "notes": [
+    "22 videos mined -> packages\\library\\corpus\\youtube\\facts.jsonl",
+    "gpu: 2 distinct",
+    "hardware: 2 distinct",
+    "node_pack: 3 distinct",
+    "model: 8 distinct",
+    "technique: 8 distinct",
+    "setting: 1 distinct",
+    "creative: 18 distinct"
+  ],
+  "ran_at": "2026-09-12T12:50:18.590082+00:00"
+}

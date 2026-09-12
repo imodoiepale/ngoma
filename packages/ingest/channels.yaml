@@ -1,0 +1,220 @@
+# AI / ComfyUI creators to learn from.
+#
+# `tier: core` are the ones whose material this studio is actually built on — Icekiub's
+# packs are in workflows/icekiub/, Hearmeman's RunPod templates inform infra/runpod/.
+# `tier: proposed` are researched suggestions; prune before a bulk run.
+#
+# Name resolution notes from the 2026-09-12 research pass:
+#   "Airbrust"  -> AiorBust (@aiorbust)
+#   "Hearmaman" -> Hearmeman / HearmemanAI (GitHub: Hearmeman24)
+#
+# Subtitle policy matches the existing archive: en, sw, fr tracks where available,
+# faster-whisper fallback when a video has no usable subtitle track.
+
+version: 1
+subtitle_langs: [en, en-orig, sw, fr]
+default_max_videos: 25
+
+channels:
+  # ---- core: this studio is built on their material ----
+  - key: kiubai
+    name: KiubAI (Icekiub)
+    tier: core
+    verified: true          # probed 2026-09-12
+    url: https://www.youtube.com/channel/UCxRwH7p6H8dmLTvkzz6jm_w
+    topics: [comfyui, ai-influencer, workflows, flux-klein, wan, scail, ltx, qwen]
+    why: >
+      The live Icekiub channel and the source of the 14 packs in workflows/icekiub/.
+      Their older channel UCQDpVBFF5TSu3B27JvTA_oQ was REMOVED by YouTube for a
+      Community Guidelines violation, so this is the only YouTube route to them.
+      Non-YouTube material lives on Skool/Patreon and is not enumerable here.
+
+  - key: dgikaos
+    name: DGI Kaos
+    tier: core
+    verified: true          # probed 2026-09-12
+    url: https://www.youtube.com/channel/UC3jsobxlad8dw5u_LaWyF0w
+    topics: [ugc-formats, ai-ads, weavy, creative-direction]
+    why: >
+      Resolved from two of the seed videos in monitored-sources.json. The "10 UGC Ad
+      Formats Every AI Creator Needs" video is the stated source of the ten-format
+      curriculum in packages/publish/whop/lessons/03-01-ten-ugc-formats.md.
+
+  - key: hearmeman
+    name: Hearmeman (HearmemanAI)
+    tier: unresolved
+    verified: false
+    url: null
+    known_presence:
+      - https://www.patreon.com/cw/HearmemanAI/collections
+      - https://github.com/Hearmeman24
+      - https://linktr.ee/hearmemanai
+    topics: [runpod, serverless, comfyui, character-consistency, automation]
+    why: >
+      Highly relevant to infra/runpod/ (RunPod templates, serverless ComfyUI), but
+      @HearmemanAI 404s on YouTube and I could not confirm the real handle. Their
+      GitHub and Patreon are confirmed. Give me the channel URL and I will enable it.
+
+  - key: aiorbust
+    name: AiorBust
+    tier: unresolved
+    verified: false
+    url: null
+    known_presence:
+      - https://www.youtube.com/@aiorbust   # appeared in search results, 404s via yt-dlp
+    topics: [comfyui, ai-influencer, monetisation, pipelines]
+    why: >
+      This is the channel you called "Airbrust". Search surfaces @aiorbust but yt-dlp
+      gets a 404, so either the handle has changed or the channel is gone. Needs a
+      working URL from you.
+
+  # ---- proposed: researched, awaiting your prune ----
+  - key: comfyorg
+    verified: true          # probed 2026-09-12
+    name: ComfyUI (official)
+    tier: proposed
+    url: https://www.youtube.com/@comfyorg
+    topics: [comfyui, releases, core-nodes]
+    why: authoritative on core node changes; matters because our Docker stack is pinned to a stale ComfyUI
+
+  - key: latentvision
+    verified: true          # probed 2026-09-12
+    name: Latent Vision (Matteo)
+    tier: proposed
+    url: https://www.youtube.com/@latentvision
+    topics: [comfyui-internals, ipadapter, conditioning]
+    why: author of IPAdapter; the deepest explanations of how ComfyUI actually works
+
+  - key: mickmumpitz
+    verified: true          # probed 2026-09-12
+    name: Mickmumpitz
+    tier: proposed
+    url: https://www.youtube.com/@mickmumpitz
+    topics: [consistent-character, film-pipeline, blender, comfyui]
+    why: consistent-character pipelines, directly applicable to UGC talent
+
+  - key: sebastiankamph
+    verified: true          # probed 2026-09-12
+    name: Sebastian Kamph
+    tier: proposed
+    url: https://www.youtube.com/@sebastiankamph
+    topics: [comfyui, stable-diffusion, workflows]
+
+  - key: oliviosarikas
+    name: Olivio Sarikas
+    tier: proposed
+    url: https://www.youtube.com/@OlivioSarikas
+    topics: [comfyui, news, workflows]
+
+  - key: nerdyrodent
+    name: Nerdy Rodent
+    tier: proposed
+    url: https://www.youtube.com/@NerdyRodent
+    topics: [comfyui, video, open-source-models]
+
+  - key: aitrepreneur
+    name: Aitrepreneur
+    tier: proposed
+    url: https://www.youtube.com/@Aitrepreneur
+    topics: [comfyui, lora-training, tutorials]
+
+  - key: pixaroma
+    verified: true          # probed 2026-09-12
+    name: Pixaroma
+    tier: proposed
+    url: https://www.youtube.com/@pixaroma
+    topics: [comfyui, social-media-graphics, tutorial-series]
+    why: 50+ free workflows aimed at social output
+
+  - key: secourses
+    name: SECourses (Furkan Gozukara)
+    tier: proposed
+    url: https://www.youtube.com/@SECourses
+    topics: [installs, wan, flux, training, runpod]
+
+  - key: purz
+    name: Purz
+    tier: proposed
+    url: https://www.youtube.com/@PurzBeats
+    topics: [comfyui, generative-video, experimental]
+
+  - key: scottdetweiler
+    name: Scott Detweiler
+    tier: proposed
+    url: https://www.youtube.com/@sedetweiler
+    topics: [comfyui, quality, prompting]
+
+  - key: benjiai
+    name: Benji's AI Playground
+    tier: proposed
+    url: https://www.youtube.com/@aifilmtutor
+    topics: [ai-video, comfyui, workflows]
+
+  - key: futurethinker
+    name: Future Thinker
+    tier: proposed
+    url: https://www.youtube.com/@FutureThinkerAI
+    topics: [comfyui, animatediff, video]
+
+  - key: mattwolfe
+    name: Matt Wolfe
+    tier: proposed
+    url: https://www.youtube.com/@mreflow
+    topics: [ai-tools, landscape]
+    why: breadth, not depth; useful for trend detection only
+
+  - key: theoreticallymedia
+    name: Theoretically Media
+    tier: proposed
+    url: https://www.youtube.com/@TheoreticallyMedia
+    topics: [ai-video, filmmaking, tools]
+
+  - key: curiousrefuge
+    name: Curious Refuge
+    tier: proposed
+    url: https://www.youtube.com/@curiousrefuge
+    topics: [ai-filmmaking, storytelling, ads]
+
+  - key: mdmz
+    name: MDMZ
+    tier: proposed
+    url: https://www.youtube.com/@MDMZ
+    topics: [vfx, ai-editing, social-video]
+
+  - key: enigmaticE
+    name: Enigmatic_E
+    tier: proposed
+    url: https://www.youtube.com/@enigmatic_e
+    topics: [comfyui, ai-video, style-transfer]
+
+  - key: bijanbowen
+    name: Bijan Bowen
+    tier: proposed
+    url: https://www.youtube.com/@bijanbowen
+    topics: [local-models, hardware, comfyui]
+
+  - key: promptingpixels
+    name: Prompting Pixels
+    tier: proposed
+    url: https://www.youtube.com/@promptingpixels
+    topics: [comfyui, nodes, tutorials]
+
+  - key: aisearch
+    name: AI Search
+    tier: proposed
+    url: https://www.youtube.com/@theAIsearch
+    topics: [ai-tools, open-source-models]
+
+# Single videos already tracked in packages/library/manifests/monitored-sources.json.
+# yt-learn resolves each to its uploader channel before monitoring.
+# All three resolved on 2026-09-12 and their channels are now first-class entries above.
+seed_videos:
+  - url: https://www.youtube.com/watch?v=IksoPQm7Sog
+    resolved_channel: kiubai
+    title: "Minimax H3 reference mode = NO MORE AI INFLU..."
+  - url: https://www.youtube.com/watch?v=SMAaksR_1qg
+    resolved_channel: dgikaos
+    title: "Weavy AI Master Class for Beginners"
+  - url: https://www.youtube.com/watch?v=mMfvaNZlf3Q
+    resolved_channel: dgikaos
+    title: "10 UGC Ad Formats Every AI Creator Needs" 
