@@ -22,6 +22,7 @@ campaigns:
 ratios:
 - '1:1'
 - '4:5'
+- '9:16'
 background: 'flat #22C55E or #FEFEFE field, hard edged'
 composition: single subject centred with a generous top band for a composited caption
 subject: an original photoreal comedic scene of everyday Kenyan life - matatu, mama mboga stall, barber chair
@@ -38,3 +39,5 @@ negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no num
   stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
   no readable account numbers
 brand: ongea-pesa
+ratio_note: 9:16 added for reel/story use; the composition rule still applies - reserve the quiet zone in the vertical
+  crop, not the 4:5 one

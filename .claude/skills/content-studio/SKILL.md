@@ -1,6 +1,6 @@
 ---
 name: content-studio
-description: Use when producing branded social content end to end — turning an idea, brief or content calendar into generated images, carousels, reels or UGC and scheduling them. Covers brand kits and style grammars, reference harvesting from Instagram/Pinterest/YouTube, the ComfyUI workflow graph, image generation via OpenRouter or open-source ComfyUI models, deterministic 4K brand compositing, and publishing. Trigger on "make content for <brand>", "generate a carousel", "build a content plan", "harvest references", "which workflow should I use", "what do I need to install for <workflow>".
+description: Use when producing branded content end to end for ANY brand — social posts, carousels, reels, UGC, or a music video — turning an idea, song, brief or calendar into generated assets and a schedule. Covers brand kits and style grammars, reference harvesting (Instagram/Pinterest/YouTube), studying a reference creator's grammar without copying their work, the ComfyUI workflow graph, generation via OpenRouter or open-source ComfyUI models, deterministic 4K compositing, song-to-shot-list treatments, and publishing. Trigger on "make content for <brand>", "generate a carousel", "build a content plan", "plan a music video", "turn this song into a treatment", "study this creator", "clone this account's approach", "harvest references", "which workflow should I use", "what do I need to install for <workflow>".
 ---
 
 # Content Studio
@@ -11,6 +11,16 @@ identity — the headline text, the logo, the palette, the disclosure — is app
 deterministically afterwards and is never left to a model.
 
 Repo root: `C:\Users\inkno\Documents\GitHub\comfy`. Run everything with `uv run`.
+
+**Two brands live here, and the system is built to take more.**
+
+| Brand | What it is | Arc | Palette |
+|---|---|---|---|
+| `ongea-pesa` | voice-activated M-Pesa, by NSAIT | none — calendar-driven | `#0A0A0A` ground, `#22C55E` accent |
+| `epalle` | music project | ASALI six-stage | charcoal / ivory / dust gold |
+
+Adding a third means a `brands/<key>/` with `brand.yaml` + `styles/` + `calendar/`. Nothing
+in the pipeline is brand-specific.
 
 ## Standing rules
 
@@ -38,6 +48,10 @@ failure in this codebase or its predecessor.
 | "find references" | `packages/ingest/` |
 | "learn from creators" | `yt_learn.py` |
 | "run a ComfyUI graph" | `packages/comfy-client/client.py` |
+| "analyse these references" | `packages/vision/analyze.py` |
+| "study / clone this creator" | `packages/strategy/study.py` |
+| "plan the next 30 days" | `packages/strategy/plan.py` |
+| "turn this song into a video" | `packages/strategy/treatment.py` |
 
 ## 1. Know the corpus before generating
 
@@ -131,6 +145,50 @@ OpenCLI and **needs the OpenCLI browser extension connected**; when it is not, t
 harvester reports `not_enumerable` with the reason. It refuses every write subcommand
 (follow/like/comment/post) — this is reference gathering, never engagement.
 
+## 7. Analyse references, then derive a grammar
+
+```bash
+uv run --with pillow --with pyyaml packages/vision/analyze.py --brand epalle --path <dir>
+uv run packages/strategy/study.py --path brands/<brand>/references/<handle>
+```
+
+`analyze.py` runs **offline** — palette, crushed blacks, warm ratio, subject quadrant,
+quiet zones, edge density, symmetry; for video, duration/fps/pacing. No API key. That is
+deliberate: a measurement is checkable in a way a description is not, which is what lets a
+brand be *enforced* rather than merely described. Violations against `brand.yaml` come back
+as numbers.
+
+`study.py` is the "clone someone's approach" capability, and it takes the **grammar, never
+the images**. Three refusals are enforced in code, not documented as advice:
+
+- no caption text is retained — only its structural shape (length, hook position, hashtag
+  and emoji density)
+- no subject, location or object is carried forward
+- **it refuses below 12 samples**, because a pattern from four posts is noise wearing a suit
+
+When reporting a derived grammar, say what it is: a set of constraints to compose original
+work inside. Never present it as a template to refill.
+
+## 8. Plan and treat
+
+```bash
+uv run --with pyyaml packages/strategy/plan.py --brand ongea-pesa --days 30
+uv run --with pyyaml packages/strategy/treatment.py --brand epalle \\
+    --audio "~/Downloads/Ancestral Pulse.wav" --title "Ancestral Pulse"
+```
+
+`plan.py` enforces the portfolio policy (60% proven / 25% adjacent / 15% exploratory) and
+makes adjacent briefs vary **exactly one dimension** from a named proven parent — change
+three at once and the result is unattributable, so you learn nothing. It blocks
+`sensitive`/`pitch` items and flags format/ratio mismatches rather than shipping a 4:5
+"reel".
+
+`treatment.py` maps a brand's narrative arc onto a real audio master. It locks the audio and
+frame rate first, derives shot count per stage from that stage's length, and gives every
+shot a generation route (`still_push`, `performance`, `motion_xfer`, `segmented`, `texture`)
+resolved to a real profile or workflow. Hero shots are held; connective shots are cut short
+— even distribution is what makes a music video feel like a slideshow.
+
 ## Gotchas that will bite you
 
 - **`uv run` needs deps declared**: `--with pyyaml`, `--with pillow`.
@@ -143,6 +201,13 @@ harvester reports `not_enumerable` with the reason. It refuses every write subco
 - **`yt-dlp` ignores `--playlist-end` on channel URLs** (it walks every tab). Cap locally.
 - **Node packs have two ids** — `cnr_id` (lowercase registry) and `aux_id` (Owner/Repo).
   Normalise, or one pack becomes two nodes with half its true dependency count.
+- **A fixed shots-per-stage truncates long songs.** A longer master needs MORE shots, not
+  longer ones; fixing the count pinned every shot to the clamp and lost 46s of a 177s song.
+- **Format/ratio is a preference list, not one value.** Instagram accepts 1:1, 4:5 and 3:4
+  for a feed post; only reels and stories are strictly 9:16. Modelling it as a single
+  required ratio flags perfectly publishable 4:5 singles as broken.
+- **A backslash-n inside a bash heredoc that writes Python** becomes a real newline and an
+  unterminated f-string. Use a bare `print()` for the blank line, or the Write tool.
 
 ## Current blockers
 
@@ -154,3 +219,6 @@ harvester reports `not_enumerable` with the reason. It refuses every write subco
 - **Postiz and OpenWA are not installed**; nothing publishes yet.
 - **Instagram publishing** needs the account converted to Professional and linked to a
   Meta Business Page. That is a human step.
+- **EPALLE's shipped cover art violates its own visual language** (30-47% crushed blacks
+  where the brand says never pure black), and its live footage is 29.97fps while treatments
+  default to 24. Both need a decision — see `brands/epalle/FINDINGS.md`.

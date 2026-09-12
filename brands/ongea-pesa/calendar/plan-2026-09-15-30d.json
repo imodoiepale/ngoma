@@ -1,0 +1,648 @@
+[
+  {
+    "day": 1,
+    "date": "2026-09-15",
+    "lane": "proven",
+    "idea_id": 22,
+    "title": "Water Bill",
+    "style_key": "data_magazine_graphic",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 2,
+    "date": "2026-09-16",
+    "lane": "proven",
+    "idea_id": 6,
+    "title": "Fuel Station",
+    "style_key": "apple_fintech_minimal",
+    "format": "single",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 3,
+    "date": "2026-09-17",
+    "lane": "proven",
+    "idea_id": 16,
+    "title": "Hospital Bill",
+    "style_key": "accessibility_story",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "sensitive",
+    "status": "blocked_pending_approval",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": [
+      "a generating agent may not clear its own approval"
+    ]
+  },
+  {
+    "day": 4,
+    "date": "2026-09-18",
+    "lane": "proven",
+    "idea_id": 30,
+    "title": "Safaricom Demo",
+    "style_key": "data_magazine_graphic",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "pitch",
+    "status": "blocked_pending_approval",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": [
+      "a generating agent may not clear its own approval"
+    ]
+  },
+  {
+    "day": 5,
+    "date": "2026-09-19",
+    "lane": "proven",
+    "idea_id": 8,
+    "title": "Mama Mboga",
+    "style_key": "gritty_portrait_onesheet",
+    "format": "reel",
+    "ratio": "9:16",
+    "language_mix": [
+      "en-KE",
+      "sw"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 6,
+    "date": "2026-09-20",
+    "lane": "proven",
+    "idea_id": 29,
+    "title": "Security Guard Demo",
+    "style_key": "apple_fintech_minimal",
+    "format": "single",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 7,
+    "date": "2026-09-21",
+    "lane": "proven",
+    "idea_id": 10,
+    "title": "Rent Payment",
+    "style_key": "apple_fintech_minimal",
+    "format": "single",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "sensitive",
+    "status": "blocked_pending_approval",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": [
+      "a generating agent may not clear its own approval"
+    ]
+  },
+  {
+    "day": 8,
+    "date": "2026-09-22",
+    "lane": "proven",
+    "idea_id": 1,
+    "title": "Mandazi Payment",
+    "style_key": "premium_african_editorial",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 9,
+    "date": "2026-09-23",
+    "lane": "proven",
+    "idea_id": 14,
+    "title": "CEO Walk Payment",
+    "style_key": "luxury_fashion_campaign",
+    "format": "single",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 10,
+    "date": "2026-09-24",
+    "lane": "proven",
+    "idea_id": 9,
+    "title": "Church Offering",
+    "style_key": "chama_community_story",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE",
+      "sw"
+    ],
+    "claim_class": "sensitive",
+    "status": "blocked_pending_approval",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": [
+      "a generating agent may not clear its own approval"
+    ]
+  },
+  {
+    "day": 11,
+    "date": "2026-09-25",
+    "lane": "proven",
+    "idea_id": 28,
+    "title": "Salon Payment",
+    "style_key": "kenyan_meme_original",
+    "format": "single",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE",
+      "sw"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 12,
+    "date": "2026-09-26",
+    "lane": "proven",
+    "idea_id": 23,
+    "title": "Electricity Token",
+    "style_key": "data_magazine_graphic",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 13,
+    "date": "2026-09-27",
+    "lane": "proven",
+    "idea_id": 27,
+    "title": "Event Ticket",
+    "style_key": "cinematic_african_realism",
+    "format": "reel",
+    "ratio": "9:16",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 14,
+    "date": "2026-09-28",
+    "lane": "proven",
+    "idea_id": 15,
+    "title": "Chama Contribution",
+    "style_key": "chama_community_story",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE",
+      "sw"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 15,
+    "date": "2026-09-29",
+    "lane": "proven",
+    "idea_id": 24,
+    "title": "Restaurant Bill",
+    "style_key": "kenyan_meme_original",
+    "format": "single",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE",
+      "sw"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 16,
+    "date": "2026-09-30",
+    "lane": "proven",
+    "idea_id": 25,
+    "title": "Construction Site",
+    "style_key": "gritty_portrait_onesheet",
+    "format": "single",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 17,
+    "date": "2026-10-01",
+    "lane": "proven",
+    "idea_id": 20,
+    "title": "Farmer Payment",
+    "style_key": "gritty_portrait_onesheet",
+    "format": "reel",
+    "ratio": "9:16",
+    "language_mix": [
+      "en-KE",
+      "sw"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 18,
+    "date": "2026-10-02",
+    "lane": "proven",
+    "idea_id": 7,
+    "title": "Barber Shop",
+    "style_key": "kenyan_meme_original",
+    "format": "single",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE",
+      "sw"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": []
+  },
+  {
+    "day": 19,
+    "date": "2026-10-03",
+    "lane": "adjacent",
+    "idea_id": 22,
+    "title": "Water Bill",
+    "style_key": "data_magazine_graphic",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": "hook",
+    "parent_id": 22,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": [
+      "vary ONLY `hook` against day 1; changing more than one makes the result unattributable"
+    ]
+  },
+  {
+    "day": 20,
+    "date": "2026-10-04",
+    "lane": "adjacent",
+    "idea_id": 6,
+    "title": "Fuel Station",
+    "style_key": "apple_fintech_minimal",
+    "format": "single",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": "language",
+    "parent_id": 6,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": [
+      "vary ONLY `language` against day 2; changing more than one makes the result unattributable"
+    ]
+  },
+  {
+    "day": 21,
+    "date": "2026-10-05",
+    "lane": "adjacent",
+    "idea_id": 16,
+    "title": "Hospital Bill",
+    "style_key": "accessibility_story",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "sensitive",
+    "status": "blocked_pending_approval",
+    "varies": "sheng_intensity",
+    "parent_id": 16,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": [
+      "a generating agent may not clear its own approval",
+      "vary ONLY `sheng_intensity` against day 3; changing more than one makes the result unattributable"
+    ]
+  },
+  {
+    "day": 22,
+    "date": "2026-10-06",
+    "lane": "adjacent",
+    "idea_id": 30,
+    "title": "Safaricom Demo",
+    "style_key": "retro_relic_print",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "pitch",
+    "status": "blocked_pending_approval",
+    "varies": "style_family",
+    "parent_id": 30,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": [
+      "a generating agent may not clear its own approval",
+      "vary ONLY `style_family` against day 4; changing more than one makes the result unattributable"
+    ]
+  },
+  {
+    "day": 23,
+    "date": "2026-10-07",
+    "lane": "adjacent",
+    "idea_id": 8,
+    "title": "Mama Mboga",
+    "style_key": "gritty_portrait_onesheet",
+    "format": "reel",
+    "ratio": "9:16",
+    "language_mix": [
+      "en-KE",
+      "sw"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": "format",
+    "parent_id": 8,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": [
+      "vary ONLY `format` against day 5; changing more than one makes the result unattributable"
+    ]
+  },
+  {
+    "day": 24,
+    "date": "2026-10-08",
+    "lane": "adjacent",
+    "idea_id": 29,
+    "title": "Security Guard Demo",
+    "style_key": "apple_fintech_minimal",
+    "format": "single",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": "cta",
+    "parent_id": 29,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": [
+      "vary ONLY `cta` against day 6; changing more than one makes the result unattributable"
+    ]
+  },
+  {
+    "day": 25,
+    "date": "2026-10-09",
+    "lane": "adjacent",
+    "idea_id": 10,
+    "title": "Rent Payment",
+    "style_key": "apple_fintech_minimal",
+    "format": "single",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "sensitive",
+    "status": "blocked_pending_approval",
+    "varies": "first_slide",
+    "parent_id": 10,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": [
+      "a generating agent may not clear its own approval",
+      "vary ONLY `first_slide` against day 7; changing more than one makes the result unattributable"
+    ]
+  },
+  {
+    "day": 26,
+    "date": "2026-10-10",
+    "lane": "adjacent",
+    "idea_id": 1,
+    "title": "Mandazi Payment",
+    "style_key": "premium_african_editorial",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": "hook",
+    "parent_id": 1,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": [
+      "vary ONLY `hook` against day 8; changing more than one makes the result unattributable"
+    ]
+  },
+  {
+    "day": 27,
+    "date": "2026-10-11",
+    "lane": "exploratory",
+    "idea_id": 19,
+    "title": "Business Card Payment",
+    "style_key": "crimson_monolith",
+    "format": "single",
+    "ratio": "1:1",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": [
+      "exploratory lane — budgeted to be wrong; do not judge it on the same metric as the proven lane"
+    ]
+  },
+  {
+    "day": 28,
+    "date": "2026-10-12",
+    "lane": "exploratory",
+    "idea_id": 13,
+    "title": "Gen Z vs Old Way",
+    "style_key": "founder_documentary",
+    "format": "carousel",
+    "ratio": "4:5",
+    "language_mix": [
+      "en-KE"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": [
+      "exploratory lane — budgeted to be wrong; do not judge it on the same metric as the proven lane"
+    ]
+  },
+  {
+    "day": 29,
+    "date": "2026-10-13",
+    "lane": "exploratory",
+    "idea_id": 2,
+    "title": "Stranger 100 Bob",
+    "style_key": "future_african_fintech",
+    "format": "single",
+    "ratio": "1:1",
+    "language_mix": [
+      "en-KE",
+      "sw"
+    ],
+    "claim_class": "sensitive",
+    "status": "blocked_pending_approval",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "hosted (single still)",
+    "grammar_constraints": [],
+    "notes": [
+      "a generating agent may not clear its own approval",
+      "exploratory lane — budgeted to be wrong; do not judge it on the same metric as the proven lane"
+    ]
+  },
+  {
+    "day": 30,
+    "date": "2026-10-14",
+    "lane": "exploratory",
+    "idea_id": 8,
+    "title": "Mama Mboga",
+    "style_key": "kinetic_typography_plate",
+    "format": "reel",
+    "ratio": "9:16",
+    "language_mix": [
+      "en-KE",
+      "sw"
+    ],
+    "claim_class": "standard",
+    "status": "ready",
+    "varies": null,
+    "parent_id": null,
+    "route_hint": "comfy (edit/identity/motion)",
+    "grammar_constraints": [],
+    "notes": [
+      "exploratory lane — budgeted to be wrong; do not judge it on the same metric as the proven lane"
+    ]
+  }
+]

@@ -22,6 +22,7 @@ campaigns:
 ratios:
 - '4:5'
 - '3:4'
+- '9:16'
 background: defocused real workplace
 composition: extreme close portrait filling the lower two-thirds, a clear band above for a large composited wordmark
 subject: a weathered, dignified Kenyan tradesperson looking to camera, real workwear, real dust
@@ -38,3 +39,5 @@ negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no num
   stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
   no readable account numbers
 brand: ongea-pesa
+ratio_note: 9:16 added for reel/story use; the composition rule still applies - reserve the quiet zone in the vertical
+  crop, not the 4:5 one

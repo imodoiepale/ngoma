@@ -22,6 +22,7 @@ campaigns:
 ratios:
 - '4:5'
 - '1:1'
+- '9:16'
 background: a warm real interior
 composition: a group of three to five around a table, copy band across the top third
 subject: a Kenyan chama or family group mid-conversation, money-adjacent objects present but never readable
@@ -38,3 +39,5 @@ negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no num
   stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
   no readable account numbers
 brand: ongea-pesa
+ratio_note: 9:16 added for reel/story use; the composition rule still applies - reserve the quiet zone in the vertical
+  crop, not the 4:5 one

@@ -22,6 +22,7 @@ campaigns:
 ratios:
 - '4:5'
 - '1:1'
+- '9:16'
 background: '#FEFEFE with a faint 12-column grid'
 composition: abstract chart-like forms only - no numbers, no labels; copy composited later
 subject: abstract geometric bar and arc forms suggesting a comparison, dimensional paper-cut feel
@@ -39,3 +40,5 @@ negative_prompt: no logos of any kind, no wordmarks, no text, no letters, no num
   stereotypes, no distorted hands, no extra fingers, no mangled faces, no celebrity likeness, no real till numbers,
   no readable account numbers, no numerals, no axis labels, no legends
 brand: ongea-pesa
+ratio_note: 9:16 added for reel/story use; the composition rule still applies - reserve the quiet zone in the vertical
+  crop, not the 4:5 one
