@@ -1,0 +1,69 @@
+# Where the SOURCE for each node pack actually lives.
+#
+# workflows/*.json are inert without these. The graph knows a workflow *requires*
+# `comfyui-h3-motion-context`; this file is what turns that into an install action.
+#
+# `local_source` entries are NOT in this repo — see docs/LICENSING.md before vendoring
+# any of them into a distributed artefact.
+
+version: 1
+
+packs:
+  comfyui-h3-motion-context:
+    upstream: https://github.com/seitanism/ComfyUI-H3-Motion-Context-MultiRef
+    forked_from: https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context
+    license: GPL-3.0
+    local_source: "Codex/2026-09-06/what-this-release-does-accepts-up-2/work/h3"
+    node_count: 37
+    notes: >
+      ~480 KB of Python and the ONLY component in the whole project with a test suite
+      (tests/, pytest.ini, .github/workflows). Copyleft — do not bundle into a paid
+      download without shipping source under GPL-3.0.
+
+  matrix-power-nodes:
+    upstream: https://github.com/imodoiepale/matrix-power-nodes
+    license: MIT
+    local_source: "Codex/2026-09-06/what-this-release-does-accepts-up-2/work/matrix-power-nodes"
+    node_count: 2
+    notes: >
+      The paid-provider surface (WaveSpeed). nodes/*.py and _core/runtime.py are
+      COMPILER-GENERATED ("regenerate instead of hand-editing") and the compiler is not
+      in the repo, so new nodes go in a clean sibling pack instead. Its NODES.md is the
+      source of the real prices in packages/image-router/pricing.py, including the
+      declared per-call ceiling of $0.886.
+
+  # Everything below installs normally through ComfyUI-Manager by its registry id.
+  registry_installable:
+    - comfyui-kjnodes            # 31 workflows depend on it - install this first
+    - comfyui-videohelpersuite   # 29
+    - rgthree-comfy
+    - comfyui_comfyroll_customnodes   # provides `CR Prompt List`, the batch driver
+    - comfyui-easy-use
+    - comfyui-impact-pack
+    - comfyui-impact-subpack
+    - comfyui-inspire-pack
+    - comfyui_controlnet_aux
+    - res4lyf
+    - efficiency-nodes-comfyui
+    - comfyui-wanvideowrapper
+    - comfyui-scail-pose
+    - comfyui-wananimatepreprocess
+    - comfyui-frame-interpolation
+    - comfyui-ltxvideo
+    - comfyui-sam3
+    - comfyui_essentials
+    - comfyui_faceanalysis
+    - comfyui_ultimatesdupscale
+    - comfyui-multigpu
+    - comfyui-custom-scripts
+    - comfyui_starnodes
+    - comfyui-painteri2v
+    - comfyui-logic
+    - comfyui_nvidia_rtx_nodes    # needs `pip install nvidia-vfx`
+    - comfyui-unsafe-torch        # required to load the Ultralytics .pt detector pickles
+
+  hard_dependency_note: >
+    PathchSageAttentionKJ appears in nearly every workflow, so SageAttention is a hard
+    dependency for practical throughput. It compiles for ONE compute capability, and the
+    venv lives on a shared network volume - a pod on a different GPU architecture will
+    import it fine and fail at runtime. See infra/runpod/install_sage_a100.sh.

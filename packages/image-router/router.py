@@ -26,7 +26,9 @@ from typing import Any, Literal
 
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "packages" / "brandkit"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from brandkit import GenRequest, load_brand, build_request  # noqa: E402
+from pricing import quote  # noqa: E402
 
 Backend = Literal["hosted", "comfy", "auto"]
 
@@ -175,7 +177,15 @@ def choose(req: GenRequest, backend: Backend = "auto", profile: str | None = Non
         target = spec["chain"][0]
         if not os.environ.get("OPENROUTER_API_KEY"):
             notes.append("OPENROUTER_API_KEY not set — dry-run only until it is in the secret store.")
-        cost = {"1K": 0.01, "2K": 0.04, "4K": 0.12}.get(spec["resolution"])
+        # Real contract prices, not guesses. See packages/image-router/pricing.py.
+        q = quote(target, spec["resolution"].lower())
+        if q is None:
+            cost = None
+            notes.append(f"no contract price for {target} — cost UNKNOWN, not zero")
+        else:
+            cost = q.usd
+            notes.append(f"price basis: {q.basis} (WaveSpeed contract 2026-07-29; "
+                         f"OpenRouter may differ)")
     else:
         prof = profile or _pick_comfy_profile(caps, req)
         if prof not in COMFY_PROFILES:
@@ -269,17 +279,28 @@ def _cli() -> None:
     b = load_brand(a.brand)
 
     if a.plan_all:
-        rows, by_backend, cost = [], {}, 0.0
+        rows, by_backend, cost, unknown = [], {}, 0.0, 0
         for it in b.calendar["items"]:
             req = build_request(b, it["id"])
             p = choose(req, a.backend, a.profile)
             by_backend[p.backend] = by_backend.get(p.backend, 0) + 1
-            cost += p.estimated_cost_usd or 0.0
+            if p.estimated_cost_usd is None:
+                unknown += 1
+            else:
+                cost += p.estimated_cost_usd
             flag = "!" if req.requires_human_approval else " "
             rows.append(f"{it['id']:>3}{flag} {it['idea']:<24} {p.backend:<7} {p.profile:<16} {Path(p.target).name}")
         print("\n".join(rows))
-        print(f"\nbackends: {by_backend}   est. hosted cost: ${cost:.2f}   "
-              f"needs approval: {sum(1 for i in b.calendar['items'] if i['claim_class'] != 'standard')}")
+        approve = sum(1 for i in b.calendar["items"] if i["claim_class"] != "standard")
+        print()
+        print(f"backends: {by_backend}")
+        print(f"hosted cost: ${cost:.2f} for ONE image each"
+              + (f"  ({unknown} without a contract price)" if unknown else ""))
+        print("  a carousel is 5-10 slides, so real hosted spend is 5-10x that line;")
+        print("  comfy items cost GPU time, not per-image fees.")
+        print(f"needs human approval: {approve}")
+        print("prices: WaveSpeed route contract 2026-07-29 (see pricing.py).")
+        print("        OpenRouter's own rates differ - reconcile before budgeting.")
         return
 
     if a.idea is None and not a.style:

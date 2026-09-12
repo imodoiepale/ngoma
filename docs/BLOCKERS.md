@@ -47,12 +47,29 @@ whatever it does better rather than duplicating it.
 current. Fork, unpin, install the pack set the graph lists, keep the per-architecture
 SageAttention guard.
 
-## 9. Not yet built
+## 9. Licence conflict blocks bundling — YOU decide, before any paid distribution
+Three licences in one shipped system. `work/h3/` (37 nodes, 10 workflows depend on it) is
+**GPL-3.0**; `matrix-power-nodes` is MIT; `studio-ui` is MIT; the Icekiub workflow packs
+carry **no stated licence at all**, which means no distribution rights by default.
+
+Running any of it to make content you sell is fine. Bundling it into a course download,
+a Docker image or a RunPod template is distribution and triggers GPL-3.0 source
+obligations — and, for the Icekiub graphs, has no permission at all.
+
+This repo also has no LICENSE file yet. See `docs/LICENSING.md`.
+
+## 10. Node pack source is outside this repo — ME, when infra lands
+The workflow JSONs are inert without their node packs. Two are not installable from the
+ComfyUI registry and live only in the old Codex tree: `work/h3` (GPL-3.0) and
+`work/matrix-power-nodes` (MIT, compiler-generated). Recorded in
+`packages/library/node_pack_sources.yaml` with the other 27 registry-installable packs.
+
+## 11. Not yet built
 Phase 5 (vision, strategy, Graphiti memory), Phase 6 (Postiz, OpenWA publishing),
 Phase 7 (voice control + TTS voiceover), Phase 8 (Hermes + Paperclip orchestration).
 Hermes and Paperclip are NOT installed; `GitHub\paperclip` is an empty directory.
 
-## 10. Deferred by decision
+## 12. Deferred by decision
 Meta AI via OpenWA as an image provider. Region-gated, no job ids, ToS-fragile, and it
 would be the only provider with no reproducibility guarantee. Revisit only once Phases
 0-6 are stable.
