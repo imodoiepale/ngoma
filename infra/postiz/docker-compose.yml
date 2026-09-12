@@ -1,0 +1,111 @@
+# Postiz on a Hostinger VPS.
+#
+# Postiz ships as one container that runs frontend, backend, workers and cron together.
+# It needs Postgres and Redis alongside. Caddy terminates TLS and gets certificates
+# automatically, which is the least fiddly option on a fresh VPS.
+#
+# Deploy: see README.md in this directory. Do NOT expose 5432 or 6379 publicly.
+
+services:
+  postiz:
+    image: ghcr.io/gitroomhq/postiz-app:latest
+    container_name: postiz
+    restart: always
+    environment:
+      # MAIN_URL must be the public origin, and NEXT_PUBLIC_BACKEND_URL must be that
+      # origin + /api. Getting these wrong is the single most common self-host failure:
+      # the UI loads and every API call 404s.
+      MAIN_URL: "https://${POSTIZ_DOMAIN}"
+      FRONTEND_URL: "https://${POSTIZ_DOMAIN}"
+      NEXT_PUBLIC_BACKEND_URL: "https://${POSTIZ_DOMAIN}/api"
+      JWT_SECRET: "${POSTIZ_JWT_SECRET}"
+
+      DATABASE_URL: "postgresql://postiz:${POSTGRES_PASSWORD}@postiz-postgres:5432/postiz"
+      REDIS_URL: "redis://postiz-redis:6379"
+
+      BACKEND_INTERNAL_URL: "http://localhost:3000"
+      IS_GENERAL: "true"            # required for the self-hosted (non-cloud) build
+      DISABLE_REGISTRATION: "true"  # turn OFF only while creating your first account
+
+      STORAGE_PROVIDER: "local"
+      UPLOAD_DIRECTORY: "/uploads"
+      NEXT_PUBLIC_UPLOAD_DIRECTORY: "/uploads"
+
+      # The public API rate limit is 90 posts/hour by default. A 30-day carousel plan is
+      # well under that, but a bulk backfill is not.
+      API_LIMIT: "${POSTIZ_API_LIMIT:-90}"
+
+      # Per-provider OAuth credentials. Instagram publishing goes through the Meta Graph
+      # API, so it needs a Facebook app AND an Instagram Professional account linked to a
+      # Page — see README.md.
+      FACEBOOK_APP_ID: "${FACEBOOK_APP_ID:-}"
+      FACEBOOK_APP_SECRET: "${FACEBOOK_APP_SECRET:-}"
+      X_API_KEY: "${X_API_KEY:-}"
+      X_API_SECRET: "${X_API_SECRET:-}"
+      LINKEDIN_CLIENT_ID: "${LINKEDIN_CLIENT_ID:-}"
+      LINKEDIN_CLIENT_SECRET: "${LINKEDIN_CLIENT_SECRET:-}"
+    volumes:
+      - postiz-config:/config/
+      - postiz-uploads:/uploads/
+    networks: [postiz-net]
+    depends_on:
+      postiz-postgres: {condition: service_healthy}
+      postiz-redis: {condition: service_healthy}
+    # No public port mapping. Caddy reaches it over the internal network.
+    expose: ["5000"]
+
+  postiz-postgres:
+    image: postgres:17-alpine
+    container_name: postiz-postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+      POSTGRES_USER: postiz
+      POSTGRES_DB: postiz
+    volumes:
+      - postgres-volume:/var/lib/postgresql/data
+    networks: [postiz-net]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postiz -d postiz"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  postiz-redis:
+    image: redis:7.2-alpine
+    container_name: postiz-redis
+    restart: always
+    volumes:
+      - postiz-redis-data:/data
+    networks: [postiz-net]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: postiz-caddy
+    restart: always
+    ports: ["80:80", "443:443"]
+    environment:
+      POSTIZ_DOMAIN: "${POSTIZ_DOMAIN}"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    networks: [postiz-net]
+    depends_on: [postiz]
+
+volumes:
+  postgres-volume:
+  postiz-redis-data:
+  postiz-config:
+  postiz-uploads:
+  caddy-data:
+  caddy-config:
+
+networks:
+  postiz-net:
+    external: false

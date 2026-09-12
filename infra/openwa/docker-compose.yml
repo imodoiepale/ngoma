@@ -1,0 +1,36 @@
+# OpenWA on the same Hostinger VPS as Postiz.
+#
+# Bound to 127.0.0.1 ON PURPOSE. An OpenWA instance reachable from the internet is a
+# hijacked WhatsApp account — anyone who finds it can send as you. Reach it over an SSH
+# tunnel, or put it behind Caddy with auth. Never publish the port.
+#
+# v4.76.0 is pinned: OpenWA's own docs describe v5 as alpha.
+
+services:
+  openwa:
+    image: openwa/wa-automate:4.76.0
+    container_name: openwa
+    restart: unless-stopped
+    command: >
+      --session-id ${OPENWA_SESSION_ID:-epalle}
+      --api-host 0.0.0.0
+      --api-port 8002
+      --key ${OPENWA_API_KEY}
+      --session-data-path /sessions
+      --popup 0
+      --headless
+      --skip-broken-methods
+      --disable-spins
+    ports:
+      - "127.0.0.1:8002:8002"     # localhost ONLY
+    volumes:
+      - ./sessions:/sessions
+      - ./media:/media
+    environment:
+      TZ: "${TZ:-Africa/Nairobi}"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8002/session/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 90s

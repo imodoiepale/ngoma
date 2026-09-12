@@ -1,0 +1,25 @@
+# Caddy gets and renews TLS certificates automatically. The only requirement is that
+# POSTIZ_DOMAIN already resolves to this VPS's public IP before you start the stack.
+{$POSTIZ_DOMAIN} {
+	encode gzip
+
+	# Postiz serves the API under /api and the UI at the root, from the same container.
+	handle /api/* {
+		uri strip_prefix /api
+		reverse_proxy postiz:3000
+	}
+
+	handle {
+		reverse_proxy postiz:4200
+	}
+
+	# Uploaded media.
+	handle /uploads/* {
+		reverse_proxy postiz:5000
+	}
+
+	log {
+		output file /data/access.log
+		format json
+	}
+}

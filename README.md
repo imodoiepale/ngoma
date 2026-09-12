@@ -16,6 +16,7 @@ uv run studio.py plan            # plan all 30 Ongea Pesa ideas (costs nothing)
 uv run studio.py check           # fail if anything secret-shaped is tracked
 ```
 
+- **`docs/WHAT-THIS-DOES.md` — start here: what the system is and how it fits together**
 - `docs/SETUP.md` — A-Z, with human-only steps marked **[you]**
 - `docs/BLOCKERS.md` — the honest register of what is not working, each item assigned
 - `shared-skills/approved/content-studio/SKILL.md` — how to drive the pipeline
@@ -31,5 +32,7 @@ uv run studio.py check           # fail if anything secret-shaped is tracked
 | `comfy-client` | validate + run ComfyUI graphs on local / pod / serverless |
 | `ingest` | Instagram, Pinterest and YouTube harvesters, one schema |
 | `library` | 602-node corpus graph + query tools |
-| `publish/whop` | course publisher (ported, never run live) |
+| `vision` | offline reference analysis: palette, composition, pacing, brand-rule checks |
+| `strategy` | study a creator's grammar, plan 30 days, turn a song into a shot list |
+| `publish` | Postiz (social), OpenWA (WhatsApp Status), Whop (course) - draft by default |
 | `studio-ui` | Next.js canvas (ported) |
