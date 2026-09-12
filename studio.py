@@ -22,9 +22,18 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent
 ENV = {**os.environ, "PYTHONIOENCODING": "utf-8"}
 
-SECRET_PATTERNS = r"apik_[A-Za-z0-9]{8}|rpa_[A-Z0-9]{20}|BEGIN OPENSSH PRIVATE|BEGIN RSA PRIVATE"
+# Assembled from fragments so this file does not match its own scan. Writing the
+# literal here made `check` fail on itself — a false positive teaches people to ignore
+# the check, which is worse than not having one.
+SECRET_PATTERNS = "|".join([
+    "apik" + r"_[A-Za-z0-9]{8}",
+    "rpa" + r"_[A-Z0-9]{20}",
+    "BEGIN OPENSSH PRIV" + "ATE",
+    "BEGIN RSA PRIV" + "ATE",
+])
 # Docs and the skill describe these shapes on purpose; they hold no real values.
-SECRET_EXCLUDES = [":(exclude)docs/*", ":(exclude)shared-skills/*", ":(exclude).claude/*"]
+SECRET_EXCLUDES = [":(exclude)docs/*", ":(exclude)shared-skills/*",
+                   ":(exclude).claude/*", ":(exclude).agents/*", ":(exclude)studio.py"]
 
 SKILL_TARGETS = [".claude/skills", ".agents/skills"]
 
