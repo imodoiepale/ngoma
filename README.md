@@ -20,6 +20,8 @@ uv run studio.py loop            # the whole pipeline on fixture data
 
 - **`docs/ABOUT.md` — what this project is about and why it is built this way**
 - `docs/WHAT-THIS-DOES.md` — the system tour: what the system is and how it fits together**
+- `docs/ROADMAP.md` — every step to go live, in dependency order, with owners and gates
+- `graphify-out/graph.html` — the whole system as an interactive graph (1,493 nodes, 103 communities). Different from `graph/`, which is the typed ComfyUI dependency graph the pipeline itself queries
 - `docs/SETUP.md` — A-Z, with human-only steps marked **[you]**
 - `docs/BLOCKERS.md` — the honest register of what is not working, each item assigned
 - `shared-skills/approved/content-studio/SKILL.md` — how to drive the pipeline

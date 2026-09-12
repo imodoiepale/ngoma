@@ -1,0 +1,1432 @@
+{
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\.graphify_detect.json": {
+    "mtime": 1789237590.63921,
+    "ast_hash": "42d332551bc2822363c509adab801f48",
+    "semantic_hash": "42d332551bc2822363c509adab801f48"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\calendar\\treatment-ancestral-pulse.json": {
+    "mtime": 1789228128.9462235,
+    "ast_hash": "faa8f9dd1be83ab6ecd0f2a2e7f61a6f",
+    "semantic_hash": "faa8f9dd1be83ab6ecd0f2a2e7f61a6f"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\references\\flowers-falling-footage\\grammar.json": {
+    "mtime": 1789228252.6717083,
+    "ast_hash": "6fec5957b1b6b2840fad7a950510f4d8",
+    "semantic_hash": "6fec5957b1b6b2840fad7a950510f4d8"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\calendar\\plan-2026-09-15-30d.json": {
+    "mtime": 1789228467.8245537,
+    "ast_hash": "cada7fd22c38d28a3ffa5771e08f9866",
+    "semantic_hash": "cada7fd22c38d28a3ffa5771e08f9866"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\graph\\graph.json": {
+    "mtime": 1789236951.797009,
+    "ast_hash": "a1f981efab0009b0f332023eeaa4cd65",
+    "semantic_hash": "a1f981efab0009b0f332023eeaa4cd65"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\active-pod.json": {
+    "mtime": 1789215914.4702408,
+    "ast_hash": "44e9ea0c8defc409af434621588409da",
+    "semantic_hash": "44e9ea0c8defc409af434621588409da"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\audit_models.py": {
+    "mtime": 1789215914.5335593,
+    "ast_hash": "e78c6654d833cd4eb88c85cac5da50d4",
+    "semantic_hash": "e78c6654d833cd4eb88c85cac5da50d4"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\disable_sage_workflow_nodes.py": {
+    "mtime": 1789215914.6027434,
+    "ast_hash": "a066e03cc4f5e2cbd94f39f048fd31ce",
+    "semantic_hash": "a066e03cc4f5e2cbd94f39f048fd31ce"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\download-plan.json": {
+    "mtime": 1789215914.3535912,
+    "ast_hash": "3752301cca9174c864a274cba8db2dc4",
+    "semantic_hash": "3752301cca9174c864a274cba8db2dc4"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\download-workflow-models.py": {
+    "mtime": 1789215914.512051,
+    "ast_hash": "c0ddb012944d4bd1d9f87ae51a79ee88",
+    "semantic_hash": "c0ddb012944d4bd1d9f87ae51a79ee88"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\download_planned.py": {
+    "mtime": 1789215914.5160432,
+    "ast_hash": "8019f74e48431a88e3546787e2371b2c",
+    "semantic_hash": "8019f74e48431a88e3546787e2371b2c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\guard_kjnodes_sage.py": {
+    "mtime": 1789215914.4522433,
+    "ast_hash": "0b2aabfc0bf24ed73ca4d475b3d1eb66",
+    "semantic_hash": "0b2aabfc0bf24ed73ca4d475b3d1eb66"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\handler.py": {
+    "mtime": 1789215914.4502406,
+    "ast_hash": "592909199dadcffe7c74df187519a4ff",
+    "semantic_hash": "592909199dadcffe7c74df187519a4ff"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\install-sageattention.sh": {
+    "mtime": 1789215914.5515592,
+    "ast_hash": "bc8b4512c70f8dd2416cd8263d198c84",
+    "semantic_hash": "bc8b4512c70f8dd2416cd8263d198c84"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\install_sage_a100.sh": {
+    "mtime": 1789215914.609302,
+    "ast_hash": "2abd9433f6f917752914fcde98c43701",
+    "semantic_hash": "2abd9433f6f917752914fcde98c43701"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\model-gap-report.json": {
+    "mtime": 1789215914.4682395,
+    "ast_hash": "d42d1c62393fd92eab2cfd5c0d4fc736",
+    "semantic_hash": "d42d1c62393fd92eab2cfd5c0d4fc736"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\model-gap-report2.json": {
+    "mtime": 1789215914.51002,
+    "ast_hash": "e5be6db2062598b216f8a93770571449",
+    "semantic_hash": "e5be6db2062598b216f8a93770571449"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\provision_pod.py": {
+    "mtime": 1789215914.5355585,
+    "ast_hash": "dd1777afb6f5e17232cc0a06228e39a3",
+    "semantic_hash": "dd1777afb6f5e17232cc0a06228e39a3"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\resolve_models.py": {
+    "mtime": 1789215914.3215947,
+    "ast_hash": "f619ec1afa3fbe192ea8f839fd5f7e2e",
+    "semantic_hash": "f619ec1afa3fbe192ea8f839fd5f7e2e"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\retry_last_without_sage.py": {
+    "mtime": 1789215914.6010327,
+    "ast_hash": "2dccfc2e46aab9ed5bff41f2f753a7dd",
+    "semantic_hash": "2dccfc2e46aab9ed5bff41f2f753a7dd"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\run_workflow.py": {
+    "mtime": 1789215914.4322388,
+    "ast_hash": "b767ab20a9bafa27cd5ce0857fbc1c3d",
+    "semantic_hash": "b767ab20a9bafa27cd5ce0857fbc1c3d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\runpod-endpoint.json": {
+    "mtime": 1789215914.5185537,
+    "ast_hash": "9553340fd11963c647ec02f5bf96497f",
+    "semantic_hash": "9553340fd11963c647ec02f5bf96497f"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\runpod-template.json": {
+    "mtime": 1789215914.5964735,
+    "ast_hash": "278868333dac898f173358b2d5ac8be0",
+    "semantic_hash": "278868333dac898f173358b2d5ac8be0"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\runpod_api.py": {
+    "mtime": 1789215914.547559,
+    "ast_hash": "0abc704532d6554289fbb91ce0a6b498",
+    "semantic_hash": "0abc704532d6554289fbb91ce0a6b498"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\serverless-dry-run-result.json": {
+    "mtime": 1789215914.3175933,
+    "ast_hash": "cb29732d23cbfcf4efb41cf2d38418b1",
+    "semantic_hash": "cb29732d23cbfcf4efb41cf2d38418b1"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\serverless-smoke-result.json": {
+    "mtime": 1789215914.5695615,
+    "ast_hash": "da4ab88d36e62fb57b9a4b7fdb2cc46e",
+    "semantic_hash": "da4ab88d36e62fb57b9a4b7fdb2cc46e"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\set_secret.py": {
+    "mtime": 1789215914.4822454,
+    "ast_hash": "e9bd04199cc322d0a97646105f22538f",
+    "semantic_hash": "e9bd04199cc322d0a97646105f22538f"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\setup-pod.sh": {
+    "mtime": 1789215914.4272447,
+    "ast_hash": "d9ec5a8f85f9384a74bde3a98d939954",
+    "semantic_hash": "d9ec5a8f85f9384a74bde3a98d939954"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\smoke-test.json": {
+    "mtime": 1789215914.3598342,
+    "ast_hash": "2fc75a8780ac9a870f78e092ac9d4992",
+    "semantic_hash": "2fc75a8780ac9a870f78e092ac9d4992"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\start-comfy.sh": {
+    "mtime": 1789215914.5415668,
+    "ast_hash": "148710bb7efa0a6f1a64e7711976e440",
+    "semantic_hash": "148710bb7efa0a6f1a64e7711976e440"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\start-serverless.sh": {
+    "mtime": 1789215914.4182408,
+    "ast_hash": "7168f7fda5bb34fa4e14a2e32eeb2529",
+    "semantic_hash": "7168f7fda5bb34fa4e14a2e32eeb2529"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\sync-workflows.ps1": {
+    "mtime": 1789215914.4852629,
+    "ast_hash": "a3fef05013b8e214d429a43739ad9d91",
+    "semantic_hash": "a3fef05013b8e214d429a43739ad9d91"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\analytics\\collect.py": {
+    "mtime": 1789236086.8612237,
+    "ast_hash": "6347c5afd4e291180a269a241ab67c1c",
+    "semantic_hash": "6347c5afd4e291180a269a241ab67c1c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\analytics\\learn.py": {
+    "mtime": 1789237159.162376,
+    "ast_hash": "78cf4164bc1664f95af91236aae03f7b",
+    "semantic_hash": "78cf4164bc1664f95af91236aae03f7b"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\brandkit\\brandkit.py": {
+    "mtime": 1789216407.981143,
+    "ast_hash": "af769c9620f4c0efffa0e9c955eddf3c",
+    "semantic_hash": "af769c9620f4c0efffa0e9c955eddf3c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\comfy-client\\client.py": {
+    "mtime": 1789217707.9323108,
+    "ast_hash": "0bb314c8b55355a09c8550913827d120",
+    "semantic_hash": "0bb314c8b55355a09c8550913827d120"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\compositor\\compositor.py": {
+    "mtime": 1789216538.2504852,
+    "ast_hash": "4feb817c1ce4af2bb6542d16090826e6",
+    "semantic_hash": "4feb817c1ce4af2bb6542d16090826e6"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\image-router\\pricing.py": {
+    "mtime": 1789218150.8918774,
+    "ast_hash": "8b042f70468bf24e0d8f822bac9113dd",
+    "semantic_hash": "8b042f70468bf24e0d8f822bac9113dd"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\image-router\\router.py": {
+    "mtime": 1789218222.336091,
+    "ast_hash": "eb9cf5ef5a485864bf167bc81b181c1b",
+    "semantic_hash": "eb9cf5ef5a485864bf167bc81b181c1b"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\ingest\\ig_harvest.py": {
+    "mtime": 1789216889.281018,
+    "ast_hash": "afa12594603096a757dfc961552d3533",
+    "semantic_hash": "afa12594603096a757dfc961552d3533"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\ingest\\pin_harvest.py": {
+    "mtime": 1789216889.2830195,
+    "ast_hash": "24603a980a9997a33aa43d0f1f014c57",
+    "semantic_hash": "24603a980a9997a33aa43d0f1f014c57"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\ingest\\schema.py": {
+    "mtime": 1789216889.3857024,
+    "ast_hash": "5206c327213f496df641ef62707e353f",
+    "semantic_hash": "5206c327213f496df641ef62707e353f"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\ingest\\yt_learn.py": {
+    "mtime": 1789217471.9127727,
+    "ast_hash": "fbe74995d23ca2a49e25aa88d3d07650",
+    "semantic_hash": "fbe74995d23ca2a49e25aa88d3d07650"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\corpus\\youtube\\dgikaos\\subs\\Jzwwqo7D4gE.info.json": {
+    "mtime": 1789217437.2546537,
+    "ast_hash": "1f2db186fff7e1fe9dddc319ef509aae",
+    "semantic_hash": "1f2db186fff7e1fe9dddc319ef509aae"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\corpus\\youtube\\dgikaos\\subs\\yzc3HI5WhPY.info.json": {
+    "mtime": 1789217431.6140113,
+    "ast_hash": "b07d796004aa5b103c87e08e6ec23924",
+    "semantic_hash": "b07d796004aa5b103c87e08e6ec23924"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\corpus\\youtube\\harvest-report.json": {
+    "mtime": 1789217438.1147866,
+    "ast_hash": "8ff7cf9a60136fd3412b068665907c3d",
+    "semantic_hash": "8ff7cf9a60136fd3412b068665907c3d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\corpus\\youtube\\rollup.json": {
+    "mtime": 1789217438.1137872,
+    "ast_hash": "d382b47562d951af8966bd1c4243925b",
+    "semantic_hash": "d382b47562d951af8966bd1c4243925b"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\graph_build.py": {
+    "mtime": 1789217584.2787032,
+    "ast_hash": "beda77572db45d0f43af2f086ca06813",
+    "semantic_hash": "beda77572db45d0f43af2f086ca06813"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\graph_query.py": {
+    "mtime": 1789217543.1737895,
+    "ast_hash": "9f443fb5d1ff7eefa56661f04f075204",
+    "semantic_hash": "9f443fb5d1ff7eefa56661f04f075204"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\all-source-links.json": {
+    "mtime": 1789215914.932974,
+    "ast_hash": "c390a1907ef94d3644716831bef207d8",
+    "semantic_hash": "c390a1907ef94d3644716831bef207d8"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\discord-downloads.json": {
+    "mtime": 1789215914.9289382,
+    "ast_hash": "6bd408dffeb1897b3ade6ac8ae71e87a",
+    "semantic_hash": "6bd408dffeb1897b3ade6ac8ae71e87a"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\fanuel-leul-public-profile.json": {
+    "mtime": 1789215914.9936268,
+    "ast_hash": "08e6963cfaa0f2ac0e70502aa5598f7d",
+    "semantic_hash": "08e6963cfaa0f2ac0e70502aa5598f7d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\local-comfy-workflows.json": {
+    "mtime": 1789215914.9149392,
+    "ast_hash": "4346745b84093c59d95431943685afc2",
+    "semantic_hash": "4346745b84093c59d95431943685afc2"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\models.json": {
+    "mtime": 1789215914.9179394,
+    "ast_hash": "262512dea34b5aec6289d33b3aab3f16",
+    "semantic_hash": "262512dea34b5aec6289d33b3aab3f16"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\monitored-sources.json": {
+    "mtime": 1789215914.996359,
+    "ast_hash": "d2588bbda99b18830d2635f4adde0830",
+    "semantic_hash": "d2588bbda99b18830d2635f4adde0830"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\watch-reports\\watch-20260906-173519.json": {
+    "mtime": 1789215914.9379592,
+    "ast_hash": "3d7127018fe8887f9825d74bf8cad9b9",
+    "semantic_hash": "3d7127018fe8887f9825d74bf8cad9b9"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\watch-reports\\watch-20260907-090734.json": {
+    "mtime": 1789215914.9815955,
+    "ast_hash": "a6cd451feeab60e327629585bf771692",
+    "semantic_hash": "a6cd451feeab60e327629585bf771692"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\watch-reports\\watch-20260908-090733.json": {
+    "mtime": 1789215914.9865913,
+    "ast_hash": "2b8014e2f3a3da4fd7bd09a7dde650c0",
+    "semantic_hash": "2b8014e2f3a3da4fd7bd09a7dde650c0"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\watch-reports\\watch-20260911-090728.json": {
+    "mtime": 1789215914.9905956,
+    "ast_hash": "5645c35780caf864e9da36cffb472351",
+    "semantic_hash": "5645c35780caf864e9da36cffb472351"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\watch-reports\\watch-20260912-090732.json": {
+    "mtime": 1789215914.9474893,
+    "ast_hash": "31717a4890ab8c29411a2d41d6cf13d1",
+    "semantic_hash": "31717a4890ab8c29411a2d41d6cf13d1"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\zip-contents.json": {
+    "mtime": 1789215914.9209394,
+    "ast_hash": "55b67923c39bc835047d340270d10bf6",
+    "semantic_hash": "55b67923c39bc835047d340270d10bf6"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\tools\\build_library_index.py": {
+    "mtime": 1789215915.0812862,
+    "ast_hash": "abd37ff2e627f51938b4253ba65d057a",
+    "semantic_hash": "abd37ff2e627f51938b4253ba65d057a"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\tools\\download_models.py": {
+    "mtime": 1789215915.1767352,
+    "ast_hash": "2d075bfa52360e1c146173d43fed5e21",
+    "semantic_hash": "2d075bfa52360e1c146173d43fed5e21"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\tools\\import_comfy_workflows.py": {
+    "mtime": 1789215915.319276,
+    "ast_hash": "8a8782b264212b9e4c7069cc83e68202",
+    "semantic_hash": "8a8782b264212b9e4c7069cc83e68202"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\tools\\search_library.py": {
+    "mtime": 1789215915.4137855,
+    "ast_hash": "826a4775463a52269813b6db3d4bfa0c",
+    "semantic_hash": "826a4775463a52269813b6db3d4bfa0c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\tools\\source_watch.py": {
+    "mtime": 1789215915.4658005,
+    "ast_hash": "6e5917ce8cd02a988e94602a62b8355c",
+    "semantic_hash": "6e5917ce8cd02a988e94602a62b8355c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\memory\\store.py": {
+    "mtime": 1789230353.0273447,
+    "ast_hash": "3e34976908657dfe80de252df474a7b8",
+    "semantic_hash": "3e34976908657dfe80de252df474a7b8"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\orchestrator\\control.py": {
+    "mtime": 1789236799.9347627,
+    "ast_hash": "2e7af6e6a85368afefd90ff9c5e74f14",
+    "semantic_hash": "2e7af6e6a85368afefd90ff9c5e74f14"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\orchestrator\\hermes.py": {
+    "mtime": 1789237001.7828841,
+    "ast_hash": "7bd6964f650c57d63fd5b249d40f3165",
+    "semantic_hash": "7bd6964f650c57d63fd5b249d40f3165"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\orchestrator\\paperclip.py": {
+    "mtime": 1789237247.1040123,
+    "ast_hash": "7862fd383fc244151d4978457d39b340",
+    "semantic_hash": "7862fd383fc244151d4978457d39b340"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\orchestrator\\workers.py": {
+    "mtime": 1789237043.5162153,
+    "ast_hash": "2f4103eff072251dbbaa7ac4cde0a35c",
+    "semantic_hash": "2f4103eff072251dbbaa7ac4cde0a35c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\postiz.py": {
+    "mtime": 1789228976.2762947,
+    "ast_hash": "839169845e41364a963e55d256ea4fc3",
+    "semantic_hash": "839169845e41364a963e55d256ea4fc3"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whatsapp.py": {
+    "mtime": 1789228976.377241,
+    "ast_hash": "eac0e3391c5dde8d899deef522d9eaab",
+    "semantic_hash": "eac0e3391c5dde8d899deef522d9eaab"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\build_course.py": {
+    "mtime": 1789215915.6191652,
+    "ast_hash": "c3bc0c94bc37a6b37efd580bb6d7cec5",
+    "semantic_hash": "c3bc0c94bc37a6b37efd580bb6d7cec5"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\whop-course-draft.json": {
+    "mtime": 1789215915.6402442,
+    "ast_hash": "efec3db674f49b04d12976d7c65ad856",
+    "semantic_hash": "efec3db674f49b04d12976d7c65ad856"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\whop-course.json": {
+    "mtime": 1789215915.6332119,
+    "ast_hash": "0e57d94c9c7da2937a6556720a9f5b15",
+    "semantic_hash": "0e57d94c9c7da2937a6556720a9f5b15"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\whop_publish.py": {
+    "mtime": 1789215915.6493046,
+    "ast_hash": "07b1652c306daf374d5014f4822bda20",
+    "semantic_hash": "07b1652c306daf374d5014f4822bda20"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\whop_upload.py": {
+    "mtime": 1789215915.6513054,
+    "ast_hash": "330842f6b69ea8ce186ffc4b41530c06",
+    "semantic_hash": "330842f6b69ea8ce186ffc4b41530c06"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\strategy\\plan.py": {
+    "mtime": 1789236295.157167,
+    "ast_hash": "b205419d49d761ef62995416a4079221",
+    "semantic_hash": "b205419d49d761ef62995416a4079221"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\strategy\\skill_curator.py": {
+    "mtime": 1789236443.7252,
+    "ast_hash": "d318cb7be09e1681befcb0dce3f2aba0",
+    "semantic_hash": "d318cb7be09e1681befcb0dce3f2aba0"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\strategy\\study.py": {
+    "mtime": 1789237159.2360861,
+    "ast_hash": "cfa99df4ba1506166fff3dd34692ec7d",
+    "semantic_hash": "cfa99df4ba1506166fff3dd34692ec7d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\strategy\\treatment.py": {
+    "mtime": 1789237159.284605,
+    "ast_hash": "50884bce5e4b7e7fcb7950986921179b",
+    "semantic_hash": "50884bce5e4b7e7fcb7950986921179b"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\app\\api\\generate\\route.js": {
+    "mtime": 1789215935.8724754,
+    "ast_hash": "6395e2b445004f40e6ca8f5922483b38",
+    "semantic_hash": "6395e2b445004f40e6ca8f5922483b38"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\app\\api\\library\\route.js": {
+    "mtime": 1789215935.8819988,
+    "ast_hash": "e61ad967262686e0a13202c97a1a088a",
+    "semantic_hash": "e61ad967262686e0a13202c97a1a088a"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\app\\api\\runpod-status\\route.js": {
+    "mtime": 1789215935.9326973,
+    "ast_hash": "132b4c6ca5237f4710ca1d327eebde71",
+    "semantic_hash": "132b4c6ca5237f4710ca1d327eebde71"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\app\\jobs\\page.js": {
+    "mtime": 1789215935.2681205,
+    "ast_hash": "9c703db67784e5da776749d2199d174a",
+    "semantic_hash": "9c703db67784e5da776749d2199d174a"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\app\\layout.js": {
+    "mtime": 1789215935.5517828,
+    "ast_hash": "759ee9ac7aac2699c57a7baf5d863587",
+    "semantic_hash": "759ee9ac7aac2699c57a7baf5d863587"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\app\\library\\page.js": {
+    "mtime": 1789215936.0538063,
+    "ast_hash": "3ac05f33479edf6611076be1033d1c92",
+    "semantic_hash": "3ac05f33479edf6611076be1033d1c92"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\app\\page.js": {
+    "mtime": 1789215935.4606168,
+    "ast_hash": "5f609ddb0d05174e3017dc0c1ad06272",
+    "semantic_hash": "5f609ddb0d05174e3017dc0c1ad06272"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\app\\workflow\\WorkflowListingClient.js": {
+    "mtime": 1789215935.7531242,
+    "ast_hash": "11db9f8ecd005f1051d3c62db124232d",
+    "semantic_hash": "11db9f8ecd005f1051d3c62db124232d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\app\\workflow\\[id]\\WorkflowBuilderClient.js": {
+    "mtime": 1789215935.8203278,
+    "ast_hash": "1d39404324104fb6013c931db5a8194e",
+    "semantic_hash": "1d39404324104fb6013c931db5a8194e"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\app\\workflow\\[id]\\page.js": {
+    "mtime": 1789215935.8090365,
+    "ast_hash": "844ea85c4a2aa3e1903a4cd38e363883",
+    "semantic_hash": "844ea85c4a2aa3e1903a4cd38e363883"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\app\\workflow\\page.js": {
+    "mtime": 1789215935.646418,
+    "ast_hash": "bc60003c697101a6d7c6c4ed645e0355",
+    "semantic_hash": "bc60003c697101a6d7c6c4ed645e0355"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\eslint.config.mjs": {
+    "mtime": 1789215934.8799837,
+    "ast_hash": "c203a0a3beda61d4f5f8befdaf454334",
+    "semantic_hash": "c203a0a3beda61d4f5f8befdaf454334"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\jsconfig.json": {
+    "mtime": 1789215934.9925346,
+    "ast_hash": "c324b7b6a8fb70597aa0802e3d59baa2",
+    "semantic_hash": "c324b7b6a8fb70597aa0802e3d59baa2"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\next.config.mjs": {
+    "mtime": 1789215934.8706784,
+    "ast_hash": "6ccaa7f8f04efe8c3561ddb5b25eb3b8",
+    "semantic_hash": "6ccaa7f8f04efe8c3561ddb5b25eb3b8"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\package.json": {
+    "mtime": 1789215915.95871,
+    "ast_hash": "9a6c2008574eec36da943fb6084712e4",
+    "semantic_hash": "9a6c2008574eec36da943fb6084712e4"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\postcss.config.mjs": {
+    "mtime": 1789215934.9955373,
+    "ast_hash": "481fac0fdecd70e1821cc30b86030c1a",
+    "semantic_hash": "481fac0fdecd70e1821cc30b86030c1a"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\package.json": {
+    "mtime": 1789215968.412657,
+    "ast_hash": "949c8edfaf2f07316401c9d8f5bdcdaf",
+    "semantic_hash": "949c8edfaf2f07316401c9d8f5bdcdaf"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\babel.config.json": {
+    "mtime": 1789215967.4168568,
+    "ast_hash": "cc0cadb54feff386135c739db4b58c2c",
+    "semantic_hash": "cc0cadb54feff386135c739db4b58c2c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\package.json": {
+    "mtime": 1789215967.3968542,
+    "ast_hash": "750e0fbaa8a3b0eabe51017dd3fd6513",
+    "semantic_hash": "750e0fbaa8a3b0eabe51017dd3fd6513"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\postcss.config.js": {
+    "mtime": 1789215967.0991082,
+    "ast_hash": "762a94d1749c8e97eebf3f94102e8eb2",
+    "semantic_hash": "762a94d1749c8e97eebf3f94102e8eb2"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\WorkflowBuilder.jsx": {
+    "mtime": 1789215967.392852,
+    "ast_hash": "b83cf1c8cb30e529554d97bab3441451",
+    "semantic_hash": "b83cf1c8cb30e529554d97bab3441451"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\ApiNode.jsx": {
+    "mtime": 1789215967.2377667,
+    "ast_hash": "b1cf1094430f1316450f8839a03720ac",
+    "semantic_hash": "b1cf1094430f1316450f8839a03720ac"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\AudioNode.jsx": {
+    "mtime": 1789215967.3163705,
+    "ast_hash": "c39c98b54cc46b93b38029b5cc720a7a",
+    "semantic_hash": "c39c98b54cc46b93b38029b5cc720a7a"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\AudioPlayer.jsx": {
+    "mtime": 1789215967.3273716,
+    "ast_hash": "7cf85917f95f30681a793b9def3b5bbe",
+    "semantic_hash": "7cf85917f95f30681a793b9def3b5bbe"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\ChatWidget.jsx": {
+    "mtime": 1789215967.2270877,
+    "ast_hash": "3eb2a8a24536c3de9062a941981f4191",
+    "semantic_hash": "3eb2a8a24536c3de9062a941981f4191"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\ImageNode.jsx": {
+    "mtime": 1789215967.3793297,
+    "ast_hash": "7bf08ff096f46b6d41173b103d4d0060",
+    "semantic_hash": "7bf08ff096f46b6d41173b103d4d0060"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\NodeFlow.jsx": {
+    "mtime": 1789215967.3452668,
+    "ast_hash": "79f763e341c8f89f1a5fc27e66e896bf",
+    "semantic_hash": "79f763e341c8f89f1a5fc27e66e896bf"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\NodeOptionsMenu.jsx": {
+    "mtime": 1789215967.386851,
+    "ast_hash": "a303881d5e7fa3796aad05307b29067f",
+    "semantic_hash": "a303881d5e7fa3796aad05307b29067f"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\NodeSendButton.jsx": {
+    "mtime": 1789215967.2157443,
+    "ast_hash": "b534757e50f2a8d04f94800e04175898",
+    "semantic_hash": "b534757e50f2a8d04f94800e04175898"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\NodesNavbar.jsx": {
+    "mtime": 1789215967.3577898,
+    "ast_hash": "1a6b0f8ba3f81fe9e3588a9fd29c90cd",
+    "semantic_hash": "1a6b0f8ba3f81fe9e3588a9fd29c90cd"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\PromptConcate.jsx": {
+    "mtime": 1789215967.3713303,
+    "ast_hash": "afc07e21d0f0b249d49f3e879d23d2f2",
+    "semantic_hash": "afc07e21d0f0b249d49f3e879d23d2f2"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\RenderApiField.jsx": {
+    "mtime": 1789215967.3693109,
+    "ast_hash": "d9a37095a6823266e846a12599d3ad40",
+    "semantic_hash": "d9a37095a6823266e846a12599d3ad40"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\RenderField.jsx": {
+    "mtime": 1789215967.1141057,
+    "ast_hash": "c49a5862066fd6059c43b8fb9a833250",
+    "semantic_hash": "c49a5862066fd6059c43b8fb9a833250"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\TextNode.jsx": {
+    "mtime": 1789215967.3623095,
+    "ast_hash": "969a9c18cb57d579efe7004ba9fac02d",
+    "semantic_hash": "969a9c18cb57d579efe7004ba9fac02d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\UploadNode.jsx": {
+    "mtime": 1789215967.116113,
+    "ast_hash": "5290e2182482fa28c9320b319aa7f35f",
+    "semantic_hash": "5290e2182482fa28c9320b319aa7f35f"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\VideoCombiner.jsx": {
+    "mtime": 1789215967.1977396,
+    "ast_hash": "b1e6a77cb6cdd8c507aa3e32cac28a1c",
+    "semantic_hash": "b1e6a77cb6cdd8c507aa3e32cac28a1c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\VideoNode.jsx": {
+    "mtime": 1789215967.2007403,
+    "ast_hash": "63fbbbe11d8fba768c155f78f765f0e5",
+    "semantic_hash": "63fbbbe11d8fba768c155f78f765f0e5"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\VideoPlayer.jsx": {
+    "mtime": 1789215967.335252,
+    "ast_hash": "5eb8096299c493919dc561d18aef6b0c",
+    "semantic_hash": "5eb8096299c493919dc561d18aef6b0c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\WorkflowStore.jsx": {
+    "mtime": 1789215967.3412697,
+    "ast_hash": "273f5b13fb2192a7f90c26ad56843d65",
+    "semantic_hash": "273f5b13fb2192a7f90c26ad56843d65"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\useGenerationCost.jsx": {
+    "mtime": 1789215967.1171057,
+    "ast_hash": "e1f3745326bcd8154757b47a4250e416",
+    "semantic_hash": "e1f3745326bcd8154757b47a4250e416"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\components\\utility.jsx": {
+    "mtime": 1789215967.1922114,
+    "ast_hash": "b6cf7c9cc4322d5c794c0cfe8e85345e",
+    "semantic_hash": "b6cf7c9cc4322d5c794c0cfe8e85345e"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\src\\index.js": {
+    "mtime": 1789215967.3938687,
+    "ast_hash": "36b8d6a4127244ae865a315673ca33bf",
+    "semantic_hash": "36b8d6a4127244ae865a315673ca33bf"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\packages\\workflow-builder\\tailwind.config.js": {
+    "mtime": 1789215967.413854,
+    "ast_hash": "6c73a38b7f48cc86684a1a9bdacde5b1",
+    "semantic_hash": "6c73a38b7f48cc86684a1a9bdacde5b1"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\vision\\analyze.py": {
+    "mtime": 1789237159.207503,
+    "ast_hash": "1e88335dbd124c8b02ab91d3c245a3eb",
+    "semantic_hash": "1e88335dbd124c8b02ab91d3c245a3eb"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\voice\\mux.py": {
+    "mtime": 1789230237.74878,
+    "ast_hash": "18a3126f6161b475d5638dbb562d7d83",
+    "semantic_hash": "18a3126f6161b475d5638dbb562d7d83"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\voice\\transcribe.py": {
+    "mtime": 1789237159.1886463,
+    "ast_hash": "3ac889c2ead78a2749f96c626f928d82",
+    "semantic_hash": "3ac889c2ead78a2749f96c626f928d82"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\voice\\tts.py": {
+    "mtime": 1789237159.260565,
+    "ast_hash": "8410a740318065b4dbd4cfde155883ba",
+    "semantic_hash": "8410a740318065b4dbd4cfde155883ba"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\studio.py": {
+    "mtime": 1789237159.3066115,
+    "ast_hash": "5a81ab32da979d6f1c924f12e8b5aa1f",
+    "semantic_hash": "5a81ab32da979d6f1c924f12e8b5aa1f"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\tests\\analytics_helpers.py": {
+    "mtime": 1789236400.6615129,
+    "ast_hash": "4cb03efaa511370db09c031b6c2f00fe",
+    "semantic_hash": "4cb03efaa511370db09c031b6c2f00fe"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\tests\\test_pipeline.py": {
+    "mtime": 1789237268.6623423,
+    "ast_hash": "9144359e46448e4de8bfebff31f1837d",
+    "semantic_hash": "9144359e46448e4de8bfebff31f1837d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\1-KeyFrames\\1-KEYFRAMES.json": {
+    "mtime": 1789215975.548931,
+    "ast_hash": "fb8c3a5f57b3d264d8fa4bc54c4b6bc3",
+    "semantic_hash": "fb8c3a5f57b3d264d8fa4bc54c4b6bc3"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\3-Image-To-Long-Video\\3-Image-To-Long-Video.json": {
+    "mtime": 1789215975.5509298,
+    "ast_hash": "aa89839465f2339511942bb9e0203eaa",
+    "semantic_hash": "aa89839465f2339511942bb9e0203eaa"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\4-Video-Extend-with-Reference-Image\\4-Video-Extend-with-Reference-Image.json": {
+    "mtime": 1789215975.5529306,
+    "ast_hash": "fe635bdd052ea27f19ef63e05447447b",
+    "semantic_hash": "fe635bdd052ea27f19ef63e05447447b"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\MiniMax-H3-Simple-WF\\FLF-Workflow-With-Sol-Atten-_-Sage-Atten.json": {
+    "mtime": 1789215975.5319202,
+    "ast_hash": "aaca3a2dd6a9bcf6529d5612dc0236cf",
+    "semantic_hash": "aaca3a2dd6a9bcf6529d5612dc0236cf"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\MiniMax-H3-Simple-WF\\IMG-_-Audio-To-Video.json": {
+    "mtime": 1789215975.533915,
+    "ast_hash": "01b5f5b9bb154f1800ad3dde3da17dca",
+    "semantic_hash": "01b5f5b9bb154f1800ad3dde3da17dca"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\MiniMax-H3-Simple-WF\\Video-Character-Replace.json": {
+    "mtime": 1789215975.5359168,
+    "ast_hash": "d29bdb3a30cdf4be01f2870b4f042f33",
+    "semantic_hash": "d29bdb3a30cdf4be01f2870b4f042f33"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\MiniMax-Long-Video-&-Extend-Video\\2-Text-To-Long-Video.json": {
+    "mtime": 1789215975.5379183,
+    "ast_hash": "6dbf0fecf876a49c6451a09498f28a76",
+    "semantic_hash": "6dbf0fecf876a49c6451a09498f28a76"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\MiniMax-Long-Video-&-Extend-Video\\5-Video-Extend-No-Reference-Image.json": {
+    "mtime": 1789215975.5409193,
+    "ast_hash": "7793f67f85fd5142e28c2b88d54b5445",
+    "semantic_hash": "7793f67f85fd5142e28c2b88d54b5445"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\Workflow-1\\Workflow-1-updated.json": {
+    "mtime": 1789215975.5429127,
+    "ast_hash": "40301cc57b0de4c6e847adb47d3001ce",
+    "semantic_hash": "40301cc57b0de4c6e847adb47d3001ce"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\Workflow-1\\Workflow-1.json": {
+    "mtime": 1789215975.5449326,
+    "ast_hash": "1284cb72ee34bd8915c3933116cce8af",
+    "semantic_hash": "1284cb72ee34bd8915c3933116cce8af"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\Workflow-2\\Workflow-2-Updated.json": {
+    "mtime": 1789215975.5459385,
+    "ast_hash": "dced2a6a575aa875036527736a7f611c",
+    "semantic_hash": "dced2a6a575aa875036527736a7f611c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\Workflow-2\\Workflow-2.json": {
+    "mtime": 1789215975.5479345,
+    "ast_hash": "266ceef0075d590cd8975d5675cb0e95",
+    "semantic_hash": "266ceef0075d590cd8975d5675cb0e95"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\api-tests\\klein-ishona-400.json": {
+    "mtime": 1789215975.4873722,
+    "ast_hash": "e20224e0ceb7b675f6deeb0c08ca8d81",
+    "semantic_hash": "e20224e0ceb7b675f6deeb0c08ca8d81"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\api-tests\\klein-ishona-600.json": {
+    "mtime": 1789215975.4929166,
+    "ast_hash": "f48aa8946d351fcd33e3b7c81ba1e207",
+    "semantic_hash": "f48aa8946d351fcd33e3b7c81ba1e207"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\api-tests\\klein-t2i-sage-guard-test.json": {
+    "mtime": 1789215975.4969187,
+    "ast_hash": "76ecfc2797b45be7c0daae1fc06706f6",
+    "semantic_hash": "76ecfc2797b45be7c0daae1fc06706f6"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\api-tests\\klein-t2i-test.json": {
+    "mtime": 1789215975.498914,
+    "ast_hash": "c3da946f8ba056a63a6224adda5b883e",
+    "semantic_hash": "c3da946f8ba056a63a6224adda5b883e"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\h3\\NEW_-_2MP_De-Rope_Continuation_-_Working_Example.json": {
+    "mtime": 1789215975.5009184,
+    "ast_hash": "bd99b86a78733424e9b2606dc5e722af",
+    "semantic_hash": "bd99b86a78733424e9b2606dc5e722af"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\h3\\NEW_-_AV_Extension.json": {
+    "mtime": 1789215975.5029163,
+    "ast_hash": "e7273365ead2a40f419cea8010554ac4",
+    "semantic_hash": "e7273365ead2a40f419cea8010554ac4"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\h3\\NEW_-_Music_Video.json": {
+    "mtime": 1789215975.5059147,
+    "ast_hash": "67214e1705ea7b333cdca5d2c5f84b38",
+    "semantic_hash": "67214e1705ea7b333cdca5d2c5f84b38"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\h3\\NEW_-_V2V_Latent_Motion_Transfer_with_upscale_and_de-rope_.json": {
+    "mtime": 1789215975.508914,
+    "ast_hash": "9b13b48a9f3cf5f71f6ef6aaad1571c2",
+    "semantic_hash": "9b13b48a9f3cf5f71f6ef6aaad1571c2"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\h3\\OLD_-_Hybrid_Extension.json": {
+    "mtime": 1789215975.5099168,
+    "ast_hash": "116bd83fc047e36a0c73cbe120b2f8f2",
+    "semantic_hash": "116bd83fc047e36a0c73cbe120b2f8f2"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\h3\\OLD_-_Motion_Context_-_Advanced.json": {
+    "mtime": 1789215975.5119147,
+    "ast_hash": "dca0c64046bc69311cab0219e39a7a9c",
+    "semantic_hash": "dca0c64046bc69311cab0219e39a7a9c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\h3\\OLD_-_Motion_Context_-_Simple.json": {
+    "mtime": 1789215975.5129156,
+    "ast_hash": "2f9dd90334614c0dee677583c426d9ce",
+    "semantic_hash": "2f9dd90334614c0dee677583c426d9ce"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\h3\\UTILITY_-_AV_Bridge.json": {
+    "mtime": 1789215975.5149157,
+    "ast_hash": "22a71429fb9c8791b873fc6fbeb9bd52",
+    "semantic_hash": "22a71429fb9c8791b873fc6fbeb9bd52"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\h3\\UTILITY_-_Custom_Keyframes.json": {
+    "mtime": 1789215975.5159178,
+    "ast_hash": "c4350d7f3c26a901ca764927bef2c0be",
+    "semantic_hash": "c4350d7f3c26a901ca764927bef2c0be"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\Carousel_Pose_changer.json": {
+    "mtime": 1789215975.4458334,
+    "ast_hash": "70d6aa01bb7f8ced339ce9bdbd7f2559",
+    "semantic_hash": "70d6aa01bb7f8ced339ce9bdbd7f2559"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\Carousel_Pose_changer_-_Icekiub_V1.7.json": {
+    "mtime": 1789215975.4653573,
+    "ast_hash": "7a1cedc818c9b5ea31c8f8f65f50b2c1",
+    "semantic_hash": "7a1cedc818c9b5ea31c8f8f65f50b2c1"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\I2V_Infinite_extender_-_SUBS_-_Icekiub_v1.json": {
+    "mtime": 1789215975.485372,
+    "ast_hash": "a6c060b93031e59fcc3a52e0742e1811",
+    "semantic_hash": "a6c060b93031e59fcc3a52e0742e1811"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\I2V_extender_with_Prompt_change_-_SUBS_-_Icekiub_v1.json": {
+    "mtime": 1789215975.4833703,
+    "ast_hash": "13dc34d477412e9be1f8a6771cbfcc66",
+    "semantic_hash": "13dc34d477412e9be1f8a6771cbfcc66"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\ICY_SCAIL_2.0_Subs_-_icekiub_v2.json": {
+    "mtime": 1789215975.448342,
+    "ast_hash": "8d524fd352f715f4c2c22b4b1ae43bf0",
+    "semantic_hash": "8d524fd352f715f4c2c22b4b1ae43bf0"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\ICY_SCAIL_2_0_Subs_-_icekiub_v2.json": {
+    "mtime": 1789215975.457356,
+    "ast_hash": "bcfbd97d9e6bd4af266082dc16343407",
+    "semantic_hash": "bcfbd97d9e6bd4af266082dc16343407"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json": {
+    "mtime": 1789215975.4613576,
+    "ast_hash": "cde6cfd2163505428d28ae9cd1573bed",
+    "semantic_hash": "cde6cfd2163505428d28ae9cd1573bed"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json": {
+    "mtime": 1789215975.4633577,
+    "ast_hash": "62cc81f953137ee16c24d4fea7445bdf",
+    "semantic_hash": "62cc81f953137ee16c24d4fea7445bdf"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json": {
+    "mtime": 1789215975.4593563,
+    "ast_hash": "f50136a0eb9cd7d59f7047278bd2503c",
+    "semantic_hash": "f50136a0eb9cd7d59f7047278bd2503c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\IcyMotion_Free_v3.json": {
+    "mtime": 1789215975.4503558,
+    "ast_hash": "7cbd76762023cf84cb2d67d224c775ad",
+    "semantic_hash": "7cbd76762023cf84cb2d67d224c775ad"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\KleinDataset_-_Icekiub_freelo.json": {
+    "mtime": 1789215975.4713612,
+    "ast_hash": "347e5fa77ed059defc0d3ee91ab7ea68",
+    "semantic_hash": "347e5fa77ed059defc0d3ee91ab7ea68"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\LTX2-T2V_-_ICY.json": {
+    "mtime": 1789215975.4693558,
+    "ast_hash": "470e09b1ac885339ec93bdb5443e4f63",
+    "semantic_hash": "470e09b1ac885339ec93bdb5443e4f63"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json": {
+    "mtime": 1789215975.4673586,
+    "ast_hash": "5cf6eaea392b0051abb60d28f7dd44b8",
+    "semantic_hash": "5cf6eaea392b0051abb60d28f7dd44b8"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json": {
+    "mtime": 1789215975.4743626,
+    "ast_hash": "60551b63dc4608cf9e037cd670546a6d",
+    "semantic_hash": "60551b63dc4608cf9e037cd670546a6d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v1_.json": {
+    "mtime": 1789215975.477374,
+    "ast_hash": "c18a092170e47d8884520416fc8719a0",
+    "semantic_hash": "c18a092170e47d8884520416fc8719a0"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\icekiub\\QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json": {
+    "mtime": 1789215975.4763575,
+    "ast_hash": "d9801086af68493e94997aa0d238acd8",
+    "semantic_hash": "d9801086af68493e94997aa0d238acd8"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\manifest.json": {
+    "mtime": 1789215975.561456,
+    "ast_hash": "eea447c03f91e08a65606aff11041433",
+    "semantic_hash": "eea447c03f91e08a65606aff11041433"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\matrix\\EPALLE-Dataset-V1-safe.json": {
+    "mtime": 1789215975.5179172,
+    "ast_hash": "27e15fb99ff824da0b8f183f6c6f6de2",
+    "semantic_hash": "27e15fb99ff824da0b8f183f6c6f6de2"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\matrix\\matrix-power-nodes-ai-dataset.json": {
+    "mtime": 1789215975.5189145,
+    "ast_hash": "1595ca549e12881ff8dd2a3c9cda0ed2",
+    "semantic_hash": "1595ca549e12881ff8dd2a3c9cda0ed2"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\scail2\\SCAIL-2_Animation.json": {
+    "mtime": 1789215975.5249147,
+    "ast_hash": "7ba16c2a891fbcb5781fba6f8a8d4173",
+    "semantic_hash": "7ba16c2a891fbcb5781fba6f8a8d4173"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\scail2\\SCAIL-2_Animation_WAN-Context-Windows.json": {
+    "mtime": 1789215975.5289152,
+    "ast_hash": "7f30782cdfed53dbd95fc9fef1221019",
+    "semantic_hash": "7f30782cdfed53dbd95fc9fef1221019"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\scail2\\SCAIL-2_Animation_multi-char.json": {
+    "mtime": 1789215975.5259154,
+    "ast_hash": "c82b072a7044dc1e7191ee9951fa9d06",
+    "semantic_hash": "c82b072a7044dc1e7191ee9951fa9d06"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\scail2\\SCAIL-2_Animation_multi-ref.json": {
+    "mtime": 1789215975.5279157,
+    "ast_hash": "77ffdef1a8550683a0d0bed92d90492b",
+    "semantic_hash": "77ffdef1a8550683a0d0bed92d90492b"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\workflows\\scail2\\SCAIL-2_Replacement.json": {
+    "mtime": 1789215975.5309145,
+    "ast_hash": "001956c3eb5d60da953b33b80774bc5d",
+    "semantic_hash": "001956c3eb5d60da953b33b80774bc5d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\.agents\\skills\\content-studio\\SKILL.md": {
+    "mtime": 1789237324.8595905,
+    "ast_hash": "6fccac435a0fc6dea6b99a4cafd19c41",
+    "semantic_hash": "6fccac435a0fc6dea6b99a4cafd19c41"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\.claude\\skills\\content-studio\\SKILL.md": {
+    "mtime": 1789237324.8595905,
+    "ast_hash": "6fccac435a0fc6dea6b99a4cafd19c41",
+    "semantic_hash": "6fccac435a0fc6dea6b99a4cafd19c41"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\README.md": {
+    "mtime": 1789237324.8327992,
+    "ast_hash": "4e208ec941509d253cd58ce9241b64fd",
+    "semantic_hash": "4e208ec941509d253cd58ce9241b64fd"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\FINDINGS.md": {
+    "mtime": 1789228296.0879574,
+    "ast_hash": "4cf62cb5ee5ab7e9a8b89d71f4cc0981",
+    "semantic_hash": "4cf62cb5ee5ab7e9a8b89d71f4cc0981"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\brand.yaml": {
+    "mtime": 1789227967.108113,
+    "ast_hash": "f1545de0cc264a276a12310096fc15ff",
+    "semantic_hash": "f1545de0cc264a276a12310096fc15ff"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\calendar\\treatment-ancestral-pulse.md": {
+    "mtime": 1789228128.9426973,
+    "ast_hash": "8b5fd139e79d41ce427e8ec9283d569c",
+    "semantic_hash": "8b5fd139e79d41ce427e8ec9283d569c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\references\\flowers-falling-footage\\grammar.md": {
+    "mtime": 1789228252.6707313,
+    "ast_hash": "cc204300cec019d3eb6a4bdb5e7032ce",
+    "semantic_hash": "cc204300cec019d3eb6a4bdb5e7032ce"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\asali_01_desire.yaml": {
+    "mtime": 1789227966.654695,
+    "ast_hash": "b31f9b93a8a566b530e1a297563eddb3",
+    "semantic_hash": "b31f9b93a8a566b530e1a297563eddb3"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\asali_02_labour.yaml": {
+    "mtime": 1789227966.661698,
+    "ast_hash": "2aeb2924f8da3052e37298392c52adf9",
+    "semantic_hash": "2aeb2924f8da3052e37298392c52adf9"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\asali_03_doubt.yaml": {
+    "mtime": 1789227966.6697164,
+    "ast_hash": "b777bc62226c99b0831069b5cc5e45aa",
+    "semantic_hash": "b777bc62226c99b0831069b5cc5e45aa"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\asali_04_prayer.yaml": {
+    "mtime": 1789227966.673712,
+    "ast_hash": "5cf2bd679a031d381d1986d701cdb222",
+    "semantic_hash": "5cf2bd679a031d381d1986d701cdb222"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\asali_05_gratitude.yaml": {
+    "mtime": 1789227966.677225,
+    "ast_hash": "c371ffc0ed5073b0283d13bea206f991",
+    "semantic_hash": "c371ffc0ed5073b0283d13bea206f991"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\asali_06_sweetness.yaml": {
+    "mtime": 1789227966.681762,
+    "ast_hash": "a215fb6c0793dd23a53e618884255630",
+    "semantic_hash": "a215fb6c0793dd23a53e618884255630"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\cover_art_square.yaml": {
+    "mtime": 1789227966.7132933,
+    "ast_hash": "ced878f427fc2b510cbe8d1830a8df64",
+    "semantic_hash": "ced878f427fc2b510cbe8d1830a8df64"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\index.yaml": {
+    "mtime": 1789227966.7162955,
+    "ast_hash": "e2b0d3b48cfd59688ade1396684e82c8",
+    "semantic_hash": "e2b0d3b48cfd59688ade1396684e82c8"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\shot_artefact_tableau.yaml": {
+    "mtime": 1789227966.692775,
+    "ast_hash": "d676c07e3d864320ec6d698ec76f2fcd",
+    "semantic_hash": "d676c07e3d864320ec6d698ec76f2fcd"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\shot_connective_landscape.yaml": {
+    "mtime": 1789227966.6977737,
+    "ast_hash": "fab37aaf1ed3abd4ccc8481e1ca177f8",
+    "semantic_hash": "fab37aaf1ed3abd4ccc8481e1ca177f8"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\shot_performance_lipsync.yaml": {
+    "mtime": 1789227966.7082949,
+    "ast_hash": "b41748a7a5a587db6e2371bc89a5b827",
+    "semantic_hash": "b41748a7a5a587db6e2371bc89a5b827"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\styles\\shot_texture_plate.yaml": {
+    "mtime": 1789227966.6877637,
+    "ast_hash": "4f2d0d73161e0c67dd1c0872479961bd",
+    "semantic_hash": "4f2d0d73161e0c67dd1c0872479961bd"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\brand.yaml": {
+    "mtime": 1789238529.6996212,
+    "ast_hash": "d9cf0a3b269de1636641c6d7973628e4",
+    "semantic_hash": "d9cf0a3b269de1636641c6d7973628e4"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\calendar\\plan-2026-09-15-30d.md": {
+    "mtime": 1789228467.8225574,
+    "ast_hash": "7169b2383ebcdc0fa62ba3d69b29a9db",
+    "semantic_hash": "7169b2383ebcdc0fa62ba3d69b29a9db"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\calendar\\seed.yaml": {
+    "mtime": 1789216408.1658542,
+    "ast_hash": "1fb0081d8c22fc563810ce2d5f67d8be",
+    "semantic_hash": "1fb0081d8c22fc563810ce2d5f67d8be"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\references\\pinterest-seed.txt": {
+    "mtime": 1789216048.3645346,
+    "ast_hash": "86dd5f0b5d195ad395b9c5648b48fefb",
+    "semantic_hash": "86dd5f0b5d195ad395b9c5648b48fefb"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\accessibility_story.yaml": {
+    "mtime": 1789228418.938228,
+    "ast_hash": "60844b36e1171186a074d8f35caba7d4",
+    "semantic_hash": "60844b36e1171186a074d8f35caba7d4"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\apple_fintech_minimal.yaml": {
+    "mtime": 1789216295.9766977,
+    "ast_hash": "5d90b69f0f1ab0815c1a9fc18683ac1a",
+    "semantic_hash": "5d90b69f0f1ab0815c1a9fc18683ac1a"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\chama_community_story.yaml": {
+    "mtime": 1789228418.9146948,
+    "ast_hash": "82fbd003980b8cddc9e0f1e64f6aea9a",
+    "semantic_hash": "82fbd003980b8cddc9e0f1e64f6aea9a"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\cinematic_african_realism.yaml": {
+    "mtime": 1789216295.9686959,
+    "ast_hash": "ad942a6b9aac28b09fd5f1f9c9f70bde",
+    "semantic_hash": "ad942a6b9aac28b09fd5f1f9c9f70bde"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\crimson_monolith.yaml": {
+    "mtime": 1789216296.030228,
+    "ast_hash": "a907e43fb08362ea3d237d83940d0c95",
+    "semantic_hash": "a907e43fb08362ea3d237d83940d0c95"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\data_magazine_graphic.yaml": {
+    "mtime": 1789228418.9607673,
+    "ast_hash": "b1737ffe9d917936a319fa7c3e03b101",
+    "semantic_hash": "b1737ffe9d917936a319fa7c3e03b101"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\founder_documentary.yaml": {
+    "mtime": 1789216296.0472274,
+    "ast_hash": "f36cb6b7ef4e5c6f75393458ce59118c",
+    "semantic_hash": "f36cb6b7ef4e5c6f75393458ce59118c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\future_african_fintech.yaml": {
+    "mtime": 1789216296.052236,
+    "ast_hash": "f7279e109f616773077645f44d249074",
+    "semantic_hash": "f7279e109f616773077645f44d249074"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\gritty_portrait_onesheet.yaml": {
+    "mtime": 1789228418.9056737,
+    "ast_hash": "a55e802defd6d8a3b9911f26b82c4a36",
+    "semantic_hash": "a55e802defd6d8a3b9911f26b82c4a36"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\index.yaml": {
+    "mtime": 1789216296.0654385,
+    "ast_hash": "26442c14e5175faee7e729e8d530c566",
+    "semantic_hash": "26442c14e5175faee7e729e8d530c566"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\kenyan_meme_original.yaml": {
+    "mtime": 1789228419.0078187,
+    "ast_hash": "2b2c8e2f4949f57bb5b8b17152624b55",
+    "semantic_hash": "2b2c8e2f4949f57bb5b8b17152624b55"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\kinetic_typography_plate.yaml": {
+    "mtime": 1789216296.0572412,
+    "ast_hash": "42035fd14772b55930f60a57484f0357",
+    "semantic_hash": "42035fd14772b55930f60a57484f0357"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\luxury_fashion_campaign.yaml": {
+    "mtime": 1789216296.0402498,
+    "ast_hash": "293ed651a0811600fb9325151b3758d7",
+    "semantic_hash": "293ed651a0811600fb9325151b3758d7"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\museum_pop_colour.yaml": {
+    "mtime": 1789216296.0152297,
+    "ast_hash": "70b95e5f80cc7d2b02d5b01ada5b598b",
+    "semantic_hash": "70b95e5f80cc7d2b02d5b01ada5b598b"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\mythology_red_editorial.yaml": {
+    "mtime": 1789216296.0182302,
+    "ast_hash": "ebdeb2812675a539c91a4b0df305effa",
+    "semantic_hash": "ebdeb2812675a539c91a4b0df305effa"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\orbital_dark_tech.yaml": {
+    "mtime": 1789216295.992712,
+    "ast_hash": "74844ffe07f041a987542301744954d0",
+    "semantic_hash": "74844ffe07f041a987542301744954d0"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\pearl_editorial_data.yaml": {
+    "mtime": 1789228418.9808183,
+    "ast_hash": "70c7b79897ff2afa03ba12d88eea3c38",
+    "semantic_hash": "70c7b79897ff2afa03ba12d88eea3c38"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\premium_african_editorial.yaml": {
+    "mtime": 1789216295.9650805,
+    "ast_hash": "d2f97b5bb85cc0fb6ee0b635d1c135ac",
+    "semantic_hash": "d2f97b5bb85cc0fb6ee0b635d1c135ac"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\product_ui_showcase.yaml": {
+    "mtime": 1789216295.996711,
+    "ast_hash": "a772aa9f8915006b2fdf85ca0e80739d",
+    "semantic_hash": "a772aa9f8915006b2fdf85ca0e80739d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\retro_relic_print.yaml": {
+    "mtime": 1789216296.0332282,
+    "ast_hash": "62267b060f4df53cb1226226c9d55591",
+    "semantic_hash": "62267b060f4df53cb1226226c9d55591"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\risograph_illustration.yaml": {
+    "mtime": 1789216296.036229,
+    "ast_hash": "20e5e6480acbd6250333e5041c1ed59a",
+    "semantic_hash": "20e5e6480acbd6250333e5041c1ed59a"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\sheng_culture_poster.yaml": {
+    "mtime": 1789216296.003233,
+    "ast_hash": "73d5e7d8e6c68dd344fad0199bbcf090",
+    "semantic_hash": "73d5e7d8e6c68dd344fad0199bbcf090"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\split_editorial_hero.yaml": {
+    "mtime": 1789216295.9867125,
+    "ast_hash": "ff41a69f02c9d48652457ac23e119e9d",
+    "semantic_hash": "ff41a69f02c9d48652457ac23e119e9d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\storm_dark_cinematic.yaml": {
+    "mtime": 1789216296.0212295,
+    "ast_hash": "291087dcc834430425cd4c08c2600376",
+    "semantic_hash": "291087dcc834430425cd4c08c2600376"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\styles\\swiss_interleaved_type.yaml": {
+    "mtime": 1789216296.0112295,
+    "ast_hash": "e19c457f8796597f193f1ff72f7a3d6f",
+    "semantic_hash": "e19c457f8796597f193f1ff72f7a3d6f"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\docs\\ABOUT.md": {
+    "mtime": 1789238529.701622,
+    "ast_hash": "eec70fdf06c562eedcfd0ac2c33c9479",
+    "semantic_hash": "eec70fdf06c562eedcfd0ac2c33c9479"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\docs\\BLOCKERS.md": {
+    "mtime": 1789237324.8580816,
+    "ast_hash": "1a2f466621d15e6f8a1f98ae6650d0c3",
+    "semantic_hash": "1a2f466621d15e6f8a1f98ae6650d0c3"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\docs\\LICENSING.md": {
+    "mtime": 1789218265.756638,
+    "ast_hash": "59b34ddecc76e4ea441d0f6516d40c32",
+    "semantic_hash": "59b34ddecc76e4ea441d0f6516d40c32"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\docs\\PROJECT-SUMMARY-epalle-2026-09.md": {
+    "mtime": 1789215971.55118,
+    "ast_hash": "7b6aee4cc31f9659883ad090a1471ad9",
+    "semantic_hash": "7b6aee4cc31f9659883ad090a1471ad9"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\docs\\SETUP.md": {
+    "mtime": 1789217882.445239,
+    "ast_hash": "de3e9c6571d099c114bc761fce8a99ac",
+    "semantic_hash": "de3e9c6571d099c114bc761fce8a99ac"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\docs\\WHAT-THIS-DOES.md": {
+    "mtime": 1789237324.8287961,
+    "ast_hash": "9ec1f19d6ced3fa346f9f7ecf6d3d1b0",
+    "semantic_hash": "9ec1f19d6ced3fa346f9f7ecf6d3d1b0"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\docs\\superpowers\\specs\\2026-09-12-epalle-ongea-content-company-design.md": {
+    "mtime": 1789215898.7534256,
+    "ast_hash": "4fefa92da7656b7164769188ef359374",
+    "semantic_hash": "4fefa92da7656b7164769188ef359374"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\graph\\GRAPH_REPORT.md": {
+    "mtime": 1789236951.8033445,
+    "ast_hash": "27756033ebfcba14966905228a28aa9e",
+    "semantic_hash": "27756033ebfcba14966905228a28aa9e"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\hermes\\README.md": {
+    "mtime": 1789237083.3107543,
+    "ast_hash": "e5c3806c5387e0eb7bf68bc61f3f366d",
+    "semantic_hash": "e5c3806c5387e0eb7bf68bc61f3f366d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\memory\\README.md": {
+    "mtime": 1789230482.0852737,
+    "ast_hash": "6047ad705877464e2269e02d92ac1dbf",
+    "semantic_hash": "6047ad705877464e2269e02d92ac1dbf"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\memory\\docker-compose.yml": {
+    "mtime": 1789230481.8329628,
+    "ast_hash": "53999124bd9ee9e7c23fb48870fd899a",
+    "semantic_hash": "53999124bd9ee9e7c23fb48870fd899a"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\openwa\\README.md": {
+    "mtime": 1789228914.355728,
+    "ast_hash": "54a8ef8e0de892325b2e8f2c4c15a146",
+    "semantic_hash": "54a8ef8e0de892325b2e8f2c4c15a146"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\openwa\\docker-compose.yml": {
+    "mtime": 1789228914.195437,
+    "ast_hash": "6fc790912ade37b3e2839dde87dc37aa",
+    "semantic_hash": "6fc790912ade37b3e2839dde87dc37aa"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\postiz\\README.md": {
+    "mtime": 1789228841.4869902,
+    "ast_hash": "a192513724daa48cba88d95c8608a6c3",
+    "semantic_hash": "a192513724daa48cba88d95c8608a6c3"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\postiz\\docker-compose.yml": {
+    "mtime": 1789228800.756243,
+    "ast_hash": "6313501854bd5e8695182890206eb317",
+    "semantic_hash": "6313501854bd5e8695182890206eb317"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\README.md": {
+    "mtime": 1789215914.5305607,
+    "ast_hash": "fc9a444b427bc3d0fb17608a4f3967ae",
+    "semantic_hash": "fc9a444b427bc3d0fb17608a4f3967ae"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\infra\\runpod\\verification-summary.md": {
+    "mtime": 1789215914.4352422,
+    "ast_hash": "a763282ae30fdb2db5e3d5c61830772c",
+    "semantic_hash": "a763282ae30fdb2db5e3d5c61830772c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\memory-vault\\README.md": {
+    "mtime": 1789230484.3494792,
+    "ast_hash": "73cb3c68ed522f5a325456281850fe8e",
+    "semantic_hash": "73cb3c68ed522f5a325456281850fe8e"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\memory-vault\\learning-00002.md": {
+    "mtime": 1789230484.3474805,
+    "ast_hash": "addb344a06e91a9895d3907fedf08914",
+    "semantic_hash": "addb344a06e91a9895d3907fedf08914"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\memory-vault\\learning-00003.md": {
+    "mtime": 1789230484.3484795,
+    "ast_hash": "24b7a14318b3488c66b79ca392313a69",
+    "semantic_hash": "24b7a14318b3488c66b79ca392313a69"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\ingest\\channels.yaml": {
+    "mtime": 1789217047.9347367,
+    "ast_hash": "160db78913c932a431dba5f8db519552",
+    "semantic_hash": "160db78913c932a431dba5f8db519552"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\README.md": {
+    "mtime": 1789215915.5138185,
+    "ast_hash": "8d92961d2d1295e90635f40baa4145ee",
+    "semantic_hash": "8d92961d2d1295e90635f40baa4145ee"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\hugging-face-pages.md": {
+    "mtime": 1789215914.9349604,
+    "ast_hash": "ce1d4400be3e40d0b725dc3a4ed6755e",
+    "semantic_hash": "ce1d4400be3e40d0b725dc3a4ed6755e"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\video-complete.txt": {
+    "mtime": 1789215914.997362,
+    "ast_hash": "ef9a918ffad7af3d1c28992c758340ec",
+    "semantic_hash": "ef9a918ffad7af3d1c28992c758340ec"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\manifests\\video-urls.txt": {
+    "mtime": 1789215914.929935,
+    "ast_hash": "1eaf4bf33c81b4776361a128208330b9",
+    "semantic_hash": "1eaf4bf33c81b4776361a128208330b9"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\library\\node_pack_sources.yaml": {
+    "mtime": 1789218265.895131,
+    "ast_hash": "f5b0cb554ca004a631d685f49bb6a65f",
+    "semantic_hash": "f5b0cb554ca004a631d685f49bb6a65f"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\nodes\\epalle-nodes\\README.md": {
+    "mtime": 1789237159.5538068,
+    "ast_hash": "6fab2f419dca07e63236b0dff067310f",
+    "semantic_hash": "6fab2f419dca07e63236b0dff067310f"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\API-CONTRACT.md": {
+    "mtime": 1789215915.6221814,
+    "ast_hash": "eab15edcd89c1b894ed0bfbf5f2c8a12",
+    "semantic_hash": "eab15edcd89c1b894ed0bfbf5f2c8a12"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\EPALLE-AI-Creative-Studio-Course.md": {
+    "mtime": 1789215915.6432486,
+    "ast_hash": "209dbafb65f47490655a48f0c56b9d5b",
+    "semantic_hash": "209dbafb65f47490655a48f0c56b9d5b"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\01-01-safety-rights-and-the-creative-brief.md": {
+    "mtime": 1789215915.6903021,
+    "ast_hash": "22fa95353160427dd013a308c2f6860c",
+    "semantic_hash": "22fa95353160427dd013a308c2f6860c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\01-02-persistent-runpod-architecture.md": {
+    "mtime": 1789215915.6773033,
+    "ast_hash": "4c5f50497e32e09a3ffb9471086aadfa",
+    "semantic_hash": "4c5f50497e32e09a3ffb9471086aadfa"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\02-01-dataset-workflow-v1.md": {
+    "mtime": 1789215915.7003183,
+    "ast_hash": "c4b0abfe0cf61f93e305164354a8f192",
+    "semantic_hash": "c4b0abfe0cf61f93e305164354a8f192"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\02-02-scail-2-motion-and-replacement.md": {
+    "mtime": 1789215915.685301,
+    "ast_hash": "6482888bf1dfa98bbd78ddd40486e728",
+    "semantic_hash": "6482888bf1dfa98bbd78ddd40486e728"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\02-03-minimax-h3-references-and-extension.md": {
+    "mtime": 1789215915.6943202,
+    "ast_hash": "926f715cdd9dd66df9965e85124c7f62",
+    "semantic_hash": "926f715cdd9dd66df9965e85124c7f62"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\03-01-ten-ugc-formats.md": {
+    "mtime": 1789215915.6973228,
+    "ast_hash": "6847d5371b1ae6cbb9087e2021d6dc43",
+    "semantic_hash": "6847d5371b1ae6cbb9087e2021d6dc43"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\03-02-claim-safe-scripts.md": {
+    "mtime": 1789215915.6633046,
+    "ast_hash": "2178f13b31f4ef16dadd77427341f10b",
+    "semantic_hash": "2178f13b31f4ef16dadd77427341f10b"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\03-03-english-kiswahili-sheng-and-french-timing.md": {
+    "mtime": 1789215915.6733022,
+    "ast_hash": "47d0a3ffef581cfb82eef7d516a5c140",
+    "semantic_hash": "47d0a3ffef581cfb82eef7d516a5c140"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\04-01-epalle-visual-language.md": {
+    "mtime": 1789215915.6653006,
+    "ast_hash": "6af3a164e055cc696f417e2408370f3c",
+    "semantic_hash": "6af3a164e055cc696f417e2408370f3c"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\04-02-asali-treatment-and-animatic.md": {
+    "mtime": 1789215915.6793025,
+    "ast_hash": "0f1fb44f36b7ecde7427f206ed9f8765",
+    "semantic_hash": "0f1fb44f36b7ecde7427f206ed9f8765"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\04-03-long-form-assembly-and-sound.md": {
+    "mtime": 1789215915.6753085,
+    "ast_hash": "f996d8e5a277f6aae60d86b18d239ca4",
+    "semantic_hash": "f996d8e5a277f6aae60d86b18d239ca4"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\05-01-api-jobs-and-cost-control.md": {
+    "mtime": 1789215915.6683016,
+    "ast_hash": "0fbd45eb6d1e0ab12fc1bb5a69dfc0cb",
+    "semantic_hash": "0fbd45eb6d1e0ab12fc1bb5a69dfc0cb"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\05-02-archive-search-and-daily-source-watch.md": {
+    "mtime": 1789215915.6813014,
+    "ast_hash": "be9f329c39f23376f0efc11f6a5f5328",
+    "semantic_hash": "be9f329c39f23376f0efc11f6a5f5328"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\publish\\whop\\lessons\\05-03-publishing-qa.md": {
+    "mtime": 1789215915.6833024,
+    "ast_hash": "656fb962fad6a061a5887fec36a000c3",
+    "semantic_hash": "656fb962fad6a061a5887fec36a000c3"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\EPALLE-README.md": {
+    "mtime": 1789215968.4281778,
+    "ast_hash": "c754ab00e03f0ac200e90d3eae16ca24",
+    "semantic_hash": "c754ab00e03f0ac200e90d3eae16ca24"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\README.md": {
+    "mtime": 1789215936.0770485,
+    "ast_hash": "6980ade5a05de492e50cc4e14a0ebd1d",
+    "semantic_hash": "6980ade5a05de492e50cc4e14a0ebd1d"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\shared-skills\\approved\\content-studio\\SKILL.md": {
+    "mtime": 1789237324.8595905,
+    "ast_hash": "6fccac435a0fc6dea6b99a4cafd19c41",
+    "semantic_hash": "6fccac435a0fc6dea6b99a4cafd19c41"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\assets\\cover\\COVER ART.png": {
+    "mtime": 1789227769.0481832,
+    "ast_hash": "b4831965fe8dad84ad63ba3babcacced",
+    "semantic_hash": "b4831965fe8dad84ad63ba3babcacced"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\assets\\cover\\MAIN COVER ART.png": {
+    "mtime": 1789227768.9866405,
+    "ast_hash": "51533fa08d9fffb90c55b9b3ae0ef45a",
+    "semantic_hash": "51533fa08d9fffb90c55b9b3ae0ef45a"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\epalle\\assets\\cover\\slide 1.png": {
+    "mtime": 1789227769.1058302,
+    "ast_hash": "4c33732cc0ea6bd3434ca02db52995c4",
+    "semantic_hash": "4c33732cc0ea6bd3434ca02db52995c4"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\assets\\logo\\ongea-pesa-lockup-transparent.png": {
+    "mtime": 1789216038.3596838,
+    "ast_hash": "3128508a6298ecac8647051a76503cef",
+    "semantic_hash": "3128508a6298ecac8647051a76503cef"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\assets\\reference\\ongeapesa.jpeg": {
+    "mtime": 1789215902.340777,
+    "ast_hash": "ee3cc4df304e2c91b165962e76251b62",
+    "semantic_hash": "ee3cc4df304e2c91b165962e76251b62"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\brands\\ongea-pesa\\assets\\reference\\screencapture-ongeapesa-nsait-co-ke-2026-07-18-16_04_52.png": {
+    "mtime": 1789215902.3510914,
+    "ast_hash": "3b70475f17cdaf4680ad60714b1687ac",
+    "semantic_hash": "3b70475f17cdaf4680ad60714b1687ac"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\public\\file.svg": {
+    "mtime": 1789215915.9706733,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\public\\globe.svg": {
+    "mtime": 1789215915.978201,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\public\\next.svg": {
+    "mtime": 1789215915.975201,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\public\\vercel.svg": {
+    "mtime": 1789215915.976203,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "C:\\Users\\inkno\\Documents\\GitHub\\comfy\\packages\\studio-ui\\client\\public\\window.svg": {
+    "mtime": 1789215915.9660027,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  }
+}

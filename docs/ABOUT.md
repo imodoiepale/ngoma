@@ -57,9 +57,15 @@ composition rule, its lighting, its palette subset, its finish, its cultural dir
 Every palette in this repo was **measured from the real product**, not taken from a
 document.
 
-That mattered immediately. A prior spec said Ongea Pesa's primary was emerald `#30E0A8`.
-The live site is `#0A0A0A` with `#22C55E`, and the logo is navy and pale cyan. The document
-was wrong about the product.
+That mattered immediately, and then it mattered again, because the first measurement was
+itself read wrong. A prior spec said Ongea Pesa's primary was emerald `#30E0A8`. Sampling the
+reference files turned up `#0A0A0A` with `#22C55E`, so the spec looked mistaken. Looking at
+the images — not just their pixel counts — showed the files were misnamed: the dark one is
+the mobile **app**, and the light one is a **marketing** page whose accent really is a deep
+emerald. Ongea Pesa has two visual systems. The spec wasn't wrong; it was describing the
+other one.
+
+The lesson generalises: a measurement is only as good as the label on what was measured.
 
 It mattered again for EPALLE, in the opposite direction. The brand's written visual
 language says charcoal must "never be pure black, so shadow keeps detail". The shipped

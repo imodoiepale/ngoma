@@ -1,10 +1,26 @@
 # Ongea Pesa — brand kit
-# PALETTE PROVENANCE: measured, not assumed.
-#   ground/accent  <- sampled from assets/reference/screencapture-ongeapesa-nsait-co-ke-2026-07-18.png
-#   surface        <- sampled from assets/reference/ongeapesa.jpeg (in-app)
-#   logo_*         <- sampled from assets/logo/ongea-pesa-lockup-transparent.png
-# The "extended" ramp comes from an earlier ChatGPT spec; it is NOT on the live product.
-# Do not use extended tokens as primaries without sign-off.
+# PALETTE PROVENANCE: measured, not assumed — and corrected once after LOOKING at the files.
+#
+# Ongea Pesa has TWO visual systems, and the reference file names hide which is which:
+#   ground/accent  <- assets/reference/screencapture-ongeapesa-nsait-co-ke-2026-07-18.png
+#                     Despite the name, this is the dark mobile APP (its App Permissions
+#                     screen): #0A0A0A ground, #22C55E toggles and buttons.
+#   surface        <- assets/reference/ongeapesa.jpeg
+#                     Despite the name, this is a light MARKETING landing page ("The Future
+#                     of Money Is Spoken"): near-white ground with a DEEPER EMERALD accent.
+#   logo_*         <- assets/logo/ongea-pesa-lockup-transparent.png
+#                     Navy wordmark and cyan globe, plus a green money swirl and teal-green
+#                     triangles in the "A" crossbars — the lockup is not only navy and cyan.
+#
+# The "extended" ramp came from an earlier spec whose emerald primary looked wrong against
+# the app, but it is close to the marketing page's accent. It was describing the marketing
+# surface, not inventing a colour. Still: pick ONE system per asset and don't mix them.
+#
+# CLAIM-SAFETY WARNING about that marketing mock-up: it shows Safaricom, M-Pesa, Visa,
+# Mastercard and Airtel logos under "Trusted by innovators and institutions worldwide", and
+# a "SOC 2 Type II Certified" badge. `claim_safety.forbidden` below rules out implying
+# Safaricom / M-Pesa endorsement. Do not ship that section, or reuse it as reference, unless
+# every one of those relationships and the certification is real and documented.
 brand: ongea-pesa
 display_name: Ongea Pesa
 legal_owner: NSAIT
@@ -19,12 +35,12 @@ positioning:
 
 palette:
   measured:
-    ground:        "#0A0A0A"   # site canvas, 34% of pixels
+    ground:        "#0A0A0A"   # APP canvas (dark system), 34% of pixels
     ground_raised: "#121212"   # cards / raised surfaces, 39%
     ground_tint:   "#0B130E"   # green-tinted panel
     accent:        "#22C55E"   # THE brand green (Tailwind green-500) — sole action colour
     accent_deep:   "#132419"   # accent at low alpha over ground
-    surface:       "#FEFEFE"   # in-app light surface
+    surface:       "#FEFEFE"   # MARKETING page ground (light system)
     surface_alt:   "#F8F9FB"
     hairline:      "#262626"
     logo_navy:     "#002552"
