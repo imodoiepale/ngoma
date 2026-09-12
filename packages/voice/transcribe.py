@@ -32,8 +32,6 @@ from typing import Any
 
 REPO = Path(__file__).resolve().parents[2]
 
-AUDIO_EXT = {".wav", ".mp3", ".m4a", ".ogg", ".flac", ".webm", ".mp4", ".mov"}
-
 FORMATS = {"carousel": ["carousel", "slides", "swipe"],
            "reel": ["reel", "video", "short", "tiktok"],
            "single": ["single", "post", "image", "picture", "still"],

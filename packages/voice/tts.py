@@ -99,7 +99,8 @@ class Take:
 
 
 def available(provider: str) -> tuple[bool, str]:
-    spec = PROVIDERS[provider]
+    if provider not in PROVIDERS:
+        raise TTSError(f"unknown provider {provider!r}; have {sorted(PROVIDERS)}")
     if provider == "piper":
         return (shutil.which("piper") is not None, "piper binary on PATH")
     if provider == "edge-tts":

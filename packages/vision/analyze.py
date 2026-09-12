@@ -139,9 +139,8 @@ def analyse_image(p: Path, downscale: int = 900) -> Features:
     f.contrast = round(sum(stat.stddev) / 3, 1)
     f.palette = _palette(im)
 
-    hsv = im.convert("HSV")
-    hs, ss, _ = hsv.split()
-    f.saturation = round(ImageStat.Stat(ss).mean[0], 1)
+    _, sat_channel, _ = im.convert("HSV").split()
+    f.saturation = round(ImageStat.Stat(sat_channel).mean[0], 1)
 
     px = list(im.convert("RGB").getdata())  # noqa: PD011
     n = len(px) or 1

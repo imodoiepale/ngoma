@@ -44,7 +44,12 @@ filer.pub
 
 # memory db is operational state, not source
 packages/memory/memory.sqlite3
+packages/orchestrator/control.sqlite3
 out/voice/
 out/analytics/
 brands/*/calendar/plan-loop.*
 brands/*/calendar/plan-180d.*
+
+# Large reference material. The style grammars derived from this are what the repo
+# needs; the 39.6 MB source PDF is not.
+*.pdf

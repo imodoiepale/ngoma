@@ -28,7 +28,6 @@ from dataclasses import dataclass, asdict, field
 from pathlib import Path
 from typing import Any
 
-import yaml
 
 REPO = Path(__file__).resolve().parents[2]
 

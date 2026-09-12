@@ -22,7 +22,8 @@ import pytest
 
 REPO = Path(__file__).resolve().parents[1]
 for pkg in ("brandkit", "compositor", "comfy-client", "image-router", "library",
-            "strategy", "vision", "voice", "memory", "analytics", "publish", "ingest"):
+            "strategy", "vision", "voice", "memory", "analytics", "publish", "ingest",
+            "orchestrator"):
     sys.path.insert(0, str(REPO / "packages" / pkg))
 
 
@@ -302,3 +303,78 @@ def test_captions_are_sized_from_the_frame():
     from mux import script_to_ass
     ass = script_to_ass("hello there", 4.0, 1080, 1920)
     assert "PlayResX: 1080" in ass and "PlayResY: 1920" in ass
+
+
+# --------------------------------------------------------------- orchestration
+
+def test_risky_task_kinds_always_need_a_human(tmp_path):
+    from control import Task, connect, propose
+    con = connect(tmp_path / "c.sqlite3")
+    for kind in ("publish", "skill_promote", "spend_increase", "whatsapp_status"):
+        tid = propose(con, Task(brand="t", kind=kind, title=kind, assigned_to="w"))
+        row = con.execute("SELECT status FROM tasks WHERE id=?", (tid,)).fetchone()
+        assert row["status"] == "awaiting_approval", f"{kind} dispatched without a human"
+
+
+def test_a_worker_cannot_approve_its_own_task(tmp_path):
+    from control import ControlError, Task, connect, propose, approve
+    con = connect(tmp_path / "c.sqlite3")
+    tid = propose(con, Task(brand="t", kind="publish", title="x", assigned_to="claude"))
+    with pytest.raises(ControlError, match="own task"):
+        approve(con, tid, "claude")
+    approve(con, tid, "human")          # a human still can
+
+
+def test_budget_is_checked_before_work_starts(tmp_path):
+    from control import ControlError, Task, add_worker, connect, propose, admit
+    con = connect(tmp_path / "c.sqlite3")
+    add_worker(con, "tiny", "local", "test", budget_usd=0.05)
+    tid = propose(con, Task(brand="t", kind="plan", title="x",
+                            assigned_to="tiny", estimate_usd=2.0))
+    with pytest.raises(ControlError, match="BEFORE work starts"):
+        admit(con, tid)
+
+
+def test_unknown_task_kinds_are_refused(tmp_path):
+    """An unclassified kind would default to whichever gate is convenient."""
+    from control import ControlError, Task, connect, propose
+    con = connect(tmp_path / "c.sqlite3")
+    with pytest.raises(ControlError, match="unknown task kind"):
+        propose(con, Task(brand="t", kind="exfiltrate", title="x"))
+
+
+def test_audit_log_is_tamper_evident(tmp_path):
+    from control import Task, connect, propose, verify_audit
+    con = connect(tmp_path / "c.sqlite3")
+    propose(con, Task(brand="t", kind="plan", title="one"))
+    propose(con, Task(brand="t", kind="plan", title="two"))
+    assert verify_audit(con)[0]
+    con.execute("UPDATE audit SET action='task.tampered' WHERE id=1")
+    con.commit()
+    ok, msg = verify_audit(con)
+    assert not ok and "row 1" in msg
+
+
+def test_local_workers_run_an_allowlist_not_the_task_spec():
+    """A task spec is data; data must not choose what executes."""
+    from workers import Local, WorkerError
+    with pytest.raises(WorkerError, match="allowlist"):
+        Local().build({"kind": "rm -rf /", "spec": {}})
+
+
+def test_deterministic_tasks_have_a_local_entrypoint():
+    from workers import Local
+    for kind in ("graph_rebuild", "plan", "analyse", "test"):
+        assert kind in Local.ENTRYPOINTS
+
+
+def test_absent_runtimes_report_missing_not_ready():
+    from workers import REGISTRY
+    ok, why = REGISTRY["hermes"].available()
+    if not ok:
+        assert why and "hermes" in why.lower()
+
+
+def test_paperclip_approval_map_uses_real_vocabulary():
+    from paperclip import APPROVAL_MAP, APPROVAL_TYPES
+    assert set(APPROVAL_MAP.values()) <= APPROVAL_TYPES

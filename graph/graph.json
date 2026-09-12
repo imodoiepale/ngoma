@@ -3122,6 +3122,77 @@
    "channel": "dgikaos"
   },
   {
+   "id": "brand:epalle",
+   "kind": "brand",
+   "label": "epalle"
+  },
+  {
+   "id": "style:epalle/asali_01_desire",
+   "kind": "style",
+   "label": "asali_01_desire",
+   "brand": "epalle"
+  },
+  {
+   "id": "style:epalle/asali_02_labour",
+   "kind": "style",
+   "label": "asali_02_labour",
+   "brand": "epalle"
+  },
+  {
+   "id": "style:epalle/asali_03_doubt",
+   "kind": "style",
+   "label": "asali_03_doubt",
+   "brand": "epalle"
+  },
+  {
+   "id": "style:epalle/asali_04_prayer",
+   "kind": "style",
+   "label": "asali_04_prayer",
+   "brand": "epalle"
+  },
+  {
+   "id": "style:epalle/asali_05_gratitude",
+   "kind": "style",
+   "label": "asali_05_gratitude",
+   "brand": "epalle"
+  },
+  {
+   "id": "style:epalle/asali_06_sweetness",
+   "kind": "style",
+   "label": "asali_06_sweetness",
+   "brand": "epalle"
+  },
+  {
+   "id": "style:epalle/cover_art_square",
+   "kind": "style",
+   "label": "cover_art_square",
+   "brand": "epalle"
+  },
+  {
+   "id": "style:epalle/shot_artefact_tableau",
+   "kind": "style",
+   "label": "shot_artefact_tableau",
+   "brand": "epalle"
+  },
+  {
+   "id": "style:epalle/shot_connective_landscape",
+   "kind": "style",
+   "label": "shot_connective_landscape",
+   "brand": "epalle"
+  },
+  {
+   "id": "style:epalle/shot_performance_lipsync",
+   "kind": "style",
+   "label": "shot_performance_lipsync",
+   "brand": "epalle"
+  },
+  {
+   "id": "style:epalle/shot_texture_plate",
+   "kind": "style",
+   "label": "shot_texture_plate",
+   "brand": "epalle"
+  },
+  {
    "id": "brand:ongea-pesa",
    "kind": "brand",
    "label": "ongea-pesa"
@@ -14054,6 +14125,61 @@
    "src": "video:jiqfAw2-QsQ",
    "rel": "belongs_to",
    "dst": "channel:dgikaos"
+  },
+  {
+   "src": "style:epalle/asali_01_desire",
+   "rel": "belongs_to",
+   "dst": "brand:epalle"
+  },
+  {
+   "src": "style:epalle/asali_02_labour",
+   "rel": "belongs_to",
+   "dst": "brand:epalle"
+  },
+  {
+   "src": "style:epalle/asali_03_doubt",
+   "rel": "belongs_to",
+   "dst": "brand:epalle"
+  },
+  {
+   "src": "style:epalle/asali_04_prayer",
+   "rel": "belongs_to",
+   "dst": "brand:epalle"
+  },
+  {
+   "src": "style:epalle/asali_05_gratitude",
+   "rel": "belongs_to",
+   "dst": "brand:epalle"
+  },
+  {
+   "src": "style:epalle/asali_06_sweetness",
+   "rel": "belongs_to",
+   "dst": "brand:epalle"
+  },
+  {
+   "src": "style:epalle/cover_art_square",
+   "rel": "belongs_to",
+   "dst": "brand:epalle"
+  },
+  {
+   "src": "style:epalle/shot_artefact_tableau",
+   "rel": "belongs_to",
+   "dst": "brand:epalle"
+  },
+  {
+   "src": "style:epalle/shot_connective_landscape",
+   "rel": "belongs_to",
+   "dst": "brand:epalle"
+  },
+  {
+   "src": "style:epalle/shot_performance_lipsync",
+   "rel": "belongs_to",
+   "dst": "brand:epalle"
+  },
+  {
+   "src": "style:epalle/shot_texture_plate",
+   "rel": "belongs_to",
+   "dst": "brand:epalle"
   },
   {
    "src": "style:ongea-pesa/accessibility_story",

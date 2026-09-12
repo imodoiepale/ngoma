@@ -102,7 +102,6 @@ def _caption_shape(caps: list[str]) -> dict[str, Any]:
 
 def derive(records: list[dict[str, Any]], source: str,
            captions: list[str] | None = None) -> Grammar:
-    imgs = [r for r in records if r.get("kind") == "image"]
     vids = [r for r in records if r.get("kind") == "video"]
     g = Grammar(source=source, samples=len(records))
 

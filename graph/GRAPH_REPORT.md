@@ -1,9 +1,9 @@
 # Graph Report — EPALLE Studio corpus (2026-09-12)
 
 ## Summary
-- 602 nodes · 2077 edges
-- node kinds: node_type 257, model 87, model_file 81, workflow 48, node_pack 37, style 24, video 22, creative 18, collection 12, technique 8, channel 2, gpu 2, hardware 2, setting 1, brand 1
-- edge kinds: uses 1312, requires 488, belongs_to 175, mentions 74, provided_by 28
+- 614 nodes · 2088 edges
+- node kinds: node_type 257, model 87, model_file 81, workflow 48, node_pack 37, style 35, video 22, creative 18, collection 12, technique 8, channel 2, gpu 2, hardware 2, brand 2, setting 1
+- edge kinds: uses 1312, requires 488, belongs_to 186, mentions 74, provided_by 28
 - 74 edges carry transcript evidence (video id + timestamp + quote)
 
 ## Extraction provenance

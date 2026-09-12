@@ -74,6 +74,10 @@ Feeding all of it:
 | `vision` | Measures references offline: palette, crushed blacks, subject quadrant, quiet zones, edge density, video pacing. | yes |
 | `strategy` | `study` derives a creator's grammar; `plan` builds dated briefs; `treatment` turns a song into a shot list. | yes |
 | `library` | SQLite FTS index + the typed corpus graph and its query tools. | yes |
+| `voice` | spoken briefs in (whisper); voiceover and burned-in captions out | yes |
+| `analytics` | pull Instagram/Postiz metrics, attribute them to briefs, derive learnings | yes (fixture) |
+| `memory` | bitemporal facts — what worked, when, and what superseded it | yes |
+| `orchestrator` | goals, tasks, budgets, approvals, audit; dispatch to a worker runtime | yes (dry-run) |
 | `publish` | Postiz (social), OpenWA (WhatsApp Status), Whop (course). Draft by default. | yes (dry-run) |
 | `studio-ui` | Next.js canvas, library browser, job view. Ported from the earlier EPALLE studio. | yes |
 
@@ -90,7 +94,7 @@ spending anything.
 | What | Voice-activated M-Pesa, by NSAIT | Music project |
 | Palette | `#0A0A0A` ground, `#22C55E` accent | charcoal / ivory / dust gold |
 | Structure | 30-idea calendar | ASALI six-stage narrative arc |
-| Grammars | 24 style specs | 6 stage + 5 shot grammars |
+| Grammars | 24 style specs | 6 ASALI stage + 5 shot grammars |
 | Output | carousels, reels, single posts | music videos, covers |
 
 Both palettes were **measured**, not accepted from a document. Ongea Pesa's came from the
@@ -155,8 +159,12 @@ Not style preferences. Each exists because violating it produced a real failure 
   `IN_QUEUE`. Pod-side execution is proven; serverless is not.
 - **Carousel pose generation.** `flux-2-klein-9b-kv` is licence-gated on HuggingFace.
 - **Enumerate Instagram references.** Needs the OpenCLI browser extension connected.
-- **Voice.** Phase 7 — speech-in for briefs, TTS voiceover for reels.
-- **Learn from its own results.** Phase 8 — temporal memory, analytics, skill promotion.
+- **Learn from real results.** The analytics and memory loop is built and tested, but it
+  refuses per-grammar claims below 6 posts per grammar — correctly, since at 3 posts it
+  reported a deliberately under-performing grammar as +28%. Expect 4-6 weeks of consistent
+  posting in a narrow rotation before it says anything trustworthy.
+- **Sheng voiceover.** Refused by design: no TTS system supports it, so every provider
+  renders it as mispronounced Swahili. Record a human, or write Kiswahili.
 
 Full register with owners: `docs/BLOCKERS.md`.
 
@@ -168,6 +176,8 @@ Full register with owners: `docs/BLOCKERS.md`.
 uv run studio.py doctor        # what is present, reachable and blocked
 uv run studio.py plan          # plan all 30 Ongea Pesa ideas — costs nothing
 uv run studio.py graph         # rebuild the knowledge graph
+uv run studio.py test          # 36 end-to-end tests
+uv run studio.py loop          # the whole learning loop on fixture data
 
 uv run --with pillow --with pyyaml packages/compositor/compositor.py \
     --base out/_synthetic_base.png --idea 1 --ratio 4:5 --slide 1/5

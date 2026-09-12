@@ -188,12 +188,6 @@ def style_effects(posts: list[dict[str, Any]], metric: str) -> list[Finding]:
 
 def factor_effects(posts: list[dict[str, Any]], metric: str) -> list[Finding]:
     """Adjacent briefs vs their parent. One factor differs, so the delta is attributable."""
-    by_day = {p["brief_day"]: p for p in posts if p.get("brief_day")}
-    by_idea = defaultdict(list)
-    for p in posts:
-        if p.get("campaign_id"):
-            by_idea[p["campaign_id"]].append(p)
-
     out: list[Finding] = []
     fixture = any(p.get("source") == "fixture" for p in posts)
     grouped: dict[str, list[float]] = defaultdict(list)

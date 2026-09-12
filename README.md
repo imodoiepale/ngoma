@@ -14,7 +14,7 @@ Secrets live in Windows DPAPI via `infra/runpod/set_secret.py`. No `.env` with r
 uv run studio.py doctor          # what is installed, reachable and blocked
 uv run studio.py plan            # plan all 30 Ongea Pesa ideas (costs nothing)
 uv run studio.py check           # fail if anything secret-shaped is tracked
-uv run studio.py test            # 27 end-to-end tests, no key/GPU/network
+uv run studio.py test            # 36 end-to-end tests, no key/GPU/network
 uv run studio.py loop            # the whole pipeline on fixture data
 ```
 
@@ -41,4 +41,5 @@ uv run studio.py loop            # the whole pipeline on fixture data
 | `voice` | spoken briefs in (whisper), voiceover + burned-in captions out |
 | `analytics` | pull Instagram/Postiz metrics, attribute them to briefs, derive learnings |
 | `memory` | bitemporal facts: what worked, when, and what superseded it |
+| `orchestrator` | goals, tasks, budgets, approvals, audit; dispatch to Claude/Codex/local/Hermes |
 | `studio-ui` | Next.js canvas (ported) |

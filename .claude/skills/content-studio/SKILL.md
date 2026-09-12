@@ -52,6 +52,8 @@ failure in this codebase or its predecessor.
 | "study / clone this creator" | `packages/strategy/study.py` |
 | "plan the next 30 days" | `packages/strategy/plan.py` |
 | "turn this song into a video" | `packages/strategy/treatment.py` |
+| "queue / approve / budget work" | `packages/orchestrator/control.py` |
+| "run a task on an agent" | `packages/orchestrator/workers.py` |
 
 ## 1. Know the corpus before generating
 
@@ -188,6 +190,32 @@ frame rate first, derives shot count per stage from that stage's length, and giv
 shot a generation route (`still_push`, `performance`, `motion_xfer`, `segmented`, `texture`)
 resolved to a real profile or workflow. Hero shots are held; connective shots are cut short
 — even distribution is what makes a music video feel like a slideshow.
+
+## 9. Gate the work
+
+```bash
+uv run packages/orchestrator/control.py init      # seed claude / codex / verifier
+uv run packages/orchestrator/control.py queue
+uv run packages/orchestrator/workers.py runtimes
+uv run packages/orchestrator/workers.py flow --title "some change"
+```
+
+The control plane decides **what** may happen and who pays; `workers.py` decides **how**.
+Keep them apart — merged, the thing that decides what is allowed is the same thing that
+wants to do it.
+
+Four things it enforces, not suggests: risky kinds (`publish`, `skill_promote`,
+`spend_increase`, `whatsapp_status`) always need a human; a worker cannot approve its own
+task; budget is checked BEFORE work starts; and the audit log is hash-chained, so
+`control.py verify` detects tampering.
+
+**Local-first routing.** A task whose kind has a deterministic entrypoint runs the script,
+not a model, even when assigned to an LLM worker — and says so. Routing `graph_rebuild`
+through an LLM would be slower, costlier and less reliable. `spec.force_runtime` overrides.
+
+Hermes and Paperclip are real and optional. Neither is installed; both adapters degrade to
+an instruction. Install Hermes for a persistent agent with its own memory; deploy Paperclip
+when more than one person supervises.
 
 ## Gotchas that will bite you
 

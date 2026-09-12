@@ -164,7 +164,7 @@ def doctor() -> int:
     sys.path.insert(0, str(REPO / "packages" / "comfy-client"))
     try:
         from client import ComfyClient  # noqa: PLC0415
-        for b in ("local", "serverless"):
+        for b in ("local", "pod", "serverless"):
             try:
                 c = ComfyClient(b)
                 print(f"  {b:<12} {'reachable' if c.reachable() else 'not reachable'}  {c.base_url}")

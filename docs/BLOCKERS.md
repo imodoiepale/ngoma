@@ -85,14 +85,24 @@ Phases 0-8 are built: ingestion, knowledge graph, four generation backends, comp
 vision, strategy, publishing, voice and memory.
 
 Still genuinely absent:
-- **Hermes and Paperclip orchestration.** Neither is installed; `GitHub\paperclip` is an
-  empty directory. The skill-promotion gates they were meant to enforce are implemented in
-  `packages/strategy/skill_curator.py` regardless of which runtime calls it, so this is an
-  optional control plane rather than a missing capability.
+- ~~Hermes and Paperclip orchestration~~ — BUILT, and both turned out to be real projects
+  (`NousResearch/hermes-agent` and `paperclipai/paperclip`, both MIT; verified against the
+  GitHub API, not the SEO pages that surround them).
+
+  `packages/orchestrator/` runs locally with no dependency on either: goals, tasks,
+  budgets, typed approvals and a hash-chained audit log in SQLite, dispatching to four
+  runtimes (`local`, `claude-code`, `codex-cli`, `hermes`). Local-first routing means a
+  deterministic task runs the script rather than burning an LLM call.
+
+  Neither Hermes nor Paperclip is INSTALLED here, and neither needs to be. Adapters exist
+  (`hermes.py`, `paperclip.py`) and degrade to a clear instruction. Install Hermes when you
+  want a persistent agent with its own memory; deploy Paperclip when more than one person
+  needs to supervise. See `infra/hermes/README.md` and `paperclip.py setup`.
 - ~~Analytics ingestion~~ — BUILT. `packages/analytics/` pulls from the Instagram Graph
   API and Postiz, attributes posts to briefs, and derives learnings into memory. It still
-  needs the Instagram connection from item 5 before it sees real numbers; until then use
-  `--source fixture`, which tags everything `source=fixture` so nothing can be mistaken
+  needs the Instagram connection from item 5 before it sees real numbers; until then run
+  `collect.py fixture` (the source is positional, not a flag), which tags every
+  record `source=fixture` so nothing can be mistaken
   for measurement.
 - **Enough posts to learn from.** The analysis refuses per-grammar claims below 6 posts
   per grammar, and it is right to: at 3 posts it reported a deliberately under-performing
@@ -100,6 +110,9 @@ Still genuinely absent:
   grammars, before the learning loop says anything trustworthy.
 - **A VLM pass in `packages/vision`.** Measurements work offline; semantic tagging
   ("this is a hands-at-work shot") still needs a model.
+- **`packages/nodes/epalle-nodes` is an empty, documented stub.** Four custom ComfyUI nodes
+  are designed but unwritten; see its README for why they go in a new pack rather than into
+  `matrix-power-nodes`.
 
 ## 13. Deferred by decision
 Meta AI via OpenWA as an image provider. Region-gated, no job ids, ToS-fragile, and it
