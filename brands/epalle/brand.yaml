@@ -1,0 +1,162 @@
+# EPALLE — music project
+#
+# PALETTE PROVENANCE: measured from assets/cover/*.png, then CORRECTED against the rules in
+# packages/publish/whop/lessons/04-01-epalle-visual-language.md.
+#
+# The measurement and the rule disagree, and the rule wins. The existing cover art crushes
+# 45-53% of its pixels to pure #000000 and puts its lightest tone at a clinical #F0F0F0.
+# The visual language says charcoal must be "deep neutral, never pure black, so shadow keeps
+# detail" and ivory must be "warm off-white, never clinical". So the tokens below are the
+# corrected targets; the measured values are kept as `as_shipped` so the drift stays visible
+# rather than being quietly normalised away.
+brand: epalle
+display_name: EPALLE
+kind: music
+discipline: >
+  Fashion-film restraint. Composed stillness over motion. One idea per shot. Silence and
+  negative space allowed to sit. No visual effect that announces itself.
+
+positioning:
+  premise: African visual poetry — flowers, memory, burning, blooming, rebirth
+  register: fashion film
+  note: >
+    The flower vocabulary is the argument, not decoration. A flower here is doing time: it
+    is either about to open or about to go, and that ambiguity is what carries meaning
+    across a cut.
+
+palette:
+  measured:                    # the three values, held across every shot
+    charcoal:   "#1A1512"      # deep neutral, warm-leaning; shadow MUST retain detail
+    ivory:      "#F2EBE0"      # warm off-white, skin-adjacent
+    dust_gold:  "#8A6B45"      # matte, aged, sun-worn — NOT shine, NOT metallic
+    charcoal_lift: "#2A231D"   # the lightest a shadow may sit
+    gold_deep:  "#604030"      # measured on the cover; the low end of dust gold
+    gold_pale:  "#A08770"      # the high end, before it reads as skin
+  as_shipped:                  # actually measured in assets/cover/ on 2026-09-12
+    dominant:   "#000000"      # 45-53% of pixels — CRUSHED, violates the charcoal rule
+    warm_mids:  ["#705040", "#806040", "#604030", "#403020"]
+    lightest:   "#F0F0F0"      # clinical; should be warmed toward ivory
+  rules:
+    - "Three values only. Charcoal carries the frame, ivory is the light, dust gold is the accent."
+    - "Dust gold is DUST: matte, aged, sun-worn. If it reads as shine or metal, it is wrong."
+    - "The two standing drifts to check on every output: dust gold warming into orange, and
+       charcoal crushing to black. Both flatten the image."
+    - "Never the orange-teal reflex that generative models default to."
+
+# The palette is narrative, not decoration. Dust gold is WITHHELD until gratitude, so its
+# arrival means something. Any shot generator must respect the stage's palette weight.
+arc:
+  name: ASALI
+  stages:
+    - key: desire
+      visual_state: "reaching, incomplete frames, subject partly out of frame"
+      palette_weight: "ivory dominant, gold ABSENT"
+      motion: "slow push"
+      flower: "closed"
+    - key: labour
+      visual_state: "hands, repetition, sweat and dust, tight crops"
+      palette_weight: "charcoal dominant"
+      motion: "repetitive, cyclical"
+      flower: "crushed"
+    - key: doubt
+      visual_state: "space between subject and camera opens, symmetry breaks"
+      palette_weight: "charcoal; ivory drained"
+      motion: "static, held too long"
+      flower: "absent"
+    - key: prayer
+      visual_state: "stillness, downward light, subject centred and small"
+      palette_weight: "ivory returns as light source"
+      motion: "almost none"
+      flower: "offered"
+    - key: gratitude
+      visual_state: "widening, other figures enter, warmth arrives"
+      palette_weight: "dust gold enters HERE for the first time"
+      motion: "opening, lifting"
+      flower: "opening"
+    - key: sweetness
+      visual_state: "enclosure, hands over, bloom"
+      palette_weight: "gold and ivory together, charcoal recedes"
+      motion: "settled, circular"
+      flower: "whole"
+
+lens:
+  convention: "pick one focal character and hold it for the whole piece"
+  why: >
+    Mixing wide and compressed perspective across a video destroys cohesion faster than any
+    colour error.
+  default: "50mm-equivalent, shallow but not bokeh-forward"
+
+lighting_setups:                # reuse these; do not invent per shot
+  - key: downward_soft
+    description: "single high source, soft, steep falloff — prayer and stillness"
+  - key: raking_window
+    description: "hard low side light, dust visible in the beam — labour"
+  - key: open_shade
+    description: "even, directionless, drained — doubt"
+
+forbidden_looks:                # this list does more work than the rest combined
+  - orange-teal grade
+  - lens flares
+  - slow motion for its own sake
+  - symmetrical hero shots
+  - glossy skin
+  - metallic or specular gold
+  - pure black shadow with no detail
+  - busy frames with more than one idea
+
+logo:
+  # A music project has cover art, not a lockup. The rule still holds where it matters:
+  # the model never draws the title or the artist name - those are composited.
+  master: assets/cover/MAIN COVER ART.png
+  rule: COMPOSITE_ONLY
+  min_width_pct: 0            # no lockup is stamped onto shots
+  clear_space_ratio: 0.5
+  note: >
+    Cover art is a deliverable, not a stamp. Unlike Ongea Pesa there is no mark to place on
+    every asset; `cover_art_square` produces a cover and the title is composited over it.
+
+typography:
+  headline: {family_stack: ["Canela", "GT Sectra", "Georgia", serif], weight: 300, case: title, tracking: 0.01}
+  micro:    {family_stack: ["IBM Plex Mono", monospace], weight: 400, case: upper, tracking: 0.10}
+  rule: "Sparse caption copy. Composited in code, never rendered by a model."
+
+catalogue:
+  # Songs present on disk. Paths are OUTSIDE the repo (large audio/video stays out of git).
+  - key: flowers-falling
+    title: "Flowers Falling"
+    assets: "brands/epalle/assets/cover/"
+    footage: "~/Downloads/FLOWERS FALLING/ (9 .MOV clips, ~3.6 GB)"
+    status: has_cover_art_and_live_footage
+  - key: ancestral-pulse
+    title: "Ancestral Pulse"
+    audio: "~/Downloads/Ancestral Pulse.wav (32.5 MB) + _stems.zip"
+    status: has_master_and_stems
+  - key: basalt-depth
+    title: "Basalt Depth"
+    audio: "~/Downloads/Basalt Depth.wav"
+    status: has_master
+  - key: asali
+    title: "ASALI"
+    status: pilot_treatment_only
+    note: "the lead candidate in the course treatment; no master located on disk yet"
+
+masters:
+  "9:16": [2160, 3840]
+  "1:1":  [3840, 3840]
+  "16:9": [3840, 2160]
+  "4:5":  [3072, 3840]
+
+study_ethics:
+  # From lesson 04-01, "Learning from a director without copying them". Enforced in
+  # packages/strategy/study.py, not left as advice.
+  take: "the grammar — how an artefact is framed to read as significant, how repetition
+         accumulates, how restraint creates weight"
+  never: "their shots, their scripts, their locations, their specific images"
+  rule: "compose original scenes in the grammar you learned"
+
+claim_safety:
+  forbidden:
+    - "Naming a living director or artist as a collaborator, endorser or source."
+    - "Reproducing an identifiable shot, location or composition from reference material."
+    - "Using a real person's likeness without a release."
+  disclosure: "AI-assisted imagery."

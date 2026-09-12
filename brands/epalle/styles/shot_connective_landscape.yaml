@@ -1,0 +1,32 @@
+brand: epalle
+generates: base visual only
+text_policy: NONE - sparse caption copy is composited in code
+register: fashion film
+lens: hold one focal character across the whole piece; 50mm-equivalent default
+discipline: one idea per shot; composed stillness; negative space allowed to sit
+accessibility:
+  reserve_copy_zone: leave one third quiet enough to letter over
+  min_contrast: 4.5:1 for any composited copy
+key: shot_connective_landscape
+stage: null
+subject: an empty landscape or interior with no figure, holding the mood between hero shots
+composition: wide, horizon low, deliberately uneventful
+palette:
+- '#1A1512'
+- '#F2EBE0'
+palette_weight: charcoal and ivory only
+light: open_shade or dusk
+motion: a very slow drift
+flower: none
+finish: quiet, grain, low contrast
+note: cut these SHORT; hero shots get the length
+ratios:
+- '9:16'
+- '16:9'
+- '1:1'
+negative_prompt: no text, no letters, no numbers, no logos, no watermark, no signature, no captions, no orange-teal
+  grade, no lens flare, no glossy skin, no metallic or specular gold, no pure black shadow without detail, no blown
+  highlights, no symmetrical hero shot, no slow-motion blur, no busy frame, no multiple competing subjects, no HDR
+  halo, no distorted hands, no extra fingers, no celebrity likeness, no identifiable real person
+mode: shot_grammar
+audience: music audience; fashion-film literate

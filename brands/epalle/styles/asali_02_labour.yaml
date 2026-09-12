@@ -1,0 +1,33 @@
+brand: epalle
+generates: base visual only
+text_policy: NONE - sparse caption copy is composited in code
+register: fashion film
+lens: hold one focal character across the whole piece; 50mm-equivalent default
+discipline: one idea per shot; composed stillness; negative space allowed to sit
+accessibility:
+  reserve_copy_zone: leave one third quiet enough to letter over
+  min_contrast: 4.5:1 for any composited copy
+key: asali_02_labour
+stage: labour
+order: 2
+subject: hands at repetitive work, sweat and dust on skin, the same gesture caught mid-cycle
+composition: tight crop, the hands fill the frame, horizon absent
+palette:
+- '#1A1512'
+- '#2A231D'
+- '#F2EBE0'
+palette_weight: charcoal dominant
+light: raking_window - hard low side light with dust visible in the beam
+motion: repetitive, cyclical
+flower: a crushed flower, petals pressed flat
+finish: heavy texture, matte, visible skin grain
+ratios:
+- '9:16'
+- '16:9'
+- '1:1'
+negative_prompt: no text, no letters, no numbers, no logos, no watermark, no signature, no captions, no orange-teal
+  grade, no lens flare, no glossy skin, no metallic or specular gold, no pure black shadow without detail, no blown
+  highlights, no symmetrical hero shot, no slow-motion blur, no busy frame, no multiple competing subjects, no HDR
+  halo, no distorted hands, no extra fingers, no celebrity likeness, no identifiable real person
+mode: asali_arc
+audience: music audience; fashion-film literate

@@ -1,0 +1,30 @@
+brand: epalle
+generates: base visual only
+text_policy: NONE - sparse caption copy is composited in code
+register: fashion film
+lens: hold one focal character across the whole piece; 50mm-equivalent default
+discipline: one idea per shot; composed stillness; negative space allowed to sit
+accessibility:
+  reserve_copy_zone: leave one third quiet enough to letter over
+  min_contrast: 4.5:1 for any composited copy
+key: cover_art_square
+stage: null
+subject: a single emblematic image for a release cover - object, figure fragment or bloom
+composition: 1:1, subject slightly off centre, one quiet third reserved for the title
+palette:
+- '#1A1512'
+- '#8A6B45'
+- '#F2EBE0'
+palette_weight: charcoal field, one accent
+light: downward_soft
+motion: n/a
+flower: central to the vocabulary - closed, opening or whole depending on the release
+finish: matte, grain, shadow with detail
+ratios:
+- '1:1'
+negative_prompt: no text, no letters, no numbers, no logos, no watermark, no signature, no captions, no orange-teal
+  grade, no lens flare, no glossy skin, no metallic or specular gold, no pure black shadow without detail, no blown
+  highlights, no symmetrical hero shot, no slow-motion blur, no busy frame, no multiple competing subjects, no HDR
+  halo, no distorted hands, no extra fingers, no celebrity likeness, no identifiable real person
+mode: shot_grammar
+audience: music audience; fashion-film literate

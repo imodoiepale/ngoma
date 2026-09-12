@@ -1,0 +1,892 @@
+{
+  "brand": "epalle",
+  "title": "Ancestral Pulse",
+  "audio": "C:\\Users\\inkno\\Downloads\\Ancestral Pulse.wav",
+  "duration_s": 177.31,
+  "fps": 24,
+  "arc": "ASALI",
+  "premise": "African visual poetry — flowers, memory, burning, blooming, rebirth",
+  "what_this_is_not": [
+    "orange-teal grade",
+    "lens flares",
+    "slow motion for its own sake",
+    "symmetrical hero shots",
+    "glossy skin",
+    "metallic or specular gold",
+    "pure black shadow with no detail",
+    "busy frames with more than one idea"
+  ],
+  "shots": [
+    {
+      "n": 1,
+      "stage": "desire",
+      "style_key": "asali_01_desire",
+      "kind": "hero",
+      "start_s": 0.0,
+      "duration_s": 8.0,
+      "framing": "incomplete framing, subject deliberately not whole, generous empty field opposite the reach",
+      "subject_action": "a figure reaching, caught partly outside the frame, hand or shoulder cropped by the edge",
+      "palette_note": "ivory dominant, gold ABSENT",
+      "motion": "slow push",
+      "route": "still_push",
+      "route_why": "static or near-static hero image, then a slow synthetic push",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: closed"
+      ]
+    },
+    {
+      "n": 2,
+      "stage": "desire",
+      "style_key": "asali_01_desire",
+      "kind": "connective",
+      "start_s": 8.0,
+      "duration_s": 3.08,
+      "framing": "incomplete framing, subject deliberately not whole, generous empty field opposite the reach",
+      "subject_action": "a figure reaching, caught partly outside the frame, hand or shoulder cropped by the edge",
+      "palette_note": "ivory dominant, gold ABSENT",
+      "motion": "slow push",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: closed"
+      ]
+    },
+    {
+      "n": 3,
+      "stage": "desire",
+      "style_key": "asali_01_desire",
+      "kind": "connective",
+      "start_s": 11.08,
+      "duration_s": 3.08,
+      "framing": "incomplete framing, subject deliberately not whole, generous empty field opposite the reach",
+      "subject_action": "a figure reaching, caught partly outside the frame, hand or shoulder cropped by the edge",
+      "palette_note": "ivory dominant, gold ABSENT",
+      "motion": "slow push",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: closed"
+      ]
+    },
+    {
+      "n": 4,
+      "stage": "desire",
+      "style_key": "asali_01_desire",
+      "kind": "connective",
+      "start_s": 14.16,
+      "duration_s": 3.08,
+      "framing": "incomplete framing, subject deliberately not whole, generous empty field opposite the reach",
+      "subject_action": "a figure reaching, caught partly outside the frame, hand or shoulder cropped by the edge",
+      "palette_note": "ivory dominant, gold ABSENT",
+      "motion": "slow push",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: closed"
+      ]
+    },
+    {
+      "n": 5,
+      "stage": "desire",
+      "style_key": "asali_01_desire",
+      "kind": "connective",
+      "start_s": 17.24,
+      "duration_s": 3.08,
+      "framing": "incomplete framing, subject deliberately not whole, generous empty field opposite the reach",
+      "subject_action": "a figure reaching, caught partly outside the frame, hand or shoulder cropped by the edge",
+      "palette_note": "ivory dominant, gold ABSENT",
+      "motion": "slow push",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: closed"
+      ]
+    },
+    {
+      "n": 6,
+      "stage": "desire",
+      "style_key": "asali_01_desire",
+      "kind": "connective",
+      "start_s": 20.32,
+      "duration_s": 3.08,
+      "framing": "incomplete framing, subject deliberately not whole, generous empty field opposite the reach",
+      "subject_action": "a figure reaching, caught partly outside the frame, hand or shoulder cropped by the edge",
+      "palette_note": "ivory dominant, gold ABSENT",
+      "motion": "slow push",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: closed"
+      ]
+    },
+    {
+      "n": 7,
+      "stage": "desire",
+      "style_key": "asali_01_desire",
+      "kind": "connective",
+      "start_s": 23.4,
+      "duration_s": 3.08,
+      "framing": "incomplete framing, subject deliberately not whole, generous empty field opposite the reach",
+      "subject_action": "a figure reaching, caught partly outside the frame, hand or shoulder cropped by the edge",
+      "palette_note": "ivory dominant, gold ABSENT",
+      "motion": "slow push",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: closed"
+      ]
+    },
+    {
+      "n": 8,
+      "stage": "desire",
+      "style_key": "asali_01_desire",
+      "kind": "connective",
+      "start_s": 26.47,
+      "duration_s": 3.08,
+      "framing": "incomplete framing, subject deliberately not whole, generous empty field opposite the reach",
+      "subject_action": "a figure reaching, caught partly outside the frame, hand or shoulder cropped by the edge",
+      "palette_note": "ivory dominant, gold ABSENT",
+      "motion": "slow push",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: closed"
+      ]
+    },
+    {
+      "n": 9,
+      "stage": "labour",
+      "style_key": "asali_02_labour",
+      "kind": "hero",
+      "start_s": 29.55,
+      "duration_s": 8.0,
+      "framing": "tight crop, the hands fill the frame, horizon absent",
+      "subject_action": "hands at repetitive work, sweat and dust on skin, the same gesture caught mid-cycle",
+      "palette_note": "charcoal dominant",
+      "motion": "repetitive, cyclical",
+      "route": "still_push",
+      "route_why": "static or near-static hero image, then a slow synthetic push",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: crushed"
+      ]
+    },
+    {
+      "n": 10,
+      "stage": "labour",
+      "style_key": "asali_02_labour",
+      "kind": "connective",
+      "start_s": 37.56,
+      "duration_s": 3.08,
+      "framing": "tight crop, the hands fill the frame, horizon absent",
+      "subject_action": "hands at repetitive work, sweat and dust on skin, the same gesture caught mid-cycle",
+      "palette_note": "charcoal dominant",
+      "motion": "repetitive, cyclical",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: crushed"
+      ]
+    },
+    {
+      "n": 11,
+      "stage": "labour",
+      "style_key": "asali_02_labour",
+      "kind": "connective",
+      "start_s": 40.63,
+      "duration_s": 3.08,
+      "framing": "tight crop, the hands fill the frame, horizon absent",
+      "subject_action": "hands at repetitive work, sweat and dust on skin, the same gesture caught mid-cycle",
+      "palette_note": "charcoal dominant",
+      "motion": "repetitive, cyclical",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: crushed"
+      ]
+    },
+    {
+      "n": 12,
+      "stage": "labour",
+      "style_key": "asali_02_labour",
+      "kind": "connective",
+      "start_s": 43.71,
+      "duration_s": 3.08,
+      "framing": "tight crop, the hands fill the frame, horizon absent",
+      "subject_action": "hands at repetitive work, sweat and dust on skin, the same gesture caught mid-cycle",
+      "palette_note": "charcoal dominant",
+      "motion": "repetitive, cyclical",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: crushed"
+      ]
+    },
+    {
+      "n": 13,
+      "stage": "labour",
+      "style_key": "asali_02_labour",
+      "kind": "connective",
+      "start_s": 46.79,
+      "duration_s": 3.08,
+      "framing": "tight crop, the hands fill the frame, horizon absent",
+      "subject_action": "hands at repetitive work, sweat and dust on skin, the same gesture caught mid-cycle",
+      "palette_note": "charcoal dominant",
+      "motion": "repetitive, cyclical",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: crushed"
+      ]
+    },
+    {
+      "n": 14,
+      "stage": "labour",
+      "style_key": "asali_02_labour",
+      "kind": "connective",
+      "start_s": 49.87,
+      "duration_s": 3.08,
+      "framing": "tight crop, the hands fill the frame, horizon absent",
+      "subject_action": "hands at repetitive work, sweat and dust on skin, the same gesture caught mid-cycle",
+      "palette_note": "charcoal dominant",
+      "motion": "repetitive, cyclical",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: crushed"
+      ]
+    },
+    {
+      "n": 15,
+      "stage": "labour",
+      "style_key": "asali_02_labour",
+      "kind": "connective",
+      "start_s": 52.95,
+      "duration_s": 3.08,
+      "framing": "tight crop, the hands fill the frame, horizon absent",
+      "subject_action": "hands at repetitive work, sweat and dust on skin, the same gesture caught mid-cycle",
+      "palette_note": "charcoal dominant",
+      "motion": "repetitive, cyclical",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: crushed"
+      ]
+    },
+    {
+      "n": 16,
+      "stage": "labour",
+      "style_key": "asali_02_labour",
+      "kind": "connective",
+      "start_s": 56.03,
+      "duration_s": 3.08,
+      "framing": "tight crop, the hands fill the frame, horizon absent",
+      "subject_action": "hands at repetitive work, sweat and dust on skin, the same gesture caught mid-cycle",
+      "palette_note": "charcoal dominant",
+      "motion": "repetitive, cyclical",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: crushed"
+      ]
+    },
+    {
+      "n": 17,
+      "stage": "doubt",
+      "style_key": "asali_03_doubt",
+      "kind": "hero",
+      "start_s": 59.1,
+      "duration_s": 8.0,
+      "framing": "broken symmetry, subject off the thirds, too much air on one side",
+      "subject_action": "a figure held at distance, turned slightly away, the space between camera and subject opened",
+      "palette_note": "charcoal; ivory drained",
+      "motion": "static, held too long",
+      "route": "still_push",
+      "route_why": "static or near-static hero image, then a slow synthetic push",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: absent"
+      ]
+    },
+    {
+      "n": 18,
+      "stage": "doubt",
+      "style_key": "asali_03_doubt",
+      "kind": "connective",
+      "start_s": 67.11,
+      "duration_s": 3.08,
+      "framing": "broken symmetry, subject off the thirds, too much air on one side",
+      "subject_action": "a figure held at distance, turned slightly away, the space between camera and subject opened",
+      "palette_note": "charcoal; ivory drained",
+      "motion": "static, held too long",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: absent"
+      ]
+    },
+    {
+      "n": 19,
+      "stage": "doubt",
+      "style_key": "asali_03_doubt",
+      "kind": "connective",
+      "start_s": 70.19,
+      "duration_s": 3.08,
+      "framing": "broken symmetry, subject off the thirds, too much air on one side",
+      "subject_action": "a figure held at distance, turned slightly away, the space between camera and subject opened",
+      "palette_note": "charcoal; ivory drained",
+      "motion": "static, held too long",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: absent"
+      ]
+    },
+    {
+      "n": 20,
+      "stage": "doubt",
+      "style_key": "asali_03_doubt",
+      "kind": "connective",
+      "start_s": 73.26,
+      "duration_s": 3.08,
+      "framing": "broken symmetry, subject off the thirds, too much air on one side",
+      "subject_action": "a figure held at distance, turned slightly away, the space between camera and subject opened",
+      "palette_note": "charcoal; ivory drained",
+      "motion": "static, held too long",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: absent"
+      ]
+    },
+    {
+      "n": 21,
+      "stage": "doubt",
+      "style_key": "asali_03_doubt",
+      "kind": "connective",
+      "start_s": 76.34,
+      "duration_s": 3.08,
+      "framing": "broken symmetry, subject off the thirds, too much air on one side",
+      "subject_action": "a figure held at distance, turned slightly away, the space between camera and subject opened",
+      "palette_note": "charcoal; ivory drained",
+      "motion": "static, held too long",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: absent"
+      ]
+    },
+    {
+      "n": 22,
+      "stage": "doubt",
+      "style_key": "asali_03_doubt",
+      "kind": "connective",
+      "start_s": 79.42,
+      "duration_s": 3.08,
+      "framing": "broken symmetry, subject off the thirds, too much air on one side",
+      "subject_action": "a figure held at distance, turned slightly away, the space between camera and subject opened",
+      "palette_note": "charcoal; ivory drained",
+      "motion": "static, held too long",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: absent"
+      ]
+    },
+    {
+      "n": 23,
+      "stage": "doubt",
+      "style_key": "asali_03_doubt",
+      "kind": "connective",
+      "start_s": 82.5,
+      "duration_s": 3.08,
+      "framing": "broken symmetry, subject off the thirds, too much air on one side",
+      "subject_action": "a figure held at distance, turned slightly away, the space between camera and subject opened",
+      "palette_note": "charcoal; ivory drained",
+      "motion": "static, held too long",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: absent"
+      ]
+    },
+    {
+      "n": 24,
+      "stage": "doubt",
+      "style_key": "asali_03_doubt",
+      "kind": "connective",
+      "start_s": 85.58,
+      "duration_s": 3.08,
+      "framing": "broken symmetry, subject off the thirds, too much air on one side",
+      "subject_action": "a figure held at distance, turned slightly away, the space between camera and subject opened",
+      "palette_note": "charcoal; ivory drained",
+      "motion": "static, held too long",
+      "route": "texture",
+      "route_why": "texture plate; a still is enough",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: absent"
+      ]
+    },
+    {
+      "n": 25,
+      "stage": "prayer",
+      "style_key": "asali_04_prayer",
+      "kind": "hero",
+      "start_s": 88.65,
+      "duration_s": 8.0,
+      "framing": "subject small and centred, vast field above, light falling from directly overhead",
+      "subject_action": "a figure centred and made small by the frame, head lowered, entirely still",
+      "palette_note": "ivory returns as light source",
+      "motion": "almost none",
+      "route": "performance",
+      "route_why": "performance or lip-sync -> reference-conditioned video with audio",
+      "workflow_or_profile": "workflows/h3/NEW_-_Music_Video.json",
+      "notes": [
+        "flower state: offered"
+      ]
+    },
+    {
+      "n": 26,
+      "stage": "prayer",
+      "style_key": "asali_04_prayer",
+      "kind": "connective",
+      "start_s": 96.66,
+      "duration_s": 3.08,
+      "framing": "subject small and centred, vast field above, light falling from directly overhead",
+      "subject_action": "a figure centred and made small by the frame, head lowered, entirely still",
+      "palette_note": "ivory returns as light source",
+      "motion": "almost none",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: offered"
+      ]
+    },
+    {
+      "n": 27,
+      "stage": "prayer",
+      "style_key": "asali_04_prayer",
+      "kind": "connective",
+      "start_s": 99.74,
+      "duration_s": 3.08,
+      "framing": "subject small and centred, vast field above, light falling from directly overhead",
+      "subject_action": "a figure centred and made small by the frame, head lowered, entirely still",
+      "palette_note": "ivory returns as light source",
+      "motion": "almost none",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: offered"
+      ]
+    },
+    {
+      "n": 28,
+      "stage": "prayer",
+      "style_key": "asali_04_prayer",
+      "kind": "connective",
+      "start_s": 102.82,
+      "duration_s": 3.08,
+      "framing": "subject small and centred, vast field above, light falling from directly overhead",
+      "subject_action": "a figure centred and made small by the frame, head lowered, entirely still",
+      "palette_note": "ivory returns as light source",
+      "motion": "almost none",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: offered"
+      ]
+    },
+    {
+      "n": 29,
+      "stage": "prayer",
+      "style_key": "asali_04_prayer",
+      "kind": "connective",
+      "start_s": 105.89,
+      "duration_s": 3.08,
+      "framing": "subject small and centred, vast field above, light falling from directly overhead",
+      "subject_action": "a figure centred and made small by the frame, head lowered, entirely still",
+      "palette_note": "ivory returns as light source",
+      "motion": "almost none",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: offered"
+      ]
+    },
+    {
+      "n": 30,
+      "stage": "prayer",
+      "style_key": "asali_04_prayer",
+      "kind": "connective",
+      "start_s": 108.97,
+      "duration_s": 3.08,
+      "framing": "subject small and centred, vast field above, light falling from directly overhead",
+      "subject_action": "a figure centred and made small by the frame, head lowered, entirely still",
+      "palette_note": "ivory returns as light source",
+      "motion": "almost none",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: offered"
+      ]
+    },
+    {
+      "n": 31,
+      "stage": "prayer",
+      "style_key": "asali_04_prayer",
+      "kind": "connective",
+      "start_s": 112.05,
+      "duration_s": 3.08,
+      "framing": "subject small and centred, vast field above, light falling from directly overhead",
+      "subject_action": "a figure centred and made small by the frame, head lowered, entirely still",
+      "palette_note": "ivory returns as light source",
+      "motion": "almost none",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: offered"
+      ]
+    },
+    {
+      "n": 32,
+      "stage": "prayer",
+      "style_key": "asali_04_prayer",
+      "kind": "connective",
+      "start_s": 115.13,
+      "duration_s": 3.08,
+      "framing": "subject small and centred, vast field above, light falling from directly overhead",
+      "subject_action": "a figure centred and made small by the frame, head lowered, entirely still",
+      "palette_note": "ivory returns as light source",
+      "motion": "almost none",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: offered"
+      ]
+    },
+    {
+      "n": 33,
+      "stage": "gratitude",
+      "style_key": "asali_05_gratitude",
+      "kind": "hero",
+      "start_s": 118.21,
+      "duration_s": 8.0,
+      "framing": "opening composition, more than one figure, the horizon returns",
+      "subject_action": "the frame widens, other figures enter at the edges, warmth arrives in the light",
+      "palette_note": "dust gold enters HERE for the first time",
+      "motion": "opening, lifting",
+      "route": "performance",
+      "route_why": "performance or lip-sync -> reference-conditioned video with audio",
+      "workflow_or_profile": "workflows/h3/NEW_-_Music_Video.json",
+      "notes": [
+        "flower state: opening"
+      ]
+    },
+    {
+      "n": 34,
+      "stage": "gratitude",
+      "style_key": "asali_05_gratitude",
+      "kind": "connective",
+      "start_s": 126.21,
+      "duration_s": 3.08,
+      "framing": "opening composition, more than one figure, the horizon returns",
+      "subject_action": "the frame widens, other figures enter at the edges, warmth arrives in the light",
+      "palette_note": "dust gold enters HERE for the first time",
+      "motion": "opening, lifting",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: opening"
+      ]
+    },
+    {
+      "n": 35,
+      "stage": "gratitude",
+      "style_key": "asali_05_gratitude",
+      "kind": "connective",
+      "start_s": 129.29,
+      "duration_s": 3.08,
+      "framing": "opening composition, more than one figure, the horizon returns",
+      "subject_action": "the frame widens, other figures enter at the edges, warmth arrives in the light",
+      "palette_note": "dust gold enters HERE for the first time",
+      "motion": "opening, lifting",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: opening"
+      ]
+    },
+    {
+      "n": 36,
+      "stage": "gratitude",
+      "style_key": "asali_05_gratitude",
+      "kind": "connective",
+      "start_s": 132.37,
+      "duration_s": 3.08,
+      "framing": "opening composition, more than one figure, the horizon returns",
+      "subject_action": "the frame widens, other figures enter at the edges, warmth arrives in the light",
+      "palette_note": "dust gold enters HERE for the first time",
+      "motion": "opening, lifting",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: opening"
+      ]
+    },
+    {
+      "n": 37,
+      "stage": "gratitude",
+      "style_key": "asali_05_gratitude",
+      "kind": "connective",
+      "start_s": 135.45,
+      "duration_s": 3.08,
+      "framing": "opening composition, more than one figure, the horizon returns",
+      "subject_action": "the frame widens, other figures enter at the edges, warmth arrives in the light",
+      "palette_note": "dust gold enters HERE for the first time",
+      "motion": "opening, lifting",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: opening"
+      ]
+    },
+    {
+      "n": 38,
+      "stage": "gratitude",
+      "style_key": "asali_05_gratitude",
+      "kind": "connective",
+      "start_s": 138.52,
+      "duration_s": 3.08,
+      "framing": "opening composition, more than one figure, the horizon returns",
+      "subject_action": "the frame widens, other figures enter at the edges, warmth arrives in the light",
+      "palette_note": "dust gold enters HERE for the first time",
+      "motion": "opening, lifting",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: opening"
+      ]
+    },
+    {
+      "n": 39,
+      "stage": "gratitude",
+      "style_key": "asali_05_gratitude",
+      "kind": "connective",
+      "start_s": 141.6,
+      "duration_s": 3.08,
+      "framing": "opening composition, more than one figure, the horizon returns",
+      "subject_action": "the frame widens, other figures enter at the edges, warmth arrives in the light",
+      "palette_note": "dust gold enters HERE for the first time",
+      "motion": "opening, lifting",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: opening"
+      ]
+    },
+    {
+      "n": 40,
+      "stage": "gratitude",
+      "style_key": "asali_05_gratitude",
+      "kind": "connective",
+      "start_s": 144.68,
+      "duration_s": 3.08,
+      "framing": "opening composition, more than one figure, the horizon returns",
+      "subject_action": "the frame widens, other figures enter at the edges, warmth arrives in the light",
+      "palette_note": "dust gold enters HERE for the first time",
+      "motion": "opening, lifting",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: opening"
+      ]
+    },
+    {
+      "n": 41,
+      "stage": "sweetness",
+      "style_key": "asali_06_sweetness",
+      "kind": "hero",
+      "start_s": 147.76,
+      "duration_s": 8.0,
+      "framing": "circular, enclosed, the frame wraps the subject",
+      "subject_action": "hands closing over something held, a protective enclosure, figures gathered in",
+      "palette_note": "gold and ivory together, charcoal recedes",
+      "motion": "settled, circular",
+      "route": "still_push",
+      "route_why": "static or near-static hero image, then a slow synthetic push",
+      "workflow_or_profile": "klein_t2i",
+      "notes": [
+        "flower state: whole"
+      ]
+    },
+    {
+      "n": 42,
+      "stage": "sweetness",
+      "style_key": "asali_06_sweetness",
+      "kind": "connective",
+      "start_s": 155.76,
+      "duration_s": 3.08,
+      "framing": "circular, enclosed, the frame wraps the subject",
+      "subject_action": "hands closing over something held, a protective enclosure, figures gathered in",
+      "palette_note": "gold and ivory together, charcoal recedes",
+      "motion": "settled, circular",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: whole"
+      ]
+    },
+    {
+      "n": 43,
+      "stage": "sweetness",
+      "style_key": "asali_06_sweetness",
+      "kind": "connective",
+      "start_s": 158.84,
+      "duration_s": 3.08,
+      "framing": "circular, enclosed, the frame wraps the subject",
+      "subject_action": "hands closing over something held, a protective enclosure, figures gathered in",
+      "palette_note": "gold and ivory together, charcoal recedes",
+      "motion": "settled, circular",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: whole"
+      ]
+    },
+    {
+      "n": 44,
+      "stage": "sweetness",
+      "style_key": "asali_06_sweetness",
+      "kind": "connective",
+      "start_s": 161.92,
+      "duration_s": 3.08,
+      "framing": "circular, enclosed, the frame wraps the subject",
+      "subject_action": "hands closing over something held, a protective enclosure, figures gathered in",
+      "palette_note": "gold and ivory together, charcoal recedes",
+      "motion": "settled, circular",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: whole"
+      ]
+    },
+    {
+      "n": 45,
+      "stage": "sweetness",
+      "style_key": "asali_06_sweetness",
+      "kind": "connective",
+      "start_s": 165.0,
+      "duration_s": 3.08,
+      "framing": "circular, enclosed, the frame wraps the subject",
+      "subject_action": "hands closing over something held, a protective enclosure, figures gathered in",
+      "palette_note": "gold and ivory together, charcoal recedes",
+      "motion": "settled, circular",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: whole"
+      ]
+    },
+    {
+      "n": 46,
+      "stage": "sweetness",
+      "style_key": "asali_06_sweetness",
+      "kind": "connective",
+      "start_s": 168.08,
+      "duration_s": 3.08,
+      "framing": "circular, enclosed, the frame wraps the subject",
+      "subject_action": "hands closing over something held, a protective enclosure, figures gathered in",
+      "palette_note": "gold and ivory together, charcoal recedes",
+      "motion": "settled, circular",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: whole"
+      ]
+    },
+    {
+      "n": 47,
+      "stage": "sweetness",
+      "style_key": "asali_06_sweetness",
+      "kind": "connective",
+      "start_s": 171.15,
+      "duration_s": 3.08,
+      "framing": "circular, enclosed, the frame wraps the subject",
+      "subject_action": "hands closing over something held, a protective enclosure, figures gathered in",
+      "palette_note": "gold and ivory together, charcoal recedes",
+      "motion": "settled, circular",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: whole"
+      ]
+    },
+    {
+      "n": 48,
+      "stage": "sweetness",
+      "style_key": "asali_06_sweetness",
+      "kind": "connective",
+      "start_s": 174.23,
+      "duration_s": 3.08,
+      "framing": "circular, enclosed, the frame wraps the subject",
+      "subject_action": "hands closing over something held, a protective enclosure, figures gathered in",
+      "palette_note": "gold and ivory together, charcoal recedes",
+      "motion": "settled, circular",
+      "route": "segmented",
+      "route_why": "anything longer than a single pass -> segmented with motion context",
+      "workflow_or_profile": "i2v_infinite",
+      "notes": [
+        "flower state: whole"
+      ]
+    }
+  ],
+  "locked": {
+    "audio_master": "C:\\Users\\inkno\\Downloads\\Ancestral Pulse.wav",
+    "fps": 24,
+    "duration_s": 177.31,
+    "rule": "changing either locked value invalidates every timing decision below"
+  },
+  "warnings": []
+}

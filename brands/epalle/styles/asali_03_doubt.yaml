@@ -1,0 +1,32 @@
+brand: epalle
+generates: base visual only
+text_policy: NONE - sparse caption copy is composited in code
+register: fashion film
+lens: hold one focal character across the whole piece; 50mm-equivalent default
+discipline: one idea per shot; composed stillness; negative space allowed to sit
+accessibility:
+  reserve_copy_zone: leave one third quiet enough to letter over
+  min_contrast: 4.5:1 for any composited copy
+key: asali_03_doubt
+stage: doubt
+order: 3
+subject: a figure held at distance, turned slightly away, the space between camera and subject opened
+composition: broken symmetry, subject off the thirds, too much air on one side
+palette:
+- '#1A1512'
+- '#2A231D'
+palette_weight: charcoal; ivory drained out
+light: open_shade - even, directionless, drained
+motion: static, held too long
+flower: no flower anywhere in frame
+finish: low contrast, desaturated, flat
+ratios:
+- '9:16'
+- '16:9'
+- '1:1'
+negative_prompt: no text, no letters, no numbers, no logos, no watermark, no signature, no captions, no orange-teal
+  grade, no lens flare, no glossy skin, no metallic or specular gold, no pure black shadow without detail, no blown
+  highlights, no symmetrical hero shot, no slow-motion blur, no busy frame, no multiple competing subjects, no HDR
+  halo, no distorted hands, no extra fingers, no celebrity likeness, no identifiable real person
+mode: asali_arc
+audience: music audience; fashion-film literate

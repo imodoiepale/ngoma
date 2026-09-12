@@ -1,0 +1,32 @@
+brand: epalle
+generates: base visual only
+text_policy: NONE - sparse caption copy is composited in code
+register: fashion film
+lens: hold one focal character across the whole piece; 50mm-equivalent default
+discipline: one idea per shot; composed stillness; negative space allowed to sit
+accessibility:
+  reserve_copy_zone: leave one third quiet enough to letter over
+  min_contrast: 4.5:1 for any composited copy
+key: shot_artefact_tableau
+stage: null
+subject: a single cultural object presented as a speculative artefact, on a plain ground
+composition: designed tableau, object centred but not symmetrical, deliberate negative space
+palette:
+- '#1A1512'
+- '#8A6B45'
+palette_weight: charcoal field, gold object
+light: downward_soft, museum-like
+motion: slow orbit or none
+flower: none
+finish: still-life clarity, matte, no gloss
+note: the grammar of framing an object so it reads as significant - composed original, never a reproduction
+ratios:
+- '9:16'
+- '16:9'
+- '1:1'
+negative_prompt: no text, no letters, no numbers, no logos, no watermark, no signature, no captions, no orange-teal
+  grade, no lens flare, no glossy skin, no metallic or specular gold, no pure black shadow without detail, no blown
+  highlights, no symmetrical hero shot, no slow-motion blur, no busy frame, no multiple competing subjects, no HDR
+  halo, no distorted hands, no extra fingers, no celebrity likeness, no identifiable real person
+mode: shot_grammar
+audience: music audience; fashion-film literate

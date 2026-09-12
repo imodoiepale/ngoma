@@ -1,0 +1,23 @@
+brand: epalle
+count: 11
+principle: The palette is the narrative. Dust gold is withheld until gratitude so that its arrival means something.
+  A shot generator must respect the stage's palette weight, not just the brand's colours.
+hard_rules:
+- 'Three values only: charcoal, ivory, dust gold.'
+- One idea per shot. Composed stillness over motion.
+- Hold one focal length for the whole piece.
+- The model renders no text and no marks.
+- Take the grammar from study references, never their shots.
+arc_order:
+- asali_01_desire
+- asali_02_labour
+- asali_03_doubt
+- asali_04_prayer
+- asali_05_gratitude
+- asali_06_sweetness
+shot_grammar:
+- shot_texture_plate
+- shot_artefact_tableau
+- shot_connective_landscape
+- shot_performance_lipsync
+- cover_art_square

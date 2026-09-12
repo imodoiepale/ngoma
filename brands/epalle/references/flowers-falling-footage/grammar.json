@@ -1,0 +1,16 @@
+{
+  "source": "Flowers Falling footage",
+  "samples": 4,
+  "aspect_discipline": {},
+  "palette_behaviour": {},
+  "composition": {},
+  "density": {},
+  "motion": {},
+  "caption_shape": {},
+  "conventions": [],
+  "refusals": [],
+  "confidence": "insufficient",
+  "notes": [
+    "only 4 samples; 12 is the floor for calling anything a convention. What follows would be noise, so no grammar was derived."
+  ]
+}
