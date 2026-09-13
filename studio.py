@@ -187,6 +187,9 @@ TASKS = {"check": check, "skills-sync": skills_sync, "graph": graph,
 
 
 def main() -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        # BLOCKERS.md headings contain arrows; a cp1252 console crashed `doctor` mid-report.
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     if len(sys.argv) >= 2 and sys.argv[1] in ("-h", "--help"):
         print(__doc__)
         print("usage: studio.py {" + ",".join(TASKS) + "}")

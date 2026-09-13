@@ -205,6 +205,18 @@ channels:
     url: https://www.youtube.com/@theAIsearch
     topics: [ai-tools, open-source-models]
 
+  - key: axiomgraph
+    name: AxiomGraph
+    tier: proposed
+    verified: true          # probed 2026-09-13
+    url: https://www.youtube.com/channel/UC7VJcWHbJXZXghUXoHEp9aQ
+    topics: [sageattention, triton, windows-install, comfyui-portable, kjnodes]
+    why: >
+      Sent directly: "How to Install Sage Attention 2.2 on Latest ComfyUI Portable And
+      Deskop Version" (9APXcBMpbgU). Windows install path for SageAttention + Triton; the
+      KJNodes Patch Sage Attention node it recommends is the one
+      infra/runpod/guard_kjnodes_sage.py bypasses on torch 2.11+. See docs/SAGE-ATTENTION.md.
+
 # Single videos already tracked in packages/library/manifests/monitored-sources.json.
 # yt-learn resolves each to its uploader channel before monitoring.
 # All three resolved on 2026-09-12 and their channels are now first-class entries above.

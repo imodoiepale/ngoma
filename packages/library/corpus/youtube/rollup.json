@@ -8,9 +8,11 @@
     "12GB vram": 1
   },
   "node_pack": {
-    "sage attention": 2,
+    "sage attention": 3,
     "controlnet": 2,
-    "essentials": 1
+    "essentials": 1,
+    "triton": 1,
+    "kj nodes": 1
   },
   "model": {
     "veo": 3,
@@ -54,5 +56,13 @@
     "pan": 1,
     "green screen": 1,
     "color grade": 1
+  },
+  "version": {
+    "sageattention 2.2": 1,
+    "python 3.13": 1,
+    "python 3.13.6": 1,
+    "torch 2.9.0": 1,
+    "python 3.9": 1,
+    "torch 2.8.0": 1
   }
 }

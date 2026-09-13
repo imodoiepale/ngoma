@@ -94,6 +94,9 @@ SETTING_RE = re.compile(
     re.I)
 VRAM_RE = re.compile(
     r"\b(\d{1,3})\s?(?:gb|gigs?|gigabytes?)\b[^.\n]{0,24}\b(vram|ram|memory|card)\b", re.I)
+VERSION_RE = re.compile(
+    r"\b(python|torch|pytorch|cuda|triton|sage ?attention|comfy ?ui)\s?v?(\d+\.\d+(?:\.\d+)?)\b", re.I)
+VIDEO_ID_RE = re.compile(r"(?:v=|youtu\.be/|shorts/)([\w-]{11})|^([\w-]{11})$")
 GPU_RE = re.compile(
     r"\b(rtx\s?\d{4}\s?(?:ti|super)?|a100|h100|a6000|a40|l40|4090|5090|3090)\b", re.I)
 
@@ -236,6 +239,8 @@ def mine(cues: list[tuple[str, str]], video_id: str, title: str | None) -> dict[
             add("setting", f"{m.group(1).lower()}={m.group(2).lower()}", ts, text)
         for m in VRAM_RE.finditer(text):
             add("hardware", f"{m.group(1)}GB {m.group(2).lower()}", ts, text)
+        for m in VERSION_RE.finditer(text):
+            add("version", f"{re.sub(r'[ ]', '', m.group(1).lower())} {m.group(2)}", ts, text)
         for m in GPU_RE.finditer(text):
             add("gpu", re.sub(r"\s+", " ", m.group(1).lower()), ts, text)
 
@@ -247,6 +252,111 @@ def mine(cues: list[tuple[str, str]], video_id: str, title: str | None) -> dict[
         "facts": dict(facts),
         "fact_count": sum(len(v) for v in facts.values()),
     }
+
+
+def merge_facts(records: list[dict[str, Any]],
+                corpus: Path | None = None) -> tuple[Path, dict[str, dict[str, int]]]:
+    """Upsert mined videos into facts.jsonl by video_id, then rebuild the rollup from all of it.
+
+    This used to rewrite facts.jsonl with only the current run's videos, so
+    `--channel kiubai` silently deleted every other channel's facts, and the graph with
+    them. A partial run is not the corpus.
+    """
+    corpus = corpus or CORPUS
+    corpus.mkdir(parents=True, exist_ok=True)
+    idx = corpus / "facts.jsonl"
+    merged: dict[str, dict[str, Any]] = {}
+    if idx.exists():
+        for line in idx.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                r = json.loads(line)
+                merged[r["video_id"]] = r
+    for r in records:
+        merged[r["video_id"]] = r
+    with idx.open("w", encoding="utf-8") as fh:
+        for r in merged.values():
+            fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+
+    counts: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    for r in merged.values():
+        for kind, items in r["facts"].items():
+            for it in items:
+                counts[kind][it["value"]] += 1
+    rollup = {k: dict(sorted(v.items(), key=lambda kv: -kv[1])) for k, v in counts.items()}
+    (corpus / "rollup.json").write_text(json.dumps(rollup, indent=2, ensure_ascii=False),
+                                        encoding="utf-8")
+    return idx, rollup
+
+
+def video_id_of(url_or_id: str) -> str:
+    m = VIDEO_ID_RE.search(url_or_id.strip())
+    if not m:
+        raise YTError(f"not a YouTube video URL or id: {url_or_id!r}")
+    return m.group(1) or m.group(2)
+
+
+def _channel_key_for(meta: dict[str, Any]) -> str:
+    """The channels.yaml key when the channel is registered, else a slug of its handle."""
+    cid = meta.get("channel_id") or ""
+    for c in load_channels().get("channels", []):
+        if cid and cid in (c.get("url") or ""):
+            return c["key"]
+    handle = (meta.get("uploader_id") or meta.get("channel") or "unsorted").lstrip("@")
+    return re.sub(r"[^a-z0-9]+", "-", handle.lower()).strip("-") or "unsorted"
+
+
+def learn_video(url_or_id: str, channel_key: str | None = None) -> HarvestReport:
+    """Mine one video (a link someone sends) into the same corpus the channel runs build."""
+    vid = video_id_of(url_or_id)
+    report = HarvestReport(platform="youtube", target=vid, status="ok", requested=1,
+                           enumerated=1, downloaded=0, skipped_existing=0)
+    langs = load_channels().get("subtitle_langs", ["en"])
+    staging = CORPUS / "_incoming"
+    try:
+        fetch_subs(vid, staging, langs)
+    except YTError as e:
+        report.status = "failed"
+        report.failures.append({"video": vid, "stage": "subtitles", "error": str(e)})
+        return report
+    info = staging / f"{vid}.info.json"
+    meta = json.loads(info.read_text(encoding="utf-8")) if info.exists() else {}
+    key = channel_key or _channel_key_for(meta)
+    cdir = CORPUS / key / "subs"
+    cdir.mkdir(parents=True, exist_ok=True)
+    for f in staging.glob(f"{vid}*"):
+        f.replace(cdir / f.name)
+    if meta:
+        # A raw yt-dlp info.json is ~760 KB, almost all of it stream-format lists.
+        keep = ("id", "title", "channel", "channel_id", "uploader_id", "upload_date",
+                "duration", "view_count", "like_count", "comment_count", "tags",
+                "categories", "chapters", "description", "webpage_url")
+        (cdir / info.name).write_text(
+            json.dumps({k: meta.get(k) for k in keep}, indent=2, ensure_ascii=False),
+            encoding="utf-8")
+    subs = sorted(cdir.glob(f"{vid}*.vtt"))
+    if not subs:
+        report.status = "failed"
+        report.failures.append({"video": vid, "error": "no subtitle track; needs faster-whisper fallback"})
+        return report
+
+    best = sorted(subs, key=lambda p: (".en-orig." not in p.name, ".en." not in p.name))[0]
+    rec = mine(vtt_to_cues(best), vid, meta.get("title"))
+    rec.update({
+        "channel": key,
+        "channel_name": meta.get("channel"),
+        "upload_date": meta.get("upload_date"),
+        "duration_s": meta.get("duration"),
+        "view_count": meta.get("view_count"),
+        "links": re.findall(r"https?://\S+", meta.get("description") or ""),
+        "subtitle_file": str(best.relative_to(REPO)).replace("\\", "/"),
+    })
+    idx, _ = merge_facts([rec])
+    report.downloaded = 1
+    report.notes.append(f"{vid} \"{meta.get('title')}\" ({meta.get('channel')}): "
+                        f"{rec['fact_count']} facts -> {idx.relative_to(REPO)}")
+    for kind, items in sorted(rec["facts"].items()):
+        report.notes.append(f"{kind}: " + ", ".join(sorted({i["value"] for i in items}))[:180])
+    return report
 
 
 def learn(channel_keys: Iterable[str] | None = None, tiers: Iterable[str] = ("core",),
@@ -299,20 +409,7 @@ def learn(channel_keys: Iterable[str] | None = None, tiers: Iterable[str] = ("co
             rec["subtitle_file"] = str(best.relative_to(REPO)).replace("\\", "/")
             all_facts.append(rec)
 
-    CORPUS.mkdir(parents=True, exist_ok=True)
-    idx = CORPUS / "facts.jsonl"
-    with idx.open("w", encoding="utf-8") as fh:
-        for r in all_facts:
-            fh.write(json.dumps(r, ensure_ascii=False) + "\n")
-
-    rollup: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
-    for r in all_facts:
-        for kind, items in r["facts"].items():
-            for it in items:
-                rollup[kind][it["value"]] += 1
-    (CORPUS / "rollup.json").write_text(
-        json.dumps({k: dict(sorted(v.items(), key=lambda kv: -kv[1])) for k, v in rollup.items()},
-                   indent=2, ensure_ascii=False), encoding="utf-8")
+    idx, rollup = merge_facts(all_facts)
 
     report.notes.append(f"{len(all_facts)} videos mined -> {idx.relative_to(REPO)}")
     for kind, v in rollup.items():
@@ -332,7 +429,21 @@ def _cli() -> None:
     ap.add_argument("--max-videos", type=int)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--list", action="store_true")
+    ap.add_argument("--video", action="append", default=[],
+                    help="mine one video URL or id (repeatable); merges into the corpus")
     a = ap.parse_args()
+
+    if a.video:
+        bad = 0
+        for v in a.video:
+            rep = learn_video(v, a.channel[0] if a.channel else None)
+            print(rep.summary())
+            for n in rep.notes:
+                print(f"    {n}")
+            for f in rep.failures:
+                print(f"    FAIL {f}")
+            bad += rep.status != "ok"
+        raise SystemExit(1 if bad else 0)
 
     if a.list:
         cfg = load_channels()

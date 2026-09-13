@@ -1,0 +1,2000 @@
+WEBVTT
+Kind: captions
+Language: fr
+
+00:00:00.080 --> 00:00:02.389 align:start position:0%
+ 
+Salut <00:00:00.339><c>à </c><00:00:00.598><c>tous, </c><00:00:00.857><c>voici </c><00:00:01.116><c>une </c><00:00:01.375><c>vidéo </c><00:00:01.634><c>mise </c><00:00:01.893><c>à </c><00:00:02.152><c>jour</c>
+
+00:00:02.389 --> 00:00:02.399 align:start position:0%
+Salut à tous, voici une vidéo mise à jour
+ 
+
+00:00:02.399 --> 00:00:05.110 align:start position:0%
+Salut à tous, voici une vidéo mise à jour
+sur <00:00:02.812><c>l'installation </c><00:00:03.225><c>de </c><00:00:03.638><c>Sage </c><00:00:04.051><c>Attention </c><00:00:04.464><c>2.2 </c><00:00:04.877><c>sur</c>
+
+00:00:05.110 --> 00:00:05.120 align:start position:0%
+sur l'installation de Sage Attention 2.2 sur
+ 
+
+00:00:05.120 --> 00:00:07.110 align:start position:0%
+sur l'installation de Sage Attention 2.2 sur
+les <00:00:05.373><c>dernières </c><00:00:05.626><c>versions </c><00:00:05.879><c>portables </c><00:00:06.132><c>et </c><00:00:06.385><c>de </c><00:00:06.638><c>bureau</c>
+
+00:00:07.110 --> 00:00:07.120 align:start position:0%
+les dernières versions portables et de bureau
+ 
+
+00:00:07.120 --> 00:00:10.150 align:start position:0%
+les dernières versions portables et de bureau
+de <00:00:07.840><c>Comfy </c><00:00:08.560><c>UI.  </c><00:00:09.280><c>Alors </c><00:00:10.000><c>commençons</c>
+
+00:00:10.150 --> 00:00:10.160 align:start position:0%
+de Comfy UI.  Alors commençons
+ 
+
+00:00:10.160 --> 00:00:12.549 align:start position:0%
+de Comfy UI.  Alors commençons
+.  <00:00:10.468><c>Nous </c><00:00:10.776><c>allons </c><00:00:11.084><c>tout </c><00:00:11.392><c>d'abord </c><00:00:11.700><c>nous </c><00:00:12.008><c>concentrer </c><00:00:12.316><c>sur</c>
+
+00:00:12.549 --> 00:00:12.559 align:start position:0%
+.  Nous allons tout d'abord nous concentrer sur
+ 
+
+00:00:12.559 --> 00:00:14.150 align:start position:0%
+.  Nous allons tout d'abord nous concentrer sur
+l'installation <00:00:12.919><c>de </c><00:00:13.279><c>Sage </c><00:00:13.639><c>Attention </c><00:00:13.999><c>en</c>
+
+00:00:14.150 --> 00:00:14.160 align:start position:0%
+l'installation de Sage Attention en
+ 
+
+00:00:14.160 --> 00:00:16.070 align:start position:0%
+l'installation de Sage Attention en
+version <00:00:14.411><c>portable.  </c><00:00:14.662><c>Si </c><00:00:14.913><c>vous </c><00:00:15.164><c>ne </c><00:00:15.415><c>le </c><00:00:15.666><c>savez </c><00:00:15.917><c>pas</c>
+
+00:00:16.070 --> 00:00:16.080 align:start position:0%
+version portable.  Si vous ne le savez pas
+ 
+
+00:00:16.080 --> 00:00:18.790 align:start position:0%
+version portable.  Si vous ne le savez pas
+, <00:00:16.528><c>le </c><00:00:16.976><c>voici.  </c><00:00:17.424><c>Sage </c><00:00:17.872><c>Attention </c><00:00:18.320><c>a</c>
+
+00:00:18.790 --> 00:00:18.800 align:start position:0%
+, le voici.  Sage Attention a
+ 
+
+00:00:18.800 --> 00:00:21.189 align:start position:0%
+, le voici.  Sage Attention a
+besoin <00:00:19.031><c>de </c><00:00:19.262><c>Triton </c><00:00:19.493><c>pour </c><00:00:19.724><c>fonctionner, </c><00:00:19.955><c>et </c><00:00:20.186><c>Triton </c><00:00:20.417><c>a </c><00:00:20.648><c>besoin </c><00:00:20.879><c>de</c>
+
+00:00:21.189 --> 00:00:21.199 align:start position:0%
+besoin de Triton pour fonctionner, et Triton a besoin de
+ 
+
+00:00:21.199 --> 00:00:23.029 align:start position:0%
+besoin de Triton pour fonctionner, et Triton a besoin de
+certains <00:00:21.465><c>en-têtes </c><00:00:21.731><c>et </c><00:00:21.997><c>bibliothèques </c><00:00:22.263><c>de </c><00:00:22.529><c>développement </c><00:00:22.795><c>Python</c>
+
+00:00:23.029 --> 00:00:23.039 align:start position:0%
+certains en-têtes et bibliothèques de développement Python
+ 
+
+00:00:23.039 --> 00:00:25.029 align:start position:0%
+certains en-têtes et bibliothèques de développement Python
+pour <00:00:23.459><c>fonctionner.  </c><00:00:23.879><c>La </c><00:00:24.299><c>version </c><00:00:24.719><c>portable</c>
+
+00:00:25.029 --> 00:00:25.039 align:start position:0%
+pour fonctionner.  La version portable
+ 
+
+00:00:25.039 --> 00:00:27.349 align:start position:0%
+pour fonctionner.  La version portable
+de <00:00:25.359><c>Comfy </c><00:00:25.679><c>UI </c><00:00:25.999><c>est </c><00:00:26.319><c>fournie </c><00:00:26.639><c>avec </c><00:00:26.959><c>un</c>
+
+00:00:27.349 --> 00:00:27.359 align:start position:0%
+de Comfy UI est fournie avec un
+ 
+
+00:00:27.359 --> 00:00:30.070 align:start position:0%
+de Comfy UI est fournie avec un
+Python <00:00:27.599><c>intégré </c><00:00:27.839><c>qui </c><00:00:28.079><c>ne </c><00:00:28.319><c>contient </c><00:00:28.559><c>pas </c><00:00:28.799><c>ces </c><00:00:29.039><c>fichiers.</c>
+
+00:00:30.070 --> 00:00:30.080 align:start position:0%
+Python intégré qui ne contient pas ces fichiers.
+ 
+
+00:00:30.080 --> 00:00:32.310 align:start position:0%
+Python intégré qui ne contient pas ces fichiers.
+Nous <00:00:30.426><c>devons </c><00:00:30.772><c>donc </c><00:00:31.118><c>récupérer </c><00:00:31.464><c>ces </c><00:00:31.810><c>fichiers </c><00:00:32.156><c>et</c>
+
+00:00:32.310 --> 00:00:32.320 align:start position:0%
+Nous devons donc récupérer ces fichiers et
+ 
+
+00:00:32.320 --> 00:00:34.950 align:start position:0%
+Nous devons donc récupérer ces fichiers et
+les <00:00:32.719><c>intégrer </c><00:00:33.118><c>à </c><00:00:33.517><c>ce </c><00:00:33.916><c>script </c><00:00:34.315><c>Python </c><00:00:34.714><c>embarqué.</c>
+
+00:00:34.950 --> 00:00:34.960 align:start position:0%
+les intégrer à ce script Python embarqué.
+ 
+
+00:00:34.960 --> 00:00:36.950 align:start position:0%
+les intégrer à ce script Python embarqué.
+Voyons <00:00:35.190><c>comment </c><00:00:35.420><c>nous </c><00:00:35.650><c>pouvons </c><00:00:35.880><c>faire </c><00:00:36.110><c>cela.  </c><00:00:36.340><c>Ouvrez </c><00:00:36.570><c>donc </c><00:00:36.800><c>le</c>
+
+00:00:36.950 --> 00:00:36.960 align:start position:0%
+Voyons comment nous pouvons faire cela.  Ouvrez donc le
+ 
+
+00:00:36.960 --> 00:00:39.590 align:start position:0%
+Voyons comment nous pouvons faire cela.  Ouvrez donc le
+dossier <00:00:37.302><c>portable </c><00:00:37.644><c>de </c><00:00:37.986><c>Comfy </c><00:00:38.328><c>UI.  </c><00:00:38.670><c>Dans </c><00:00:39.012><c>mon </c><00:00:39.354><c>cas,</c>
+
+00:00:39.590 --> 00:00:39.600 align:start position:0%
+dossier portable de Comfy UI.  Dans mon cas,
+ 
+
+00:00:39.600 --> 00:00:41.830 align:start position:0%
+dossier portable de Comfy UI.  Dans mon cas,
+Comfy <00:00:39.952><c>UI </c><00:00:40.304><c>se </c><00:00:40.656><c>trouve </c><00:00:41.008><c>dans </c><00:00:41.360><c>le</c>
+
+00:00:41.830 --> 00:00:41.840 align:start position:0%
+Comfy UI se trouve dans le
+ 
+
+00:00:41.840 --> 00:00:44.869 align:start position:0%
+Comfy UI se trouve dans le
+dossier <00:00:42.319><c>téléchargements.  </c><00:00:42.798><c>Voici </c><00:00:43.277><c>Comfy </c><00:00:43.756><c>UI.  </c><00:00:44.235><c>Ouvrons-le.</c>
+
+00:00:44.869 --> 00:00:44.879 align:start position:0%
+dossier téléchargements.  Voici Comfy UI.  Ouvrons-le.
+ 
+
+00:00:44.879 --> 00:00:46.549 align:start position:0%
+dossier téléchargements.  Voici Comfy UI.  Ouvrons-le.
+À <00:00:45.119><c>l'intérieur, </c><00:00:45.359><c>on </c><00:00:45.599><c>trouve </c><00:00:45.839><c>un </c><00:00:46.079><c>dossier </c><00:00:46.319><c>appelé</c>
+
+00:00:46.549 --> 00:00:46.559 align:start position:0%
+À l'intérieur, on trouve un dossier appelé
+ 
+
+00:00:46.559 --> 00:00:49.270 align:start position:0%
+À l'intérieur, on trouve un dossier appelé
+Python <00:00:47.385><c>embarqué.  </c><00:00:48.211><c>Ouvrons-le.  </c><00:00:49.037><c>Ensuite</c>
+
+00:00:49.270 --> 00:00:49.280 align:start position:0%
+Python embarqué.  Ouvrons-le.  Ensuite
+ 
+
+00:00:49.280 --> 00:00:51.110 align:start position:0%
+Python embarqué.  Ouvrons-le.  Ensuite
+, <00:00:49.533><c>ouvrons </c><00:00:49.786><c>une </c><00:00:50.039><c>fenêtre </c><00:00:50.292><c>de </c><00:00:50.545><c>terminal </c><00:00:50.798><c>ou</c>
+
+00:00:51.110 --> 00:00:51.120 align:start position:0%
+, ouvrons une fenêtre de terminal ou
+ 
+
+00:00:51.120 --> 00:00:53.750 align:start position:0%
+, ouvrons une fenêtre de terminal ou
+PowerShell <00:00:51.946><c>juste </c><00:00:52.772><c>ici.  </c><00:00:53.598><c>Nous</c>
+
+00:00:53.750 --> 00:00:53.760 align:start position:0%
+PowerShell juste ici.  Nous
+ 
+
+00:00:53.760 --> 00:00:55.270 align:start position:0%
+PowerShell juste ici.  Nous
+allons <00:00:53.960><c>maintenant </c><00:00:54.160><c>découvrir </c><00:00:54.360><c>quelle </c><00:00:54.560><c>version </c><00:00:54.760><c>de </c><00:00:54.960><c>Python</c>
+
+00:00:55.270 --> 00:00:55.280 align:start position:0%
+allons maintenant découvrir quelle version de Python
+ 
+
+00:00:55.280 --> 00:00:57.510 align:start position:0%
+allons maintenant découvrir quelle version de Python
+utilise <00:00:55.565><c>cette </c><00:00:55.850><c>interface </c><00:00:56.135><c>utilisateur </c><00:00:56.420><c>conviviale.  </c><00:00:56.705><c>Tapez </c><00:00:56.990><c>la </c><00:00:57.275><c>commande</c>
+
+00:00:57.510 --> 00:00:57.520 align:start position:0%
+utilise cette interface utilisateur conviviale.  Tapez la commande
+ 
+
+00:00:57.520 --> 00:01:00.069 align:start position:0%
+utilise cette interface utilisateur conviviale.  Tapez la commande
+suivante&nbsp;<00:00:57.840><c>: </c><00:00:58.160><c>dot/python.exe</c>
+
+00:01:00.069 --> 00:01:00.079 align:start position:0%
+suivante&nbsp;: dot/python.exe
+ 
+
+00:01:00.079 --> 00:01:03.270 align:start position:0%
+suivante&nbsp;: dot/python.exe
+espace-en <00:01:00.513><c>V </c><00:01:00.947><c>majuscule, </c><00:01:01.381><c>puis </c><00:01:01.815><c>appuyez </c><00:01:02.249><c>sur </c><00:01:02.683><c>Entrée.  </c><00:01:03.117><c>Nous</c>
+
+00:01:03.270 --> 00:01:03.280 align:start position:0%
+espace-en V majuscule, puis appuyez sur Entrée.  Nous
+ 
+
+00:01:03.280 --> 00:01:05.270 align:start position:0%
+espace-en V majuscule, puis appuyez sur Entrée.  Nous
+pouvons <00:01:03.509><c>maintenant </c><00:01:03.738><c>voir </c><00:01:03.967><c>la </c><00:01:04.196><c>version </c><00:01:04.425><c>Python.  </c><00:01:04.654><c>La </c><00:01:04.883><c>version </c><00:01:05.112><c>de</c>
+
+00:01:05.270 --> 00:01:05.280 align:start position:0%
+pouvons maintenant voir la version Python.  La version de
+ 
+
+00:01:05.280 --> 00:01:08.950 align:start position:0%
+pouvons maintenant voir la version Python.  La version de
+Python <00:01:05.583><c>que </c><00:01:05.886><c>j'utilise </c><00:01:06.189><c>est </c><00:01:06.492><c>la </c><00:01:06.795><c>3.13.6.</c>
+
+00:01:08.950 --> 00:01:08.960 align:start position:0%
+Python que j'utilise est la 3.13.6.
+ 
+
+00:01:08.960 --> 00:01:10.870 align:start position:0%
+Python que j'utilise est la 3.13.6.
+Nous <00:01:09.296><c>devons </c><00:01:09.632><c>donc </c><00:01:09.968><c>télécharger </c><00:01:10.304><c>le </c><00:01:10.640><c>programme</c>
+
+00:01:10.870 --> 00:01:10.880 align:start position:0%
+Nous devons donc télécharger le programme
+ 
+
+00:01:10.880 --> 00:01:13.030 align:start position:0%
+Nous devons donc télécharger le programme
+d'installation <00:01:11.300><c>complet </c><00:01:11.720><c>de </c><00:01:12.140><c>la </c><00:01:12.560><c>même</c>
+
+00:01:13.030 --> 00:01:13.040 align:start position:0%
+d'installation complet de la même
+ 
+
+00:01:13.040 --> 00:01:15.109 align:start position:0%
+d'installation complet de la même
+version <00:01:13.360><c>de </c><00:01:13.680><c>Python </c><00:01:14.000><c>depuis </c><00:01:14.320><c>Internet </c><00:01:14.640><c>et </c><00:01:14.960><c>l'installer</c>
+
+00:01:15.109 --> 00:01:15.119 align:start position:0%
+version de Python depuis Internet et l'installer
+ 
+
+00:01:15.119 --> 00:01:17.429 align:start position:0%
+version de Python depuis Internet et l'installer
+sur <00:01:15.479><c>notre </c><00:01:15.839><c>ordinateur.  </c><00:01:16.199><c>Le </c><00:01:16.559><c>lien </c><00:01:16.919><c>de </c><00:01:17.279><c>téléchargement</c>
+
+00:01:17.429 --> 00:01:17.439 align:start position:0%
+sur notre ordinateur.  Le lien de téléchargement
+ 
+
+00:01:17.439 --> 00:01:19.109 align:start position:0%
+sur notre ordinateur.  Le lien de téléchargement
+du <00:01:17.619><c>programme </c><00:01:17.799><c>d'installation </c><00:01:17.979><c>de </c><00:01:18.159><c>Python </c><00:01:18.339><c>se </c><00:01:18.519><c>trouve </c><00:01:18.699><c>dans </c><00:01:18.879><c>la</c>
+
+00:01:19.109 --> 00:01:19.119 align:start position:0%
+du programme d'installation de Python se trouve dans la
+ 
+
+00:01:19.119 --> 00:01:21.510 align:start position:0%
+du programme d'installation de Python se trouve dans la
+description.  <00:01:19.567><c>Ouvrons </c><00:01:20.015><c>ce </c><00:01:20.463><c>lien </c><00:01:20.911><c>dans </c><00:01:21.359><c>le</c>
+
+00:01:21.510 --> 00:01:21.520 align:start position:0%
+description.  Ouvrons ce lien dans le
+ 
+
+00:01:21.520 --> 00:01:23.670 align:start position:0%
+description.  Ouvrons ce lien dans le
+navigateur.  <00:01:21.936><c>On </c><00:01:22.352><c>y </c><00:01:22.768><c>va.  </c><00:01:23.184><c>On </c><00:01:23.600><c>peut</c>
+
+00:01:23.670 --> 00:01:23.680 align:start position:0%
+navigateur.  On y va.  On peut
+ 
+
+00:01:23.680 --> 00:01:26.149 align:start position:0%
+navigateur.  On y va.  On peut
+trouver <00:01:24.112><c>ici </c><00:01:24.544><c>de </c><00:01:24.976><c>nombreux </c><00:01:25.408><c>installateurs </c><00:01:25.840><c>Python.</c>
+
+00:01:26.149 --> 00:01:26.159 align:start position:0%
+trouver ici de nombreux installateurs Python.
+ 
+
+00:01:26.159 --> 00:01:27.910 align:start position:0%
+trouver ici de nombreux installateurs Python.
+Cherchons <00:01:26.349><c>la </c><00:01:26.539><c>version </c><00:01:26.729><c>de </c><00:01:26.919><c>Python </c><00:01:27.109><c>dont </c><00:01:27.299><c>nous </c><00:01:27.489><c>avons </c><00:01:27.679><c>besoin</c>
+
+00:01:27.910 --> 00:01:27.920 align:start position:0%
+Cherchons la version de Python dont nous avons besoin
+ 
+
+00:01:27.920 --> 00:01:30.390 align:start position:0%
+Cherchons la version de Python dont nous avons besoin
+maintenant.  <00:01:28.239><c>Alors, </c><00:01:28.558><c>faisons </c><00:01:28.877><c>défiler </c><00:01:29.196><c>vers </c><00:01:29.515><c>le </c><00:01:29.834><c>bas </c><00:01:30.153><c>et</c>
+
+00:01:30.390 --> 00:01:30.400 align:start position:0%
+maintenant.  Alors, faisons défiler vers le bas et
+ 
+
+00:01:30.400 --> 00:01:33.510 align:start position:0%
+maintenant.  Alors, faisons défiler vers le bas et
+cherchons <00:01:30.880><c>Python </c><00:01:31.360><c>3.13.6.</c>
+
+00:01:33.510 --> 00:01:33.520 align:start position:0%
+cherchons Python 3.13.6.
+ 
+
+00:01:33.520 --> 00:01:35.830 align:start position:0%
+cherchons Python 3.13.6.
+On <00:01:33.828><c>y </c><00:01:34.136><c>va.  </c><00:01:34.444><c>Sous </c><00:01:34.752><c>ce </c><00:01:35.060><c>nom, </c><00:01:35.368><c>on </c><00:01:35.676><c>trouve</c>
+
+00:01:35.830 --> 00:01:35.840 align:start position:0%
+On y va.  Sous ce nom, on trouve
+ 
+
+00:01:35.840 --> 00:01:38.469 align:start position:0%
+On y va.  Sous ce nom, on trouve
+le <00:01:36.303><c>programme </c><00:01:36.766><c>d'installation </c><00:01:37.229><c>Windows </c><00:01:37.692><c>64 </c><00:01:38.155><c>bits.</c>
+
+00:01:38.469 --> 00:01:38.479 align:start position:0%
+le programme d'installation Windows 64 bits.
+ 
+
+00:01:38.479 --> 00:01:40.870 align:start position:0%
+le programme d'installation Windows 64 bits.
+Cliqueons <00:01:39.039><c>et </c><00:01:39.599><c>téléchargeons-le.  </c><00:01:40.159><c>Enregistrons-le </c><00:01:40.719><c>dans</c>
+
+00:01:40.870 --> 00:01:40.880 align:start position:0%
+Cliqueons et téléchargeons-le.  Enregistrons-le dans
+ 
+
+00:01:40.880 --> 00:01:42.630 align:start position:0%
+Cliqueons et téléchargeons-le.  Enregistrons-le dans
+le <00:01:41.240><c>dossier </c><00:01:41.600><c>Téléchargements.  </c><00:01:41.960><c>Une </c><00:01:42.320><c>fois</c>
+
+00:01:42.630 --> 00:01:42.640 align:start position:0%
+le dossier Téléchargements.  Une fois
+ 
+
+00:01:42.640 --> 00:01:44.630 align:start position:0%
+le dossier Téléchargements.  Une fois
+le <00:01:42.999><c>téléchargement </c><00:01:43.358><c>terminé, </c><00:01:43.717><c>ouvrons </c><00:01:44.076><c>le</c>
+
+00:01:44.630 --> 00:01:44.640 align:start position:0%
+le téléchargement terminé, ouvrons le
+ 
+
+00:01:44.640 --> 00:01:46.950 align:start position:0%
+le téléchargement terminé, ouvrons le
+dossier <00:01:44.850><c>téléchargements.  </c><00:01:45.060><c>Voici </c><00:01:45.270><c>le </c><00:01:45.480><c>programme </c><00:01:45.690><c>d'installation </c><00:01:45.900><c>de </c><00:01:46.110><c>Python.   </c><00:01:46.320><c>Allons-y</c>
+
+00:01:46.950 --> 00:01:46.960 align:start position:0%
+dossier téléchargements.  Voici le programme d'installation de Python.   Allons-y
+ 
+
+00:01:46.960 --> 00:01:48.710 align:start position:0%
+dossier téléchargements.  Voici le programme d'installation de Python.   Allons-y
+.  <00:01:47.466><c>Je </c><00:01:47.972><c>sélectionnerai </c><00:01:48.478><c>l'</c>
+
+00:01:48.710 --> 00:01:48.720 align:start position:0%
+.  Je sélectionnerai l'
+ 
+
+00:01:48.720 --> 00:01:50.950 align:start position:0%
+.  Je sélectionnerai l'
+option <00:01:49.680><c>d'installation </c><00:01:50.640><c>personnalisée.</c>
+
+00:01:50.950 --> 00:01:50.960 align:start position:0%
+option d'installation personnalisée.
+ 
+
+00:01:50.960 --> 00:01:52.789 align:start position:0%
+option d'installation personnalisée.
+Laissons <00:01:51.240><c>les </c><00:01:51.520><c>options </c><00:01:51.800><c>par </c><00:01:52.080><c>défaut </c><00:01:52.360><c>telles </c><00:01:52.640><c>quelles</c>
+
+00:01:52.789 --> 00:01:52.799 align:start position:0%
+Laissons les options par défaut telles quelles
+ 
+
+00:01:52.799 --> 00:01:55.270 align:start position:0%
+Laissons les options par défaut telles quelles
+et <00:01:53.185><c>cliquons </c><00:01:53.571><c>sur </c><00:01:53.957><c>suivant.  </c><00:01:54.343><c>Ensuite, </c><00:01:54.729><c>je </c><00:01:55.115><c>vais</c>
+
+00:01:55.270 --> 00:01:55.280 align:start position:0%
+et cliquons sur suivant.  Ensuite, je vais
+ 
+
+00:01:55.280 --> 00:01:57.590 align:start position:0%
+et cliquons sur suivant.  Ensuite, je vais
+modifier <00:01:55.946><c>l'emplacement </c><00:01:56.612><c>d'installation.  </c><00:01:57.278><c>Alors,</c>
+
+00:01:57.590 --> 00:01:57.600 align:start position:0%
+modifier l'emplacement d'installation.  Alors,
+ 
+
+00:01:57.600 --> 00:01:59.830 align:start position:0%
+modifier l'emplacement d'installation.  Alors,
+cliquons <00:01:57.933><c>sur </c><00:01:58.266><c>Parcourir.  </c><00:01:58.599><c>Je </c><00:01:58.932><c>vais </c><00:01:59.265><c>sélectionner </c><00:01:59.598><c>le</c>
+
+00:01:59.830 --> 00:01:59.840 align:start position:0%
+cliquons sur Parcourir.  Je vais sélectionner le
+ 
+
+00:01:59.840 --> 00:02:01.830 align:start position:0%
+cliquons sur Parcourir.  Je vais sélectionner le
+dossier <00:02:00.068><c>Téléchargements </c><00:02:00.296><c>et </c><00:02:00.524><c>y </c><00:02:00.752><c>créer </c><00:02:00.980><c>un </c><00:02:01.208><c>nouveau </c><00:02:01.436><c>dossier</c>
+
+00:02:01.830 --> 00:02:01.840 align:start position:0%
+dossier Téléchargements et y créer un nouveau dossier
+ 
+
+00:02:01.840 --> 00:02:04.469 align:start position:0%
+dossier Téléchargements et y créer un nouveau dossier
+appelé <00:02:02.419><c>Python.  </c><00:02:02.998><c>Ensuite, </c><00:02:03.577><c>sélectionnez </c><00:02:04.156><c>ce</c>
+
+00:02:04.469 --> 00:02:04.479 align:start position:0%
+appelé Python.  Ensuite, sélectionnez ce
+ 
+
+00:02:04.479 --> 00:02:07.270 align:start position:0%
+appelé Python.  Ensuite, sélectionnez ce
+dossier <00:02:04.856><c>et </c><00:02:05.233><c>cliquez </c><00:02:05.610><c>sur </c><00:02:05.987><c>OK.  </c><00:02:06.364><c>Enfin, </c><00:02:06.741><c>cliquez </c><00:02:07.118><c>sur</c>
+
+00:02:07.270 --> 00:02:07.280 align:start position:0%
+dossier et cliquez sur OK.  Enfin, cliquez sur
+ 
+
+00:02:07.280 --> 00:02:09.430 align:start position:0%
+dossier et cliquez sur OK.  Enfin, cliquez sur
+le <00:02:07.600><c>bouton </c><00:02:07.920><c>Installer </c><00:02:08.240><c>et </c><00:02:08.560><c>attendez </c><00:02:08.880><c>que </c><00:02:09.200><c>l'</c>
+
+00:02:09.430 --> 00:02:09.440 align:start position:0%
+le bouton Installer et attendez que l'
+ 
+
+00:02:09.440 --> 00:02:10.949 align:start position:0%
+le bouton Installer et attendez que l'
+installation <00:02:09.866><c>soit </c><00:02:10.292><c>terminée.  </c><00:02:10.718><c>L'</c>
+
+00:02:10.949 --> 00:02:10.959 align:start position:0%
+installation soit terminée.  L'
+ 
+
+00:02:10.959 --> 00:02:12.949 align:start position:0%
+installation soit terminée.  L'
+installation <00:02:11.546><c>est </c><00:02:12.133><c>terminée.  </c><00:02:12.720><c>Fermons</c>
+
+00:02:12.949 --> 00:02:12.959 align:start position:0%
+installation est terminée.  Fermons
+ 
+
+00:02:12.959 --> 00:02:15.190 align:start position:0%
+installation est terminée.  Fermons
+cette <00:02:13.459><c>fenêtre.  </c><00:02:13.959><c>Ensuite, </c><00:02:14.459><c>ouvrons </c><00:02:14.959><c>le</c>
+
+00:02:15.190 --> 00:02:15.200 align:start position:0%
+cette fenêtre.  Ensuite, ouvrons le
+ 
+
+00:02:15.200 --> 00:02:17.830 align:start position:0%
+cette fenêtre.  Ensuite, ouvrons le
+dossier <00:02:15.760><c>d'installation </c><00:02:16.320><c>de </c><00:02:16.880><c>Python.  </c><00:02:17.440><c>Ici,</c>
+
+00:02:17.830 --> 00:02:17.840 align:start position:0%
+dossier d'installation de Python.  Ici,
+ 
+
+00:02:17.840 --> 00:02:19.830 align:start position:0%
+dossier d'installation de Python.  Ici,
+sélectionnez <00:02:18.120><c>et </c><00:02:18.400><c>copiez </c><00:02:18.680><c>les </c><00:02:18.960><c>deux </c><00:02:19.240><c>dossiers </c><00:02:19.520><c>nommés</c>
+
+00:02:19.830 --> 00:02:19.840 align:start position:0%
+sélectionnez et copiez les deux dossiers nommés
+ 
+
+00:02:19.840 --> 00:02:22.710 align:start position:0%
+sélectionnez et copiez les deux dossiers nommés
+include <00:02:20.293><c>et </c><00:02:20.746><c>libs.  </c><00:02:21.199><c>Retournez </c><00:02:21.652><c>ensuite </c><00:02:22.105><c>dans </c><00:02:22.558><c>le</c>
+
+00:02:22.710 --> 00:02:22.720 align:start position:0%
+include et libs.  Retournez ensuite dans le
+ 
+
+00:02:22.720 --> 00:02:25.110 align:start position:0%
+include et libs.  Retournez ensuite dans le
+dossier <00:02:23.104><c>Comfy </c><00:02:23.488><c>UI </c><00:02:23.872><c>et </c><00:02:24.256><c>ouvrez </c><00:02:24.640><c>le</c>
+
+00:02:25.110 --> 00:02:25.120 align:start position:0%
+dossier Comfy UI et ouvrez le
+ 
+
+00:02:25.120 --> 00:02:27.670 align:start position:0%
+dossier Comfy UI et ouvrez le
+dossier <00:02:25.840><c>Python </c><00:02:26.560><c>intégré.  </c><00:02:27.280><c>Collons</c>
+
+00:02:27.670 --> 00:02:27.680 align:start position:0%
+dossier Python intégré.  Collons
+ 
+
+00:02:27.680 --> 00:02:30.309 align:start position:0%
+dossier Python intégré.  Collons
+à <00:02:27.912><c>cet </c><00:02:28.144><c>emplacement </c><00:02:28.376><c>les </c><00:02:28.608><c>dossiers </c><00:02:28.840><c>que </c><00:02:29.072><c>nous </c><00:02:29.304><c>venons </c><00:02:29.536><c>de </c><00:02:29.768><c>copier.  </c><00:02:30.000><c>Ensuite</c>
+
+00:02:30.309 --> 00:02:30.319 align:start position:0%
+à cet emplacement les dossiers que nous venons de copier.  Ensuite
+ 
+
+00:02:30.319 --> 00:02:32.470 align:start position:0%
+à cet emplacement les dossiers que nous venons de copier.  Ensuite
+, <00:02:30.687><c>ouvrons </c><00:02:31.055><c>un </c><00:02:31.423><c>terminal </c><00:02:31.791><c>ici </c><00:02:32.159><c>et</c>
+
+00:02:32.470 --> 00:02:32.480 align:start position:0%
+, ouvrons un terminal ici et
+ 
+
+00:02:32.480 --> 00:02:35.190 align:start position:0%
+, ouvrons un terminal ici et
+installons <00:02:33.060><c>Triton.  </c><00:02:33.640><c>Tapez </c><00:02:34.220><c>donc </c><00:02:34.800><c>la</c>
+
+00:02:35.190 --> 00:02:35.200 align:start position:0%
+installons Triton.  Tapez donc la
+ 
+
+00:02:35.200 --> 00:02:38.150 align:start position:0%
+installons Triton.  Tapez donc la
+commande <00:02:35.520><c>suivante&nbsp;</c><00:02:35.840><c>: </c><00:02:36.160><c>dot </c><00:02:36.480><c>/ython.exe</c>
+
+00:02:38.150 --> 00:02:38.160 align:start position:0%
+commande suivante&nbsp;: dot /ython.exe
+ 
+
+00:02:38.160 --> 00:02:41.110 align:start position:0%
+commande suivante&nbsp;: dot /ython.exe
+space-en <00:02:38.672><c>mspace </c><00:02:39.184><c>pips </c><00:02:39.696><c>space </c><00:02:40.208><c>install </c><00:02:40.720><c>space</c>
+
+00:02:41.110 --> 00:02:41.120 align:start position:0%
+space-en mspace pips space install space
+ 
+
+00:02:41.120 --> 00:02:43.830 align:start position:0%
+space-en mspace pips space install space
+Triton <00:02:41.546><c>Windows.  </c><00:02:41.972><c>Appuyez </c><00:02:42.398><c>ensuite </c><00:02:42.824><c>sur </c><00:02:43.250><c>Entrée.  </c><00:02:43.676><c>L'</c>
+
+00:02:43.830 --> 00:02:43.840 align:start position:0%
+Triton Windows.  Appuyez ensuite sur Entrée.  L'
+ 
+
+00:02:43.840 --> 00:02:46.550 align:start position:0%
+Triton Windows.  Appuyez ensuite sur Entrée.  L'
+installation <00:02:44.288><c>de </c><00:02:44.736><c>Triton </c><00:02:45.184><c>est </c><00:02:45.632><c>terminée.  </c><00:02:46.080><c>Maintenant,</c>
+
+00:02:46.550 --> 00:02:46.560 align:start position:0%
+installation de Triton est terminée.  Maintenant,
+ 
+
+00:02:46.560 --> 00:02:47.990 align:start position:0%
+installation de Triton est terminée.  Maintenant,
+effaçons <00:02:46.816><c>la </c><00:02:47.072><c>fenêtre </c><00:02:47.328><c>et </c><00:02:47.584><c>vérifions </c><00:02:47.840><c>la</c>
+
+00:02:47.990 --> 00:02:48.000 align:start position:0%
+effaçons la fenêtre et vérifions la
+ 
+
+00:02:48.000 --> 00:02:50.229 align:start position:0%
+effaçons la fenêtre et vérifions la
+version <00:02:48.181><c>de </c><00:02:48.362><c>la </c><00:02:48.543><c>lampe </c><00:02:48.724><c>torche </c><00:02:48.905><c>utilisée </c><00:02:49.086><c>par </c><00:02:49.267><c>l'interface </c><00:02:49.448><c>utilisateur </c><00:02:49.629><c>portable </c><00:02:49.810><c>et </c><00:02:49.991><c>confortable</c>
+
+00:02:50.229 --> 00:02:50.239 align:start position:0%
+version de la lampe torche utilisée par l'interface utilisateur portable et confortable
+ 
+
+00:02:50.239 --> 00:02:52.949 align:start position:0%
+version de la lampe torche utilisée par l'interface utilisateur portable et confortable
+.  <00:02:50.572><c>Tapez </c><00:02:50.905><c>donc </c><00:02:51.238><c>la </c><00:02:51.571><c>commande </c><00:02:51.904><c>suivante&nbsp;</c><00:02:52.237><c>:</c>
+
+00:02:52.949 --> 00:02:52.959 align:start position:0%
+.  Tapez donc la commande suivante&nbsp;:
+ 
+
+00:02:52.959 --> 00:02:54.869 align:start position:0%
+.  Tapez donc la commande suivante&nbsp;:
+dot/python.exe
+
+00:02:54.869 --> 00:02:54.879 align:start position:0%
+dot/python.exe
+ 
+
+00:02:54.879 --> 00:02:57.509 align:start position:0%
+dot/python.exe
+espace-en <00:02:55.265><c>msp </c><00:02:55.651><c>espace </c><00:02:56.037><c>pip </c><00:02:56.423><c>espace </c><00:02:56.809><c>show </c><00:02:57.195><c>espace</c>
+
+00:02:57.509 --> 00:02:57.519 align:start position:0%
+espace-en msp espace pip espace show espace
+ 
+
+00:02:57.519 --> 00:03:00.229 align:start position:0%
+espace-en msp espace pip espace show espace
+torch <00:02:57.794><c>puis </c><00:02:58.069><c>appuyez </c><00:02:58.344><c>sur </c><00:02:58.619><c>Entrée.  </c><00:02:58.894><c>Comme </c><00:02:59.169><c>vous </c><00:02:59.444><c>pouvez </c><00:02:59.719><c>le </c><00:02:59.994><c>constater,</c>
+
+00:03:00.229 --> 00:03:00.239 align:start position:0%
+torch puis appuyez sur Entrée.  Comme vous pouvez le constater,
+ 
+
+00:03:00.239 --> 00:03:03.509 align:start position:0%
+torch puis appuyez sur Entrée.  Comme vous pouvez le constater,
+ma <00:03:00.607><c>version </c><00:03:00.975><c>portable </c><00:03:01.343><c>utilise </c><00:03:01.711><c>torch </c><00:03:02.079><c>2.9.0</c>
+
+00:03:03.509 --> 00:03:03.519 align:start position:0%
+ma version portable utilise torch 2.9.0
+ 
+
+00:03:03.519 --> 00:03:05.430 align:start position:0%
+ma version portable utilise torch 2.9.0
+avec <00:03:03.840><c>q130.</c>
+
+00:03:05.430 --> 00:03:05.440 align:start position:0%
+avec q130.
+ 
+
+00:03:05.440 --> 00:03:06.869 align:start position:0%
+avec q130.
+Ces <00:03:05.760><c>informations </c><00:03:06.080><c>sont </c><00:03:06.400><c>nécessaires </c><00:03:06.720><c>pour</c>
+
+00:03:06.869 --> 00:03:06.879 align:start position:0%
+Ces informations sont nécessaires pour
+ 
+
+00:03:06.879 --> 00:03:08.790 align:start position:0%
+Ces informations sont nécessaires pour
+installer <00:03:07.183><c>la </c><00:03:07.487><c>version </c><00:03:07.791><c>correcte </c><00:03:08.095><c>de </c><00:03:08.399><c>Sage</c>
+
+00:03:08.790 --> 00:03:08.800 align:start position:0%
+installer la version correcte de Sage
+ 
+
+00:03:08.800 --> 00:03:11.430 align:start position:0%
+installer la version correcte de Sage
+Attention.  <00:03:09.264><c>Ouvrons </c><00:03:09.728><c>donc </c><00:03:10.192><c>le </c><00:03:10.656><c>lien </c><00:03:11.120><c>pour</c>
+
+00:03:11.430 --> 00:03:11.440 align:start position:0%
+Attention.  Ouvrons donc le lien pour
+ 
+
+00:03:11.440 --> 00:03:13.190 align:start position:0%
+Attention.  Ouvrons donc le lien pour
+télécharger <00:03:11.919><c>Sage </c><00:03:12.398><c>Attention.  </c><00:03:12.877><c>Ce</c>
+
+00:03:13.190 --> 00:03:13.200 align:start position:0%
+télécharger Sage Attention.  Ce
+ 
+
+00:03:13.200 --> 00:03:15.270 align:start position:0%
+télécharger Sage Attention.  Ce
+lien <00:03:13.474><c>de </c><00:03:13.748><c>téléchargement </c><00:03:14.022><c>est </c><00:03:14.296><c>également </c><00:03:14.570><c>disponible </c><00:03:14.844><c>dans </c><00:03:15.118><c>la</c>
+
+00:03:15.270 --> 00:03:15.280 align:start position:0%
+lien de téléchargement est également disponible dans la
+ 
+
+00:03:15.280 --> 00:03:17.110 align:start position:0%
+lien de téléchargement est également disponible dans la
+description.  <00:03:15.866><c>Ouvrons-le </c><00:03:16.452><c>dans </c><00:03:17.038><c>le</c>
+
+00:03:17.110 --> 00:03:17.120 align:start position:0%
+description.  Ouvrons-le dans le
+ 
+
+00:03:17.120 --> 00:03:20.070 align:start position:0%
+description.  Ouvrons-le dans le
+navigateur.  <00:03:17.451><c>On </c><00:03:17.782><c>y </c><00:03:18.113><c>va.  </c><00:03:18.444><c>Défilons </c><00:03:18.775><c>vers </c><00:03:19.106><c>le </c><00:03:19.437><c>bas.</c>
+
+00:03:20.070 --> 00:03:20.080 align:start position:0%
+navigateur.  On y va.  Défilons vers le bas.
+ 
+
+00:03:20.080 --> 00:03:22.070 align:start position:0%
+navigateur.  On y va.  Défilons vers le bas.
+Dans <00:03:20.257><c>la </c><00:03:20.434><c>section </c><00:03:20.611><c>«&nbsp;</c><00:03:20.788><c>Versions&nbsp;</c><00:03:20.965><c>», </c><00:03:21.142><c>cliquez </c><00:03:21.319><c>sur </c><00:03:21.496><c>la </c><00:03:21.673><c>dernière</c>
+
+00:03:22.070 --> 00:03:22.080 align:start position:0%
+Dans la section «&nbsp;Versions&nbsp;», cliquez sur la dernière
+ 
+
+00:03:22.080 --> 00:03:24.869 align:start position:0%
+Dans la section «&nbsp;Versions&nbsp;», cliquez sur la dernière
+version.  <00:03:22.349><c>Alors, </c><00:03:22.618><c>faisons </c><00:03:22.887><c>défiler </c><00:03:23.156><c>vers </c><00:03:23.425><c>le </c><00:03:23.694><c>bas </c><00:03:23.963><c>à </c><00:03:24.232><c>nouveau.</c>
+
+00:03:24.869 --> 00:03:24.879 align:start position:0%
+version.  Alors, faisons défiler vers le bas à nouveau.
+ 
+
+00:03:24.879 --> 00:03:26.470 align:start position:0%
+version.  Alors, faisons défiler vers le bas à nouveau.
+Vous <00:03:25.052><c>trouverez </c><00:03:25.225><c>ici </c><00:03:25.398><c>de </c><00:03:25.571><c>nombreux </c><00:03:25.744><c>packages </c><00:03:25.917><c>d'installation</c>
+
+00:03:26.470 --> 00:03:26.480 align:start position:0%
+Vous trouverez ici de nombreux packages d'installation
+ 
+
+00:03:26.480 --> 00:03:29.110 align:start position:0%
+Vous trouverez ici de nombreux packages d'installation
+pour <00:03:27.253><c>Sage </c><00:03:28.026><c>Attention.  </c><00:03:28.799><c>Chaque</c>
+
+00:03:29.110 --> 00:03:29.120 align:start position:0%
+pour Sage Attention.  Chaque
+ 
+
+00:03:29.120 --> 00:03:31.030 align:start position:0%
+pour Sage Attention.  Chaque
+fichier <00:03:29.539><c>indique </c><00:03:29.958><c>quel </c><00:03:30.377><c>package </c><00:03:30.796><c>est</c>
+
+00:03:31.030 --> 00:03:31.040 align:start position:0%
+fichier indique quel package est
+ 
+
+00:03:31.040 --> 00:03:33.350 align:start position:0%
+fichier indique quel package est
+conçu <00:03:31.208><c>pour </c><00:03:31.376><c>quelle </c><00:03:31.544><c>version </c><00:03:31.712><c>de </c><00:03:31.880><c>Torch </c><00:03:32.048><c>et </c><00:03:32.216><c>de </c><00:03:32.384><c>CUDA.   </c><00:03:32.552><c>De</c>
+
+00:03:33.350 --> 00:03:33.360 align:start position:0%
+conçu pour quelle version de Torch et de CUDA.   De
+ 
+
+00:03:33.360 --> 00:03:35.670 align:start position:0%
+conçu pour quelle version de Torch et de CUDA.   De
+plus, <00:03:33.860><c>tous </c><00:03:34.360><c>ces </c><00:03:34.860><c>paquets </c><00:03:35.360><c>contiennent</c>
+
+00:03:35.670 --> 00:03:35.680 align:start position:0%
+plus, tous ces paquets contiennent
+ 
+
+00:03:35.680 --> 00:03:37.270 align:start position:0%
+plus, tous ces paquets contiennent
+CP39-
+
+00:03:37.270 --> 00:03:37.280 align:start position:0%
+CP39-
+ 
+
+00:03:37.280 --> 00:03:39.830 align:start position:0%
+CP39-
+AI3 <00:03:37.599><c>dans </c><00:03:37.918><c>leur </c><00:03:38.237><c>nom, </c><00:03:38.556><c>ce </c><00:03:38.875><c>qui </c><00:03:39.194><c>indique </c><00:03:39.513><c>qu'ils</c>
+
+00:03:39.830 --> 00:03:39.840 align:start position:0%
+AI3 dans leur nom, ce qui indique qu'ils
+ 
+
+00:03:39.840 --> 00:03:42.229 align:start position:0%
+AI3 dans leur nom, ce qui indique qu'ils
+peuvent <00:03:40.015><c>être </c><00:03:40.190><c>installés </c><00:03:40.365><c>avec </c><00:03:40.540><c>n'importe </c><00:03:40.715><c>quelle </c><00:03:40.890><c>version </c><00:03:41.065><c>de </c><00:03:41.240><c>Python, </c><00:03:41.415><c>à </c><00:03:41.590><c>savoir</c>
+
+00:03:42.229 --> 00:03:42.239 align:start position:0%
+peuvent être installés avec n'importe quelle version de Python, à savoir
+ 
+
+00:03:42.239 --> 00:03:45.830 align:start position:0%
+peuvent être installés avec n'importe quelle version de Python, à savoir
+Python <00:03:42.799><c>3.9 </c><00:03:43.359><c>ou </c><00:03:43.919><c>supérieure.  </c><00:03:44.479><c>Cela </c><00:03:45.039><c>signifie </c><00:03:45.599><c>que</c>
+
+00:03:45.830 --> 00:03:45.840 align:start position:0%
+Python 3.9 ou supérieure.  Cela signifie que
+ 
+
+00:03:45.840 --> 00:03:48.949 align:start position:0%
+Python 3.9 ou supérieure.  Cela signifie que
+si <00:03:46.109><c>votre </c><00:03:46.378><c>version </c><00:03:46.647><c>de </c><00:03:46.916><c>Python </c><00:03:47.185><c>est </c><00:03:47.454><c>supérieure </c><00:03:47.723><c>à </c><00:03:47.992><c>3.9 </c><00:03:48.261><c>et </c><00:03:48.530><c>fait </c><00:03:48.799><c>partie</c>
+
+00:03:48.949 --> 00:03:48.959 align:start position:0%
+si votre version de Python est supérieure à 3.9 et fait partie
+ 
+
+00:03:48.959 --> 00:03:51.190 align:start position:0%
+si votre version de Python est supérieure à 3.9 et fait partie
+de <00:03:49.256><c>la </c><00:03:49.553><c>série </c><00:03:49.850><c>Python </c><00:03:50.147><c>3, </c><00:03:50.444><c>vous </c><00:03:50.741><c>n'avez </c><00:03:51.038><c>pas</c>
+
+00:03:51.190 --> 00:03:51.200 align:start position:0%
+de la série Python 3, vous n'avez pas
+ 
+
+00:03:51.200 --> 00:03:52.869 align:start position:0%
+de la série Python 3, vous n'avez pas
+à <00:03:51.405><c>vous </c><00:03:51.610><c>soucier </c><00:03:51.815><c>des </c><00:03:52.020><c>numéros </c><00:03:52.225><c>de </c><00:03:52.430><c>version </c><00:03:52.635><c>mineurs</c>
+
+00:03:52.869 --> 00:03:52.879 align:start position:0%
+à vous soucier des numéros de version mineurs
+ 
+
+00:03:52.879 --> 00:03:54.630 align:start position:0%
+à vous soucier des numéros de version mineurs
+.  <00:03:53.199><c>Mais </c><00:03:53.519><c>vous </c><00:03:53.839><c>devez </c><00:03:54.159><c>absolument </c><00:03:54.479><c>vérifier</c>
+
+00:03:54.630 --> 00:03:54.640 align:start position:0%
+.  Mais vous devez absolument vérifier
+ 
+
+00:03:54.640 --> 00:03:56.710 align:start position:0%
+.  Mais vous devez absolument vérifier
+que <00:03:54.973><c>la </c><00:03:55.306><c>version </c><00:03:55.639><c>de </c><00:03:55.972><c>Torch </c><00:03:56.305><c>et </c><00:03:56.638><c>la</c>
+
+00:03:56.710 --> 00:03:56.720 align:start position:0%
+que la version de Torch et la
+ 
+
+00:03:56.720 --> 00:03:58.869 align:start position:0%
+que la version de Torch et la
+version <00:03:57.005><c>de </c><00:03:57.290><c>CUDA </c><00:03:57.575><c>dans </c><00:03:57.860><c>le </c><00:03:58.145><c>nom </c><00:03:58.430><c>des </c><00:03:58.715><c>fichiers</c>
+
+00:03:58.869 --> 00:03:58.879 align:start position:0%
+version de CUDA dans le nom des fichiers
+ 
+
+00:03:58.879 --> 00:04:01.110 align:start position:0%
+version de CUDA dans le nom des fichiers
+correspondent <00:03:59.060><c>bien </c><00:03:59.241><c>aux </c><00:03:59.422><c>versions </c><00:03:59.603><c>de </c><00:03:59.784><c>Torch </c><00:03:59.965><c>et </c><00:04:00.146><c>de </c><00:04:00.327><c>CUDA </c><00:04:00.508><c>de </c><00:04:00.689><c>Comfy </c><00:04:00.870><c>UI</c>
+
+00:04:01.110 --> 00:04:01.120 align:start position:0%
+correspondent bien aux versions de Torch et de CUDA de Comfy UI
+ 
+
+00:04:01.120 --> 00:04:04.390 align:start position:0%
+correspondent bien aux versions de Torch et de CUDA de Comfy UI
+.  <00:04:01.739><c>Cependant, </c><00:04:02.358><c>dans </c><00:04:02.977><c>certains </c><00:04:03.596><c>cas,</c>
+
+00:04:04.390 --> 00:04:04.400 align:start position:0%
+.  Cependant, dans certains cas,
+ 
+
+00:04:04.400 --> 00:04:05.990 align:start position:0%
+.  Cependant, dans certains cas,
+vous <00:04:04.549><c>n'avez </c><00:04:04.698><c>pas </c><00:04:04.847><c>non </c><00:04:04.996><c>plus </c><00:04:05.145><c>à </c><00:04:05.294><c>vous </c><00:04:05.443><c>soucier </c><00:04:05.592><c>des</c>
+
+00:04:05.990 --> 00:04:06.000 align:start position:0%
+vous n'avez pas non plus à vous soucier des
+ 
+
+00:04:06.000 --> 00:04:08.949 align:start position:0%
+vous n'avez pas non plus à vous soucier des
+versions <00:04:06.466><c>mineures </c><00:04:06.932><c>de </c><00:04:07.398><c>CUDA.  </c><00:04:07.864><c>Par </c><00:04:08.330><c>exemple, </c><00:04:08.796><c>si</c>
+
+00:04:08.949 --> 00:04:08.959 align:start position:0%
+versions mineures de CUDA.  Par exemple, si
+ 
+
+00:04:08.959 --> 00:04:12.229 align:start position:0%
+versions mineures de CUDA.  Par exemple, si
+vous <00:04:09.519><c>utilisez </c><00:04:10.079><c>Torch </c><00:04:10.639><c>2.9.0 </c><00:04:11.199><c>avec </c><00:04:11.759><c>CUDA</c>
+
+00:04:12.229 --> 00:04:12.239 align:start position:0%
+vous utilisez Torch 2.9.0 avec CUDA
+ 
+
+00:04:12.239 --> 00:04:14.550 align:start position:0%
+vous utilisez Torch 2.9.0 avec CUDA
+12.9, <00:04:12.547><c>vous </c><00:04:12.855><c>n'avez </c><00:04:13.163><c>pas </c><00:04:13.471><c>à </c><00:04:13.779><c>vous </c><00:04:14.087><c>soucier </c><00:04:14.395><c>de</c>
+
+00:04:14.550 --> 00:04:14.560 align:start position:0%
+12.9, vous n'avez pas à vous soucier de
+ 
+
+00:04:14.560 --> 00:04:16.469 align:start position:0%
+12.9, vous n'avez pas à vous soucier de
+la <00:04:14.746><c>version </c><00:04:14.932><c>mineure </c><00:04:15.118><c>de </c><00:04:15.304><c>CUDA.  </c><00:04:15.490><c>Il </c><00:04:15.676><c>suffit </c><00:04:15.862><c>de </c><00:04:16.048><c>télécharger </c><00:04:16.234><c>le</c>
+
+00:04:16.469 --> 00:04:16.479 align:start position:0%
+la version mineure de CUDA.  Il suffit de télécharger le
+ 
+
+00:04:16.479 --> 00:04:19.349 align:start position:0%
+la version mineure de CUDA.  Il suffit de télécharger le
+package <00:04:16.799><c>qui </c><00:04:17.119><c>indique </c><00:04:17.439><c>Torch </c><00:04:17.759><c>2.9.0</c>
+
+00:04:19.349 --> 00:04:19.359 align:start position:0%
+package qui indique Torch 2.9.0
+ 
+
+00:04:19.359 --> 00:04:22.230 align:start position:0%
+package qui indique Torch 2.9.0
+avec <00:04:19.661><c>CUD </c><00:04:19.963><c>vers </c><00:04:20.265><c>12.8.  </c><00:04:20.567><c>Dans </c><00:04:20.869><c>mon </c><00:04:21.171><c>cas, </c><00:04:21.473><c>je </c><00:04:21.775><c>souhaite </c><00:04:22.077><c>un</c>
+
+00:04:22.230 --> 00:04:22.240 align:start position:0%
+avec CUD vers 12.8.  Dans mon cas, je souhaite un
+ 
+
+00:04:22.240 --> 00:04:25.430 align:start position:0%
+avec CUD vers 12.8.  Dans mon cas, je souhaite un
+package <00:04:22.659><c>conçu </c><00:04:23.078><c>pour </c><00:04:23.497><c>Torch </c><00:04:23.916><c>2.9.0</c>
+
+00:04:25.430 --> 00:04:25.440 align:start position:0%
+package conçu pour Torch 2.9.0
+ 
+
+00:04:25.440 --> 00:04:27.590 align:start position:0%
+package conçu pour Torch 2.9.0
+avec <00:04:25.520><c>Q130.   </c><00:04:25.600><c>Voici </c><00:04:25.680><c>donc</c>
+
+00:04:27.590 --> 00:04:27.600 align:start position:0%
+avec Q130.   Voici donc
+ 
+
+00:04:27.600 --> 00:04:29.990 align:start position:0%
+avec Q130.   Voici donc
+le <00:04:28.031><c>contenu </c><00:04:28.462><c>du </c><00:04:28.893><c>colis.  </c><00:04:29.324><c>Faisons </c><00:04:29.755><c>un</c>
+
+00:04:29.990 --> 00:04:30.000 align:start position:0%
+le contenu du colis.  Faisons un
+ 
+
+00:04:30.000 --> 00:04:32.230 align:start position:0%
+le contenu du colis.  Faisons un
+clic <00:04:30.230><c>droit </c><00:04:30.460><c>sur </c><00:04:30.690><c>ce </c><00:04:30.920><c>paquet </c><00:04:31.150><c>et </c><00:04:31.380><c>copions </c><00:04:31.610><c>le </c><00:04:31.840><c>lien.</c>
+
+00:04:32.230 --> 00:04:32.240 align:start position:0%
+clic droit sur ce paquet et copions le lien.
+ 
+
+00:04:32.240 --> 00:04:33.909 align:start position:0%
+clic droit sur ce paquet et copions le lien.
+Retournons <00:04:32.600><c>ensuite </c><00:04:32.960><c>au </c><00:04:33.320><c>terminal </c><00:04:33.680><c>et</c>
+
+00:04:33.909 --> 00:04:33.919 align:start position:0%
+Retournons ensuite au terminal et
+ 
+
+00:04:33.919 --> 00:04:37.110 align:start position:0%
+Retournons ensuite au terminal et
+saisissons <00:04:34.479><c>dot/python.exes</c>
+
+00:04:37.110 --> 00:04:37.120 align:start position:0%
+saisissons dot/python.exes
+ 
+
+00:04:37.120 --> 00:04:39.510 align:start position:0%
+saisissons dot/python.exes
+mspace <00:04:37.660><c>pips </c><00:04:38.200><c>space </c><00:04:38.740><c>install, </c><00:04:39.280><c>puis</c>
+
+00:04:39.510 --> 00:04:39.520 align:start position:0%
+mspace pips space install, puis
+ 
+
+00:04:39.520 --> 00:04:41.430 align:start position:0%
+mspace pips space install, puis
+collons <00:04:39.697><c>le </c><00:04:39.874><c>lien </c><00:04:40.051><c>que </c><00:04:40.228><c>nous </c><00:04:40.405><c>venons </c><00:04:40.582><c>de </c><00:04:40.759><c>copier </c><00:04:40.936><c>en </c><00:04:41.113><c>utilisant</c>
+
+00:04:41.430 --> 00:04:41.440 align:start position:0%
+collons le lien que nous venons de copier en utilisant
+ 
+
+00:04:41.440 --> 00:04:44.469 align:start position:0%
+collons le lien que nous venons de copier en utilisant
+Ctrl+V. <00:04:42.000><c>Appuyez </c><00:04:42.560><c>ensuite </c><00:04:43.120><c>sur </c><00:04:43.680><c>Entrée.  </c><00:04:44.240><c>Le</c>
+
+00:04:44.469 --> 00:04:44.479 align:start position:0%
+Ctrl+V. Appuyez ensuite sur Entrée.  Le
+ 
+
+00:04:44.479 --> 00:04:45.909 align:start position:0%
+Ctrl+V. Appuyez ensuite sur Entrée.  Le
+pack <00:04:44.661><c>d'aide </c><00:04:44.843><c>à </c><00:04:45.025><c>la </c><00:04:45.207><c>gestion </c><00:04:45.389><c>de </c><00:04:45.571><c>l'attention </c><00:04:45.753><c>sera</c>
+
+00:04:45.909 --> 00:04:45.919 align:start position:0%
+pack d'aide à la gestion de l'attention sera
+ 
+
+00:04:45.919 --> 00:04:48.469 align:start position:0%
+pack d'aide à la gestion de l'attention sera
+téléchargé <00:04:46.612><c>et </c><00:04:47.305><c>installé.  </c><00:04:47.998><c>Ensuite,</c>
+
+00:04:48.469 --> 00:04:48.479 align:start position:0%
+téléchargé et installé.  Ensuite,
+ 
+
+00:04:48.479 --> 00:04:50.870 align:start position:0%
+téléchargé et installé.  Ensuite,
+fermons <00:04:48.839><c>le </c><00:04:49.199><c>terminal.  </c><00:04:49.559><c>Il </c><00:04:49.919><c>est </c><00:04:50.279><c>temps </c><00:04:50.639><c>maintenant</c>
+
+00:04:50.870 --> 00:04:50.880 align:start position:0%
+fermons le terminal.  Il est temps maintenant
+ 
+
+00:04:50.880 --> 00:04:53.270 align:start position:0%
+fermons le terminal.  Il est temps maintenant
+de <00:04:51.200><c>commencer </c><00:04:51.520><c>à </c><00:04:51.840><c>utiliser </c><00:04:52.160><c>Sage </c><00:04:52.480><c>Attention.  </c><00:04:52.800><c>Il </c><00:04:53.120><c>existe</c>
+
+00:04:53.270 --> 00:04:53.280 align:start position:0%
+de commencer à utiliser Sage Attention.  Il existe
+ 
+
+00:04:53.280 --> 00:04:55.110 align:start position:0%
+de commencer à utiliser Sage Attention.  Il existe
+deux <00:04:54.080><c>façons </c><00:04:54.880><c>d'utiliser</c>
+
+00:04:55.110 --> 00:04:55.120 align:start position:0%
+deux façons d'utiliser
+ 
+
+00:04:55.120 --> 00:04:57.590 align:start position:0%
+deux façons d'utiliser
+Sage <00:04:55.410><c>Attention.  </c><00:04:55.700><c>L'une </c><00:04:55.990><c>consiste </c><00:04:56.280><c>à </c><00:04:56.570><c>ajouter </c><00:04:56.860><c>un </c><00:04:57.150><c>indicateur </c><00:04:57.440><c>au</c>
+
+00:04:57.590 --> 00:04:57.600 align:start position:0%
+Sage Attention.  L'une consiste à ajouter un indicateur au
+ 
+
+00:04:57.600 --> 00:04:59.510 align:start position:0%
+Sage Attention.  L'une consiste à ajouter un indicateur au
+lanceur <00:04:57.952><c>d'interface </c><00:04:58.304><c>utilisateur </c><00:04:58.656><c>Comfy, </c><00:04:59.008><c>et </c><00:04:59.360><c>l'autre</c>
+
+00:04:59.510 --> 00:04:59.520 align:start position:0%
+lanceur d'interface utilisateur Comfy, et l'autre
+ 
+
+00:04:59.520 --> 00:05:01.670 align:start position:0%
+lanceur d'interface utilisateur Comfy, et l'autre
+à <00:04:59.759><c>utiliser </c><00:04:59.998><c>un </c><00:05:00.237><c>nœud </c><00:05:00.476><c>personnalisé </c><00:05:00.715><c>à </c><00:05:00.954><c>partir </c><00:05:01.193><c>des</c>
+
+00:05:01.670 --> 00:05:01.680 align:start position:0%
+à utiliser un nœud personnalisé à partir des
+ 
+
+00:05:01.680 --> 00:05:03.749 align:start position:0%
+à utiliser un nœud personnalisé à partir des
+nœuds <00:05:02.064><c>KJ.  </c><00:05:02.448><c>Commençons </c><00:05:02.832><c>par </c><00:05:03.216><c>examiner </c><00:05:03.600><c>la</c>
+
+00:05:03.749 --> 00:05:03.759 align:start position:0%
+nœuds KJ.  Commençons par examiner la
+ 
+
+00:05:03.759 --> 00:05:05.909 align:start position:0%
+nœuds KJ.  Commençons par examiner la
+méthode <00:05:04.019><c>du </c><00:05:04.279><c>drapeau.  </c><00:05:04.539><c>Voici </c><00:05:04.799><c>le </c><00:05:05.059><c>drapeau </c><00:05:05.319><c>que </c><00:05:05.579><c>nous </c><00:05:05.839><c>devons</c>
+
+00:05:05.909 --> 00:05:05.919 align:start position:0%
+méthode du drapeau.  Voici le drapeau que nous devons
+ 
+
+00:05:05.919 --> 00:05:08.469 align:start position:0%
+méthode du drapeau.  Voici le drapeau que nous devons
+ajouter <00:05:06.499><c>au </c><00:05:07.079><c>lanceur </c><00:05:07.659><c>Comfy </c><00:05:08.239><c>UI.</c>
+
+00:05:08.469 --> 00:05:08.479 align:start position:0%
+ajouter au lanceur Comfy UI.
+ 
+
+00:05:08.479 --> 00:05:10.469 align:start position:0%
+ajouter au lanceur Comfy UI.
+Copions <00:05:08.689><c>donc </c><00:05:08.899><c>ce </c><00:05:09.109><c>drapeau </c><00:05:09.319><c>et </c><00:05:09.529><c>ouvrons </c><00:05:09.739><c>le </c><00:05:09.949><c>dossier </c><00:05:10.159><c>principal</c>
+
+00:05:10.469 --> 00:05:10.479 align:start position:0%
+Copions donc ce drapeau et ouvrons le dossier principal
+ 
+
+00:05:10.479 --> 00:05:12.790 align:start position:0%
+Copions donc ce drapeau et ouvrons le dossier principal
+de <00:05:10.911><c>Comfy </c><00:05:11.343><c>UI </c><00:05:11.775><c>portable.  </c><00:05:12.207><c>Voici </c><00:05:12.639><c>les</c>
+
+00:05:12.790 --> 00:05:12.800 align:start position:0%
+de Comfy UI portable.  Voici les
+ 
+
+00:05:12.800 --> 00:05:15.510 align:start position:0%
+de Comfy UI portable.  Voici les
+fichiers <00:05:13.154><c>BAT </c><00:05:13.508><c>pour </c><00:05:13.862><c>lancer </c><00:05:14.216><c>Comfy </c><00:05:14.570><c>UI.  </c><00:05:14.924><c>La </c><00:05:15.278><c>plupart</c>
+
+00:05:15.510 --> 00:05:15.520 align:start position:0%
+fichiers BAT pour lancer Comfy UI.  La plupart
+ 
+
+00:05:15.520 --> 00:05:17.350 align:start position:0%
+fichiers BAT pour lancer Comfy UI.  La plupart
+du <00:05:16.000><c>temps, </c><00:05:16.480><c>j'utiliserai </c><00:05:16.960><c>le</c>
+
+00:05:17.350 --> 00:05:17.360 align:start position:0%
+du temps, j'utiliserai le
+ 
+
+00:05:17.360 --> 00:05:20.230 align:start position:0%
+du temps, j'utiliserai le
+fichier <00:05:17.813><c>run </c><00:05:18.266><c>Nvidia </c><00:05:18.719><c>GPU.bat.  </c><00:05:19.172><c>Je </c><00:05:19.625><c>vais </c><00:05:20.078><c>donc</c>
+
+00:05:20.230 --> 00:05:20.240 align:start position:0%
+fichier run Nvidia GPU.bat.  Je vais donc
+ 
+
+00:05:20.240 --> 00:05:22.310 align:start position:0%
+fichier run Nvidia GPU.bat.  Je vais donc
+ajouter <00:05:20.608><c>le </c><00:05:20.976><c>drapeau </c><00:05:21.344><c>dans </c><00:05:21.712><c>ce </c><00:05:22.080><c>lanceur.</c>
+
+00:05:22.310 --> 00:05:22.320 align:start position:0%
+ajouter le drapeau dans ce lanceur.
+ 
+
+00:05:22.320 --> 00:05:25.350 align:start position:0%
+ajouter le drapeau dans ce lanceur.
+Ouvrons-le <00:05:22.708><c>dans </c><00:05:23.096><c>le </c><00:05:23.484><c>Bloc-notes.  </c><00:05:23.872><c>Dans </c><00:05:24.260><c>le </c><00:05:24.648><c>Bloc-notes, </c><00:05:25.036><c>après</c>
+
+00:05:25.350 --> 00:05:25.360 align:start position:0%
+Ouvrons-le dans le Bloc-notes.  Dans le Bloc-notes, après
+ 
+
+00:05:25.360 --> 00:05:27.909 align:start position:0%
+Ouvrons-le dans le Bloc-notes.  Dans le Bloc-notes, après
+le <00:05:25.840><c>tiret </c><00:05:26.320><c>« </c><00:05:26.800><c>windows </c><00:05:27.280><c>standalone</c>
+
+00:05:27.909 --> 00:05:27.919 align:start position:0%
+le tiret « windows standalone
+ 
+
+00:05:27.919 --> 00:05:30.469 align:start position:0%
+le tiret « windows standalone
+build <00:05:28.204><c>», </c><00:05:28.489><c>ajoutez </c><00:05:28.774><c>un </c><00:05:29.059><c>espace </c><00:05:29.344><c>et </c><00:05:29.629><c>collez </c><00:05:29.914><c>l'indicateur,</c>
+
+00:05:30.469 --> 00:05:30.479 align:start position:0%
+build », ajoutez un espace et collez l'indicateur,
+ 
+
+00:05:30.479 --> 00:05:33.270 align:start position:0%
+build », ajoutez un espace et collez l'indicateur,
+puis <00:05:30.809><c>enregistrez </c><00:05:31.139><c>le </c><00:05:31.469><c>fichier. </c><00:05:31.799><c>Nous </c><00:05:32.129><c>sommes </c><00:05:32.459><c>maintenant </c><00:05:32.789><c>prêts </c><00:05:33.119><c>à</c>
+
+00:05:33.270 --> 00:05:33.280 align:start position:0%
+puis enregistrez le fichier. Nous sommes maintenant prêts à
+ 
+
+00:05:33.280 --> 00:05:36.950 align:start position:0%
+puis enregistrez le fichier. Nous sommes maintenant prêts à
+lancer <00:05:33.866><c>Comfy </c><00:05:34.452><c>UI. </c><00:05:35.038><c>Lançons </c><00:05:35.624><c>Comfy </c><00:05:36.210><c>UI. </c><00:05:36.796><c>Si</c>
+
+00:05:36.950 --> 00:05:36.960 align:start position:0%
+lancer Comfy UI. Lançons Comfy UI. Si
+ 
+
+00:05:36.960 --> 00:05:38.870 align:start position:0%
+lancer Comfy UI. Lançons Comfy UI. Si
+vous <00:05:37.295><c>avez </c><00:05:37.630><c>correctement </c><00:05:37.965><c>ajouté </c><00:05:38.300><c>l'indicateur, </c><00:05:38.635><c>la</c>
+
+00:05:38.870 --> 00:05:38.880 align:start position:0%
+vous avez correctement ajouté l'indicateur, la
+ 
+
+00:05:38.880 --> 00:05:40.950 align:start position:0%
+vous avez correctement ajouté l'indicateur, la
+fenêtre <00:05:39.248><c>du </c><00:05:39.616><c>terminal </c><00:05:39.984><c>vous </c><00:05:40.352><c>indiquera </c><00:05:40.720><c>qu'il</c>
+
+00:05:40.950 --> 00:05:40.960 align:start position:0%
+fenêtre du terminal vous indiquera qu'il
+ 
+
+00:05:40.960 --> 00:05:43.510 align:start position:0%
+fenêtre du terminal vous indiquera qu'il
+utilise <00:05:41.346><c>Sage </c><00:05:41.732><c>Attention. </c><00:05:42.118><c>Après </c><00:05:42.504><c>le </c><00:05:42.890><c>lancement, </c><00:05:43.276><c>nous</c>
+
+00:05:43.510 --> 00:05:43.520 align:start position:0%
+utilise Sage Attention. Après le lancement, nous
+ 
+
+00:05:43.520 --> 00:05:46.469 align:start position:0%
+utilise Sage Attention. Après le lancement, nous
+pouvons <00:05:44.048><c>commencer </c><00:05:44.576><c>à </c><00:05:45.104><c>utiliser </c><00:05:45.632><c>Sage </c><00:05:46.160><c>Attention.</c>
+
+00:05:46.469 --> 00:05:46.479 align:start position:0%
+pouvons commencer à utiliser Sage Attention.
+ 
+
+00:05:46.479 --> 00:05:48.070 align:start position:0%
+pouvons commencer à utiliser Sage Attention.
+Voyons <00:05:46.735><c>maintenant </c><00:05:46.991><c>une </c><00:05:47.247><c>autre </c><00:05:47.503><c>façon </c><00:05:47.759><c>d'utiliser</c>
+
+00:05:48.070 --> 00:05:48.080 align:start position:0%
+Voyons maintenant une autre façon d'utiliser
+ 
+
+00:05:48.080 --> 00:05:50.790 align:start position:0%
+Voyons maintenant une autre façon d'utiliser
+Sage <00:05:48.576><c>Attention. </c><00:05:49.072><c>Pour </c><00:05:49.568><c>cela, </c><00:05:50.064><c>nous </c><00:05:50.560><c>devons</c>
+
+00:05:50.790 --> 00:05:50.800 align:start position:0%
+Sage Attention. Pour cela, nous devons
+ 
+
+00:05:50.800 --> 00:05:54.070 align:start position:0%
+Sage Attention. Pour cela, nous devons
+installer <00:05:51.061><c>les </c><00:05:51.322><c>nœuds </c><00:05:51.583><c>KJ. </c><00:05:51.844><c>Utilisez </c><00:05:52.105><c>le </c><00:05:52.366><c>gestionnaire </c><00:05:52.627><c>d'interface </c><00:05:52.888><c>utilisateur </c><00:05:53.149><c>de </c><00:05:53.410><c>Comfy </c><00:05:53.671><c>UI</c>
+
+00:05:54.070 --> 00:05:54.080 align:start position:0%
+installer les nœuds KJ. Utilisez le gestionnaire d'interface utilisateur de Comfy UI
+ 
+
+00:05:54.080 --> 00:05:56.550 align:start position:0%
+installer les nœuds KJ. Utilisez le gestionnaire d'interface utilisateur de Comfy UI
+pour <00:05:54.479><c>installer </c><00:05:54.878><c>les </c><00:05:55.277><c>nœuds </c><00:05:55.676><c>KJ.  </c><00:05:56.075><c>Voyons </c><00:05:56.474><c>voir</c>
+
+00:05:56.550 --> 00:05:56.560 align:start position:0%
+pour installer les nœuds KJ.  Voyons voir
+ 
+
+00:05:56.560 --> 00:05:58.950 align:start position:0%
+pour installer les nœuds KJ.  Voyons voir
+.  <00:05:56.893><c>Ouvrez </c><00:05:57.226><c>le </c><00:05:57.559><c>gestionnaire </c><00:05:57.892><c>d'interface </c><00:05:58.225><c>utilisateur </c><00:05:58.558><c>convivial,</c>
+
+00:05:58.950 --> 00:05:58.960 align:start position:0%
+.  Ouvrez le gestionnaire d'interface utilisateur convivial,
+ 
+
+00:05:58.960 --> 00:06:01.189 align:start position:0%
+.  Ouvrez le gestionnaire d'interface utilisateur convivial,
+puis <00:05:59.266><c>cliquez </c><00:05:59.572><c>sur </c><00:05:59.878><c>Gestionnaire </c><00:06:00.184><c>de </c><00:06:00.490><c>nœuds </c><00:06:00.796><c>personnalisés</c>
+
+00:06:01.189 --> 00:06:01.199 align:start position:0%
+puis cliquez sur Gestionnaire de nœuds personnalisés
+ 
+
+00:06:01.199 --> 00:06:04.070 align:start position:0%
+puis cliquez sur Gestionnaire de nœuds personnalisés
+.  <00:06:01.492><c>Cliquez </c><00:06:01.785><c>ensuite </c><00:06:02.078><c>sur </c><00:06:02.371><c>«&nbsp;</c><00:06:02.664><c>Rechercher&nbsp;</c><00:06:02.957><c>» </c><00:06:03.250><c>et </c><00:06:03.543><c>commencez </c><00:06:03.836><c>à</c>
+
+00:06:04.070 --> 00:06:04.080 align:start position:0%
+.  Cliquez ensuite sur «&nbsp;Rechercher&nbsp;» et commencez à
+ 
+
+00:06:04.080 --> 00:06:07.350 align:start position:0%
+.  Cliquez ensuite sur «&nbsp;Rechercher&nbsp;» et commencez à
+rechercher <00:06:04.460><c>des </c><00:06:04.840><c>nœuds </c><00:06:05.220><c>KJ </c><00:06:05.600><c>d'interface </c><00:06:05.980><c>utilisateur </c><00:06:06.360><c>confortable.  </c><00:06:06.740><c>C'est </c><00:06:07.120><c>ici</c>
+
+00:06:07.350 --> 00:06:07.360 align:start position:0%
+rechercher des nœuds KJ d'interface utilisateur confortable.  C'est ici
+ 
+
+00:06:07.360 --> 00:06:09.990 align:start position:0%
+rechercher des nœuds KJ d'interface utilisateur confortable.  C'est ici
+.  <00:06:07.657><c>Dans </c><00:06:07.954><c>mon </c><00:06:08.251><c>cas, </c><00:06:08.548><c>j'ai </c><00:06:08.845><c>déjà </c><00:06:09.142><c>installé </c><00:06:09.439><c>les</c>
+
+00:06:09.990 --> 00:06:10.000 align:start position:0%
+.  Dans mon cas, j'ai déjà installé les
+ 
+
+00:06:10.000 --> 00:06:13.110 align:start position:0%
+.  Dans mon cas, j'ai déjà installé les
+nœuds <00:06:10.493><c>KJ.  </c><00:06:10.986><c>Alors, </c><00:06:11.479><c>si </c><00:06:11.972><c>vous </c><00:06:12.465><c>voulez </c><00:06:12.958><c>utiliser</c>
+
+00:06:13.110 --> 00:06:13.120 align:start position:0%
+nœuds KJ.  Alors, si vous voulez utiliser
+ 
+
+00:06:13.120 --> 00:06:14.790 align:start position:0%
+nœuds KJ.  Alors, si vous voulez utiliser
+la <00:06:13.499><c>deuxième </c><00:06:13.878><c>méthode, </c><00:06:14.257><c>assurez-vous </c><00:06:14.636><c>d'avoir</c>
+
+00:06:14.790 --> 00:06:14.800 align:start position:0%
+la deuxième méthode, assurez-vous d'avoir
+ 
+
+00:06:14.800 --> 00:06:17.430 align:start position:0%
+la deuxième méthode, assurez-vous d'avoir
+installé <00:06:15.199><c>les </c><00:06:15.598><c>nœuds </c><00:06:15.997><c>KJ.  </c><00:06:16.396><c>Maintenant, </c><00:06:16.795><c>fermons </c><00:06:17.194><c>le</c>
+
+00:06:17.430 --> 00:06:17.440 align:start position:0%
+installé les nœuds KJ.  Maintenant, fermons le
+ 
+
+00:06:17.440 --> 00:06:19.909 align:start position:0%
+installé les nœuds KJ.  Maintenant, fermons le
+gestionnaire.  <00:06:17.760><c>Dans </c><00:06:18.080><c>ce </c><00:06:18.400><c>flux </c><00:06:18.720><c>de </c><00:06:19.040><c>travail, </c><00:06:19.360><c>ajoutons </c><00:06:19.680><c>le</c>
+
+00:06:19.909 --> 00:06:19.919 align:start position:0%
+gestionnaire.  Dans ce flux de travail, ajoutons le
+ 
+
+00:06:19.919 --> 00:06:22.870 align:start position:0%
+gestionnaire.  Dans ce flux de travail, ajoutons le
+nœud <00:06:20.447><c>permettant </c><00:06:20.975><c>d'utiliser </c><00:06:21.503><c>Sage </c><00:06:22.031><c>Attention.  </c><00:06:22.559><c>Double-</c>
+
+00:06:22.870 --> 00:06:22.880 align:start position:0%
+nœud permettant d'utiliser Sage Attention.  Double-
+ 
+
+00:06:22.880 --> 00:06:24.469 align:start position:0%
+nœud permettant d'utiliser Sage Attention.  Double-
+cliquez <00:06:23.093><c>donc </c><00:06:23.306><c>et </c><00:06:23.519><c>recherchez </c><00:06:23.732><c>le </c><00:06:23.945><c>patch </c><00:06:24.158><c>sage</c>
+
+00:06:24.469 --> 00:06:24.479 align:start position:0%
+cliquez donc et recherchez le patch sage
+ 
+
+00:06:24.479 --> 00:06:27.510 align:start position:0%
+cliquez donc et recherchez le patch sage
+attention <00:06:25.055><c>KJ.  </c><00:06:25.631><c>C'est </c><00:06:26.207><c>ici.  </c><00:06:26.783><c>Cliquons </c><00:06:27.359><c>dessus</c>
+
+00:06:27.510 --> 00:06:27.520 align:start position:0%
+attention KJ.  C'est ici.  Cliquons dessus
+ 
+
+00:06:27.520 --> 00:06:29.270 align:start position:0%
+attention KJ.  C'est ici.  Cliquons dessus
+.  <00:06:27.773><c>Nous </c><00:06:28.026><c>devons </c><00:06:28.279><c>ajouter </c><00:06:28.532><c>ce </c><00:06:28.785><c>nœud </c><00:06:29.038><c>entre</c>
+
+00:06:29.270 --> 00:06:29.280 align:start position:0%
+.  Nous devons ajouter ce nœud entre
+ 
+
+00:06:29.280 --> 00:06:31.830 align:start position:0%
+.  Nous devons ajouter ce nœud entre
+le <00:06:29.600><c>modèle </c><00:06:29.920><c>et </c><00:06:30.240><c>l'échantillonneur </c><00:06:30.560><c>K.  </c><00:06:30.880><c>Dans </c><00:06:31.200><c>mon </c><00:06:31.520><c>cas,</c>
+
+00:06:31.830 --> 00:06:31.840 align:start position:0%
+le modèle et l'échantillonneur K.  Dans mon cas,
+ 
+
+00:06:31.840 --> 00:06:34.870 align:start position:0%
+le modèle et l'échantillonneur K.  Dans mon cas,
+j'ai <00:06:32.251><c>ajouté </c><00:06:32.662><c>un </c><00:06:33.073><c>chargeur </c><00:06:33.484><c>Laura.  </c><00:06:33.895><c>Je </c><00:06:34.306><c>vais </c><00:06:34.717><c>donc</c>
+
+00:06:34.870 --> 00:06:34.880 align:start position:0%
+j'ai ajouté un chargeur Laura.  Je vais donc
+ 
+
+00:06:34.880 --> 00:06:36.629 align:start position:0%
+j'ai ajouté un chargeur Laura.  Je vais donc
+connecter <00:06:35.199><c>la </c><00:06:35.518><c>sortie </c><00:06:35.837><c>du </c><00:06:36.156><c>modèle </c><00:06:36.475><c>du</c>
+
+00:06:36.629 --> 00:06:36.639 align:start position:0%
+connecter la sortie du modèle du
+ 
+
+00:06:36.639 --> 00:06:38.710 align:start position:0%
+connecter la sortie du modèle du
+chargeur <00:06:36.890><c>Laura </c><00:06:37.141><c>à </c><00:06:37.392><c>l'entrée </c><00:06:37.643><c>du </c><00:06:37.894><c>modèle </c><00:06:38.145><c>du </c><00:06:38.396><c>patch</c>
+
+00:06:38.710 --> 00:06:38.720 align:start position:0%
+chargeur Laura à l'entrée du modèle du patch
+ 
+
+00:06:38.720 --> 00:06:41.990 align:start position:0%
+chargeur Laura à l'entrée du modèle du patch
+sage <00:06:39.312><c>attention </c><00:06:39.904><c>KJ.  </c><00:06:40.496><c>Connectez </c><00:06:41.088><c>ensuite </c><00:06:41.680><c>la</c>
+
+00:06:41.990 --> 00:06:42.000 align:start position:0%
+sage attention KJ.  Connectez ensuite la
+ 
+
+00:06:42.000 --> 00:06:44.870 align:start position:0%
+sage attention KJ.  Connectez ensuite la
+sortie <00:06:42.320><c>du </c><00:06:42.640><c>modèle </c><00:06:42.960><c>d'attention </c><00:06:43.280><c>KJ </c><00:06:43.600><c>du </c><00:06:43.920><c>patch </c><00:06:44.240><c>sage</c>
+
+00:06:44.870 --> 00:06:44.880 align:start position:0%
+sortie du modèle d'attention KJ du patch sage
+ 
+
+00:06:44.880 --> 00:06:47.670 align:start position:0%
+sortie du modèle d'attention KJ du patch sage
+à <00:06:45.190><c>l'entrée </c><00:06:45.500><c>du </c><00:06:45.810><c>modèle </c><00:06:46.120><c>de </c><00:06:46.430><c>l'échantillonneur </c><00:06:46.740><c>K.  </c><00:06:47.050><c>Après </c><00:06:47.360><c>cela,</c>
+
+00:06:47.670 --> 00:06:47.680 align:start position:0%
+à l'entrée du modèle de l'échantillonneur K.  Après cela,
+ 
+
+00:06:47.680 --> 00:06:49.909 align:start position:0%
+à l'entrée du modèle de l'échantillonneur K.  Après cela,
+nous <00:06:47.880><c>pouvons </c><00:06:48.080><c>commencer </c><00:06:48.280><c>à </c><00:06:48.480><c>utiliser </c><00:06:48.680><c>les </c><00:06:48.880><c>options </c><00:06:49.080><c>de </c><00:06:49.280><c>gestion </c><00:06:49.480><c>de </c><00:06:49.680><c>l'</c>
+
+00:06:49.909 --> 00:06:49.919 align:start position:0%
+nous pouvons commencer à utiliser les options de gestion de l'
+ 
+
+00:06:49.919 --> 00:06:51.909 align:start position:0%
+nous pouvons commencer à utiliser les options de gestion de l'
+attention <00:06:50.479><c>Sage </c><00:06:51.039><c>dans </c><00:06:51.599><c>le</c>
+
+00:06:51.909 --> 00:06:51.919 align:start position:0%
+attention Sage dans le
+ 
+
+00:06:51.919 --> 00:06:54.710 align:start position:0%
+attention Sage dans le
+nœud <00:06:52.144><c>KJ </c><00:06:52.369><c>de </c><00:06:52.594><c>patch </c><00:06:52.819><c>Sage </c><00:06:53.044><c>Attention.  </c><00:06:53.269><c>Nous </c><00:06:53.494><c>pouvons </c><00:06:53.719><c>choisir </c><00:06:53.944><c>l'option </c><00:06:54.169><c>automatique </c><00:06:54.394><c>ou</c>
+
+00:06:54.710 --> 00:06:54.720 align:start position:0%
+nœud KJ de patch Sage Attention.  Nous pouvons choisir l'option automatique ou
+ 
+
+00:06:54.720 --> 00:06:58.070 align:start position:0%
+nœud KJ de patch Sage Attention.  Nous pouvons choisir l'option automatique ou
+d'autres <00:06:55.165><c>options </c><00:06:55.610><c>comme </c><00:06:56.055><c>l'attention </c><00:06:56.500><c>sage </c><00:06:56.945><c>qk </c><00:06:57.390><c>i </c><00:06:57.835><c>n</c>
+
+00:06:58.070 --> 00:06:58.080 align:start position:0%
+d'autres options comme l'attention sage qk i n
+ 
+
+00:06:58.080 --> 00:07:01.189 align:start position:0%
+d'autres options comme l'attention sage qk i n
+t <00:06:58.639><c>8pvp16quda</c>
+
+00:07:01.189 --> 00:07:01.199 align:start position:0%
+t 8pvp16quda
+ 
+
+00:07:01.199 --> 00:07:03.749 align:start position:0%
+t 8pvp16quda
+ou <00:07:01.799><c>l'option </c><00:07:02.399><c>triton.  </c><00:07:02.999><c>Je </c><00:07:03.599><c>vais</c>
+
+00:07:03.749 --> 00:07:03.759 align:start position:0%
+ou l'option triton.  Je vais
+ 
+
+00:07:03.759 --> 00:07:06.870 align:start position:0%
+ou l'option triton.  Je vais
+choisir <00:07:04.008><c>le </c><00:07:04.257><c>mode </c><00:07:04.506><c>automatique.  </c><00:07:04.755><c>Exécutons </c><00:07:05.004><c>ensuite </c><00:07:05.253><c>le </c><00:07:05.502><c>flux </c><00:07:05.751><c>de </c><00:07:06.000><c>travail</c>
+
+00:07:06.870 --> 00:07:06.880 align:start position:0%
+choisir le mode automatique.  Exécutons ensuite le flux de travail
+ 
+
+00:07:06.880 --> 00:07:08.550 align:start position:0%
+choisir le mode automatique.  Exécutons ensuite le flux de travail
+pour <00:07:07.133><c>vérifier </c><00:07:07.386><c>son </c><00:07:07.639><c>bon </c><00:07:07.892><c>fonctionnement.  </c><00:07:08.145><c>Lorsque </c><00:07:08.398><c>la</c>
+
+00:07:08.550 --> 00:07:08.560 align:start position:0%
+pour vérifier son bon fonctionnement.  Lorsque la
+ 
+
+00:07:08.560 --> 00:07:10.390 align:start position:0%
+pour vérifier son bon fonctionnement.  Lorsque la
+génération <00:07:08.896><c>est </c><00:07:09.232><c>en </c><00:07:09.568><c>cours, </c><00:07:09.904><c>regardez </c><00:07:10.240><c>le</c>
+
+00:07:10.390 --> 00:07:10.400 align:start position:0%
+génération est en cours, regardez le
+ 
+
+00:07:10.400 --> 00:07:12.710 align:start position:0%
+génération est en cours, regardez le
+terminal&nbsp;<00:07:10.662><c>: </c><00:07:10.924><c>il </c><00:07:11.186><c>indique </c><00:07:11.448><c>«&nbsp;</c><00:07:11.710><c>correction </c><00:07:11.972><c>de </c><00:07:12.234><c>l’</c>
+
+00:07:12.710 --> 00:07:12.720 align:start position:0%
+terminal&nbsp;: il indique «&nbsp;correction de l’
+ 
+
+00:07:12.720 --> 00:07:15.110 align:start position:0%
+terminal&nbsp;: il indique «&nbsp;correction de l’
+attention <00:07:13.005><c>de </c><00:07:13.290><c>l’interface </c><00:07:13.575><c>utilisateur </c><00:07:13.860><c>confortable </c><00:07:14.145><c>pour </c><00:07:14.430><c>utiliser </c><00:07:14.715><c>l’</c>
+
+00:07:15.110 --> 00:07:15.120 align:start position:0%
+attention de l’interface utilisateur confortable pour utiliser l’
+ 
+
+00:07:15.120 --> 00:07:17.350 align:start position:0%
+attention de l’interface utilisateur confortable pour utiliser l’
+attention <00:07:15.327><c>sage&nbsp;</c><00:07:15.534><c>».  </c><00:07:15.741><c>Si </c><00:07:15.948><c>toutes </c><00:07:16.155><c>les </c><00:07:16.362><c>étapes </c><00:07:16.569><c>que </c><00:07:16.776><c>vous </c><00:07:16.983><c>avez </c><00:07:17.190><c>suivies</c>
+
+00:07:17.350 --> 00:07:17.360 align:start position:0%
+attention sage&nbsp;».  Si toutes les étapes que vous avez suivies
+ 
+
+00:07:17.360 --> 00:07:19.749 align:start position:0%
+attention sage&nbsp;».  Si toutes les étapes que vous avez suivies
+sont <00:07:17.693><c>correctes, </c><00:07:18.026><c>la </c><00:07:18.359><c>génération </c><00:07:18.692><c>se </c><00:07:19.025><c>terminera </c><00:07:19.358><c>avec</c>
+
+00:07:19.749 --> 00:07:19.759 align:start position:0%
+sont correctes, la génération se terminera avec
+ 
+
+00:07:19.759 --> 00:07:21.510 align:start position:0%
+sont correctes, la génération se terminera avec
+succès.  <00:07:20.239><c>La </c><00:07:20.719><c>génération </c><00:07:21.199><c>est</c>
+
+00:07:21.510 --> 00:07:21.520 align:start position:0%
+succès.  La génération est
+ 
+
+00:07:21.520 --> 00:07:23.430 align:start position:0%
+succès.  La génération est
+terminée.  <00:07:21.872><c>Passons </c><00:07:22.224><c>maintenant </c><00:07:22.576><c>en </c><00:07:22.928><c>revue </c><00:07:23.280><c>l'</c>
+
+00:07:23.430 --> 00:07:23.440 align:start position:0%
+terminée.  Passons maintenant en revue l'
+ 
+
+00:07:23.440 --> 00:07:26.710 align:start position:0%
+terminée.  Passons maintenant en revue l'
+image <00:07:23.933><c>générée.  </c><00:07:24.426><c>Oui, </c><00:07:24.919><c>ça </c><00:07:25.412><c>a </c><00:07:25.905><c>l'air </c><00:07:26.398><c>bien.</c>
+
+00:07:26.710 --> 00:07:26.720 align:start position:0%
+image générée.  Oui, ça a l'air bien.
+ 
+
+00:07:26.720 --> 00:07:29.110 align:start position:0%
+image générée.  Oui, ça a l'air bien.
+Il <00:07:27.028><c>est </c><00:07:27.336><c>maintenant </c><00:07:27.644><c>temps </c><00:07:27.952><c>d'installer </c><00:07:28.260><c>Sage </c><00:07:28.568><c>Attention </c><00:07:28.876><c>dans</c>
+
+00:07:29.110 --> 00:07:29.120 align:start position:0%
+Il est maintenant temps d'installer Sage Attention dans
+ 
+
+00:07:29.120 --> 00:07:32.230 align:start position:0%
+Il est maintenant temps d'installer Sage Attention dans
+la <00:07:29.480><c>version </c><00:07:29.840><c>de </c><00:07:30.200><c>bureau </c><00:07:30.560><c>de </c><00:07:30.920><c>Comfy </c><00:07:31.280><c>UI.  </c><00:07:31.640><c>Pour </c><00:07:32.000><c>mes</c>
+
+00:07:32.230 --> 00:07:32.240 align:start position:0%
+la version de bureau de Comfy UI.  Pour mes
+ 
+
+00:07:32.240 --> 00:07:34.230 align:start position:0%
+la version de bureau de Comfy UI.  Pour mes
+expériences, <00:07:32.514><c>je </c><00:07:32.788><c>pense </c><00:07:33.062><c>qu'il </c><00:07:33.336><c>n'est </c><00:07:33.610><c>pas </c><00:07:33.884><c>nécessaire </c><00:07:34.158><c>de</c>
+
+00:07:34.230 --> 00:07:34.240 align:start position:0%
+expériences, je pense qu'il n'est pas nécessaire de
+ 
+
+00:07:34.240 --> 00:07:36.150 align:start position:0%
+expériences, je pense qu'il n'est pas nécessaire de
+copier <00:07:35.759><c>les</c>
+
+00:07:36.150 --> 00:07:36.160 align:start position:0%
+copier les
+ 
+
+00:07:36.160 --> 00:07:38.629 align:start position:0%
+copier les
+en-têtes <00:07:36.410><c>et </c><00:07:36.660><c>les </c><00:07:36.910><c>bibliothèques </c><00:07:37.160><c>de </c><00:07:37.410><c>développement </c><00:07:37.660><c>Python </c><00:07:37.910><c>vers </c><00:07:38.160><c>la</c>
+
+00:07:38.629 --> 00:07:38.639 align:start position:0%
+en-têtes et les bibliothèques de développement Python vers la
+ 
+
+00:07:38.639 --> 00:07:42.230 align:start position:0%
+en-têtes et les bibliothèques de développement Python vers la
+version <00:07:39.069><c>de </c><00:07:39.499><c>bureau </c><00:07:39.929><c>de </c><00:07:40.359><c>Comfy </c><00:07:40.789><c>UI.  </c><00:07:41.219><c>Voyons </c><00:07:41.649><c>donc </c><00:07:42.079><c>comment</c>
+
+00:07:42.230 --> 00:07:42.240 align:start position:0%
+version de bureau de Comfy UI.  Voyons donc comment
+ 
+
+00:07:42.240 --> 00:07:44.469 align:start position:0%
+version de bureau de Comfy UI.  Voyons donc comment
+installer <00:07:42.575><c>Sage </c><00:07:42.910><c>Attention </c><00:07:43.245><c>dans </c><00:07:43.580><c>l'interface </c><00:07:43.915><c>utilisateur</c>
+
+00:07:44.469 --> 00:07:44.479 align:start position:0%
+installer Sage Attention dans l'interface utilisateur
+ 
+
+00:07:44.479 --> 00:07:46.950 align:start position:0%
+installer Sage Attention dans l'interface utilisateur
+Comfy <00:07:44.739><c>UI </c><00:07:44.999><c>de </c><00:07:45.259><c>bureau.  </c><00:07:45.519><c>Commencez </c><00:07:45.779><c>donc </c><00:07:46.039><c>par </c><00:07:46.299><c>lancer </c><00:07:46.559><c>l'</c>
+
+00:07:46.950 --> 00:07:46.960 align:start position:0%
+Comfy UI de bureau.  Commencez donc par lancer l'
+ 
+
+00:07:46.960 --> 00:07:49.830 align:start position:0%
+Comfy UI de bureau.  Commencez donc par lancer l'
+interface <00:07:47.163><c>utilisateur </c><00:07:47.366><c>Comfy </c><00:07:47.569><c>pour </c><00:07:47.772><c>ordinateur.  </c><00:07:47.975><c>Une </c><00:07:48.178><c>fois </c><00:07:48.381><c>que </c><00:07:48.584><c>l'interface </c><00:07:48.787><c>de </c><00:07:48.990><c>bureau </c><00:07:49.193><c>Comfy </c><00:07:49.396><c>UI </c><00:07:49.599><c>s'affiche</c>
+
+00:07:49.830 --> 00:07:49.840 align:start position:0%
+interface utilisateur Comfy pour ordinateur.  Une fois que l'interface de bureau Comfy UI s'affiche
+ 
+
+00:07:49.840 --> 00:07:51.670 align:start position:0%
+interface utilisateur Comfy pour ordinateur.  Une fois que l'interface de bureau Comfy UI s'affiche
+, <00:07:50.320><c>cliquez </c><00:07:50.800><c>sur </c><00:07:51.280><c>l'</c>
+
+00:07:51.670 --> 00:07:51.680 align:start position:0%
+, cliquez sur l'
+ 
+
+00:07:51.680 --> 00:07:54.070 align:start position:0%
+, cliquez sur l'
+option <00:07:51.959><c>de </c><00:07:52.238><c>bascule </c><00:07:52.517><c>du </c><00:07:52.796><c>panneau </c><00:07:53.075><c>inférieur.  </c><00:07:53.354><c>Cliquez </c><00:07:53.633><c>ensuite </c><00:07:53.912><c>sur</c>
+
+00:07:54.070 --> 00:07:54.080 align:start position:0%
+option de bascule du panneau inférieur.  Cliquez ensuite sur
+ 
+
+00:07:54.080 --> 00:07:56.309 align:start position:0%
+option de bascule du panneau inférieur.  Cliquez ensuite sur
+Terminal.  <00:07:54.580><c>Effacons </c><00:07:55.080><c>le </c><00:07:55.580><c>terminal </c><00:07:56.080><c>en</c>
+
+00:07:56.309 --> 00:07:56.319 align:start position:0%
+Terminal.  Effacons le terminal en
+ 
+
+00:07:56.319 --> 00:07:59.430 align:start position:0%
+Terminal.  Effacons le terminal en
+tapant <00:07:56.649><c>« </c><00:07:56.979><c>clear </c><00:07:57.309><c>» </c><00:07:57.639><c>et </c><00:07:57.969><c>en </c><00:07:58.299><c>appuyant </c><00:07:58.629><c>sur </c><00:07:58.959><c>Entrée.</c>
+
+00:07:59.430 --> 00:07:59.440 align:start position:0%
+tapant « clear » et en appuyant sur Entrée.
+ 
+
+00:07:59.440 --> 00:08:01.110 align:start position:0%
+tapant « clear » et en appuyant sur Entrée.
+Commençons <00:07:59.634><c>par </c><00:07:59.828><c>vérifier </c><00:08:00.022><c>la </c><00:08:00.216><c>version </c><00:08:00.410><c>de </c><00:08:00.604><c>Python </c><00:08:00.798><c>en</c>
+
+00:08:01.110 --> 00:08:01.120 align:start position:0%
+Commençons par vérifier la version de Python en
+ 
+
+00:08:01.120 --> 00:08:03.830 align:start position:0%
+Commençons par vérifier la version de Python en
+exécutant <00:08:01.584><c>la </c><00:08:02.048><c>commande </c><00:08:02.512><c>python </c><00:08:02.976><c>espace </c><00:08:03.440><c>majuscule</c>
+
+00:08:03.830 --> 00:08:03.840 align:start position:0%
+exécutant la commande python espace majuscule
+ 
+
+00:08:03.840 --> 00:08:06.469 align:start position:0%
+exécutant la commande python espace majuscule
+V. <00:08:04.056><c>La </c><00:08:04.272><c>version </c><00:08:04.488><c>de </c><00:08:04.704><c>Python </c><00:08:04.920><c>utilisée </c><00:08:05.136><c>par </c><00:08:05.352><c>mon </c><00:08:05.568><c>bureau </c><00:08:05.784><c>Comfy </c><00:08:06.000><c>UI</c>
+
+00:08:06.469 --> 00:08:06.479 align:start position:0%
+V. La version de Python utilisée par mon bureau Comfy UI
+ 
+
+00:08:06.479 --> 00:08:09.589 align:start position:0%
+V. La version de Python utilisée par mon bureau Comfy UI
+est <00:08:06.919><c>la </c><00:08:07.359><c>3.12.8.</c>
+
+00:08:09.589 --> 00:08:09.599 align:start position:0%
+est la 3.12.8.
+ 
+
+00:08:09.599 --> 00:08:11.430 align:start position:0%
+est la 3.12.8.
+Vérifions <00:08:09.852><c>maintenant </c><00:08:10.105><c>la </c><00:08:10.358><c>version </c><00:08:10.611><c>de </c><00:08:10.864><c>Torch </c><00:08:11.117><c>en</c>
+
+00:08:11.430 --> 00:08:11.440 align:start position:0%
+Vérifions maintenant la version de Torch en
+ 
+
+00:08:11.440 --> 00:08:14.390 align:start position:0%
+Vérifions maintenant la version de Torch en
+exécutant <00:08:11.893><c>la </c><00:08:12.346><c>commande </c><00:08:12.799><c>`pipace </c><00:08:13.252><c>showace </c><00:08:13.705><c>torch`.  </c><00:08:14.158><c>Mon</c>
+
+00:08:14.390 --> 00:08:14.400 align:start position:0%
+exécutant la commande `pipace showace torch`.  Mon
+ 
+
+00:08:14.400 --> 00:08:18.469 align:start position:0%
+exécutant la commande `pipace showace torch`.  Mon
+bureau <00:08:14.684><c>avec </c><00:08:14.968><c>une </c><00:08:15.252><c>interface </c><00:08:15.536><c>utilisateur </c><00:08:15.820><c>confortable </c><00:08:16.104><c>utilise </c><00:08:16.388><c>donc </c><00:08:16.672><c>Torch </c><00:08:16.956><c>2.8.0</c>
+
+00:08:18.469 --> 00:08:18.479 align:start position:0%
+bureau avec une interface utilisateur confortable utilise donc Torch 2.8.0
+ 
+
+00:08:18.479 --> 00:08:21.909 align:start position:0%
+bureau avec une interface utilisateur confortable utilise donc Torch 2.8.0
+avec <00:08:18.843><c>prise </c><00:08:19.207><c>en </c><00:08:19.571><c>charge </c><00:08:19.935><c>Q129.  </c><00:08:20.299><c>Par </c><00:08:20.663><c>conséquent, </c><00:08:21.027><c>nous </c><00:08:21.391><c>avons </c><00:08:21.755><c>besoin</c>
+
+00:08:21.909 --> 00:08:21.919 align:start position:0%
+avec prise en charge Q129.  Par conséquent, nous avons besoin
+ 
+
+00:08:21.919 --> 00:08:24.150 align:start position:0%
+avec prise en charge Q129.  Par conséquent, nous avons besoin
+du <00:08:22.181><c>package </c><00:08:22.443><c>Sage </c><00:08:22.705><c>Attention </c><00:08:22.967><c>qui </c><00:08:23.229><c>prend </c><00:08:23.491><c>en </c><00:08:23.753><c>charge</c>
+
+00:08:24.150 --> 00:08:24.160 align:start position:0%
+du package Sage Attention qui prend en charge
+ 
+
+00:08:24.160 --> 00:08:26.230 align:start position:0%
+du package Sage Attention qui prend en charge
+Torch <00:08:24.720><c>2.8.0</c>
+
+00:08:26.230 --> 00:08:26.240 align:start position:0%
+Torch 2.8.0
+ 
+
+00:08:26.240 --> 00:08:28.230 align:start position:0%
+Torch 2.8.0
+avec <00:08:26.479><c>Q129.</c>
+
+00:08:28.230 --> 00:08:28.240 align:start position:0%
+avec Q129.
+ 
+
+00:08:28.240 --> 00:08:30.469 align:start position:0%
+avec Q129.
+Ouvrons <00:08:28.575><c>maintenant </c><00:08:28.910><c>le </c><00:08:29.245><c>lien </c><00:08:29.580><c>pour </c><00:08:29.915><c>télécharger</c>
+
+00:08:30.469 --> 00:08:30.479 align:start position:0%
+Ouvrons maintenant le lien pour télécharger
+ 
+
+00:08:30.479 --> 00:08:32.949 align:start position:0%
+Ouvrons maintenant le lien pour télécharger
+Sage <00:08:30.675><c>Attention.  </c><00:08:30.871><c>On </c><00:08:31.067><c>y </c><00:08:31.263><c>va </c><00:08:31.459><c>encore </c><00:08:31.655><c>une </c><00:08:31.851><c>fois.  </c><00:08:32.047><c>Dans </c><00:08:32.243><c>la </c><00:08:32.439><c>section </c><00:08:32.635><c>«</c>
+
+00:08:32.949 --> 00:08:32.959 align:start position:0%
+Sage Attention.  On y va encore une fois.  Dans la section «
+ 
+
+00:08:32.959 --> 00:08:35.350 align:start position:0%
+Sage Attention.  On y va encore une fois.  Dans la section «
+Versions&nbsp;<00:08:33.212><c>», </c><00:08:33.465><c>cliquez </c><00:08:33.718><c>sur </c><00:08:33.971><c>la </c><00:08:34.224><c>dernière </c><00:08:34.477><c>version.</c>
+
+00:08:35.350 --> 00:08:35.360 align:start position:0%
+Versions&nbsp;», cliquez sur la dernière version.
+ 
+
+00:08:35.360 --> 00:08:37.750 align:start position:0%
+Versions&nbsp;», cliquez sur la dernière version.
+Ensuite, <00:08:35.583><c>faites </c><00:08:35.806><c>défiler </c><00:08:36.029><c>vers </c><00:08:36.252><c>le </c><00:08:36.475><c>bas.  </c><00:08:36.698><c>Nous </c><00:08:36.921><c>pouvons </c><00:08:37.144><c>trouver </c><00:08:37.367><c>ici </c><00:08:37.590><c>le</c>
+
+00:08:37.750 --> 00:08:37.760 align:start position:0%
+Ensuite, faites défiler vers le bas.  Nous pouvons trouver ici le
+ 
+
+00:08:37.760 --> 00:08:40.790 align:start position:0%
+Ensuite, faites défiler vers le bas.  Nous pouvons trouver ici le
+package <00:08:38.127><c>Sage </c><00:08:38.494><c>Attention </c><00:08:38.861><c>pour </c><00:08:39.228><c>Torch </c><00:08:39.595><c>2.8.0</c>
+
+00:08:40.790 --> 00:08:40.800 align:start position:0%
+package Sage Attention pour Torch 2.8.0
+ 
+
+00:08:40.800 --> 00:08:44.310 align:start position:0%
+package Sage Attention pour Torch 2.8.0
+avec <00:08:41.333><c>Q128.  </c><00:08:41.866><c>Mon </c><00:08:42.399><c>bureau </c><00:08:42.932><c>Comfy </c><00:08:43.465><c>UI </c><00:08:43.998><c>utilise</c>
+
+00:08:44.310 --> 00:08:44.320 align:start position:0%
+avec Q128.  Mon bureau Comfy UI utilise
+ 
+
+00:08:44.320 --> 00:08:48.550 align:start position:0%
+avec Q128.  Mon bureau Comfy UI utilise
+Torch <00:08:44.764><c>2.8.0 </c><00:08:45.208><c>avec </c><00:08:45.652><c>Q129.  </c><00:08:46.096><c>Mais </c><00:08:46.540><c>comme </c><00:08:46.984><c>je </c><00:08:47.428><c>l'ai </c><00:08:47.872><c>dit </c><00:08:48.316><c>plus</c>
+
+00:08:48.550 --> 00:08:48.560 align:start position:0%
+Torch 2.8.0 avec Q129.  Mais comme je l'ai dit plus
+ 
+
+00:08:48.560 --> 00:08:50.470 align:start position:0%
+Torch 2.8.0 avec Q129.  Mais comme je l'ai dit plus
+tôt <00:08:48.780><c>dans </c><00:08:49.000><c>cette </c><00:08:49.220><c>vidéo, </c><00:08:49.440><c>nous </c><00:08:49.660><c>n'avons </c><00:08:49.880><c>pas </c><00:08:50.100><c>à </c><00:08:50.320><c>nous</c>
+
+00:08:50.470 --> 00:08:50.480 align:start position:0%
+tôt dans cette vidéo, nous n'avons pas à nous
+ 
+
+00:08:50.480 --> 00:08:52.150 align:start position:0%
+tôt dans cette vidéo, nous n'avons pas à nous
+soucier <00:08:50.603><c>de </c><00:08:50.726><c>la </c><00:08:50.849><c>différence </c><00:08:50.972><c>entre </c><00:08:51.095><c>la </c><00:08:51.218><c>version </c><00:08:51.341><c>Q </c><00:08:51.464><c>et </c><00:08:51.587><c>la </c><00:08:51.710><c>version </c><00:08:51.833><c>mineure</c>
+
+00:08:52.150 --> 00:08:52.160 align:start position:0%
+soucier de la différence entre la version Q et la version mineure
+ 
+
+00:08:52.160 --> 00:08:54.790 align:start position:0%
+soucier de la différence entre la version Q et la version mineure
+.  <00:08:52.700><c>Par </c><00:08:53.240><c>ailleurs, </c><00:08:53.780><c>concernant </c><00:08:54.320><c>la</c>
+
+00:08:54.790 --> 00:08:54.800 align:start position:0%
+.  Par ailleurs, concernant la
+ 
+
+00:08:54.800 --> 00:08:57.670 align:start position:0%
+.  Par ailleurs, concernant la
+version <00:08:55.032><c>de </c><00:08:55.264><c>Python, </c><00:08:55.496><c>mon </c><00:08:55.728><c>environnement </c><00:08:55.960><c>de </c><00:08:56.192><c>bureau </c><00:08:56.424><c>Comfy </c><00:08:56.656><c>UI </c><00:08:56.888><c>utilise </c><00:08:57.120><c>une </c><00:08:57.352><c>version</c>
+
+00:08:57.670 --> 00:08:57.680 align:start position:0%
+version de Python, mon environnement de bureau Comfy UI utilise une version
+ 
+
+00:08:57.680 --> 00:09:00.949 align:start position:0%
+version de Python, mon environnement de bureau Comfy UI utilise une version
+supérieure <00:08:57.956><c>à </c><00:08:58.232><c>la </c><00:08:58.508><c>version </c><00:08:58.784><c>minimale </c><00:08:59.060><c>requise, </c><00:08:59.336><c>Python </c><00:08:59.612><c>3.9.  </c><00:08:59.888><c>Donc, </c><00:09:00.164><c>comme </c><00:09:00.440><c>je </c><00:09:00.716><c>l'ai</c>
+
+00:09:00.949 --> 00:09:00.959 align:start position:0%
+supérieure à la version minimale requise, Python 3.9.  Donc, comme je l'ai
+ 
+
+00:09:00.959 --> 00:09:02.790 align:start position:0%
+supérieure à la version minimale requise, Python 3.9.  Donc, comme je l'ai
+dit <00:09:01.159><c>précédemment, </c><00:09:01.359><c>nous </c><00:09:01.559><c>n'avons </c><00:09:01.759><c>pas </c><00:09:01.959><c>à </c><00:09:02.159><c>nous </c><00:09:02.359><c>soucier </c><00:09:02.559><c>des</c>
+
+00:09:02.790 --> 00:09:02.800 align:start position:0%
+dit précédemment, nous n'avons pas à nous soucier des
+ 
+
+00:09:02.800 --> 00:09:05.430 align:start position:0%
+dit précédemment, nous n'avons pas à nous soucier des
+différences <00:09:02.968><c>entre </c><00:09:03.136><c>les </c><00:09:03.304><c>versions </c><00:09:03.472><c>mineures </c><00:09:03.640><c>de </c><00:09:03.808><c>Python.   </c><00:09:03.976><c>Il </c><00:09:04.144><c>suffit </c><00:09:04.312><c>de</c>
+
+00:09:05.430 --> 00:09:05.440 align:start position:0%
+différences entre les versions mineures de Python.   Il suffit de
+ 
+
+00:09:05.440 --> 00:09:07.750 align:start position:0%
+différences entre les versions mineures de Python.   Il suffit de
+le <00:09:05.980><c>télécharger </c><00:09:06.520><c>et </c><00:09:07.060><c>de </c><00:09:07.600><c>l'installer</c>
+
+00:09:07.750 --> 00:09:07.760 align:start position:0%
+le télécharger et de l'installer
+ 
+
+00:09:07.760 --> 00:09:10.310 align:start position:0%
+le télécharger et de l'installer
+dans <00:09:08.026><c>l'interface </c><00:09:08.292><c>utilisateur </c><00:09:08.558><c>Comfy.  </c><00:09:08.824><c>Faisons </c><00:09:09.090><c>donc </c><00:09:09.356><c>un </c><00:09:09.622><c>clic </c><00:09:09.888><c>droit </c><00:09:10.154><c>sur</c>
+
+00:09:10.310 --> 00:09:10.320 align:start position:0%
+dans l'interface utilisateur Comfy.  Faisons donc un clic droit sur
+ 
+
+00:09:10.320 --> 00:09:12.790 align:start position:0%
+dans l'interface utilisateur Comfy.  Faisons donc un clic droit sur
+ce <00:09:10.640><c>fichier </c><00:09:10.960><c>et </c><00:09:11.280><c>copions </c><00:09:11.600><c>le </c><00:09:11.920><c>lien.  </c><00:09:12.240><c>Retournez </c><00:09:12.560><c>ensuite</c>
+
+00:09:12.790 --> 00:09:12.800 align:start position:0%
+ce fichier et copions le lien.  Retournez ensuite
+ 
+
+00:09:12.800 --> 00:09:15.350 align:start position:0%
+ce fichier et copions le lien.  Retournez ensuite
+au <00:09:13.200><c>terminal </c><00:09:13.600><c>de </c><00:09:14.000><c>Comfy </c><00:09:14.400><c>UI </c><00:09:14.800><c>Desktop</c>
+
+00:09:15.350 --> 00:09:15.360 align:start position:0%
+au terminal de Comfy UI Desktop
+ 
+
+00:09:15.360 --> 00:09:18.070 align:start position:0%
+au terminal de Comfy UI Desktop
+et <00:09:15.786><c>tapez </c><00:09:16.212><c>pip </c><00:09:16.638><c>install.  </c><00:09:17.064><c>Collez </c><00:09:17.490><c>ensuite </c><00:09:17.916><c>le</c>
+
+00:09:18.070 --> 00:09:18.080 align:start position:0%
+et tapez pip install.  Collez ensuite le
+ 
+
+00:09:18.080 --> 00:09:21.829 align:start position:0%
+et tapez pip install.  Collez ensuite le
+lien <00:09:18.453><c>que </c><00:09:18.826><c>nous </c><00:09:19.199><c>venons </c><00:09:19.572><c>de </c><00:09:19.945><c>copier </c><00:09:20.318><c>en </c><00:09:20.691><c>utilisant </c><00:09:21.064><c>trl </c><00:09:21.437><c>+v.</c>
+
+00:09:21.829 --> 00:09:21.839 align:start position:0%
+lien que nous venons de copier en utilisant trl +v.
+ 
+
+00:09:21.839 --> 00:09:23.670 align:start position:0%
+lien que nous venons de copier en utilisant trl +v.
+Appuyez <00:09:22.052><c>ensuite </c><00:09:22.265><c>sur </c><00:09:22.478><c>Entrée.  </c><00:09:22.691><c>Une </c><00:09:22.904><c>fois </c><00:09:23.117><c>l'installation</c>
+
+00:09:23.670 --> 00:09:23.680 align:start position:0%
+Appuyez ensuite sur Entrée.  Une fois l'installation
+ 
+
+00:09:23.680 --> 00:09:25.829 align:start position:0%
+Appuyez ensuite sur Entrée.  Une fois l'installation
+terminée, <00:09:24.520><c>installons </c><00:09:25.360><c>le</c>
+
+00:09:25.829 --> 00:09:25.839 align:start position:0%
+terminée, installons le
+ 
+
+00:09:25.839 --> 00:09:28.070 align:start position:0%
+terminée, installons le
+package <00:09:26.145><c>Triton </c><00:09:26.451><c>en </c><00:09:26.757><c>exécutant </c><00:09:27.063><c>la </c><00:09:27.369><c>commande </c><00:09:27.675><c>pip</c>
+
+00:09:28.070 --> 00:09:28.080 align:start position:0%
+package Triton en exécutant la commande pip
+ 
+
+00:09:28.080 --> 00:09:30.630 align:start position:0%
+package Triton en exécutant la commande pip
+install <00:09:28.453><c>Triton </c><00:09:28.826><c>Windows </c><00:09:29.199><c>et </c><00:09:29.572><c>en </c><00:09:29.945><c>appuyant </c><00:09:30.318><c>sur</c>
+
+00:09:30.630 --> 00:09:30.640 align:start position:0%
+install Triton Windows et en appuyant sur
+ 
+
+00:09:30.640 --> 00:09:33.590 align:start position:0%
+install Triton Windows et en appuyant sur
+Entrée.  <00:09:31.167><c>On </c><00:09:31.694><c>y </c><00:09:32.221><c>va.  </c><00:09:32.748><c>L'installation </c><00:09:33.275><c>est</c>
+
+00:09:33.590 --> 00:09:33.600 align:start position:0%
+Entrée.  On y va.  L'installation est
+ 
+
+00:09:33.600 --> 00:09:35.269 align:start position:0%
+Entrée.  On y va.  L'installation est
+terminée.  <00:09:33.888><c>Nous </c><00:09:34.176><c>sommes </c><00:09:34.464><c>maintenant </c><00:09:34.752><c>prêts </c><00:09:35.040><c>à</c>
+
+00:09:35.269 --> 00:09:35.279 align:start position:0%
+terminée.  Nous sommes maintenant prêts à
+ 
+
+00:09:35.279 --> 00:09:37.829 align:start position:0%
+terminée.  Nous sommes maintenant prêts à
+utiliser <00:09:35.711><c>Sage </c><00:09:36.143><c>Attention.  </c><00:09:36.575><c>pour </c><00:09:37.007><c>utiliser </c><00:09:37.439><c>Sage</c>
+
+00:09:37.829 --> 00:09:37.839 align:start position:0%
+utiliser Sage Attention.  pour utiliser Sage
+ 
+
+00:09:37.839 --> 00:09:40.630 align:start position:0%
+utiliser Sage Attention.  pour utiliser Sage
+Attention <00:09:38.105><c>dans </c><00:09:38.371><c>l'interface </c><00:09:38.637><c>utilisateur </c><00:09:38.903><c>Comfy </c><00:09:39.169><c>UI </c><00:09:39.435><c>sur </c><00:09:39.701><c>ordinateur.  </c><00:09:39.967><c>Je </c><00:09:40.233><c>suggère</c>
+
+00:09:40.630 --> 00:09:40.640 align:start position:0%
+Attention dans l'interface utilisateur Comfy UI sur ordinateur.  Je suggère
+ 
+
+00:09:40.640 --> 00:09:43.269 align:start position:0%
+Attention dans l'interface utilisateur Comfy UI sur ordinateur.  Je suggère
+d'utiliser <00:09:40.840><c>le </c><00:09:41.040><c>nœud </c><00:09:41.240><c>personnalisé </c><00:09:41.440><c>de </c><00:09:41.640><c>KJ </c><00:09:41.840><c>nodes.  </c><00:09:42.040><c>Nous </c><00:09:42.240><c>en </c><00:09:42.440><c>avons </c><00:09:42.640><c>déjà </c><00:09:42.840><c>entendu </c><00:09:43.040><c>parler</c>
+
+00:09:43.269 --> 00:09:43.279 align:start position:0%
+d'utiliser le nœud personnalisé de KJ nodes.  Nous en avons déjà entendu parler
+ 
+
+00:09:43.279 --> 00:09:45.590 align:start position:0%
+d'utiliser le nœud personnalisé de KJ nodes.  Nous en avons déjà entendu parler
+.  <00:09:43.999><c>Si </c><00:09:44.719><c>vous </c><00:09:45.439><c>ne</c>
+
+00:09:45.590 --> 00:09:45.600 align:start position:0%
+.  Si vous ne
+ 
+
+00:09:45.600 --> 00:09:47.990 align:start position:0%
+.  Si vous ne
+possédez <00:09:45.919><c>pas </c><00:09:46.238><c>les </c><00:09:46.557><c>nœuds </c><00:09:46.876><c>KJ, </c><00:09:47.195><c>utilisez </c><00:09:47.514><c>le</c>
+
+00:09:47.990 --> 00:09:48.000 align:start position:0%
+possédez pas les nœuds KJ, utilisez le
+ 
+
+00:09:48.000 --> 00:09:51.030 align:start position:0%
+possédez pas les nœuds KJ, utilisez le
+gestionnaire <00:09:48.411><c>d'interface </c><00:09:48.822><c>utilisateur </c><00:09:49.233><c>Comfy </c><00:09:49.644><c>pour </c><00:09:50.055><c>les </c><00:09:50.466><c>installer.  </c><00:09:50.877><c>Et</c>
+
+00:09:51.030 --> 00:09:51.040 align:start position:0%
+gestionnaire d'interface utilisateur Comfy pour les installer.  Et
+ 
+
+00:09:51.040 --> 00:09:53.269 align:start position:0%
+gestionnaire d'interface utilisateur Comfy pour les installer.  Et
+merci <00:09:51.423><c>d'avoir </c><00:09:51.806><c>regardé.  </c><00:09:52.189><c>J'espère </c><00:09:52.572><c>que </c><00:09:52.955><c>cette</c>
+
+00:09:53.269 --> 00:09:53.279 align:start position:0%
+merci d'avoir regardé.  J'espère que cette
+ 
+
+00:09:53.279 --> 00:09:55.269 align:start position:0%
+merci d'avoir regardé.  J'espère que cette
+vidéo <00:09:53.583><c>vous </c><00:09:53.887><c>aidera </c><00:09:54.191><c>à </c><00:09:54.495><c>installer </c><00:09:54.799><c>Sage</c>
+
+00:09:55.269 --> 00:09:55.279 align:start position:0%
+vidéo vous aidera à installer Sage
+ 
+
+00:09:55.279 --> 00:09:58.230 align:start position:0%
+vidéo vous aidera à installer Sage
+Attention <00:09:55.839><c>dans </c><00:09:56.399><c>Comfy </c><00:09:56.959><c>UI.  </c><00:09:57.519><c>Alors, </c><00:09:58.079><c>que</c>
+
+00:09:58.230 --> 00:09:58.240 align:start position:0%
+Attention dans Comfy UI.  Alors, que
+ 
+
+00:09:58.240 --> 00:09:59.829 align:start position:0%
+Attention dans Comfy UI.  Alors, que
+pensez-vous <00:09:58.430><c>de </c><00:09:58.620><c>cette </c><00:09:58.810><c>vidéo </c><00:09:59.000><c>?  </c><00:09:59.190><c>Veuillez </c><00:09:59.380><c>me </c><00:09:59.570><c>le </c><00:09:59.760><c>faire</c>
+
+00:09:59.829 --> 00:09:59.839 align:start position:0%
+pensez-vous de cette vidéo ?  Veuillez me le faire
+ 
+
+00:09:59.839 --> 00:10:01.829 align:start position:0%
+pensez-vous de cette vidéo ?  Veuillez me le faire
+savoir <00:10:00.207><c>dans </c><00:10:00.575><c>la </c><00:10:00.943><c>section </c><00:10:01.311><c>commentaires.  </c><00:10:01.679><c>À</c>
+
+00:10:01.829 --> 00:10:01.839 align:start position:0%
+savoir dans la section commentaires.  À
+ 
+
+00:10:01.839 --> 00:10:04.230 align:start position:0%
+savoir dans la section commentaires.  À
+bientôt <00:10:02.147><c>pour </c><00:10:02.455><c>une </c><00:10:02.763><c>autre </c><00:10:03.071><c>vidéo.  </c><00:10:03.379><c>N'oubliez </c><00:10:03.687><c>pas </c><00:10:03.995><c>d'</c>
+
+00:10:04.230 --> 00:10:04.240 align:start position:0%
+bientôt pour une autre vidéo.  N'oubliez pas d'
+ 
+
+00:10:04.240 --> 00:10:08.320 align:start position:0%
+bientôt pour une autre vidéo.  N'oubliez pas d'
+aimer, <00:10:04.444><c>de </c><00:10:04.648><c>partager </c><00:10:04.852><c>et </c><00:10:05.056><c>de </c><00:10:05.260><c>vous </c><00:10:05.464><c>abonner </c><00:10:05.668><c>à </c><00:10:05.872><c>cette </c><00:10:06.076><c>chaîne</c>
+

@@ -72,6 +72,8 @@ def _norm_pack(p: str) -> str:
         "wananimatepreprocess": "comfyui-wananimatepreprocess",
         "ltxvideo": "comfyui-ltxvideo",
     }
+    if tail.replace("-", "") in ALIAS:          # spoken "kj nodes" -> "kj-nodes" -> kjnodes
+        tail = tail.replace("-", "")
     return ALIAS.get(tail, tail if tail.startswith(("comfyui", "rgthree")) else p.split("/")[-1].lower())
 
 

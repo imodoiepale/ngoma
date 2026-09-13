@@ -1,10 +1,10 @@
-# Graph Report — EPALLE Studio corpus (2026-09-12)
+# Graph Report — EPALLE Studio corpus (2026-09-13)
 
 ## Summary
-- 614 nodes · 2088 edges
-- node kinds: node_type 257, model 87, model_file 81, workflow 48, node_pack 37, style 35, video 22, creative 18, collection 12, technique 8, channel 2, gpu 2, hardware 2, brand 2, setting 1
-- edge kinds: uses 1312, requires 488, belongs_to 186, mentions 74, provided_by 28
-- 74 edges carry transcript evidence (video id + timestamp + quote)
+- 623 nodes · 2098 edges
+- node kinds: node_type 257, model 87, model_file 81, workflow 48, node_pack 38, style 35, video 23, creative 18, collection 12, technique 8, version 6, channel 3, gpu 2, hardware 2, brand 2, setting 1
+- edge kinds: uses 1312, requires 488, belongs_to 187, mentions 83, provided_by 28
+- 83 edges carry transcript evidence (video id + timestamp + quote)
 
 ## Extraction provenance
 - workflow structure: EXTRACTED from `workflows/manifest.json` (`class_type`,
@@ -16,7 +16,7 @@
 
 ## God nodes — node packs (what everything depends on)
 - `comfy-core` — 76 connections
-- `comfyui-kjnodes` — 31 connections
+- `comfyui-kjnodes` — 32 connections
 - `comfyui-videohelpersuite` — 29 connections
 - `comfyui-h3-motion-context` — 10 connections
 - `comfyui-solattn_triton` — 8 connections
@@ -29,7 +29,7 @@
 - `efficiency-nodes-comfyui` — 5 connections
 - `maskvidexperiments` — 4 connections
 - `comfyui_essentials` — 3 connections
-- `comfyui-nkd-basic-tools` — 2 connections
+- `sage-attention` — 3 connections
 
 ## God nodes — models
 - `veo` — 3 connections
@@ -66,8 +66,8 @@
 - `Note` — 20 connections
 
 ## Corroboration
-- 1 concepts appear BOTH as a workflow dependency and in a
-  creator transcript: `comfyui_essentials`
+- 2 concepts appear BOTH as a workflow dependency and in a
+  creator transcript: `comfyui-kjnodes`, `comfyui_essentials`
 
 ## Queries
 ```bash

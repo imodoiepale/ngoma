@@ -11,6 +11,7 @@ timestamp, so a claim can be checked rather than trusted.
 from __future__ import annotations
 
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -27,15 +28,21 @@ def load() -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]:
     return {n["id"]: n for n in d["nodes"]}, d["edges"]
 
 
+def _squash(s: str) -> str:
+    # "sage attention", "sage-attention" and "SageAttention" are one concept; spoken facts
+    # and workflow ids spell it differently, so match on letters and digits only.
+    return re.sub(r"[\s_\-]+", "", s.lower().replace("\\", "/"))
+
+
 def _find(nodes: dict[str, dict[str, Any]], needle: str, kinds: tuple[str, ...] = ()) -> list[str]:
-    n = needle.lower().replace("\\", "/")
+    n = _squash(needle)
     exact = [i for i, v in nodes.items()
-             if (not kinds or v["kind"] in kinds) and v.get("label", "").lower() == n]
+             if (not kinds or v["kind"] in kinds) and _squash(str(v.get("label", ""))) == n]
     if exact:
         return exact
     return [i for i, v in nodes.items()
             if (not kinds or v["kind"] in kinds)
-            and (n in i.lower() or n in str(v.get("label", "")).lower())]
+            and (n in _squash(i) or n in _squash(str(v.get("label", ""))))]
 
 
 def deps(target: str) -> int:

@@ -3122,6 +3122,53 @@
    "channel": "dgikaos"
   },
   {
+   "id": "video:9APXcBMpbgU",
+   "kind": "video",
+   "label": "How to Install Sage Attention 2.2 on Latest ComfyUI Portable And Deskop Version | Python 3",
+   "url": "https://www.youtube.com/watch?v=9APXcBMpbgU",
+   "channel": "axiomgraph"
+  },
+  {
+   "id": "channel:axiomgraph",
+   "kind": "channel",
+   "label": "axiomgraph"
+  },
+  {
+   "id": "node_pack:triton",
+   "kind": "node_pack",
+   "label": "triton"
+  },
+  {
+   "id": "version:sageattention 2.2",
+   "kind": "version",
+   "label": "sageattention 2.2"
+  },
+  {
+   "id": "version:python 3.13",
+   "kind": "version",
+   "label": "python 3.13"
+  },
+  {
+   "id": "version:python 3.13.6",
+   "kind": "version",
+   "label": "python 3.13.6"
+  },
+  {
+   "id": "version:torch 2.9.0",
+   "kind": "version",
+   "label": "torch 2.9.0"
+  },
+  {
+   "id": "version:python 3.9",
+   "kind": "version",
+   "label": "python 3.9"
+  },
+  {
+   "id": "version:torch 2.8.0",
+   "kind": "version",
+   "label": "torch 2.8.0"
+  },
+  {
    "id": "brand:epalle",
    "kind": "brand",
    "label": "epalle"
@@ -14125,6 +14172,119 @@
    "src": "video:jiqfAw2-QsQ",
    "rel": "belongs_to",
    "dst": "channel:dgikaos"
+  },
+  {
+   "src": "video:9APXcBMpbgU",
+   "rel": "belongs_to",
+   "dst": "channel:axiomgraph"
+  },
+  {
+   "src": "video:9APXcBMpbgU",
+   "rel": "mentions",
+   "dst": "node_pack:sage-attention",
+   "evidence": [
+    {
+     "video": "9APXcBMpbgU",
+     "t": "00:00:00",
+     "quote": "How to Install Sage Attention 2.2 on Latest ComfyUI Portable And Deskop Version | Python 3.13 & 3.14"
+    }
+   ]
+  },
+  {
+   "src": "video:9APXcBMpbgU",
+   "rel": "mentions",
+   "dst": "node_pack:triton",
+   "evidence": [
+    {
+     "video": "9APXcBMpbgU",
+     "t": "00:00:18",
+     "quote": "needs Triton to work and Triton needs"
+    }
+   ]
+  },
+  {
+   "src": "video:9APXcBMpbgU",
+   "rel": "mentions",
+   "dst": "node_pack:comfyui-kjnodes",
+   "evidence": [
+    {
+     "video": "9APXcBMpbgU",
+     "t": "00:05:50",
+     "quote": "install kj nodes use the comfy UI UI"
+    }
+   ]
+  },
+  {
+   "src": "video:9APXcBMpbgU",
+   "rel": "mentions",
+   "dst": "version:sageattention 2.2",
+   "evidence": [
+    {
+     "video": "9APXcBMpbgU",
+     "t": "00:00:00",
+     "quote": "How to Install Sage Attention 2.2 on Latest ComfyUI Portable And Deskop Version | Python 3.13 & 3.14"
+    }
+   ]
+  },
+  {
+   "src": "video:9APXcBMpbgU",
+   "rel": "mentions",
+   "dst": "version:python 3.13",
+   "evidence": [
+    {
+     "video": "9APXcBMpbgU",
+     "t": "00:00:00",
+     "quote": "How to Install Sage Attention 2.2 on Latest ComfyUI Portable And Deskop Version | Python 3.13 & 3.14"
+    }
+   ]
+  },
+  {
+   "src": "video:9APXcBMpbgU",
+   "rel": "mentions",
+   "dst": "version:python 3.13.6",
+   "evidence": [
+    {
+     "video": "9APXcBMpbgU",
+     "t": "00:01:30",
+     "quote": "look for Python 3.13.6."
+    }
+   ]
+  },
+  {
+   "src": "video:9APXcBMpbgU",
+   "rel": "mentions",
+   "dst": "version:torch 2.9.0",
+   "evidence": [
+    {
+     "video": "9APXcBMpbgU",
+     "t": "00:03:00",
+     "quote": "my portable version uses torch 2.9.0"
+    }
+   ]
+  },
+  {
+   "src": "video:9APXcBMpbgU",
+   "rel": "mentions",
+   "dst": "version:python 3.9",
+   "evidence": [
+    {
+     "video": "9APXcBMpbgU",
+     "t": "00:03:42",
+     "quote": "that is Python 3.9 or above. This means"
+    }
+   ]
+  },
+  {
+   "src": "video:9APXcBMpbgU",
+   "rel": "mentions",
+   "dst": "version:torch 2.8.0",
+   "evidence": [
+    {
+     "video": "9APXcBMpbgU",
+     "t": "00:08:14",
+     "quote": "comfy UI desktop is using Torch 2.8.0"
+    }
+   ]
   },
   {
    "src": "style:epalle/asali_01_desire",
