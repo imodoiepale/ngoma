@@ -1,0 +1,128 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.710 align:start position:0%
+ 
+Kansas<00:00:00.400><c> face</c><00:00:00.680><c> still</c><00:00:01.000><c> feel</c><00:00:01.160><c> like</c><00:00:01.360><c> the</c><00:00:01.440><c> same</c>
+
+00:00:01.710 --> 00:00:01.720 align:start position:0%
+Kansas face still feel like the same
+ 
+
+00:00:01.720 --> 00:00:03.750 align:start position:0%
+Kansas face still feel like the same
+girl<00:00:02.320><c> when</c><00:00:02.480><c> we</c><00:00:02.560><c> generate</c><00:00:02.960><c> different</c><00:00:03.360><c> images</c>
+
+00:00:03.750 --> 00:00:03.760 align:start position:0%
+girl when we generate different images
+ 
+
+00:00:03.760 --> 00:00:06.030 align:start position:0%
+girl when we generate different images
+from<00:00:04.000><c> it.</c><00:00:04.560><c> Now</c><00:00:04.880><c> that</c><00:00:05.040><c> we</c><00:00:05.160><c> have</c><00:00:05.400><c> the</c><00:00:05.560><c> identity</c>
+
+00:00:06.030 --> 00:00:06.040 align:start position:0%
+from it. Now that we have the identity
+ 
+
+00:00:06.040 --> 00:00:08.310 align:start position:0%
+from it. Now that we have the identity
+base<00:00:06.360><c> image,</c><00:00:06.680><c> the</c><00:00:06.800><c> next</c><00:00:07.120><c> step</c><00:00:07.360><c> is</c><00:00:07.560><c> to</c><00:00:07.680><c> test</c><00:00:08.120><c> if</c>
+
+00:00:08.310 --> 00:00:08.320 align:start position:0%
+base image, the next step is to test if
+ 
+
+00:00:08.320 --> 00:00:10.230 align:start position:0%
+base image, the next step is to test if
+the<00:00:08.440><c> face</c><00:00:08.840><c> can</c><00:00:09.040><c> work</c><00:00:09.320><c> on</c><00:00:09.440><c> a</c><00:00:09.480><c> different</c><00:00:09.880><c> body</c>
+
+00:00:10.230 --> 00:00:10.240 align:start position:0%
+the face can work on a different body
+ 
+
+00:00:10.240 --> 00:00:12.190 align:start position:0%
+the face can work on a different body
+and<00:00:10.400><c> still</c><00:00:10.680><c> feel</c><00:00:10.920><c> like</c><00:00:11.200><c> the</c><00:00:11.280><c> same</c><00:00:11.600><c> creator.</c>
+
+00:00:12.190 --> 00:00:12.200 align:start position:0%
+and still feel like the same creator.
+ 
+
+00:00:12.200 --> 00:00:14.190 align:start position:0%
+and still feel like the same creator.
+For<00:00:12.360><c> this</c><00:00:12.560><c> part,</c><00:00:12.840><c> I</c><00:00:12.920><c> use</c><00:00:13.120><c> my</c><00:00:13.320><c> identity</c><00:00:13.840><c> swap</c>
+
+00:00:14.190 --> 00:00:14.200 align:start position:0%
+For this part, I use my identity swap
+ 
+
+00:00:14.200 --> 00:00:16.390 align:start position:0%
+For this part, I use my identity swap
+workflow.<00:00:14.840><c> The</c><00:00:15.000><c> idea</c><00:00:15.320><c> here</c><00:00:15.560><c> is</c><00:00:15.720><c> simple.</c><00:00:16.280><c> We</c>
+
+00:00:16.390 --> 00:00:16.400 align:start position:0%
+workflow. The idea here is simple. We
+ 
+
+00:00:16.400 --> 00:00:18.070 align:start position:0%
+workflow. The idea here is simple. We
+take<00:00:16.640><c> the</c><00:00:16.760><c> face</c><00:00:17.120><c> you</c><00:00:17.200><c> created</c><00:00:17.560><c> in</c><00:00:17.680><c> the</c><00:00:17.760><c> face</c>
+
+00:00:18.070 --> 00:00:18.080 align:start position:0%
+take the face you created in the face
+ 
+
+00:00:18.080 --> 00:00:20.270 align:start position:0%
+take the face you created in the face
+merge<00:00:18.320><c> step</c><00:00:18.920><c> and</c><00:00:19.080><c> transfer</c><00:00:19.480><c> it</c><00:00:19.720><c> onto</c><00:00:20.120><c> the</c>
+
+00:00:20.270 --> 00:00:20.280 align:start position:0%
+merge step and transfer it onto the
+ 
+
+00:00:20.280 --> 00:00:22.270 align:start position:0%
+merge step and transfer it onto the
+target<00:00:20.680><c> image</c><00:00:21.000><c> so</c><00:00:21.200><c> we</c><00:00:21.360><c> can</c><00:00:21.560><c> see</c><00:00:21.920><c> if</c><00:00:22.120><c> the</c>
+
+00:00:22.270 --> 00:00:22.280 align:start position:0%
+target image so we can see if the
+ 
+
+00:00:22.280 --> 00:00:24.430 align:start position:0%
+target image so we can see if the
+identity<00:00:22.760><c> holds</c><00:00:23.080><c> up</c><00:00:23.320><c> in</c><00:00:23.440><c> a</c><00:00:23.520><c> different</c><00:00:23.960><c> kind</c><00:00:24.240><c> of</c>
+
+00:00:24.430 --> 00:00:24.440 align:start position:0%
+identity holds up in a different kind of
+ 
+
+00:00:24.440 --> 00:00:26.310 align:start position:0%
+identity holds up in a different kind of
+image.<00:00:24.960><c> Just</c><00:00:25.320><c> take</c><00:00:25.560><c> a</c><00:00:25.640><c> character</c><00:00:26.120><c> from</c>
+
+00:00:26.310 --> 00:00:26.320 align:start position:0%
+image. Just take a character from
+ 
+
+00:00:26.320 --> 00:00:28.350 align:start position:0%
+image. Just take a character from
+Pinterest<00:00:26.760><c> or</c><00:00:26.880><c> Instagram,</c><00:00:27.320><c> but</c><00:00:27.600><c> of</c><00:00:27.760><c> course</c>
+
+00:00:28.350 --> 00:00:28.360 align:start position:0%
+Pinterest or Instagram, but of course
+ 
+
+00:00:28.360 --> 00:00:30.670 align:start position:0%
+Pinterest or Instagram, but of course
+make<00:00:28.560><c> sure</c><00:00:29.160><c> you</c><00:00:29.280><c> have</c><00:00:29.520><c> the</c><00:00:29.680><c> rights</c><00:00:30.200><c> to</c><00:00:30.360><c> use</c><00:00:30.560><c> the</c>
+
+00:00:30.670 --> 00:00:30.680 align:start position:0%
+make sure you have the rights to use the
+ 
+
+00:00:30.680 --> 00:00:33.160 align:start position:0%
+make sure you have the rights to use the
+photo.
+

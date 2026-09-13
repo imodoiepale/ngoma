@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "Serverless smoke test: queued is not success",
+    "locale": "en",
+    "viewBox": [940, 780],
+    "quality_profile": "showcase",
+    "column_fit": "spread",
+    "views": [
+      { "id": "run", "label": "Run on the GPU", "focus": ["client", "runpod", "handler", "comfy", "volume"], "note": "Only an allowlisted template on the volume may run; nothing arbitrary is accepted." },
+      { "id": "verdict", "label": "Poll to a verdict", "focus": ["you", "client", "runpod"], "note": "IN_QUEUE keeps polling. PASS needs COMPLETED and returned files." }
+    ]
+  },
+  "participants": [
+    { "id": "you", "type": "external", "label": "You", "sublabel": "terminal" },
+    { "id": "client", "type": "backend", "label": "client.py smoke", "sublabel": "--live" },
+    { "id": "runpod", "type": "cloud", "label": "RunPod endpoint", "sublabel": "/runsync" },
+    { "id": "handler", "type": "backend", "label": "handler.py", "sublabel": "allowlist only" },
+    { "id": "comfy", "type": "backend", "label": "ComfyUI", "sublabel": "on the worker" },
+    { "id": "volume", "type": "database", "label": "Network volume", "sublabel": "templates, outputs" }
+  ],
+  "segments": [
+    { "from": 150, "to": 470, "label": "Run on the GPU" },
+    { "from": 490, "to": 700, "label": "Poll to a verdict" }
+  ],
+  "messages": [
+    { "from": "you", "to": "client", "y": 180, "label": "smoke --live", "variant": "emphasis" },
+    { "from": "client", "to": "runpod", "y": 222, "label": "POST /runsync", "variant": "emphasis" },
+    { "from": "runpod", "to": "handler", "y": 264, "label": "job input" },
+    { "from": "handler", "to": "volume", "y": 306, "label": "load smoke-test.json" },
+    { "from": "handler", "to": "comfy", "y": 348, "label": "submit graph", "variant": "emphasis" },
+    { "from": "comfy", "to": "volume", "y": 390, "label": "save image" },
+    { "from": "comfy", "to": "handler", "y": 432, "label": "outputs", "variant": "return" },
+    { "from": "handler", "to": "runpod", "y": 460, "label": "files + sha256", "variant": "return" },
+    { "from": "runpod", "to": "client", "y": 520, "label": "IN_QUEUE + id", "variant": "return" },
+    { "from": "client", "to": "runpod", "y": 562, "label": "GET /status/id", "variant": "dashed" },
+    { "from": "runpod", "to": "client", "y": 604, "label": "COMPLETED + files", "variant": "return" },
+    { "from": "client", "to": "you", "y": 646, "label": "PASS or FAIL", "variant": "return" }
+  ],
+  "activations": [
+    { "participant": "client", "from": 174, "to": 654, "type": "backend" },
+    { "participant": "handler", "from": 258, "to": 468, "type": "backend" },
+    { "participant": "comfy", "from": 342, "to": 440, "type": "backend" }
+  ],
+  "cards": [
+    { "dot": "emerald", "title": "Pass condition", "items": ["Status COMPLETED", "At least one file returned", "No error in the output"] },
+    { "dot": "rose", "title": "Never a pass", "items": ["IN_QUEUE or IN_PROGRESS", "COMPLETED with zero files", "Timeout after 20 minutes"] }
+  ]
+}

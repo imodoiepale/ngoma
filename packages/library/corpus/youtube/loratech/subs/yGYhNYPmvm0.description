@@ -1,0 +1,35 @@
+Swap any person into a photo while keeping the background, lighting, and detail 100% real — this ComfyUI inpainting workflow uses Z-Image Turbo, automatic SAM masking, face/eye detailer passes, and an optional Flux 2 Klein enhancement step to blend the result seamlessly. No manual masking, no mismatched lighting, no wrecked backgrounds — just clean, realistic person inpainting from start to finish.
+ 
+In this video I break down the full ComfyUI workflow node-by-node: how the automatic person detection and masking pipeline works, how the Z-Image Turbo inpainting step regenerates only the masked subject, how the face and eye detailer passes add fine detail without redrawing the whole face, and how the optional Flux mask enhancement pass cleans up inpainting seams for a final result that holds up under close inspection. I also cover every setting worth tweaking — denoise values, detection thresholds, mask smoothing, and more — so you can adapt this workflow to your own subjects and source photos.
+ 
+🔗 LINKS
+
+Join the Discord (community, support, free workflows)
+1-on-1 Consultations / Custom Workflow Builds / LoRA Training: Message me on Discord for current availability and pricing
+ 
+Free Workflow JSON also Posted in the free workflows channel in my Discord
+ join here: https://discord.gg/kUc76uk7HA
+
+Use my RunPod referral link to add $10 in credits and receive an extra $5 for free (cloud GPUs for ComfyUI if you don't have local VRAM): https://runpod.io?ref=jc6190fx
+ 
+📌 WHAT'S COVERED
+ 
+- ComfyUI automatic person detection and masking (YOLO + SAM)
+- Z-Image Turbo inpainting for realistic person swaps
+- Background-preserving inpainting (no edge artifacts, no relighting issues)
+- Face Detailer + Eye Detailer passes for fine detail recovery
+- Optional Flux 2 Klein mask enhancement to eliminate inpainting seams
+- Key settings to adjust: denoise, detection thresholds, mask smoothing, crop resolution
+- Free downloadable workflow JSON
+This workflow is built for anyone working with AI-generated people, AI influencer content, character consistency, or photorealistic compositing in ComfyUI — whether you're inpainting a trained LoRA character into real photos or just need a cleaner, more automated inpainting pipeline than the default ComfyUI nodes give you.
+ 
+If this helped you, subscribe for more ComfyUI workflows, AI image generation breakdowns, and LoRA training tutorials every week.
+ 
+────────────────────────
+ 
+HASHTAGS:
+#ComfyUI #AIImageGeneration #StableDiffusion
+#ComfyUIWorkflow #AIInpainting #ZImageTurbo #FluxAI #StableDiffusionTutorial #AIInfluencer #LoraTraining #GenerativeAI #AIArtTools #PhotorealisticAI
+
+TAGS:
+comfyui, comfyui workflow, comfyui inpainting, ai inpainting, image inpainting, ai image generation, z image turbo, z-image turbo comfyui, flux 2 klein, flux klein comfyui, ai person swap, ai face swap, realistic ai images, ai influencer content, lora training, character lora, ai character consistency, comfyui tutorial, comfyui masking, sam segmentation, automatic masking ai, face detailer comfyui, eye detailer, stable diffusion inpainting, photorealistic ai, ai photo editing, ai background preservation, comfyui nodes explained, free comfyui workflow, ai workflow tutorial, generative ai tools

@@ -1,0 +1,32 @@
+Blank canvas to a working Flux 2 Klein image edit workflow — 17 nodes, every single one explained. This workflow takes two reference photos (your character + a product, outfit, or scene) and combines them into one new image with a single prompt. No masks, no inpainting, no LoRA training. By the end you won't just have the workflow, you'll understand why every node is there.
+
+🧠 WHAT YOU'LL LEARN
+▶ How Flux 2 Klein edit workflows actually work (references live in the conditioning, not the latent)
+▶ Chaining ReferenceLatent nodes for multi-image editing in ComfyUI
+▶ Why reference images get scaled to 1.2 megapixels before encoding
+▶ Prompting for edits: directing the model instead of describing a scene
+▶ Character consistency from a single photo — no dataset, no training
+▶ Fixing reference takeover when the second image starts hijacking your subject
+
+🔗 FREE WORKFLOWS, COMMUNITY DISCUSSION, 1 ON 1 SESSIONS
+If you want 1-on-1 coaching for your ComfyUI/RunPod setup, LoRA training, or growing an AI influencer account, sessions are consultation-based — details inside: https://discord.gg/kUc76uk7HA
+
+⚡ RUN COMFYUI ON RUNPOD
+https://get.runpod.io/x4yprxwsfyac — add a minimum of $10 through the link and get $5 free
+
+📺 THE BUILD WITH ME SERIES
+EP. 1 — Build a ComfyUI Workflow and Actually Understand It: https://youtu.be/Bvpn3miGpw0
+EP. 2 — Learn ComfyUI Img2Img by Building It Yourself: https://www.youtube.com/watch?v=mpMFjL47Cb0
+EP. 3 — Build a ComfyUI Inpainting Workflow and Actually Understand It: https://www.youtube.com/watch?v=fJFnHkU6hzo
+EP. 4 — You're here
+
+🧩 MODELS USED
+Flux 2 Klein 9B FP8 (distilled), Qwen3 8B text encoder, Flux 2 VAE
+
+#ComfyUI #Flux2 #Flux2Klein #ImageEditing #AIart #StableDiffusion #AIworkflow #CharacterConsistency #AIinfluencer #ComfyUITutorial
+
+---
+
+## TAGS 
+
+comfyui, comfyui tutorial, comfyui workflow, flux 2, flux 2 klein, flux 2 klein 9b, image edit workflow, comfyui image editing, flux image editing, reference latent, multi reference editing, character consistency, character consistency comfyui, ai image editing, comfyui for beginners, build comfyui workflow from scratch, flux 2 comfyui, ai influencer workflow, product photography ai, comfyui edit workflow, qwen text encoder, comfyui 2026, image to image editing, no lora character consistency, runpod comfyui

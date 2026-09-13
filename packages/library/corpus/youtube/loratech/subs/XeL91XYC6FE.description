@@ -1,0 +1,20 @@
+I built a single ComfyUI node that replaces the entire Krea 2 workflow. No KSampler, no CLIPTextEncode, no LoadImage, no separate VAEDecode chain. One node handles both Krea 2 Turbo and Krea 2 Raw, text to image and image to image, full LoRA support up to 20 slots, and outputs that plug straight into anything else on your canvas.
+
+In this video I walk through the two model tabs, the sampler options, a full text to image demo using my AI Prompt Builder, and a full image to image demo with a character LoRA, the source image browser, and the settings that actually matter for getting clean results.
+
+🔗 LINKS
+
+Patreon (support the channel, early access): https://www.patreon.com/LoRAtech
+
+Discord (free workflows, node pack): https://discord.gg/2bqQXKxsxg
+1 on 1 coaching: Available through the Discord. Covers ComfyUI/RunPod setup, LoRA training, and AI influencer growth strategy. Pricing is consultation based, built around what you actually need. Details in the server.
+
+RunPod (GPU rental, deposit $10 get $5 free): https://get.runpod.io/x4yprxwsfyac
+
+🏷️ TAGS
+
+comfyui, comfyui workflow, comfyui tutorial, comfyui tutorial 2026, comfyui custom node, comfyui node pack, krea 2, krea 2 turbo, krea 2 raw, krea ai, comfyui krea, ai image generation, ai influencer, ai influencer content, comfyui lora, lora training comfyui, comfyui character creation, ai content creation, comfyui workflow tutorial, comfyui node tutorial, comfyui ai art, stable diffusion prompt tool, comfyui advanced nodes, all in one comfyui node, text to image comfyui, image to image comfyui
+
+🎯 HASHTAGS
+
+#ComfyUI #Krea2 #AIContentCreation #AIInfluencer #ComfyUIWorkflow #AIImageGeneration #ComfyUICustomNode #StableDiffusion #ContentCreator #AIArt #ComfyUITutorial #DigitalCreator #ComfyUINode

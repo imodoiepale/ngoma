@@ -1,0 +1,553 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:05.283
+I built this AI influencer was Claude, and girls like her are making people tousends every month
+
+00:00:05.533 --> 00:00:09.633
+Every single one of these photos is the same girl, all made with one prompt.
+
+00:00:09.633 --> 00:00:12.233
+And I did the whole thing just by chatting with claude
+
+00:00:12.317 --> 00:00:15.033
+in everything I used to build here in under five minutes.
+
+00:00:15.033 --> 00:00:17.533
+You will get it in this video, complete for free
+
+00:00:17.617 --> 00:00:24.550
+The whole thing runs on two skills I built for Claude. And the best part? You can use them with basically any AI agent you want
+
+00:00:24.633 --> 00:00:27.800
+One creator Instagram content just by chatting with Claude,
+
+00:00:27.800 --> 00:00:30.733
+and the other one builds the entire database on automode
+
+00:00:30.983 --> 00:00:36.750
+But before I show you how to set it all up, let me just show you what these skills actually do.
+
+00:00:36.833 --> 00:00:37.917
+First we create
+
+00:00:38.000 --> 00:00:41.967
+Julias Instagram content. And I only need one simple prompt for that
+
+00:00:42.200 --> 00:00:46.533
+I basically tell Claude only give me ten Instagram posts of my character.
+
+00:00:46.533 --> 00:00:50.133
+It has to look like a real Instagram feed post, not a photo shoot.
+
+00:00:50.233 --> 00:00:51.183
+Use nanobanana pro
+
+00:00:51.400 --> 00:00:54.317
+4K resolution and a 3 to 4 aspect ratio.
+
+00:00:54.317 --> 00:00:56.367
+Show me your plan and your total price first
+
+00:00:56.450 --> 00:00:57.967
+and don't start before I say go
+
+00:00:58.150 --> 00:01:01.283
+By the way, all the prompts are used in this video are my discord.
+
+00:01:01.283 --> 00:01:02.983
+Everything for free. But more on
+
+00:01:03.167 --> 00:01:04.017
+at the end of this video
+
+00:01:04.233 --> 00:01:07.517
+And from here Claude takes over and do everything on auto mode
+
+00:01:07.600 --> 00:01:11.450
+Claude shows in the plan we can generate ten posts for under three bucks,
+
+00:01:11.683 --> 00:01:13.650
+and from here he does everything by himself.
+
+00:01:13.650 --> 00:01:14.983
+So I just type. Go
+
+00:01:15.067 --> 00:01:16.867
+Now comes the part I really like
+
+00:01:16.867 --> 00:01:22.100
+while the batch is running. Claude takes every finished image and compares the face against my face anchor.
+
+00:01:22.183 --> 00:01:25.900
+And if one of them drifts off and looks different, like the face, for example,
+
+00:01:25.900 --> 00:01:28.200
+he just regenerates the picture automatically.
+
+00:01:28.200 --> 00:01:30.750
+until I have exactly the ten posts I orderd
+
+00:01:30.817 --> 00:01:34.750
+And at the very end, the skill runs one last pass over all the images,
+
+00:01:34.967 --> 00:01:38.750
+and the pass makes every picture look like it came straight from a phone camera.
+
+00:01:38.750 --> 00:01:43.983
+Now look at this. This is the result Claude gives me after he generates all the ten pictures.
+
+00:01:43.983 --> 00:01:51.467
+I tested it with over 30 pictures of her and the face broke exactly zero times. It's the same goal in every single post.
+
+00:01:51.467 --> 00:01:52.567
+And Julia herself
+
+00:01:52.567 --> 00:01:54.933
+remember her face. Because at the end of this video,
+
+00:01:54.933 --> 00:01:56.467
+I tell you how you can get her.
+
+00:01:56.467 --> 00:02:01.267
+Okay. You've just seen what these skills can do. Now let me show you how to set them up yoursel
+
+00:02:01.350 --> 00:02:02.483
+You only do this once
+
+00:02:02.483 --> 00:02:05.417
+and I will show you every single click so nobody gets lost
+
+00:02:05.667 --> 00:02:08.650
+After you download the skills, you have two zip files.
+
+00:02:08.650 --> 00:02:11.850
+Just unzip them, double click and you get two normal folders.
+
+00:02:11.850 --> 00:02:14.683
+I will also provide the normal folder so everyone can do this
+
+00:02:14.850 --> 00:02:16.733
+One is the Instagram engine skill
+
+00:02:16.733 --> 00:02:18.650
+and the other one is the data set builder skill
+
+00:02:18.800 --> 00:02:20.117
+Now we bring them to claude.
+
+00:02:20.117 --> 00:02:21.350
+Open your file window
+
+00:02:21.350 --> 00:02:22.667
+and go to your home folder.
+
+00:02:22.667 --> 00:02:24.300
+That's the one with your username on
+
+00:02:24.433 --> 00:02:27.517
+The folder we need is called dot claude and it's hidden on Mac.
+
+00:02:27.600 --> 00:02:30.233
+Inside the dot claude a folder called skills.
+
+00:02:30.233 --> 00:02:31.567
+If it's not, they are just create it
+
+00:02:31.667 --> 00:02:33.733
+Right click new folder and name it skills.
+
+00:02:33.833 --> 00:02:35.550
+Now drag both skills folders in there
+
+00:02:35.700 --> 00:02:36.750
+Then restart the claude app
+
+00:02:36.900 --> 00:02:38.800
+and claude knows that both skills exist
+
+00:02:38.883 --> 00:02:40.483
+Next we need the API key.
+
+00:02:40.483 --> 00:02:43.450
+The images are made by an image model and that runs through wavespeed
+
+00:02:43.667 --> 00:02:46.233
+This gives Claude the ability to generate images.
+
+00:02:46.233 --> 00:02:49.450
+Go to the official wavespeed side and create a free account.
+
+00:02:49.450 --> 00:02:50.567
+Go to API keys.
+
+00:02:50.567 --> 00:02:51.683
+Create one and copy it
+
+00:02:51.833 --> 00:02:53.583
+The link for this is also in the describtion
+
+00:02:53.667 --> 00:02:58.133
+in each skill folder there's a file called dot .env It basically means environment
+
+00:02:58.133 --> 00:03:00.133
+and all save stuff is stored there.
+
+00:03:00.133 --> 00:03:02.950
+Open it past your secret API key and click save
+
+00:03:03.100 --> 00:03:04.450
+or Command S to save
+
+00:03:04.533 --> 00:03:06.250
+the API key list in this file
+
+00:03:06.433 --> 00:03:10.033
+You never paste it into any AI or public chat to stay save
+
+00:03:10.117 --> 00:03:15.267
+Then put about $10 on the account and you just saw it. The whole feed was only about three bucks.
+
+00:03:15.350 --> 00:03:17.900
+$10 covers everything we build today easily.
+
+00:03:17.900 --> 00:03:20.583
+And the now important part you characters pictures.
+
+00:03:20.583 --> 00:03:22.800
+The best face photo goes into the face folder
+
+00:03:22.883 --> 00:03:25.400
+That's the most important file in the whole system,
+
+00:03:25.400 --> 00:03:27.817
+because every single generation starts from it
+
+00:03:27.983 --> 00:03:29.967
+To create a consistent AI influencer,
+
+00:03:29.967 --> 00:03:31.917
+body shots go into the body folder,
+
+00:03:32.150 --> 00:03:37.533
+if you have no idea what goes where, there's an unsorted folder for everything in
+
+00:03:37.617 --> 00:03:40.117
+claude looks at every picture and sourts them by itself
+
+00:03:40.200 --> 00:03:43.033
+The consistent identity never comes from the prompt
+
+00:03:43.117 --> 00:03:44.967
+It comes from these anchor folders,
+
+00:03:44.967 --> 00:03:48.317
+so make sure to provide the best pictures you have in these folders.
+
+00:03:48.317 --> 00:03:54.467
+And the last step before we can run it, you open the claude app and click on the code symbol on the right top corner.
+
+00:03:54.467 --> 00:03:59.450
+That's the mode where claude can actually work on your computer, because the normal chat can't do that
+
+00:03:59.667 --> 00:04:03.250
+Then it asks you for a folder and you can just pick the skills for you.
+
+00:04:03.333 --> 00:04:04.833
+the one inside the dot claude
+
+00:04:04.917 --> 00:04:07.383
+So claude works directly with both skills.
+
+00:04:07.383 --> 00:04:12.217
+and that's the whole setup. You just do this once and from now on it's just chatting with claude
+
+00:04:12.300 --> 00:04:14.883
+All right. Now you set everything up correctly.
+
+00:04:14.883 --> 00:04:19.533
+But now comes the part for everyone who's really serious about this business.
+
+00:04:19.533 --> 00:04:21.517
+Because Instagram posts are nice,
+
+00:04:21.517 --> 00:04:23.783
+but the real money sits one level deeper
+
+00:04:23.867 --> 00:04:26.117
+Maybe you want to make a move in videos
+
+00:04:26.117 --> 00:04:28.117
+all you want to train your own LoRa on
+
+00:04:28.350 --> 00:04:30.683
+so she stays consistent forever.
+
+00:04:30.683 --> 00:04:37.000
+And maybe you want to go uncensored with open source models like flux, z-image-turbo, and so
+
+00:04:37.200 --> 00:04:39.250
+Because no image API
+
+00:04:39.250 --> 00:04:40.917
+will let you do that in a good way
+
+00:04:41.167 --> 00:04:42.600
+For all that you need one thing
+
+00:04:42.800 --> 00:04:45.100
+a complete data set for your character.
+
+00:04:45.167 --> 00:04:47.400
+that's exactly what the second skill builds.
+
+00:04:47.400 --> 00:04:49.717
+And to show you it works with any character.
+
+00:04:49.717 --> 00:04:51.150
+I built a completely fresh one
+
+00:04:51.333 --> 00:04:55.550
+This is Lisa. And these three photos are everything I have from here
+
+00:04:55.633 --> 00:04:59.067
+So I put the three pictures of her into the anchor's folder.
+
+00:04:59.067 --> 00:05:01.733
+The best face photo goes into the face folder
+
+00:05:01.733 --> 00:05:04.433
+and the other two into the body and the styles folder.
+
+00:05:04.433 --> 00:05:05.967
+You know already how it works.
+
+00:05:05.967 --> 00:05:07.633
+Then I go back to the same chat
+
+00:05:07.800 --> 00:05:09.150
+we don't need a new session.
+
+00:05:09.300 --> 00:05:11.117
+we can do all this in the same chat
+
+00:05:11.200 --> 00:05:12.317
+I just tell Claude.
+
+00:05:12.317 --> 00:05:16.917
+I have a new character named Lisa. Only three pictures of her are in the anchors folder
+
+00:05:17.000 --> 00:05:18.583
+Build me the complete dataset
+
+00:05:18.667 --> 00:05:19.633
+Face portrais
+
+00:05:19.633 --> 00:05:21.767
+the emotion grid and a full 360 view
+
+00:05:21.933 --> 00:05:23.250
+Use Nano Banana Pro
+
+00:05:23.250 --> 00:05:26.500
+4K resolution and a 3 to 4 aspect ratio.
+
+00:05:26.500 --> 00:05:28.583
+Show me the plan and the cost first.
+
+00:05:28.583 --> 00:05:30.083
+And watch what happens.
+
+00:05:30.083 --> 00:05:33.233
+Claude switches to the data set skill completely on its own
+
+00:05:33.317 --> 00:05:34.300
+and shows me the plan
+
+00:05:34.383 --> 00:05:35.933
+So I just type go again
+
+00:05:36.017 --> 00:05:38.633
+And now Claude built the whole dataset by himself.
+
+00:05:38.717 --> 00:05:40.267
+He generates the face pictures,
+
+00:05:40.267 --> 00:05:42.933
+then the emotion grid with different expressions,
+
+00:05:42.933 --> 00:05:45.800
+and then the full 360 rotation of her
+
+00:05:45.883 --> 00:05:48.450
+after a few minutes later, the whole thing is done
+
+00:05:48.650 --> 00:05:52.700
+Now look at this data set. It's the same girl from every single angle.
+
+00:05:52.933 --> 00:05:54.250
+that's exactly the part.
+
+00:05:54.250 --> 00:05:57.233
+We build this whole data set in a few minutes with claude
+
+00:05:57.433 --> 00:05:58.717
+with only one prompt.
+
+00:05:58.717 --> 00:06:01.000
+And you can do this with any character you have.
+
+00:06:01.233 --> 00:06:04.117
+build a data set with one prompt in a few minutes.
+
+00:06:04.167 --> 00:06:05.833
+So from three photos
+
+00:06:05.833 --> 00:06:08.117
+to a complete character data set
+
+00:06:08.200 --> 00:06:09.983
+if you watch my last two videos,
+
+00:06:09.983 --> 00:06:11.183
+you know what I always say
+
+00:06:11.417 --> 00:06:13.217
+The data set is the asset.
+
+00:06:13.217 --> 00:06:16.800
+Because from here you can train a loRa on any model you
+
+00:06:16.883 --> 00:06:18.367
+do whatever you want with her
+
+00:06:18.533 --> 00:06:21.750
+And remember those photos from the very beginning of the video.
+
+00:06:21.750 --> 00:06:24.433
+That's all built with this exact system.
+
+00:06:24.433 --> 00:06:25.700
+So Claude creats her
+
+00:06:25.700 --> 00:06:27.150
+Claude keeps her consistent
+
+00:06:27.150 --> 00:06:29.217
+and claude makes all of her content.
+
+00:06:29.217 --> 00:06:31.467
+But here's the thing. I didn't tell you
+
+00:06:31.550 --> 00:06:34.833
+Julia, the girl you just watched the beginning of this video.
+
+00:06:34.833 --> 00:06:35.900
+You get here in my skool
+
+00:06:36.150 --> 00:06:37.100
+her complete
+
+00:06:37.100 --> 00:06:40.883
+character data set ready to use, and you can do whatever you want with her
+
+00:06:41.050 --> 00:06:43.533
+And off top of that you also get Ashley,
+
+00:06:43.533 --> 00:06:45.933
+the girl I built in my last two videos.
+
+00:06:45.933 --> 00:06:48.567
+So you don't even have to build your own influencer.
+
+00:06:48.567 --> 00:06:50.867
+You can literally start posting today.
+
+00:06:50.867 --> 00:06:53.767
+and my skool is also where all my premium stuff lives
+
+00:06:53.850 --> 00:06:56.950
+like the advanced workflows from my last two videos.
+
+00:06:57.017 --> 00:06:57.400
+You know,
+
+00:06:57.400 --> 00:06:59.467
+the ones I can show here on YouTube
+
+00:06:59.467 --> 00:07:02.617
+and everything. I build new drops in their first.
+
+00:07:02.617 --> 00:07:04.383
+The link for that is in the description.
+
+00:07:04.383 --> 00:07:07.267
+And before we come to the end, I have to show you one more thing
+
+00:07:07.467 --> 00:07:09.183
+about the two skills you get to day
+
+00:07:09.267 --> 00:07:10.917
+Because they are not some locked app
+
+00:07:11.000 --> 00:07:13.850
+a skill is basically just a folder with instructions
+
+00:07:13.850 --> 00:07:15.017
+and claude can read them
+
+00:07:15.217 --> 00:07:17.367
+which means claude can also rewrite them
+
+00:07:17.367 --> 00:07:20.217
+let's say you want a complete different style of photos.
+
+00:07:20.217 --> 00:07:24.067
+You don't code anything. You literally tell claude only
+
+00:07:24.117 --> 00:07:25.067
+change the skill.
+
+00:07:25.067 --> 00:07:26.583
+So it does this and that.
+
+00:07:26.583 --> 00:07:28.467
+And claude rebuilds its own tool
+
+00:07:28.550 --> 00:07:31.983
+So you're not downloading a product here. You're downloading the foundation.
+
+00:07:31.983 --> 00:07:34.267
+And with claude you can change it, improve it
+
+00:07:34.267 --> 00:07:36.267
+and build whatever you want on top of it
+
+00:07:36.417 --> 00:07:40.200
+And like I promised, both skills are completely for free in my Discord
+
+00:07:40.283 --> 00:07:42.883
+in my last two videos, I build all of this the pro way
+
+00:07:43.117 --> 00:07:44.983
+with comfyUI and a trained LoRa.
+
+00:07:44.983 --> 00:07:47.183
+And today Claude did the whole thing on its own
+
+00:07:47.333 --> 00:07:48.883
+So if this video helped you
+
+00:07:48.967 --> 00:07:50.233
+leave a like and subscribe
+
+00:07:50.467 --> 00:07:51.583
+write me in the comments.
+
+00:07:51.583 --> 00:07:54.300
+What video should I do next to help you make more money
+
+00:07:54.383 --> 00:07:56.350
+So see you in the next video. Bye!
+

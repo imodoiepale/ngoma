@@ -1,0 +1,36 @@
+Edit just one part of a photo using nothing but a text prompt. This ComfyUI inpainting workflow uses Z-Image Turbo, automatic SAM3 text-guided masking, and an improved crop-and-stitch pipeline to regenerate a single region of an image while leaving everything else completely untouched. No manual brush masking, no detector chains to wire up, just describe what you want changed and SAM3 finds it for you.
+
+This is Build With Me [EP. 3] — same as the last two episodes, we're not downloading a finished template, we're building this node-by-node from a blank canvas so you actually understand what every piece is doing.
+
+In this video I break down the full ComfyUI workflow node-by-node: how SAM3 reads a text prompt to automatically generate a mask, how Inpaint Crop (Improved) isolates just that region before sampling, how Z-Image Turbo regenerates only the masked crop, and how Inpaint Stitch (Improved) pastes the result back into the full-resolution photo with blended edges. I also cover the Conditioning Zero Out trick for skipping a real negative prompt, mask growth and blur for clean blending, and exactly which denoise range to use and why. This is also the first episode in the series using custom node packs, so I walk through precisely which ones you need and how to install them.
+
+🔗 LINKS
+🔗 FREE WORKFLOWS, COMMUNITY DISCUSSION, 1 ON 1 SESSIONS
+If you want 1-on-1 coaching for your ComfyUI/RunPod setup, LoRA training, or growing an AI influencer account, sessions are consultation-based — details inside: https://discord.gg/kUc76uk7HA
+
+Use my RunPod referral link to add $10 in credits and receive an extra $5 for free (cloud GPUs for ComfyUI if you don't have local VRAM): https://runpod.io?ref=jc6190fx
+
+📦 SAM3 MODEL DOWNLOAD (RunPod / terminal)
+wget -O /workspace/ComfyUI/models/checkpoints/sam3.1_multiplex_fp16.safetensors "https://huggingface.co/Comfy-Org/sam3.1/resolve/main/checkpoints/sam3.1_multiplex_fp16.safetensors?download=true"
+(Adjust the destination path if your ComfyUI install isn't at /workspace/ComfyUI/)
+
+📌 WHAT'S COVERED
+* Automatic text-guided masking with SAM3 — no manual brush masking
+* Z-Image Turbo inpainting on the cropped masked region only
+* Inpaint Crop (Improved) + Inpaint Stitch (Improved) for seamless paste-back
+* The Conditioning Zero Out trick (skip writing a real negative prompt)
+* Mask growth + blur for clean, seamless edge blending
+* Denoise explained: the 0.6–0.8 range and what higher vs. lower actually does
+* First-time custom node pack breakdown: which packs you need and how to install them
+* Built entirely from scratch on screen — no template, no pre-built file for this one
+
+This workflow is built for anyone working with AI-generated people, AI influencer content, or photo editing in ComfyUI who wants an automated, text-prompted alternative to manual masking — whether you're swapping an outfit on a generated character or doing general inpainting on a real photo. Follow along and build it with me, then adapt it to your own subjects and source photos.
+
+If this helped you, subscribe for more ComfyUI workflows, AI image generation breakdowns, and LoRA training tutorials every week.
+
+────────────────────────
+HASHTAGS:
+#ComfyUI #ComfyUIWorkflow #AIInpainting #SAM3 #ZImageTurbo #StableDiffusion #ComfyUITutorial #AIInfluencer #LoraTraining #GenerativeAI #AIImageGeneration #ComfyUINodes #AIPhotoEditing
+
+TAGS:
+comfyui, comfyui workflow, comfyui inpainting, ai inpainting, image inpainting, automatic masking, sam3, sam 3.1, sam3 comfyui, text guided segmentation, z image turbo, z-image turbo comfyui, comfyui custom nodes, comfyui custom node packs, inpaint crop and stitch, comfyui kjnodes, comfyui tutorial, comfyui masking, ai outfit swap, ai photo editing, comfyui nodes explained, denoise tutorial comfyui, build with me, comfyui from scratch, comfyui runpod, ai influencer content, lora training, character lora, generative ai tools, stable diffusion inpainting, comfyui beginners tutorial

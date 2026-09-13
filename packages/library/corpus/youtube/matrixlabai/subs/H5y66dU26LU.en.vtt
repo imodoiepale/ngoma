@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.990 align:start position:0%
+ 
+Images<00:00:00.560><c> are</c><00:00:00.680><c> made</c><00:00:00.920><c> by</c><00:00:01.040><c> an</c><00:00:01.160><c> image</c><00:00:01.440><c> model,</c><00:00:01.840><c> and</c>
+
+00:00:01.990 --> 00:00:02.000 align:start position:0%
+Images are made by an image model, and
+ 
+
+00:00:02.000 --> 00:00:03.630 align:start position:0%
+Images are made by an image model, and
+that<00:00:02.200><c> runs</c><00:00:02.440><c> through</c><00:00:02.640><c> Wave</c><00:00:02.880><c> Speed.</c><00:00:03.200><c> This</c><00:00:03.440><c> gives</c>
+
+00:00:03.630 --> 00:00:03.640 align:start position:0%
+that runs through Wave Speed. This gives
+ 
+
+00:00:03.640 --> 00:00:05.790 align:start position:0%
+that runs through Wave Speed. This gives
+Claude<00:00:03.960><c> the</c><00:00:04.080><c> ability</c><00:00:04.640><c> to</c><00:00:04.760><c> generate</c><00:00:05.200><c> images.</c>
+
+00:00:05.790 --> 00:00:05.800 align:start position:0%
+Claude the ability to generate images.
+ 
+
+00:00:05.800 --> 00:00:07.870 align:start position:0%
+Claude the ability to generate images.
+Go<00:00:06.000><c> to</c><00:00:06.160><c> the</c><00:00:06.280><c> official</c><00:00:06.800><c> Wave</c><00:00:07.040><c> Speed</c><00:00:07.280><c> site</c><00:00:07.720><c> and</c>
+
+00:00:07.870 --> 00:00:07.880 align:start position:0%
+Go to the official Wave Speed site and
+ 
+
+00:00:07.880 --> 00:00:09.990 align:start position:0%
+Go to the official Wave Speed site and
+create<00:00:08.120><c> a</c><00:00:08.200><c> free</c><00:00:08.440><c> account.</c><00:00:08.920><c> Go</c><00:00:09.080><c> to</c><00:00:09.280><c> API</c><00:00:09.600><c> keys,</c>
+
+00:00:09.990 --> 00:00:10.000 align:start position:0%
+create a free account. Go to API keys,
+ 
+
+00:00:10.000 --> 00:00:11.750 align:start position:0%
+create a free account. Go to API keys,
+create<00:00:10.360><c> one,</c><00:00:10.640><c> and</c><00:00:10.760><c> copy</c><00:00:11.080><c> it.</c><00:00:11.280><c> The</c><00:00:11.400><c> link</c><00:00:11.600><c> for</c>
+
+00:00:11.750 --> 00:00:11.760 align:start position:0%
+create one, and copy it. The link for
+ 
+
+00:00:11.760 --> 00:00:13.630 align:start position:0%
+create one, and copy it. The link for
+this<00:00:11.960><c> is</c><00:00:12.080><c> also</c><00:00:12.400><c> in</c><00:00:12.480><c> the</c><00:00:12.560><c> description.</c><00:00:13.160><c> In</c><00:00:13.400><c> each</c>
+
+00:00:13.630 --> 00:00:13.640 align:start position:0%
+this is also in the description. In each
+ 
+
+00:00:13.640 --> 00:00:15.270 align:start position:0%
+this is also in the description. In each
+skill<00:00:13.920><c> folder,</c><00:00:14.280><c> there's</c><00:00:14.520><c> a</c><00:00:14.600><c> file</c><00:00:14.880><c> called</c>
+
+00:00:15.270 --> 00:00:15.280 align:start position:0%
+skill folder, there's a file called
+ 
+
+00:00:15.280 --> 00:00:17.630 align:start position:0%
+skill folder, there's a file called
+.env.<00:00:16.120><c> It</c><00:00:16.240><c> basically</c><00:00:16.720><c> means</c><00:00:17.000><c> environment,</c>
+
+00:00:17.630 --> 00:00:17.640 align:start position:0%
+.env. It basically means environment,
+ 
+
+00:00:17.640 --> 00:00:19.950 align:start position:0%
+.env. It basically means environment,
+and<00:00:17.800><c> all</c><00:00:18.040><c> safe</c><00:00:18.360><c> stuff</c><00:00:18.720><c> is</c><00:00:18.880><c> stored</c><00:00:19.240><c> there.</c><00:00:19.640><c> Open</c>
+
+00:00:19.950 --> 00:00:19.960 align:start position:0%
+and all safe stuff is stored there. Open
+ 
+
+00:00:19.960 --> 00:00:22.310 align:start position:0%
+and all safe stuff is stored there. Open
+it,<00:00:20.240><c> paste</c><00:00:20.520><c> your</c><00:00:20.640><c> secret</c><00:00:21.120><c> API</c><00:00:21.560><c> key,</c><00:00:21.880><c> and</c><00:00:22.080><c> click</c>
+
+00:00:22.310 --> 00:00:22.320 align:start position:0%
+it, paste your secret API key, and click
+ 
+
+00:00:22.320 --> 00:00:24.990 align:start position:0%
+it, paste your secret API key, and click
+save<00:00:22.600><c> or</c><00:00:22.760><c> command</c><00:00:23.240><c> S</c><00:00:23.480><c> to</c><00:00:23.640><c> save.</c><00:00:24.000><c> The</c><00:00:24.160><c> API</c><00:00:24.600><c> key</c>
+
+00:00:24.990 --> 00:00:25.000 align:start position:0%
+save or command S to save. The API key
+ 
+
+00:00:25.000 --> 00:00:26.750 align:start position:0%
+save or command S to save. The API key
+lives<00:00:25.320><c> in</c><00:00:25.440><c> this</c><00:00:25.640><c> file.</c><00:00:25.920><c> You</c><00:00:26.000><c> never</c><00:00:26.280><c> paste</c><00:00:26.600><c> it</c>
+
+00:00:26.750 --> 00:00:26.760 align:start position:0%
+lives in this file. You never paste it
+ 
+
+00:00:26.760 --> 00:00:29.590 align:start position:0%
+lives in this file. You never paste it
+into<00:00:27.120><c> any</c><00:00:27.440><c> AI</c><00:00:27.800><c> or</c><00:00:27.960><c> public</c><00:00:28.320><c> chat</c><00:00:28.720><c> to</c><00:00:28.880><c> stay</c><00:00:29.120><c> safe.</c>
+
+00:00:29.590 --> 00:00:29.600 align:start position:0%
+into any AI or public chat to stay safe.
+ 
+
+00:00:29.600 --> 00:00:31.590 align:start position:0%
+into any AI or public chat to stay safe.
+Then<00:00:29.760><c> put</c><00:00:30.000><c> about</c><00:00:30.240><c> $10</c><00:00:30.840><c> on</c><00:00:30.960><c> the</c><00:00:31.040><c> account,</c><00:00:31.480><c> and</c>
+
+00:00:31.590 --> 00:00:31.600 align:start position:0%
+Then put about $10 on the account, and
+ 
+
+00:00:31.600 --> 00:00:33.390 align:start position:0%
+Then put about $10 on the account, and
+you<00:00:31.680><c> just</c><00:00:31.960><c> saw</c><00:00:32.160><c> it.</c><00:00:32.279><c> The</c><00:00:32.400><c> whole</c><00:00:32.599><c> feed</c><00:00:32.920><c> was</c><00:00:33.120><c> only</c>
+
+00:00:33.390 --> 00:00:33.400 align:start position:0%
+you just saw it. The whole feed was only
+ 
+
+00:00:33.400 --> 00:00:35.630 align:start position:0%
+you just saw it. The whole feed was only
+about<00:00:33.800><c> three</c><00:00:34.120><c> bucks.</c><00:00:34.560><c> So,</c><00:00:34.760><c> $10</c><00:00:35.280><c> covers</c>
+
+00:00:35.630 --> 00:00:35.640 align:start position:0%
+about three bucks. So, $10 covers
+ 
+
+00:00:35.640 --> 00:00:39.440 align:start position:0%
+about three bucks. So, $10 covers
+everything<00:00:36.080><c> we</c><00:00:36.200><c> built</c><00:00:36.440><c> today</c><00:00:36.840><c> easily.</c>
+

@@ -1,0 +1,1318 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.080
+All right. Hello, everybody. Welcome.
+
+00:00:02.880 --> 00:00:04.560
+Um so, if you watched my previous video
+
+00:00:04.560 --> 00:00:08.760
+on how to run ComfyUI through RunPod,
+
+00:00:08.760 --> 00:00:11.240
+this is the direct follow-up video. And
+
+00:00:11.240 --> 00:00:13.520
+this is how you will be getting your
+
+00:00:13.520 --> 00:00:15.520
+first workflow running. This is a pretty
+
+00:00:15.520 --> 00:00:17.280
+good workflow. Um it works
+
+00:00:17.880 --> 00:00:20.720
+very well. Um I created it myself. Um
+
+00:00:20.720 --> 00:00:23.000
+and if you want to get it, all you have
+
+00:00:23.000 --> 00:00:25.080
+to do is get in my Discord. It's free in
+
+00:00:25.080 --> 00:00:27.240
+there, 100% free. All you got to do is
+
+00:00:27.240 --> 00:00:29.360
+join. There is a
+
+00:00:30.040 --> 00:00:32.240
+text channel called free workflows, and
+
+00:00:32.240 --> 00:00:35.280
+I even have a written-out guide, a short
+
+00:00:35.280 --> 00:00:38.280
+guide, on how to do this in that
+
+00:00:38.280 --> 00:00:39.000
+channel, as well.
+
+00:00:39.680 --> 00:00:43.040
+So, assuming you just downloaded it, and
+
+00:00:43.040 --> 00:00:43.760
+you have it here,
+
+00:00:45.120 --> 00:00:48.280
+you are going to drag it into ComfyUI,
+
+00:00:48.280 --> 00:00:49.400
+and you're going to see
+
+00:00:49.960 --> 00:00:51.080
+a few error messages.
+
+00:00:51.600 --> 00:00:52.760
+So, first you're going to see that you
+
+00:00:52.760 --> 00:00:55.080
+have missing nodes, which this is very
+
+00:00:55.080 --> 00:00:57.560
+simple to solve. First of all, what you
+
+00:00:57.560 --> 00:01:01.560
+want to do is go to the manager up here.
+
+00:01:01.560 --> 00:01:02.880
+Just press the blue manager button.
+
+00:01:03.680 --> 00:01:04.880
+And then you're going to click install
+
+00:01:04.880 --> 00:01:05.960
+missing custom nodes.
+
+00:01:07.840 --> 00:01:10.000
+Now, the missing nodes will appear right
+
+00:01:10.000 --> 00:01:11.640
+here, and they will have install
+
+00:01:11.640 --> 00:01:13.200
+buttons. You need to do this one by one.
+
+00:01:14.080 --> 00:01:15.440
+So, you're just going to click install.
+
+00:01:15.440 --> 00:01:16.360
+You're going to wait for that to go
+
+00:01:16.360 --> 00:01:17.720
+through, and then it's going to tell you
+
+00:01:17.720 --> 00:01:19.200
+that you need to restart ComfyUI. But
+
+00:01:19.200 --> 00:01:21.960
+before you do that, just install the
+
+00:01:21.960 --> 00:01:23.920
+rest of the missing nodes, and then
+
+00:01:23.920 --> 00:01:24.920
+you're going to restart.
+
+00:01:25.440 --> 00:01:27.200
+So, once those are installed,
+
+00:01:29.000 --> 00:01:30.880
+restart. It's going to ask you if you're
+
+00:01:30.880 --> 00:01:33.480
+sure. Yes, and now we just wait for
+
+00:01:33.480 --> 00:01:34.400
+Comfy to restart.
+
+00:01:35.680 --> 00:01:38.760
+All right. Once the restart has fully
+
+00:01:38.760 --> 00:01:40.320
+reloaded, it's going to ask if you want
+
+00:01:40.320 --> 00:01:42.800
+to refresh. Just click confirm and
+
+00:01:42.800 --> 00:01:44.080
+refresh ComfyUI.
+
+00:01:45.360 --> 00:01:47.760
+All right. Now, we should not have any
+
+00:01:47.760 --> 00:01:50.840
+glowing red nodes. But if you try and
+
+00:01:50.840 --> 00:01:51.760
+run it here,
+
+00:01:52.600 --> 00:01:54.760
+click it, and you'll notice that you get
+
+00:01:54.760 --> 00:01:56.640
+some more errors. That is because you do
+
+00:01:56.640 --> 00:02:00.280
+not have the Z image models installed
+
+00:02:00.280 --> 00:02:01.440
+into your ComfyUI,
+
+00:02:02.120 --> 00:02:03.840
+um or into your local
+
+00:02:04.560 --> 00:02:07.160
+network pod that you have if you
+
+00:02:07.160 --> 00:02:09.000
+followed the previous video. Again, link
+
+00:02:09.000 --> 00:02:11.080
+in description for that. You definitely
+
+00:02:11.080 --> 00:02:13.480
+should watch that. I show you exactly
+
+00:02:13.480 --> 00:02:15.000
+how to get to this this point at the
+
+00:02:15.000 --> 00:02:17.160
+beginning of the video that we just were
+
+00:02:17.160 --> 00:02:18.240
+at, and um
+
+00:02:19.040 --> 00:02:22.040
+it's just the best way to get everything
+
+00:02:22.040 --> 00:02:24.000
+set up, so that way you can get directly
+
+00:02:24.000 --> 00:02:26.920
+into getting this workflow working, if
+
+00:02:26.920 --> 00:02:28.560
+that's what you want to do. So,
+
+00:02:29.640 --> 00:02:30.840
+um you're going to see here that we're
+
+00:02:30.840 --> 00:02:36.240
+missing a Z image uh turbo BF16 safe
+
+00:02:36.240 --> 00:02:39.640
+tensors. We're missing a clip model, and
+
+00:02:39.640 --> 00:02:44.120
+we're missing a VAE loader model. So,
+
+00:02:45.200 --> 00:02:46.920
+that would be these right here.
+
+00:02:47.680 --> 00:02:50.280
+Um and in the Discord,
+
+00:02:52.320 --> 00:02:55.480
+you will notice that I have a section
+
+00:02:55.480 --> 00:02:58.000
+here on commands that you can input into
+
+00:02:58.000 --> 00:03:00.800
+your Jupyter Labs to download these
+
+00:03:00.800 --> 00:03:04.680
+models directly from Hugging Face. Um
+
+00:03:04.680 --> 00:03:05.120
+so,
+
+00:03:05.720 --> 00:03:07.880
+no external downloads to your computer
+
+00:03:07.880 --> 00:03:09.720
+involved. You don't need to take up all
+
+00:03:09.720 --> 00:03:12.880
+of your precious uh hard drive space.
+
+00:03:12.880 --> 00:03:14.640
+This can all be done through your
+
+00:03:14.640 --> 00:03:17.640
+network pod that you have configured.
+
+00:03:17.640 --> 00:03:20.280
+So, what we're going to do is we're
+
+00:03:20.280 --> 00:03:22.080
+going to copy the
+
+00:03:23.800 --> 00:03:25.280
+directory. We're going to change the
+
+00:03:25.280 --> 00:03:25.880
+directory.
+
+00:03:29.400 --> 00:03:30.080
+Go back here.
+
+00:03:31.840 --> 00:03:34.760
+We're going to open a new terminal in
+
+00:03:34.760 --> 00:03:37.080
+Jupyter Labs. So, just click the plus up
+
+00:03:37.080 --> 00:03:39.400
+here on the tab. Open a new terminal.
+
+00:03:39.400 --> 00:03:41.200
+And we are going to just copy and paste
+
+00:03:41.200 --> 00:03:42.680
+everything from the Discord
+
+00:03:43.800 --> 00:03:44.880
+right into here. So, you'll see that we
+
+00:03:44.880 --> 00:03:46.640
+changed our directory to the diffusion
+
+00:03:46.640 --> 00:03:47.200
+models
+
+00:03:48.000 --> 00:03:48.080
+um
+
+00:03:49.120 --> 00:03:49.640
+folder.
+
+00:03:50.560 --> 00:03:52.840
+And then we are going to copy
+
+00:03:54.400 --> 00:03:55.840
+everything else. So,
+
+00:03:57.200 --> 00:03:58.120
+just put that in there,
+
+00:03:58.680 --> 00:03:59.520
+and you'll see
+
+00:04:00.280 --> 00:04:00.880
+that
+
+00:04:02.160 --> 00:04:04.920
+the main Z image uh
+
+00:04:05.520 --> 00:04:06.200
+turbo
+
+00:04:06.760 --> 00:04:08.880
+model has begun downloading. So, this is
+
+00:04:08.880 --> 00:04:10.640
+going to take a while, depending on
+
+00:04:10.640 --> 00:04:13.360
+network speeds, etc., etc. So,
+
+00:04:14.000 --> 00:04:14.760
+once that's done,
+
+00:04:15.280 --> 00:04:17.160
+we will be back, and um
+
+00:04:18.080 --> 00:04:19.240
+I'll show you how to get the rest of the
+
+00:04:19.240 --> 00:04:19.960
+models installed.
+
+00:04:21.480 --> 00:04:23.920
+Yo, guys. Real quick, right back to the
+
+00:04:23.920 --> 00:04:25.320
+video. But first,
+
+00:04:26.000 --> 00:04:28.440
+real quick, quick PSA. When adding funds
+
+00:04:28.440 --> 00:04:32.960
+to RunPod, if you guys go to my
+
+00:04:32.960 --> 00:04:34.800
+description of this video and use my
+
+00:04:34.800 --> 00:04:37.160
+referral link, you will get $5 added to
+
+00:04:37.160 --> 00:04:39.200
+whatever you add for your first purchase
+
+00:04:39.200 --> 00:04:40.080
+through RunPod.
+
+00:04:40.640 --> 00:04:43.760
+Also, that gives me $5, as well. So,
+
+00:04:43.760 --> 00:04:45.520
+let's lock in together. Let's get this
+
+00:04:45.520 --> 00:04:48.440
+money, and let's get this free money.
+
+00:04:48.440 --> 00:04:51.720
+Also, if you guys need any run-throughs
+
+00:04:51.720 --> 00:04:55.160
+or guides on things that you may not
+
+00:04:55.160 --> 00:04:56.760
+understand, or you just can't get
+
+00:04:56.760 --> 00:04:58.040
+something to work, and you really,
+
+00:04:58.040 --> 00:04:59.440
+really want to get it to work, or you
+
+00:04:59.440 --> 00:05:02.040
+want help creating workflows, or running
+
+00:05:02.040 --> 00:05:04.200
+advanced workflows, using upscalers,
+
+00:05:04.200 --> 00:05:05.080
+whatever it may be,
+
+00:05:05.840 --> 00:05:08.840
+I offer super, super cheap lessons. I
+
+00:05:08.840 --> 00:05:11.160
+just got into the creator space on
+
+00:05:11.160 --> 00:05:14.000
+YouTube with all of this AI generation,
+
+00:05:14.000 --> 00:05:17.520
+and so, you know, I don't really have a
+
+00:05:17.520 --> 00:05:19.240
+viewer base. So,
+
+00:05:20.040 --> 00:05:22.440
+I'm offering lessons on the most
+
+00:05:22.440 --> 00:05:24.200
+advanced stuff that people are paying
+
+00:05:24.200 --> 00:05:25.720
+thousands of dollars for. I'm offering
+
+00:05:25.720 --> 00:05:28.880
+it for pennies on the dollar. So, if you
+
+00:05:28.880 --> 00:05:30.400
+guys are interested, just reach out
+
+00:05:30.400 --> 00:05:32.680
+through Discord. I'm always available.
+
+00:05:32.680 --> 00:05:33.240
+Let me know.
+
+00:05:35.680 --> 00:05:37.440
+All right. So, for demonstration
+
+00:05:37.440 --> 00:05:39.000
+purposes, I stopped the download. I
+
+00:05:39.000 --> 00:05:42.040
+already have this downloaded on my own
+
+00:05:42.640 --> 00:05:46.400
+um personal network configuration. So,
+
+00:05:46.400 --> 00:05:47.520
+I'm not going to download these models
+
+00:05:47.520 --> 00:05:48.960
+again. I don't need to do that. I just
+
+00:05:48.960 --> 00:05:52.880
+started up a new pod on a throwaway um
+
+00:05:52.880 --> 00:05:55.040
+network, so that way I could show you
+
+00:05:55.040 --> 00:05:56.320
+guys how to do this basically from
+
+00:05:56.320 --> 00:05:58.760
+scratch. So, now we're going to do the
+
+00:05:58.760 --> 00:06:01.200
+text encoders, which you can also find
+
+00:06:01.200 --> 00:06:02.920
+right in the same spot in the Discord.
+
+00:06:02.920 --> 00:06:05.920
+So, first we change our directory to the
+
+00:06:05.920 --> 00:06:08.480
+text encoders folder, and then we're
+
+00:06:08.480 --> 00:06:09.480
+going to
+
+00:06:10.000 --> 00:06:13.640
+copy the wget command, and this will
+
+00:06:13.640 --> 00:06:15.680
+start installing the text encoder.
+
+00:06:15.680 --> 00:06:18.720
+Again, you'll see that there is a
+
+00:06:20.480 --> 00:06:22.560
+download going here, and this is going
+
+00:06:22.560 --> 00:06:24.280
+to take a while, too. This is a pretty
+
+00:06:24.280 --> 00:06:26.920
+big file, but that's why you configure
+
+00:06:26.920 --> 00:06:28.920
+the network, so that way the network
+
+00:06:28.920 --> 00:06:30.800
+storage, so that way you can
+
+00:06:31.480 --> 00:06:33.120
+save all of this, and then
+
+00:06:33.800 --> 00:06:36.080
+from session to session, you don't have
+
+00:06:36.080 --> 00:06:38.520
+to do this and reinstall these models
+
+00:06:38.520 --> 00:06:39.480
+every single time.
+
+00:06:40.000 --> 00:06:42.200
+Once you do this once, if you configure
+
+00:06:42.200 --> 00:06:45.280
+the network storage, you will have it
+
+00:06:45.280 --> 00:06:48.160
+ready to go. So, again, I'm just going
+
+00:06:48.160 --> 00:06:48.840
+to stop this.
+
+00:06:52.600 --> 00:06:54.640
+Um if it would stop, there we go.
+
+00:06:55.320 --> 00:06:58.160
+And I'm going to pretend that that got
+
+00:06:58.160 --> 00:07:01.400
+to 100%. Um it'll take, obviously, a lot
+
+00:07:01.400 --> 00:07:02.920
+longer for you guys, so just pause the
+
+00:07:02.920 --> 00:07:04.320
+video as you go through this. And we are
+
+00:07:04.320 --> 00:07:06.520
+going to do the last model that we need,
+
+00:07:06.520 --> 00:07:08.640
+which is the VAE. So, we are going to
+
+00:07:08.640 --> 00:07:10.600
+copy again from the Discord the change
+
+00:07:10.600 --> 00:07:12.680
+directory command to go into the VAE
+
+00:07:12.680 --> 00:07:13.080
+folder.
+
+00:07:13.640 --> 00:07:14.480
+And
+
+00:07:15.360 --> 00:07:18.040
+we are going to copy then the wget
+
+00:07:18.040 --> 00:07:18.680
+command
+
+00:07:19.280 --> 00:07:20.200
+for the VAE.
+
+00:07:21.840 --> 00:07:23.680
+And you should see this again, another
+
+00:07:23.680 --> 00:07:25.400
+download. I'm going to stop it, like I
+
+00:07:25.400 --> 00:07:27.760
+said. I'm going to move over to my
+
+00:07:28.440 --> 00:07:30.120
+configured network that I already have
+
+00:07:30.120 --> 00:07:32.440
+all this downloaded in, and
+
+00:07:32.960 --> 00:07:36.160
+it should work exactly as yours will uh
+
+00:07:36.160 --> 00:07:38.080
+once you have all of these installed,
+
+00:07:38.080 --> 00:07:39.240
+and I will show you exactly how the
+
+00:07:39.240 --> 00:07:41.480
+workflow works. All right. Back into
+
+00:07:41.480 --> 00:07:42.880
+Comfy. Um
+
+00:07:43.440 --> 00:07:45.160
+now that you have the models installed,
+
+00:07:45.160 --> 00:07:46.360
+you should be able to see here
+
+00:07:47.120 --> 00:07:48.880
+that you're able to click on them
+
+00:07:49.720 --> 00:07:53.160
+when going through the list of models
+
+00:07:53.160 --> 00:07:54.680
+that you have installed in each section.
+
+00:07:54.680 --> 00:07:55.160
+So,
+
+00:07:55.920 --> 00:07:57.160
+now that you can click on all of them,
+
+00:07:57.960 --> 00:07:59.800
+there should be no more errors getting
+
+00:07:59.800 --> 00:08:01.320
+thrown at you. And if there is,
+
+00:08:01.880 --> 00:08:03.640
+there's a quick little cheat code I want
+
+00:08:03.640 --> 00:08:05.480
+to show you guys. If you click run, and
+
+00:08:05.480 --> 00:08:07.840
+you get errors, whatever pops up on that
+
+00:08:07.840 --> 00:08:08.280
+error,
+
+00:08:08.920 --> 00:08:11.560
+um you can just copy, and then paste it
+
+00:08:11.560 --> 00:08:13.400
+right into Claude. Paste the error right
+
+00:08:13.400 --> 00:08:14.040
+into here,
+
+00:08:14.560 --> 00:08:16.280
+and say, "This is the error that I'm
+
+00:08:16.280 --> 00:08:18.000
+getting when trying to run ComfyUI.
+
+00:08:18.000 --> 00:08:20.320
+Here's my workflow." You can even drag
+
+00:08:20.320 --> 00:08:23.080
+and drop the workflow that you're using
+
+00:08:23.840 --> 00:08:25.800
+right into here, just the JSON file that
+
+00:08:25.800 --> 00:08:27.840
+you would drag and drop into ComfyUI,
+
+00:08:27.840 --> 00:08:28.360
+and then,
+
+00:08:29.120 --> 00:08:29.920
+you know, say,
+
+00:08:31.600 --> 00:08:32.640
+"These are your errors.
+
+00:08:33.880 --> 00:08:35.880
+Here are the errors that I'm getting.
+
+00:08:36.720 --> 00:08:37.920
+I am getting
+
+00:08:38.440 --> 00:08:42.800
+when trying to run this workflow through
+
+00:08:42.800 --> 00:08:45.880
+RunPod ComfyUI,
+
+00:08:45.880 --> 00:08:49.480
+and he will tell you exactly what is
+
+00:08:49.480 --> 00:08:52.040
+wrong, give you options for debugging
+
+00:08:52.040 --> 00:08:53.240
+and fixing everything."
+
+00:08:54.320 --> 00:08:56.960
+Huge cheat code, guys. Use LLMs. Use
+
+00:08:56.960 --> 00:08:58.760
+these models. Use these language models
+
+00:08:58.760 --> 00:09:01.080
+like Claude, which is great at coding,
+
+00:09:01.080 --> 00:09:05.120
+great at debugging ComfyUI, and have him
+
+00:09:05.120 --> 00:09:07.720
+fix all of your grievances, because it's
+
+00:09:07.720 --> 00:09:09.760
+just the best way to do it. All right.
+
+00:09:09.760 --> 00:09:11.280
+Once you have your models set, you'll
+
+00:09:11.280 --> 00:09:12.720
+notice here that
+
+00:09:13.520 --> 00:09:15.040
+you can load in LoRAs. So, if you have
+
+00:09:15.040 --> 00:09:16.640
+character LoRAs, you can just load them
+
+00:09:16.640 --> 00:09:17.320
+in right there.
+
+00:09:18.000 --> 00:09:18.520
+And
+
+00:09:19.200 --> 00:09:20.120
+if you read this,
+
+00:09:21.720 --> 00:09:22.880
+if you are wanting to load your own
+
+00:09:22.880 --> 00:09:24.560
+character style LoRAs into the workflow,
+
+00:09:24.560 --> 00:09:25.920
+select your LoRAs in the window to the
+
+00:09:25.920 --> 00:09:29.680
+left. So, you click LoRA, and
+
+00:09:30.360 --> 00:09:31.680
+load whichever one you want.
+
+00:09:32.200 --> 00:09:34.600
+And then, in the CR Prompt List node,
+
+00:09:34.600 --> 00:09:36.240
+edit the pre-pen text to have your LoRA
+
+00:09:36.240 --> 00:09:38.280
+trigger word. So, I'm going to select
+
+00:09:38.280 --> 00:09:40.360
+one of my LoRAs here. Okay. Now that I
+
+00:09:40.360 --> 00:09:41.520
+have one of my LoRAs set,
+
+00:09:42.720 --> 00:09:45.320
+I'm going to come down to this CR Prompt
+
+00:09:45.320 --> 00:09:48.440
+List node right here. And I'm going to
+
+00:09:48.440 --> 00:09:50.480
+use the trigger word that I have
+
+00:09:50.480 --> 00:09:52.920
+associated with my LoRA, or whatever
+
+00:09:52.920 --> 00:09:53.920
+LoRA you're using.
+
+00:09:55.040 --> 00:09:56.160
+And I'm just going to type it in,
+
+00:09:56.760 --> 00:09:58.680
+followed by a comma and a space. Click
+
+00:09:58.680 --> 00:09:59.120
+okay.
+
+00:09:59.800 --> 00:10:00.280
+Now,
+
+00:10:00.840 --> 00:10:02.040
+every single prompt
+
+00:10:03.080 --> 00:10:06.080
+that is put into this text box here will
+
+00:10:06.080 --> 00:10:08.800
+be prepended with this. So, my trigger
+
+00:10:08.800 --> 00:10:10.600
+word will go in the beginning of each
+
+00:10:10.600 --> 00:10:12.080
+one of these. So,
+
+00:10:12.880 --> 00:10:14.000
+let me get rid of that real quick.
+
+00:10:16.920 --> 00:10:18.320
+And I just want to show you how this
+
+00:10:18.320 --> 00:10:19.640
+works with no Laura.
+
+00:10:21.600 --> 00:10:22.040
+Now,
+
+00:10:22.680 --> 00:10:23.840
+with this workflow,
+
+00:10:24.360 --> 00:10:27.840
+this CEO prompt list is amazing because
+
+00:10:27.840 --> 00:10:30.320
+normally you'd be able to put in one
+
+00:10:30.320 --> 00:10:32.080
+positive prompt and
+
+00:10:32.640 --> 00:10:34.400
+say that may be, you know,
+
+00:10:35.520 --> 00:10:37.000
+a young Asian woman drinking a nice
+
+00:10:37.000 --> 00:10:39.440
+coffee outside of a busy coffee shop.
+
+00:10:39.440 --> 00:10:42.160
+You would just run the workflow with
+
+00:10:42.160 --> 00:10:44.480
+that singular prompt, which is great.
+
+00:10:44.480 --> 00:10:46.880
+But, for generating a large batches of
+
+00:10:46.880 --> 00:10:49.360
+images, which these turbo
+
+00:10:49.960 --> 00:10:53.280
+workflows or these turbo models, rather,
+
+00:10:53.280 --> 00:10:56.720
+like Z image turbo, are great for
+
+00:10:56.720 --> 00:10:58.880
+because they generate images so fast is
+
+00:10:58.880 --> 00:11:03.040
+doing large batches. So, I can do as
+
+00:11:03.040 --> 00:11:03.520
+many
+
+00:11:04.280 --> 00:11:06.760
+prompts as I want to here. I just
+
+00:11:06.760 --> 00:11:08.680
+separate them by the line. So, I'm going
+
+00:11:08.680 --> 00:11:10.840
+to run this. This should give me three
+
+00:11:10.840 --> 00:11:14.040
+images here. Um which you can set the
+
+00:11:14.040 --> 00:11:16.080
+dimensions of the resolution. You can
+
+00:11:16.080 --> 00:11:18.480
+set how many steps you want, which will
+
+00:11:18.480 --> 00:11:21.440
+give you higher quality results with
+
+00:11:21.440 --> 00:11:24.680
+higher steps. Um you can set negative
+
+00:11:24.680 --> 00:11:26.720
+prompts that will run through each
+
+00:11:26.720 --> 00:11:27.920
+iteration of
+
+00:11:28.480 --> 00:11:31.440
+prompt. And I even put down here some
+
+00:11:31.440 --> 00:11:33.600
+negative prompt tags that you can copy
+
+00:11:33.600 --> 00:11:35.240
+and paste into the negative prompt box
+
+00:11:35.240 --> 00:11:38.080
+if you want to avoid certain things. Um
+
+00:11:38.080 --> 00:11:40.400
+there's lighting negatives, anatomy and
+
+00:11:40.400 --> 00:11:42.640
+body negatives. And you can just, you
+
+00:11:42.640 --> 00:11:46.480
+know, ask ChatGPT or whoever to give you
+
+00:11:46.480 --> 00:11:48.560
+them more if you have problems with
+
+00:11:48.560 --> 00:11:50.640
+generation. But, Z image is a great
+
+00:11:50.640 --> 00:11:52.600
+model and I haven't really noticed that
+
+00:11:52.600 --> 00:11:52.960
+many
+
+00:11:53.760 --> 00:11:55.160
+uses for negative prompts.
+
+00:11:55.680 --> 00:11:56.880
+But, I'm going to Okay, so I'm going to
+
+00:11:56.880 --> 00:11:57.360
+run this.
+
+00:11:58.440 --> 00:11:59.920
+All right, so here we go. Not even a
+
+00:11:59.920 --> 00:12:04.000
+minute later, I have generated the three
+
+00:12:04.000 --> 00:12:05.280
+images that I have prompts for.
+
+00:12:05.800 --> 00:12:07.640
+Um we can take a look at them if we want
+
+00:12:07.640 --> 00:12:08.960
+to. Let's take a look down here.
+
+00:12:09.560 --> 00:12:11.640
+This is the young Asian woman drinking a
+
+00:12:11.640 --> 00:12:13.200
+nice coffee outside of a busy coffee
+
+00:12:13.200 --> 00:12:14.600
+shop. Nice.
+
+00:12:15.160 --> 00:12:17.680
+We have a young Caucasian woman watering
+
+00:12:17.680 --> 00:12:20.360
+her plants in her home garden. Amazing.
+
+00:12:20.360 --> 00:12:22.560
+We have a young redhead woman on a jog
+
+00:12:22.560 --> 00:12:24.480
+in the local park during the summer.
+
+00:12:24.480 --> 00:12:26.920
+Great. Amazing. Now,
+
+00:12:28.120 --> 00:12:30.080
+I want to show you how quick I can run
+
+00:12:30.080 --> 00:12:33.160
+through a batch of, let's say, eight
+
+00:12:33.160 --> 00:12:34.960
+prompts. So, I'm going to take these
+
+00:12:35.680 --> 00:12:38.080
+and because I'm uncreative and lazy,
+
+00:12:40.760 --> 00:12:44.280
+I am going to post them into my favorite
+
+00:12:44.280 --> 00:12:44.960
+LLM
+
+00:12:45.480 --> 00:12:49.280
+and say, "Generate me Generate me five
+
+00:12:49.280 --> 00:12:53.520
+more prompts with a similar theme."
+
+00:12:56.360 --> 00:12:59.480
+And we'll wait for him to answer.
+
+00:12:59.480 --> 00:13:00.400
+Perfect.
+
+00:13:02.080 --> 00:13:03.520
+And we'll take these
+
+00:13:06.320 --> 00:13:09.560
+and just paste them right into there.
+
+00:13:09.560 --> 00:13:10.080
+So,
+
+00:13:10.680 --> 00:13:12.160
+now that we have those, I'm going to run
+
+00:13:12.160 --> 00:13:14.640
+and I just want you guys to see how fast
+
+00:13:14.640 --> 00:13:16.920
+these generate. You can see the first
+
+00:13:16.920 --> 00:13:19.760
+image is done. Each case sampler with
+
+00:13:19.760 --> 00:13:21.720
+the number following is which image it's
+
+00:13:21.720 --> 00:13:23.400
+working on currently. So, I haven't set
+
+00:13:23.400 --> 00:13:24.880
+the 10 steps, so it's usually going to
+
+00:13:24.880 --> 00:13:28.200
+jump in iterations of 10% here. So,
+
+00:13:29.200 --> 00:13:30.680
+we're already on image five.
+
+00:13:31.640 --> 00:13:32.880
+Working on six now.
+
+00:13:35.440 --> 00:13:36.200
+Seven.
+
+00:13:38.880 --> 00:13:40.600
+And this should be the last one here.
+
+00:13:45.960 --> 00:13:46.440
+Now,
+
+00:13:47.640 --> 00:13:49.360
+let's change
+
+00:13:49.960 --> 00:13:52.920
+this up here so that we have a neater
+
+00:13:52.920 --> 00:13:53.560
+image feed.
+
+00:13:54.520 --> 00:13:55.120
+There we go.
+
+00:13:56.000 --> 00:13:57.520
+All of our prompts have come through.
+
+00:13:57.520 --> 00:13:58.560
+You can see these images
+
+00:13:59.240 --> 00:14:00.920
+are very real looking. They look
+
+00:14:00.920 --> 00:14:05.040
+amazing. Um this image model is great. I
+
+00:14:05.040 --> 00:14:07.240
+even like it better than Z image base at
+
+00:14:07.240 --> 00:14:08.840
+this point. Z image base has been out
+
+00:14:08.840 --> 00:14:11.200
+for a while now and I still prefer Z
+
+00:14:11.200 --> 00:14:11.920
+image turbo.
+
+00:14:12.760 --> 00:14:13.440
+It's just
+
+00:14:14.080 --> 00:14:15.120
+better. I don't know.
+
+00:14:15.840 --> 00:14:17.360
+A lot of people say it's a skill issue.
+
+00:14:17.360 --> 00:14:19.120
+It may be. Maybe I just don't know how
+
+00:14:19.120 --> 00:14:20.720
+to use Z image base, but
+
+00:14:21.640 --> 00:14:23.480
+you can't beat the speed of Z image
+
+00:14:23.480 --> 00:14:24.880
+turbo. Now,
+
+00:14:25.600 --> 00:14:27.600
+one last thing that I'm going to do to
+
+00:14:27.600 --> 00:14:30.080
+demonstrate how great this workflow is
+
+00:14:30.080 --> 00:14:32.920
+is I'm going to plug in one of my custom
+
+00:14:32.920 --> 00:14:35.720
+character words and I'm going to show
+
+00:14:35.720 --> 00:14:37.800
+you exactly how that works. So,
+
+00:14:40.000 --> 00:14:42.640
+Okay, so I've just gone back over to
+
+00:14:42.640 --> 00:14:45.040
+Claude and told him, "Generate me 10
+
+00:14:45.040 --> 00:14:46.800
+more, but do not describe ethnicity or
+
+00:14:46.800 --> 00:14:48.680
+physical features. Just say a young
+
+00:14:48.680 --> 00:14:49.960
+woman." So,
+
+00:14:51.080 --> 00:14:52.440
+we have those prompts. So, I have 10 of
+
+00:14:52.440 --> 00:14:54.240
+them. I'm going to come here. I'm going
+
+00:14:54.240 --> 00:14:56.040
+to press control A to select all of the
+
+00:14:56.040 --> 00:14:58.480
+prompts currently in this box. I'm going
+
+00:14:58.480 --> 00:15:00.240
+to backspace. I'm going to paste
+
+00:15:01.040 --> 00:15:03.400
+my prompts that I have just generated.
+
+00:15:03.400 --> 00:15:06.360
+Notice that I have my Laura loaded up
+
+00:15:06.360 --> 00:15:09.480
+here and I have my trigger word in the
+
+00:15:09.480 --> 00:15:11.680
+prepended text. So, all I need to do.
+
+00:15:11.680 --> 00:15:13.920
+Now, I have these 10 prompts ready to go
+
+00:15:13.920 --> 00:15:15.880
+and I'm going to run that. All right.
+
+00:15:16.520 --> 00:15:18.800
+Our batch of images has just finished.
+
+00:15:18.800 --> 00:15:21.520
+Um you can see here if we expand our job
+
+00:15:21.520 --> 00:15:24.320
+history, um it took 48 seconds for 10
+
+00:15:24.320 --> 00:15:27.000
+images, which is on average, you know,
+
+00:15:27.000 --> 00:15:29.200
+rounded up, 5 seconds per image. Can't
+
+00:15:29.200 --> 00:15:32.160
+beat it. Here are the results. This is
+
+00:15:32.160 --> 00:15:34.120
+the Laura that I loaded in. This is the
+
+00:15:34.120 --> 00:15:35.400
+character that I created.
+
+00:15:38.000 --> 00:15:41.400
+They look great. You can tell that the
+
+00:15:41.400 --> 00:15:43.400
+consistency is maintained
+
+00:15:44.160 --> 00:15:45.600
+throughout all of the images.
+
+00:15:49.480 --> 00:15:50.800
+And yeah, so that's how you load your
+
+00:15:50.800 --> 00:15:51.280
+Laura in.
+
+00:15:52.520 --> 00:15:52.960
+Guys,
+
+00:15:54.040 --> 00:15:57.160
+this is all you need for a text to image
+
+00:15:57.160 --> 00:15:57.880
+workflow.
+
+00:15:58.680 --> 00:15:59.560
+I'm telling you,
+
+00:16:00.440 --> 00:16:02.920
+this is so much better than typing in
+
+00:16:02.920 --> 00:16:04.760
+prompt after prompt after prompt
+
+00:16:05.440 --> 00:16:07.280
+because you want to take advantage of
+
+00:16:07.280 --> 00:16:09.520
+the speed of this model. You want to
+
+00:16:09.520 --> 00:16:11.760
+take advantage of Z image turbo's turbo.
+
+00:16:12.280 --> 00:16:14.720
+So, by doing that, the best way is to
+
+00:16:14.720 --> 00:16:18.320
+load multiple prompts into one run of a
+
+00:16:18.320 --> 00:16:21.400
+workflow so that way, you know, you're
+
+00:16:21.400 --> 00:16:23.520
+not rerunning all the steps of the
+
+00:16:23.520 --> 00:16:26.120
+workflow over and over and over again,
+
+00:16:26.120 --> 00:16:28.120
+prompt by prompt, by prompt, by prompt.
+
+00:16:28.920 --> 00:16:29.480
+Um
+
+00:16:30.040 --> 00:16:32.280
+a few things to note. If you want to
+
+00:16:32.280 --> 00:16:33.920
+mess with the sampler name and the
+
+00:16:33.920 --> 00:16:37.160
+scheduler, this will change certain
+
+00:16:37.160 --> 00:16:40.280
+aspects of the generation. Um certain
+
+00:16:40.280 --> 00:16:42.160
+samplers and schedulers are
+
+00:16:42.760 --> 00:16:45.680
+better run with lower steps. So, what I
+
+00:16:45.680 --> 00:16:47.680
+have it to What I have it set to by
+
+00:16:47.680 --> 00:16:51.240
+default is Euler with beta 57. This is
+
+00:16:51.240 --> 00:16:54.600
+good for a low step iteration. So, 10
+
+00:16:54.600 --> 00:16:56.960
+steps with this combination is all you
+
+00:16:56.960 --> 00:16:59.320
+need. You'll get great results. Um
+
+00:17:00.200 --> 00:17:03.160
+great consistency through your Laura's.
+
+00:17:03.160 --> 00:17:03.880
+And
+
+00:17:04.440 --> 00:17:06.160
+yeah, I mean, that's really it for this,
+
+00:17:06.160 --> 00:17:09.000
+guys. That's, you know, as simple as it
+
+00:17:09.000 --> 00:17:12.040
+gets. It's what you get. So, if you like
+
+00:17:12.040 --> 00:17:13.480
+the video, please like. Please
+
+00:17:13.480 --> 00:17:15.320
+subscribe. Join the Discord. If you have
+
+00:17:15.320 --> 00:17:16.840
+any questions, feel free to ask in
+
+00:17:16.840 --> 00:17:19.320
+there. I'm always willing to help. And
+
+00:17:19.320 --> 00:17:20.040
+thank you for watching.
+

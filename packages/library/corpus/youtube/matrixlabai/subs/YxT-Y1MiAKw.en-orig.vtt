@@ -1,0 +1,152 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.510 align:start position:0%
+ 
+Then<00:00:00.200><c> you</c><00:00:00.320><c> select</c><00:00:00.720><c> template.</c><00:00:01.200><c> And</c><00:00:01.360><c> in</c><00:00:01.440><c> the</c>
+
+00:00:01.510 --> 00:00:01.520 align:start position:0%
+Then you select template. And in the
+ 
+
+00:00:01.520 --> 00:00:03.510 align:start position:0%
+Then you select template. And in the
+storage<00:00:02.000><c> configuration,</c><00:00:02.840><c> select</c><00:00:03.240><c> also</c>
+
+00:00:03.510 --> 00:00:03.520 align:start position:0%
+storage configuration, select also
+ 
+
+00:00:03.520 --> 00:00:05.670 align:start position:0%
+storage configuration, select also
+volume<00:00:03.880><c> disk.</c><00:00:04.280><c> I've</c><00:00:04.520><c> also</c><00:00:04.800><c> posted</c><00:00:05.200><c> a</c><00:00:05.240><c> runpod</c>
+
+00:00:05.670 --> 00:00:05.680 align:start position:0%
+volume disk. I've also posted a runpod
+ 
+
+00:00:05.680 --> 00:00:07.590 align:start position:0%
+volume disk. I've also posted a runpod
+template<00:00:06.040><c> link</c><00:00:06.280><c> in</c><00:00:06.400><c> my</c><00:00:06.520><c> Discord</c><00:00:07.000><c> with</c><00:00:07.160><c> my</c><00:00:07.320><c> free</c>
+
+00:00:07.590 --> 00:00:07.600 align:start position:0%
+template link in my Discord with my free
+ 
+
+00:00:07.600 --> 00:00:09.830 align:start position:0%
+template link in my Discord with my free
+master<00:00:08.080><c> comfy</c><00:00:08.480><c> UI</c><00:00:08.680><c> workflow.</c><00:00:09.280><c> After</c><00:00:09.560><c> you</c><00:00:09.640><c> done</c>
+
+00:00:09.830 --> 00:00:09.840 align:start position:0%
+master comfy UI workflow. After you done
+ 
+
+00:00:09.840 --> 00:00:11.630 align:start position:0%
+master comfy UI workflow. After you done
+these<00:00:10.080><c> easy</c><00:00:10.320><c> steps,</c><00:00:10.760><c> you</c><00:00:10.840><c> hit</c><00:00:10.960><c> deploy</c><00:00:11.400><c> and</c>
+
+00:00:11.630 --> 00:00:11.640 align:start position:0%
+these easy steps, you hit deploy and
+ 
+
+00:00:11.640 --> 00:00:13.310 align:start position:0%
+these easy steps, you hit deploy and
+everything<00:00:12.040><c> is</c><00:00:12.200><c> already</c><00:00:12.640><c> on</c><00:00:12.840><c> the</c><00:00:12.920><c> pod.</c><00:00:13.200><c> You</c>
+
+00:00:13.310 --> 00:00:13.320 align:start position:0%
+everything is already on the pod. You
+ 
+
+00:00:13.320 --> 00:00:15.150 align:start position:0%
+everything is already on the pod. You
+just<00:00:13.600><c> have</c><00:00:13.800><c> to</c><00:00:13.920><c> wait</c><00:00:14.160><c> a</c><00:00:14.240><c> few</c><00:00:14.520><c> minutes</c><00:00:14.880><c> after</c>
+
+00:00:15.150 --> 00:00:15.160 align:start position:0%
+just have to wait a few minutes after
+ 
+
+00:00:15.160 --> 00:00:17.150 align:start position:0%
+just have to wait a few minutes after
+you<00:00:15.280><c> click</c><00:00:15.520><c> deploy</c><00:00:16.080><c> because</c><00:00:16.400><c> the</c><00:00:16.520><c> template</c><00:00:17.000><c> is</c>
+
+00:00:17.150 --> 00:00:17.160 align:start position:0%
+you click deploy because the template is
+ 
+
+00:00:17.160 --> 00:00:18.950 align:start position:0%
+you click deploy because the template is
+booting<00:00:17.520><c> and</c><00:00:17.640><c> pulling</c><00:00:17.920><c> the</c><00:00:18.040><c> docker</c><00:00:18.400><c> image.</c><00:00:18.840><c> On</c>
+
+00:00:18.950 --> 00:00:18.960 align:start position:0%
+booting and pulling the docker image. On
+ 
+
+00:00:18.960 --> 00:00:20.630 align:start position:0%
+booting and pulling the docker image. On
+the<00:00:19.080><c> pod</c><00:00:19.320><c> is</c><00:00:19.480><c> already</c><00:00:19.840><c> the</c><00:00:19.960><c> Z</c><00:00:20.200><c> image</c><00:00:20.400><c> turbo</c>
+
+00:00:20.630 --> 00:00:20.640 align:start position:0%
+the pod is already the Z image turbo
+ 
+
+00:00:20.640 --> 00:00:22.870 align:start position:0%
+the pod is already the Z image turbo
+model,<00:00:21.040><c> the</c><00:00:21.200><c> VAEs,</c><00:00:21.880><c> and</c><00:00:22.040><c> the</c><00:00:22.160><c> encoders,</c><00:00:22.760><c> and</c>
+
+00:00:22.870 --> 00:00:22.880 align:start position:0%
+model, the VAEs, and the encoders, and
+ 
+
+00:00:22.880 --> 00:00:24.910 align:start position:0%
+model, the VAEs, and the encoders, and
+the<00:00:22.960><c> decoders,</c><00:00:23.600><c> and</c><00:00:23.840><c> so</c><00:00:24.040><c> on.</c><00:00:24.320><c> You</c><00:00:24.440><c> don't</c><00:00:24.760><c> have</c>
+
+00:00:24.910 --> 00:00:24.920 align:start position:0%
+the decoders, and so on. You don't have
+ 
+
+00:00:24.920 --> 00:00:26.990 align:start position:0%
+the decoders, and so on. You don't have
+to<00:00:25.040><c> download</c><00:00:25.480><c> anything</c><00:00:26.000><c> anymore.</c><00:00:26.560><c> The</c><00:00:26.720><c> only</c>
+
+00:00:26.990 --> 00:00:27.000 align:start position:0%
+to download anything anymore. The only
+ 
+
+00:00:27.000 --> 00:00:28.390 align:start position:0%
+to download anything anymore. The only
+thing<00:00:27.240><c> that's</c><00:00:27.440><c> not</c><00:00:27.720><c> on</c><00:00:27.880><c> there</c><00:00:28.120><c> is</c><00:00:28.280><c> your</c>
+
+00:00:28.390 --> 00:00:28.400 align:start position:0%
+thing that's not on there is your
+ 
+
+00:00:28.400 --> 00:00:30.270 align:start position:0%
+thing that's not on there is your
+character<00:00:28.880><c> Laura.</c><00:00:29.360><c> To</c><00:00:29.440><c> add</c><00:00:29.640><c> your</c><00:00:29.760><c> Laura</c><00:00:30.040><c> it's</c>
+
+00:00:30.270 --> 00:00:30.280 align:start position:0%
+character Laura. To add your Laura it's
+ 
+
+00:00:30.280 --> 00:00:32.070 align:start position:0%
+character Laura. To add your Laura it's
+really<00:00:30.560><c> easy.</c><00:00:30.880><c> Just</c><00:00:31.240><c> open</c><00:00:31.520><c> the</c><00:00:31.640><c> Jupiter</c>
+
+00:00:32.070 --> 00:00:32.080 align:start position:0%
+really easy. Just open the Jupiter
+ 
+
+00:00:32.080 --> 00:00:34.470 align:start position:0%
+really easy. Just open the Jupiter
+notebook<00:00:32.480><c> on</c><00:00:32.599><c> the</c><00:00:32.720><c> port</c><00:00:33.080><c> 888</c><00:00:33.800><c> and</c><00:00:33.920><c> navigate</c><00:00:34.360><c> to</c>
+
+00:00:34.470 --> 00:00:34.480 align:start position:0%
+notebook on the port 888 and navigate to
+ 
+
+00:00:34.480 --> 00:00:36.920 align:start position:0%
+notebook on the port 888 and navigate to
+Laura.
+

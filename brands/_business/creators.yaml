@@ -1,0 +1,53 @@
+# What each studied creator sells, from their PUBLIC pages. Checked by hand; every price
+# carries the date it was read and where. "unknown" means we could not see it publicly,
+# never that it is free.
+#
+# This is market evidence for our own offers. We do not resell anything they sell.
+
+version: 1
+creators:
+  loratech:
+    display: "LoRAtech - ComfyUI Hub"
+    builds: "Long build-along ComfyUI tutorials: MiniMax H3 speed-ups and infinite-length video, Krea 2 character LoRAs, WAN 2.2, LTX 2.5, inpainting, upscale, img2img, OFM influencer realism"
+    audience: "ComfyUI learners and AI-influencer (OFM) page operators"
+    products:
+      - {name: "Patreon membership", platform: patreon, url: "https://www.patreon.com/LoRAtech",
+         price: "from $15/month", read: "2026-09-13 public page", contents: "Exclusive workflows and benefits (tier details behind login)"}
+      - {name: "Discord", platform: discord, url: "https://discord.gg/kUc76uk7HA", price: "free",
+         read: "2026-09-13 video descriptions", contents: "Free workflows, models, help"}
+      - {name: "RunPod referral", platform: referral, url: "https://runpod.io?ref=jc6190fx", price: "commission on referred GPU spend",
+         read: "2026-09-13 channel About", contents: "Referral credit"}
+      - {name: "Gumroad affiliate link", platform: gumroad, url: "https://gumroad.com/a/335552099/eegyqs", price: "unknown",
+         read: "2026-09-13 video descriptions", contents: "Affiliate product (not inspected)"}
+  matrixlabai:
+    display: "Json (MatrixLabAI)"
+    builds: "End-to-end AI UGC and AI influencer systems: datasets from 3 photos, character boards, Krea 2 LoRAs, Claude + ComfyUI UGC and viral-reel copying, real costs on screen"
+    audience: "People building AI influencer and UGC businesses"
+    products:
+      - {name: "Matrix Lab (Skool)", platform: skool, url: "https://www.skool.com/matrix-lab-6660/about",
+         price: "$53/month", members: 232, read: "2026-09-13 public About page",
+         contents: "Complete systems behind the videos (private community)"}
+      - {name: "Discord", platform: discord, url: "https://discord.gg/uhfVpmwktQ", price: "free",
+         read: "2026-09-13 video descriptions", contents: "Free workflows and prompts"}
+      - {name: "matrix-power-nodes", platform: github, url: "https://github.com/JsonMatrixLab/matrix-power-nodes", price: "free",
+         read: "2026-09-13 video descriptions", contents: "Hosted-API ComfyUI nodes; the same pack already studied in work/matrix-power-nodes"}
+      - {name: "WaveSpeed and RunPod referrals", platform: referral, url: "https://wavespeed.ai/", price: "commission",
+         read: "2026-09-13 video descriptions", contents: "Referral links"}
+  kiubai:
+    display: "KiubAI (Icekiub)"
+    builds: "Open-source AI influencer pipelines: Flux Klein 9B LoRA training, consistent rooms, infinite wardrobe, SCAIL 2 motion, Ideogram 4 + LoRA on RunPod, MiniMax H3 reference mode"
+    audience: "AI influencer creators using ComfyUI"
+    products:
+      - {name: "ComfyUI/AI Tech - Icekiub AI (Whop)", platform: whop, url: "https://whop.com/icekiub/",
+         price: "unknown (not in the public page HTML; shown at checkout)", members: 6995,
+         read: "2026-09-13 public Whop page (5.0 rating, 44 reviews); URL also embedded in the packs in Documents/COMFY",
+         contents: "Workflow packs and posts: AIO influencer dataset (Klein), IG carousel photosets (Klein 9B KV), ICY SCAIL 2.0, ICY Animate. The 16 packs in workflows/icekiub/ came from here (docs/LICENSING.md)"}
+      - {name: "Free workflow drops", platform: whop, url: "https://whop.com/icekiub/", price: "free",
+         read: "2026-09-13 public Whop page", contents: "Some posts attach free zips (e.g. ICY SCAIL 2.0 free v2)"}
+  artificialquotient:
+    display: "Artificial Quotient"
+    builds: "Tutorials and reviews of paid AI SaaS tools (UGC ad makers, faceless video, lip sync, music, real estate, e-commerce) plus a few ComfyUI and Claude workflows"
+    audience: "Non-technical creators and small businesses shopping for AI tools"
+    products:
+      - {name: "Affiliate reviews", platform: affiliate, url: null, price: "commission per sign-up",
+         read: "2026-09-13 channel About and titles", contents: "179 videos, most are tool reviews"}

@@ -402,6 +402,11 @@ def learn(channel_keys: Iterable[str] | None = None, tiers: Iterable[str] = ("co
         except YTError as e:
             report.failures.append({"channel": ch["key"], "stage": "enumerate", "error": str(e)})
             continue
+        if ch.get("title_filter"):
+            pat = re.compile(ch["title_filter"], re.I)
+            kept = [v for v in vids if pat.search(v.get("title") or "")]
+            report.notes.append(f"{ch['key']}: title_filter kept {len(kept)}/{len(vids)}")
+            vids = kept
         report.enumerated += len(vids)
         for v in vids:
             try:

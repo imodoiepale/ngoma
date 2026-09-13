@@ -1,32 +1,23 @@
 {
   "platform": "youtube",
-  "target": "2 channels",
-  "status": "partial",
-  "requested": 12,
-  "enumerated": 24,
-  "downloaded": 22,
+  "target": "4 channels",
+  "status": "ok",
+  "requested": 800,
+  "enumerated": 198,
+  "downloaded": 198,
   "skipped_existing": 0,
-  "failures": [
-    {
-      "channel": "dgikaos",
-      "video": "yzc3HI5WhPY",
-      "error": "no subtitle track; needs faster-whisper fallback"
-    },
-    {
-      "channel": "dgikaos",
-      "video": "Jzwwqo7D4gE",
-      "error": "no subtitle track; needs faster-whisper fallback"
-    }
-  ],
+  "failures": [],
   "notes": [
-    "22 videos mined -> packages\\library\\corpus\\youtube\\facts.jsonl",
-    "gpu: 2 distinct",
-    "hardware: 2 distinct",
-    "node_pack: 3 distinct",
-    "model: 8 distinct",
-    "technique: 8 distinct",
-    "setting: 1 distinct",
-    "creative: 18 distinct"
+    "artificialquotient: title_filter kept 38/200",
+    "198 videos mined -> packages\\library\\corpus\\youtube\\facts.jsonl",
+    "gpu: 8 distinct",
+    "hardware: 8 distinct",
+    "node_pack: 12 distinct",
+    "model: 21 distinct",
+    "technique: 24 distinct",
+    "setting: 49 distinct",
+    "creative: 26 distinct",
+    "version: 7 distinct"
   ],
-  "ran_at": "2026-09-12T12:50:18.590082+00:00"
+  "ran_at": "2026-09-13T15:41:24.105653+00:00"
 }

@@ -1,0 +1,35 @@
+In this video, I show you how to clone any viral AI reel with Claude and Seedance, using your own consistent AI model. With two free skills I built for Claude Code, Claude watches a viral reel frame by frame, writes a per second Seedance prompt, and rebuilds the exact same format with my model Julia. Same girl, every single reel, for about $3.
+
+----------------------------------------------
+
+Join Skool:
+https://www.skool.com/matrix-lab-6660/about
+
+FREE skills, workflows + all my prompts:
+Discord: https://discord.gg/uhfVpmwktQ
+
+Generate your reels (Seedance on WaveSpeed):
+https://wavespeed.ai/?ref=matrix
+
+----------------------------------------------
+
+What you'll learn:
+- How Claude "watches" any viral reel (every single frame + word-timed transcript)
+- How the seedance-prompter writes a per-second prompt — every second timed, every voice tagged
+- How to keep the exact same face in every reel (identity from reference images only)
+- The WaveSpeed settings that actually matter (reference mode, native audio, 9:16)
+- The cost trick: generate at 720p for ~$3 and upscale with Topaz instead of paying for 4K
+
+----------------------------------------------
+
+Chapters / Timestamps
+00:00 Clone viral AI reels with Claude
+00:56 Intro: the two skills (reel-intake + seedance-prompter)
+01:22 Claude analyzes the viral reel (every frame)
+03:09 The per-second Seedance prompt
+03:51 WaveSpeed settings + generation (720p)
+04:37 The result + how to steer the prompt
+05:43 Topaz upscale + the cost breakdown
+06:25 Skool + free skills
+
+ #claude #seedance #aiinfluencer #aimodel

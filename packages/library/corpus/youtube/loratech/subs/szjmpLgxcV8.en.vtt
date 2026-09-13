@@ -1,0 +1,764 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:04.560
+If you've ever tried to get into local image or&nbsp;
+video generation, you know just how frustrating&nbsp;&nbsp;
+
+00:00:04.560 --> 00:00:08.720
+the learning process can be. And if you haven't&nbsp;
+explored programs like Comfy UI because you're&nbsp;&nbsp;
+
+00:00:08.720 --> 00:00:13.200
+overwhelmed by the complexity of it, this is the&nbsp;
+video for you. I'm sure if you have tried Comfy&nbsp;&nbsp;
+
+00:00:13.200 --> 00:00:16.720
+UI before, you've shared an experience that&nbsp;
+goes something like this. You spend an hour&nbsp;&nbsp;
+
+00:00:16.720 --> 00:00:20.800
+just getting the program launched. You download&nbsp;
+a workflow, half the nodes are missing, you're&nbsp;&nbsp;
+
+00:00:20.800 --> 00:00:24.720
+hunting down custom node packs that won't install&nbsp;
+for whatever reason. Something's incompatible with&nbsp;&nbsp;
+
+00:00:24.720 --> 00:00:29.360
+your installed comi version, and 3 hours later,&nbsp;
+you still haven't made a single image or video.&nbsp;&nbsp;
+
+00:00:31.280 --> 00:00:37.840
+I give up. This video is an overview of&nbsp;
+the best local generation UI out there,&nbsp;&nbsp;
+
+00:00:37.840 --> 00:00:42.640
+Simply Genen. Simply Genen is basically a desktop&nbsp;
+app that takes the whole mess and turns it into&nbsp;&nbsp;
+
+00:00:42.640 --> 00:00:48.080
+a super intuitive one-stop UI, and it's tailored&nbsp;
+specifically with AI influencers in mind. Simply&nbsp;&nbsp;
+
+00:00:48.080 --> 00:00:52.400
+Jen just solved all of my headaches, and I can't&nbsp;
+believe more people don't know about this yet.&nbsp;&nbsp;
+
+00:00:52.400 --> 00:00:56.080
+I'm going to walk you through the app, show you&nbsp;
+the character creation and consistency system&nbsp;&nbsp;
+
+00:00:56.080 --> 00:01:00.560
+that they use natively within Simply Genen, how&nbsp;
+you can build your very own AI influencer, how&nbsp;&nbsp;
+
+00:01:00.560 --> 00:01:04.800
+local versus cloud works, and all of the insane&nbsp;
+features that have been packed into this awesome&nbsp;&nbsp;
+
+00:01:04.800 --> 00:01:08.400
+program. If you're wondering where you can get it,&nbsp;
+you can grab Simply Genen through the link in the&nbsp;&nbsp;
+
+00:01:08.400 --> 00:01:12.800
+description below. It's a onetime purchase, super&nbsp;
+affordable, there's no subscriptions attached,&nbsp;&nbsp;
+
+00:01:12.800 --> 00:01:17.600
+and it's updated every week, multiple times a&nbsp;
+week in some cases, and the installation is pretty&nbsp;&nbsp;
+
+00:01:17.600 --> 00:01:21.600
+straightforward as well. Let's look at the layout&nbsp;
+before we start generating anything. On the left,&nbsp;&nbsp;
+
+00:01:21.600 --> 00:01:25.680
+you've got your main sections. Generate is where&nbsp;
+you'll spend most of your time, and I will be&nbsp;&nbsp;
+
+00:01:25.680 --> 00:01:29.760
+walking you through the simple generation process.&nbsp;
+And then you have enhance, which covers upscaling&nbsp;&nbsp;
+
+00:01:29.760 --> 00:01:33.840
+and post-processing on stuff you've already&nbsp;
+made. Below that is your library. Characters&nbsp;&nbsp;
+
+00:01:33.840 --> 00:01:38.160
+is where saved faces and personas live. So once&nbsp;
+you build a consistent character, you can pull it&nbsp;&nbsp;
+
+00:01:38.160 --> 00:01:41.920
+back up instead of starting from scratch. And&nbsp;
+right below it, products works the same way,&nbsp;&nbsp;
+
+00:01:41.920 --> 00:01:46.560
+but for product shots, it's useful if you're&nbsp;
+doing a UGC style ad content. Then you've got the&nbsp;&nbsp;
+
+00:01:46.560 --> 00:01:51.600
+studios. UGC Studio and Product Studio are more&nbsp;
+guided template driven flows for specific types&nbsp;&nbsp;
+
+00:01:51.600 --> 00:01:56.320
+of content, and we'll touch on those a bit later.&nbsp;
+And then under assets, gallery is every image and&nbsp;&nbsp;
+
+00:01:56.320 --> 00:02:01.360
+video you've generated, filterable by model,&nbsp;
+date, media type, and so on. And below that,&nbsp;&nbsp;
+
+00:02:01.360 --> 00:02:05.760
+the prompt library lets you save and organize&nbsp;
+prompts you want to reuse. And then finally,&nbsp;&nbsp;
+
+00:02:05.760 --> 00:02:10.320
+we have the marketplace. This is basically just a&nbsp;
+preset store, even though these are all free and&nbsp;&nbsp;
+
+00:02:10.320 --> 00:02:14.640
+installable locally on your own device. So,&nbsp;
+this is essentially where you will download&nbsp;&nbsp;
+
+00:02:14.640 --> 00:02:18.800
+every single model that you want to use. And as&nbsp;
+you can see, they have all different types of&nbsp;&nbsp;
+
+00:02:18.800 --> 00:02:23.840
+models. This is just for image creation. There's&nbsp;
+models like Z image and Z image Turbo, Quen Image,&nbsp;&nbsp;
+
+00:02:23.840 --> 00:02:29.520
+Crea 2, Flux 2, Hydream, Fire Red, Ernie, Bugu,&nbsp;
+and so on. At the top of the preset store,&nbsp;&nbsp;
+
+00:02:29.520 --> 00:02:34.800
+you can also filter by video models. And they have&nbsp;
+all of the most up-to-date local models that you&nbsp;&nbsp;
+
+00:02:34.800 --> 00:02:40.320
+can use such as LTX 2.3 and W 2.2. And there's&nbsp;
+even NSFW options if that is what you are looking&nbsp;&nbsp;
+
+00:02:40.320 --> 00:02:44.480
+to generate. Here under the character section,&nbsp;
+these are all the models that are compatible&nbsp;&nbsp;
+
+00:02:44.480 --> 00:02:49.120
+with the characters that you create natively with&nbsp;
+inside of Simply Gen. Under the upscale section,&nbsp;&nbsp;
+
+00:02:49.120 --> 00:02:54.960
+there are upscalers like the RTX upscaler and&nbsp;
+seed VR2. Under the UGC recipes, you can install&nbsp;&nbsp;
+
+00:02:54.960 --> 00:02:59.840
+templates that have your character presenting&nbsp;
+a certain product or your character using that&nbsp;&nbsp;
+
+00:02:59.840 --> 00:03:04.400
+product. And under the product recipes section,&nbsp;
+there are templates in which you can advertise&nbsp;&nbsp;
+
+00:03:04.400 --> 00:03:08.480
+and show off your product without a character. So,&nbsp;
+heading over to the character section, let's build&nbsp;&nbsp;
+
+00:03:08.480 --> 00:03:12.320
+a character from scratch so you can see the whole&nbsp;
+process and just how simple it actually is. So,&nbsp;&nbsp;
+
+00:03:12.320 --> 00:03:17.120
+first you'll need to click new character and then&nbsp;
+give it a name, a gender, a bio, and a location.&nbsp;&nbsp;
+
+00:03:17.120 --> 00:03:21.760
+The bio and location are optional and just tagged&nbsp;
+on as metadata. So, we can skip over this. So,&nbsp;&nbsp;
+
+00:03:21.760 --> 00:03:25.680
+I'm just going to name this new character Alice.&nbsp;
+She's a woman. And then I'm going to click next.&nbsp;&nbsp;
+
+00:03:25.680 --> 00:03:30.480
+Now, you can see here we could either upload a&nbsp;
+picture of Alice if we already have a picture&nbsp;&nbsp;
+
+00:03:30.480 --> 00:03:35.280
+generated or we can generate a base and start&nbsp;
+from scratch. I'm going to start from scratch.&nbsp;&nbsp;
+
+00:03:35.280 --> 00:03:39.600
+So, if you're generating a base, then you'll&nbsp;
+see here that we have to completely create and&nbsp;&nbsp;
+
+00:03:39.600 --> 00:03:44.640
+customize our character. There are sections such&nbsp;
+as body type, hair, eyes, skin, and so on. So,&nbsp;&nbsp;
+
+00:03:44.640 --> 00:03:48.960
+I'm going to go through and create our character.&nbsp;
+So, you'll see as I go through and select all the&nbsp;&nbsp;
+
+00:03:48.960 --> 00:03:53.040
+different physical attributes of our character,&nbsp;
+it will add on to this prompt preview we can see&nbsp;&nbsp;
+
+00:03:53.040 --> 00:04:03.440
+over here. So, I'm going to go with an athletic&nbsp;
+body and kind of just go through all these.
+
+00:04:03.440 --> 00:04:08.480
+For the hair, I'm going to go with a bob. And&nbsp;
+as you can see here, we can also fully describe&nbsp;&nbsp;
+
+00:04:08.480 --> 00:04:12.720
+and customize the hair. If the preset is not&nbsp;
+available for whatever you're looking for. So,&nbsp;&nbsp;
+
+00:04:12.720 --> 00:04:16.560
+if I want a different hair color than these&nbsp;
+presets here, I can just describe it in my&nbsp;&nbsp;
+
+00:04:16.560 --> 00:04:21.440
+own words. For the eyes, I'm going to go for&nbsp;
+green eyes. And for the eyebrows, we will just&nbsp;&nbsp;
+
+00:04:21.440 --> 00:04:26.560
+do straight eyebrows. We'll do a light skin&nbsp;
+tone with no freckles. For the face shape,&nbsp;&nbsp;
+
+00:04:26.560 --> 00:04:33.360
+let's go with a oval face. Cheekbones will be&nbsp;
+soft and full lips. For the age and ethnicity,&nbsp;&nbsp;
+
+00:04:33.360 --> 00:04:38.480
+we are going to do a young adult and she&nbsp;
+will be white. Under style and makeup,&nbsp;&nbsp;
+
+00:04:38.480 --> 00:04:44.160
+let's just select a neutral expression, no makeup,&nbsp;
+and no accessories. We'll leave that blank. And&nbsp;&nbsp;
+
+00:04:44.160 --> 00:04:49.040
+then the final section, there is a fine detail&nbsp;
+section in which you can specify even further how&nbsp;&nbsp;
+
+00:04:49.040 --> 00:04:53.120
+you want your character to look. But I think this&nbsp;
+is good. So, we are just going to click next. And&nbsp;&nbsp;
+
+00:04:53.120 --> 00:04:57.280
+now you'll need to select a preset in which you&nbsp;
+can generate your base character's photo. So, I'm&nbsp;&nbsp;
+
+00:04:57.280 --> 00:05:01.360
+going to use Zimage. I have it locally installed&nbsp;
+through Simply Genen. I'm going to use Z image&nbsp;&nbsp;
+
+00:05:01.360 --> 00:05:06.640
+turbo and then I am going to select generate base&nbsp;
+looks. Now we can see here that we have cued our&nbsp;&nbsp;
+
+00:05:06.640 --> 00:05:10.960
+generation. This is all going to be done locally.&nbsp;
+And over on the right hand side here we can pull&nbsp;&nbsp;
+
+00:05:10.960 --> 00:05:16.160
+up a cue of our generation to see exactly how far&nbsp;
+along it has come. So we can see here that just&nbsp;&nbsp;
+
+00:05:16.160 --> 00:05:21.200
+after a few seconds we have generated our base&nbsp;
+image. And you can select to regenerate if you're&nbsp;&nbsp;
+
+00:05:21.200 --> 00:05:25.600
+not happy with the results. But for the most part&nbsp;
+it's going to look the same because these are the&nbsp;&nbsp;
+
+00:05:25.600 --> 00:05:29.520
+preset physical attributes that we have selected&nbsp;
+throughout the character creation process.&nbsp;&nbsp;
+
+00:05:29.520 --> 00:05:33.600
+So I'm going to use this base and Alice is ready.&nbsp;
+We can see that we can view our character. We can&nbsp;&nbsp;
+
+00:05:33.600 --> 00:05:38.400
+enhance the base. I'm going to take Alice and&nbsp;
+do some generations with our created character&nbsp;&nbsp;
+
+00:05:38.400 --> 00:05:42.560
+now. So if we head over to the generate tab now,&nbsp;
+we are going to select to generate an image with&nbsp;&nbsp;
+
+00:05:42.560 --> 00:05:47.200
+our base character. And you have to use one of&nbsp;
+the edit models that is available on simply gen&nbsp;&nbsp;
+
+00:05:47.200 --> 00:05:52.720
+such as boou image fire red imageedit and the&nbsp;
+imageedit local option which has flux client&nbsp;&nbsp;
+
+00:05:52.720 --> 00:05:57.200
+edit and quen image edit built inside of it. I'm&nbsp;
+going to use the flux client edit option. So now&nbsp;&nbsp;
+
+00:05:57.200 --> 00:06:01.120
+we can see the main generation interface with&nbsp;
+a bunch of customizable inputs that we need to&nbsp;&nbsp;
+
+00:06:01.120 --> 00:06:05.040
+change to get our desired generation. So in the&nbsp;
+reference images section, you can see that it&nbsp;&nbsp;
+
+00:06:05.040 --> 00:06:09.520
+requires one to four reference images. But if we&nbsp;
+just select our character that we've made Alice,&nbsp;&nbsp;
+
+00:06:09.520 --> 00:06:13.760
+this actually uses the base that we have generated&nbsp;
+for her as one of the reference images. So once we&nbsp;&nbsp;
+
+00:06:13.760 --> 00:06:18.320
+select Alice, we can see that the tag at Alice&nbsp;
+is what we need to use to refer to her in our&nbsp;&nbsp;
+
+00:06:18.320 --> 00:06:22.560
+prompting. If we scroll down in this generate&nbsp;
+interface, we can see that there is a subject and&nbsp;&nbsp;
+
+00:06:22.560 --> 00:06:27.440
+framing section where we can describe the subject&nbsp;
+and action. But since we have a character created,&nbsp;&nbsp;
+
+00:06:27.440 --> 00:06:31.840
+we're just going to describe our subject as&nbsp;
+at Alice. You can select a shot type from a&nbsp;&nbsp;
+
+00:06:31.840 --> 00:06:37.120
+large variety of different shot types and POVs.&nbsp;
+You can describe the environment, the lighting,&nbsp;&nbsp;
+
+00:06:37.120 --> 00:06:41.600
+the lighting source, and the atmosphere and mood.&nbsp;
+You can describe the aspect ratio. We're going to&nbsp;&nbsp;
+
+00:06:41.600 --> 00:06:46.320
+do 9x6. And there are more advanced options&nbsp;
+that you can fiddle around with down here,&nbsp;&nbsp;
+
+00:06:46.320 --> 00:06:50.880
+such as the steps for each generation and the CFG,&nbsp;
+which I recommend just keeping at one. There's&nbsp;&nbsp;
+
+00:06:50.880 --> 00:06:54.480
+also a negative prompt section. So, anything that&nbsp;
+you're not wanting in your generation, you can&nbsp;&nbsp;
+
+00:06:54.480 --> 00:06:59.120
+describe in this box. So, what I'm going to do is&nbsp;
+head over to this final prompt section over here&nbsp;&nbsp;
+
+00:06:59.120 --> 00:07:05.280
+at the top. And I am able to select from a variety&nbsp;
+of different prompts that I have saved inside of&nbsp;&nbsp;
+
+00:07:05.280 --> 00:07:09.600
+the prompt library section within Simply Gen.&nbsp;
+Let's select prompt number 10. What I'm going to&nbsp;&nbsp;
+
+00:07:09.600 --> 00:07:15.040
+do is just take this entire prompt and put it into&nbsp;
+the subject and action section. And after a woman,&nbsp;&nbsp;
+
+00:07:15.040 --> 00:07:19.360
+I am going to write our character tag at Alice.&nbsp;
+So, this is the prompt that I'm going to be using.&nbsp;&nbsp;
+
+00:07:19.360 --> 00:07:24.320
+And you can see here if you have never used&nbsp;
+the model that you've selected before with&nbsp;&nbsp;
+
+00:07:24.320 --> 00:07:28.960
+Simply Genen and have the VRAM for it, you need to&nbsp;
+install the preset locally. So in this instance,&nbsp;&nbsp;
+
+00:07:28.960 --> 00:07:33.360
+we would be installing Flux Client edit locally.&nbsp;
+These models are rather large in size and can take&nbsp;&nbsp;
+
+00:07:33.360 --> 00:07:37.440
+some time to install. So allow that to download&nbsp;
+fully if you're using the model locally. However,&nbsp;&nbsp;
+
+00:07:37.440 --> 00:07:41.040
+I'm going to be using Simply Gen's cloud&nbsp;
+service to generate my images. So let's go&nbsp;&nbsp;
+
+00:07:41.040 --> 00:07:45.920
+ahead and select generate cloud. And we can see&nbsp;
+here that our generation has cued. All right,&nbsp;&nbsp;
+
+00:07:45.920 --> 00:07:50.240
+so our generation is finished. And now we can&nbsp;
+just head over to the gallery under assets and&nbsp;&nbsp;
+
+00:07:50.240 --> 00:07:54.720
+we can see what it has generated. And here we can&nbsp;
+see that we have generated an image. Now in my&nbsp;&nbsp;
+
+00:07:54.720 --> 00:07:59.120
+professional opinion, I think that we can get some&nbsp;
+output that looks much better than this. So let's&nbsp;&nbsp;
+
+00:07:59.120 --> 00:08:03.520
+go back over to the generate tab and mess around&nbsp;
+with some settings. So I'm going to be using the&nbsp;&nbsp;
+
+00:08:03.520 --> 00:08:08.800
+same exact prompting here. However, I'm going to&nbsp;
+switch the aspect ratio to a 1x1 square. And in&nbsp;&nbsp;
+
+00:08:08.800 --> 00:08:14.240
+the more advanced options section, I'm going to&nbsp;
+bump the steps up to six. So let's generate again&nbsp;&nbsp;
+
+00:08:14.240 --> 00:08:19.040
+and see what we get with that. All right, so our&nbsp;
+generation has just finished. So if we head over&nbsp;&nbsp;
+
+00:08:19.040 --> 00:08:24.640
+to the gallery section now, we can see that this&nbsp;
+generation is much much better. So I do recommend&nbsp;&nbsp;
+
+00:08:24.640 --> 00:08:29.120
+that you guys mess around with the settings and&nbsp;
+find what works best for you. Now I'm going to&nbsp;&nbsp;
+
+00:08:29.120 --> 00:08:33.760
+download this image and then I'm going to head&nbsp;
+over to the enhance section where we can upscale&nbsp;&nbsp;
+
+00:08:33.760 --> 00:08:37.840
+our image. And this will allow us to squeeze&nbsp;
+out a bunch of extra quality for every one of&nbsp;&nbsp;
+
+00:08:37.840 --> 00:08:42.480
+our generations. So I'm going to be using the RTX&nbsp;
+upscaler for images. And then I'm going to select&nbsp;&nbsp;
+
+00:08:42.480 --> 00:08:46.640
+upscale. So we can see that our generation is&nbsp;
+completed here and we can see here that we have a&nbsp;&nbsp;
+
+00:08:46.640 --> 00:08:51.680
+slider. So on the left hand side is our before and&nbsp;
+we can see up here and on the right hand side is&nbsp;&nbsp;
+
+00:08:51.680 --> 00:08:56.720
+our after. And we can see that if we zoom in the&nbsp;
+upscaling has allowed for us to get more texture&nbsp;&nbsp;
+
+00:08:56.720 --> 00:09:02.000
+on the skin, better quality on textures such as&nbsp;
+the shirt and in the background the bed there. We&nbsp;&nbsp;
+
+00:09:02.000 --> 00:09:07.120
+can see that it has become much more refined. And&nbsp;
+they also allow you to use the seed VR2 upscaler&nbsp;&nbsp;
+
+00:09:07.120 --> 00:09:11.440
+which I think is a much better model than the&nbsp;
+RTX upscaler. So if you want to run that, you can&nbsp;&nbsp;
+
+00:09:11.440 --> 00:09:15.920
+install that locally through Simply Genen and use&nbsp;
+the seed VR2 upscaler. Now let's say that you have&nbsp;&nbsp;
+
+00:09:15.920 --> 00:09:20.400
+already invested hours into creating a character&nbsp;
+Laura that you want to use for your AI influencer.&nbsp;&nbsp;
+
+00:09:20.400 --> 00:09:23.840
+Just because you switched over to Simply Genen&nbsp;
+doesn't mean that this was time wasted. You can&nbsp;&nbsp;
+
+00:09:23.840 --> 00:09:27.520
+actually use your character Laura inside of Simply&nbsp;
+Gen. So for this next part, I'm going to show&nbsp;&nbsp;
+
+00:09:27.520 --> 00:09:31.440
+you exactly how I do that. I'm going to be using&nbsp;
+Zimage Turbo running fully locally. So I'm going&nbsp;&nbsp;
+
+00:09:31.440 --> 00:09:36.240
+to head back over to the generate section, click&nbsp;
+on image, and I am going to select Zimage and&nbsp;&nbsp;
+
+00:09:36.240 --> 00:09:40.800
+then Z image turbo. Now, the very first thing that&nbsp;
+you're going to want to do is select the add Laura&nbsp;&nbsp;
+
+00:09:40.800 --> 00:09:45.120
+section here. By default, your Laura probably&nbsp;
+will not be recognized because it's not inside&nbsp;&nbsp;
+
+00:09:45.120 --> 00:09:49.600
+of the folder in which it needs to be within the&nbsp;
+Simply Gen directory. So, if you can't find one,&nbsp;&nbsp;
+
+00:09:49.600 --> 00:09:53.120
+you can manage your Loras by clicking on this&nbsp;
+and then you can select the add Laura section&nbsp;&nbsp;
+
+00:09:53.120 --> 00:09:57.760
+here and you can either upload a file or you can&nbsp;
+select a Lura from a URL. Now, I already have my&nbsp;&nbsp;
+
+00:09:57.760 --> 00:10:01.840
+Luras uploaded to Simply Genen. So, I'm just going&nbsp;
+to select the character Laura in which I want to&nbsp;&nbsp;
+
+00:10:01.840 --> 00:10:07.440
+use. You can see here that you are able to select&nbsp;
+the strength. So now using Z image turbo locally,&nbsp;&nbsp;
+
+00:10:07.440 --> 00:10:11.920
+what I'm going to do is use the same exact prompt&nbsp;
+that I used for generating our image with Alice&nbsp;&nbsp;
+
+00:10:11.920 --> 00:10:16.160
+and I'm just going to apply that with my character&nbsp;
+Laura that I have trained. So I'm just going to&nbsp;&nbsp;
+
+00:10:16.160 --> 00:10:20.480
+put the trigger word for my Laura inside of this&nbsp;
+prompt here. Use the same exact prompt and I'm&nbsp;&nbsp;
+
+00:10:20.480 --> 00:10:24.240
+going to do the same thing with the steps here&nbsp;
+and bump those up to six. And then you'll see here&nbsp;&nbsp;
+
+00:10:24.240 --> 00:10:29.120
+since I have already installed the Z image turbo&nbsp;
+model locally on my device through Simply Genen,&nbsp;&nbsp;
+
+00:10:29.120 --> 00:10:32.720
+I'm just going to press generate locally. You&nbsp;
+probably won't have this option available until&nbsp;&nbsp;
+
+00:10:32.720 --> 00:10:36.240
+you install the preset. So, make sure that you&nbsp;
+do that and allow for some time for the model to&nbsp;&nbsp;
+
+00:10:36.240 --> 00:10:40.720
+install. So, our generation has just completed.&nbsp;
+So, now we can head over to the gallery to view&nbsp;&nbsp;
+
+00:10:40.720 --> 00:10:45.760
+it. And here we can see it. And honestly, I'm so&nbsp;
+impressed with the quality of the output. Some of&nbsp;&nbsp;
+
+00:10:45.760 --> 00:10:50.160
+the generations that I have been able to do with&nbsp;
+inside of Simply Gen using local models installed&nbsp;&nbsp;
+
+00:10:50.160 --> 00:10:54.240
+to my device are actually better quality than&nbsp;
+what I've been able to get out of Comfy UI at&nbsp;&nbsp;
+
+00:10:54.240 --> 00:11:00.240
+sometimes. And after upscaling, we can see that&nbsp;
+the overall fine grain and resolution of the photo&nbsp;&nbsp;
+
+00:11:00.240 --> 00:11:04.400
+has increased drastically. So, I really recommend&nbsp;
+using this upscale feature. It's super awesome&nbsp;&nbsp;
+
+00:11:04.400 --> 00:11:09.360
+that it's built right into Simply Genen. So, now&nbsp;
+I'm going to show you guys how you can make videos&nbsp;&nbsp;
+
+00:11:09.360 --> 00:11:13.840
+with the character that you've created inside of&nbsp;
+Simply Genen. So, the first step is obviously to&nbsp;&nbsp;
+
+00:11:13.840 --> 00:11:17.760
+generate a base image. So, this is the base image&nbsp;
+that we're going to use just her in the gym. And&nbsp;&nbsp;
+
+00:11:17.760 --> 00:11:21.920
+once we select this base image from the gallery,&nbsp;
+we can then see that there is the option here to&nbsp;&nbsp;
+
+00:11:21.920 --> 00:11:26.160
+transform this image into a video. So, we're&nbsp;
+going to select video. And the model that I'm&nbsp;&nbsp;
+
+00:11:26.160 --> 00:11:31.040
+going to be using is LTX 2.3 image to video. And&nbsp;
+that brings us straight to the generate interface&nbsp;&nbsp;
+
+00:11:31.040 --> 00:11:35.760
+where we can then describe the action, the pose,&nbsp;
+and what's going on inside of the video. There's&nbsp;&nbsp;
+
+00:11:35.760 --> 00:11:40.000
+also an option here for character dialogue. And I&nbsp;
+will show you guys exactly how you can use this.&nbsp;&nbsp;
+
+00:11:40.000 --> 00:11:44.000
+So the first step is to obviously create&nbsp;
+a good prompt. The better your prompt is,&nbsp;&nbsp;
+
+00:11:44.000 --> 00:11:47.520
+and the more descriptive that it is, the&nbsp;
+better that the video is going to come out,&nbsp;&nbsp;
+
+00:11:47.520 --> 00:11:51.840
+obviously. So I'm shooting for a 7-second&nbsp;
+video. So we have described this video in&nbsp;&nbsp;
+
+00:11:51.840 --> 00:11:55.920
+three different sections here. So, the targeted&nbsp;
+style that I'm going for with this video is like&nbsp;&nbsp;
+
+00:11:55.920 --> 00:12:00.000
+a candid shot in the gym of her friend that just&nbsp;
+started recording her without her knowing. So,&nbsp;&nbsp;
+
+00:12:00.000 --> 00:12:03.840
+for the dialogue when she notices that she's&nbsp;
+being recorded by her friend is just going to be,&nbsp;&nbsp;
+
+00:12:03.840 --> 00:12:08.480
+"Oh my god, hi." We can also select the delivery&nbsp;
+here from this drop down list. So, we're going to&nbsp;&nbsp;
+
+00:12:08.480 --> 00:12:13.440
+select dramatic. Moving down towards the bottom,&nbsp;
+we can see here the aspect ratio. We can see that&nbsp;&nbsp;
+
+00:12:13.440 --> 00:12:17.600
+we can set different types of resolution. Keep in&nbsp;
+mind that the higher that you go in resolution,&nbsp;&nbsp;
+
+00:12:17.600 --> 00:12:21.600
+obviously, the more VRAMm intensive this is going&nbsp;
+to be. And then here we can select the duration&nbsp;&nbsp;
+
+00:12:21.600 --> 00:12:24.960
+of the video. So, like I said, I was going for a&nbsp;
+7-second clip here. So, that's what we're going&nbsp;&nbsp;
+
+00:12:24.960 --> 00:12:29.760
+to select in this timing. Now, once we have all of&nbsp;
+that set up, we can just generate. All right. So,&nbsp;&nbsp;
+
+00:12:29.760 --> 00:12:40.640
+our video has just generated. Let's&nbsp;
+check out the result. Oh my god. Hi.
+
+00:12:40.640 --> 00:12:44.800
+All right. So, looking back on it, I probably&nbsp;
+should have prompted that there were some like&nbsp;&nbsp;
+
+00:12:44.800 --> 00:12:50.080
+natural gym noises in the background. It's kind&nbsp;
+of just a skill issue. LTX 2.3 really is a great&nbsp;&nbsp;
+
+00:12:50.080 --> 00:12:54.400
+model and it's probably the best local model&nbsp;
+that you can run. And it really just comes down&nbsp;&nbsp;
+
+00:12:54.400 --> 00:13:00.400
+to upping your prompting game and learning how to&nbsp;
+prompt things that will make for better videos.&nbsp;&nbsp;
+
+00:13:00.400 --> 00:13:04.640
+But with a few adjustments, this video would&nbsp;
+be ready to be posted on Instagram right out&nbsp;&nbsp;
+
+00:13:04.640 --> 00:13:08.320
+of the box. It's really just a skill issue at the&nbsp;
+end of the day. I promise if you get really good&nbsp;&nbsp;
+
+00:13:08.320 --> 00:13:13.040
+at prompting, you can make crazy stuff with LTX&nbsp;
+2.3. Now, before we wrap up, I just want to go&nbsp;&nbsp;
+
+00:13:13.040 --> 00:13:17.200
+over again just how much is packed into this thing&nbsp;
+beyond what we've covered. In the preset store,&nbsp;&nbsp;
+
+00:13:17.200 --> 00:13:22.320
+video tab alone, you've got access to a huge&nbsp;
+range of models, LTX 2.3, and multiple variants,&nbsp;&nbsp;
+
+00:13:22.320 --> 00:13:27.920
+including a low VRAM version and a GGUF version&nbsp;
+for older cards. You have one 2.2 for text to&nbsp;&nbsp;
+
+00:13:27.920 --> 00:13:32.400
+video, one animate, which drives your character&nbsp;
+using motion from a reference video, otherwise&nbsp;&nbsp;
+
+00:13:32.400 --> 00:13:37.200
+known as motion control. And there's even a lip&nbsp;
+sync preset that takes a portrait and audio clip&nbsp;&nbsp;
+
+00:13:37.200 --> 00:13:43.040
+and syncs it up. And we have additional options&nbsp;
+for LTX, for low VRAMm with NSFW support included.&nbsp;&nbsp;
+
+00:13:43.040 --> 00:13:46.960
+And it's not just characters that you can create&nbsp;
+with Simply Genen. There's a whole product library&nbsp;&nbsp;
+
+00:13:46.960 --> 00:13:51.520
+where you can save reusable product assets and&nbsp;
+a product studio built specifically around them.&nbsp;&nbsp;
+
+00:13:51.520 --> 00:13:57.120
+In the preset store, the product recipes tab has&nbsp;
+ready-made setups like a 180°ree product reveal,&nbsp;&nbsp;
+
+00:13:57.120 --> 00:14:01.520
+cinematic product presenter, and a couple hero&nbsp;
+shot styles, all runnable on cloud in just a few&nbsp;&nbsp;
+
+00:14:01.520 --> 00:14:06.880
+steps. Then in the UGC recipes, you get presets&nbsp;
+built to combine the two. your character actually&nbsp;&nbsp;
+
+00:14:06.880 --> 00:14:11.680
+presenting or using a product on camera. So,&nbsp;
+if you're doing any kind of ad style content,&nbsp;&nbsp;
+
+00:14:11.680 --> 00:14:15.920
+this isn't just a face generator. It's built to&nbsp;
+handle the entire pipeline. And that's genuinely&nbsp;&nbsp;
+
+00:14:15.920 --> 00:14:20.400
+the whole point of this app. It's not just one&nbsp;
+trick. It's a packaged version of a full Comfy UI&nbsp;&nbsp;
+
+00:14:20.400 --> 00:14:24.880
+production pipeline. Characters, products, video&nbsp;
+upscaling, all in one place with a fraction of&nbsp;&nbsp;
+
+00:14:24.880 --> 00:14:28.480
+the setup. If you want to check out Simply Gen,&nbsp;
+the link is in the description below. Again,&nbsp;&nbsp;
+
+00:14:28.480 --> 00:14:32.800
+it's a onetime purchase, no subscription,&nbsp;
+and lifetime updates are included. I couldn't&nbsp;&nbsp;
+
+00:14:32.800 --> 00:14:36.880
+recommend this application enough. And if you end&nbsp;
+up trying it out, let me know what you make with
+

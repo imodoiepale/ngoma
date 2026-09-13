@@ -1,0 +1,14 @@
+The simplest, most effective AI video generation workflow in ComfyUI — running WAN 2.2 Image to Video (I2V). Drop in an image, write a prompt, get a video. No bloat, no overcomplicated node setups. Just results.
+In this video I walk you through every part of the workflow: the models, the LoRAs, how to set your resolution, and how to control your video length. If you're new to ComfyUI video generation, this is the perfect starting point.
+
+🔗 Download the FREE workflow → Join the Discord below
+
+🔗 FREE WORKFLOWS, COMMUNITY DISCUSSION, 1 ON 1 SESSIONS
+If you want 1-on-1 coaching for your ComfyUI/RunPod setup, LoRA training, or growing an AI influencer account, sessions are consultation-based — details inside: https://discord.gg/kUc76uk7HA
+⚡ RunPod GPU Cloud (referral) → https://get.runpod.io/x4yprxwsfyac
+
+🔍 ABOUT THIS WORKFLOW
+This workflow uses WAN 2.2 Image to Video — a dual-model pipeline (high noise + low noise) running 14B parameter models in FP8/FP16 precision. The Seko 4-step distill LoRAs allow the full pipeline to run in just 4 sampling steps, making it fast without sacrificing output quality. Resolution and video length are fully adjustable directly inside the WanImageToVideo node.
+Built and tested by LoRAtech. Free to use and share.
+
+#ComfyUI #AIVideo #WAN22 #ImageToVideo #AIVideoGeneration #ComfyUIWorkflow #WanVideo #AIAnimation #StableDiffusion #LoRA #AIArt #TextToVideo #ComfyUITutorial #AITools #GenerativeAI #WAN2 #VideoAI #AIContentCreation #LoRAtech #FreeWorkflow #ComfyUIBeginners #AIVideos #MachineLearning #DiffusionModels #AICreator #RunPod #ComfyUINodes #Wan22I2V #AIImageToVideo #VideoGeneration

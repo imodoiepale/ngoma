@@ -1,0 +1,49 @@
+How to Build a Custom AI Character Dataset with Z-Image Turbo in ComfyUI (Full Setup Guide)
+In this video I walk you through the complete process of creating a high-quality AI character dataset using Z-Image Turbo inside ComfyUI on RunPod — no shortcuts, no AI voiceovers, just a real step-by-step breakdown that actually works.
+We cover everything from setting up your cloud GPU environment to installing models, configuring your workflow, and generating a full batch of varied images with caption pairs ready for training.
+
+Get started:
+🔗 FREE WORKFLOWS, COMMUNITY DISCUSSION, 1 ON 1 SESSIONS
+If you want 1-on-1 coaching for your ComfyUI/RunPod setup, LoRA training, or growing an AI influencer account, sessions are consultation-based — details inside: https://discord.gg/kUc76uk7HA
+
+Get $5 free on RunPod with a $10 minimum deposit:
+👉 https://runpod.io?ref=jc6190fx
+Link to the 2nd video in this 2 part series:
+👉 https://youtu.be/2ie9pq5Saw4
+
+What you'll need:
+
+$5–10 budget for RunPod credits
+A reference image (generated, not a real person)
+Claude AI for generating terminal commands
+Grok AI for detailed body prompt generation
+Patience — this is a methodical process, not a quick hack
+
+
+Before downloading models — HuggingFace setup:
+Accept the Flux.2 Klein license agreement:
+🔗 https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8
+Create your HuggingFace access token:
+🔗 https://huggingface.co/settings/tokens
+
+Models used in this workflow:
+Flux.2 Klein 9B FP8 (main diffusion model — requires HuggingFace access token & license agreement):
+🔗 https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8
+VAE:
+🔗 https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors
+Text Encoder:
+🔗 https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors
+Face Detector (BBOX):
+🔗 https://huggingface.co/Bingsu/adetailer/resolve/main/face_yolov8m.pt
+SAM Model:
+🔗 https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
+
+Key takeaways:
+
+Your LoRA is only as good as the images you train it on
+Adjust your prompts, not your settings
+Don't filter images mid-generation — run the full batch first
+Use multiple angles (high, low, Dutch, front, back) for dataset variety
+
+
+Do not use real people for your AI character. Use generated or non-real reference images only.

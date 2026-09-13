@@ -1856,7 +1856,7 @@
    "collection": "icekiub",
    "node_count": 65,
    "sha256": "12175d23018e67e2bbfe6092bcfb85499bc20469ba2a6eab0f606f4f15428373",
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "node_pack:efficiency-nodes-comfyui",
@@ -1905,7 +1905,7 @@
    "collection": "icekiub",
    "node_count": 62,
    "sha256": "10e248be155dd302f68565084e8c8bbcc389ba19835db3df945b1536e98e02f4",
-   "sources": 1
+   "sources": 2
   },
   {
    "id": "workflow:workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json",
@@ -3321,6 +3321,1835 @@
    "id": "technique:audio ref",
    "kind": "technique",
    "label": "audio ref"
+  },
+  {
+   "id": "video:t_-oHMkXQqU",
+   "kind": "video",
+   "label": "Infinite wardrobe for your character (Free ComfyUI fashion workflow)",
+   "url": "https://www.youtube.com/watch?v=t_-oHMkXQqU",
+   "channel": "kiubai"
+  },
+  {
+   "id": "video:V-x_xg6CmQk",
+   "kind": "video",
+   "label": "Consistent character LoRA training using AI-toolkit (Flux Klein 9B)",
+   "url": "https://www.youtube.com/watch?v=V-x_xg6CmQk",
+   "channel": "kiubai"
+  },
+  {
+   "id": "model:flux-2-klein",
+   "kind": "model",
+   "label": "flux-2-klein"
+  },
+  {
+   "id": "video:DjNmqaUJcQk",
+   "kind": "video",
+   "label": "Consistent room and backgrounds with ComfyUI and Flux Klein",
+   "url": "https://www.youtube.com/watch?v=DjNmqaUJcQk",
+   "channel": "kiubai"
+  },
+  {
+   "id": "model:flux-dev",
+   "kind": "model",
+   "label": "flux-dev"
+  },
+  {
+   "id": "technique:face swap",
+   "kind": "technique",
+   "label": "face swap"
+  },
+  {
+   "id": "technique:detailer",
+   "kind": "technique",
+   "label": "detailer"
+  },
+  {
+   "id": "node_pack:face-detailer",
+   "kind": "node_pack",
+   "label": "face-detailer"
+  },
+  {
+   "id": "video:BGpt57KBwU8",
+   "kind": "video",
+   "label": "I Tested Every MiniMax H3 Speed Up So You Don't Have To",
+   "url": "https://www.youtube.com/watch?v=BGpt57KBwU8",
+   "channel": "loratech"
+  },
+  {
+   "id": "channel:loratech",
+   "kind": "channel",
+   "label": "loratech"
+  },
+  {
+   "id": "setting:steps=345",
+   "kind": "setting",
+   "label": "steps=345"
+  },
+  {
+   "id": "setting:shift=12",
+   "kind": "setting",
+   "label": "shift=12"
+  },
+  {
+   "id": "setting:step=600",
+   "kind": "setting",
+   "label": "step=600"
+  },
+  {
+   "id": "setting:steps=544",
+   "kind": "setting",
+   "label": "steps=544"
+  },
+  {
+   "id": "setting:step=500",
+   "kind": "setting",
+   "label": "step=500"
+  },
+  {
+   "id": "setting:step=768",
+   "kind": "setting",
+   "label": "step=768"
+  },
+  {
+   "id": "setting:steps=768",
+   "kind": "setting",
+   "label": "steps=768"
+  },
+  {
+   "id": "setting:steps=20",
+   "kind": "setting",
+   "label": "steps=20"
+  },
+  {
+   "id": "setting:step=3",
+   "kind": "setting",
+   "label": "step=3"
+  },
+  {
+   "id": "hardware:32GB vram",
+   "kind": "hardware",
+   "label": "32GB vram"
+  },
+  {
+   "id": "hardware:64GB ram",
+   "kind": "hardware",
+   "label": "64GB ram"
+  },
+  {
+   "id": "technique:reference to video",
+   "kind": "technique",
+   "label": "reference to video"
+  },
+  {
+   "id": "video:6oz0ms9GRY8",
+   "kind": "video",
+   "label": "MiniMax H3 Can Make Infinite Length Videos Now (Low VRAM)",
+   "url": "https://www.youtube.com/watch?v=6oz0ms9GRY8",
+   "channel": "loratech"
+  },
+  {
+   "id": "technique:image to video",
+   "kind": "technique",
+   "label": "image to video"
+  },
+  {
+   "id": "technique:denoise",
+   "kind": "technique",
+   "label": "denoise"
+  },
+  {
+   "id": "technique:character consistency",
+   "kind": "technique",
+   "label": "character consistency"
+  },
+  {
+   "id": "creative:storyboard",
+   "kind": "creative",
+   "label": "storyboard"
+  },
+  {
+   "id": "setting:fps=24",
+   "kind": "setting",
+   "label": "fps=24"
+  },
+  {
+   "id": "video:CXug7eCjtrw",
+   "kind": "video",
+   "label": "Build A Krea 2 Character LoRA From Scratch Using ComfyUI",
+   "url": "https://www.youtube.com/watch?v=CXug7eCjtrw",
+   "channel": "loratech"
+  },
+  {
+   "id": "hardware:48GB vram",
+   "kind": "hardware",
+   "label": "48GB vram"
+  },
+  {
+   "id": "setting:step=21",
+   "kind": "setting",
+   "label": "step=21"
+  },
+  {
+   "id": "setting:step=2",
+   "kind": "setting",
+   "label": "step=2"
+  },
+  {
+   "id": "setting:step=1",
+   "kind": "setting",
+   "label": "step=1"
+  },
+  {
+   "id": "setting:step=1500",
+   "kind": "setting",
+   "label": "step=1500"
+  },
+  {
+   "id": "setting:step=750",
+   "kind": "setting",
+   "label": "step=750"
+  },
+  {
+   "id": "setting:step=1250",
+   "kind": "setting",
+   "label": "step=1250"
+  },
+  {
+   "id": "setting:steps=1250",
+   "kind": "setting",
+   "label": "steps=1250"
+  },
+  {
+   "id": "video:cVH4mobuOO4",
+   "kind": "video",
+   "label": "Run LTX 2.5 Locally Without ComfyUI Ever Being Opened (LOW VRAM)",
+   "url": "https://www.youtube.com/watch?v=cVH4mobuOO4",
+   "channel": "loratech"
+  },
+  {
+   "id": "hardware:16GB vram",
+   "kind": "hardware",
+   "label": "16GB vram"
+  },
+  {
+   "id": "video:JN6P0C2BlX4",
+   "kind": "video",
+   "label": "Build a ComfyUI Upscale Workflow and Actually Understand It | Build With Me [EP. 5]",
+   "url": "https://www.youtube.com/watch?v=JN6P0C2BlX4",
+   "channel": "loratech"
+  },
+  {
+   "id": "hardware:8GB vram",
+   "kind": "hardware",
+   "label": "8GB vram"
+  },
+  {
+   "id": "creative:before and after",
+   "kind": "creative",
+   "label": "before and after"
+  },
+  {
+   "id": "setting:seed=2",
+   "kind": "setting",
+   "label": "seed=2"
+  },
+  {
+   "id": "setting:batch size=21",
+   "kind": "setting",
+   "label": "batch size=21"
+  },
+  {
+   "id": "video:kpeTUPaUXu0",
+   "kind": "video",
+   "label": "Wan 2.2 Animate v2 New Release - The New King Of Motion Control?",
+   "url": "https://www.youtube.com/watch?v=kpeTUPaUXu0",
+   "channel": "loratech"
+  },
+  {
+   "id": "model:wan-2.2",
+   "kind": "model",
+   "label": "wan-2.2"
+  },
+  {
+   "id": "technique:motion transfer",
+   "kind": "technique",
+   "label": "motion transfer"
+  },
+  {
+   "id": "technique:inpaint",
+   "kind": "technique",
+   "label": "inpaint"
+  },
+  {
+   "id": "video:bWyVCATqzSU",
+   "kind": "video",
+   "label": "Run MiniMax H3 Locally (8GB VRAM) With Zero ComfyUI Setup",
+   "url": "https://www.youtube.com/watch?v=bWyVCATqzSU",
+   "channel": "loratech"
+  },
+  {
+   "id": "video:XeL91XYC6FE",
+   "kind": "video",
+   "label": "This One Node Replaces Your Entire Krea 2 Workflow (Krea 2 One Node)",
+   "url": "https://www.youtube.com/watch?v=XeL91XYC6FE",
+   "channel": "loratech"
+  },
+  {
+   "id": "technique:image to image",
+   "kind": "technique",
+   "label": "image to image"
+  },
+  {
+   "id": "setting:scheduler=euler",
+   "kind": "setting",
+   "label": "scheduler=euler"
+  },
+  {
+   "id": "setting:guidance=4.5",
+   "kind": "setting",
+   "label": "guidance=4.5"
+  },
+  {
+   "id": "setting:sampler=simple",
+   "kind": "setting",
+   "label": "sampler=simple"
+  },
+  {
+   "id": "setting:denoise=0.4",
+   "kind": "setting",
+   "label": "denoise=0.4"
+  },
+  {
+   "id": "video:szjmpLgxcV8",
+   "kind": "video",
+   "label": "How I Make Consistent AI Characters Without ComfyUI",
+   "url": "https://www.youtube.com/watch?v=szjmpLgxcV8",
+   "channel": "loratech"
+  },
+  {
+   "id": "video:_5GY2mkMdwQ",
+   "kind": "video",
+   "label": "Krea 2 Image To Image Tutorial For ComfyUI (Free Workflow)",
+   "url": "https://www.youtube.com/watch?v=_5GY2mkMdwQ",
+   "channel": "loratech"
+  },
+  {
+   "id": "node_pack:ultralytics",
+   "kind": "node_pack",
+   "label": "ultralytics"
+  },
+  {
+   "id": "video:6M56OuHws_8",
+   "kind": "video",
+   "label": "I Made The Most Advanced Auto-Prompt Node In ComfyUI",
+   "url": "https://www.youtube.com/watch?v=6M56OuHws_8",
+   "channel": "loratech"
+  },
+  {
+   "id": "video:lOJFDwqPvRA",
+   "kind": "video",
+   "label": "AI Influencers Are Getting Banned, I Built a ComfyUI Fix",
+   "url": "https://www.youtube.com/watch?v=lOJFDwqPvRA",
+   "channel": "loratech"
+  },
+  {
+   "id": "video:yfN-DMCoue0",
+   "kind": "video",
+   "label": "Advanced ComfyUI Nodes That Instantly Upgrade Your Workflow",
+   "url": "https://www.youtube.com/watch?v=yfN-DMCoue0",
+   "channel": "loratech"
+  },
+  {
+   "id": "creative:hook",
+   "kind": "creative",
+   "label": "hook"
+  },
+  {
+   "id": "setting:strength=20",
+   "kind": "setting",
+   "label": "strength=20"
+  },
+  {
+   "id": "setting:seed=42",
+   "kind": "setting",
+   "label": "seed=42"
+  },
+  {
+   "id": "video:k1STt31lsDA",
+   "kind": "video",
+   "label": "Build a ComfyUI Image Edit Workflow and Actually Understand It | Build With Me [EP. 4]",
+   "url": "https://www.youtube.com/watch?v=k1STt31lsDA",
+   "channel": "loratech"
+  },
+  {
+   "id": "model:qwen-image-edit",
+   "kind": "model",
+   "label": "qwen-image-edit"
+  },
+  {
+   "id": "video:jpXH_numZg8",
+   "kind": "video",
+   "label": "Create Full Instagram Carousels From 1 Photo With This ComfyUI Workflow (It's Free)",
+   "url": "https://www.youtube.com/watch?v=jpXH_numZg8",
+   "channel": "loratech"
+  },
+  {
+   "id": "creative:carousel",
+   "kind": "creative",
+   "label": "carousel"
+  },
+  {
+   "id": "video:fJFnHkU6hzo",
+   "kind": "video",
+   "label": "Build a ComfyUI Inpainting Workflow and Actually Understand It | Build With Me [EP. 3]",
+   "url": "https://www.youtube.com/watch?v=fJFnHkU6hzo",
+   "channel": "loratech"
+  },
+  {
+   "id": "model:sam3",
+   "kind": "model",
+   "label": "sam3"
+  },
+  {
+   "id": "video:yGYhNYPmvm0",
+   "kind": "video",
+   "label": "This Workflow Puts Your AI Influencer in Real Life Locations With No \"AI Slop\"",
+   "url": "https://www.youtube.com/watch?v=yGYhNYPmvm0",
+   "channel": "loratech"
+  },
+  {
+   "id": "setting:denoise=0.6",
+   "kind": "setting",
+   "label": "denoise=0.6"
+  },
+  {
+   "id": "video:mpMFjL47Cb0",
+   "kind": "video",
+   "label": "Learn ComfyUI Img2Img by Building It Yourself (With LoRA Support) | Build With Me [EP. 2]",
+   "url": "https://www.youtube.com/watch?v=mpMFjL47Cb0",
+   "channel": "loratech"
+  },
+  {
+   "id": "technique:img2img",
+   "kind": "technique",
+   "label": "img2img"
+  },
+  {
+   "id": "setting:sampler=1",
+   "kind": "setting",
+   "label": "sampler=1"
+  },
+  {
+   "id": "setting:denoise=1.0",
+   "kind": "setting",
+   "label": "denoise=1.0"
+  },
+  {
+   "id": "setting:denoise=0.75",
+   "kind": "setting",
+   "label": "denoise=0.75"
+  },
+  {
+   "id": "video:K02DUjP0bIw",
+   "kind": "video",
+   "label": "How to Get a RunPod GPU When Everything Says Unavailable",
+   "url": "https://www.youtube.com/watch?v=K02DUjP0bIw",
+   "channel": "loratech"
+  },
+  {
+   "id": "video:Bvpn3miGpw0",
+   "kind": "video",
+   "label": "Build a ComfyUI Workflow and Actually Understand It | Build With Me [EP. 1]",
+   "url": "https://www.youtube.com/watch?v=Bvpn3miGpw0",
+   "channel": "loratech"
+  },
+  {
+   "id": "creative:9:16",
+   "kind": "creative",
+   "label": "9:16"
+  },
+  {
+   "id": "setting:steps=1",
+   "kind": "setting",
+   "label": "steps=1"
+  },
+  {
+   "id": "gpu:rtx 4090 ",
+   "kind": "gpu",
+   "label": "rtx 4090 "
+  },
+  {
+   "id": "video:44CTwaYdRBQ",
+   "kind": "video",
+   "label": "WAN 2.2 Image to Video in ComfyUI — Simple Workflow That Actually Works (Best Results)",
+   "url": "https://www.youtube.com/watch?v=44CTwaYdRBQ",
+   "channel": "loratech"
+  },
+  {
+   "id": "gpu:rtx 4090",
+   "kind": "gpu",
+   "label": "rtx 4090"
+  },
+  {
+   "id": "setting:frame=24",
+   "kind": "setting",
+   "label": "frame=24"
+  },
+  {
+   "id": "setting:frames=24",
+   "kind": "setting",
+   "label": "frames=24"
+  },
+  {
+   "id": "video:rFmoSu7pRKE",
+   "kind": "video",
+   "label": "If You're an AI Influencer and You're Not Doing This You're Already Behind",
+   "url": "https://www.youtube.com/watch?v=rFmoSu7pRKE",
+   "channel": "loratech"
+  },
+  {
+   "id": "video:Te__JlXlBHw",
+   "kind": "video",
+   "label": "I Built the Ultimate Image to Image Workflow for OFM AI Influencer Pages",
+   "url": "https://www.youtube.com/watch?v=Te__JlXlBHw",
+   "channel": "loratech"
+  },
+  {
+   "id": "video:2ie9pq5Saw4",
+   "kind": "video",
+   "label": "The ONLY Video You Need To Create AI Character LoRAs From SCRATCH [PART 2]",
+   "url": "https://www.youtube.com/watch?v=2ie9pq5Saw4",
+   "channel": "loratech"
+  },
+  {
+   "id": "gpu:rtx 5090",
+   "kind": "gpu",
+   "label": "rtx 5090"
+  },
+  {
+   "id": "setting:steps=3",
+   "kind": "setting",
+   "label": "steps=3"
+  },
+  {
+   "id": "setting:step=2700",
+   "kind": "setting",
+   "label": "step=2700"
+  },
+  {
+   "id": "setting:step=2600",
+   "kind": "setting",
+   "label": "step=2600"
+  },
+  {
+   "id": "video:OZe6UwPqr4g",
+   "kind": "video",
+   "label": "The ONLY Video You Need To Create AI Character LoRAs From SCRATCH [PART 1]",
+   "url": "https://www.youtube.com/watch?v=OZe6UwPqr4g",
+   "channel": "loratech"
+  },
+  {
+   "id": "video:lUT8ETBu1SE",
+   "kind": "video",
+   "label": "Get INSANELY Realistic Facial Features With This Simple Fix - AI Image Generation/AI Influ",
+   "url": "https://www.youtube.com/watch?v=lUT8ETBu1SE",
+   "channel": "loratech"
+  },
+  {
+   "id": "video:HkAvmL4DvHo",
+   "kind": "video",
+   "label": "Generate 20 HD AI Images Per Minute  (with LoRAs) With This INSANE Z-Image Turbo Workflow ",
+   "url": "https://www.youtube.com/watch?v=HkAvmL4DvHo",
+   "channel": "loratech"
+  },
+  {
+   "id": "video:Ghvd0E2Lki4",
+   "kind": "video",
+   "label": "Rent A GPU and Run COMFYUI in 10 Minutes (AI Image and Video Generation) (RunPod)",
+   "url": "https://www.youtube.com/watch?v=Ghvd0E2Lki4",
+   "channel": "loratech"
+  },
+  {
+   "id": "hardware:141GB card",
+   "kind": "hardware",
+   "label": "141GB card"
+  },
+  {
+   "id": "version:pytorch 2.8",
+   "kind": "version",
+   "label": "pytorch 2.8"
+  },
+  {
+   "id": "video:fhgaaJV1OTQ",
+   "kind": "video",
+   "label": "Wan Animate 2 Or Scail 2? The Answer Surprised Me #comfyui #ai #aivideo #video",
+   "url": "https://www.youtube.com/watch?v=fhgaaJV1OTQ",
+   "channel": "loratech"
+  },
+  {
+   "id": "model:wan-animate",
+   "kind": "model",
+   "label": "wan-animate"
+  },
+  {
+   "id": "node_pack:wan-animate",
+   "kind": "node_pack",
+   "label": "wan-animate"
+  },
+  {
+   "id": "video:deL4H1G0b7s",
+   "kind": "video",
+   "label": "How To Use Krea 2 for Img2Img and Txt2Img with Absolutely no Hassle",
+   "url": "https://www.youtube.com/watch?v=deL4H1G0b7s",
+   "channel": "loratech"
+  },
+  {
+   "id": "video:3iTNtbfD6_g",
+   "kind": "video",
+   "label": "This ComfyUI Model is way better than Nano Banana",
+   "url": "https://www.youtube.com/watch?v=3iTNtbfD6_g",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "channel:matrixlabai",
+   "kind": "channel",
+   "label": "matrixlabai"
+  },
+  {
+   "id": "video:U8l5w_sCkhg",
+   "kind": "video",
+   "label": "ComfyUI + Claude = Unlimited AI UGC Videos (FREE Workflow)",
+   "url": "https://www.youtube.com/watch?v=U8l5w_sCkhg",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "creative:reel",
+   "kind": "creative",
+   "label": "reel"
+  },
+  {
+   "id": "model:gpt-image-2",
+   "kind": "model",
+   "label": "gpt-image-2"
+  },
+  {
+   "id": "video:sYoYrw_NMGY",
+   "kind": "video",
+   "label": "LTX 2.5 AI Influencer Test: Fast, but Good Enough?",
+   "url": "https://www.youtube.com/watch?v=sYoYrw_NMGY",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "model:ltx-2",
+   "kind": "model",
+   "label": "ltx-2"
+  },
+  {
+   "id": "setting:frame=2.3",
+   "kind": "setting",
+   "label": "frame=2.3"
+  },
+  {
+   "id": "setting:frame=2.5",
+   "kind": "setting",
+   "label": "frame=2.5"
+  },
+  {
+   "id": "video:x9ETAqkAysg",
+   "kind": "video",
+   "label": "This Character Board Makes Your AI Influencer 100% Consistent (FREE WORKFLOW)",
+   "url": "https://www.youtube.com/watch?v=x9ETAqkAysg",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:rbBNEVyQyyk",
+   "kind": "video",
+   "label": "The ONLY Dataset Video You Will Ever Need for AI Influencers (FREE WORKFLOW)",
+   "url": "https://www.youtube.com/watch?v=rbBNEVyQyyk",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "model:nano-banana-pro",
+   "kind": "model",
+   "label": "nano-banana-pro"
+  },
+  {
+   "id": "video:7Hfn8g-httk",
+   "kind": "video",
+   "label": "Krea 2 Makes AI Influencers TOO Realistic (LoRa + Workflow)",
+   "url": "https://www.youtube.com/watch?v=7Hfn8g-httk",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "gpu:rtx 6000 ",
+   "kind": "gpu",
+   "label": "rtx 6000 "
+  },
+  {
+   "id": "setting:steps=3000",
+   "kind": "setting",
+   "label": "steps=3000"
+  },
+  {
+   "id": "video:Es-Kpx9mnMo",
+   "kind": "video",
+   "label": "Copy Viral AI Reels in Seconds with This Claude Workflow",
+   "url": "https://www.youtube.com/watch?v=Es-Kpx9mnMo",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "setting:resolution=1080",
+   "kind": "setting",
+   "label": "resolution=1080"
+  },
+  {
+   "id": "video:nWlLlnjWC6k",
+   "kind": "video",
+   "label": "Build a Complete AI Character Dataset From Just 3 Photos",
+   "url": "https://www.youtube.com/watch?v=nWlLlnjWC6k",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "setting:resolution=3",
+   "kind": "setting",
+   "label": "resolution=3"
+  },
+  {
+   "id": "video:xgVLleA0yZM",
+   "kind": "video",
+   "label": "Create an Ultra Realistic AI Influencer From Scratch (LoRa + FREE Workflow)",
+   "url": "https://www.youtube.com/watch?v=xgVLleA0yZM",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "setting:step=30",
+   "kind": "setting",
+   "label": "step=30"
+  },
+  {
+   "id": "setting:resolution=512",
+   "kind": "setting",
+   "label": "resolution=512"
+  },
+  {
+   "id": "video:_mN1AAzcBT4",
+   "kind": "video",
+   "label": "How to Create an AI Influencer from scratch Without Training a LoRA",
+   "url": "https://www.youtube.com/watch?v=_mN1AAzcBT4",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "setting:step=simple",
+   "kind": "setting",
+   "label": "step=simple"
+  },
+  {
+   "id": "video:JzCT6Ou88lQ",
+   "kind": "video",
+   "label": "ComfyUI AI UGC: The Full Result From One Workflow",
+   "url": "https://www.youtube.com/watch?v=JzCT6Ou88lQ",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:5Gc07vHQy7o",
+   "kind": "video",
+   "label": "LTX 2.5 Verdict: Consistent on the First Generation",
+   "url": "https://www.youtube.com/watch?v=5Gc07vHQy7o",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:kRjDUQt_Du8",
+   "kind": "video",
+   "label": "LTX 2.5 Test: Great Quality, One Big Camera Flaw",
+   "url": "https://www.youtube.com/watch?v=kRjDUQt_Du8",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:7tl2hG-mON0",
+   "kind": "video",
+   "label": "AI UGC Targeting: Replace One Person, Protect the Rest",
+   "url": "https://www.youtube.com/watch?v=7tl2hG-mON0",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:SbEeQNEy7F4",
+   "kind": "video",
+   "label": "ComfyUI AI UGC: One Workflow Writes the Whole Prompt",
+   "url": "https://www.youtube.com/watch?v=SbEeQNEy7F4",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:EPiyxAJeIwQ",
+   "kind": "video",
+   "label": "AI Influencer Consistency: Test Eyes, Skin, and Identity",
+   "url": "https://www.youtube.com/watch?v=EPiyxAJeIwQ",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:j-Up8u0ih9A",
+   "kind": "video",
+   "label": "LoRA Realism Upgrade: Make AI Images Look More Realistic",
+   "url": "https://www.youtube.com/watch?v=j-Up8u0ih9A",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:TIq37vTo_Qw",
+   "kind": "video",
+   "label": "AI Influencer Identity Test: Does the Face Stay Consistent?",
+   "url": "https://www.youtube.com/watch?v=TIq37vTo_Qw",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:YxT-Y1MiAKw",
+   "kind": "video",
+   "label": "ComfyUI LoRA Workflow: Add Your Character Model Easily",
+   "url": "https://www.youtube.com/watch?v=YxT-Y1MiAKw",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:XuyLno1kw5U",
+   "kind": "video",
+   "label": "AI Influencer Face: Merge 3-5 References into One Identity",
+   "url": "https://www.youtube.com/watch?v=XuyLno1kw5U",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:1_VljGpQWNs",
+   "kind": "video",
+   "label": "RunPod AI Influencer: Free Template for 4090 or 5090",
+   "url": "https://www.youtube.com/watch?v=1_VljGpQWNs",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:fSPfoMwisEE",
+   "kind": "video",
+   "label": "AI Influencer Identity: Three References Define the Character",
+   "url": "https://www.youtube.com/watch?v=fSPfoMwisEE",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:K7OPZE_rvAY",
+   "kind": "video",
+   "label": "LoRA Training Settings: 3000 Steps and Checkpoints",
+   "url": "https://www.youtube.com/watch?v=K7OPZE_rvAY",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:iukPngOsbck",
+   "kind": "video",
+   "label": "ComfyUI API Credits: Pay Only for What You Generate",
+   "url": "https://www.youtube.com/watch?v=iukPngOsbck",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:_kKPhPc0H6Q",
+   "kind": "video",
+   "label": "AI Influencer Dataset: Upload 34 Images for LoRA Training",
+   "url": "https://www.youtube.com/watch?v=_kKPhPc0H6Q",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:FOwqixIr8HI",
+   "kind": "video",
+   "label": "Gemini 3.5 Flash: Two Analyses Stop AI Guessing",
+   "url": "https://www.youtube.com/watch?v=FOwqixIr8HI",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:A724AWYca9E",
+   "kind": "video",
+   "label": "Seedance Workflow: Replace the Character in a Reference Video",
+   "url": "https://www.youtube.com/watch?v=A724AWYca9E",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:Fv_NFgdJdn8",
+   "kind": "video",
+   "label": "AI UGC Workflow: Rebuild a Viral Video with Your Influencer",
+   "url": "https://www.youtube.com/watch?v=Fv_NFgdJdn8",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:U4tgR9ANtP4",
+   "kind": "video",
+   "label": "Seedance Setup: Keep Your AI Character Consistent",
+   "url": "https://www.youtube.com/watch?v=U4tgR9ANtP4",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:GFUnh6TcR8I",
+   "kind": "video",
+   "label": "AI Dataset: Take Your Character Beyond Instagram",
+   "url": "https://www.youtube.com/watch?v=GFUnh6TcR8I",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:1OhF6LUhf6s",
+   "kind": "video",
+   "label": "LTX 2.5 Open Weights: Here’s What You Actually Get",
+   "url": "https://www.youtube.com/watch?v=1OhF6LUhf6s",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:N010Q6Fo_RM",
+   "kind": "video",
+   "label": "AI Video Model Test: Great Quality, One Big Miss",
+   "url": "https://www.youtube.com/watch?v=N010Q6Fo_RM",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:c6prWYhuN7c",
+   "kind": "video",
+   "label": "LTX 2.5 Speed Test: 5-Second Clips in 2–3 Minutes",
+   "url": "https://www.youtube.com/watch?v=c6prWYhuN7c",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "gpu:rtx 5090 ",
+   "kind": "gpu",
+   "label": "rtx 5090 "
+  },
+  {
+   "id": "video:CSo4G-rYj2A",
+   "kind": "video",
+   "label": "AI Influencer Benchmark: Can LTX 2.5 Keep Her Consistent?",
+   "url": "https://www.youtube.com/watch?v=CSo4G-rYj2A",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:T5HPW6ayXJ4",
+   "kind": "video",
+   "label": "Character Board: 29 AI Influencer Views From 4 Generations",
+   "url": "https://www.youtube.com/watch?v=T5HPW6ayXJ4",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:Dw2LBlruqwY",
+   "kind": "video",
+   "label": "LTX 2.5 Nailed This Brutal Movement Test—Almost",
+   "url": "https://www.youtube.com/watch?v=Dw2LBlruqwY",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:KtGfYueD-VM",
+   "kind": "video",
+   "label": "AI Character Board vs Dataset: The Consistency Difference",
+   "url": "https://www.youtube.com/watch?v=KtGfYueD-VM",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:hkPUsoCRmT0",
+   "kind": "video",
+   "label": "AI Character Sheets Need These Reference Images",
+   "url": "https://www.youtube.com/watch?v=hkPUsoCRmT0",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:8m-VShqqaH8",
+   "kind": "video",
+   "label": "AI Character Sheet Setup Takes Just 3 Clicks",
+   "url": "https://www.youtube.com/watch?v=8m-VShqqaH8",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:dHYKDnsszx4",
+   "kind": "video",
+   "label": "AI Influencer Consistency Starts With One Character Board",
+   "url": "https://www.youtube.com/watch?v=dHYKDnsszx4",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:soxwp-3QI2Q",
+   "kind": "video",
+   "label": "AI Dataset System Explains Every Training Image",
+   "url": "https://www.youtube.com/watch?v=soxwp-3QI2Q",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:Oaw5S6ckmcQ",
+   "kind": "video",
+   "label": "AI Influencer Workflow Runs Without a GPU",
+   "url": "https://www.youtube.com/watch?v=Oaw5S6ckmcQ",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:yiH5yLlJxyI",
+   "kind": "video",
+   "label": "AI Dataset Workflow Turns 4 Photos Into 25 Shots",
+   "url": "https://www.youtube.com/watch?v=yiH5yLlJxyI",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:HUyoajw8_r8",
+   "kind": "video",
+   "label": "Making Your AI Influencer REAL: The 'Real-Life' Touch",
+   "url": "https://www.youtube.com/watch?v=HUyoajw8_r8",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:g8QeLqFVCkU",
+   "kind": "video",
+   "label": "The Golden Rule: AI Influencer Body Generation!",
+   "url": "https://www.youtube.com/watch?v=g8QeLqFVCkU",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:lbvEBr_iSs4",
+   "kind": "video",
+   "label": "Mastering AI Influencer Face Training: Angles vs. Expressions",
+   "url": "https://www.youtube.com/watch?v=lbvEBr_iSs4",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:wImFncIELTA",
+   "kind": "video",
+   "label": "AI Influencer Prompt Secret: Forget Hair Color!",
+   "url": "https://www.youtube.com/watch?v=wImFncIELTA",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:4GisMRch1X0",
+   "kind": "video",
+   "label": "AI Influencer Face: Angles, Expressions, and Geometry",
+   "url": "https://www.youtube.com/watch?v=4GisMRch1X0",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:xMOwooApyUE",
+   "kind": "video",
+   "label": "Your AI Influencer Needs MORE Than 4 Pictures",
+   "url": "https://www.youtube.com/watch?v=xMOwooApyUE",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:v7DcgK153VY",
+   "kind": "video",
+   "label": "Turn 4 Pics into a FULL AI Influencer Dataset!",
+   "url": "https://www.youtube.com/watch?v=v7DcgK153VY",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:Ga-XcP3KHTE",
+   "kind": "video",
+   "label": "Use a Volume Disk for AI Toolkit LoRA Training",
+   "url": "https://www.youtube.com/watch?v=Ga-XcP3KHTE",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:qQA5_QwURiY",
+   "kind": "video",
+   "label": "Krea 2 Runs on Your Own Machine - Your Content, Your Rules",
+   "url": "https://www.youtube.com/watch?v=qQA5_QwURiY",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:-4KWOci1fTA",
+   "kind": "video",
+   "label": "Claude Skills Only Work After This Folder Setup",
+   "url": "https://www.youtube.com/watch?v=-4KWOci1fTA",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:vjLCyu-V3PA",
+   "kind": "video",
+   "label": "Put Your Image API Key in the .env File - Not the Prompt",
+   "url": "https://www.youtube.com/watch?v=vjLCyu-V3PA",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:fI4i3AtZ08E",
+   "kind": "video",
+   "label": "Tell Claude the Exact Size Before It Builds Your Instagram Feed",
+   "url": "https://www.youtube.com/watch?v=fI4i3AtZ08E",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:U08lxtZ-MSI",
+   "kind": "video",
+   "label": "Split Face and Body References Before Claude Generates Anything",
+   "url": "https://www.youtube.com/watch?v=U08lxtZ-MSI",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:q2OCATX-6Jc",
+   "kind": "video",
+   "label": "I Built an AI Influencer With Claude - She Makes Thousands",
+   "url": "https://www.youtube.com/watch?v=q2OCATX-6Jc",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:IHRrj1bnIoo",
+   "kind": "video",
+   "label": "Claude Builds a Full AI Character Dataset on Auto Mode",
+   "url": "https://www.youtube.com/watch?v=IHRrj1bnIoo",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:v9LK0SPx0iE",
+   "kind": "video",
+   "label": "Claude Keeps Your AI Influencer's Face Consistent",
+   "url": "https://www.youtube.com/watch?v=v9LK0SPx0iE",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:dJZ41GwBfHs",
+   "kind": "video",
+   "label": "This FREE AI Influencer System Does Everything",
+   "url": "https://www.youtube.com/watch?v=dJZ41GwBfHs",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:96EY38zjwfU",
+   "kind": "video",
+   "label": "Find the LoRA Sweet Spot After Training",
+   "url": "https://www.youtube.com/watch?v=96EY38zjwfU",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:c1q4XYcvLWs",
+   "kind": "video",
+   "label": "4K vs 720p AI Reels - Can You Tell?",
+   "url": "https://www.youtube.com/watch?v=c1q4XYcvLWs",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:aJnu-ytzPy0",
+   "kind": "video",
+   "label": "Train Your LoRA on Krea 2 RAW - Never Turbo",
+   "url": "https://www.youtube.com/watch?v=aJnu-ytzPy0",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:yZpNnvLJS-Q",
+   "kind": "video",
+   "label": "The AI Voice Secret: Fewer Words, More Human",
+   "url": "https://www.youtube.com/watch?v=yZpNnvLJS-Q",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:GEEH_BEr3yM",
+   "kind": "video",
+   "label": "Your Dataset Decides How Real Your AI Looks",
+   "url": "https://www.youtube.com/watch?v=GEEH_BEr3yM",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:mvj-th4_XqI",
+   "kind": "video",
+   "label": "Claude Rebuilds Viral Reels in Minutes",
+   "url": "https://www.youtube.com/watch?v=mvj-th4_XqI",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:Bc_IKVsdOKo",
+   "kind": "video",
+   "label": "Don't Lose Your Best AI Checkpoint (LoRA Training)",
+   "url": "https://www.youtube.com/watch?v=Bc_IKVsdOKo",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:jSwqflZxxow",
+   "kind": "video",
+   "label": "Claude Knows Who's Talking in Any Viral Reel",
+   "url": "https://www.youtube.com/watch?v=jSwqflZxxow",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:OK6-tFUIzLU",
+   "kind": "video",
+   "label": "From Zero to AI Influencer in 3 Steps",
+   "url": "https://www.youtube.com/watch?v=OK6-tFUIzLU",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "gpu:rtx 6000",
+   "kind": "gpu",
+   "label": "rtx 6000"
+  },
+  {
+   "id": "video:Y9t4Aj8Hghk",
+   "kind": "video",
+   "label": "Your Own AI Model Is the Real Gold Mine",
+   "url": "https://www.youtube.com/watch?v=Y9t4Aj8Hghk",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "setting:seed=15",
+   "kind": "setting",
+   "label": "seed=15"
+  },
+  {
+   "id": "video:oCY9hSGtrkw",
+   "kind": "video",
+   "label": "The LoRA Tester That Finds Your Best AI Influencer",
+   "url": "https://www.youtube.com/watch?v=oCY9hSGtrkw",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:EdlhYDXEODU",
+   "kind": "video",
+   "label": "Automate Viral AI Reels With Claude (Free Skills)",
+   "url": "https://www.youtube.com/watch?v=EdlhYDXEODU",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:fQOuReTfdaA",
+   "kind": "video",
+   "label": "Krea 2 AI Influencers Are Too Realistic",
+   "url": "https://www.youtube.com/watch?v=fQOuReTfdaA",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:kNrbA5-Ypvk",
+   "kind": "video",
+   "label": "My Claude + Seedance Reel System Is FREE",
+   "url": "https://www.youtube.com/watch?v=kNrbA5-Ypvk",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:i9rt9g6fmQY",
+   "kind": "video",
+   "label": "Krea 2 Generated This AI Influencer First Try",
+   "url": "https://www.youtube.com/watch?v=i9rt9g6fmQY",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:3LkSc3M44_o",
+   "kind": "video",
+   "label": "AI Reels Are Going Viral - Build Yours FREE With Claude",
+   "url": "https://www.youtube.com/watch?v=3LkSc3M44_o",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:oqZCAYgjMnQ",
+   "kind": "video",
+   "label": "This AI Skin Trick Makes Her Look 100% Real (Krea 2)",
+   "url": "https://www.youtube.com/watch?v=oqZCAYgjMnQ",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:UzhotSiYRCk",
+   "kind": "video",
+   "label": "Is This The Fastest AI Deployment Method? #ai #tech #shorts",
+   "url": "https://www.youtube.com/watch?v=UzhotSiYRCk",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:uWv4kczg2Rw",
+   "kind": "video",
+   "label": "Stop training messy AI models! #ai #stablediffusion",
+   "url": "https://www.youtube.com/watch?v=uWv4kczg2Rw",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:phagdTDW2QU",
+   "kind": "video",
+   "label": "How to give Claude AI super powers in 30 seconds #ai #productivity #claude",
+   "url": "https://www.youtube.com/watch?v=phagdTDW2QU",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:6cMqq5uqzEc",
+   "kind": "video",
+   "label": "Install Custom AI Skills in Claude - Step-by-Step",
+   "url": "https://www.youtube.com/watch?v=6cMqq5uqzEc",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:H5y66dU26LU",
+   "kind": "video",
+   "label": "Is This the Easiest AI Image Generator? #ai #shorts #tech",
+   "url": "https://www.youtube.com/watch?v=H5y66dU26LU",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:kx2-jgQbip4",
+   "kind": "video",
+   "label": "AI Influencer Instagram Content in One Prompt!",
+   "url": "https://www.youtube.com/watch?v=kx2-jgQbip4",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:bi9f5txTkq8",
+   "kind": "video",
+   "label": "How to keep your AI character looking the same #ai #consistency #tutorial",
+   "url": "https://www.youtube.com/watch?v=bi9f5txTkq8",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:wath-J9KzKo",
+   "kind": "video",
+   "label": "Claude Manages Your Entire AI Influencer Workflow!",
+   "url": "https://www.youtube.com/watch?v=wath-J9KzKo",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:A3Eig4U-sRw",
+   "kind": "video",
+   "label": "AI Face Consistency: The Secret to Realistic Influencers",
+   "url": "https://www.youtube.com/watch?v=A3Eig4U-sRw",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:OLh-NM08q_c",
+   "kind": "video",
+   "label": "Beyond Instagram: Monetize AI with Videos & LoRAs",
+   "url": "https://www.youtube.com/watch?v=OLh-NM08q_c",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:nrLyeMI80xk",
+   "kind": "video",
+   "label": "Build an AI Influencer with Claude - Free Tutorial!",
+   "url": "https://www.youtube.com/watch?v=nrLyeMI80xk",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:oz7LviE60bo",
+   "kind": "video",
+   "label": "Build a Full AI Character Dataset from 3 Photos!",
+   "url": "https://www.youtube.com/watch?v=oz7LviE60bo",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:Yu8spPu02Ik",
+   "kind": "video",
+   "label": "AI Prompts on Autopilot: Your New Secret Weapon!",
+   "url": "https://www.youtube.com/watch?v=Yu8spPu02Ik",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:Q6EaPt7CY3Y",
+   "kind": "video",
+   "label": "AI Identity Swap: Testing Your Character's Consistency",
+   "url": "https://www.youtube.com/watch?v=Q6EaPt7CY3Y",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:FEa0T3xJBso",
+   "kind": "video",
+   "label": "Image 2 vs. Nano Banana: Best for AI Faces?",
+   "url": "https://www.youtube.com/watch?v=FEa0T3xJBso",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:jA2g9xbTWYg",
+   "kind": "video",
+   "label": "Best Aspect Ratio for AI Creator Images? Try This!",
+   "url": "https://www.youtube.com/watch?v=jA2g9xbTWYg",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:kn_loR14bOU",
+   "kind": "video",
+   "label": "AI Influencer Built from Pinterest: No LoRA Needed!",
+   "url": "https://www.youtube.com/watch?v=kn_loR14bOU",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:uDwJYigEnSU",
+   "kind": "video",
+   "label": "AI Identity Check: Does Your Face Gen Pass the Test?",
+   "url": "https://www.youtube.com/watch?v=uDwJYigEnSU",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:xDUx8HyPgrg",
+   "kind": "video",
+   "label": "4K Output is Key for AI Identity Stability! Here's Why",
+   "url": "https://www.youtube.com/watch?v=xDUx8HyPgrg",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:ywO52xwHT30",
+   "kind": "video",
+   "label": "AI Face Merge: Creating a Consistent Digital Identity",
+   "url": "https://www.youtube.com/watch?v=ywO52xwHT30",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:ztu_4bT4Mo8",
+   "kind": "video",
+   "label": "Beyond Beauty: Build AI Influencers, Not Just Pretty Pics",
+   "url": "https://www.youtube.com/watch?v=ztu_4bT4Mo8",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:z7Iqwjkohv8",
+   "kind": "video",
+   "label": "AI Face Gen: 4K Resolution is CRITICAL for Quality",
+   "url": "https://www.youtube.com/watch?v=z7Iqwjkohv8",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:L8W8seFKcZo",
+   "kind": "video",
+   "label": "Pinterest Mistake: Don't Kill Your AI Creator",
+   "url": "https://www.youtube.com/watch?v=L8W8seFKcZo",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:k4NpQZoGe0Q",
+   "kind": "video",
+   "label": "Stop Training LoRA: This is the REAL AI Challenge",
+   "url": "https://www.youtube.com/watch?v=k4NpQZoGe0Q",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:vbZ7SyvpbSg",
+   "kind": "video",
+   "label": "Flexible Dataset Generation with CDream 4.5 (Node Workflow)",
+   "url": "https://www.youtube.com/watch?v=vbZ7SyvpbSg",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:Doz-iCCBHy8",
+   "kind": "video",
+   "label": "Forget LoRA! Your AI Dataset is the REAL Goldmine",
+   "url": "https://www.youtube.com/watch?v=Doz-iCCBHy8",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:nuArWrMcgMU",
+   "kind": "video",
+   "label": "This Claude Trick Saves Hours of Character Design Work #aitools #claude #productivity",
+   "url": "https://www.youtube.com/watch?v=nuArWrMcgMU",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:7UJ29zPGj2s",
+   "kind": "video",
+   "label": "Turn 3 Photos into Complete Character Assets with AI #ai #claude #aitools",
+   "url": "https://www.youtube.com/watch?v=7UJ29zPGj2s",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:zC_ZJoaswFY",
+   "kind": "video",
+   "label": "How to actually customize Claude AI #claude #aitools #ai",
+   "url": "https://www.youtube.com/watch?v=zC_ZJoaswFY",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:soVPPsd6WuI",
+   "kind": "video",
+   "label": "Pre-Built AI Influencers You Can Use Immediately #AI #Influencer #Automation",
+   "url": "https://www.youtube.com/watch?v=soVPPsd6WuI",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:L1HCUV6e_aM",
+   "kind": "video",
+   "label": "The GPU Selection Nobody Gets Right #aiworkflow #mistake",
+   "url": "https://www.youtube.com/watch?v=L1HCUV6e_aM",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:W8hN_NxyEq0",
+   "kind": "video",
+   "label": "Add Custom LoRa in 3 Steps #AIWorkflow #Tutorial #Shorts",
+   "url": "https://www.youtube.com/watch?v=W8hN_NxyEq0",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:KFf6KRQSNoM",
+   "kind": "video",
+   "label": "ZImageTurbo vs Standard LoRa Training Explained #lora #ai #comparison",
+   "url": "https://www.youtube.com/watch?v=KFf6KRQSNoM",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:93DBu-Zi4Ms",
+   "kind": "video",
+   "label": "One Setting Most People Get Wrong in AI Training #AI #Hacks",
+   "url": "https://www.youtube.com/watch?v=93DBu-Zi4Ms",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:Bq52ueXgL50",
+   "kind": "video",
+   "label": "Train Your AI Influencer to Look the SAME Every Time #AI #Influencer #Tutorial",
+   "url": "https://www.youtube.com/watch?v=Bq52ueXgL50",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:JfsY9AA4LaU",
+   "kind": "video",
+   "label": "Train Your AI Influencer for Under $5! Easy GPU",
+   "url": "https://www.youtube.com/watch?v=JfsY9AA4LaU",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:ZjA8EI8lzss",
+   "kind": "video",
+   "label": "AI Influencer: The Dataset Mistake Everyone Makes!",
+   "url": "https://www.youtube.com/watch?v=ZjA8EI8lzss",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:Ux1Hl9wWKW4",
+   "kind": "video",
+   "label": "Stop Overtraining Your LoRA Model Right Now #AItraining #hack",
+   "url": "https://www.youtube.com/watch?v=Ux1Hl9wWKW4",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:mqXLFiktjmo",
+   "kind": "video",
+   "label": "You Won't Believe How Easy This Is #aiinfluencer #ai #trending",
+   "url": "https://www.youtube.com/watch?v=mqXLFiktjmo",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:xFK2xKAO_tg",
+   "kind": "video",
+   "label": "Unlock Hyper-Realism for Your AI Influencer!",
+   "url": "https://www.youtube.com/watch?v=xFK2xKAO_tg",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:lkl244ZtR9k",
+   "kind": "video",
+   "label": "The Proven Path to Creating Stunning AI Images Every Time",
+   "url": "https://www.youtube.com/watch?v=lkl244ZtR9k",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:p9zp9Lq2O34",
+   "kind": "video",
+   "label": "WHO is he flirting with👀 #shorts",
+   "url": "https://www.youtube.com/watch?v=p9zp9Lq2O34",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:LfriA1BCp3o",
+   "kind": "video",
+   "label": "How did he know she wasn't real? 🤯 #shorts",
+   "url": "https://www.youtube.com/watch?v=LfriA1BCp3o",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:A7tylvBhSbo",
+   "kind": "video",
+   "label": "She's Not Real But Her Income Is 👀 #AIInfluencer #ArtificialIntelligence #Shorts",
+   "url": "https://www.youtube.com/watch?v=A7tylvBhSbo",
+   "channel": "matrixlabai"
+  },
+  {
+   "id": "video:-HcMguqI4ts",
+   "kind": "video",
+   "label": "MiniMax H3 Tutorial: Create Cinematic Videos With Consistent Characters! (Hailuo AI)",
+   "url": "https://www.youtube.com/watch?v=-HcMguqI4ts",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "channel:artificialquotient",
+   "kind": "channel",
+   "label": "artificialquotient"
+  },
+  {
+   "id": "video:vjyNpcBb84w",
+   "kind": "video",
+   "label": "VideoExpress AI Review: Best For Consistent Characters With Lip Sync?",
+   "url": "https://www.youtube.com/watch?v=vjyNpcBb84w",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:gvNpI1yievE",
+   "kind": "video",
+   "label": "SCAIL-2 Motion Transfer Tutorial: Best ComfyUI Workflow Without GPU!",
+   "url": "https://www.youtube.com/watch?v=gvNpI1yievE",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "setting:resolution=648",
+   "kind": "setting",
+   "label": "resolution=648"
+  },
+  {
+   "id": "video:eHIMWqg-0xE",
+   "kind": "video",
+   "label": "Supercool AI Review: Can It Create Viral AI UGC For TikTok Shop Ads?",
+   "url": "https://www.youtube.com/watch?v=eHIMWqg-0xE",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "creative:voiceover",
+   "kind": "creative",
+   "label": "voiceover"
+  },
+  {
+   "id": "creative:call to action",
+   "kind": "creative",
+   "label": "call to action"
+  },
+  {
+   "id": "video:CO59xAteGRM",
+   "kind": "video",
+   "label": "Flashloop AI Tutorial: Create Talking Fruit Videos With Consistent Characters!",
+   "url": "https://www.youtube.com/watch?v=CO59xAteGRM",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:tyWnBl4BbSQ",
+   "kind": "video",
+   "label": "Google Flow Storyboard Studio Tutorial: Create Full AI Films With Consistent Characters!",
+   "url": "https://www.youtube.com/watch?v=tyWnBl4BbSQ",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:1tbJ3WJ9_po",
+   "kind": "video",
+   "label": "Flova AI Tutorial: Create Cinematic AI Videos With Consistent Characters!",
+   "url": "https://www.youtube.com/watch?v=1tbJ3WJ9_po",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:eOhomP4vees",
+   "kind": "video",
+   "label": "Hyperframes + Claude = Insane AI Motion Graphics In Minutes! (Full Tutorial)",
+   "url": "https://www.youtube.com/watch?v=eOhomP4vees",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:YrZ7RTfbAAw",
+   "kind": "video",
+   "label": "Higgsfield AI Motion Control Tutorial: Create Realistic AI Influencers With Kling 3.0!",
+   "url": "https://www.youtube.com/watch?v=YrZ7RTfbAAw",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:0khEeIwvmTQ",
+   "kind": "video",
+   "label": "MagicFit AI Review: Best AI UGC Ad Generator In 2026? (Full Guide)",
+   "url": "https://www.youtube.com/watch?v=0khEeIwvmTQ",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "model:sora",
+   "kind": "model",
+   "label": "sora"
+  },
+  {
+   "id": "video:QiuaZ-u4HhE",
+   "kind": "video",
+   "label": "HeyGen AI Tutorial: Create Talking Avatars and UGC Ads From One Photo!",
+   "url": "https://www.youtube.com/watch?v=QiuaZ-u4HhE",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:6Zxcna3SwcA",
+   "kind": "video",
+   "label": "Holo AI Review: Best AI UGC Ad Generator In 2026? (Full Guide)",
+   "url": "https://www.youtube.com/watch?v=6Zxcna3SwcA",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:qTUSvKaixCY",
+   "kind": "video",
+   "label": "How To Make AI Cover Songs In Minutes! (Free Sonauto AI Workflow)",
+   "url": "https://www.youtube.com/watch?v=qTUSvKaixCY",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:kuDzysXdUsY",
+   "kind": "video",
+   "label": "How To Make Video Animations In Minutes With Remotion! (Claude Code Beginner Tutorial)",
+   "url": "https://www.youtube.com/watch?v=kuDzysXdUsY",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:VrM1mgWUHV8",
+   "kind": "video",
+   "label": "Google Flow Tutorial: Create Consistent Characters With Veo 3! (Whisk Alternative)",
+   "url": "https://www.youtube.com/watch?v=VrM1mgWUHV8",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:eSBx26i0Q7w",
+   "kind": "video",
+   "label": "Turn NotebookLM Into A Unlimited Video Engine! (FREE Script To Video AI Workflow)",
+   "url": "https://www.youtube.com/watch?v=eSBx26i0Q7w",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:N9iVUmvgWzU",
+   "kind": "video",
+   "label": "How To Keep Character Voices Consistent In Grok AI Lip Sync! (FREE & Easy)",
+   "url": "https://www.youtube.com/watch?v=N9iVUmvgWzU",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:wvgrQnHYsr0",
+   "kind": "video",
+   "label": "Perchance AI Image Generator With Consistent Characters: Make Unlimited AI Images For FREE",
+   "url": "https://www.youtube.com/watch?v=wvgrQnHYsr0",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:3RoAGeQbALg",
+   "kind": "video",
+   "label": "Suno AI Persona Tutorial: Keep Singer's Voice CONSISTENT In Every Song!",
+   "url": "https://www.youtube.com/watch?v=3RoAGeQbALg",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:FMnBEyQSPGQ",
+   "kind": "video",
+   "label": "Grok AI Lip Sync Tutorial With Consistent Characters: Make Long AI Videos In Minutes!",
+   "url": "https://www.youtube.com/watch?v=FMnBEyQSPGQ",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:nbEl_jpVJ8k",
+   "kind": "video",
+   "label": "How To Build Node-Based AI Workflows In Freepik Spaces! (Now Magnific)",
+   "url": "https://www.youtube.com/watch?v=nbEl_jpVJ8k",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:fmXXp6lobi0",
+   "kind": "video",
+   "label": "Flora AI For Beginners: Create Image To Video Workflows In Minutes!",
+   "url": "https://www.youtube.com/watch?v=fmXXp6lobi0",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:Iobs4FH-EL8",
+   "kind": "video",
+   "label": "Weavy AI Tutorial: Create Multiple Camera Angles With Consistent Characters! (AI Workflow)",
+   "url": "https://www.youtube.com/watch?v=Iobs4FH-EL8",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "setting:frame=simple",
+   "kind": "setting",
+   "label": "frame=simple"
+  },
+  {
+   "id": "video:Gh0Wvpzji1M",
+   "kind": "video",
+   "label": "Higgsfield AI Consistent Character Tutorial: Make Realistic AI Avatars In Minutes!",
+   "url": "https://www.youtube.com/watch?v=Gh0Wvpzji1M",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:-6qcarua-Bk",
+   "kind": "video",
+   "label": "Create Viral 3D Documentary Videos With OpenArt AI! (Full Workflow)",
+   "url": "https://www.youtube.com/watch?v=-6qcarua-Bk",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:BITFGxHdq8s",
+   "kind": "video",
+   "label": "Artistly AI Tutorial: Create Consistent Characters In Minutes! (Honest Review)",
+   "url": "https://www.youtube.com/watch?v=BITFGxHdq8s",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "setting:steps=simple",
+   "kind": "setting",
+   "label": "steps=simple"
+  },
+  {
+   "id": "video:cWspDcWuo0s",
+   "kind": "video",
+   "label": "How To Use Google Whisk AI For Consistent Characters + Designs! (100% FREE)",
+   "url": "https://www.youtube.com/watch?v=cWspDcWuo0s",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:Abydxe8b1Ac",
+   "kind": "video",
+   "label": "Getimg AI Model Training Tutorial: Create Consistent AI Characters In Minutes!",
+   "url": "https://www.youtube.com/watch?v=Abydxe8b1Ac",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:_m5P6YqE8_8",
+   "kind": "video",
+   "label": "How To Create Consistent Characters Using PicLumen AI For FREE!",
+   "url": "https://www.youtube.com/watch?v=_m5P6YqE8_8",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "setting:steps=30",
+   "kind": "setting",
+   "label": "steps=30"
+  },
+  {
+   "id": "video:Wx3RM28HXP4",
+   "kind": "video",
+   "label": "How To Create Viral UGC Ads Using Creatify AI (Full Tutorial)",
+   "url": "https://www.youtube.com/watch?v=Wx3RM28HXP4",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:0Sy7RuUDalI",
+   "kind": "video",
+   "label": "How To Create Consistent Characters In Canva (Magic Studio Tutorial)",
+   "url": "https://www.youtube.com/watch?v=0Sy7RuUDalI",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:elcXphHMVPw",
+   "kind": "video",
+   "label": "Krea AI Tutorial: Make Real-Time AI Images, Upscale and Generate Videos!",
+   "url": "https://www.youtube.com/watch?v=elcXphHMVPw",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:6TG-IfPK_jo",
+   "kind": "video",
+   "label": "Fooocus AI Tutorial: Create Consistent Characters in Different Scenes! (Easy Guide)",
+   "url": "https://www.youtube.com/watch?v=6TG-IfPK_jo",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "technique:refiner",
+   "kind": "technique",
+   "label": "refiner"
+  },
+  {
+   "id": "model:sdxl",
+   "kind": "model",
+   "label": "sdxl"
+  },
+  {
+   "id": "video:0GWCXSqQnSk",
+   "kind": "video",
+   "label": "How To Create AI Talking Videos Using Canva + Adobe Express (FREE Workflow)",
+   "url": "https://www.youtube.com/watch?v=0GWCXSqQnSk",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:rjPxyqsiKP8",
+   "kind": "video",
+   "label": "How To Use Tensor Art To Make Consistent Characters! (FREE Midjourney Alternative)",
+   "url": "https://www.youtube.com/watch?v=rjPxyqsiKP8",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:7hOtqT_EehA",
+   "kind": "video",
+   "label": "How To Create Consistent Characters In Ideogram AI",
+   "url": "https://www.youtube.com/watch?v=7hOtqT_EehA",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:_0pe_2W6D9w",
+   "kind": "video",
+   "label": "How To Make Viral UGC Ads Using AI",
+   "url": "https://www.youtube.com/watch?v=_0pe_2W6D9w",
+   "channel": "artificialquotient"
+  },
+  {
+   "id": "video:aVXjFh3oBzU",
+   "kind": "video",
+   "label": "Make Consistent Characters In Canva!",
+   "url": "https://www.youtube.com/watch?v=aVXjFh3oBzU",
+   "channel": "artificialquotient"
   },
   {
    "id": "brand:epalle",
@@ -14893,6 +16722,6978 @@
      "quote": "to fix that, such as with an audio ref"
     }
    ]
+  },
+  {
+   "src": "video:t_-oHMkXQqU",
+   "rel": "belongs_to",
+   "dst": "channel:kiubai"
+  },
+  {
+   "src": "video:V-x_xg6CmQk",
+   "rel": "belongs_to",
+   "dst": "channel:kiubai"
+  },
+  {
+   "src": "video:V-x_xg6CmQk",
+   "rel": "mentions",
+   "dst": "model:flux-2-klein",
+   "evidence": [
+    {
+     "video": "V-x_xg6CmQk",
+     "t": "00:00:00",
+     "quote": "Consistent character LoRA training using AI-toolkit (Flux Klein 9B)"
+    }
+   ]
+  },
+  {
+   "src": "video:V-x_xg6CmQk",
+   "rel": "mentions",
+   "dst": "technique:lora training",
+   "evidence": [
+    {
+     "video": "V-x_xg6CmQk",
+     "t": "00:00:00",
+     "quote": "Consistent character LoRA training using AI-toolkit (Flux Klein 9B)"
+    }
+   ]
+  },
+  {
+   "src": "video:V-x_xg6CmQk",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "V-x_xg6CmQk",
+     "t": "00:00:00",
+     "quote": "Consistent character LoRA training using AI-toolkit (Flux Klein 9B)"
+    }
+   ]
+  },
+  {
+   "src": "video:V-x_xg6CmQk",
+   "rel": "mentions",
+   "dst": "technique:latent",
+   "evidence": [
+    {
+     "video": "V-x_xg6CmQk",
+     "t": "00:04:36",
+     "quote": "cache the latent, we only train at 512"
+    }
+   ]
+  },
+  {
+   "src": "video:V-x_xg6CmQk",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "V-x_xg6CmQk",
+     "t": "00:05:27",
+     "quote": "Um for the batch size, since we're using"
+    }
+   ]
+  },
+  {
+   "src": "video:V-x_xg6CmQk",
+   "rel": "mentions",
+   "dst": "hardware:24GB vram",
+   "evidence": [
+    {
+     "video": "V-x_xg6CmQk",
+     "t": "00:00:32",
+     "quote": "need about uh 24 gigs of VRAM if you"
+    }
+   ]
+  },
+  {
+   "src": "video:V-x_xg6CmQk",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "V-x_xg6CmQk",
+     "t": "00:00:44",
+     "quote": "Uh obviously, a 5090 will do the job,"
+    }
+   ]
+  },
+  {
+   "src": "video:DjNmqaUJcQk",
+   "rel": "belongs_to",
+   "dst": "channel:kiubai"
+  },
+  {
+   "src": "video:DjNmqaUJcQk",
+   "rel": "mentions",
+   "dst": "model:flux-2-klein",
+   "evidence": [
+    {
+     "video": "DjNmqaUJcQk",
+     "t": "00:00:00",
+     "quote": "Consistent room and backgrounds with ComfyUI and Flux Klein"
+    }
+   ]
+  },
+  {
+   "src": "video:DjNmqaUJcQk",
+   "rel": "mentions",
+   "dst": "model:flux-dev",
+   "evidence": [
+    {
+     "video": "DjNmqaUJcQk",
+     "t": "00:02:47",
+     "quote": "flux dev can do it, but it's really not"
+    }
+   ]
+  },
+  {
+   "src": "video:DjNmqaUJcQk",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "DjNmqaUJcQk",
+     "t": "00:03:24",
+     "quote": "like nano banana or you use a real image"
+    }
+   ]
+  },
+  {
+   "src": "video:DjNmqaUJcQk",
+   "rel": "mentions",
+   "dst": "creative:low angle",
+   "evidence": [
+    {
+     "video": "DjNmqaUJcQk",
+     "t": "00:03:44",
+     "quote": "This uh shot is a low angle of the room."
+    }
+   ]
+  },
+  {
+   "src": "video:DjNmqaUJcQk",
+   "rel": "mentions",
+   "dst": "technique:face swap",
+   "evidence": [
+    {
+     "video": "DjNmqaUJcQk",
+     "t": "00:05:23",
+     "quote": "school or uh you do a face swap with"
+    }
+   ]
+  },
+  {
+   "src": "video:DjNmqaUJcQk",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "DjNmqaUJcQk",
+     "t": "00:07:32",
+     "quote": "detailer part because [music]"
+    }
+   ]
+  },
+  {
+   "src": "video:DjNmqaUJcQk",
+   "rel": "mentions",
+   "dst": "technique:latent",
+   "evidence": [
+    {
+     "video": "DjNmqaUJcQk",
+     "t": "00:08:10",
+     "quote": "I'll just grab the latent directly and"
+    }
+   ]
+  },
+  {
+   "src": "video:DjNmqaUJcQk",
+   "rel": "mentions",
+   "dst": "node_pack:face-detailer",
+   "evidence": [
+    {
+     "video": "DjNmqaUJcQk",
+     "t": "00:11:23",
+     "quote": "The issue with the face detailer is that"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "model:minimax-h3",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:00:00",
+     "quote": "I Tested Every MiniMax H3 Speed Up So You Don't Have To"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "setting:steps=345",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:01:07",
+     "quote": "generation at 20 steps took 345 seconds,"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "setting:shift=12",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:10:01",
+     "quote": "will require a video shift of 12 and an"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "setting:step=600",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:10:44",
+     "quote": "Larry BRH version 4, step 600 at eight"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "setting:steps=544",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:11:38",
+     "quote": "Light X2V, eight steps, the 544 build,"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "setting:step=500",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:13:08",
+     "quote": "Larry BRH four step checkpoint 500. Same"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "setting:step=768",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:14:51",
+     "quote": "light x2v version 1.0, four step 768."
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "setting:steps=768",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:15:45",
+     "quote": "steps 768 native."
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "setting:steps=20",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:18:46",
+     "quote": "eight steps to four steps, we dropped 20"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "setting:step=3",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:19:04",
+     "quote": "the same step count saved 3 seconds. So,"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "hardware:32GB vram",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:01:15",
+     "quote": "I'm using a 5090 with 32 GB VRAM and 64"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "hardware:64GB ram",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:19:21",
+     "quote": "on my 5090, 64 GB of system RAM, one run"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:01:15",
+     "quote": "I'm using a 5090 with 32 GB VRAM and 64"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "technique:reference to video",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:03:29",
+     "quote": "reference to video plus audio. So"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:03:50",
+     "quote": "or audio two and it keeps their identity"
+    }
+   ]
+  },
+  {
+   "src": "video:BGpt57KBwU8",
+   "rel": "mentions",
+   "dst": "node_pack:sage-attention",
+   "evidence": [
+    {
+     "video": "BGpt57KBwU8",
+     "t": "00:05:42",
+     "quote": "sage attention was the next popular"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "model:minimax-h3",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:00:00",
+     "quote": "MiniMax H3 Can Make Infinite Length Videos Now (Low VRAM)"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "technique:text to video",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:00:22",
+     "quote": "H3, whether that's text to video, image"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "technique:reference to video",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:04:33",
+     "quote": "reference to video model, all you'd have"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:04:37",
+     "quote": "course have the model and the LoRA"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "technique:image to video",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:04:47",
+     "quote": "image to video model, so I'm going to go"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:07:54",
+     "quote": "upscale the video to a higher frame"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "technique:denoise",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:10:51",
+     "quote": "denoise and basically overlay on top of"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "technique:character consistency",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:16:03",
+     "quote": "So, whether character consistency is an"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:01:22",
+     "quote": "actually handle that. I'm running a 5090"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "hardware:64GB ram",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:01:25",
+     "quote": "with 64 GB of RAM locally myself, and I"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "creative:storyboard",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:03:21",
+     "quote": "storyboard sheet into the workflow"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "node_pack:sage-attention",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:05:44",
+     "quote": "about Sage attention or Kitchen"
+    }
+   ]
+  },
+  {
+   "src": "video:6oz0ms9GRY8",
+   "rel": "mentions",
+   "dst": "setting:fps=24",
+   "evidence": [
+    {
+     "video": "6oz0ms9GRY8",
+     "t": "00:07:43",
+     "quote": "up in megapixels. Standard FPS is 24. I"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:00:00",
+     "quote": "Build A Krea 2 Character LoRA From Scratch Using ComfyUI"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "technique:character consistency",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:00:35",
+     "quote": "character consistency across all of your"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "technique:captioning",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:01:57",
+     "quote": "the data set and captioning in the"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:05:16",
+     "quote": "face and eye detailer subgraph here. And"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:10:11",
+     "quote": "character's body and identity and"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "model:flux-2-klein",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:01:11",
+     "quote": "which are going to be flux 2 klein the"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:01:16",
+     "quote": "then Z image turbo for the"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "hardware:32GB vram",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:09:54",
+     "quote": "here that on my 5090, so 32 GB VRAM with"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "hardware:64GB ram",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:09:58",
+     "quote": "64 GB of system RAM, it took 13 minutes"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "hardware:48GB vram",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:17:52",
+     "quote": "GPU that has 48 GB of VRAM, I believe"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:09:54",
+     "quote": "here that on my 5090, so 32 GB VRAM with"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "setting:step=21",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:20:49",
+     "quote": "ways to go. We're only on step 21 out of"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "setting:step=500",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:21:22",
+     "quote": "checkpoints I have from step 500 all the"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "setting:step=2",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:22:10",
+     "quote": "process up until about step 2,250 or so,"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "setting:step=1",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:22:21",
+     "quote": "step 1,250, and I'd be content with the"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "setting:step=1500",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:22:32",
+     "quote": "further than about step 1500. That's the"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "setting:step=750",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:22:46",
+     "quote": "at step 750 and going through to step"
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "setting:step=1250",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:23:19",
+     "quote": "different from step 1250 to step 1500."
+    }
+   ]
+  },
+  {
+   "src": "video:CXug7eCjtrw",
+   "rel": "mentions",
+   "dst": "setting:steps=1250",
+   "evidence": [
+    {
+     "video": "CXug7eCjtrw",
+     "t": "00:23:45",
+     "quote": "I went the extra 500 steps with 1250 and"
+    }
+   ]
+  },
+  {
+   "src": "video:cVH4mobuOO4",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:cVH4mobuOO4",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "cVH4mobuOO4",
+     "t": "00:00:31",
+     "quote": "were generated locally on my 5090"
+    }
+   ]
+  },
+  {
+   "src": "video:cVH4mobuOO4",
+   "rel": "mentions",
+   "dst": "hardware:16GB vram",
+   "evidence": [
+    {
+     "video": "cVH4mobuOO4",
+     "t": "00:02:01",
+     "quote": "Comfra which needs about 16 GB of VRAM"
+    }
+   ]
+  },
+  {
+   "src": "video:cVH4mobuOO4",
+   "rel": "mentions",
+   "dst": "hardware:48GB vram",
+   "evidence": [
+    {
+     "video": "cVH4mobuOO4",
+     "t": "00:02:12",
+     "quote": "about 48 GB of VRAM, but that's not true"
+    }
+   ]
+  },
+  {
+   "src": "video:cVH4mobuOO4",
+   "rel": "mentions",
+   "dst": "hardware:32GB vram",
+   "evidence": [
+    {
+     "video": "cVH4mobuOO4",
+     "t": "00:02:20",
+     "quote": "32 GB of VRAM. I think with about 24 GB"
+    }
+   ]
+  },
+  {
+   "src": "video:cVH4mobuOO4",
+   "rel": "mentions",
+   "dst": "technique:text to video",
+   "evidence": [
+    {
+     "video": "cVH4mobuOO4",
+     "t": "00:02:29",
+     "quote": "that we get both text to video and image"
+    }
+   ]
+  },
+  {
+   "src": "video:cVH4mobuOO4",
+   "rel": "mentions",
+   "dst": "technique:image to video",
+   "evidence": [
+    {
+     "video": "cVH4mobuOO4",
+     "t": "00:02:45",
+     "quote": "test image to video first. So, after"
+    }
+   ]
+  },
+  {
+   "src": "video:cVH4mobuOO4",
+   "rel": "mentions",
+   "dst": "model:minimax-h3",
+   "evidence": [
+    {
+     "video": "cVH4mobuOO4",
+     "t": "00:08:36",
+     "quote": "that I did on Minimax H3, the image to"
+    }
+   ]
+  },
+  {
+   "src": "video:JN6P0C2BlX4",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:JN6P0C2BlX4",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "JN6P0C2BlX4",
+     "t": "00:00:00",
+     "quote": "Build a ComfyUI Upscale Workflow and Actually Understand It | Build With Me [EP. 5]"
+    }
+   ]
+  },
+  {
+   "src": "video:JN6P0C2BlX4",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "JN6P0C2BlX4",
+     "t": "00:04:52",
+     "quote": "a batch of images or a folder that has"
+    }
+   ]
+  },
+  {
+   "src": "video:JN6P0C2BlX4",
+   "rel": "mentions",
+   "dst": "hardware:8GB vram",
+   "evidence": [
+    {
+     "video": "JN6P0C2BlX4",
+     "t": "00:01:54",
+     "quote": "you're sitting at around 8 GB of VRAM or"
+    }
+   ]
+  },
+  {
+   "src": "video:JN6P0C2BlX4",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "JN6P0C2BlX4",
+     "t": "00:02:26",
+     "quote": "higher like I am on my 5090, FP16 is"
+    }
+   ]
+  },
+  {
+   "src": "video:JN6P0C2BlX4",
+   "rel": "mentions",
+   "dst": "node_pack:comfyui-impact-pack",
+   "evidence": [
+    {
+     "video": "JN6P0C2BlX4",
+     "t": "00:04:18",
+     "quote": "going to install the Impact Pack node"
+    }
+   ]
+  },
+  {
+   "src": "video:JN6P0C2BlX4",
+   "rel": "mentions",
+   "dst": "node_pack:comfyui-videohelpersuite",
+   "evidence": [
+    {
+     "video": "JN6P0C2BlX4",
+     "t": "00:04:59",
+     "quote": "the video helper suite node pack."
+    }
+   ]
+  },
+  {
+   "src": "video:JN6P0C2BlX4",
+   "rel": "mentions",
+   "dst": "creative:before and after",
+   "evidence": [
+    {
+     "video": "JN6P0C2BlX4",
+     "t": "00:11:12",
+     "quote": "clean before and after comparison with"
+    }
+   ]
+  },
+  {
+   "src": "video:JN6P0C2BlX4",
+   "rel": "mentions",
+   "dst": "setting:seed=2",
+   "evidence": [
+    {
+     "video": "JN6P0C2BlX4",
+     "t": "00:18:29",
+     "quote": "search for Seed VR 2"
+    }
+   ]
+  },
+  {
+   "src": "video:JN6P0C2BlX4",
+   "rel": "mentions",
+   "dst": "setting:batch size=21",
+   "evidence": [
+    {
+     "video": "JN6P0C2BlX4",
+     "t": "00:22:40",
+     "quote": "batch size up to 21, and we can see here"
+    }
+   ]
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "mentions",
+   "dst": "model:wan-2.2",
+   "evidence": [
+    {
+     "video": "kpeTUPaUXu0",
+     "t": "00:00:00",
+     "quote": "Wan 2.2 Animate v2 New Release - The New King Of Motion Control?"
+    }
+   ]
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "mentions",
+   "dst": "model:scail-2",
+   "evidence": [
+    {
+     "video": "kpeTUPaUXu0",
+     "t": "00:06:32",
+     "quote": "scale two and animate two. We're going"
+    }
+   ]
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "kpeTUPaUXu0",
+     "t": "00:03:45",
+     "quote": "wired up two LoRA loader stacks inside"
+    }
+   ]
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "mentions",
+   "dst": "technique:motion transfer",
+   "evidence": [
+    {
+     "video": "kpeTUPaUXu0",
+     "t": "00:05:39",
+     "quote": "the motion transfer subgraph in order to"
+    }
+   ]
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "kpeTUPaUXu0",
+     "t": "00:06:09",
+     "quote": "batch images node. But, like I said,"
+    }
+   ]
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "kpeTUPaUXu0",
+     "t": "00:09:39",
+     "quote": "video. And then, I upscale my reference"
+    }
+   ]
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "mentions",
+   "dst": "technique:inpaint",
+   "evidence": [
+    {
+     "video": "kpeTUPaUXu0",
+     "t": "00:09:58",
+     "quote": "that I'm also using the Inpaint Convo"
+    }
+   ]
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "mentions",
+   "dst": "creative:close up",
+   "evidence": [
+    {
+     "video": "kpeTUPaUXu0",
+     "t": "00:07:50",
+     "quote": "have sort of a close-up front camera"
+    }
+   ]
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "kpeTUPaUXu0",
+     "t": "00:08:12",
+     "quote": "full precision model on my 5090, but"
+    }
+   ]
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "mentions",
+   "dst": "gpu:4090",
+   "evidence": [
+    {
+     "video": "kpeTUPaUXu0",
+     "t": "00:08:37",
+     "quote": "you're using something like a 4090 or"
+    }
+   ]
+  },
+  {
+   "src": "video:kpeTUPaUXu0",
+   "rel": "mentions",
+   "dst": "hardware:16GB vram",
+   "evidence": [
+    {
+     "video": "kpeTUPaUXu0",
+     "t": "00:08:32",
+     "quote": "16 GB of VRAM loading in and you have"
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "model:minimax-h3",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:00:00",
+     "quote": "Run MiniMax H3 Locally (8GB VRAM) With Zero ComfyUI Setup"
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "hardware:8GB vram",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:00:00",
+     "quote": "Run MiniMax H3 Locally (8GB VRAM) With Zero ComfyUI Setup"
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "hardware:16GB vram",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:01:39",
+     "quote": "it needs around 16 GB of VRAM. One of"
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "hardware:12GB vram",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:03:20",
+     "quote": "pixels requires around 12 GB of VRAM. If"
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "hardware:24GB vram",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:03:30",
+     "quote": "we're going to need over 24 GB of VRAM."
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "hardware:32GB vram",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:06:00",
+     "quote": "currently running 32 GB of VRAM, so this"
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:02:04",
+     "quote": "5090. So, I'm going to go ahead and"
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "technique:inpaint",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:02:06",
+     "quote": "install the pruned Inpaint version. And"
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "technique:image to video",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:02:35",
+     "quote": "video, image to video, and reference to"
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "technique:text to video",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:02:54",
+     "quote": "text to video model. So, I'm going to"
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "setting:seed=2",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:05:00",
+     "quote": "used the Seed VR 2 upscaler that is also"
+    }
+   ]
+  },
+  {
+   "src": "video:bWyVCATqzSU",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "bWyVCATqzSU",
+     "t": "00:05:45",
+     "quote": "And again, here in the aspect ratio, we"
+    }
+   ]
+  },
+  {
+   "src": "video:XeL91XYC6FE",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:XeL91XYC6FE",
+   "rel": "mentions",
+   "dst": "technique:text to image",
+   "evidence": [
+    {
+     "video": "XeL91XYC6FE",
+     "t": "00:00:03",
+     "quote": "text-to-image workflow to look like. And"
+    }
+   ]
+  },
+  {
+   "src": "video:XeL91XYC6FE",
+   "rel": "mentions",
+   "dst": "technique:image to image",
+   "evidence": [
+    {
+     "video": "XeL91XYC6FE",
+     "t": "00:00:07",
+     "quote": "expect a Cirea 2 image-to-image workflow"
+    }
+   ]
+  },
+  {
+   "src": "video:XeL91XYC6FE",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "XeL91XYC6FE",
+     "t": "00:04:28",
+     "quote": "that there is the ability to add a Lora"
+    }
+   ]
+  },
+  {
+   "src": "video:XeL91XYC6FE",
+   "rel": "mentions",
+   "dst": "technique:denoise",
+   "evidence": [
+    {
+     "video": "XeL91XYC6FE",
+     "t": "00:10:54",
+     "quote": "denoise slider defaults to 0.4 and"
+    }
+   ]
+  },
+  {
+   "src": "video:XeL91XYC6FE",
+   "rel": "mentions",
+   "dst": "setting:scheduler=euler",
+   "evidence": [
+    {
+     "video": "XeL91XYC6FE",
+     "t": "00:03:14",
+     "quote": "scheduler and sampler combo are Euler"
+    }
+   ]
+  },
+  {
+   "src": "video:XeL91XYC6FE",
+   "rel": "mentions",
+   "dst": "setting:guidance=4.5",
+   "evidence": [
+    {
+     "video": "XeL91XYC6FE",
+     "t": "00:03:34",
+     "quote": "guidance at 4.5 and also Euler and"
+    }
+   ]
+  },
+  {
+   "src": "video:XeL91XYC6FE",
+   "rel": "mentions",
+   "dst": "setting:sampler=simple",
+   "evidence": [
+    {
+     "video": "XeL91XYC6FE",
+     "t": "00:04:23",
+     "quote": "sampler with the simple scheduler. So,"
+    }
+   ]
+  },
+  {
+   "src": "video:XeL91XYC6FE",
+   "rel": "mentions",
+   "dst": "setting:denoise=0.4",
+   "evidence": [
+    {
+     "video": "XeL91XYC6FE",
+     "t": "00:10:54",
+     "quote": "denoise slider defaults to 0.4 and"
+    }
+   ]
+  },
+  {
+   "src": "video:XeL91XYC6FE",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "XeL91XYC6FE",
+     "t": "00:05:08",
+     "quote": "generations will have the aspect ratio"
+    }
+   ]
+  },
+  {
+   "src": "video:szjmpLgxcV8",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:szjmpLgxcV8",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "szjmpLgxcV8",
+     "t": "00:01:42",
+     "quote": "shots. It's useful if you're doing a UGC"
+    }
+   ]
+  },
+  {
+   "src": "video:szjmpLgxcV8",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "szjmpLgxcV8",
+     "t": "00:08:05",
+     "quote": "switch the aspect ratio to a one by one"
+    }
+   ]
+  },
+  {
+   "src": "video:szjmpLgxcV8",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "szjmpLgxcV8",
+     "t": "00:02:20",
+     "quote": "models like Z image and Z image turbo,"
+    }
+   ]
+  },
+  {
+   "src": "video:szjmpLgxcV8",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "szjmpLgxcV8",
+     "t": "00:02:46",
+     "quote": "Simply Gen. Under the upscale section,"
+    }
+   ]
+  },
+  {
+   "src": "video:szjmpLgxcV8",
+   "rel": "mentions",
+   "dst": "setting:seed=2",
+   "evidence": [
+    {
+     "video": "szjmpLgxcV8",
+     "t": "00:02:50",
+     "quote": "upscaler and seed VR 2. Under the UGC"
+    }
+   ]
+  },
+  {
+   "src": "video:_5GY2mkMdwQ",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:_5GY2mkMdwQ",
+   "rel": "mentions",
+   "dst": "technique:image to image",
+   "evidence": [
+    {
+     "video": "_5GY2mkMdwQ",
+     "t": "00:00:00",
+     "quote": "Krea 2 Image To Image Tutorial For ComfyUI (Free Workflow)"
+    }
+   ]
+  },
+  {
+   "src": "video:_5GY2mkMdwQ",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "_5GY2mkMdwQ",
+     "t": "00:00:43",
+     "quote": "setting it up, or you're stuck on LoRA"
+    }
+   ]
+  },
+  {
+   "src": "video:_5GY2mkMdwQ",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "_5GY2mkMdwQ",
+     "t": "00:02:00",
+     "quote": "described mask prompt. For the detailer"
+    }
+   ]
+  },
+  {
+   "src": "video:_5GY2mkMdwQ",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "_5GY2mkMdwQ",
+     "t": "00:02:38",
+     "quote": "in a minute as to why we upscale, I'm"
+    }
+   ]
+  },
+  {
+   "src": "video:_5GY2mkMdwQ",
+   "rel": "mentions",
+   "dst": "technique:inpaint",
+   "evidence": [
+    {
+     "video": "_5GY2mkMdwQ",
+     "t": "00:03:02",
+     "quote": "what makes the inpaint blend cleaner"
+    }
+   ]
+  },
+  {
+   "src": "video:_5GY2mkMdwQ",
+   "rel": "mentions",
+   "dst": "technique:denoise",
+   "evidence": [
+    {
+     "video": "_5GY2mkMdwQ",
+     "t": "00:05:00",
+     "quote": "Turbo, Create 2 handles denoise"
+    }
+   ]
+  },
+  {
+   "src": "video:_5GY2mkMdwQ",
+   "rel": "mentions",
+   "dst": "node_pack:ultralytics",
+   "evidence": [
+    {
+     "video": "_5GY2mkMdwQ",
+     "t": "00:02:07",
+     "quote": "running alongside it two Ultralytics"
+    }
+   ]
+  },
+  {
+   "src": "video:_5GY2mkMdwQ",
+   "rel": "mentions",
+   "dst": "node_pack:face-detailer",
+   "evidence": [
+    {
+     "video": "_5GY2mkMdwQ",
+     "t": "00:02:17",
+     "quote": "point the face detailer nodes at the"
+    }
+   ]
+  },
+  {
+   "src": "video:_5GY2mkMdwQ",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "_5GY2mkMdwQ",
+     "t": "00:04:59",
+     "quote": "from another checkpoint like Z Image"
+    }
+   ]
+  },
+  {
+   "src": "video:6M56OuHws_8",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:6M56OuHws_8",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "6M56OuHws_8",
+     "t": "00:01:29",
+     "quote": "character LORA attached, which I will"
+    }
+   ]
+  },
+  {
+   "src": "video:6M56OuHws_8",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "6M56OuHws_8",
+     "t": "00:05:49",
+     "quote": "identity of my Laura attached to the"
+    }
+   ]
+  },
+  {
+   "src": "video:lOJFDwqPvRA",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:lOJFDwqPvRA",
+   "rel": "mentions",
+   "dst": "creative:engagement",
+   "evidence": [
+    {
+     "video": "lOJFDwqPvRA",
+     "t": "00:02:14",
+     "quote": "your reach tanks, your engagement"
+    }
+   ]
+  },
+  {
+   "src": "video:lOJFDwqPvRA",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "lOJFDwqPvRA",
+     "t": "00:04:23",
+     "quote": "a big batch doesn't all share the same"
+    }
+   ]
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "mentions",
+   "dst": "creative:hook",
+   "evidence": [
+    {
+     "video": "yfN-DMCoue0",
+     "t": "00:03:14",
+     "quote": "you hook up into it. It's called"
+    }
+   ]
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "mentions",
+   "dst": "creative:before and after",
+   "evidence": [
+    {
+     "video": "yfN-DMCoue0",
+     "t": "00:24:55",
+     "quote": "we can compare the before and after"
+    }
+   ]
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "yfN-DMCoue0",
+     "t": "00:08:28",
+     "quote": "number five, Identity Forge from the"
+    }
+   ]
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "mentions",
+   "dst": "technique:latent",
+   "evidence": [
+    {
+     "video": "yfN-DMCoue0",
+     "t": "00:12:59",
+     "quote": "seed controls noise in the latent, but"
+    }
+   ]
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "yfN-DMCoue0",
+     "t": "00:16:02",
+     "quote": "specifically for batch prompt generation"
+    }
+   ]
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "yfN-DMCoue0",
+     "t": "00:22:08",
+     "quote": "Here we have face detailer, which is"
+    }
+   ]
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "yfN-DMCoue0",
+     "t": "00:12:40",
+     "quote": "smaller models like Zimage Turbo have"
+    }
+   ]
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "mentions",
+   "dst": "setting:strength=20",
+   "evidence": [
+    {
+     "video": "yfN-DMCoue0",
+     "t": "00:13:34",
+     "quote": "Strength is at 20. Controlling how"
+    }
+   ]
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "mentions",
+   "dst": "setting:seed=42",
+   "evidence": [
+    {
+     "video": "yfN-DMCoue0",
+     "t": "00:14:09",
+     "quote": "purposes, let's fix our seed at 42 and"
+    }
+   ]
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "mentions",
+   "dst": "node_pack:face-detailer",
+   "evidence": [
+    {
+     "video": "yfN-DMCoue0",
+     "t": "00:22:08",
+     "quote": "Here we have face detailer, which is"
+    }
+   ]
+  },
+  {
+   "src": "video:yfN-DMCoue0",
+   "rel": "mentions",
+   "dst": "node_pack:ultralytics",
+   "evidence": [
+    {
+     "video": "yfN-DMCoue0",
+     "t": "00:23:25",
+     "quote": "models called ultralytics detectors,"
+    }
+   ]
+  },
+  {
+   "src": "video:k1STt31lsDA",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:k1STt31lsDA",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "k1STt31lsDA",
+     "t": "00:01:46",
+     "quote": "we used Z image turbo as our base model,"
+    }
+   ]
+  },
+  {
+   "src": "video:k1STt31lsDA",
+   "rel": "mentions",
+   "dst": "model:flux-2-klein",
+   "evidence": [
+    {
+     "video": "k1STt31lsDA",
+     "t": "00:03:55",
+     "quote": "a Flux 2 Klein, the 9 billion parameter"
+    }
+   ]
+  },
+  {
+   "src": "video:k1STt31lsDA",
+   "rel": "mentions",
+   "dst": "model:qwen-image-edit",
+   "evidence": [
+    {
+     "video": "k1STt31lsDA",
+     "t": "00:04:39",
+     "quote": "tried Qwen Image Edit 2511, which is"
+    }
+   ]
+  },
+  {
+   "src": "video:k1STt31lsDA",
+   "rel": "mentions",
+   "dst": "model:qwen-image",
+   "evidence": [
+    {
+     "video": "k1STt31lsDA",
+     "t": "00:04:39",
+     "quote": "tried Qwen Image Edit 2511, which is"
+    }
+   ]
+  },
+  {
+   "src": "video:k1STt31lsDA",
+   "rel": "mentions",
+   "dst": "technique:latent",
+   "evidence": [
+    {
+     "video": "k1STt31lsDA",
+     "t": "00:02:43",
+     "quote": "the reference latent node. And the last"
+    }
+   ]
+  },
+  {
+   "src": "video:k1STt31lsDA",
+   "rel": "mentions",
+   "dst": "technique:denoise",
+   "evidence": [
+    {
+     "video": "k1STt31lsDA",
+     "t": "00:13:10",
+     "quote": "Denoise is going to stay at one."
+    }
+   ]
+  },
+  {
+   "src": "video:jpXH_numZg8",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:jpXH_numZg8",
+   "rel": "mentions",
+   "dst": "creative:carousel",
+   "evidence": [
+    {
+     "video": "jpXH_numZg8",
+     "t": "00:00:01",
+     "quote": "with an update to the Instagram Carousel"
+    }
+   ]
+  },
+  {
+   "src": "video:jpXH_numZg8",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "jpXH_numZg8",
+     "t": "00:02:16",
+     "quote": "same identity, just different poses and"
+    }
+   ]
+  },
+  {
+   "src": "video:jpXH_numZg8",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "jpXH_numZg8",
+     "t": "00:07:02",
+     "quote": "face and eye detailer pass at the end of"
+    }
+   ]
+  },
+  {
+   "src": "video:jpXH_numZg8",
+   "rel": "mentions",
+   "dst": "technique:denoise",
+   "evidence": [
+    {
+     "video": "jpXH_numZg8",
+     "t": "00:07:26",
+     "quote": "these denoise values are set to anything"
+    }
+   ]
+  },
+  {
+   "src": "video:jpXH_numZg8",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "jpXH_numZg8",
+     "t": "00:07:50",
+     "quote": "much without a LoRA attached to the"
+    }
+   ]
+  },
+  {
+   "src": "video:jpXH_numZg8",
+   "rel": "mentions",
+   "dst": "model:flux-2-klein",
+   "evidence": [
+    {
+     "video": "jpXH_numZg8",
+     "t": "00:02:48",
+     "quote": "Klein, the 9 billion parameter model,"
+    }
+   ]
+  },
+  {
+   "src": "video:fJFnHkU6hzo",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:fJFnHkU6hzo",
+   "rel": "mentions",
+   "dst": "model:sam3",
+   "evidence": [
+    {
+     "video": "fJFnHkU6hzo",
+     "t": "00:00:27",
+     "quote": "going to let a model called SAM 3 read a"
+    }
+   ]
+  },
+  {
+   "src": "video:fJFnHkU6hzo",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "fJFnHkU6hzo",
+     "t": "00:04:38",
+     "quote": "Today, we are using Z Image Turbo again,"
+    }
+   ]
+  },
+  {
+   "src": "video:fJFnHkU6hzo",
+   "rel": "mentions",
+   "dst": "node_pack:comfyui-sam3",
+   "evidence": [
+    {
+     "video": "fJFnHkU6hzo",
+     "t": "00:00:27",
+     "quote": "going to let a model called SAM 3 read a"
+    }
+   ]
+  },
+  {
+   "src": "video:fJFnHkU6hzo",
+   "rel": "mentions",
+   "dst": "technique:inpaint",
+   "evidence": [
+    {
+     "video": "fJFnHkU6hzo",
+     "t": "00:03:06",
+     "quote": "Inpaint Crop. So, you can just search"
+    }
+   ]
+  },
+  {
+   "src": "video:fJFnHkU6hzo",
+   "rel": "mentions",
+   "dst": "technique:latent",
+   "evidence": [
+    {
+     "video": "fJFnHkU6hzo",
+     "t": "00:06:43",
+     "quote": "the latent output into our latent image"
+    }
+   ]
+  },
+  {
+   "src": "video:fJFnHkU6hzo",
+   "rel": "mentions",
+   "dst": "technique:image to image",
+   "evidence": [
+    {
+     "video": "fJFnHkU6hzo",
+     "t": "00:22:07",
+     "quote": "image to image, yes, you can get good"
+    }
+   ]
+  },
+  {
+   "src": "video:fJFnHkU6hzo",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "fJFnHkU6hzo",
+     "t": "00:11:01",
+     "quote": "keeps the aspect ratio of your photo."
+    }
+   ]
+  },
+  {
+   "src": "video:yGYhNYPmvm0",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:yGYhNYPmvm0",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "yGYhNYPmvm0",
+     "t": "00:02:03",
+     "quote": "note one covers the core Z image turbo"
+    }
+   ]
+  },
+  {
+   "src": "video:yGYhNYPmvm0",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "yGYhNYPmvm0",
+     "t": "00:02:42",
+     "quote": "This is just the detailer models, the"
+    }
+   ]
+  },
+  {
+   "src": "video:yGYhNYPmvm0",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "yGYhNYPmvm0",
+     "t": "00:06:12",
+     "quote": "photo, but it will upscale it to 1600"
+    }
+   ]
+  },
+  {
+   "src": "video:yGYhNYPmvm0",
+   "rel": "mentions",
+   "dst": "technique:denoise",
+   "evidence": [
+    {
+     "video": "yGYhNYPmvm0",
+     "t": "00:08:15",
+     "quote": "The denoise value I use around 0.6 to"
+    }
+   ]
+  },
+  {
+   "src": "video:yGYhNYPmvm0",
+   "rel": "mentions",
+   "dst": "technique:image to image",
+   "evidence": [
+    {
+     "video": "yGYhNYPmvm0",
+     "t": "00:09:17",
+     "quote": "reference photo through a image to image"
+    }
+   ]
+  },
+  {
+   "src": "video:yGYhNYPmvm0",
+   "rel": "mentions",
+   "dst": "technique:inpaint",
+   "evidence": [
+    {
+     "video": "yGYhNYPmvm0",
+     "t": "00:10:26",
+     "quote": "been replaced. The inpaint did very good"
+    }
+   ]
+  },
+  {
+   "src": "video:yGYhNYPmvm0",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "yGYhNYPmvm0",
+     "t": "00:06:09",
+     "quote": "same exact aspect ratio of the original"
+    }
+   ]
+  },
+  {
+   "src": "video:yGYhNYPmvm0",
+   "rel": "mentions",
+   "dst": "setting:denoise=0.6",
+   "evidence": [
+    {
+     "video": "yGYhNYPmvm0",
+     "t": "00:08:15",
+     "quote": "The denoise value I use around 0.6 to"
+    }
+   ]
+  },
+  {
+   "src": "video:yGYhNYPmvm0",
+   "rel": "mentions",
+   "dst": "node_pack:face-detailer",
+   "evidence": [
+    {
+     "video": "yGYhNYPmvm0",
+     "t": "00:09:04",
+     "quote": "runs through the face detailer and the"
+    }
+   ]
+  },
+  {
+   "src": "video:mpMFjL47Cb0",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:mpMFjL47Cb0",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "mpMFjL47Cb0",
+     "t": "00:00:00",
+     "quote": "Learn ComfyUI Img2Img by Building It Yourself (With LoRA Support) | Build With Me [EP. 2]"
+    }
+   ]
+  },
+  {
+   "src": "video:mpMFjL47Cb0",
+   "rel": "mentions",
+   "dst": "technique:img2img",
+   "evidence": [
+    {
+     "video": "mpMFjL47Cb0",
+     "t": "00:00:00",
+     "quote": "Learn ComfyUI Img2Img by Building It Yourself (With LoRA Support) | Build With Me [EP. 2]"
+    }
+   ]
+  },
+  {
+   "src": "video:mpMFjL47Cb0",
+   "rel": "mentions",
+   "dst": "technique:denoise",
+   "evidence": [
+    {
+     "video": "mpMFjL47Cb0",
+     "t": "00:02:56",
+     "quote": "and denoise from there."
+    }
+   ]
+  },
+  {
+   "src": "video:mpMFjL47Cb0",
+   "rel": "mentions",
+   "dst": "technique:image to image",
+   "evidence": [
+    {
+     "video": "mpMFjL47Cb0",
+     "t": "00:06:25",
+     "quote": "image to image, we need a load image"
+    }
+   ]
+  },
+  {
+   "src": "video:mpMFjL47Cb0",
+   "rel": "mentions",
+   "dst": "technique:text to image",
+   "evidence": [
+    {
+     "video": "mpMFjL47Cb0",
+     "t": "00:06:29",
+     "quote": "noise like we did with text to image,"
+    }
+   ]
+  },
+  {
+   "src": "video:mpMFjL47Cb0",
+   "rel": "mentions",
+   "dst": "technique:latent",
+   "evidence": [
+    {
+     "video": "mpMFjL47Cb0",
+     "t": "00:08:43",
+     "quote": "photo from pixels into latent space."
+    }
+   ]
+  },
+  {
+   "src": "video:mpMFjL47Cb0",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "mpMFjL47Cb0",
+     "t": "00:03:56",
+     "quote": "be using Z image turbo and if you"
+    }
+   ]
+  },
+  {
+   "src": "video:mpMFjL47Cb0",
+   "rel": "mentions",
+   "dst": "setting:sampler=1",
+   "evidence": [
+    {
+     "video": "mpMFjL47Cb0",
+     "t": "00:13:01",
+     "quote": "to what our K sampler had in episode 1,"
+    }
+   ]
+  },
+  {
+   "src": "video:mpMFjL47Cb0",
+   "rel": "mentions",
+   "dst": "setting:denoise=1.0",
+   "evidence": [
+    {
+     "video": "mpMFjL47Cb0",
+     "t": "00:14:12",
+     "quote": "In text to image, denoise is set to 1.0."
+    }
+   ]
+  },
+  {
+   "src": "video:mpMFjL47Cb0",
+   "rel": "mentions",
+   "dst": "setting:denoise=0.75",
+   "evidence": [
+    {
+     "video": "mpMFjL47Cb0",
+     "t": "00:15:13",
+     "quote": "going to set our denoise value to 0.75"
+    }
+   ]
+  },
+  {
+   "src": "video:K02DUjP0bIw",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:K02DUjP0bIw",
+   "rel": "mentions",
+   "dst": "gpu:4090",
+   "evidence": [
+    {
+     "video": "K02DUjP0bIw",
+     "t": "00:00:05",
+     "quote": "4090 or 5090 or the RTX Pro 6000"
+    }
+   ]
+  },
+  {
+   "src": "video:K02DUjP0bIw",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "K02DUjP0bIw",
+     "t": "00:00:05",
+     "quote": "4090 or 5090 or the RTX Pro 6000"
+    }
+   ]
+  },
+  {
+   "src": "video:K02DUjP0bIw",
+   "rel": "mentions",
+   "dst": "node_pack:comfyui-custom-scripts",
+   "evidence": [
+    {
+     "video": "K02DUjP0bIw",
+     "t": "00:02:34",
+     "quote": "order custom scripts channel and I'll"
+    }
+   ]
+  },
+  {
+   "src": "video:Bvpn3miGpw0",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:Bvpn3miGpw0",
+   "rel": "mentions",
+   "dst": "technique:latent",
+   "evidence": [
+    {
+     "video": "Bvpn3miGpw0",
+     "t": "00:03:41",
+     "quote": "the raw latent data the model produces"
+    }
+   ]
+  },
+  {
+   "src": "video:Bvpn3miGpw0",
+   "rel": "mentions",
+   "dst": "technique:text to image",
+   "evidence": [
+    {
+     "video": "Bvpn3miGpw0",
+     "t": "00:20:19",
+     "quote": "You've created a text-to-image workflow."
+    }
+   ]
+  },
+  {
+   "src": "video:Bvpn3miGpw0",
+   "rel": "mentions",
+   "dst": "technique:image to image",
+   "evidence": [
+    {
+     "video": "Bvpn3miGpw0",
+     "t": "00:20:27",
+     "quote": "which is going to cover image to image,"
+    }
+   ]
+  },
+  {
+   "src": "video:Bvpn3miGpw0",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "Bvpn3miGpw0",
+     "t": "00:04:26",
+     "quote": "aspect ratio of the photo."
+    }
+   ]
+  },
+  {
+   "src": "video:Bvpn3miGpw0",
+   "rel": "mentions",
+   "dst": "creative:9:16",
+   "evidence": [
+    {
+     "video": "Bvpn3miGpw0",
+     "t": "00:13:13",
+     "quote": "basically a 9:16 aspect ratio, which is"
+    }
+   ]
+  },
+  {
+   "src": "video:Bvpn3miGpw0",
+   "rel": "mentions",
+   "dst": "setting:steps=1",
+   "evidence": [
+    {
+     "video": "Bvpn3miGpw0",
+     "t": "00:07:54",
+     "quote": "steps 1 through 3, these three nodes"
+    }
+   ]
+  },
+  {
+   "src": "video:Bvpn3miGpw0",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "Bvpn3miGpw0",
+     "t": "00:08:04",
+     "quote": "case, I'm going to be using Z image"
+    }
+   ]
+  },
+  {
+   "src": "video:Bvpn3miGpw0",
+   "rel": "mentions",
+   "dst": "gpu:4090",
+   "evidence": [
+    {
+     "video": "Bvpn3miGpw0",
+     "t": "00:17:12",
+     "quote": "something like a 4090, an RTX 4090 as a"
+    }
+   ]
+  },
+  {
+   "src": "video:Bvpn3miGpw0",
+   "rel": "mentions",
+   "dst": "gpu:rtx 4090 ",
+   "evidence": [
+    {
+     "video": "Bvpn3miGpw0",
+     "t": "00:17:12",
+     "quote": "something like a 4090, an RTX 4090 as a"
+    }
+   ]
+  },
+  {
+   "src": "video:Bvpn3miGpw0",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "Bvpn3miGpw0",
+     "t": "00:17:14",
+     "quote": "GPU, or if you have a 5090,"
+    }
+   ]
+  },
+  {
+   "src": "video:44CTwaYdRBQ",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:44CTwaYdRBQ",
+   "rel": "mentions",
+   "dst": "model:wan-2.2",
+   "evidence": [
+    {
+     "video": "44CTwaYdRBQ",
+     "t": "00:00:00",
+     "quote": "WAN 2.2 Image to Video in ComfyUI — Simple Workflow That Actually Works (Best Results)"
+    }
+   ]
+  },
+  {
+   "src": "video:44CTwaYdRBQ",
+   "rel": "mentions",
+   "dst": "technique:image to video",
+   "evidence": [
+    {
+     "video": "44CTwaYdRBQ",
+     "t": "00:00:00",
+     "quote": "WAN 2.2 Image to Video in ComfyUI — Simple Workflow That Actually Works (Best Results)"
+    }
+   ]
+  },
+  {
+   "src": "video:44CTwaYdRBQ",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "44CTwaYdRBQ",
+     "t": "00:05:04",
+     "quote": "guys to be able to see where the LoRa"
+    }
+   ]
+  },
+  {
+   "src": "video:44CTwaYdRBQ",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "44CTwaYdRBQ",
+     "t": "00:08:49",
+     "quote": "the best of the batch, which is expected"
+    }
+   ]
+  },
+  {
+   "src": "video:44CTwaYdRBQ",
+   "rel": "mentions",
+   "dst": "gpu:rtx 4090",
+   "evidence": [
+    {
+     "video": "44CTwaYdRBQ",
+     "t": "00:02:24",
+     "quote": "For generation times, with an RTX 4090,"
+    }
+   ]
+  },
+  {
+   "src": "video:44CTwaYdRBQ",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "44CTwaYdRBQ",
+     "t": "00:02:34",
+     "quote": "And with the 5090, you can push the"
+    }
+   ]
+  },
+  {
+   "src": "video:44CTwaYdRBQ",
+   "rel": "mentions",
+   "dst": "gpu:rtx 4090 ",
+   "evidence": [
+    {
+     "video": "44CTwaYdRBQ",
+     "t": "00:08:01",
+     "quote": "First of all, I'm using an RTX 4090 for"
+    }
+   ]
+  },
+  {
+   "src": "video:44CTwaYdRBQ",
+   "rel": "mentions",
+   "dst": "gpu:4090",
+   "evidence": [
+    {
+     "video": "44CTwaYdRBQ",
+     "t": "00:08:12",
+     "quote": "4090. And I'm also doing 89 frames at 24"
+    }
+   ]
+  },
+  {
+   "src": "video:44CTwaYdRBQ",
+   "rel": "mentions",
+   "dst": "setting:frame=24",
+   "evidence": [
+    {
+     "video": "44CTwaYdRBQ",
+     "t": "00:02:45",
+     "quote": "I recommend a frame rate of at least 24"
+    }
+   ]
+  },
+  {
+   "src": "video:44CTwaYdRBQ",
+   "rel": "mentions",
+   "dst": "setting:frames=24",
+   "evidence": [
+    {
+     "video": "44CTwaYdRBQ",
+     "t": "00:06:24",
+     "quote": "to do 49 frames at 24 frames per second,"
+    }
+   ]
+  },
+  {
+   "src": "video:rFmoSu7pRKE",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:rFmoSu7pRKE",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "rFmoSu7pRKE",
+     "t": "00:00:43",
+     "quote": "same way that I trained my Z image turbo"
+    }
+   ]
+  },
+  {
+   "src": "video:rFmoSu7pRKE",
+   "rel": "mentions",
+   "dst": "creative:carousel",
+   "evidence": [
+    {
+     "video": "rFmoSu7pRKE",
+     "t": "00:02:08",
+     "quote": "this is a carousel builder for"
+    }
+   ]
+  },
+  {
+   "src": "video:rFmoSu7pRKE",
+   "rel": "mentions",
+   "dst": "technique:latent",
+   "evidence": [
+    {
+     "video": "rFmoSu7pRKE",
+     "t": "00:04:47",
+     "quote": "latent basically image resizer here."
+    }
+   ]
+  },
+  {
+   "src": "video:rFmoSu7pRKE",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "rFmoSu7pRKE",
+     "t": "00:06:21",
+     "quote": "detailer and eye detailer. These are a"
+    }
+   ]
+  },
+  {
+   "src": "video:rFmoSu7pRKE",
+   "rel": "mentions",
+   "dst": "node_pack:face-detailer",
+   "evidence": [
+    {
+     "video": "rFmoSu7pRKE",
+     "t": "00:08:54",
+     "quote": "turn off the face detailer because I"
+    }
+   ]
+  },
+  {
+   "src": "video:Te__JlXlBHw",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:Te__JlXlBHw",
+   "rel": "mentions",
+   "dst": "technique:image to image",
+   "evidence": [
+    {
+     "video": "Te__JlXlBHw",
+     "t": "00:00:00",
+     "quote": "I Built the Ultimate Image to Image Workflow for OFM AI Influencer Pages"
+    }
+   ]
+  },
+  {
+   "src": "video:Te__JlXlBHw",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "Te__JlXlBHw",
+     "t": "00:02:54",
+     "quote": "image through a resolution upscale based"
+    }
+   ]
+  },
+  {
+   "src": "video:Te__JlXlBHw",
+   "rel": "mentions",
+   "dst": "technique:latent",
+   "evidence": [
+    {
+     "video": "Te__JlXlBHw",
+     "t": "00:03:13",
+     "quote": "And then take that latent output after"
+    }
+   ]
+  },
+  {
+   "src": "video:Te__JlXlBHw",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "Te__JlXlBHw",
+     "t": "00:05:12",
+     "quote": "detailer, which will enhance and fix the"
+    }
+   ]
+  },
+  {
+   "src": "video:Te__JlXlBHw",
+   "rel": "mentions",
+   "dst": "technique:denoise",
+   "evidence": [
+    {
+     "video": "Te__JlXlBHw",
+     "t": "00:06:31",
+     "quote": "you can change the denoise value in the"
+    }
+   ]
+  },
+  {
+   "src": "video:Te__JlXlBHw",
+   "rel": "mentions",
+   "dst": "gpu:rtx 4090 ",
+   "evidence": [
+    {
+     "video": "Te__JlXlBHw",
+     "t": "00:00:24",
+     "quote": "a RTX 4090 through RunPod for this"
+    }
+   ]
+  },
+  {
+   "src": "video:Te__JlXlBHw",
+   "rel": "mentions",
+   "dst": "gpu:rtx 4090",
+   "evidence": [
+    {
+     "video": "Te__JlXlBHw",
+     "t": "00:00:31",
+     "quote": "outdated than the RTX 4090. But, for"
+    }
+   ]
+  },
+  {
+   "src": "video:Te__JlXlBHw",
+   "rel": "mentions",
+   "dst": "gpu:4090",
+   "evidence": [
+    {
+     "video": "Te__JlXlBHw",
+     "t": "00:00:34",
+     "quote": "the 4090 today."
+    }
+   ]
+  },
+  {
+   "src": "video:Te__JlXlBHw",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "Te__JlXlBHw",
+     "t": "00:03:56",
+     "quote": "Z Image Turbo does not use negative"
+    }
+   ]
+  },
+  {
+   "src": "video:2ie9pq5Saw4",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:2ie9pq5Saw4",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "2ie9pq5Saw4",
+     "t": "00:00:48",
+     "quote": "which is going to be a Z image"
+    }
+   ]
+  },
+  {
+   "src": "video:2ie9pq5Saw4",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "2ie9pq5Saw4",
+     "t": "00:00:53",
+     "quote": "the 5090, the RTX 5090. Um, this"
+    }
+   ]
+  },
+  {
+   "src": "video:2ie9pq5Saw4",
+   "rel": "mentions",
+   "dst": "gpu:rtx 5090",
+   "evidence": [
+    {
+     "video": "2ie9pq5Saw4",
+     "t": "00:00:53",
+     "quote": "the 5090, the RTX 5090. Um, this"
+    }
+   ]
+  },
+  {
+   "src": "video:2ie9pq5Saw4",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "2ie9pq5Saw4",
+     "t": "00:09:32",
+     "quote": "Batch size should be one. Everything"
+    }
+   ]
+  },
+  {
+   "src": "video:2ie9pq5Saw4",
+   "rel": "mentions",
+   "dst": "setting:steps=3",
+   "evidence": [
+    {
+     "video": "2ie9pq5Saw4",
+     "t": "00:14:55",
+     "quote": "a steps out of 3,000, which should be"
+    }
+   ]
+  },
+  {
+   "src": "video:2ie9pq5Saw4",
+   "rel": "mentions",
+   "dst": "setting:step=600",
+   "evidence": [
+    {
+     "video": "2ie9pq5Saw4",
+     "t": "00:16:24",
+     "quote": "say, for example, at step 600, you have"
+    }
+   ]
+  },
+  {
+   "src": "video:2ie9pq5Saw4",
+   "rel": "mentions",
+   "dst": "setting:step=2700",
+   "evidence": [
+    {
+     "video": "2ie9pq5Saw4",
+     "t": "00:17:06",
+     "quote": "almost on step 2700 here and I am going"
+    }
+   ]
+  },
+  {
+   "src": "video:2ie9pq5Saw4",
+   "rel": "mentions",
+   "dst": "setting:step=2600",
+   "evidence": [
+    {
+     "video": "2ie9pq5Saw4",
+     "t": "00:18:20",
+     "quote": "step 2600. You'll see that"
+    }
+   ]
+  },
+  {
+   "src": "video:OZe6UwPqr4g",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:OZe6UwPqr4g",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "OZe6UwPqr4g",
+     "t": "00:00:11",
+     "quote": "Um this is all for Z image trainer,"
+    }
+   ]
+  },
+  {
+   "src": "video:OZe6UwPqr4g",
+   "rel": "mentions",
+   "dst": "creative:voice over",
+   "evidence": [
+    {
+     "video": "OZe6UwPqr4g",
+     "t": "00:00:47",
+     "quote": "from some AI voice over [ __ ] then"
+    }
+   ]
+  },
+  {
+   "src": "video:OZe6UwPqr4g",
+   "rel": "mentions",
+   "dst": "creative:low angle",
+   "evidence": [
+    {
+     "video": "OZe6UwPqr4g",
+     "t": "00:25:40",
+     "quote": "for the low angle selfies. Double-click,"
+    }
+   ]
+  },
+  {
+   "src": "video:OZe6UwPqr4g",
+   "rel": "mentions",
+   "dst": "gpu:rtx 4090",
+   "evidence": [
+    {
+     "video": "OZe6UwPqr4g",
+     "t": "00:04:53",
+     "quote": "going to rent a RTX 4090."
+    }
+   ]
+  },
+  {
+   "src": "video:OZe6UwPqr4g",
+   "rel": "mentions",
+   "dst": "node_pack:face-detailer",
+   "evidence": [
+    {
+     "video": "OZe6UwPqr4g",
+     "t": "00:16:04",
+     "quote": "face detailer node. The reason that the"
+    }
+   ]
+  },
+  {
+   "src": "video:OZe6UwPqr4g",
+   "rel": "mentions",
+   "dst": "node_pack:ultralytics",
+   "evidence": [
+    {
+     "video": "OZe6UwPqr4g",
+     "t": "00:17:13",
+     "quote": "something like Ultralytics detector um"
+    }
+   ]
+  },
+  {
+   "src": "video:OZe6UwPqr4g",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "OZe6UwPqr4g",
+     "t": "00:16:04",
+     "quote": "face detailer node. The reason that the"
+    }
+   ]
+  },
+  {
+   "src": "video:OZe6UwPqr4g",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "OZe6UwPqr4g",
+     "t": "00:16:29",
+     "quote": "that will make your LoRA more realistic"
+    }
+   ]
+  },
+  {
+   "src": "video:lUT8ETBu1SE",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:lUT8ETBu1SE",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "lUT8ETBu1SE",
+     "t": "00:00:11",
+     "quote": "with face detail from Z Image Turbo."
+    }
+   ]
+  },
+  {
+   "src": "video:lUT8ETBu1SE",
+   "rel": "mentions",
+   "dst": "node_pack:face-detailer",
+   "evidence": [
+    {
+     "video": "lUT8ETBu1SE",
+     "t": "00:05:01",
+     "quote": "do specifically to the face detailer"
+    }
+   ]
+  },
+  {
+   "src": "video:lUT8ETBu1SE",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "lUT8ETBu1SE",
+     "t": "00:05:01",
+     "quote": "do specifically to the face detailer"
+    }
+   ]
+  },
+  {
+   "src": "video:lUT8ETBu1SE",
+   "rel": "mentions",
+   "dst": "technique:denoise",
+   "evidence": [
+    {
+     "video": "lUT8ETBu1SE",
+     "t": "00:08:15",
+     "quote": "scheduler. Um the denoise, it once you"
+    }
+   ]
+  },
+  {
+   "src": "video:lUT8ETBu1SE",
+   "rel": "mentions",
+   "dst": "gpu:rtx 4090",
+   "evidence": [
+    {
+     "video": "lUT8ETBu1SE",
+     "t": "00:07:07",
+     "quote": "money. Also, I am running the RTX 4090"
+    }
+   ]
+  },
+  {
+   "src": "video:HkAvmL4DvHo",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:HkAvmL4DvHo",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "HkAvmL4DvHo",
+     "t": "00:00:00",
+     "quote": "Generate 20 HD AI Images Per Minute  (with LoRAs) With This INSANE Z-Image Turbo Workflow (SIMPLE)"
+    }
+   ]
+  },
+  {
+   "src": "video:HkAvmL4DvHo",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "HkAvmL4DvHo",
+     "t": "00:09:25",
+     "quote": "left. So, you click LoRA, and"
+    }
+   ]
+  },
+  {
+   "src": "video:HkAvmL4DvHo",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "HkAvmL4DvHo",
+     "t": "00:12:30",
+     "quote": "through a batch of, let's say, eight"
+    }
+   ]
+  },
+  {
+   "src": "video:HkAvmL4DvHo",
+   "rel": "mentions",
+   "dst": "technique:text to image",
+   "evidence": [
+    {
+     "video": "HkAvmL4DvHo",
+     "t": "00:15:54",
+     "quote": "this is all you need for a text to image"
+    }
+   ]
+  },
+  {
+   "src": "video:Ghvd0E2Lki4",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:Ghvd0E2Lki4",
+   "rel": "mentions",
+   "dst": "gpu:4090",
+   "evidence": [
+    {
+     "video": "Ghvd0E2Lki4",
+     "t": "00:00:39",
+     "quote": "you know, 4090, 5090, just don't have"
+    }
+   ]
+  },
+  {
+   "src": "video:Ghvd0E2Lki4",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "Ghvd0E2Lki4",
+     "t": "00:00:39",
+     "quote": "you know, 4090, 5090, just don't have"
+    }
+   ]
+  },
+  {
+   "src": "video:Ghvd0E2Lki4",
+   "rel": "mentions",
+   "dst": "gpu:rtx 4090",
+   "evidence": [
+    {
+     "video": "Ghvd0E2Lki4",
+     "t": "00:01:33",
+     "quote": "RTX 4090. You can get an L40S. You can"
+    }
+   ]
+  },
+  {
+   "src": "video:Ghvd0E2Lki4",
+   "rel": "mentions",
+   "dst": "hardware:141GB card",
+   "evidence": [
+    {
+     "video": "Ghvd0E2Lki4",
+     "t": "00:01:35",
+     "quote": "get the H200, uh the 141 GB VRAM card,"
+    }
+   ]
+  },
+  {
+   "src": "video:Ghvd0E2Lki4",
+   "rel": "mentions",
+   "dst": "creative:hook",
+   "evidence": [
+    {
+     "video": "Ghvd0E2Lki4",
+     "t": "00:02:37",
+     "quote": "Hook a brother up. Do yourself a solid"
+    }
+   ]
+  },
+  {
+   "src": "video:Ghvd0E2Lki4",
+   "rel": "mentions",
+   "dst": "version:pytorch 2.8",
+   "evidence": [
+    {
+     "video": "Ghvd0E2Lki4",
+     "t": "00:03:21",
+     "quote": "here. You need PyTorch 2.8 um if you get"
+    }
+   ]
+  },
+  {
+   "src": "video:fhgaaJV1OTQ",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:fhgaaJV1OTQ",
+   "rel": "mentions",
+   "dst": "model:wan-animate",
+   "evidence": [
+    {
+     "video": "fhgaaJV1OTQ",
+     "t": "00:00:00",
+     "quote": "Wan Animate 2 Or Scail 2? The Answer Surprised Me #comfyui #ai #aivideo #video"
+    }
+   ]
+  },
+  {
+   "src": "video:fhgaaJV1OTQ",
+   "rel": "mentions",
+   "dst": "model:scail-2",
+   "evidence": [
+    {
+     "video": "fhgaaJV1OTQ",
+     "t": "00:00:00",
+     "quote": "Wan Animate 2 Or Scail 2? The Answer Surprised Me #comfyui #ai #aivideo #video"
+    }
+   ]
+  },
+  {
+   "src": "video:fhgaaJV1OTQ",
+   "rel": "mentions",
+   "dst": "node_pack:wan-animate",
+   "evidence": [
+    {
+     "video": "fhgaaJV1OTQ",
+     "t": "00:00:00",
+     "quote": "Wan Animate 2 Or Scail 2? The Answer Surprised Me #comfyui #ai #aivideo #video"
+    }
+   ]
+  },
+  {
+   "src": "video:deL4H1G0b7s",
+   "rel": "belongs_to",
+   "dst": "channel:loratech"
+  },
+  {
+   "src": "video:deL4H1G0b7s",
+   "rel": "mentions",
+   "dst": "technique:img2img",
+   "evidence": [
+    {
+     "video": "deL4H1G0b7s",
+     "t": "00:00:00",
+     "quote": "How To Use Krea 2 for Img2Img and Txt2Img with Absolutely no Hassle"
+    }
+   ]
+  },
+  {
+   "src": "video:deL4H1G0b7s",
+   "rel": "mentions",
+   "dst": "technique:image to image",
+   "evidence": [
+    {
+     "video": "deL4H1G0b7s",
+     "t": "00:00:08",
+     "quote": "Coyo 2 image to image workflow to look"
+    }
+   ]
+  },
+  {
+   "src": "video:3iTNtbfD6_g",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:3iTNtbfD6_g",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "3iTNtbfD6_g",
+     "t": "00:00:00",
+     "quote": "This ComfyUI Model is way better than Nano Banana"
+    }
+   ]
+  },
+  {
+   "src": "video:3iTNtbfD6_g",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "3iTNtbfD6_g",
+     "t": "00:01:26",
+     "quote": "one reason. You pick your aspect ratio"
+    }
+   ]
+  },
+  {
+   "src": "video:3iTNtbfD6_g",
+   "rel": "mentions",
+   "dst": "technique:latent",
+   "evidence": [
+    {
+     "video": "3iTNtbfD6_g",
+     "t": "00:02:05",
+     "quote": "latent, that is the small canvas the"
+    }
+   ]
+  },
+  {
+   "src": "video:3iTNtbfD6_g",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "3iTNtbfD6_g",
+     "t": "00:04:27",
+     "quote": "detailer in here, too, and we keep it"
+    }
+   ]
+  },
+  {
+   "src": "video:U8l5w_sCkhg",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:U8l5w_sCkhg",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "U8l5w_sCkhg",
+     "t": "00:00:00",
+     "quote": "ComfyUI + Claude = Unlimited AI UGC Videos (FREE Workflow)"
+    }
+   ]
+  },
+  {
+   "src": "video:U8l5w_sCkhg",
+   "rel": "mentions",
+   "dst": "creative:reel",
+   "evidence": [
+    {
+     "video": "U8l5w_sCkhg",
+     "t": "00:06:44",
+     "quote": "the complete reel from start to finish."
+    }
+   ]
+  },
+  {
+   "src": "video:U8l5w_sCkhg",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "U8l5w_sCkhg",
+     "t": "00:03:14",
+     "quote": "models like GPT Image 2 or Nano Banana"
+    }
+   ]
+  },
+  {
+   "src": "video:U8l5w_sCkhg",
+   "rel": "mentions",
+   "dst": "model:gpt-image-2",
+   "evidence": [
+    {
+     "video": "U8l5w_sCkhg",
+     "t": "00:03:14",
+     "quote": "models like GPT Image 2 or Nano Banana"
+    }
+   ]
+  },
+  {
+   "src": "video:U8l5w_sCkhg",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "U8l5w_sCkhg",
+     "t": "00:04:21",
+     "quote": "looks, because identity never comes from"
+    }
+   ]
+  },
+  {
+   "src": "video:sYoYrw_NMGY",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:sYoYrw_NMGY",
+   "rel": "mentions",
+   "dst": "model:ltx-2",
+   "evidence": [
+    {
+     "video": "sYoYrw_NMGY",
+     "t": "00:00:41",
+     "quote": "behind agree and access under the LTX 2"
+    }
+   ]
+  },
+  {
+   "src": "video:sYoYrw_NMGY",
+   "rel": "mentions",
+   "dst": "setting:frame=2.3",
+   "evidence": [
+    {
+     "video": "sYoYrw_NMGY",
+     "t": "00:00:57",
+     "quote": "frame 2.3 around a rebuilt video VAE and"
+    }
+   ]
+  },
+  {
+   "src": "video:sYoYrw_NMGY",
+   "rel": "mentions",
+   "dst": "setting:frame=2.5",
+   "evidence": [
+    {
+     "video": "sYoYrw_NMGY",
+     "t": "00:01:00",
+     "quote": "finer detail, and they frame 2.5 around"
+    }
+   ]
+  },
+  {
+   "src": "video:sYoYrw_NMGY",
+   "rel": "mentions",
+   "dst": "technique:text to video",
+   "evidence": [
+    {
+     "video": "sYoYrw_NMGY",
+     "t": "00:01:15",
+     "quote": "LTX 2.5 workflows: text to video, image"
+    }
+   ]
+  },
+  {
+   "src": "video:sYoYrw_NMGY",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "sYoYrw_NMGY",
+     "t": "00:01:26",
+     "quote": "whether her identity survives motion."
+    }
+   ]
+  },
+  {
+   "src": "video:sYoYrw_NMGY",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "sYoYrw_NMGY",
+     "t": "00:01:33",
+     "quote": "aspect ratio for 5 seconds at 24 frames"
+    }
+   ]
+  },
+  {
+   "src": "video:sYoYrw_NMGY",
+   "rel": "mentions",
+   "dst": "gpu:rtx 5090",
+   "evidence": [
+    {
+     "video": "sYoYrw_NMGY",
+     "t": "00:04:00",
+     "quote": "I generated these clips on an RTX 5090,"
+    }
+   ]
+  },
+  {
+   "src": "video:x9ETAqkAysg",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:x9ETAqkAysg",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "x9ETAqkAysg",
+     "t": "00:01:00",
+     "quote": "influencer or AI UGC creator, the board"
+    }
+   ]
+  },
+  {
+   "src": "video:rbBNEVyQyyk",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:rbBNEVyQyyk",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "rbBNEVyQyyk",
+     "t": "00:00:00",
+     "quote": "The ONLY Dataset Video You Will Ever Need for AI Influencers (FREE WORKFLOW)"
+    }
+   ]
+  },
+  {
+   "src": "video:rbBNEVyQyyk",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "rbBNEVyQyyk",
+     "t": "00:02:29",
+     "quote": "in any of the prompts, because identity"
+    }
+   ]
+  },
+  {
+   "src": "video:rbBNEVyQyyk",
+   "rel": "mentions",
+   "dst": "model:nano-banana-pro",
+   "evidence": [
+    {
+     "video": "rbBNEVyQyyk",
+     "t": "00:07:48",
+     "quote": "pick between Nano Banana Pro, Nano"
+    }
+   ]
+  },
+  {
+   "src": "video:rbBNEVyQyyk",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "rbBNEVyQyyk",
+     "t": "00:07:48",
+     "quote": "pick between Nano Banana Pro, Nano"
+    }
+   ]
+  },
+  {
+   "src": "video:7Hfn8g-httk",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:7Hfn8g-httk",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "7Hfn8g-httk",
+     "t": "00:00:00",
+     "quote": "Krea 2 Makes AI Influencers TOO Realistic (LoRa + Workflow)"
+    }
+   ]
+  },
+  {
+   "src": "video:7Hfn8g-httk",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "7Hfn8g-httk",
+     "t": "00:03:25",
+     "quote": "5090, set the batch size to one so it"
+    }
+   ]
+  },
+  {
+   "src": "video:7Hfn8g-httk",
+   "rel": "mentions",
+   "dst": "gpu:rtx 6000 ",
+   "evidence": [
+    {
+     "video": "7Hfn8g-httk",
+     "t": "00:01:58",
+     "quote": "grab an RTX 6000 Pro or RTX 5090. We go"
+    }
+   ]
+  },
+  {
+   "src": "video:7Hfn8g-httk",
+   "rel": "mentions",
+   "dst": "gpu:rtx 5090",
+   "evidence": [
+    {
+     "video": "7Hfn8g-httk",
+     "t": "00:01:58",
+     "quote": "grab an RTX 6000 Pro or RTX 5090. We go"
+    }
+   ]
+  },
+  {
+   "src": "video:7Hfn8g-httk",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "7Hfn8g-httk",
+     "t": "00:03:25",
+     "quote": "5090, set the batch size to one so it"
+    }
+   ]
+  },
+  {
+   "src": "video:7Hfn8g-httk",
+   "rel": "mentions",
+   "dst": "setting:steps=3000",
+   "evidence": [
+    {
+     "video": "7Hfn8g-httk",
+     "t": "00:03:18",
+     "quote": "steps, we go with 3000 and the optimizer"
+    }
+   ]
+  },
+  {
+   "src": "video:Es-Kpx9mnMo",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Es-Kpx9mnMo",
+   "rel": "mentions",
+   "dst": "creative:reel",
+   "evidence": [
+    {
+     "video": "Es-Kpx9mnMo",
+     "t": "00:00:21",
+     "quote": "system in Claude that takes any reel"
+    }
+   ]
+  },
+  {
+   "src": "video:Es-Kpx9mnMo",
+   "rel": "mentions",
+   "dst": "creative:hook",
+   "evidence": [
+    {
+     "video": "Es-Kpx9mnMo",
+     "t": "00:02:43",
+     "quote": "everything lands in one file. The hook,"
+    }
+   ]
+  },
+  {
+   "src": "video:Es-Kpx9mnMo",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "Es-Kpx9mnMo",
+     "t": "00:03:38",
+     "quote": "Identity comes from the reference"
+    }
+   ]
+  },
+  {
+   "src": "video:Es-Kpx9mnMo",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "Es-Kpx9mnMo",
+     "t": "00:04:33",
+     "quote": "720p. After that, we will upscale it to"
+    }
+   ]
+  },
+  {
+   "src": "video:Es-Kpx9mnMo",
+   "rel": "mentions",
+   "dst": "setting:resolution=1080",
+   "evidence": [
+    {
+     "video": "Es-Kpx9mnMo",
+     "t": "00:04:25",
+     "quote": "the resolution should be 720p, not 1080"
+    }
+   ]
+  },
+  {
+   "src": "video:nWlLlnjWC6k",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:nWlLlnjWC6k",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "nWlLlnjWC6k",
+     "t": "00:00:00",
+     "quote": "Build a Complete AI Character Dataset From Just 3 Photos"
+    }
+   ]
+  },
+  {
+   "src": "video:nWlLlnjWC6k",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "nWlLlnjWC6k",
+     "t": "00:01:16",
+     "quote": "like. While the batch is running, Claude"
+    }
+   ]
+  },
+  {
+   "src": "video:nWlLlnjWC6k",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "nWlLlnjWC6k",
+     "t": "00:03:40",
+     "quote": "The consistent identity never comes from"
+    }
+   ]
+  },
+  {
+   "src": "video:nWlLlnjWC6k",
+   "rel": "mentions",
+   "dst": "setting:resolution=3",
+   "evidence": [
+    {
+     "video": "nWlLlnjWC6k",
+     "t": "00:00:51",
+     "quote": "resolution, and a 3:4 aspect ratio. Show"
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:00:00",
+     "quote": "Create an Ultra Realistic AI Influencer From Scratch (LoRa + FREE Workflow)"
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:00:35",
+     "quote": "only learns one identity and nothing"
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:01:56",
+     "quote": "password. Inside, we go to the dataset"
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "technique:lora training",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:02:29",
+     "quote": "LoRA training videos you want to see."
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:05:06",
+     "quote": "click with a skin and hand detailer"
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "gpu:rtx 5090",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:01:28",
+     "quote": "spin up a new pod and grab the RTX 5090."
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "gpu:4090",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:03:28",
+     "quote": "4090 or a 5090, click on change"
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:03:28",
+     "quote": "4090 or a 5090, click on change"
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:02:20",
+     "quote": "architecture to Z image Turbo, and also"
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "setting:step=30",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:02:22",
+     "quote": "set the max step input to 30 to speed up"
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "setting:steps=3",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:02:32",
+     "quote": "steps at 3,000 for an efficient Z image"
+    }
+   ]
+  },
+  {
+   "src": "video:xgVLleA0yZM",
+   "rel": "mentions",
+   "dst": "setting:resolution=512",
+   "evidence": [
+    {
+     "video": "xgVLleA0yZM",
+     "t": "00:02:50",
+     "quote": "resolution section 512 and 768 because"
+    }
+   ]
+  },
+  {
+   "src": "video:_mN1AAzcBT4",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:_mN1AAzcBT4",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "_mN1AAzcBT4",
+     "t": "00:00:00",
+     "quote": "How to Create an AI Influencer from scratch Without Training a LoRA"
+    }
+   ]
+  },
+  {
+   "src": "video:_mN1AAzcBT4",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "_mN1AAzcBT4",
+     "t": "00:03:56",
+     "quote": "cleanest identity I can get, like clear"
+    }
+   ]
+  },
+  {
+   "src": "video:_mN1AAzcBT4",
+   "rel": "mentions",
+   "dst": "technique:face swap",
+   "evidence": [
+    {
+     "video": "_mN1AAzcBT4",
+     "t": "00:05:45",
+     "quote": "random face swap? I think we got a"
+    }
+   ]
+  },
+  {
+   "src": "video:_mN1AAzcBT4",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "_mN1AAzcBT4",
+     "t": "00:02:23",
+     "quote": "Nano Banana and the bottom branch is for"
+    }
+   ]
+  },
+  {
+   "src": "video:_mN1AAzcBT4",
+   "rel": "mentions",
+   "dst": "model:gpt-image-2",
+   "evidence": [
+    {
+     "video": "_mN1AAzcBT4",
+     "t": "00:02:25",
+     "quote": "Chat GPT image two. For this build, I'm"
+    }
+   ]
+  },
+  {
+   "src": "video:_mN1AAzcBT4",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "_mN1AAzcBT4",
+     "t": "00:03:32",
+     "quote": "possible later on. For the aspect ratio,"
+    }
+   ]
+  },
+  {
+   "src": "video:_mN1AAzcBT4",
+   "rel": "mentions",
+   "dst": "setting:step=simple",
+   "evidence": [
+    {
+     "video": "_mN1AAzcBT4",
+     "t": "00:05:07",
+     "quote": "step is again very simple. Add your API"
+    }
+   ]
+  },
+  {
+   "src": "video:JzCT6Ou88lQ",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:JzCT6Ou88lQ",
+   "rel": "mentions",
+   "dst": "creative:reel",
+   "evidence": [
+    {
+     "video": "JzCT6Ou88lQ",
+     "t": "00:00:09",
+     "quote": "itself. Here is the complete reel from"
+    }
+   ]
+  },
+  {
+   "src": "video:5Gc07vHQy7o",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:kRjDUQt_Du8",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:kRjDUQt_Du8",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "kRjDUQt_Du8",
+     "t": "00:00:03",
+     "quote": "her identity stays consistent, and even"
+    }
+   ]
+  },
+  {
+   "src": "video:7tl2hG-mON0",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:7tl2hG-mON0",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "7tl2hG-mON0",
+     "t": "00:00:00",
+     "quote": "AI UGC Targeting: Replace One Person, Protect the Rest"
+    }
+   ]
+  },
+  {
+   "src": "video:SbEeQNEy7F4",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:EPiyxAJeIwQ",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:EPiyxAJeIwQ",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "EPiyxAJeIwQ",
+     "t": "00:00:00",
+     "quote": "AI Influencer Consistency: Test Eyes, Skin, and Identity"
+    }
+   ]
+  },
+  {
+   "src": "video:EPiyxAJeIwQ",
+   "rel": "mentions",
+   "dst": "technique:face swap",
+   "evidence": [
+    {
+     "video": "EPiyxAJeIwQ",
+     "t": "00:00:39",
+     "quote": "face swap?"
+    }
+   ]
+  },
+  {
+   "src": "video:j-Up8u0ih9A",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:j-Up8u0ih9A",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "j-Up8u0ih9A",
+     "t": "00:00:00",
+     "quote": "LoRA Realism Upgrade: Make AI Images Look More Realistic"
+    }
+   ]
+  },
+  {
+   "src": "video:TIq37vTo_Qw",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:TIq37vTo_Qw",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "TIq37vTo_Qw",
+     "t": "00:00:00",
+     "quote": "AI Influencer Identity Test: Does the Face Stay Consistent?"
+    }
+   ]
+  },
+  {
+   "src": "video:YxT-Y1MiAKw",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:YxT-Y1MiAKw",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "YxT-Y1MiAKw",
+     "t": "00:00:00",
+     "quote": "ComfyUI LoRA Workflow: Add Your Character Model Easily"
+    }
+   ]
+  },
+  {
+   "src": "video:YxT-Y1MiAKw",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "YxT-Y1MiAKw",
+     "t": "00:00:18",
+     "quote": "the pod is already the Z image turbo"
+    }
+   ]
+  },
+  {
+   "src": "video:XuyLno1kw5U",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:XuyLno1kw5U",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "XuyLno1kw5U",
+     "t": "00:00:00",
+     "quote": "AI Influencer Face: Merge 3-5 References into One Identity"
+    }
+   ]
+  },
+  {
+   "src": "video:XuyLno1kw5U",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "XuyLno1kw5U",
+     "t": "00:00:17",
+     "quote": "top branch is for Nano Banana and the"
+    }
+   ]
+  },
+  {
+   "src": "video:XuyLno1kw5U",
+   "rel": "mentions",
+   "dst": "model:gpt-image-2",
+   "evidence": [
+    {
+     "video": "XuyLno1kw5U",
+     "t": "00:00:19",
+     "quote": "bottom branch is for Chat GPT image"
+    }
+   ]
+  },
+  {
+   "src": "video:1_VljGpQWNs",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:1_VljGpQWNs",
+   "rel": "mentions",
+   "dst": "gpu:4090",
+   "evidence": [
+    {
+     "video": "1_VljGpQWNs",
+     "t": "00:00:00",
+     "quote": "RunPod AI Influencer: Free Template for 4090 or 5090"
+    }
+   ]
+  },
+  {
+   "src": "video:1_VljGpQWNs",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "1_VljGpQWNs",
+     "t": "00:00:00",
+     "quote": "RunPod AI Influencer: Free Template for 4090 or 5090"
+    }
+   ]
+  },
+  {
+   "src": "video:1_VljGpQWNs",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "1_VljGpQWNs",
+     "t": "00:00:18",
+     "quote": "where I can pick the best LoRA out of"
+    }
+   ]
+  },
+  {
+   "src": "video:1_VljGpQWNs",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "1_VljGpQWNs",
+     "t": "00:00:34",
+     "quote": "the name Matrix Z Image Turbo template."
+    }
+   ]
+  },
+  {
+   "src": "video:fSPfoMwisEE",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:fSPfoMwisEE",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "fSPfoMwisEE",
+     "t": "00:00:03",
+     "quote": "how Lina looks, because identity never"
+    }
+   ]
+  },
+  {
+   "src": "video:K7OPZE_rvAY",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:K7OPZE_rvAY",
+   "rel": "mentions",
+   "dst": "technique:lora training",
+   "evidence": [
+    {
+     "video": "K7OPZE_rvAY",
+     "t": "00:00:00",
+     "quote": "LoRA Training Settings: 3000 Steps and Checkpoints"
+    }
+   ]
+  },
+  {
+   "src": "video:K7OPZE_rvAY",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "K7OPZE_rvAY",
+     "t": "00:00:00",
+     "quote": "LoRA Training Settings: 3000 Steps and Checkpoints"
+    }
+   ]
+  },
+  {
+   "src": "video:K7OPZE_rvAY",
+   "rel": "mentions",
+   "dst": "setting:steps=3",
+   "evidence": [
+    {
+     "video": "K7OPZE_rvAY",
+     "t": "00:00:11",
+     "quote": "this, we keep the steps at 3,000 for an"
+    }
+   ]
+  },
+  {
+   "src": "video:K7OPZE_rvAY",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "K7OPZE_rvAY",
+     "t": "00:00:14",
+     "quote": "efficient Z image turbo lower. That part"
+    }
+   ]
+  },
+  {
+   "src": "video:iukPngOsbck",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:iukPngOsbck",
+   "rel": "mentions",
+   "dst": "model:nano-banana-pro",
+   "evidence": [
+    {
+     "video": "iukPngOsbck",
+     "t": "00:00:27",
+     "quote": "GPT image 2 or Nano Banana Pro, you pay"
+    }
+   ]
+  },
+  {
+   "src": "video:iukPngOsbck",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "iukPngOsbck",
+     "t": "00:00:27",
+     "quote": "GPT image 2 or Nano Banana Pro, you pay"
+    }
+   ]
+  },
+  {
+   "src": "video:iukPngOsbck",
+   "rel": "mentions",
+   "dst": "model:gpt-image-2",
+   "evidence": [
+    {
+     "video": "iukPngOsbck",
+     "t": "00:00:27",
+     "quote": "GPT image 2 or Nano Banana Pro, you pay"
+    }
+   ]
+  },
+  {
+   "src": "video:_kKPhPc0H6Q",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:_kKPhPc0H6Q",
+   "rel": "mentions",
+   "dst": "technique:lora training",
+   "evidence": [
+    {
+     "video": "_kKPhPc0H6Q",
+     "t": "00:00:00",
+     "quote": "AI Influencer Dataset: Upload 34 Images for LoRA Training"
+    }
+   ]
+  },
+  {
+   "src": "video:_kKPhPc0H6Q",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "_kKPhPc0H6Q",
+     "t": "00:00:00",
+     "quote": "AI Influencer Dataset: Upload 34 Images for LoRA Training"
+    }
+   ]
+  },
+  {
+   "src": "video:_kKPhPc0H6Q",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "_kKPhPc0H6Q",
+     "t": "00:00:11",
+     "quote": "go to the dataset tab, create a new"
+    }
+   ]
+  },
+  {
+   "src": "video:FOwqixIr8HI",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:A724AWYca9E",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Fv_NFgdJdn8",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Fv_NFgdJdn8",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "Fv_NFgdJdn8",
+     "t": "00:00:00",
+     "quote": "AI UGC Workflow: Rebuild a Viral Video with Your Influencer"
+    }
+   ]
+  },
+  {
+   "src": "video:U4tgR9ANtP4",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:U4tgR9ANtP4",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "U4tgR9ANtP4",
+     "t": "00:00:14",
+     "quote": "select aspect ratio 9:16 or what kind of"
+    }
+   ]
+  },
+  {
+   "src": "video:U4tgR9ANtP4",
+   "rel": "mentions",
+   "dst": "creative:9:16",
+   "evidence": [
+    {
+     "video": "U4tgR9ANtP4",
+     "t": "00:00:14",
+     "quote": "select aspect ratio 9:16 or what kind of"
+    }
+   ]
+  },
+  {
+   "src": "video:GFUnh6TcR8I",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:1OhF6LUhf6s",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:N010Q6Fo_RM",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:N010Q6Fo_RM",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "N010Q6Fo_RM",
+     "t": "00:00:05",
+     "quote": "identity stays consistent, and even the"
+    }
+   ]
+  },
+  {
+   "src": "video:c6prWYhuN7c",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:c6prWYhuN7c",
+   "rel": "mentions",
+   "dst": "gpu:rtx 5090 ",
+   "evidence": [
+    {
+     "video": "c6prWYhuN7c",
+     "t": "00:00:17",
+     "quote": "RTX 5090 and each one took around two to"
+    }
+   ]
+  },
+  {
+   "src": "video:CSo4G-rYj2A",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:T5HPW6ayXJ4",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:T5HPW6ayXJ4",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "T5HPW6ayXJ4",
+     "t": "00:00:24",
+     "quote": "Influencer or AI UGC Creator, the board"
+    }
+   ]
+  },
+  {
+   "src": "video:Dw2LBlruqwY",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:KtGfYueD-VM",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:hkPUsoCRmT0",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:8m-VShqqaH8",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:dHYKDnsszx4",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:soxwp-3QI2Q",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:soxwp-3QI2Q",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "soxwp-3QI2Q",
+     "t": "00:00:00",
+     "quote": "AI Dataset System Explains Every Training Image"
+    }
+   ]
+  },
+  {
+   "src": "video:Oaw5S6ckmcQ",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Oaw5S6ckmcQ",
+   "rel": "mentions",
+   "dst": "model:nano-banana-pro",
+   "evidence": [
+    {
+     "video": "Oaw5S6ckmcQ",
+     "t": "00:00:15",
+     "quote": "between Nano Banana Pro, Nano Banana 2,"
+    }
+   ]
+  },
+  {
+   "src": "video:Oaw5S6ckmcQ",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "Oaw5S6ckmcQ",
+     "t": "00:00:15",
+     "quote": "between Nano Banana Pro, Nano Banana 2,"
+    }
+   ]
+  },
+  {
+   "src": "video:Oaw5S6ckmcQ",
+   "rel": "mentions",
+   "dst": "model:gpt-image-2",
+   "evidence": [
+    {
+     "video": "Oaw5S6ckmcQ",
+     "t": "00:00:17",
+     "quote": "and GPT image 2. And there's one switch"
+    }
+   ]
+  },
+  {
+   "src": "video:yiH5yLlJxyI",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:yiH5yLlJxyI",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "yiH5yLlJxyI",
+     "t": "00:00:00",
+     "quote": "AI Dataset Workflow Turns 4 Photos Into 25 Shots"
+    }
+   ]
+  },
+  {
+   "src": "video:HUyoajw8_r8",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:g8QeLqFVCkU",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:lbvEBr_iSs4",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:wImFncIELTA",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:wImFncIELTA",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "wImFncIELTA",
+     "t": "00:00:16",
+     "quote": "identity never goes into the prompt."
+    }
+   ]
+  },
+  {
+   "src": "video:4GisMRch1X0",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:xMOwooApyUE",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:v7DcgK153VY",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:v7DcgK153VY",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "v7DcgK153VY",
+     "t": "00:00:00",
+     "quote": "Turn 4 Pics into a FULL AI Influencer Dataset!"
+    }
+   ]
+  },
+  {
+   "src": "video:Ga-XcP3KHTE",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Ga-XcP3KHTE",
+   "rel": "mentions",
+   "dst": "technique:lora training",
+   "evidence": [
+    {
+     "video": "Ga-XcP3KHTE",
+     "t": "00:00:00",
+     "quote": "Use a Volume Disk for AI Toolkit LoRA Training"
+    }
+   ]
+  },
+  {
+   "src": "video:Ga-XcP3KHTE",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "Ga-XcP3KHTE",
+     "t": "00:00:00",
+     "quote": "Use a Volume Disk for AI Toolkit LoRA Training"
+    }
+   ]
+  },
+  {
+   "src": "video:qQA5_QwURiY",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:-4KWOci1fTA",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:-4KWOci1fTA",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "-4KWOci1fTA",
+     "t": "00:00:14",
+     "quote": "one is the dataset builder skill. Now,"
+    }
+   ]
+  },
+  {
+   "src": "video:vjLCyu-V3PA",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:fI4i3AtZ08E",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:fI4i3AtZ08E",
+   "rel": "mentions",
+   "dst": "setting:resolution=3",
+   "evidence": [
+    {
+     "video": "fI4i3AtZ08E",
+     "t": "00:00:21",
+     "quote": "4K resolution and a 3:4 aspect ratio."
+    }
+   ]
+  },
+  {
+   "src": "video:U08lxtZ-MSI",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:U08lxtZ-MSI",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "U08lxtZ-MSI",
+     "t": "00:00:29",
+     "quote": "itself. The consistent identity never"
+    }
+   ]
+  },
+  {
+   "src": "video:q2OCATX-6Jc",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:IHRrj1bnIoo",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:IHRrj1bnIoo",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "IHRrj1bnIoo",
+     "t": "00:00:00",
+     "quote": "Claude Builds a Full AI Character Dataset on Auto Mode"
+    }
+   ]
+  },
+  {
+   "src": "video:IHRrj1bnIoo",
+   "rel": "mentions",
+   "dst": "model:nano-banana-pro",
+   "evidence": [
+    {
+     "video": "IHRrj1bnIoo",
+     "t": "00:00:09",
+     "quote": "the full 360 view. Use Nano Banana Pro,"
+    }
+   ]
+  },
+  {
+   "src": "video:IHRrj1bnIoo",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "IHRrj1bnIoo",
+     "t": "00:00:09",
+     "quote": "the full 360 view. Use Nano Banana Pro,"
+    }
+   ]
+  },
+  {
+   "src": "video:IHRrj1bnIoo",
+   "rel": "mentions",
+   "dst": "setting:resolution=3",
+   "evidence": [
+    {
+     "video": "IHRrj1bnIoo",
+     "t": "00:00:12",
+     "quote": "4K resolution, and a 3:2:4 aspect ratio."
+    }
+   ]
+  },
+  {
+   "src": "video:v9LK0SPx0iE",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:v9LK0SPx0iE",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "v9LK0SPx0iE",
+     "t": "00:00:12",
+     "quote": "like. While the batch is running, Claude"
+    }
+   ]
+  },
+  {
+   "src": "video:dJZ41GwBfHs",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:96EY38zjwfU",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:96EY38zjwfU",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "96EY38zjwfU",
+     "t": "00:00:00",
+     "quote": "Find the LoRA Sweet Spot After Training"
+    }
+   ]
+  },
+  {
+   "src": "video:c1q4XYcvLWs",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:c1q4XYcvLWs",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "c1q4XYcvLWs",
+     "t": "00:00:26",
+     "quote": "will upscale it to save a ton of money."
+    }
+   ]
+  },
+  {
+   "src": "video:aJnu-ytzPy0",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:aJnu-ytzPy0",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "aJnu-ytzPy0",
+     "t": "00:00:00",
+     "quote": "Train Your LoRA on Krea 2 RAW - Never Turbo"
+    }
+   ]
+  },
+  {
+   "src": "video:yZpNnvLJS-Q",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:yZpNnvLJS-Q",
+   "rel": "mentions",
+   "dst": "setting:resolution=1080",
+   "evidence": [
+    {
+     "video": "yZpNnvLJS-Q",
+     "t": "00:00:09",
+     "quote": "resolution should be 720p, not 1080 and"
+    }
+   ]
+  },
+  {
+   "src": "video:yZpNnvLJS-Q",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "yZpNnvLJS-Q",
+     "t": "00:00:16",
+     "quote": "720p. After that, we will upscale it to"
+    }
+   ]
+  },
+  {
+   "src": "video:GEEH_BEr3yM",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:GEEH_BEr3yM",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "GEEH_BEr3yM",
+     "t": "00:00:00",
+     "quote": "Your Dataset Decides How Real Your AI Looks"
+    }
+   ]
+  },
+  {
+   "src": "video:mvj-th4_XqI",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:mvj-th4_XqI",
+   "rel": "mentions",
+   "dst": "creative:hook",
+   "evidence": [
+    {
+     "video": "mvj-th4_XqI",
+     "t": "00:00:36",
+     "quote": "hook, every beat with its exact sound."
+    }
+   ]
+  },
+  {
+   "src": "video:Bc_IKVsdOKo",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Bc_IKVsdOKo",
+   "rel": "mentions",
+   "dst": "technique:lora training",
+   "evidence": [
+    {
+     "video": "Bc_IKVsdOKo",
+     "t": "00:00:00",
+     "quote": "Don't Lose Your Best AI Checkpoint (LoRA Training)"
+    }
+   ]
+  },
+  {
+   "src": "video:Bc_IKVsdOKo",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "Bc_IKVsdOKo",
+     "t": "00:00:00",
+     "quote": "Don't Lose Your Best AI Checkpoint (LoRA Training)"
+    }
+   ]
+  },
+  {
+   "src": "video:Bc_IKVsdOKo",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "Bc_IKVsdOKo",
+     "t": "00:00:13",
+     "quote": "you train on a 5090, set the batch size"
+    }
+   ]
+  },
+  {
+   "src": "video:Bc_IKVsdOKo",
+   "rel": "mentions",
+   "dst": "setting:steps=3",
+   "evidence": [
+    {
+     "video": "Bc_IKVsdOKo",
+     "t": "00:00:06",
+     "quote": "model. For the steps, we go with 3,000"
+    }
+   ]
+  },
+  {
+   "src": "video:Bc_IKVsdOKo",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "Bc_IKVsdOKo",
+     "t": "00:00:13",
+     "quote": "you train on a 5090, set the batch size"
+    }
+   ]
+  },
+  {
+   "src": "video:jSwqflZxxow",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:jSwqflZxxow",
+   "rel": "mentions",
+   "dst": "creative:reel",
+   "evidence": [
+    {
+     "video": "jSwqflZxxow",
+     "t": "00:00:00",
+     "quote": "Claude Knows Who's Talking in Any Viral Reel"
+    }
+   ]
+  },
+  {
+   "src": "video:jSwqflZxxow",
+   "rel": "mentions",
+   "dst": "creative:hook",
+   "evidence": [
+    {
+     "video": "jSwqflZxxow",
+     "t": "00:00:18",
+     "quote": "everything lands in one file. The hook,"
+    }
+   ]
+  },
+  {
+   "src": "video:OK6-tFUIzLU",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:OK6-tFUIzLU",
+   "rel": "mentions",
+   "dst": "gpu:rtx 6000",
+   "evidence": [
+    {
+     "video": "OK6-tFUIzLU",
+     "t": "00:00:24",
+     "quote": "Creater tool, you can grab an RTX 6000"
+    }
+   ]
+  },
+  {
+   "src": "video:OK6-tFUIzLU",
+   "rel": "mentions",
+   "dst": "gpu:rtx 5090",
+   "evidence": [
+    {
+     "video": "OK6-tFUIzLU",
+     "t": "00:00:26",
+     "quote": "Pro or RTX 5090. We go with the RTX 6000"
+    }
+   ]
+  },
+  {
+   "src": "video:Y9t4Aj8Hghk",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Y9t4Aj8Hghk",
+   "rel": "mentions",
+   "dst": "setting:resolution=1080",
+   "evidence": [
+    {
+     "video": "Y9t4Aj8Hghk",
+     "t": "00:00:06",
+     "quote": "the resolution should be 720p, not 1080"
+    }
+   ]
+  },
+  {
+   "src": "video:Y9t4Aj8Hghk",
+   "rel": "mentions",
+   "dst": "setting:seed=15",
+   "evidence": [
+    {
+     "video": "Y9t4Aj8Hghk",
+     "t": "00:00:22",
+     "quote": "with seed ends costs about $15 every"
+    }
+   ]
+  },
+  {
+   "src": "video:Y9t4Aj8Hghk",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "Y9t4Aj8Hghk",
+     "t": "00:00:14",
+     "quote": "720p. After that, we will upscale it to"
+    }
+   ]
+  },
+  {
+   "src": "video:oCY9hSGtrkw",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:oCY9hSGtrkw",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "oCY9hSGtrkw",
+     "t": "00:00:00",
+     "quote": "The LoRA Tester That Finds Your Best AI Influencer"
+    }
+   ]
+  },
+  {
+   "src": "video:EdlhYDXEODU",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:EdlhYDXEODU",
+   "rel": "mentions",
+   "dst": "creative:reel",
+   "evidence": [
+    {
+     "video": "EdlhYDXEODU",
+     "t": "00:00:21",
+     "quote": "takes the reel apart and extract every"
+    }
+   ]
+  },
+  {
+   "src": "video:fQOuReTfdaA",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:kNrbA5-Ypvk",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:kNrbA5-Ypvk",
+   "rel": "mentions",
+   "dst": "creative:reel",
+   "evidence": [
+    {
+     "video": "kNrbA5-Ypvk",
+     "t": "00:00:00",
+     "quote": "My Claude + Seedance Reel System Is FREE"
+    }
+   ]
+  },
+  {
+   "src": "video:i9rt9g6fmQY",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:3LkSc3M44_o",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:3LkSc3M44_o",
+   "rel": "mentions",
+   "dst": "creative:reel",
+   "evidence": [
+    {
+     "video": "3LkSc3M44_o",
+     "t": "00:00:06",
+     "quote": "system in Claude that takes any reel"
+    }
+   ]
+  },
+  {
+   "src": "video:oqZCAYgjMnQ",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:UzhotSiYRCk",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:UzhotSiYRCk",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "UzhotSiYRCk",
+     "t": "00:00:10",
+     "quote": "Z image turbo model, the VAEs, and the"
+    }
+   ]
+  },
+  {
+   "src": "video:uWv4kczg2Rw",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:phagdTDW2QU",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:6cMqq5uqzEc",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:6cMqq5uqzEc",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "6cMqq5uqzEc",
+     "t": "00:00:15",
+     "quote": "other one is the dataset builder skill."
+    }
+   ]
+  },
+  {
+   "src": "video:H5y66dU26LU",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:kx2-jgQbip4",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:bi9f5txTkq8",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:bi9f5txTkq8",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "bi9f5txTkq8",
+     "t": "00:00:21",
+     "quote": "The consistent identity never comes from"
+    }
+   ]
+  },
+  {
+   "src": "video:wath-J9KzKo",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:A3Eig4U-sRw",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:A3Eig4U-sRw",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "A3Eig4U-sRw",
+     "t": "00:00:00",
+     "quote": "the batch is running. Claude takes every"
+    }
+   ]
+  },
+  {
+   "src": "video:OLh-NM08q_c",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:nrLyeMI80xk",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:oz7LviE60bo",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:oz7LviE60bo",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "oz7LviE60bo",
+     "t": "00:00:00",
+     "quote": "Build a Full AI Character Dataset from 3 Photos!"
+    }
+   ]
+  },
+  {
+   "src": "video:Yu8spPu02Ik",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Q6EaPt7CY3Y",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Q6EaPt7CY3Y",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "Q6EaPt7CY3Y",
+     "t": "00:00:00",
+     "quote": "AI Identity Swap: Testing Your Character's Consistency"
+    }
+   ]
+  },
+  {
+   "src": "video:FEa0T3xJBso",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:jA2g9xbTWYg",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:jA2g9xbTWYg",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "jA2g9xbTWYg",
+     "t": "00:00:00",
+     "quote": "Best Aspect Ratio for AI Creator Images? Try This!"
+    }
+   ]
+  },
+  {
+   "src": "video:kn_loR14bOU",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:kn_loR14bOU",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "kn_loR14bOU",
+     "t": "00:00:00",
+     "quote": "AI Influencer Built from Pinterest: No LoRA Needed!"
+    }
+   ]
+  },
+  {
+   "src": "video:uDwJYigEnSU",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:uDwJYigEnSU",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "uDwJYigEnSU",
+     "t": "00:00:00",
+     "quote": "AI Identity Check: Does Your Face Gen Pass the Test?"
+    }
+   ]
+  },
+  {
+   "src": "video:xDUx8HyPgrg",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:xDUx8HyPgrg",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "xDUx8HyPgrg",
+     "t": "00:00:00",
+     "quote": "4K Output is Key for AI Identity Stability! Here's Why"
+    }
+   ]
+  },
+  {
+   "src": "video:ywO52xwHT30",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:ywO52xwHT30",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "ywO52xwHT30",
+     "t": "00:00:00",
+     "quote": "AI Face Merge: Creating a Consistent Digital Identity"
+    }
+   ]
+  },
+  {
+   "src": "video:ztu_4bT4Mo8",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:z7Iqwjkohv8",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:L8W8seFKcZo",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:k4NpQZoGe0Q",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:vbZ7SyvpbSg",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:vbZ7SyvpbSg",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "vbZ7SyvpbSg",
+     "t": "00:00:00",
+     "quote": "Flexible Dataset Generation with CDream 4.5 (Node Workflow)"
+    }
+   ]
+  },
+  {
+   "src": "video:Doz-iCCBHy8",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Doz-iCCBHy8",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "Doz-iCCBHy8",
+     "t": "00:00:00",
+     "quote": "Forget LoRA! Your AI Dataset is the REAL Goldmine"
+    }
+   ]
+  },
+  {
+   "src": "video:Doz-iCCBHy8",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "Doz-iCCBHy8",
+     "t": "00:00:00",
+     "quote": "Forget LoRA! Your AI Dataset is the REAL Goldmine"
+    }
+   ]
+  },
+  {
+   "src": "video:Doz-iCCBHy8",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "Doz-iCCBHy8",
+     "t": "00:00:16",
+     "quote": "training on a controlled identity and I"
+    }
+   ]
+  },
+  {
+   "src": "video:nuArWrMcgMU",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:nuArWrMcgMU",
+   "rel": "mentions",
+   "dst": "model:nano-banana-pro",
+   "evidence": [
+    {
+     "video": "nuArWrMcgMU",
+     "t": "00:00:09",
+     "quote": "the full 360 view. Use Nano Banana Pro,"
+    }
+   ]
+  },
+  {
+   "src": "video:nuArWrMcgMU",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "nuArWrMcgMU",
+     "t": "00:00:09",
+     "quote": "the full 360 view. Use Nano Banana Pro,"
+    }
+   ]
+  },
+  {
+   "src": "video:nuArWrMcgMU",
+   "rel": "mentions",
+   "dst": "setting:resolution=3",
+   "evidence": [
+    {
+     "video": "nuArWrMcgMU",
+     "t": "00:00:12",
+     "quote": "4K resolution, and a 3 to 4 aspect"
+    }
+   ]
+  },
+  {
+   "src": "video:7UJ29zPGj2s",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:zC_ZJoaswFY",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:soVPPsd6WuI",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:L1HCUV6e_aM",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:L1HCUV6e_aM",
+   "rel": "mentions",
+   "dst": "gpu:rtx 4090 ",
+   "evidence": [
+    {
+     "video": "L1HCUV6e_aM",
+     "t": "00:00:01",
+     "quote": "want to use, take an RTX 4090 or a 5090,"
+    }
+   ]
+  },
+  {
+   "src": "video:L1HCUV6e_aM",
+   "rel": "mentions",
+   "dst": "gpu:5090",
+   "evidence": [
+    {
+     "video": "L1HCUV6e_aM",
+     "t": "00:00:01",
+     "quote": "want to use, take an RTX 4090 or a 5090,"
+    }
+   ]
+  },
+  {
+   "src": "video:L1HCUV6e_aM",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "L1HCUV6e_aM",
+     "t": "00:00:06",
+     "quote": "template with the name matrix Z image"
+    }
+   ]
+  },
+  {
+   "src": "video:W8hN_NxyEq0",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:W8hN_NxyEq0",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "W8hN_NxyEq0",
+     "t": "00:00:00",
+     "quote": "Add Custom LoRa in 3 Steps #AIWorkflow #Tutorial #Shorts"
+    }
+   ]
+  },
+  {
+   "src": "video:KFf6KRQSNoM",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:KFf6KRQSNoM",
+   "rel": "mentions",
+   "dst": "technique:lora training",
+   "evidence": [
+    {
+     "video": "KFf6KRQSNoM",
+     "t": "00:00:00",
+     "quote": "ZImageTurbo vs Standard LoRa Training Explained #lora #ai #comparison"
+    }
+   ]
+  },
+  {
+   "src": "video:KFf6KRQSNoM",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "KFf6KRQSNoM",
+     "t": "00:00:00",
+     "quote": "ZImageTurbo vs Standard LoRa Training Explained #lora #ai #comparison"
+    }
+   ]
+  },
+  {
+   "src": "video:KFf6KRQSNoM",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "KFf6KRQSNoM",
+     "t": "00:00:23",
+     "quote": "to Z image turbo and also set the max"
+    }
+   ]
+  },
+  {
+   "src": "video:KFf6KRQSNoM",
+   "rel": "mentions",
+   "dst": "setting:step=30",
+   "evidence": [
+    {
+     "video": "KFf6KRQSNoM",
+     "t": "00:00:25",
+     "quote": "step input to 30 to speed up the"
+    }
+   ]
+  },
+  {
+   "src": "video:93DBu-Zi4Ms",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Bq52ueXgL50",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:JfsY9AA4LaU",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:ZjA8EI8lzss",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:ZjA8EI8lzss",
+   "rel": "mentions",
+   "dst": "technique:dataset",
+   "evidence": [
+    {
+     "video": "ZjA8EI8lzss",
+     "t": "00:00:00",
+     "quote": "AI Influencer: The Dataset Mistake Everyone Makes!"
+    }
+   ]
+  },
+  {
+   "src": "video:ZjA8EI8lzss",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "ZjA8EI8lzss",
+     "t": "00:00:05",
+     "quote": "training, but a LoRA is only as good as"
+    }
+   ]
+  },
+  {
+   "src": "video:ZjA8EI8lzss",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "ZjA8EI8lzss",
+     "t": "00:00:14",
+     "quote": "model only learns one identity and"
+    }
+   ]
+  },
+  {
+   "src": "video:Ux1Hl9wWKW4",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:Ux1Hl9wWKW4",
+   "rel": "mentions",
+   "dst": "technique:lora",
+   "evidence": [
+    {
+     "video": "Ux1Hl9wWKW4",
+     "t": "00:00:00",
+     "quote": "Stop Overtraining Your LoRA Model Right Now #AItraining #hack"
+    }
+   ]
+  },
+  {
+   "src": "video:Ux1Hl9wWKW4",
+   "rel": "mentions",
+   "dst": "setting:steps=3",
+   "evidence": [
+    {
+     "video": "Ux1Hl9wWKW4",
+     "t": "00:00:05",
+     "quote": "keep the steps at 3,000 for an efficient"
+    }
+   ]
+  },
+  {
+   "src": "video:Ux1Hl9wWKW4",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "Ux1Hl9wWKW4",
+     "t": "00:00:07",
+     "quote": "Z image to Laura. That part matters"
+    }
+   ]
+  },
+  {
+   "src": "video:mqXLFiktjmo",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:xFK2xKAO_tg",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:lkl244ZtR9k",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:lkl244ZtR9k",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "lkl244ZtR9k",
+     "t": "00:00:07",
+     "quote": "with a skin and hand detailer built in"
+    }
+   ]
+  },
+  {
+   "src": "video:lkl244ZtR9k",
+   "rel": "mentions",
+   "dst": "model:z-image-turbo",
+   "evidence": [
+    {
+     "video": "lkl244ZtR9k",
+     "t": "00:00:13",
+     "quote": "get out of Z image turbo right now or at"
+    }
+   ]
+  },
+  {
+   "src": "video:p9zp9Lq2O34",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:LfriA1BCp3o",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:A7tylvBhSbo",
+   "rel": "belongs_to",
+   "dst": "channel:matrixlabai"
+  },
+  {
+   "src": "video:-HcMguqI4ts",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:-HcMguqI4ts",
+   "rel": "mentions",
+   "dst": "model:minimax-h3",
+   "evidence": [
+    {
+     "video": "-HcMguqI4ts",
+     "t": "00:00:00",
+     "quote": "MiniMax H3 Tutorial: Create Cinematic Videos With Consistent Characters! (Hailuo AI)"
+    }
+   ]
+  },
+  {
+   "src": "video:-HcMguqI4ts",
+   "rel": "mentions",
+   "dst": "model:gpt-image-2",
+   "evidence": [
+    {
+     "video": "-HcMguqI4ts",
+     "t": "00:01:03",
+     "quote": "this project, I'll use the GPT image 2."
+    }
+   ]
+  },
+  {
+   "src": "video:vjyNpcBb84w",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:vjyNpcBb84w",
+   "rel": "mentions",
+   "dst": "creative:9:16",
+   "evidence": [
+    {
+     "video": "vjyNpcBb84w",
+     "t": "00:01:09",
+     "quote": "though 9:16"
+    }
+   ]
+  },
+  {
+   "src": "video:vjyNpcBb84w",
+   "rel": "mentions",
+   "dst": "creative:pan",
+   "evidence": [
+    {
+     "video": "vjyNpcBb84w",
+     "t": "00:02:48",
+     "quote": "subtle cinematic pan really made it feel"
+    }
+   ]
+  },
+  {
+   "src": "video:vjyNpcBb84w",
+   "rel": "mentions",
+   "dst": "technique:image to video",
+   "evidence": [
+    {
+     "video": "vjyNpcBb84w",
+     "t": "00:06:32",
+     "quote": "text-to-video, image-to-video, timeline"
+    }
+   ]
+  },
+  {
+   "src": "video:vjyNpcBb84w",
+   "rel": "mentions",
+   "dst": "technique:text to video",
+   "evidence": [
+    {
+     "video": "vjyNpcBb84w",
+     "t": "00:06:32",
+     "quote": "text-to-video, image-to-video, timeline"
+    }
+   ]
+  },
+  {
+   "src": "video:gvNpI1yievE",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:gvNpI1yievE",
+   "rel": "mentions",
+   "dst": "model:scail-2",
+   "evidence": [
+    {
+     "video": "gvNpI1yievE",
+     "t": "00:00:00",
+     "quote": "SCAIL-2 Motion Transfer Tutorial: Best ComfyUI Workflow Without GPU!"
+    }
+   ]
+  },
+  {
+   "src": "video:gvNpI1yievE",
+   "rel": "mentions",
+   "dst": "technique:motion transfer",
+   "evidence": [
+    {
+     "video": "gvNpI1yievE",
+     "t": "00:00:00",
+     "quote": "SCAIL-2 Motion Transfer Tutorial: Best ComfyUI Workflow Without GPU!"
+    }
+   ]
+  },
+  {
+   "src": "video:gvNpI1yievE",
+   "rel": "mentions",
+   "dst": "creative:vertical",
+   "evidence": [
+    {
+     "video": "gvNpI1yievE",
+     "t": "00:03:47",
+     "quote": "a vertical social media video, I'm using"
+    }
+   ]
+  },
+  {
+   "src": "video:gvNpI1yievE",
+   "rel": "mentions",
+   "dst": "setting:resolution=648",
+   "evidence": [
+    {
+     "video": "gvNpI1yievE",
+     "t": "00:03:50",
+     "quote": "a portrait resolution of 648 by 1,536."
+    }
+   ]
+  },
+  {
+   "src": "video:eHIMWqg-0xE",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:eHIMWqg-0xE",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "eHIMWqg-0xE",
+     "t": "00:00:00",
+     "quote": "Supercool AI Review: Can It Create Viral AI UGC For TikTok Shop Ads?"
+    }
+   ]
+  },
+  {
+   "src": "video:eHIMWqg-0xE",
+   "rel": "mentions",
+   "dst": "creative:voiceover",
+   "evidence": [
+    {
+     "video": "eHIMWqg-0xE",
+     "t": "00:00:16",
+     "quote": "voiceover, and editing. This is super"
+    }
+   ]
+  },
+  {
+   "src": "video:eHIMWqg-0xE",
+   "rel": "mentions",
+   "dst": "creative:call to action",
+   "evidence": [
+    {
+     "video": "eHIMWqg-0xE",
+     "t": "00:00:57",
+     "quote": "it to include a call to action"
+    }
+   ]
+  },
+  {
+   "src": "video:eHIMWqg-0xE",
+   "rel": "mentions",
+   "dst": "creative:hook",
+   "evidence": [
+    {
+     "video": "eHIMWqg-0xE",
+     "t": "00:01:04",
+     "quote": "few hook and script options before"
+    }
+   ]
+  },
+  {
+   "src": "video:CO59xAteGRM",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:CO59xAteGRM",
+   "rel": "mentions",
+   "dst": "creative:9:16",
+   "evidence": [
+    {
+     "video": "CO59xAteGRM",
+     "t": "00:01:31",
+     "quote": "ratio to 9:16"
+    }
+   ]
+  },
+  {
+   "src": "video:CO59xAteGRM",
+   "rel": "mentions",
+   "dst": "creative:vertical",
+   "evidence": [
+    {
+     "video": "CO59xAteGRM",
+     "t": "00:01:33",
+     "quote": "since we're creating a vertical video."
+    }
+   ]
+  },
+  {
+   "src": "video:tyWnBl4BbSQ",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:tyWnBl4BbSQ",
+   "rel": "mentions",
+   "dst": "creative:storyboard",
+   "evidence": [
+    {
+     "video": "tyWnBl4BbSQ",
+     "t": "00:00:00",
+     "quote": "Google Flow Storyboard Studio Tutorial: Create Full AI Films With Consistent Characters!"
+    }
+   ]
+  },
+  {
+   "src": "video:1tbJ3WJ9_po",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:1tbJ3WJ9_po",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "1tbJ3WJ9_po",
+     "t": "00:01:46",
+     "quote": "details, and physical identity very"
+    }
+   ]
+  },
+  {
+   "src": "video:eOhomP4vees",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:YrZ7RTfbAAw",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:YrZ7RTfbAAw",
+   "rel": "mentions",
+   "dst": "model:kling",
+   "evidence": [
+    {
+     "video": "YrZ7RTfbAAw",
+     "t": "00:00:00",
+     "quote": "Higgsfield AI Motion Control Tutorial: Create Realistic AI Influencers With Kling 3.0!"
+    }
+   ]
+  },
+  {
+   "src": "video:YrZ7RTfbAAw",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "YrZ7RTfbAAw",
+     "t": "00:03:46",
+     "quote": "identity stays the same, but the"
+    }
+   ]
+  },
+  {
+   "src": "video:0khEeIwvmTQ",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:0khEeIwvmTQ",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "0khEeIwvmTQ",
+     "t": "00:00:00",
+     "quote": "MagicFit AI Review: Best AI UGC Ad Generator In 2026? (Full Guide)"
+    }
+   ]
+  },
+  {
+   "src": "video:0khEeIwvmTQ",
+   "rel": "mentions",
+   "dst": "creative:hook",
+   "evidence": [
+    {
+     "video": "0khEeIwvmTQ",
+     "t": "00:05:22",
+     "quote": "generate viral hook videos for your"
+    }
+   ]
+  },
+  {
+   "src": "video:0khEeIwvmTQ",
+   "rel": "mentions",
+   "dst": "model:kling",
+   "evidence": [
+    {
+     "video": "0khEeIwvmTQ",
+     "t": "00:04:23",
+     "quote": "with Kling 2.6 Pro. Hit generate. And"
+    }
+   ]
+  },
+  {
+   "src": "video:0khEeIwvmTQ",
+   "rel": "mentions",
+   "dst": "model:sora",
+   "evidence": [
+    {
+     "video": "0khEeIwvmTQ",
+     "t": "00:06:35",
+     "quote": "2.6 Pro and Sora 2, but you can't"
+    }
+   ]
+  },
+  {
+   "src": "video:QiuaZ-u4HhE",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:QiuaZ-u4HhE",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "QiuaZ-u4HhE",
+     "t": "00:00:00",
+     "quote": "HeyGen AI Tutorial: Create Talking Avatars and UGC Ads From One Photo!"
+    }
+   ]
+  },
+  {
+   "src": "video:QiuaZ-u4HhE",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "QiuaZ-u4HhE",
+     "t": "00:01:18",
+     "quote": "your aspect ratio, choose a model, and"
+    }
+   ]
+  },
+  {
+   "src": "video:QiuaZ-u4HhE",
+   "rel": "mentions",
+   "dst": "creative:voiceover",
+   "evidence": [
+    {
+     "video": "QiuaZ-u4HhE",
+     "t": "00:04:02",
+     "quote": "Instead of a script or voiceover, you're"
+    }
+   ]
+  },
+  {
+   "src": "video:6Zxcna3SwcA",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:6Zxcna3SwcA",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "6Zxcna3SwcA",
+     "t": "00:00:00",
+     "quote": "Holo AI Review: Best AI UGC Ad Generator In 2026? (Full Guide)"
+    }
+   ]
+  },
+  {
+   "src": "video:6Zxcna3SwcA",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "6Zxcna3SwcA",
+     "t": "00:02:17",
+     "quote": "selected the aspect ratio again and"
+    }
+   ]
+  },
+  {
+   "src": "video:qTUSvKaixCY",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:qTUSvKaixCY",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "qTUSvKaixCY",
+     "t": "00:02:39",
+     "quote": "where you define the new identity"
+    }
+   ]
+  },
+  {
+   "src": "video:qTUSvKaixCY",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "qTUSvKaixCY",
+     "t": "00:03:33",
+     "quote": "section. Select Nano Banana 2 as your"
+    }
+   ]
+  },
+  {
+   "src": "video:kuDzysXdUsY",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:kuDzysXdUsY",
+   "rel": "mentions",
+   "dst": "creative:vertical",
+   "evidence": [
+    {
+     "video": "kuDzysXdUsY",
+     "t": "00:02:55",
+     "quote": "Now, let's try to create a vertical"
+    }
+   ]
+  },
+  {
+   "src": "video:VrM1mgWUHV8",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:VrM1mgWUHV8",
+   "rel": "mentions",
+   "dst": "model:veo",
+   "evidence": [
+    {
+     "video": "VrM1mgWUHV8",
+     "t": "00:00:00",
+     "quote": "Google Flow Tutorial: Create Consistent Characters With Veo 3! (Whisk Alternative)"
+    }
+   ]
+  },
+  {
+   "src": "video:VrM1mgWUHV8",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "VrM1mgWUHV8",
+     "t": "00:00:56",
+     "quote": "Select Nano Banana 2 as your image"
+    }
+   ]
+  },
+  {
+   "src": "video:eSBx26i0Q7w",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:eSBx26i0Q7w",
+   "rel": "mentions",
+   "dst": "creative:hook",
+   "evidence": [
+    {
+     "video": "eSBx26i0Q7w",
+     "t": "00:03:05",
+     "quote": "outline. You'll get a clear hook, an"
+    }
+   ]
+  },
+  {
+   "src": "video:eSBx26i0Q7w",
+   "rel": "mentions",
+   "dst": "creative:voiceover",
+   "evidence": [
+    {
+     "video": "eSBx26i0Q7w",
+     "t": "00:04:33",
+     "quote": "not generate the entire voiceover in one"
+    }
+   ]
+  },
+  {
+   "src": "video:N9iVUmvgWzU",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:wvgrQnHYsr0",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:wvgrQnHYsr0",
+   "rel": "mentions",
+   "dst": "creative:wide shot",
+   "evidence": [
+    {
+     "video": "wvgrQnHYsr0",
+     "t": "00:05:59",
+     "quote": "with a wide shot of the city skyline at"
+    }
+   ]
+  },
+  {
+   "src": "video:wvgrQnHYsr0",
+   "rel": "mentions",
+   "dst": "creative:pan",
+   "evidence": [
+    {
+     "video": "wvgrQnHYsr0",
+     "t": "00:06:07",
+     "quote": "pan across a futuristic street. Keep one"
+    }
+   ]
+  },
+  {
+   "src": "video:3RoAGeQbALg",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:3RoAGeQbALg",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "3RoAGeQbALg",
+     "t": "00:04:58",
+     "quote": "songs an identity that lives beyond a"
+    }
+   ]
+  },
+  {
+   "src": "video:FMnBEyQSPGQ",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:nbEl_jpVJ8k",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:nbEl_jpVJ8k",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "nbEl_jpVJ8k",
+     "t": "00:01:13",
+     "quote": "Banana Pro. Then choose the aspect ratio"
+    }
+   ]
+  },
+  {
+   "src": "video:fmXXp6lobi0",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:fmXXp6lobi0",
+   "rel": "mentions",
+   "dst": "technique:image to video",
+   "evidence": [
+    {
+     "video": "fmXXp6lobi0",
+     "t": "00:00:00",
+     "quote": "Flora AI For Beginners: Create Image To Video Workflows In Minutes!"
+    }
+   ]
+  },
+  {
+   "src": "video:fmXXp6lobi0",
+   "rel": "mentions",
+   "dst": "technique:text to image",
+   "evidence": [
+    {
+     "video": "fmXXp6lobi0",
+     "t": "00:05:07",
+     "quote": "inside Flora AI. From text to image to"
+    }
+   ]
+  },
+  {
+   "src": "video:fmXXp6lobi0",
+   "rel": "mentions",
+   "dst": "model:nano-banana",
+   "evidence": [
+    {
+     "video": "fmXXp6lobi0",
+     "t": "00:01:58",
+     "quote": "what you asked for. I chose Nano Banana"
+    }
+   ]
+  },
+  {
+   "src": "video:fmXXp6lobi0",
+   "rel": "mentions",
+   "dst": "model:nano-banana-pro",
+   "evidence": [
+    {
+     "video": "fmXXp6lobi0",
+     "t": "00:02:12",
+     "quote": "here it is. Nano Banana Pro is known for"
+    }
+   ]
+  },
+  {
+   "src": "video:Iobs4FH-EL8",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:Iobs4FH-EL8",
+   "rel": "mentions",
+   "dst": "model:gpt-image-2",
+   "evidence": [
+    {
+     "video": "Iobs4FH-EL8",
+     "t": "00:01:36",
+     "quote": "to GPT image one instead."
+    }
+   ]
+  },
+  {
+   "src": "video:Iobs4FH-EL8",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "Iobs4FH-EL8",
+     "t": "00:03:30",
+     "quote": "aspect ratio if needed, and run the"
+    }
+   ]
+  },
+  {
+   "src": "video:Iobs4FH-EL8",
+   "rel": "mentions",
+   "dst": "setting:frame=simple",
+   "evidence": [
+    {
+     "video": "Iobs4FH-EL8",
+     "t": "00:06:28",
+     "quote": "starting frame and wrote a simple prompt"
+    }
+   ]
+  },
+  {
+   "src": "video:Iobs4FH-EL8",
+   "rel": "mentions",
+   "dst": "technique:character consistency",
+   "evidence": [
+    {
+     "video": "Iobs4FH-EL8",
+     "t": "00:09:24",
+     "quote": "case, character consistency across"
+    }
+   ]
+  },
+  {
+   "src": "video:Gh0Wvpzji1M",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:Gh0Wvpzji1M",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "Gh0Wvpzji1M",
+     "t": "00:01:20",
+     "quote": "[music] cam. Pick your aspect ratio"
+    }
+   ]
+  },
+  {
+   "src": "video:-6qcarua-Bk",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:-6qcarua-Bk",
+   "rel": "mentions",
+   "dst": "creative:pan",
+   "evidence": [
+    {
+     "video": "-6qcarua-Bk",
+     "t": "00:04:05",
+     "quote": "could be a slow camera zoom, a pan"
+    }
+   ]
+  },
+  {
+   "src": "video:-6qcarua-Bk",
+   "rel": "mentions",
+   "dst": "creative:voice over",
+   "evidence": [
+    {
+     "video": "-6qcarua-Bk",
+     "t": "00:04:45",
+     "quote": "voice over using 11 Labs. For my video,"
+    }
+   ]
+  },
+  {
+   "src": "video:-6qcarua-Bk",
+   "rel": "mentions",
+   "dst": "creative:voiceover",
+   "evidence": [
+    {
+     "video": "-6qcarua-Bk",
+     "t": "00:07:48",
+     "quote": "voiceover lines and synced them"
+    }
+   ]
+  },
+  {
+   "src": "video:BITFGxHdq8s",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:BITFGxHdq8s",
+   "rel": "mentions",
+   "dst": "model:midjourney",
+   "evidence": [
+    {
+     "video": "BITFGxHdq8s",
+     "t": "00:00:49",
+     "quote": "compare it with MidJourney, and give you"
+    }
+   ]
+  },
+  {
+   "src": "video:BITFGxHdq8s",
+   "rel": "mentions",
+   "dst": "setting:steps=simple",
+   "evidence": [
+    {
+     "video": "BITFGxHdq8s",
+     "t": "00:01:34",
+     "quote": "uploading, the next steps are simple but"
+    }
+   ]
+  },
+  {
+   "src": "video:BITFGxHdq8s",
+   "rel": "mentions",
+   "dst": "technique:character consistency",
+   "evidence": [
+    {
+     "video": "BITFGxHdq8s",
+     "t": "00:04:15",
+     "quote": "were to rate character consistency out"
+    }
+   ]
+  },
+  {
+   "src": "video:BITFGxHdq8s",
+   "rel": "mentions",
+   "dst": "creative:thumbnail",
+   "evidence": [
+    {
+     "video": "BITFGxHdq8s",
+     "t": "00:07:26",
+     "quote": "the YouTube thumbnail generator caught"
+    }
+   ]
+  },
+  {
+   "src": "video:BITFGxHdq8s",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "BITFGxHdq8s",
+     "t": "00:07:45",
+     "quote": "I selected the 16-9 aspect ratio and"
+    }
+   ]
+  },
+  {
+   "src": "video:cWspDcWuo0s",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:Abydxe8b1Ac",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:Abydxe8b1Ac",
+   "rel": "mentions",
+   "dst": "model:runway",
+   "evidence": [
+    {
+     "video": "Abydxe8b1Ac",
+     "t": "00:03:50",
+     "quote": "models like Runway Gen 3, Turbo, and"
+    }
+   ]
+  },
+  {
+   "src": "video:Abydxe8b1Ac",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "Abydxe8b1Ac",
+     "t": "00:04:49",
+     "quote": "Next, pick an aspect ratio based on"
+    }
+   ]
+  },
+  {
+   "src": "video:Abydxe8b1Ac",
+   "rel": "mentions",
+   "dst": "technique:text to image",
+   "evidence": [
+    {
+     "video": "Abydxe8b1Ac",
+     "t": "00:06:36",
+     "quote": "text to image feature. For this, I'm"
+    }
+   ]
+  },
+  {
+   "src": "video:Abydxe8b1Ac",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "Abydxe8b1Ac",
+     "t": "00:06:47",
+     "quote": "once. You can go up to 10 per batch if"
+    }
+   ]
+  },
+  {
+   "src": "video:_m5P6YqE8_8",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:_m5P6YqE8_8",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "_m5P6YqE8_8",
+     "t": "00:00:36",
+     "quote": "character's face and identity consistent"
+    }
+   ]
+  },
+  {
+   "src": "video:_m5P6YqE8_8",
+   "rel": "mentions",
+   "dst": "technique:batch",
+   "evidence": [
+    {
+     "video": "_m5P6YqE8_8",
+     "t": "00:02:35",
+     "quote": "aspect ratio and batch size. If you want"
+    }
+   ]
+  },
+  {
+   "src": "video:_m5P6YqE8_8",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "_m5P6YqE8_8",
+     "t": "00:03:37",
+     "quote": "upscale to boost the resolution. This is"
+    }
+   ]
+  },
+  {
+   "src": "video:_m5P6YqE8_8",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "_m5P6YqE8_8",
+     "t": "00:01:05",
+     "quote": "a model, set the aspect ratio, image"
+    }
+   ]
+  },
+  {
+   "src": "video:_m5P6YqE8_8",
+   "rel": "mentions",
+   "dst": "creative:low angle",
+   "evidence": [
+    {
+     "video": "_m5P6YqE8_8",
+     "t": "00:02:10",
+     "quote": "view, eyele angle, low angle, or"
+    }
+   ]
+  },
+  {
+   "src": "video:_m5P6YqE8_8",
+   "rel": "mentions",
+   "dst": "creative:close up",
+   "evidence": [
+    {
+     "video": "_m5P6YqE8_8",
+     "t": "00:04:06",
+     "quote": "close-up view. The character reference"
+    }
+   ]
+  },
+  {
+   "src": "video:_m5P6YqE8_8",
+   "rel": "mentions",
+   "dst": "setting:steps=30",
+   "evidence": [
+    {
+     "video": "_m5P6YqE8_8",
+     "t": "00:03:12",
+     "quote": "steps to around 30 to 35 for more"
+    }
+   ]
+  },
+  {
+   "src": "video:Wx3RM28HXP4",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:Wx3RM28HXP4",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "Wx3RM28HXP4",
+     "t": "00:00:00",
+     "quote": "How To Create Viral UGC Ads Using Creatify AI (Full Tutorial)"
+    }
+   ]
+  },
+  {
+   "src": "video:Wx3RM28HXP4",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "Wx3RM28HXP4",
+     "t": "00:01:32",
+     "quote": "choose the aspect ratio for the platform"
+    }
+   ]
+  },
+  {
+   "src": "video:Wx3RM28HXP4",
+   "rel": "mentions",
+   "dst": "creative:hook",
+   "evidence": [
+    {
+     "video": "Wx3RM28HXP4",
+     "t": "00:02:49",
+     "quote": "with a strong hook that grabs attention"
+    }
+   ]
+  },
+  {
+   "src": "video:0Sy7RuUDalI",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:0Sy7RuUDalI",
+   "rel": "mentions",
+   "dst": "technique:text to image",
+   "evidence": [
+    {
+     "video": "0Sy7RuUDalI",
+     "t": "00:00:46",
+     "quote": "for text to image generation I've"
+    }
+   ]
+  },
+  {
+   "src": "video:elcXphHMVPw",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:elcXphHMVPw",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "elcXphHMVPw",
+     "t": "00:00:00",
+     "quote": "Krea AI Tutorial: Make Real-Time AI Images, Upscale and Generate Videos!"
+    }
+   ]
+  },
+  {
+   "src": "video:elcXphHMVPw",
+   "rel": "mentions",
+   "dst": "technique:text to image",
+   "evidence": [
+    {
+     "video": "elcXphHMVPw",
+     "t": "00:00:35",
+     "quote": "time or text to image feature um what's"
+    }
+   ]
+  },
+  {
+   "src": "video:6TG-IfPK_jo",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:6TG-IfPK_jo",
+   "rel": "mentions",
+   "dst": "technique:image to image",
+   "evidence": [
+    {
+     "video": "6TG-IfPK_jo",
+     "t": "00:00:29",
+     "quote": "perform text-to-image and image-to-image"
+    }
+   ]
+  },
+  {
+   "src": "video:6TG-IfPK_jo",
+   "rel": "mentions",
+   "dst": "technique:text to image",
+   "evidence": [
+    {
+     "video": "6TG-IfPK_jo",
+     "t": "00:00:29",
+     "quote": "perform text-to-image and image-to-image"
+    }
+   ]
+  },
+  {
+   "src": "video:6TG-IfPK_jo",
+   "rel": "mentions",
+   "dst": "technique:refiner",
+   "evidence": [
+    {
+     "video": "6TG-IfPK_jo",
+     "t": "00:04:02",
+     "quote": "refiner model if you're using SDXL"
+    }
+   ]
+  },
+  {
+   "src": "video:6TG-IfPK_jo",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "6TG-IfPK_jo",
+     "t": "00:03:11",
+     "quote": "option to select the aspect ratio of"
+    }
+   ]
+  },
+  {
+   "src": "video:6TG-IfPK_jo",
+   "rel": "mentions",
+   "dst": "model:sdxl",
+   "evidence": [
+    {
+     "video": "6TG-IfPK_jo",
+     "t": "00:04:02",
+     "quote": "refiner model if you're using SDXL"
+    }
+   ]
+  },
+  {
+   "src": "video:0GWCXSqQnSk",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:rjPxyqsiKP8",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:rjPxyqsiKP8",
+   "rel": "mentions",
+   "dst": "model:midjourney",
+   "evidence": [
+    {
+     "video": "rjPxyqsiKP8",
+     "t": "00:00:00",
+     "quote": "How To Use Tensor Art To Make Consistent Characters! (FREE Midjourney Alternative)"
+    }
+   ]
+  },
+  {
+   "src": "video:rjPxyqsiKP8",
+   "rel": "mentions",
+   "dst": "creative:vertical",
+   "evidence": [
+    {
+     "video": "rjPxyqsiKP8",
+     "t": "00:00:55",
+     "quote": "several tabs available in a vertical"
+    }
+   ]
+  },
+  {
+   "src": "video:rjPxyqsiKP8",
+   "rel": "mentions",
+   "dst": "creative:aspect ratio",
+   "evidence": [
+    {
+     "video": "rjPxyqsiKP8",
+     "t": "00:03:08",
+     "quote": "the aspect ratio which I set as portrait"
+    }
+   ]
+  },
+  {
+   "src": "video:rjPxyqsiKP8",
+   "rel": "mentions",
+   "dst": "technique:upscale",
+   "evidence": [
+    {
+     "video": "rjPxyqsiKP8",
+     "t": "00:04:04",
+     "quote": "good clear image you can turn on upscale"
+    }
+   ]
+  },
+  {
+   "src": "video:rjPxyqsiKP8",
+   "rel": "mentions",
+   "dst": "technique:detailer",
+   "evidence": [
+    {
+     "video": "rjPxyqsiKP8",
+     "t": "00:04:15",
+     "quote": "detailer reduces face collapse and hand"
+    }
+   ]
+  },
+  {
+   "src": "video:rjPxyqsiKP8",
+   "rel": "mentions",
+   "dst": "technique:character consistency",
+   "evidence": [
+    {
+     "video": "rjPxyqsiKP8",
+     "t": "00:05:51",
+     "quote": "character consistency was clearly there"
+    }
+   ]
+  },
+  {
+   "src": "video:rjPxyqsiKP8",
+   "rel": "mentions",
+   "dst": "setting:steps=30",
+   "evidence": [
+    {
+     "video": "rjPxyqsiKP8",
+     "t": "00:06:27",
+     "quote": "steps to 30 it is a good good midpoint"
+    }
+   ]
+  },
+  {
+   "src": "video:7hOtqT_EehA",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:7hOtqT_EehA",
+   "rel": "mentions",
+   "dst": "model:ideogram",
+   "evidence": [
+    {
+     "video": "7hOtqT_EehA",
+     "t": "00:00:00",
+     "quote": "How To Create Consistent Characters In Ideogram AI"
+    }
+   ]
+  },
+  {
+   "src": "video:_0pe_2W6D9w",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
+  },
+  {
+   "src": "video:_0pe_2W6D9w",
+   "rel": "mentions",
+   "dst": "creative:ugc",
+   "evidence": [
+    {
+     "video": "_0pe_2W6D9w",
+     "t": "00:00:00",
+     "quote": "How To Make Viral UGC Ads Using AI"
+    }
+   ]
+  },
+  {
+   "src": "video:aVXjFh3oBzU",
+   "rel": "belongs_to",
+   "dst": "channel:artificialquotient"
   },
   {
    "src": "style:epalle/asali_01_desire",

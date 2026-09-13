@@ -1,0 +1,120 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.910 align:start position:0%
+ 
+Let<00:00:00.200><c> me</c><00:00:00.320><c> go</c><00:00:00.520><c> to</c><00:00:00.680><c> data</c><00:00:01.000><c> set</c><00:00:01.240><c> tab,</c><00:00:01.480><c> create</c><00:00:01.720><c> a</c><00:00:01.760><c> new</c>
+
+00:00:01.910 --> 00:00:01.920 align:start position:0%
+Let me go to data set tab, create a new
+ 
+
+00:00:01.920 --> 00:00:04.150 align:start position:0%
+Let me go to data set tab, create a new
+data<00:00:02.240><c> set</c><00:00:02.600><c> and</c><00:00:02.840><c> name</c><00:00:03.120><c> it.</c><00:00:03.400><c> Then</c><00:00:03.560><c> we</c><00:00:03.680><c> drag</c><00:00:03.960><c> in</c>
+
+00:00:04.150 --> 00:00:04.160 align:start position:0%
+data set and name it. Then we drag in
+ 
+
+00:00:04.160 --> 00:00:06.990 align:start position:0%
+data set and name it. Then we drag in
+all<00:00:04.440><c> 34</c><00:00:05.000><c> images</c><00:00:05.560><c> and</c><00:00:05.680><c> let</c><00:00:05.800><c> it</c><00:00:05.960><c> upload.</c><00:00:06.480><c> Now</c><00:00:06.800><c> our</c>
+
+00:00:06.990 --> 00:00:07.000 align:start position:0%
+all 34 images and let it upload. Now our
+ 
+
+00:00:07.000 --> 00:00:08.630 align:start position:0%
+all 34 images and let it upload. Now our
+data<00:00:07.240><c> set</c><00:00:07.480><c> is</c><00:00:07.640><c> in</c><00:00:07.880><c> and</c><00:00:08.040><c> we</c><00:00:08.160><c> set</c><00:00:08.400><c> up</c><00:00:08.520><c> the</c>
+
+00:00:08.630 --> 00:00:08.640 align:start position:0%
+data set is in and we set up the
+ 
+
+00:00:08.640 --> 00:00:10.390 align:start position:0%
+data set is in and we set up the
+training.<00:00:09.160><c> After</c><00:00:09.440><c> that,</c><00:00:09.680><c> we</c><00:00:09.800><c> create</c><00:00:10.120><c> a</c><00:00:10.200><c> new</c>
+
+00:00:10.390 --> 00:00:10.400 align:start position:0%
+training. After that, we create a new
+ 
+
+00:00:10.400 --> 00:00:12.310 align:start position:0%
+training. After that, we create a new
+job<00:00:10.720><c> and</c><00:00:10.880><c> name</c><00:00:11.120><c> our</c><00:00:11.360><c> Laura.</c><00:00:11.800><c> For</c><00:00:11.920><c> the</c><00:00:12.040><c> trigger</c>
+
+00:00:12.310 --> 00:00:12.320 align:start position:0%
+job and name our Laura. For the trigger
+ 
+
+00:00:12.320 --> 00:00:14.310 align:start position:0%
+job and name our Laura. For the trigger
+word,<00:00:12.600><c> we</c><00:00:12.720><c> use</c><00:00:13.040><c> one</c><00:00:13.320><c> unique</c><00:00:13.680><c> word,</c><00:00:13.960><c> something</c>
+
+00:00:14.310 --> 00:00:14.320 align:start position:0%
+word, we use one unique word, something
+ 
+
+00:00:14.320 --> 00:00:16.230 align:start position:0%
+word, we use one unique word, something
+the<00:00:14.440><c> model</c><00:00:14.720><c> doesn't</c><00:00:15.200><c> already</c><00:00:15.520><c> know,</c><00:00:15.800><c> so</c><00:00:16.040><c> it</c>
+
+00:00:16.230 --> 00:00:16.240 align:start position:0%
+the model doesn't already know, so it
+ 
+
+00:00:16.240 --> 00:00:18.550 align:start position:0%
+the model doesn't already know, so it
+ties<00:00:16.680><c> only</c><00:00:17.000><c> to</c><00:00:17.240><c> our</c><00:00:17.520><c> Laura.</c><00:00:17.960><c> Newer</c><00:00:18.200><c> models</c>
+
+00:00:18.550 --> 00:00:18.560 align:start position:0%
+ties only to our Laura. Newer models
+ 
+
+00:00:18.560 --> 00:00:19.870 align:start position:0%
+ties only to our Laura. Newer models
+don't<00:00:18.840><c> really</c><00:00:19.040><c> need</c><00:00:19.280><c> a</c><00:00:19.360><c> trigger</c><00:00:19.680><c> word</c>
+
+00:00:19.870 --> 00:00:19.880 align:start position:0%
+don't really need a trigger word
+ 
+
+00:00:19.880 --> 00:00:21.790 align:start position:0%
+don't really need a trigger word
+anymore,<00:00:20.320><c> but</c><00:00:20.600><c> I</c><00:00:20.680><c> still</c><00:00:20.960><c> like</c><00:00:21.200><c> to</c><00:00:21.320><c> keep</c><00:00:21.600><c> one</c>
+
+00:00:21.790 --> 00:00:21.800 align:start position:0%
+anymore, but I still like to keep one
+ 
+
+00:00:21.800 --> 00:00:23.550 align:start position:0%
+anymore, but I still like to keep one
+in.<00:00:22.040><c> Then</c><00:00:22.240><c> we</c><00:00:22.360><c> set</c><00:00:22.560><c> the</c><00:00:22.680><c> model</c><00:00:22.920><c> architecture</c>
+
+00:00:23.550 --> 00:00:23.560 align:start position:0%
+in. Then we set the model architecture
+ 
+
+00:00:23.560 --> 00:00:25.950 align:start position:0%
+in. Then we set the model architecture
+to<00:00:23.760><c> Z</c><00:00:24.080><c> image</c><00:00:24.360><c> turbo</c><00:00:24.760><c> and</c><00:00:24.960><c> also</c><00:00:25.240><c> set</c><00:00:25.480><c> the</c><00:00:25.600><c> max</c>
+
+00:00:25.950 --> 00:00:25.960 align:start position:0%
+to Z image turbo and also set the max
+ 
+
+00:00:25.960 --> 00:00:28.150 align:start position:0%
+to Z image turbo and also set the max
+step<00:00:26.320><c> input</c><00:00:26.880><c> to</c><00:00:27.000><c> 30</c><00:00:27.440><c> to</c><00:00:27.600><c> speed</c><00:00:27.920><c> up</c><00:00:28.040><c> the</c>
+
+00:00:28.150 --> 00:00:28.160 align:start position:0%
+step input to 30 to speed up the
+ 
+
+00:00:28.160 --> 00:00:31.000 align:start position:0%
+step input to 30 to speed up the
+training<00:00:28.520><c> a</c><00:00:28.600><c> bit.</c>
+

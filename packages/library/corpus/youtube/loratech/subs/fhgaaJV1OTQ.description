@@ -1,0 +1,23 @@
+▶️ FULL VIDEO: https://youtu.be/kpeTUPaUXu0
+🎬 Wan Animate 2 vs Scail 2. Same seed, same footage, one winner.
+
+Wan Animate 2 released on August 7th and everyone assumed it takes the crown for motion control in ComfyUI. I ran it head to head against Scail 2 on the same reference image, the same driving video, the same seed and the same resolution across three different clips. Animate 2 skips the pose skeleton entirely and feeds driving frames straight into the transformer, which sounds like a straight upgrade on paper. In practice it came back with discoloration on every single generation, shirt clipping and artifacting toward the end of the clips, while Scail 2 held color and kept the real background from the driving video.
+
+Animate 2 did take one round on pure facial quality, and it generated in roughly half the time. It is going to be a monster once proper node support lands. Right now Scail 2 is still the one I'm using. Full breakdown, the workflow modifications, the LoRA stacks and all three side by side comparisons are in the full video.
+
+🔗 LINKS
+
+Patreon (support the channel, early access): https://www.patreon.com/LoRAtech
+
+Discord (free workflows, node pack): https://discord.gg/2bqQXKxsxg
+1 on 1 coaching: Available through the Discord. Covers ComfyUI/RunPod setup, LoRA training, and AI influencer growth strategy. Pricing is consultation based, built around what you actually need. Details in the server.
+
+RunPod (GPU rental, deposit 2 get cut free): https://runpod.io?ref=jc6190fx
+
+🏷️ TAGS
+
+wan animate 2, wan animate, scail 2, comfyui, comfyui workflow, motion control ai, ai motion transfer, wan 2.2, ai video generation, comfyui tutorial, animate 2 comfyui, video to video ai, ai character animation, pose transfer ai, comfyui nodes, open source ai video, local ai video, ai influencer, lora training, comfyui subgraphs, light x2v, gguf quantized, rtx 5090 ai, stable diffusion video, comfyui motion control, ai model comparison, wan animate 2 vs scail 2, comfyui free workflow, driving video ai, reference image animation
+
+🎯 HASHTAGS
+
+#shorts #comfyui #wananimate2 #scail2 #aivideo #motioncontrol #aianimation #stablediffusion #localai #aiart #comfyuiworkflow #videotovideo #aitools #opensourceai

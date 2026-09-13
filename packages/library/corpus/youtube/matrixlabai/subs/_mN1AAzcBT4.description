@@ -1,0 +1,37 @@
+In this AI Influencer tutorial, I show you how to create an AI Influencer from scratch without training a LoRA first. You will see how to start from a base image, test the AI creator identity, build a reference workflow, and prepare better reference images before moving into dataset creation or LoRA training.
+
+----------------------------------------------
+
+Join Skool (custom Matrix nodes):
+https://www.skool.com/matrix-lab-6660/about
+
+FREE skills, workflows + all my prompts:
+Discord: https://discord.gg/uhfVpmwktQ
+
+----------------------------------------------
+
+What you'll learn:
+- Why starting with LoRA training too early can make your AI model inconsistent
+- How to create an AI influencer / AI creator from a strong base image
+- How to test whether the face and identity stay consistent across generations
+- How to think about reference images, reference packs, datasets, and model consistency
+- When LoRA training actually makes sense in the AI workflow
+
+----------------------------------------------
+
+Chapters / Timestamps
+00:00 Create an AI Influencer model without a LoRA
+00:31 Why LoRA training is not the first step
+01:16 Visual direction & Pinterest references
+02:12 ComfyUI face merge workflow
+02:55 Matrix image edit node setup
+03:23 4K settings & dataset quality
+04:15 Testing the identity swap workflow
+05:17 Quality check of the AI creator identity
+05:56 Creating the first dataset images
+06:35 Using the prompt stack data node
+07:17 Why a clean dataset is the real asset
+07:41 LoRA training on a controlled identity
+08:08 Matrix Lab workflows & custom nodes
+
+ #aimodel #lora #aigeneration #aiworkflow

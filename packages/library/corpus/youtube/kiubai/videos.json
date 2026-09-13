@@ -1,0 +1,64 @@
+{
+  "channel": "KiubAI",
+  "channel_id": "UCxRwH7p6H8dmLTvkzz6jm_w",
+  "handle": "@icy-x4s",
+  "followers": 581,
+  "about": "I am a new creator who has never made comfyui and ai tech content before. \nI also despise ice and cubes. I am FireTriangle ok?",
+  "enumerated_at": "2026-09-13",
+  "videos": [
+    {
+      "id": "nKGIQf8-AV4",
+      "title": "How to install Qwen 3.8 27B on your PC ( Local LLM with LM Studio)",
+      "views": 986,
+      "duration_s": 482
+    },
+    {
+      "id": "5wOU7yhR0dQ",
+      "title": "Minimax H3 reference based Image generation (No more loras)",
+      "views": 2400,
+      "duration_s": 426
+    },
+    {
+      "id": "IksoPQm7Sog",
+      "title": "Minimax H3 reference mode = NO MORE AI INFLUENCER LORAS?",
+      "views": 1800,
+      "duration_s": 699
+    },
+    {
+      "id": "sVKV0RNrsKY",
+      "title": "The best open source motion control model ? (SCAIL 2) - Free Workflow",
+      "views": 2200,
+      "duration_s": 434
+    },
+    {
+      "id": "Td_-mvqVqjM",
+      "title": "Krea2 AI influencers focused showcase (Best open source model)",
+      "views": 1700,
+      "duration_s": 531
+    },
+    {
+      "id": "1uL5-dlYb18",
+      "title": "Ideogram 4 AI influencers ? ComfyUI Pipeline and LoRA training on Runpod",
+      "views": 2900,
+      "duration_s": 875
+    },
+    {
+      "id": "t_-oHMkXQqU",
+      "title": "Infinite wardrobe for your character (Free ComfyUI fashion workflow)",
+      "views": 753,
+      "duration_s": 578
+    },
+    {
+      "id": "V-x_xg6CmQk",
+      "title": "Consistent character LoRA training using AI-toolkit (Flux Klein 9B)",
+      "views": 4700,
+      "duration_s": 745
+    },
+    {
+      "id": "DjNmqaUJcQk",
+      "title": "Consistent room and backgrounds with ComfyUI and Flux Klein",
+      "views": 2700,
+      "duration_s": 780
+    }
+  ]
+}

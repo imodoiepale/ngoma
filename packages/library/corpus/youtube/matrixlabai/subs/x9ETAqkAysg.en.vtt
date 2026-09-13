@@ -1,0 +1,262 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.200
+Every AI influencer video you generate is a guessing game, because the model has to
+
+00:00:04.200 --> 00:00:08.300
+guess how your influencer looks from the side, from behind or when she smiles.
+
+00:00:08.300 --> 00:00:13.360
+And animation studios fixed this exact problem decades ago with one single document, the
+
+00:00:13.360 --> 00:00:17.280
+character sheet, and almost nobody in their AI space is using it.
+
+00:00:17.280 --> 00:00:21.280
+And the creators who figured it out, they just attach one board, and the model keeps
+
+00:00:21.280 --> 00:00:24.200
+their character consistent in every scene they prompt.
+
+00:00:24.200 --> 00:00:28.040
+And in this video I show you the exact system we use to build ours.
+
+00:00:28.040 --> 00:00:31.920
+And you get the full cloth skill with every single prompt complete for free at the end
+
+00:00:31.920 --> 00:00:32.920
+of this video.
+
+00:00:32.920 --> 00:00:34.500
+Okay, let's get straight into it.
+
+00:00:34.500 --> 00:00:38.840
+This is Lina, our AI influencer, and this right here is the character board I built
+
+00:00:38.840 --> 00:00:40.340
+just for this video.
+
+00:00:40.340 --> 00:00:44.360
+Four sheets, one for her face, one for her expressions, and two for her body.
+
+00:00:44.360 --> 00:00:49.600
+And all together that has 29 views of the same influencer out of just 4 generations.
+
+00:00:49.600 --> 00:00:54.780
+And every time we prompt it into a new scene or a new video, this board goes in as reference.
+
+00:00:54.780 --> 00:00:59.260
+So the model never has to guess again, because it has already seen here from every side.
+
+00:00:59.260 --> 00:01:04.220
+And it does not matter if you run AI influencer or an AI UGC creator, the board works exactly
+
+00:01:04.220 --> 00:01:05.220
+the same.
+
+00:01:05.220 --> 00:01:09.940
+And the system behind it is one skill, and it runs with every AI agent, Claude, Codex
+
+00:01:09.940 --> 00:01:11.320
+or whatever you use.
+
+00:01:11.320 --> 00:01:15.700
+You copy a few pictures of your character into a folder, you write one single prompt
+
+00:01:15.700 --> 00:01:18.280
+and you get the whole board back all four sheets.
+
+00:01:18.280 --> 00:01:22.900
+The only thing you need is a handful of clean reference pictures like these studio shots
+
+00:01:22.900 --> 00:01:24.560
+of your AI influencer.
+
+00:01:24.560 --> 00:01:28.840
+And if you don't have those yet, how we built that dataset is our last video.
+
+00:01:28.840 --> 00:01:33.360
+And everything you see today, the skill, the templates, the prompts, all of this is complete
+
+00:01:33.360 --> 00:01:34.360
+free.
+
+00:01:34.360 --> 00:01:37.140
+So the only thing I ask from you is a like and a nice comment.
+
+00:01:37.140 --> 00:01:41.080
+So let me show you the whole setup because it's honestly just three clicks.
+
+00:01:41.080 --> 00:01:45.600
+You open the Claude Desktop app, you go on code and you open the folder of the skill.
+
+00:01:45.600 --> 00:01:48.540
+The same folder you get for free at the end of this video.
+
+00:01:48.540 --> 00:01:52.540
+And the only thing this skill needs from you is a WaveSpeed API key.
+
+00:01:52.540 --> 00:01:56.660
+Because WaveSpeed is where the sheets get generated and you pay per image there, just
+
+00:01:56.660 --> 00:01:57.660
+a few cents.
+
+00:01:57.660 --> 00:02:02.580
+So you create your key on their site, you open the .env file inside the skill folder and
+
+00:02:02.580 --> 00:02:04.860
+you paste your key in there one time.
+
+00:02:04.860 --> 00:02:06.740
+And that is the whole technical setup.
+
+00:02:06.740 --> 00:02:08.100
+You never touch it again.
+
+00:02:08.100 --> 00:02:10.660
+And now comes the only real work you have.
+
+00:02:10.660 --> 00:02:13.580
+And that is putting your images into the right folders.
+
+00:02:13.580 --> 00:02:17.700
+Inside the skill, there is an anchors folder with one folder for the face, one for the
+
+00:02:17.700 --> 00:02:22.020
+expressions and two for the body exactly like the sheets on the board.
+
+00:02:22.020 --> 00:02:26.200
+And if you build the dataset like we do, it already has the same structure.
+
+00:02:26.200 --> 00:02:30.740
+So you just copy face to face, expressions to expressions and body to body.
+
+00:02:30.740 --> 00:02:35.540
+And every folder has a small note inside that tells you exactly what belongs there.
+
+00:02:35.540 --> 00:02:39.740
+And by the way, this whole dataset structure with every prompt behind it that comes straight
+
+00:02:39.740 --> 00:02:43.100
+out of our Skool community, but more on that in a minute.
+
+00:02:43.100 --> 00:02:47.500
+But back to your images, just make sure your face folder has a clean front shot and at
+
+00:02:47.500 --> 00:02:52.540
+least one angle and that everything in your body folder wears the same outfit because the
+
+00:02:52.540 --> 00:02:56.020
+sheet keeps the wardrobe identical across every view.
+
+00:02:56.020 --> 00:02:57.820
+And honestly, that is it.
+
+00:02:57.820 --> 00:03:02.540
+The skill looks at every single image anyway before it generates and kicks out everything
+
+00:03:02.540 --> 00:03:04.780
+it cannot use and tells you why.
+
+00:03:04.780 --> 00:03:07.860
+You can also turn this off, by the way, to save some tokens.
+
+00:03:07.860 --> 00:03:10.140
+And now the whole build is one single prompt.
+
+00:03:10.140 --> 00:03:12.540
+You get my finished prompt together with the skill.
+
+00:03:12.540 --> 00:03:14.780
+You paste it in and you hit enter.
+
+00:03:14.780 --> 00:03:19.380
+And this prompt tells Claude to build the complete board in one go, all four sheets.
+
+00:03:19.380 --> 00:03:22.100
+And watch what happens before anything costs money.
+
+00:03:22.100 --> 00:03:26.620
+Claude looks at every single image first, then it tells you exactly what the whole board
+
+00:03:26.620 --> 00:03:30.980
+will cost, four generations, one per sheet, and it waits for your go.
+
+00:03:30.980 --> 00:03:33.020
+And from here, it runs on its own.
+
+00:03:33.020 --> 00:03:38.180
+It uploads the references, build every sheet prompt from the templates word for word.
+
+00:03:38.180 --> 00:03:41.940
+And a few minutes later, all four sheets land in the sheets folder.
+
+00:03:41.940 --> 00:03:43.180
+And this is the result.
+
+00:03:43.180 --> 00:03:47.700
+Her face turnaround, her expressions, her full body and her upper body straight out
+
+00:03:47.700 --> 00:03:48.940
+of four generations.
+
+00:03:48.940 --> 00:03:51.540
+And every single view is the same influencer.
+
+00:03:51.540 --> 00:03:55.980
+And real quick, because this part decides everything, our board can only organize an
+
+00:03:55.980 --> 00:03:56.980
+identity.
+
+00:03:56.980 --> 00:04:01.380
+The dataset is what creates her and the complete dataset system, how we created Lina from
+
+00:04:01.380 --> 00:04:06.020
+scratch with every single prompt plus the premium workflows that all lives inside our
+
+00:04:06.020 --> 00:04:07.340
+Skool community.
+
+00:04:07.340 --> 00:04:12.060
+And if this free board already helps you imagine what the full system does from our Skool,
+
+00:04:12.060 --> 00:04:14.920
+the link for our Skool community is in the description below.
+
+00:04:14.920 --> 00:04:19.900
+So that is the system one folder, one prompt, four sheets, and your influencer stays consistent
+
+00:04:19.900 --> 00:04:21.740
+in every single generation.
+
+00:04:21.740 --> 00:04:26.300
+And as promised, you get to complete skill for free every template, every prompt, everything
+
+00:04:26.300 --> 00:04:27.500
+you saw today.
+
+00:04:27.500 --> 00:04:30.620
+The download is in the description and pinned in our discord.
+
+00:04:30.620 --> 00:04:34.700
+And when you build your first board, drop it in there because I actually look at that.
+
+00:04:34.700 --> 00:04:38.420
+And if this video helped you leave a like and subscribe and write me in the comments
+
+00:04:38.420 --> 00:04:39.940
+what I should build next.
+
+00:04:39.940 --> 00:04:41.300
+So see you in the next video.
+
+00:04:41.300 --> 00:04:41.800
+Bye.
+
+00:04:42.060 --> 00:04:42.560
+Bye.
+

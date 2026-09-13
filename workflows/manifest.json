@@ -1,5 +1,5 @@
 {
-  "count": 53,
+  "count": 51,
   "workflows": [
     {
       "sha256": "c0bbd994675e0134e55677c41ff3233582a70fb6d7f66cb8236b0228355b2fcf",
@@ -1771,6 +1771,7 @@
         "z_image_turbo_bf16.safetensors"
       ],
       "sources": [
+        "C:\\Users\\inkno\\Documents\\COMFY\\AI influencer dataset AIO Revamped\\user_13402786_3e875d38-67c0-443f-be3b-d819e4fd3a6f.zip!INFLUENCER Dataset AIO - Klein Revamped - Subs - Icekiub v2.json",
         "C:\\Users\\inkno\\Documents\\COMFY\\AI influencer dataset AIO Revamped\\user_13402786_3e875d38-67c0-443f-be3b-d819e4fd3a6f\\INFLUENCER Dataset AIO - Klein Revamped - Subs - Icekiub v2.json"
       ],
       "file": "INFLUENCER Dataset AIO - Klein Revamped - Subs - Icekiub v2.json",
@@ -1780,50 +1781,6 @@
       "divergence": "repo copy differs from its source: 402 PathchSageAttentionKJ mode 4->0; 401 PathchSageAttentionKJ mode 4->0 (ComfyUI mode 0 = active, 4 = bypassed). Recorded 2026-09-13; the committed copy is what runs."
     },
     {
-      "sha256": "12175d23018e67e2bbfe6092bcfb85499bc20469ba2a6eab0f606f4f15428373",
-      "bytes": 83767,
-      "node_count": 65,
-      "node_types": [
-        "CLIPLoader",
-        "CLIPTextEncode",
-        "CR Prompt List",
-        "EmptyLatentImage",
-        "Fast Groups Bypasser (rgthree)",
-        "GetImageSize",
-        "ImageStitch",
-        "KSampler",
-        "KSampler (Efficient)",
-        "MarkdownNote",
-        "PathchSageAttentionKJ",
-        "PreviewImage",
-        "ReferenceLatent",
-        "SaveImage",
-        "UNETLoader",
-        "VAEDecode",
-        "VAEEncode",
-        "VAELoader"
-      ],
-      "node_packs": [
-        "ComfyUI_Comfyroll_CustomNodes",
-        "comfy-core",
-        "comfyui-kjnodes",
-        "efficiency-nodes-comfyui"
-      ],
-      "models": [
-        "flux-2-klein-9b-fp8.safetensors",
-        "flux2-vae.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_3_8b_fp8mixed.safetensors",
-        "ultrafluxvae.safetensors",
-        "z_image_turbo_bf16.safetensors"
-      ],
-      "sources": [
-        "C:\\Users\\inkno\\Documents\\COMFY\\AI influencer dataset AIO Revamped\\user_13402786_3e875d38-67c0-443f-be3b-d819e4fd3a6f.zip!INFLUENCER Dataset AIO - Klein Revamped - Subs - Icekiub v2.json"
-      ],
-      "file": "INFLUENCER Dataset AIO - Klein Revamped - Subs - Icekiub v2.json",
-      "canonical": "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json"
-    },
-    {
       "sha256": "10e248be155dd302f68565084e8c8bbcc389ba19835db3df945b1536e98e02f4",
       "bytes": 80887,
       "node_count": 62,
@@ -1864,6 +1821,7 @@
         "z_image_turbo_bf16.safetensors"
       ],
       "sources": [
+        "C:\\Users\\inkno\\Documents\\COMFY\\AI influencer dataset AIO Revamped\\user_13402786_3e875d38-67c0-443f-be3b-d819e4fd3a6f.zip!INFLUENCER Dataset AIO - Klein Revamped -no base- subs - Icekiub v2.json",
         "C:\\Users\\inkno\\Documents\\COMFY\\AI influencer dataset AIO Revamped\\user_13402786_3e875d38-67c0-443f-be3b-d819e4fd3a6f\\INFLUENCER Dataset AIO - Klein Revamped -no base- subs - Icekiub v2.json"
       ],
       "file": "INFLUENCER Dataset AIO - Klein Revamped -no base- subs - Icekiub v2.json",
@@ -1871,52 +1829,6 @@
       "source_sha256": "f9df8de06c784e15686700d5f977a1dd0d5bd3781bbf10c9e727baf0e5849aec",
       "source_bytes": 84975,
       "divergence": "repo copy differs from its source: 402 PathchSageAttentionKJ mode 4->0 (ComfyUI mode 0 = active, 4 = bypassed). Recorded 2026-09-13; the committed copy is what runs."
-    },
-    {
-      "sha256": "10e248be155dd302f68565084e8c8bbcc389ba19835db3df945b1536e98e02f4",
-      "bytes": 80887,
-      "node_count": 62,
-      "node_types": [
-        "CLIPLoader",
-        "CLIPTextEncode",
-        "CR Prompt List",
-        "EmptyLatentImage",
-        "Fast Groups Bypasser (rgthree)",
-        "GetImageSize",
-        "ImageResizeKJv2",
-        "ImageStitch",
-        "KSampler",
-        "KSampler (Efficient)",
-        "LoadImage",
-        "MarkdownNote",
-        "PathchSageAttentionKJ",
-        "PreviewImage",
-        "ReferenceLatent",
-        "SaveImage",
-        "UNETLoader",
-        "VAEDecode",
-        "VAEEncode",
-        "VAELoader"
-      ],
-      "node_packs": [
-        "ComfyUI_Comfyroll_CustomNodes",
-        "comfy-core",
-        "comfyui-kjnodes",
-        "efficiency-nodes-comfyui"
-      ],
-      "models": [
-        "flux-2-klein-9b-fp8.safetensors",
-        "flux2-vae.safetensors",
-        "qwen_2.5_vl_7b_fp8_scaled.safetensors",
-        "qwen_3_8b_fp8mixed.safetensors",
-        "ultrafluxvae.safetensors",
-        "z_image_turbo_bf16.safetensors"
-      ],
-      "sources": [
-        "C:\\Users\\inkno\\Documents\\COMFY\\AI influencer dataset AIO Revamped\\user_13402786_3e875d38-67c0-443f-be3b-d819e4fd3a6f.zip!INFLUENCER Dataset AIO - Klein Revamped -no base- subs - Icekiub v2.json"
-      ],
-      "file": "INFLUENCER Dataset AIO - Klein Revamped -no base- subs - Icekiub v2.json",
-      "canonical": "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json"
     },
     {
       "sha256": "cc663430336749fc89a0e9f87ed6a75ff972a1465a9da4e55de2549e1e83e11c",

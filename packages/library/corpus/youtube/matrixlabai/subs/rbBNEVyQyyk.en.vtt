@@ -1,0 +1,409 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:06.333
+Most people have four or five pictures of their AI influencer and no idea how to get from there to a real dataset.
+
+00:00:06.450 --> 00:00:13.383
+And in this video, I show you the exact system we use to turn a handful of pictures into a complete, training-ready-to-use dataset.
+
+00:00:13.400 --> 00:00:17.017
+No matter if you have five Instagram shots or just one single face picture.
+
+00:00:17.433 --> 00:00:21.033
+And the dataset does not care what you train it on later. That part is completely up to you.
+
+00:00:22.117 --> 00:00:27.250
+And everything we see today, the full prompt system and the ComfyUI workflow, you get complete for free at the end of this video.
+
+00:00:28.000 --> 00:00:32.657
+Okay, let's get straight into it. This is Lina, our AI influencer for this video.
+
+00:00:32.667 --> 00:00:35.307
+And these four pictures here are everything we start with.
+
+00:00:35.317 --> 00:00:38.690
+One clean, one clean studio shot of her face and three random phone pictures.
+
+00:00:38.700 --> 00:00:42.223
+And if you have an AI, and if you have an AI influencer, you probably have exactly that.
+
+00:00:42.233 --> 00:00:45.597
+And whatever you build with her later, it all comes out of one folder.
+
+00:00:45.817 --> 00:00:47.842
+But four pictures are not the data set.
+
+00:00:47.933 --> 00:00:50.157
+Here is the part almost nobody talks about.
+
+00:00:50.300 --> 00:00:52.919
+You never generate everything out of these four pictures.
+
+00:00:52.967 --> 00:00:56.747
+You start with the face, and every step after that you use what you just made.
+
+00:00:56.883 --> 00:01:01.090
+This is a finished dataset, and this is not a folder with nice pictures of her,
+
+00:01:01.100 --> 00:01:06.373
+this is one whole person from every side. The first part here is their face from every angle,
+
+00:01:06.383 --> 00:01:09.773
+and these are not nice portraits, this is the geometry of their face,
+
+00:01:09.783 --> 00:01:12.073
+in every position a camera can stand in. And these are her expressions.
+
+00:01:12.083 --> 00:01:17.173
+And these are her expressions, smiling, mouth open, eyes closed, and looking away.
+
+00:01:17.183 --> 00:01:22.060
+And then comes her body, upper body from every side, and after that the full body from every side.
+
+00:01:22.383 --> 00:01:25.720
+And at the end comes the — and at the end comes the real-life pics, just normal pictures of her
+
+00:01:25.730 --> 00:01:29.942
+in a real room, to add the hyper — to add the hyper-realistic Instagram effect to the dataset.
+
+00:01:30.083 --> 00:01:37.987
+and if one of these — and if one of these parts is missing, you will feel it later,
+
+00:01:37.997 --> 00:01:42.507
+in every image you ever make with her. And you don't need hundreds of pictures for this,
+
+00:01:42.517 --> 00:01:46.870
+what matters is that every part is covered. And if you train a LoRA on this later,
+
+00:01:46.883 --> 00:01:51.140
+25 to 36 good ones beat 75 messy ones every time.
+
+00:01:51.150 --> 00:01:55.707
+And before we go into the prompts, one quick thing. Everything in this video is free,
+
+00:01:55.717 --> 00:01:59.670
+and at the end you get the whole CompTIA workflow and prompt system on top,
+
+00:01:59.717 --> 00:02:02.863
+so the only thing I want from you is a like and a nice comment.
+
+00:02:03.083 --> 00:02:07.226
+And if you are really serious about building AI influencers and you want the whole path,
+
+00:02:07.236 --> 00:02:11.257
+not just one piece of it, then come over to our Skool community.
+
+00:02:11.267 --> 00:02:14.263
+That is where we go way deeper than I can ever go here on YouTube.
+
+00:02:14.350 --> 00:02:18.263
+Okay, now every picture in the data set comes from one prompt, and there's one
+
+00:02:18.273 --> 00:02:22.173
+rule for all of them. Get this one wrong, and nothing else will save you. There are
+
+00:02:22.183 --> 00:02:25.947
+these are, these are the prompts for her face, and I want you to look one thing.
+
+00:02:25.957 --> 00:02:30.423
+Look at her hair color. There is none. Not in this one, and not in any of the
+
+00:02:30.433 --> 00:02:34.950
+prompts. Because identity never goes into the prompt. These pictures say who she is,
+
+00:02:34.960 --> 00:02:38.307
+the prompt only says where she is, and how it is shot. The moment you write
+
+00:02:38.317 --> 00:02:39.539
+blonde, the moment you write blonde hair into a prompt, the moment you write blonde
+
+00:02:39.549 --> 00:02:43.787
+hair into a prompt, that prompt only works for blondes. Leave it out, and the
+
+00:02:43.797 --> 00:02:47.590
+same prompt builds a data set for every character you will ever make. And there's
+
+00:02:47.600 --> 00:02:49.949
+and there's exactly one exception, and there's exactly one exception, and you
+
+00:02:49.959 --> 00:02:54.803
+can see it right here. Keep the same eye color as in the reference images. This is
+
+00:02:54.813 --> 00:02:58.190
+not a description. That points back at your own pictures. So models drift,
+
+00:02:58.200 --> 00:03:01.223
+some models drift by the eye color, so we lock it in. And that is the difference
+
+00:03:01.233 --> 00:03:03.603
+that keeps it safe, and that is the difference that keeps it safe for every
+
+00:03:03.683 --> 00:03:07.686
+AI influencer. Because the look never says what her eyes look like, it only
+
+00:03:07.696 --> 00:03:08.973
+says don't change them.
+
+00:03:08.983 --> 00:03:12.543
+And everything here comes out of that one studio picture of her face.
+
+00:03:12.733 --> 00:03:18.010
+So if you don't have one yet, that is the first thing you make, and you make clean with nothing
+
+00:03:18.020 --> 00:03:19.207
+else in the frame. Now let's look at her face, because her face has to teach two things.
+
+00:03:19.217 --> 00:03:21.617
+The first one are the angles, so she is — now, now let's look at her face, because her face has
+
+00:03:21.627 --> 00:03:26.673
+to teach two things. The first one are the angles, so who she is from every side, and, and her,
+
+00:03:26.683 --> 00:03:31.046
+and there, and there her face stays neutral, because only the camera moves. And the second
+
+00:03:31.056 --> 00:03:36.059
+one are her expressions, so what her face can actually do. And there the camera stands front
+
+00:03:36.069 --> 00:03:40.690
+out, because now only her face moves. But never both in the same picture,
+
+00:03:40.933 --> 00:03:44.253
+because you have to be able to see what changed between the shots.
+
+00:03:44.550 --> 00:03:47.679
+If the camera moves and her face moves at the same time,
+
+00:03:47.817 --> 00:03:52.920
+you cannot tell if the mouse looks different because of the angle or because she is smiling.
+
+00:03:53.117 --> 00:03:54.192
+And one quick tip on the background. Take gray and not white, because white flattens the skin,
+
+00:03:54.202 --> 00:04:00.507
+and that is where plastic look starts. And there's one more thing, but that one does not go
+
+00:04:00.517 --> 00:04:04.507
+into the data set. That is one single picture with all her expressions in a grid, and we only build
+
+00:04:04.517 --> 00:04:09.480
+that when we want to make videos with her. So the video model has her whole range in one reference.
+
+00:04:09.560 --> 00:04:18.982
+And that is her face done, and these pictures are now our references for the body.
+
+00:04:19.010 --> 00:04:23.840
+Now her body. And this is where it gets interesting. And Lina already has body pictures.
+
+00:04:23.850 --> 00:04:29.257
+But if all you have is a face, then there is no body yet. And the image model just invents one.
+
+00:04:29.433 --> 00:04:34.527
+And here comes the most important part of this whole video. The first body picture you accept
+
+00:04:34.537 --> 00:04:39.869
+is her body from now on. Everything after that has to match it. So take your time with this one.
+
+00:04:39.879 --> 00:04:44.406
+And from there we — and from there we log it in. Same proportion as in the reference pictures
+
+00:04:44.416 --> 00:04:49.697
+in every single prompt. Because a lot of models make her smaller or bigger on their own without
+
+00:04:49.707 --> 00:04:55.043
+asking. And sometimes the model still does its own thing and then you just run it one more time.
+
+00:04:55.053 --> 00:05:00.819
+And that same log also works the other way around. So you can make her curvier or slimmer
+
+00:05:00.933 --> 00:05:04.939
+or a lot more than that. But this is a thing for our Skool community,
+
+00:05:04.950 --> 00:05:06.839
+not for YouTube if you know what I mean.
+
+00:05:07.150 --> 00:05:12.420
+Then we turn her all the way around. From the front to the back. And the outfit stays the same
+
+00:05:12.583 --> 00:05:17.313
+the whole way. Because otherwise it's not a rotation, it is just five different photos.
+
+00:05:17.483 --> 00:05:22.147
+And then the same position again, only frame closer. Because later you will want her in a
+
+00:05:22.157 --> 00:05:27.912
+full body shot and in a tight one. And she has to hold up in both. And that is her body done.
+
+00:05:27.983 --> 00:05:30.957
+And with that we have her completely from every side.
+
+00:05:30.967 --> 00:05:36.457
+And now we finally take care all of the studio, because everything we did until here was clean and controlled.
+
+00:05:36.467 --> 00:05:40.990
+And that is exactly what makes an AI girl look like an AI girl.
+
+00:05:41.000 --> 00:05:45.940
+And these are the pictures you probably already have a few of, because that is what Instagram photos are.
+
+00:05:45.950 --> 00:05:49.290
+What you, what you were missing the whole time is the studio.
+
+00:05:49.300 --> 00:05:55.533
+So now we just take normal Instagram pictures of her, and what matters here is not the post, it is how the picture was taken.
+
+00:05:55.900 --> 00:05:56.890
+Blurry phone shots and razor sharp ones, selfies and normal, and you, and you really want to mix in here.
+
+00:05:56.900 --> 00:06:01.723
+Blurry phone shots and razor sharp ones, selfies and normal pictures.
+
+00:06:01.733 --> 00:06:07.433
+Some of them with the flash one, some in daylight, and some in a dark room at night to give the dataset a bit variation.
+
+00:06:08.133 --> 00:06:11.250
+Basically exactly what a normal Instagram girl has on her feed.
+
+00:06:12.117 --> 00:06:16.333
+And here is where a lot of people mess up, because they make this way, and here is where a lot of people mess up, because they make this way too nice.
+
+00:06:16.400 --> 00:06:20.317
+A picture that looks planned is just a studio again with the bedroom behind it.
+
+00:06:20.550 --> 00:06:25.773
+But cheap looking is not the same as broken, and you still have to be able to tell that is her.
+
+00:06:25.783 --> 00:06:29.657
+And if you cannot tell, then it does not go into the dataset of course.
+
+00:06:29.667 --> 00:06:33.540
+Because if you train on this later, the LoRA just copies what you gave in.
+
+00:06:33.550 --> 00:06:33.840
+And that is the whole dataset.
+
+00:06:33.850 --> 00:06:38.640
+The studio gave us who she is and real live gives us how she actually looks.
+
+00:06:38.650 --> 00:06:40.290
+And that is the whole dataset.
+
+00:06:40.300 --> 00:06:44.797
+And everything you just saw we did by head, one prompt at a time, and that is
+
+00:06:44.807 --> 00:06:48.683
+exactly how you should learn it. But this is what it looks like when you don't
+
+00:06:48.693 --> 00:06:53.477
+have to. This is the workflow we built exactly for this, and every card in here
+
+00:06:53.487 --> 00:06:58.453
+is one picture of the data set. 25 of them, a whole face set and a whole body
+
+00:06:58.463 --> 00:06:58.957
+set.
+
+00:06:58.967 --> 00:07:00.409
+the reference slot — and on the left are the — and on the left are the reference
+
+00:07:00.419 --> 00:07:04.023
+slots, and these are the same four pictures we started with. Eight of them,
+
+00:07:04.033 --> 00:07:06.620
+but only the first one is — eight of them, but only the first one is required.
+
+00:07:06.630 --> 00:07:10.490
+And that one — and that one always has to be the studio picture of your face.
+
+00:07:10.500 --> 00:07:14.566
+And up here on the right side is her face, and down here is her body, and
+
+00:07:14.633 --> 00:07:17.107
+every single shot has its own switch. So you can run — so — so you can run one of
+
+00:07:17.117 --> 00:07:20.557
+them, or one — so you can run one of them, or one whole row, or all of it.
+
+00:07:20.567 --> 00:07:23.782
+color locked. And now let's open one of these prompts, because this is the part I
+
+00:07:23.792 --> 00:07:27.362
+actually want you to see. There is the gray background, and there is the eye
+
+00:07:27.372 --> 00:07:30.807
+color locked. And there's no hair color anywhere in it.
+
+00:07:30.817 --> 00:07:33.707
+And you can even change the prompt to whatever you want. That is the same rule —
+
+00:07:33.717 --> 00:07:37.712
+that is the same rule from the beginning of this video, and it's sitting inside the
+
+00:07:37.722 --> 00:07:40.136
+tool, which means this workflow does not be — which means this workflow does not
+
+00:07:40.146 --> 00:07:44.150
+belong to Lina, it works with every character you will ever build. And you
+
+00:07:44.160 --> 00:07:48.979
+don't need a GPU for this, because it runs over the WaveSpeed API. You can pick
+
+00:07:48.989 --> 00:07:53.993
+between Nano Banana Pro, Nano Banana 2, and GPT Image 2. And there's one switch
+
+00:07:54.003 --> 00:07:58.876
+in here called Live. As long as it's off, nothing else gets sent, and nothing gets
+
+00:07:58.886 --> 00:08:02.840
+paid. So you can click around in here without burning a cent.
+
+00:08:02.850 --> 00:08:07.057
+And that is your whole studio in one file, and you get it all for free.
+
+00:08:07.067 --> 00:08:08.396
+workflow and our own custom nodes that run it, and you — the workflow and our own
+
+00:08:08.406 --> 00:08:10.580
+custom nodes that run it, and you find both of them in our Discord. And you find
+
+00:08:10.590 --> 00:08:15.050
+both of them in our Discord. The link is in the description down below. And these
+
+00:08:15.060 --> 00:08:18.523
+are the dataset scenes, so everything the Studio Park needs.
+
+00:08:18.533 --> 00:08:19.767
+everything past that we
+
+00:08:19.777 --> 00:08:24.637
+build is inside our Skool community. And this is where we take you all the way to
+
+00:08:24.647 --> 00:08:25.373
+a finished creator.
+
+00:08:25.383 --> 00:08:28.757
+just don't have — and this is why we did the long way first, because now you don't
+
+00:08:28.767 --> 00:08:33.257
+just have the pictures, you know exactly why every single one of them is there.
+
+00:08:33.267 --> 00:08:35.267
+And that's — and that is it. That is the whole system.
+
+00:08:35.367 --> 00:08:39.157
+You came in with four pictures, and now you know exactly what to do with them.
+
+00:08:39.167 --> 00:08:43.357
+And like I promised, everything from today is free and waiting in our Discord.
+
+00:08:43.367 --> 00:08:47.973
+So if this video helped you, subscribe and write me a nice comment what I should build next,
+
+00:08:47.983 --> 00:08:50.790
+because that is literally how I pick the next video.
+
+00:08:50.800 --> 00:08:52.633
+So see you in next video. Bye.
+

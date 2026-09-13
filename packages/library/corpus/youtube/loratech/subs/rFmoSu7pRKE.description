@@ -1,0 +1,30 @@
+In this video I'm dropping the Flux 2 Klein Instagram Carousel Maker workflow — a fully wired ComfyUI setup that generates 10 carousel-ready images from a single reference photo. Just swap in your prompts, load your reference, and let it run. Each output is slightly varied in angle, pose, and expression while keeping your subject consistent across all slides — perfect for building out Instagram carousels fast.
+
+The workflow uses Flux 2 Klein with ReferenceLatent to lock in your subject from the reference image, CR Prompt List to cycle through your 10 pose and angle variations, and FaceDetailer to keep facial consistency sharp across every output.
+
+🔗 FREE WORKFLOWS, COMMUNITY DISCUSSION, 1 ON 1 SESSIONS
+If you want 1-on-1 coaching for your ComfyUI/RunPod setup, LoRA training, or growing an AI influencer account, sessions are consultation-based — details inside: https://discord.gg/kUc76uk7HA
+
+The Discord has free workflows, one-on-one troubleshooting, and custom workflow and LoRA requests. Everything you need to actually get this running is in there.
+
+🎓 New to ComfyUI? Check out the channel for guides covering everything from scratch — installation, model setup, custom nodes, workflow building, all of it. No experience needed to get started.
+
+☁️ Running this on RunPod? If you've never added $10 or more to RunPod before, use my referral link and get a free $5 to start:
+https://get.runpod.io/x4yprxwsfyac
+
+Models used:
+- Flux 2 Klein (flux-2-klein-9b-fp8)
+- Flux 2 VAE
+- Qwen 3 8B CLIP
+- face_yolov8m (FaceDetailer)
+- sam_vit_b (FaceDetailer)
+
+Custom nodes needed:
+- ComfyUI_Comfyroll_CustomNodes
+- ComfyUI-KJNodes
+- ComfyUI-Impact-Pack
+- was-node-suite-comfyui
+
+Drop any questions in the comments or come find me in the Discord.
+
+#ComfyUI #AIImageGeneration #Flux2 #LoRA #InstagramCarousel #AIArt #StableDiffusion #ComfyUIWorkflow #AIPhotography #LoRAtech

@@ -1,0 +1,63 @@
+🎬 I Tested Every MiniMax H3 Speed Up So You Don't Have To
+
+Four attention modes and thirteen turbo LoRAs for MiniMax H3, all run on the same RTX 5090 with the same seed, same prompt, same 1344x768 five second clip. Every result lands on a live leaderboard, speed and quality scored separately, for both FL2VA (first/last frame to video) and Ref2VA (reference to video).
+
+Before the numbers I break down what the words actually mean: what attention is and why SDPA, Comfy Kitchen, SageAttention and SLA differ, what a turbo LoRA does to the model, what steps and shift are, and why speed and quality are a tradeoff instead of a free upgrade. Then we find out which lever actually moves your render time, and it's probably not the one you think.
+
+🔗 LINKS
+
+Patreon (support the channel, early access): https://www.patreon.com/LoRAtech
+
+Discord (free workflows, node pack): https://discord.gg/2bqQXKxsxg
+1 on 1 coaching: Available through the Discord. Covers ComfyUI/RunPod setup, LoRA training, and AI influencer growth strategy. Pricing is consultation based, built around what you actually need. Details in the server.
+
+RunPod (GPU rental, deposit $10 get $5 free): https://runpod.io?ref=jc6190fx
+
+📦 LORAS TESTED
+
+lightx2v turbo LoRAs (fl2v and ref2v, 4 and 8 step): https://huggingface.co/lightx2v/Minimax-h3-Turbo
+lightx2v fl2v 4 step v0.1 ComfyUI conversion: https://huggingface.co/Kijai/MiniMax-H3_comfy/tree/main/loras
+larryvrh turbo LoRAs (ema, ckpt500, ckpt850, v4): https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
+joyfox fl2va 4 step: https://huggingface.co/joyfox/MiniMax-H3-Turbo
+Alibaba PDD Acc (fl2va and ref2va, ComfyUI versions): https://huggingface.co/aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI
+
+🧩 NODES SHOWN (all in ComfyUI Manager)
+
+MiniMax-H3 Turbo LoRA + Turbo Sampler (larryvrh files): https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo
+MiniMax H3 PDD Acc LoRA (Apply): https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc
+Patch Sage Attention KJ: ComfyUI-KJNodes
+H3 SLA Attention: plaguekind-nodes
+ModelAttentionBackend: built into ComfyUI
+
+0:00 Every MiniMax H3 speed up, tested
+0:20 The rules of the test
+0:41 Baseline: 20 steps, no turbo LoRA (345s)
+1:21 What I'm using and what I skipped
+2:14 Discord and Patreon
+2:54 FL2VA vs Ref2VA explained
+3:54 What steps are
+4:24 What a turbo LoRA does
+4:50 Attention modes explained (SDPA, Sage, Comfy Kitchen, SLA)
+6:36 Attention round: PyTorch default
+7:40 Attention round: Comfy Kitchen
+8:18 Attention round: SageAttention
+8:39 Attention round: H3 SLA
+9:16 Attention winner
+9:38 Model sampling shift, what to set
+10:21 FL2VA: the 8 step LoRAs
+12:18 The larryvrh LoRAs need their own nodes
+13:07 FL2VA: the 4 step LoRAs
+14:45 FL2VA winner
+15:14 Ref2VA: the 8 step LoRAs
+16:19 Ref2VA: the 4 step LoRAs
+17:49 Ref2VA verdict
+18:16 What the numbers say
+19:37 Overall winner
+
+🏷️ TAGS
+
+minimax h3, minimax h3 turbo lora, minimax h3 comfyui, comfyui video generation, comfyui turbo lora, lightx2v minimax h3, larryvrh turbo lora, minimax h3 fl2va, minimax h3 ref2va, minimax h3 speed, sageattention comfyui, sla attention, sparse attention comfyui, comfy kitchen attention, sdpa vs sage attention, comfyui attention backend, 4 step lora, 8 step lora, distilled video model, ai video generation, comfyui benchmark, rtx 5090 comfyui, minimax h3 pdd, alibaba pdd acc, ai influencer video, comfyui tutorial, lora comparison, video model shift settings, comfyui optimization, fastest comfyui video
+
+🎯 HASHTAGS
+
+#MiniMaxH3 #ComfyUI #TurboLoRA #AIVideo #SageAttention #SLAttention #Lightx2v #FL2VA #Ref2VA #RTX5090 #ComfyUITutorial #AIInfluencer #VideoGeneration #LoRAtech #Benchmark

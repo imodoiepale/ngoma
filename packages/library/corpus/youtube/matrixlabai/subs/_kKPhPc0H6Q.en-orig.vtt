@@ -1,0 +1,128 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.230 align:start position:0%
+ 
+Over<00:00:00.400><c> in</c><00:00:00.520><c> the</c><00:00:00.600><c> connect</c><00:00:01.040><c> tab,</c><00:00:01.320><c> the</c><00:00:01.520><c> access</c><00:00:01.920><c> pops</c>
+
+00:00:02.230 --> 00:00:02.240 align:start position:0%
+Over in the connect tab, the access pops
+ 
+
+00:00:02.240 --> 00:00:05.230 align:start position:0%
+Over in the connect tab, the access pops
+up<00:00:02.600><c> and</c><00:00:02.760><c> we</c><00:00:02.920><c> open</c><00:00:03.240><c> the</c><00:00:03.440><c> HTTP</c><00:00:04.320><c> service</c><00:00:04.800><c> link.</c>
+
+00:00:05.230 --> 00:00:05.240 align:start position:0%
+up and we open the HTTP service link.
+ 
+
+00:00:05.240 --> 00:00:07.110 align:start position:0%
+up and we open the HTTP service link.
+That<00:00:05.440><c> drops</c><00:00:05.760><c> us</c><00:00:05.920><c> straight</c><00:00:06.320><c> inside</c><00:00:06.760><c> the</c><00:00:06.880><c> AI</c>
+
+00:00:07.110 --> 00:00:07.120 align:start position:0%
+That drops us straight inside the AI
+ 
+
+00:00:07.120 --> 00:00:09.350 align:start position:0%
+That drops us straight inside the AI
+toolkit<00:00:07.720><c> and</c><00:00:07.840><c> the</c><00:00:07.960><c> password</c><00:00:08.480><c> is</c><00:00:08.600><c> by</c><00:00:08.760><c> the</c><00:00:08.880><c> way</c>
+
+00:00:09.350 --> 00:00:09.360 align:start position:0%
+toolkit and the password is by the way
+ 
+
+00:00:09.360 --> 00:00:11.790 align:start position:0%
+toolkit and the password is by the way
+just<00:00:09.680><c> literally</c><00:00:10.320><c> only</c><00:00:10.640><c> password.</c><00:00:11.200><c> Inside</c><00:00:11.680><c> we</c>
+
+00:00:11.790 --> 00:00:11.800 align:start position:0%
+just literally only password. Inside we
+ 
+
+00:00:11.800 --> 00:00:13.390 align:start position:0%
+just literally only password. Inside we
+go<00:00:11.960><c> to</c><00:00:12.120><c> the</c><00:00:12.240><c> dataset</c><00:00:12.720><c> tab,</c><00:00:12.960><c> create</c><00:00:13.200><c> a</c><00:00:13.240><c> new</c>
+
+00:00:13.390 --> 00:00:13.400 align:start position:0%
+go to the dataset tab, create a new
+ 
+
+00:00:13.400 --> 00:00:15.910 align:start position:0%
+go to the dataset tab, create a new
+dataset<00:00:14.080><c> and</c><00:00:14.360><c> name</c><00:00:14.640><c> it.</c><00:00:14.880><c> Then</c><00:00:15.040><c> we</c><00:00:15.160><c> drag</c><00:00:15.480><c> in</c><00:00:15.680><c> all</c>
+
+00:00:15.910 --> 00:00:15.920 align:start position:0%
+dataset and name it. Then we drag in all
+ 
+
+00:00:15.920 --> 00:00:18.470 align:start position:0%
+dataset and name it. Then we drag in all
+34<00:00:16.520><c> images</c><00:00:17.080><c> and</c><00:00:17.200><c> let</c><00:00:17.320><c> it</c><00:00:17.480><c> upload.</c><00:00:18.000><c> Now</c><00:00:18.320><c> our</c>
+
+00:00:18.470 --> 00:00:18.480 align:start position:0%
+34 images and let it upload. Now our
+ 
+
+00:00:18.480 --> 00:00:20.150 align:start position:0%
+34 images and let it upload. Now our
+dataset<00:00:18.960><c> is</c><00:00:19.120><c> in</c><00:00:19.400><c> and</c><00:00:19.560><c> we</c><00:00:19.640><c> set</c><00:00:19.920><c> up</c><00:00:20.040><c> the</c>
+
+00:00:20.150 --> 00:00:20.160 align:start position:0%
+dataset is in and we set up the
+ 
+
+00:00:20.160 --> 00:00:22.230 align:start position:0%
+dataset is in and we set up the
+training.<00:00:20.680><c> After</c><00:00:21.000><c> that</c><00:00:21.240><c> we</c><00:00:21.360><c> create</c><00:00:21.680><c> a</c><00:00:21.720><c> new</c><00:00:21.960><c> job</c>
+
+00:00:22.230 --> 00:00:22.240 align:start position:0%
+training. After that we create a new job
+ 
+
+00:00:22.240 --> 00:00:24.110 align:start position:0%
+training. After that we create a new job
+and<00:00:22.400><c> name</c><00:00:22.680><c> our</c><00:00:22.880><c> Laura.</c><00:00:23.280><c> For</c><00:00:23.440><c> the</c><00:00:23.560><c> trigger</c><00:00:23.840><c> word</c>
+
+00:00:24.110 --> 00:00:24.120 align:start position:0%
+and name our Laura. For the trigger word
+ 
+
+00:00:24.120 --> 00:00:25.910 align:start position:0%
+and name our Laura. For the trigger word
+we<00:00:24.240><c> use</c><00:00:24.560><c> one</c><00:00:24.840><c> unique</c><00:00:25.200><c> word,</c><00:00:25.480><c> something</c><00:00:25.840><c> the</c>
+
+00:00:25.910 --> 00:00:25.920 align:start position:0%
+we use one unique word, something the
+ 
+
+00:00:25.920 --> 00:00:28.190 align:start position:0%
+we use one unique word, something the
+model<00:00:26.240><c> doesn't</c><00:00:26.720><c> already</c><00:00:27.040><c> know,</c><00:00:27.320><c> so</c><00:00:27.560><c> it</c><00:00:27.760><c> ties</c>
+
+00:00:28.190 --> 00:00:28.200 align:start position:0%
+model doesn't already know, so it ties
+ 
+
+00:00:28.200 --> 00:00:30.390 align:start position:0%
+model doesn't already know, so it ties
+only<00:00:28.520><c> to</c><00:00:28.760><c> our</c><00:00:29.040><c> Laura.</c><00:00:29.480><c> Newer</c><00:00:29.680><c> models</c><00:00:30.120><c> don't</c>
+
+00:00:30.390 --> 00:00:30.400 align:start position:0%
+only to our Laura. Newer models don't
+ 
+
+00:00:30.400 --> 00:00:32.150 align:start position:0%
+only to our Laura. Newer models don't
+really<00:00:30.640><c> need</c><00:00:30.840><c> a</c><00:00:30.920><c> trigger</c><00:00:31.200><c> word</c><00:00:31.440><c> anymore,</c><00:00:31.880><c> but</c>
+
+00:00:32.150 --> 00:00:32.160 align:start position:0%
+really need a trigger word anymore, but
+ 
+
+00:00:32.160 --> 00:00:35.240 align:start position:0%
+really need a trigger word anymore, but
+I<00:00:32.240><c> still</c><00:00:32.480><c> like</c><00:00:32.720><c> to</c><00:00:32.840><c> keep</c><00:00:33.120><c> one</c>
+

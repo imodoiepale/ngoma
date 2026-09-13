@@ -1,0 +1,1616 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.990 align:start position:0%
+ 
+Stop<00:00:00.480><c> paying</c><00:00:00.880><c> for</c><00:00:01.040><c> expensive</c><00:00:01.640><c> image</c>
+
+00:00:01.990 --> 00:00:02.000 align:start position:0%
+Stop paying for expensive image
+ 
+
+00:00:02.000 --> 00:00:04.190 align:start position:0%
+Stop paying for expensive image
+generation<00:00:02.640><c> tools</c><00:00:03.400><c> as</c><00:00:03.600><c> there's</c><00:00:03.840><c> a</c><00:00:03.920><c> better</c>
+
+00:00:04.190 --> 00:00:04.200 align:start position:0%
+generation tools as there's a better
+ 
+
+00:00:04.200 --> 00:00:06.510 align:start position:0%
+generation tools as there's a better
+stable<00:00:04.640><c> diffusion</c><00:00:05.280><c> alternative</c><00:00:06.040><c> that</c><00:00:06.240><c> has</c><00:00:06.480><c> a</c>
+
+00:00:06.510 --> 00:00:06.520 align:start position:0%
+stable diffusion alternative that has a
+ 
+
+00:00:06.520 --> 00:00:09.270 align:start position:0%
+stable diffusion alternative that has a
+more<00:00:06.840><c> intuitive</c><00:00:07.400><c> interface</c><00:00:08.040><c> than</c><00:00:08.240><c> ComfyUI</c>
+
+00:00:09.270 --> 00:00:09.280 align:start position:0%
+more intuitive interface than ComfyUI
+ 
+
+00:00:09.280 --> 00:00:11.550 align:start position:0%
+more intuitive interface than ComfyUI
+and<00:00:09.560><c> Automatic111.</c>
+
+00:00:11.550 --> 00:00:11.560 align:start position:0%
+and Automatic111.
+ 
+
+00:00:11.560 --> 00:00:13.870 align:start position:0%
+and Automatic111.
+I'm<00:00:11.760><c> talking</c><00:00:12.120><c> about</c><00:00:12.400><c> Fooocus,</c><00:00:13.200><c> an</c><00:00:13.320><c> advanced</c>
+
+00:00:13.870 --> 00:00:13.880 align:start position:0%
+I'm talking about Fooocus, an advanced
+ 
+
+00:00:13.880 --> 00:00:15.750 align:start position:0%
+I'm talking about Fooocus, an advanced
+image<00:00:14.240><c> generator</c><00:00:14.840><c> that</c><00:00:15.040><c> lets</c><00:00:15.280><c> you</c><00:00:15.400><c> create</c>
+
+00:00:15.750 --> 00:00:15.760 align:start position:0%
+image generator that lets you create
+ 
+
+00:00:15.760 --> 00:00:18.470 align:start position:0%
+image generator that lets you create
+stunning,<00:00:16.520><c> high-quality</c><00:00:17.320><c> images</c><00:00:17.880><c> from</c><00:00:18.080><c> text</c>
+
+00:00:18.470 --> 00:00:18.480 align:start position:0%
+stunning, high-quality images from text
+ 
+
+00:00:18.480 --> 00:00:20.870 align:start position:0%
+stunning, high-quality images from text
+prompts<00:00:18.920><c> with</c><00:00:19.120><c> just</c><00:00:19.440><c> a</c><00:00:19.520><c> few</c><00:00:19.760><c> clicks.</c><00:00:20.520><c> Plus,</c>
+
+00:00:20.870 --> 00:00:20.880 align:start position:0%
+prompts with just a few clicks. Plus,
+ 
+
+00:00:20.880 --> 00:00:23.830 align:start position:0%
+prompts with just a few clicks. Plus,
+it's<00:00:21.080><c> completely</c><00:00:21.680><c> free.</c><00:00:22.560><c> So,</c><00:00:22.840><c> in</c><00:00:22.960><c> this</c><00:00:23.160><c> video,</c>
+
+00:00:23.830 --> 00:00:23.840 align:start position:0%
+it's completely free. So, in this video,
+ 
+
+00:00:23.840 --> 00:00:26.430 align:start position:0%
+it's completely free. So, in this video,
+we'll<00:00:24.080><c> learn</c><00:00:24.360><c> how</c><00:00:24.560><c> to</c><00:00:24.720><c> use</c><00:00:25.120><c> Fooocus</c><00:00:25.680><c> AI</c><00:00:26.200><c> on</c>
+
+00:00:26.430 --> 00:00:26.440 align:start position:0%
+we'll learn how to use Fooocus AI on
+ 
+
+00:00:26.440 --> 00:00:28.990 align:start position:0%
+we'll learn how to use Fooocus AI on
+Google<00:00:26.800><c> Colab,</c><00:00:27.520><c> explore</c><00:00:28.040><c> its</c><00:00:28.240><c> features,</c>
+
+00:00:28.990 --> 00:00:29.000 align:start position:0%
+Google Colab, explore its features,
+ 
+
+00:00:29.000 --> 00:00:31.630 align:start position:0%
+Google Colab, explore its features,
+perform<00:00:29.520><c> text-to-image</c><00:00:30.120><c> and</c><00:00:30.200><c> image-to-image</c>
+
+00:00:31.630 --> 00:00:31.640 align:start position:0%
+perform text-to-image and image-to-image
+ 
+
+00:00:31.640 --> 00:00:34.230 align:start position:0%
+perform text-to-image and image-to-image
+generation,<00:00:32.599><c> adjust</c><00:00:33.080><c> advanced</c><00:00:33.560><c> settings,</c>
+
+00:00:34.230 --> 00:00:34.240 align:start position:0%
+generation, adjust advanced settings,
+ 
+
+00:00:34.240 --> 00:00:36.790 align:start position:0%
+generation, adjust advanced settings,
+and<00:00:34.480><c> offer</c><00:00:34.840><c> prompting</c><00:00:35.360><c> tips.</c><00:00:36.200><c> We'll</c><00:00:36.440><c> also</c>
+
+00:00:36.790 --> 00:00:36.800 align:start position:0%
+and offer prompting tips. We'll also
+ 
+
+00:00:36.800 --> 00:00:39.430 align:start position:0%
+and offer prompting tips. We'll also
+evaluate<00:00:37.440><c> its</c><00:00:37.640><c> pros</c><00:00:38.120><c> and</c><00:00:38.240><c> cons.</c>
+
+00:00:39.430 --> 00:00:39.440 align:start position:0%
+evaluate its pros and cons.
+ 
+
+00:00:39.440 --> 00:00:41.190 align:start position:0%
+evaluate its pros and cons.
+Let's<00:00:39.760><c> get</c><00:00:39.920><c> started</c><00:00:40.320><c> by</c><00:00:40.480><c> clicking</c><00:00:40.960><c> on</c><00:00:41.080><c> the</c>
+
+00:00:41.190 --> 00:00:41.200 align:start position:0%
+Let's get started by clicking on the
+ 
+
+00:00:41.200 --> 00:00:43.630 align:start position:0%
+Let's get started by clicking on the
+Google<00:00:41.560><c> Colab</c><00:00:42.280><c> link</c><00:00:42.600><c> that</c><00:00:42.840><c> I</c><00:00:42.920><c> have</c><00:00:43.120><c> given</c><00:00:43.480><c> in</c>
+
+00:00:43.630 --> 00:00:43.640 align:start position:0%
+Google Colab link that I have given in
+ 
+
+00:00:43.640 --> 00:00:45.950 align:start position:0%
+Google Colab link that I have given in
+the<00:00:43.720><c> description</c><00:00:44.320><c> below.</c><00:00:45.080><c> Once</c><00:00:45.400><c> the</c><00:00:45.520><c> link</c><00:00:45.800><c> is</c>
+
+00:00:45.950 --> 00:00:45.960 align:start position:0%
+the description below. Once the link is
+ 
+
+00:00:45.960 --> 00:00:48.830 align:start position:0%
+the description below. Once the link is
+loaded,<00:00:46.640><c> you'll</c><00:00:46.880><c> see</c><00:00:47.080><c> this</c><00:00:47.320><c> code.</c><00:00:48.280><c> Click</c><00:00:48.680><c> on</c>
+
+00:00:48.830 --> 00:00:48.840 align:start position:0%
+loaded, you'll see this code. Click on
+ 
+
+00:00:48.840 --> 00:00:50.870 align:start position:0%
+loaded, you'll see this code. Click on
+the<00:00:49.000><c> run</c><00:00:49.400><c> button</c><00:00:49.840><c> to</c><00:00:50.000><c> start</c><00:00:50.360><c> running</c><00:00:50.680><c> our</c>
+
+00:00:50.870 --> 00:00:50.880 align:start position:0%
+the run button to start running our
+ 
+
+00:00:50.880 --> 00:00:53.710 align:start position:0%
+the run button to start running our
+Fooocus<00:00:51.440><c> file</c><00:00:51.920><c> on</c><00:00:52.120><c> Google</c><00:00:52.480><c> Colab.</c>
+
+00:00:53.710 --> 00:00:53.720 align:start position:0%
+Fooocus file on Google Colab.
+ 
+
+00:00:53.720 --> 00:00:55.950 align:start position:0%
+Fooocus file on Google Colab.
+This<00:00:54.040><c> might</c><00:00:54.280><c> take</c><00:00:54.520><c> some</c><00:00:54.760><c> time,</c><00:00:55.320><c> depending</c><00:00:55.800><c> on</c>
+
+00:00:55.950 --> 00:00:55.960 align:start position:0%
+This might take some time, depending on
+ 
+
+00:00:55.960 --> 00:00:58.470 align:start position:0%
+This might take some time, depending on
+your<00:00:56.160><c> internet</c><00:00:56.600><c> speed.</c><00:00:57.480><c> Mine</c><00:00:57.960><c> took</c><00:00:58.240><c> 10</c>
+
+00:00:58.470 --> 00:00:58.480 align:start position:0%
+your internet speed. Mine took 10
+ 
+
+00:00:58.480 --> 00:00:59.630 align:start position:0%
+your internet speed. Mine took 10
+minutes.
+
+00:00:59.630 --> 00:00:59.640 align:start position:0%
+minutes.
+ 
+
+00:00:59.640 --> 00:01:01.670 align:start position:0%
+minutes.
+And<00:00:59.840><c> here,</c><00:01:00.440><c> we</c><00:01:00.560><c> have</c><00:01:00.760><c> finally</c><00:01:01.200><c> reached</c><00:01:01.560><c> the</c>
+
+00:01:01.670 --> 00:01:01.680 align:start position:0%
+And here, we have finally reached the
+ 
+
+00:01:01.680 --> 00:01:03.990 align:start position:0%
+And here, we have finally reached the
+main<00:01:02.040><c> interface</c><00:01:02.680><c> of</c><00:01:02.880><c> our</c><00:01:03.040><c> Fooocus</c><00:01:03.640><c> Google</c>
+
+00:01:03.990 --> 00:01:04.000 align:start position:0%
+main interface of our Fooocus Google
+ 
+
+00:01:04.000 --> 00:01:05.189 align:start position:0%
+main interface of our Fooocus Google
+Colab.
+
+00:01:05.189 --> 00:01:05.199 align:start position:0%
+Colab.
+ 
+
+00:01:05.199 --> 00:01:07.230 align:start position:0%
+Colab.
+Let's<00:01:05.519><c> get</c><00:01:05.680><c> started</c><00:01:06.120><c> with</c><00:01:06.320><c> Fooocus</c><00:01:06.840><c> AI's</c>
+
+00:01:07.230 --> 00:01:07.240 align:start position:0%
+Let's get started with Fooocus AI's
+ 
+
+00:01:07.240 --> 00:01:09.910 align:start position:0%
+Let's get started with Fooocus AI's
+text-to-image<00:01:08.080><c> feature.</c><00:01:09.040><c> We'll</c><00:01:09.280><c> first</c><00:01:09.640><c> use</c>
+
+00:01:09.910 --> 00:01:09.920 align:start position:0%
+text-to-image feature. We'll first use
+ 
+
+00:01:09.920 --> 00:01:12.070 align:start position:0%
+text-to-image feature. We'll first use
+the<00:01:10.040><c> default</c><00:01:10.520><c> settings</c><00:01:11.200><c> and</c><00:01:11.360><c> then</c><00:01:11.600><c> get</c><00:01:11.800><c> into</c>
+
+00:01:12.070 --> 00:01:12.080 align:start position:0%
+the default settings and then get into
+ 
+
+00:01:12.080 --> 00:01:14.430 align:start position:0%
+the default settings and then get into
+the<00:01:12.200><c> advanced</c><00:01:12.720><c> ones</c><00:01:13.200><c> to</c><00:01:13.320><c> see</c><00:01:13.560><c> the</c><00:01:13.720><c> full</c><00:01:14.040><c> range</c>
+
+00:01:14.430 --> 00:01:14.440 align:start position:0%
+the advanced ones to see the full range
+ 
+
+00:01:14.440 --> 00:01:16.110 align:start position:0%
+the advanced ones to see the full range
+of<00:01:14.560><c> possibilities.</c>
+
+00:01:16.110 --> 00:01:16.120 align:start position:0%
+of possibilities.
+ 
+
+00:01:16.120 --> 00:01:18.670 align:start position:0%
+of possibilities.
+I'm<00:01:16.320><c> going</c><00:01:16.560><c> to</c><00:01:16.680><c> enter</c><00:01:17.000><c> a</c><00:01:17.080><c> text</c><00:01:17.520><c> prompt</c><00:01:17.880><c> here,</c><00:01:18.600><c> a</c>
+
+00:01:18.670 --> 00:01:18.680 align:start position:0%
+I'm going to enter a text prompt here, a
+ 
+
+00:01:18.680 --> 00:01:20.990 align:start position:0%
+I'm going to enter a text prompt here, a
+serene<00:01:19.200><c> sunset</c><00:01:19.840><c> over</c><00:01:20.080><c> a</c><00:01:20.160><c> neighborhood</c><00:01:20.800><c> in</c><00:01:20.920><c> a</c>
+
+00:01:20.990 --> 00:01:21.000 align:start position:0%
+serene sunset over a neighborhood in a
+ 
+
+00:01:21.000 --> 00:01:22.470 align:start position:0%
+serene sunset over a neighborhood in a
+mountain<00:01:21.400><c> lake.</c>
+
+00:01:22.470 --> 00:01:22.480 align:start position:0%
+mountain lake.
+ 
+
+00:01:22.480 --> 00:01:24.910 align:start position:0%
+mountain lake.
+Now,<00:01:23.040><c> let's</c><00:01:23.320><c> click</c><00:01:23.640><c> on</c><00:01:23.760><c> the</c><00:01:23.880><c> generate</c><00:01:24.440><c> button</c>
+
+00:01:24.910 --> 00:01:24.920 align:start position:0%
+Now, let's click on the generate button
+ 
+
+00:01:24.920 --> 00:01:26.870 align:start position:0%
+Now, let's click on the generate button
+and<00:01:25.120><c> see</c><00:01:25.360><c> what</c><00:01:25.560><c> happens.</c>
+
+00:01:26.870 --> 00:01:26.880 align:start position:0%
+and see what happens.
+ 
+
+00:01:26.880 --> 00:01:29.470 align:start position:0%
+and see what happens.
+Fooocus<00:01:27.440><c> AI</c><00:01:27.920><c> will</c><00:01:28.120><c> take</c><00:01:28.320><c> a</c><00:01:28.400><c> moment</c><00:01:28.800><c> to</c><00:01:28.920><c> process</c>
+
+00:01:29.470 --> 00:01:29.480 align:start position:0%
+Fooocus AI will take a moment to process
+ 
+
+00:01:29.480 --> 00:01:31.350 align:start position:0%
+Fooocus AI will take a moment to process
+the<00:01:29.600><c> prompt</c><00:01:30.240><c> and</c><00:01:30.440><c> generate</c><00:01:30.880><c> the</c><00:01:31.000><c> best</c>
+
+00:01:31.350 --> 00:01:31.360 align:start position:0%
+the prompt and generate the best
+ 
+
+00:01:31.360 --> 00:01:34.150 align:start position:0%
+the prompt and generate the best
+possible<00:01:31.840><c> image.</c><00:01:32.840><c> Once</c><00:01:33.160><c> it's</c><00:01:33.360><c> done,</c><00:01:34.000><c> the</c>
+
+00:01:34.150 --> 00:01:34.160 align:start position:0%
+possible image. Once it's done, the
+ 
+
+00:01:34.160 --> 00:01:36.590 align:start position:0%
+possible image. Once it's done, the
+image<00:01:34.560><c> will</c><00:01:34.720><c> pop</c><00:01:35.040><c> up</c><00:01:35.240><c> on</c><00:01:35.360><c> the</c><00:01:35.440><c> screen.</c>
+
+00:01:36.590 --> 00:01:36.600 align:start position:0%
+image will pop up on the screen.
+ 
+
+00:01:36.600 --> 00:01:38.990 align:start position:0%
+image will pop up on the screen.
+This<00:01:36.960><c> image</c><00:01:37.400><c> seems</c><00:01:37.800><c> good.</c><00:01:38.360><c> The</c><00:01:38.560><c> overall</c>
+
+00:01:38.990 --> 00:01:39.000 align:start position:0%
+This image seems good. The overall
+ 
+
+00:01:39.000 --> 00:01:41.830 align:start position:0%
+This image seems good. The overall
+quality,<00:01:39.880><c> everything</c><00:01:40.360><c> is</c><00:01:40.560><c> to</c><00:01:40.680><c> the</c><00:01:40.760><c> point.</c><00:01:41.680><c> The</c>
+
+00:01:41.830 --> 00:01:41.840 align:start position:0%
+quality, everything is to the point. The
+ 
+
+00:01:41.840 --> 00:01:44.510 align:start position:0%
+quality, everything is to the point. The
+sunset,<00:01:42.640><c> the</c><00:01:42.760><c> details,</c><00:01:43.560><c> and</c><00:01:43.760><c> everything</c><00:01:44.200><c> else</c>
+
+00:01:44.510 --> 00:01:44.520 align:start position:0%
+sunset, the details, and everything else
+ 
+
+00:01:44.520 --> 00:01:47.190 align:start position:0%
+sunset, the details, and everything else
+seem<00:01:44.800><c> natural</c><00:01:45.400><c> and</c><00:01:45.560><c> great.</c><00:01:46.440><c> But</c><00:01:46.640><c> I</c><00:01:46.720><c> feel</c><00:01:47.000><c> like</c>
+
+00:01:47.190 --> 00:01:47.200 align:start position:0%
+seem natural and great. But I feel like
+ 
+
+00:01:47.200 --> 00:01:49.310 align:start position:0%
+seem natural and great. But I feel like
+trying<00:01:47.600><c> more</c><00:01:47.840><c> styles,</c><00:01:48.360><c> too.</c>
+
+00:01:49.310 --> 00:01:49.320 align:start position:0%
+trying more styles, too.
+ 
+
+00:01:49.320 --> 00:01:51.430 align:start position:0%
+trying more styles, too.
+Let's<00:01:49.640><c> try</c><00:01:49.920><c> a</c><00:01:50.000><c> more</c><00:01:50.280><c> specific</c><00:01:50.880><c> prompt</c><00:01:51.320><c> for</c>
+
+00:01:51.430 --> 00:01:51.440 align:start position:0%
+Let's try a more specific prompt for
+ 
+
+00:01:51.440 --> 00:01:54.550 align:start position:0%
+Let's try a more specific prompt for
+this.<00:01:52.320><c> To</c><00:01:52.440><c> make</c><00:01:52.640><c> an</c><00:01:52.840><c> AI</c><00:01:53.240><c> tool</c><00:01:53.600><c> work</c><00:01:53.960><c> exactly</c>
+
+00:01:54.550 --> 00:01:54.560 align:start position:0%
+this. To make an AI tool work exactly
+ 
+
+00:01:54.560 --> 00:01:57.110 align:start position:0%
+this. To make an AI tool work exactly
+upon<00:01:54.880><c> your</c><00:01:55.040><c> words,</c><00:01:55.800><c> there</c><00:01:56.040><c> are</c><00:01:56.160><c> some</c><00:01:56.520><c> rules</c><00:01:56.960><c> to</c>
+
+00:01:57.110 --> 00:01:57.120 align:start position:0%
+upon your words, there are some rules to
+ 
+
+00:01:57.120 --> 00:01:58.870 align:start position:0%
+upon your words, there are some rules to
+communicate<00:01:57.680><c> with</c><00:01:57.920><c> it.</c>
+
+00:01:58.870 --> 00:01:58.880 align:start position:0%
+communicate with it.
+ 
+
+00:01:58.880 --> 00:02:01.950 align:start position:0%
+communicate with it.
+When<00:01:59.040><c> assigning</c><00:01:59.520><c> a</c><00:01:59.560><c> task</c><00:02:00.000><c> to</c><00:02:00.200><c> AI,</c><00:02:00.960><c> use</c><00:02:01.280><c> the</c><00:02:01.480><c> act</c>
+
+00:02:01.950 --> 00:02:01.960 align:start position:0%
+When assigning a task to AI, use the act
+ 
+
+00:02:01.960 --> 00:02:04.830 align:start position:0%
+When assigning a task to AI, use the act
+as<00:02:02.200><c> if</c><00:02:02.400><c> strategy.</c><00:02:03.479><c> For</c><00:02:03.640><c> example,</c>
+
+00:02:04.830 --> 00:02:04.840 align:start position:0%
+as if strategy. For example,
+ 
+
+00:02:04.840 --> 00:02:07.670 align:start position:0%
+as if strategy. For example,
+Hi,<00:02:05.240><c> Fuocus.</c><00:02:05.960><c> I</c><00:02:06.120><c> want</c><00:02:06.400><c> you</c><00:02:06.520><c> to</c><00:02:06.680><c> act</c><00:02:07.120><c> as</c><00:02:07.280><c> if</c><00:02:07.479><c> you</c>
+
+00:02:07.670 --> 00:02:07.680 align:start position:0%
+Hi, Fuocus. I want you to act as if you
+ 
+
+00:02:07.680 --> 00:02:09.910 align:start position:0%
+Hi, Fuocus. I want you to act as if you
+are<00:02:07.920><c> an</c><00:02:08.119><c> anime</c><00:02:08.600><c> artist.</c>
+
+00:02:09.910 --> 00:02:09.920 align:start position:0%
+are an anime artist.
+ 
+
+00:02:09.920 --> 00:02:12.670 align:start position:0%
+are an anime artist.
+Now,<00:02:10.360><c> be</c><00:02:10.520><c> specific</c><00:02:11.120><c> about</c><00:02:11.360><c> the</c><00:02:11.480><c> task,</c><00:02:12.040><c> like</c>
+
+00:02:12.670 --> 00:02:12.680 align:start position:0%
+Now, be specific about the task, like
+ 
+
+00:02:12.680 --> 00:02:15.830 align:start position:0%
+Now, be specific about the task, like
+and<00:02:12.880><c> draw</c><00:02:13.280><c> a</c><00:02:13.360><c> drone</c><00:02:13.840><c> shot</c><00:02:14.240><c> of</c><00:02:14.360><c> a</c><00:02:14.400><c> serene</c><00:02:14.880><c> sunset</c>
+
+00:02:15.830 --> 00:02:15.840 align:start position:0%
+and draw a drone shot of a serene sunset
+ 
+
+00:02:15.840 --> 00:02:18.030 align:start position:0%
+and draw a drone shot of a serene sunset
+with<00:02:16.080><c> orange</c><00:02:16.480><c> haze</c><00:02:16.920><c> lightly</c><00:02:17.320><c> falling</c><00:02:17.800><c> on</c><00:02:17.920><c> the</c>
+
+00:02:18.030 --> 00:02:18.040 align:start position:0%
+with orange haze lightly falling on the
+ 
+
+00:02:18.040 --> 00:02:21.190 align:start position:0%
+with orange haze lightly falling on the
+three<00:02:18.320><c> houses</c><00:02:19.080><c> beside</c><00:02:19.560><c> the</c><00:02:19.640><c> mountain</c><00:02:20.040><c> lake.</c>
+
+00:02:21.190 --> 00:02:21.200 align:start position:0%
+three houses beside the mountain lake.
+ 
+
+00:02:21.200 --> 00:02:23.830 align:start position:0%
+three houses beside the mountain lake.
+You<00:02:21.280><c> can</c><00:02:21.520><c> add</c><00:02:21.720><c> up</c><00:02:21.880><c> more</c><00:02:22.120><c> details</c><00:02:22.760><c> to</c><00:02:22.920><c> it,</c><00:02:23.120><c> like</c>
+
+00:02:23.830 --> 00:02:23.840 align:start position:0%
+You can add up more details to it, like
+ 
+
+00:02:23.840 --> 00:02:26.150 align:start position:0%
+You can add up more details to it, like
+do<00:02:24.120><c> add</c><00:02:24.400><c> up</c><00:02:24.560><c> some</c><00:02:24.800><c> people</c><00:02:25.280><c> and</c><00:02:25.480><c> crowd</c><00:02:25.959><c> in</c><00:02:26.080><c> the</c>
+
+00:02:26.150 --> 00:02:26.160 align:start position:0%
+do add up some people and crowd in the
+ 
+
+00:02:26.160 --> 00:02:27.510 align:start position:0%
+do add up some people and crowd in the
+drawing.
+
+00:02:27.510 --> 00:02:27.520 align:start position:0%
+drawing.
+ 
+
+00:02:27.520 --> 00:02:29.110 align:start position:0%
+drawing.
+When<00:02:27.640><c> you're</c><00:02:27.760><c> done</c><00:02:28.040><c> with</c><00:02:28.200><c> the</c><00:02:28.280><c> prompt,</c><00:02:28.959><c> you</c>
+
+00:02:29.110 --> 00:02:29.120 align:start position:0%
+When you're done with the prompt, you
+ 
+
+00:02:29.120 --> 00:02:31.150 align:start position:0%
+When you're done with the prompt, you
+can<00:02:29.280><c> tweak</c><00:02:29.600><c> the</c><00:02:29.720><c> styles</c><00:02:30.280><c> and</c><00:02:30.440><c> effects</c><00:02:30.880><c> of</c><00:02:31.000><c> your</c>
+
+00:02:31.150 --> 00:02:31.160 align:start position:0%
+can tweak the styles and effects of your
+ 
+
+00:02:31.160 --> 00:02:33.470 align:start position:0%
+can tweak the styles and effects of your
+image<00:02:31.760><c> by</c><00:02:31.920><c> clicking</c><00:02:32.400><c> on</c><00:02:32.560><c> the</c><00:02:32.800><c> advanced</c>
+
+00:02:33.470 --> 00:02:33.480 align:start position:0%
+image by clicking on the advanced
+ 
+
+00:02:33.480 --> 00:02:34.590 align:start position:0%
+image by clicking on the advanced
+feature.
+
+00:02:34.590 --> 00:02:34.600 align:start position:0%
+feature.
+ 
+
+00:02:34.600 --> 00:02:37.030 align:start position:0%
+feature.
+Fuocus<00:02:35.120><c> has</c><00:02:35.320><c> already</c><00:02:35.720><c> selected</c><00:02:36.280><c> some</c><00:02:36.520><c> default</c>
+
+00:02:37.030 --> 00:02:37.040 align:start position:0%
+Fuocus has already selected some default
+ 
+
+00:02:37.040 --> 00:02:39.470 align:start position:0%
+Fuocus has already selected some default
+settings<00:02:37.520><c> and</c><00:02:37.680><c> styles,</c><00:02:38.560><c> but</c><00:02:38.720><c> it's</c><00:02:38.880><c> completely</c>
+
+00:02:39.470 --> 00:02:39.480 align:start position:0%
+settings and styles, but it's completely
+ 
+
+00:02:39.480 --> 00:02:41.790 align:start position:0%
+settings and styles, but it's completely
+up<00:02:39.640><c> to</c><00:02:39.800><c> you</c><00:02:40.080><c> to</c><00:02:40.240><c> change</c><00:02:40.640><c> them</c><00:02:41.000><c> or</c><00:02:41.200><c> stick</c><00:02:41.640><c> with</c>
+
+00:02:41.790 --> 00:02:41.800 align:start position:0%
+up to you to change them or stick with
+ 
+
+00:02:41.800 --> 00:02:43.230 align:start position:0%
+up to you to change them or stick with
+the<00:02:41.880><c> defaults.</c>
+
+00:02:43.230 --> 00:02:43.240 align:start position:0%
+the defaults.
+ 
+
+00:02:43.240 --> 00:02:45.390 align:start position:0%
+the defaults.
+Let's<00:02:43.480><c> now</c><00:02:43.760><c> set</c><00:02:44.000><c> our</c><00:02:44.160><c> preset,</c><00:02:44.880><c> and</c><00:02:45.000><c> according</c>
+
+00:02:45.390 --> 00:02:45.400 align:start position:0%
+Let's now set our preset, and according
+ 
+
+00:02:45.400 --> 00:02:47.790 align:start position:0%
+Let's now set our preset, and according
+to<00:02:45.520><c> our</c><00:02:45.680><c> prompt,</c><00:02:46.400><c> I</c><00:02:46.520><c> like</c><00:02:46.760><c> this</c><00:02:47.040><c> anime</c><00:02:47.480><c> one</c>
+
+00:02:47.790 --> 00:02:47.800 align:start position:0%
+to our prompt, I like this anime one
+ 
+
+00:02:47.800 --> 00:02:48.990 align:start position:0%
+to our prompt, I like this anime one
+better.
+
+00:02:48.990 --> 00:02:49.000 align:start position:0%
+better.
+ 
+
+00:02:49.000 --> 00:02:51.310 align:start position:0%
+better.
+Here,<00:02:49.480><c> these</c><00:02:49.800><c> are</c><00:02:49.920><c> some</c><00:02:50.240><c> options</c><00:02:50.760><c> to</c><00:02:50.920><c> choose</c>
+
+00:02:51.310 --> 00:02:51.320 align:start position:0%
+Here, these are some options to choose
+ 
+
+00:02:51.320 --> 00:02:53.550 align:start position:0%
+Here, these are some options to choose
+for<00:02:51.480><c> performance,</c><00:02:52.440><c> from</c><00:02:52.680><c> which</c><00:02:52.959><c> the</c><00:02:53.080><c> quality</c>
+
+00:02:53.550 --> 00:02:53.560 align:start position:0%
+for performance, from which the quality
+ 
+
+00:02:53.560 --> 00:02:56.430 align:start position:0%
+for performance, from which the quality
+one<00:02:53.840><c> uses</c><00:02:54.280><c> 60</c><00:02:54.760><c> sampling</c><00:02:55.320><c> steps</c><00:02:55.800><c> to</c><00:02:55.959><c> generate</c>
+
+00:02:56.430 --> 00:02:56.440 align:start position:0%
+one uses 60 sampling steps to generate
+ 
+
+00:02:56.440 --> 00:02:57.630 align:start position:0%
+one uses 60 sampling steps to generate
+the<00:02:56.600><c> image.</c>
+
+00:02:57.630 --> 00:02:57.640 align:start position:0%
+the image.
+ 
+
+00:02:57.640 --> 00:03:00.430 align:start position:0%
+the image.
+The<00:02:57.720><c> speed</c><00:02:58.200><c> one</c><00:02:58.400><c> uses</c><00:02:58.800><c> 30</c><00:02:59.160><c> sampling</c><00:02:59.680><c> steps,</c>
+
+00:03:00.430 --> 00:03:00.440 align:start position:0%
+The speed one uses 30 sampling steps,
+ 
+
+00:03:00.440 --> 00:03:02.550 align:start position:0%
+The speed one uses 30 sampling steps,
+while<00:03:00.720><c> the</c><00:03:00.880><c> extreme</c><00:03:01.480><c> quality</c><00:03:02.080><c> option</c>
+
+00:03:02.550 --> 00:03:02.560 align:start position:0%
+while the extreme quality option
+ 
+
+00:03:02.560 --> 00:03:05.030 align:start position:0%
+while the extreme quality option
+generates<00:03:03.120><c> images</c><00:03:03.680><c> of</c><00:03:03.840><c> perfect</c><00:03:04.320><c> quality</c>
+
+00:03:05.030 --> 00:03:05.040 align:start position:0%
+generates images of perfect quality
+ 
+
+00:03:05.040 --> 00:03:07.190 align:start position:0%
+generates images of perfect quality
+using<00:03:05.400><c> LCM</c><00:03:06.000><c> Laura.</c>
+
+00:03:07.190 --> 00:03:07.200 align:start position:0%
+using LCM Laura.
+ 
+
+00:03:07.200 --> 00:03:09.350 align:start position:0%
+using LCM Laura.
+I'm<00:03:07.360><c> selecting</c><00:03:07.920><c> speed</c><00:03:08.320><c> one.</c>
+
+00:03:09.350 --> 00:03:09.360 align:start position:0%
+I'm selecting speed one.
+ 
+
+00:03:09.360 --> 00:03:11.509 align:start position:0%
+I'm selecting speed one.
+As<00:03:09.480><c> you</c><00:03:09.600><c> scroll</c><00:03:09.959><c> down</c><00:03:10.239><c> a</c><00:03:10.320><c> bit,</c><00:03:10.880><c> you'll</c><00:03:11.120><c> see</c><00:03:11.320><c> the</c>
+
+00:03:11.509 --> 00:03:11.519 align:start position:0%
+As you scroll down a bit, you'll see the
+ 
+
+00:03:11.519 --> 00:03:13.830 align:start position:0%
+As you scroll down a bit, you'll see the
+option<00:03:11.959><c> to</c><00:03:12.080><c> select</c><00:03:12.519><c> the</c><00:03:12.680><c> aspect</c><00:03:13.239><c> ratio</c><00:03:13.720><c> of</c>
+
+00:03:13.830 --> 00:03:13.840 align:start position:0%
+option to select the aspect ratio of
+ 
+
+00:03:13.840 --> 00:03:16.229 align:start position:0%
+option to select the aspect ratio of
+your<00:03:14.040><c> image.</c><00:03:15.080><c> I</c><00:03:15.120><c> usually</c><00:03:15.600><c> stick</c><00:03:16.000><c> with</c><00:03:16.120><c> the</c>
+
+00:03:16.229 --> 00:03:16.239 align:start position:0%
+your image. I usually stick with the
+ 
+
+00:03:16.239 --> 00:03:19.590 align:start position:0%
+your image. I usually stick with the
+default<00:03:16.720><c> setting,</c><00:03:17.360><c> which</c><00:03:17.600><c> is</c><00:03:17.720><c> 9</c><00:03:18.120><c> is</c><00:03:18.320><c> to</c><00:03:18.440><c> 7.</c>
+
+00:03:19.590 --> 00:03:19.600 align:start position:0%
+default setting, which is 9 is to 7.
+ 
+
+00:03:19.600 --> 00:03:22.110 align:start position:0%
+default setting, which is 9 is to 7.
+Next,<00:03:20.239><c> you</c><00:03:20.400><c> can</c><00:03:20.560><c> choose</c><00:03:20.959><c> how</c><00:03:21.120><c> many</c><00:03:21.440><c> images</c><00:03:21.959><c> the</c>
+
+00:03:22.110 --> 00:03:22.120 align:start position:0%
+Next, you can choose how many images the
+ 
+
+00:03:22.120 --> 00:03:24.790 align:start position:0%
+Next, you can choose how many images the
+tool<00:03:22.519><c> will</c><00:03:22.680><c> generate</c><00:03:23.239><c> for</c><00:03:23.480><c> each</c><00:03:23.760><c> prompt.</c><00:03:24.680><c> I</c>
+
+00:03:24.790 --> 00:03:24.800 align:start position:0%
+tool will generate for each prompt. I
+ 
+
+00:03:24.800 --> 00:03:27.590 align:start position:0%
+tool will generate for each prompt. I
+like<00:03:25.040><c> to</c><00:03:25.160><c> set</c><00:03:25.480><c> this</c><00:03:25.720><c> to</c><00:03:25.840><c> five</c><00:03:26.239><c> images.</c>
+
+00:03:27.590 --> 00:03:27.600 align:start position:0%
+like to set this to five images.
+ 
+
+00:03:27.600 --> 00:03:29.790 align:start position:0%
+like to set this to five images.
+One<00:03:27.760><c> of</c><00:03:27.880><c> my</c><00:03:28.040><c> favorite</c><00:03:28.480><c> features</c><00:03:28.959><c> of</c><00:03:29.120><c> any</c><00:03:29.440><c> AI</c>
+
+00:03:29.790 --> 00:03:29.800 align:start position:0%
+One of my favorite features of any AI
+ 
+
+00:03:29.800 --> 00:03:32.830 align:start position:0%
+One of my favorite features of any AI
+tool<00:03:30.440><c> is</c><00:03:30.720><c> the</c><00:03:30.880><c> negative</c><00:03:31.519><c> prompt.</c>
+
+00:03:32.830 --> 00:03:32.840 align:start position:0%
+tool is the negative prompt.
+ 
+
+00:03:32.840 --> 00:03:34.790 align:start position:0%
+tool is the negative prompt.
+After<00:03:33.160><c> selecting</c><00:03:33.720><c> your</c><00:03:33.880><c> preferred</c><00:03:34.440><c> image</c>
+
+00:03:34.790 --> 00:03:34.800 align:start position:0%
+After selecting your preferred image
+ 
+
+00:03:34.800 --> 00:03:37.550 align:start position:0%
+After selecting your preferred image
+format,<00:03:35.600><c> you</c><00:03:35.760><c> can</c><00:03:35.920><c> type</c><00:03:36.160><c> a</c><00:03:36.239><c> prompt</c><00:03:36.760><c> to</c><00:03:36.880><c> exclude</c>
+
+00:03:37.550 --> 00:03:37.560 align:start position:0%
+format, you can type a prompt to exclude
+ 
+
+00:03:37.560 --> 00:03:40.270 align:start position:0%
+format, you can type a prompt to exclude
+specific<00:03:38.160><c> elements</c><00:03:38.720><c> you</c><00:03:38.840><c> don't</c><00:03:39.080><c> want.</c>
+
+00:03:40.270 --> 00:03:40.280 align:start position:0%
+specific elements you don't want.
+ 
+
+00:03:40.280 --> 00:03:42.830 align:start position:0%
+specific elements you don't want.
+For<00:03:40.360><c> example,</c><00:03:41.160><c> here</c><00:03:41.480><c> I</c><00:03:41.600><c> want</c><00:03:42.280><c> none</c><00:03:42.600><c> of</c><00:03:42.720><c> the</c>
+
+00:03:42.830 --> 00:03:42.840 align:start position:0%
+For example, here I want none of the
+ 
+
+00:03:42.840 --> 00:03:45.390 align:start position:0%
+For example, here I want none of the
+houses<00:03:43.360><c> should</c><00:03:43.600><c> be</c><00:03:43.720><c> made</c><00:03:44.040><c> of</c><00:03:44.200><c> wood.</c>
+
+00:03:45.390 --> 00:03:45.400 align:start position:0%
+houses should be made of wood.
+ 
+
+00:03:45.400 --> 00:03:48.350 align:start position:0%
+houses should be made of wood.
+After<00:03:45.680><c> typing</c><00:03:46.120><c> in,</c><00:03:46.519><c> let's</c><00:03:46.760><c> scroll</c><00:03:47.120><c> back</c><00:03:47.440><c> up.</c>
+
+00:03:48.350 --> 00:03:48.360 align:start position:0%
+After typing in, let's scroll back up.
+ 
+
+00:03:48.360 --> 00:03:50.390 align:start position:0%
+After typing in, let's scroll back up.
+Here,<00:03:48.840><c> I'll</c><00:03:49.000><c> select</c><00:03:49.440><c> the</c><00:03:49.519><c> styles</c><00:03:50.080><c> for</c><00:03:50.200><c> my</c>
+
+00:03:50.390 --> 00:03:50.400 align:start position:0%
+Here, I'll select the styles for my
+ 
+
+00:03:50.400 --> 00:03:51.550 align:start position:0%
+Here, I'll select the styles for my
+image.
+
+00:03:51.550 --> 00:03:51.560 align:start position:0%
+image.
+ 
+
+00:03:51.560 --> 00:03:53.470 align:start position:0%
+image.
+It's<00:03:51.760><c> great</c><00:03:52.120><c> that</c><00:03:52.240><c> they've</c><00:03:52.440><c> included</c><00:03:53.040><c> sample</c>
+
+00:03:53.470 --> 00:03:53.480 align:start position:0%
+It's great that they've included sample
+ 
+
+00:03:53.480 --> 00:03:55.870 align:start position:0%
+It's great that they've included sample
+images<00:03:54.080><c> to</c><00:03:54.240><c> show</c><00:03:54.520><c> us</c><00:03:54.760><c> what</c><00:03:55.080><c> each</c><00:03:55.320><c> feature</c><00:03:55.720><c> can</c>
+
+00:03:55.870 --> 00:03:55.880 align:start position:0%
+images to show us what each feature can
+ 
+
+00:03:55.880 --> 00:03:56.910 align:start position:0%
+images to show us what each feature can
+do.
+
+00:03:56.910 --> 00:03:56.920 align:start position:0%
+do.
+ 
+
+00:03:56.920 --> 00:03:59.230 align:start position:0%
+do.
+Since<00:03:57.240><c> Fooocus</c><00:03:57.720><c> supports</c><00:03:58.280><c> Stable</c><00:03:58.680><c> Diffusion</c>
+
+00:03:59.230 --> 00:03:59.240 align:start position:0%
+Since Fooocus supports Stable Diffusion
+ 
+
+00:03:59.240 --> 00:04:02.110 align:start position:0%
+Since Fooocus supports Stable Diffusion
+XL,<00:04:00.160><c> you</c><00:04:00.320><c> also</c><00:04:00.680><c> have</c><00:04:00.880><c> the</c><00:04:01.080><c> option</c><00:04:01.480><c> to</c><00:04:01.640><c> choose</c><00:04:02.040><c> a</c>
+
+00:04:02.110 --> 00:04:02.120 align:start position:0%
+XL, you also have the option to choose a
+ 
+
+00:04:02.120 --> 00:04:05.030 align:start position:0%
+XL, you also have the option to choose a
+refiner<00:04:02.560><c> model</c><00:04:03.200><c> if</c><00:04:03.360><c> you're</c><00:04:03.520><c> using</c><00:04:03.920><c> SDXL</c>
+
+00:04:05.030 --> 00:04:05.040 align:start position:0%
+refiner model if you're using SDXL
+ 
+
+00:04:05.040 --> 00:04:06.430 align:start position:0%
+refiner model if you're using SDXL
+models.
+
+00:04:06.430 --> 00:04:06.440 align:start position:0%
+models.
+ 
+
+00:04:06.440 --> 00:04:08.590 align:start position:0%
+models.
+From<00:04:06.600><c> my</c><00:04:06.800><c> experience</c><00:04:07.520><c> with</c><00:04:07.720><c> similar</c><00:04:08.240><c> AI</c>
+
+00:04:08.590 --> 00:04:08.600 align:start position:0%
+From my experience with similar AI
+ 
+
+00:04:08.600 --> 00:04:11.030 align:start position:0%
+From my experience with similar AI
+tools,<00:04:09.400><c> the</c><00:04:09.520><c> recommended</c><00:04:10.160><c> weight</c><00:04:10.480><c> for</c><00:04:10.680><c> Laura</c>
+
+00:04:11.030 --> 00:04:11.040 align:start position:0%
+tools, the recommended weight for Laura
+ 
+
+00:04:11.040 --> 00:04:14.350 align:start position:0%
+tools, the recommended weight for Laura
+models<00:04:11.680><c> usually</c><00:04:12.160><c> falls</c><00:04:12.640><c> between</c><00:04:13.080><c> 0.5</c><00:04:14.160><c> and</c>
+
+00:04:14.350 --> 00:04:14.360 align:start position:0%
+models usually falls between 0.5 and
+ 
+
+00:04:14.360 --> 00:04:15.870 align:start position:0%
+models usually falls between 0.5 and
+0.1.
+
+00:04:15.870 --> 00:04:15.880 align:start position:0%
+0.1.
+ 
+
+00:04:15.880 --> 00:04:18.150 align:start position:0%
+0.1.
+However,<00:04:16.480><c> each</c><00:04:16.799><c> Laura</c><00:04:17.200><c> might</c><00:04:17.440><c> have</c><00:04:17.640><c> its</c><00:04:17.840><c> own</c>
+
+00:04:18.150 --> 00:04:18.160 align:start position:0%
+However, each Laura might have its own
+ 
+
+00:04:18.160 --> 00:04:20.349 align:start position:0%
+However, each Laura might have its own
+optimal<00:04:18.640><c> strength,</c><00:04:19.400><c> producing</c><00:04:19.959><c> different</c>
+
+00:04:20.349 --> 00:04:20.359 align:start position:0%
+optimal strength, producing different
+ 
+
+00:04:20.359 --> 00:04:22.590 align:start position:0%
+optimal strength, producing different
+results<00:04:20.880><c> based</c><00:04:21.239><c> on</c><00:04:21.400><c> that</c><00:04:21.600><c> setting.</c>
+
+00:04:22.590 --> 00:04:22.600 align:start position:0%
+results based on that setting.
+ 
+
+00:04:22.600 --> 00:04:24.550 align:start position:0%
+results based on that setting.
+If<00:04:22.720><c> the</c><00:04:22.840><c> weight</c><00:04:23.120><c> is</c><00:04:23.320><c> set</c><00:04:23.600><c> too</c><00:04:23.800><c> low,</c><00:04:24.400><c> the</c>
+
+00:04:24.550 --> 00:04:24.560 align:start position:0%
+If the weight is set too low, the
+ 
+
+00:04:24.560 --> 00:04:26.350 align:start position:0%
+If the weight is set too low, the
+influence<00:04:25.120><c> of</c><00:04:25.240><c> Laura</c><00:04:25.680><c> might</c><00:04:25.960><c> not</c><00:04:26.200><c> be</c>
+
+00:04:26.350 --> 00:04:26.360 align:start position:0%
+influence of Laura might not be
+ 
+
+00:04:26.360 --> 00:04:27.670 align:start position:0%
+influence of Laura might not be
+noticeable.
+
+00:04:27.670 --> 00:04:27.680 align:start position:0%
+noticeable.
+ 
+
+00:04:27.680 --> 00:04:29.710 align:start position:0%
+noticeable.
+On<00:04:27.760><c> the</c><00:04:27.919><c> other</c><00:04:28.120><c> hand,</c><00:04:28.640><c> setting</c><00:04:28.960><c> it</c><00:04:29.120><c> too</c><00:04:29.320><c> high</c>
+
+00:04:29.710 --> 00:04:29.720 align:start position:0%
+On the other hand, setting it too high
+ 
+
+00:04:29.720 --> 00:04:32.030 align:start position:0%
+On the other hand, setting it too high
+can<00:04:29.960><c> limit</c><00:04:30.280><c> the</c><00:04:30.400><c> model's</c><00:04:30.919><c> flexibility</c><00:04:31.760><c> and</c>
+
+00:04:32.030 --> 00:04:32.040 align:start position:0%
+can limit the model's flexibility and
+ 
+
+00:04:32.040 --> 00:04:34.230 align:start position:0%
+can limit the model's flexibility and
+lower<00:04:32.400><c> the</c><00:04:32.600><c> image</c><00:04:32.960><c> quality.</c>
+
+00:04:34.230 --> 00:04:34.240 align:start position:0%
+lower the image quality.
+ 
+
+00:04:34.240 --> 00:04:36.750 align:start position:0%
+lower the image quality.
+So,<00:04:34.760><c> I'll</c><00:04:34.919><c> go</c><00:04:35.120><c> with</c><00:04:35.280><c> a</c><00:04:35.360><c> safe</c><00:04:35.720><c> bet</c><00:04:36.200><c> and</c><00:04:36.360><c> set</c><00:04:36.600><c> it</c>
+
+00:04:36.750 --> 00:04:36.760 align:start position:0%
+So, I'll go with a safe bet and set it
+ 
+
+00:04:36.760 --> 00:04:38.909 align:start position:0%
+So, I'll go with a safe bet and set it
+at<00:04:36.919><c> 0.5.</c>
+
+00:04:38.909 --> 00:04:38.919 align:start position:0%
+at 0.5.
+ 
+
+00:04:38.919 --> 00:04:40.990 align:start position:0%
+at 0.5.
+All<00:04:39.080><c> right,</c><00:04:39.560><c> next</c><00:04:39.919><c> up</c><00:04:40.200><c> are</c><00:04:40.320><c> the</c><00:04:40.480><c> advanced</c>
+
+00:04:40.990 --> 00:04:41.000 align:start position:0%
+All right, next up are the advanced
+ 
+
+00:04:41.000 --> 00:04:42.110 align:start position:0%
+All right, next up are the advanced
+settings.
+
+00:04:42.110 --> 00:04:42.120 align:start position:0%
+settings.
+ 
+
+00:04:42.120 --> 00:04:44.750 align:start position:0%
+settings.
+This<00:04:42.400><c> AI</c><00:04:42.840><c> can</c><00:04:43.040><c> take</c><00:04:43.320><c> guidance</c><00:04:43.840><c> up</c><00:04:44.080><c> to</c><00:04:44.240><c> a</c><00:04:44.280><c> scale</c>
+
+00:04:44.750 --> 00:04:44.760 align:start position:0%
+This AI can take guidance up to a scale
+ 
+
+00:04:44.760 --> 00:04:47.350 align:start position:0%
+This AI can take guidance up to a scale
+of<00:04:44.880><c> seven,</c><00:04:45.560><c> which</c><00:04:45.800><c> is</c><00:04:45.960><c> pretty</c><00:04:46.240><c> cool.</c>
+
+00:04:47.350 --> 00:04:47.360 align:start position:0%
+of seven, which is pretty cool.
+ 
+
+00:04:47.360 --> 00:04:49.830 align:start position:0%
+of seven, which is pretty cool.
+Since<00:04:47.640><c> my</c><00:04:47.800><c> prompt</c><00:04:48.280><c> is</c><00:04:48.440><c> a</c><00:04:48.480><c> bit</c><00:04:48.760><c> complex,</c>
+
+00:04:49.830 --> 00:04:49.840 align:start position:0%
+Since my prompt is a bit complex,
+ 
+
+00:04:49.840 --> 00:04:51.750 align:start position:0%
+Since my prompt is a bit complex,
+featuring<00:04:50.360><c> a</c><00:04:50.440><c> neighborhood,</c><00:04:51.200><c> lake,</c>
+
+00:04:51.750 --> 00:04:51.760 align:start position:0%
+featuring a neighborhood, lake,
+ 
+
+00:04:51.760 --> 00:04:54.310 align:start position:0%
+featuring a neighborhood, lake,
+mountain,<00:04:52.400><c> and</c><00:04:52.560><c> sunset,</c><00:04:53.440><c> I</c><00:04:53.560><c> want</c><00:04:53.800><c> the</c><00:04:53.960><c> image</c>
+
+00:04:54.310 --> 00:04:54.320 align:start position:0%
+mountain, and sunset, I want the image
+ 
+
+00:04:54.320 --> 00:04:57.150 align:start position:0%
+mountain, and sunset, I want the image
+to<00:04:54.440><c> be</c><00:04:54.600><c> more</c><00:04:54.880><c> lively.</c><00:04:56.000><c> So,</c><00:04:56.440><c> I'm</c><00:04:56.640><c> setting</c><00:04:57.000><c> the</c>
+
+00:04:57.150 --> 00:04:57.160 align:start position:0%
+to be more lively. So, I'm setting the
+ 
+
+00:04:57.160 --> 00:04:59.430 align:start position:0%
+to be more lively. So, I'm setting the
+image<00:04:57.520><c> sharpness</c><00:04:58.080><c> to</c><00:04:58.240><c> 11.</c>
+
+00:04:59.430 --> 00:04:59.440 align:start position:0%
+image sharpness to 11.
+ 
+
+00:04:59.440 --> 00:05:01.670 align:start position:0%
+image sharpness to 11.
+Now,<00:04:59.960><c> all</c><00:05:00.200><c> that's</c><00:05:00.480><c> left</c><00:05:00.880><c> is</c><00:05:01.080><c> to</c><00:05:01.200><c> click</c>
+
+00:05:01.670 --> 00:05:01.680 align:start position:0%
+Now, all that's left is to click
+ 
+
+00:05:01.680 --> 00:05:04.350 align:start position:0%
+Now, all that's left is to click
+generate<00:05:02.480><c> and</c><00:05:02.680><c> see</c><00:05:02.960><c> the</c><00:05:03.080><c> results.</c>
+
+00:05:04.350 --> 00:05:04.360 align:start position:0%
+generate and see the results.
+ 
+
+00:05:04.360 --> 00:05:06.510 align:start position:0%
+generate and see the results.
+I<00:05:04.520><c> love</c><00:05:04.800><c> it</c><00:05:04.960><c> when</c><00:05:05.120><c> an</c><00:05:05.320><c> AI</c><00:05:05.720><c> tool</c><00:05:06.240><c> really</c>
+
+00:05:06.510 --> 00:05:06.520 align:start position:0%
+I love it when an AI tool really
+ 
+
+00:05:06.520 --> 00:05:09.470 align:start position:0%
+I love it when an AI tool really
+responds<00:05:07.160><c> to</c><00:05:07.280><c> my</c><00:05:07.520><c> input</c><00:05:08.040><c> and</c><00:05:08.200><c> guidance.</c><00:05:09.240><c> It's</c>
+
+00:05:09.470 --> 00:05:09.480 align:start position:0%
+responds to my input and guidance. It's
+ 
+
+00:05:09.480 --> 00:05:12.030 align:start position:0%
+responds to my input and guidance. It's
+so<00:05:09.720><c> satisfying</c><00:05:10.520><c> when</c><00:05:10.680><c> it</c><00:05:10.800><c> turns</c><00:05:11.160><c> out</c><00:05:11.360><c> exactly</c>
+
+00:05:12.030 --> 00:05:12.040 align:start position:0%
+so satisfying when it turns out exactly
+ 
+
+00:05:12.040 --> 00:05:14.670 align:start position:0%
+so satisfying when it turns out exactly
+as<00:05:12.280><c> I</c><00:05:12.400><c> expected.</c><00:05:13.600><c> Now,</c><00:05:14.000><c> let's</c><00:05:14.240><c> get</c><00:05:14.440><c> into</c>
+
+00:05:14.670 --> 00:05:14.680 align:start position:0%
+as I expected. Now, let's get into
+ 
+
+00:05:14.680 --> 00:05:17.470 align:start position:0%
+as I expected. Now, let's get into
+image-to-image<00:05:15.600><c> generation.</c><00:05:16.600><c> First,</c><00:05:17.240><c> let's</c>
+
+00:05:17.470 --> 00:05:17.480 align:start position:0%
+image-to-image generation. First, let's
+ 
+
+00:05:17.480 --> 00:05:19.790 align:start position:0%
+image-to-image generation. First, let's
+switch<00:05:17.800><c> things</c><00:05:18.080><c> up</c><00:05:18.200><c> a</c><00:05:18.280><c> bit.</c><00:05:18.960><c> I'll</c><00:05:19.200><c> upload</c><00:05:19.640><c> our</c>
+
+00:05:19.790 --> 00:05:19.800 align:start position:0%
+switch things up a bit. I'll upload our
+ 
+
+00:05:19.800 --> 00:05:22.070 align:start position:0%
+switch things up a bit. I'll upload our
+picture<00:05:20.200><c> here</c><00:05:20.600><c> and</c><00:05:20.840><c> ask</c><00:05:21.120><c> Fooocus</c><00:05:21.720><c> to</c><00:05:21.840><c> make</c>
+
+00:05:22.070 --> 00:05:22.080 align:start position:0%
+picture here and ask Fooocus to make
+ 
+
+00:05:22.080 --> 00:05:23.750 align:start position:0%
+picture here and ask Fooocus to make
+some<00:05:22.280><c> changes</c><00:05:22.760><c> to</c><00:05:22.919><c> it.</c>
+
+00:05:23.750 --> 00:05:23.760 align:start position:0%
+some changes to it.
+ 
+
+00:05:23.760 --> 00:05:26.310 align:start position:0%
+some changes to it.
+Now,<00:05:24.240><c> I'll</c><00:05:24.400><c> click</c><00:05:24.760><c> on</c><00:05:24.919><c> the</c><00:05:25.040><c> describe</c><00:05:25.680><c> option</c>
+
+00:05:26.310 --> 00:05:26.320 align:start position:0%
+Now, I'll click on the describe option
+ 
+
+00:05:26.320 --> 00:05:28.550 align:start position:0%
+Now, I'll click on the describe option
+and<00:05:26.480><c> let</c><00:05:26.680><c> the</c><00:05:26.800><c> tool</c><00:05:27.160><c> generate</c><00:05:27.640><c> a</c><00:05:27.680><c> prompt</c><00:05:28.200><c> based</c>
+
+00:05:28.550 --> 00:05:28.560 align:start position:0%
+and let the tool generate a prompt based
+ 
+
+00:05:28.560 --> 00:05:29.950 align:start position:0%
+and let the tool generate a prompt based
+on<00:05:28.680><c> the</c><00:05:28.760><c> photo.</c>
+
+00:05:29.950 --> 00:05:29.960 align:start position:0%
+on the photo.
+ 
+
+00:05:29.960 --> 00:05:32.190 align:start position:0%
+on the photo.
+See,<00:05:30.520><c> it</c><00:05:30.640><c> has</c><00:05:30.840><c> given</c><00:05:31.080><c> us</c><00:05:31.240><c> a</c><00:05:31.320><c> prompt</c><00:05:31.760><c> about</c><00:05:32.080><c> what</c>
+
+00:05:32.190 --> 00:05:32.200 align:start position:0%
+See, it has given us a prompt about what
+ 
+
+00:05:32.200 --> 00:05:35.150 align:start position:0%
+See, it has given us a prompt about what
+it<00:05:32.360><c> sees</c><00:05:32.800><c> in</c><00:05:32.919><c> this</c><00:05:33.160><c> photo.</c><00:05:33.960><c> This</c><00:05:34.240><c> is</c><00:05:34.400><c> a</c><00:05:34.480><c> sunset</c>
+
+00:05:35.150 --> 00:05:35.160 align:start position:0%
+it sees in this photo. This is a sunset
+ 
+
+00:05:35.160 --> 00:05:37.270 align:start position:0%
+it sees in this photo. This is a sunset
+over<00:05:35.440><c> a</c><00:05:35.480><c> lake</c><00:05:35.919><c> and</c><00:05:36.040><c> mountains.</c>
+
+00:05:37.270 --> 00:05:37.280 align:start position:0%
+over a lake and mountains.
+ 
+
+00:05:37.280 --> 00:05:40.070 align:start position:0%
+over a lake and mountains.
+Now,<00:05:37.760><c> I'll</c><00:05:37.919><c> click</c><00:05:38.240><c> on</c><00:05:38.480><c> generate</c><00:05:39.280><c> and</c><00:05:39.440><c> here</c><00:05:39.840><c> are</c>
+
+00:05:40.070 --> 00:05:40.080 align:start position:0%
+Now, I'll click on generate and here are
+ 
+
+00:05:40.080 --> 00:05:41.550 align:start position:0%
+Now, I'll click on generate and here are
+our<00:05:40.280><c> results.</c>
+
+00:05:41.550 --> 00:05:41.560 align:start position:0%
+our results.
+ 
+
+00:05:41.560 --> 00:05:43.590 align:start position:0%
+our results.
+These<00:05:41.840><c> images</c><00:05:42.320><c> are</c><00:05:42.520><c> quite</c><00:05:42.880><c> similar</c><00:05:43.320><c> to</c><00:05:43.480><c> the</c>
+
+00:05:43.590 --> 00:05:43.600 align:start position:0%
+These images are quite similar to the
+ 
+
+00:05:43.600 --> 00:05:46.030 align:start position:0%
+These images are quite similar to the
+original,<00:05:44.440><c> but</c><00:05:44.600><c> didn't</c><00:05:44.880><c> incorporate</c><00:05:45.600><c> my</c>
+
+00:05:46.030 --> 00:05:46.040 align:start position:0%
+original, but didn't incorporate my
+ 
+
+00:05:46.040 --> 00:05:49.190 align:start position:0%
+original, but didn't incorporate my
+neighborhood<00:05:46.760><c> details.</c><00:05:47.919><c> Even</c><00:05:48.280><c> so,</c><00:05:48.760><c> I</c><00:05:48.880><c> have</c><00:05:49.080><c> to</c>
+
+00:05:49.190 --> 00:05:49.200 align:start position:0%
+neighborhood details. Even so, I have to
+ 
+
+00:05:49.200 --> 00:05:52.190 align:start position:0%
+neighborhood details. Even so, I have to
+say<00:05:49.440><c> the</c><00:05:49.600><c> accuracy</c><00:05:50.280><c> is</c><00:05:50.480><c> still</c><00:05:50.760><c> pretty</c><00:05:51.080><c> high.</c>
+
+00:05:52.190 --> 00:05:52.200 align:start position:0%
+say the accuracy is still pretty high.
+ 
+
+00:05:52.200 --> 00:05:54.790 align:start position:0%
+say the accuracy is still pretty high.
+Next,<00:05:52.800><c> let</c><00:05:53.000><c> me</c><00:05:53.120><c> show</c><00:05:53.400><c> you</c><00:05:53.640><c> the</c><00:05:53.880><c> image</c><00:05:54.320><c> prompt</c>
+
+00:05:54.790 --> 00:05:54.800 align:start position:0%
+Next, let me show you the image prompt
+ 
+
+00:05:54.800 --> 00:05:57.750 align:start position:0%
+Next, let me show you the image prompt
+feature<00:05:55.240><c> for</c><00:05:55.520><c> image-to-image</c><00:05:56.480><c> generation.</c>
+
+00:05:57.750 --> 00:05:57.760 align:start position:0%
+feature for image-to-image generation.
+ 
+
+00:05:57.760 --> 00:05:59.830 align:start position:0%
+feature for image-to-image generation.
+This<00:05:58.040><c> feature</c><00:05:58.440><c> allows</c><00:05:58.880><c> you</c><00:05:59.040><c> to</c><00:05:59.200><c> create</c><00:05:59.600><c> new</c>
+
+00:05:59.830 --> 00:05:59.840 align:start position:0%
+This feature allows you to create new
+ 
+
+00:05:59.840 --> 00:06:02.830 align:start position:0%
+This feature allows you to create new
+images<00:06:00.440><c> based</c><00:06:00.840><c> on</c><00:06:00.960><c> the</c><00:06:01.080><c> ones</c><00:06:01.400><c> you</c><00:06:01.520><c> provide.</c>
+
+00:06:02.830 --> 00:06:02.840 align:start position:0%
+images based on the ones you provide.
+ 
+
+00:06:02.840 --> 00:06:04.830 align:start position:0%
+images based on the ones you provide.
+As<00:06:03.000><c> you</c><00:06:03.120><c> can</c><00:06:03.280><c> see</c><00:06:03.520><c> on</c><00:06:03.640><c> the</c><00:06:03.760><c> screen,</c><00:06:04.520><c> there</c><00:06:04.720><c> are</c>
+
+00:06:04.830 --> 00:06:04.840 align:start position:0%
+As you can see on the screen, there are
+ 
+
+00:06:04.840 --> 00:06:07.270 align:start position:0%
+As you can see on the screen, there are
+four<00:06:05.160><c> slots</c><00:06:05.720><c> where</c><00:06:05.880><c> you</c><00:06:06.000><c> can</c><00:06:06.200><c> upload</c><00:06:06.680><c> images</c>
+
+00:06:07.270 --> 00:06:07.280 align:start position:0%
+four slots where you can upload images
+ 
+
+00:06:07.280 --> 00:06:10.110 align:start position:0%
+four slots where you can upload images
+for<00:06:07.440><c> the</c><00:06:07.560><c> tool</c><00:06:07.920><c> to</c><00:06:08.080><c> use</c><00:06:08.520><c> as</c><00:06:08.720><c> references.</c>
+
+00:06:10.110 --> 00:06:10.120 align:start position:0%
+for the tool to use as references.
+ 
+
+00:06:10.120 --> 00:06:12.430 align:start position:0%
+for the tool to use as references.
+Let's<00:06:10.400><c> give</c><00:06:10.560><c> it</c><00:06:10.640><c> a</c><00:06:10.680><c> try.</c><00:06:11.640><c> I'll</c><00:06:11.880><c> upload</c><00:06:12.280><c> an</c>
+
+00:06:12.430 --> 00:06:12.440 align:start position:0%
+Let's give it a try. I'll upload an
+ 
+
+00:06:12.440 --> 00:06:14.870 align:start position:0%
+Let's give it a try. I'll upload an
+image<00:06:12.840><c> of</c><00:06:12.960><c> a</c><00:06:13.000><c> celebrity</c><00:06:13.640><c> in</c><00:06:13.760><c> the</c><00:06:13.840><c> first</c><00:06:14.240><c> slot</c>
+
+00:06:14.870 --> 00:06:14.880 align:start position:0%
+image of a celebrity in the first slot
+ 
+
+00:06:14.880 --> 00:06:17.150 align:start position:0%
+image of a celebrity in the first slot
+and<00:06:15.040><c> an</c><00:06:15.200><c> image</c><00:06:15.600><c> of</c><00:06:15.720><c> a</c><00:06:15.800><c> fantasy</c><00:06:16.360><c> warrior</c><00:06:16.920><c> in</c><00:06:17.080><c> the</c>
+
+00:06:17.150 --> 00:06:17.160 align:start position:0%
+and an image of a fantasy warrior in the
+ 
+
+00:06:17.160 --> 00:06:18.710 align:start position:0%
+and an image of a fantasy warrior in the
+second<00:06:17.560><c> slot.</c>
+
+00:06:18.710 --> 00:06:18.720 align:start position:0%
+second slot.
+ 
+
+00:06:18.720 --> 00:06:21.030 align:start position:0%
+second slot.
+Now,<00:06:19.160><c> I'll</c><00:06:19.320><c> click</c><00:06:19.720><c> generate</c><00:06:20.440><c> and</c><00:06:20.600><c> let's</c><00:06:20.840><c> see</c>
+
+00:06:21.030 --> 00:06:21.040 align:start position:0%
+Now, I'll click generate and let's see
+ 
+
+00:06:21.040 --> 00:06:22.430 align:start position:0%
+Now, I'll click generate and let's see
+the<00:06:21.160><c> results.</c>
+
+00:06:22.430 --> 00:06:22.440 align:start position:0%
+the results.
+ 
+
+00:06:22.440 --> 00:06:24.950 align:start position:0%
+the results.
+Notice<00:06:22.840><c> how</c><00:06:23.080><c> it</c><00:06:23.200><c> has</c><00:06:23.400><c> combined</c><00:06:24.000><c> both</c><00:06:24.320><c> details</c>
+
+00:06:24.950 --> 00:06:24.960 align:start position:0%
+Notice how it has combined both details
+ 
+
+00:06:24.960 --> 00:06:27.070 align:start position:0%
+Notice how it has combined both details
+beautifully.<00:06:26.040><c> The</c><00:06:26.200><c> tool</c><00:06:26.520><c> has</c><00:06:26.760><c> taken</c>
+
+00:06:27.070 --> 00:06:27.080 align:start position:0%
+beautifully. The tool has taken
+ 
+
+00:06:27.080 --> 00:06:29.270 align:start position:0%
+beautifully. The tool has taken
+inspiration<00:06:27.840><c> from</c><00:06:28.000><c> the</c><00:06:28.120><c> red</c><00:06:28.400><c> carpet</c><00:06:28.840><c> theme</c>
+
+00:06:29.270 --> 00:06:29.280 align:start position:0%
+inspiration from the red carpet theme
+ 
+
+00:06:29.280 --> 00:06:31.590 align:start position:0%
+inspiration from the red carpet theme
+from<00:06:29.480><c> the</c><00:06:29.560><c> celebrity</c><00:06:30.120><c> image</c><00:06:30.800><c> and</c><00:06:30.919><c> the</c><00:06:31.000><c> fantasy</c>
+
+00:06:31.590 --> 00:06:31.600 align:start position:0%
+from the celebrity image and the fantasy
+ 
+
+00:06:31.600 --> 00:06:33.909 align:start position:0%
+from the celebrity image and the fantasy
+elements<00:06:32.080><c> from</c><00:06:32.280><c> the</c><00:06:32.400><c> warrior</c><00:06:32.840><c> photo.</c><00:06:33.720><c> It's</c>
+
+00:06:33.909 --> 00:06:33.919 align:start position:0%
+elements from the warrior photo. It's
+ 
+
+00:06:33.919 --> 00:06:35.670 align:start position:0%
+elements from the warrior photo. It's
+impressive<00:06:34.560><c> how</c><00:06:34.800><c> well</c><00:06:35.040><c> it</c><00:06:35.200><c> followed</c><00:06:35.600><c> the</c>
+
+00:06:35.670 --> 00:06:35.680 align:start position:0%
+impressive how well it followed the
+ 
+
+00:06:35.680 --> 00:06:38.710 align:start position:0%
+impressive how well it followed the
+details<00:06:36.360><c> from</c><00:06:36.560><c> both</c><00:06:36.880><c> images.</c><00:06:37.960><c> You</c><00:06:38.080><c> can</c><00:06:38.280><c> easily</c>
+
+00:06:38.710 --> 00:06:38.720 align:start position:0%
+details from both images. You can easily
+ 
+
+00:06:38.720 --> 00:06:40.550 align:start position:0%
+details from both images. You can easily
+compare<00:06:39.160><c> it</c><00:06:39.320><c> with</c><00:06:39.520><c> paid</c><00:06:39.880><c> tools</c><00:06:40.320><c> like</c>
+
+00:06:40.550 --> 00:06:40.560 align:start position:0%
+compare it with paid tools like
+ 
+
+00:06:40.560 --> 00:06:41.790 align:start position:0%
+compare it with paid tools like
+Midjourney.
+
+00:06:41.790 --> 00:06:41.800 align:start position:0%
+Midjourney.
+ 
+
+00:06:41.800 --> 00:06:44.030 align:start position:0%
+Midjourney.
+Speaking<00:06:42.320><c> of</c><00:06:42.440><c> the</c><00:06:42.560><c> installation</c><00:06:43.200><c> process,</c>
+
+00:06:44.030 --> 00:06:44.040 align:start position:0%
+Speaking of the installation process,
+ 
+
+00:06:44.040 --> 00:06:46.150 align:start position:0%
+Speaking of the installation process,
+it's<00:06:44.280><c> very</c><00:06:44.640><c> quick</c><00:06:45.080><c> and</c><00:06:45.240><c> proceeds</c><00:06:45.919><c> with</c><00:06:46.080><c> a</c>
+
+00:06:46.150 --> 00:06:46.160 align:start position:0%
+it's very quick and proceeds with a
+ 
+
+00:06:46.160 --> 00:06:48.230 align:start position:0%
+it's very quick and proceeds with a
+single<00:06:46.600><c> click.</c><00:06:47.200><c> There</c><00:06:47.360><c> are</c><00:06:47.440><c> no</c><00:06:47.720><c> premium</c>
+
+00:06:48.230 --> 00:06:48.240 align:start position:0%
+single click. There are no premium
+ 
+
+00:06:48.240 --> 00:06:51.190 align:start position:0%
+single click. There are no premium
+options.<00:06:49.160><c> The</c><00:06:49.280><c> tool</c><00:06:49.680><c> is</c><00:06:49.840><c> completely</c><00:06:50.440><c> free</c><00:06:51.040><c> and</c>
+
+00:06:51.190 --> 00:06:51.200 align:start position:0%
+options. The tool is completely free and
+ 
+
+00:06:51.200 --> 00:06:53.270 align:start position:0%
+options. The tool is completely free and
+can<00:06:51.400><c> be</c><00:06:51.560><c> used</c><00:06:51.960><c> offline.</c>
+
+00:06:53.270 --> 00:06:53.280 align:start position:0%
+can be used offline.
+ 
+
+00:06:53.280 --> 00:06:55.470 align:start position:0%
+can be used offline.
+It's<00:06:53.440><c> very</c><00:06:53.720><c> beginner-friendly</c><00:06:54.760><c> and</c><00:06:55.000><c> easier</c>
+
+00:06:55.470 --> 00:06:55.480 align:start position:0%
+It's very beginner-friendly and easier
+ 
+
+00:06:55.480 --> 00:06:57.870 align:start position:0%
+It's very beginner-friendly and easier
+to<00:06:55.640><c> use</c><00:06:56.080><c> than</c><00:06:56.320><c> Automatic1111</c>
+
+00:06:57.870 --> 00:06:57.880 align:start position:0%
+to use than Automatic1111
+ 
+
+00:06:57.880 --> 00:06:59.870 align:start position:0%
+to use than Automatic1111
+and<00:06:58.120><c> ComfyUI.</c>
+
+00:06:59.870 --> 00:06:59.880 align:start position:0%
+and ComfyUI.
+ 
+
+00:06:59.880 --> 00:07:01.990 align:start position:0%
+and ComfyUI.
+However,<00:07:00.520><c> the</c><00:07:00.720><c> output</c><00:07:01.160><c> quality</c><00:07:01.720><c> of</c><00:07:01.840><c> the</c>
+
+00:07:01.990 --> 00:07:02.000 align:start position:0%
+However, the output quality of the
+ 
+
+00:07:02.000 --> 00:07:04.270 align:start position:0%
+However, the output quality of the
+images<00:07:02.520><c> largely</c><00:07:03.040><c> depends</c><00:07:03.600><c> on</c><00:07:03.720><c> the</c><00:07:03.800><c> models</c>
+
+00:07:04.270 --> 00:07:04.280 align:start position:0%
+images largely depends on the models
+ 
+
+00:07:04.280 --> 00:07:06.790 align:start position:0%
+images largely depends on the models
+used.<00:07:04.919><c> Fooocus</c><00:07:05.400><c> also</c><00:07:05.800><c> can</c><00:07:06.000><c> sometimes</c><00:07:06.640><c> be</c>
+
+00:07:06.790 --> 00:07:06.800 align:start position:0%
+used. Fooocus also can sometimes be
+ 
+
+00:07:06.800 --> 00:07:08.909 align:start position:0%
+used. Fooocus also can sometimes be
+sluggish<00:07:07.400><c> depending</c><00:07:07.919><c> on</c><00:07:08.080><c> the</c><00:07:08.200><c> intricacy</c><00:07:08.800><c> of</c>
+
+00:07:08.909 --> 00:07:08.919 align:start position:0%
+sluggish depending on the intricacy of
+ 
+
+00:07:08.919 --> 00:07:11.870 align:start position:0%
+sluggish depending on the intricacy of
+your<00:07:09.080><c> prompt</c><00:07:09.760><c> and</c><00:07:09.880><c> the</c><00:07:10.000><c> effects</c><00:07:10.440><c> you</c><00:07:10.560><c> choose.</c>
+
+00:07:11.870 --> 00:07:11.880 align:start position:0%
+your prompt and the effects you choose.
+ 
+
+00:07:11.880 --> 00:07:14.030 align:start position:0%
+your prompt and the effects you choose.
+When<00:07:12.080><c> running</c><00:07:12.400><c> it</c><00:07:12.560><c> on</c><00:07:12.720><c> Google</c><00:07:13.080><c> Colab,</c><00:07:13.760><c> like</c>
+
+00:07:14.030 --> 00:07:14.040 align:start position:0%
+When running it on Google Colab, like
+ 
+
+00:07:14.040 --> 00:07:16.630 align:start position:0%
+When running it on Google Colab, like
+any<00:07:14.320><c> online</c><00:07:14.840><c> application,</c><00:07:15.800><c> even</c><00:07:16.120><c> a</c><00:07:16.160><c> minor</c>
+
+00:07:16.630 --> 00:07:16.640 align:start position:0%
+any online application, even a minor
+ 
+
+00:07:16.640 --> 00:07:19.070 align:start position:0%
+any online application, even a minor
+internet<00:07:17.080><c> issue</c><00:07:17.480><c> can</c><00:07:17.680><c> cause</c><00:07:18.040><c> it</c><00:07:18.160><c> to</c><00:07:18.280><c> crash,</c>
+
+00:07:19.070 --> 00:07:19.080 align:start position:0%
+internet issue can cause it to crash,
+ 
+
+00:07:19.080 --> 00:07:21.630 align:start position:0%
+internet issue can cause it to crash,
+requiring<00:07:19.760><c> you</c><00:07:19.960><c> to</c><00:07:20.120><c> reload</c><00:07:20.600><c> the</c><00:07:20.680><c> Python</c><00:07:21.120><c> code</c>
+
+00:07:21.630 --> 00:07:21.640 align:start position:0%
+requiring you to reload the Python code
+ 
+
+00:07:21.640 --> 00:07:23.790 align:start position:0%
+requiring you to reload the Python code
+to<00:07:21.720><c> get</c><00:07:21.880><c> a</c><00:07:21.960><c> working</c><00:07:22.400><c> link</c><00:07:22.640><c> again.</c>
+
+00:07:23.790 --> 00:07:23.800 align:start position:0%
+to get a working link again.
+ 
+
+00:07:23.800 --> 00:07:25.790 align:start position:0%
+to get a working link again.
+Google<00:07:24.160><c> Colab</c><00:07:24.720><c> also</c><00:07:25.120><c> has</c><00:07:25.400><c> usage</c>
+
+00:07:25.790 --> 00:07:25.800 align:start position:0%
+Google Colab also has usage
+ 
+
+00:07:25.800 --> 00:07:28.350 align:start position:0%
+Google Colab also has usage
+restrictions,<00:07:26.840><c> so</c><00:07:27.080><c> after</c><00:07:27.440><c> generating</c><00:07:28.000><c> a</c><00:07:28.080><c> few</c>
+
+00:07:28.350 --> 00:07:28.360 align:start position:0%
+restrictions, so after generating a few
+ 
+
+00:07:28.360 --> 00:07:31.550 align:start position:0%
+restrictions, so after generating a few
+images,<00:07:29.200><c> the</c><00:07:29.320><c> tool</c><00:07:29.680><c> might</c><00:07:30.000><c> stop</c><00:07:30.360><c> working.</c>
+
+00:07:31.550 --> 00:07:31.560 align:start position:0%
+images, the tool might stop working.
+ 
+
+00:07:31.560 --> 00:07:34.630 align:start position:0%
+images, the tool might stop working.
+But<00:07:31.800><c> overall,</c><00:07:32.520><c> Fooocus</c><00:07:33.040><c> AI</c><00:07:33.560><c> is</c><00:07:33.800><c> a</c><00:07:33.840><c> free</c><00:07:34.360><c> and</c>
+
+00:07:34.630 --> 00:07:34.640 align:start position:0%
+But overall, Fooocus AI is a free and
+ 
+
+00:07:34.640 --> 00:07:37.350 align:start position:0%
+But overall, Fooocus AI is a free and
+easy<00:07:35.040><c> to</c><00:07:35.240><c> use</c><00:07:35.640><c> stable</c><00:07:36.080><c> diffusion</c><00:07:36.600><c> model</c><00:07:37.200><c> that</c>
+
+00:07:37.350 --> 00:07:37.360 align:start position:0%
+easy to use stable diffusion model that
+ 
+
+00:07:37.360 --> 00:07:39.950 align:start position:0%
+easy to use stable diffusion model that
+you<00:07:37.480><c> can</c><00:07:37.680><c> use</c><00:07:38.000><c> to</c><00:07:38.120><c> tell</c><00:07:38.400><c> stories</c><00:07:39.120><c> and</c><00:07:39.280><c> make</c><00:07:39.560><c> ads</c>
+
+00:07:39.950 --> 00:07:39.960 align:start position:0%
+you can use to tell stories and make ads
+ 
+
+00:07:39.960 --> 00:07:41.990 align:start position:0%
+you can use to tell stories and make ads
+without<00:07:40.360><c> paying</c><00:07:40.680><c> a</c><00:07:40.720><c> dime.</c>
+
+00:07:41.990 --> 00:07:42.000 align:start position:0%
+without paying a dime.
+ 
+
+00:07:42.000 --> 00:07:43.950 align:start position:0%
+without paying a dime.
+And<00:07:42.160><c> if</c><00:07:42.280><c> you</c><00:07:42.400><c> want</c><00:07:42.640><c> an</c><00:07:42.760><c> even</c><00:07:43.040><c> better</c><00:07:43.360><c> tool</c><00:07:43.800><c> to</c>
+
+00:07:43.950 --> 00:07:43.960 align:start position:0%
+And if you want an even better tool to
+ 
+
+00:07:43.960 --> 00:07:46.590 align:start position:0%
+And if you want an even better tool to
+create<00:07:44.400><c> consistent</c><00:07:45.000><c> characters</c><00:07:45.640><c> for</c><00:07:45.840><c> free,</c>
+
+00:07:46.590 --> 00:07:46.600 align:start position:0%
+create consistent characters for free,
+ 
+
+00:07:46.600 --> 00:07:50.320 align:start position:0%
+create consistent characters for free,
+check<00:07:46.920><c> out</c><00:07:47.120><c> this</c><00:07:47.360><c> video</c><00:07:47.720><c> next.</c>
+

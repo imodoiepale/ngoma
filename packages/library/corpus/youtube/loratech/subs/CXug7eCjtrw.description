@@ -1,0 +1,71 @@
+🎬 Krea 2 Character LoRA: Full Dataset + Training Walkthrough
+
+I've been seeing a ton of you in the Discord struggling to get a clean Krea 2 character LoRA trained, asking the same questions over and over. This video covers exactly how I've been successfully training Krea 2 LoRAs, start to finish. Building a dataset from a single reference photo, captioning it inside Ostris ai-toolkit, and the full training configuration.
+
+By the end you'll have the workflow to go from one reference photo to a trained character LoRA that holds up across different poses and angles with strong character consistency across generations.
+
+🔗 LINKS
+
+Patreon (Support Me, Exclusive Resources, AI Influencer Master Class): https://www.patreon.com/LoRAtech
+
+Discord (Free Workflows, Community Support, 1 on 1 Guidance): https://discord.gg/2bqQXKxsxg
+1 on 1 coaching: Available through the Discord. Covers ComfyUI/RunPod setup, LoRA training, and AI influencer growth strategy. Pricing is consultation based, built around what you actually need. Details in the server.
+
+RunPod (GPU rental, deposit $10 get $5 free): https://get.runpod.io/x4yprxwsfyac
+
+Hugging Face, Krea 2 Raw official model page (accept the license here before generating your access token): https://huggingface.co/krea/Krea-2-Raw
+
+📋 QWEN3VL CAPTIONING SYSTEM PROMPT
+
+Caption this image as if you were going to try to generate it with an image generator. Be thorough and describe everything in the image. Be decisive by stating things as they are. Do not say things like "It appears that" Or "possibly". Start out with things like "a woman". No preamble. Just get to the point. Never describe physical attributes like body type, hair color, eye color, facial features, and so on. Never describe tattoos.
+
+For each image, your caption should use natural language, but should also be kept short and factual.
+
+It should say:
+
+The expression / emotion of the person
+
+The camera angle, height angle, and zoom level
+
+The light source type and angle
+
+The pose and background (only very short, no detailed description)
+
+The outfit
+
+The accessories
+
+The action
+
+Example of a natural, flowing plain sentence caption: (camera shot type) of (trigger) seen from (camera angle) at (elevation) with (hair color and style) wearing (outfit and accessories). She is (position or action) and is expressing (emotion). (Light description), (short background description).
+
+⏱️ CHAPTERS
+
+0:00 Intro: What We're Building
+0:49 Pipeline Overview (11 Steps)
+2:20 Discord & Patreon Shoutout
+3:00 Step 1: Face Reference with Face Creator
+4:29 Step 3: Dataset Generator Workflow Breakdown
+5:51 The 50 Prompt Dataset List Explained
+6:47 Prepend Field & Stronger Body Template
+7:52 YouTube Friendly Version Note
+9:20 Generating the Full 50-Image Dataset
+10:12 Cleaning Up the Dataset
+11:23 Setting Up RunPod + Ostris ai-toolkit
+13:25 Hugging Face Access Token Setup
+14:19 Uploading the Dataset
+14:48 Auto-Captioning with Qwen3VL
+15:33 Captioning Rules Explained
+16:25 Training Configuration Settings
+18:54 Sampling Settings
+19:53 Starting the Training Job
+21:12 Testing Checkpoints with the Checkpoint Tester
+23:53 Outro
+
+🏷️ TAGS
+
+krea 2, krea 2 lora, character lora training, comfyui lora training, ai influencer lora, lora dataset creation, ostris ai-toolkit, ai toolkit lora training, character consistency ai, krea 2 turbo, krea 2 raw, flux 2 klein, z image turbo, comfyui workflow, ai character creation, qwen3vl captioning, runpod lora training, lora training tutorial, ai influencer content, stable diffusion character lora, comfyui dataset generator, lora training guide, huggingface access token, ai model training tutorial, custom ai character, ai character consistency, lora rank alpha settings, comfyui character workflow
+
+🎯 HASHTAGS
+
+#Krea2 #comfyui #LoRATraining #aiinfluencer  #stablediffusion  #aicharacter  #OstrisAIToolkit #RunPod #CharacterLoRA #aiworkflow  #ComfyUIWorkflow #machinelearning  #generativeai

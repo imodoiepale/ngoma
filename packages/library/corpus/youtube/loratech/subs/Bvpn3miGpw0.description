@@ -1,0 +1,32 @@
+In this episode we build a ComfyUI text to image workflow completely from scratch — every node, every connection, every decision explained as we go. No presets. No copy-pasting someone else's JSON. Just you, a blank canvas, and a working workflow by the end.
+Most ComfyUI tutorials hand you a workflow and move on. This series teaches you how diffusion models actually work at their core — so you can build anything on your own, troubleshoot your own errors, and stop being dependent on other people's setups.
+By the end of this video you'll understand what every core node does, why it needs to be connected the way it is, and how text to image generation actually works under the hood.
+This is Episode 1 of Build With Me — a series where we go from zero to full workflows, step by step, node by node.
+
+🔴 WHAT YOU'LL LEARN IN THIS VIDEO
+→ What ComfyUI actually is and how node-based workflows work
+→ The 8 core nodes every text to image workflow needs
+→ What the UNETLoader, VAELoader, and CLIPLoader do and why you need all three
+→ How the KSampler works and what steps, CFG, and denoise actually control
+→ How to swap between different models without rebuilding your workflow
+→ Why modern models like Flux 2 Klein and Z-Image Turbo use separate loaders
+
+⚠️ PREREQUISITES
+This series assumes you already have ComfyUI running — either locally or on a cloud GPU like RunPod. If you need help getting set up from scratch, I offer one-on-one setup guidance in the Discord where I'll get your full environment configured and ready to go.
+
+🔗 FREE WORKFLOWS, COMMUNITY DISCUSSION, 1 ON 1 SESSIONS
+If you want 1-on-1 coaching for your ComfyUI/RunPod setup, LoRA training, or growing an AI influencer account, sessions are consultation-based — details inside: https://discord.gg/kUc76uk7HA
+
+💻 RUN ON CLOUD GPU (RUNPOD)
+Don't have a local GPU? Run ComfyUI on RunPod — it's what I use for all my builds. Use the link below and when you deposit a minimum of $10 you'll receive $5 free on top of it automatically.
+🔗 RUNPOD → https://get.runpod.io/x4yprxwsfyac
+💡 Deposit $10 minimum to unlock $5 free credit
+
+🎓 WANT TO GO FURTHER?
+Once you've got the fundamentals down, I offer courses that teach you how to use advanced nodes to generate super realistic, Instagram-style photos for AI influencers — and one-on-one sessions for custom workflow builds and setup help.
+Everything is in the Discord 👆
+
+#ComfyUI #AIImageGeneration #ComfyUITutorial #TextToImage #AIArt #StableDiffusion #ComfyUIWorkflow #AITools #GenerativeAI #FluxAI #ZImageTurbo #ComfyUIBeginners #AIContentCreator #AIInfluencer #LoRAtech
+
+TAGS (paste into YouTube tag field)
+ComfyUI, ComfyUI tutorial, ComfyUI for beginners, ComfyUI workflow, ComfyUI text to image, text to image ComfyUI, ComfyUI workflow from scratch, how to use ComfyUI, ComfyUI beginner guide, ComfyUI nodes explained, ComfyUI 2026, build ComfyUI workflow, AI image generation, AI image generation tutorial, stable diffusion ComfyUI, Flux ComfyUI, Flux 2 Klein ComfyUI, Z-Image Turbo ComfyUI, Z-Image Turbo workflow, ComfyUI KSampler, ComfyUI VAE, ComfyUI CLIP, ComfyUI UNETLoader, ComfyUI node guide, diffusion model tutorial, how diffusion models work, AI art tutorial, generative AI tutorial, ComfyUI RunPod, RunPod ComfyUI setup, AI content creator tools, AI influencer workflow, AI influencer tutorial, ComfyUI workflow tutorial 2026, text to image workflow, how to generate AI images, ComfyUI from scratch, ComfyUI build with me, LoRAtech, ComfyUI series, ComfyUI episode 1

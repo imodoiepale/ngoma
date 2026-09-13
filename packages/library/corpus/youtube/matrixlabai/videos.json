@@ -1,0 +1,70 @@
+{
+  "channel": "Json ",
+  "channel_id": "UC_lvBZvh1rsqSOvGPjJNaHA",
+  "handle": "@MatrixLabAI",
+  "followers": 2200,
+  "about": "AI UGC and AI influencers expert. I show you the whole built end to end. I show the exact ComfyUI workflows, LoRA training runs and character systems behind realistic AI creators: from the first dataset to finished UGC-style videos that brands and pages actually use.\n\nNo theory: every video is a real build with real costs on screen. Free workflows and prompts are in our Discord, the complete systems live in our Skool community.\n\nNew videos every week. See you in the lab.\n",
+  "enumerated_at": "2026-09-13",
+  "videos": [
+    {
+      "id": "3iTNtbfD6_g",
+      "title": "This ComfyUI Model is way better than Nano Banana",
+      "views": 6800,
+      "duration_s": 385
+    },
+    {
+      "id": "U8l5w_sCkhg",
+      "title": "ComfyUI + Claude = Unlimited AI UGC Videos (FREE Workflow)",
+      "views": 14000,
+      "duration_s": 469
+    },
+    {
+      "id": "sYoYrw_NMGY",
+      "title": "LTX 2.5 AI Influencer Test: Fast, but Good Enough?",
+      "views": 3500,
+      "duration_s": 314
+    },
+    {
+      "id": "x9ETAqkAysg",
+      "title": "This Character Board Makes Your AI Influencer 100% Consistent (FREE WORKFLOW)",
+      "views": 3900,
+      "duration_s": 282
+    },
+    {
+      "id": "rbBNEVyQyyk",
+      "title": "The ONLY Dataset Video You Will Ever Need for AI Influencers (FREE WORKFLOW)",
+      "views": 9200,
+      "duration_s": 533
+    },
+    {
+      "id": "7Hfn8g-httk",
+      "title": "Krea 2 Makes AI Influencers TOO Realistic (LoRa + Workflow)",
+      "views": 12000,
+      "duration_s": 453
+    },
+    {
+      "id": "Es-Kpx9mnMo",
+      "title": "Copy Viral AI Reels in Seconds with This Claude Workflow",
+      "views": 16000,
+      "duration_s": 419
+    },
+    {
+      "id": "nWlLlnjWC6k",
+      "title": "Build a Complete AI Character Dataset From Just 3 Photos",
+      "views": 5700,
+      "duration_s": 477
+    },
+    {
+      "id": "xgVLleA0yZM",
+      "title": "Create an Ultra Realistic AI Influencer From Scratch (LoRa + FREE Workflow)",
+      "views": 27000,
+      "duration_s": 364
+    },
+    {
+      "id": "_mN1AAzcBT4",
+      "title": "How to Create an AI Influencer from scratch Without Training a LoRA",
+      "views": 13000,
+      "duration_s": 498
+    }
+  ]
+}

@@ -103,6 +103,16 @@ def test_a_video_is_never_filed_without_its_title(monkeypatch, tmp_path):
     assert (tmp_path / "youtube" / "dainamolabs" / "subs" / f"{vid}.info.json").exists()
 
 
+def test_manifest_has_one_entry_per_workflow():
+    """Duplicate entries (same path twice, or the same bytes under two paths) split one
+    workflow into several graph nodes and double its apparent dependency counts."""
+    man = json.loads((REPO / "workflows" / "manifest.json").read_text(encoding="utf-8"))
+    paths = [w["canonical"] for w in man["workflows"]]
+    shas = [w["sha256"] for w in man["workflows"]]
+    assert len(paths) == len(set(paths)), "duplicate canonical paths"
+    assert len(shas) == len(set(shas)), "identical workflow stored under two paths"
+
+
 def test_every_manifest_workflow_exists_and_matches_its_hash():
     import hashlib
     man = json.loads((REPO / "workflows" / "manifest.json").read_text(encoding="utf-8"))

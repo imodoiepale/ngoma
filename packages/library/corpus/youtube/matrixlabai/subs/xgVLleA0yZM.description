@@ -1,0 +1,41 @@
+In this video, I show you how to train a hyper realistic character LoRA on Z-Image Turbo and turn a dataset into one consistent AI influencer. We train the LoRA with AI Toolkit on RunPod, load it into my free ComfyUI workflow on a one click template, and push the realism with style LoRAs, same AI influencer in every single image.
+
+----------------------------------------------
+
+Join Skool (Ashley + premium workflows):
+https://www.skool.com/matrix-lab-6660/about
+
+FREE skills, workflows + all my prompts:
+Discord: https://discord.gg/uhfVpmwktQ
+
+Train your LoRA (RunPod):
+https://runpod.io?ref=upkpysv6
+
+----------------------------------------------
+
+What you'll learn:
+- How to build a LoRA dataset that doesn't look like AI (studio + amateur mix)
+- How to train a Z-Image Turbo LoRA with AI Toolkit on RunPod
+- Why 3000 steps and a unique trigger word matter for Turbo models
+- How to pick the right checkpoint instead of trusting the last one
+- How to push the realism with style LoRAs and my free ComfyUI workflow
+
+----------------------------------------------
+
+Chapters / Timestamps
+00:00 Create an ultra realistic AI influencer with a LoRA
+00:28 Why the dataset decides your LoRA quality
+01:05 Dataset mix: studio + amateur images
+01:45 RunPod setup & AI Toolkit template
+02:25 Uploading the dataset to AI Toolkit
+02:50 LoRA training settings (Z-Image Turbo, trigger word, 3000 steps)
+03:50 Start training + check the samples
+04:15 Picking the best checkpoints
+04:40 One-click RunPod template (everything preinstalled)
+05:25 Uploading the character LoRA via Jupyter
+05:50 First generation with the character LoRA
+06:20 More realism with style LoRAs (Realistic Snapshot)
+06:55 Premium master workflow: skin + hand detailer & upscaler
+07:30 Ashley free + workflows (Skool)
+
+#aiinfluencer #lora #aimodel #comfyui #aigeneration

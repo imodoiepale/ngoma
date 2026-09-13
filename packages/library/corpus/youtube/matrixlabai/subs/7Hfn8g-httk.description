@@ -1,0 +1,40 @@
+Krea 2 makes AI influencers so realistic that nobody can tell the difference anymore. In this video, I show you the exact workflow I use to train a hyperrealistic character LoRA on Krea 2: we train with AI Toolkit on RunPod, test every checkpoint with my LoRA tester in ComfyUI, and push the realism until nobody can tell she's AI. Same AI influencer, every single image — and because Krea 2 is open source, there are no filters and no rules.
+
+----------------------------------------------
+
+Join Skool (full dataset system, LoRA tester + premium workflows):
+https://www.skool.com/matrix-lab-6660/about
+
+FREE skills, workflows + all my prompts:
+Discord: https://discord.gg/uhfVpmwktQ
+
+Train your LoRA (RunPod):
+https://runpod.io?ref=upkpysv6
+
+----------------------------------------------
+
+What you'll learn:
+- How to build a Krea 2 LoRA dataset that doesn't look like AI (26–34 images, studio + phone mix)
+- How to train a character LoRA with AI Toolkit on RunPod for $3–5
+- Why you train on Krea 2 RAW and never on Turbo (and generate on Turbo later)
+- Why the last checkpoint is not automatically the best — and how the LoRA tester grid finds the real winner
+- How to push realism with the premium canvas: skin polish, SeedVR2 upscale, ControlNet poses
+- Why open source means no filters and no rules — your influencer runs on your machine
+
+----------------------------------------------
+
+Chapters / Timestamps
+00:00 Krea 2 AI influencers: too realistic?
+00:36 The dataset decides everything (Lina, 34 images)
+01:33 The plan: train, test, push realism
+01:47 RunPod setup (GPU + AI Toolkit template)
+02:36 Uploading the dataset
+02:53 LoRA training settings (Krea 2 RAW, trigger word, 3,000 steps)
+03:57 Start training
+04:12 Testing the 12 checkpoints
+04:40 The LoRA tester grid (find the real winner)
+05:24 Generating Lina (free master workflow)
+05:55 The premium canvas: skin polish, SeedVR2, ControlNet
+06:54 Open source = no filters + how to get everything
+
+#aiinfluencer #krea2 #lora #comfyui

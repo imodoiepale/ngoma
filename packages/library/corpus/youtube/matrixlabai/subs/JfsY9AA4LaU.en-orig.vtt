@@ -1,0 +1,96 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.350 align:start position:0%
+ 
+Once<00:00:00.640><c> the</c><00:00:00.760><c> data</c><00:00:01.040><c> set</c><00:00:01.280><c> is</c><00:00:01.520><c> ready,</c><00:00:01.840><c> we</c><00:00:02.000><c> take</c><00:00:02.240><c> it</c>
+
+00:00:02.350 --> 00:00:02.360 align:start position:0%
+Once the data set is ready, we take it
+ 
+
+00:00:02.360 --> 00:00:04.150 align:start position:0%
+Once the data set is ready, we take it
+straight<00:00:02.800><c> into</c><00:00:03.080><c> RunPod</c><00:00:03.600><c> and</c><00:00:03.760><c> start</c><00:00:04.080><c> the</c>
+
+00:00:04.150 --> 00:00:04.160 align:start position:0%
+straight into RunPod and start the
+ 
+
+00:00:04.160 --> 00:00:05.950 align:start position:0%
+straight into RunPod and start the
+training.<00:00:04.760><c> And</c><00:00:04.960><c> if</c><00:00:05.080><c> you</c><00:00:05.200><c> want</c><00:00:05.440><c> to</c><00:00:05.520><c> see</c><00:00:05.680><c> how</c><00:00:05.880><c> I</c>
+
+00:00:05.950 --> 00:00:05.960 align:start position:0%
+training. And if you want to see how I
+ 
+
+00:00:05.960 --> 00:00:07.990 align:start position:0%
+training. And if you want to see how I
+built<00:00:06.280><c> Ashley</c><00:00:06.560><c> from</c><00:00:06.760><c> scratch,</c><00:00:07.240><c> the</c><00:00:07.360><c> face</c><00:00:07.800><c> and</c>
+
+00:00:07.990 --> 00:00:08.000 align:start position:0%
+built Ashley from scratch, the face and
+ 
+
+00:00:08.000 --> 00:00:10.150 align:start position:0%
+built Ashley from scratch, the face and
+the<00:00:08.080><c> base</c><00:00:08.360><c> images,</c><00:00:08.920><c> then</c><00:00:09.120><c> go</c><00:00:09.360><c> watch</c><00:00:09.680><c> my</c><00:00:09.800><c> last</c>
+
+00:00:10.150 --> 00:00:10.160 align:start position:0%
+the base images, then go watch my last
+ 
+
+00:00:10.160 --> 00:00:11.950 align:start position:0%
+the base images, then go watch my last
+video.<00:00:10.600><c> You</c><00:00:10.720><c> can</c><00:00:10.840><c> also</c><00:00:11.160><c> find</c><00:00:11.400><c> the</c><00:00:11.480><c> data</c><00:00:11.760><c> set</c>
+
+00:00:11.950 --> 00:00:11.960 align:start position:0%
+video. You can also find the data set
+ 
+
+00:00:11.960 --> 00:00:13.390 align:start position:0%
+video. You can also find the data set
+from<00:00:12.120><c> scratch</c><00:00:12.400><c> for</c><00:00:12.520><c> free</c><00:00:12.760><c> in</c><00:00:12.880><c> my</c><00:00:13.040><c> Discord</c>
+
+00:00:13.390 --> 00:00:13.400 align:start position:0%
+from scratch for free in my Discord
+ 
+
+00:00:13.400 --> 00:00:15.270 align:start position:0%
+from scratch for free in my Discord
+channel.<00:00:13.800><c> For</c><00:00:14.000><c> the</c><00:00:14.120><c> training,</c><00:00:14.560><c> we</c><00:00:14.680><c> jump</c><00:00:15.000><c> over</c>
+
+00:00:15.270 --> 00:00:15.280 align:start position:0%
+channel. For the training, we jump over
+ 
+
+00:00:15.280 --> 00:00:17.110 align:start position:0%
+channel. For the training, we jump over
+to<00:00:15.440><c> RunPod.</c><00:00:16.000><c> And</c><00:00:16.160><c> to</c><00:00:16.240><c> be</c><00:00:16.360><c> honest,</c><00:00:16.640><c> this</c><00:00:16.800><c> is</c><00:00:16.920><c> the</c>
+
+00:00:17.110 --> 00:00:17.120 align:start position:0%
+to RunPod. And to be honest, this is the
+ 
+
+00:00:17.120 --> 00:00:19.350 align:start position:0%
+to RunPod. And to be honest, this is the
+easiest<00:00:17.520><c> part</c><00:00:17.760><c> ever.</c><00:00:18.000><c> You</c><00:00:18.120><c> just</c><00:00:18.440><c> rent</c><00:00:18.640><c> a</c><00:00:18.720><c> GPU,</c>
+
+00:00:19.350 --> 00:00:19.360 align:start position:0%
+easiest part ever. You just rent a GPU,
+ 
+
+00:00:19.360 --> 00:00:21.550 align:start position:0%
+easiest part ever. You just rent a GPU,
+let<00:00:19.520><c> it</c><00:00:19.640><c> run</c><00:00:19.840><c> for</c><00:00:20.000><c> about</c><00:00:20.320><c> an</c><00:00:20.440><c> hour</c><00:00:20.720><c> and</c><00:00:20.880><c> a</c><00:00:20.960><c> half,</c>
+
+00:00:21.550 --> 00:00:21.560 align:start position:0%
+let it run for about an hour and a half,
+ 
+
+00:00:21.560 --> 00:00:25.360 align:start position:0%
+let it run for about an hour and a half,
+and<00:00:21.760><c> you're</c><00:00:21.920><c> out</c><00:00:22.080><c> for</c><00:00:22.320><c> under</c><00:00:22.560><c> five</c><00:00:22.880><c> bucks.</c>
+

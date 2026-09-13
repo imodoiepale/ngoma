@@ -1,0 +1,358 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:19.880
+There's a wave of AI OFM reels going viral right now and almost all of them are made
+
+00:00:19.880 --> 00:00:20.880
+with Seedance.
+
+00:00:20.880 --> 00:00:25.440
+So I built a system in Claude that takes any reel that's already going viral and rebuilds
+
+00:00:25.440 --> 00:00:28.080
+it with your own model in less than 10 minutes.
+
+00:00:28.080 --> 00:00:32.040
+And I'm giving you the whole thing every Claude skill every prompt complete for free
+
+00:00:32.040 --> 00:00:33.120
+in this video.
+
+00:00:33.120 --> 00:00:37.200
+All I ask in return is that you drop a like and write a nice comment what video I should
+
+00:00:37.200 --> 00:00:39.200
+do next to help you make more money.
+
+00:00:39.200 --> 00:00:44.320
+The part nobody in this space actually shows you is how to build a model that's truly yours
+
+00:00:44.320 --> 00:00:46.640
+and I'm not gatekeeping a single step here.
+
+00:00:46.640 --> 00:00:51.360
+I've never seen anyone break the whole system down this deep and definitely not for free.
+
+00:00:51.360 --> 00:00:55.960
+So stay till the end because every step matters and if you miss one the whole thing falls
+
+00:00:55.960 --> 00:00:56.960
+apart.
+
+00:00:56.960 --> 00:00:58.560
+So let's get straight into it.
+
+00:00:58.560 --> 00:00:59.880
+For this I'm using Julia.
+
+00:00:59.880 --> 00:01:04.600
+I built her back to back in my last video and her full data set is already done ready
+
+00:01:04.600 --> 00:01:05.600
+to go.
+
+00:01:05.600 --> 00:01:09.760
+So today isn't about building a model, today is about taking a model you already have
+
+00:01:09.760 --> 00:01:11.560
+and turning her into a viral reel.
+
+00:01:11.560 --> 00:01:15.680
+It all runs inside Claude and you need no coding skills and nothing to install.
+
+00:01:15.680 --> 00:01:19.680
+And if you don't have a model like Julia yet, stick around I will show you exactly where
+
+00:01:19.680 --> 00:01:22.480
+to get her and create a model like her at the end.
+
+00:01:22.480 --> 00:01:40.200
+Ok, this is the reel we are building today.
+
+00:01:40.200 --> 00:01:42.360
+It has this GoPro fish eye look.
+
+00:01:42.360 --> 00:01:48.120
+This exact format is going crazy right now on social media and I think it's funny too.
+
+00:01:48.120 --> 00:01:52.360
+And here's the thing, I'm not going to study the video, Claude is going to do it.
+
+00:01:52.360 --> 00:01:54.800
+I've got two skills sitting in Claude Code.
+
+00:01:54.800 --> 00:01:58.040
+The reel intake skill and the Seedance prompter skill.
+
+00:01:58.040 --> 00:02:01.320
+And before you ask you don't have to build any of this yourself.
+
+00:02:01.320 --> 00:02:04.280
+Both skills are free and you can find them in my discord below.
+
+00:02:04.280 --> 00:02:07.400
+Honestly they can do way more than what I'm about to show you.
+
+00:02:07.400 --> 00:02:11.760
+They can run this whole thing on autopilot but I'm doing it manually today because I want
+
+00:02:11.760 --> 00:02:13.880
+you to see every single step.
+
+00:02:13.880 --> 00:02:16.800
+Then I give Claude the video file or the path.
+
+00:02:16.800 --> 00:02:20.160
+Claude takes the reel apart and extract every single frame.
+
+00:02:20.160 --> 00:02:24.200
+He makes the full transcript with the timing of every single word.
+
+00:02:24.200 --> 00:02:25.200
+And then the best part.
+
+00:02:25.200 --> 00:02:29.080
+He checks the lips frame by frame to figure out who's actually talking.
+
+00:02:29.080 --> 00:02:31.800
+Her on camera and the guy holding the camera.
+
+00:02:31.800 --> 00:02:36.720
+Most people would get that wrong and the remake of this video would sound completely broken.
+
+00:02:36.720 --> 00:02:40.200
+And you can make it with one girl, two girls and so on.
+
+00:02:40.200 --> 00:02:43.560
+Claude will always figure out who is talking right now.
+
+00:02:43.560 --> 00:02:45.880
+After that everything lands in one file.
+
+00:02:45.880 --> 00:02:49.000
+The hook, every beat with its exact second.
+
+00:02:49.000 --> 00:02:51.160
+This file is the DNA of the reel.
+
+00:02:51.160 --> 00:02:53.520
+This format minus the person.
+
+00:02:53.520 --> 00:02:57.920
+Because we never copy the person we take the format and put our model in it.
+
+00:02:57.920 --> 00:03:01.360
+Now the reel needs our face and you know for this we are using Julia.
+
+00:03:01.360 --> 00:03:03.040
+These are her character sheets.
+
+00:03:03.040 --> 00:03:07.000
+One face sheet, one full body 360 and one portrait picture.
+
+00:03:07.000 --> 00:03:09.200
+The prompts for that are also my discord.
+
+00:03:09.200 --> 00:03:11.240
+Now only one more prompt to Claude.
+
+00:03:11.240 --> 00:03:15.920
+Rebuild this reel with my model Julia, same look, same pacing and so on.
+
+00:03:15.920 --> 00:03:18.640
+And the second skill writes a full Seedance prompt.
+
+00:03:18.680 --> 00:03:21.920
+Every second is timed, second 0 to second 15.
+
+00:03:21.920 --> 00:03:24.000
+The pauses are also written down.
+
+00:03:24.000 --> 00:03:25.400
+Because here is the secret.
+
+00:03:25.400 --> 00:03:28.720
+Fewer words means slower, more human speech.
+
+00:03:28.720 --> 00:03:33.160
+Just cut the words a bit, keep the pauses and she sounds more realistic.
+
+00:03:33.160 --> 00:03:35.680
+And you notice already two things in the prompt.
+
+00:03:35.680 --> 00:03:39.400
+One, her face is described nowhere, not one word.
+
+00:03:39.400 --> 00:03:41.360
+Identity comes from the reference images.
+
+00:03:41.360 --> 00:03:43.600
+Second, the prompt describes the lens.
+
+00:03:43.600 --> 00:03:47.480
+The fish eye, the dark rounded corners, the lens is half the look.
+
+00:03:47.480 --> 00:03:51.440
+What you don't name, the model usually doesn't apply in the video.
+
+00:03:51.440 --> 00:03:53.720
+Now I take this prompt to WaveSpeed.
+
+00:03:53.720 --> 00:03:56.760
+Just paste the whole prompt package into the prompt field.
+
+00:03:56.760 --> 00:04:01.160
+Usually I let Claude or my other AI agents do the whole thing on auto mode.
+
+00:04:01.160 --> 00:04:05.880
+If you want full automation, just take a look in my Skool — link is in the description.
+
+00:04:05.880 --> 00:04:08.160
+Now upload Julia's reference images.
+
+00:04:08.160 --> 00:04:10.640
+Just make sure the face anchor is the first image.
+
+00:04:10.640 --> 00:04:14.280
+I select no start image and no reference videos for this one.
+
+00:04:14.280 --> 00:04:18.960
+You can use a reference audio to keep a consistent voice, but for this example I do it without
+
+00:04:18.960 --> 00:04:20.200
+a reference audio.
+
+00:04:20.200 --> 00:04:25.200
+Then select aspect ratio 9 to 16 or what kind of aspect ratio you want to generate.
+
+00:04:25.200 --> 00:04:31.160
+And also the resolution should be 720p, not 1080p and not 4k, because that's on purpose.
+
+00:04:31.160 --> 00:04:36.840
+The video will cost around about 3$ with 720p, after that we will upscale it to save a ton
+
+00:04:36.840 --> 00:04:37.840
+of money.
+
+00:04:37.840 --> 00:04:41.920
+Okay, this is the result and honestly this looks really good in my opinion.
+
+00:04:41.920 --> 00:04:42.920
+Just take a look.
+
+00:04:42.920 --> 00:05:01.880
+Okay, yeah, it's a cool video, but now one thing you need to understand, because this
+
+00:05:01.880 --> 00:05:04.520
+is the part that makes the system really yours.
+
+00:05:04.520 --> 00:05:09.520
+The reel says exactly what's written in the prompt package, nothing more and nothing less.
+
+00:05:09.520 --> 00:05:12.480
+In my case Julia did her own spin in this video.
+
+00:05:12.480 --> 00:05:17.000
+That's what was in my package and that's what I want her to say because of the YouTube
+
+00:05:17.000 --> 00:05:18.160
+terms of service.
+
+00:05:18.160 --> 00:05:22.640
+If you want the original wording or the original dialogue, just tell Claude something like
+
+00:05:22.640 --> 00:05:23.640
+this.
+
+00:05:23.640 --> 00:05:26.240
+Keep the dialogue word for word from the original video.
+
+00:05:26.240 --> 00:05:31.000
+Or if you want her to say something completely different from your niche or from your own
+
+00:05:31.000 --> 00:05:34.960
+script or in your language, same thing, just say it to Claude.
+
+00:05:34.960 --> 00:05:36.720
+I think you already get the point.
+
+00:05:36.720 --> 00:05:41.440
+If you want to change something or if you want to keep something exactly the same, just
+
+00:05:41.440 --> 00:05:44.160
+tell it Claude and Claude will change the script.
+
+00:05:44.160 --> 00:05:46.360
+Now remember what I said earlier.
+
+00:05:46.360 --> 00:05:50.560
+We generate it at 720p and then upscale it to save a ton of money.
+
+00:05:50.560 --> 00:05:57.640
+I drop the clip into Topaz AI, set the output to 1080 by 1920 for the full Instagram resolution
+
+00:05:57.640 --> 00:05:59.360
+and then click on export.
+
+00:05:59.360 --> 00:06:00.360
+That's it.
+
+00:06:00.360 --> 00:06:02.360
+It takes a minute and here's why this matters.
+
+00:06:02.360 --> 00:06:05.760
+A 15 second clip at 720p cost about $3.
+
+00:06:05.760 --> 00:06:11.120
+The same clip at 4k with Seedance costs about $15 every single time you click on generate
+
+00:06:11.120 --> 00:06:15.840
+and after Instagram compresses your video anyway, you literally cannot tell the difference between
+
+00:06:15.840 --> 00:06:19.880
+a native 4k video and a 720 clip upscaled with Topaz.
+
+00:06:19.880 --> 00:06:25.600
+And at volume and scale, that's the difference between burning 50 bucks a day or even more.
+
+00:06:25.600 --> 00:06:27.280
+But now real talk for a second.
+
+00:06:27.280 --> 00:06:30.240
+These skills clone the reel, but the reel is just a copy.
+
+00:06:30.240 --> 00:06:31.840
+The model is the real asset.
+
+00:06:31.840 --> 00:06:33.720
+Same girl every single time.
+
+00:06:33.720 --> 00:06:35.560
+That's what people actually pay for.
+
+00:06:35.560 --> 00:06:40.640
+How I build Julia from zero and how she actually makes money, that's inside Matrix Lab.
+
+00:06:40.640 --> 00:06:42.040
+My Skool community.
+
+00:06:42.040 --> 00:06:44.040
+First link in the description for that.
+
+00:06:44.040 --> 00:06:46.160
+And like I promised, no gate keeping.
+
+00:06:46.160 --> 00:06:50.600
+Both skills, all the prompts, everything you saw today is for free in my discord.
+
+00:06:50.600 --> 00:06:55.000
+And if this helped you, just drop a like and comment what I should break down next.
+
+00:06:55.000 --> 00:06:57.000
+That's literally how I picked the next video.
+
+00:06:57.000 --> 00:06:58.640
+So see you in the next video, bye.
+

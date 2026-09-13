@@ -1,0 +1,128 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.510 align:start position:0%
+ 
+Inside<00:00:00.720><c> we</c><00:00:00.840><c> go</c><00:00:01.080><c> to</c><00:00:01.200><c> the</c><00:00:01.320><c> data</c><00:00:01.640><c> set</c><00:00:01.840><c> tab,</c><00:00:02.240><c> create</c>
+
+00:00:02.510 --> 00:00:02.520 align:start position:0%
+Inside we go to the data set tab, create
+ 
+
+00:00:02.520 --> 00:00:04.630 align:start position:0%
+Inside we go to the data set tab, create
+a<00:00:02.600><c> new</c><00:00:02.720><c> data</c><00:00:03.040><c> set,</c><00:00:03.400><c> and</c><00:00:03.520><c> name</c><00:00:03.760><c> it</c><00:00:03.960><c> Lina</c><00:00:04.360><c> or</c>
+
+00:00:04.630 --> 00:00:04.640 align:start position:0%
+a new data set, and name it Lina or
+ 
+
+00:00:04.640 --> 00:00:06.550 align:start position:0%
+a new data set, and name it Lina or
+whatever<00:00:05.120><c> you</c><00:00:05.280><c> creator</c><00:00:05.600><c> is</c><00:00:05.720><c> called.</c><00:00:06.240><c> Then</c><00:00:06.440><c> we</c>
+
+00:00:06.550 --> 00:00:06.560 align:start position:0%
+whatever you creator is called. Then we
+ 
+
+00:00:06.560 --> 00:00:08.990 align:start position:0%
+whatever you creator is called. Then we
+drag<00:00:06.800><c> and</c><00:00:06.920><c> drop</c><00:00:07.240><c> all</c><00:00:07.520><c> 34</c><00:00:08.160><c> images</c><00:00:08.600><c> together</c>
+
+00:00:08.990 --> 00:00:09.000 align:start position:0%
+drag and drop all 34 images together
+ 
+
+00:00:09.000 --> 00:00:10.510 align:start position:0%
+drag and drop all 34 images together
+with<00:00:09.160><c> the</c><00:00:09.280><c> caption</c><00:00:09.680><c> files</c><00:00:10.080><c> and</c><00:00:10.200><c> let</c><00:00:10.360><c> it</c>
+
+00:00:10.510 --> 00:00:10.520 align:start position:0%
+with the caption files and let it
+ 
+
+00:00:10.520 --> 00:00:12.910 align:start position:0%
+with the caption files and let it
+upload.<00:00:11.120><c> Now</c><00:00:11.400><c> our</c><00:00:11.640><c> data</c><00:00:11.960><c> set</c><00:00:12.200><c> is</c><00:00:12.360><c> in</c><00:00:12.640><c> and</c><00:00:12.800><c> we</c>
+
+00:00:12.910 --> 00:00:12.920 align:start position:0%
+upload. Now our data set is in and we
+ 
+
+00:00:12.920 --> 00:00:14.870 align:start position:0%
+upload. Now our data set is in and we
+can<00:00:13.080><c> set</c><00:00:13.320><c> up</c><00:00:13.480><c> our</c><00:00:13.680><c> training.</c><00:00:14.200><c> After</c><00:00:14.520><c> that,</c><00:00:14.760><c> we</c>
+
+00:00:14.870 --> 00:00:14.880 align:start position:0%
+can set up our training. After that, we
+ 
+
+00:00:14.880 --> 00:00:17.190 align:start position:0%
+can set up our training. After that, we
+create<00:00:15.120><c> a</c><00:00:15.160><c> new</c><00:00:15.400><c> job</c><00:00:15.720><c> and</c><00:00:15.840><c> name</c><00:00:16.080><c> our</c><00:00:16.320><c> Laura.</c><00:00:17.040><c> For</c>
+
+00:00:17.190 --> 00:00:17.200 align:start position:0%
+create a new job and name our Laura. For
+ 
+
+00:00:17.200 --> 00:00:19.230 align:start position:0%
+create a new job and name our Laura. For
+the<00:00:17.320><c> trigger</c><00:00:17.600><c> word,</c><00:00:17.920><c> use</c><00:00:18.160><c> one</c><00:00:18.480><c> unique</c><00:00:18.880><c> word,</c>
+
+00:00:19.230 --> 00:00:19.240 align:start position:0%
+the trigger word, use one unique word,
+ 
+
+00:00:19.240 --> 00:00:20.990 align:start position:0%
+the trigger word, use one unique word,
+something<00:00:19.680><c> the</c><00:00:19.800><c> model</c><00:00:20.120><c> doesn't</c><00:00:20.560><c> already</c>
+
+00:00:20.990 --> 00:00:21.000 align:start position:0%
+something the model doesn't already
+ 
+
+00:00:21.000 --> 00:00:23.550 align:start position:0%
+something the model doesn't already
+know,<00:00:21.320><c> so</c><00:00:21.560><c> it</c><00:00:21.720><c> ties</c><00:00:22.000><c> only</c><00:00:22.320><c> to</c><00:00:22.560><c> our</c><00:00:22.920><c> Laura.</c><00:00:23.400><c> For</c>
+
+00:00:23.550 --> 00:00:23.560 align:start position:0%
+know, so it ties only to our Laura. For
+ 
+
+00:00:23.560 --> 00:00:25.790 align:start position:0%
+know, so it ties only to our Laura. For
+Lina,<00:00:23.920><c> we</c><00:00:24.040><c> take</c><00:00:24.360><c> Lina</c><00:00:24.840><c> written</c><00:00:25.160><c> with</c><00:00:25.360><c> an</c><00:00:25.480><c> one</c>
+
+00:00:25.790 --> 00:00:25.800 align:start position:0%
+Lina, we take Lina written with an one
+ 
+
+00:00:25.800 --> 00:00:28.070 align:start position:0%
+Lina, we take Lina written with an one
+instead<00:00:26.280><c> of</c><00:00:26.440><c> an</c><00:00:26.640><c> I.</c><00:00:26.960><c> And</c><00:00:27.080><c> now</c><00:00:27.280><c> comes</c><00:00:27.640><c> the</c><00:00:27.760><c> most</c>
+
+00:00:28.070 --> 00:00:28.080 align:start position:0%
+instead of an I. And now comes the most
+ 
+
+00:00:28.080 --> 00:00:29.990 align:start position:0%
+instead of an I. And now comes the most
+important<00:00:28.560><c> settings</c><00:00:29.000><c> in</c><00:00:29.120><c> this</c><00:00:29.320><c> whole</c><00:00:29.560><c> video.</c>
+
+00:00:29.990 --> 00:00:30.000 align:start position:0%
+important settings in this whole video.
+ 
+
+00:00:30.000 --> 00:00:32.269 align:start position:0%
+important settings in this whole video.
+We<00:00:30.080><c> set</c><00:00:30.360><c> the</c><00:00:30.480><c> model</c><00:00:30.800><c> architecture</c><00:00:31.480><c> to</c><00:00:31.680><c> Creal</c><00:00:31.960><c> 2</c>
+
+00:00:32.269 --> 00:00:32.279 align:start position:0%
+We set the model architecture to Creal 2
+ 
+
+00:00:32.279 --> 00:00:36.520 align:start position:0%
+We set the model architecture to Creal 2
+and<00:00:32.439><c> here</c><00:00:32.720><c> you</c><00:00:32.840><c> take</c><00:00:33.160><c> raw</c><00:00:33.520><c> never</c><00:00:33.960><c> turbo.</c>
+

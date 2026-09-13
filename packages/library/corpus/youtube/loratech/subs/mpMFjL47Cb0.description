@@ -1,0 +1,46 @@
+In this episode of Build With Me, I build a complete image-to-image (img2img) workflow in ComfyUI from a blank canvas — no imports, no templates, just nodes. We're using Z-Image Turbo and I walk you through every single node, what it does, and why it's there.
+ 
+You'll learn the difference between text-to-image and img2img, how VAE Encode replaces Empty Latent Image, and most importantly — how the denoise value controls how much your reference photo influences the output vs. how much your prompt takes over.
+ 
+If you've ever wanted to take a real photo and use AI to modify, stylize, or reimagine it — this is where it starts.
+ 
+---
+ 
+🔗 LINKS
+
+🔗 FREE WORKFLOWS, COMMUNITY DISCUSSION, 1 ON 1 SESSIONS
+If you want 1-on-1 coaching for your ComfyUI/RunPod setup, LoRA training, or growing an AI influencer account, sessions are consultation-based — details inside: https://discord.gg/kUc76uk7HA
+ 
+🟢 Join the Discord → https://discord.gg/2bqQXKxsxg
+☁️ RunPod (get $5 free credit w/ $10 deposit) → https://get.runpod.io/x4yprxwsfyac
+ 
+---
+ 
+📺 WATCH NEXT
+ 
+▶️ WATCH PREVIOUS EPISODES HERE
+https://youtu.be/Bvpn3miGpw0?si=Hmdc3T6sw1eAprES
+ 
+▶️ BRAND NEW? CHECK THIS VIDEO OUT
+https://www.youtube.com/watch?v=Ghvd0E2Lki4
+ 
+---
+ 
+🧠 WHAT YOU'LL LEARN
+ 
+✅ How to build an img2img workflow in ComfyUI from scratch
+✅ The difference between Load Checkpoint vs. separate Load CLIP + Load VAE nodes
+✅ What VAE Encode does and why it replaces Empty Latent Image in img2img
+✅ How denoise controls the balance between prompt and reference photo
+✅ How to use real photos as reference input in ComfyUI
+✅ How to run ComfyUI workflows on RunPod
+ 
+---
+ 
+🔍 TAGS
+ 
+ComfyUI, ComfyUI img2img, ComfyUI image to image, ComfyUI tutorial, ComfyUI workflow, ComfyUI from scratch, ComfyUI beginner, img2img workflow, image to image AI, Z-Image Turbo, Z Image Turbo ComfyUI, Flux 2 ComfyUI, AI image generation, AI image editing, denoise strength, KSampler ComfyUI, VAE Encode ComfyUI, Load CLIP ComfyUI, Load VAE ComfyUI, RunPod ComfyUI, ComfyUI RunPod tutorial, ComfyUI 2025, AI workflow tutorial, stable diffusion img2img, ComfyUI nodes explained, build with me ComfyUI, LoRAtech, ComfyUI no templates, ComfyUI blank canvas, reference image AI, AI photo editing, ComfyUI step by step
+ 
+---
+ 
+#ComfyUI #img2img #AIImageGeneration #ComfyUITutorial #StableDiffusion #AIWorkflow #ZImageTurbo #RunPod #LoRAtech #BuildWithMe #AIArt #ImageToImage #ComfyUINodes #AIEditing #GenerativeAI

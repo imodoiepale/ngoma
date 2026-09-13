@@ -1,0 +1,120 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.110 align:start position:0%
+ 
+Here's<00:00:00.400><c> the</c><00:00:00.520><c> plan.</c><00:00:01.160><c> First,</c><00:00:01.480><c> we</c><00:00:01.600><c> train</c><00:00:01.880><c> our</c>
+
+00:00:02.110 --> 00:00:02.120 align:start position:0%
+Here's the plan. First, we train our
+ 
+
+00:00:02.120 --> 00:00:04.230 align:start position:0%
+Here's the plan. First, we train our
+Laura<00:00:02.440><c> with</c><00:00:02.640><c> the</c><00:00:02.800><c> AI</c><00:00:03.040><c> toolkit</c><00:00:03.520><c> on</c><00:00:03.680><c> RunPod.</c>
+
+00:00:04.230 --> 00:00:04.240 align:start position:0%
+Laura with the AI toolkit on RunPod.
+ 
+
+00:00:04.240 --> 00:00:05.870 align:start position:0%
+Laura with the AI toolkit on RunPod.
+Then<00:00:04.400><c> we</c><00:00:04.520><c> test</c><00:00:04.840><c> the</c><00:00:04.920><c> checkpoints</c><00:00:05.480><c> with</c><00:00:05.680><c> our</c>
+
+00:00:05.870 --> 00:00:05.880 align:start position:0%
+Then we test the checkpoints with our
+ 
+
+00:00:05.880 --> 00:00:08.630 align:start position:0%
+Then we test the checkpoints with our
+Laura<00:00:06.160><c> tester</c><00:00:06.560><c> in</c><00:00:06.680><c> ComfyUI.</c><00:00:07.800><c> And</c><00:00:08.000><c> at</c><00:00:08.160><c> the</c><00:00:08.360><c> end,</c>
+
+00:00:08.630 --> 00:00:08.640 align:start position:0%
+Laura tester in ComfyUI. And at the end,
+ 
+
+00:00:08.640 --> 00:00:10.630 align:start position:0%
+Laura tester in ComfyUI. And at the end,
+we<00:00:08.760><c> push</c><00:00:09.040><c> her</c><00:00:09.160><c> to</c><00:00:09.320><c> a</c><00:00:09.360><c> level</c><00:00:09.640><c> where</c><00:00:09.760><c> nobody</c><00:00:10.440><c> can</c>
+
+00:00:10.630 --> 00:00:10.640 align:start position:0%
+we push her to a level where nobody can
+ 
+
+00:00:10.640 --> 00:00:13.390 align:start position:0%
+we push her to a level where nobody can
+tell<00:00:10.920><c> she's</c><00:00:11.280><c> AI</c><00:00:11.680><c> anymore.</c><00:00:12.280><c> So,</c><00:00:12.520><c> time</c><00:00:12.880><c> to</c><00:00:13.040><c> train</c>
+
+00:00:13.390 --> 00:00:13.400 align:start position:0%
+tell she's AI anymore. So, time to train
+ 
+
+00:00:13.400 --> 00:00:15.270 align:start position:0%
+tell she's AI anymore. So, time to train
+our<00:00:13.640><c> Laura.</c><00:00:14.240><c> For</c><00:00:14.400><c> the</c><00:00:14.520><c> training,</c><00:00:14.880><c> we</c><00:00:15.000><c> jump</c>
+
+00:00:15.270 --> 00:00:15.280 align:start position:0%
+our Laura. For the training, we jump
+ 
+
+00:00:15.280 --> 00:00:17.510 align:start position:0%
+our Laura. For the training, we jump
+straight<00:00:15.720><c> over</c><00:00:16.040><c> to</c><00:00:16.200><c> RunPod.</c><00:00:17.040><c> And</c><00:00:17.240><c> to</c><00:00:17.360><c> be</c>
+
+00:00:17.510 --> 00:00:17.520 align:start position:0%
+straight over to RunPod. And to be
+ 
+
+00:00:17.520 --> 00:00:19.870 align:start position:0%
+straight over to RunPod. And to be
+honest,<00:00:17.880><c> this</c><00:00:18.080><c> is</c><00:00:18.280><c> the</c><00:00:18.480><c> easy</c><00:00:18.840><c> part.</c><00:00:19.520><c> You</c><00:00:19.640><c> rent</c>
+
+00:00:19.870 --> 00:00:19.880 align:start position:0%
+honest, this is the easy part. You rent
+ 
+
+00:00:19.880 --> 00:00:21.830 align:start position:0%
+honest, this is the easy part. You rent
+a<00:00:19.960><c> GPU</c><00:00:20.360><c> by</c><00:00:20.560><c> hour,</c><00:00:21.000><c> and</c><00:00:21.160><c> the</c><00:00:21.240><c> whole</c><00:00:21.480><c> training</c>
+
+00:00:21.830 --> 00:00:21.840 align:start position:0%
+a GPU by hour, and the whole training
+ 
+
+00:00:21.840 --> 00:00:24.190 align:start position:0%
+a GPU by hour, and the whole training
+costs<00:00:22.120><c> you</c><00:00:22.240><c> maybe</c><00:00:22.560><c> three</c><00:00:23.000><c> to</c><00:00:23.160><c> five</c><00:00:23.480><c> bucks.</c><00:00:23.960><c> For</c>
+
+00:00:24.190 --> 00:00:24.200 align:start position:0%
+costs you maybe three to five bucks. For
+ 
+
+00:00:24.200 --> 00:00:26.630 align:start position:0%
+costs you maybe three to five bucks. For
+Creater<00:00:24.560><c> tool,</c><00:00:24.760><c> you</c><00:00:24.880><c> can</c><00:00:25.040><c> grab</c><00:00:25.280><c> an</c><00:00:25.440><c> RTX</c><00:00:26.000><c> 6000</c>
+
+00:00:26.630 --> 00:00:26.640 align:start position:0%
+Creater tool, you can grab an RTX 6000
+ 
+
+00:00:26.640 --> 00:00:30.750 align:start position:0%
+Creater tool, you can grab an RTX 6000
+Pro<00:00:27.200><c> or</c><00:00:27.560><c> RTX</c><00:00:28.040><c> 5090.</c><00:00:28.880><c> We</c><00:00:29.040><c> go</c><00:00:29.280><c> with</c><00:00:29.480><c> the</c><00:00:29.640><c> RTX</c><00:00:30.160><c> 6000</c>
+
+00:00:30.750 --> 00:00:30.760 align:start position:0%
+Pro or RTX 5090. We go with the RTX 6000
+ 
+
+00:00:30.760 --> 00:00:32.390 align:start position:0%
+Pro or RTX 5090. We go with the RTX 6000
+Pro<00:00:30.960><c> in</c><00:00:31.040><c> this</c><00:00:31.280><c> video.</c><00:00:31.600><c> That</c><00:00:31.800><c> is</c><00:00:31.960><c> more</c><00:00:32.200><c> than</c>
+
+00:00:32.390 --> 00:00:32.400 align:start position:0%
+Pro in this video. That is more than
+ 
+
+00:00:32.400 --> 00:00:34.840 align:start position:0%
+Pro in this video. That is more than
+enough<00:00:32.680><c> for</c>
+

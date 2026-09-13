@@ -1,0 +1,2240 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.630 align:start position:0%
+ 
+Every<00:00:00.400><c> single</c><00:00:00.720><c> image</c><00:00:01.040><c> you</c><00:00:01.160><c> generate</c><00:00:01.560><c> in</c>
+
+00:00:01.630 --> 00:00:01.640 align:start position:0%
+Every single image you generate in
+ 
+
+00:00:01.640 --> 00:00:04.310 align:start position:0%
+Every single image you generate in
+ComfyUI<00:00:02.360><c> is</c><00:00:02.600><c> snitching</c><00:00:03.000><c> on</c><00:00:03.160><c> you.</c><00:00:03.560><c> Right</c><00:00:03.800><c> now,</c>
+
+00:00:04.310 --> 00:00:04.320 align:start position:0%
+ComfyUI is snitching on you. Right now,
+ 
+
+00:00:04.320 --> 00:00:06.070 align:start position:0%
+ComfyUI is snitching on you. Right now,
+every<00:00:04.600><c> image</c><00:00:04.960><c> you've</c><00:00:05.080><c> ever</c><00:00:05.240><c> made</c><00:00:05.520><c> has</c><00:00:05.760><c> hidden</c>
+
+00:00:06.070 --> 00:00:06.080 align:start position:0%
+every image you've ever made has hidden
+ 
+
+00:00:06.080 --> 00:00:07.830 align:start position:0%
+every image you've ever made has hidden
+metadata<00:00:06.800><c> baked</c><00:00:07.080><c> into</c><00:00:07.280><c> it.</c><00:00:07.600><c> And</c><00:00:07.680><c> that</c>
+
+00:00:07.830 --> 00:00:07.840 align:start position:0%
+metadata baked into it. And that
+ 
+
+00:00:07.840 --> 00:00:09.910 align:start position:0%
+metadata baked into it. And that
+metadata<00:00:08.240><c> exposes</c><00:00:08.840><c> your</c><00:00:08.960><c> entire</c><00:00:09.400><c> workflow</c>
+
+00:00:09.910 --> 00:00:09.920 align:start position:0%
+metadata exposes your entire workflow
+ 
+
+00:00:09.920 --> 00:00:12.830 align:start position:0%
+metadata exposes your entire workflow
+and<00:00:10.280><c> flags</c><00:00:10.600><c> your</c><00:00:10.720><c> content</c><00:00:11.200><c> as</c><00:00:11.440><c> AI</c><00:00:11.920><c> to</c><00:00:12.520><c> social</c>
+
+00:00:12.830 --> 00:00:12.840 align:start position:0%
+and flags your content as AI to social
+ 
+
+00:00:12.840 --> 00:00:15.510 align:start position:0%
+and flags your content as AI to social
+media<00:00:13.080><c> platforms</c><00:00:13.640><c> such</c><00:00:13.960><c> as</c><00:00:14.440><c> Meta</c><00:00:14.840><c> and</c><00:00:15.000><c> X.</c><00:00:15.440><c> In</c>
+
+00:00:15.510 --> 00:00:15.520 align:start position:0%
+media platforms such as Meta and X. In
+ 
+
+00:00:15.520 --> 00:00:16.670 align:start position:0%
+media platforms such as Meta and X. In
+this<00:00:15.680><c> video,</c><00:00:15.920><c> I'm</c><00:00:16.000><c> going</c><00:00:16.200><c> to</c><00:00:16.280><c> show</c><00:00:16.480><c> you</c>
+
+00:00:16.670 --> 00:00:16.680 align:start position:0%
+this video, I'm going to show you
+ 
+
+00:00:16.680 --> 00:00:18.670 align:start position:0%
+this video, I'm going to show you
+exactly<00:00:17.240><c> what</c><00:00:17.440><c> your</c><00:00:17.600><c> images</c><00:00:17.920><c> are</c><00:00:18.040><c> leaking,</c>
+
+00:00:18.670 --> 00:00:18.680 align:start position:0%
+exactly what your images are leaking,
+ 
+
+00:00:18.680 --> 00:00:20.430 align:start position:0%
+exactly what your images are leaking,
+why<00:00:18.920><c> it</c><00:00:19.040><c> matters</c><00:00:19.360><c> more</c><00:00:19.480><c> than</c><00:00:19.600><c> you</c><00:00:19.680><c> think,</c><00:00:20.280><c> and</c>
+
+00:00:20.430 --> 00:00:20.440 align:start position:0%
+why it matters more than you think, and
+ 
+
+00:00:20.440 --> 00:00:22.030 align:start position:0%
+why it matters more than you think, and
+the<00:00:20.520><c> node</c><00:00:20.720><c> pack</c><00:00:21.000><c> I</c><00:00:21.080><c> built</c><00:00:21.320><c> to</c><00:00:21.400><c> fix</c><00:00:21.680><c> it.</c><00:00:21.920><c> So,</c>
+
+00:00:22.030 --> 00:00:22.040 align:start position:0%
+the node pack I built to fix it. So,
+ 
+
+00:00:22.040 --> 00:00:23.190 align:start position:0%
+the node pack I built to fix it. So,
+here's<00:00:22.240><c> what's</c><00:00:22.400><c> actually</c><00:00:22.680><c> going</c><00:00:22.880><c> on.</c><00:00:23.040><c> When</c>
+
+00:00:23.190 --> 00:00:23.200 align:start position:0%
+here's what's actually going on. When
+ 
+
+00:00:23.200 --> 00:00:25.030 align:start position:0%
+here's what's actually going on. When
+ComfyUI<00:00:23.720><c> saves</c><00:00:24.000><c> an</c><00:00:24.080><c> image,</c><00:00:24.480><c> it</c><00:00:24.680><c> writes</c><00:00:24.920><c> your</c>
+
+00:00:25.030 --> 00:00:25.040 align:start position:0%
+ComfyUI saves an image, it writes your
+ 
+
+00:00:25.040 --> 00:00:27.470 align:start position:0%
+ComfyUI saves an image, it writes your
+workflow<00:00:25.480><c> JSON</c><00:00:26.080><c> directly</c><00:00:26.560><c> into</c><00:00:26.840><c> the</c><00:00:26.960><c> file.</c>
+
+00:00:27.470 --> 00:00:27.480 align:start position:0%
+workflow JSON directly into the file.
+ 
+
+00:00:27.480 --> 00:00:30.390 align:start position:0%
+workflow JSON directly into the file.
+It's<00:00:27.640><c> embedded</c><00:00:28.160><c> into</c><00:00:28.640><c> the</c><00:00:28.800><c> PNG</c><00:00:29.320><c> image</c><00:00:29.680><c> that</c>
+
+00:00:30.390 --> 00:00:30.400 align:start position:0%
+It's embedded into the PNG image that
+ 
+
+00:00:30.400 --> 00:00:32.070 align:start position:0%
+It's embedded into the PNG image that
+from<00:00:30.640><c> ComfyUI.</c><00:00:31.320><c> So,</c><00:00:31.440><c> that</c><00:00:31.600><c> includes</c><00:00:31.960><c> your</c>
+
+00:00:32.070 --> 00:00:32.080 align:start position:0%
+from ComfyUI. So, that includes your
+ 
+
+00:00:32.080 --> 00:00:34.150 align:start position:0%
+from ComfyUI. So, that includes your
+whole<00:00:32.279><c> node</c><00:00:32.520><c> graph,</c><00:00:33.040><c> your</c><00:00:33.200><c> prompts,</c><00:00:33.880><c> all</c><00:00:34.080><c> of</c>
+
+00:00:34.150 --> 00:00:34.160 align:start position:0%
+whole node graph, your prompts, all of
+ 
+
+00:00:34.160 --> 00:00:35.470 align:start position:0%
+whole node graph, your prompts, all of
+it.<00:00:34.360><c> It's</c><00:00:34.520><c> all</c><00:00:34.640><c> just</c><00:00:34.840><c> sitting</c><00:00:35.040><c> inside</c><00:00:35.360><c> the</c>
+
+00:00:35.470 --> 00:00:35.480 align:start position:0%
+it. It's all just sitting inside the
+ 
+
+00:00:35.480 --> 00:00:37.350 align:start position:0%
+it. It's all just sitting inside the
+image<00:00:35.800><c> where</c><00:00:36.040><c> anyone</c><00:00:36.360><c> can</c><00:00:36.480><c> pull</c><00:00:36.640><c> it</c><00:00:36.760><c> out.</c><00:00:37.240><c> Now,</c>
+
+00:00:37.350 --> 00:00:37.360 align:start position:0%
+image where anyone can pull it out. Now,
+ 
+
+00:00:37.360 --> 00:00:38.910 align:start position:0%
+image where anyone can pull it out. Now,
+you<00:00:37.440><c> might</c><00:00:37.560><c> be</c><00:00:37.680><c> thinking,</c><00:00:38.120><c> "That's</c><00:00:38.400><c> fine.</c>
+
+00:00:38.910 --> 00:00:38.920 align:start position:0%
+you might be thinking, "That's fine.
+ 
+
+00:00:38.920 --> 00:00:40.750 align:start position:0%
+you might be thinking, "That's fine.
+Social<00:00:39.280><c> media</c><00:00:39.520><c> strips</c><00:00:39.920><c> metadata</c><00:00:40.480><c> when</c><00:00:40.680><c> I</c>
+
+00:00:40.750 --> 00:00:40.760 align:start position:0%
+Social media strips metadata when I
+ 
+
+00:00:40.760 --> 00:00:42.750 align:start position:0%
+Social media strips metadata when I
+upload."<00:00:41.160><c> And</c><00:00:41.280><c> yeah,</c><00:00:41.600><c> most</c><00:00:41.800><c> platforms</c><00:00:42.480><c> do</c>
+
+00:00:42.750 --> 00:00:42.760 align:start position:0%
+upload." And yeah, most platforms do
+ 
+
+00:00:42.760 --> 00:00:44.350 align:start position:0%
+upload." And yeah, most platforms do
+strip<00:00:43.120><c> the</c><00:00:43.240><c> visible</c><00:00:43.600><c> metadata</c><00:00:44.080><c> off</c><00:00:44.240><c> your</c>
+
+00:00:44.350 --> 00:00:44.360 align:start position:0%
+strip the visible metadata off your
+ 
+
+00:00:44.360 --> 00:00:46.230 align:start position:0%
+strip the visible metadata off your
+post.<00:00:44.920><c> So,</c><00:00:45.240><c> other</c><00:00:45.520><c> users</c><00:00:45.800><c> won't</c><00:00:45.960><c> be</c><00:00:46.040><c> able</c><00:00:46.160><c> to</c>
+
+00:00:46.230 --> 00:00:46.240 align:start position:0%
+post. So, other users won't be able to
+ 
+
+00:00:46.240 --> 00:00:47.390 align:start position:0%
+post. So, other users won't be able to
+get<00:00:46.360><c> a</c><00:00:46.400><c> hold</c><00:00:46.600><c> of</c><00:00:46.680><c> it.</c><00:00:46.880><c> But,</c><00:00:46.960><c> here's</c><00:00:47.120><c> the</c><00:00:47.200><c> part</c>
+
+00:00:47.390 --> 00:00:47.400 align:start position:0%
+get a hold of it. But, here's the part
+ 
+
+00:00:47.400 --> 00:00:49.270 align:start position:0%
+get a hold of it. But, here's the part
+nobody<00:00:47.640><c> talks</c><00:00:47.960><c> about.</c><00:00:48.320><c> When</c><00:00:48.440><c> your</c><00:00:48.600><c> image</c><00:00:49.040><c> hits</c>
+
+00:00:49.270 --> 00:00:49.280 align:start position:0%
+nobody talks about. When your image hits
+ 
+
+00:00:49.280 --> 00:00:51.150 align:start position:0%
+nobody talks about. When your image hits
+their<00:00:49.440><c> transcode</c><00:00:49.960><c> servers,</c><00:00:50.480><c> platforms</c><00:00:50.960><c> like</c>
+
+00:00:51.150 --> 00:00:51.160 align:start position:0%
+their transcode servers, platforms like
+ 
+
+00:00:51.160 --> 00:00:53.230 align:start position:0%
+their transcode servers, platforms like
+Meta<00:00:51.440><c> and</c><00:00:51.560><c> X</c><00:00:51.880><c> still</c><00:00:52.120><c> log</c><00:00:52.360><c> that</c><00:00:52.560><c> metadata</c><00:00:53.080><c> in</c>
+
+00:00:53.230 --> 00:00:53.240 align:start position:0%
+Meta and X still log that metadata in
+ 
+
+00:00:53.240 --> 00:00:54.830 align:start position:0%
+Meta and X still log that metadata in
+their<00:00:53.440><c> own</c><00:00:53.560><c> internal</c><00:00:53.920><c> systems</c><00:00:54.440><c> before</c><00:00:54.720><c> it</c>
+
+00:00:54.830 --> 00:00:54.840 align:start position:0%
+their own internal systems before it
+ 
+
+00:00:54.840 --> 00:00:56.790 align:start position:0%
+their own internal systems before it
+ever<00:00:55.040><c> gets</c><00:00:55.240><c> stripped</c><00:00:55.680><c> from</c><00:00:55.880><c> public</c><00:00:56.280><c> view.</c><00:00:56.680><c> So,</c>
+
+00:00:56.790 --> 00:00:56.800 align:start position:0%
+ever gets stripped from public view. So,
+ 
+
+00:00:56.800 --> 00:00:58.350 align:start position:0%
+ever gets stripped from public view. So,
+they<00:00:56.920><c> have</c><00:00:57.120><c> access</c><00:00:57.480><c> to</c><00:00:57.600><c> that</c><00:00:57.880><c> somewhere</c><00:00:58.240><c> in</c>
+
+00:00:58.350 --> 00:00:58.360 align:start position:0%
+they have access to that somewhere in
+ 
+
+00:00:58.360 --> 00:01:00.230 align:start position:0%
+they have access to that somewhere in
+cached<00:00:58.720><c> files,</c><00:00:59.360><c> and</c><00:00:59.480><c> it</c><00:00:59.600><c> really</c><00:00:59.960><c> escapes</c><00:01:00.200><c> a</c>
+
+00:01:00.230 --> 00:01:00.240 align:start position:0%
+cached files, and it really escapes a
+ 
+
+00:01:00.240 --> 00:01:01.950 align:start position:0%
+cached files, and it really escapes a
+lot<00:01:00.400><c> of</c><00:01:00.440><c> people's</c><00:01:00.760><c> mind</c><00:01:01.120><c> because</c><00:01:01.360><c> you</c><00:01:01.480><c> think,</c>
+
+00:01:01.950 --> 00:01:01.960 align:start position:0%
+lot of people's mind because you think,
+ 
+
+00:01:01.960 --> 00:01:03.630 align:start position:0%
+lot of people's mind because you think,
+"Oh,<00:01:02.080><c> well,</c><00:01:02.200><c> nobody</c><00:01:02.440><c> can</c><00:01:02.600><c> see</c><00:01:02.760><c> the</c><00:01:02.880><c> metadata.</c>
+
+00:01:03.630 --> 00:01:03.640 align:start position:0%
+"Oh, well, nobody can see the metadata.
+ 
+
+00:01:03.640 --> 00:01:05.950 align:start position:0%
+"Oh, well, nobody can see the metadata.
+If<00:01:03.760><c> somebody</c><00:01:04.040><c> downloads</c><00:01:04.519><c> my</c><00:01:04.640><c> picture</c><00:01:05.239><c> from</c><00:01:05.680><c> X,</c>
+
+00:01:05.950 --> 00:01:05.960 align:start position:0%
+If somebody downloads my picture from X,
+ 
+
+00:01:05.960 --> 00:01:07.310 align:start position:0%
+If somebody downloads my picture from X,
+for<00:01:06.080><c> example,</c><00:01:06.680><c> they're</c><00:01:06.800><c> not</c><00:01:06.960><c> going</c><00:01:07.160><c> to</c><00:01:07.200><c> be</c>
+
+00:01:07.310 --> 00:01:07.320 align:start position:0%
+for example, they're not going to be
+ 
+
+00:01:07.320 --> 00:01:08.910 align:start position:0%
+for example, they're not going to be
+able<00:01:07.480><c> to</c><00:01:07.560><c> access</c><00:01:07.960><c> any</c><00:01:08.120><c> of</c><00:01:08.200><c> the</c><00:01:08.240><c> metadata."</c>
+
+00:01:08.910 --> 00:01:08.920 align:start position:0%
+able to access any of the metadata."
+ 
+
+00:01:08.920 --> 00:01:11.110 align:start position:0%
+able to access any of the metadata."
+But,<00:01:09.160><c> X</c><00:01:09.360><c> can,</c><00:01:09.840><c> and</c><00:01:10.000><c> so</c><00:01:10.160><c> can</c><00:01:10.320><c> Instagram.</c><00:01:10.960><c> Which</c>
+
+00:01:11.110 --> 00:01:11.120 align:start position:0%
+But, X can, and so can Instagram. Which
+ 
+
+00:01:11.120 --> 00:01:13.070 align:start position:0%
+But, X can, and so can Instagram. Which
+means<00:01:11.520><c> even</c><00:01:11.720><c> if</c><00:01:11.840><c> your</c><00:01:11.960><c> followers</c><00:01:12.480><c> can't</c><00:01:12.880><c> see</c>
+
+00:01:13.070 --> 00:01:13.080 align:start position:0%
+means even if your followers can't see
+ 
+
+00:01:13.080 --> 00:01:15.590 align:start position:0%
+means even if your followers can't see
+it,<00:01:13.600><c> the</c><00:01:13.680><c> platform</c><00:01:14.280><c> knows</c><00:01:14.720><c> that</c><00:01:14.840><c> you're</c><00:01:15.040><c> AI.</c>
+
+00:01:15.590 --> 00:01:15.600 align:start position:0%
+it, the platform knows that you're AI.
+ 
+
+00:01:15.600 --> 00:01:17.310 align:start position:0%
+it, the platform knows that you're AI.
+And<00:01:15.680><c> this</c><00:01:15.800><c> is</c><00:01:15.920><c> where</c><00:01:16.040><c> people</c><00:01:16.280><c> go,</c><00:01:16.920><c> "So,</c><00:01:17.200><c> what</c>
+
+00:01:17.310 --> 00:01:17.320 align:start position:0%
+And this is where people go, "So, what
+ 
+
+00:01:17.320 --> 00:01:19.110 align:start position:0%
+And this is where people go, "So, what
+if<00:01:17.400><c> they</c><00:01:17.520><c> know</c><00:01:17.640><c> I'm</c><00:01:17.760><c> AI?"</c><00:01:18.360><c> Here's</c><00:01:18.680><c> what.</c>
+
+00:01:19.110 --> 00:01:19.120 align:start position:0%
+if they know I'm AI?" Here's what.
+ 
+
+00:01:19.120 --> 00:01:21.430 align:start position:0%
+if they know I'm AI?" Here's what.
+Platforms<00:01:19.640><c> don't</c><00:01:19.880><c> just</c><00:01:20.240><c> detect</c><00:01:20.680><c> AI</c><00:01:20.920><c> content</c>
+
+00:01:21.430 --> 00:01:21.440 align:start position:0%
+Platforms don't just detect AI content
+ 
+
+00:01:21.440 --> 00:01:23.550 align:start position:0%
+Platforms don't just detect AI content
+and<00:01:21.560><c> shrug,</c><00:01:22.200><c> they</c><00:01:22.400><c> act</c><00:01:22.720><c> on</c><00:01:22.840><c> it.</c><00:01:23.120><c> Accounts</c><00:01:23.440><c> that</c>
+
+00:01:23.550 --> 00:01:23.560 align:start position:0%
+and shrug, they act on it. Accounts that
+ 
+
+00:01:23.560 --> 00:01:25.870 align:start position:0%
+and shrug, they act on it. Accounts that
+get<00:01:23.720><c> flagged</c><00:01:24.120><c> as</c><00:01:24.280><c> AI-heavy</c><00:01:25.080><c> creators</c><00:01:25.680><c> get</c>
+
+00:01:25.870 --> 00:01:25.880 align:start position:0%
+get flagged as AI-heavy creators get
+ 
+
+00:01:25.880 --> 00:01:28.390 align:start position:0%
+get flagged as AI-heavy creators get
+quietly<00:01:26.400><c> deprioritized</c><00:01:27.400><c> in</c><00:01:27.520><c> the</c><00:01:27.680><c> algorithm.</c>
+
+00:01:28.390 --> 00:01:28.400 align:start position:0%
+quietly deprioritized in the algorithm.
+ 
+
+00:01:28.400 --> 00:01:30.550 align:start position:0%
+quietly deprioritized in the algorithm.
+There's<00:01:28.640><c> countless</c><00:01:29.400><c> resources</c><00:01:30.000><c> online</c><00:01:30.440><c> that</c>
+
+00:01:30.550 --> 00:01:30.560 align:start position:0%
+There's countless resources online that
+ 
+
+00:01:30.560 --> 00:01:31.950 align:start position:0%
+There's countless resources online that
+you<00:01:30.680><c> can</c><00:01:30.840><c> go</c><00:01:31.000><c> and</c><00:01:31.120><c> research</c><00:01:31.560><c> on</c><00:01:31.680><c> your</c><00:01:31.840><c> own</c>
+
+00:01:31.950 --> 00:01:31.960 align:start position:0%
+you can go and research on your own
+ 
+
+00:01:31.960 --> 00:01:34.270 align:start position:0%
+you can go and research on your own
+time,<00:01:32.360><c> and</c><00:01:33.000><c> you'll</c><00:01:33.200><c> see</c><00:01:33.440><c> that</c><00:01:33.640><c> there</c><00:01:33.840><c> are</c>
+
+00:01:34.270 --> 00:01:34.280 align:start position:0%
+time, and you'll see that there are
+ 
+
+00:01:34.280 --> 00:01:36.150 align:start position:0%
+time, and you'll see that there are
+ranking<00:01:34.720><c> systems</c><00:01:35.280><c> in</c><00:01:35.440><c> a</c><00:01:35.480><c> lot</c><00:01:35.640><c> of</c><00:01:35.720><c> these</c><00:01:35.880><c> social</c>
+
+00:01:36.150 --> 00:01:36.160 align:start position:0%
+ranking systems in a lot of these social
+ 
+
+00:01:36.160 --> 00:01:37.830 align:start position:0%
+ranking systems in a lot of these social
+media<00:01:36.440><c> platforms,</c><00:01:37.200><c> Instagram</c><00:01:37.640><c> to</c><00:01:37.720><c> be</c>
+
+00:01:37.830 --> 00:01:37.840 align:start position:0%
+media platforms, Instagram to be
+ 
+
+00:01:37.840 --> 00:01:39.830 align:start position:0%
+media platforms, Instagram to be
+specific,<00:01:38.640><c> that</c><00:01:38.800><c> basically</c><00:01:39.240><c> assign</c><00:01:39.680><c> you</c><00:01:39.800><c> a</c>
+
+00:01:39.830 --> 00:01:39.840 align:start position:0%
+specific, that basically assign you a
+ 
+
+00:01:39.840 --> 00:01:42.350 align:start position:0%
+specific, that basically assign you a
+trust<00:01:40.280><c> value.</c><00:01:40.840><c> And</c><00:01:41.120><c> everything</c><00:01:41.480><c> that</c><00:01:41.600><c> you</c><00:01:41.760><c> do</c>
+
+00:01:42.350 --> 00:01:42.360 align:start position:0%
+trust value. And everything that you do
+ 
+
+00:01:42.360 --> 00:01:44.590 align:start position:0%
+trust value. And everything that you do
+within<00:01:42.840><c> the</c><00:01:43.040><c> app,</c><00:01:43.480><c> liking</c><00:01:43.800><c> pictures,</c>
+
+00:01:44.590 --> 00:01:44.600 align:start position:0%
+within the app, liking pictures,
+ 
+
+00:01:44.600 --> 00:01:47.110 align:start position:0%
+within the app, liking pictures,
+commenting,<00:01:45.520><c> logging</c><00:01:45.880><c> in</c><00:01:46.040><c> on</c><00:01:46.240><c> consistent</c><00:01:46.800><c> IP</c>
+
+00:01:47.110 --> 00:01:47.120 align:start position:0%
+commenting, logging in on consistent IP
+ 
+
+00:01:47.120 --> 00:01:49.630 align:start position:0%
+commenting, logging in on consistent IP
+addresses,<00:01:48.000><c> and</c><00:01:48.160><c> so</c><00:01:48.400><c> on,</c><00:01:48.840><c> affects</c><00:01:49.240><c> that</c><00:01:49.400><c> trust</c>
+
+00:01:49.630 --> 00:01:49.640 align:start position:0%
+addresses, and so on, affects that trust
+ 
+
+00:01:49.640 --> 00:01:51.430 align:start position:0%
+addresses, and so on, affects that trust
+score.<00:01:50.080><c> So,</c><00:01:50.240><c> you</c><00:01:50.320><c> can</c><00:01:50.440><c> imagine,</c><00:01:51.080><c> if</c><00:01:51.240><c> you</c>
+
+00:01:51.430 --> 00:01:51.440 align:start position:0%
+score. So, you can imagine, if you
+ 
+
+00:01:51.440 --> 00:01:54.670 align:start position:0%
+score. So, you can imagine, if you
+upload<00:01:51.960><c> a</c><00:01:52.080><c> photo</c><00:01:52.760><c> that</c><00:01:52.960><c> has</c><00:01:53.480><c> a</c><00:01:53.640><c> workflow</c><00:01:54.120><c> JSON</c>
+
+00:01:54.670 --> 00:01:54.680 align:start position:0%
+upload a photo that has a workflow JSON
+ 
+
+00:01:54.680 --> 00:01:56.590 align:start position:0%
+upload a photo that has a workflow JSON
+literally<00:01:55.080><c> embedded</c><00:01:55.600><c> inside</c><00:01:56.000><c> of</c><00:01:56.080><c> it,</c><00:01:56.440><c> it's</c>
+
+00:01:56.590 --> 00:01:56.600 align:start position:0%
+literally embedded inside of it, it's
+ 
+
+00:01:56.600 --> 00:01:58.790 align:start position:0%
+literally embedded inside of it, it's
+going<00:01:56.880><c> to</c><00:01:56.960><c> trigger</c><00:01:57.400><c> some</c><00:01:57.720><c> detection</c><00:01:58.200><c> systems</c>
+
+00:01:58.790 --> 00:01:58.800 align:start position:0%
+going to trigger some detection systems
+ 
+
+00:01:58.800 --> 00:02:01.350 align:start position:0%
+going to trigger some detection systems
+that<00:01:59.320><c> these</c><00:01:59.520><c> platforms</c><00:02:00.000><c> use</c><00:02:00.600><c> because</c><00:02:01.160><c> let's</c>
+
+00:02:01.350 --> 00:02:01.360 align:start position:0%
+that these platforms use because let's
+ 
+
+00:02:01.360 --> 00:02:02.910 align:start position:0%
+that these platforms use because let's
+be<00:02:01.480><c> honest,</c><00:02:01.960><c> if</c><00:02:02.080><c> they're</c><00:02:02.200><c> using</c><00:02:02.440><c> detection</c>
+
+00:02:02.910 --> 00:02:02.920 align:start position:0%
+be honest, if they're using detection
+ 
+
+00:02:02.920 --> 00:02:05.710 align:start position:0%
+be honest, if they're using detection
+systems<00:02:03.640><c> that</c><00:02:03.800><c> can</c><00:02:04.040><c> visually</c><00:02:04.600><c> see</c><00:02:05.120><c> and</c><00:02:05.360><c> flag</c>
+
+00:02:05.710 --> 00:02:05.720 align:start position:0%
+systems that can visually see and flag
+ 
+
+00:02:05.720 --> 00:02:07.630 align:start position:0%
+systems that can visually see and flag
+content,<00:02:06.479><c> then</c><00:02:06.640><c> you</c><00:02:06.800><c> better</c><00:02:07.080><c> believe</c><00:02:07.479><c> that</c>
+
+00:02:07.630 --> 00:02:07.640 align:start position:0%
+content, then you better believe that
+ 
+
+00:02:07.640 --> 00:02:10.109 align:start position:0%
+content, then you better believe that
+they<00:02:07.760><c> are</c><00:02:07.960><c> able</c><00:02:08.240><c> to</c><00:02:08.440><c> strip</c><00:02:08.840><c> every</c><00:02:09.240><c> last</c><00:02:09.800><c> text</c>
+
+00:02:10.109 --> 00:02:10.119 align:start position:0%
+they are able to strip every last text
+ 
+
+00:02:10.119 --> 00:02:12.270 align:start position:0%
+they are able to strip every last text
+value<00:02:10.640><c> out</c><00:02:10.880><c> of</c><00:02:10.960><c> your</c><00:02:11.160><c> image.</c><00:02:11.760><c> And</c><00:02:11.880><c> that's</c><00:02:12.040><c> just</c>
+
+00:02:12.270 --> 00:02:12.280 align:start position:0%
+value out of your image. And that's just
+ 
+
+00:02:12.280 --> 00:02:14.270 align:start position:0%
+value out of your image. And that's just
+auto<00:02:12.480><c> detected.</c><00:02:13.160><c> So,</c><00:02:13.320><c> what</c><00:02:13.440><c> happens?</c><00:02:14.120><c> Well,</c>
+
+00:02:14.270 --> 00:02:14.280 align:start position:0%
+auto detected. So, what happens? Well,
+ 
+
+00:02:14.280 --> 00:02:15.990 align:start position:0%
+auto detected. So, what happens? Well,
+your<00:02:14.440><c> reach</c><00:02:14.720><c> tanks,</c><00:02:15.360><c> your</c><00:02:15.480><c> engagement</c>
+
+00:02:15.990 --> 00:02:16.000 align:start position:0%
+your reach tanks, your engagement
+ 
+
+00:02:16.000 --> 00:02:17.630 align:start position:0%
+your reach tanks, your engagement
+flatlines,<00:02:16.760><c> and</c><00:02:16.880><c> nobody</c><00:02:17.160><c> ever</c><00:02:17.320><c> tells</c><00:02:17.520><c> you</c>
+
+00:02:17.630 --> 00:02:17.640 align:start position:0%
+flatlines, and nobody ever tells you
+ 
+
+00:02:17.640 --> 00:02:19.390 align:start position:0%
+flatlines, and nobody ever tells you
+why.<00:02:18.440><c> And</c><00:02:18.560><c> you're</c><00:02:18.680><c> stuck</c><00:02:18.959><c> sitting</c><00:02:19.240><c> there</c>
+
+00:02:19.390 --> 00:02:19.400 align:start position:0%
+why. And you're stuck sitting there
+ 
+
+00:02:19.400 --> 00:02:21.190 align:start position:0%
+why. And you're stuck sitting there
+thinking,<00:02:20.000><c> "What</c><00:02:20.160><c> did</c><00:02:20.280><c> I</c><00:02:20.320><c> do</c><00:02:20.480><c> wrong?"</c><00:02:20.880><c> That</c><00:02:21.080><c> is</c>
+
+00:02:21.190 --> 00:02:21.200 align:start position:0%
+thinking, "What did I do wrong?" That is
+ 
+
+00:02:21.200 --> 00:02:22.990 align:start position:0%
+thinking, "What did I do wrong?" That is
+called<00:02:21.440><c> shadow</c><00:02:21.720><c> banning.</c><00:02:22.240><c> And</c><00:02:22.560><c> by</c><00:02:22.720><c> the</c><00:02:22.800><c> time</c>
+
+00:02:22.990 --> 00:02:23.000 align:start position:0%
+called shadow banning. And by the time
+ 
+
+00:02:23.000 --> 00:02:24.270 align:start position:0%
+called shadow banning. And by the time
+you<00:02:23.080><c> notice</c><00:02:23.360><c> it,</c><00:02:23.600><c> the</c><00:02:23.680><c> damage</c><00:02:24.000><c> is</c><00:02:24.080><c> already</c>
+
+00:02:24.270 --> 00:02:24.280 align:start position:0%
+you notice it, the damage is already
+ 
+
+00:02:24.280 --> 00:02:26.190 align:start position:0%
+you notice it, the damage is already
+done.<00:02:24.680><c> Your</c><00:02:24.760><c> trust</c><00:02:25.000><c> score</c><00:02:25.240><c> is</c><00:02:25.360><c> ruined,</c><00:02:25.840><c> and</c>
+
+00:02:26.190 --> 00:02:26.200 align:start position:0%
+done. Your trust score is ruined, and
+ 
+
+00:02:26.200 --> 00:02:27.470 align:start position:0%
+done. Your trust score is ruined, and
+your<00:02:26.320><c> account</c><00:02:26.640><c> is</c><00:02:26.760><c> in</c><00:02:26.840><c> the</c><00:02:26.920><c> gutter</c><00:02:27.280><c> for</c><00:02:27.400><c> the</c>
+
+00:02:27.470 --> 00:02:27.480 align:start position:0%
+your account is in the gutter for the
+ 
+
+00:02:27.480 --> 00:02:29.430 align:start position:0%
+your account is in the gutter for the
+next<00:02:27.840><c> who</c><00:02:27.959><c> knows</c><00:02:28.200><c> how</c><00:02:28.320><c> long.</c><00:02:28.720><c> Platforms</c><00:02:29.160><c> also</c>
+
+00:02:29.430 --> 00:02:29.440 align:start position:0%
+next who knows how long. Platforms also
+ 
+
+00:02:29.440 --> 00:02:31.190 align:start position:0%
+next who knows how long. Platforms also
+keep<00:02:29.760><c> internal</c><00:02:30.120><c> signals</c><00:02:30.520><c> on</c><00:02:30.640><c> every</c><00:02:30.880><c> account</c>
+
+00:02:31.190 --> 00:02:31.200 align:start position:0%
+keep internal signals on every account
+ 
+
+00:02:31.200 --> 00:02:32.750 align:start position:0%
+keep internal signals on every account
+that<00:02:31.400><c> feed</c><00:02:31.640><c> into</c><00:02:31.880><c> how</c><00:02:32.000><c> your</c><00:02:32.160><c> content</c><00:02:32.560><c> gets</c>
+
+00:02:32.750 --> 00:02:32.760 align:start position:0%
+that feed into how your content gets
+ 
+
+00:02:32.760 --> 00:02:34.830 align:start position:0%
+that feed into how your content gets
+distributed,<00:02:33.440><c> and</c><00:02:33.560><c> an</c><00:02:33.680><c> AI</c><00:02:33.920><c> flag</c><00:02:34.360><c> drags</c><00:02:34.760><c> the</c>
+
+00:02:34.830 --> 00:02:34.840 align:start position:0%
+distributed, and an AI flag drags the
+ 
+
+00:02:34.840 --> 00:02:36.870 align:start position:0%
+distributed, and an AI flag drags the
+standing<00:02:35.320><c> down</c><00:02:35.800><c> across</c><00:02:36.280><c> everything</c><00:02:36.760><c> you</c>
+
+00:02:36.870 --> 00:02:36.880 align:start position:0%
+standing down across everything you
+ 
+
+00:02:36.880 --> 00:02:39.270 align:start position:0%
+standing down across everything you
+post,<00:02:37.520><c> not</c><00:02:37.800><c> just</c><00:02:38.080><c> the</c><00:02:38.200><c> flagged</c><00:02:38.560><c> image.</c><00:02:39.080><c> And</c><00:02:39.200><c> if</c>
+
+00:02:39.270 --> 00:02:39.280 align:start position:0%
+post, not just the flagged image. And if
+ 
+
+00:02:39.280 --> 00:02:41.030 align:start position:0%
+post, not just the flagged image. And if
+you're<00:02:39.440><c> running</c><00:02:39.720><c> AI</c><00:02:40.000><c> influencer</c><00:02:40.440><c> pages,</c>
+
+00:02:41.030 --> 00:02:41.040 align:start position:0%
+you're running AI influencer pages,
+ 
+
+00:02:41.040 --> 00:02:42.710 align:start position:0%
+you're running AI influencer pages,
+repeated<00:02:41.440><c> detection</c><00:02:41.920><c> can</c><00:02:42.120><c> escalate</c><00:02:42.560><c> from</c>
+
+00:02:42.710 --> 00:02:42.720 align:start position:0%
+repeated detection can escalate from
+ 
+
+00:02:42.720 --> 00:02:44.390 align:start position:0%
+repeated detection can escalate from
+getting<00:02:43.040><c> suppressed</c><00:02:43.800><c> to</c><00:02:44.000><c> getting</c><00:02:44.280><c> your</c>
+
+00:02:44.390 --> 00:02:44.400 align:start position:0%
+getting suppressed to getting your
+ 
+
+00:02:44.400 --> 00:02:46.030 align:start position:0%
+getting suppressed to getting your
+account<00:02:44.720><c> banned</c><00:02:45.000><c> outright.</c><00:02:45.600><c> We</c><00:02:45.760><c> all</c><00:02:45.880><c> know</c>
+
+00:02:46.030 --> 00:02:46.040 align:start position:0%
+account banned outright. We all know
+ 
+
+00:02:46.040 --> 00:02:47.830 align:start position:0%
+account banned outright. We all know
+somebody,<00:02:46.600><c> and</c><00:02:46.720><c> that</c><00:02:46.840><c> just</c><00:02:47.000><c> wipes</c><00:02:47.280><c> out</c><00:02:47.480><c> months</c>
+
+00:02:47.830 --> 00:02:47.840 align:start position:0%
+somebody, and that just wipes out months
+ 
+
+00:02:47.840 --> 00:02:49.550 align:start position:0%
+somebody, and that just wipes out months
+of<00:02:47.959><c> growth</c><00:02:48.400><c> overnight.</c><00:02:49.120><c> And</c><00:02:49.240><c> obviously,</c>
+
+00:02:49.550 --> 00:02:49.560 align:start position:0%
+of growth overnight. And obviously,
+ 
+
+00:02:49.560 --> 00:02:51.150 align:start position:0%
+of growth overnight. And obviously,
+these<00:02:49.720><c> platforms</c><00:02:50.120><c> will</c><00:02:50.200><c> never</c><00:02:50.400><c> confirm</c><00:02:50.880><c> any</c>
+
+00:02:51.150 --> 00:02:51.160 align:start position:0%
+these platforms will never confirm any
+ 
+
+00:02:51.160 --> 00:02:52.790 align:start position:0%
+these platforms will never confirm any
+of<00:02:51.240><c> this</c><00:02:51.560><c> is</c><00:02:51.680><c> happening</c><00:02:52.040><c> to</c><00:02:52.200><c> you,</c><00:02:52.520><c> but</c><00:02:52.640><c> that's</c>
+
+00:02:52.790 --> 00:02:52.800 align:start position:0%
+of this is happening to you, but that's
+ 
+
+00:02:52.800 --> 00:02:54.550 align:start position:0%
+of this is happening to you, but that's
+the<00:02:52.920><c> whole</c><00:02:53.040><c> point.</c><00:02:53.720><c> If</c><00:02:53.840><c> they</c><00:02:53.920><c> just</c><00:02:54.120><c> put</c><00:02:54.240><c> it</c><00:02:54.360><c> all</c>
+
+00:02:54.550 --> 00:02:54.560 align:start position:0%
+the whole point. If they just put it all
+ 
+
+00:02:54.560 --> 00:02:56.630 align:start position:0%
+the whole point. If they just put it all
+out<00:02:54.680><c> on</c><00:02:54.760><c> the</c><00:02:54.840><c> table</c><00:02:55.400><c> explaining</c><00:02:55.880><c> exactly</c><00:02:56.440><c> how</c>
+
+00:02:56.630 --> 00:02:56.640 align:start position:0%
+out on the table explaining exactly how
+ 
+
+00:02:56.640 --> 00:02:58.590 align:start position:0%
+out on the table explaining exactly how
+they<00:02:56.800><c> were</c><00:02:56.920><c> detecting</c><00:02:57.440><c> that</c><00:02:57.600><c> people</c><00:02:58.080><c> are</c>
+
+00:02:58.590 --> 00:02:58.600 align:start position:0%
+they were detecting that people are
+ 
+
+00:02:58.600 --> 00:03:00.350 align:start position:0%
+they were detecting that people are
+going<00:02:58.840><c> against</c><00:02:59.120><c> their</c><00:02:59.239><c> terms</c><00:02:59.560><c> of</c><00:02:59.640><c> service,</c>
+
+00:03:00.350 --> 00:03:00.360 align:start position:0%
+going against their terms of service,
+ 
+
+00:03:00.360 --> 00:03:02.110 align:start position:0%
+going against their terms of service,
+then<00:03:00.519><c> obviously,</c><00:03:00.959><c> everybody</c><00:03:01.280><c> would</c><00:03:01.400><c> adjust,</c>
+
+00:03:02.110 --> 00:03:02.120 align:start position:0%
+then obviously, everybody would adjust,
+ 
+
+00:03:02.120 --> 00:03:03.670 align:start position:0%
+then obviously, everybody would adjust,
+and<00:03:02.400><c> they</c><00:03:02.519><c> would</c><00:03:02.680><c> have</c><00:03:02.880><c> to</c><00:03:03.120><c> switch</c><00:03:03.400><c> up</c><00:03:03.480><c> the</c><00:03:03.560><c> way</c>
+
+00:03:03.670 --> 00:03:03.680 align:start position:0%
+and they would have to switch up the way
+ 
+
+00:03:03.680 --> 00:03:05.310 align:start position:0%
+and they would have to switch up the way
+that<00:03:03.840><c> they</c><00:03:03.959><c> detect</c><00:03:04.640><c> content</c><00:03:05.000><c> that</c><00:03:05.120><c> doesn't</c>
+
+00:03:05.310 --> 00:03:05.320 align:start position:0%
+that they detect content that doesn't
+ 
+
+00:03:05.320 --> 00:03:07.270 align:start position:0%
+that they detect content that doesn't
+align<00:03:05.640><c> with</c><00:03:05.760><c> their</c><00:03:06.200><c> guidelines.</c><00:03:06.959><c> So,</c><00:03:07.120><c> what's</c>
+
+00:03:07.270 --> 00:03:07.280 align:start position:0%
+align with their guidelines. So, what's
+ 
+
+00:03:07.280 --> 00:03:09.190 align:start position:0%
+align with their guidelines. So, what's
+the<00:03:07.400><c> solution?</c><00:03:08.040><c> That's</c><00:03:08.200><c> exactly</c><00:03:08.640><c> why</c><00:03:08.800><c> I</c><00:03:08.880><c> built</c>
+
+00:03:09.190 --> 00:03:09.200 align:start position:0%
+the solution? That's exactly why I built
+ 
+
+00:03:09.200 --> 00:03:11.310 align:start position:0%
+the solution? That's exactly why I built
+Metadata<00:03:09.640><c> Forge.</c><00:03:10.400><c> It</c><00:03:10.519><c> fixes</c><00:03:10.840><c> the</c><00:03:10.920><c> problem</c><00:03:11.239><c> at</c>
+
+00:03:11.310 --> 00:03:11.320 align:start position:0%
+Metadata Forge. It fixes the problem at
+ 
+
+00:03:11.320 --> 00:03:13.830 align:start position:0%
+Metadata Forge. It fixes the problem at
+the<00:03:11.400><c> source.</c><00:03:12.040><c> It</c><00:03:12.160><c> strips</c><00:03:12.640><c> all</c><00:03:12.880><c> the</c><00:03:13.040><c> AI</c><00:03:13.600><c> and</c>
+
+00:03:13.830 --> 00:03:13.840 align:start position:0%
+the source. It strips all the AI and
+ 
+
+00:03:13.840 --> 00:03:15.070 align:start position:0%
+the source. It strips all the AI and
+workflow<00:03:14.160><c> metadata</c><00:03:14.760><c> out</c><00:03:14.880><c> of</c><00:03:14.959><c> your</c>
+
+00:03:15.070 --> 00:03:15.080 align:start position:0%
+workflow metadata out of your
+ 
+
+00:03:15.080 --> 00:03:17.070 align:start position:0%
+workflow metadata out of your
+generations,<00:03:16.000><c> and</c><00:03:16.120><c> then</c><00:03:16.200><c> it</c><00:03:16.320><c> repopulates</c>
+
+00:03:17.070 --> 00:03:17.080 align:start position:0%
+generations, and then it repopulates
+ 
+
+00:03:17.080 --> 00:03:19.870 align:start position:0%
+generations, and then it repopulates
+them<00:03:17.480><c> with</c><00:03:17.760><c> realistic</c><00:03:18.360><c> iPhone</c><00:03:18.760><c> XIF</c><00:03:19.120><c> data.</c><00:03:19.680><c> So,</c>
+
+00:03:19.870 --> 00:03:19.880 align:start position:0%
+them with realistic iPhone XIF data. So,
+ 
+
+00:03:19.880 --> 00:03:21.550 align:start position:0%
+them with realistic iPhone XIF data. So,
+every<00:03:20.120><c> image</c><00:03:20.360><c> you</c><00:03:20.440><c> post</c><00:03:20.800><c> reads</c><00:03:21.160><c> like</c><00:03:21.280><c> it</c><00:03:21.360><c> came</c>
+
+00:03:21.550 --> 00:03:21.560 align:start position:0%
+every image you post reads like it came
+ 
+
+00:03:21.560 --> 00:03:23.509 align:start position:0%
+every image you post reads like it came
+straight<00:03:22.000><c> off</c><00:03:22.160><c> of</c><00:03:22.280><c> a</c><00:03:22.560><c> phone</c><00:03:22.800><c> camera</c><00:03:23.120><c> roll.</c><00:03:23.440><c> So,</c>
+
+00:03:23.509 --> 00:03:23.519 align:start position:0%
+straight off of a phone camera roll. So,
+ 
+
+00:03:23.519 --> 00:03:25.190 align:start position:0%
+straight off of a phone camera roll. So,
+let<00:03:23.640><c> me</c><00:03:23.720><c> walk</c><00:03:23.920><c> you</c><00:03:24.000><c> through</c><00:03:24.120><c> the</c><00:03:24.200><c> pack.</c><00:03:25.000><c> First</c>
+
+00:03:25.190 --> 00:03:25.200 align:start position:0%
+let me walk you through the pack. First
+ 
+
+00:03:25.200 --> 00:03:27.110 align:start position:0%
+let me walk you through the pack. First
+up<00:03:25.400><c> is</c><00:03:25.600><c> the</c><00:03:25.720><c> Read</c><00:03:25.959><c> Metadata</c><00:03:26.400><c> node.</c><00:03:26.840><c> This</c><00:03:27.000><c> is</c>
+
+00:03:27.110 --> 00:03:27.120 align:start position:0%
+up is the Read Metadata node. This is
+ 
+
+00:03:27.120 --> 00:03:28.910 align:start position:0%
+up is the Read Metadata node. This is
+the<00:03:27.239><c> one</c><00:03:27.480><c> that</c><00:03:27.720><c> shows</c><00:03:27.959><c> you</c><00:03:28.040><c> the</c><00:03:28.120><c> problem.</c><00:03:28.560><c> Drop</c>
+
+00:03:28.910 --> 00:03:28.920 align:start position:0%
+the one that shows you the problem. Drop
+ 
+
+00:03:28.920 --> 00:03:30.630 align:start position:0%
+the one that shows you the problem. Drop
+any<00:03:29.160><c> image</c><00:03:29.480><c> into</c><00:03:29.720><c> it</c><00:03:29.959><c> just</c><00:03:30.160><c> as</c><00:03:30.280><c> you</c><00:03:30.400><c> would</c><00:03:30.519><c> with</c>
+
+00:03:30.630 --> 00:03:30.640 align:start position:0%
+any image into it just as you would with
+ 
+
+00:03:30.640 --> 00:03:32.710 align:start position:0%
+any image into it just as you would with
+a<00:03:30.680><c> Load</c><00:03:30.880><c> Image</c><00:03:31.160><c> node,</c><00:03:31.760><c> and</c><00:03:31.880><c> it</c><00:03:32.000><c> outputs</c>
+
+00:03:32.710 --> 00:03:32.720 align:start position:0%
+a Load Image node, and it outputs
+ 
+
+00:03:32.720 --> 00:03:34.630 align:start position:0%
+a Load Image node, and it outputs
+everything<00:03:33.320><c> that</c><00:03:33.519><c> the</c><00:03:33.600><c> image</c><00:03:33.800><c> is</c><00:03:33.920><c> carrying</c><00:03:34.480><c> as</c>
+
+00:03:34.630 --> 00:03:34.640 align:start position:0%
+everything that the image is carrying as
+ 
+
+00:03:34.640 --> 00:03:36.630 align:start position:0%
+everything that the image is carrying as
+both<00:03:34.920><c> text</c><00:03:35.280><c> and</c><00:03:35.440><c> JSON,</c><00:03:35.959><c> so</c><00:03:36.120><c> you</c><00:03:36.200><c> can</c><00:03:36.360><c> see</c><00:03:36.519><c> your</c>
+
+00:03:36.630 --> 00:03:36.640 align:start position:0%
+both text and JSON, so you can see your
+ 
+
+00:03:36.640 --> 00:03:38.390 align:start position:0%
+both text and JSON, so you can see your
+entire<00:03:37.080><c> workflow</c><00:03:37.519><c> buried</c><00:03:37.920><c> inside</c><00:03:38.239><c> of</c><00:03:38.320><c> the</c>
+
+00:03:38.390 --> 00:03:38.400 align:start position:0%
+entire workflow buried inside of the
+ 
+
+00:03:38.400 --> 00:03:40.350 align:start position:0%
+entire workflow buried inside of the
+file.<00:03:38.920><c> So,</c><00:03:39.040><c> you</c><00:03:39.120><c> can</c><00:03:39.280><c> see</c><00:03:39.440><c> here,</c><00:03:39.880><c> if</c><00:03:40.040><c> I</c><00:03:40.120><c> just</c>
+
+00:03:40.350 --> 00:03:40.360 align:start position:0%
+file. So, you can see here, if I just
+ 
+
+00:03:40.360 --> 00:03:42.630 align:start position:0%
+file. So, you can see here, if I just
+run<00:03:40.680><c> up</c><00:03:40.880><c> to</c><00:03:41.360><c> this</c><00:03:41.600><c> Check</c><00:03:41.880><c> Stock</c><00:03:42.200><c> Metadata</c>
+
+00:03:42.630 --> 00:03:42.640 align:start position:0%
+run up to this Check Stock Metadata
+ 
+
+00:03:42.640 --> 00:03:44.830 align:start position:0%
+run up to this Check Stock Metadata
+node,<00:03:43.120><c> you</c><00:03:43.239><c> can</c><00:03:43.400><c> see</c><00:03:43.840><c> my</c><00:03:43.959><c> entire</c><00:03:44.360><c> workflow</c>
+
+00:03:44.830 --> 00:03:44.840 align:start position:0%
+node, you can see my entire workflow
+ 
+
+00:03:44.840 --> 00:03:46.830 align:start position:0%
+node, you can see my entire workflow
+JSON<00:03:45.360><c> that</c><00:03:45.519><c> I</c><00:03:45.600><c> used</c><00:03:45.800><c> to</c><00:03:45.880><c> create</c><00:03:46.160><c> this</c><00:03:46.320><c> image.</c>
+
+00:03:46.830 --> 00:03:46.840 align:start position:0%
+JSON that I used to create this image.
+ 
+
+00:03:46.840 --> 00:03:48.430 align:start position:0%
+JSON that I used to create this image.
+And<00:03:46.959><c> it</c><00:03:47.040><c> would</c><00:03:47.200><c> keep</c><00:03:47.360><c> going</c><00:03:47.600><c> on</c><00:03:47.720><c> here,</c><00:03:47.959><c> but</c>
+
+00:03:48.430 --> 00:03:48.440 align:start position:0%
+And it would keep going on here, but
+ 
+
+00:03:48.440 --> 00:03:50.509 align:start position:0%
+And it would keep going on here, but
+obviously,<00:03:48.880><c> there</c><00:03:49.160><c> is</c><00:03:49.519><c> a</c><00:03:49.880><c> character</c><00:03:50.280><c> limit</c>
+
+00:03:50.509 --> 00:03:50.519 align:start position:0%
+obviously, there is a character limit
+ 
+
+00:03:50.519 --> 00:03:53.150 align:start position:0%
+obviously, there is a character limit
+here.<00:03:51.000><c> But</c><00:03:51.120><c> this</c><00:03:51.320><c> JSON</c><00:03:51.760><c> is</c><00:03:52.000><c> massive,</c><00:03:52.680><c> and</c><00:03:52.880><c> that</c>
+
+00:03:53.150 --> 00:03:53.160 align:start position:0%
+here. But this JSON is massive, and that
+ 
+
+00:03:53.160 --> 00:03:55.030 align:start position:0%
+here. But this JSON is massive, and that
+is<00:03:53.280><c> going</c><00:03:53.480><c> to</c><00:03:53.560><c> trigger</c><00:03:54.240><c> some</c><00:03:54.760><c> hidden</c>
+
+00:03:55.030 --> 00:03:55.040 align:start position:0%
+is going to trigger some hidden
+ 
+
+00:03:55.040 --> 00:03:57.030 align:start position:0%
+is going to trigger some hidden
+detection<00:03:55.480><c> systems</c><00:03:56.120><c> that</c><00:03:56.440><c> platforms</c><00:03:56.920><c> like</c>
+
+00:03:57.030 --> 00:03:57.040 align:start position:0%
+detection systems that platforms like
+ 
+
+00:03:57.040 --> 00:03:58.750 align:start position:0%
+detection systems that platforms like
+Meta<00:03:57.280><c> use.</c><00:03:57.800><c> And</c><00:03:57.920><c> you</c><00:03:58.000><c> can</c><00:03:58.120><c> see</c><00:03:58.320><c> this</c><00:03:58.520><c> is</c><00:03:58.640><c> an</c>
+
+00:03:58.750 --> 00:03:58.760 align:start position:0%
+Meta use. And you can see this is an
+ 
+
+00:03:58.760 --> 00:04:00.590 align:start position:0%
+Meta use. And you can see this is an
+AI-generated<00:03:59.360><c> image.</c><00:03:59.720><c> It</c><00:03:59.800><c> has</c><00:03:59.960><c> the</c><00:04:00.040><c> ComfyUI</c>
+
+00:04:00.590 --> 00:04:00.600 align:start position:0%
+AI-generated image. It has the ComfyUI
+ 
+
+00:04:00.600 --> 00:04:02.590 align:start position:0%
+AI-generated image. It has the ComfyUI
+tag<00:04:00.960><c> on</c><00:04:01.080><c> it.</c><00:04:01.280><c> But,</c><00:04:01.440><c> moving</c><00:04:01.720><c> on,</c><00:04:02.080><c> next</c><00:04:02.360><c> up</c><00:04:02.520><c> we</c>
+
+00:04:02.590 --> 00:04:02.600 align:start position:0%
+tag on it. But, moving on, next up we
+ 
+
+00:04:02.600 --> 00:04:05.030 align:start position:0%
+tag on it. But, moving on, next up we
+have<00:04:02.800><c> the</c><00:04:03.000><c> iPhone</c><00:04:03.440><c> metadata</c><00:04:04.080><c> preset</c><00:04:04.600><c> node.</c>
+
+00:04:05.030 --> 00:04:05.040 align:start position:0%
+have the iPhone metadata preset node.
+ 
+
+00:04:05.040 --> 00:04:06.870 align:start position:0%
+have the iPhone metadata preset node.
+This<00:04:05.200><c> generates</c><00:04:05.720><c> a</c><00:04:05.800><c> complete</c><00:04:06.320><c> realistic</c>
+
+00:04:06.870 --> 00:04:06.880 align:start position:0%
+This generates a complete realistic
+ 
+
+00:04:06.880 --> 00:04:08.949 align:start position:0%
+This generates a complete realistic
+iPhone<00:04:07.320><c> XIF</c><00:04:07.680><c> profile.</c><00:04:08.400><c> So,</c><00:04:08.560><c> you</c><00:04:08.680><c> pick</c><00:04:08.840><c> your</c>
+
+00:04:08.949 --> 00:04:08.959 align:start position:0%
+iPhone XIF profile. So, you pick your
+ 
+
+00:04:08.959 --> 00:04:11.230 align:start position:0%
+iPhone XIF profile. So, you pick your
+device<00:04:09.720><c> via</c><00:04:09.959><c> a</c><00:04:10.000><c> drop-down</c><00:04:10.520><c> list.</c><00:04:11.040><c> You</c><00:04:11.120><c> can</c>
+
+00:04:11.230 --> 00:04:11.240 align:start position:0%
+device via a drop-down list. You can
+ 
+
+00:04:11.240 --> 00:04:13.270 align:start position:0%
+device via a drop-down list. You can
+pick<00:04:11.480><c> main</c><00:04:11.720><c> camera</c><00:04:12.120><c> or</c><00:04:12.240><c> selfie</c><00:04:12.600><c> camera,</c><00:04:13.120><c> and</c>
+
+00:04:13.270 --> 00:04:13.280 align:start position:0%
+pick main camera or selfie camera, and
+ 
+
+00:04:13.280 --> 00:04:15.110 align:start position:0%
+pick main camera or selfie camera, and
+you<00:04:13.320><c> can</c><00:04:13.480><c> pick</c><00:04:13.840><c> your</c><00:04:14.040><c> date</c><00:04:14.400><c> time</c><00:04:14.680><c> mode.</c><00:04:15.040><c> You</c>
+
+00:04:15.110 --> 00:04:15.120 align:start position:0%
+you can pick your date time mode. You
+ 
+
+00:04:15.120 --> 00:04:16.750 align:start position:0%
+you can pick your date time mode. You
+can<00:04:15.240><c> use</c><00:04:15.400><c> the</c><00:04:15.480><c> current</c><00:04:15.840><c> time</c><00:04:16.040><c> of</c><00:04:16.120><c> the</c><00:04:16.200><c> day</c><00:04:16.519><c> as</c>
+
+00:04:16.750 --> 00:04:16.760 align:start position:0%
+can use the current time of the day as
+ 
+
+00:04:16.760 --> 00:04:18.710 align:start position:0%
+can use the current time of the day as
+it<00:04:16.880><c> is</c><00:04:17.000><c> right</c><00:04:17.200><c> now</c><00:04:17.600><c> on</c><00:04:17.760><c> your</c><00:04:17.880><c> local</c><00:04:18.120><c> device.</c>
+
+00:04:18.710 --> 00:04:18.720 align:start position:0%
+it is right now on your local device.
+ 
+
+00:04:18.720 --> 00:04:20.349 align:start position:0%
+it is right now on your local device.
+You<00:04:18.840><c> can</c><00:04:18.959><c> set</c><00:04:19.120><c> a</c><00:04:19.160><c> manual</c><00:04:19.560><c> date,</c><00:04:20.079><c> or</c><00:04:20.120><c> you</c><00:04:20.200><c> can</c>
+
+00:04:20.349 --> 00:04:20.359 align:start position:0%
+You can set a manual date, or you can
+ 
+
+00:04:20.359 --> 00:04:23.390 align:start position:0%
+You can set a manual date, or you can
+randomize<00:04:21.120><c> it</c><00:04:21.400><c> across</c><00:04:21.880><c> a</c><00:04:22.000><c> range</c><00:04:22.400><c> of</c><00:04:22.520><c> days,</c><00:04:23.040><c> so</c>
+
+00:04:23.390 --> 00:04:23.400 align:start position:0%
+randomize it across a range of days, so
+ 
+
+00:04:23.400 --> 00:04:25.110 align:start position:0%
+randomize it across a range of days, so
+a<00:04:23.520><c> big</c><00:04:23.720><c> batch</c><00:04:24.040><c> doesn't</c><00:04:24.360><c> all</c><00:04:24.520><c> share</c><00:04:24.760><c> the</c><00:04:24.880><c> same</c>
+
+00:04:25.110 --> 00:04:25.120 align:start position:0%
+a big batch doesn't all share the same
+ 
+
+00:04:25.120 --> 00:04:26.870 align:start position:0%
+a big batch doesn't all share the same
+exact<00:04:25.400><c> timestamp,</c><00:04:26.120><c> which</c><00:04:26.320><c> is</c><00:04:26.440><c> a</c><00:04:26.480><c> giveaway</c>
+
+00:04:26.870 --> 00:04:26.880 align:start position:0%
+exact timestamp, which is a giveaway
+ 
+
+00:04:26.880 --> 00:04:28.670 align:start position:0%
+exact timestamp, which is a giveaway
+itself.<00:04:27.480><c> And</c><00:04:27.560><c> if</c><00:04:27.640><c> you</c><00:04:27.720><c> want</c><00:04:27.919><c> location</c><00:04:28.360><c> data</c>
+
+00:04:28.670 --> 00:04:28.680 align:start position:0%
+itself. And if you want location data
+ 
+
+00:04:28.680 --> 00:04:30.870 align:start position:0%
+itself. And if you want location data
+baked<00:04:29.000><c> in</c><00:04:29.120><c> there,</c><00:04:29.600><c> there's</c><00:04:29.880><c> options</c><00:04:30.280><c> for</c><00:04:30.400><c> GPS</c>
+
+00:04:30.870 --> 00:04:30.880 align:start position:0%
+baked in there, there's options for GPS
+ 
+
+00:04:30.880 --> 00:04:32.670 align:start position:0%
+baked in there, there's options for GPS
+coordinates,<00:04:31.360><c> as</c><00:04:31.480><c> well.</c><00:04:32.280><c> If</c><00:04:32.400><c> you're</c><00:04:32.480><c> wanting</c>
+
+00:04:32.670 --> 00:04:32.680 align:start position:0%
+coordinates, as well. If you're wanting
+ 
+
+00:04:32.680 --> 00:04:34.350 align:start position:0%
+coordinates, as well. If you're wanting
+to<00:04:32.760><c> just</c><00:04:32.880><c> completely</c><00:04:33.400><c> erase</c><00:04:33.760><c> the</c><00:04:33.840><c> metadata</c>
+
+00:04:34.350 --> 00:04:34.360 align:start position:0%
+to just completely erase the metadata
+ 
+
+00:04:34.360 --> 00:04:36.030 align:start position:0%
+to just completely erase the metadata
+from<00:04:34.560><c> a</c><00:04:34.720><c> from</c><00:04:34.880><c> an</c><00:04:35.000><c> image,</c><00:04:35.360><c> you</c><00:04:35.440><c> can</c><00:04:35.600><c> do</c><00:04:35.760><c> that</c><00:04:35.919><c> by</c>
+
+00:04:36.030 --> 00:04:36.040 align:start position:0%
+from a from an image, you can do that by
+ 
+
+00:04:36.040 --> 00:04:37.590 align:start position:0%
+from a from an image, you can do that by
+just<00:04:36.280><c> stripping</c><00:04:36.600><c> the</c><00:04:36.680><c> metadata</c><00:04:37.160><c> and</c><00:04:37.320><c> turning</c>
+
+00:04:37.590 --> 00:04:37.600 align:start position:0%
+just stripping the metadata and turning
+ 
+
+00:04:37.600 --> 00:04:39.190 align:start position:0%
+just stripping the metadata and turning
+this<00:04:37.760><c> boolean</c><00:04:38.120><c> value</c><00:04:38.400><c> to</c><00:04:38.520><c> true.</c><00:04:39.000><c> But,</c><00:04:39.160><c> I</c>
+
+00:04:39.190 --> 00:04:39.200 align:start position:0%
+this boolean value to true. But, I
+ 
+
+00:04:39.200 --> 00:04:41.590 align:start position:0%
+this boolean value to true. But, I
+promise<00:04:39.640><c> that</c><00:04:39.840><c> this</c><00:04:40.080><c> is</c><00:04:40.320><c> a</c><00:04:40.440><c> way</c><00:04:40.720><c> safer</c><00:04:41.120><c> way</c><00:04:41.440><c> to</c>
+
+00:04:41.590 --> 00:04:41.600 align:start position:0%
+promise that this is a way safer way to
+ 
+
+00:04:41.600 --> 00:04:43.670 align:start position:0%
+promise that this is a way safer way to
+go<00:04:41.720><c> about</c><00:04:41.960><c> uploading</c><00:04:42.320><c> your</c><00:04:42.440><c> pictures</c><00:04:43.080><c> on</c>
+
+00:04:43.670 --> 00:04:43.680 align:start position:0%
+go about uploading your pictures on
+ 
+
+00:04:43.680 --> 00:04:45.750 align:start position:0%
+go about uploading your pictures on
+social<00:04:44.000><c> media</c><00:04:44.200><c> platforms.</c><00:04:44.960><c> So,</c><00:04:45.120><c> last</c><00:04:45.480><c> up</c><00:04:45.640><c> we</c>
+
+00:04:45.750 --> 00:04:45.760 align:start position:0%
+social media platforms. So, last up we
+ 
+
+00:04:45.760 --> 00:04:47.909 align:start position:0%
+social media platforms. So, last up we
+have<00:04:46.080><c> the</c><00:04:46.240><c> save</c><00:04:46.560><c> image</c><00:04:46.880><c> with</c><00:04:47.040><c> metadata</c><00:04:47.480><c> node.</c>
+
+00:04:47.909 --> 00:04:47.919 align:start position:0%
+have the save image with metadata node.
+ 
+
+00:04:47.919 --> 00:04:49.510 align:start position:0%
+have the save image with metadata node.
+This<00:04:48.080><c> is</c><00:04:48.160><c> where</c><00:04:48.280><c> it</c><00:04:48.400><c> all</c><00:04:48.480><c> comes</c><00:04:48.720><c> together.</c><00:04:49.400><c> It</c>
+
+00:04:49.510 --> 00:04:49.520 align:start position:0%
+This is where it all comes together. It
+ 
+
+00:04:49.520 --> 00:04:51.510 align:start position:0%
+This is where it all comes together. It
+strips<00:04:49.840><c> every</c><00:04:50.120><c> trace</c><00:04:50.560><c> of</c><00:04:50.680><c> ComfyUI</c><00:04:51.200><c> workflow</c>
+
+00:04:51.510 --> 00:04:51.520 align:start position:0%
+strips every trace of ComfyUI workflow
+ 
+
+00:04:51.520 --> 00:04:53.070 align:start position:0%
+strips every trace of ComfyUI workflow
+data<00:04:51.880><c> and</c><00:04:52.040><c> saves</c><00:04:52.320><c> your</c><00:04:52.440><c> image</c><00:04:52.800><c> with</c><00:04:52.919><c> that</c>
+
+00:04:53.070 --> 00:04:53.080 align:start position:0%
+data and saves your image with that
+ 
+
+00:04:53.080 --> 00:04:55.070 align:start position:0%
+data and saves your image with that
+spoofed<00:04:53.440><c> iPhone</c><00:04:53.760><c> metadata</c><00:04:54.160><c> applied.</c><00:04:54.840><c> You</c><00:04:54.919><c> can</c>
+
+00:04:55.070 --> 00:04:55.080 align:start position:0%
+spoofed iPhone metadata applied. You can
+ 
+
+00:04:55.080 --> 00:04:56.990 align:start position:0%
+spoofed iPhone metadata applied. You can
+set<00:04:55.240><c> your</c><00:04:55.360><c> file</c><00:04:55.640><c> name</c><00:04:55.840><c> prefix,</c><00:04:56.680><c> set</c><00:04:56.880><c> your</c>
+
+00:04:56.990 --> 00:04:57.000 align:start position:0%
+set your file name prefix, set your
+ 
+
+00:04:57.000 --> 00:04:58.830 align:start position:0%
+set your file name prefix, set your
+quality,<00:04:57.600><c> and</c><00:04:57.760><c> you're</c><00:04:57.840><c> done.</c><00:04:58.320><c> I</c><00:04:58.400><c> recommend</c>
+
+00:04:58.830 --> 00:04:58.840 align:start position:0%
+quality, and you're done. I recommend
+ 
+
+00:04:58.840 --> 00:05:00.990 align:start position:0%
+quality, and you're done. I recommend
+probably<00:04:59.200><c> keeping</c><00:04:59.440><c> this</c><00:04:59.600><c> above</c><00:04:59.960><c> 95,</c><00:05:00.640><c> but</c><00:05:00.840><c> just</c>
+
+00:05:00.990 --> 00:05:01.000 align:start position:0%
+probably keeping this above 95, but just
+ 
+
+00:05:01.000 --> 00:05:02.590 align:start position:0%
+probably keeping this above 95, but just
+in<00:05:01.080><c> case</c><00:05:01.320><c> you</c><00:05:01.400><c> have</c><00:05:01.800><c> too</c><00:05:02.000><c> high</c><00:05:02.120><c> of</c><00:05:02.200><c> a</c><00:05:02.240><c> quality</c>
+
+00:05:02.590 --> 00:05:02.600 align:start position:0%
+in case you have too high of a quality
+ 
+
+00:05:02.600 --> 00:05:04.310 align:start position:0%
+in case you have too high of a quality
+of<00:05:02.680><c> image,</c><00:05:03.080><c> which</c><00:05:03.280><c> is</c><00:05:03.400><c> a</c><00:05:03.440><c> problem</c><00:05:03.760><c> sometimes,</c>
+
+00:05:04.310 --> 00:05:04.320 align:start position:0%
+of image, which is a problem sometimes,
+ 
+
+00:05:04.320 --> 00:05:05.790 align:start position:0%
+of image, which is a problem sometimes,
+you<00:05:04.400><c> can</c><00:05:04.520><c> turn</c><00:05:04.680><c> it</c><00:05:04.760><c> down</c><00:05:04.919><c> a</c><00:05:04.960><c> little</c><00:05:05.080><c> bit.</c><00:05:05.680><c> And</c>
+
+00:05:05.790 --> 00:05:05.800 align:start position:0%
+you can turn it down a little bit. And
+ 
+
+00:05:05.800 --> 00:05:07.310 align:start position:0%
+you can turn it down a little bit. And
+so,<00:05:05.919><c> I</c><00:05:06.000><c> just</c><00:05:06.160><c> ran</c><00:05:06.320><c> a</c><00:05:06.360><c> sample</c><00:05:06.680><c> generation</c><00:05:07.160><c> here.</c>
+
+00:05:07.310 --> 00:05:07.320 align:start position:0%
+so, I just ran a sample generation here.
+ 
+
+00:05:07.320 --> 00:05:09.390 align:start position:0%
+so, I just ran a sample generation here.
+We<00:05:07.400><c> can</c><00:05:07.560><c> see,</c><00:05:08.080><c> obviously,</c><00:05:08.960><c> we</c><00:05:09.080><c> take</c><00:05:09.320><c> our</c>
+
+00:05:09.390 --> 00:05:09.400 align:start position:0%
+We can see, obviously, we take our
+ 
+
+00:05:09.400 --> 00:05:11.950 align:start position:0%
+We can see, obviously, we take our
+image,<00:05:10.200><c> we</c><00:05:10.320><c> can</c><00:05:10.440><c> view</c><00:05:10.760><c> our</c><00:05:11.040><c> metadata</c><00:05:11.440><c> here</c>
+
+00:05:11.950 --> 00:05:11.960 align:start position:0%
+image, we can view our metadata here
+ 
+
+00:05:11.960 --> 00:05:13.950 align:start position:0%
+image, we can view our metadata here
+before<00:05:12.320><c> it</c><00:05:12.400><c> gets</c><00:05:12.600><c> stripped.</c><00:05:13.320><c> And</c><00:05:13.480><c> then,</c><00:05:13.800><c> the</c>
+
+00:05:13.950 --> 00:05:13.960 align:start position:0%
+before it gets stripped. And then, the
+ 
+
+00:05:13.960 --> 00:05:16.190 align:start position:0%
+before it gets stripped. And then, the
+iPhone<00:05:14.240><c> metadata</c><00:05:14.640><c> preset</c><00:05:15.320><c> will</c><00:05:15.640><c> overwrite</c>
+
+00:05:16.190 --> 00:05:16.200 align:start position:0%
+iPhone metadata preset will overwrite
+ 
+
+00:05:16.200 --> 00:05:19.390 align:start position:0%
+iPhone metadata preset will overwrite
+the<00:05:16.320><c> metadata</c><00:05:16.760><c> file</c><00:05:17.400><c> and</c><00:05:18.000><c> output</c><00:05:18.919><c> realistic</c>
+
+00:05:19.390 --> 00:05:19.400 align:start position:0%
+the metadata file and output realistic
+ 
+
+00:05:19.400 --> 00:05:21.870 align:start position:0%
+the metadata file and output realistic
+iPhone<00:05:20.000><c> metadata</c><00:05:20.520><c> onto</c><00:05:21.160><c> the</c><00:05:21.320><c> image.</c><00:05:21.800><c> And</c>
+
+00:05:21.870 --> 00:05:21.880 align:start position:0%
+iPhone metadata onto the image. And
+ 
+
+00:05:21.880 --> 00:05:23.390 align:start position:0%
+iPhone metadata onto the image. And
+then,<00:05:22.000><c> it</c><00:05:22.080><c> just</c><00:05:22.240><c> saves</c><00:05:22.640><c> with</c><00:05:22.880><c> whatever</c><00:05:23.160><c> file</c>
+
+00:05:23.390 --> 00:05:23.400 align:start position:0%
+then, it just saves with whatever file
+ 
+
+00:05:23.400 --> 00:05:25.310 align:start position:0%
+then, it just saves with whatever file
+name<00:05:23.560><c> prefix</c><00:05:24.000><c> you</c><00:05:24.080><c> have.</c><00:05:24.520><c> By</c><00:05:24.680><c> default,</c><00:05:25.160><c> these</c>
+
+00:05:25.310 --> 00:05:25.320 align:start position:0%
+name prefix you have. By default, these
+ 
+
+00:05:25.320 --> 00:05:27.750 align:start position:0%
+name prefix you have. By default, these
+will<00:05:25.400><c> go</c><00:05:25.600><c> into</c><00:05:25.919><c> a</c><00:05:26.080><c> cleaned</c><00:05:26.520><c> images/loratech</c>
+
+00:05:27.750 --> 00:05:27.760 align:start position:0%
+will go into a cleaned images/loratech
+ 
+
+00:05:27.760 --> 00:05:29.909 align:start position:0%
+will go into a cleaned images/loratech
+folder<00:05:28.200><c> in</c><00:05:28.320><c> your</c><00:05:28.520><c> outputs</c><00:05:29.240><c> folder</c><00:05:29.680><c> in</c><00:05:29.840><c> your</c>
+
+00:05:29.909 --> 00:05:29.919 align:start position:0%
+folder in your outputs folder in your
+ 
+
+00:05:29.919 --> 00:05:31.510 align:start position:0%
+folder in your outputs folder in your
+ComfyUI<00:05:30.320><c> directory,</c><00:05:31.000><c> but</c><00:05:31.120><c> you</c><00:05:31.200><c> can</c><00:05:31.320><c> change</c>
+
+00:05:31.510 --> 00:05:31.520 align:start position:0%
+ComfyUI directory, but you can change
+ 
+
+00:05:31.520 --> 00:05:32.990 align:start position:0%
+ComfyUI directory, but you can change
+that<00:05:31.680><c> to</c><00:05:31.760><c> whatever</c><00:05:32.040><c> you'd</c><00:05:32.160><c> like</c><00:05:32.360><c> if</c><00:05:32.480><c> you</c><00:05:32.560><c> want.</c>
+
+00:05:32.990 --> 00:05:33.000 align:start position:0%
+that to whatever you'd like if you want.
+ 
+
+00:05:33.000 --> 00:05:34.350 align:start position:0%
+that to whatever you'd like if you want.
+Now,<00:05:33.120><c> I</c><00:05:33.160><c> would</c><00:05:33.320><c> just</c><00:05:33.480><c> like</c><00:05:33.600><c> to</c><00:05:33.680><c> point</c><00:05:33.960><c> out,</c><00:05:34.280><c> I'm</c>
+
+00:05:34.350 --> 00:05:34.360 align:start position:0%
+Now, I would just like to point out, I'm
+ 
+
+00:05:34.360 --> 00:05:35.750 align:start position:0%
+Now, I would just like to point out, I'm
+going<00:05:34.520><c> to</c><00:05:34.600><c> save</c><00:05:34.880><c> this</c><00:05:35.040><c> image</c><00:05:35.280><c> here,</c><00:05:35.600><c> that</c>
+
+00:05:35.750 --> 00:05:35.760 align:start position:0%
+going to save this image here, that
+ 
+
+00:05:35.760 --> 00:05:39.110 align:start position:0%
+going to save this image here, that
+obviously<00:05:36.080><c> we</c><00:05:36.200><c> can</c><00:05:36.320><c> see</c><00:05:36.520><c> here</c><00:05:37.240><c> that</c><00:05:37.600><c> we</c><00:05:37.800><c> have</c>
+
+00:05:39.110 --> 00:05:39.120 align:start position:0%
+obviously we can see here that we have
+ 
+
+00:05:39.120 --> 00:05:42.310 align:start position:0%
+obviously we can see here that we have
+just<00:05:39.320><c> a</c><00:05:39.360><c> few</c><00:05:39.760><c> values</c><00:05:40.440><c> that</c><00:05:40.720><c> will</c><00:05:41.120><c> reassign</c><00:05:41.800><c> and</c>
+
+00:05:42.310 --> 00:05:42.320 align:start position:0%
+just a few values that will reassign and
+ 
+
+00:05:42.320 --> 00:05:44.110 align:start position:0%
+just a few values that will reassign and
+apply<00:05:42.640><c> the</c><00:05:42.760><c> metadata</c><00:05:43.200><c> to</c><00:05:43.480><c> our</c><00:05:43.640><c> new</c><00:05:43.800><c> image,</c>
+
+00:05:44.110 --> 00:05:44.120 align:start position:0%
+apply the metadata to our new image,
+ 
+
+00:05:44.120 --> 00:05:46.110 align:start position:0%
+apply the metadata to our new image,
+right?<00:05:44.480><c> But,</c><00:05:44.960><c> there's</c><00:05:45.200><c> actually</c><00:05:45.560><c> more</c><00:05:45.880><c> going</c>
+
+00:05:46.110 --> 00:05:46.120 align:start position:0%
+right? But, there's actually more going
+ 
+
+00:05:46.120 --> 00:05:47.630 align:start position:0%
+right? But, there's actually more going
+on<00:05:46.320><c> under</c><00:05:46.520><c> the</c><00:05:46.600><c> hood</c><00:05:46.800><c> that</c><00:05:46.919><c> you</c><00:05:47.040><c> can't</c><00:05:47.440><c> even</c>
+
+00:05:47.630 --> 00:05:47.640 align:start position:0%
+on under the hood that you can't even
+ 
+
+00:05:47.640 --> 00:05:49.470 align:start position:0%
+on under the hood that you can't even
+see<00:05:48.040><c> in</c><00:05:48.160><c> this</c><00:05:48.360><c> node.</c><00:05:48.840><c> Like</c><00:05:49.000><c> I</c><00:05:49.040><c> said,</c><00:05:49.280><c> there's</c><00:05:49.440><c> a</c>
+
+00:05:49.470 --> 00:05:49.480 align:start position:0%
+see in this node. Like I said, there's a
+ 
+
+00:05:49.480 --> 00:05:51.070 align:start position:0%
+see in this node. Like I said, there's a
+character<00:05:49.840><c> limit</c><00:05:50.080><c> in</c><00:05:50.160><c> some</c><00:05:50.320><c> of</c><00:05:50.400><c> these</c><00:05:50.560><c> nodes</c>
+
+00:05:51.070 --> 00:05:51.080 align:start position:0%
+character limit in some of these nodes
+ 
+
+00:05:51.080 --> 00:05:53.070 align:start position:0%
+character limit in some of these nodes
+and<00:05:51.200><c> some</c><00:05:51.320><c> of</c><00:05:51.400><c> them</c><00:05:51.600><c> just</c><00:05:51.800><c> act</c><00:05:52.080><c> funny</c><00:05:52.520><c> when</c><00:05:52.760><c> you</c>
+
+00:05:53.070 --> 00:05:53.080 align:start position:0%
+and some of them just act funny when you
+ 
+
+00:05:53.080 --> 00:05:55.670 align:start position:0%
+and some of them just act funny when you
+do<00:05:53.480><c> JSON</c><00:05:54.040><c> style</c><00:05:54.440><c> formatting</c><00:05:55.040><c> inside</c><00:05:55.360><c> of</c><00:05:55.440><c> them.</c>
+
+00:05:55.670 --> 00:05:55.680 align:start position:0%
+do JSON style formatting inside of them.
+ 
+
+00:05:55.680 --> 00:05:57.190 align:start position:0%
+do JSON style formatting inside of them.
+So,<00:05:55.800><c> I'm</c><00:05:55.840><c> going</c><00:05:55.960><c> to</c><00:05:56.040><c> go</c><00:05:56.160><c> over</c><00:05:56.360><c> to</c><00:05:56.560><c> a</c><00:05:56.680><c> metadata</c>
+
+00:05:57.190 --> 00:05:57.200 align:start position:0%
+So, I'm going to go over to a metadata
+ 
+
+00:05:57.200 --> 00:05:59.710 align:start position:0%
+So, I'm going to go over to a metadata
+viewer<00:05:57.720><c> and</c><00:05:58.120><c> take</c><00:05:58.360><c> our</c><00:05:58.520><c> downloaded</c><00:05:59.040><c> photo</c><00:05:59.640><c> and</c>
+
+00:05:59.710 --> 00:05:59.720 align:start position:0%
+viewer and take our downloaded photo and
+ 
+
+00:05:59.720 --> 00:06:01.510 align:start position:0%
+viewer and take our downloaded photo and
+I'm<00:05:59.800><c> just</c><00:05:59.960><c> going</c><00:06:00.160><c> to</c><00:06:00.560><c> drag</c><00:06:00.880><c> and</c><00:06:01.000><c> drop</c><00:06:01.360><c> our</c>
+
+00:06:01.510 --> 00:06:01.520 align:start position:0%
+I'm just going to drag and drop our
+ 
+
+00:06:01.520 --> 00:06:03.270 align:start position:0%
+I'm just going to drag and drop our
+downloaded<00:06:02.040><c> photo</c><00:06:02.400><c> with</c><00:06:02.640><c> our</c><00:06:02.920><c> stripped</c>
+
+00:06:03.270 --> 00:06:03.280 align:start position:0%
+downloaded photo with our stripped
+ 
+
+00:06:03.280 --> 00:06:05.470 align:start position:0%
+downloaded photo with our stripped
+metadata<00:06:03.960><c> or</c><00:06:04.200><c> respoofed</c><00:06:04.720><c> metadata,</c><00:06:05.200><c> I</c><00:06:05.280><c> should</c>
+
+00:06:05.470 --> 00:06:05.480 align:start position:0%
+metadata or respoofed metadata, I should
+ 
+
+00:06:05.480 --> 00:06:06.950 align:start position:0%
+metadata or respoofed metadata, I should
+say.<00:06:06.080><c> And</c><00:06:06.200><c> we're</c><00:06:06.280><c> going</c><00:06:06.400><c> to</c><00:06:06.480><c> be</c><00:06:06.520><c> able</c><00:06:06.640><c> to</c><00:06:06.760><c> see</c>
+
+00:06:06.950 --> 00:06:06.960 align:start position:0%
+say. And we're going to be able to see
+ 
+
+00:06:06.960 --> 00:06:09.350 align:start position:0%
+say. And we're going to be able to see
+here<00:06:07.560><c> there's</c><00:06:07.880><c> so</c><00:06:08.200><c> much</c><00:06:08.560><c> more</c><00:06:08.960><c> that</c><00:06:09.160><c> is</c>
+
+00:06:09.350 --> 00:06:09.360 align:start position:0%
+here there's so much more that is
+ 
+
+00:06:09.360 --> 00:06:12.070 align:start position:0%
+here there's so much more that is
+actually<00:06:09.720><c> not</c><00:06:09.960><c> being</c><00:06:10.240><c> output.</c><00:06:11.400><c> But,</c><00:06:11.880><c> don't</c>
+
+00:06:12.070 --> 00:06:12.080 align:start position:0%
+actually not being output. But, don't
+ 
+
+00:06:12.080 --> 00:06:14.310 align:start position:0%
+actually not being output. But, don't
+worry.<00:06:12.360><c> I</c><00:06:12.440><c> got</c><00:06:12.720><c> you</c><00:06:12.800><c> guys.</c><00:06:13.440><c> I</c><00:06:13.560><c> coded</c><00:06:13.840><c> all</c><00:06:14.040><c> this</c>
+
+00:06:14.310 --> 00:06:14.320 align:start position:0%
+worry. I got you guys. I coded all this
+ 
+
+00:06:14.320 --> 00:06:16.030 align:start position:0%
+worry. I got you guys. I coded all this
+into<00:06:14.600><c> the</c><00:06:14.680><c> node</c><00:06:14.880><c> pack.</c><00:06:15.440><c> There's</c><00:06:15.640><c> things</c><00:06:15.880><c> like</c>
+
+00:06:16.030 --> 00:06:16.040 align:start position:0%
+into the node pack. There's things like
+ 
+
+00:06:16.040 --> 00:06:17.590 align:start position:0%
+into the node pack. There's things like
+software,
+
+00:06:17.590 --> 00:06:17.600 align:start position:0%
+software,
+ 
+
+00:06:17.600 --> 00:06:19.590 align:start position:0%
+software,
+obviously<00:06:17.960><c> the</c><00:06:18.080><c> date</c><00:06:18.280><c> and</c><00:06:18.400><c> time</c><00:06:18.720><c> there,</c>
+
+00:06:19.590 --> 00:06:19.600 align:start position:0%
+obviously the date and time there,
+ 
+
+00:06:19.600 --> 00:06:22.830 align:start position:0%
+obviously the date and time there,
+shutter<00:06:19.919><c> speed</c><00:06:20.240><c> value,</c><00:06:21.040><c> focal</c><00:06:21.440><c> length,</c><00:06:22.600><c> color</c>
+
+00:06:22.830 --> 00:06:22.840 align:start position:0%
+shutter speed value, focal length, color
+ 
+
+00:06:22.840 --> 00:06:25.790 align:start position:0%
+shutter speed value, focal length, color
+space,<00:06:23.880><c> and</c><00:06:24.040><c> so</c><00:06:24.280><c> on.</c><00:06:25.000><c> It's</c><00:06:25.080><c> actually</c><00:06:25.400><c> quite</c><00:06:25.720><c> a</c>
+
+00:06:25.790 --> 00:06:25.800 align:start position:0%
+space, and so on. It's actually quite a
+ 
+
+00:06:25.800 --> 00:06:27.830 align:start position:0%
+space, and so on. It's actually quite a
+massive<00:06:26.560><c> amount</c><00:06:26.840><c> of</c><00:06:26.919><c> data.</c><00:06:27.400><c> And</c><00:06:27.520><c> wouldn't</c><00:06:27.760><c> you</c>
+
+00:06:27.830 --> 00:06:27.840 align:start position:0%
+massive amount of data. And wouldn't you
+ 
+
+00:06:27.840 --> 00:06:29.790 align:start position:0%
+massive amount of data. And wouldn't you
+believe<00:06:28.120><c> it?</c><00:06:28.400><c> I</c><00:06:28.520><c> also</c><00:06:28.919><c> added</c><00:06:29.160><c> a</c><00:06:29.200><c> pipeline</c>
+
+00:06:29.790 --> 00:06:29.800 align:start position:0%
+believe it? I also added a pipeline
+ 
+
+00:06:29.800 --> 00:06:31.870 align:start position:0%
+believe it? I also added a pipeline
+right<00:06:30.000><c> below</c><00:06:30.320><c> the</c><00:06:30.480><c> image</c><00:06:30.760><c> pipeline</c><00:06:31.320><c> for</c><00:06:31.520><c> video</c>
+
+00:06:31.870 --> 00:06:31.880 align:start position:0%
+right below the image pipeline for video
+ 
+
+00:06:31.880 --> 00:06:34.190 align:start position:0%
+right below the image pipeline for video
+as<00:06:32.040><c> well</c><00:06:32.440><c> with</c><00:06:32.760><c> its</c><00:06:32.960><c> very</c><00:06:33.280><c> own</c><00:06:33.480><c> nodes</c><00:06:33.880><c> that</c><00:06:34.080><c> do</c>
+
+00:06:34.190 --> 00:06:34.200 align:start position:0%
+as well with its very own nodes that do
+ 
+
+00:06:34.200 --> 00:06:36.430 align:start position:0%
+as well with its very own nodes that do
+the<00:06:34.320><c> same</c><00:06:34.520><c> exact</c><00:06:34.840><c> thing</c><00:06:35.200><c> just</c><00:06:35.440><c> for</c><00:06:35.560><c> video.</c><00:06:36.200><c> And</c>
+
+00:06:36.430 --> 00:06:36.440 align:start position:0%
+the same exact thing just for video. And
+ 
+
+00:06:36.440 --> 00:06:37.390 align:start position:0%
+the same exact thing just for video. And
+I'm<00:06:36.520><c> sorry</c><00:06:36.720><c> I</c><00:06:36.760><c> don't</c><00:06:36.919><c> really</c><00:06:37.040><c> have</c><00:06:37.160><c> a</c><00:06:37.200><c> better</c>
+
+00:06:37.390 --> 00:06:37.400 align:start position:0%
+I'm sorry I don't really have a better
+ 
+
+00:06:37.400 --> 00:06:38.750 align:start position:0%
+I'm sorry I don't really have a better
+video<00:06:37.640><c> here.</c><00:06:37.880><c> This</c><00:06:38.000><c> is</c><00:06:38.080><c> just</c><00:06:38.320><c> what</c><00:06:38.480><c> I</c><00:06:38.560><c> have</c>
+
+00:06:38.750 --> 00:06:38.760 align:start position:0%
+video here. This is just what I have
+ 
+
+00:06:38.760 --> 00:06:41.070 align:start position:0%
+video here. This is just what I have
+available<00:06:39.400><c> to</c><00:06:39.520><c> me</c><00:06:39.680><c> right</c><00:06:39.840><c> now.</c><00:06:40.360><c> But,</c><00:06:40.760><c> as</c><00:06:40.960><c> we</c>
+
+00:06:41.070 --> 00:06:41.080 align:start position:0%
+available to me right now. But, as we
+ 
+
+00:06:41.080 --> 00:06:43.310 align:start position:0%
+available to me right now. But, as we
+can<00:06:41.240><c> see</c><00:06:41.480><c> here,</c><00:06:42.080><c> if</c><00:06:42.240><c> I</c><00:06:42.320><c> just</c><00:06:42.560><c> run</c><00:06:42.720><c> that,</c><00:06:43.200><c> we</c>
+
+00:06:43.310 --> 00:06:43.320 align:start position:0%
+can see here, if I just run that, we
+ 
+
+00:06:43.320 --> 00:06:45.750 align:start position:0%
+can see here, if I just run that, we
+have<00:06:43.560><c> all</c><00:06:43.760><c> types</c><00:06:44.160><c> of</c><00:06:44.280><c> crazy</c><00:06:44.760><c> metadata</c><00:06:45.320><c> that</c><00:06:45.560><c> is</c>
+
+00:06:45.750 --> 00:06:45.760 align:start position:0%
+have all types of crazy metadata that is
+ 
+
+00:06:45.760 --> 00:06:48.510 align:start position:0%
+have all types of crazy metadata that is
+obviously<00:06:46.320><c> going</c><00:06:46.760><c> to</c><00:06:46.960><c> throw</c><00:06:47.480><c> so</c><00:06:48.000><c> many</c><00:06:48.280><c> red</c>
+
+00:06:48.510 --> 00:06:48.520 align:start position:0%
+obviously going to throw so many red
+ 
+
+00:06:48.520 --> 00:06:51.270 align:start position:0%
+obviously going to throw so many red
+flags<00:06:49.160><c> to</c><00:06:49.800><c> these</c><00:06:50.000><c> social</c><00:06:50.320><c> media</c><00:06:50.560><c> platforms</c><00:06:51.120><c> if</c>
+
+00:06:51.270 --> 00:06:51.280 align:start position:0%
+flags to these social media platforms if
+ 
+
+00:06:51.280 --> 00:06:53.550 align:start position:0%
+flags to these social media platforms if
+you<00:06:51.400><c> upload</c><00:06:51.960><c> a</c><00:06:52.040><c> video</c><00:06:52.280><c> like</c><00:06:52.520><c> that.</c><00:06:53.000><c> But,</c><00:06:53.320><c> if</c><00:06:53.440><c> we</c>
+
+00:06:53.550 --> 00:06:53.560 align:start position:0%
+you upload a video like that. But, if we
+ 
+
+00:06:53.560 --> 00:06:55.230 align:start position:0%
+you upload a video like that. But, if we
+just<00:06:53.840><c> run</c><00:06:54.120><c> this</c><00:06:54.280><c> entire</c><00:06:54.640><c> pipeline</c><00:06:55.080><c> real</c>
+
+00:06:55.230 --> 00:06:55.240 align:start position:0%
+just run this entire pipeline real
+ 
+
+00:06:55.240 --> 00:06:57.830 align:start position:0%
+just run this entire pipeline real
+quick,<00:06:55.760><c> we</c><00:06:55.880><c> can</c><00:06:56.040><c> see</c><00:06:56.240><c> here</c><00:06:56.720><c> that</c><00:06:56.919><c> obviously</c><00:06:57.720><c> we</c>
+
+00:06:57.830 --> 00:06:57.840 align:start position:0%
+quick, we can see here that obviously we
+ 
+
+00:06:57.840 --> 00:06:59.270 align:start position:0%
+quick, we can see here that obviously we
+have<00:06:57.960><c> to</c><00:06:58.040><c> strip</c><00:06:58.280><c> the</c><00:06:58.360><c> metadata</c><00:06:58.880><c> because</c><00:06:59.120><c> it's</c>
+
+00:06:59.270 --> 00:06:59.280 align:start position:0%
+have to strip the metadata because it's
+ 
+
+00:06:59.280 --> 00:07:00.909 align:start position:0%
+have to strip the metadata because it's
+such<00:06:59.480><c> a</c><00:06:59.520><c> large</c><00:06:59.800><c> file.</c><00:07:00.320><c> But,</c><00:07:00.440><c> we</c><00:07:00.520><c> can</c><00:07:00.640><c> see</c><00:07:00.800><c> that</c>
+
+00:07:00.909 --> 00:07:00.919 align:start position:0%
+such a large file. But, we can see that
+ 
+
+00:07:00.919 --> 00:07:03.150 align:start position:0%
+such a large file. But, we can see that
+it<00:07:01.000><c> returns</c><00:07:01.360><c> an</c><00:07:01.480><c> empty</c><00:07:01.720><c> JSON</c><00:07:02.200><c> once</c><00:07:02.440><c> we</c><00:07:02.520><c> do</c><00:07:02.720><c> so.</c>
+
+00:07:03.150 --> 00:07:03.160 align:start position:0%
+it returns an empty JSON once we do so.
+ 
+
+00:07:03.160 --> 00:07:05.030 align:start position:0%
+it returns an empty JSON once we do so.
+And<00:07:03.320><c> then,</c><00:07:03.960><c> we</c><00:07:04.120><c> run</c><00:07:04.280><c> it</c><00:07:04.360><c> through</c><00:07:04.760><c> the</c><00:07:04.840><c> same</c>
+
+00:07:05.030 --> 00:07:05.040 align:start position:0%
+And then, we run it through the same
+ 
+
+00:07:05.040 --> 00:07:06.550 align:start position:0%
+And then, we run it through the same
+exact<00:07:05.360><c> pipeline.</c><00:07:05.960><c> Little</c><00:07:06.120><c> bit</c><00:07:06.280><c> different</c>
+
+00:07:06.550 --> 00:07:06.560 align:start position:0%
+exact pipeline. Little bit different
+ 
+
+00:07:06.560 --> 00:07:08.150 align:start position:0%
+exact pipeline. Little bit different
+settings<00:07:06.880><c> here</c><00:07:07.120><c> obviously</c><00:07:07.520><c> because</c><00:07:07.800><c> videos</c>
+
+00:07:08.150 --> 00:07:08.160 align:start position:0%
+settings here obviously because videos
+ 
+
+00:07:08.160 --> 00:07:09.790 align:start position:0%
+settings here obviously because videos
+are<00:07:08.280><c> going</c><00:07:08.520><c> to</c><00:07:08.680><c> have</c><00:07:08.960><c> a</c><00:07:09.040><c> different</c><00:07:09.320><c> metadata</c>
+
+00:07:09.790 --> 00:07:09.800 align:start position:0%
+are going to have a different metadata
+ 
+
+00:07:09.800 --> 00:07:12.510 align:start position:0%
+are going to have a different metadata
+than<00:07:10.160><c> images.</c><00:07:10.760><c> And</c><00:07:10.960><c> again,</c><00:07:11.560><c> it</c><00:07:11.720><c> outputs</c><00:07:12.360><c> a</c>
+
+00:07:12.510 --> 00:07:12.520 align:start position:0%
+than images. And again, it outputs a
+ 
+
+00:07:12.520 --> 00:07:14.909 align:start position:0%
+than images. And again, it outputs a
+JSON<00:07:13.240><c> and</c><00:07:13.440><c> then</c><00:07:13.720><c> it</c><00:07:13.880><c> saves</c><00:07:14.200><c> our</c><00:07:14.280><c> video</c><00:07:14.760><c> with</c>
+
+00:07:14.909 --> 00:07:14.919 align:start position:0%
+JSON and then it saves our video with
+ 
+
+00:07:14.919 --> 00:07:16.790 align:start position:0%
+JSON and then it saves our video with
+that<00:07:15.040><c> metadata.</c><00:07:15.560><c> They</c><00:07:15.680><c> will</c><00:07:15.840><c> also</c><00:07:16.080><c> go</c><00:07:16.240><c> into</c><00:07:16.680><c> a</c>
+
+00:07:16.790 --> 00:07:16.800 align:start position:0%
+that metadata. They will also go into a
+ 
+
+00:07:16.800 --> 00:07:19.310 align:start position:0%
+that metadata. They will also go into a
+folder<00:07:17.440><c> labeled</c><00:07:17.840><c> clean</c><00:07:18.080><c> videos.</c><00:07:18.919><c> And</c><00:07:19.160><c> just</c>
+
+00:07:19.310 --> 00:07:19.320 align:start position:0%
+folder labeled clean videos. And just
+ 
+
+00:07:19.320 --> 00:07:21.510 align:start position:0%
+folder labeled clean videos. And just
+like<00:07:19.480><c> the</c><00:07:19.600><c> images,</c><00:07:20.320><c> these</c><00:07:20.520><c> videos</c><00:07:21.040><c> have</c>
+
+00:07:21.510 --> 00:07:21.520 align:start position:0%
+like the images, these videos have
+ 
+
+00:07:21.520 --> 00:07:23.310 align:start position:0%
+like the images, these videos have
+extended<00:07:22.160><c> metadata</c><00:07:22.600><c> beyond</c><00:07:22.960><c> what</c><00:07:23.080><c> you</c><00:07:23.200><c> can</c>
+
+00:07:23.310 --> 00:07:23.320 align:start position:0%
+extended metadata beyond what you can
+ 
+
+00:07:23.320 --> 00:07:24.909 align:start position:0%
+extended metadata beyond what you can
+see<00:07:23.640><c> in</c><00:07:23.760><c> here.</c><00:07:24.160><c> You</c><00:07:24.240><c> can</c><00:07:24.360><c> go</c><00:07:24.480><c> check</c><00:07:24.720><c> it</c><00:07:24.800><c> for</c>
+
+00:07:24.909 --> 00:07:24.919 align:start position:0%
+see in here. You can go check it for
+ 
+
+00:07:24.919 --> 00:07:26.590 align:start position:0%
+see in here. You can go check it for
+yourself<00:07:25.320><c> if</c><00:07:25.440><c> you'd</c><00:07:25.560><c> like.</c><00:07:26.000><c> And</c><00:07:26.160><c> yeah,</c><00:07:26.320><c> guys,</c>
+
+00:07:26.590 --> 00:07:26.600 align:start position:0%
+yourself if you'd like. And yeah, guys,
+ 
+
+00:07:26.600 --> 00:07:28.110 align:start position:0%
+yourself if you'd like. And yeah, guys,
+that's<00:07:26.800><c> pretty</c><00:07:26.960><c> much</c><00:07:27.200><c> it.</c><00:07:27.600><c> I</c><00:07:27.680><c> can't</c><00:07:27.919><c> stress</c>
+
+00:07:28.110 --> 00:07:28.120 align:start position:0%
+that's pretty much it. I can't stress
+ 
+
+00:07:28.120 --> 00:07:29.909 align:start position:0%
+that's pretty much it. I can't stress
+enough<00:07:28.360><c> how</c><00:07:28.480><c> important</c><00:07:28.919><c> doing</c><00:07:29.160><c> this</c><00:07:29.360><c> is.</c><00:07:29.840><c> I</c>
+
+00:07:29.909 --> 00:07:29.919 align:start position:0%
+enough how important doing this is. I
+ 
+
+00:07:29.919 --> 00:07:31.430 align:start position:0%
+enough how important doing this is. I
+know<00:07:30.040><c> so</c><00:07:30.240><c> many</c><00:07:30.400><c> people</c><00:07:30.680><c> who've</c><00:07:30.840><c> gotten</c><00:07:31.120><c> banned</c>
+
+00:07:31.430 --> 00:07:31.440 align:start position:0%
+know so many people who've gotten banned
+ 
+
+00:07:31.440 --> 00:07:32.870 align:start position:0%
+know so many people who've gotten banned
+and<00:07:31.520><c> they</c><00:07:31.600><c> have</c><00:07:31.760><c> no</c><00:07:32.000><c> idea</c><00:07:32.280><c> why</c><00:07:32.400><c> they've</c><00:07:32.600><c> gotten</c>
+
+00:07:32.870 --> 00:07:32.880 align:start position:0%
+and they have no idea why they've gotten
+ 
+
+00:07:32.880 --> 00:07:34.390 align:start position:0%
+and they have no idea why they've gotten
+banned.<00:07:33.320><c> They</c><00:07:33.440><c> even</c><00:07:33.640><c> been</c><00:07:33.840><c> going</c><00:07:34.120><c> through</c><00:07:34.320><c> the</c>
+
+00:07:34.390 --> 00:07:34.400 align:start position:0%
+banned. They even been going through the
+ 
+
+00:07:34.400 --> 00:07:37.310 align:start position:0%
+banned. They even been going through the
+process<00:07:35.040><c> of</c><00:07:35.320><c> uploading</c><00:07:35.720><c> their</c><00:07:35.919><c> image</c><00:07:36.440><c> to</c><00:07:36.960><c> AI</c>
+
+00:07:37.310 --> 00:07:37.320 align:start position:0%
+process of uploading their image to AI
+ 
+
+00:07:37.320 --> 00:07:40.230 align:start position:0%
+process of uploading their image to AI
+image<00:07:37.680><c> detection</c><00:07:38.640><c> models</c><00:07:39.200><c> such</c><00:07:39.480><c> as</c><00:07:39.760><c> Hive</c>
+
+00:07:40.230 --> 00:07:40.240 align:start position:0%
+image detection models such as Hive
+ 
+
+00:07:40.240 --> 00:07:42.110 align:start position:0%
+image detection models such as Hive
+moderation<00:07:41.000><c> and</c><00:07:41.160><c> things</c><00:07:41.440><c> like</c><00:07:41.600><c> that.</c><00:07:42.040><c> And</c>
+
+00:07:42.110 --> 00:07:42.120 align:start position:0%
+moderation and things like that. And
+ 
+
+00:07:42.120 --> 00:07:43.990 align:start position:0%
+moderation and things like that. And
+they're<00:07:42.200><c> like,</c><00:07:42.440><c> "Oh,</c><00:07:42.560><c> it</c><00:07:42.680><c> returned</c><00:07:43.040><c> 0%</c><00:07:43.760><c> so</c><00:07:43.920><c> I</c>
+
+00:07:43.990 --> 00:07:44.000 align:start position:0%
+they're like, "Oh, it returned 0% so I
+ 
+
+00:07:44.000 --> 00:07:45.630 align:start position:0%
+they're like, "Oh, it returned 0% so I
+uploaded<00:07:44.440><c> it.</c><00:07:44.560><c> How</c><00:07:44.800><c> would</c><00:07:45.000><c> anybody</c><00:07:45.360><c> be</c><00:07:45.480><c> able</c>
+
+00:07:45.630 --> 00:07:45.640 align:start position:0%
+uploaded it. How would anybody be able
+ 
+
+00:07:45.640 --> 00:07:47.430 align:start position:0%
+uploaded it. How would anybody be able
+to<00:07:45.760><c> tell?"</c><00:07:46.240><c> But</c><00:07:46.360><c> they</c><00:07:46.440><c> don't</c><00:07:46.600><c> even</c><00:07:47.040><c> strip</c><00:07:47.320><c> the</c>
+
+00:07:47.430 --> 00:07:47.440 align:start position:0%
+to tell?" But they don't even strip the
+ 
+
+00:07:47.440 --> 00:07:49.430 align:start position:0%
+to tell?" But they don't even strip the
+metadata<00:07:48.080><c> from</c><00:07:48.240><c> the</c><00:07:48.400><c> image</c><00:07:49.040><c> and</c><00:07:49.200><c> they</c><00:07:49.280><c> get</c>
+
+00:07:49.430 --> 00:07:49.440 align:start position:0%
+metadata from the image and they get
+ 
+
+00:07:49.440 --> 00:07:51.070 align:start position:0%
+metadata from the image and they get
+banned<00:07:50.040><c> and</c><00:07:50.200><c> they</c><00:07:50.280><c> wonder</c><00:07:50.640><c> what</c><00:07:50.800><c> they</c><00:07:50.920><c> did</c>
+
+00:07:51.070 --> 00:07:51.080 align:start position:0%
+banned and they wonder what they did
+ 
+
+00:07:51.080 --> 00:07:53.590 align:start position:0%
+banned and they wonder what they did
+wrong.<00:07:51.560><c> And</c><00:07:52.080><c> I</c><00:07:52.120><c> can</c><00:07:52.280><c> guarantee</c><00:07:52.960><c> that</c><00:07:53.400><c> many</c>
+
+00:07:53.590 --> 00:07:53.600 align:start position:0%
+wrong. And I can guarantee that many
+ 
+
+00:07:53.600 --> 00:07:55.110 align:start position:0%
+wrong. And I can guarantee that many
+people<00:07:53.880><c> out</c><00:07:54.040><c> there,</c><00:07:54.400><c> including</c><00:07:54.760><c> some</c><00:07:54.920><c> of</c><00:07:55.040><c> you</c>
+
+00:07:55.110 --> 00:07:55.120 align:start position:0%
+people out there, including some of you
+ 
+
+00:07:55.120 --> 00:07:56.630 align:start position:0%
+people out there, including some of you
+guys,<00:07:55.400><c> have</c><00:07:55.520><c> been</c><00:07:55.640><c> banned</c><00:07:56.000><c> for</c><00:07:56.120><c> this</c><00:07:56.280><c> exact</c>
+
+00:07:56.630 --> 00:07:56.640 align:start position:0%
+guys, have been banned for this exact
+ 
+
+00:07:56.640 --> 00:07:58.830 align:start position:0%
+guys, have been banned for this exact
+reason.<00:07:57.000><c> So,</c><00:07:57.560><c> stop</c><00:07:57.840><c> getting</c><00:07:58.040><c> banned,</c><00:07:58.560><c> get</c><00:07:58.720><c> the</c>
+
+00:07:58.830 --> 00:07:58.840 align:start position:0%
+reason. So, stop getting banned, get the
+ 
+
+00:07:58.840 --> 00:07:59.830 align:start position:0%
+reason. So, stop getting banned, get the
+growth<00:07:59.080><c> that</c><00:07:59.200><c> you</c><00:07:59.320><c> deserve</c><00:07:59.640><c> on</c><00:07:59.720><c> your</c>
+
+00:07:59.830 --> 00:07:59.840 align:start position:0%
+growth that you deserve on your
+ 
+
+00:07:59.840 --> 00:08:01.830 align:start position:0%
+growth that you deserve on your
+accounts,<00:08:00.600><c> and</c><00:08:00.680><c> try</c><00:08:00.800><c> to</c><00:08:00.880><c> stay</c><00:08:01.080><c> ahead</c><00:08:01.560><c> of</c><00:08:01.680><c> these</c>
+
+00:08:01.830 --> 00:08:01.840 align:start position:0%
+accounts, and try to stay ahead of these
+ 
+
+00:08:01.840 --> 00:08:04.190 align:start position:0%
+accounts, and try to stay ahead of these
+detection<00:08:02.280><c> models</c><00:08:02.880><c> because</c><00:08:03.240><c> it</c><00:08:03.440><c> is</c><00:08:03.640><c> possible.</c>
+
+00:08:04.190 --> 00:08:04.200 align:start position:0%
+detection models because it is possible.
+ 
+
+00:08:04.200 --> 00:08:06.230 align:start position:0%
+detection models because it is possible.
+There<00:08:04.400><c> are</c><00:08:04.720><c> AI</c><00:08:04.960><c> accounts</c><00:08:05.440><c> out</c><00:08:05.640><c> there</c><00:08:06.000><c> that</c>
+
+00:08:06.230 --> 00:08:06.240 align:start position:0%
+There are AI accounts out there that
+ 
+
+00:08:06.240 --> 00:08:08.030 align:start position:0%
+There are AI accounts out there that
+have<00:08:06.480><c> hundreds</c><00:08:06.840><c> of</c><00:08:06.920><c> thousands</c><00:08:07.280><c> of</c><00:08:07.360><c> followers</c>
+
+00:08:08.030 --> 00:08:08.040 align:start position:0%
+have hundreds of thousands of followers
+ 
+
+00:08:08.040 --> 00:08:09.070 align:start position:0%
+have hundreds of thousands of followers
+and<00:08:08.160><c> they've</c><00:08:08.280><c> been</c><00:08:08.360><c> doing</c><00:08:08.560><c> it</c><00:08:08.640><c> for</c><00:08:08.760><c> a</c><00:08:08.800><c> long</c>
+
+00:08:09.070 --> 00:08:09.080 align:start position:0%
+and they've been doing it for a long
+ 
+
+00:08:09.080 --> 00:08:10.510 align:start position:0%
+and they've been doing it for a long
+time.<00:08:09.680><c> And</c><00:08:09.760><c> it's</c><00:08:09.880><c> just</c><00:08:10.040><c> because</c><00:08:10.280><c> they</c><00:08:10.360><c> do</c>
+
+00:08:10.510 --> 00:08:10.520 align:start position:0%
+time. And it's just because they do
+ 
+
+00:08:10.520 --> 00:08:11.950 align:start position:0%
+time. And it's just because they do
+everything<00:08:10.840><c> right.</c><00:08:11.280><c> I</c><00:08:11.360><c> was</c><00:08:11.560><c> one</c><00:08:11.680><c> of</c><00:08:11.760><c> them</c><00:08:11.880><c> at</c>
+
+00:08:11.950 --> 00:08:11.960 align:start position:0%
+everything right. I was one of them at
+ 
+
+00:08:11.960 --> 00:08:14.390 align:start position:0%
+everything right. I was one of them at
+one<00:08:12.120><c> point</c><00:08:12.640><c> and</c><00:08:12.800><c> then</c><00:08:12.919><c> I</c><00:08:12.960><c> got</c><00:08:13.200><c> lazy</c><00:08:13.560><c> and</c><00:08:13.720><c> sloppy</c>
+
+00:08:14.390 --> 00:08:14.400 align:start position:0%
+one point and then I got lazy and sloppy
+ 
+
+00:08:14.400 --> 00:08:16.670 align:start position:0%
+one point and then I got lazy and sloppy
+and<00:08:14.800><c> I</c><00:08:14.919><c> got</c><00:08:15.040><c> an</c><00:08:15.120><c> account</c><00:08:15.600><c> with</c><00:08:15.760><c> over</c><00:08:15.919><c> 300,000</c>
+
+00:08:16.670 --> 00:08:16.680 align:start position:0%
+and I got an account with over 300,000
+ 
+
+00:08:16.680 --> 00:08:18.070 align:start position:0%
+and I got an account with over 300,000
+followers<00:08:17.040><c> banned.</c><00:08:17.680><c> And</c><00:08:17.800><c> I'm</c><00:08:17.880><c> still</c>
+
+00:08:18.070 --> 00:08:18.080 align:start position:0%
+followers banned. And I'm still
+ 
+
+00:08:18.080 --> 00:08:19.790 align:start position:0%
+followers banned. And I'm still
+depressed<00:08:18.480><c> about</c><00:08:18.720><c> it.</c><00:08:19.000><c> But</c><00:08:19.280><c> with</c><00:08:19.400><c> that</c><00:08:19.560><c> being</c>
+
+00:08:19.790 --> 00:08:19.800 align:start position:0%
+depressed about it. But with that being
+ 
+
+00:08:19.800 --> 00:08:21.190 align:start position:0%
+depressed about it. But with that being
+said,<00:08:20.240><c> I've</c><00:08:20.400><c> learned</c><00:08:20.600><c> a</c><00:08:20.640><c> lot</c><00:08:20.960><c> from</c><00:08:21.080><c> my</c>
+
+00:08:21.190 --> 00:08:21.200 align:start position:0%
+said, I've learned a lot from my
+ 
+
+00:08:21.200 --> 00:08:23.310 align:start position:0%
+said, I've learned a lot from my
+mistakes<00:08:21.840><c> and</c><00:08:22.200><c> I'm</c><00:08:22.320><c> here</c><00:08:22.520><c> to</c><00:08:22.600><c> teach</c><00:08:22.840><c> you</c><00:08:22.960><c> guys</c>
+
+00:08:23.310 --> 00:08:23.320 align:start position:0%
+mistakes and I'm here to teach you guys
+ 
+
+00:08:23.320 --> 00:08:24.750 align:start position:0%
+mistakes and I'm here to teach you guys
+not<00:08:23.520><c> to</c><00:08:23.600><c> make</c><00:08:23.800><c> the</c><00:08:23.880><c> same</c><00:08:24.080><c> mistakes</c><00:08:24.480><c> that</c><00:08:24.640><c> I</c>
+
+00:08:24.750 --> 00:08:24.760 align:start position:0%
+not to make the same mistakes that I
+ 
+
+00:08:24.760 --> 00:08:26.870 align:start position:0%
+not to make the same mistakes that I
+did.<00:08:25.080><c> So,</c><00:08:25.520><c> if</c><00:08:25.919><c> you</c><00:08:26.040><c> want</c><00:08:26.320><c> to</c><00:08:26.400><c> get</c><00:08:26.520><c> this</c><00:08:26.680><c> note</c>
+
+00:08:26.870 --> 00:08:26.880 align:start position:0%
+did. So, if you want to get this note
+ 
+
+00:08:26.880 --> 00:08:28.550 align:start position:0%
+did. So, if you want to get this note
+pack,<00:08:27.160><c> all</c><00:08:27.240><c> you</c><00:08:27.360><c> have</c><00:08:27.480><c> to</c><00:08:27.600><c> do</c><00:08:27.919><c> is</c><00:08:28.200><c> go</c><00:08:28.320><c> over</c><00:08:28.480><c> to</c>
+
+00:08:28.550 --> 00:08:28.560 align:start position:0%
+pack, all you have to do is go over to
+ 
+
+00:08:28.560 --> 00:08:30.550 align:start position:0%
+pack, all you have to do is go over to
+my<00:08:28.640><c> Patreon.</c><00:08:29.280><c> Yes,</c><00:08:29.760><c> I</c><00:08:29.840><c> know.</c><00:08:30.080><c> I'm</c><00:08:30.200><c> sorry,</c><00:08:30.480><c> you</c>
+
+00:08:30.550 --> 00:08:30.560 align:start position:0%
+my Patreon. Yes, I know. I'm sorry, you
+ 
+
+00:08:30.560 --> 00:08:32.110 align:start position:0%
+my Patreon. Yes, I know. I'm sorry, you
+guys.<00:08:30.960><c> I'm</c><00:08:31.080><c> always</c><00:08:31.320><c> putting</c><00:08:31.560><c> out</c><00:08:31.680><c> free</c><00:08:31.840><c> stuff</c>
+
+00:08:32.110 --> 00:08:32.120 align:start position:0%
+guys. I'm always putting out free stuff
+ 
+
+00:08:32.120 --> 00:08:33.950 align:start position:0%
+guys. I'm always putting out free stuff
+for<00:08:32.320><c> you,</c><00:08:32.479><c> but</c><00:08:32.880><c> I</c><00:08:32.919><c> need</c><00:08:33.080><c> to</c><00:08:33.159><c> feed</c><00:08:33.400><c> my</c><00:08:33.560><c> 17</c>
+
+00:08:33.950 --> 00:08:33.960 align:start position:0%
+for you, but I need to feed my 17
+ 
+
+00:08:33.960 --> 00:08:35.670 align:start position:0%
+for you, but I need to feed my 17
+children.<00:08:34.520><c> So,</c><00:08:35.039><c> you</c><00:08:35.159><c> can</c><00:08:35.280><c> go</c><00:08:35.360><c> over</c><00:08:35.520><c> to</c><00:08:35.560><c> my</c>
+
+00:08:35.670 --> 00:08:35.680 align:start position:0%
+children. So, you can go over to my
+ 
+
+00:08:35.680 --> 00:08:38.630 align:start position:0%
+children. So, you can go over to my
+Patreon<00:08:36.360><c> and</c><00:08:36.520><c> get</c><00:08:36.719><c> this</c><00:08:37.000><c> for</c><00:08:37.120><c> $10</c><00:08:37.919><c> or</c><00:08:38.440><c> you</c><00:08:38.520><c> can</c>
+
+00:08:38.630 --> 00:08:38.640 align:start position:0%
+Patreon and get this for $10 or you can
+ 
+
+00:08:38.640 --> 00:08:40.469 align:start position:0%
+Patreon and get this for $10 or you can
+become<00:08:39.159><c> a</c><00:08:39.320><c> monthly</c><00:08:39.680><c> member</c><00:08:40.280><c> with</c><00:08:40.400><c> a</c>
+
+00:08:40.469 --> 00:08:40.479 align:start position:0%
+become a monthly member with a
+ 
+
+00:08:40.479 --> 00:08:42.950 align:start position:0%
+become a monthly member with a
+subscription<00:08:41.000><c> of</c><00:08:41.080><c> $15</c><00:08:41.960><c> and</c><00:08:42.159><c> you</c><00:08:42.240><c> will</c><00:08:42.360><c> get</c><00:08:42.719><c> so</c>
+
+00:08:42.950 --> 00:08:42.960 align:start position:0%
+subscription of $15 and you will get so
+ 
+
+00:08:42.960 --> 00:08:44.350 align:start position:0%
+subscription of $15 and you will get so
+much<00:08:43.200><c> more</c><00:08:43.320><c> value</c><00:08:43.680><c> out</c><00:08:43.800><c> of</c><00:08:43.880><c> that.</c><00:08:44.080><c> I</c><00:08:44.120><c> will</c><00:08:44.240><c> be</c>
+
+00:08:44.350 --> 00:08:44.360 align:start position:0%
+much more value out of that. I will be
+ 
+
+00:08:44.360 --> 00:08:46.470 align:start position:0%
+much more value out of that. I will be
+posting<00:08:44.720><c> note</c><00:08:44.920><c> packs</c><00:08:45.240><c> and</c><00:08:45.440><c> workflows</c><00:08:46.120><c> and</c>
+
+00:08:46.470 --> 00:08:46.480 align:start position:0%
+posting note packs and workflows and
+ 
+
+00:08:46.480 --> 00:08:48.510 align:start position:0%
+posting note packs and workflows and
+information<00:08:47.240><c> all</c><00:08:47.480><c> throughout</c><00:08:47.960><c> the</c><00:08:48.040><c> month,</c>
+
+00:08:48.510 --> 00:08:48.520 align:start position:0%
+information all throughout the month,
+ 
+
+00:08:48.520 --> 00:08:50.550 align:start position:0%
+information all throughout the month,
+every<00:08:48.680><c> single</c><00:08:48.920><c> month,</c><00:08:49.400><c> and</c><00:08:49.839><c> the</c><00:08:49.920><c> value</c><00:08:50.320><c> is</c>
+
+00:08:50.550 --> 00:08:50.560 align:start position:0%
+every single month, and the value is
+ 
+
+00:08:50.560 --> 00:08:52.670 align:start position:0%
+every single month, and the value is
+going<00:08:50.920><c> to</c><00:08:51.280><c> pay</c><00:08:51.440><c> itself</c><00:08:51.760><c> back</c><00:08:52.000><c> in</c><00:08:52.080><c> no</c><00:08:52.200><c> time.</c><00:08:52.560><c> So,</c>
+
+00:08:52.670 --> 00:08:52.680 align:start position:0%
+going to pay itself back in no time. So,
+ 
+
+00:08:52.680 --> 00:08:54.230 align:start position:0%
+going to pay itself back in no time. So,
+go<00:08:52.800><c> over</c><00:08:52.920><c> to</c><00:08:53.000><c> the</c><00:08:53.040><c> Patreon,</c><00:08:53.520><c> check</c><00:08:53.720><c> it</c><00:08:53.839><c> out</c><00:08:54.120><c> if</c>
+
+00:08:54.230 --> 00:08:54.240 align:start position:0%
+go over to the Patreon, check it out if
+ 
+
+00:08:54.240 --> 00:08:55.550 align:start position:0%
+go over to the Patreon, check it out if
+you<00:08:54.320><c> guys</c><00:08:54.480><c> are</c><00:08:54.560><c> interested</c><00:08:54.920><c> in</c><00:08:55.000><c> this.</c><00:08:55.480><c> I</c>
+
+00:08:55.550 --> 00:08:55.560 align:start position:0%
+you guys are interested in this. I
+ 
+
+00:08:55.560 --> 00:08:57.310 align:start position:0%
+you guys are interested in this. I
+really<00:08:55.800><c> do</c><00:08:55.920><c> appreciate</c><00:08:56.400><c> it.</c><00:08:56.760><c> It's</c><00:08:56.880><c> only</c><00:08:57.000><c> 15</c>
+
+00:08:57.310 --> 00:08:57.320 align:start position:0%
+really do appreciate it. It's only 15
+ 
+
+00:08:57.320 --> 00:08:59.070 align:start position:0%
+really do appreciate it. It's only 15
+bucks,<00:08:57.560><c> it's</c><00:08:57.680><c> not</c><00:08:57.800><c> that</c><00:08:57.960><c> much.</c><00:08:58.600><c> And</c><00:08:58.880><c> you'll</c><00:08:59.000><c> be</c>
+
+00:08:59.070 --> 00:08:59.080 align:start position:0%
+bucks, it's not that much. And you'll be
+ 
+
+00:08:59.080 --> 00:09:00.590 align:start position:0%
+bucks, it's not that much. And you'll be
+getting<00:08:59.320><c> so</c><00:08:59.440><c> much</c><00:08:59.640><c> more</c><00:09:00.000><c> sometime</c><00:09:00.360><c> near</c><00:09:00.520><c> in</c>
+
+00:09:00.590 --> 00:09:00.600 align:start position:0%
+getting so much more sometime near in
+ 
+
+00:09:00.600 --> 00:09:02.829 align:start position:0%
+getting so much more sometime near in
+the<00:09:00.680><c> future.</c><00:09:01.120><c> So,</c><00:09:01.560><c> stay</c><00:09:01.760><c> tuned</c><00:09:02.040><c> for</c><00:09:02.160><c> that</c><00:09:02.560><c> and</c>
+
+00:09:02.829 --> 00:09:02.839 align:start position:0%
+the future. So, stay tuned for that and
+ 
+
+00:09:02.839 --> 00:09:04.390 align:start position:0%
+the future. So, stay tuned for that and
+I<00:09:02.920><c> thank</c><00:09:03.160><c> you</c><00:09:03.240><c> guys</c><00:09:03.600><c> and</c><00:09:03.800><c> have</c><00:09:03.920><c> a</c><00:09:03.960><c> good</c><00:09:04.120><c> day.</c>
+
+00:09:04.390 --> 00:09:04.400 align:start position:0%
+I thank you guys and have a good day.
+ 
+
+00:09:04.400 --> 00:09:06.800 align:start position:0%
+I thank you guys and have a good day.
+Peace.
+

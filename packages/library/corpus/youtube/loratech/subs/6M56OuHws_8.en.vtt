@@ -1,0 +1,1968 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.510 align:start position:0%
+ 
+What's<00:00:00.200><c> going</c><00:00:00.400><c> on</c><00:00:00.520><c> everybody?</c><00:00:01.040><c> Laura</c><00:00:01.280><c> Tech</c>
+
+00:00:01.510 --> 00:00:01.520 align:start position:0%
+What's going on everybody? Laura Tech
+ 
+
+00:00:01.520 --> 00:00:03.270 align:start position:0%
+What's going on everybody? Laura Tech
+here<00:00:01.920><c> with</c><00:00:02.080><c> another</c><00:00:02.400><c> node</c><00:00:02.680><c> pack</c><00:00:03.000><c> for</c><00:00:03.160><c> you</c>
+
+00:00:03.270 --> 00:00:03.280 align:start position:0%
+here with another node pack for you
+ 
+
+00:00:03.280 --> 00:00:06.470 align:start position:0%
+here with another node pack for you
+guys.<00:00:04.200><c> This</c><00:00:04.480><c> one</c><00:00:04.760><c> is</c><00:00:05.120><c> the</c><00:00:05.440><c> AI</c><00:00:05.800><c> image</c><00:00:06.160><c> prompt</c>
+
+00:00:06.470 --> 00:00:06.480 align:start position:0%
+guys. This one is the AI image prompt
+ 
+
+00:00:06.480 --> 00:00:09.230 align:start position:0%
+guys. This one is the AI image prompt
+builder<00:00:06.920><c> and</c><00:00:07.200><c> the</c><00:00:07.520><c> AI</c><00:00:07.840><c> prompt</c><00:00:08.280><c> library.</c><00:00:09.040><c> So</c>
+
+00:00:09.230 --> 00:00:09.240 align:start position:0%
+builder and the AI prompt library. So
+ 
+
+00:00:09.240 --> 00:00:11.070 align:start position:0%
+builder and the AI prompt library. So
+jumping<00:00:09.600><c> right</c><00:00:09.720><c> into</c><00:00:09.920><c> it,</c><00:00:10.240><c> there</c><00:00:10.440><c> are</c><00:00:10.880><c> two</c>
+
+00:00:11.070 --> 00:00:11.080 align:start position:0%
+jumping right into it, there are two
+ 
+
+00:00:11.080 --> 00:00:13.270 align:start position:0%
+jumping right into it, there are two
+nodes<00:00:11.440><c> that</c><00:00:11.560><c> are</c><00:00:11.720><c> in</c><00:00:12.040><c> this</c><00:00:12.240><c> custom</c><00:00:12.560><c> node</c><00:00:12.720><c> pack</c>
+
+00:00:13.270 --> 00:00:13.280 align:start position:0%
+nodes that are in this custom node pack
+ 
+
+00:00:13.280 --> 00:00:14.830 align:start position:0%
+nodes that are in this custom node pack
+as<00:00:13.480><c> I</c><00:00:13.520><c> just</c><00:00:13.760><c> mentioned.</c><00:00:14.400><c> And</c><00:00:14.520><c> by</c><00:00:14.600><c> the</c><00:00:14.680><c> end</c><00:00:14.800><c> of</c>
+
+00:00:14.830 --> 00:00:14.840 align:start position:0%
+as I just mentioned. And by the end of
+ 
+
+00:00:14.840 --> 00:00:16.590 align:start position:0%
+as I just mentioned. And by the end of
+the<00:00:14.920><c> video,</c><00:00:15.400><c> I</c><00:00:15.520><c> will</c><00:00:15.640><c> show</c><00:00:15.880><c> you</c><00:00:16.080><c> why</c><00:00:16.200><c> this</c><00:00:16.400><c> node</c>
+
+00:00:16.590 --> 00:00:16.600 align:start position:0%
+the video, I will show you why this node
+ 
+
+00:00:16.600 --> 00:00:18.430 align:start position:0%
+the video, I will show you why this node
+has<00:00:16.800><c> more</c><00:00:17.040><c> possible</c><00:00:17.520><c> prompt</c><00:00:17.840><c> combinations</c>
+
+00:00:18.430 --> 00:00:18.440 align:start position:0%
+has more possible prompt combinations
+ 
+
+00:00:18.440 --> 00:00:20.510 align:start position:0%
+has more possible prompt combinations
+than<00:00:18.640><c> there</c><00:00:18.880><c> are</c><00:00:19.120><c> atoms</c><00:00:19.640><c> in</c><00:00:19.800><c> the</c><00:00:19.920><c> observable</c>
+
+00:00:20.510 --> 00:00:20.520 align:start position:0%
+than there are atoms in the observable
+ 
+
+00:00:20.520 --> 00:00:22.870 align:start position:0%
+than there are atoms in the observable
+universe<00:00:21.240><c> and</c><00:00:21.360><c> I'm</c><00:00:21.520><c> not</c><00:00:21.920><c> exaggerating.</c><00:00:22.720><c> Quick</c>
+
+00:00:22.870 --> 00:00:22.880 align:start position:0%
+universe and I'm not exaggerating. Quick
+ 
+
+00:00:22.880 --> 00:00:24.190 align:start position:0%
+universe and I'm not exaggerating. Quick
+disclaimer<00:00:23.360><c> just</c><00:00:23.520><c> to</c><00:00:23.600><c> get</c><00:00:23.720><c> it</c><00:00:23.840><c> out</c><00:00:23.920><c> of</c><00:00:23.960><c> the</c><00:00:24.040><c> way</c>
+
+00:00:24.190 --> 00:00:24.200 align:start position:0%
+disclaimer just to get it out of the way
+ 
+
+00:00:24.200 --> 00:00:26.350 align:start position:0%
+disclaimer just to get it out of the way
+earlier,<00:00:24.960><c> this</c><00:00:25.160><c> node</c><00:00:25.360><c> pack</c><00:00:25.600><c> does</c><00:00:25.800><c> not</c><00:00:26.040><c> work</c>
+
+00:00:26.350 --> 00:00:26.360 align:start position:0%
+earlier, this node pack does not work
+ 
+
+00:00:26.360 --> 00:00:28.350 align:start position:0%
+earlier, this node pack does not work
+with<00:00:26.520><c> nodes</c><00:00:26.800><c> 2.0</c><00:00:27.280><c> enabled,</c><00:00:27.960><c> but</c><00:00:28.080><c> it</c><00:00:28.160><c> doesn't</c>
+
+00:00:28.350 --> 00:00:28.360 align:start position:0%
+with nodes 2.0 enabled, but it doesn't
+ 
+
+00:00:28.360 --> 00:00:30.470 align:start position:0%
+with nodes 2.0 enabled, but it doesn't
+matter<00:00:28.560><c> anyway</c><00:00:28.880><c> because</c><00:00:29.240><c> nodes</c><00:00:29.520><c> 2.0</c><00:00:30.040><c> is</c><00:00:30.080><c> ugly</c>
+
+00:00:30.470 --> 00:00:30.480 align:start position:0%
+matter anyway because nodes 2.0 is ugly
+ 
+
+00:00:30.480 --> 00:00:32.230 align:start position:0%
+matter anyway because nodes 2.0 is ugly
+and<00:00:30.840><c> nobody</c><00:00:31.080><c> should</c><00:00:31.240><c> be</c><00:00:31.320><c> using</c><00:00:31.560><c> it.</c><00:00:31.840><c> So</c><00:00:32.080><c> as</c>
+
+00:00:32.230 --> 00:00:32.240 align:start position:0%
+and nobody should be using it. So as
+ 
+
+00:00:32.240 --> 00:00:33.430 align:start position:0%
+and nobody should be using it. So as
+long<00:00:32.360><c> as</c><00:00:32.439><c> you</c><00:00:32.520><c> keep</c><00:00:32.680><c> that</c><00:00:32.880><c> off,</c><00:00:33.120><c> everything</c>
+
+00:00:33.430 --> 00:00:33.440 align:start position:0%
+long as you keep that off, everything
+ 
+
+00:00:33.440 --> 00:00:35.550 align:start position:0%
+long as you keep that off, everything
+below<00:00:33.800><c> works</c><00:00:34.040><c> exactly</c><00:00:34.520><c> as</c><00:00:34.640><c> shown.</c><00:00:35.120><c> If</c><00:00:35.280><c> you're</c>
+
+00:00:35.550 --> 00:00:35.560 align:start position:0%
+below works exactly as shown. If you're
+ 
+
+00:00:35.560 --> 00:00:36.670 align:start position:0%
+below works exactly as shown. If you're
+wanting<00:00:35.800><c> to</c><00:00:35.840><c> know</c><00:00:36.000><c> where</c><00:00:36.160><c> you</c><00:00:36.240><c> can</c><00:00:36.360><c> get</c><00:00:36.520><c> this</c>
+
+00:00:36.670 --> 00:00:36.680 align:start position:0%
+wanting to know where you can get this
+ 
+
+00:00:36.680 --> 00:00:38.510 align:start position:0%
+wanting to know where you can get this
+node<00:00:36.880><c> pack,</c><00:00:37.320><c> this</c><00:00:37.560><c> node</c><00:00:37.760><c> pack</c><00:00:37.960><c> is</c><00:00:38.040><c> available</c>
+
+00:00:38.510 --> 00:00:38.520 align:start position:0%
+node pack, this node pack is available
+ 
+
+00:00:38.520 --> 00:00:40.230 align:start position:0%
+node pack, this node pack is available
+along<00:00:38.800><c> with</c><00:00:38.920><c> my</c><00:00:39.080><c> other</c><00:00:39.280><c> custom</c><00:00:39.600><c> node</c><00:00:39.760><c> packs,</c>
+
+00:00:40.230 --> 00:00:40.240 align:start position:0%
+along with my other custom node packs,
+ 
+
+00:00:40.240 --> 00:00:41.710 align:start position:0%
+along with my other custom node packs,
+some<00:00:40.400><c> private</c><00:00:40.680><c> workflows,</c><00:00:41.200><c> and</c><00:00:41.360><c> more</c><00:00:41.480><c> coming</c>
+
+00:00:41.710 --> 00:00:41.720 align:start position:0%
+some private workflows, and more coming
+ 
+
+00:00:41.720 --> 00:00:43.910 align:start position:0%
+some private workflows, and more coming
+soon<00:00:42.240><c> on</c><00:00:42.400><c> my</c><00:00:42.520><c> Patreon</c><00:00:43.080><c> for</c><00:00:43.200><c> paid</c><00:00:43.400><c> members.</c><00:00:43.800><c> The</c>
+
+00:00:43.910 --> 00:00:43.920 align:start position:0%
+soon on my Patreon for paid members. The
+ 
+
+00:00:43.920 --> 00:00:45.390 align:start position:0%
+soon on my Patreon for paid members. The
+link<00:00:44.080><c> is</c><00:00:44.200><c> in</c><00:00:44.280><c> the</c><00:00:44.360><c> description.</c><00:00:45.000><c> Also</c><00:00:45.240><c> in</c><00:00:45.320><c> the</c>
+
+00:00:45.390 --> 00:00:45.400 align:start position:0%
+link is in the description. Also in the
+ 
+
+00:00:45.400 --> 00:00:47.270 align:start position:0%
+link is in the description. Also in the
+description<00:00:45.920><c> is</c><00:00:46.080><c> my</c><00:00:46.200><c> Discord</c><00:00:46.680><c> for</c><00:00:46.880><c> one-on-one</c>
+
+00:00:47.270 --> 00:00:47.280 align:start position:0%
+description is my Discord for one-on-one
+ 
+
+00:00:47.280 --> 00:00:49.630 align:start position:0%
+description is my Discord for one-on-one
+coaching<00:00:47.840><c> and</c><00:00:48.040><c> my</c><00:00:48.160><c> RunPod</c><00:00:48.480><c> referral</c><00:00:48.800><c> link.</c><00:00:49.320><c> If</c>
+
+00:00:49.630 --> 00:00:49.640 align:start position:0%
+coaching and my RunPod referral link. If
+ 
+
+00:00:49.640 --> 00:00:50.830 align:start position:0%
+coaching and my RunPod referral link. If
+you've<00:00:49.800><c> never</c><00:00:50.000><c> used</c><00:00:50.160><c> RunPod</c><00:00:50.440><c> before</c><00:00:50.680><c> and</c><00:00:50.800><c> you</c>
+
+00:00:50.830 --> 00:00:50.840 align:start position:0%
+you've never used RunPod before and you
+ 
+
+00:00:50.840 --> 00:00:52.470 align:start position:0%
+you've never used RunPod before and you
+want<00:00:50.960><c> to</c><00:00:51.000><c> use</c><00:00:51.160><c> cloud</c><00:00:51.440><c> GPU</c><00:00:51.760><c> services</c><00:00:52.320><c> at</c><00:00:52.440><c> a</c>
+
+00:00:52.470 --> 00:00:52.480 align:start position:0%
+want to use cloud GPU services at a
+ 
+
+00:00:52.480 --> 00:00:55.030 align:start position:0%
+want to use cloud GPU services at a
+minimum<00:00:52.920><c> of</c><00:00:53.080><c> $10</c><00:00:53.560><c> through</c><00:00:53.720><c> it</c><00:00:53.920><c> and</c><00:00:54.200><c> you</c><00:00:54.320><c> get</c><00:00:54.600><c> $5</c>
+
+00:00:55.030 --> 00:00:55.040 align:start position:0%
+minimum of $10 through it and you get $5
+ 
+
+00:00:55.040 --> 00:00:56.710 align:start position:0%
+minimum of $10 through it and you get $5
+for<00:00:55.120><c> free.</c><00:00:55.720><c> So</c><00:00:55.920><c> what</c><00:00:56.040><c> this</c><00:00:56.200><c> prompt</c><00:00:56.480><c> builder</c>
+
+00:00:56.710 --> 00:00:56.720 align:start position:0%
+for free. So what this prompt builder
+ 
+
+00:00:56.720 --> 00:00:59.350 align:start position:0%
+for free. So what this prompt builder
+does<00:00:57.120><c> is</c><00:00:57.360><c> replaces</c><00:00:57.840><c> typing</c><00:00:58.120><c> prompts</c><00:00:58.440><c> by</c><00:00:58.560><c> hand.</c>
+
+00:00:59.350 --> 00:00:59.360 align:start position:0%
+does is replaces typing prompts by hand.
+ 
+
+00:00:59.360 --> 00:01:01.150 align:start position:0%
+does is replaces typing prompts by hand.
+As<00:00:59.520><c> you</c><00:00:59.600><c> can</c><00:00:59.720><c> see</c><00:00:59.880><c> here,</c><00:01:00.120><c> if</c><00:01:00.320><c> I</c><00:01:00.520><c> expand</c><00:01:00.960><c> these</c>
+
+00:01:01.150 --> 00:01:01.160 align:start position:0%
+As you can see here, if I expand these
+ 
+
+00:01:01.160 --> 00:01:02.830 align:start position:0%
+As you can see here, if I expand these
+two<00:01:01.320><c> sections,</c><00:01:01.800><c> we</c><00:01:01.920><c> have</c><00:01:02.080><c> our</c><00:01:02.200><c> categories</c><00:01:02.720><c> and</c>
+
+00:01:02.830 --> 00:01:02.840 align:start position:0%
+two sections, we have our categories and
+ 
+
+00:01:02.840 --> 00:01:04.350 align:start position:0%
+two sections, we have our categories and
+subcategories.
+
+00:01:04.350 --> 00:01:04.360 align:start position:0%
+subcategories.
+ 
+
+00:01:04.360 --> 00:01:05.630 align:start position:0%
+subcategories.
+And<00:01:04.559><c> in</c><00:01:04.640><c> the</c><00:01:04.720><c> categories,</c><00:01:05.199><c> we</c><00:01:05.280><c> have</c><00:01:05.400><c> a</c><00:01:05.440><c> bunch</c>
+
+00:01:05.630 --> 00:01:05.640 align:start position:0%
+And in the categories, we have a bunch
+ 
+
+00:01:05.640 --> 00:01:07.270 align:start position:0%
+And in the categories, we have a bunch
+of<00:01:05.720><c> different</c><00:01:05.920><c> things</c><00:01:06.160><c> such</c><00:01:06.360><c> as</c><00:01:06.520><c> body,</c><00:01:06.880><c> face,</c>
+
+00:01:07.270 --> 00:01:07.280 align:start position:0%
+of different things such as body, face,
+ 
+
+00:01:07.280 --> 00:01:10.270 align:start position:0%
+of different things such as body, face,
+hair,<00:01:07.960><c> and</c><00:01:08.360><c> clothing,</c><00:01:08.840><c> pose,</c><00:01:09.320><c> background.</c>
+
+00:01:10.270 --> 00:01:10.280 align:start position:0%
+hair, and clothing, pose, background.
+ 
+
+00:01:10.280 --> 00:01:11.870 align:start position:0%
+hair, and clothing, pose, background.
+Basically<00:01:10.640><c> everything</c><00:01:11.000><c> that</c><00:01:11.160><c> makes</c><00:01:11.440><c> up</c><00:01:11.720><c> all</c>
+
+00:01:11.870 --> 00:01:11.880 align:start position:0%
+Basically everything that makes up all
+ 
+
+00:01:11.880 --> 00:01:13.910 align:start position:0%
+Basically everything that makes up all
+of<00:01:11.960><c> the</c><00:01:12.080><c> aspects</c><00:01:12.520><c> of</c><00:01:12.600><c> an</c><00:01:12.680><c> image.</c><00:01:13.320><c> And</c><00:01:13.480><c> then</c>
+
+00:01:13.910 --> 00:01:13.920 align:start position:0%
+of the aspects of an image. And then
+ 
+
+00:01:13.920 --> 00:01:15.870 align:start position:0%
+of the aspects of an image. And then
+within<00:01:14.120><c> the</c><00:01:14.200><c> subcategories,</c><00:01:15.400><c> say</c><00:01:15.560><c> we</c><00:01:15.680><c> go</c><00:01:15.800><c> to</c>
+
+00:01:15.870 --> 00:01:15.880 align:start position:0%
+within the subcategories, say we go to
+ 
+
+00:01:15.880 --> 00:01:18.150 align:start position:0%
+within the subcategories, say we go to
+body,<00:01:16.480><c> there</c><00:01:16.680><c> are</c><00:01:16.840><c> things</c><00:01:17.160><c> like</c><00:01:17.400><c> skin</c><00:01:17.680><c> tone,</c>
+
+00:01:18.150 --> 00:01:18.160 align:start position:0%
+body, there are things like skin tone,
+ 
+
+00:01:18.160 --> 00:01:20.790 align:start position:0%
+body, there are things like skin tone,
+body<00:01:18.440><c> type,</c><00:01:18.920><c> height,</c><00:01:19.480><c> waist,</c><00:01:19.920><c> hips,</c><00:01:20.560><c> all</c><00:01:20.720><c> of</c>
+
+00:01:20.790 --> 00:01:20.800 align:start position:0%
+body type, height, waist, hips, all of
+ 
+
+00:01:20.800 --> 00:01:23.310 align:start position:0%
+body type, height, waist, hips, all of
+that.<00:01:21.200><c> And</c><00:01:21.520><c> that</c><00:01:21.760><c> is</c><00:01:21.920><c> the</c><00:01:22.040><c> same</c><00:01:22.440><c> for</c><00:01:22.960><c> every</c><00:01:23.200><c> one</c>
+
+00:01:23.310 --> 00:01:23.320 align:start position:0%
+that. And that is the same for every one
+ 
+
+00:01:23.320 --> 00:01:24.590 align:start position:0%
+that. And that is the same for every one
+of<00:01:23.400><c> these</c><00:01:23.560><c> subcategories.</c><00:01:24.160><c> So</c><00:01:24.240><c> you</c><00:01:24.320><c> can</c><00:01:24.440><c> go</c>
+
+00:01:24.590 --> 00:01:24.600 align:start position:0%
+of these subcategories. So you can go
+ 
+
+00:01:24.600 --> 00:01:27.190 align:start position:0%
+of these subcategories. So you can go
+through<00:01:24.880><c> and</c><00:01:25.000><c> pick</c><00:01:25.520><c> all</c><00:01:26.040><c> of</c><00:01:26.200><c> the</c><00:01:26.840><c> settings</c>
+
+00:01:27.190 --> 00:01:27.200 align:start position:0%
+through and pick all of the settings
+ 
+
+00:01:27.200 --> 00:01:28.230 align:start position:0%
+through and pick all of the settings
+that<00:01:27.360><c> you</c><00:01:27.480><c> want</c><00:01:27.760><c> to</c><00:01:27.800><c> make</c><00:01:27.920><c> up</c><00:01:28.040><c> your</c><00:01:28.160><c> own</c>
+
+00:01:28.230 --> 00:01:28.240 align:start position:0%
+that you want to make up your own
+ 
+
+00:01:28.240 --> 00:01:29.670 align:start position:0%
+that you want to make up your own
+character<00:01:28.800><c> or</c><00:01:28.920><c> you</c><00:01:29.000><c> can</c><00:01:29.160><c> use</c><00:01:29.400><c> your</c><00:01:29.560><c> own</c>
+
+00:01:29.670 --> 00:01:29.680 align:start position:0%
+character or you can use your own
+ 
+
+00:01:29.680 --> 00:01:31.470 align:start position:0%
+character or you can use your own
+character<00:01:30.040><c> LORA</c><00:01:30.760><c> attached,</c><00:01:31.160><c> which</c><00:01:31.320><c> I</c><00:01:31.360><c> will</c>
+
+00:01:31.470 --> 00:01:31.480 align:start position:0%
+character LORA attached, which I will
+ 
+
+00:01:31.480 --> 00:01:32.750 align:start position:0%
+character LORA attached, which I will
+show<00:01:31.600><c> you</c><00:01:31.720><c> how</c><00:01:31.800><c> to</c><00:01:31.920><c> do</c><00:01:32.040><c> right</c><00:01:32.160><c> now.</c><00:01:32.480><c> So</c><00:01:32.600><c> you</c><00:01:32.640><c> can</c>
+
+00:01:32.750 --> 00:01:32.760 align:start position:0%
+show you how to do right now. So you can
+ 
+
+00:01:32.760 --> 00:01:34.430 align:start position:0%
+show you how to do right now. So you can
+see<00:01:32.880><c> here</c><00:01:33.120><c> I</c><00:01:33.200><c> expand</c><00:01:33.520><c> the</c><00:01:33.600><c> character</c><00:01:33.960><c> and</c><00:01:34.080><c> LORA</c>
+
+00:01:34.430 --> 00:01:34.440 align:start position:0%
+see here I expand the character and LORA
+ 
+
+00:01:34.440 --> 00:01:36.030 align:start position:0%
+see here I expand the character and LORA
+panel.<00:01:34.880><c> It</c><00:01:35.000><c> sits</c><00:01:35.200><c> at</c><00:01:35.280><c> the</c><00:01:35.360><c> top</c><00:01:35.600><c> of</c><00:01:35.640><c> the</c><00:01:35.720><c> node</c>
+
+00:01:36.030 --> 00:01:36.040 align:start position:0%
+panel. It sits at the top of the node
+ 
+
+00:01:36.040 --> 00:01:37.430 align:start position:0%
+panel. It sits at the top of the node
+regardless<00:01:36.480><c> of</c><00:01:36.560><c> which</c><00:01:36.760><c> mode</c><00:01:36.960><c> you're</c><00:01:37.120><c> in,</c>
+
+00:01:37.430 --> 00:01:37.440 align:start position:0%
+regardless of which mode you're in,
+ 
+
+00:01:37.440 --> 00:01:38.870 align:start position:0%
+regardless of which mode you're in,
+whether<00:01:37.720><c> you're</c><00:01:37.880><c> in</c><00:01:38.000><c> professional</c><00:01:38.600><c> /</c>
+
+00:01:38.870 --> 00:01:38.880 align:start position:0%
+whether you're in professional /
+ 
+
+00:01:38.880 --> 00:01:41.390 align:start position:0%
+whether you're in professional /
+business<00:01:39.440><c> or</c><00:01:39.760><c> the</c><00:01:39.920><c> influencer</c><00:01:40.600><c> section.</c><00:01:41.040><c> So</c>
+
+00:01:41.390 --> 00:01:41.400 align:start position:0%
+business or the influencer section. So
+ 
+
+00:01:41.400 --> 00:01:42.790 align:start position:0%
+business or the influencer section. So
+there<00:01:41.600><c> are</c><00:01:41.680><c> obviously</c><00:01:42.000><c> things</c><00:01:42.240><c> here</c><00:01:42.480><c> like</c><00:01:42.720><c> the</c>
+
+00:01:42.790 --> 00:01:42.800 align:start position:0%
+there are obviously things here like the
+ 
+
+00:01:42.800 --> 00:01:45.270 align:start position:0%
+there are obviously things here like the
+trigger<00:01:43.080><c> word,</c><00:01:43.720><c> a</c><00:01:43.760><c> drop-down</c><00:01:44.280><c> list</c><00:01:44.520><c> of</c><00:01:44.640><c> LORAs,</c>
+
+00:01:45.270 --> 00:01:45.280 align:start position:0%
+trigger word, a drop-down list of LORAs,
+ 
+
+00:01:45.280 --> 00:01:47.270 align:start position:0%
+trigger word, a drop-down list of LORAs,
+the<00:01:45.480><c> LORA</c><00:01:45.800><c> strength</c><00:01:46.440><c> that</c><00:01:46.560><c> you</c><00:01:46.680><c> can</c><00:01:46.800><c> dial</c><00:01:47.120><c> in</c>
+
+00:01:47.270 --> 00:01:47.280 align:start position:0%
+the LORA strength that you can dial in
+ 
+
+00:01:47.280 --> 00:01:49.030 align:start position:0%
+the LORA strength that you can dial in
+here,<00:01:47.680><c> the</c><00:01:47.760><c> clip</c><00:01:48.040><c> strength,</c><00:01:48.480><c> and</c><00:01:48.640><c> a</c><00:01:48.680><c> list</c><00:01:48.920><c> of</c>
+
+00:01:49.030 --> 00:01:49.040 align:start position:0%
+here, the clip strength, and a list of
+ 
+
+00:01:49.040 --> 00:01:50.750 align:start position:0%
+here, the clip strength, and a list of
+your<00:01:49.200><c> already</c><00:01:49.400><c> saved</c><00:01:49.640><c> characters.</c><00:01:50.360><c> Now</c><00:01:50.560><c> just</c>
+
+00:01:50.750 --> 00:01:50.760 align:start position:0%
+your already saved characters. Now just
+ 
+
+00:01:50.760 --> 00:01:52.830 align:start position:0%
+your already saved characters. Now just
+another<00:01:51.000><c> disclaimer,</c><00:01:51.440><c> if</c><00:01:51.600><c> you</c><00:01:51.800><c> are</c><00:01:52.120><c> using</c><00:01:52.760><c> a</c>
+
+00:01:52.830 --> 00:01:52.840 align:start position:0%
+another disclaimer, if you are using a
+ 
+
+00:01:52.840 --> 00:01:54.870 align:start position:0%
+another disclaimer, if you are using a
+character<00:01:53.200><c> LORA,</c><00:01:53.840><c> what</c><00:01:54.000><c> you'll</c><00:01:54.120><c> need</c><00:01:54.280><c> to</c><00:01:54.360><c> do</c>
+
+00:01:54.870 --> 00:01:54.880 align:start position:0%
+character LORA, what you'll need to do
+ 
+
+00:01:54.880 --> 00:01:57.910 align:start position:0%
+character LORA, what you'll need to do
+is<00:01:55.240><c> wire</c><00:01:55.560><c> your</c><00:01:56.080><c> diffusion</c><00:01:56.520><c> model</c><00:01:56.960><c> into</c><00:01:57.680><c> this</c>
+
+00:01:57.910 --> 00:01:57.920 align:start position:0%
+is wire your diffusion model into this
+ 
+
+00:01:57.920 --> 00:02:00.110 align:start position:0%
+is wire your diffusion model into this
+node<00:01:58.360><c> and</c><00:01:58.560><c> your</c><00:01:58.720><c> clip</c><00:01:59.320><c> text</c><00:01:59.600><c> encoder</c><00:01:59.920><c> into</c>
+
+00:02:00.110 --> 00:02:00.120 align:start position:0%
+node and your clip text encoder into
+ 
+
+00:02:00.120 --> 00:02:01.710 align:start position:0%
+node and your clip text encoder into
+this<00:02:00.240><c> node</c><00:02:00.440><c> as</c><00:02:00.560><c> well.</c><00:02:00.920><c> And</c><00:02:01.000><c> then</c><00:02:01.120><c> take</c><00:02:01.360><c> the</c>
+
+00:02:01.710 --> 00:02:01.720 align:start position:0%
+this node as well. And then take the
+ 
+
+00:02:01.720 --> 00:02:04.310 align:start position:0%
+this node as well. And then take the
+wiring<00:02:02.160><c> outputs</c><00:02:02.720><c> of</c><00:02:02.840><c> these</c><00:02:03.320><c> and</c><00:02:04.000><c> feed</c><00:02:04.200><c> them</c>
+
+00:02:04.310 --> 00:02:04.320 align:start position:0%
+wiring outputs of these and feed them
+ 
+
+00:02:04.320 --> 00:02:06.510 align:start position:0%
+wiring outputs of these and feed them
+into<00:02:04.479><c> your</c><00:02:04.600><c> workflow.</c><00:02:05.200><c> So,</c><00:02:05.600><c> if</c><00:02:05.840><c> I</c><00:02:06.040><c> drop</c><00:02:06.360><c> down</c>
+
+00:02:06.510 --> 00:02:06.520 align:start position:0%
+into your workflow. So, if I drop down
+ 
+
+00:02:06.520 --> 00:02:08.310 align:start position:0%
+into your workflow. So, if I drop down
+the<00:02:06.600><c> list</c><00:02:07.040><c> of</c><00:02:07.240><c> categories</c><00:02:07.760><c> here,</c><00:02:07.960><c> we</c><00:02:08.080><c> can</c><00:02:08.200><c> see</c>
+
+00:02:08.310 --> 00:02:08.320 align:start position:0%
+the list of categories here, we can see
+ 
+
+00:02:08.320 --> 00:02:10.350 align:start position:0%
+the list of categories here, we can see
+that<00:02:08.479><c> there</c><00:02:08.640><c> is</c><00:02:08.880><c> a</c><00:02:08.960><c> character</c><00:02:09.440><c> section.</c><00:02:10.200><c> And</c>
+
+00:02:10.350 --> 00:02:10.360 align:start position:0%
+that there is a character section. And
+ 
+
+00:02:10.360 --> 00:02:12.710 align:start position:0%
+that there is a character section. And
+what<00:02:10.479><c> I'm</c><00:02:10.520><c> going</c><00:02:10.759><c> to</c><00:02:10.840><c> do</c><00:02:11.360><c> is</c><00:02:11.560><c> just</c><00:02:12.040><c> add</c><00:02:12.560><c> the</c>
+
+00:02:12.710 --> 00:02:12.720 align:start position:0%
+what I'm going to do is just add the
+ 
+
+00:02:12.720 --> 00:02:15.150 align:start position:0%
+what I'm going to do is just add the
+trigger<00:02:13.040><c> word</c><00:02:13.480><c> to</c><00:02:13.560><c> one</c><00:02:13.680><c> of</c><00:02:13.720><c> my</c><00:02:13.840><c> LoRAs</c>
+
+00:02:15.150 --> 00:02:15.160 align:start position:0%
+trigger word to one of my LoRAs
+ 
+
+00:02:15.160 --> 00:02:16.790 align:start position:0%
+trigger word to one of my LoRAs
+from<00:02:15.280><c> the</c><00:02:15.360><c> drop-down</c><00:02:15.800><c> list.</c>
+
+00:02:16.790 --> 00:02:16.800 align:start position:0%
+from the drop-down list.
+ 
+
+00:02:16.800 --> 00:02:18.830 align:start position:0%
+from the drop-down list.
+I'm<00:02:16.959><c> going</c><00:02:17.160><c> to</c><00:02:17.240><c> select</c><00:02:17.840><c> the</c><00:02:17.920><c> LoRA</c><00:02:18.600><c> and</c><00:02:18.720><c> then</c>
+
+00:02:18.830 --> 00:02:18.840 align:start position:0%
+I'm going to select the LoRA and then
+ 
+
+00:02:18.840 --> 00:02:21.070 align:start position:0%
+I'm going to select the LoRA and then
+I'm<00:02:18.959><c> going</c><00:02:19.160><c> to</c><00:02:19.240><c> click</c><00:02:19.560><c> save.</c>
+
+00:02:21.070 --> 00:02:21.080 align:start position:0%
+I'm going to click save.
+ 
+
+00:02:21.080 --> 00:02:22.550 align:start position:0%
+I'm going to click save.
+It<00:02:21.160><c> will</c><00:02:21.320><c> ask</c><00:02:21.520><c> if</c><00:02:21.640><c> you</c><00:02:21.720><c> want</c><00:02:21.840><c> to</c><00:02:21.880><c> save,</c><00:02:22.400><c> so</c><00:02:22.520><c> I</c>
+
+00:02:22.550 --> 00:02:22.560 align:start position:0%
+It will ask if you want to save, so I
+ 
+
+00:02:22.560 --> 00:02:23.949 align:start position:0%
+It will ask if you want to save, so I
+just<00:02:22.720><c> click</c><00:02:22.920><c> yes</c><00:02:23.120><c> here.</c>
+
+00:02:23.949 --> 00:02:23.959 align:start position:0%
+just click yes here.
+ 
+
+00:02:23.959 --> 00:02:26.030 align:start position:0%
+just click yes here.
+And<00:02:24.000><c> now</c><00:02:24.080><c> we</c><00:02:24.160><c> can</c><00:02:24.280><c> see</c><00:02:24.840><c> that</c><00:02:25.520><c> we</c><00:02:25.640><c> have</c><00:02:25.760><c> loaded</c>
+
+00:02:26.030 --> 00:02:26.040 align:start position:0%
+And now we can see that we have loaded
+ 
+
+00:02:26.040 --> 00:02:27.790 align:start position:0%
+And now we can see that we have loaded
+our<00:02:26.120><c> LoRA.</c><00:02:26.800><c> And</c><00:02:26.920><c> you</c><00:02:27.000><c> can</c><00:02:27.120><c> also</c><00:02:27.400><c> change</c><00:02:27.720><c> the</c>
+
+00:02:27.790 --> 00:02:27.800 align:start position:0%
+our LoRA. And you can also change the
+ 
+
+00:02:27.800 --> 00:02:29.790 align:start position:0%
+our LoRA. And you can also change the
+picture<00:02:28.600><c> of</c><00:02:28.880><c> each</c><00:02:29.040><c> of</c><00:02:29.120><c> the</c><00:02:29.240><c> LoRAs</c><00:02:29.560><c> that</c><00:02:29.680><c> you</c>
+
+00:02:29.790 --> 00:02:29.800 align:start position:0%
+picture of each of the LoRAs that you
+ 
+
+00:02:29.800 --> 00:02:31.470 align:start position:0%
+picture of each of the LoRAs that you
+have<00:02:29.920><c> saved</c><00:02:30.200><c> in</c><00:02:30.280><c> here.</c><00:02:30.840><c> So,</c><00:02:30.959><c> you</c><00:02:31.040><c> can</c><00:02:31.160><c> see</c><00:02:31.280><c> here</c>
+
+00:02:31.470 --> 00:02:31.480 align:start position:0%
+have saved in here. So, you can see here
+ 
+
+00:02:31.480 --> 00:02:32.750 align:start position:0%
+have saved in here. So, you can see here
+that<00:02:31.600><c> I've</c><00:02:31.680><c> just</c><00:02:31.840><c> selected</c><00:02:32.160><c> a</c><00:02:32.200><c> picture</c><00:02:32.520><c> for</c><00:02:32.640><c> my</c>
+
+00:02:32.750 --> 00:02:32.760 align:start position:0%
+that I've just selected a picture for my
+ 
+
+00:02:32.760 --> 00:02:34.430 align:start position:0%
+that I've just selected a picture for my
+character.<00:02:33.240><c> Assuming</c><00:02:33.600><c> that</c><00:02:33.800><c> I</c><00:02:33.880><c> have</c><00:02:34.160><c> that</c>
+
+00:02:34.430 --> 00:02:34.440 align:start position:0%
+character. Assuming that I have that
+ 
+
+00:02:34.440 --> 00:02:37.030 align:start position:0%
+character. Assuming that I have that
+enabled,<00:02:35.080><c> it</c><00:02:35.320><c> will</c><00:02:35.560><c> apply</c><00:02:35.880><c> my</c><00:02:36.040><c> LoRA</c><00:02:36.440><c> to</c><00:02:36.760><c> all</c><00:02:36.920><c> of</c>
+
+00:02:37.030 --> 00:02:37.040 align:start position:0%
+enabled, it will apply my LoRA to all of
+ 
+
+00:02:37.040 --> 00:02:38.949 align:start position:0%
+enabled, it will apply my LoRA to all of
+my<00:02:37.160><c> prompt</c><00:02:37.400><c> generations.</c><00:02:38.360><c> So,</c><00:02:38.560><c> now</c><00:02:38.760><c> let's</c>
+
+00:02:38.949 --> 00:02:38.959 align:start position:0%
+my prompt generations. So, now let's
+ 
+
+00:02:38.959 --> 00:02:40.470 align:start position:0%
+my prompt generations. So, now let's
+move<00:02:39.160><c> on</c><00:02:39.320><c> to</c><00:02:39.440><c> the</c><00:02:39.520><c> difference</c><00:02:39.880><c> between</c><00:02:40.320><c> the</c>
+
+00:02:40.470 --> 00:02:40.480 align:start position:0%
+move on to the difference between the
+ 
+
+00:02:40.480 --> 00:02:41.830 align:start position:0%
+move on to the difference between the
+two<00:02:40.840><c> main</c><00:02:41.120><c> categories.</c><00:02:41.640><c> We</c><00:02:41.720><c> have</c>
+
+00:02:41.830 --> 00:02:41.840 align:start position:0%
+two main categories. We have
+ 
+
+00:02:41.840 --> 00:02:44.470 align:start position:0%
+two main categories. We have
+professional/business<00:02:43.280><c> and</c><00:02:43.520><c> influencer.</c>
+
+00:02:44.470 --> 00:02:44.480 align:start position:0%
+professional/business and influencer.
+ 
+
+00:02:44.480 --> 00:02:46.390 align:start position:0%
+professional/business and influencer.
+The<00:02:44.680><c> professional/business</c><00:02:45.840><c> section</c><00:02:46.200><c> is</c>
+
+00:02:46.390 --> 00:02:46.400 align:start position:0%
+The professional/business section is
+ 
+
+00:02:46.400 --> 00:02:48.710 align:start position:0%
+The professional/business section is
+built<00:02:46.720><c> for</c><00:02:47.040><c> commercial</c><00:02:47.880><c> or</c><00:02:48.080><c> product</c><00:02:48.440><c> style</c>
+
+00:02:48.710 --> 00:02:48.720 align:start position:0%
+built for commercial or product style
+ 
+
+00:02:48.720 --> 00:02:50.710 align:start position:0%
+built for commercial or product style
+photos,<00:02:49.440><c> editorial</c><00:02:50.040><c> photos,</c>
+
+00:02:50.710 --> 00:02:50.720 align:start position:0%
+photos, editorial photos,
+ 
+
+00:02:50.720 --> 00:02:52.470 align:start position:0%
+photos, editorial photos,
+straightforward<00:02:51.360><c> portrait</c><00:02:51.760><c> work,</c><00:02:52.080><c> and</c><00:02:52.240><c> so</c>
+
+00:02:52.470 --> 00:02:52.480 align:start position:0%
+straightforward portrait work, and so
+ 
+
+00:02:52.480 --> 00:02:55.070 align:start position:0%
+straightforward portrait work, and so
+on.<00:02:53.200><c> And</c><00:02:53.320><c> moving</c><00:02:53.520><c> on</c><00:02:53.640><c> to</c><00:02:53.720><c> the</c><00:02:53.840><c> influencer</c><00:02:54.360><c> tab,</c>
+
+00:02:55.070 --> 00:02:55.080 align:start position:0%
+on. And moving on to the influencer tab,
+ 
+
+00:02:55.080 --> 00:02:56.710 align:start position:0%
+on. And moving on to the influencer tab,
+it's<00:02:55.280><c> the</c><00:02:55.360><c> same</c><00:02:55.600><c> core</c><00:02:55.840><c> idea,</c><00:02:56.520><c> but</c>
+
+00:02:56.710 --> 00:02:56.720 align:start position:0%
+it's the same core idea, but
+ 
+
+00:02:56.720 --> 00:02:58.790 align:start position:0%
+it's the same core idea, but
+restructured<00:02:57.280><c> for</c><00:02:57.480><c> social</c><00:02:57.840><c> media</c><00:02:58.200><c> or</c><00:02:58.440><c> creator</c>
+
+00:02:58.790 --> 00:02:58.800 align:start position:0%
+restructured for social media or creator
+ 
+
+00:02:58.800 --> 00:03:00.150 align:start position:0%
+restructured for social media or creator
+style<00:02:59.120><c> content</c><00:02:59.600><c> where</c><00:02:59.800><c> physical</c>
+
+00:03:00.150 --> 00:03:00.160 align:start position:0%
+style content where physical
+ 
+
+00:03:00.160 --> 00:03:02.390 align:start position:0%
+style content where physical
+presentation<00:03:01.080><c> matters</c><00:03:01.400><c> a</c><00:03:01.440><c> lot</c><00:03:01.640><c> more.</c><00:03:02.320><c> The</c>
+
+00:03:02.390 --> 00:03:02.400 align:start position:0%
+presentation matters a lot more. The
+ 
+
+00:03:02.400 --> 00:03:04.390 align:start position:0%
+presentation matters a lot more. The
+influencer<00:03:02.880><c> section</c><00:03:03.239><c> has</c><00:03:03.440><c> a</c><00:03:03.480><c> lot</c><00:03:03.760><c> more</c>
+
+00:03:04.390 --> 00:03:04.400 align:start position:0%
+influencer section has a lot more
+ 
+
+00:03:04.400 --> 00:03:06.509 align:start position:0%
+influencer section has a lot more
+categories<00:03:04.959><c> and</c><00:03:05.080><c> subcategories,</c><00:03:06.080><c> especially</c>
+
+00:03:06.509 --> 00:03:06.519 align:start position:0%
+categories and subcategories, especially
+ 
+
+00:03:06.519 --> 00:03:08.030 align:start position:0%
+categories and subcategories, especially
+in<00:03:06.600><c> the</c><00:03:06.680><c> clothing</c><00:03:07.080><c> section,</c><00:03:07.920><c> the</c>
+
+00:03:08.030 --> 00:03:08.040 align:start position:0%
+in the clothing section, the
+ 
+
+00:03:08.040 --> 00:03:10.830 align:start position:0%
+in the clothing section, the
+backgrounds,<00:03:09.080><c> and</c><00:03:09.519><c> also</c><00:03:10.120><c> the</c><00:03:10.360><c> influencer</c>
+
+00:03:10.830 --> 00:03:10.840 align:start position:0%
+backgrounds, and also the influencer
+ 
+
+00:03:10.840 --> 00:03:12.390 align:start position:0%
+backgrounds, and also the influencer
+section<00:03:11.239><c> gives</c><00:03:11.519><c> you</c><00:03:11.600><c> the</c><00:03:11.720><c> ability</c><00:03:12.200><c> to</c>
+
+00:03:12.390 --> 00:03:12.400 align:start position:0%
+section gives you the ability to
+ 
+
+00:03:12.400 --> 00:03:14.990 align:start position:0%
+section gives you the ability to
+completely<00:03:12.840><c> customize</c><00:03:13.480><c> the</c><00:03:13.880><c> face,</c>
+
+00:03:14.990 --> 00:03:15.000 align:start position:0%
+completely customize the face,
+ 
+
+00:03:15.000 --> 00:03:18.070 align:start position:0%
+completely customize the face,
+body,<00:03:15.440><c> hair,</c><00:03:16.080><c> makeup,</c><00:03:16.959><c> and</c><00:03:17.120><c> so</c><00:03:17.320><c> on.</c><00:03:17.760><c> So,</c><00:03:17.880><c> most</c>
+
+00:03:18.070 --> 00:03:18.080 align:start position:0%
+body, hair, makeup, and so on. So, most
+ 
+
+00:03:18.080 --> 00:03:19.509 align:start position:0%
+body, hair, makeup, and so on. So, most
+of<00:03:18.160><c> you</c><00:03:18.239><c> are</c><00:03:18.320><c> probably</c><00:03:18.720><c> going</c><00:03:18.920><c> to</c><00:03:19.000><c> find</c><00:03:19.280><c> more</c>
+
+00:03:19.509 --> 00:03:19.519 align:start position:0%
+of you are probably going to find more
+ 
+
+00:03:19.519 --> 00:03:21.070 align:start position:0%
+of you are probably going to find more
+use<00:03:19.760><c> in</c><00:03:19.840><c> the</c><00:03:19.920><c> influencer</c><00:03:20.400><c> section,</c><00:03:20.840><c> but</c><00:03:21.000><c> for</c>
+
+00:03:21.070 --> 00:03:21.080 align:start position:0%
+use in the influencer section, but for
+ 
+
+00:03:21.080 --> 00:03:22.509 align:start position:0%
+use in the influencer section, but for
+people<00:03:21.360><c> who</c><00:03:21.480><c> do</c><00:03:21.680><c> want</c><00:03:21.800><c> to</c><00:03:21.880><c> create</c><00:03:22.200><c> product</c>
+
+00:03:22.509 --> 00:03:22.519 align:start position:0%
+people who do want to create product
+ 
+
+00:03:22.519 --> 00:03:24.350 align:start position:0%
+people who do want to create product
+displays<00:03:23.040><c> for</c><00:03:23.200><c> their</c><00:03:23.320><c> stuff,</c><00:03:24.000><c> you</c><00:03:24.080><c> can</c><00:03:24.200><c> use</c>
+
+00:03:24.350 --> 00:03:24.360 align:start position:0%
+displays for their stuff, you can use
+ 
+
+00:03:24.360 --> 00:03:26.229 align:start position:0%
+displays for their stuff, you can use
+the<00:03:24.440><c> professional/business</c><00:03:25.880><c> section.</c><00:03:26.120><c> The</c>
+
+00:03:26.229 --> 00:03:26.239 align:start position:0%
+the professional/business section. The
+ 
+
+00:03:26.239 --> 00:03:27.590 align:start position:0%
+the professional/business section. The
+reason<00:03:26.440><c> they're</c><00:03:26.519><c> separated</c><00:03:27.160><c> is</c><00:03:27.280><c> because</c>
+
+00:03:27.590 --> 00:03:27.600 align:start position:0%
+reason they're separated is because
+ 
+
+00:03:27.600 --> 00:03:29.350 align:start position:0%
+reason they're separated is because
+influencer<00:03:28.040><c> style</c><00:03:28.280><c> content</c><00:03:28.680><c> needs</c><00:03:28.959><c> way</c><00:03:29.080><c> more</c>
+
+00:03:29.350 --> 00:03:29.360 align:start position:0%
+influencer style content needs way more
+ 
+
+00:03:29.360 --> 00:03:31.390 align:start position:0%
+influencer style content needs way more
+granularity<00:03:30.200><c> on</c><00:03:30.320><c> appearance</c><00:03:30.800><c> and</c><00:03:30.920><c> setting</c>
+
+00:03:31.390 --> 00:03:31.400 align:start position:0%
+granularity on appearance and setting
+ 
+
+00:03:31.400 --> 00:03:33.310 align:start position:0%
+granularity on appearance and setting
+than<00:03:31.519><c> a</c><00:03:31.560><c> single</c><00:03:31.920><c> subject</c><00:03:32.519><c> for</c><00:03:32.800><c> just</c><00:03:32.959><c> a</c><00:03:33.040><c> product</c>
+
+00:03:33.310 --> 00:03:33.320 align:start position:0%
+than a single subject for just a product
+ 
+
+00:03:33.320 --> 00:03:34.990 align:start position:0%
+than a single subject for just a product
+display<00:03:33.600><c> or</c><00:03:33.680><c> something</c><00:03:33.959><c> like</c><00:03:34.120><c> that.</c><00:03:34.600><c> You</c><00:03:34.720><c> also</c>
+
+00:03:34.990 --> 00:03:35.000 align:start position:0%
+display or something like that. You also
+ 
+
+00:03:35.000 --> 00:03:37.390 align:start position:0%
+display or something like that. You also
+have<00:03:35.320><c> the</c><00:03:35.560><c> full</c><00:03:35.800><c> customizability</c><00:03:36.760><c> to</c><00:03:37.120><c> add</c>
+
+00:03:37.390 --> 00:03:37.400 align:start position:0%
+have the full customizability to add
+ 
+
+00:03:37.400 --> 00:03:39.110 align:start position:0%
+have the full customizability to add
+your<00:03:37.600><c> own</c><00:03:37.760><c> categories</c><00:03:38.480><c> and</c><00:03:38.640><c> add</c><00:03:38.840><c> your</c><00:03:39.000><c> own</c>
+
+00:03:39.110 --> 00:03:39.120 align:start position:0%
+your own categories and add your own
+ 
+
+00:03:39.120 --> 00:03:41.470 align:start position:0%
+your own categories and add your own
+subcategories<00:03:39.880><c> as</c><00:03:40.040><c> you</c><00:03:40.120><c> please.</c>
+
+00:03:41.470 --> 00:03:41.480 align:start position:0%
+subcategories as you please.
+ 
+
+00:03:41.480 --> 00:03:43.030 align:start position:0%
+subcategories as you please.
+I'm<00:03:41.519><c> going</c><00:03:41.680><c> to</c><00:03:41.760><c> quickly</c><00:03:42.120><c> collapse</c><00:03:42.640><c> these</c><00:03:42.880><c> two</c>
+
+00:03:43.030 --> 00:03:43.040 align:start position:0%
+I'm going to quickly collapse these two
+ 
+
+00:03:43.040 --> 00:03:44.190 align:start position:0%
+I'm going to quickly collapse these two
+sections<00:03:43.480><c> here</c><00:03:43.680><c> to</c><00:03:43.800><c> show</c><00:03:43.959><c> you</c><00:03:44.120><c> the</c>
+
+00:03:44.190 --> 00:03:44.200 align:start position:0%
+sections here to show you the
+ 
+
+00:03:44.200 --> 00:03:46.430 align:start position:0%
+sections here to show you the
+customizability<00:03:45.080><c> of</c><00:03:45.200><c> every</c><00:03:45.440><c> list.</c><00:03:46.000><c> So,</c><00:03:46.280><c> real</c>
+
+00:03:46.430 --> 00:03:46.440 align:start position:0%
+customizability of every list. So, real
+ 
+
+00:03:46.440 --> 00:03:48.350 align:start position:0%
+customizability of every list. So, real
+quick,<00:03:46.920><c> we're</c><00:03:47.120><c> in</c><00:03:47.280><c> the</c><00:03:47.440><c> pose</c><00:03:47.760><c> section,</c><00:03:48.280><c> and</c>
+
+00:03:48.350 --> 00:03:48.360 align:start position:0%
+quick, we're in the pose section, and
+ 
+
+00:03:48.360 --> 00:03:50.310 align:start position:0%
+quick, we're in the pose section, and
+then<00:03:48.519><c> you</c><00:03:48.600><c> can</c><00:03:48.720><c> see</c><00:03:49.040><c> in</c><00:03:49.200><c> the</c><00:03:49.600><c> subcategory</c>
+
+00:03:50.310 --> 00:03:50.320 align:start position:0%
+then you can see in the subcategory
+ 
+
+00:03:50.320 --> 00:03:52.030 align:start position:0%
+then you can see in the subcategory
+section<00:03:50.720><c> of</c><00:03:50.840><c> posing,</c><00:03:51.280><c> there's</c><00:03:51.480><c> a</c><00:03:51.640><c> bunch</c><00:03:51.920><c> of</c>
+
+00:03:52.030 --> 00:03:52.040 align:start position:0%
+section of posing, there's a bunch of
+ 
+
+00:03:52.040 --> 00:03:54.790 align:start position:0%
+section of posing, there's a bunch of
+different<00:03:52.720><c> generalized</c><00:03:53.680><c> types</c><00:03:53.960><c> of</c><00:03:54.200><c> poses.</c>
+
+00:03:54.790 --> 00:03:54.800 align:start position:0%
+different generalized types of poses.
+ 
+
+00:03:54.800 --> 00:03:56.790 align:start position:0%
+different generalized types of poses.
+So,<00:03:55.120><c> let</c><00:03:55.280><c> me</c><00:03:55.400><c> condense</c><00:03:55.920><c> those</c><00:03:56.200><c> real</c><00:03:56.360><c> quick.</c>
+
+00:03:56.790 --> 00:03:56.800 align:start position:0%
+So, let me condense those real quick.
+ 
+
+00:03:56.800 --> 00:03:59.110 align:start position:0%
+So, let me condense those real quick.
+So,<00:03:57.080><c> if</c><00:03:57.280><c> you're</c><00:03:57.520><c> wanting</c><00:03:57.880><c> to</c><00:03:58.200><c> rearrange</c><00:03:58.920><c> the</c>
+
+00:03:59.110 --> 00:03:59.120 align:start position:0%
+So, if you're wanting to rearrange the
+ 
+
+00:03:59.120 --> 00:04:01.550 align:start position:0%
+So, if you're wanting to rearrange the
+order<00:03:59.480><c> in</c><00:03:59.680><c> which</c><00:03:59.920><c> things</c><00:04:00.240><c> are</c><00:04:00.920><c> arranged</c><00:04:01.440><c> in</c>
+
+00:04:01.550 --> 00:04:01.560 align:start position:0%
+order in which things are arranged in
+ 
+
+00:04:01.560 --> 00:04:03.350 align:start position:0%
+order in which things are arranged in
+these<00:04:01.800><c> lists,</c><00:04:02.120><c> you</c><00:04:02.240><c> can</c><00:04:02.480><c> drag</c><00:04:02.800><c> and</c><00:04:02.880><c> drop</c><00:04:03.120><c> them</c>
+
+00:04:03.350 --> 00:04:03.360 align:start position:0%
+these lists, you can drag and drop them
+ 
+
+00:04:03.360 --> 00:04:05.230 align:start position:0%
+these lists, you can drag and drop them
+however<00:04:03.680><c> you</c><00:04:03.800><c> please.</c><00:04:04.520><c> You</c><00:04:04.640><c> can</c><00:04:04.800><c> right</c><00:04:05.000><c> click</c>
+
+00:04:05.230 --> 00:04:05.240 align:start position:0%
+however you please. You can right click
+ 
+
+00:04:05.240 --> 00:04:07.510 align:start position:0%
+however you please. You can right click
+them,<00:04:05.480><c> you</c><00:04:05.600><c> can</c><00:04:05.720><c> delete,</c><00:04:06.600><c> edit,</c><00:04:07.040><c> or</c><00:04:07.280><c> add</c>
+
+00:04:07.510 --> 00:04:07.520 align:start position:0%
+them, you can delete, edit, or add
+ 
+
+00:04:07.520 --> 00:04:09.550 align:start position:0%
+them, you can delete, edit, or add
+thumbnails<00:04:08.040><c> to</c><00:04:08.120><c> them.</c><00:04:08.480><c> So,</c><00:04:08.600><c> this</c><00:04:08.760><c> allows</c><00:04:09.120><c> for</c>
+
+00:04:09.550 --> 00:04:09.560 align:start position:0%
+thumbnails to them. So, this allows for
+ 
+
+00:04:09.560 --> 00:04:11.870 align:start position:0%
+thumbnails to them. So, this allows for
+full<00:04:09.760><c> control</c><00:04:10.240><c> and</c><00:04:10.360><c> customizability</c><00:04:11.360><c> over</c>
+
+00:04:11.870 --> 00:04:11.880 align:start position:0%
+full control and customizability over
+ 
+
+00:04:11.880 --> 00:04:13.070 align:start position:0%
+full control and customizability over
+whatever<00:04:12.240><c> it</c><00:04:12.360><c> is</c><00:04:12.520><c> that</c><00:04:12.640><c> you're</c><00:04:12.760><c> wanting</c><00:04:13.000><c> to</c>
+
+00:04:13.070 --> 00:04:13.080 align:start position:0%
+whatever it is that you're wanting to
+ 
+
+00:04:13.080 --> 00:04:14.949 align:start position:0%
+whatever it is that you're wanting to
+create.<00:04:13.560><c> You</c><00:04:13.640><c> can</c><00:04:13.840><c> literally</c><00:04:14.200><c> add</c><00:04:14.480><c> whatever</c>
+
+00:04:14.949 --> 00:04:14.959 align:start position:0%
+create. You can literally add whatever
+ 
+
+00:04:14.959 --> 00:04:16.349 align:start position:0%
+create. You can literally add whatever
+you<00:04:15.080><c> want.</c><00:04:15.400><c> This</c><00:04:15.600><c> is</c><00:04:15.720><c> completely</c>
+
+00:04:16.349 --> 00:04:16.359 align:start position:0%
+you want. This is completely
+ 
+
+00:04:16.359 --> 00:04:18.590 align:start position:0%
+you want. This is completely
+customizable.<00:04:17.320><c> And</c><00:04:17.519><c> now,</c><00:04:17.760><c> let's</c><00:04:18.040><c> say</c><00:04:18.320><c> that</c>
+
+00:04:18.590 --> 00:04:18.600 align:start position:0%
+customizable. And now, let's say that
+ 
+
+00:04:18.600 --> 00:04:20.590 align:start position:0%
+customizable. And now, let's say that
+you<00:04:18.720><c> don't</c><00:04:19.040><c> want</c><00:04:19.239><c> to</c><00:04:19.359><c> go</c><00:04:19.519><c> through</c><00:04:19.959><c> and</c>
+
+00:04:20.590 --> 00:04:20.600 align:start position:0%
+you don't want to go through and
+ 
+
+00:04:20.600 --> 00:04:22.670 align:start position:0%
+you don't want to go through and
+pick<00:04:20.920><c> every</c><00:04:21.200><c> single</c><00:04:21.840><c> category</c><00:04:22.480><c> and</c>
+
+00:04:22.670 --> 00:04:22.680 align:start position:0%
+pick every single category and
+ 
+
+00:04:22.680 --> 00:04:24.830 align:start position:0%
+pick every single category and
+subcategory<00:04:23.360><c> option.</c><00:04:24.120><c> There</c><00:04:24.320><c> is</c><00:04:24.560><c> this</c>
+
+00:04:24.830 --> 00:04:24.840 align:start position:0%
+subcategory option. There is this
+ 
+
+00:04:24.840 --> 00:04:26.670 align:start position:0%
+subcategory option. There is this
+randomizer<00:04:25.440><c> section.</c><00:04:26.160><c> So,</c><00:04:26.320><c> there's</c><00:04:26.480><c> a</c><00:04:26.520><c> few</c>
+
+00:04:26.670 --> 00:04:26.680 align:start position:0%
+randomizer section. So, there's a few
+ 
+
+00:04:26.680 --> 00:04:27.830 align:start position:0%
+randomizer section. So, there's a few
+different<00:04:26.919><c> options</c><00:04:27.240><c> in</c><00:04:27.320><c> here.</c><00:04:27.560><c> You</c><00:04:27.680><c> can</c>
+
+00:04:27.830 --> 00:04:27.840 align:start position:0%
+different options in here. You can
+ 
+
+00:04:27.840 --> 00:04:29.950 align:start position:0%
+different options in here. You can
+randomize<00:04:28.520><c> everything</c><00:04:29.000><c> completely,</c><00:04:29.680><c> but</c>
+
+00:04:29.950 --> 00:04:29.960 align:start position:0%
+randomize everything completely, but
+ 
+
+00:04:29.960 --> 00:04:31.350 align:start position:0%
+randomize everything completely, but
+obviously<00:04:30.360><c> you</c><00:04:30.440><c> don't</c><00:04:30.680><c> want</c><00:04:30.840><c> to</c><00:04:30.919><c> do</c><00:04:31.040><c> that</c><00:04:31.240><c> if</c>
+
+00:04:31.350 --> 00:04:31.360 align:start position:0%
+obviously you don't want to do that if
+ 
+
+00:04:31.360 --> 00:04:33.110 align:start position:0%
+obviously you don't want to do that if
+you<00:04:31.480><c> have</c><00:04:31.600><c> a</c><00:04:31.680><c> character</c><00:04:32.040><c> lore</c><00:04:32.280><c> attached.</c><00:04:32.960><c> So,</c>
+
+00:04:33.110 --> 00:04:33.120 align:start position:0%
+you have a character lore attached. So,
+ 
+
+00:04:33.120 --> 00:04:35.230 align:start position:0%
+you have a character lore attached. So,
+what<00:04:33.240><c> you</c><00:04:33.320><c> can</c><00:04:33.440><c> also</c><00:04:33.680><c> do</c><00:04:34.120><c> is</c><00:04:34.480><c> pick</c><00:04:34.919><c> all</c><00:04:35.040><c> of</c><00:04:35.160><c> the</c>
+
+00:04:35.230 --> 00:04:35.240 align:start position:0%
+what you can also do is pick all of the
+ 
+
+00:04:35.240 --> 00:04:37.310 align:start position:0%
+what you can also do is pick all of the
+physical<00:04:35.600><c> aspects</c><00:04:36.240><c> of,</c><00:04:36.680><c> let's</c><00:04:36.880><c> say,</c><00:04:37.200><c> a</c>
+
+00:04:37.310 --> 00:04:37.320 align:start position:0%
+physical aspects of, let's say, a
+ 
+
+00:04:37.320 --> 00:04:38.630 align:start position:0%
+physical aspects of, let's say, a
+character<00:04:37.680><c> that</c><00:04:37.800><c> you</c><00:04:37.919><c> don't</c><00:04:38.120><c> have</c><00:04:38.280><c> a</c><00:04:38.320><c> lore</c>
+
+00:04:38.630 --> 00:04:38.640 align:start position:0%
+character that you don't have a lore
+ 
+
+00:04:38.640 --> 00:04:40.990 align:start position:0%
+character that you don't have a lore
+for.<00:04:39.040><c> This</c><00:04:39.240><c> randomizer</c><00:04:39.880><c> option</c><00:04:40.400><c> will</c><00:04:40.680><c> leave</c>
+
+00:04:40.990 --> 00:04:41.000 align:start position:0%
+for. This randomizer option will leave
+ 
+
+00:04:41.000 --> 00:04:42.909 align:start position:0%
+for. This randomizer option will leave
+physical<00:04:41.360><c> appearance</c><00:04:41.800><c> untouched,</c><00:04:42.400><c> so</c><00:04:42.640><c> things</c>
+
+00:04:42.909 --> 00:04:42.919 align:start position:0%
+physical appearance untouched, so things
+ 
+
+00:04:42.919 --> 00:04:45.070 align:start position:0%
+physical appearance untouched, so things
+like<00:04:43.120><c> age,</c><00:04:43.400><c> ethnicity,</c><00:04:43.880><c> gender,</c><00:04:44.320><c> body,</c><00:04:44.720><c> face,</c>
+
+00:04:45.070 --> 00:04:45.080 align:start position:0%
+like age, ethnicity, gender, body, face,
+ 
+
+00:04:45.080 --> 00:04:47.150 align:start position:0%
+like age, ethnicity, gender, body, face,
+hair,<00:04:45.640><c> and</c><00:04:45.760><c> randomize</c><00:04:46.160><c> everything</c><00:04:46.440><c> else,</c>
+
+00:04:47.150 --> 00:04:47.160 align:start position:0%
+hair, and randomize everything else,
+ 
+
+00:04:47.160 --> 00:04:49.230 align:start position:0%
+hair, and randomize everything else,
+such<00:04:47.440><c> as</c><00:04:47.680><c> outfit,</c><00:04:48.120><c> pose,</c><00:04:48.480><c> scene,</c><00:04:48.760><c> camera,</c><00:04:49.120><c> and</c>
+
+00:04:49.230 --> 00:04:49.240 align:start position:0%
+such as outfit, pose, scene, camera, and
+ 
+
+00:04:49.240 --> 00:04:51.030 align:start position:0%
+such as outfit, pose, scene, camera, and
+lighting.<00:04:49.640><c> And</c><00:04:49.760><c> then,</c><00:04:50.120><c> the</c><00:04:50.320><c> randomize</c><00:04:50.760><c> with</c>
+
+00:04:51.030 --> 00:04:51.040 align:start position:0%
+lighting. And then, the randomize with
+ 
+
+00:04:51.040 --> 00:04:53.110 align:start position:0%
+lighting. And then, the randomize with
+lore<00:04:51.360><c> section</c><00:04:52.000><c> resets</c><00:04:52.480><c> all</c><00:04:52.640><c> the</c><00:04:52.720><c> physical</c>
+
+00:04:53.110 --> 00:04:53.120 align:start position:0%
+lore section resets all the physical
+ 
+
+00:04:53.120 --> 00:04:54.909 align:start position:0%
+lore section resets all the physical
+appearance<00:04:53.560><c> fields,</c><00:04:53.960><c> like</c><00:04:54.160><c> age,</c><00:04:54.440><c> ethnicity,</c>
+
+00:04:54.909 --> 00:04:54.919 align:start position:0%
+appearance fields, like age, ethnicity,
+ 
+
+00:04:54.919 --> 00:04:57.030 align:start position:0%
+appearance fields, like age, ethnicity,
+and<00:04:55.080><c> so</c><00:04:55.280><c> on,</c><00:04:55.640><c> to</c><00:04:55.800><c> empty,</c><00:04:56.200><c> and</c><00:04:56.360><c> then</c><00:04:56.480><c> randomizes</c>
+
+00:04:57.030 --> 00:04:57.040 align:start position:0%
+and so on, to empty, and then randomizes
+ 
+
+00:04:57.040 --> 00:04:58.710 align:start position:0%
+and so on, to empty, and then randomizes
+everything<00:04:57.400><c> else</c><00:04:57.760><c> while</c><00:04:58.000><c> it</c><00:04:58.120><c> includes</c><00:04:58.560><c> your</c>
+
+00:04:58.710 --> 00:04:58.720 align:start position:0%
+everything else while it includes your
+ 
+
+00:04:58.720 --> 00:05:00.550 align:start position:0%
+everything else while it includes your
+lore<00:04:58.960><c> trigger</c><00:04:59.280><c> word</c><00:04:59.480><c> in</c><00:04:59.600><c> the</c><00:04:59.680><c> prompt.</c><00:05:00.400><c> So,</c>
+
+00:05:00.550 --> 00:05:00.560 align:start position:0%
+lore trigger word in the prompt. So,
+ 
+
+00:05:00.560 --> 00:05:01.830 align:start position:0%
+lore trigger word in the prompt. So,
+nothing<00:05:00.800><c> conflicts</c><00:05:01.280><c> with</c><00:05:01.400><c> a</c><00:05:01.440><c> character</c>
+
+00:05:01.830 --> 00:05:01.840 align:start position:0%
+nothing conflicts with a character
+ 
+
+00:05:01.840 --> 00:05:03.070 align:start position:0%
+nothing conflicts with a character
+lore's<00:05:02.120><c> trained</c><00:05:02.400><c> look.</c><00:05:02.760><c> And</c><00:05:02.840><c> then,</c><00:05:02.919><c> there's</c>
+
+00:05:03.070 --> 00:05:03.080 align:start position:0%
+lore's trained look. And then, there's
+ 
+
+00:05:03.080 --> 00:05:04.670 align:start position:0%
+lore's trained look. And then, there's
+also<00:05:03.400><c> a</c><00:05:03.440><c> custom</c><00:05:03.800><c> preset</c><00:05:04.200><c> where</c><00:05:04.320><c> you</c><00:05:04.360><c> can</c><00:05:04.520><c> go</c>
+
+00:05:04.670 --> 00:05:04.680 align:start position:0%
+also a custom preset where you can go
+ 
+
+00:05:04.680 --> 00:05:06.390 align:start position:0%
+also a custom preset where you can go
+through<00:05:05.000><c> and</c><00:05:05.200><c> just</c><00:05:05.400><c> select</c><00:05:05.840><c> every</c><00:05:06.120><c> single</c>
+
+00:05:06.390 --> 00:05:06.400 align:start position:0%
+through and just select every single
+ 
+
+00:05:06.400 --> 00:05:07.750 align:start position:0%
+through and just select every single
+thing<00:05:06.600><c> that</c><00:05:06.760><c> you</c><00:05:06.840><c> want</c><00:05:06.960><c> to</c><00:05:07.040><c> randomize,</c><00:05:07.560><c> too,</c>
+
+00:05:07.750 --> 00:05:07.760 align:start position:0%
+thing that you want to randomize, too,
+ 
+
+00:05:07.760 --> 00:05:09.150 align:start position:0%
+thing that you want to randomize, too,
+as<00:05:07.919><c> well,</c><00:05:08.280><c> if</c><00:05:08.400><c> you</c><00:05:08.480><c> want</c><00:05:08.600><c> to</c><00:05:08.640><c> do</c><00:05:08.720><c> that.</c><00:05:09.120><c> I</c>
+
+00:05:09.150 --> 00:05:09.160 align:start position:0%
+as well, if you want to do that. I
+ 
+
+00:05:09.160 --> 00:05:10.510 align:start position:0%
+as well, if you want to do that. I
+assume<00:05:09.400><c> most</c><00:05:09.640><c> of</c><00:05:09.760><c> you</c><00:05:09.880><c> are</c><00:05:09.919><c> going</c><00:05:10.040><c> to</c><00:05:10.120><c> be</c><00:05:10.200><c> using</c>
+
+00:05:10.510 --> 00:05:10.520 align:start position:0%
+assume most of you are going to be using
+ 
+
+00:05:10.520 --> 00:05:12.630 align:start position:0%
+assume most of you are going to be using
+a<00:05:10.560><c> character</c><00:05:10.960><c> lore</c><00:05:11.160><c> with</c><00:05:11.320><c> this,</c><00:05:11.560><c> so</c><00:05:11.840><c> I</c><00:05:12.040><c> will</c>
+
+00:05:12.630 --> 00:05:12.640 align:start position:0%
+a character lore with this, so I will
+ 
+
+00:05:12.640 --> 00:05:14.590 align:start position:0%
+a character lore with this, so I will
+select<00:05:13.200><c> randomize</c><00:05:13.680><c> with</c><00:05:13.840><c> lore.</c><00:05:14.280><c> And</c><00:05:14.440><c> then,</c>
+
+00:05:14.590 --> 00:05:14.600 align:start position:0%
+select randomize with lore. And then,
+ 
+
+00:05:14.600 --> 00:05:16.430 align:start position:0%
+select randomize with lore. And then,
+you<00:05:14.720><c> want</c><00:05:14.840><c> to</c><00:05:14.919><c> randomize</c><00:05:15.400><c> the</c><00:05:15.480><c> seed</c><00:05:15.800><c> here</c><00:05:16.200><c> of</c>
+
+00:05:16.430 --> 00:05:16.440 align:start position:0%
+you want to randomize the seed here of
+ 
+
+00:05:16.440 --> 00:05:17.790 align:start position:0%
+you want to randomize the seed here of
+the<00:05:16.520><c> generation</c><00:05:17.000><c> that</c><00:05:17.120><c> you</c><00:05:17.200><c> get,</c><00:05:17.400><c> so</c><00:05:17.560><c> every</c>
+
+00:05:17.790 --> 00:05:17.800 align:start position:0%
+the generation that you get, so every
+ 
+
+00:05:17.800 --> 00:05:19.230 align:start position:0%
+the generation that you get, so every
+generation<00:05:18.280><c> is</c><00:05:18.400><c> different.</c><00:05:19.040><c> So,</c><00:05:19.120><c> the</c>
+
+00:05:19.230 --> 00:05:19.240 align:start position:0%
+generation is different. So, the
+ 
+
+00:05:19.240 --> 00:05:20.950 align:start position:0%
+generation is different. So, the
+randomize<00:05:19.680><c> with</c><00:05:19.840><c> lore</c><00:05:20.120><c> option</c><00:05:20.520><c> has</c><00:05:20.760><c> been</c>
+
+00:05:20.950 --> 00:05:20.960 align:start position:0%
+randomize with lore option has been
+ 
+
+00:05:20.960 --> 00:05:23.350 align:start position:0%
+randomize with lore option has been
+selected.<00:05:21.600><c> So,</c><00:05:21.919><c> let's</c><00:05:22.200><c> run</c><00:05:22.440><c> this,</c><00:05:22.919><c> and</c><00:05:23.120><c> we</c><00:05:23.240><c> can</c>
+
+00:05:23.350 --> 00:05:23.360 align:start position:0%
+selected. So, let's run this, and we can
+ 
+
+00:05:23.360 --> 00:05:26.190 align:start position:0%
+selected. So, let's run this, and we can
+see<00:05:23.600><c> here</c><00:05:24.000><c> that</c><00:05:24.360><c> we</c><00:05:24.600><c> have</c><00:05:25.200><c> our</c><00:05:25.440><c> output</c><00:05:25.840><c> text</c>
+
+00:05:26.190 --> 00:05:26.200 align:start position:0%
+see here that we have our output text
+ 
+
+00:05:26.200 --> 00:05:27.909 align:start position:0%
+see here that we have our output text
+over<00:05:26.400><c> here</c><00:05:26.600><c> in</c><00:05:26.680><c> this</c><00:05:26.800><c> previous</c><00:05:27.240><c> text,</c><00:05:27.800><c> but</c>
+
+00:05:27.909 --> 00:05:27.919 align:start position:0%
+over here in this previous text, but
+ 
+
+00:05:27.919 --> 00:05:29.950 align:start position:0%
+over here in this previous text, but
+there's<00:05:28.120><c> also</c><00:05:28.640><c> a</c><00:05:28.800><c> support</c><00:05:29.280><c> node</c><00:05:29.560><c> that</c><00:05:29.720><c> is</c>
+
+00:05:29.950 --> 00:05:29.960 align:start position:0%
+there's also a support node that is
+ 
+
+00:05:29.960 --> 00:05:31.790 align:start position:0%
+there's also a support node that is
+added<00:05:30.320><c> with</c><00:05:30.480><c> this</c><00:05:30.680><c> node</c><00:05:30.919><c> pack</c><00:05:31.160><c> here.</c><00:05:31.520><c> This</c><00:05:31.640><c> is</c>
+
+00:05:31.790 --> 00:05:31.800 align:start position:0%
+added with this node pack here. This is
+ 
+
+00:05:31.800 --> 00:05:34.150 align:start position:0%
+added with this node pack here. This is
+the<00:05:32.160><c> AI</c><00:05:32.440><c> prompt</c><00:05:32.800><c> library</c><00:05:33.240><c> that</c><00:05:33.400><c> I</c><00:05:33.440><c> made</c><00:05:33.880><c> that</c>
+
+00:05:34.150 --> 00:05:34.160 align:start position:0%
+the AI prompt library that I made that
+ 
+
+00:05:34.160 --> 00:05:36.150 align:start position:0%
+the AI prompt library that I made that
+corresponds<00:05:34.840><c> with</c><00:05:34.960><c> the</c><00:05:35.040><c> prompt</c><00:05:35.280><c> builder.</c><00:05:35.720><c> So,</c>
+
+00:05:36.150 --> 00:05:36.160 align:start position:0%
+corresponds with the prompt builder. So,
+ 
+
+00:05:36.160 --> 00:05:38.870 align:start position:0%
+corresponds with the prompt builder. So,
+what<00:05:36.360><c> you</c><00:05:36.440><c> can</c><00:05:36.560><c> do</c><00:05:36.760><c> here</c><00:05:37.200><c> is</c><00:05:37.840><c> one,</c><00:05:38.320><c> edit</c><00:05:38.760><c> the</c>
+
+00:05:38.870 --> 00:05:38.880 align:start position:0%
+what you can do here is one, edit the
+ 
+
+00:05:38.880 --> 00:05:40.990 align:start position:0%
+what you can do here is one, edit the
+prompt<00:05:39.440><c> if</c><00:05:39.640><c> you</c><00:05:39.760><c> want</c><00:05:40.000><c> to</c><00:05:40.240><c> at</c><00:05:40.440><c> all,</c><00:05:40.720><c> but</c><00:05:40.880><c> this</c>
+
+00:05:40.990 --> 00:05:41.000 align:start position:0%
+prompt if you want to at all, but this
+ 
+
+00:05:41.000 --> 00:05:42.510 align:start position:0%
+prompt if you want to at all, but this
+is<00:05:41.120><c> just</c><00:05:41.280><c> a</c><00:05:41.320><c> completely</c><00:05:41.760><c> randomized</c><00:05:42.200><c> prompt,</c>
+
+00:05:42.510 --> 00:05:42.520 align:start position:0%
+is just a completely randomized prompt,
+ 
+
+00:05:42.520 --> 00:05:44.070 align:start position:0%
+is just a completely randomized prompt,
+and<00:05:42.640><c> since</c><00:05:42.880><c> I</c><00:05:42.919><c> have</c><00:05:43.120><c> random</c><00:05:43.400><c> seed</c><00:05:43.640><c> selected,</c>
+
+00:05:44.070 --> 00:05:44.080 align:start position:0%
+and since I have random seed selected,
+ 
+
+00:05:44.080 --> 00:05:45.550 align:start position:0%
+and since I have random seed selected,
+you<00:05:44.160><c> can</c><00:05:44.280><c> see</c><00:05:44.480><c> here,</c><00:05:44.880><c> if</c><00:05:45.040><c> I</c><00:05:45.080><c> just</c><00:05:45.280><c> run</c><00:05:45.440><c> this</c>
+
+00:05:45.550 --> 00:05:45.560 align:start position:0%
+you can see here, if I just run this
+ 
+
+00:05:45.560 --> 00:05:47.790 align:start position:0%
+you can see here, if I just run this
+again,<00:05:46.080><c> it</c><00:05:46.240><c> will</c><00:05:46.360><c> make</c><00:05:46.840><c> different</c><00:05:47.160><c> prompts</c>
+
+00:05:47.790 --> 00:05:47.800 align:start position:0%
+again, it will make different prompts
+ 
+
+00:05:47.800 --> 00:05:49.630 align:start position:0%
+again, it will make different prompts
+every<00:05:48.040><c> single</c><00:05:48.320><c> time</c><00:05:48.640><c> while</c><00:05:48.880><c> keeping</c><00:05:49.440><c> the</c>
+
+00:05:49.630 --> 00:05:49.640 align:start position:0%
+every single time while keeping the
+ 
+
+00:05:49.640 --> 00:05:52.030 align:start position:0%
+every single time while keeping the
+identity<00:05:50.160><c> of</c><00:05:50.480><c> my</c><00:05:50.640><c> Laura</c><00:05:51.160><c> attached</c><00:05:51.840><c> to</c><00:05:51.960><c> the</c>
+
+00:05:52.030 --> 00:05:52.040 align:start position:0%
+identity of my Laura attached to the
+ 
+
+00:05:52.040 --> 00:05:54.230 align:start position:0%
+identity of my Laura attached to the
+prompt.<00:05:52.520><c> So,</c><00:05:52.800><c> now</c><00:05:53.240><c> let's</c><00:05:53.440><c> say</c><00:05:53.560><c> that</c><00:05:53.720><c> I</c><00:05:53.800><c> want</c><00:05:54.080><c> to</c>
+
+00:05:54.230 --> 00:05:54.240 align:start position:0%
+prompt. So, now let's say that I want to
+ 
+
+00:05:54.240 --> 00:05:56.150 align:start position:0%
+prompt. So, now let's say that I want to
+save<00:05:54.600><c> this</c><00:05:54.800><c> prompt.</c>
+
+00:05:56.150 --> 00:05:56.160 align:start position:0%
+save this prompt.
+ 
+
+00:05:56.160 --> 00:05:58.070 align:start position:0%
+save this prompt.
+I<00:05:56.240><c> can</c><00:05:56.360><c> click</c><00:05:56.560><c> save</c><00:05:56.800><c> the</c><00:05:56.880><c> library</c><00:05:57.640><c> and</c><00:05:57.760><c> it</c><00:05:57.880><c> will</c>
+
+00:05:58.070 --> 00:05:58.080 align:start position:0%
+I can click save the library and it will
+ 
+
+00:05:58.080 --> 00:06:00.030 align:start position:0%
+I can click save the library and it will
+add<00:05:58.280><c> that</c><00:05:58.480><c> prompt</c><00:05:58.800><c> here</c><00:05:59.240><c> and</c><00:05:59.360><c> I</c><00:05:59.400><c> can</c><00:05:59.600><c> load</c><00:05:59.800><c> this</c>
+
+00:06:00.030 --> 00:06:00.040 align:start position:0%
+add that prompt here and I can load this
+ 
+
+00:06:00.040 --> 00:06:01.470 align:start position:0%
+add that prompt here and I can load this
+whenever<00:06:00.400><c> I</c><00:06:00.480><c> want</c><00:06:00.800><c> by</c><00:06:00.920><c> just</c><00:06:01.120><c> clicking</c><00:06:01.400><c> the</c>
+
+00:06:01.470 --> 00:06:01.480 align:start position:0%
+whenever I want by just clicking the
+ 
+
+00:06:01.480 --> 00:06:03.670 align:start position:0%
+whenever I want by just clicking the
+load.<00:06:02.080><c> You</c><00:06:02.160><c> can</c><00:06:02.280><c> also</c><00:06:02.520><c> create</c><00:06:02.960><c> folders</c><00:06:03.480><c> for</c>
+
+00:06:03.670 --> 00:06:03.680 align:start position:0%
+load. You can also create folders for
+ 
+
+00:06:03.680 --> 00:06:05.110 align:start position:0%
+load. You can also create folders for
+all<00:06:03.800><c> of</c><00:06:03.880><c> your</c><00:06:04.000><c> prompts.</c><00:06:04.360><c> So,</c><00:06:04.600><c> let's</c><00:06:04.840><c> say</c><00:06:04.960><c> that</c>
+
+00:06:05.110 --> 00:06:05.120 align:start position:0%
+all of your prompts. So, let's say that
+ 
+
+00:06:05.120 --> 00:06:06.790 align:start position:0%
+all of your prompts. So, let's say that
+you<00:06:05.240><c> have</c><00:06:05.720><c> a</c><00:06:05.840><c> different</c><00:06:06.240><c> trigger</c><00:06:06.560><c> word</c>
+
+00:06:06.790 --> 00:06:06.800 align:start position:0%
+you have a different trigger word
+ 
+
+00:06:06.800 --> 00:06:08.670 align:start position:0%
+you have a different trigger word
+assigned<00:06:07.280><c> to</c><00:06:07.480><c> some</c><00:06:07.640><c> of</c><00:06:07.680><c> the</c><00:06:07.760><c> prompts.</c><00:06:08.440><c> You</c><00:06:08.560><c> can</c>
+
+00:06:08.670 --> 00:06:08.680 align:start position:0%
+assigned to some of the prompts. You can
+ 
+
+00:06:08.680 --> 00:06:10.910 align:start position:0%
+assigned to some of the prompts. You can
+just<00:06:08.840><c> click</c><00:06:09.320><c> new</c><00:06:09.520><c> folder</c><00:06:10.360><c> and</c><00:06:10.600><c> name</c><00:06:10.840><c> the</c>
+
+00:06:10.910 --> 00:06:10.920 align:start position:0%
+just click new folder and name the
+ 
+
+00:06:10.920 --> 00:06:12.670 align:start position:0%
+just click new folder and name the
+folder<00:06:11.440><c> after</c><00:06:11.920><c> whatever</c><00:06:12.240><c> Laura</c><00:06:12.520><c> you're</c>
+
+00:06:12.670 --> 00:06:12.680 align:start position:0%
+folder after whatever Laura you're
+ 
+
+00:06:12.680 --> 00:06:15.070 align:start position:0%
+folder after whatever Laura you're
+using.<00:06:13.160><c> You</c><00:06:13.240><c> can</c><00:06:13.360><c> also</c><00:06:13.600><c> add</c><00:06:13.880><c> images</c><00:06:14.360><c> to</c><00:06:14.720><c> these</c>
+
+00:06:15.070 --> 00:06:15.080 align:start position:0%
+using. You can also add images to these
+ 
+
+00:06:15.080 --> 00:06:16.750 align:start position:0%
+using. You can also add images to these
+prompts<00:06:15.480><c> folders</c><00:06:15.880><c> as</c><00:06:16.000><c> well.</c><00:06:16.360><c> So,</c><00:06:16.480><c> let's</c><00:06:16.640><c> say</c>
+
+00:06:16.750 --> 00:06:16.760 align:start position:0%
+prompts folders as well. So, let's say
+ 
+
+00:06:16.760 --> 00:06:18.550 align:start position:0%
+prompts folders as well. So, let's say
+that<00:06:16.880><c> I</c><00:06:16.920><c> want</c><00:06:17.160><c> to</c><00:06:17.280><c> add</c><00:06:17.520><c> this</c><00:06:17.720><c> prompt</c><00:06:18.240><c> to</c><00:06:18.480><c> the</c>
+
+00:06:18.550 --> 00:06:18.560 align:start position:0%
+that I want to add this prompt to the
+ 
+
+00:06:18.560 --> 00:06:20.430 align:start position:0%
+that I want to add this prompt to the
+folder.<00:06:19.080><c> I</c><00:06:19.160><c> just</c><00:06:19.280><c> type</c><00:06:19.440><c> in</c><00:06:19.520><c> that</c><00:06:19.680><c> name</c><00:06:19.880><c> there</c>
+
+00:06:20.430 --> 00:06:20.440 align:start position:0%
+folder. I just type in that name there
+ 
+
+00:06:20.440 --> 00:06:22.710 align:start position:0%
+folder. I just type in that name there
+and<00:06:20.680><c> it</c><00:06:20.840><c> will</c><00:06:21.160><c> add</c><00:06:21.480><c> one</c><00:06:21.640><c> prompt</c><00:06:21.919><c> to</c><00:06:22.000><c> there.</c><00:06:22.640><c> And</c>
+
+00:06:22.710 --> 00:06:22.720 align:start position:0%
+and it will add one prompt to there. And
+ 
+
+00:06:22.720 --> 00:06:24.390 align:start position:0%
+and it will add one prompt to there. And
+then<00:06:22.800><c> we</c><00:06:22.880><c> can</c><00:06:23.040><c> run</c><00:06:23.160><c> that</c><00:06:23.280><c> again.</c><00:06:23.800><c> I</c><00:06:23.880><c> can</c><00:06:24.120><c> save</c>
+
+00:06:24.390 --> 00:06:24.400 align:start position:0%
+then we can run that again. I can save
+ 
+
+00:06:24.400 --> 00:06:25.510 align:start position:0%
+then we can run that again. I can save
+that<00:06:24.600><c> one.</c>
+
+00:06:25.510 --> 00:06:25.520 align:start position:0%
+that one.
+ 
+
+00:06:25.520 --> 00:06:27.230 align:start position:0%
+that one.
+We<00:06:25.560><c> can</c><00:06:25.680><c> run</c><00:06:25.840><c> it</c><00:06:25.919><c> again.</c><00:06:26.640><c> I</c><00:06:26.720><c> can</c><00:06:26.840><c> save</c><00:06:27.040><c> that</c>
+
+00:06:27.230 --> 00:06:27.240 align:start position:0%
+We can run it again. I can save that
+ 
+
+00:06:27.240 --> 00:06:28.590 align:start position:0%
+We can run it again. I can save that
+one.<00:06:27.400><c> So,</c><00:06:27.600><c> any</c><00:06:27.760><c> good</c><00:06:27.919><c> prompts</c><00:06:28.200><c> that</c><00:06:28.320><c> you</c><00:06:28.400><c> get,</c>
+
+00:06:28.590 --> 00:06:28.600 align:start position:0%
+one. So, any good prompts that you get,
+ 
+
+00:06:28.600 --> 00:06:30.710 align:start position:0%
+one. So, any good prompts that you get,
+you<00:06:28.680><c> can</c><00:06:28.840><c> save</c><00:06:29.360><c> and</c><00:06:29.600><c> customize</c><00:06:30.120><c> where</c><00:06:30.280><c> they</c><00:06:30.400><c> go</c>
+
+00:06:30.710 --> 00:06:30.720 align:start position:0%
+you can save and customize where they go
+ 
+
+00:06:30.720 --> 00:06:32.990 align:start position:0%
+you can save and customize where they go
+and<00:06:30.919><c> add</c><00:06:31.080><c> your</c><00:06:31.200><c> own</c><00:06:31.320><c> folders</c><00:06:31.800><c> and</c><00:06:32.000><c> so</c><00:06:32.240><c> on.</c><00:06:32.960><c> You</c>
+
+00:06:32.990 --> 00:06:33.000 align:start position:0%
+and add your own folders and so on. You
+ 
+
+00:06:33.000 --> 00:06:35.190 align:start position:0%
+and add your own folders and so on. You
+can<00:06:33.120><c> also</c><00:06:33.680><c> edit</c><00:06:34.040><c> saved</c><00:06:34.360><c> prompts</c><00:06:34.760><c> so</c><00:06:34.880><c> you</c><00:06:34.960><c> can</c>
+
+00:06:35.190 --> 00:06:35.200 align:start position:0%
+can also edit saved prompts so you can
+ 
+
+00:06:35.200 --> 00:06:36.670 align:start position:0%
+can also edit saved prompts so you can
+move<00:06:35.400><c> them</c><00:06:35.640><c> to</c><00:06:35.720><c> different</c><00:06:36.080><c> folders</c><00:06:36.440><c> if</c><00:06:36.560><c> you</c>
+
+00:06:36.670 --> 00:06:36.680 align:start position:0%
+move them to different folders if you
+ 
+
+00:06:36.680 --> 00:06:38.270 align:start position:0%
+move them to different folders if you
+want.<00:06:36.919><c> You</c><00:06:37.000><c> can</c><00:06:37.120><c> give</c><00:06:37.320><c> them</c><00:06:37.520><c> names</c><00:06:38.040><c> and</c><00:06:38.200><c> you</c>
+
+00:06:38.270 --> 00:06:38.280 align:start position:0%
+want. You can give them names and you
+ 
+
+00:06:38.280 --> 00:06:41.110 align:start position:0%
+want. You can give them names and you
+can<00:06:38.440><c> change</c><00:06:38.960><c> the</c><00:06:39.080><c> text</c><00:06:39.440><c> within</c><00:06:39.720><c> the</c><00:06:39.800><c> prompt.</c>
+
+00:06:41.110 --> 00:06:41.120 align:start position:0%
+can change the text within the prompt.
+ 
+
+00:06:41.120 --> 00:06:42.390 align:start position:0%
+can change the text within the prompt.
+One<00:06:41.240><c> last</c><00:06:41.480><c> thing</c><00:06:41.640><c> that</c><00:06:41.760><c> I'll</c><00:06:41.840><c> point</c><00:06:42.120><c> out</c><00:06:42.280><c> for</c>
+
+00:06:42.390 --> 00:06:42.400 align:start position:0%
+One last thing that I'll point out for
+ 
+
+00:06:42.400 --> 00:06:44.950 align:start position:0%
+One last thing that I'll point out for
+both<00:06:42.640><c> nodes</c><00:06:42.960><c> is</c><00:06:43.160><c> that</c><00:06:43.560><c> the</c><00:06:44.120><c> visual</c><00:06:44.480><c> effects</c>
+
+00:06:44.950 --> 00:06:44.960 align:start position:0%
+both nodes is that the visual effects
+ 
+
+00:06:44.960 --> 00:06:46.590 align:start position:0%
+both nodes is that the visual effects
+are<00:06:45.160><c> all</c><00:06:45.360><c> customizable.</c><00:06:46.040><c> You</c><00:06:46.120><c> can</c><00:06:46.280><c> turn</c><00:06:46.440><c> them</c>
+
+00:06:46.590 --> 00:06:46.600 align:start position:0%
+are all customizable. You can turn them
+ 
+
+00:06:46.600 --> 00:06:48.390 align:start position:0%
+are all customizable. You can turn them
+off<00:06:46.800><c> completely</c><00:06:47.280><c> if</c><00:06:47.440><c> you</c><00:06:47.520><c> want</c><00:06:47.720><c> to,</c><00:06:48.080><c> but</c><00:06:48.320><c> I'm</c>
+
+00:06:48.390 --> 00:06:48.400 align:start position:0%
+off completely if you want to, but I'm
+ 
+
+00:06:48.400 --> 00:06:49.950 align:start position:0%
+off completely if you want to, but I'm
+going<00:06:48.600><c> to</c><00:06:48.680><c> turn</c><00:06:48.840><c> them</c><00:06:48.960><c> back</c><00:06:49.240><c> on.</c><00:06:49.680><c> And</c><00:06:49.760><c> you</c><00:06:49.840><c> can</c>
+
+00:06:49.950 --> 00:06:49.960 align:start position:0%
+going to turn them back on. And you can
+ 
+
+00:06:49.960 --> 00:06:52.870 align:start position:0%
+going to turn them back on. And you can
+also<00:06:50.240><c> select</c><00:06:50.840><c> the</c><00:06:50.960><c> color</c><00:06:51.520><c> of</c><00:06:51.800><c> whatever</c><00:06:52.680><c> you</c>
+
+00:06:52.870 --> 00:06:52.880 align:start position:0%
+also select the color of whatever you
+ 
+
+00:06:52.880 --> 00:06:54.670 align:start position:0%
+also select the color of whatever you
+want<00:06:53.240><c> the</c><00:06:53.440><c> theme</c><00:06:53.680><c> of</c><00:06:53.760><c> your</c><00:06:53.880><c> node</c><00:06:54.080><c> pack</c><00:06:54.280><c> to</c><00:06:54.360><c> be.</c>
+
+00:06:54.670 --> 00:06:54.680 align:start position:0%
+want the theme of your node pack to be.
+ 
+
+00:06:54.680 --> 00:06:56.110 align:start position:0%
+want the theme of your node pack to be.
+So,<00:06:54.840><c> yeah</c><00:06:54.960><c> guys,</c><00:06:55.200><c> that</c><00:06:55.320><c> pretty</c><00:06:55.480><c> much</c><00:06:55.640><c> sums</c><00:06:55.960><c> up</c>
+
+00:06:56.110 --> 00:06:56.120 align:start position:0%
+So, yeah guys, that pretty much sums up
+ 
+
+00:06:56.120 --> 00:06:58.150 align:start position:0%
+So, yeah guys, that pretty much sums up
+this<00:06:56.280><c> entire</c><00:06:56.600><c> node</c><00:06:56.800><c> pack.</c><00:06:57.280><c> We</c><00:06:57.480><c> have</c><00:06:57.720><c> covered</c>
+
+00:06:58.150 --> 00:06:58.160 align:start position:0%
+this entire node pack. We have covered
+ 
+
+00:06:58.160 --> 00:06:59.870 align:start position:0%
+this entire node pack. We have covered
+things<00:06:58.600><c> like</c><00:06:58.960><c> the</c><00:06:59.120><c> character</c><00:06:59.520><c> and</c><00:06:59.640><c> Laura</c>
+
+00:06:59.870 --> 00:06:59.880 align:start position:0%
+things like the character and Laura
+ 
+
+00:06:59.880 --> 00:07:02.310 align:start position:0%
+things like the character and Laura
+section,<00:07:00.560><c> the</c><00:07:00.919><c> two</c><00:07:01.240><c> different</c><00:07:01.720><c> main</c><00:07:02.000><c> modes</c>
+
+00:07:02.310 --> 00:07:02.320 align:start position:0%
+section, the two different main modes
+ 
+
+00:07:02.320 --> 00:07:04.190 align:start position:0%
+section, the two different main modes
+here.<00:07:02.760><c> As</c><00:07:02.840><c> you</c><00:07:02.919><c> can</c><00:07:03.040><c> see,</c><00:07:03.200><c> we</c><00:07:03.320><c> have</c><00:07:03.480><c> some</c>
+
+00:07:04.190 --> 00:07:04.200 align:start position:0%
+here. As you can see, we have some
+ 
+
+00:07:04.200 --> 00:07:06.390 align:start position:0%
+here. As you can see, we have some
+different<00:07:05.120><c> thumbnails</c><00:07:05.600><c> here</c><00:07:05.960><c> in</c><00:07:06.160><c> the</c>
+
+00:07:06.390 --> 00:07:06.400 align:start position:0%
+different thumbnails here in the
+ 
+
+00:07:06.400 --> 00:07:09.630 align:start position:0%
+different thumbnails here in the
+business<00:07:06.720><c> section.</c><00:07:07.520><c> We</c><00:07:07.800><c> have</c><00:07:08.000><c> covered</c><00:07:08.840><c> the</c>
+
+00:07:09.630 --> 00:07:09.640 align:start position:0%
+business section. We have covered the
+ 
+
+00:07:09.640 --> 00:07:11.150 align:start position:0%
+business section. We have covered the
+full<00:07:09.880><c> categories</c><00:07:10.400><c> and</c><00:07:10.480><c> subcategories</c>
+
+00:07:11.150 --> 00:07:11.160 align:start position:0%
+full categories and subcategories
+ 
+
+00:07:11.160 --> 00:07:12.390 align:start position:0%
+full categories and subcategories
+section.<00:07:11.600><c> And</c><00:07:11.919><c> obviously</c><00:07:12.080><c> I</c><00:07:12.120><c> didn't</c><00:07:12.280><c> go</c>
+
+00:07:12.390 --> 00:07:12.400 align:start position:0%
+section. And obviously I didn't go
+ 
+
+00:07:12.400 --> 00:07:13.670 align:start position:0%
+section. And obviously I didn't go
+through<00:07:12.600><c> all</c><00:07:12.720><c> of</c><00:07:12.800><c> them</c><00:07:13.000><c> because</c><00:07:13.280><c> there's</c><00:07:13.480><c> just</c>
+
+00:07:13.670 --> 00:07:13.680 align:start position:0%
+through all of them because there's just
+ 
+
+00:07:13.680 --> 00:07:15.310 align:start position:0%
+through all of them because there's just
+so<00:07:13.880><c> many</c><00:07:14.080><c> different</c><00:07:14.360><c> things</c><00:07:14.600><c> here.</c><00:07:15.040><c> And</c><00:07:15.160><c> just</c>
+
+00:07:15.310 --> 00:07:15.320 align:start position:0%
+so many different things here. And just
+ 
+
+00:07:15.320 --> 00:07:17.750 align:start position:0%
+so many different things here. And just
+kind<00:07:15.520><c> of</c><00:07:15.720><c> to</c><00:07:15.960><c> add</c><00:07:16.240><c> some</c><00:07:16.360><c> context</c><00:07:16.960><c> as</c><00:07:17.200><c> to</c><00:07:17.440><c> how</c>
+
+00:07:17.750 --> 00:07:17.760 align:start position:0%
+kind of to add some context as to how
+ 
+
+00:07:17.760 --> 00:07:19.270 align:start position:0%
+kind of to add some context as to how
+customizable<00:07:18.480><c> these</c><00:07:18.640><c> prompts</c><00:07:18.960><c> are</c><00:07:19.080><c> and</c><00:07:19.200><c> how</c>
+
+00:07:19.270 --> 00:07:19.280 align:start position:0%
+customizable these prompts are and how
+ 
+
+00:07:19.280 --> 00:07:20.990 align:start position:0%
+customizable these prompts are and how
+many<00:07:19.440><c> different</c><00:07:19.919><c> types</c><00:07:20.240><c> of</c><00:07:20.560><c> prompts</c><00:07:20.840><c> that</c><00:07:20.960><c> you</c>
+
+00:07:20.990 --> 00:07:21.000 align:start position:0%
+many different types of prompts that you
+ 
+
+00:07:21.000 --> 00:07:22.630 align:start position:0%
+many different types of prompts that you
+can<00:07:21.120><c> actually</c><00:07:21.360><c> build</c><00:07:21.560><c> with</c><00:07:21.680><c> this.</c><00:07:22.080><c> On</c><00:07:22.320><c> screen</c>
+
+00:07:22.630 --> 00:07:22.640 align:start position:0%
+can actually build with this. On screen
+ 
+
+00:07:22.640 --> 00:07:24.390 align:start position:0%
+can actually build with this. On screen
+here<00:07:23.200><c> is</c><00:07:23.400><c> the</c><00:07:23.520><c> total</c><00:07:23.800><c> number</c><00:07:24.160><c> of</c>
+
+00:07:24.390 --> 00:07:24.400 align:start position:0%
+here is the total number of
+ 
+
+00:07:24.400 --> 00:07:26.190 align:start position:0%
+here is the total number of
+possibilities<00:07:25.200><c> that</c><00:07:25.360><c> you</c><00:07:25.480><c> can</c><00:07:25.640><c> get</c><00:07:25.960><c> out</c><00:07:26.080><c> of</c>
+
+00:07:26.190 --> 00:07:26.200 align:start position:0%
+possibilities that you can get out of
+ 
+
+00:07:26.200 --> 00:07:28.190 align:start position:0%
+possibilities that you can get out of
+the<00:07:26.520><c> professional</c><00:07:27.080><c> /</c><00:07:27.360><c> business</c><00:07:27.800><c> prompt</c>
+
+00:07:28.190 --> 00:07:28.200 align:start position:0%
+the professional / business prompt
+ 
+
+00:07:28.200 --> 00:07:30.430 align:start position:0%
+the professional / business prompt
+building.
+
+00:07:30.430 --> 00:07:30.440 align:start position:0%
+building.
+ 
+
+00:07:30.440 --> 00:07:32.830 align:start position:0%
+building.
+And<00:07:30.720><c> on</c><00:07:30.840><c> screen</c><00:07:31.120><c> now</c><00:07:31.520><c> is</c><00:07:31.760><c> the</c><00:07:31.919><c> total</c><00:07:32.200><c> number</c><00:07:32.640><c> of</c>
+
+00:07:32.830 --> 00:07:32.840 align:start position:0%
+And on screen now is the total number of
+ 
+
+00:07:32.840 --> 00:07:35.390 align:start position:0%
+And on screen now is the total number of
+possible<00:07:33.720><c> prompts</c><00:07:34.080><c> that</c><00:07:34.240><c> you</c><00:07:34.360><c> can</c><00:07:34.520><c> get</c><00:07:35.120><c> from</c>
+
+00:07:35.390 --> 00:07:35.400 align:start position:0%
+possible prompts that you can get from
+ 
+
+00:07:35.400 --> 00:07:38.750 align:start position:0%
+possible prompts that you can get from
+the<00:07:35.640><c> influencer</c><00:07:36.480><c> prompt</c><00:07:36.720><c> building</c><00:07:37.000><c> section.</c>
+
+00:07:38.750 --> 00:07:38.760 align:start position:0%
+the influencer prompt building section.
+ 
+
+00:07:38.760 --> 00:07:39.790 align:start position:0%
+the influencer prompt building section.
+Again,<00:07:39.000><c> if</c><00:07:39.120><c> you're</c><00:07:39.240><c> wondering</c><00:07:39.480><c> where</c><00:07:39.560><c> to</c><00:07:39.640><c> get</c>
+
+00:07:39.790 --> 00:07:39.800 align:start position:0%
+Again, if you're wondering where to get
+ 
+
+00:07:39.800 --> 00:07:41.510 align:start position:0%
+Again, if you're wondering where to get
+this,<00:07:40.080><c> the</c><00:07:40.280><c> link</c><00:07:40.480><c> to</c><00:07:40.520><c> the</c><00:07:40.600><c> Patreon</c><00:07:41.120><c> is</c><00:07:41.360><c> in</c><00:07:41.440><c> the</c>
+
+00:07:41.510 --> 00:07:41.520 align:start position:0%
+this, the link to the Patreon is in the
+ 
+
+00:07:41.520 --> 00:07:43.190 align:start position:0%
+this, the link to the Patreon is in the
+description<00:07:41.960><c> of</c><00:07:42.080><c> this</c><00:07:42.200><c> video.</c><00:07:42.760><c> If</c><00:07:42.880><c> you</c><00:07:42.960><c> guys</c>
+
+00:07:43.190 --> 00:07:43.200 align:start position:0%
+description of this video. If you guys
+ 
+
+00:07:43.200 --> 00:07:44.910 align:start position:0%
+description of this video. If you guys
+like<00:07:43.400><c> this,</c><00:07:43.680><c> please</c><00:07:44.080><c> like</c><00:07:44.280><c> the</c><00:07:44.360><c> video</c><00:07:44.720><c> and</c>
+
+00:07:44.910 --> 00:07:44.920 align:start position:0%
+like this, please like the video and
+ 
+
+00:07:44.920 --> 00:07:46.630 align:start position:0%
+like this, please like the video and
+subscribe.<00:07:45.680><c> There</c><00:07:45.840><c> is</c><00:07:45.960><c> tons</c><00:07:46.160><c> of</c><00:07:46.240><c> more</c><00:07:46.360><c> stuff</c>
+
+00:07:46.630 --> 00:07:46.640 align:start position:0%
+subscribe. There is tons of more stuff
+ 
+
+00:07:46.640 --> 00:07:48.150 align:start position:0%
+subscribe. There is tons of more stuff
+coming<00:07:46.880><c> out</c><00:07:46.960><c> soon.</c><00:07:47.160><c> I</c><00:07:47.200><c> got</c><00:07:47.320><c> a</c><00:07:47.360><c> lot</c><00:07:47.520><c> planned.</c>
+
+00:07:48.150 --> 00:07:48.160 align:start position:0%
+coming out soon. I got a lot planned.
+ 
+
+00:07:48.160 --> 00:07:51.560 align:start position:0%
+coming out soon. I got a lot planned.
+And<00:07:48.360><c> thanks</c><00:07:48.520><c> for</c><00:07:48.640><c> watching.</c><00:07:49.120><c> Peace.</c>
+

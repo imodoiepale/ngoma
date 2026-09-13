@@ -1,0 +1,2304 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.670 align:start position:0%
+ 
+What's<00:00:00.320><c> up,</c><00:00:00.520><c> everyone?</c><00:00:01.080><c> Welcome</c><00:00:01.320><c> back</c><00:00:01.560><c> to</c>
+
+00:00:01.670 --> 00:00:01.680 align:start position:0%
+What's up, everyone? Welcome back to
+ 
+
+00:00:01.680 --> 00:00:03.790 align:start position:0%
+What's up, everyone? Welcome back to
+another<00:00:02.000><c> video.</c><00:00:02.840><c> Today,</c><00:00:03.080><c> I'm</c><00:00:03.160><c> breaking</c><00:00:03.520><c> down</c>
+
+00:00:03.790 --> 00:00:03.800 align:start position:0%
+another video. Today, I'm breaking down
+ 
+
+00:00:03.800 --> 00:00:05.710 align:start position:0%
+another video. Today, I'm breaking down
+what<00:00:04.000><c> I</c><00:00:04.080><c> genuinely</c><00:00:04.680><c> think</c><00:00:05.080><c> is</c><00:00:05.320><c> the</c><00:00:05.440><c> most</c>
+
+00:00:05.710 --> 00:00:05.720 align:start position:0%
+what I genuinely think is the most
+ 
+
+00:00:05.720 --> 00:00:07.870 align:start position:0%
+what I genuinely think is the most
+simplistic,<00:00:06.360><c> yet</c><00:00:06.720><c> effective,</c><00:00:07.280><c> AI</c><00:00:07.560><c> video</c>
+
+00:00:07.870 --> 00:00:07.880 align:start position:0%
+simplistic, yet effective, AI video
+ 
+
+00:00:07.880 --> 00:00:09.710 align:start position:0%
+simplistic, yet effective, AI video
+generation<00:00:08.440><c> workflow</c><00:00:09.040><c> you</c><00:00:09.160><c> can</c><00:00:09.360><c> run</c><00:00:09.600><c> in</c>
+
+00:00:09.710 --> 00:00:09.720 align:start position:0%
+generation workflow you can run in
+ 
+
+00:00:09.720 --> 00:00:13.110 align:start position:0%
+generation workflow you can run in
+ComfyUI<00:00:10.480><c> right</c><00:00:10.880><c> now.</c><00:00:11.680><c> This</c><00:00:11.920><c> workflow</c><00:00:12.440><c> uses</c><00:00:12.920><c> an</c>
+
+00:00:13.110 --> 00:00:13.120 align:start position:0%
+ComfyUI right now. This workflow uses an
+ 
+
+00:00:13.120 --> 00:00:15.070 align:start position:0%
+ComfyUI right now. This workflow uses an
+image-to-video<00:00:13.920><c> approach</c><00:00:14.440><c> using</c><00:00:14.720><c> I</c><00:00:14.760><c> want</c>
+
+00:00:15.070 --> 00:00:15.080 align:start position:0%
+image-to-video approach using I want
+ 
+
+00:00:15.080 --> 00:00:17.710 align:start position:0%
+image-to-video approach using I want
+2.2,<00:00:16.000><c> and</c><00:00:16.160><c> I</c><00:00:16.200><c> built</c><00:00:16.480><c> this</c><00:00:16.680><c> to</c><00:00:16.760><c> be</c><00:00:17.040><c> as</c><00:00:17.240><c> clean</c><00:00:17.600><c> and</c>
+
+00:00:17.710 --> 00:00:17.720 align:start position:0%
+2.2, and I built this to be as clean and
+ 
+
+00:00:17.720 --> 00:00:19.670 align:start position:0%
+2.2, and I built this to be as clean and
+approachable<00:00:18.280><c> as</c><00:00:18.400><c> possible,</c><00:00:19.280><c> even</c><00:00:19.520><c> for</c>
+
+00:00:19.670 --> 00:00:19.680 align:start position:0%
+approachable as possible, even for
+ 
+
+00:00:19.680 --> 00:00:22.190 align:start position:0%
+approachable as possible, even for
+newcomers,<00:00:20.680><c> and</c><00:00:21.120><c> it</c><00:00:21.480><c> involves</c><00:00:21.960><c> no</c>
+
+00:00:22.190 --> 00:00:22.200 align:start position:0%
+newcomers, and it involves no
+ 
+
+00:00:22.200 --> 00:00:25.070 align:start position:0%
+newcomers, and it involves no
+unnecessary<00:00:22.840><c> nodes,</c><00:00:23.640><c> no</c><00:00:23.840><c> bloat,</c><00:00:24.560><c> and</c><00:00:24.680><c> no</c><00:00:24.880><c> long</c>
+
+00:00:25.070 --> 00:00:25.080 align:start position:0%
+unnecessary nodes, no bloat, and no long
+ 
+
+00:00:25.080 --> 00:00:26.870 align:start position:0%
+unnecessary nodes, no bloat, and no long
+generation<00:00:25.640><c> times.</c>
+
+00:00:26.870 --> 00:00:26.880 align:start position:0%
+generation times.
+ 
+
+00:00:26.880 --> 00:00:28.550 align:start position:0%
+generation times.
+If<00:00:27.080><c> you're</c><00:00:27.240><c> wondering</c><00:00:27.640><c> how</c><00:00:27.800><c> you</c><00:00:27.960><c> can</c><00:00:28.120><c> generate</c>
+
+00:00:28.550 --> 00:00:28.560 align:start position:0%
+If you're wondering how you can generate
+ 
+
+00:00:28.560 --> 00:00:30.990 align:start position:0%
+If you're wondering how you can generate
+images<00:00:29.040><c> to</c><00:00:29.200><c> use</c><00:00:29.640><c> to</c><00:00:29.760><c> plug</c><00:00:30.040><c> into</c><00:00:30.280><c> this</c><00:00:30.480><c> workflow</c>
+
+00:00:30.990 --> 00:00:31.000 align:start position:0%
+images to use to plug into this workflow
+ 
+
+00:00:31.000 --> 00:00:32.790 align:start position:0%
+images to use to plug into this workflow
+or<00:00:31.160><c> other</c><00:00:31.360><c> workflows</c><00:00:31.760><c> that</c><00:00:31.880><c> take</c><00:00:32.119><c> an</c><00:00:32.240><c> image</c><00:00:32.560><c> as</c>
+
+00:00:32.790 --> 00:00:32.800 align:start position:0%
+or other workflows that take an image as
+ 
+
+00:00:32.800 --> 00:00:34.870 align:start position:0%
+or other workflows that take an image as
+input,<00:00:33.400><c> please</c><00:00:33.600><c> check</c><00:00:33.840><c> out</c><00:00:33.920><c> my</c><00:00:34.040><c> YouTube</c><00:00:34.360><c> page.</c>
+
+00:00:34.870 --> 00:00:34.880 align:start position:0%
+input, please check out my YouTube page.
+ 
+
+00:00:34.880 --> 00:00:36.310 align:start position:0%
+input, please check out my YouTube page.
+I<00:00:34.960><c> have</c><00:00:35.080><c> a</c><00:00:35.160><c> collection</c><00:00:35.640><c> of</c><00:00:35.720><c> videos</c><00:00:36.160><c> that</c>
+
+00:00:36.310 --> 00:00:36.320 align:start position:0%
+I have a collection of videos that
+ 
+
+00:00:36.320 --> 00:00:37.950 align:start position:0%
+I have a collection of videos that
+detail<00:00:36.680><c> every</c><00:00:36.960><c> step</c><00:00:37.240><c> in</c><00:00:37.280><c> that</c><00:00:37.440><c> process,</c>
+
+00:00:37.950 --> 00:00:37.960 align:start position:0%
+detail every step in that process,
+ 
+
+00:00:37.960 --> 00:00:39.510 align:start position:0%
+detail every step in that process,
+beginning<00:00:38.360><c> all</c><00:00:38.520><c> the</c><00:00:38.600><c> way</c><00:00:38.920><c> at</c><00:00:39.120><c> deploying</c>
+
+00:00:39.510 --> 00:00:39.520 align:start position:0%
+beginning all the way at deploying
+ 
+
+00:00:39.520 --> 00:00:41.670 align:start position:0%
+beginning all the way at deploying
+ComfyUI<00:00:40.200><c> for</c><00:00:40.280><c> the</c><00:00:40.400><c> very</c><00:00:40.640><c> first</c><00:00:40.920><c> time.</c><00:00:41.480><c> I</c><00:00:41.560><c> would</c>
+
+00:00:41.670 --> 00:00:41.680 align:start position:0%
+ComfyUI for the very first time. I would
+ 
+
+00:00:41.680 --> 00:00:43.430 align:start position:0%
+ComfyUI for the very first time. I would
+also<00:00:41.920><c> like</c><00:00:42.080><c> to</c><00:00:42.160><c> take</c><00:00:42.360><c> a</c><00:00:42.400><c> quick</c><00:00:42.640><c> second</c><00:00:43.040><c> to</c><00:00:43.200><c> ask</c>
+
+00:00:43.430 --> 00:00:43.440 align:start position:0%
+also like to take a quick second to ask
+ 
+
+00:00:43.440 --> 00:00:44.830 align:start position:0%
+also like to take a quick second to ask
+you<00:00:43.520><c> guys</c><00:00:43.680><c> to</c><00:00:43.800><c> please</c><00:00:44.160><c> subscribe</c><00:00:44.640><c> to</c><00:00:44.720><c> my</c>
+
+00:00:44.830 --> 00:00:44.840 align:start position:0%
+you guys to please subscribe to my
+ 
+
+00:00:44.840 --> 00:00:46.790 align:start position:0%
+you guys to please subscribe to my
+channel<00:00:45.280><c> if</c><00:00:45.440><c> you</c><00:00:45.560><c> want</c><00:00:45.800><c> more</c><00:00:45.960><c> tutorials,</c>
+
+00:00:46.790 --> 00:00:46.800 align:start position:0%
+channel if you want more tutorials,
+ 
+
+00:00:46.800 --> 00:00:48.510 align:start position:0%
+channel if you want more tutorials,
+beginner-friendly<00:00:47.600><c> walkthroughs,</c><00:00:48.320><c> and</c>
+
+00:00:48.510 --> 00:00:48.520 align:start position:0%
+beginner-friendly walkthroughs, and
+ 
+
+00:00:48.520 --> 00:00:51.230 align:start position:0%
+beginner-friendly walkthroughs, and
+generative<00:00:49.080><c> AI</c><00:00:49.480><c> tips</c><00:00:49.840><c> and</c><00:00:50.000><c> advice.</c><00:00:50.920><c> If</c><00:00:51.120><c> you're</c>
+
+00:00:51.230 --> 00:00:51.240 align:start position:0%
+generative AI tips and advice. If you're
+ 
+
+00:00:51.240 --> 00:00:53.550 align:start position:0%
+generative AI tips and advice. If you're
+new<00:00:51.400><c> to</c><00:00:51.520><c> ComfyUI</c><00:00:52.120><c> video</c><00:00:52.440><c> generation,</c><00:00:53.360><c> but</c>
+
+00:00:53.550 --> 00:00:53.560 align:start position:0%
+new to ComfyUI video generation, but
+ 
+
+00:00:53.560 --> 00:00:55.350 align:start position:0%
+new to ComfyUI video generation, but
+have<00:00:53.760><c> a</c><00:00:53.840><c> character</c><00:00:54.360><c> or</c><00:00:54.560><c> reference</c><00:00:54.960><c> photos</c>
+
+00:00:55.350 --> 00:00:55.360 align:start position:0%
+have a character or reference photos
+ 
+
+00:00:55.360 --> 00:00:56.430 align:start position:0%
+have a character or reference photos
+you're<00:00:55.520><c> wanting</c><00:00:55.720><c> to</c><00:00:55.800><c> bring</c><00:00:55.960><c> to</c><00:00:56.080><c> life</c><00:00:56.320><c> with</c>
+
+00:00:56.430 --> 00:00:56.440 align:start position:0%
+you're wanting to bring to life with
+ 
+
+00:00:56.440 --> 00:00:59.190 align:start position:0%
+you're wanting to bring to life with
+video,<00:00:57.320><c> this</c><00:00:57.520><c> is</c><00:00:57.600><c> the</c><00:00:57.680><c> video</c><00:00:58.000><c> for</c><00:00:58.120><c> you.</c><00:00:58.960><c> And</c><00:00:59.120><c> if</c>
+
+00:00:59.190 --> 00:00:59.200 align:start position:0%
+video, this is the video for you. And if
+ 
+
+00:00:59.200 --> 00:01:00.470 align:start position:0%
+video, this is the video for you. And if
+you've<00:00:59.320><c> been</c><00:00:59.440><c> around</c><00:00:59.680><c> for</c><00:00:59.800><c> a</c><00:00:59.840><c> while,</c><00:01:00.360><c> you</c>
+
+00:01:00.470 --> 00:01:00.480 align:start position:0%
+you've been around for a while, you
+ 
+
+00:01:00.480 --> 00:01:02.310 align:start position:0%
+you've been around for a while, you
+might<00:01:00.760><c> let</c><00:01:00.920><c> me</c><00:01:01.040><c> convince</c><00:01:01.400><c> you</c><00:01:01.680><c> that</c><00:01:02.080><c> all</c><00:01:02.240><c> of</c>
+
+00:01:02.310 --> 00:01:02.320 align:start position:0%
+might let me convince you that all of
+ 
+
+00:01:02.320 --> 00:01:05.030 align:start position:0%
+might let me convince you that all of
+these,<00:01:02.960><c> air</c><00:01:03.200><c> quotes,</c><00:01:03.600><c> advanced</c><00:01:04.440><c> workflows</c>
+
+00:01:05.030 --> 00:01:05.040 align:start position:0%
+these, air quotes, advanced workflows
+ 
+
+00:01:05.040 --> 00:01:06.310 align:start position:0%
+these, air quotes, advanced workflows
+with<00:01:05.160><c> a</c><00:01:05.199><c> bunch</c><00:01:05.480><c> of</c><00:01:05.640><c> unnecessary</c>
+
+00:01:06.310 --> 00:01:06.320 align:start position:0%
+with a bunch of unnecessary
+ 
+
+00:01:06.320 --> 00:01:09.230 align:start position:0%
+with a bunch of unnecessary
+optimization,<00:01:07.480><c> air</c><00:01:07.640><c> quotes,</c><00:01:08.600><c> might</c><00:01:08.920><c> just</c><00:01:09.080><c> be</c>
+
+00:01:09.230 --> 00:01:09.240 align:start position:0%
+optimization, air quotes, might just be
+ 
+
+00:01:09.240 --> 00:01:10.910 align:start position:0%
+optimization, air quotes, might just be
+slowing<00:01:09.600><c> you</c><00:01:09.680><c> down</c><00:01:10.040><c> and</c><00:01:10.240><c> even</c><00:01:10.440><c> giving</c><00:01:10.760><c> you</c>
+
+00:01:10.910 --> 00:01:10.920 align:start position:0%
+slowing you down and even giving you
+ 
+
+00:01:10.920 --> 00:01:12.950 align:start position:0%
+slowing you down and even giving you
+worse<00:01:11.280><c> results.</c><00:01:11.960><c> So,</c><00:01:12.320><c> let's</c><00:01:12.560><c> get</c><00:01:12.720><c> into</c><00:01:12.880><c> the</c>
+
+00:01:12.950 --> 00:01:12.960 align:start position:0%
+worse results. So, let's get into the
+ 
+
+00:01:12.960 --> 00:01:15.430 align:start position:0%
+worse results. So, let's get into the
+workflow.<00:01:13.880><c> So,</c><00:01:14.400><c> what</c><00:01:14.600><c> does</c><00:01:14.800><c> this</c><00:01:15.000><c> workflow</c>
+
+00:01:15.430 --> 00:01:15.440 align:start position:0%
+workflow. So, what does this workflow
+ 
+
+00:01:15.440 --> 00:01:17.910 align:start position:0%
+workflow. So, what does this workflow
+actually<00:01:15.840><c> do?</c><00:01:16.600><c> Well,</c><00:01:17.000><c> you</c><00:01:17.120><c> drop</c><00:01:17.400><c> in</c><00:01:17.480><c> a</c><00:01:17.520><c> single</c>
+
+00:01:17.910 --> 00:01:17.920 align:start position:0%
+actually do? Well, you drop in a single
+ 
+
+00:01:17.920 --> 00:01:22.430 align:start position:0%
+actually do? Well, you drop in a single
+image<00:01:18.840><c> here,</c>
+
+00:01:22.430 --> 00:01:22.440 align:start position:0%
+ 
+ 
+
+00:01:22.440 --> 00:01:25.030 align:start position:0%
+ 
+write<00:01:22.720><c> a</c><00:01:22.760><c> prompt</c><00:01:23.880><c> here,</c>
+
+00:01:25.030 --> 00:01:25.040 align:start position:0%
+write a prompt here,
+ 
+
+00:01:25.040 --> 00:01:26.750 align:start position:0%
+write a prompt here,
+and<00:01:25.200><c> it</c><00:01:25.280><c> generates</c><00:01:25.680><c> a</c><00:01:25.720><c> video</c><00:01:26.080><c> from</c><00:01:26.280><c> that</c><00:01:26.440><c> image</c>
+
+00:01:26.750 --> 00:01:26.760 align:start position:0%
+and it generates a video from that image
+ 
+
+00:01:26.760 --> 00:01:29.550 align:start position:0%
+and it generates a video from that image
+based<00:01:27.040><c> on</c><00:01:27.080><c> your</c><00:01:27.200><c> prompt.</c><00:01:28.040><c> That's</c><00:01:28.280><c> it.</c><00:01:29.080><c> I</c><00:01:29.240><c> want</c>
+
+00:01:29.550 --> 00:01:29.560 align:start position:0%
+based on your prompt. That's it. I want
+ 
+
+00:01:29.560 --> 00:01:32.230 align:start position:0%
+based on your prompt. That's it. I want
+2.2<00:01:30.280><c> image-to-video.</c><00:01:31.440><c> The</c><00:01:31.520><c> model</c><00:01:31.840><c> animates</c>
+
+00:01:32.230 --> 00:01:32.240 align:start position:0%
+2.2 image-to-video. The model animates
+ 
+
+00:01:32.240 --> 00:01:33.790 align:start position:0%
+2.2 image-to-video. The model animates
+your<00:01:32.360><c> starting</c><00:01:32.760><c> frame</c><00:01:33.320><c> based</c><00:01:33.600><c> on</c><00:01:33.680><c> your</c>
+
+00:01:33.790 --> 00:01:33.800 align:start position:0%
+your starting frame based on your
+ 
+
+00:01:33.800 --> 00:01:35.030 align:start position:0%
+your starting frame based on your
+prompt,
+
+00:01:35.030 --> 00:01:35.040 align:start position:0%
+prompt,
+ 
+
+00:01:35.040 --> 00:01:37.270 align:start position:0%
+prompt,
+and<00:01:35.240><c> then</c><00:01:35.520><c> the</c><00:01:35.640><c> result</c><00:01:36.160><c> is</c><00:01:36.440><c> surprisingly</c><00:01:37.000><c> good</c>
+
+00:01:37.270 --> 00:01:37.280 align:start position:0%
+and then the result is surprisingly good
+ 
+
+00:01:37.280 --> 00:01:38.950 align:start position:0%
+and then the result is surprisingly good
+for<00:01:37.480><c> how</c><00:01:37.680><c> lightweight</c><00:01:38.200><c> the</c><00:01:38.280><c> setup</c><00:01:38.600><c> actually</c>
+
+00:01:38.950 --> 00:01:38.960 align:start position:0%
+for how lightweight the setup actually
+ 
+
+00:01:38.960 --> 00:01:41.390 align:start position:0%
+for how lightweight the setup actually
+is.<00:01:39.480><c> Generation</c><00:01:39.960><c> times</c><00:01:40.360><c> are</c><00:01:40.520><c> super</c><00:01:40.920><c> low</c><00:01:41.280><c> with</c>
+
+00:01:41.390 --> 00:01:41.400 align:start position:0%
+is. Generation times are super low with
+ 
+
+00:01:41.400 --> 00:01:42.630 align:start position:0%
+is. Generation times are super low with
+this<00:01:41.600><c> workflow.</c>
+
+00:01:42.630 --> 00:01:42.640 align:start position:0%
+this workflow.
+ 
+
+00:01:42.640 --> 00:01:44.150 align:start position:0%
+this workflow.
+Before<00:01:42.920><c> we</c><00:01:43.040><c> get</c><00:01:43.200><c> any</c><00:01:43.400><c> further,</c><00:01:43.800><c> you</c><00:01:43.920><c> might</c><00:01:44.040><c> be</c>
+
+00:01:44.150 --> 00:01:44.160 align:start position:0%
+Before we get any further, you might be
+ 
+
+00:01:44.160 --> 00:01:45.470 align:start position:0%
+Before we get any further, you might be
+wondering<00:01:44.560><c> where</c><00:01:44.760><c> you</c><00:01:44.840><c> can</c><00:01:45.040><c> find</c><00:01:45.320><c> this</c>
+
+00:01:45.470 --> 00:01:45.480 align:start position:0%
+wondering where you can find this
+ 
+
+00:01:45.480 --> 00:01:47.430 align:start position:0%
+wondering where you can find this
+workflow.<00:01:46.320><c> The</c><00:01:46.400><c> workflow</c><00:01:46.800><c> link</c><00:01:47.040><c> is</c><00:01:47.200><c> in</c><00:01:47.320><c> my</c>
+
+00:01:47.430 --> 00:01:47.440 align:start position:0%
+workflow. The workflow link is in my
+ 
+
+00:01:47.440 --> 00:01:49.390 align:start position:0%
+workflow. The workflow link is in my
+Discord<00:01:47.960><c> for</c><00:01:48.240><c> free</c><00:01:48.560><c> in</c><00:01:48.720><c> the</c><00:01:48.800><c> free</c><00:01:49.000><c> workflow</c>
+
+00:01:49.390 --> 00:01:49.400 align:start position:0%
+Discord for free in the free workflow
+ 
+
+00:01:49.400 --> 00:01:51.390 align:start position:0%
+Discord for free in the free workflow
+section.<00:01:50.200><c> A</c><00:01:50.240><c> link</c><00:01:50.440><c> to</c><00:01:50.520><c> my</c><00:01:50.640><c> Discord</c><00:01:51.120><c> can</c><00:01:51.280><c> be</c>
+
+00:01:51.390 --> 00:01:51.400 align:start position:0%
+section. A link to my Discord can be
+ 
+
+00:01:51.400 --> 00:01:53.070 align:start position:0%
+section. A link to my Discord can be
+found<00:01:51.640><c> in</c><00:01:51.720><c> the</c><00:01:51.800><c> description</c><00:01:52.240><c> of</c><00:01:52.320><c> the</c><00:01:52.400><c> video</c><00:01:52.840><c> or</c>
+
+00:01:53.070 --> 00:01:53.080 align:start position:0%
+found in the description of the video or
+ 
+
+00:01:53.080 --> 00:01:55.470 align:start position:0%
+found in the description of the video or
+on<00:01:53.240><c> screen</c><00:01:53.560><c> right</c><00:01:53.800><c> now</c><00:01:54.240><c> if</c><00:01:54.800><c> I</c><00:01:54.920><c> remember</c><00:01:55.240><c> to</c><00:01:55.320><c> put</c>
+
+00:01:55.470 --> 00:01:55.480 align:start position:0%
+on screen right now if I remember to put
+ 
+
+00:01:55.480 --> 00:01:57.950 align:start position:0%
+on screen right now if I remember to put
+it<00:01:55.560><c> there.</c><00:01:56.280><c> Again,</c><00:01:56.720><c> it's</c><00:01:56.960><c> free,</c><00:01:57.320><c> and</c><00:01:57.800><c> you'll</c>
+
+00:01:57.950 --> 00:01:57.960 align:start position:0%
+it there. Again, it's free, and you'll
+ 
+
+00:01:57.960 --> 00:01:59.310 align:start position:0%
+it there. Again, it's free, and you'll
+find<00:01:58.160><c> a</c><00:01:58.200><c> ton</c><00:01:58.360><c> of</c><00:01:58.440><c> other</c><00:01:58.640><c> completely</c><00:01:59.080><c> free</c>
+
+00:01:59.310 --> 00:01:59.320 align:start position:0%
+find a ton of other completely free
+ 
+
+00:01:59.320 --> 00:02:01.270 align:start position:0%
+find a ton of other completely free
+workflows<00:01:59.920><c> and</c><00:02:00.160><c> resources</c><00:02:00.720><c> in</c><00:02:00.800><c> my</c><00:02:00.920><c> Discord</c>
+
+00:02:01.270 --> 00:02:01.280 align:start position:0%
+workflows and resources in my Discord
+ 
+
+00:02:01.280 --> 00:02:03.630 align:start position:0%
+workflows and resources in my Discord
+channel<00:02:01.840><c> as</c><00:02:02.040><c> well.</c><00:02:02.720><c> And</c><00:02:03.000><c> you</c><00:02:03.040><c> can</c><00:02:03.200><c> even</c><00:02:03.400><c> reach</c>
+
+00:02:03.630 --> 00:02:03.640 align:start position:0%
+channel as well. And you can even reach
+ 
+
+00:02:03.640 --> 00:02:04.670 align:start position:0%
+channel as well. And you can even reach
+out<00:02:03.760><c> to</c><00:02:03.840><c> me</c><00:02:03.920><c> directly</c><00:02:04.320><c> there</c><00:02:04.560><c> for</c>
+
+00:02:04.670 --> 00:02:04.680 align:start position:0%
+out to me directly there for
+ 
+
+00:02:04.680 --> 00:02:06.469 align:start position:0%
+out to me directly there for
+personalized<00:02:05.280><c> one-on-one</c><00:02:05.720><c> guidance</c><00:02:06.240><c> where</c><00:02:06.400><c> I</c>
+
+00:02:06.469 --> 00:02:06.479 align:start position:0%
+personalized one-on-one guidance where I
+ 
+
+00:02:06.479 --> 00:02:07.910 align:start position:0%
+personalized one-on-one guidance where I
+am<00:02:06.600><c> willing</c><00:02:06.840><c> to</c><00:02:06.920><c> teach</c><00:02:07.200><c> you</c><00:02:07.360><c> literally</c>
+
+00:02:07.910 --> 00:02:07.920 align:start position:0%
+am willing to teach you literally
+ 
+
+00:02:07.920 --> 00:02:09.669 align:start position:0%
+am willing to teach you literally
+everything<00:02:08.440><c> when</c><00:02:08.560><c> it</c><00:02:08.640><c> comes</c><00:02:08.960><c> to</c><00:02:09.160><c> generative</c>
+
+00:02:09.669 --> 00:02:09.679 align:start position:0%
+everything when it comes to generative
+ 
+
+00:02:09.679 --> 00:02:12.270 align:start position:0%
+everything when it comes to generative
+AI<00:02:09.960><c> content,</c><00:02:10.960><c> social</c><00:02:11.360><c> media</c><00:02:11.640><c> expansion</c><00:02:12.200><c> and</c>
+
+00:02:12.270 --> 00:02:12.280 align:start position:0%
+AI content, social media expansion and
+ 
+
+00:02:12.280 --> 00:02:14.190 align:start position:0%
+AI content, social media expansion and
+growth<00:02:12.560><c> for</c><00:02:12.680><c> your</c><00:02:12.840><c> AI</c><00:02:13.080><c> influencers,</c><00:02:14.080><c> and</c>
+
+00:02:14.190 --> 00:02:14.200 align:start position:0%
+growth for your AI influencers, and
+ 
+
+00:02:14.200 --> 00:02:16.430 align:start position:0%
+growth for your AI influencers, and
+more.<00:02:15.000><c> I've</c><00:02:15.160><c> helped</c><00:02:15.360><c> people</c><00:02:15.640><c> from</c><00:02:16.000><c> literal</c>
+
+00:02:16.430 --> 00:02:16.440 align:start position:0%
+more. I've helped people from literal
+ 
+
+00:02:16.440 --> 00:02:18.550 align:start position:0%
+more. I've helped people from literal
+scratch<00:02:17.120><c> with</c><00:02:17.360><c> zero</c><00:02:17.720><c> knowledge</c><00:02:18.320><c> get</c>
+
+00:02:18.550 --> 00:02:18.560 align:start position:0%
+scratch with zero knowledge get
+ 
+
+00:02:18.560 --> 00:02:20.630 align:start position:0%
+scratch with zero knowledge get
+successful<00:02:19.200><c> and</c><00:02:19.360><c> super</c><00:02:19.720><c> high-quality</c><00:02:20.320><c> AI</c>
+
+00:02:20.630 --> 00:02:20.640 align:start position:0%
+successful and super high-quality AI
+ 
+
+00:02:20.640 --> 00:02:22.790 align:start position:0%
+successful and super high-quality AI
+influencers<00:02:21.440><c> up</c><00:02:21.680><c> and</c><00:02:21.800><c> running</c><00:02:22.200><c> with</c><00:02:22.520><c> great</c>
+
+00:02:22.790 --> 00:02:22.800 align:start position:0%
+influencers up and running with great
+ 
+
+00:02:22.800 --> 00:02:24.430 align:start position:0%
+influencers up and running with great
+satisfaction<00:02:23.520><c> from</c><00:02:23.640><c> them.</c>
+
+00:02:24.430 --> 00:02:24.440 align:start position:0%
+satisfaction from them.
+ 
+
+00:02:24.440 --> 00:02:27.270 align:start position:0%
+satisfaction from them.
+For<00:02:24.520><c> generation</c><00:02:25.080><c> times,</c><00:02:25.800><c> with</c><00:02:26.000><c> an</c><00:02:26.120><c> RTX</c><00:02:26.600><c> 4090,</c>
+
+00:02:27.270 --> 00:02:27.280 align:start position:0%
+For generation times, with an RTX 4090,
+ 
+
+00:02:27.280 --> 00:02:29.990 align:start position:0%
+For generation times, with an RTX 4090,
+I<00:02:27.400><c> recommend</c><00:02:27.840><c> just</c><00:02:28.000><c> using</c><00:02:28.360><c> 1024</c><00:02:29.160><c> as</c><00:02:29.360><c> the</c><00:02:29.440><c> value</c>
+
+00:02:29.990 --> 00:02:30.000 align:start position:0%
+I recommend just using 1024 as the value
+ 
+
+00:02:30.000 --> 00:02:32.190 align:start position:0%
+I recommend just using 1024 as the value
+in<00:02:30.160><c> the</c><00:02:30.280><c> resize</c><00:02:30.760><c> image</c><00:02:31.120><c> by</c><00:02:31.280><c> longer</c><00:02:31.640><c> side</c><00:02:31.920><c> to</c>
+
+00:02:32.190 --> 00:02:32.200 align:start position:0%
+in the resize image by longer side to
+ 
+
+00:02:32.200 --> 00:02:34.790 align:start position:0%
+in the resize image by longer side to
+show<00:02:32.440><c> it</c><00:02:32.480><c> on</c><00:02:32.640><c> the</c><00:02:32.720><c> screen</c><00:02:33.040><c> here.</c>
+
+00:02:34.790 --> 00:02:34.800 align:start position:0%
+show it on the screen here.
+ 
+
+00:02:34.800 --> 00:02:36.390 align:start position:0%
+show it on the screen here.
+And<00:02:34.880><c> with</c><00:02:35.000><c> the</c><00:02:35.080><c> 5090,</c><00:02:35.800><c> you</c><00:02:35.920><c> can</c><00:02:36.040><c> push</c><00:02:36.280><c> the</c>
+
+00:02:36.390 --> 00:02:36.400 align:start position:0%
+And with the 5090, you can push the
+ 
+
+00:02:36.400 --> 00:02:38.510 align:start position:0%
+And with the 5090, you can push the
+resolution<00:02:36.959><c> up</c><00:02:37.200><c> much</c><00:02:37.480><c> higher.</c>
+
+00:02:38.510 --> 00:02:38.520 align:start position:0%
+resolution up much higher.
+ 
+
+00:02:38.520 --> 00:02:40.750 align:start position:0%
+resolution up much higher.
+I<00:02:38.640><c> would</c><00:02:38.800><c> recommend</c><00:02:39.360><c> around</c><00:02:39.720><c> 1280</c><00:02:40.560><c> with</c><00:02:40.680><c> the</c>
+
+00:02:40.750 --> 00:02:40.760 align:start position:0%
+I would recommend around 1280 with the
+ 
+
+00:02:40.760 --> 00:02:45.190 align:start position:0%
+I would recommend around 1280 with the
+5090,<00:02:42.000><c> but</c><00:02:42.440><c> you</c><00:02:42.760><c> can</c><00:02:43.000><c> probably</c><00:02:43.440><c> go</c><00:02:43.640><c> higher.</c>
+
+00:02:45.190 --> 00:02:45.200 align:start position:0%
+5090, but you can probably go higher.
+ 
+
+00:02:45.200 --> 00:02:47.350 align:start position:0%
+5090, but you can probably go higher.
+I<00:02:45.280><c> recommend</c><00:02:45.720><c> a</c><00:02:45.760><c> frame</c><00:02:46.040><c> rate</c><00:02:46.280><c> of</c><00:02:46.400><c> at</c><00:02:46.480><c> least</c><00:02:46.760><c> 24</c>
+
+00:02:47.350 --> 00:02:47.360 align:start position:0%
+I recommend a frame rate of at least 24
+ 
+
+00:02:47.360 --> 00:02:49.710 align:start position:0%
+I recommend a frame rate of at least 24
+regardless<00:02:47.920><c> of</c><00:02:48.040><c> which</c><00:02:48.200><c> GPU</c><00:02:48.800><c> you</c><00:02:48.920><c> are</c><00:02:49.040><c> using.</c>
+
+00:02:49.710 --> 00:02:49.720 align:start position:0%
+regardless of which GPU you are using.
+ 
+
+00:02:49.720 --> 00:02:51.270 align:start position:0%
+regardless of which GPU you are using.
+This<00:02:49.880><c> will</c><00:02:50.040><c> yield</c><00:02:50.360><c> the</c><00:02:50.440><c> most</c><00:02:50.680><c> natural-looking</c>
+
+00:02:51.270 --> 00:02:51.280 align:start position:0%
+This will yield the most natural-looking
+ 
+
+00:02:51.280 --> 00:02:54.590 align:start position:0%
+This will yield the most natural-looking
+results.<00:02:52.480><c> You</c><00:02:52.600><c> can</c><00:02:52.760><c> expect</c><00:02:53.360><c> a</c><00:02:53.640><c> 4-8</c><00:02:54.280><c> second</c>
+
+00:02:54.590 --> 00:02:54.600 align:start position:0%
+results. You can expect a 4-8 second
+ 
+
+00:02:54.600 --> 00:02:57.670 align:start position:0%
+results. You can expect a 4-8 second
+video<00:02:55.120><c> within</c><00:02:55.600><c> as</c><00:02:55.880><c> little</c><00:02:56.120><c> as</c><00:02:56.320><c> 3</c><00:02:56.520><c> minutes</c><00:02:56.959><c> on</c><00:02:57.160><c> a</c>
+
+00:02:57.670 --> 00:02:57.680 align:start position:0%
+video within as little as 3 minutes on a
+ 
+
+00:02:57.680 --> 00:03:01.430 align:start position:0%
+video within as little as 3 minutes on a
+RTX<00:02:58.160><c> 4090.</c><00:02:59.200><c> And</c><00:02:59.320><c> if</c><00:02:59.480><c> you're</c><00:02:59.640><c> using</c><00:03:00.160><c> the</c><00:03:00.560><c> 5090,</c>
+
+00:03:01.430 --> 00:03:01.440 align:start position:0%
+RTX 4090. And if you're using the 5090,
+ 
+
+00:03:01.440 --> 00:03:03.710 align:start position:0%
+RTX 4090. And if you're using the 5090,
+you<00:03:01.560><c> can</c><00:03:01.680><c> expect</c><00:03:02.200><c> even</c><00:03:02.440><c> faster</c><00:03:02.800><c> results</c><00:03:03.480><c> in</c><00:03:03.600><c> as</c>
+
+00:03:03.710 --> 00:03:03.720 align:start position:0%
+you can expect even faster results in as
+ 
+
+00:03:03.720 --> 00:03:05.750 align:start position:0%
+you can expect even faster results in as
+little<00:03:03.959><c> as</c><00:03:04.080><c> 90</c><00:03:04.400><c> seconds</c><00:03:05.040><c> with</c><00:03:05.280><c> even</c><00:03:05.480><c> higher</c>
+
+00:03:05.750 --> 00:03:05.760 align:start position:0%
+little as 90 seconds with even higher
+ 
+
+00:03:05.760 --> 00:03:06.990 align:start position:0%
+little as 90 seconds with even higher
+quality.
+
+00:03:06.990 --> 00:03:07.000 align:start position:0%
+quality.
+ 
+
+00:03:07.000 --> 00:03:08.470 align:start position:0%
+quality.
+Whether<00:03:07.200><c> that</c><00:03:07.360><c> be</c><00:03:07.600><c> pushing</c><00:03:07.920><c> the</c><00:03:08.000><c> frame</c><00:03:08.320><c> rate</c>
+
+00:03:08.470 --> 00:03:08.480 align:start position:0%
+Whether that be pushing the frame rate
+ 
+
+00:03:08.480 --> 00:03:11.910 align:start position:0%
+Whether that be pushing the frame rate
+up<00:03:08.720><c> to</c><00:03:09.000><c> something</c><00:03:10.000><c> like</c><00:03:10.480><c> 30</c>
+
+00:03:11.910 --> 00:03:11.920 align:start position:0%
+up to something like 30
+ 
+
+00:03:11.920 --> 00:03:15.949 align:start position:0%
+up to something like 30
+or<00:03:12.600><c> changing</c><00:03:13.239><c> the</c><00:03:13.480><c> length</c><00:03:13.959><c> of</c><00:03:14.120><c> the</c><00:03:14.200><c> video.</c>
+
+00:03:15.949 --> 00:03:15.959 align:start position:0%
+or changing the length of the video.
+ 
+
+00:03:15.959 --> 00:03:17.630 align:start position:0%
+or changing the length of the video.
+So,<00:03:16.280><c> let's</c><00:03:16.560><c> talk</c><00:03:16.720><c> about</c><00:03:16.920><c> the</c><00:03:17.000><c> models</c><00:03:17.440><c> this</c>
+
+00:03:17.630 --> 00:03:17.640 align:start position:0%
+So, let's talk about the models this
+ 
+
+00:03:17.640 --> 00:03:19.630 align:start position:0%
+So, let's talk about the models this
+workflow<00:03:18.080><c> uses</c><00:03:18.480><c> because</c><00:03:18.880><c> there</c><00:03:19.200><c> are</c><00:03:19.360><c> a</c><00:03:19.400><c> few</c>
+
+00:03:19.630 --> 00:03:19.640 align:start position:0%
+workflow uses because there are a few
+ 
+
+00:03:19.640 --> 00:03:21.670 align:start position:0%
+workflow uses because there are a few
+moving<00:03:19.920><c> parts.</c><00:03:20.680><c> All</c><00:03:20.840><c> these</c><00:03:21.040><c> models</c><00:03:21.519><c> with</c>
+
+00:03:21.670 --> 00:03:21.680 align:start position:0%
+moving parts. All these models with
+ 
+
+00:03:21.680 --> 00:03:23.229 align:start position:0%
+moving parts. All these models with
+their<00:03:21.800><c> corresponding</c><00:03:22.400><c> links</c><00:03:22.680><c> can</c><00:03:22.800><c> be</c><00:03:22.959><c> found</c>
+
+00:03:23.229 --> 00:03:23.239 align:start position:0%
+their corresponding links can be found
+ 
+
+00:03:23.239 --> 00:03:24.670 align:start position:0%
+their corresponding links can be found
+within<00:03:23.480><c> the</c><00:03:23.560><c> workflow</c><00:03:24.040><c> shown</c><00:03:24.360><c> here</c><00:03:24.560><c> on</c>
+
+00:03:24.670 --> 00:03:24.680 align:start position:0%
+within the workflow shown here on
+ 
+
+00:03:24.680 --> 00:03:26.790 align:start position:0%
+within the workflow shown here on
+screen.<00:03:25.519><c> Just</c><00:03:25.720><c> click</c><00:03:25.920><c> the</c><00:03:26.040><c> links</c><00:03:26.320><c> to</c><00:03:26.440><c> download</c>
+
+00:03:26.790 --> 00:03:26.800 align:start position:0%
+screen. Just click the links to download
+ 
+
+00:03:26.800 --> 00:03:28.070 align:start position:0%
+screen. Just click the links to download
+them<00:03:27.040><c> and</c><00:03:27.160><c> then</c><00:03:27.320><c> add</c><00:03:27.560><c> them</c><00:03:27.760><c> to</c><00:03:27.920><c> their</c>
+
+00:03:28.070 --> 00:03:28.080 align:start position:0%
+them and then add them to their
+ 
+
+00:03:28.080 --> 00:03:29.870 align:start position:0%
+them and then add them to their
+respective<00:03:28.600><c> folders,</c><00:03:29.120><c> which</c><00:03:29.320><c> can</c><00:03:29.440><c> also</c><00:03:29.720><c> be</c>
+
+00:03:29.870 --> 00:03:29.880 align:start position:0%
+respective folders, which can also be
+ 
+
+00:03:29.880 --> 00:03:32.190 align:start position:0%
+respective folders, which can also be
+found<00:03:30.400><c> within</c><00:03:30.959><c> this</c>
+
+00:03:32.190 --> 00:03:32.200 align:start position:0%
+found within this
+ 
+
+00:03:32.200 --> 00:03:34.990 align:start position:0%
+found within this
+markdown<00:03:32.600><c> node</c><00:03:33.239><c> node</c><00:03:33.760><c> on</c><00:03:33.959><c> screen.</c>
+
+00:03:34.990 --> 00:03:35.000 align:start position:0%
+markdown node node on screen.
+ 
+
+00:03:35.000 --> 00:03:36.750 align:start position:0%
+markdown node node on screen.
+So,<00:03:35.239><c> the</c><00:03:35.360><c> diffusion</c><00:03:35.760><c> models,</c><00:03:36.160><c> there</c><00:03:36.360><c> are</c><00:03:36.560><c> two</c>
+
+00:03:36.750 --> 00:03:36.760 align:start position:0%
+So, the diffusion models, there are two
+ 
+
+00:03:36.760 --> 00:03:37.790 align:start position:0%
+So, the diffusion models, there are two
+of<00:03:36.840><c> them.</c>
+
+00:03:37.790 --> 00:03:37.800 align:start position:0%
+of them.
+ 
+
+00:03:37.800 --> 00:03:41.350 align:start position:0%
+of them.
+Um<00:03:38.519><c> one</c><00:03:38.880><c> 2.2</c><00:03:39.880><c> image</c><00:03:40.200><c> to</c><00:03:40.280><c> video</c><00:03:40.640><c> uses</c><00:03:41.000><c> a</c><00:03:41.040><c> dual</c>
+
+00:03:41.350 --> 00:03:41.360 align:start position:0%
+Um one 2.2 image to video uses a dual
+ 
+
+00:03:41.360 --> 00:03:43.910 align:start position:0%
+Um one 2.2 image to video uses a dual
+model<00:03:41.640><c> setup.</c><00:03:42.080><c> You'll</c><00:03:42.239><c> see</c><00:03:42.760><c> two</c><00:03:43.200><c> UNet</c><00:03:43.640><c> loader</c>
+
+00:03:43.910 --> 00:03:43.920 align:start position:0%
+model setup. You'll see two UNet loader
+ 
+
+00:03:43.920 --> 00:03:46.270 align:start position:0%
+model setup. You'll see two UNet loader
+nodes<00:03:44.400><c> found</c><00:03:45.320><c> at</c><00:03:45.440><c> the</c><00:03:45.519><c> top</c><00:03:45.800><c> here</c><00:03:46.080><c> under</c>
+
+00:03:46.270 --> 00:03:46.280 align:start position:0%
+nodes found at the top here under
+ 
+
+00:03:46.280 --> 00:03:48.190 align:start position:0%
+nodes found at the top here under
+diffusion<00:03:46.680><c> models.</c>
+
+00:03:48.190 --> 00:03:48.200 align:start position:0%
+diffusion models.
+ 
+
+00:03:48.200 --> 00:03:50.710 align:start position:0%
+diffusion models.
+There's<00:03:48.440><c> a</c><00:03:48.600><c> low</c><00:03:48.880><c> noise</c><00:03:49.320><c> and</c><00:03:49.560><c> a</c><00:03:49.640><c> high</c><00:03:49.840><c> noise.</c>
+
+00:03:50.710 --> 00:03:50.720 align:start position:0%
+There's a low noise and a high noise.
+ 
+
+00:03:50.720 --> 00:03:52.910 align:start position:0%
+There's a low noise and a high noise.
+These<00:03:50.959><c> are</c><00:03:51.200><c> rather</c><00:03:51.519><c> large</c><00:03:52.040><c> in</c><00:03:52.200><c> size,</c><00:03:52.680><c> so</c><00:03:52.760><c> they</c>
+
+00:03:52.910 --> 00:03:52.920 align:start position:0%
+These are rather large in size, so they
+ 
+
+00:03:52.920 --> 00:03:54.750 align:start position:0%
+These are rather large in size, so they
+might<00:03:53.080><c> take</c><00:03:53.280><c> a</c><00:03:53.320><c> while</c><00:03:53.560><c> to</c><00:03:53.640><c> download.</c><00:03:54.400><c> So,</c><00:03:54.560><c> make</c>
+
+00:03:54.750 --> 00:03:54.760 align:start position:0%
+might take a while to download. So, make
+ 
+
+00:03:54.760 --> 00:03:57.150 align:start position:0%
+might take a while to download. So, make
+sure<00:03:54.920><c> you</c><00:03:55.040><c> have</c><00:03:55.400><c> the</c><00:03:55.720><c> respective</c><00:03:56.320><c> space</c><00:03:56.920><c> on</c>
+
+00:03:57.150 --> 00:03:57.160 align:start position:0%
+sure you have the respective space on
+ 
+
+00:03:57.160 --> 00:04:00.070 align:start position:0%
+sure you have the respective space on
+your<00:03:57.400><c> hard</c><00:03:57.640><c> drive</c><00:03:58.240><c> or</c><00:03:58.480><c> SSD.</c><00:03:59.600><c> Or</c><00:03:59.800><c> if</c><00:03:59.920><c> you're</c>
+
+00:04:00.070 --> 00:04:00.080 align:start position:0%
+your hard drive or SSD. Or if you're
+ 
+
+00:04:00.080 --> 00:04:04.310 align:start position:0%
+your hard drive or SSD. Or if you're
+using<00:04:01.080><c> RunPod</c><00:04:02.000><c> or</c><00:04:02.400><c> a</c><00:04:02.680><c> cloud</c><00:04:03.160><c> GPU</c><00:04:03.600><c> service,</c>
+
+00:04:04.310 --> 00:04:04.320 align:start position:0%
+using RunPod or a cloud GPU service,
+ 
+
+00:04:04.320 --> 00:04:05.750 align:start position:0%
+using RunPod or a cloud GPU service,
+make<00:04:04.440><c> sure</c><00:04:04.560><c> that</c><00:04:04.680><c> you</c><00:04:04.800><c> have</c><00:04:04.960><c> space</c><00:04:05.440><c> on</c><00:04:05.640><c> your</c>
+
+00:04:05.750 --> 00:04:05.760 align:start position:0%
+make sure that you have space on your
+ 
+
+00:04:05.760 --> 00:04:07.949 align:start position:0%
+make sure that you have space on your
+network<00:04:06.120><c> volume</c><00:04:06.640><c> to</c><00:04:06.800><c> install</c><00:04:07.120><c> them.</c>
+
+00:04:07.949 --> 00:04:07.959 align:start position:0%
+network volume to install them.
+ 
+
+00:04:07.959 --> 00:04:09.830 align:start position:0%
+network volume to install them.
+These<00:04:08.160><c> are</c><00:04:08.280><c> both</c><00:04:08.640><c> 14</c><00:04:09.080><c> billion</c><00:04:09.440><c> parameter</c>
+
+00:04:09.830 --> 00:04:09.840 align:start position:0%
+These are both 14 billion parameter
+ 
+
+00:04:09.840 --> 00:04:12.230 align:start position:0%
+These are both 14 billion parameter
+models<00:04:10.320><c> in</c><00:04:10.520><c> FP8</c><00:04:11.120><c> precision.</c><00:04:11.840><c> So,</c><00:04:12.080><c> they're</c>
+
+00:04:12.230 --> 00:04:12.240 align:start position:0%
+models in FP8 precision. So, they're
+ 
+
+00:04:12.240 --> 00:04:14.070 align:start position:0%
+models in FP8 precision. So, they're
+memory<00:04:12.520><c> efficient</c><00:04:13.040><c> without</c><00:04:13.400><c> a</c><00:04:13.480><c> big</c><00:04:13.720><c> quality</c>
+
+00:04:14.070 --> 00:04:14.080 align:start position:0%
+memory efficient without a big quality
+ 
+
+00:04:14.080 --> 00:04:16.349 align:start position:0%
+memory efficient without a big quality
+hit.<00:04:14.880><c> The</c><00:04:14.920><c> high</c><00:04:15.120><c> noise</c><00:04:15.360><c> model</c><00:04:15.720><c> handles</c><00:04:16.160><c> the</c>
+
+00:04:16.349 --> 00:04:16.359 align:start position:0%
+hit. The high noise model handles the
+ 
+
+00:04:16.359 --> 00:04:18.430 align:start position:0%
+hit. The high noise model handles the
+early<00:04:16.640><c> denoising</c><00:04:17.120><c> steps</c><00:04:17.640><c> and</c><00:04:17.880><c> the</c><00:04:17.959><c> low</c><00:04:18.120><c> noise</c>
+
+00:04:18.430 --> 00:04:18.440 align:start position:0%
+early denoising steps and the low noise
+ 
+
+00:04:18.440 --> 00:04:20.190 align:start position:0%
+early denoising steps and the low noise
+model<00:04:18.760><c> handles</c><00:04:19.160><c> the</c><00:04:19.280><c> refinement.</c><00:04:19.880><c> They</c><00:04:20.000><c> work</c>
+
+00:04:20.190 --> 00:04:20.200 align:start position:0%
+model handles the refinement. They work
+ 
+
+00:04:20.200 --> 00:04:22.630 align:start position:0%
+model handles the refinement. They work
+together<00:04:20.920><c> in</c><00:04:21.120><c> a</c><00:04:21.160><c> chained</c><00:04:21.519><c> pipeline,</c><00:04:22.000><c> so</c><00:04:22.560><c> you</c>
+
+00:04:22.630 --> 00:04:22.640 align:start position:0%
+together in a chained pipeline, so you
+ 
+
+00:04:22.640 --> 00:04:24.710 align:start position:0%
+together in a chained pipeline, so you
+need<00:04:22.840><c> both</c><00:04:23.040><c> of</c><00:04:23.120><c> these.</c><00:04:23.800><c> Moving</c><00:04:24.120><c> on</c><00:04:24.320><c> to</c><00:04:24.480><c> the</c>
+
+00:04:24.710 --> 00:04:24.720 align:start position:0%
+need both of these. Moving on to the
+ 
+
+00:04:24.720 --> 00:04:28.590 align:start position:0%
+need both of these. Moving on to the
+VAE,<00:04:25.560><c> I</c><00:04:25.680><c> use</c><00:04:25.919><c> the</c><00:04:26.040><c> 1</c><00:04:26.400><c> 2.1</c><00:04:27.360><c> VAE.</c>
+
+00:04:28.590 --> 00:04:28.600 align:start position:0%
+VAE, I use the 1 2.1 VAE.
+ 
+
+00:04:28.600 --> 00:04:31.710 align:start position:0%
+VAE, I use the 1 2.1 VAE.
+I<00:04:28.640><c> believe</c><00:04:28.880><c> there</c><00:04:29.040><c> is</c><00:04:29.160><c> a</c><00:04:29.240><c> 1</c><00:04:29.480><c> 2.2</c><00:04:30.080><c> VAE,</c><00:04:30.880><c> but</c><00:04:31.560><c> I</c>
+
+00:04:31.710 --> 00:04:31.720 align:start position:0%
+I believe there is a 1 2.2 VAE, but I
+ 
+
+00:04:31.720 --> 00:04:33.990 align:start position:0%
+I believe there is a 1 2.2 VAE, but I
+just<00:04:31.960><c> use</c><00:04:32.120><c> this</c><00:04:32.360><c> one.</c><00:04:32.680><c> It's</c><00:04:32.919><c> reliable</c><00:04:33.600><c> and</c><00:04:33.919><c> it</c>
+
+00:04:33.990 --> 00:04:34.000 align:start position:0%
+just use this one. It's reliable and it
+ 
+
+00:04:34.000 --> 00:04:35.430 align:start position:0%
+just use this one. It's reliable and it
+gives<00:04:34.200><c> me</c><00:04:34.280><c> the</c><00:04:34.360><c> best</c><00:04:34.600><c> results.</c><00:04:35.080><c> I've</c><00:04:35.200><c> tried</c>
+
+00:04:35.430 --> 00:04:35.440 align:start position:0%
+gives me the best results. I've tried
+ 
+
+00:04:35.440 --> 00:04:37.750 align:start position:0%
+gives me the best results. I've tried
+the<00:04:35.520><c> 2.2</c><00:04:36.120><c> VAE</c><00:04:36.840><c> and</c><00:04:37.120><c> I</c><00:04:37.200><c> wasn't</c><00:04:37.440><c> the</c><00:04:37.480><c> biggest</c>
+
+00:04:37.750 --> 00:04:37.760 align:start position:0%
+the 2.2 VAE and I wasn't the biggest
+ 
+
+00:04:37.760 --> 00:04:38.630 align:start position:0%
+the 2.2 VAE and I wasn't the biggest
+fan.
+
+00:04:38.630 --> 00:04:38.640 align:start position:0%
+fan.
+ 
+
+00:04:38.640 --> 00:04:41.830 align:start position:0%
+fan.
+And<00:04:39.040><c> the</c><00:04:39.200><c> text</c><00:04:39.520><c> encoder</c><00:04:40.240><c> is</c><00:04:40.800><c> there</c><00:04:41.080><c> as</c><00:04:41.280><c> well.</c>
+
+00:04:41.830 --> 00:04:41.840 align:start position:0%
+And the text encoder is there as well.
+ 
+
+00:04:41.840 --> 00:04:43.990 align:start position:0%
+And the text encoder is there as well.
+You<00:04:41.960><c> will</c><00:04:42.120><c> need</c><00:04:42.400><c> all</c><00:04:42.560><c> of</c><00:04:42.680><c> these</c><00:04:43.240><c> and</c><00:04:43.560><c> they</c><00:04:43.760><c> go</c>
+
+00:04:43.990 --> 00:04:44.000 align:start position:0%
+You will need all of these and they go
+ 
+
+00:04:44.000 --> 00:04:46.230 align:start position:0%
+You will need all of these and they go
+into<00:04:44.360><c> their</c><00:04:44.720><c> respective</c>
+
+00:04:46.230 --> 00:04:46.240 align:start position:0%
+into their respective
+ 
+
+00:04:46.240 --> 00:04:48.110 align:start position:0%
+into their respective
+nodes<00:04:46.840><c> here.</c>
+
+00:04:48.110 --> 00:04:48.120 align:start position:0%
+nodes here.
+ 
+
+00:04:48.120 --> 00:04:49.710 align:start position:0%
+nodes here.
+High<00:04:48.280><c> noise</c>
+
+00:04:49.710 --> 00:04:49.720 align:start position:0%
+High noise
+ 
+
+00:04:49.720 --> 00:04:51.870 align:start position:0%
+High noise
+U-Net<00:04:50.040><c> model</c><00:04:50.400><c> will</c><00:04:50.560><c> go</c><00:04:50.720><c> here,</c><00:04:51.160><c> low</c><00:04:51.320><c> noise</c>
+
+00:04:51.870 --> 00:04:51.880 align:start position:0%
+U-Net model will go here, low noise
+ 
+
+00:04:51.880 --> 00:04:52.870 align:start position:0%
+U-Net model will go here, low noise
+there.
+
+00:04:52.870 --> 00:04:52.880 align:start position:0%
+there.
+ 
+
+00:04:52.880 --> 00:04:55.310 align:start position:0%
+there.
+The<00:04:53.480><c> text</c><00:04:53.760><c> encoder</c><00:04:54.400><c> will</c><00:04:54.520><c> go</c><00:04:54.640><c> into</c><00:04:54.800><c> this</c><00:04:55.000><c> clip</c>
+
+00:04:55.310 --> 00:04:55.320 align:start position:0%
+The text encoder will go into this clip
+ 
+
+00:04:55.320 --> 00:04:58.110 align:start position:0%
+The text encoder will go into this clip
+loader<00:04:56.120><c> and</c><00:04:56.400><c> the</c><00:04:56.560><c> VAE</c><00:04:57.040><c> will</c><00:04:57.160><c> go</c><00:04:57.280><c> into</c><00:04:57.440><c> this</c><00:04:57.720><c> VAE</c>
+
+00:04:58.110 --> 00:04:58.120 align:start position:0%
+loader and the VAE will go into this VAE
+ 
+
+00:04:58.120 --> 00:05:00.310 align:start position:0%
+loader and the VAE will go into this VAE
+loader.
+
+00:05:00.310 --> 00:05:00.320 align:start position:0%
+loader.
+ 
+
+00:05:00.320 --> 00:05:02.270 align:start position:0%
+loader.
+Now,<00:05:00.480><c> moving</c><00:05:00.800><c> on</c><00:05:00.960><c> to</c><00:05:01.080><c> the</c><00:05:01.200><c> LoRAs,</c><00:05:02.000><c> just</c><00:05:02.160><c> for</c>
+
+00:05:02.270 --> 00:05:02.280 align:start position:0%
+Now, moving on to the LoRAs, just for
+ 
+
+00:05:02.280 --> 00:05:04.750 align:start position:0%
+Now, moving on to the LoRAs, just for
+demonstration<00:05:03.480><c> and</c><00:05:03.800><c> ease</c><00:05:04.000><c> of</c><00:05:04.120><c> access</c><00:05:04.520><c> for</c><00:05:04.680><c> you</c>
+
+00:05:04.750 --> 00:05:04.760 align:start position:0%
+demonstration and ease of access for you
+ 
+
+00:05:04.760 --> 00:05:06.550 align:start position:0%
+demonstration and ease of access for you
+guys<00:05:05.000><c> to</c><00:05:05.080><c> be</c><00:05:05.200><c> able</c><00:05:05.320><c> to</c><00:05:05.440><c> see</c><00:05:06.000><c> where</c><00:05:06.160><c> the</c><00:05:06.280><c> LoRa</c>
+
+00:05:06.550 --> 00:05:06.560 align:start position:0%
+guys to be able to see where the LoRa
+ 
+
+00:05:06.560 --> 00:05:08.790 align:start position:0%
+guys to be able to see where the LoRa
+files<00:05:06.960><c> go,</c><00:05:07.200><c> I've</c><00:05:07.320><c> expanded</c><00:05:08.200><c> these</c><00:05:08.520><c> LoRa</c>
+
+00:05:08.790 --> 00:05:08.800 align:start position:0%
+files go, I've expanded these LoRa
+ 
+
+00:05:08.800 --> 00:05:10.390 align:start position:0%
+files go, I've expanded these LoRa
+loader<00:05:09.080><c> nodes</c><00:05:09.360><c> here.</c>
+
+00:05:10.390 --> 00:05:10.400 align:start position:0%
+loader nodes here.
+ 
+
+00:05:10.400 --> 00:05:12.190 align:start position:0%
+loader nodes here.
+This<00:05:10.560><c> workflow</c><00:05:10.960><c> uses</c><00:05:11.280><c> distilled</c><00:05:11.760><c> inference</c>
+
+00:05:12.190 --> 00:05:12.200 align:start position:0%
+This workflow uses distilled inference
+ 
+
+00:05:12.200 --> 00:05:13.590 align:start position:0%
+This workflow uses distilled inference
+LoRAs.
+
+00:05:13.590 --> 00:05:13.600 align:start position:0%
+LoRAs.
+ 
+
+00:05:13.600 --> 00:05:15.790 align:start position:0%
+LoRAs.
+These<00:05:13.840><c> are</c><00:05:13.919><c> not</c><00:05:14.120><c> style</c><00:05:14.520><c> or</c><00:05:14.640><c> character</c><00:05:15.040><c> LoRAs.</c>
+
+00:05:15.790 --> 00:05:15.800 align:start position:0%
+These are not style or character LoRAs.
+ 
+
+00:05:15.800 --> 00:05:17.830 align:start position:0%
+These are not style or character LoRAs.
+These<00:05:16.160><c> are</c><00:05:16.680><c> speed</c><00:05:17.000><c> LoRAs</c><00:05:17.320><c> that</c><00:05:17.480><c> let</c><00:05:17.600><c> you</c><00:05:17.720><c> run</c>
+
+00:05:17.830 --> 00:05:17.840 align:start position:0%
+These are speed LoRAs that let you run
+ 
+
+00:05:17.840 --> 00:05:19.590 align:start position:0%
+These are speed LoRAs that let you run
+the<00:05:17.919><c> model</c><00:05:18.240><c> in</c><00:05:18.320><c> just</c><00:05:18.560><c> four</c><00:05:18.760><c> steps</c><00:05:19.120><c> instead</c><00:05:19.480><c> the</c>
+
+00:05:19.590 --> 00:05:19.600 align:start position:0%
+the model in just four steps instead the
+ 
+
+00:05:19.600 --> 00:05:22.270 align:start position:0%
+the model in just four steps instead the
+usual<00:05:20.040><c> 20</c><00:05:20.400><c> plus.</c><00:05:21.320><c> And</c><00:05:21.480><c> there's</c><00:05:21.680><c> one</c><00:05:21.840><c> for</c><00:05:22.040><c> each</c>
+
+00:05:22.270 --> 00:05:22.280 align:start position:0%
+usual 20 plus. And there's one for each
+ 
+
+00:05:22.280 --> 00:05:23.950 align:start position:0%
+usual 20 plus. And there's one for each
+model.<00:05:22.760><c> There's</c><00:05:22.960><c> a</c><00:05:23.040><c> high</c><00:05:23.240><c> noise</c><00:05:23.600><c> and</c><00:05:23.760><c> a</c><00:05:23.800><c> low</c>
+
+00:05:23.950 --> 00:05:23.960 align:start position:0%
+model. There's a high noise and a low
+ 
+
+00:05:23.960 --> 00:05:25.590 align:start position:0%
+model. There's a high noise and a low
+noise,<00:05:24.280><c> which</c><00:05:24.440><c> go</c><00:05:24.600><c> into</c><00:05:24.760><c> their</c><00:05:24.919><c> respective</c>
+
+00:05:25.590 --> 00:05:25.600 align:start position:0%
+noise, which go into their respective
+ 
+
+00:05:25.600 --> 00:05:28.230 align:start position:0%
+noise, which go into their respective
+nodes<00:05:26.520><c> defined</c><00:05:27.000><c> here.</c><00:05:27.480><c> You</c><00:05:27.600><c> can</c><00:05:27.720><c> clearly</c><00:05:28.080><c> see</c>
+
+00:05:28.230 --> 00:05:28.240 align:start position:0%
+nodes defined here. You can clearly see
+ 
+
+00:05:28.240 --> 00:05:30.590 align:start position:0%
+nodes defined here. You can clearly see
+on<00:05:28.360><c> screen.</c><00:05:29.200><c> And</c><00:05:29.360><c> they're</c><00:05:29.600><c> also</c><00:05:29.880><c> downloadable</c>
+
+00:05:30.590 --> 00:05:30.600 align:start position:0%
+on screen. And they're also downloadable
+ 
+
+00:05:30.600 --> 00:05:34.270 align:start position:0%
+on screen. And they're also downloadable
+within<00:05:31.160><c> that</c><00:05:31.560><c> markdown</c><00:05:32.000><c> node</c><00:05:32.600><c> up</c><00:05:32.760><c> there.</c>
+
+00:05:34.270 --> 00:05:34.280 align:start position:0%
+within that markdown node up there.
+ 
+
+00:05:34.280 --> 00:05:36.790 align:start position:0%
+within that markdown node up there.
+Both<00:05:34.480><c> are</c><00:05:34.600><c> loaded</c><00:05:35.000><c> at</c><00:05:35.240><c> strength</c><00:05:35.800><c> one.</c><00:05:36.560><c> Don't</c>
+
+00:05:36.790 --> 00:05:36.800 align:start position:0%
+Both are loaded at strength one. Don't
+ 
+
+00:05:36.800 --> 00:05:38.190 align:start position:0%
+Both are loaded at strength one. Don't
+change<00:05:37.040><c> that.</c><00:05:37.760><c> These</c><00:05:37.880><c> are</c><00:05:37.960><c> tuned</c>
+
+00:05:38.190 --> 00:05:38.200 align:start position:0%
+change that. These are tuned
+ 
+
+00:05:38.200 --> 00:05:40.390 align:start position:0%
+change that. These are tuned
+specifically<00:05:38.800><c> for</c><00:05:39.160><c> four</c><00:05:39.440><c> steps</c><00:05:39.720><c> sampling</c><00:05:40.240><c> and</c>
+
+00:05:40.390 --> 00:05:40.400 align:start position:0%
+specifically for four steps sampling and
+ 
+
+00:05:40.400 --> 00:05:42.030 align:start position:0%
+specifically for four steps sampling and
+the<00:05:40.480><c> strength</c><00:05:40.760><c> values</c><00:05:41.120><c> are</c><00:05:41.280><c> baked</c><00:05:41.600><c> into</c><00:05:41.880><c> how</c>
+
+00:05:42.030 --> 00:05:42.040 align:start position:0%
+the strength values are baked into how
+ 
+
+00:05:42.040 --> 00:05:43.950 align:start position:0%
+the strength values are baked into how
+they<00:05:42.160><c> were</c><00:05:42.240><c> trained.</c><00:05:43.040><c> Without</c><00:05:43.360><c> these,</c><00:05:43.800><c> you'd</c>
+
+00:05:43.950 --> 00:05:43.960 align:start position:0%
+they were trained. Without these, you'd
+ 
+
+00:05:43.960 --> 00:05:45.710 align:start position:0%
+they were trained. Without these, you'd
+be<00:05:44.080><c> running</c><00:05:44.360><c> 20</c><00:05:44.600><c> plus</c><00:05:44.840><c> steps</c><00:05:45.200><c> and</c><00:05:45.400><c> waiting</c><00:05:45.640><c> a</c>
+
+00:05:45.710 --> 00:05:45.720 align:start position:0%
+be running 20 plus steps and waiting a
+ 
+
+00:05:45.720 --> 00:05:47.710 align:start position:0%
+be running 20 plus steps and waiting a
+lot<00:05:45.880><c> longer</c><00:05:46.200><c> for</c><00:05:46.320><c> your</c><00:05:46.480><c> video.</c><00:05:47.320><c> With</c><00:05:47.480><c> them,</c>
+
+00:05:47.710 --> 00:05:47.720 align:start position:0%
+lot longer for your video. With them,
+ 
+
+00:05:47.720 --> 00:05:49.670 align:start position:0%
+lot longer for your video. With them,
+you<00:05:47.840><c> get</c><00:05:48.040><c> fast</c><00:05:48.440><c> quality</c><00:05:48.840><c> output.</c><00:05:49.440><c> Think</c><00:05:49.600><c> of</c>
+
+00:05:49.670 --> 00:05:49.680 align:start position:0%
+you get fast quality output. Think of
+ 
+
+00:05:49.680 --> 00:05:53.030 align:start position:0%
+you get fast quality output. Think of
+them<00:05:50.000><c> as</c><00:05:50.200><c> like</c><00:05:50.520><c> the</c><00:05:51.000><c> turbo</c><00:05:51.320><c> mode</c><00:05:51.640><c> for</c><00:05:51.920><c> 12.2.</c>
+
+00:05:53.030 --> 00:05:53.040 align:start position:0%
+them as like the turbo mode for 12.2.
+ 
+
+00:05:53.040 --> 00:05:55.030 align:start position:0%
+them as like the turbo mode for 12.2.
+And<00:05:53.280><c> just</c><00:05:53.480><c> a</c><00:05:53.520><c> side</c><00:05:53.840><c> note</c><00:05:54.080><c> before</c><00:05:54.360><c> moving</c><00:05:54.680><c> on,</c>
+
+00:05:55.030 --> 00:05:55.040 align:start position:0%
+And just a side note before moving on,
+ 
+
+00:05:55.040 --> 00:05:57.310 align:start position:0%
+And just a side note before moving on,
+if<00:05:55.200><c> you</c><00:05:55.280><c> have</c><00:05:55.440><c> a</c><00:05:55.520><c> 12.2</c><00:05:56.520><c> character</c><00:05:57.040><c> lower</c>
+
+00:05:57.310 --> 00:05:57.320 align:start position:0%
+if you have a 12.2 character lower
+ 
+
+00:05:57.320 --> 00:05:59.350 align:start position:0%
+if you have a 12.2 character lower
+trained,<00:05:58.160><c> add</c><00:05:58.320><c> them</c><00:05:58.480><c> into</c><00:05:58.720><c> the</c><00:05:58.840><c> lower</c><00:05:59.120><c> loader</c>
+
+00:05:59.350 --> 00:05:59.360 align:start position:0%
+trained, add them into the lower loader
+ 
+
+00:05:59.360 --> 00:06:01.430 align:start position:0%
+trained, add them into the lower loader
+stack<00:05:59.800><c> for</c><00:06:00.240><c> increased</c><00:06:00.680><c> character</c><00:06:01.040><c> likeness</c>
+
+00:06:01.430 --> 00:06:01.440 align:start position:0%
+stack for increased character likeness
+ 
+
+00:06:01.440 --> 00:06:02.910 align:start position:0%
+stack for increased character likeness
+and<00:06:01.520><c> consistency.</c>
+
+00:06:02.910 --> 00:06:02.920 align:start position:0%
+and consistency.
+ 
+
+00:06:02.920 --> 00:06:04.750 align:start position:0%
+and consistency.
+If<00:06:03.080><c> you</c><00:06:03.160><c> don't,</c><00:06:03.600><c> no</c><00:06:03.760><c> worries.</c><00:06:04.120><c> This</c><00:06:04.360><c> workflow</c>
+
+00:06:04.750 --> 00:06:04.760 align:start position:0%
+If you don't, no worries. This workflow
+ 
+
+00:06:04.760 --> 00:06:07.790 align:start position:0%
+If you don't, no worries. This workflow
+does<00:06:05.040><c> perfectly</c><00:06:05.440><c> fine</c><00:06:05.680><c> without</c><00:06:05.960><c> them.</c>
+
+00:06:07.790 --> 00:06:07.800 align:start position:0%
+does perfectly fine without them.
+ 
+
+00:06:07.800 --> 00:06:10.310 align:start position:0%
+does perfectly fine without them.
+So,<00:06:08.200><c> back</c><00:06:08.560><c> to</c><00:06:08.960><c> the</c><00:06:09.200><c> frame</c><00:06:09.480><c> count</c><00:06:09.720><c> value</c><00:06:10.080><c> in</c><00:06:10.200><c> the</c>
+
+00:06:10.310 --> 00:06:10.320 align:start position:0%
+So, back to the frame count value in the
+ 
+
+00:06:10.320 --> 00:06:13.070 align:start position:0%
+So, back to the frame count value in the
+1<00:06:10.680><c> image</c><00:06:10.960><c> to</c><00:06:11.080><c> video</c><00:06:11.360><c> node.</c><00:06:12.160><c> If</c><00:06:12.320><c> I</c><00:06:12.400><c> were</c><00:06:12.520><c> to</c><00:06:12.600><c> do,</c>
+
+00:06:13.070 --> 00:06:13.080 align:start position:0%
+1 image to video node. If I were to do,
+ 
+
+00:06:13.080 --> 00:06:16.590 align:start position:0%
+1 image to video node. If I were to do,
+for<00:06:13.200><c> example,</c><00:06:13.680><c> 24</c><00:06:14.680><c> frames,</c>
+
+00:06:16.590 --> 00:06:16.600 align:start position:0%
+for example, 24 frames,
+ 
+
+00:06:16.600 --> 00:06:18.990 align:start position:0%
+for example, 24 frames,
+it'll<00:06:16.840><c> default</c><00:06:17.240><c> to</c><00:06:17.320><c> 25</c><00:06:17.960><c> because</c><00:06:18.400><c> it</c><00:06:18.600><c> won't</c><00:06:18.880><c> be</c>
+
+00:06:18.990 --> 00:06:19.000 align:start position:0%
+it'll default to 25 because it won't be
+ 
+
+00:06:19.000 --> 00:06:21.710 align:start position:0%
+it'll default to 25 because it won't be
+able<00:06:19.160><c> to</c><00:06:19.240><c> do</c><00:06:19.400><c> 24,</c><00:06:20.040><c> but</c><00:06:21.000><c> that</c><00:06:21.200><c> will</c><00:06:21.320><c> give</c><00:06:21.440><c> me</c>
+
+00:06:21.710 --> 00:06:21.720 align:start position:0%
+able to do 24, but that will give me
+ 
+
+00:06:21.720 --> 00:06:24.190 align:start position:0%
+able to do 24, but that will give me
+about<00:06:22.080><c> a</c><00:06:22.240><c> 1-second</c><00:06:22.880><c> video.</c><00:06:23.720><c> Now,</c><00:06:23.880><c> if</c><00:06:24.000><c> I</c><00:06:24.080><c> were</c>
+
+00:06:24.190 --> 00:06:24.200 align:start position:0%
+about a 1-second video. Now, if I were
+ 
+
+00:06:24.200 --> 00:06:28.110 align:start position:0%
+about a 1-second video. Now, if I were
+to<00:06:24.320><c> do</c><00:06:24.880><c> 49</c><00:06:25.400><c> frames</c><00:06:26.160><c> at</c><00:06:26.360><c> 24</c><00:06:26.919><c> frames</c><00:06:27.240><c> per</c><00:06:27.360><c> second,</c>
+
+00:06:28.110 --> 00:06:28.120 align:start position:0%
+to do 49 frames at 24 frames per second,
+ 
+
+00:06:28.120 --> 00:06:29.790 align:start position:0%
+to do 49 frames at 24 frames per second,
+that<00:06:28.280><c> would</c><00:06:28.400><c> give</c><00:06:28.560><c> me</c><00:06:28.800><c> about</c><00:06:29.200><c> a</c><00:06:29.280><c> 2-second</c>
+
+00:06:29.790 --> 00:06:29.800 align:start position:0%
+that would give me about a 2-second
+ 
+
+00:06:29.800 --> 00:06:30.830 align:start position:0%
+that would give me about a 2-second
+video.
+
+00:06:30.830 --> 00:06:30.840 align:start position:0%
+video.
+ 
+
+00:06:30.840 --> 00:06:35.270 align:start position:0%
+video.
+If<00:06:31.040><c> I</c><00:06:31.120><c> were</c><00:06:31.240><c> to</c><00:06:31.360><c> do</c><00:06:32.080><c> 89</c><00:06:32.720><c> frames,</c>
+
+00:06:35.270 --> 00:06:35.280 align:start position:0%
+If I were to do 89 frames,
+ 
+
+00:06:35.280 --> 00:06:36.350 align:start position:0%
+If I were to do 89 frames,
+I<00:06:35.360><c> believe</c><00:06:35.640><c> that</c><00:06:35.760><c> would</c><00:06:35.880><c> give</c><00:06:36.000><c> me</c><00:06:36.080><c> about</c><00:06:36.320><c> a</c>
+
+00:06:36.350 --> 00:06:36.360 align:start position:0%
+I believe that would give me about a
+ 
+
+00:06:36.360 --> 00:06:38.710 align:start position:0%
+I believe that would give me about a
+4-second<00:06:36.880><c> video,</c><00:06:37.240><c> and</c><00:06:37.480><c> so</c><00:06:37.760><c> on</c><00:06:37.960><c> so</c><00:06:38.200><c> forth.</c>
+
+00:06:38.710 --> 00:06:38.720 align:start position:0%
+4-second video, and so on so forth.
+ 
+
+00:06:38.720 --> 00:06:40.550 align:start position:0%
+4-second video, and so on so forth.
+Basically,<00:06:39.120><c> just</c><00:06:39.320><c> simple</c><00:06:39.600><c> math.</c><00:06:40.200><c> Depending</c>
+
+00:06:40.550 --> 00:06:40.560 align:start position:0%
+Basically, just simple math. Depending
+ 
+
+00:06:40.560 --> 00:06:42.909 align:start position:0%
+Basically, just simple math. Depending
+on<00:06:40.640><c> how</c><00:06:40.800><c> long</c><00:06:41.040><c> a</c><00:06:41.120><c> video</c><00:06:41.560><c> you</c><00:06:41.760><c> want</c><00:06:42.000><c> to</c><00:06:42.120><c> do,</c><00:06:42.760><c> you</c>
+
+00:06:42.909 --> 00:06:42.919 align:start position:0%
+on how long a video you want to do, you
+ 
+
+00:06:42.919 --> 00:06:44.750 align:start position:0%
+on how long a video you want to do, you
+will<00:06:43.040><c> just</c><00:06:43.320><c> change</c><00:06:43.800><c> based</c><00:06:44.160><c> on</c><00:06:44.280><c> your</c><00:06:44.440><c> frame</c>
+
+00:06:44.750 --> 00:06:44.760 align:start position:0%
+will just change based on your frame
+ 
+
+00:06:44.760 --> 00:06:46.310 align:start position:0%
+will just change based on your frame
+rate.<00:06:45.040><c> How</c><00:06:45.160><c> many</c><00:06:45.360><c> seconds</c><00:06:45.760><c> you</c><00:06:45.840><c> want</c><00:06:46.000><c> to</c><00:06:46.080><c> do,</c>
+
+00:06:46.310 --> 00:06:46.320 align:start position:0%
+rate. How many seconds you want to do,
+ 
+
+00:06:46.320 --> 00:06:47.870 align:start position:0%
+rate. How many seconds you want to do,
+just<00:06:46.520><c> do</c><00:06:46.640><c> the</c><00:06:46.720><c> math</c><00:06:47.040><c> on</c><00:06:47.200><c> it.</c><00:06:47.560><c> I</c><00:06:47.640><c> don't</c>
+
+00:06:47.870 --> 00:06:47.880 align:start position:0%
+just do the math on it. I don't
+ 
+
+00:06:47.880 --> 00:06:49.630 align:start position:0%
+just do the math on it. I don't
+recommend<00:06:48.280><c> doing</c><00:06:48.600><c> anything</c><00:06:49.160><c> longer</c><00:06:49.480><c> than</c>
+
+00:06:49.630 --> 00:06:49.640 align:start position:0%
+recommend doing anything longer than
+ 
+
+00:06:49.640 --> 00:06:52.430 align:start position:0%
+recommend doing anything longer than
+like<00:06:49.880><c> an</c><00:06:50.040><c> 8-</c><00:06:50.200><c> to</c><00:06:50.280><c> 10-second</c><00:06:50.840><c> video.</c><00:06:51.600><c> The</c>
+
+00:06:52.430 --> 00:06:52.440 align:start position:0%
+like an 8- to 10-second video. The
+ 
+
+00:06:52.440 --> 00:06:54.390 align:start position:0%
+like an 8- to 10-second video. The
+quality<00:06:52.919><c> and</c><00:06:53.040><c> consistency</c><00:06:53.840><c> starts</c><00:06:54.160><c> to</c><00:06:54.240><c> get</c><00:06:54.360><c> a</c>
+
+00:06:54.390 --> 00:06:54.400 align:start position:0%
+quality and consistency starts to get a
+ 
+
+00:06:54.400 --> 00:06:57.909 align:start position:0%
+quality and consistency starts to get a
+little<00:06:54.560><c> bit</c><00:06:54.840><c> weird</c><00:06:55.200><c> after</c><00:06:55.440><c> about</c><00:06:55.840><c> 10</c><00:06:56.040><c> seconds.</c>
+
+00:06:57.909 --> 00:06:57.919 align:start position:0%
+little bit weird after about 10 seconds.
+ 
+
+00:06:57.919 --> 00:06:59.750 align:start position:0%
+little bit weird after about 10 seconds.
+And<00:06:58.240><c> moving</c><00:06:58.560><c> on</c><00:06:58.760><c> to</c><00:06:58.960><c> the</c><00:06:59.120><c> final</c><00:06:59.440><c> section</c>
+
+00:06:59.750 --> 00:06:59.760 align:start position:0%
+And moving on to the final section
+ 
+
+00:06:59.760 --> 00:07:02.030 align:start position:0%
+And moving on to the final section
+before<00:07:00.120><c> I</c><00:07:00.200><c> show</c><00:07:00.400><c> you</c><00:07:00.520><c> guys</c><00:07:00.880><c> some</c><00:07:01.600><c> example</c>
+
+00:07:02.030 --> 00:07:02.040 align:start position:0%
+before I show you guys some example
+ 
+
+00:07:02.040 --> 00:07:04.270 align:start position:0%
+before I show you guys some example
+generations.<00:07:03.280><c> Obviously,</c><00:07:03.880><c> we</c><00:07:04.000><c> need</c><00:07:04.200><c> to</c>
+
+00:07:04.270 --> 00:07:04.280 align:start position:0%
+generations. Obviously, we need to
+ 
+
+00:07:04.280 --> 00:07:07.710 align:start position:0%
+generations. Obviously, we need to
+prompt<00:07:04.680><c> here</c><00:07:05.000><c> to</c><00:07:05.240><c> tell</c><00:07:05.640><c> the</c><00:07:06.480><c> model</c><00:07:07.000><c> what</c><00:07:07.160><c> to</c><00:07:07.280><c> do</c>
+
+00:07:07.710 --> 00:07:07.720 align:start position:0%
+prompt here to tell the model what to do
+ 
+
+00:07:07.720 --> 00:07:09.110 align:start position:0%
+prompt here to tell the model what to do
+when<00:07:07.880><c> creating</c><00:07:08.200><c> our</c><00:07:08.280><c> video.</c><00:07:08.720><c> So,</c><00:07:09.000><c> the</c>
+
+00:07:09.110 --> 00:07:09.120 align:start position:0%
+when creating our video. So, the
+ 
+
+00:07:09.120 --> 00:07:10.750 align:start position:0%
+when creating our video. So, the
+positive<00:07:09.520><c> prompt</c><00:07:09.880><c> is</c><00:07:10.120><c> where</c><00:07:10.240><c> you</c><00:07:10.360><c> describe</c>
+
+00:07:10.750 --> 00:07:10.760 align:start position:0%
+positive prompt is where you describe
+ 
+
+00:07:10.760 --> 00:07:12.350 align:start position:0%
+positive prompt is where you describe
+the<00:07:10.800><c> motion</c><00:07:11.240><c> and</c><00:07:11.320><c> scene.</c>
+
+00:07:12.350 --> 00:07:12.360 align:start position:0%
+the motion and scene.
+ 
+
+00:07:12.360 --> 00:07:14.990 align:start position:0%
+the motion and scene.
+Be<00:07:12.480><c> specific,</c><00:07:13.200><c> be</c><00:07:13.360><c> detailed,</c><00:07:14.320><c> describe</c><00:07:14.720><c> what</c>
+
+00:07:14.990 --> 00:07:15.000 align:start position:0%
+Be specific, be detailed, describe what
+ 
+
+00:07:15.000 --> 00:07:17.070 align:start position:0%
+Be specific, be detailed, describe what
+the<00:07:15.120><c> subject</c><00:07:15.560><c> is</c><00:07:15.680><c> doing,</c><00:07:16.240><c> the</c><00:07:16.320><c> environment,</c>
+
+00:07:17.070 --> 00:07:17.080 align:start position:0%
+the subject is doing, the environment,
+ 
+
+00:07:17.080 --> 00:07:19.670 align:start position:0%
+the subject is doing, the environment,
+lighting,<00:07:17.600><c> camera</c><00:07:17.960><c> movement.</c><00:07:18.960><c> 1</c><00:07:19.200><c> responds</c>
+
+00:07:19.670 --> 00:07:19.680 align:start position:0%
+lighting, camera movement. 1 responds
+ 
+
+00:07:19.680 --> 00:07:21.990 align:start position:0%
+lighting, camera movement. 1 responds
+well<00:07:20.040><c> to</c><00:07:20.320><c> motion-focused</c><00:07:21.040><c> language.</c><00:07:21.880><c> And</c>
+
+00:07:21.990 --> 00:07:22.000 align:start position:0%
+well to motion-focused language. And
+ 
+
+00:07:22.000 --> 00:07:23.550 align:start position:0%
+well to motion-focused language. And
+then<00:07:22.120><c> for</c><00:07:22.200><c> the</c><00:07:22.280><c> negative</c><00:07:22.600><c> prompt,</c><00:07:23.040><c> I</c><00:07:23.160><c> have</c><00:07:23.440><c> a</c>
+
+00:07:23.550 --> 00:07:23.560 align:start position:0%
+then for the negative prompt, I have a
+ 
+
+00:07:23.560 --> 00:07:26.870 align:start position:0%
+then for the negative prompt, I have a
+bunch<00:07:24.040><c> of</c><00:07:24.320><c> things</c><00:07:24.680><c> that</c><00:07:24.919><c> you</c><00:07:25.560><c> won't</c><00:07:25.960><c> want</c><00:07:26.480><c> just</c>
+
+00:07:26.870 --> 00:07:26.880 align:start position:0%
+bunch of things that you won't want just
+ 
+
+00:07:26.880 --> 00:07:28.990 align:start position:0%
+bunch of things that you won't want just
+automatically<00:07:27.680><c> filled</c><00:07:28.040><c> into</c><00:07:28.320><c> there.</c><00:07:28.880><c> If</c>
+
+00:07:28.990 --> 00:07:29.000 align:start position:0%
+automatically filled into there. If
+ 
+
+00:07:29.000 --> 00:07:30.990 align:start position:0%
+automatically filled into there. If
+you're<00:07:29.080><c> getting</c><00:07:29.280><c> results</c><00:07:29.800><c> that</c><00:07:30.160><c> are</c>
+
+00:07:30.990 --> 00:07:31.000 align:start position:0%
+you're getting results that are
+ 
+
+00:07:31.000 --> 00:07:33.590 align:start position:0%
+you're getting results that are
+unwanted,<00:07:31.720><c> you</c><00:07:31.840><c> can</c><00:07:32.080><c> add</c><00:07:32.320><c> on</c><00:07:32.440><c> to</c><00:07:32.520><c> this</c><00:07:33.240><c> by</c><00:07:33.440><c> any</c>
+
+00:07:33.590 --> 00:07:33.600 align:start position:0%
+unwanted, you can add on to this by any
+ 
+
+00:07:33.600 --> 00:07:35.390 align:start position:0%
+unwanted, you can add on to this by any
+means,<00:07:33.960><c> feel</c><00:07:34.160><c> free.</c>
+
+00:07:35.390 --> 00:07:35.400 align:start position:0%
+means, feel free.
+ 
+
+00:07:35.400 --> 00:07:37.550 align:start position:0%
+means, feel free.
+So,<00:07:35.600><c> moving</c><00:07:35.960><c> right</c><00:07:36.160><c> on</c><00:07:36.320><c> into</c><00:07:36.720><c> some</c><00:07:36.919><c> examples.</c>
+
+00:07:37.550 --> 00:07:37.560 align:start position:0%
+So, moving right on into some examples.
+ 
+
+00:07:37.560 --> 00:07:39.790 align:start position:0%
+So, moving right on into some examples.
+Here<00:07:37.840><c> is</c><00:07:38.040><c> the</c><00:07:38.480><c> reference</c><00:07:38.880><c> photo</c><00:07:39.200><c> for</c><00:07:39.400><c> example</c>
+
+00:07:39.790 --> 00:07:39.800 align:start position:0%
+Here is the reference photo for example
+ 
+
+00:07:39.800 --> 00:07:42.510 align:start position:0%
+Here is the reference photo for example
+one<00:07:40.000><c> that</c><00:07:40.120><c> I</c><00:07:40.160><c> will</c><00:07:40.280><c> be</c><00:07:40.400><c> using.</c>
+
+00:07:42.510 --> 00:07:42.520 align:start position:0%
+one that I will be using.
+ 
+
+00:07:42.520 --> 00:07:45.230 align:start position:0%
+one that I will be using.
+And<00:07:43.200><c> here</c><00:07:43.520><c> is</c><00:07:43.760><c> the</c><00:07:43.960><c> prompt</c><00:07:44.600><c> for</c><00:07:44.720><c> example</c><00:07:45.080><c> one</c>
+
+00:07:45.230 --> 00:07:45.240 align:start position:0%
+And here is the prompt for example one
+ 
+
+00:07:45.240 --> 00:07:46.510 align:start position:0%
+And here is the prompt for example one
+that<00:07:45.400><c> I</c><00:07:45.440><c> will</c><00:07:45.560><c> be</c><00:07:45.680><c> using.</c><00:07:46.080><c> I'm</c><00:07:46.160><c> going</c><00:07:46.280><c> to</c><00:07:46.360><c> run</c>
+
+00:07:46.510 --> 00:07:46.520 align:start position:0%
+that I will be using. I'm going to run
+ 
+
+00:07:46.520 --> 00:07:49.830 align:start position:0%
+that I will be using. I'm going to run
+this<00:07:46.720><c> workflow</c><00:07:47.280><c> and</c><00:07:47.680><c> I</c><00:07:47.840><c> will</c><00:07:48.480><c> put</c><00:07:48.840><c> the</c><00:07:49.360><c> results</c>
+
+00:07:49.830 --> 00:07:49.840 align:start position:0%
+this workflow and I will put the results
+ 
+
+00:07:49.840 --> 00:07:52.390 align:start position:0%
+this workflow and I will put the results
+of<00:07:49.960><c> this</c><00:07:50.480><c> on</c><00:07:50.680><c> screen</c><00:07:51.240><c> when</c><00:07:51.400><c> it</c><00:07:51.520><c> is</c><00:07:51.680><c> complete</c>
+
+00:07:52.390 --> 00:07:52.400 align:start position:0%
+of this on screen when it is complete
+ 
+
+00:07:52.400 --> 00:07:55.470 align:start position:0%
+of this on screen when it is complete
+for<00:07:52.600><c> you</c><00:07:52.720><c> guys</c><00:07:52.960><c> to</c><00:07:53.040><c> see.</c>
+
+00:07:55.470 --> 00:07:55.480 align:start position:0%
+ 
+ 
+
+00:07:55.480 --> 00:07:57.990 align:start position:0%
+ 
+While<00:07:55.680><c> this</c><00:07:55.880><c> generates,</c><00:07:56.480><c> just</c><00:07:56.800><c> a</c><00:07:56.920><c> quick</c>
+
+00:07:57.990 --> 00:07:58.000 align:start position:0%
+While this generates, just a quick
+ 
+
+00:07:58.000 --> 00:07:59.630 align:start position:0%
+While this generates, just a quick
+overview<00:07:58.560><c> of</c><00:07:58.720><c> the</c><00:07:58.880><c> settings</c><00:07:59.280><c> that</c><00:07:59.440><c> I</c><00:07:59.480><c> am</c>
+
+00:07:59.630 --> 00:07:59.640 align:start position:0%
+overview of the settings that I am
+ 
+
+00:07:59.640 --> 00:08:01.270 align:start position:0%
+overview of the settings that I am
+running<00:07:59.920><c> for</c><00:08:00.120><c> this.</c>
+
+00:08:01.270 --> 00:08:01.280 align:start position:0%
+running for this.
+ 
+
+00:08:01.280 --> 00:08:03.150 align:start position:0%
+running for this.
+First<00:08:01.520><c> of</c><00:08:01.600><c> all,</c><00:08:01.760><c> I'm</c><00:08:01.880><c> using</c><00:08:02.080><c> an</c><00:08:02.160><c> RTX</c><00:08:02.560><c> 4090</c><00:08:03.040><c> for</c>
+
+00:08:03.150 --> 00:08:03.160 align:start position:0%
+First of all, I'm using an RTX 4090 for
+ 
+
+00:08:03.160 --> 00:08:05.230 align:start position:0%
+First of all, I'm using an RTX 4090 for
+this<00:08:03.320><c> example,</c><00:08:03.680><c> which</c><00:08:03.840><c> probably</c><00:08:04.280><c> isn't</c><00:08:04.560><c> ideal</c>
+
+00:08:05.230 --> 00:08:05.240 align:start position:0%
+this example, which probably isn't ideal
+ 
+
+00:08:05.240 --> 00:08:07.150 align:start position:0%
+this example, which probably isn't ideal
+because<00:08:05.480><c> I</c><00:08:05.560><c> am</c><00:08:05.760><c> doing</c>
+
+00:08:07.150 --> 00:08:07.160 align:start position:0%
+because I am doing
+ 
+
+00:08:07.160 --> 00:08:08.710 align:start position:0%
+because I am doing
+uh<00:08:07.360><c> 1280</c>
+
+00:08:08.710 --> 00:08:08.720 align:start position:0%
+uh 1280
+ 
+
+00:08:08.720 --> 00:08:10.750 align:start position:0%
+uh 1280
+uh<00:08:09.000><c> as</c><00:08:09.200><c> the</c><00:08:09.400><c> resolution</c><00:08:10.040><c> for</c><00:08:10.160><c> the</c><00:08:10.280><c> longer</c><00:08:10.560><c> side</c>
+
+00:08:10.750 --> 00:08:10.760 align:start position:0%
+uh as the resolution for the longer side
+ 
+
+00:08:10.760 --> 00:08:12.190 align:start position:0%
+uh as the resolution for the longer side
+of<00:08:10.840><c> the</c><00:08:10.920><c> image,</c><00:08:11.440><c> which</c><00:08:11.600><c> is</c><00:08:11.680><c> pretty</c><00:08:11.880><c> high</c><00:08:12.000><c> for</c><00:08:12.120><c> a</c>
+
+00:08:12.190 --> 00:08:12.200 align:start position:0%
+of the image, which is pretty high for a
+ 
+
+00:08:12.200 --> 00:08:16.030 align:start position:0%
+of the image, which is pretty high for a
+4090.<00:08:12.680><c> And</c><00:08:12.800><c> I'm</c><00:08:12.880><c> also</c><00:08:13.080><c> doing</c><00:08:13.960><c> 89</c><00:08:14.720><c> frames</c><00:08:15.520><c> at</c><00:08:15.640><c> 24</c>
+
+00:08:16.030 --> 00:08:16.040 align:start position:0%
+4090. And I'm also doing 89 frames at 24
+ 
+
+00:08:16.040 --> 00:08:18.070 align:start position:0%
+4090. And I'm also doing 89 frames at 24
+frames<00:08:16.360><c> per</c><00:08:16.440><c> second.</c><00:08:16.840><c> So,</c><00:08:17.440><c> kind</c><00:08:17.640><c> of</c><00:08:17.720><c> a</c><00:08:17.760><c> long</c>
+
+00:08:18.070 --> 00:08:18.080 align:start position:0%
+frames per second. So, kind of a long
+ 
+
+00:08:18.080 --> 00:08:20.990 align:start position:0%
+frames per second. So, kind of a long
+video<00:08:18.800><c> for</c><00:08:19.440><c> the</c><00:08:19.800><c> resolution</c><00:08:20.400><c> that</c><00:08:20.520><c> I'm</c><00:08:20.640><c> using</c>
+
+00:08:20.990 --> 00:08:21.000 align:start position:0%
+video for the resolution that I'm using
+ 
+
+00:08:21.000 --> 00:08:23.150 align:start position:0%
+video for the resolution that I'm using
+for<00:08:21.200><c> the</c><00:08:21.320><c> GPU</c><00:08:22.080><c> that</c><00:08:22.200><c> I'm</c><00:08:22.320><c> using.</c><00:08:22.880><c> If</c><00:08:23.000><c> I</c><00:08:23.040><c> was</c>
+
+00:08:23.150 --> 00:08:23.160 align:start position:0%
+for the GPU that I'm using. If I was
+ 
+
+00:08:23.160 --> 00:08:25.670 align:start position:0%
+for the GPU that I'm using. If I was
+using<00:08:23.400><c> a</c><00:08:23.440><c> 5090,</c><00:08:24.200><c> this</c><00:08:24.360><c> would</c><00:08:24.440><c> be</c><00:08:24.520><c> no</c><00:08:24.680><c> problem.</c>
+
+00:08:25.670 --> 00:08:25.680 align:start position:0%
+using a 5090, this would be no problem.
+ 
+
+00:08:25.680 --> 00:08:28.270 align:start position:0%
+using a 5090, this would be no problem.
+The<00:08:25.840><c> quality</c><00:08:26.240><c> won't</c><00:08:26.440><c> be</c><00:08:26.919><c> affected</c><00:08:27.400><c> in</c><00:08:27.560><c> any</c><00:08:27.760><c> way</c>
+
+00:08:28.270 --> 00:08:28.280 align:start position:0%
+The quality won't be affected in any way
+ 
+
+00:08:28.280 --> 00:08:29.990 align:start position:0%
+The quality won't be affected in any way
+by<00:08:28.440><c> doing</c><00:08:28.720><c> this.</c><00:08:29.320><c> It'll</c><00:08:29.440><c> be</c><00:08:29.560><c> the</c><00:08:29.640><c> same</c><00:08:29.880><c> as</c>
+
+00:08:29.990 --> 00:08:30.000 align:start position:0%
+by doing this. It'll be the same as
+ 
+
+00:08:30.000 --> 00:08:32.430 align:start position:0%
+by doing this. It'll be the same as
+using<00:08:30.240><c> a</c><00:08:30.280><c> 5090</c><00:08:30.880><c> quality-wise,</c><00:08:31.680><c> but</c><00:08:32.080><c> the</c><00:08:32.240><c> only</c>
+
+00:08:32.430 --> 00:08:32.440 align:start position:0%
+using a 5090 quality-wise, but the only
+ 
+
+00:08:32.440 --> 00:08:33.709 align:start position:0%
+using a 5090 quality-wise, but the only
+thing<00:08:32.560><c> that</c><00:08:32.760><c> will</c><00:08:32.919><c> be</c><00:08:33.000><c> affected</c><00:08:33.440><c> is</c><00:08:33.599><c> my</c>
+
+00:08:33.709 --> 00:08:33.719 align:start position:0%
+thing that will be affected is my
+ 
+
+00:08:33.719 --> 00:08:36.630 align:start position:0%
+thing that will be affected is my
+generation<00:08:34.240><c> time.</c><00:08:34.760><c> But,</c><00:08:35.240><c> um</c><00:08:35.840><c> I</c><00:08:35.960><c> will</c><00:08:36.159><c> just</c>
+
+00:08:36.630 --> 00:08:36.640 align:start position:0%
+generation time. But, um I will just
+ 
+
+00:08:36.640 --> 00:08:38.790 align:start position:0%
+generation time. But, um I will just
+fast-forward<00:08:37.240><c> right</c><00:08:37.440><c> to</c><00:08:37.800><c> when</c><00:08:37.960><c> I</c><00:08:38.039><c> get</c><00:08:38.240><c> the</c>
+
+00:08:38.790 --> 00:08:38.800 align:start position:0%
+fast-forward right to when I get the
+ 
+
+00:08:38.800 --> 00:08:41.270 align:start position:0%
+fast-forward right to when I get the
+results<00:08:39.200><c> for</c><00:08:39.320><c> you</c><00:08:39.400><c> guys.</c>
+
+00:08:41.270 --> 00:08:41.280 align:start position:0%
+results for you guys.
+ 
+
+00:08:41.280 --> 00:08:42.589 align:start position:0%
+results for you guys.
+Okay,<00:08:41.520><c> guys.</c><00:08:41.800><c> So,</c><00:08:42.000><c> quickly</c><00:08:42.280><c> going</c><00:08:42.479><c> through</c>
+
+00:08:42.589 --> 00:08:42.599 align:start position:0%
+Okay, guys. So, quickly going through
+ 
+
+00:08:42.599 --> 00:08:44.750 align:start position:0%
+Okay, guys. So, quickly going through
+the<00:08:42.680><c> results</c><00:08:43.080><c> here.</c><00:08:43.560><c> Here's</c><00:08:43.800><c> example</c><00:08:44.240><c> one</c>
+
+00:08:44.750 --> 00:08:44.760 align:start position:0%
+the results here. Here's example one
+ 
+
+00:08:44.760 --> 00:08:48.310 align:start position:0%
+the results here. Here's example one
+that<00:08:44.920><c> was</c><00:08:45.080><c> done</c><00:08:45.480><c> at</c><00:08:45.720><c> 1280</c><00:08:46.120><c> by</c><00:08:46.240><c> 720.</c>
+
+00:08:48.310 --> 00:08:48.320 align:start position:0%
+that was done at 1280 by 720.
+ 
+
+00:08:48.320 --> 00:08:49.590 align:start position:0%
+that was done at 1280 by 720.
+Really<00:08:48.520><c> good</c><00:08:48.680><c> result</c><00:08:48.960><c> here.</c><00:08:49.160><c> I</c><00:08:49.200><c> think</c><00:08:49.360><c> this</c><00:08:49.520><c> is</c>
+
+00:08:49.590 --> 00:08:49.600 align:start position:0%
+Really good result here. I think this is
+ 
+
+00:08:49.600 --> 00:08:51.270 align:start position:0%
+Really good result here. I think this is
+the<00:08:49.680><c> best</c><00:08:49.920><c> of</c><00:08:50.000><c> the</c><00:08:50.040><c> batch,</c><00:08:50.320><c> which</c><00:08:50.480><c> is</c><00:08:50.640><c> expected</c>
+
+00:08:51.270 --> 00:08:51.280 align:start position:0%
+the best of the batch, which is expected
+ 
+
+00:08:51.280 --> 00:08:52.630 align:start position:0%
+the best of the batch, which is expected
+when<00:08:51.480><c> you're</c><00:08:51.640><c> using</c><00:08:51.920><c> a</c><00:08:51.960><c> higher</c><00:08:52.200><c> quality,</c>
+
+00:08:52.630 --> 00:08:52.640 align:start position:0%
+when you're using a higher quality,
+ 
+
+00:08:52.640 --> 00:08:54.070 align:start position:0%
+when you're using a higher quality,
+obviously.
+
+00:08:54.070 --> 00:08:54.080 align:start position:0%
+obviously.
+ 
+
+00:08:54.080 --> 00:08:55.630 align:start position:0%
+obviously.
+Example<00:08:54.480><c> two,</c><00:08:54.640><c> three,</c><00:08:54.839><c> and</c><00:08:54.960><c> four</c><00:08:55.200><c> are</c><00:08:55.400><c> all</c>
+
+00:08:55.630 --> 00:08:55.640 align:start position:0%
+Example two, three, and four are all
+ 
+
+00:08:55.640 --> 00:08:58.870 align:start position:0%
+Example two, three, and four are all
+done<00:08:56.040><c> in</c><00:08:56.280><c> 1024</c><00:08:56.960><c> by</c><00:08:57.280><c> 576</c><00:08:58.120><c> for</c><00:08:58.200><c> the</c><00:08:58.280><c> dimensions,</c>
+
+00:08:58.870 --> 00:08:58.880 align:start position:0%
+done in 1024 by 576 for the dimensions,
+ 
+
+00:08:58.880 --> 00:09:00.350 align:start position:0%
+done in 1024 by 576 for the dimensions,
+the<00:08:58.960><c> resolution.</c>
+
+00:09:00.350 --> 00:09:00.360 align:start position:0%
+the resolution.
+ 
+
+00:09:00.360 --> 00:09:01.870 align:start position:0%
+the resolution.
+Not<00:09:00.520><c> really</c><00:09:00.720><c> sure</c><00:09:00.920><c> what</c><00:09:01.080><c> prompted</c><00:09:01.720><c> the</c>
+
+00:09:01.870 --> 00:09:01.880 align:start position:0%
+Not really sure what prompted the
+ 
+
+00:09:01.880 --> 00:09:03.070 align:start position:0%
+Not really sure what prompted the
+dancing<00:09:02.280><c> here.</c>
+
+00:09:03.070 --> 00:09:03.080 align:start position:0%
+dancing here.
+ 
+
+00:09:03.080 --> 00:09:05.470 align:start position:0%
+dancing here.
+Uh<00:09:03.240><c> moving</c><00:09:03.480><c> on</c><00:09:03.600><c> to</c><00:09:03.680><c> example</c><00:09:04.080><c> three.</c>
+
+00:09:05.470 --> 00:09:05.480 align:start position:0%
+Uh moving on to example three.
+ 
+
+00:09:05.480 --> 00:09:07.390 align:start position:0%
+Uh moving on to example three.
+These<00:09:05.640><c> are</c><00:09:05.760><c> all</c><00:09:05.880><c> kind</c><00:09:06.080><c> of</c><00:09:06.280><c> lazily</c><00:09:06.760><c> prompted.</c><00:09:07.360><c> I</c>
+
+00:09:07.390 --> 00:09:07.400 align:start position:0%
+These are all kind of lazily prompted. I
+ 
+
+00:09:07.400 --> 00:09:09.829 align:start position:0%
+These are all kind of lazily prompted. I
+didn't<00:09:07.600><c> really</c><00:09:08.240><c> detail</c><00:09:08.680><c> much</c><00:09:09.040><c> at</c><00:09:09.240><c> all,</c><00:09:09.560><c> but</c><00:09:09.760><c> we</c>
+
+00:09:09.829 --> 00:09:09.839 align:start position:0%
+didn't really detail much at all, but we
+ 
+
+00:09:09.839 --> 00:09:11.630 align:start position:0%
+didn't really detail much at all, but we
+got<00:09:09.960><c> some</c><00:09:10.040><c> pretty</c><00:09:10.200><c> decent</c><00:09:10.520><c> results</c><00:09:11.160><c> overall.</c>
+
+00:09:11.630 --> 00:09:11.640 align:start position:0%
+got some pretty decent results overall.
+ 
+
+00:09:11.640 --> 00:09:13.829 align:start position:0%
+got some pretty decent results overall.
+And<00:09:11.720><c> with</c><00:09:11.920><c> some</c><00:09:12.720><c> structured</c><00:09:13.160><c> prompting,</c><00:09:13.720><c> you</c>
+
+00:09:13.829 --> 00:09:13.839 align:start position:0%
+And with some structured prompting, you
+ 
+
+00:09:13.839 --> 00:09:15.270 align:start position:0%
+And with some structured prompting, you
+guys<00:09:14.120><c> can</c><00:09:14.240><c> definitely</c><00:09:14.560><c> get</c><00:09:14.880><c> much</c><00:09:15.120><c> better</c>
+
+00:09:15.270 --> 00:09:15.280 align:start position:0%
+guys can definitely get much better
+ 
+
+00:09:15.280 --> 00:09:16.910 align:start position:0%
+guys can definitely get much better
+results.<00:09:15.880><c> Example</c><00:09:16.240><c> four</c><00:09:16.440><c> here,</c><00:09:16.640><c> we</c><00:09:16.760><c> got</c><00:09:16.880><c> a</c>
+
+00:09:16.910 --> 00:09:16.920 align:start position:0%
+results. Example four here, we got a
+ 
+
+00:09:16.920 --> 00:09:18.750 align:start position:0%
+results. Example four here, we got a
+little<00:09:17.080><c> bit</c><00:09:17.200><c> of</c><00:09:17.280><c> a</c><00:09:17.320><c> slow-motion</c><00:09:17.800><c> effect,</c><00:09:18.400><c> but</c>
+
+00:09:18.750 --> 00:09:18.760 align:start position:0%
+little bit of a slow-motion effect, but
+ 
+
+00:09:18.760 --> 00:09:21.190 align:start position:0%
+little bit of a slow-motion effect, but
+um<00:09:19.080><c> that</c><00:09:19.200><c> can</c><00:09:19.320><c> be</c><00:09:19.440><c> negative</c><00:09:19.760><c> prompted</c><00:09:20.120><c> there.</c>
+
+00:09:21.190 --> 00:09:21.200 align:start position:0%
+um that can be negative prompted there.
+ 
+
+00:09:21.200 --> 00:09:23.350 align:start position:0%
+um that can be negative prompted there.
+Again,<00:09:21.680><c> needless</c><00:09:22.040><c> to</c><00:09:22.160><c> say</c><00:09:22.520><c> that</c><00:09:22.839><c> I</c><00:09:22.960><c> literally</c>
+
+00:09:23.350 --> 00:09:23.360 align:start position:0%
+Again, needless to say that I literally
+ 
+
+00:09:23.360 --> 00:09:26.470 align:start position:0%
+Again, needless to say that I literally
+just<00:09:23.600><c> one-shotted</c><00:09:24.160><c> all</c><00:09:24.320><c> these</c><00:09:24.520><c> videos</c><00:09:25.280><c> and</c>
+
+00:09:26.470 --> 00:09:26.480 align:start position:0%
+just one-shotted all these videos and
+ 
+
+00:09:26.480 --> 00:09:28.710 align:start position:0%
+just one-shotted all these videos and
+basically<00:09:26.960><c> just</c><00:09:27.360><c> lazily</c><00:09:27.760><c> wrote</c><00:09:27.960><c> up</c><00:09:28.080><c> a</c><00:09:28.120><c> prompt,</c>
+
+00:09:28.710 --> 00:09:28.720 align:start position:0%
+basically just lazily wrote up a prompt,
+ 
+
+00:09:28.720 --> 00:09:30.910 align:start position:0%
+basically just lazily wrote up a prompt,
+and<00:09:29.360><c> these</c><00:09:29.520><c> are</c><00:09:29.600><c> the</c><00:09:29.640><c> results.</c><00:09:30.120><c> So,</c><00:09:30.680><c> with</c>
+
+00:09:30.910 --> 00:09:30.920 align:start position:0%
+and these are the results. So, with
+ 
+
+00:09:30.920 --> 00:09:32.990 align:start position:0%
+and these are the results. So, with
+better<00:09:31.160><c> prompting,</c><00:09:31.720><c> you</c><00:09:31.800><c> guys</c><00:09:32.400><c> will</c><00:09:32.520><c> get</c>
+
+00:09:32.990 --> 00:09:33.000 align:start position:0%
+better prompting, you guys will get
+ 
+
+00:09:33.000 --> 00:09:35.390 align:start position:0%
+better prompting, you guys will get
+insane<00:09:33.520><c> results.</c><00:09:34.520><c> I</c><00:09:34.600><c> saw</c><00:09:34.760><c> a</c><00:09:34.800><c> couple</c><00:09:35.000><c> videos</c>
+
+00:09:35.390 --> 00:09:35.400 align:start position:0%
+insane results. I saw a couple videos
+ 
+
+00:09:35.400 --> 00:09:38.110 align:start position:0%
+insane results. I saw a couple videos
+that<00:09:35.560><c> people</c><00:09:35.800><c> are</c><00:09:35.920><c> making</c><00:09:36.480><c> with</c><00:09:37.240><c> this</c>
+
+00:09:38.110 --> 00:09:38.120 align:start position:0%
+that people are making with this
+ 
+
+00:09:38.120 --> 00:09:39.670 align:start position:0%
+that people are making with this
+sort<00:09:38.560><c> of</c>
+
+00:09:39.670 --> 00:09:39.680 align:start position:0%
+sort of
+ 
+
+00:09:39.680 --> 00:09:41.430 align:start position:0%
+sort of
+prompt<00:09:40.160><c> engineering</c><00:09:40.880><c> that</c><00:09:41.040><c> they</c><00:09:41.200><c> think</c>
+
+00:09:41.430 --> 00:09:41.440 align:start position:0%
+prompt engineering that they think
+ 
+
+00:09:41.440 --> 00:09:42.950 align:start position:0%
+prompt engineering that they think
+they're<00:09:41.560><c> doing</c><00:09:41.960><c> with</c><00:09:42.120><c> this</c><00:09:42.320><c> super</c><00:09:42.600><c> advanced</c>
+
+00:09:42.950 --> 00:09:42.960 align:start position:0%
+they're doing with this super advanced
+ 
+
+00:09:42.960 --> 00:09:45.470 align:start position:0%
+they're doing with this super advanced
+workflow<00:09:43.720><c> and</c><00:09:44.400><c> I</c><00:09:44.480><c> saw</c><00:09:44.600><c> everybody</c><00:09:44.960><c> going</c>
+
+00:09:45.470 --> 00:09:45.480 align:start position:0%
+workflow and I saw everybody going
+ 
+
+00:09:45.480 --> 00:09:49.150 align:start position:0%
+workflow and I saw everybody going
+really<00:09:45.760><c> into</c><00:09:46.000><c> detail</c><00:09:46.800><c> about</c><00:09:47.680><c> how</c><00:09:48.520><c> complicated</c>
+
+00:09:49.150 --> 00:09:49.160 align:start position:0%
+really into detail about how complicated
+ 
+
+00:09:49.160 --> 00:09:51.350 align:start position:0%
+really into detail about how complicated
+this<00:09:49.440><c> doesn't</c><00:09:49.920><c> need</c><00:09:50.080><c> to</c><00:09:50.160><c> be.</c>
+
+00:09:51.350 --> 00:09:51.360 align:start position:0%
+this doesn't need to be.
+ 
+
+00:09:51.360 --> 00:09:53.390 align:start position:0%
+this doesn't need to be.
+The<00:09:51.680><c> results</c><00:09:52.040><c> that</c><00:09:52.200><c> I'm</c><00:09:52.320><c> getting</c><00:09:52.920><c> just</c><00:09:53.240><c> from</c>
+
+00:09:53.390 --> 00:09:53.400 align:start position:0%
+The results that I'm getting just from
+ 
+
+00:09:53.400 --> 00:09:56.390 align:start position:0%
+The results that I'm getting just from
+these<00:09:53.800><c> lazily</c><00:09:54.240><c> prompted</c><00:09:54.840><c> one-shot</c><00:09:55.400><c> videos</c>
+
+00:09:56.390 --> 00:09:56.400 align:start position:0%
+these lazily prompted one-shot videos
+ 
+
+00:09:56.400 --> 00:10:00.670 align:start position:0%
+these lazily prompted one-shot videos
+are<00:09:57.080><c> 10</c><00:09:57.400><c> times</c><00:09:57.720><c> better</c><00:09:58.480><c> than</c><00:09:59.280><c> the</c><00:09:59.720><c> videos</c><00:10:00.400><c> that</c>
+
+00:10:00.670 --> 00:10:00.680 align:start position:0%
+are 10 times better than the videos that
+ 
+
+00:10:00.680 --> 00:10:02.750 align:start position:0%
+are 10 times better than the videos that
+they<00:10:00.880><c> made</c><00:10:01.320><c> and</c><00:10:01.800><c> there's</c><00:10:02.320><c> not</c><00:10:02.520><c> trying</c><00:10:02.680><c> to</c>
+
+00:10:02.750 --> 00:10:02.760 align:start position:0%
+they made and there's not trying to
+ 
+
+00:10:02.760 --> 00:10:05.110 align:start position:0%
+they made and there's not trying to
+shoot<00:10:03.040><c> shots</c><00:10:03.520><c> at</c><00:10:03.680><c> anybody,</c><00:10:04.520><c> but</c><00:10:04.840><c> I'm</c><00:10:04.960><c> just</c>
+
+00:10:05.110 --> 00:10:05.120 align:start position:0%
+shoot shots at anybody, but I'm just
+ 
+
+00:10:05.120 --> 00:10:07.190 align:start position:0%
+shoot shots at anybody, but I'm just
+calling<00:10:05.360><c> it</c><00:10:05.480><c> how</c><00:10:05.640><c> I</c><00:10:05.720><c> see</c><00:10:05.960><c> it.</c>
+
+00:10:07.190 --> 00:10:07.200 align:start position:0%
+calling it how I see it.
+ 
+
+00:10:07.200 --> 00:10:09.950 align:start position:0%
+calling it how I see it.
+Their<00:10:07.320><c> videos</c><00:10:07.600><c> look</c><00:10:07.760><c> like</c><00:10:07.880><c> [&nbsp;__&nbsp;]</c><00:10:08.840><c> no</c><00:10:09.000><c> offense,</c>
+
+00:10:09.950 --> 00:10:09.960 align:start position:0%
+Their videos look like [&nbsp;__&nbsp;] no offense,
+ 
+
+00:10:09.960 --> 00:10:11.230 align:start position:0%
+Their videos look like [&nbsp;__&nbsp;] no offense,
+but
+
+00:10:11.230 --> 00:10:11.240 align:start position:0%
+but
+ 
+
+00:10:11.240 --> 00:10:12.550 align:start position:0%
+but
+this<00:10:11.400><c> is</c><00:10:11.480><c> the</c><00:10:11.560><c> best</c><00:10:11.800><c> quality</c><00:10:12.200><c> that</c><00:10:12.360><c> I've</c><00:10:12.440><c> been</c>
+
+00:10:12.550 --> 00:10:12.560 align:start position:0%
+this is the best quality that I've been
+ 
+
+00:10:12.560 --> 00:10:15.030 align:start position:0%
+this is the best quality that I've been
+able<00:10:12.720><c> to</c><00:10:12.840><c> yield</c><00:10:13.160><c> from</c><00:10:13.400><c> 1.2</c><00:10:14.400><c> and</c><00:10:14.720><c> I</c><00:10:14.760><c> think</c><00:10:15.000><c> you</c>
+
+00:10:15.030 --> 00:10:15.040 align:start position:0%
+able to yield from 1.2 and I think you
+ 
+
+00:10:15.040 --> 00:10:16.310 align:start position:0%
+able to yield from 1.2 and I think you
+guys<00:10:15.240><c> will</c><00:10:15.320><c> be</c><00:10:15.400><c> happy</c><00:10:15.640><c> with</c><00:10:15.800><c> the</c><00:10:15.880><c> results</c><00:10:16.200><c> that</c>
+
+00:10:16.310 --> 00:10:16.320 align:start position:0%
+guys will be happy with the results that
+ 
+
+00:10:16.320 --> 00:10:17.510 align:start position:0%
+guys will be happy with the results that
+you<00:10:16.400><c> get</c><00:10:16.520><c> as</c><00:10:16.640><c> well.</c>
+
+00:10:17.510 --> 00:10:17.520 align:start position:0%
+you get as well.
+ 
+
+00:10:17.520 --> 00:10:19.510 align:start position:0%
+you get as well.
+Please,<00:10:18.080><c> if</c><00:10:18.240><c> you</c><00:10:18.360><c> enjoyed,</c><00:10:18.880><c> like</c><00:10:19.080><c> the</c><00:10:19.160><c> video,</c>
+
+00:10:19.510 --> 00:10:19.520 align:start position:0%
+Please, if you enjoyed, like the video,
+ 
+
+00:10:19.520 --> 00:10:21.270 align:start position:0%
+Please, if you enjoyed, like the video,
+subscribe.<00:10:20.200><c> If</c><00:10:20.360><c> you</c><00:10:20.400><c> want</c><00:10:20.560><c> the</c><00:10:20.640><c> workflow,</c>
+
+00:10:21.270 --> 00:10:21.280 align:start position:0%
+subscribe. If you want the workflow,
+ 
+
+00:10:21.280 --> 00:10:22.670 align:start position:0%
+subscribe. If you want the workflow,
+head<00:10:21.440><c> over</c><00:10:21.560><c> to</c><00:10:21.640><c> the</c><00:10:21.720><c> Discord</c><00:10:22.240><c> and</c><00:10:22.360><c> I</c><00:10:22.440><c> will</c><00:10:22.560><c> see</c>
+
+00:10:22.670 --> 00:10:22.680 align:start position:0%
+head over to the Discord and I will see
+ 
+
+00:10:22.680 --> 00:10:26.200 align:start position:0%
+head over to the Discord and I will see
+you<00:10:22.800><c> guys</c><00:10:23.080><c> in</c><00:10:23.200><c> another</c><00:10:23.480><c> video</c><00:10:23.760><c> real</c><00:10:23.920><c> soon.</c>
+

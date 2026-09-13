@@ -1,0 +1,22 @@
+🎬 Krea 2 Img2Img Tutorial For ComfyUI
+
+There's barely any solid img2img workflows for Krea 2 out there, whether you're running the base model, Turbo, or base with Turbo LoRAs. I went looking on CivitAI and came up short, and the few I tested weren't good. Backgrounds fell apart, lighting shifted, surroundings went soft and weird, the whole shot looked fake even when the character looked great.
+
+This video covers how I do Krea 2 img2img the right way. Instead of regenerating the entire image, I mask just the subject and leave the background completely untouched. Same photo, same lighting, same everything, except now your character is in it. Full breakdown covers the required downloads, how the masking works, and the denoise ranges that matter since Krea 2 runs a lot tighter than other checkpoints.
+
+🔗 LINKS
+
+Patreon (support the channel, early access, exclusive resources): https://www.patreon.com/LoRAtech
+
+Discord (free workflows, guidance): https://discord.gg/2bqQXKxsxg
+1 on 1 coaching: Available through the Discord. Covers ComfyUI/RunPod setup, LoRA training, and AI influencer growth strategy. Pricing is consultation based, built around what you actually need. Details in the server.
+
+RunPod (GPU rental, deposit $10 get $5 free): https://get.runpod.io/x4yprxwsfyac
+
+🏷️ TAGS
+
+krea 2, krea 2 turbo, krea 2 img2img, comfyui, comfyui workflow, comfyui img2img, img2img tutorial, img2img workflow, ai image generation, stable diffusion, ai character consistency, lora training, ai influencer, comfyui tutorial, sam masking, inpaint workflow, comfyui lora, face detailer comfyui, ai workflow free, comfyui nodes, ai image editing, character swap ai, comfyui denoise, runpod comfyui, ai content creation, comfyui free workflow, krea inpaint, comfyui masking, civitai workflow, krea 2 base model
+
+🎯 HASHTAGS
+
+#ComfyUI #Krea2 #Img2Img #AIImageGeneration #StableDiffusion #ComfyUIWorkflow #ComfyUITutorial #LoRA #AIInfluencer #CivitAI #RunPod #KreaTurbo

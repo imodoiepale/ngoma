@@ -1,0 +1,41 @@
+Four pictures are enough to build a complete AI influencer dataset — face, body and real life, in any generator. In this video, I show you the exact three-stage system I use to take Lina from 4 starting images to a training-ready dataset: build the face, lock the body, then move her into real life. At the end you get my complete ComfyUI dataset workflow with Nano Banana and the full prompt system.
+
+----------------------------------------------
+
+Join Skool (full dataset system, LoRA tester + premium workflows):
+https://www.skool.com/matrix-lab-6660/about
+
+FREE skills, workflows + all my prompts:
+Discord: https://discord.gg/uhfVpmwktQ
+
+Generate your dataset (Nano Banana on WaveSpeed):
+https://wavespeed.ai/?ref=matrix
+
+Matrix Power Nodes (free ComfyUI nodes for the workflow):
+https://github.com/JsonMatrixLab/matrix-power-nodes
+
+----------------------------------------------
+
+What you'll learn:
+- How to turn 4 starting pictures into a complete, training-ready AI influencer dataset
+- Why identity never goes into your prompts — the one rule that keeps your character consistent
+- How to build the face first: one variable at a time, angles and expressions on grey
+- How to lock the body with reference-based locks and capture full + close rotations in one outfit
+- How to leave the studio and shoot believable real-life Instagram shots without breaking identity
+- Why this ladder works in any generator — and how the free ComfyUI workflow automates it with Nano Banana
+
+----------------------------------------------
+
+Chapters / Timestamps
+00:00 The only AI influencer dataset you'll ever need
+00:28 Lina: from 4 pictures to a full dataset
+00:57 What a real dataset actually is
+01:51 The free workflow + the full path (Skool)
+02:14 The one prompt rule: identity stays out
+03:09 Part 1: The face (angles + expressions)
+04:19 Part 2: The body (lock + rotations)
+05:31 Part 3: Real life (Instagram conditions)
+06:40 The free ComfyUI dataset workflow (Nano Banana)
+08:36 From 4 pictures to a training-ready dataset
+
+#aiinfluencer #comfyui #nanobanana #aimodel

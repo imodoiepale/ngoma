@@ -1,0 +1,11 @@
+[
+  {
+    "url": "https://huggingface.co/datasets/malcolmrey/workflows/blob/main/H3/workflow_minimaxh3_refmod.json",
+    "channel": "dainamo",
+    "video_id": "2K6-OtV_Vbc",
+    "status": "already_have",
+    "path": "workflows/h3-refmods/dainamo-refmod-generate.json",
+    "packs": [],
+    "unattributed": []
+  }
+]

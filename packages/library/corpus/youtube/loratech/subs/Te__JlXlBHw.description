@@ -1,0 +1,58 @@
+In this video I walk through my Z image Turbo image to image LoRA technique workflow in ComfyUI — a pipeline that uses Z Image Turbo as the base model with a Qwen CLIP, runs img2img generation through a ClownsharK Beta sampler with Beta Scheduling, then automatically detects and detail-enhances both faces AND eyes using Impact Pack's FaceDetailer with SAM segmentation and Ultralytics bbox detection.
+
+🔗 DOWNLOAD THE WORKFLOW — link in Discord below
+
+🔗 FREE WORKFLOWS, COMMUNITY DISCUSSION, 1 ON 1 SESSIONS
+If you want 1-on-1 coaching for your ComfyUI/RunPod setup, LoRA training, or growing an AI influencer account, sessions are consultation-based — details inside: https://discord.gg/kUc76uk7HA
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📦 REQUIRED MODELS — PASTE INTO YOUR RUNPOD TERMINAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# Create folders
+mkdir -p /workspace/ComfyUI/models/ultralytics/bbox
+mkdir -p /workspace/ComfyUI/models/sams
+
+# Face detector
+wget -O /workspace/ComfyUI/models/ultralytics/bbox/face_yolov8m.pt \
+  https://huggingface.co/Bingsu/adetailer/resolve/main/face_yolov8m.pt
+
+# Eye detector
+wget -O /workspace/ComfyUI/models/ultralytics/bbox/Eyeful_v2-Paired.pt \
+  https://huggingface.co/Tenofas/ComfyUI/resolve/main/ultralytics/bbox/Eyeful_v2-Paired.pt
+
+# SAM ViT-B (recommended)
+wget -O /workspace/ComfyUI/models/sams/sam_vit_b_01ec64.pth \
+  https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧠 WHAT THE NODES DO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The UltralyticsDetectorProvider nodes load AI detection models that find specific things in your image — one detects faces, one detects eyes. They feed into the FaceDetailer which uses SAM (Segment Anything Model) to cleanly mask the detected regions before re-running generation on just those areas.
+
+The BetaSamplingScheduler controls the pacing of the denoising steps — instead of a flat schedule, the alpha/beta parameters let you shape the curve so the model does the right amount of work at the right time for cleaner, sharper results.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎓 DON'T HAVE A LORA YET? TRAIN ONE FIRST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LoRA Training Part 1: https://youtu.be/OZe6UwPqr4g?si=5I9wB5Wr--ZwEfMV
+LoRA Training Part 2: https://www.youtube.com/watch?v=2ie9pq5Saw4&t=9s
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+☁️ RUNNING ON RUNPOD?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Get $5 free credit on your first $10 purchase:
+👉 https://runpod.io?ref=jc6190fx
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💬 JOIN THE DISCORD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Questions, workflow downloads, and community support:
+👉 https://discord.gg/mpydxppEa4
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+#ComfyUI #StableDiffusion #LoRA #AIArt #img2img #RunPod #FaceDetailer #AIPortrait

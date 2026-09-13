@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "EPALLE Studio: brief to published post",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "make",
+        "label": "Make a post",
+        "focus": [
+          "refs",
+          "ingest",
+          "library",
+          "strategy",
+          "generate",
+          "compositor",
+          "approve",
+          "publish"
+        ],
+        "note": "Reference grammar in, brand-safe post out, with a human gate before anything leaves."
+      },
+      {
+        "id": "compute",
+        "label": "Where pixels come from",
+        "focus": [
+          "generate",
+          "openrouter",
+          "runpod"
+        ],
+        "note": "Hosted models for stills, RunPod ComfyUI for video, LoRA, RefMods and volume."
+      },
+      {
+        "id": "learn",
+        "label": "Learning loop",
+        "focus": [
+          "publish",
+          "analytics",
+          "memory",
+          "strategy"
+        ],
+        "note": "Only power-gated findings reach memory and change the next plan."
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "refs",
+      "type": "external",
+      "label": "Creators & refs",
+      "sublabel": "YouTube, IG, Pins",
+      "pos": [
+        40,
+        260
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "ingest",
+      "type": "backend",
+      "label": "Ingest",
+      "sublabel": "yt_learn, harvesters",
+      "pos": [
+        250,
+        260
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "library",
+      "type": "database",
+      "label": "Library + graph",
+      "sublabel": "facts, workflows",
+      "pos": [
+        460,
+        260
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "strategy",
+      "type": "backend",
+      "label": "Strategy",
+      "sublabel": "plan, claim safety",
+      "pos": [
+        670,
+        260
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "generate",
+      "type": "backend",
+      "label": "Generate",
+      "sublabel": "router, comfy-client",
+      "pos": [
+        880,
+        260
+      ],
+      "size": [
+        140,
+        64
+      ],
+      "tag": "dry-run default"
+    },
+    {
+      "id": "openrouter",
+      "type": "external",
+      "label": "OpenRouter",
+      "sublabel": "hosted image models",
+      "pos": [
+        780,
+        80
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "runpod",
+      "type": "cloud",
+      "label": "RunPod ComfyUI",
+      "sublabel": "pod + serverless",
+      "pos": [
+        990,
+        80
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "compositor",
+      "type": "backend",
+      "label": "Compositor",
+      "sublabel": "logo, copy, 4K masters",
+      "pos": [
+        880,
+        440
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "approve",
+      "type": "security",
+      "label": "Human approval",
+      "sublabel": "nothing ships unseen",
+      "pos": [
+        880,
+        620
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "publish",
+      "type": "backend",
+      "label": "Publish",
+      "sublabel": "Postiz, OpenWA, Whop",
+      "pos": [
+        670,
+        620
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "analytics",
+      "type": "backend",
+      "label": "Analytics",
+      "sublabel": "power-gated",
+      "pos": [
+        460,
+        620
+      ],
+      "size": [
+        140,
+        64
+      ]
+    },
+    {
+      "id": "memory",
+      "type": "database",
+      "label": "Memory",
+      "sublabel": "bitemporal store",
+      "pos": [
+        670,
+        440
+      ],
+      "size": [
+        140,
+        64
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "harvest",
+      "from": "refs",
+      "to": "ingest",
+      "label": "subs",
+      "variant": "emphasis"
+    },
+    {
+      "id": "index",
+      "from": "ingest",
+      "to": "library",
+      "label": "facts"
+    },
+    {
+      "id": "query",
+      "from": "library",
+      "to": "strategy",
+      "label": "grammar"
+    },
+    {
+      "id": "briefs",
+      "from": "strategy",
+      "to": "generate",
+      "label": "briefs",
+      "variant": "emphasis"
+    },
+    {
+      "id": "hosted",
+      "from": "generate",
+      "to": "openrouter",
+      "label": "stills",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "gpu",
+      "from": "generate",
+      "to": "runpod",
+      "label": "video",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "base",
+      "from": "generate",
+      "to": "compositor",
+      "label": "base",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 24
+    },
+    {
+      "id": "masters",
+      "from": "compositor",
+      "to": "approve",
+      "label": "masters",
+      "variant": "emphasis",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "labelDy": 24
+    },
+    {
+      "id": "ship",
+      "from": "approve",
+      "to": "publish",
+      "label": "draft",
+      "fromSide": "left",
+      "toSide": "right"
+    },
+    {
+      "id": "metrics",
+      "from": "publish",
+      "to": "analytics",
+      "label": "metrics",
+      "fromSide": "left",
+      "toSide": "right"
+    },
+    {
+      "id": "findings",
+      "from": "analytics",
+      "to": "memory",
+      "label": "learn",
+      "variant": "dashed",
+      "fromSide": "top",
+      "toSide": "left"
+    },
+    {
+      "id": "recall",
+      "from": "memory",
+      "to": "strategy",
+      "label": "recall",
+      "fromSide": "top",
+      "toSide": "bottom"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Standing rules",
+      "items": [
+        "Queued is not success",
+        "Composite the logo, never regenerate it",
+        "Take the grammar, never the images"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Orchestration",
+      "items": [
+        "Paperclip assigns, Hermes runs skills",
+        "Claude builds, Codex reviews, you approve"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Secrets",
+      "items": [
+        "Every adapter reads through the DPAPI vault",
+        "Stored outside the repo"
+      ]
+    }
+  ]
+}

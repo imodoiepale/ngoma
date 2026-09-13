@@ -1,0 +1,30 @@
+🎨 FREE ComfyUI Workflow | Z Image Turbo + Face Detailer (AI Portrait Generation on RunPod)
+
+In this video I'm sharing my free ComfyUI workflow that combines Z Image Turbo with an advanced Face Detailer pipeline — producing stunning, high-fidelity AI portraits with sharp, detailed faces straight out of the box.
+This workflow uses the z_image_turbo_bf16 UNET model paired with Qwen 3 4B CLIP, a custom LoRA, and a full FaceDetailer pass powered by YOLOv8 face detection, SAM (Segment Anything Model), and the ComfyUI Impact Pack — all running in a single clean workflow at 1600×1600 resolution.
+
+🔧 WHAT'S IN THE WORKFLOW:
+
+Z Image Turbo (bf16) UNET + AE VAE
+Qwen 3 4B CLIP text encoder
+KSampler with Euler / Beta57 scheduler
+LoRA Loader Stack (rgthree) for both base gen & face detailer pass
+FaceDetailer node with YOLOv8m bbox detector + SAM model
+Before/after image comparison node built in
+Optimized positive & negative prompt templates included
+
+
+🔗 FREE WORKFLOWS, COMMUNITY DISCUSSION, 1 ON 1 SESSIONS
+If you want 1-on-1 coaching for your ComfyUI/RunPod setup, LoRA training, or growing an AI influencer account, sessions are consultation-based — details inside: https://discord.gg/kUc76uk7HA
+
+☁️ NEW TO RUNPOD? Get $5 free credit to run this workflow in the cloud — no beefy GPU required:
+👉 https://runpod.io?ref=jc6190fx
+
+📦 HAVEN'T INSTALLED THE Z IMAGE TURBO MODELS YET?
+Watch this video first to get set up before loading the workflow:
+👉 https://www.youtube.com/watch?v=HkAvmL4DvHo&t=7s
+
+🏷️ TAGS:
+comfyui workflow, comfyui face detailer, z image turbo comfyui, ai portrait generator, comfyui runpod, facedetailer comfyui, yolov8 comfyui, comfyui impact pack, comfyui free workflow, ai image generation 2025, stable diffusion portrait, comfyui lora workflow, runpod comfyui tutorial, comfyui realistic faces, comfyui high resolution, SAM segmentation comfyui, comfyui bf16, qwen clip comfyui, comfyui workflow download, free ai art workflow
+
+💬 Drop any questions in the comments — and if this helped you, a like & subscribe goes a long way! 🙏

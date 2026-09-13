@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.350 align:start position:0%
+ 
+We<00:00:00.200><c> hit</c><00:00:00.440><c> create</c><00:00:00.680><c> job,</c><00:00:01.160><c> press</c><00:00:01.480><c> play,</c><00:00:01.920><c> and</c><00:00:02.120><c> it's</c>
+
+00:00:02.350 --> 00:00:02.360 align:start position:0%
+We hit create job, press play, and it's
+ 
+
+00:00:02.360 --> 00:00:04.870 align:start position:0%
+We hit create job, press play, and it's
+on.<00:00:03.080><c> It</c><00:00:03.200><c> downloads</c><00:00:03.680><c> a</c><00:00:03.760><c> few</c><00:00:04.000><c> files,</c><00:00:04.480><c> and</c><00:00:04.680><c> then</c>
+
+00:00:04.870 --> 00:00:04.880 align:start position:0%
+on. It downloads a few files, and then
+ 
+
+00:00:04.880 --> 00:00:06.870 align:start position:0%
+on. It downloads a few files, and then
+the<00:00:04.960><c> training</c><00:00:05.360><c> runs</c><00:00:05.600><c> completely</c><00:00:06.240><c> on</c><00:00:06.400><c> its</c><00:00:06.600><c> own.</c>
+
+00:00:06.870 --> 00:00:06.880 align:start position:0%
+the training runs completely on its own.
+ 
+
+00:00:06.880 --> 00:00:08.670 align:start position:0%
+the training runs completely on its own.
+And<00:00:07.040><c> heads</c><00:00:07.400><c> up,</c><00:00:07.800><c> our</c><00:00:07.920><c> creative</c><00:00:08.360><c> lower</c>
+
+00:00:08.670 --> 00:00:08.680 align:start position:0%
+And heads up, our creative lower
+ 
+
+00:00:08.680 --> 00:00:10.830 align:start position:0%
+And heads up, our creative lower
+training<00:00:09.080><c> usually</c><00:00:09.480><c> takes</c><00:00:09.880><c> a</c><00:00:10.000><c> bit</c><00:00:10.280><c> longer</c><00:00:10.640><c> than</c>
+
+00:00:10.830 --> 00:00:10.840 align:start position:0%
+training usually takes a bit longer than
+ 
+
+00:00:10.840 --> 00:00:13.270 align:start position:0%
+training usually takes a bit longer than
+on<00:00:11.000><c> other</c><00:00:11.280><c> models.</c><00:00:12.000><c> So,</c><00:00:12.160><c> we</c><00:00:12.280><c> just</c><00:00:12.600><c> let</c><00:00:12.760><c> it</c><00:00:12.880><c> cook</c>
+
+00:00:13.270 --> 00:00:13.280 align:start position:0%
+on other models. So, we just let it cook
+ 
+
+00:00:13.280 --> 00:00:15.030 align:start position:0%
+on other models. So, we just let it cook
+and<00:00:13.400><c> come</c><00:00:13.640><c> back</c><00:00:13.880><c> when</c><00:00:14.000><c> it's</c><00:00:14.200><c> done.</c><00:00:14.640><c> Now,</c><00:00:14.920><c> the</c>
+
+00:00:15.030 --> 00:00:15.040 align:start position:0%
+and come back when it's done. Now, the
+ 
+
+00:00:15.040 --> 00:00:16.790 align:start position:0%
+and come back when it's done. Now, the
+training<00:00:15.440><c> is</c><00:00:15.600><c> done,</c><00:00:15.800><c> and</c><00:00:15.920><c> we</c><00:00:16.040><c> have</c><00:00:16.240><c> now</c><00:00:16.400><c> 12</c>
+
+00:00:16.790 --> 00:00:16.800 align:start position:0%
+training is done, and we have now 12
+ 
+
+00:00:16.800 --> 00:00:19.070 align:start position:0%
+training is done, and we have now 12
+checkpoints<00:00:17.400><c> of</c><00:00:17.640><c> our</c><00:00:17.840><c> Lena</c><00:00:18.200><c> Laura.</c><00:00:18.720><c> And</c><00:00:18.880><c> this</c>
+
+00:00:19.070 --> 00:00:19.080 align:start position:0%
+checkpoints of our Lena Laura. And this
+ 
+
+00:00:19.080 --> 00:00:21.430 align:start position:0%
+checkpoints of our Lena Laura. And this
+is<00:00:19.240><c> where</c><00:00:19.480><c> most</c><00:00:19.800><c> people</c><00:00:20.200><c> go</c><00:00:20.480><c> wrong.</c><00:00:21.000><c> They</c><00:00:21.120><c> just</c>
+
+00:00:21.430 --> 00:00:21.440 align:start position:0%
+is where most people go wrong. They just
+ 
+
+00:00:21.440 --> 00:00:23.590 align:start position:0%
+is where most people go wrong. They just
+grab<00:00:21.680><c> the</c><00:00:21.800><c> last</c><00:00:22.120><c> one</c><00:00:22.320><c> and</c><00:00:22.480><c> hope</c><00:00:22.760><c> the</c><00:00:22.880><c> best.</c>
+
+00:00:23.590 --> 00:00:23.600 align:start position:0%
+grab the last one and hope the best.
+ 
+
+00:00:23.600 --> 00:00:25.230 align:start position:0%
+grab the last one and hope the best.
+But,<00:00:23.840><c> the</c><00:00:23.920><c> last</c><00:00:24.200><c> checkpoint</c><00:00:24.760><c> is</c><00:00:24.920><c> not</c>
+
+00:00:25.230 --> 00:00:25.240 align:start position:0%
+But, the last checkpoint is not
+ 
+
+00:00:25.240 --> 00:00:27.470 align:start position:0%
+But, the last checkpoint is not
+automatically<00:00:25.920><c> the</c><00:00:26.040><c> best</c><00:00:26.400><c> one.</c><00:00:26.920><c> Sometimes,</c>
+
+00:00:27.470 --> 00:00:27.480 align:start position:0%
+automatically the best one. Sometimes,
+ 
+
+00:00:27.480 --> 00:00:29.230 align:start position:0%
+automatically the best one. Sometimes,
+the<00:00:27.600><c> Laura</c><00:00:27.880><c> is</c><00:00:28.120><c> already</c><00:00:28.520><c> overtrained</c><00:00:29.120><c> at</c>
+
+00:00:29.230 --> 00:00:29.240 align:start position:0%
+the Laura is already overtrained at
+ 
+
+00:00:29.240 --> 00:00:31.550 align:start position:0%
+the Laura is already overtrained at
+3,000<00:00:29.880><c> steps.</c><00:00:30.560><c> And</c><00:00:30.720><c> the</c><00:00:30.800><c> sweet</c><00:00:31.120><c> spot</c><00:00:31.320><c> sits</c>
+
+00:00:31.550 --> 00:00:31.560 align:start position:0%
+3,000 steps. And the sweet spot sits
+ 
+
+00:00:31.560 --> 00:00:34.190 align:start position:0%
+3,000 steps. And the sweet spot sits
+somewhere<00:00:31.920><c> around</c><00:00:32.240><c> 2,000</c><00:00:32.880><c> to</c><00:00:33.000><c> 3,000</c><00:00:33.600><c> steps.</c>
+
+00:00:34.190 --> 00:00:34.200 align:start position:0%
+somewhere around 2,000 to 3,000 steps.
+ 
+
+00:00:34.200 --> 00:00:35.430 align:start position:0%
+somewhere around 2,000 to 3,000 steps.
+So,<00:00:34.360><c> we</c><00:00:34.480><c> download</c><00:00:34.920><c> the</c><00:00:35.000><c> last</c><00:00:35.280><c> four</c>
+
+00:00:35.430 --> 00:00:35.440 align:start position:0%
+So, we download the last four
+ 
+
+00:00:35.440 --> 00:00:39.640 align:start position:0%
+So, we download the last four
+checkpoints,<00:00:36.280><c> and</c><00:00:36.440><c> we</c><00:00:36.560><c> test</c><00:00:36.880><c> them</c><00:00:37.040><c> properly.</c>
+

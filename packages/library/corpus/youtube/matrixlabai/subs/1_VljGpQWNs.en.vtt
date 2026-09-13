@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.310 align:start position:0%
+ 
+Turn<00:00:00.360><c> on,</c><00:00:00.560><c> skip</c><00:00:00.920><c> the</c><00:00:01.040><c> first</c><00:00:01.280><c> sample,</c><00:00:01.880><c> and</c><00:00:02.040><c> keep</c>
+
+00:00:02.310 --> 00:00:02.320 align:start position:0%
+Turn on, skip the first sample, and keep
+ 
+
+00:00:02.320 --> 00:00:04.270 align:start position:0%
+Turn on, skip the first sample, and keep
+the<00:00:02.440><c> last</c><00:00:02.720><c> three</c><00:00:02.960><c> prompts.</c><00:00:03.480><c> After</c><00:00:03.800><c> we</c><00:00:03.920><c> set</c><00:00:04.120><c> it</c>
+
+00:00:04.270 --> 00:00:04.280 align:start position:0%
+the last three prompts. After we set it
+ 
+
+00:00:04.280 --> 00:00:06.350 align:start position:0%
+the last three prompts. After we set it
+everything<00:00:04.760><c> up,</c><00:00:05.120><c> we</c><00:00:05.240><c> hit</c><00:00:05.480><c> create</c><00:00:05.760><c> job,</c><00:00:06.080><c> press</c>
+
+00:00:06.350 --> 00:00:06.360 align:start position:0%
+everything up, we hit create job, press
+ 
+
+00:00:06.360 --> 00:00:08.270 align:start position:0%
+everything up, we hit create job, press
+play,<00:00:06.720><c> and</c><00:00:06.880><c> it's</c><00:00:07.120><c> on.</c><00:00:07.360><c> It</c><00:00:07.480><c> downloads</c><00:00:07.920><c> a</c><00:00:08.000><c> few</c>
+
+00:00:08.270 --> 00:00:08.280 align:start position:0%
+play, and it's on. It downloads a few
+ 
+
+00:00:08.280 --> 00:00:10.350 align:start position:0%
+play, and it's on. It downloads a few
+files,<00:00:08.720><c> gives</c><00:00:09.000><c> you</c><00:00:09.120><c> an</c><00:00:09.240><c> estimate,</c><00:00:09.840><c> and</c><00:00:10.000><c> runs</c>
+
+00:00:10.350 --> 00:00:10.360 align:start position:0%
+files, gives you an estimate, and runs
+ 
+
+00:00:10.360 --> 00:00:12.950 align:start position:0%
+files, gives you an estimate, and runs
+for<00:00:10.680><c> about</c><00:00:11.200><c> an</c><00:00:11.360><c> hour</c><00:00:11.640><c> and</c><00:00:11.800><c> a</c><00:00:11.880><c> half.</c><00:00:12.480><c> Once</c><00:00:12.840><c> the</c>
+
+00:00:12.950 --> 00:00:12.960 align:start position:0%
+for about an hour and a half. Once the
+ 
+
+00:00:12.960 --> 00:00:14.390 align:start position:0%
+for about an hour and a half. Once the
+training<00:00:13.320><c> is</c><00:00:13.440><c> done,</c><00:00:13.720><c> we</c><00:00:13.840><c> go</c><00:00:14.040><c> through</c><00:00:14.320><c> the</c>
+
+00:00:14.390 --> 00:00:14.400 align:start position:0%
+training is done, we go through the
+ 
+
+00:00:14.400 --> 00:00:16.350 align:start position:0%
+training is done, we go through the
+checkpoints.<00:00:15.120><c> I</c><00:00:15.240><c> download</c><00:00:15.640><c> the</c><00:00:15.760><c> last</c><00:00:16.080><c> three</c>
+
+00:00:16.350 --> 00:00:16.360 align:start position:0%
+checkpoints. I download the last three
+ 
+
+00:00:16.360 --> 00:00:18.430 align:start position:0%
+checkpoints. I download the last three
+to<00:00:16.520><c> five</c><00:00:16.800><c> LoRAs</c><00:00:17.200><c> to</c><00:00:17.320><c> have</c><00:00:17.560><c> a</c><00:00:17.640><c> good</c><00:00:17.880><c> selection</c>
+
+00:00:18.430 --> 00:00:18.440 align:start position:0%
+to five LoRAs to have a good selection
+ 
+
+00:00:18.440 --> 00:00:20.190 align:start position:0%
+to five LoRAs to have a good selection
+where<00:00:18.560><c> I</c><00:00:18.640><c> can</c><00:00:18.840><c> pick</c><00:00:19.040><c> the</c><00:00:19.160><c> best</c><00:00:19.480><c> LoRA</c><00:00:19.840><c> out</c><00:00:20.040><c> of</c>
+
+00:00:20.190 --> 00:00:20.200 align:start position:0%
+where I can pick the best LoRA out of
+ 
+
+00:00:20.200 --> 00:00:22.110 align:start position:0%
+where I can pick the best LoRA out of
+it.<00:00:20.520><c> Now,</c><00:00:20.680><c> we</c><00:00:20.800><c> need</c><00:00:20.960><c> to</c><00:00:21.080><c> generate</c><00:00:21.520><c> our</c><00:00:21.880><c> AI</c>
+
+00:00:22.110 --> 00:00:22.120 align:start position:0%
+it. Now, we need to generate our AI
+ 
+
+00:00:22.120 --> 00:00:24.390 align:start position:0%
+it. Now, we need to generate our AI
+influencer<00:00:22.720><c> with</c><00:00:22.960><c> our</c><00:00:23.120><c> new</c><00:00:23.360><c> LoRA.</c><00:00:23.840><c> I</c><00:00:23.960><c> built</c><00:00:24.280><c> it</c>
+
+00:00:24.390 --> 00:00:24.400 align:start position:0%
+influencer with our new LoRA. I built it
+ 
+
+00:00:24.400 --> 00:00:26.230 align:start position:0%
+influencer with our new LoRA. I built it
+a<00:00:24.520><c> free</c><00:00:24.840><c> public</c><00:00:25.280><c> RunPod</c><00:00:25.680><c> template</c><00:00:26.040><c> for</c>
+
+00:00:26.230 --> 00:00:26.240 align:start position:0%
+a free public RunPod template for
+ 
+
+00:00:26.240 --> 00:00:28.190 align:start position:0%
+a free public RunPod template for
+exactly<00:00:26.800><c> this.</c><00:00:27.200><c> You</c><00:00:27.320><c> just</c><00:00:27.600><c> need</c><00:00:27.760><c> to</c><00:00:27.880><c> select</c>
+
+00:00:28.190 --> 00:00:28.200 align:start position:0%
+exactly this. You just need to select
+ 
+
+00:00:28.200 --> 00:00:30.510 align:start position:0%
+exactly this. You just need to select
+your<00:00:28.320><c> GPU</c><00:00:28.720><c> you</c><00:00:28.840><c> want</c><00:00:29.040><c> to</c><00:00:29.160><c> use,</c><00:00:29.480><c> take</c><00:00:29.720><c> an</c><00:00:30.000><c> RTX</c>
+
+00:00:30.510 --> 00:00:30.520 align:start position:0%
+your GPU you want to use, take an RTX
+ 
+
+00:00:30.520 --> 00:00:32.670 align:start position:0%
+your GPU you want to use, take an RTX
+4090<00:00:31.120><c> or</c><00:00:31.240><c> a</c><00:00:31.280><c> 5090,</c><00:00:32.040><c> click</c><00:00:32.279><c> on</c><00:00:32.400><c> change</c>
+
+00:00:32.670 --> 00:00:32.680 align:start position:0%
+4090 or a 5090, click on change
+ 
+
+00:00:32.680 --> 00:00:34.190 align:start position:0%
+4090 or a 5090, click on change
+template,<00:00:33.120><c> and</c><00:00:33.280><c> browse</c><00:00:33.560><c> the</c><00:00:33.680><c> template</c><00:00:34.040><c> with</c>
+
+00:00:34.190 --> 00:00:34.200 align:start position:0%
+template, and browse the template with
+ 
+
+00:00:34.200 --> 00:00:39.040 align:start position:0%
+template, and browse the template with
+the<00:00:34.320><c> name</c><00:00:34.760><c> Matrix</c><00:00:35.440><c> Z</c><00:00:35.720><c> Image</c><00:00:36.080><c> Turbo</c><00:00:36.400><c> template.</c>
+

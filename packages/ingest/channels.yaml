@@ -228,6 +228,40 @@ channels:
       (2K6-OtV_Vbc). Its workflow and the picker's examples are in workflows/h3-refmods/.
       See docs/H3-REFMODS.md.
 
+  - key: loratech
+    name: LoRAtech - ComfyUI Hub
+    tier: core
+    verified: true          # probed 2026-09-13, 28 videos, 4.3k subs
+    url: https://www.youtube.com/channel/UCj2-jsmUeu6KHxMdZLtPZig
+    topics: [minimax-h3, krea-2, wan, ltx, lora-training, ai-influencer, ofm, runpod, build-with-me]
+    monetisation: [free-discord, runpod-referral]
+    why: >
+      Sent directly. Long build-along ComfyUI videos (H3 speed-ups, infinite length, Krea 2
+      LoRA, carousel from one photo, ban-proofing influencer images).
+
+  - key: matrixlabai
+    name: Json (MatrixLabAI)
+    tier: core
+    verified: true          # probed 2026-09-13, 10 videos, 2.2k subs
+    url: https://www.youtube.com/channel/UC_lvBZvh1rsqSOvGPjJNaHA
+    topics: [ai-ugc, ai-influencer, datasets, lora, claude-workflows, krea-2, ltx]
+    monetisation: [free-discord, paid-skool]
+    why: >
+      Sent directly. End-to-end AI UGC and influencer builds with real costs on screen; free
+      workflows in Discord, complete systems in a paid Skool community.
+
+  - key: artificialquotient
+    name: Artificial Quotient
+    tier: proposed
+    verified: true          # probed 2026-09-13, 179 videos, 10.5k subs
+    url: https://www.youtube.com/channel/UCRrI3ugDo-xzEqGSyPI9Nag
+    topics: [ai-tool-reviews, ugc-ads, faceless-video, lip-sync, music, real-estate, e-commerce]
+    monetisation: [affiliate-reviews]
+    # Mostly SaaS reviews; only the open-source / workflow videos are mined (decision 2026-09-13).
+    title_filter: "comfyui|workflow|scail|minimax|h3|wan|ltx|krea|flux|lora|klein|qwen|z-image|runpod|hyperframes|remotion|ugc|influencer|consistent"
+    why: >
+      Sent directly. Its titles double as a map of the paid AI-video tool market.
+
 # Single videos already tracked in packages/library/manifests/monitored-sources.json.
 # yt-learn resolves each to its uploader channel before monitoring.
 # All three resolved on 2026-09-12 and their channels are now first-class entries above.

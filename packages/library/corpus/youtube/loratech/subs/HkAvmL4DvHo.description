@@ -1,0 +1,38 @@
+Generate 20+ HD AI images per minute using this ultra-fast Z-Image-Turbo BF16 workflow in ComfyUI – with dead-simple LoRA stacking for characters, styles, and perfect consistency! 🚀
+
+Z-Image-Turbo (distilled 6B-parameter model from Tongyi-MAI / Alibaba) delivers stunning photorealism, sharp details, and solid text rendering in just 8–12 steps — often faster and cleaner than Flux Schnell, especially when stacking multiple LoRAs. The BF16 variant (~12.3 GB) is the go-to for top-tier quality with great efficiency on 16GB+ VRAM GPUs like RTX 4090/5090 or A100.
+
+🔗 FREE WORKFLOWS, COMMUNITY DISCUSSION, 1 ON 1 SESSIONS
+If you want 1-on-1 coaching for your ComfyUI/RunPod setup, LoRA training, or growing an AI influencer account, sessions are consultation-based — details inside: https://discord.gg/kUc76uk7HA
+
+USE MY RUNPOD REFERRAL LINK FOR FREE MONEY UPON FIRST PURCHASE:
+https://runpod.io?ref=jc6190fx
+
+MY FIRST VIDEO ON HOW TO SETUP COMFYUI IN RUNPOD:
+https://www.youtube.com/watch?v=Ghvd0E2Lki4
+
+In this tutorial I walk you through my clean, beginner-friendly ComfyUI setup that hits insane generation speeds:
+
+- rgthree Power LoRA Loader for easy stacking (up to 4+ LoRAs with trigger words & strength control)
+- Qwen CLIP text encoder for excellent prompt following
+- Heavy-duty negative prompt to eliminate deformed hands, extra limbs, artifacts, bad lighting & more
+- Euler sampler, low steps, portrait-friendly 720×1280 resolution (easy to scale)
+- Batch tricks to push 20+ high-quality images per minute
+
+Perfect for artists, content creators, marketers, AI Influncers, or anyone who hates waiting ages for each generation.
+
+Workflow highlights & download:
+Grab the full JSON workflow file here → [insert your link: Civitai / GitHub Gist / Google Drive / etc.]
+
+Required models (all free from Hugging Face – Comfy-Org mirror recommended):
+- Diffusion: z_image_turbo_bf16.safetensors (~12.3 GB, BF16 precision for best quality/speed balance)
+- Text Encoder: qwen_3_4b.safetensors
+- VAE: ae.safetensors
+
+Pro tips covered: prepend prompt magic, ideal LoRA strengths (start at 1.0), batch size hacks, sampler & CFG tweaks, real-time speed benchmarks, and more.
+
+Like, subscribe & turn on notifications for more high-speed AI workflows, LoRA stacking guides, and ComfyUI power tips! 🔥
+
+Drop your own generation speed below — how many images/min are you hitting with the BF16 model? Share your wildest results!
+
+#ZImageTurbo #ComfyUI #AIGeneration #LoRA #FastAI #FluxAlternative #StableDiffusion #AIArt #PhotorealAI #ComfyUITutorial

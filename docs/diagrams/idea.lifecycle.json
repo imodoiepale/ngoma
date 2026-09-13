@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "diagram_type": "lifecycle",
+  "meta": {
+    "title": "Idea to monthly revenue",
+    "locale": "en",
+    "viewBox": [1030, 630],
+    "quality_profile": "showcase",
+    "views": [
+      { "id": "main", "label": "Main path", "focus": ["backlog", "validated", "pilot", "first_cash", "mrr"], "note": "An idea earns its way from a row in ideas.yaml to recurring revenue." },
+      { "id": "waits", "label": "Waiting on you", "focus": ["pilot", "needs_you", "first_cash", "compliance"], "note": "Accounts, purchases, consent and compliance pause an idea without killing it." },
+      { "id": "exits", "label": "Recovery and exits", "focus": ["pilot", "margin", "needs_you", "killed", "compliance", "parked"], "note": "Bad margins loop back to the pilot; missing inputs or failed compliance end it." }
+    ]
+  },
+  "lanes": [
+    { "id": "main", "label": "Stages" },
+    { "id": "waiting", "label": "Waiting" },
+    { "id": "exceptions", "label": "Recovery loop" },
+    { "id": "terminal", "label": "Exits" }
+  ],
+  "states": [
+    { "id": "backlog", "type": "start", "label": "Backlog", "sublabel": "row in ideas.yaml", "lane": "main", "col": 0, "step": "01", "tag": "entry" },
+    { "id": "validated", "type": "active", "label": "Validated", "sublabel": "buyers exist", "lane": "main", "col": 1, "step": "02", "tag": "demand" },
+    { "id": "pilot", "type": "active", "label": "Pilot", "sublabel": "one paying client", "lane": "main", "col": 2, "step": "03", "tag": "deliver" },
+    { "id": "first_cash", "type": "decision", "label": "First revenue", "sublabel": "margin check", "lane": "main", "col": 3, "step": "04", "tag": "unit cost" },
+    { "id": "mrr", "type": "success", "label": "Monthly revenue", "sublabel": "retainer or subs", "lane": "main", "col": 4, "step": "05", "tag": "scale" },
+    { "id": "needs_you", "type": "waiting", "label": "Needs you", "sublabel": "account, purchase", "lane": "waiting", "col": 0, "tag": "pause" },
+    { "id": "compliance", "type": "waiting", "label": "Compliance", "sublabel": "claims, consent, 18+", "lane": "waiting", "col": 1, "tag": "review" },
+    { "id": "margin", "type": "failure", "label": "Margin too thin", "sublabel": "reprice or batch", "lane": "exceptions", "col": 0, "yOffset": 78, "tag": "retryable" },
+    { "id": "killed", "type": "failure", "label": "Killed", "sublabel": "no buyer", "lane": "terminal", "col": 0, "tag": "terminal" },
+    { "id": "parked", "type": "failure", "label": "Parked", "sublabel": "not compliant", "lane": "terminal", "col": 1, "tag": "terminal" }
+  ],
+  "transitions": [
+    { "id": "pilot-needs-you", "from": "pilot", "to": "needs_you", "variant": "security", "fromSide": "bottom", "toSide": "top", "route": "straight" },
+    { "id": "cash-compliance", "from": "first_cash", "to": "compliance", "variant": "default", "route": "drop" },
+    { "id": "pilot-margin", "from": "pilot", "to": "margin", "variant": "security", "fromSide": "left", "toSide": "left", "via": [[320, 157], [320, 385]] },
+    { "id": "margin-retry", "from": "margin", "to": "pilot", "variant": "emphasis", "fromSide": "left", "toSide": "top", "via": [[20, 385], [20, 80], [402, 80]] },
+    { "id": "compliance-parked", "from": "compliance", "to": "parked", "variant": "security", "fromSide": "bottom", "toSide": "top", "route": "straight" },
+    { "id": "needs-you-killed", "from": "needs_you", "to": "killed", "variant": "security", "fromSide": "bottom", "toSide": "top", "via": [[480, 336], [480, 432], [402, 432]] }
+  ],
+  "cards": [
+    { "dot": "emerald", "title": "Gate to scale", "items": ["Scale only after a paid pilot clears the margin check", "Monthly revenue means a retainer or subscription, not one-off sales"] },
+    { "dot": "rose", "title": "Hard stops", "items": ["No buyer after the pilot window: kill it", "Fails claim, consent or 18+ rules: park it"] }
+  ]
+}

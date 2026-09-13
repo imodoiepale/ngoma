@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.870 align:start position:0%
+ 
+And<00:00:00.200><c> we</c><00:00:00.280><c> set</c><00:00:00.520><c> the</c><00:00:00.600><c> model</c><00:00:00.800><c> architecture</c><00:00:01.440><c> to</c><00:00:01.600><c> Z</c>
+
+00:00:01.870 --> 00:00:01.880 align:start position:0%
+And we set the model architecture to Z
+ 
+
+00:00:01.880 --> 00:00:04.190 align:start position:0%
+And we set the model architecture to Z
+image<00:00:02.160><c> turbo</c><00:00:02.640><c> and</c><00:00:02.840><c> also</c><00:00:03.120><c> set</c><00:00:03.360><c> the</c><00:00:03.440><c> max</c><00:00:03.800><c> step</c>
+
+00:00:04.190 --> 00:00:04.200 align:start position:0%
+image turbo and also set the max step
+ 
+
+00:00:04.200 --> 00:00:06.470 align:start position:0%
+image turbo and also set the max step
+input<00:00:04.720><c> to</c><00:00:04.880><c> 30</c><00:00:05.320><c> to</c><00:00:05.480><c> speed</c><00:00:05.800><c> up</c><00:00:05.920><c> the</c><00:00:06.000><c> training</c><00:00:06.400><c> a</c>
+
+00:00:06.470 --> 00:00:06.480 align:start position:0%
+input to 30 to speed up the training a
+ 
+
+00:00:06.480 --> 00:00:08.350 align:start position:0%
+input to 30 to speed up the training a
+bit.<00:00:06.800><c> And</c><00:00:07.200><c> by</c><00:00:07.360><c> the</c><00:00:07.480><c> way,</c><00:00:07.680><c> let</c><00:00:07.920><c> me</c><00:00:08.000><c> know</c><00:00:08.160><c> in</c><00:00:08.240><c> the</c>
+
+00:00:08.350 --> 00:00:08.360 align:start position:0%
+bit. And by the way, let me know in the
+ 
+
+00:00:08.360 --> 00:00:10.110 align:start position:0%
+bit. And by the way, let me know in the
+comments<00:00:08.800><c> what</c><00:00:09.040><c> kind</c><00:00:09.320><c> of</c><00:00:09.520><c> lower</c><00:00:09.800><c> training</c>
+
+00:00:10.110 --> 00:00:10.120 align:start position:0%
+comments what kind of lower training
+ 
+
+00:00:10.120 --> 00:00:11.910 align:start position:0%
+comments what kind of lower training
+videos<00:00:10.480><c> you</c><00:00:10.600><c> want</c><00:00:10.840><c> to</c><00:00:10.960><c> see.</c><00:00:11.280><c> And</c><00:00:11.440><c> when</c><00:00:11.600><c> we</c><00:00:11.680><c> done</c>
+
+00:00:11.910 --> 00:00:11.920 align:start position:0%
+videos you want to see. And when we done
+ 
+
+00:00:11.920 --> 00:00:14.150 align:start position:0%
+videos you want to see. And when we done
+this,<00:00:12.160><c> we</c><00:00:12.280><c> keep</c><00:00:12.560><c> the</c><00:00:12.680><c> steps</c><00:00:13.080><c> at</c><00:00:13.200><c> 3,000</c><00:00:13.920><c> for</c><00:00:14.040><c> an</c>
+
+00:00:14.150 --> 00:00:14.160 align:start position:0%
+this, we keep the steps at 3,000 for an
+ 
+
+00:00:14.160 --> 00:00:16.510 align:start position:0%
+this, we keep the steps at 3,000 for an
+efficient<00:00:14.720><c> Z</c><00:00:14.960><c> image</c><00:00:15.240><c> turbo</c><00:00:15.520><c> lower.</c><00:00:15.960><c> That</c><00:00:16.240><c> part</c>
+
+00:00:16.510 --> 00:00:16.520 align:start position:0%
+efficient Z image turbo lower. That part
+ 
+
+00:00:16.520 --> 00:00:18.230 align:start position:0%
+efficient Z image turbo lower. That part
+matters<00:00:17.040><c> because</c><00:00:17.480><c> you</c><00:00:17.600><c> don't</c><00:00:17.920><c> want</c><00:00:18.120><c> to</c>
+
+00:00:18.230 --> 00:00:18.240 align:start position:0%
+matters because you don't want to
+ 
+
+00:00:18.240 --> 00:00:20.870 align:start position:0%
+matters because you don't want to
+overtrain<00:00:18.960><c> or</c><00:00:19.280><c> overfit</c><00:00:19.840><c> a</c><00:00:19.920><c> turbo</c><00:00:20.280><c> model.</c><00:00:20.560><c> Make</c>
+
+00:00:20.870 --> 00:00:20.880 align:start position:0%
+overtrain or overfit a turbo model. Make
+ 
+
+00:00:20.880 --> 00:00:23.270 align:start position:0%
+overtrain or overfit a turbo model. Make
+also<00:00:21.240><c> sure</c><00:00:21.600><c> the</c><00:00:21.720><c> right</c><00:00:22.000><c> data</c><00:00:22.280><c> set</c><00:00:22.520><c> is</c><00:00:22.680><c> selected</c>
+
+00:00:23.270 --> 00:00:23.280 align:start position:0%
+also sure the right data set is selected
+ 
+
+00:00:23.280 --> 00:00:24.910 align:start position:0%
+also sure the right data set is selected
+and<00:00:23.440><c> tell</c><00:00:23.640><c> it</c><00:00:23.760><c> to</c><00:00:23.880><c> save</c><00:00:24.200><c> the</c><00:00:24.320><c> checkpoints</c>
+
+00:00:24.910 --> 00:00:24.920 align:start position:0%
+and tell it to save the checkpoints
+ 
+
+00:00:24.920 --> 00:00:27.110 align:start position:0%
+and tell it to save the checkpoints
+along<00:00:25.280><c> the</c><00:00:25.400><c> way</c><00:00:25.760><c> so</c><00:00:26.000><c> we</c><00:00:26.120><c> can</c><00:00:26.360><c> pick</c><00:00:26.640><c> the</c><00:00:26.760><c> best</c>
+
+00:00:27.110 --> 00:00:27.120 align:start position:0%
+along the way so we can pick the best
+ 
+
+00:00:27.120 --> 00:00:29.310 align:start position:0%
+along the way so we can pick the best
+one<00:00:27.280><c> later</c><00:00:27.680><c> instead</c><00:00:28.240><c> of</c><00:00:28.440><c> just</c><00:00:28.760><c> trusting</c><00:00:29.200><c> the</c>
+
+00:00:29.310 --> 00:00:29.320 align:start position:0%
+one later instead of just trusting the
+ 
+
+00:00:29.320 --> 00:00:31.350 align:start position:0%
+one later instead of just trusting the
+last.<00:00:29.840><c> Turn</c><00:00:30.000><c> also</c><00:00:30.320><c> off</c><00:00:30.560><c> in</c><00:00:30.680><c> the</c><00:00:30.800><c> resolution</c>
+
+00:00:31.350 --> 00:00:31.360 align:start position:0%
+last. Turn also off in the resolution
+ 
+
+00:00:31.360 --> 00:00:34.990 align:start position:0%
+last. Turn also off in the resolution
+section<00:00:31.880><c> 512</c><00:00:32.640><c> and</c><00:00:32.840><c> 768</c><00:00:33.760><c> because</c><00:00:34.160><c> we</c><00:00:34.440><c> only</c><00:00:34.760><c> want</c>
+
+00:00:34.990 --> 00:00:35.000 align:start position:0%
+section 512 and 768 because we only want
+ 
+
+00:00:35.000 --> 00:00:36.790 align:start position:0%
+section 512 and 768 because we only want
+the<00:00:35.080><c> best</c><00:00:35.400><c> quality</c><00:00:35.920><c> and</c><00:00:36.080><c> that's</c><00:00:36.320><c> the</c><00:00:36.440><c> reason</c>
+
+00:00:36.790 --> 00:00:36.800 align:start position:0%
+the best quality and that's the reason
+ 
+
+00:00:36.800 --> 00:00:40.480 align:start position:0%
+the best quality and that's the reason
+why<00:00:36.960><c> we</c><00:00:37.120><c> keep</c><00:00:37.440><c> only</c><00:00:37.760><c> 1080.</c>
+

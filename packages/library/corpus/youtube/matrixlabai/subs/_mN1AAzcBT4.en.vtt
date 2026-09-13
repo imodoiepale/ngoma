@@ -1,0 +1,364 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:05.680
+This AI influencer girl was built from these&nbsp;
+Pinterest references without training a LoRa.&nbsp;&nbsp;
+
+00:00:05.680 --> 00:00:11.120
+First, I'm going to show you the exact workflow&nbsp;
+I used to turn a few reference images into a new&nbsp;&nbsp;
+
+00:00:11.120 --> 00:00:17.040
+synthetic creator face and then use that face to&nbsp;
+create images that feel like a real girl, not just&nbsp;&nbsp;
+
+00:00:17.040 --> 00:00:22.320
+some random AI girls you see on the internet. And&nbsp;
+that is the difference between random AI pictures&nbsp;&nbsp;
+
+00:00:22.320 --> 00:00:27.440
+and a creator that actually makes money. Most&nbsp;
+people think the hard part is training the loRa,&nbsp;&nbsp;
+
+00:00:27.440 --> 00:00:32.880
+but it's not. Trust me. The hard part is building&nbsp;
+a crater that does not fall apart after five&nbsp;&nbsp;
+
+00:00:32.880 --> 00:00:39.040
+images when it comes to SFW and especially to not&nbsp;
+save for work content. For this build, I'm using&nbsp;&nbsp;
+
+00:00:39.040 --> 00:00:44.800
+my own comfyui workflows and custom node from the&nbsp;
+matrix lab pack. The workflow is pretty simple to&nbsp;&nbsp;
+
+00:00:44.800 --> 00:00:50.560
+be honest. I don't start with training. I start&nbsp;
+with the direction. First, we use Pinterest to&nbsp;&nbsp;
+
+00:00:50.560 --> 00:00:57.120
+find the type of creator we want to build. Not to&nbsp;
+copy one person, but to understand the look we are&nbsp;&nbsp;
+
+00:00:57.120 --> 00:01:03.200
+going for. Then I bring those references into my&nbsp;
+face merge workflow in Comfy UI and create a new&nbsp;&nbsp;
+
+00:01:03.200 --> 00:01:09.440
+face from that direction. After that, I test if&nbsp;
+the face actually works across multiple images&nbsp;&nbsp;
+
+00:01:09.440 --> 00:01:16.320
+because one picture means nothing if the next five&nbsp;
+looks like a totally different girl. If the result&nbsp;&nbsp;
+
+00:01:16.320 --> 00:01:21.680
+holds up, that becomes the base we can build on&nbsp;
+later. And later in the video, I will show you&nbsp;&nbsp;
+
+00:01:21.680 --> 00:01:27.680
+how to get the prompt library I'm using for free.&nbsp;
+So before we touch anything, we need one thing,&nbsp;&nbsp;
+
+00:01:27.680 --> 00:01:33.600
+a clear visual direction. So let's start with&nbsp;
+Pinterest. The first mistake people make here is&nbsp;&nbsp;
+
+00:01:33.600 --> 00:01:39.120
+opening Pinterest and saving every pretty girl&nbsp;
+they see. That gives their workflow no clear&nbsp;&nbsp;
+
+00:01:39.120 --> 00:01:44.160
+direction. If I want to build up blonde crater,&nbsp;
+I'm not looking for the most beautiful image&nbsp;&nbsp;
+
+00:01:44.160 --> 00:01:49.680
+on Pinterest. I'm looking for a reference that&nbsp;
+feel like they belong to the same crater type.&nbsp;&nbsp;
+
+00:01:49.680 --> 00:01:55.440
+So when I search for something like blonde girl,&nbsp;
+blonde model selfie or blonde Instagram portrait,&nbsp;&nbsp;
+
+00:01:55.440 --> 00:02:02.000
+I'm watching the overall direction. The workflow&nbsp;
+needs a clear signal. It needs to understand what&nbsp;&nbsp;
+
+00:02:02.000 --> 00:02:08.400
+kind of crater we are trying to build. For this&nbsp;
+build, I will pick around three to five images.&nbsp;&nbsp;
+
+00:02:08.400 --> 00:02:14.240
+That's in my opinion enough to give the workflow&nbsp;
+a clear signal without making it too messy. Once&nbsp;&nbsp;
+
+00:02:14.240 --> 00:02:20.160
+I have them, I save everything into one folder and&nbsp;
+bring it into the face merge workflow. This is the&nbsp;&nbsp;
+
+00:02:20.160 --> 00:02:24.480
+workflow. You can see that I have two branches&nbsp;
+here. The top branch is for Nano Banana and the&nbsp;&nbsp;
+
+00:02:24.480 --> 00:02:30.560
+bottom branch is for Chat GBT image 2. For this&nbsp;
+build, I'm using image 2. That's the new image&nbsp;&nbsp;
+
+00:02:30.560 --> 00:02:36.240
+model from Open AI. I still use Nano Banana 2&nbsp;
+and Nanoanana Pro. They are still good models&nbsp;&nbsp;
+
+00:02:36.240 --> 00:02:42.400
+in my eyes, but after a lot of generations, image&nbsp;
+to gives me a slightly more realistic look when&nbsp;&nbsp;
+
+00:02:42.400 --> 00:02:48.320
+it comes to generate faces and details for this&nbsp;
+specific step. At the top of my custom node setup,&nbsp;&nbsp;
+
+00:02:48.320 --> 00:02:53.280
+I have the face merge prompt. This prompt tells&nbsp;
+the workflow how to combine the reference images&nbsp;&nbsp;
+
+00:02:53.280 --> 00:02:58.560
+into a unique creator face instead of just&nbsp;
+making another random AI girl. Then I use&nbsp;&nbsp;
+
+00:02:58.560 --> 00:03:03.680
+the matrix image to edit note. To run the note,&nbsp;
+it's really, really easy to be honest. Just add&nbsp;&nbsp;
+
+00:03:03.680 --> 00:03:09.360
+your API keys from waist speed. Choose how many&nbsp;
+generations you want and pick the resolution and&nbsp;&nbsp;
+
+00:03:09.360 --> 00:03:14.800
+of course the aspect ratio. Normally I start with&nbsp;
+two to four generations. That gives me enough to&nbsp;&nbsp;
+
+00:03:14.800 --> 00:03:20.160
+compare without wasting time and of course too&nbsp;
+much tokens because we all love our tokens. For&nbsp;&nbsp;
+
+00:03:20.160 --> 00:03:24.960
+the resolution I use 4K. In my opinion, this&nbsp;
+is one of the most important settings when&nbsp;&nbsp;
+
+00:03:24.960 --> 00:03:30.640
+it comes to create data set images because we&nbsp;
+want the best quality we can get here to avoid&nbsp;&nbsp;
+
+00:03:30.640 --> 00:03:36.160
+character drifts as much as possible later on.&nbsp;
+For the aspect ratio, I use 3 to four because it&nbsp;&nbsp;
+
+00:03:36.160 --> 00:03:41.840
+works well for me when it comes to creator image&nbsp;
+data sets. It gives me enough focus on the face,&nbsp;&nbsp;
+
+00:03:41.840 --> 00:03:47.520
+but still leaves room for the upper body and the&nbsp;
+kind of images we want to build later. but choose&nbsp;&nbsp;
+
+00:03:47.520 --> 00:03:52.320
+the aspect ratio that works the best for you and&nbsp;
+especially for your use case. Then I generate&nbsp;&nbsp;
+
+00:03:52.320 --> 00:03:58.080
+a few versions of my AI model to compare them.&nbsp;
+I'm looking for the cleanest identity I can get,&nbsp;&nbsp;
+
+00:03:58.080 --> 00:04:04.400
+like clear eyes, a strong face shape, and I&nbsp;
+look that the style still follows the Pinterest&nbsp;&nbsp;
+
+00:04:04.400 --> 00:04:10.000
+directions without copying one exact person.&nbsp;
+And now we want to test in the next workflow.&nbsp;&nbsp;
+
+00:04:10.000 --> 00:04:15.200
+Can this face still feel like the same girl when&nbsp;
+we generate different images from it? Now that we&nbsp;&nbsp;
+
+00:04:15.200 --> 00:04:20.480
+have the identity base image, the next step is to&nbsp;
+test if the face can work on a different body and&nbsp;&nbsp;
+
+00:04:20.480 --> 00:04:25.520
+still feel like the same crater. For this part,&nbsp;
+I use my identity swap workflow. The idea here&nbsp;&nbsp;
+
+00:04:25.520 --> 00:04:30.640
+is simple. We take the face you created in the&nbsp;
+face merge step and transfer it onto the target&nbsp;&nbsp;
+
+00:04:30.640 --> 00:04:36.080
+image so we can see if the identity holds up in&nbsp;
+a different kind of image. Just take a character&nbsp;&nbsp;
+
+00:04:36.080 --> 00:04:41.200
+from Pinterest or Instagram, but of course,&nbsp;
+make sure you have the right to use the photo,&nbsp;&nbsp;
+
+00:04:41.200 --> 00:04:46.000
+if you know what I mean. For this demo, I'm using&nbsp;
+this girl I found on Pinterest as a target image&nbsp;&nbsp;
+
+00:04:46.000 --> 00:04:51.840
+to show how the workflow works. It's not meant&nbsp;
+to copy or represent a real person. And after&nbsp;&nbsp;
+
+00:04:51.840 --> 00:04:56.880
+the demo, I can delete the temporary source image&nbsp;
+again. And if you want to follow this workflow,&nbsp;&nbsp;
+
+00:04:56.880 --> 00:05:02.160
+I will put the prompts from the whole video inside&nbsp;
+the free digital community in the description.&nbsp;&nbsp;
+
+00:05:02.160 --> 00:05:06.960
+You can also join and ask me any questions you&nbsp;
+have about AI influencers. Inside the workflow,&nbsp;&nbsp;
+
+00:05:06.960 --> 00:05:12.400
+the step is again very simple. Add your API key.&nbsp;
+Choose your output settings and set the resolution&nbsp;&nbsp;
+
+00:05:12.400 --> 00:05:18.240
+to 4K. I use 4K here for the same reason as&nbsp;
+before. The cleaner the source output is,&nbsp;&nbsp;
+
+00:05:18.240 --> 00:05:24.400
+the eased is to judge if the identity is actual&nbsp;
+stable. If the image is soft or low quality,&nbsp;&nbsp;
+
+00:05:24.400 --> 00:05:31.040
+you might think the workflow is bad. When the real&nbsp;
+problem is just the input quality is bad. So after&nbsp;&nbsp;
+
+00:05:31.040 --> 00:05:36.720
+the workflow runs, I check the results I got from&nbsp;
+it. Does the face still match the base image? Does&nbsp;&nbsp;
+
+00:05:36.720 --> 00:05:43.520
+the eyes and mouth stay stable? Does the skin look&nbsp;
+realistic? And does the image still feel like one&nbsp;&nbsp;
+
+00:05:43.520 --> 00:05:50.240
+consistent critter instead of a random face swap?&nbsp;
+I think we got a pretty solid outcome. Now do this&nbsp;&nbsp;
+
+00:05:50.240 --> 00:05:56.080
+step three to 10 times that we have enough images&nbsp;
+to create the real data set. Now we come to the&nbsp;&nbsp;
+
+00:05:56.080 --> 00:06:02.640
+real data set workflow to turn those strong test&nbsp;
+images into the first usable data set for our AI&nbsp;&nbsp;
+
+00:06:02.640 --> 00:06:08.240
+model. This workflow has three branches. At the&nbsp;
+top you can use Nanobana 2 and Nano Banana Pro&nbsp;&nbsp;
+
+00:06:08.240 --> 00:06:12.960
+like in the other ones and also image 2 in&nbsp;
+the middle and at the bottom there is Cream&nbsp;&nbsp;
+
+00:06:12.960 --> 00:06:19.120
+4.5 which gives the more workflow more uncensored&nbsp;
+flexibility if you want to create not safer work&nbsp;&nbsp;
+
+00:06:19.120 --> 00:06:24.400
+data set. What I can show you here because of&nbsp;
+the YouTube tensorflow service every workflow&nbsp;&nbsp;
+
+00:06:24.400 --> 00:06:29.760
+here has six image slots. So I don't throw every&nbsp;
+image in here. If I have 10 images for example,&nbsp;&nbsp;
+
+00:06:29.760 --> 00:06:33.920
+I still only pick the best ones. But you&nbsp;
+can also only use four images if you want&nbsp;&nbsp;
+
+00:06:33.920 --> 00:06:39.440
+to like I'm doing it now. Then we have the prompt&nbsp;
+stack data node. This note contains the data set&nbsp;&nbsp;
+
+00:06:39.440 --> 00:06:44.560
+prompts. So instead of writing a new prompt every&nbsp;
+time, you can just move through the prompt stack,&nbsp;&nbsp;
+
+00:06:44.560 --> 00:06:48.960
+click to the next prompt, and generate the&nbsp;
+data set images. And I want to say it again,&nbsp;&nbsp;
+
+00:06:48.960 --> 00:06:54.160
+the goal here is not to create random beautiful&nbsp;
+pictures of our new AI influencer. The goal here&nbsp;&nbsp;
+
+00:06:54.160 --> 00:06:59.360
+is to create enough images where the creator still&nbsp;
+feels like the same person across different poses,&nbsp;&nbsp;
+
+00:06:59.360 --> 00:07:05.200
+outfits, lighting, and styles. So, I go through&nbsp;
+the prompts once by one and generate the first&nbsp;&nbsp;
+
+00:07:05.200 --> 00:07:10.640
+data set images. After each generation, I still&nbsp;
+check the same things. Does the face match the&nbsp;&nbsp;
+
+00:07:10.640 --> 00:07:15.680
+identity master? Does the body look natural? And&nbsp;
+so on. I think you got already what I mean. And&nbsp;&nbsp;
+
+00:07:15.680 --> 00:07:21.280
+once I have enough images that pass this check,&nbsp;
+I have my first usable creator data set. And this&nbsp;&nbsp;
+
+00:07:21.280 --> 00:07:25.760
+is the part most beginners skip. They want to&nbsp;
+jump straight into Laura training or they want&nbsp;&nbsp;
+
+00:07:25.760 --> 00:07:31.440
+to create content directly with random prompts.&nbsp;
+But a data set is the real asset here because if&nbsp;&nbsp;
+
+00:07:31.440 --> 00:07:36.480
+you have a clean data set, you can train Allora on&nbsp;
+almost every model you want like set image turbo,&nbsp;&nbsp;
+
+00:07:36.480 --> 00:07:42.400
+flux 2, quen 2.2, you name it because you are not&nbsp;
+training on random images anymore where the face&nbsp;&nbsp;
+
+00:07:42.400 --> 00:07:47.920
+looks different every two images. You are training&nbsp;
+on a controlled identity and I think that should&nbsp;&nbsp;
+
+00:07:47.920 --> 00:07:54.400
+be the goal. Or you can use this data set directly&nbsp;
+with API models and create SFV and more advanced&nbsp;&nbsp;
+
+00:07:54.400 --> 00:08:00.000
+NSFW content because now you have a clear visual&nbsp;
+base. And once you understand this workflow,&nbsp;&nbsp;
+
+00:08:00.000 --> 00:08:04.960
+you can repeat it for any credit you have.&nbsp;
+And if you want the full Matrix Lab workflows,&nbsp;&nbsp;
+
+00:08:04.960 --> 00:08:09.440
+custom notes and setup notes, you can find&nbsp;
+them inside the Matrix Lab community in the&nbsp;&nbsp;
+
+00:08:09.440 --> 00:08:13.680
+description. Subscribe and give it a like&nbsp;
+if it helps you. And feel free to write&nbsp;&nbsp;
+
+00:08:13.680 --> 00:08:17.360
+some video ideas in the comments.&nbsp;
+So see you in the next video. Bye.
+

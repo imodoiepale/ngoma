@@ -1,0 +1,48 @@
+🔗 LINKS
+
+Patreon (support the channel, early access): https://www.patreon.com/LoRAtech
+
+Discord (free workflows, community conversation): https://discord.gg/2bqQXKxsxg
+1 on 1 coaching: Available through the Discord. Covers ComfyUI/RunPod setup, LoRA training, and AI influencer growth strategy. Pricing is consultation based, built around what you actually need. Details in the server.
+
+RunPod (GPU rental, deposit $10 get $5 free): https://get.runpod.io/x4yprxwsfyac
+
+If you're generating AI influencer content, dataset images, or anything through a ComfyUI pipeline, your source generations are never coming out full resolution. Upscale them wrong once and you're introducing artifacts. This episode builds a complete SeedVR2 upscale setup from a blank canvas, node by node, both an image pipeline and a video pipeline sitting on the same workflow. No downloaded JSON, no copy-paste template, you'll actually understand what every setting does.
+
+What we cover:
+Loading images single file or full batch folder, and switching between the two with one node
+Picking the right SeedVR2 model size for your actual VRAM, from 8GB up to 24GB and beyond
+Building the image upscale pipeline start to finish with a fixed seed for reproducible output
+Adding a fully separate video upscale pipeline on the same canvas, its own loaders, its own settings
+Getting frame rate handled automatically instead of hardcoding a number that breaks on different source clips
+Common mistakes people make with resolution targeting and max_resolution safety ceilings
+
+
+📺 THE BUILD WITH ME SERIES
+EP. 1 — Build a ComfyUI Workflow and Actually Understand It: https://youtu.be/Bvpn3miGpw0
+EP. 2 — Learn ComfyUI Img2Img by Building It Yourself: https://www.youtube.com/watch?v=mpMFjL47Cb0
+EP. 3 — Build a ComfyUI Inpainting Workflow and Actually Understand It: https://www.youtube.com/watch?v=fJFnHkU6hzo
+EP. 4 — Build a ComfyUI Image Edit Workflow and Actually Understand It: https://www.youtube.com/watch?v=k1STt31lsDA
+EP. 5 — You're here
+
+CHAPTERS:
+0:00 Intro & What We're Building
+0:47 Image Pipeline Overview
+1:45 Choosing Your SeedVR2 Model (VRAM Tiers)
+3:01 Discord & Patreon
+3:40 Installing Custom Node Packs
+4:38 Building the Image Pipeline
+7:34 Wiring It Up & The Resolution Mistake
+10:55 Before/After Compare & Running the Upscale
+14:06 Batch Upscaling a Folder of Images
+16:36 Building the Video Pipeline
+19:50 Video Upscale Settings & Running It
+22:16 Fixing Frame Flicker & Outro
+
+🏷️ TAGS
+
+comfyui, comfyui tutorial, comfyui workflow, seedvr2, seedvr2 upscaler, comfyui upscale, ai image upscale, ai video upscale, comfyui video upscale, image upscale workflow, video upscale workflow, comfyui for beginners, build comfyui workflow from scratch, ai influencer workflow, comfyui vram guide, seedvr2 comfyui, comfyui node by node, comfyui upscale tutorial, ai upscaling 2026, comfyui video helper suite, impact pack comfyui, low vram ai upscale, runpod comfyui, comfyui image pipeline, comfyui batch upscale, stable diffusion upscale, ai generated image quality, upscale ai art, comfyui workflow guide
+
+🎯 HASHTAGS
+
+#ComfyUI #SeedVR2 #AIUpscaling #ComfyUITutorial #AIart #ImageUpscale #VideoUpscale #StableDiffusion #AIworkflow #AIinfluencer #ComfyUIWorkflow #BuildWithMe

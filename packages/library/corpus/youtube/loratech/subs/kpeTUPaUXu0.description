@@ -1,0 +1,13 @@
+🎬 Wan Animate 2 vs My Own Pipeline. Which One Do You Think Is Better?
+
+Wan Animate 2 dropped on August 7th and it skips the pose extraction step entirely, feeding the driving video straight into the transformer instead of converting it to a skeleton first. 
+In this video I break down what actually changed from the original Wan Animate, build out a full LoRA stack and a Gemma 4 auto-prompting pipeline on top of the stock template, then run it head to head against SCAIL2, my own animation pipeline. Same reference image, same driving clip.
+
+🔗 LINKS
+Patreon (support the channel, early access): https://www.patreon.com/LoRAtech 
+Discord (free workflows, community): https://discord.gg/2bqQXKxsxg 1 on 1 coaching: Available through the Discord. Covers ComfyUI/RunPod setup, LoRA training, and AI influencer growth strategy. Pricing is consultation based, built around what you actually need. Details in the server. 
+RunPod (GPU rental, deposit $10 get $5 free): https://get.runpod.io/x4yprxwsfyac
+
+🏷️ TAGS wan animate 2, comfyui, ai animation, ai video generation, wan 2.2, character animation ai, lora training, ai influencer, comfyui workflow, ai video pipeline, motion transfer ai, pose extraction, ai character animation, comfyui tutorial, wan model comparison, ai video comparison, gemma 4, ai prompting, text to video ai, image to video ai, comfyui lora stack, ai video generation 2026, scail2, seedvr2, wan animate tutorial, ai video model test, runpod comfyui, comfyui node pack, ai animation pipeline, character consistency ai 
+
+🎯 HASHTAGS #WanAnimate2 #ComfyUI #AIAnimation #AIVideo #Wan22 #LoRA #AICharacterAnimation #ComfyUIWorkflow #MotionTransfer #Gemma4 #AITools #GenerativeAI #AIVideoGeneration #ComfyUITutorial #AIPipeline

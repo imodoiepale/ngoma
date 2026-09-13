@@ -1,0 +1,440 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.590 align:start position:0%
+ 
+And<00:00:00.320><c> today,</c><00:00:00.720><c> we</c><00:00:00.960><c> are</c><00:00:01.080><c> going</c><00:00:01.400><c> to</c><00:00:01.640><c> be</c><00:00:02.200><c> testing</c>
+
+00:00:02.590 --> 00:00:02.600 align:start position:0%
+And today, we are going to be testing
+ 
+
+00:00:02.600 --> 00:00:05.110 align:start position:0%
+And today, we are going to be testing
+the<00:00:02.720><c> new</c><00:00:02.960><c> One</c><00:00:03.320><c> Animate</c><00:00:03.800><c> 2</c><00:00:04.080><c> model</c><00:00:04.640><c> that</c><00:00:04.880><c> has</c>
+
+00:00:05.110 --> 00:00:05.120 align:start position:0%
+the new One Animate 2 model that has
+ 
+
+00:00:05.120 --> 00:00:06.830 align:start position:0%
+the new One Animate 2 model that has
+released<00:00:05.600><c> within</c><00:00:05.800><c> the</c><00:00:05.880><c> past</c><00:00:06.120><c> few</c><00:00:06.240><c> days.</c><00:00:06.720><c> But</c>
+
+00:00:06.830 --> 00:00:06.840 align:start position:0%
+released within the past few days. But
+ 
+
+00:00:06.840 --> 00:00:08.190 align:start position:0%
+released within the past few days. But
+we're<00:00:06.920><c> not</c><00:00:07.120><c> only</c><00:00:07.280><c> going</c><00:00:07.400><c> to</c><00:00:07.480><c> be</c><00:00:07.560><c> testing</c><00:00:08.040><c> this</c>
+
+00:00:08.190 --> 00:00:08.200 align:start position:0%
+we're not only going to be testing this
+ 
+
+00:00:08.200 --> 00:00:10.590 align:start position:0%
+we're not only going to be testing this
+model<00:00:08.560><c> and</c><00:00:08.760><c> seeing</c><00:00:09.080><c> how</c><00:00:09.320><c> good</c><00:00:09.600><c> it</c><00:00:09.760><c> is</c><00:00:10.320><c> as</c><00:00:10.480><c> an</c>
+
+00:00:10.590 --> 00:00:10.600 align:start position:0%
+model and seeing how good it is as an
+ 
+
+00:00:10.600 --> 00:00:12.750 align:start position:0%
+model and seeing how good it is as an
+upgrade<00:00:11.080><c> over</c><00:00:11.520><c> the</c><00:00:11.680><c> original</c><00:00:12.120><c> One</c><00:00:12.320><c> Animate</c>
+
+00:00:12.750 --> 00:00:12.760 align:start position:0%
+upgrade over the original One Animate
+ 
+
+00:00:12.760 --> 00:00:14.430 align:start position:0%
+upgrade over the original One Animate
+that<00:00:12.920><c> came</c><00:00:13.160><c> out</c><00:00:13.400><c> almost</c><00:00:13.680><c> a</c><00:00:13.720><c> year</c><00:00:13.920><c> ago</c><00:00:14.080><c> now.</c>
+
+00:00:14.430 --> 00:00:14.440 align:start position:0%
+that came out almost a year ago now.
+ 
+
+00:00:14.440 --> 00:00:16.110 align:start position:0%
+that came out almost a year ago now.
+We're<00:00:14.560><c> also</c><00:00:14.720><c> going</c><00:00:14.840><c> to</c><00:00:14.920><c> be</c><00:00:15.080><c> comparing</c><00:00:15.680><c> it</c><00:00:15.880><c> to</c>
+
+00:00:16.110 --> 00:00:16.120 align:start position:0%
+We're also going to be comparing it to
+ 
+
+00:00:16.120 --> 00:00:18.310 align:start position:0%
+We're also going to be comparing it to
+what<00:00:16.360><c> I</c><00:00:16.480><c> consider</c><00:00:17.000><c> the</c><00:00:17.240><c> current</c><00:00:17.600><c> king</c><00:00:18.080><c> of</c>
+
+00:00:18.310 --> 00:00:18.320 align:start position:0%
+what I consider the current king of
+ 
+
+00:00:18.320 --> 00:00:20.110 align:start position:0%
+what I consider the current king of
+motion<00:00:18.600><c> control</c><00:00:19.160><c> within</c><00:00:19.440><c> inside</c><00:00:19.680><c> ComfyUI.</c>
+
+00:00:20.110 --> 00:00:20.120 align:start position:0%
+motion control within inside ComfyUI.
+ 
+
+00:00:20.120 --> 00:00:22.670 align:start position:0%
+motion control within inside ComfyUI.
+Today,<00:00:20.520><c> I'm</c><00:00:20.640><c> going</c><00:00:20.880><c> to</c><00:00:20.920><c> be</c><00:00:21.040><c> testing</c><00:00:21.760><c> Animate</c><00:00:22.200><c> 2</c>
+
+00:00:22.670 --> 00:00:22.680 align:start position:0%
+Today, I'm going to be testing Animate 2
+ 
+
+00:00:22.680 --> 00:00:25.350 align:start position:0%
+Today, I'm going to be testing Animate 2
+against<00:00:23.400><c> Scale</c><00:00:23.760><c> 2,</c><00:00:24.200><c> which</c><00:00:24.360><c> has</c><00:00:24.480><c> quietly</c><00:00:24.920><c> taken</c>
+
+00:00:25.350 --> 00:00:25.360 align:start position:0%
+against Scale 2, which has quietly taken
+ 
+
+00:00:25.360 --> 00:00:27.190 align:start position:0%
+against Scale 2, which has quietly taken
+the<00:00:25.480><c> spot</c><00:00:25.800><c> as</c><00:00:25.920><c> king</c><00:00:26.200><c> for</c><00:00:26.320><c> motion</c><00:00:26.560><c> control</c><00:00:27.120><c> in</c>
+
+00:00:27.190 --> 00:00:27.200 align:start position:0%
+the spot as king for motion control in
+ 
+
+00:00:27.200 --> 00:00:29.470 align:start position:0%
+the spot as king for motion control in
+ComfyUI<00:00:27.880><c> over</c><00:00:28.040><c> the</c><00:00:28.120><c> past</c><00:00:28.400><c> 2</c><00:00:28.480><c> months.</c><00:00:29.080><c> So,</c><00:00:29.360><c> we</c>
+
+00:00:29.470 --> 00:00:29.480 align:start position:0%
+ComfyUI over the past 2 months. So, we
+ 
+
+00:00:29.480 --> 00:00:31.030 align:start position:0%
+ComfyUI over the past 2 months. So, we
+are<00:00:29.560><c> going</c><00:00:29.720><c> to</c><00:00:29.800><c> see</c><00:00:30.080><c> if</c><00:00:30.240><c> Animate</c><00:00:30.600><c> 2</c><00:00:30.840><c> is</c>
+
+00:00:31.030 --> 00:00:31.040 align:start position:0%
+are going to see if Animate 2 is
+ 
+
+00:00:31.040 --> 00:00:32.589 align:start position:0%
+are going to see if Animate 2 is
+actually<00:00:31.360><c> a</c><00:00:31.400><c> threat</c><00:00:31.760><c> or</c><00:00:31.920><c> just</c><00:00:32.119><c> another</c><00:00:32.360><c> model</c>
+
+00:00:32.589 --> 00:00:32.599 align:start position:0%
+actually a threat or just another model
+ 
+
+00:00:32.599 --> 00:00:34.790 align:start position:0%
+actually a threat or just another model
+drop.<00:00:33.160><c> So,</c><00:00:33.360><c> taking</c><00:00:33.680><c> a</c><00:00:33.720><c> look</c><00:00:33.880><c> at</c><00:00:33.960><c> the</c><00:00:34.080><c> output,</c>
+
+00:00:34.790 --> 00:00:34.800 align:start position:0%
+drop. So, taking a look at the output,
+ 
+
+00:00:34.800 --> 00:00:36.430 align:start position:0%
+drop. So, taking a look at the output,
+we<00:00:34.920><c> can</c><00:00:35.080><c> see</c><00:00:35.240><c> that</c><00:00:35.440><c> there</c><00:00:35.600><c> is</c><00:00:35.760><c> a</c><00:00:35.840><c> slight</c><00:00:36.160><c> color</c>
+
+00:00:36.430 --> 00:00:36.440 align:start position:0%
+we can see that there is a slight color
+ 
+
+00:00:36.440 --> 00:00:38.750 align:start position:0%
+we can see that there is a slight color
+difference,<00:00:37.520><c> but</c><00:00:37.840><c> for</c><00:00:37.960><c> the</c><00:00:38.040><c> most</c><00:00:38.280><c> part,</c><00:00:38.600><c> they</c>
+
+00:00:38.750 --> 00:00:38.760 align:start position:0%
+difference, but for the most part, they
+ 
+
+00:00:38.760 --> 00:00:40.790 align:start position:0%
+difference, but for the most part, they
+look<00:00:38.960><c> pretty</c><00:00:39.160><c> similar.</c>
+
+00:00:40.790 --> 00:00:40.800 align:start position:0%
+look pretty similar.
+ 
+
+00:00:40.800 --> 00:00:42.830 align:start position:0%
+look pretty similar.
+I'd<00:00:41.040><c> say</c><00:00:41.200><c> that</c><00:00:41.400><c> Animate</c><00:00:41.840><c> has</c><00:00:42.280><c> some</c><00:00:42.480><c> slight</c>
+
+00:00:42.830 --> 00:00:42.840 align:start position:0%
+I'd say that Animate has some slight
+ 
+
+00:00:42.840 --> 00:00:44.950 align:start position:0%
+I'd say that Animate has some slight
+clipping<00:00:43.200><c> going</c><00:00:43.400><c> on</c><00:00:43.520><c> with</c><00:00:43.640><c> the</c><00:00:43.720><c> shirt</c><00:00:44.640><c> and</c>
+
+00:00:44.950 --> 00:00:44.960 align:start position:0%
+clipping going on with the shirt and
+ 
+
+00:00:44.960 --> 00:00:46.830 align:start position:0%
+clipping going on with the shirt and
+artifacting<00:00:45.520><c> going</c><00:00:45.760><c> on</c><00:00:46.000><c> towards</c><00:00:46.480><c> the</c><00:00:46.600><c> end</c><00:00:46.760><c> of</c>
+
+00:00:46.830 --> 00:00:46.840 align:start position:0%
+artifacting going on towards the end of
+ 
+
+00:00:46.840 --> 00:00:48.750 align:start position:0%
+artifacting going on towards the end of
+the<00:00:46.920><c> generation.</c><00:00:48.080><c> So,</c><00:00:48.360><c> I'm</c><00:00:48.440><c> going</c><00:00:48.560><c> to</c><00:00:48.640><c> give</c>
+
+00:00:48.750 --> 00:00:48.760 align:start position:0%
+the generation. So, I'm going to give
+ 
+
+00:00:48.760 --> 00:00:50.550 align:start position:0%
+the generation. So, I'm going to give
+this<00:00:48.920><c> one</c><00:00:49.080><c> the</c><00:00:49.160><c> scale,</c><00:00:49.960><c> but</c><00:00:50.080><c> they</c><00:00:50.200><c> both</c><00:00:50.440><c> look</c>
+
+00:00:50.550 --> 00:00:50.560 align:start position:0%
+this one the scale, but they both look
+ 
+
+00:00:50.560 --> 00:00:52.110 align:start position:0%
+this one the scale, but they both look
+pretty<00:00:50.760><c> good.</c><00:00:51.320><c> I</c><00:00:51.360><c> think</c><00:00:51.520><c> the</c><00:00:51.600><c> quality</c><00:00:51.960><c> from</c>
+
+00:00:52.110 --> 00:00:52.120 align:start position:0%
+pretty good. I think the quality from
+ 
+
+00:00:52.120 --> 00:00:53.630 align:start position:0%
+pretty good. I think the quality from
+Scale<00:00:52.360><c> is</c><00:00:52.480><c> a</c><00:00:52.520><c> little</c><00:00:52.680><c> bit</c><00:00:52.800><c> better</c><00:00:53.040><c> as</c><00:00:53.160><c> well,</c><00:00:53.400><c> so</c>
+
+00:00:53.630 --> 00:00:53.640 align:start position:0%
+Scale is a little bit better as well, so
+ 
+
+00:00:53.640 --> 00:00:55.110 align:start position:0%
+Scale is a little bit better as well, so
+definitely<00:00:54.000><c> Scale.</c><00:00:54.320><c> Now,</c><00:00:54.440><c> I</c><00:00:54.480><c> had</c><00:00:54.600><c> to</c><00:00:54.680><c> remove</c>
+
+00:00:55.110 --> 00:00:55.120 align:start position:0%
+definitely Scale. Now, I had to remove
+ 
+
+00:00:55.120 --> 00:00:56.590 align:start position:0%
+definitely Scale. Now, I had to remove
+the<00:00:55.280><c> audio</c><00:00:55.560><c> because</c><00:00:55.880><c> there's</c><00:00:56.120><c> copyrighted</c>
+
+00:00:56.590 --> 00:00:56.600 align:start position:0%
+the audio because there's copyrighted
+ 
+
+00:00:56.600 --> 00:00:57.950 align:start position:0%
+the audio because there's copyrighted
+music<00:00:56.960><c> and</c><00:00:57.040><c> I</c><00:00:57.080><c> don't</c><00:00:57.240><c> want</c><00:00:57.360><c> to</c><00:00:57.440><c> get</c><00:00:57.560><c> copyright</c>
+
+00:00:57.950 --> 00:00:57.960 align:start position:0%
+music and I don't want to get copyright
+ 
+
+00:00:57.960 --> 00:01:01.430 align:start position:0%
+music and I don't want to get copyright
+striked,<00:00:58.640><c> but</c><00:00:59.520><c> to</c><00:00:59.720><c> me,</c><00:01:00.160><c> honestly,</c><00:01:01.040><c> this</c><00:01:01.240><c> is</c><00:01:01.360><c> a</c>
+
+00:01:01.430 --> 00:01:01.440 align:start position:0%
+striked, but to me, honestly, this is a
+ 
+
+00:01:01.440 --> 00:01:04.270 align:start position:0%
+striked, but to me, honestly, this is a
+clear<00:01:01.720><c> one.</c><00:01:02.040><c> Scale</c><00:01:02.560><c> is</c><00:01:03.440><c> the</c><00:01:03.720><c> easy</c><00:01:04.000><c> winner</c>
+
+00:01:04.270 --> 00:01:04.280 align:start position:0%
+clear one. Scale is the easy winner
+ 
+
+00:01:04.280 --> 00:01:06.950 align:start position:0%
+clear one. Scale is the easy winner
+here.<00:01:05.000><c> The</c><00:01:05.680><c> Animate</c><00:01:06.040><c> generation</c><00:01:06.600><c> looks</c>
+
+00:01:06.950 --> 00:01:06.960 align:start position:0%
+here. The Animate generation looks
+ 
+
+00:01:06.960 --> 00:01:08.510 align:start position:0%
+here. The Animate generation looks
+pretty<00:01:07.360><c> discolored</c><00:01:07.920><c> for</c><00:01:08.040><c> some</c><00:01:08.200><c> reason,</c>
+
+00:01:08.510 --> 00:01:08.520 align:start position:0%
+pretty discolored for some reason,
+ 
+
+00:01:08.520 --> 00:01:09.950 align:start position:0%
+pretty discolored for some reason,
+whether<00:01:08.680><c> that's</c><00:01:08.920><c> the</c><00:01:09.120><c> reference</c><00:01:09.480><c> video</c><00:01:09.720><c> doing</c>
+
+00:01:09.950 --> 00:01:09.960 align:start position:0%
+whether that's the reference video doing
+ 
+
+00:01:09.960 --> 00:01:11.750 align:start position:0%
+whether that's the reference video doing
+that<00:01:10.160><c> or</c><00:01:10.320><c> not,</c><00:01:10.720><c> but</c><00:01:10.960><c> Scale</c><00:01:11.240><c> just</c><00:01:11.400><c> does</c><00:01:11.560><c> a</c><00:01:11.600><c> good</c>
+
+00:01:11.750 --> 00:01:11.760 align:start position:0%
+that or not, but Scale just does a good
+ 
+
+00:01:11.760 --> 00:01:13.710 align:start position:0%
+that or not, but Scale just does a good
+job<00:01:12.000><c> at</c><00:01:12.080><c> covering</c><00:01:12.440><c> it</c><00:01:12.560><c> up.</c><00:01:12.720><c> So,</c><00:01:13.040><c> Scale</c><00:01:13.400><c> is</c><00:01:13.520><c> up</c>
+
+00:01:13.710 --> 00:01:13.720 align:start position:0%
+job at covering it up. So, Scale is up
+ 
+
+00:01:13.720 --> 00:01:16.070 align:start position:0%
+job at covering it up. So, Scale is up
+2-0.<00:01:14.840><c> Now,</c><00:01:15.040><c> it</c><00:01:15.160><c> honestly</c><00:01:15.480><c> took</c><00:01:15.680><c> me</c><00:01:15.800><c> a</c><00:01:15.840><c> minute</c>
+
+00:01:16.070 --> 00:01:16.080 align:start position:0%
+2-0. Now, it honestly took me a minute
+ 
+
+00:01:16.080 --> 00:01:17.510 align:start position:0%
+2-0. Now, it honestly took me a minute
+to<00:01:16.120><c> decide</c><00:01:16.480><c> on</c><00:01:16.600><c> this</c><00:01:16.760><c> one,</c><00:01:17.040><c> but</c><00:01:17.240><c> I</c><00:01:17.280><c> think</c><00:01:17.480><c> I'm</c>
+
+00:01:17.510 --> 00:01:17.520 align:start position:0%
+to decide on this one, but I think I'm
+ 
+
+00:01:17.520 --> 00:01:19.190 align:start position:0%
+to decide on this one, but I think I'm
+going<00:01:17.640><c> to</c><00:01:17.720><c> go</c><00:01:17.800><c> with</c><00:01:17.960><c> Animate</c><00:01:18.280><c> for</c><00:01:18.400><c> this.</c><00:01:19.000><c> Even</c>
+
+00:01:19.190 --> 00:01:19.200 align:start position:0%
+going to go with Animate for this. Even
+ 
+
+00:01:19.200 --> 00:01:20.550 align:start position:0%
+going to go with Animate for this. Even
+though<00:01:19.320><c> it</c><00:01:19.440><c> still</c><00:01:19.760><c> has</c><00:01:20.080><c> that</c><00:01:20.320><c> slight</c>
+
+00:01:20.550 --> 00:01:20.560 align:start position:0%
+though it still has that slight
+ 
+
+00:01:20.560 --> 00:01:21.990 align:start position:0%
+though it still has that slight
+discoloration<00:01:21.240><c> that's</c><00:01:21.360><c> been</c><00:01:21.520><c> going</c><00:01:21.800><c> on</c>
+
+00:01:21.990 --> 00:01:22.000 align:start position:0%
+discoloration that's been going on
+ 
+
+00:01:22.000 --> 00:01:23.430 align:start position:0%
+discoloration that's been going on
+throughout<00:01:22.280><c> the</c><00:01:22.400><c> Animate</c><00:01:22.680><c> generations,</c><00:01:23.400><c> I</c>
+
+00:01:23.430 --> 00:01:23.440 align:start position:0%
+throughout the Animate generations, I
+ 
+
+00:01:23.440 --> 00:01:24.990 align:start position:0%
+throughout the Animate generations, I
+don't<00:01:23.560><c> know</c><00:01:23.720><c> why.</c><00:01:24.280><c> The</c><00:01:24.360><c> quality</c><00:01:24.720><c> is</c><00:01:24.800><c> just</c>
+
+00:01:24.990 --> 00:01:25.000 align:start position:0%
+don't know why. The quality is just
+ 
+
+00:01:25.000 --> 00:01:26.910 align:start position:0%
+don't know why. The quality is just
+better.<00:01:25.520><c> The</c><00:01:25.720><c> eyes</c><00:01:26.000><c> look</c><00:01:26.120><c> better.</c><00:01:26.760><c> Pretty</c>
+
+00:01:26.910 --> 00:01:26.920 align:start position:0%
+better. The eyes look better. Pretty
+ 
+
+00:01:26.920 --> 00:01:28.350 align:start position:0%
+better. The eyes look better. Pretty
+much<00:01:27.120><c> everything</c><00:01:27.440><c> looks</c><00:01:27.600><c> better,</c><00:01:27.920><c> so</c><00:01:28.280><c> I'm</c>
+
+00:01:28.350 --> 00:01:28.360 align:start position:0%
+much everything looks better, so I'm
+ 
+
+00:01:28.360 --> 00:01:29.790 align:start position:0%
+much everything looks better, so I'm
+going<00:01:28.480><c> to</c><00:01:28.560><c> go</c><00:01:28.640><c> with</c><00:01:28.800><c> Animate</c><00:01:29.120><c> here.</c><00:01:29.600><c> Even</c>
+
+00:01:29.790 --> 00:01:29.800 align:start position:0%
+going to go with Animate here. Even
+ 
+
+00:01:29.800 --> 00:01:31.910 align:start position:0%
+going to go with Animate here. Even
+though<00:01:29.920><c> Scale</c><00:01:30.400><c> does</c><00:01:30.800><c> keep</c><00:01:31.120><c> the</c><00:01:31.240><c> background</c><00:01:31.800><c> of</c>
+
+00:01:31.910 --> 00:01:31.920 align:start position:0%
+though Scale does keep the background of
+ 
+
+00:01:31.920 --> 00:01:33.910 align:start position:0%
+though Scale does keep the background of
+the<00:01:32.040><c> original</c><00:01:32.680><c> video,</c><00:01:33.280><c> which</c><00:01:33.480><c> is</c><00:01:33.600><c> great</c>
+
+00:01:33.910 --> 00:01:33.920 align:start position:0%
+the original video, which is great
+ 
+
+00:01:33.920 --> 00:01:35.350 align:start position:0%
+the original video, which is great
+because<00:01:34.240><c> there's</c><00:01:34.520><c> actual</c><00:01:34.920><c> people</c><00:01:35.240><c> in</c><00:01:35.320><c> the</c>
+
+00:01:35.350 --> 00:01:35.360 align:start position:0%
+because there's actual people in the
+ 
+
+00:01:35.360 --> 00:01:37.590 align:start position:0%
+because there's actual people in the
+background<00:01:35.880><c> doing</c><00:01:36.160><c> stuff</c><00:01:36.440><c> in</c><00:01:36.520><c> the</c><00:01:36.600><c> gym,</c><00:01:37.080><c> so</c><00:01:37.440><c> it</c>
+
+00:01:37.590 --> 00:01:37.600 align:start position:0%
+background doing stuff in the gym, so it
+ 
+
+00:01:37.600 --> 00:01:41.110 align:start position:0%
+background doing stuff in the gym, so it
+looks<00:01:38.400><c> very</c><00:01:38.720><c> real,</c><00:01:39.040><c> but</c><00:01:40.000><c> unfortunately,</c><00:01:40.800><c> the</c>
+
+00:01:41.110 --> 00:01:41.120 align:start position:0%
+looks very real, but unfortunately, the
+ 
+
+00:01:41.120 --> 00:01:43.190 align:start position:0%
+looks very real, but unfortunately, the
+quality<00:01:41.560><c> of</c><00:01:41.640><c> the</c><00:01:41.720><c> person</c><00:01:42.120><c> came</c><00:01:42.360><c> out</c><00:01:42.680><c> not</c><00:01:43.040><c> so</c>
+
+00:01:43.190 --> 00:01:43.200 align:start position:0%
+quality of the person came out not so
+ 
+
+00:01:43.200 --> 00:01:45.790 align:start position:0%
+quality of the person came out not so
+great.<00:01:43.800><c> That</c><00:01:43.920><c> could</c><00:01:44.040><c> probably</c><00:01:44.400><c> be</c><00:01:45.200><c> changed</c><00:01:45.680><c> by</c>
+
+00:01:45.790 --> 00:01:45.800 align:start position:0%
+great. That could probably be changed by
+ 
+
+00:01:45.800 --> 00:01:48.560 align:start position:0%
+great. That could probably be changed by
+just<00:01:46.080><c> running</c><00:01:46.320><c> it</c>
+

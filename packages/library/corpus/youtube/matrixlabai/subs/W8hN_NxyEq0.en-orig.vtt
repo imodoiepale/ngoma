@@ -1,0 +1,48 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.870 align:start position:0%
+ 
+To<00:00:00.200><c> add</c><00:00:00.360><c> your</c><00:00:00.440><c> LoRA,</c><00:00:00.760><c> it's</c><00:00:00.960><c> really</c><00:00:01.200><c> easy.</c><00:00:01.560><c> Just</c>
+
+00:00:01.870 --> 00:00:01.880 align:start position:0%
+To add your LoRA, it's really easy. Just
+ 
+
+00:00:01.880 --> 00:00:03.710 align:start position:0%
+To add your LoRA, it's really easy. Just
+open<00:00:02.160><c> the</c><00:00:02.280><c> Jupyter</c><00:00:02.720><c> notebook</c><00:00:03.120><c> on</c><00:00:03.240><c> the</c><00:00:03.360><c> port</c>
+
+00:00:03.710 --> 00:00:03.720 align:start position:0%
+open the Jupyter notebook on the port
+ 
+
+00:00:03.720 --> 00:00:05.950 align:start position:0%
+open the Jupyter notebook on the port
+888<00:00:04.480><c> and</c><00:00:04.600><c> navigate</c><00:00:05.040><c> to</c><00:00:05.160><c> LoRAs.</c><00:00:05.600><c> After</c><00:00:05.880><c> you're</c>
+
+00:00:05.950 --> 00:00:05.960 align:start position:0%
+888 and navigate to LoRAs. After you're
+ 
+
+00:00:05.960 --> 00:00:07.790 align:start position:0%
+888 and navigate to LoRAs. After you're
+in<00:00:06.040><c> the</c><00:00:06.120><c> LoRAs</c><00:00:06.440><c> folder,</c><00:00:06.800><c> just</c><00:00:07.120><c> drag</c><00:00:07.400><c> and</c><00:00:07.560><c> drop</c>
+
+00:00:07.790 --> 00:00:07.800 align:start position:0%
+in the LoRAs folder, just drag and drop
+ 
+
+00:00:07.800 --> 00:00:09.510 align:start position:0%
+in the LoRAs folder, just drag and drop
+your<00:00:07.920><c> LoRA</c><00:00:08.280><c> in</c><00:00:08.480><c> the</c><00:00:08.600><c> Jupyter</c><00:00:08.960><c> notebook</c><00:00:09.400><c> and</c>
+
+00:00:09.510 --> 00:00:09.520 align:start position:0%
+your LoRA in the Jupyter notebook and
+ 
+
+00:00:09.520 --> 00:00:12.480 align:start position:0%
+your LoRA in the Jupyter notebook and
+click<00:00:09.840><c> upload.</c>
+

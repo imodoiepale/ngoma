@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.190 align:start position:0%
+ 
+Inside<00:00:00.560><c> the</c><00:00:00.640><c> workflow,</c><00:00:01.120><c> the</c><00:00:01.240><c> step</c><00:00:01.600><c> is</c><00:00:01.760><c> again</c>
+
+00:00:02.190 --> 00:00:02.200 align:start position:0%
+Inside the workflow, the step is again
+ 
+
+00:00:02.200 --> 00:00:04.590 align:start position:0%
+Inside the workflow, the step is again
+very<00:00:02.480><c> simple.</c><00:00:03.160><c> Add</c><00:00:03.360><c> your</c><00:00:03.480><c> API</c><00:00:03.880><c> key,</c><00:00:04.360><c> choose</c>
+
+00:00:04.590 --> 00:00:04.600 align:start position:0%
+very simple. Add your API key, choose
+ 
+
+00:00:04.600 --> 00:00:06.070 align:start position:0%
+very simple. Add your API key, choose
+your<00:00:04.720><c> output</c><00:00:05.120><c> settings,</c><00:00:05.560><c> and</c><00:00:05.760><c> set</c><00:00:05.960><c> the</c>
+
+00:00:06.070 --> 00:00:06.080 align:start position:0%
+your output settings, and set the
+ 
+
+00:00:06.080 --> 00:00:08.950 align:start position:0%
+your output settings, and set the
+resolution<00:00:06.600><c> to</c><00:00:06.720><c> 4K.</c><00:00:07.480><c> I</c><00:00:07.640><c> use</c><00:00:07.880><c> 4K</c><00:00:08.400><c> here</c><00:00:08.640><c> for</c><00:00:08.840><c> the</c>
+
+00:00:08.950 --> 00:00:08.960 align:start position:0%
+resolution to 4K. I use 4K here for the
+ 
+
+00:00:08.960 --> 00:00:11.310 align:start position:0%
+resolution to 4K. I use 4K here for the
+same<00:00:09.320><c> reason</c><00:00:09.680><c> as</c><00:00:09.840><c> before.</c><00:00:10.680><c> The</c><00:00:10.840><c> cleaner</c><00:00:11.200><c> the</c>
+
+00:00:11.310 --> 00:00:11.320 align:start position:0%
+same reason as before. The cleaner the
+ 
+
+00:00:11.320 --> 00:00:13.310 align:start position:0%
+same reason as before. The cleaner the
+source<00:00:11.720><c> output</c><00:00:12.120><c> is,</c><00:00:12.400><c> the</c><00:00:12.640><c> easier</c><00:00:12.920><c> it</c><00:00:13.000><c> is</c><00:00:13.200><c> to</c>
+
+00:00:13.310 --> 00:00:13.320 align:start position:0%
+source output is, the easier it is to
+ 
+
+00:00:13.320 --> 00:00:15.310 align:start position:0%
+source output is, the easier it is to
+judge<00:00:13.840><c> if</c><00:00:14.040><c> the</c><00:00:14.160><c> identity</c><00:00:14.680><c> is</c><00:00:14.960><c> actually</c>
+
+00:00:15.310 --> 00:00:15.320 align:start position:0%
+judge if the identity is actually
+ 
+
+00:00:15.320 --> 00:00:17.790 align:start position:0%
+judge if the identity is actually
+stable.<00:00:16.280><c> If</c><00:00:16.520><c> the</c><00:00:16.640><c> image</c><00:00:16.960><c> is</c><00:00:17.120><c> soft</c><00:00:17.520><c> or</c><00:00:17.600><c> low</c>
+
+00:00:17.790 --> 00:00:17.800 align:start position:0%
+stable. If the image is soft or low
+ 
+
+00:00:17.800 --> 00:00:19.990 align:start position:0%
+stable. If the image is soft or low
+quality,<00:00:18.440><c> you</c><00:00:18.600><c> might</c><00:00:18.920><c> think</c><00:00:19.200><c> the</c><00:00:19.320><c> workflow</c><00:00:19.800><c> is</c>
+
+00:00:19.990 --> 00:00:20.000 align:start position:0%
+quality, you might think the workflow is
+ 
+
+00:00:20.000 --> 00:00:22.310 align:start position:0%
+quality, you might think the workflow is
+bad<00:00:20.440><c> when</c><00:00:20.680><c> the</c><00:00:20.840><c> real</c><00:00:21.080><c> problem</c><00:00:21.480><c> is</c><00:00:21.840><c> just</c><00:00:22.200><c> the</c>
+
+00:00:22.310 --> 00:00:22.320 align:start position:0%
+bad when the real problem is just the
+ 
+
+00:00:22.320 --> 00:00:25.390 align:start position:0%
+bad when the real problem is just the
+input<00:00:22.760><c> quality</c><00:00:23.280><c> is</c><00:00:23.840><c> bad.</c><00:00:24.560><c> So,</c><00:00:24.960><c> after</c><00:00:25.280><c> the</c>
+
+00:00:25.390 --> 00:00:25.400 align:start position:0%
+input quality is bad. So, after the
+ 
+
+00:00:25.400 --> 00:00:27.470 align:start position:0%
+input quality is bad. So, after the
+workflow<00:00:25.760><c> runs,</c><00:00:26.160><c> I</c><00:00:26.240><c> check</c><00:00:26.560><c> the</c><00:00:26.680><c> results</c><00:00:27.120><c> I</c><00:00:27.200><c> got</c>
+
+00:00:27.470 --> 00:00:27.480 align:start position:0%
+workflow runs, I check the results I got
+ 
+
+00:00:27.480 --> 00:00:29.430 align:start position:0%
+workflow runs, I check the results I got
+from<00:00:27.680><c> it.</c><00:00:28.000><c> Does</c><00:00:28.280><c> the</c><00:00:28.440><c> face</c><00:00:28.760><c> still</c><00:00:29.040><c> match</c><00:00:29.320><c> the</c>
+
+00:00:29.430 --> 00:00:29.440 align:start position:0%
+from it. Does the face still match the
+ 
+
+00:00:29.440 --> 00:00:32.109 align:start position:0%
+from it. Does the face still match the
+base<00:00:29.800><c> image?</c><00:00:30.480><c> Does</c><00:00:30.840><c> the</c><00:00:31.080><c> eyes</c><00:00:31.360><c> and</c><00:00:31.480><c> mouth</c><00:00:31.880><c> stay</c>
+
+00:00:32.109 --> 00:00:32.119 align:start position:0%
+base image? Does the eyes and mouth stay
+ 
+
+00:00:32.119 --> 00:00:34.910 align:start position:0%
+base image? Does the eyes and mouth stay
+stable?<00:00:33.040><c> Does</c><00:00:33.320><c> the</c><00:00:33.440><c> skin</c><00:00:33.840><c> look</c><00:00:34.080><c> realistic?</c>
+
+00:00:34.910 --> 00:00:34.920 align:start position:0%
+stable? Does the skin look realistic?
+ 
+
+00:00:34.920 --> 00:00:37.550 align:start position:0%
+stable? Does the skin look realistic?
+And<00:00:35.320><c> does</c><00:00:35.520><c> the</c><00:00:35.680><c> image</c><00:00:36.000><c> still</c><00:00:36.280><c> feel</c><00:00:36.560><c> like</c><00:00:37.160><c> one</c>
+
+00:00:37.550 --> 00:00:37.560 align:start position:0%
+And does the image still feel like one
+ 
+
+00:00:37.560 --> 00:00:39.870 align:start position:0%
+And does the image still feel like one
+consistent<00:00:38.200><c> creator</c><00:00:38.920><c> instead</c><00:00:39.320><c> of</c><00:00:39.480><c> a</c><00:00:39.560><c> random</c>
+
+00:00:39.870 --> 00:00:39.880 align:start position:0%
+consistent creator instead of a random
+ 
+
+00:00:39.880 --> 00:00:42.600 align:start position:0%
+consistent creator instead of a random
+face<00:00:40.200><c> swap?</c>
+

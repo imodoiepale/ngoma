@@ -1,0 +1,593 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:30.050 --> 00:00:33.729
+This complete AI UGC video was made inside
+ComfyUI,
+
+00:00:33.730 --> 00:00:36.769
+and the girls you just saw do not exist in
+real life.
+
+00:00:36.770 --> 00:00:39.649
+I gave one single workflow a viral video
+as reference,
+
+00:00:39.650 --> 00:00:41.449
+and it watched every frame by itself,
+
+00:00:41.450 --> 00:00:43.049
+wrote the whole prompt by itself,
+
+00:00:43.050 --> 00:00:45.009
+and generated everything you see here.
+
+00:00:45.010 --> 00:00:49.167
+And later in this video, we do the exact
+same thing with your own AI influencer.
+
+00:00:49.210 --> 00:00:51.569
+And the special thing is, the whole system
+runs
+
+00:00:51.570 --> 00:00:54.169
+on the official ComfyUI API nodes,
+
+00:00:54.170 --> 00:00:57.008
+so you need no extra platform and no
+subscription,
+
+00:00:57.009 --> 00:00:59.810
+and it is cheaper than almost most
+providers out there.
+
+00:00:59.849 --> 00:01:01.729
+And if you watch till the end of the
+video,
+
+00:01:01.730 --> 00:01:04.249
+I will show you how to get the whole exact
+workflow
+
+00:01:04.250 --> 00:01:05.800
+I use, complete for free.
+
+00:01:05.849 --> 00:01:07.769
+Okay, let's get straight into it.
+
+00:01:07.770 --> 00:01:10.328
+This is the workflow that made the video
+you just saw,
+
+00:01:10.329 --> 00:01:12.648
+and it runs completely inside ComfyUI.
+
+00:01:12.649 --> 00:01:14.729
+And here is the part most people get
+wrong:
+
+00:01:14.730 --> 00:01:16.729
+you never write the video prompt yourself.
+
+00:01:16.730 --> 00:01:19.769
+The workflow sampled 60 frames from the
+reference video,
+
+00:01:19.770 --> 00:01:23.609
+listened to the complete audio, and wrote
+this whole master prompt on its own,
+
+00:01:23.610 --> 00:01:25.717
+I typed exactly zero words of it.
+
+00:01:25.770 --> 00:01:29.610
+And because everything runs on the
+official ComfyUI API nodes,
+
+00:01:30.290 --> 00:01:32.569
+you load one workflow file, you top up
+your credits once,
+
+00:01:32.570 --> 00:01:35.049
+and the whole system works in one single
+graph.
+
+00:01:35.050 --> 00:01:37.568
+And it does not matter if you build
+influencer videos
+
+00:01:37.569 --> 00:01:41.288
+or product videos with it, the workflow
+only cares about your reference video
+
+00:01:41.289 --> 00:01:44.849
+and your input images. And that is exactly
+what we do in this video:
+
+00:01:44.850 --> 00:01:46.288
+we take the video you just saw
+
+00:01:46.289 --> 00:01:48.928
+and build it again with Lina, our AI
+influencer,
+
+00:01:48.929 --> 00:01:51.867
+so you can do the exact same thing with
+your own influencer.
+
+00:01:51.889 --> 00:01:53.529
+But real quick, before we start:
+
+00:01:53.530 --> 00:01:55.849
+you get this whole workflow at the end of
+the video,
+
+00:01:55.850 --> 00:01:58.628
+completely for free, and all I ask in
+return is a like,
+
+00:01:58.629 --> 00:02:00.688
+and a nice comment, that is the whole
+deal.
+
+00:02:00.689 --> 00:02:03.888
+Okay, first step, we drop our reference
+video into the workflow,
+
+00:02:03.889 --> 00:02:06.608
+and that is literally the only input the
+analysis needs,
+
+00:02:06.609 --> 00:02:08.729
+the video goes in with its original sound.
+
+00:02:08.730 --> 00:02:11.568
+And this preview here shows you the exact
+60 frames
+
+00:02:11.569 --> 00:02:15.633
+that go into the analysis, so you always
+know what the AI is actually looking at.
+
+00:02:15.649 --> 00:02:17.968
+And now comes the part most people get
+wrong:
+
+00:02:17.969 --> 00:02:20.288
+they let one single AI watch the video
+
+00:02:20.289 --> 00:02:24.449
+and hope for the best. Our workflow runs
+two separate analyses instead,
+
+00:02:24.450 --> 00:02:29.725
+both with Gemini 3.5 Flash, because it is
+extremely cheap for exactly this
+
+00:02:29.726 --> 00:02:32.209
+job. One analysis only watches the
+visuals,
+
+00:02:32.210 --> 00:02:34.568
+and the other one only listens to the
+audio,
+
+00:02:34.569 --> 00:02:37.489
+and that is exactly why nothing gets
+invented here.
+
+00:02:37.490 --> 00:02:40.448
+And when the analysis is done, you get
+these two reports:
+
+00:02:40.449 --> 00:02:43.688
+they document every single second, and the
+workflow even checks
+
+00:02:43.689 --> 00:02:46.849
+if the video is one continuous take, or
+has real cuts.
+
+00:02:46.850 --> 00:02:48.489
+But to run all of this yourself,
+
+00:02:48.490 --> 00:02:50.328
+you need credits on your Comfy account,
+
+00:02:50.329 --> 00:02:52.383
+so let me show you real quick how you get
+them.
+
+00:02:52.449 --> 00:02:55.649
+So these API nodes run directly over your
+Comfy account,
+
+00:02:55.650 --> 00:02:57.769
+and you top up your credits one single
+time
+
+00:02:57.770 --> 00:03:01.649
+on the official ComfyUI website. There is
+no subscription behind it,
+
+00:03:01.650 --> 00:03:03.849
+you only pay for what you actually
+generate.
+
+00:03:03.850 --> 00:03:05.929
+Now, Seedance 2.5 is an expensive model,
+
+00:03:05.930 --> 00:03:09.049
+we all know that, but over the ComfyUI API
+nodes
+
+00:03:09.050 --> 00:03:11.328
+it is cheaper than on most other
+platforms.
+
+00:03:11.329 --> 00:03:14.688
+And one quick pro tip: if you use the API
+nodes for image models
+
+00:03:14.689 --> 00:03:17.409
+like GPT Image 2 or Nano Banana Pro,
+
+00:03:17.410 --> 00:03:20.129
+you pay almost half of what the other
+platforms charge,
+
+00:03:20.130 --> 00:03:21.350
+for the exact same model.
+
+00:03:21.370 --> 00:03:24.009
+And by the way, if you are serious about
+this whole game:
+
+00:03:24.010 --> 00:03:26.769
+everything I show here on YouTube is the
+free layer,
+
+00:03:26.770 --> 00:03:29.409
+but the complete Lina build, the premium
+workflows,
+
+00:03:29.410 --> 00:03:32.088
+and the people who already run this as a
+business,
+
+00:03:32.089 --> 00:03:34.248
+all of that lives in the Skool community.
+
+00:03:34.249 --> 00:03:37.129
+And real talk: the gap between the people
+watching this,
+
+00:03:37.130 --> 00:03:39.009
+and the people inside running this,
+
+00:03:39.010 --> 00:03:40.633
+gets bigger every single week.
+
+00:03:40.650 --> 00:03:43.088
+So now the workflow needs to know who gets
+replaced,
+
+00:03:43.089 --> 00:03:45.369
+and for that we have this target field
+right here,
+
+00:03:45.370 --> 00:03:47.448
+the control center of the whole workflow.
+
+00:03:47.449 --> 00:03:50.369
+In our video we want to replace exactly
+one person,
+
+00:03:50.370 --> 00:03:52.809
+so I describe her the way the workflow
+sees her:
+
+00:03:52.850 --> 00:03:55.569
+the woman in the purple dress, who runs
+ahead of the group.
+
+00:03:55.570 --> 00:03:57.209
+And to make it even more precise,
+
+00:03:57.210 --> 00:04:00.009
+I add one single screenshot of her from
+the video.
+
+00:04:00.010 --> 00:04:02.968
+If your video only has one person, you do
+not need this,
+
+00:04:02.969 --> 00:04:05.129
+but the moment there are more people in
+the frame,
+
+00:04:05.130 --> 00:04:06.800
+this screenshot makes the difference.
+
+00:04:06.850 --> 00:04:09.328
+Everything else stays protected, her three
+friends,
+
+00:04:09.329 --> 00:04:11.849
+the people in the background, and the
+whole location.
+
+00:04:11.850 --> 00:04:14.448
+And a target does not have to be a person
+by the way,
+
+00:04:14.449 --> 00:04:17.448
+you can replace a product in a video the
+exact same way.
+
+00:04:17.449 --> 00:04:19.688
+And did you notice what is completely
+missing here?
+
+00:04:19.689 --> 00:04:21.849
+Not one single word about how Lina looks,
+
+00:04:21.850 --> 00:04:24.049
+because identity never comes from text,
+
+00:04:24.050 --> 00:04:25.688
+it comes from the reference images,
+
+00:04:25.689 --> 00:04:27.367
+and that is exactly the next step.
+
+00:04:27.449 --> 00:04:29.569
+So this is Lina, and these three images
+
+00:04:29.570 --> 00:04:31.608
+are everything the workflow gets of her.
+
+00:04:31.609 --> 00:04:33.489
+You have ten slots for references,
+
+00:04:33.490 --> 00:04:35.929
+every slot has its own on and off switch,
+
+00:04:35.930 --> 00:04:37.489
+and we only need three of them.
+
+00:04:37.490 --> 00:04:39.369
+The first image is the face anchor,
+
+00:04:39.370 --> 00:04:42.409
+one clean shot of her face, straight into
+the camera,
+
+00:04:42.410 --> 00:04:44.608
+and this single image owns her identity.
+
+00:04:44.609 --> 00:04:47.929
+The second one is Lina complete, full body
+with the outfit,
+
+00:04:47.930 --> 00:04:49.888
+so the workflow knows her proportions
+
+00:04:49.889 --> 00:04:51.600
+and exactly what she is wearing.
+
+00:04:52.409 --> 00:04:54.328
+And the third one is the part most people
+forget:
+
+00:04:54.329 --> 00:04:56.448
+a character sheet of her from behind.
+
+00:04:56.449 --> 00:05:00.288
+In the reference video, the camera sees
+her from the back half of the time,
+
+00:05:00.289 --> 00:05:03.128
+and without this sheet, Seedance would
+have to guess her hair
+
+00:05:03.129 --> 00:05:06.168
+and the dress from behind, and we never
+let it guess anything.
+
+00:05:06.169 --> 00:05:09.328
+Just make sure all your references show
+the same character,
+
+00:05:09.329 --> 00:05:12.489
+because if they fight each other, your
+result falls apart.
+
+00:05:12.490 --> 00:05:15.288
+And now everything is ready for the part I
+really like:
+
+00:05:15.289 --> 00:05:17.933
+Opus takes all of this, and writes the
+master prompt.
+
+00:05:17.970 --> 00:05:20.408
+So Opus 5 gets the verified blueprint,
+
+00:05:20.409 --> 00:05:23.008
+our target mapping, and Lina's three
+references,
+
+00:05:23.009 --> 00:05:25.929
+and out of that it compiles one single
+master prompt.
+
+00:05:25.930 --> 00:05:29.649
+And inside the Opus node sits the real
+secret of this whole workflow:
+
+00:05:29.650 --> 00:05:33.369
+our system prompt. This thing is built to
+take any video apart
+
+00:05:33.370 --> 00:05:35.769
+and reconstruct it as a perfect master
+prompt,
+
+00:05:35.770 --> 00:05:38.209
+it does not matter if it is a UGC ad,
+
+00:05:38.210 --> 00:05:40.128
+a dance clip, or a product video.
+
+00:05:40.129 --> 00:05:42.209
+And this system prompt is exactly why
+
+00:05:42.210 --> 00:05:45.769
+the results are this good, and it is
+included in the free workflow.
+
+00:05:45.770 --> 00:05:47.568
+Opus never sees the original video,
+
+00:05:47.569 --> 00:05:50.608
+not even one single frame, Gemini
+describes what happens,
+
+00:05:50.609 --> 00:05:53.448
+Opus writes the prompt, and that is why
+the original woman
+
+00:05:53.449 --> 00:05:55.167
+cannot leak into our result.
+
+00:05:55.169 --> 00:05:57.089
+The prompt covers the recording format,
+
+00:05:57.090 --> 00:05:59.848
+the setting, every action with its exact
+timing,
+
+00:05:59.849 --> 00:06:03.369
+and the complete audio, and it never
+invents cuts or camera moves
+
+00:06:03.370 --> 00:06:05.288
+that the analysis did not prove.
+
+00:06:05.289 --> 00:06:07.608
+Then everything goes into the Seedance
+node,
+
+00:06:07.609 --> 00:06:10.848
+the master prompt, Lina's three
+references, and nothing else,
+
+00:06:10.849 --> 00:06:14.283
+we set 720p, thirty seconds, and hit
+generate.
+
+00:06:14.289 --> 00:06:16.328
+And real quick, because this is important:
+
+00:06:16.329 --> 00:06:18.209
+this is the very first generation.
+
+00:06:18.210 --> 00:06:20.249
+Everything from the reference is still
+there,
+
+00:06:20.250 --> 00:06:22.568
+the location, the friends and the camera
+moves.
+
+00:06:22.569 --> 00:06:24.529
+But the girl in the video is now Lina.
+
+00:06:24.530 --> 00:06:26.328
+And of course, because it is AI,
+
+00:06:26.329 --> 00:06:29.249
+the result is never one to one the same as
+the original,
+
+00:06:29.250 --> 00:06:32.168
+but it is really close, and it took me
+almost no time.
+
+00:06:32.169 --> 00:06:34.288
+And one thing for the advanced people
+here:
+
+00:06:34.289 --> 00:06:36.008
+if you are good with AI agents,
+
+00:06:36.009 --> 00:06:37.969
+you can rebuild this exact framework
+
+00:06:37.970 --> 00:06:40.769
+with your own local agents, the workflow
+is the blueprint,
+
+00:06:40.770 --> 00:06:42.567
+the logic stays exactly the same.
+
+00:06:42.609 --> 00:06:44.448
+So let the result speak for itself,
+
+00:06:44.449 --> 00:06:46.767
+here is the complete reel, from start to
+finish.
+
+00:07:16.843 --> 00:07:18.202
+And that is the whole system.
+
+00:07:18.963 --> 00:07:20.481
+One reference video in, one master prompt,
+
+00:07:20.482 --> 00:07:22.601
+and your own influencer in the leading
+role,
+
+00:07:22.602 --> 00:07:25.441
+all inside ComfyUI, in one single
+workflow.
+
+00:07:25.442 --> 00:07:26.842
+And if you want to go deeper:
+
+00:07:26.843 --> 00:07:28.522
+how Lina was built from zero,
+
+00:07:28.523 --> 00:07:31.562
+and how UGC influencer like her actually
+make money,
+
+00:07:31.563 --> 00:07:34.041
+that whole system lives in our Skool
+community,
+
+00:07:34.042 --> 00:07:37.082
+first link in the description. And like I
+promised at the start,
+
+00:07:37.083 --> 00:07:38.802
+you get the whole workflow for free,
+
+00:07:38.803 --> 00:07:40.761
+with the complete system prompt inside,
+
+00:07:40.762 --> 00:07:42.321
+it is waiting in our Discord,
+
+00:07:42.322 --> 00:07:44.082
+and all links are in the description.
+
+00:07:44.083 --> 00:07:46.641
+If this video helped you, leave a like and
+subscribe.
+
+00:07:46.642 --> 00:07:48.367
+So, see you in the next video. Bye.
+

@@ -1,0 +1,485 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:04.200
+If you're trying to build a consistent
+AI influencer and every single image
+
+00:00:04.200 --> 00:00:07.680
+looks like a completely different girl,
+this is exactly the video you need.
+
+00:00:07.720 --> 00:00:11.200
+I'm going to show you the exact workflow
+I use to train one
+
+00:00:11.200 --> 00:00:14.920
+stable character that stays the same
+by training a hyper realistic LoRa.
+
+00:00:14.960 --> 00:00:15.480
+And if you
+
+00:00:15.480 --> 00:00:17.400
+watch till the end of the video,
+I will show you
+
+00:00:17.400 --> 00:00:20.640
+how to get the whole exact workflow
+I use complete for free.
+
+00:00:20.680 --> 00:00:21.800
+The workflow is simple.
+
+00:00:21.800 --> 00:00:24.480
+We don't start with training,
+we start with the data set.
+
+00:00:24.480 --> 00:00:27.000
+Most people
+want to jump straight into training,
+
+00:00:27.000 --> 00:00:31.160
+but a LoRa is only as good
+as the data set under it for Ashley, I'm
+
+00:00:31.160 --> 00:00:35.240
+using 34 images of the same character
+from different angles and poses,
+
+00:00:35.240 --> 00:00:38.560
+so the model only learns one identity
+and nothing else.
+
+00:00:38.600 --> 00:00:40.880
+And here's the part
+where most people go wrong.
+
+00:00:40.880 --> 00:00:43.040
+They just train on a raw data set.
+
+00:00:43.040 --> 00:00:43.920
+I mix it up.
+
+00:00:43.920 --> 00:00:45.640
+Some are clean for the sharp detail,
+
+00:00:45.640 --> 00:00:49.120
+and some are blurry phone style shots
+for the hyper realistic look.
+
+00:00:49.160 --> 00:00:53.440
+The more types of images you feed
+in, the more flexibility the LoRa gets.
+
+00:00:53.480 --> 00:00:56.760
+If you want to go fully Pro mode,
+you train a separate
+
+00:00:56.760 --> 00:00:59.840
+LoRa for separate jobs, for example
+one for selfies,
+
+00:00:59.840 --> 00:01:03.640
+one for NSFW, and so on for one solid
+all round character.
+
+00:01:03.680 --> 00:01:04.840
+This mix is enough.
+
+00:01:04.840 --> 00:01:08.160
+Once the data set is ready,
+we take it straight into RunPod
+
+00:01:08.160 --> 00:01:09.280
+and start the training.
+
+00:01:09.280 --> 00:01:11.200
+And if you want to see how I build Ashley
+
+00:01:11.200 --> 00:01:15.120
+from scratch, the face and the base
+images, then go watch my last video.
+
+00:01:15.160 --> 00:01:18.360
+You can also find data set prompts
+for free in my discord channel.
+
+00:01:18.360 --> 00:01:20.600
+For the training we jump over to RunPod.
+
+00:01:20.600 --> 00:01:22.600
+And to be honest,
+this is the easiest part ever.
+
+00:01:22.600 --> 00:01:23.920
+You just rent a GPU,
+
+00:01:23.920 --> 00:01:27.920
+let it run for about an hour and a half
+and you're out for under five bucks.
+
+00:01:27.960 --> 00:01:31.120
+We spin up our new pod and grab the RTX
+5090.
+
+00:01:31.160 --> 00:01:32.880
+Don't overthink the GPU here.
+
+00:01:32.880 --> 00:01:35.080
+This one is more than enough
+for what we are doing.
+
+00:01:35.080 --> 00:01:39.160
+Then we swap the template search
+AI toolkit and take the verified one.
+
+00:01:39.160 --> 00:01:41.480
+Give the volume disk 150 gigs.
+
+00:01:41.480 --> 00:01:44.680
+So we've got room for the checkpoints
+and click Deploy on Demand.
+
+00:01:44.720 --> 00:01:46.040
+Give it a minute to boot.
+
+00:01:46.040 --> 00:01:50.520
+Then over in the connect tab,
+the access pops up and we open the HTTP
+
+00:01:50.560 --> 00:01:53.800
+service link that drops us straight
+inside the AI toolkit.
+
+00:01:53.800 --> 00:01:57.320
+And the password is, by the way,
+just literally only password.
+
+00:01:57.360 --> 00:02:01.000
+Inside we go to the Data set tab,
+create a new data set and name it.
+
+00:02:01.040 --> 00:02:04.120
+Then we drag in all 34 images
+and let it upload.
+
+00:02:04.160 --> 00:02:06.840
+Now our data set is in
+and we set up the training.
+
+00:02:06.840 --> 00:02:09.440
+After that
+we create a new job and name our LoRa.
+
+00:02:09.440 --> 00:02:10.280
+For the trigger word.
+
+00:02:10.280 --> 00:02:11.600
+We use one unique word,
+
+00:02:11.600 --> 00:02:15.560
+something the model doesn't already know,
+so it ties only to our LoRa.
+
+00:02:15.600 --> 00:02:16.280
+Newer models
+
+00:02:16.280 --> 00:02:19.680
+don't really need a trigger word anymore,
+but I still like to keep one in.
+
+00:02:19.720 --> 00:02:23.200
+Then we set the model architecture
+to the Z-Image-turbo, and also set
+
+00:02:23.200 --> 00:02:26.520
+the max step input to 30
+to speed up the training a bit.
+
+00:02:26.560 --> 00:02:28.600
+And by the way,
+let me know in the comments
+
+00:02:28.600 --> 00:02:31.040
+what kind of lower training videos
+you want to see.
+
+00:02:31.040 --> 00:02:35.080
+And when we done this, we keep the steps
+at 3000 for efficient Z-Image-turbo Lora.
+
+00:02:35.760 --> 00:02:40.360
+That part matters because you don't want
+to over train or overfit a turbo model.
+
+00:02:40.400 --> 00:02:41.440
+Make also sure
+
+00:02:41.440 --> 00:02:45.520
+the right data set is selected and tell it
+to save the checkpoints along the way
+
+00:02:45.520 --> 00:02:49.840
+so we can pick the best one later
+instead of just trusting the last turn.
+
+00:02:49.880 --> 00:02:53.560
+Also off in the resolution section
+512 and 768,
+
+00:02:53.600 --> 00:02:58.200
+because we only want the best quality, and
+that's the reason why we keep only 1080.
+
+00:02:58.240 --> 00:03:01.720
+Then turn on, skip the first sample
+and keep the last three prompts.
+
+00:03:01.760 --> 00:03:05.840
+After we set it everything up, we hit
+create job, press play and it's on it.
+
+00:03:05.840 --> 00:03:06.240
+It download
+
+00:03:06.240 --> 00:03:10.720
+a few files, gives you an estimate
+and runs for about an hour and a half.
+
+00:03:10.760 --> 00:03:13.400
+Once the training is done,
+we go through the checkpoints.
+
+00:03:13.400 --> 00:03:15.120
+I don't know the last 3 to 5
+
+00:03:15.120 --> 00:03:18.720
+LoRa's to have a good selection
+where I can pick the best LoRa out of it.
+
+00:03:18.760 --> 00:03:22.080
+Now we need to generate our
+AI influencer with our new LoRa.
+
+00:03:22.120 --> 00:03:25.480
+I build it a free public RunPod template
+for exactly this.
+
+00:03:25.520 --> 00:03:30.240
+You just need to select your GPU
+you want to use taking 4090 or 5090.
+
+00:03:30.280 --> 00:03:31.400
+Click on Change Template
+
+00:03:31.400 --> 00:03:35.160
+and browse the template with the name
+MATRIX - Z Image Turbo template.
+
+00:03:35.200 --> 00:03:36.440
+Then you select the template
+
+00:03:36.440 --> 00:03:39.480
+and in the storage configuration select
+also Volume Disk.
+
+00:03:39.480 --> 00:03:43.360
+I've also posted a RunPod template
+link in my discord with my free master
+
+00:03:43.360 --> 00:03:44.520
+comfyui workflow.
+
+00:03:44.520 --> 00:03:46.720
+After you've done this easy
+steps, you hit deploy
+
+00:03:46.720 --> 00:03:48.480
+and everything is already on the pod.
+
+00:03:48.480 --> 00:03:52.240
+You just have to wait a few minutes after
+you click deployed because the template
+
+00:03:52.240 --> 00:03:55.280
+is booting and pulling the docker
+image on the pot is already the
+
+00:03:55.280 --> 00:03:59.520
+z image to model the Vaes and the encoders
+and the decoders and so on.
+
+00:03:59.560 --> 00:04:01.800
+You don't have to download
+anything anymore.
+
+00:04:01.800 --> 00:04:04.560
+The only thing that's not on
+there is your character, LoRa.
+
+00:04:04.560 --> 00:04:06.160
+To add your LoRa its really easy.
+
+00:04:06.160 --> 00:04:10.160
+Just open the Jupyter notebook on the port
+8888 and navigate to LoRa's.
+
+00:04:10.200 --> 00:04:12.040
+After you in the LoRas folder, just drag
+
+00:04:12.040 --> 00:04:16.120
+and drop your LoRa in the jupyter
+notebook and click Upload Inside comfyui
+
+00:04:16.160 --> 00:04:19.880
+we open the free master workflow
+and select our LoRa in the power loader.
+
+00:04:19.880 --> 00:04:22.440
+Right a simple prompt
+with your trigger word and hit run.
+
+00:04:22.440 --> 00:04:23.440
+Look at the result.
+
+00:04:23.440 --> 00:04:25.800
+I think it's okay,
+but it can be done much better.
+
+00:04:25.800 --> 00:04:29.160
+The LoRa is doing exactly what we trained
+for and to be fair,
+
+00:04:29.160 --> 00:04:32.360
+this image is already good,
+but we can push the realism way more.
+
+00:04:32.440 --> 00:04:36.240
+Here's the thing on the RunPod template
+I already added a few LoRa's for you.
+
+00:04:36.240 --> 00:04:38.800
+Nothing to download.
+They are also already on the pod.
+
+00:04:38.800 --> 00:04:41.280
+The two I use
+the most is the realistic snapshot.
+
+00:04:41.280 --> 00:04:44.600
+LoRa and the nice girls ultra real LoRa,
+big credits to the creators.
+
+00:04:44.600 --> 00:04:45.520
+They are both insane.
+
+00:04:45.520 --> 00:04:48.080
+For this one
+we go with the realistic snapshot
+
+00:04:48.080 --> 00:04:49.920
+because for me it's the best realism.
+
+00:04:49.920 --> 00:04:51.520
+LoRa for Z image turbo right now.
+
+00:04:51.520 --> 00:04:54.520
+So we set it up with our character
+LoRa and click generate.
+
+00:04:54.520 --> 00:04:56.520
+Again, look at the different same girl.
+
+00:04:56.520 --> 00:04:58.560
+But now it looks way better in my opinion.
+
+00:04:58.560 --> 00:05:01.880
+And if you think that looks good,
+there's one more level to step up.
+
+00:05:01.880 --> 00:05:03.840
+This is my premium master workflow.
+
+00:05:03.840 --> 00:05:07.160
+It runs the full pipeline
+in basically one click with a skin
+
+00:05:07.160 --> 00:05:10.160
+and hand detailer built
+in, plus an upscale at the end.
+
+00:05:10.160 --> 00:05:12.120
+And honestly, this is about the best
+
+00:05:12.120 --> 00:05:15.360
+you can get out of Z Image Turbo
+right now, or at least very close to it.
+
+00:05:15.360 --> 00:05:19.520
+So don't forget the Z image Turbo is an
+open source model running on your own pod
+
+00:05:19.560 --> 00:05:21.520
+or your own machine,
+so what you create with
+
+00:05:21.520 --> 00:05:24.800
+the model is up to you, and you can create
+literally everything with it.
+
+00:05:24.800 --> 00:05:27.720
+And when I say everything, I mean
+everything, if you know what I mean.
+
+00:05:27.720 --> 00:05:30.680
+And if you actually serious
+about building an AI influencer,
+
+00:05:30.680 --> 00:05:32.520
+you can come over to my skool community.
+
+00:05:32.520 --> 00:05:35.200
+That's where you get the premium master
+workflow and way more.
+
+00:05:35.200 --> 00:05:38.920
+And on top of that, you get Ashley
+completely included in the community.
+
+00:05:38.960 --> 00:05:39.640
+The full data
+
+00:05:39.640 --> 00:05:43.000
+set of Ashley ready to use,
+and you can do whatever you want with her.
+
+00:05:43.000 --> 00:05:47.000
+So you've basically got an ready to use
+creator and you could start fanvue today
+
+00:05:47.000 --> 00:05:48.960
+and that's it. That's the whole workflow.
+
+00:05:48.960 --> 00:05:50.720
+All links for that are in the description.
+
+00:05:50.720 --> 00:05:54.400
+So there's really nothing stopping you
+from building your own AI influencer
+
+00:05:54.400 --> 00:05:54.800
+today.
+
+00:05:54.800 --> 00:05:58.280
+If this will you help you leave a like
+and subscribe and drop a comment
+
+00:05:58.280 --> 00:06:01.440
+with what you'd like to see next
+so I can help you exactly with that.
+
+00:06:01.440 --> 00:06:03.240
+So see you in the next video. Bye.
+

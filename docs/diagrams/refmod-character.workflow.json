@@ -1,0 +1,200 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Consistent character with a RefMod",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "happy",
+        "label": "Happy path",
+        "focus": [
+          "consent",
+          "upload",
+          "create",
+          "store",
+          "generate",
+          "approve"
+        ],
+        "note": "Owned references become a RefMod in seconds, then drive every clip."
+      },
+      {
+        "id": "stops",
+        "label": "Stops and retries",
+        "focus": [
+          "consent",
+          "no_consent",
+          "generate",
+          "drift",
+          "create"
+        ],
+        "note": "No release means no RefMod; identity drift sends you back for better references."
+      }
+    ]
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You"
+    },
+    {
+      "id": "pod",
+      "label": "RunPod pod"
+    },
+    {
+      "id": "review",
+      "label": "Review"
+    },
+    {
+      "id": "stops",
+      "label": "Stops",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "consent",
+    "upload",
+    "create",
+    "store",
+    "generate",
+    "approve"
+  ],
+  "nodes": [
+    {
+      "id": "consent",
+      "lane": "you",
+      "col": 0,
+      "type": "security",
+      "label": "Consent",
+      "sublabel": "owned or released",
+      "tag": "required"
+    },
+    {
+      "id": "upload",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "References",
+      "sublabel": "20-30 images"
+    },
+    {
+      "id": "create",
+      "lane": "pod",
+      "col": 2,
+      "type": "backend",
+      "label": "Create RefMod",
+      "sublabel": "VAE encode"
+    },
+    {
+      "id": "store",
+      "lane": "pod",
+      "col": 3,
+      "type": "database",
+      "label": "RefMod file",
+      "sublabel": "brand store"
+    },
+    {
+      "id": "generate",
+      "lane": "pod",
+      "col": 4,
+      "type": "cloud",
+      "label": "Generate clip",
+      "sublabel": "H3 ref2va"
+    },
+    {
+      "id": "approve",
+      "lane": "review",
+      "col": 5,
+      "type": "security",
+      "label": "Approve",
+      "sublabel": "identity check"
+    },
+    {
+      "id": "no_consent",
+      "lane": "stops",
+      "col": 0,
+      "type": "security",
+      "label": "Stop",
+      "sublabel": "no release"
+    },
+    {
+      "id": "drift",
+      "lane": "stops",
+      "col": 4,
+      "type": "security",
+      "label": "Identity drift",
+      "sublabel": "retry refs"
+    }
+  ],
+  "edges": [
+    {
+      "from": "consent",
+      "to": "upload"
+    },
+    {
+      "from": "upload",
+      "to": "create",
+      "label": "refs",
+      "variant": "emphasis"
+    },
+    {
+      "from": "create",
+      "to": "store",
+      "label": "saved"
+    },
+    {
+      "from": "store",
+      "to": "generate"
+    },
+    {
+      "from": "generate",
+      "to": "approve",
+      "label": "clip",
+      "variant": "emphasis"
+    },
+    {
+      "from": "consent",
+      "to": "no_consent",
+      "label": "missing",
+      "variant": "security",
+      "role": "error"
+    },
+    {
+      "from": "generate",
+      "to": "drift",
+      "label": "drift",
+      "variant": "security",
+      "role": "error"
+    },
+    {
+      "from": "drift",
+      "to": "create",
+      "label": "more refs",
+      "variant": "dashed",
+      "role": "return",
+      "route": "return-left",
+      "fromSide": "left",
+      "toSide": "left"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Why it matters",
+      "items": [
+        "Seconds to make, not hours of LoRA training",
+        "A few MB, reused in every clip"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "Only owned or released likenesses",
+        "Never creators we study",
+        "Files stay out of git"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.790 align:start position:0%
+ 
+This<00:00:00.200><c> is</c><00:00:00.320><c> the</c><00:00:00.440><c> workflow</c><00:00:00.920><c> that</c><00:00:01.160><c> made</c><00:00:01.400><c> the</c><00:00:01.520><c> video</c>
+
+00:00:01.790 --> 00:00:01.800 align:start position:0%
+This is the workflow that made the video
+ 
+
+00:00:01.800 --> 00:00:03.630 align:start position:0%
+This is the workflow that made the video
+you<00:00:01.920><c> just</c><00:00:02.200><c> saw.</c><00:00:02.560><c> And</c><00:00:02.680><c> it</c><00:00:02.840><c> runs</c><00:00:03.080><c> completely</c>
+
+00:00:03.630 --> 00:00:03.640 align:start position:0%
+you just saw. And it runs completely
+ 
+
+00:00:03.640 --> 00:00:05.710 align:start position:0%
+you just saw. And it runs completely
+inside<00:00:04.080><c> ComfyUI.</c><00:00:04.880><c> And</c><00:00:05.000><c> here</c><00:00:05.200><c> is</c><00:00:05.320><c> the</c><00:00:05.440><c> part</c>
+
+00:00:05.710 --> 00:00:05.720 align:start position:0%
+inside ComfyUI. And here is the part
+ 
+
+00:00:05.720 --> 00:00:07.590 align:start position:0%
+inside ComfyUI. And here is the part
+most<00:00:06.000><c> people</c><00:00:06.320><c> get</c><00:00:06.520><c> wrong.</c><00:00:06.960><c> You</c><00:00:07.080><c> never</c><00:00:07.360><c> write</c>
+
+00:00:07.590 --> 00:00:07.600 align:start position:0%
+most people get wrong. You never write
+ 
+
+00:00:07.600 --> 00:00:09.510 align:start position:0%
+most people get wrong. You never write
+the<00:00:07.720><c> video</c><00:00:08.000><c> prompt</c><00:00:08.320><c> yourself.</c><00:00:08.960><c> The</c><00:00:09.040><c> workflow</c>
+
+00:00:09.510 --> 00:00:09.520 align:start position:0%
+the video prompt yourself. The workflow
+ 
+
+00:00:09.520 --> 00:00:11.510 align:start position:0%
+the video prompt yourself. The workflow
+samples<00:00:10.040><c> 60</c><00:00:10.400><c> frames</c><00:00:10.800><c> from</c><00:00:11.000><c> the</c><00:00:11.080><c> reference</c>
+
+00:00:11.510 --> 00:00:11.520 align:start position:0%
+samples 60 frames from the reference
+ 
+
+00:00:11.520 --> 00:00:13.710 align:start position:0%
+samples 60 frames from the reference
+video,<00:00:12.000><c> listen</c><00:00:12.360><c> to</c><00:00:12.480><c> the</c><00:00:12.600><c> complete</c><00:00:13.120><c> audio,</c><00:00:13.560><c> and</c>
+
+00:00:13.710 --> 00:00:13.720 align:start position:0%
+video, listen to the complete audio, and
+ 
+
+00:00:13.720 --> 00:00:15.470 align:start position:0%
+video, listen to the complete audio, and
+wrote<00:00:13.960><c> this</c><00:00:14.160><c> whole</c><00:00:14.400><c> master</c><00:00:14.760><c> prompt</c><00:00:15.120><c> on</c><00:00:15.280><c> its</c>
+
+00:00:15.470 --> 00:00:15.480 align:start position:0%
+wrote this whole master prompt on its
+ 
+
+00:00:15.480 --> 00:00:17.990 align:start position:0%
+wrote this whole master prompt on its
+own.<00:00:15.840><c> I</c><00:00:15.960><c> typed</c><00:00:16.320><c> exactly</c><00:00:16.880><c> zero</c><00:00:17.240><c> words</c><00:00:17.520><c> of</c><00:00:17.680><c> it.</c>
+
+00:00:17.990 --> 00:00:18.000 align:start position:0%
+own. I typed exactly zero words of it.
+ 
+
+00:00:18.000 --> 00:00:19.550 align:start position:0%
+own. I typed exactly zero words of it.
+And<00:00:18.120><c> because</c><00:00:18.560><c> everything</c><00:00:19.000><c> runs</c><00:00:19.320><c> on</c><00:00:19.440><c> the</c>
+
+00:00:19.550 --> 00:00:19.560 align:start position:0%
+And because everything runs on the
+ 
+
+00:00:19.560 --> 00:00:22.470 align:start position:0%
+And because everything runs on the
+official<00:00:20.040><c> ComfyUI</c><00:00:20.920><c> API</c><00:00:21.320><c> nodes,</c><00:00:21.840><c> you</c><00:00:21.960><c> load</c><00:00:22.240><c> one</c>
+
+00:00:22.470 --> 00:00:22.480 align:start position:0%
+official ComfyUI API nodes, you load one
+ 
+
+00:00:22.480 --> 00:00:24.270 align:start position:0%
+official ComfyUI API nodes, you load one
+workflow<00:00:22.880><c> file,</c><00:00:23.200><c> you</c><00:00:23.320><c> top</c><00:00:23.600><c> up</c><00:00:23.760><c> your</c><00:00:23.880><c> credits</c>
+
+00:00:24.270 --> 00:00:24.280 align:start position:0%
+workflow file, you top up your credits
+ 
+
+00:00:24.280 --> 00:00:26.430 align:start position:0%
+workflow file, you top up your credits
+once,<00:00:24.760><c> and</c><00:00:24.880><c> the</c><00:00:25.000><c> whole</c><00:00:25.280><c> system</c><00:00:25.720><c> works</c><00:00:26.040><c> in</c><00:00:26.200><c> one</c>
+
+00:00:26.430 --> 00:00:26.440 align:start position:0%
+once, and the whole system works in one
+ 
+
+00:00:26.440 --> 00:00:28.390 align:start position:0%
+once, and the whole system works in one
+single<00:00:26.800><c> graph.</c><00:00:27.240><c> And</c><00:00:27.360><c> it</c><00:00:27.480><c> does</c><00:00:27.680><c> not</c><00:00:27.880><c> matter</c><00:00:28.240><c> if</c>
+
+00:00:28.390 --> 00:00:28.400 align:start position:0%
+single graph. And it does not matter if
+ 
+
+00:00:28.400 --> 00:00:30.670 align:start position:0%
+single graph. And it does not matter if
+you<00:00:28.520><c> build</c><00:00:28.800><c> influencer</c><00:00:29.360><c> videos</c><00:00:29.760><c> or</c><00:00:30.000><c> product</c>
+
+00:00:30.670 --> 00:00:30.680 align:start position:0%
+you build influencer videos or product
+ 
+
+00:00:30.680 --> 00:00:32.589 align:start position:0%
+you build influencer videos or product
+with<00:00:30.840><c> it.</c><00:00:31.080><c> The</c><00:00:31.200><c> workflow</c><00:00:31.680><c> only</c><00:00:31.920><c> cares</c><00:00:32.279><c> about</c>
+
+00:00:32.589 --> 00:00:32.599 align:start position:0%
+with it. The workflow only cares about
+ 
+
+00:00:32.599 --> 00:00:34.110 align:start position:0%
+with it. The workflow only cares about
+your<00:00:32.720><c> reference</c><00:00:33.120><c> video</c><00:00:33.480><c> and</c><00:00:33.600><c> your</c><00:00:33.760><c> input</c>
+
+00:00:34.110 --> 00:00:34.120 align:start position:0%
+your reference video and your input
+ 
+
+00:00:34.120 --> 00:00:36.270 align:start position:0%
+your reference video and your input
+images.<00:00:34.640><c> And</c><00:00:34.760><c> that</c><00:00:34.960><c> is</c><00:00:35.160><c> exactly</c><00:00:35.720><c> what</c><00:00:35.960><c> we</c><00:00:36.080><c> do</c>
+
+00:00:36.270 --> 00:00:36.280 align:start position:0%
+images. And that is exactly what we do
+ 
+
+00:00:36.280 --> 00:00:37.910 align:start position:0%
+images. And that is exactly what we do
+in<00:00:36.400><c> this</c><00:00:36.640><c> video.</c><00:00:37.040><c> We</c><00:00:37.160><c> take</c><00:00:37.400><c> the</c><00:00:37.520><c> video</c><00:00:37.800><c> you</c>
+
+00:00:37.910 --> 00:00:37.920 align:start position:0%
+in this video. We take the video you
+ 
+
+00:00:37.920 --> 00:00:39.950 align:start position:0%
+in this video. We take the video you
+just<00:00:38.200><c> saw</c><00:00:38.440><c> and</c><00:00:38.600><c> build</c><00:00:38.800><c> it</c><00:00:38.920><c> again</c><00:00:39.320><c> with</c><00:00:39.520><c> Lina,</c>
+
+00:00:39.950 --> 00:00:39.960 align:start position:0%
+just saw and build it again with Lina,
+ 
+
+00:00:39.960 --> 00:00:41.830 align:start position:0%
+just saw and build it again with Lina,
+our<00:00:40.240><c> AI</c><00:00:40.440><c> influencer.</c><00:00:41.120><c> So</c><00:00:41.240><c> you</c><00:00:41.400><c> can</c><00:00:41.560><c> do</c><00:00:41.720><c> the</c>
+
+00:00:41.830 --> 00:00:41.840 align:start position:0%
+our AI influencer. So you can do the
+ 
+
+00:00:41.840 --> 00:00:43.430 align:start position:0%
+our AI influencer. So you can do the
+exact<00:00:42.360><c> same</c><00:00:42.560><c> thing</c><00:00:42.880><c> with</c><00:00:43.000><c> your</c><00:00:43.240><c> own</c>
+
+00:00:43.430 --> 00:00:43.440 align:start position:0%
+exact same thing with your own
+ 
+
+00:00:43.440 --> 00:00:46.200 align:start position:0%
+exact same thing with your own
+influencer.
+

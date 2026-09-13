@@ -1,0 +1,40 @@
+Learn how to run the new LTX 2.5 model for AI video generation using a standard Comfy UI workflow. See high-quality results from influencer prompts.
+This guide explains how to implement the LTX 2.5 model directly from Hugging Face into your creative pipeline. If you are interested in automating video production or testing new generative models, this walkthrough demonstrates the specific steps required to get your environment configured correctly.
+
+----------------------------------------------
+
+Join Skool (complete AI influencer systems + premium workflows):
+https://www.skool.com/matrix-lab-6660/about
+
+FREE LTX 2.5 prompting skill + all three ComfyUI workflows:
+Discord: https://discord.gg/uhfVpmwktQ
+
+Run LTX 2.5 in the cloud (RunPod affiliate link):
+https://runpod.io?ref=upkpysv6
+
+----------------------------------------------
+
+What you'll learn:
+- How LTX 2.5 performs on two repeatable AI influencer benchmark tests
+- Why the expression test exposes identity and camera-control problems
+- How LTX 2.5 handles fingers, hair interaction, body movement, and reflections
+- Which official ComfyUI workflow matters most for AI influencers
+- How fast five-second generations run on an RTX 5090
+- When an RTX PRO 6000 on RunPod makes sense for faster generation
+
+----------------------------------------------
+
+Chapters / Timestamps:
+
+00:00 LTX 2.5 AI influencer test
+00:16 The official Hugging Face model and workflow
+00:56 What changed from LTX 2.3
+01:14 The three official ComfyUI workflows
+01:46 Lina and the fixed AI influencer benchmark
+02:12 Test 1: expression and identity consistency
+02:37 Test 2: body movement, hands, hair, and reflection
+03:59 RTX 5090 speed, GGUF, and RunPod
+04:19 Final LTX 2.5 review
+04:49 Free prompting skill and ComfyUI workflows
+
+#aiinfluencer #ltx25 #comfyui #aivideo #aimodel

@@ -1,0 +1,566 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.740
+We stopped using Nano Banana
+for AI Influencers,
+
+00:00:02.740 --> 00:00:05.940
+because honestly,
+our Krea 2 workflow looks way better.
+
+00:00:06.120 --> 00:00:08.440
+And this is the exact
+master workflow we built
+
+00:00:08.440 --> 00:00:11.340
+inside ComfyUI and every
+custom node is included.
+
+00:00:11.560 --> 00:00:12.860
+And by the end of this video,
+
+00:00:13.040 --> 00:00:14.960
+the whole thing is yours completely free.
+
+00:00:15.200 --> 00:00:16.320
+The workflow is simple.
+
+00:00:16.440 --> 00:00:18.380
+We don't start by comparing outputs,
+
+00:00:18.380 --> 00:00:20.560
+we start by showing you the actual canvas,
+
+00:00:20.860 --> 00:00:24.400
+because every one of these results
+comes out of nodes we built ourselves,
+
+00:00:24.720 --> 00:00:26.380
+not a black box like Nano Banana.
+
+00:00:26.800 --> 00:00:27.620
+And here's the proof:
+
+00:00:27.940 --> 00:00:31.300
+this is our raw base image straight
+out of the first generation.
+
+00:00:31.300 --> 00:00:32.320
+And on top of that,
+
+00:00:32.500 --> 00:00:35.300
+this workflow even pushes
+Krea 2 into real 4K,
+
+00:00:35.460 --> 00:00:37.240
+and Krea 2 can't do that on its own.
+
+00:00:37.400 --> 00:00:38.420
+So here's the plan.
+
+00:00:38.580 --> 00:00:41.020
+We'll walk the entire canvas end to end,
+
+00:00:41.020 --> 00:00:45.200
+and then we'll show you exactly how to get
+this complete master workflow for free,
+
+00:00:45.200 --> 00:00:47.340
+before the free access window closes.
+
+00:00:47.560 --> 00:00:49.100
+But real quick, before we start:
+
+00:00:49.100 --> 00:00:51.680
+you get this whole workflow
+at the end of the video,
+
+00:00:51.680 --> 00:00:53.000
+completely for free,
+
+00:00:53.000 --> 00:00:54.980
+and all I ask in return is a like,
+
+00:00:54.980 --> 00:00:57.120
+and a nice follow, that is the whole deal.
+
+00:00:57.350 --> 00:00:59.010
+Okay, so this is the whole canvas.
+
+00:00:59.370 --> 00:01:01.170
+About seven stages, from left to right,
+
+00:01:01.170 --> 00:01:04.110
+and every single one of them
+does exactly one job.
+
+00:01:04.290 --> 00:01:06.570
+And every stage has
+its own switch up here,
+
+00:01:06.570 --> 00:01:07.910
+so you can run the whole thing,
+
+00:01:07.910 --> 00:01:09.830
+or you turn off what you don't need.
+
+00:01:09.970 --> 00:01:11.750
+And here is the difference to Nano Banana.
+
+00:01:12.050 --> 00:01:14.110
+There, all of this
+happens behind one button,
+
+00:01:14.110 --> 00:01:15.610
+and you never see any of it.
+
+00:01:15.770 --> 00:01:17.470
+Here, every step is on the table,
+
+00:01:17.470 --> 00:01:18.870
+and every step is a node..
+
+00:01:19.150 --> 00:01:22.290
+So let's start where every image
+starts and that is the resolution.
+
+00:01:22.550 --> 00:01:24.350
+So this is our resolution node,
+
+00:01:24.350 --> 00:01:26.690
+and we built this one
+for exactly one reason.
+
+00:01:26.870 --> 00:01:28.913
+You pick your aspect ratio, one to one,
+
+00:01:28.913 --> 00:01:30.830
+nine to sixteen, or three to four,
+
+00:01:30.990 --> 00:01:32.710
+then you pick 2K or 4K,
+
+00:01:32.710 --> 00:01:34.530
+and that is everything you touch here.
+
+00:01:34.670 --> 00:01:37.930
+And by the way, you can use this node
+with every other workflow you want.
+
+00:01:38.150 --> 00:01:40.550
+And now comes the part
+most people get wrong.
+
+00:01:40.910 --> 00:01:45.590
+Krea 2 is trained for a maximum
+of 2048 pixels per side,
+
+00:01:45.710 --> 00:01:47.110
+that is the official limit.
+
+00:01:47.250 --> 00:01:50.650
+And if you just set 4096
+in a normal workflow,
+
+00:01:50.830 --> 00:01:53.430
+it still runs, but the image falls apart,
+
+00:01:53.830 --> 00:01:56.450
+double faces, repeated hands and so on.
+
+00:01:56.490 --> 00:02:00.790
+Because the model sees four times more
+images than it ever saw in training.
+
+00:02:00.983 --> 00:02:02.863
+And that is what this whole chain solves,
+
+00:02:03.243 --> 00:02:05.443
+not one node, but four of them together.
+
+00:02:05.783 --> 00:02:07.483
+The latent, that is the small canvas
+
+00:02:07.483 --> 00:02:09.963
+the model paints on before
+it turns into pixels,
+
+00:02:10.423 --> 00:02:12.603
+gets created at full 4K right away.
+
+00:02:12.843 --> 00:02:14.923
+But the painting itself starts at 2K,
+
+00:02:15.103 --> 00:02:16.723
+the size Krea 2 was trained for,
+
+00:02:16.843 --> 00:02:18.523
+so the whole image comes out right.
+
+00:02:18.703 --> 00:02:21.443
+Then, halfway through,
+our workflow doubles the canvas once.
+
+00:02:21.743 --> 00:02:24.383
+And Krea 2 finishes
+the last steps at full 4K,
+
+00:02:24.543 --> 00:02:26.323
+where it only adds the fine detail.
+
+00:02:26.500 --> 00:02:29.440
+So it is not a 2K picture
+blown up at the end,
+
+00:02:29.720 --> 00:02:34.700
+Krea 2 itself finishes
+the image at 3072 by 4096,
+
+00:02:34.940 --> 00:02:36.180
+and you can see it right here.
+
+00:02:36.380 --> 00:02:37.080
+And to be fair,
+
+00:02:37.300 --> 00:02:38.800
+Krea 2 was never made for this,
+
+00:02:38.960 --> 00:02:40.540
+we just built the path around it.
+
+00:02:40.680 --> 00:02:41.360
+And by the way,
+
+00:02:41.560 --> 00:02:45.400
+everyone inside our skool community
+has instant access, to this workflow.
+
+00:02:45.700 --> 00:02:46.980
+And lets come to the models,
+
+00:02:46.980 --> 00:02:49.080
+and this is the shortest
+part of the video.
+
+00:02:49.280 --> 00:02:54.120
+We load Krea 2 turbo as the FP8
+version then text encoder and the VAE,
+
+00:02:54.160 --> 00:02:56.500
+and that is it,
+everything stays on default.
+
+00:02:56.700 --> 00:02:59.100
+And we take FP8 for one simple reason:
+
+00:02:59.180 --> 00:03:01.300
+it is the same model, just stored smaller,
+
+00:03:01.400 --> 00:03:03.240
+so it needs about half the memory,
+
+00:03:03.500 --> 00:03:05.120
+runs on a normal gaming GPU,
+
+00:03:05.320 --> 00:03:06.540
+and the image looks the same.
+
+00:03:06.680 --> 00:03:09.600
+And if you want a version
+for the INT8 Krea 2 model,
+
+00:03:09.980 --> 00:03:11.960
+write it in the comments, and I build it.
+
+00:03:12.100 --> 00:03:14.660
+And now the part I really
+like the most, the prompt.
+
+00:03:14.880 --> 00:03:16.880
+You can just write it
+yourself in this field,
+
+00:03:16.960 --> 00:03:18.380
+like in every other workflow.
+
+00:03:18.540 --> 00:03:20.840
+But we built something better,
+our Auto Prompter.
+
+00:03:20.980 --> 00:03:24.300
+You just drop in a few example
+pictures of the look you want.
+
+00:03:24.440 --> 00:03:25.720
+After that you click generate,
+
+00:03:25.720 --> 00:03:28.620
+and it writes the complete
+Krea 2 prompt for you.
+
+00:03:28.817 --> 00:03:31.217
+And the reason it works
+this well sits right here,
+
+00:03:31.417 --> 00:03:32.397
+in the system prompt.
+
+00:03:32.657 --> 00:03:35.257
+This is everything we learned
+about prompting Krea 2,
+
+00:03:35.417 --> 00:03:37.997
+how a real amateur photo
+has to be described,
+
+00:03:38.257 --> 00:03:40.317
+so the result looks real and not like AI,
+
+00:03:40.537 --> 00:03:42.117
+all of our secrets are in there,
+
+00:03:42.117 --> 00:03:44.437
+and you get all of it for
+free with the workflow.
+
+00:03:44.767 --> 00:03:46.107
+Under it are the instructions,
+
+00:03:46.407 --> 00:03:48.207
+and that is where you
+tell it what you want,
+
+00:03:48.367 --> 00:03:50.727
+like a casual selfie, or a mirror shot.
+
+00:03:50.927 --> 00:03:52.467
+And if you use a character LoRA,
+
+00:03:52.647 --> 00:03:55.187
+it puts your trigger word
+in front, all by itself.
+
+00:03:55.567 --> 00:03:57.967
+Then you copy the finished
+prompt into the prompt field,
+
+00:03:57.967 --> 00:03:58.707
+and hit run.
+
+00:03:58.907 --> 00:03:59.727
+One thing to know:
+
+00:03:59.867 --> 00:04:02.587
+the Auto Prompter runs over the xAI API,
+
+00:04:02.747 --> 00:04:04.627
+so one prompt costs you a few cents.
+
+00:04:04.883 --> 00:04:06.483
+And this is our first image,
+
+00:04:06.763 --> 00:04:09.683
+straight out of Krea 2, already in 4K.
+
+00:04:10.063 --> 00:04:11.983
+And honestly, this is already good.
+
+00:04:12.263 --> 00:04:14.543
+The skin has texture,
+the light looks real,
+
+00:04:14.903 --> 00:04:17.443
+and nothing is falling apart,
+even at this size.
+
+00:04:17.763 --> 00:04:20.123
+And this is the point
+where most workflows stop.
+
+00:04:20.503 --> 00:04:22.063
+But ours has two more stages,
+
+00:04:22.263 --> 00:04:25.683
+and one of them fixes the one
+thing Krea 2 gets wrong most often.
+
+00:04:25.950 --> 00:04:28.750
+First, real quick,
+there is a skin detailer in here too,
+
+00:04:28.750 --> 00:04:30.210
+and we keep it off today.
+
+00:04:30.370 --> 00:04:33.510
+Because Krea 2 already gives
+you good skin out of the box,
+
+00:04:33.510 --> 00:04:34.850
+and if you want even more,
+
+00:04:35.030 --> 00:04:37.030
+a good skin LoRA does that job as well.
+
+00:04:37.217 --> 00:04:39.097
+But the eyes, that is a different story,
+
+00:04:39.237 --> 00:04:42.457
+because eyes are the one thing
+Krea 2 gets wrong most often.
+
+00:04:42.597 --> 00:04:44.437
+In a full picture the eyes are tiny,
+
+00:04:44.657 --> 00:04:46.417
+so you get a soft, blurry iris,
+
+00:04:46.417 --> 00:04:48.137
+or two eyes that don't quite match,
+
+00:04:48.257 --> 00:04:50.497
+and that is the first
+thing everybody notices.
+
+00:04:50.817 --> 00:04:51.657
+So look at this.
+
+00:04:51.837 --> 00:04:53.637
+This is before, and this is after.
+
+00:04:53.777 --> 00:04:56.077
+The iris is sharp now,
+the catchlight is there,
+
+00:04:56.077 --> 00:04:58.577
+and it is still exactly her eye,
+just finished.
+
+00:04:58.697 --> 00:05:00.597
+And this is how our eye detailer does it:
+
+00:05:00.677 --> 00:05:03.097
+it finds the eyes on its own,
+cuts them out,
+
+00:05:03.197 --> 00:05:06.837
+blows each one up to full size
+so the model can finally see it,
+
+00:05:06.937 --> 00:05:09.337
+then runs three quick steps
+with very little noise,
+
+00:05:09.337 --> 00:05:11.137
+so the eye stays the eye it was,
+
+00:05:11.337 --> 00:05:12.877
+and pastes it back with soft edges,
+
+00:05:12.877 --> 00:05:14.737
+so you never see where it was cut.
+
+00:05:14.883 --> 00:05:16.163
+And real talk for a second.
+
+00:05:16.403 --> 00:05:18.063
+What you see here is the free version,
+
+00:05:18.063 --> 00:05:19.943
+and it is the real thing, not a demo.
+
+00:05:20.363 --> 00:05:24.243
+But inside our skool community sits
+the whole production stack around it,
+
+00:05:24.443 --> 00:05:27.203
+how we build the influencer herself,
+how we train her,
+
+00:05:27.403 --> 00:05:30.243
+and how she stays the same
+face in every single image.
+
+00:05:30.503 --> 00:05:32.443
+And the gap between
+the people watching this,
+
+00:05:32.443 --> 00:05:34.763
+and the people inside already running it,
+
+00:05:34.763 --> 00:05:36.563
+gets bigger every single week.
+
+00:05:36.800 --> 00:05:38.620
+So, like we said at the start,
+
+00:05:38.760 --> 00:05:41.280
+this whole workflow is yours,
+completely free.
+
+00:05:41.500 --> 00:05:45.280
+Every node, the auto prompter with
+our whole system prompt, all of it.
+
+00:05:45.420 --> 00:05:46.580
+And here is how you get it.
+
+00:05:46.720 --> 00:05:47.760
+Go to our Instagram,
+
+00:05:47.760 --> 00:05:50.960
+@matrixlabai the link is
+in the description for it.
+
+00:05:51.100 --> 00:05:53.680
+Follow us, and send us
+a DM with the word Krea,
+
+00:05:53.680 --> 00:05:57.100
+and we send you the complete
+workflow right back in your DMs
+
+00:05:57.267 --> 00:05:57.967
+And heads up,
+
+00:05:58.167 --> 00:06:00.627
+the account might be private
+by the time you watch this,
+
+00:06:00.887 --> 00:06:02.187
+that is how we run this drop,
+
+00:06:02.527 --> 00:06:04.467
+so just send the request, and you get in.
+
+00:06:04.687 --> 00:06:06.387
+But we won't keep this open forever,
+
+00:06:06.847 --> 00:06:08.207
+so do it now, while you are here.
+
+00:06:08.467 --> 00:06:09.227
+And that is it,
+
+00:06:09.367 --> 00:06:11.367
+that is the complete Krea 2 workflow.
+
+00:06:11.587 --> 00:06:14.847
+One canvas with real 4K,
+eyes that finally look real,
+
+00:06:14.847 --> 00:06:17.047
+and all of it for free on our Instagram.
+
+00:06:17.247 --> 00:06:19.527
+If this video helped you,
+leave a like and subscribe,
+
+00:06:19.847 --> 00:06:22.087
+and write me in the comments
+what I should build next.
+
+00:06:22.287 --> 00:06:23.967
+So, see you in the next video. Bye.
+

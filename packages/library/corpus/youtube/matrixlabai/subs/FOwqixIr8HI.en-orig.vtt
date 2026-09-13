@@ -1,0 +1,144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.990 align:start position:0%
+ 
+First<00:00:00.360><c> step,</c><00:00:00.640><c> we</c><00:00:00.760><c> drop</c><00:00:01.040><c> our</c><00:00:01.240><c> reference</c><00:00:01.680><c> video</c>
+
+00:00:01.990 --> 00:00:02.000 align:start position:0%
+First step, we drop our reference video
+ 
+
+00:00:02.000 --> 00:00:03.670 align:start position:0%
+First step, we drop our reference video
+into<00:00:02.240><c> the</c><00:00:02.360><c> workflow.</c><00:00:02.920><c> And</c><00:00:03.040><c> that</c><00:00:03.200><c> is</c><00:00:03.320><c> literally</c>
+
+00:00:03.670 --> 00:00:03.680 align:start position:0%
+into the workflow. And that is literally
+ 
+
+00:00:03.680 --> 00:00:05.670 align:start position:0%
+into the workflow. And that is literally
+the<00:00:03.920><c> only</c><00:00:04.160><c> input</c><00:00:04.560><c> the</c><00:00:04.680><c> analysis</c><00:00:05.200><c> needs.</c><00:00:05.560><c> The</c>
+
+00:00:05.670 --> 00:00:05.680 align:start position:0%
+the only input the analysis needs. The
+ 
+
+00:00:05.680 --> 00:00:07.750 align:start position:0%
+the only input the analysis needs. The
+video<00:00:05.960><c> goes</c><00:00:06.240><c> in</c><00:00:06.440><c> with</c><00:00:06.600><c> its</c><00:00:06.800><c> original</c><00:00:07.280><c> sound.</c>
+
+00:00:07.750 --> 00:00:07.760 align:start position:0%
+video goes in with its original sound.
+ 
+
+00:00:07.760 --> 00:00:09.310 align:start position:0%
+video goes in with its original sound.
+And<00:00:07.880><c> this</c><00:00:08.080><c> preview</c><00:00:08.440><c> here</c><00:00:08.720><c> shows</c><00:00:09.040><c> you</c><00:00:09.120><c> the</c>
+
+00:00:09.310 --> 00:00:09.320 align:start position:0%
+And this preview here shows you the
+ 
+
+00:00:09.320 --> 00:00:11.270 align:start position:0%
+And this preview here shows you the
+exact<00:00:09.800><c> 60</c><00:00:10.160><c> frames</c><00:00:10.560><c> that</c><00:00:10.720><c> go</c><00:00:10.920><c> into</c><00:00:11.160><c> the</c>
+
+00:00:11.270 --> 00:00:11.280 align:start position:0%
+exact 60 frames that go into the
+ 
+
+00:00:11.280 --> 00:00:13.230 align:start position:0%
+exact 60 frames that go into the
+analysis.<00:00:12.000><c> So,</c><00:00:12.160><c> you</c><00:00:12.280><c> always</c><00:00:12.680><c> know</c><00:00:12.920><c> what</c><00:00:13.120><c> the</c>
+
+00:00:13.230 --> 00:00:13.240 align:start position:0%
+analysis. So, you always know what the
+ 
+
+00:00:13.240 --> 00:00:15.230 align:start position:0%
+analysis. So, you always know what the
+AI<00:00:13.560><c> is</c><00:00:13.840><c> actually</c><00:00:14.200><c> looking</c><00:00:14.520><c> at.</c><00:00:14.600><c> And</c><00:00:14.720><c> now</c><00:00:14.920><c> comes</c>
+
+00:00:15.230 --> 00:00:15.240 align:start position:0%
+AI is actually looking at. And now comes
+ 
+
+00:00:15.240 --> 00:00:17.310 align:start position:0%
+AI is actually looking at. And now comes
+the<00:00:15.360><c> part</c><00:00:15.680><c> most</c><00:00:16.000><c> people</c><00:00:16.360><c> get</c><00:00:16.640><c> wrong.</c><00:00:16.920><c> They</c><00:00:17.080><c> let</c>
+
+00:00:17.310 --> 00:00:17.320 align:start position:0%
+the part most people get wrong. They let
+ 
+
+00:00:17.320 --> 00:00:19.670 align:start position:0%
+the part most people get wrong. They let
+one<00:00:17.600><c> single</c><00:00:18.040><c> AI</c><00:00:18.400><c> watch</c><00:00:18.680><c> the</c><00:00:18.800><c> video</c><00:00:19.240><c> and</c><00:00:19.400><c> hope</c>
+
+00:00:19.670 --> 00:00:19.680 align:start position:0%
+one single AI watch the video and hope
+ 
+
+00:00:19.680 --> 00:00:21.790 align:start position:0%
+one single AI watch the video and hope
+for<00:00:19.840><c> the</c><00:00:19.960><c> best.</c><00:00:20.560><c> Our</c><00:00:20.800><c> workflow</c><00:00:21.240><c> runs</c><00:00:21.560><c> two</c>
+
+00:00:21.790 --> 00:00:21.800 align:start position:0%
+for the best. Our workflow runs two
+ 
+
+00:00:21.800 --> 00:00:23.990 align:start position:0%
+for the best. Our workflow runs two
+separate<00:00:22.200><c> analyses</c><00:00:22.840><c> instead,</c><00:00:23.440><c> both</c><00:00:23.800><c> with</c>
+
+00:00:23.990 --> 00:00:24.000 align:start position:0%
+separate analyses instead, both with
+ 
+
+00:00:24.000 --> 00:00:26.430 align:start position:0%
+separate analyses instead, both with
+Gemini<00:00:24.400><c> 3.5</c><00:00:25.320><c> Flash,</c><00:00:25.720><c> because</c><00:00:26.160><c> it</c><00:00:26.240><c> is</c>
+
+00:00:26.430 --> 00:00:26.440 align:start position:0%
+Gemini 3.5 Flash, because it is
+ 
+
+00:00:26.440 --> 00:00:28.870 align:start position:0%
+Gemini 3.5 Flash, because it is
+extremely<00:00:27.000><c> cheap</c><00:00:27.360><c> for</c><00:00:27.600><c> exactly</c><00:00:28.120><c> this</c><00:00:28.360><c> job.</c>
+
+00:00:28.870 --> 00:00:28.880 align:start position:0%
+extremely cheap for exactly this job.
+ 
+
+00:00:28.880 --> 00:00:31.190 align:start position:0%
+extremely cheap for exactly this job.
+One<00:00:29.120><c> analysis</c><00:00:29.800><c> only</c><00:00:30.080><c> watches</c><00:00:30.480><c> the</c><00:00:30.600><c> visuals,</c>
+
+00:00:31.190 --> 00:00:31.200 align:start position:0%
+One analysis only watches the visuals,
+ 
+
+00:00:31.200 --> 00:00:32.870 align:start position:0%
+One analysis only watches the visuals,
+and<00:00:31.320><c> the</c><00:00:31.440><c> other</c><00:00:31.720><c> one</c><00:00:32.000><c> only</c><00:00:32.240><c> listens</c><00:00:32.640><c> to</c><00:00:32.759><c> the</c>
+
+00:00:32.870 --> 00:00:32.880 align:start position:0%
+and the other one only listens to the
+ 
+
+00:00:32.880 --> 00:00:35.190 align:start position:0%
+and the other one only listens to the
+audio.<00:00:33.520><c> And</c><00:00:33.680><c> that</c><00:00:33.880><c> is</c><00:00:34.080><c> exactly</c><00:00:34.640><c> why</c><00:00:34.800><c> nothing</c>
+
+00:00:35.190 --> 00:00:35.200 align:start position:0%
+audio. And that is exactly why nothing
+ 
+
+00:00:35.200 --> 00:00:37.440 align:start position:0%
+audio. And that is exactly why nothing
+gets
+

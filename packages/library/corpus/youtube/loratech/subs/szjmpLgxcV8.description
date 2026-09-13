@@ -1,0 +1,33 @@
+🔗 LINKS
+
+Get SimpliGen HERE
+Windows PC with Nvidia GPU: https://gumroad.com/a/335552099/eegyqs
+
+If you've ever tried to get into ComfyUI, you know the drill. You download a workflow, half the nodes are missing, you're hunting down custom node packs, something's incompatible with your GPU, and hours later you still haven't made a single image. That barrier keeps most people out of local AI generation entirely, especially if you're running an older card or something under 12GB of VRAM.
+
+This video is sponsored by SimpliGen, a desktop app that turns that whole mess into a simple wizard. Pick what you want to make, pick a style, describe it, generate. No node graphs, no dependency hunting, and a built in cloud option if your hardware can't handle local generation. I walk through the app, the character consistency system, local versus cloud generation, and then plug in my own LoRAs to build consistent AI influencer content with it.
+
+Time Stamps:
+00:00 Intro: Why ComfyUI Is So Frustrating
+00:37 What Is SimpliGen?
+01:21 App Layout Walkthrough
+02:05 Marketplace and Model Presets (Image, Video, Upscalers)
+03:08 Creating a Character From Scratch
+05:01 Generating Your Character's Base Look
+05:38 Generating Images With Your Character (Cloud)
+07:59 Improving Your Results (Settings Tweaks)
+08:29 Upscaling With RTX Upscaler
+09:15 Using Your Own Trained LoRA in SimpliGen
+10:36 Reviewing the LoRA Generation
+11:08 Turning an Image Into a Video (LTX 2.3)
+12:29 Video Result and Prompting Takeaways
+13:00 Everything Else SimpliGen Can Do (Products, UGC Recipes)
+14:28 Where to Get SimpliGen and Final Thoughts
+
+🏷️ TAGS
+
+comfyui, ai influencer, consistent ai character, comfyui alternative, ai influencer generator, simpligen, ai image generation app, ai video generation app, no code ai app, ai model consistency, ai influencer tutorial, low vram ai generation, windows ai app, ai character creation, ai content pipeline, stable diffusion app, ai influencer course, ai generated model, faceless youtube ai, ai ugc content, ai influencer business, local ai generation, cloud ai generation, ai wizard app, beginner ai tutorial, ai character workflow, consistent character ai, ai influencer growth, nvidia gpu ai, ai generation software
+
+🎯 HASHTAGS
+
+#ComfyUI #AIInfluencer #SimpliGen #AIGeneration #AIContent #ConsistentAI #AIModel #AITutorial #AIVideo #AIImage #NvidiaGPU #AIcharacter #NoCode #AIApp

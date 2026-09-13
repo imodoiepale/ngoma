@@ -1,0 +1,120 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.190 align:start position:0%
+ 
+This<00:00:00.240><c> is</c><00:00:00.400><c> the</c><00:00:00.520><c> official</c><00:00:01.000><c> page,</c><00:00:01.360><c> Lightrix</c><00:00:01.880><c> LTex</c>
+
+00:00:02.190 --> 00:00:02.200 align:start position:0%
+This is the official page, Lightrix LTex
+ 
+
+00:00:02.200 --> 00:00:04.550 align:start position:0%
+This is the official page, Lightrix LTex
+2.5<00:00:03.120><c> on</c><00:00:03.320><c> Hugging</c><00:00:03.640><c> Face.</c><00:00:04.000><c> The</c><00:00:04.120><c> weights</c><00:00:04.440><c> are</c>
+
+00:00:04.550 --> 00:00:04.560 align:start position:0%
+2.5 on Hugging Face. The weights are
+ 
+
+00:00:04.560 --> 00:00:06.790 align:start position:0%
+2.5 on Hugging Face. The weights are
+gated<00:00:04.880><c> behind</c><00:00:05.280><c> agree</c><00:00:05.640><c> and</c><00:00:05.840><c> access</c><00:00:06.400><c> under</c><00:00:06.680><c> the</c>
+
+00:00:06.790 --> 00:00:06.800 align:start position:0%
+gated behind agree and access under the
+ 
+
+00:00:06.800 --> 00:00:09.070 align:start position:0%
+gated behind agree and access under the
+LTex<00:00:07.200><c> 2</c><00:00:07.440><c> community</c><00:00:07.920><c> license,</c><00:00:08.400><c> so</c><00:00:08.680><c> it's</c><00:00:08.880><c> an</c>
+
+00:00:09.070 --> 00:00:09.080 align:start position:0%
+LTex 2 community license, so it's an
+ 
+
+00:00:09.080 --> 00:00:11.510 align:start position:0%
+LTex 2 community license, so it's an
+open<00:00:09.440><c> weights</c><00:00:09.720><c> model.</c><00:00:10.160><c> Inside</c><00:00:10.640><c> you</c><00:00:10.720><c> get</c><00:00:10.880><c> a</c><00:00:10.960><c> 22</c>
+
+00:00:11.510 --> 00:00:11.520 align:start position:0%
+open weights model. Inside you get a 22
+ 
+
+00:00:11.520 --> 00:00:13.510 align:start position:0%
+open weights model. Inside you get a 22
+billion<00:00:11.840><c> depth</c><00:00:12.120><c> model</c><00:00:12.480><c> and</c><00:00:12.720><c> a</c><00:00:12.760><c> distilled</c><00:00:13.280><c> one,</c>
+
+00:00:13.510 --> 00:00:13.520 align:start position:0%
+billion depth model and a distilled one,
+ 
+
+00:00:13.520 --> 00:00:15.870 align:start position:0%
+billion depth model and a distilled one,
+ComfyUI<00:00:14.240><c> variants,</c><00:00:14.720><c> a</c><00:00:14.800><c> Gemma</c><00:00:15.080><c> text</c><00:00:15.400><c> encoder,</c>
+
+00:00:15.870 --> 00:00:15.880 align:start position:0%
+ComfyUI variants, a Gemma text encoder,
+ 
+
+00:00:15.880 --> 00:00:18.150 align:start position:0%
+ComfyUI variants, a Gemma text encoder,
+and<00:00:16.040><c> separate</c><00:00:16.400><c> video</c><00:00:16.680><c> and</c><00:00:16.880><c> audio</c><00:00:17.120><c> VAEs,</c><00:00:17.840><c> so</c><00:00:18.000><c> it</c>
+
+00:00:18.150 --> 00:00:18.160 align:start position:0%
+and separate video and audio VAEs, so it
+ 
+
+00:00:18.160 --> 00:00:19.830 align:start position:0%
+and separate video and audio VAEs, so it
+can<00:00:18.320><c> generate</c><00:00:18.800><c> sound,</c><00:00:19.120><c> too.</c><00:00:19.600><c> And</c><00:00:19.760><c> the</c>
+
+00:00:19.830 --> 00:00:19.840 align:start position:0%
+can generate sound, too. And the
+ 
+
+00:00:19.840 --> 00:00:21.710 align:start position:0%
+can generate sound, too. And the
+positioning<00:00:20.440><c> changed</c><00:00:20.840><c> because</c><00:00:21.240><c> Lightrix</c>
+
+00:00:21.710 --> 00:00:21.720 align:start position:0%
+positioning changed because Lightrix
+ 
+
+00:00:21.720 --> 00:00:24.510 align:start position:0%
+positioning changed because Lightrix
+framed<00:00:22.040><c> 2.3</c><00:00:22.760><c> around</c><00:00:23.120><c> a</c><00:00:23.160><c> rebuilt</c><00:00:23.600><c> video</c><00:00:23.920><c> VAE</c>
+
+00:00:24.510 --> 00:00:24.520 align:start position:0%
+framed 2.3 around a rebuilt video VAE
+ 
+
+00:00:24.520 --> 00:00:26.910 align:start position:0%
+framed 2.3 around a rebuilt video VAE
+and<00:00:24.680><c> finer</c><00:00:24.960><c> detail,</c><00:00:25.520><c> and</c><00:00:25.640><c> they</c><00:00:25.800><c> framed</c><00:00:26.120><c> 2.5</c>
+
+00:00:26.910 --> 00:00:26.920 align:start position:0%
+and finer detail, and they framed 2.5
+ 
+
+00:00:26.920 --> 00:00:29.230 align:start position:0%
+and finer detail, and they framed 2.5
+around<00:00:27.240><c> continuity</c><00:00:27.920><c> control,</c><00:00:28.480><c> efficiency,</c>
+
+00:00:29.230 --> 00:00:29.240 align:start position:0%
+around continuity control, efficiency,
+ 
+
+00:00:29.240 --> 00:00:30.990 align:start position:0%
+around continuity control, efficiency,
+stronger<00:00:29.720><c> prompt</c><00:00:30.080><c> understanding,</c><00:00:30.840><c> and</c>
+
+00:00:30.990 --> 00:00:31.000 align:start position:0%
+stronger prompt understanding, and
+ 
+
+00:00:31.000 --> 00:00:34.040 align:start position:0%
+stronger prompt understanding, and
+native<00:00:31.320><c> multi-shot.</c>
+

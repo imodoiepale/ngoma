@@ -1,0 +1,56 @@
+🎬 MiniMax H3 Can Make Infinite Length Videos Now
+
+MiniMax H3 is everywhere right now, but everyone is still stuck at one prompt, one short clip. This video breaks down the MiniMax H3 Motion Director, a node that gives you a full shot timeline inside ComfyUI. Add a shot, write its prompt, add another shot, write that one, hit run, and it generates them in order while carrying motion and audio from each shot into the next.
+
+The important part is that every segment still generates on its own, so your GPU is never holding a 30 second video in memory. Length stops being a VRAM problem. I go through the full workflow, the model switch for first/last frame vs reference to video, the four step turbo LoRA, the attention and chunking optimizations, and then run real generations to compare character consistency between image to video and reference to video using a character sheet. The workflow is free in my Discord.
+
+🔗 LINKS
+
+Patreon (support the channel, early access): https://www.patreon.com/LoRAtech
+
+Discord (free workflows, node pack): https://discord.gg/2bqQXKxsxg
+1 on 1 coaching: Available through the Discord. Covers ComfyUI/RunPod setup, LoRA training, and AI influencer growth strategy. Pricing is consultation based, built around what you actually need. Details in the server.
+
+RunPod (GPU rental, deposit $10 get $5 free): https://get.runpod.io/x4yprxwsfyac
+
+⏱️ TIMESTAMPS
+
+0:00 Intro
+0:31 Why this is four shots, not one generation
+0:43 What the Motion Director actually does
+1:16 How infinite length works without more VRAM
+1:48 Installing the node
+2:19 Discord and Patreon
+2:54 Workflow walkthrough starts
+2:58 The three model loaders
+3:37 Four step turbo LoRA and shift nodes
+4:10 The model switch explained
+4:49 Sampler, scheduler, and steps
+5:15 Chunking and attention optimization nodes
+6:09 Opening the Motion Director
+6:37 Mode and output resolution
+7:09 Megapixels and FPS
+8:13 Building the shot timeline
+8:52 How shots carry context to the next one
+9:15 Selective run
+10:05 Prompt setup for this generation
+10:36 Post processing, upscaling, and refinement options
+11:13 Live preview and results tab
+11:28 The experimental resource monitor
+13:12 Generation finished, speeds and freeing RAM
+13:59 Watching the image to video result
+14:47 Same prompts with reference to video
+15:38 Comparing the two results
+16:07 New run with a character sheet
+16:55 Image to video consistency drift
+17:34 Reference to video with the character sheet anchored
+18:29 Which model to use and when
+19:18 Outro
+
+🏷️ TAGS
+
+minimax h3, minimax h3 comfyui, minimax h3 workflow, minimax h3 tutorial, motion director, comfyui, comfyui workflow, ai video, infinite length video, long ai video, minimax h3 image to video, minimax h3 text to video, minimax h3 reference to video, character consistency, comfyui tutorial, comfyui nodes, turbo lora, four step lora, low vram video, multi shot video, video timeline comfyui, comfyui custom nodes, ai filmmaking, ai influencer, character sheet, minimax h3 audio, sage attention, comfyui manager, local ai video, free comfyui workflow
+
+🎯 HASHTAGS
+
+#minimaxh3 #comfyui #aivideo #minimax #aivideogeneration #comfyuiworkflow #motiondirector #imagetovideo #texttovideo #aitools #aifilmmaking #localai #aicontentcreation #characterconsistency #freeworkflow

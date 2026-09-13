@@ -1,0 +1,403 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.898
+LTX 2.5 just landed on Hugging Face,
+
+00:00:01.898 --> 00:00:04.610
+so I gave it the same AI influencer prompts I
+
+00:00:04.610 --> 00:00:05.424
+give every model.
+
+00:00:05.424 --> 00:00:07.051
+And honestly, the results surprised me,
+
+00:00:07.051 --> 00:00:09.220
+because some clips look better than I expected.
+
+00:00:09.220 --> 00:00:11.119
+And the LTX prompting skill I used,
+
+00:00:11.119 --> 00:00:13.017
+to have optomized prompts for this model,
+
+00:00:13.017 --> 00:00:15.729
+you get complete for free, at the end of this
+
+00:00:15.729 --> 00:00:16.000
+video.
+
+00:00:16.000 --> 00:00:19.478
+Okay, let's get straight into it.
+
+00:00:19.478 --> 00:00:23.536
+Everything here is a real screen recording,
+
+00:00:23.536 --> 00:00:27.014
+so you can follow every step.
+
+00:00:27.014 --> 00:00:31.072
+We grab LTX 2.5 from Hugging Face,
+
+00:00:31.072 --> 00:00:36.870
+load the standard ComfyUI workflow, and run my fixed AI
+
+00:00:36.870 --> 00:00:42.087
+influencer prompts, the same set I give every model.
+
+00:00:42.087 --> 00:00:47.884
+And the prompts and the settings stay on screen the
+
+00:00:47.884 --> 00:00:53.681
+whole time, because this is about building an AI influencer,
+
+00:00:53.681 --> 00:00:56.000
+not a cinematic demo.
+
+00:00:56.000 --> 00:00:57.667
+This is the official page, Lightricks LTX-2.5 on Hugging Face.
+
+00:00:57.667 --> 00:00:59.000
+The weights are gated behind agree and access,
+
+00:00:59.000 --> 00:01:00.667
+under the LTX-2 community license, so it's an open weights
+
+00:01:00.667 --> 00:01:00.833
+model.
+
+00:01:00.833 --> 00:01:02.500
+Inside you get a 22 Billion dev model and a
+
+00:01:02.500 --> 00:01:03.833
+distilled one, ComfyUI variants, a Gemma text encoder,
+
+00:01:03.833 --> 00:01:04.833
+and separate video and audio VAEs,
+
+00:01:04.833 --> 00:01:05.833
+so it can generate sound too.
+
+00:01:05.833 --> 00:01:07.500
+And the positioning changed, because Lightricks framed 2.3 around a
+
+00:01:07.500 --> 00:01:08.500
+rebuilt video VAE and finer detail,
+
+00:01:08.500 --> 00:01:09.833
+and they frame 2.5 around continuity, control, efficiency,
+
+00:01:09.833 --> 00:01:10.833
+stronger prompt understanding, and native multi-shot.
+
+00:01:10.833 --> 00:01:11.833
+That's their words, not our test,
+
+00:01:11.833 --> 00:01:13.167
+and continuity is the part an influencer needs,
+
+00:01:13.167 --> 00:01:14.000
+so we test exactly that.
+
+00:01:14.000 --> 00:01:16.692
+So these are the three official LTX 2.5 workflows:
+
+00:01:16.692 --> 00:01:18.486
+text to video, image to video,
+
+00:01:18.486 --> 00:01:20.579
+and first and last frame to video.
+
+00:01:20.579 --> 00:01:23.570
+For an AI influencer, image to video is the one
+
+00:01:23.570 --> 00:01:24.168
+that matters.
+
+00:01:24.168 --> 00:01:27.159
+We feed it the same character image and see whether
+
+00:01:27.159 --> 00:01:28.355
+her identity survives motion.
+
+00:01:28.355 --> 00:01:31.346
+For this test, I'm using the official workflow at 0.9
+
+00:01:31.346 --> 00:01:33.439
+megapixels in 9 to 16 aspect ratio.
+
+00:01:33.439 --> 00:01:35.832
+For five seconds at 24 frames per second,
+
+00:01:35.832 --> 00:01:37.028
+with prompt enhancement enabled.
+
+00:01:37.028 --> 00:01:40.019
+And i've put all three ComfyUI workflows in my Discord,
+
+00:01:40.019 --> 00:01:41.813
+the link is in the description.
+
+00:01:41.813 --> 00:01:44.804
+Now let's run our fixed influencer prompts and look at
+
+00:01:44.804 --> 00:01:46.000
+what actually comes back.
+
+00:01:46.000 --> 00:01:47.333
+And this is Lina.
+
+00:01:47.333 --> 00:01:50.667
+If you've watched this channel before, you already know her.
+
+00:01:50.667 --> 00:01:54.000
+For this benchmark, she gets two fixed reference images and
+
+00:01:54.000 --> 00:01:57.333
+two fixed tests, and every future video model gets the
+
+00:01:57.333 --> 00:01:58.333
+exact same inputs.
+
+00:01:58.333 --> 00:02:01.000
+The first image is a controlled studio portrait.
+
+00:02:01.000 --> 00:02:03.000
+Test one is the expression test:
+
+00:02:03.000 --> 00:02:06.333
+the framing stays locked while her face moves from neutral
+
+00:02:06.333 --> 00:02:08.000
+into a clearly different expression.
+
+00:02:08.000 --> 00:02:11.000
+We are watching the eyes, mouth, teeth, skin, hair,
+
+00:02:11.000 --> 00:02:14.333
+and whether she still looks like Lina at the end.
+
+00:02:14.333 --> 00:02:17.667
+And this is what LTX 2.5 produced on the very
+
+00:02:17.667 --> 00:02:18.333
+first generation.
+
+00:02:18.333 --> 00:02:20.333
+Honestly, for an open-source video model,
+
+00:02:20.333 --> 00:02:22.333
+I think this is extremely good.
+
+00:02:22.333 --> 00:02:25.000
+The expression develops naturally, her identity stays consistent,
+
+00:02:25.000 --> 00:02:27.000
+and even the teeth hold up.
+
+00:02:27.000 --> 00:02:30.333
+The only instruction it missed was that the camera should
+
+00:02:30.333 --> 00:02:33.333
+stay completely locked with no zoom in the prompt.
+
+00:02:33.333 --> 00:02:36.000
+Instead, it slowly pushes in throughout the shot.
+
+00:02:36.000 --> 00:02:38.000
+So the visual quality is strong,
+
+00:02:38.000 --> 00:02:40.333
+but the instruction following is not perfect.
+
+00:02:40.333 --> 00:02:43.333
+Reference two is the opposite: a real influencer-style selfie,
+
+00:02:43.333 --> 00:02:46.667
+with a high camera angle, a peace sign close to
+
+00:02:46.667 --> 00:02:49.000
+the lens and a difficult body pose.
+
+00:02:49.000 --> 00:02:52.000
+The movement test asks LTX to coordinate her body,
+
+00:02:52.000 --> 00:02:55.000
+arm, hand, and hair without breaking the selfie perspective,
+
+00:02:55.000 --> 00:02:57.333
+her identity, or the room around her.
+
+00:02:57.333 --> 00:03:00.667
+And this is what LTX 2.5 produced on the very
+
+00:03:00.667 --> 00:03:01.333
+first generation.
+
+00:03:01.333 --> 00:03:04.667
+This is a genuinely hard stress test for the model,
+
+00:03:04.667 --> 00:03:08.000
+because there are so many things happening in one prompt
+
+00:03:08.000 --> 00:03:10.667
+and one five-second video: body movement, facial movement,
+
+00:03:10.667 --> 00:03:13.333
+the hand, individual fingers, hair interaction, camera motion,
+
+00:03:13.333 --> 00:03:16.333
+and even the reflection in the window behind her.
+
+00:03:16.333 --> 00:03:19.333
+And LTX 2.5 handles most of it surprisingly well.
+
+00:03:19.333 --> 00:03:22.667
+The fingers stay very realistic, and when she runs her
+
+00:03:22.667 --> 00:03:26.000
+hand through her hair, both the hand movement and the
+
+00:03:26.000 --> 00:03:28.333
+way the hair reacts look extremely convincing.
+
+00:03:28.333 --> 00:03:31.667
+I also like that the reflection behind her stays present
+
+00:03:31.667 --> 00:03:33.000
+as the scene moves.
+
+00:03:33.000 --> 00:03:35.667
+The only obvious weakness is near the end,
+
+00:03:35.667 --> 00:03:38.667
+where her eyes start to look a little strange.
+
+00:03:38.667 --> 00:03:42.000
+But overall, for an open-source model handling this much movement
+
+00:03:42.000 --> 00:03:44.667
+at once, this is a very strong result.
+
+00:03:44.667 --> 00:03:48.000
+And if this video helps you create better AI influencer
+
+00:03:48.000 --> 00:03:49.667
+videos, please leave a like.
+
+00:03:49.667 --> 00:03:53.000
+And if you really want to learn how to build
+
+00:03:53.000 --> 00:03:55.333
+proper AI influencers from start to finish,
+
+00:03:55.333 --> 00:03:57.000
+check out our skool community.
+
+00:03:57.000 --> 00:03:59.000
+The link is in the description.
+
+00:03:59.000 --> 00:04:01.941
+And just quickly on speed, I generated these clips on
+
+00:04:01.941 --> 00:04:04.882
+an RTX 5090, and each one took around two to
+
+00:04:04.882 --> 00:04:06.941
+three minutes, which is honestly pretty fast.
+
+00:04:06.941 --> 00:04:09.882
+You can probably push it even faster with a GGUF
+
+00:04:09.882 --> 00:04:10.176
+version.
+
+00:04:10.176 --> 00:04:12.235
+And if you want the fastest setup,
+
+00:04:12.235 --> 00:04:14.882
+I would use an RTX PRO 6000 on RunPod.
+
+00:04:14.882 --> 00:04:16.647
+For RunPod just click down below.
+
+00:04:16.647 --> 00:04:19.000
+Now let me give you my final review.
+
+00:04:19.000 --> 00:04:22.261
+So my final review is, for an open-source video model,
+
+00:04:22.261 --> 00:04:23.891
+LTX 2.5 is extremely impressive.
+
+00:04:23.891 --> 00:04:26.826
+It keeps Lina consistent, handles complex movement surprisingly well,
+
+00:04:26.826 --> 00:04:30.087
+and both tests gave us usable results on the very
+
+00:04:30.087 --> 00:04:30.739
+first generation.
+
+00:04:30.739 --> 00:04:32.370
+But tt is not perfect.
+
+00:04:32.370 --> 00:04:35.630
+The first test ignored the locked camera and zoomed in,
+
+00:04:35.630 --> 00:04:38.891
+and the eyes became a little unstable near the end
+
+00:04:38.891 --> 00:04:40.196
+of the movement test.
+
+00:04:40.196 --> 00:04:42.152
+But for creating AI influencer videos,
+
+00:04:42.152 --> 00:04:45.413
+this is absolutely a model I would keep using and
+
+00:04:45.413 --> 00:04:46.065
+testing daily.
+
+00:04:46.065 --> 00:04:49.000
+And now, let me give you the free resources.
+
+00:04:49.000 --> 00:04:51.679
+And as promised, the LTX 2.5 prompting skill and all
+
+00:04:51.679 --> 00:04:54.089
+three official ComfyUI workflows are free in our Discord.
+
+00:04:54.089 --> 00:04:55.964
+The skill works with Claude Code, Codex,
+
+00:04:55.964 --> 00:04:58.643
+or any agent you use, and our custom LTX 2.5
+
+00:04:58.643 --> 00:04:59.982
+workflow is still in development.
+
+00:04:59.982 --> 00:05:02.661
+Once it is ready, I will add it there too.
+
+00:05:02.661 --> 00:05:04.000
+You find everything down below.
+
+00:05:04.000 --> 00:05:06.188
+And if this test saved you time,
+
+00:05:06.188 --> 00:05:09.312
+leave a like, and tell me in the comments which
+
+00:05:09.312 --> 00:05:11.500
+model should face the same prompts next.
+
+00:05:11.500 --> 00:05:13.688
+So, see you in the next video.
+
+00:05:13.688 --> 00:05:14.000
+Bye.
+

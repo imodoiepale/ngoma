@@ -1,0 +1,160 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.150 align:start position:0%
+ 
+on<00:00:00.240><c> turbo</c><00:00:00.680><c> ruins</c><00:00:01.040><c> the</c><00:00:01.160><c> quality.</c><00:00:01.920><c> So,</c>
+
+00:00:02.150 --> 00:00:02.160 align:start position:0%
+on turbo ruins the quality. So,
+ 
+
+00:00:02.160 --> 00:00:04.510 align:start position:0%
+on turbo ruins the quality. So,
+double-check<00:00:02.840><c> this</c><00:00:03.080><c> one</c><00:00:03.280><c> is</c><00:00:03.480><c> in.</c><00:00:03.800><c> We</c><00:00:03.920><c> train</c><00:00:04.320><c> on</c>
+
+00:00:04.510 --> 00:00:04.520 align:start position:0%
+double-check this one is in. We train on
+ 
+
+00:00:04.520 --> 00:00:06.710 align:start position:0%
+double-check this one is in. We train on
+raw<00:00:04.840><c> and</c><00:00:05.000><c> later</c><00:00:05.320><c> regenerate</c><00:00:06.040><c> on</c><00:00:06.240><c> the</c><00:00:06.360><c> turbo</c>
+
+00:00:06.710 --> 00:00:06.720 align:start position:0%
+raw and later regenerate on the turbo
+ 
+
+00:00:06.720 --> 00:00:09.230 align:start position:0%
+raw and later regenerate on the turbo
+model.<00:00:07.200><c> For</c><00:00:07.320><c> the</c><00:00:07.440><c> steps,</c><00:00:07.880><c> we</c><00:00:08.000><c> go</c><00:00:08.240><c> with</c><00:00:08.360><c> 3,000</c>
+
+00:00:09.230 --> 00:00:09.240 align:start position:0%
+model. For the steps, we go with 3,000
+ 
+
+00:00:09.240 --> 00:00:11.350 align:start position:0%
+model. For the steps, we go with 3,000
+and<00:00:09.440><c> the</c><00:00:09.560><c> optimizer</c><00:00:10.160><c> stays</c><00:00:10.520><c> on</c><00:00:10.760><c> Adam</c><00:00:11.080><c> with</c><00:00:11.240><c> the</c>
+
+00:00:11.350 --> 00:00:11.360 align:start position:0%
+and the optimizer stays on Adam with the
+ 
+
+00:00:11.360 --> 00:00:13.790 align:start position:0%
+and the optimizer stays on Adam with the
+default<00:00:11.840><c> learning</c><00:00:12.200><c> rate.</c><00:00:12.840><c> So,</c><00:00:13.080><c> quick</c><00:00:13.360><c> tip,</c><00:00:13.640><c> if</c>
+
+00:00:13.790 --> 00:00:13.800 align:start position:0%
+default learning rate. So, quick tip, if
+ 
+
+00:00:13.800 --> 00:00:16.110 align:start position:0%
+default learning rate. So, quick tip, if
+you<00:00:13.920><c> train</c><00:00:14.200><c> on</c><00:00:14.360><c> a</c><00:00:14.440><c> 5090,</c><00:00:15.160><c> set</c><00:00:15.480><c> the</c><00:00:15.560><c> batch</c><00:00:15.840><c> size</c>
+
+00:00:16.110 --> 00:00:16.120 align:start position:0%
+you train on a 5090, set the batch size
+ 
+
+00:00:16.120 --> 00:00:18.870 align:start position:0%
+you train on a 5090, set the batch size
+to<00:00:16.240><c> one,</c><00:00:16.800><c> so</c><00:00:17.000><c> it</c><00:00:17.120><c> doesn't</c><00:00:17.480><c> run</c><00:00:17.720><c> out</c><00:00:17.880><c> of</c><00:00:18.040><c> memory.</c>
+
+00:00:18.870 --> 00:00:18.880 align:start position:0%
+to one, so it doesn't run out of memory.
+ 
+
+00:00:18.880 --> 00:00:20.830 align:start position:0%
+to one, so it doesn't run out of memory.
+And<00:00:19.040><c> everything</c><00:00:19.520><c> else</c><00:00:19.880><c> we</c><00:00:20.000><c> keep</c><00:00:20.280><c> also</c><00:00:20.640><c> on</c>
+
+00:00:20.830 --> 00:00:20.840 align:start position:0%
+And everything else we keep also on
+ 
+
+00:00:20.840 --> 00:00:23.150 align:start position:0%
+And everything else we keep also on
+default.<00:00:21.480><c> Make</c><00:00:21.720><c> sure</c><00:00:22.040><c> the</c><00:00:22.160><c> right</c><00:00:22.440><c> data</c><00:00:22.720><c> set</c><00:00:23.000><c> is</c>
+
+00:00:23.150 --> 00:00:23.160 align:start position:0%
+default. Make sure the right data set is
+ 
+
+00:00:23.160 --> 00:00:24.870 align:start position:0%
+default. Make sure the right data set is
+selected<00:00:23.760><c> and</c><00:00:23.920><c> set</c><00:00:24.120><c> it</c><00:00:24.240><c> up</c><00:00:24.480><c> to</c><00:00:24.640><c> save</c>
+
+00:00:24.870 --> 00:00:24.880 align:start position:0%
+selected and set it up to save
+ 
+
+00:00:24.880 --> 00:00:27.470 align:start position:0%
+selected and set it up to save
+checkpoints<00:00:25.480><c> along</c><00:00:25.800><c> the</c><00:00:25.920><c> way</c><00:00:26.200><c> every</c><00:00:26.560><c> 250</c>
+
+00:00:27.470 --> 00:00:27.480 align:start position:0%
+checkpoints along the way every 250
+ 
+
+00:00:27.480 --> 00:00:29.270 align:start position:0%
+checkpoints along the way every 250
+steps.<00:00:28.000><c> And</c><00:00:28.160><c> here</c><00:00:28.320><c> comes</c><00:00:28.600><c> the</c><00:00:28.720><c> part</c><00:00:29.080><c> where</c><00:00:29.200><c> a</c>
+
+00:00:29.270 --> 00:00:29.280 align:start position:0%
+steps. And here comes the part where a
+ 
+
+00:00:29.280 --> 00:00:31.390 align:start position:0%
+steps. And here comes the part where a
+lot<00:00:29.520><c> people</c><00:00:30.040><c> mess</c><00:00:30.240><c> up.</c><00:00:30.600><c> You</c><00:00:30.680><c> have</c><00:00:30.880><c> to</c><00:00:31.040><c> set</c><00:00:31.280><c> the</c>
+
+00:00:31.390 --> 00:00:31.400 align:start position:0%
+lot people mess up. You have to set the
+ 
+
+00:00:31.400 --> 00:00:34.510 align:start position:0%
+lot people mess up. You have to set the
+max<00:00:31.680><c> savers</c><00:00:32.200><c> to</c><00:00:32.360><c> something</c><00:00:32.800><c> higher</c><00:00:33.160><c> like</c><00:00:33.480><c> 100.</c>
+
+00:00:34.510 --> 00:00:34.520 align:start position:0%
+max savers to something higher like 100.
+ 
+
+00:00:34.520 --> 00:00:36.710 align:start position:0%
+max savers to something higher like 100.
+Otherwise,<00:00:35.120><c> the</c><00:00:35.240><c> toolkit</c><00:00:35.720><c> deletes</c><00:00:36.240><c> your</c><00:00:36.480><c> old</c>
+
+00:00:36.710 --> 00:00:36.720 align:start position:0%
+Otherwise, the toolkit deletes your old
+ 
+
+00:00:36.720 --> 00:00:39.150 align:start position:0%
+Otherwise, the toolkit deletes your old
+checkpoints<00:00:37.640><c> while</c><00:00:37.960><c> it</c><00:00:38.080><c> trains.</c><00:00:38.680><c> And</c><00:00:38.840><c> at</c><00:00:39.000><c> the</c>
+
+00:00:39.150 --> 00:00:39.160 align:start position:0%
+checkpoints while it trains. And at the
+ 
+
+00:00:39.160 --> 00:00:41.550 align:start position:0%
+checkpoints while it trains. And at the
+end,<00:00:39.400><c> you</c><00:00:39.480><c> want</c><00:00:39.760><c> all</c><00:00:40.000><c> 12</c><00:00:40.520><c> of</c><00:00:40.720><c> them,</c><00:00:41.040><c> so</c><00:00:41.200><c> we</c><00:00:41.360><c> can</c>
+
+00:00:41.550 --> 00:00:41.560 align:start position:0%
+end, you want all 12 of them, so we can
+ 
+
+00:00:41.560 --> 00:00:43.710 align:start position:0%
+end, you want all 12 of them, so we can
+pick<00:00:41.800><c> the</c><00:00:41.920><c> best</c><00:00:42.280><c> one</c><00:00:42.800><c> instead</c><00:00:43.240><c> of</c><00:00:43.400><c> just</c>
+
+00:00:43.710 --> 00:00:43.720 align:start position:0%
+pick the best one instead of just
+ 
+
+00:00:43.720 --> 00:00:46.880 align:start position:0%
+pick the best one instead of just
+trusting<00:00:44.160><c> the</c><00:00:44.280><c> last.</c>
+

@@ -1,0 +1,96 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.230 align:start position:0%
+ 
+Visual<00:00:00.400><c> Ostrich</c><00:00:00.960><c> AI</c><00:00:01.240><c> Toolkit</c><00:00:01.720><c> template.</c>
+
+00:00:02.230 --> 00:00:02.240 align:start position:0%
+Visual Ostrich AI Toolkit template.
+ 
+
+00:00:02.240 --> 00:00:04.230 align:start position:0%
+Visual Ostrich AI Toolkit template.
+That's<00:00:02.520><c> the</c><00:00:02.640><c> tool</c><00:00:02.960><c> to</c><00:00:03.120><c> train</c><00:00:03.440><c> our</c><00:00:03.640><c> Laura</c><00:00:04.000><c> for</c>
+
+00:00:04.230 --> 00:00:04.240 align:start position:0%
+That's the tool to train our Laura for
+ 
+
+00:00:04.240 --> 00:00:06.270 align:start position:0%
+That's the tool to train our Laura for
+us.<00:00:04.600><c> And</c><00:00:04.720><c> here</c><00:00:04.880><c> it</c><00:00:05.000><c> is</c><00:00:05.240><c> very</c><00:00:05.520><c> important.</c><00:00:06.120><c> In</c>
+
+00:00:06.270 --> 00:00:06.280 align:start position:0%
+us. And here it is very important. In
+ 
+
+00:00:06.280 --> 00:00:08.070 align:start position:0%
+us. And here it is very important. In
+the<00:00:06.400><c> storage</c><00:00:06.760><c> settings,</c><00:00:07.280><c> we</c><00:00:07.400><c> take</c><00:00:07.640><c> the</c><00:00:07.760><c> volume</c>
+
+00:00:08.070 --> 00:00:08.080 align:start position:0%
+the storage settings, we take the volume
+ 
+
+00:00:08.080 --> 00:00:10.390 align:start position:0%
+the storage settings, we take the volume
+disk<00:00:08.440><c> and</c><00:00:08.560><c> not</c><00:00:08.840><c> a</c><00:00:08.920><c> network</c><00:00:09.320><c> volume.</c><00:00:10.120><c> We</c><00:00:10.240><c> give</c>
+
+00:00:10.390 --> 00:00:10.400 align:start position:0%
+disk and not a network volume. We give
+ 
+
+00:00:10.400 --> 00:00:13.110 align:start position:0%
+disk and not a network volume. We give
+it<00:00:10.560><c> 150</c><00:00:11.360><c> gigs,</c><00:00:11.680><c> so</c><00:00:11.840><c> we</c><00:00:11.960><c> have</c><00:00:12.200><c> room</c><00:00:12.440><c> for</c><00:00:12.680><c> all</c><00:00:12.920><c> our</c>
+
+00:00:13.110 --> 00:00:13.120 align:start position:0%
+it 150 gigs, so we have room for all our
+ 
+
+00:00:13.120 --> 00:00:15.150 align:start position:0%
+it 150 gigs, so we have room for all our
+checkpoints.<00:00:14.040><c> And</c><00:00:14.200><c> then</c><00:00:14.400><c> we</c><00:00:14.520><c> click</c><00:00:14.760><c> deploy</c><00:00:15.080><c> on</c>
+
+00:00:15.150 --> 00:00:15.160 align:start position:0%
+checkpoints. And then we click deploy on
+ 
+
+00:00:15.160 --> 00:00:17.390 align:start position:0%
+checkpoints. And then we click deploy on
+demand<00:00:15.640><c> at</c><00:00:15.760><c> the</c><00:00:15.880><c> bottom.</c><00:00:16.320><c> Just</c><00:00:16.640><c> give</c><00:00:16.880><c> it</c><00:00:17.040><c> a</c><00:00:17.120><c> few</c>
+
+00:00:17.390 --> 00:00:17.400 align:start position:0%
+demand at the bottom. Just give it a few
+ 
+
+00:00:17.400 --> 00:00:19.470 align:start position:0%
+demand at the bottom. Just give it a few
+minutes<00:00:17.800><c> to</c><00:00:17.920><c> boot.</c><00:00:18.560><c> Then</c><00:00:18.800><c> in</c><00:00:18.920><c> the</c><00:00:19.040><c> connect</c>
+
+00:00:19.470 --> 00:00:19.480 align:start position:0%
+minutes to boot. Then in the connect
+ 
+
+00:00:19.480 --> 00:00:22.670 align:start position:0%
+minutes to boot. Then in the connect
+tab,<00:00:19.760><c> we</c><00:00:19.920><c> open</c><00:00:20.240><c> the</c><00:00:20.400><c> HTTP</c><00:00:21.320><c> service</c><00:00:21.840><c> link.</c><00:00:22.520><c> And</c>
+
+00:00:22.670 --> 00:00:22.680 align:start position:0%
+tab, we open the HTTP service link. And
+ 
+
+00:00:22.680 --> 00:00:24.470 align:start position:0%
+tab, we open the HTTP service link. And
+that<00:00:22.840><c> drops</c><00:00:23.160><c> us</c><00:00:23.360><c> straight</c><00:00:23.720><c> inside</c><00:00:24.120><c> the</c><00:00:24.280><c> AI</c>
+
+00:00:24.470 --> 00:00:24.480 align:start position:0%
+that drops us straight inside the AI
+ 
+
+00:00:24.480 --> 00:00:27.200 align:start position:0%
+that drops us straight inside the AI
+Toolkit.
+

@@ -1,0 +1,232 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Brief to draft post",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "happy",
+        "label": "Happy path",
+        "focus": [
+          "brief",
+          "plan",
+          "claims",
+          "generate",
+          "composite",
+          "approve",
+          "draft"
+        ],
+        "note": "Every post passes a claim check, deterministic compositing and your approval."
+      },
+      {
+        "id": "stops",
+        "label": "Where it stops",
+        "focus": [
+          "claims",
+          "blocked",
+          "generate",
+          "unverified"
+        ],
+        "note": "A risky claim or an unverified backend stops the run instead of guessing."
+      }
+    ]
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "Compute"
+    },
+    {
+      "id": "channels",
+      "label": "Channels"
+    },
+    {
+      "id": "stops",
+      "label": "Stops",
+      "variant": "exception"
+    }
+  ],
+  "phases": [
+    {
+      "id": "decide",
+      "label": "Decide",
+      "fromCol": 0,
+      "toCol": 2
+    },
+    {
+      "id": "make",
+      "label": "Make",
+      "fromCol": 3,
+      "toCol": 4,
+      "variant": "emphasis"
+    },
+    {
+      "id": "ship",
+      "label": "Ship",
+      "fromCol": 5,
+      "toCol": 5,
+      "variant": "dashed"
+    }
+  ],
+  "mainPath": [
+    "brief",
+    "plan",
+    "claims",
+    "generate",
+    "composite",
+    "approve",
+    "draft"
+  ],
+  "nodes": [
+    {
+      "id": "brief",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Brief",
+      "sublabel": "voice or text"
+    },
+    {
+      "id": "plan",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Plan",
+      "sublabel": "style grammar"
+    },
+    {
+      "id": "claims",
+      "lane": "studio",
+      "col": 2,
+      "type": "security",
+      "label": "Claim check",
+      "sublabel": "money claims",
+      "tag": "blocking"
+    },
+    {
+      "id": "generate",
+      "lane": "gpu",
+      "col": 3,
+      "type": "cloud",
+      "label": "Generate",
+      "sublabel": "OpenRouter, ComfyUI"
+    },
+    {
+      "id": "composite",
+      "lane": "studio",
+      "col": 4,
+      "type": "backend",
+      "label": "Composite",
+      "sublabel": "logo + copy"
+    },
+    {
+      "id": "approve",
+      "lane": "you",
+      "col": 5,
+      "type": "security",
+      "label": "Approve",
+      "sublabel": "human gate"
+    },
+    {
+      "id": "draft",
+      "lane": "channels",
+      "col": 5,
+      "type": "external",
+      "label": "Draft post",
+      "sublabel": "Postiz, OpenWA"
+    },
+    {
+      "id": "blocked",
+      "lane": "stops",
+      "col": 2,
+      "type": "security",
+      "label": "Blocked",
+      "sublabel": "risky claim"
+    },
+    {
+      "id": "unverified",
+      "lane": "stops",
+      "col": 3,
+      "type": "security",
+      "label": "Unverified",
+      "sublabel": "backend unknown"
+    }
+  ],
+  "edges": [
+    {
+      "from": "brief",
+      "to": "plan",
+      "label": "brief",
+      "variant": "emphasis"
+    },
+    {
+      "from": "plan",
+      "to": "claims"
+    },
+    {
+      "from": "claims",
+      "to": "generate",
+      "label": "safe",
+      "variant": "emphasis"
+    },
+    {
+      "from": "generate",
+      "to": "composite",
+      "label": "base image"
+    },
+    {
+      "from": "composite",
+      "to": "approve",
+      "label": "masters",
+      "variant": "emphasis"
+    },
+    {
+      "from": "approve",
+      "to": "draft",
+      "label": "approved",
+      "variant": "security"
+    },
+    {
+      "from": "claims",
+      "to": "blocked",
+      "label": "risky",
+      "variant": "security",
+      "role": "error"
+    },
+    {
+      "from": "generate",
+      "to": "unverified",
+      "label": "unknown",
+      "variant": "security",
+      "role": "error"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Always",
+      "items": [
+        "Dry-run until you approve",
+        "Logo composited, never generated"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Never",
+      "items": [
+        "Queued reported as done",
+        "Unknown backend treated as OK"
+      ]
+    }
+  ]
+}

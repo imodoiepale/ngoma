@@ -1,0 +1,136 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.590 align:start position:0%
+ 
+And<00:00:00.160><c> restart</c><00:00:00.560><c> the</c><00:00:00.640><c> Claude</c><00:00:00.960><c> app</c><00:00:01.160><c> and</c><00:00:01.280><c> Claude</c>
+
+00:00:01.590 --> 00:00:01.600 align:start position:0%
+And restart the Claude app and Claude
+ 
+
+00:00:01.600 --> 00:00:03.630 align:start position:0%
+And restart the Claude app and Claude
+knows<00:00:01.920><c> that</c><00:00:02.120><c> both</c><00:00:02.360><c> skills</c><00:00:02.680><c> exist.</c><00:00:03.200><c> Next,</c><00:00:03.560><c> we</c>
+
+00:00:03.630 --> 00:00:03.640 align:start position:0%
+knows that both skills exist. Next, we
+ 
+
+00:00:03.640 --> 00:00:05.750 align:start position:0%
+knows that both skills exist. Next, we
+need<00:00:03.800><c> the</c><00:00:03.920><c> API</c><00:00:04.360><c> key.</c><00:00:04.760><c> The</c><00:00:04.800><c> images</c><00:00:05.320><c> are</c><00:00:05.440><c> made</c><00:00:05.640><c> by</c>
+
+00:00:05.750 --> 00:00:05.760 align:start position:0%
+need the API key. The images are made by
+ 
+
+00:00:05.760 --> 00:00:07.310 align:start position:0%
+need the API key. The images are made by
+an<00:00:05.880><c> image</c><00:00:06.160><c> model</c><00:00:06.560><c> and</c><00:00:06.720><c> that</c><00:00:06.920><c> runs</c><00:00:07.120><c> through</c>
+
+00:00:07.310 --> 00:00:07.320 align:start position:0%
+an image model and that runs through
+ 
+
+00:00:07.320 --> 00:00:08.790 align:start position:0%
+an image model and that runs through
+Waifu<00:00:07.600><c> Speed.</c><00:00:07.920><c> This</c><00:00:08.160><c> gives</c><00:00:08.400><c> Claude</c><00:00:08.720><c> the</c>
+
+00:00:08.790 --> 00:00:08.800 align:start position:0%
+Waifu Speed. This gives Claude the
+ 
+
+00:00:08.800 --> 00:00:11.030 align:start position:0%
+Waifu Speed. This gives Claude the
+ability<00:00:09.400><c> to</c><00:00:09.520><c> generate</c><00:00:09.960><c> images.</c><00:00:10.560><c> Go</c><00:00:10.800><c> to</c><00:00:10.920><c> the</c>
+
+00:00:11.030 --> 00:00:11.040 align:start position:0%
+ability to generate images. Go to the
+ 
+
+00:00:11.040 --> 00:00:12.950 align:start position:0%
+ability to generate images. Go to the
+official<00:00:11.560><c> Waifu</c><00:00:11.920><c> Speed</c><00:00:12.080><c> site</c><00:00:12.480><c> and</c><00:00:12.640><c> create</c><00:00:12.880><c> a</c>
+
+00:00:12.950 --> 00:00:12.960 align:start position:0%
+official Waifu Speed site and create a
+ 
+
+00:00:12.960 --> 00:00:15.070 align:start position:0%
+official Waifu Speed site and create a
+free<00:00:13.200><c> account.</c><00:00:13.680><c> Go</c><00:00:13.840><c> to</c><00:00:14.040><c> API</c><00:00:14.400><c> keys,</c><00:00:14.760><c> create</c>
+
+00:00:15.070 --> 00:00:15.080 align:start position:0%
+free account. Go to API keys, create
+ 
+
+00:00:15.080 --> 00:00:16.870 align:start position:0%
+free account. Go to API keys, create
+one,<00:00:15.360><c> and</c><00:00:15.520><c> copy</c><00:00:15.840><c> it.</c><00:00:16.080><c> The</c><00:00:16.160><c> link</c><00:00:16.360><c> for</c><00:00:16.520><c> this</c><00:00:16.720><c> is</c>
+
+00:00:16.870 --> 00:00:16.880 align:start position:0%
+one, and copy it. The link for this is
+ 
+
+00:00:16.880 --> 00:00:18.710 align:start position:0%
+one, and copy it. The link for this is
+also<00:00:17.160><c> in</c><00:00:17.240><c> the</c><00:00:17.280><c> description.</c><00:00:17.920><c> In</c><00:00:18.200><c> each</c><00:00:18.400><c> skill</c>
+
+00:00:18.710 --> 00:00:18.720 align:start position:0%
+also in the description. In each skill
+ 
+
+00:00:18.720 --> 00:00:20.990 align:start position:0%
+also in the description. In each skill
+folder,<00:00:19.040><c> there's</c><00:00:19.320><c> a</c><00:00:19.400><c> file</c><00:00:19.680><c> called</c><00:00:20.040><c> .env.</c><00:00:20.880><c> It</c>
+
+00:00:20.990 --> 00:00:21.000 align:start position:0%
+folder, there's a file called .env. It
+ 
+
+00:00:21.000 --> 00:00:22.830 align:start position:0%
+folder, there's a file called .env. It
+basically<00:00:21.480><c> means</c><00:00:21.760><c> environment,</c><00:00:22.400><c> and</c><00:00:22.600><c> all</c>
+
+00:00:22.830 --> 00:00:22.840 align:start position:0%
+basically means environment, and all
+ 
+
+00:00:22.840 --> 00:00:24.990 align:start position:0%
+basically means environment, and all
+safe<00:00:23.160><c> stuff</c><00:00:23.520><c> is</c><00:00:23.640><c> stored</c><00:00:24.000><c> there.</c><00:00:24.400><c> Open</c><00:00:24.760><c> it,</c>
+
+00:00:24.990 --> 00:00:25.000 align:start position:0%
+safe stuff is stored there. Open it,
+ 
+
+00:00:25.000 --> 00:00:27.110 align:start position:0%
+safe stuff is stored there. Open it,
+paste<00:00:25.280><c> your</c><00:00:25.400><c> secret</c><00:00:25.880><c> API</c><00:00:26.280><c> key,</c><00:00:26.640><c> and</c><00:00:26.840><c> click</c>
+
+00:00:27.110 --> 00:00:27.120 align:start position:0%
+paste your secret API key, and click
+ 
+
+00:00:27.120 --> 00:00:29.750 align:start position:0%
+paste your secret API key, and click
+save<00:00:27.360><c> or</c><00:00:27.520><c> command</c><00:00:28.000><c> S</c><00:00:28.240><c> to</c><00:00:28.400><c> save.</c><00:00:28.760><c> The</c><00:00:28.920><c> API</c><00:00:29.360><c> key</c>
+
+00:00:29.750 --> 00:00:29.760 align:start position:0%
+save or command S to save. The API key
+ 
+
+00:00:29.760 --> 00:00:31.510 align:start position:0%
+save or command S to save. The API key
+lives<00:00:30.080><c> in</c><00:00:30.200><c> this</c><00:00:30.360><c> file.</c><00:00:30.680><c> You</c><00:00:30.800><c> never</c><00:00:31.080><c> paste</c><00:00:31.400><c> it</c>
+
+00:00:31.510 --> 00:00:31.520 align:start position:0%
+lives in this file. You never paste it
+ 
+
+00:00:31.520 --> 00:00:36.360 align:start position:0%
+lives in this file. You never paste it
+into<00:00:31.880><c> any</c><00:00:32.160><c> AI</c><00:00:32.520><c> or</c><00:00:32.680><c> public</c><00:00:33.080><c> chat</c><00:00:33.440><c> to</c><00:00:33.640><c> stay</c><00:00:33.880><c> safe.</c>
+

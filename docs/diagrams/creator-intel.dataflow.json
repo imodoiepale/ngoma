@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "Creator intelligence to revenue",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "learn",
+        "label": "Learn from creators",
+        "focus": [
+          "youtube",
+          "subs",
+          "facts",
+          "capabilities"
+        ],
+        "note": "Transcripts become timestamped facts, then a map of what we can do."
+      },
+      {
+        "id": "acquire",
+        "label": "Free vs paid",
+        "focus": [
+          "youtube",
+          "links",
+          "workflows",
+          "paid",
+          "products"
+        ],
+        "note": "Free workflow files are fetched; paid packs are listed for you to buy, never scraped."
+      },
+      {
+        "id": "earn",
+        "label": "Turn it into money",
+        "focus": [
+          "capabilities",
+          "ideas",
+          "offers",
+          "mrr"
+        ],
+        "note": "Capabilities unlock ideas; each idea is priced from real GPU and API costs."
+      }
+    ],
+    "viewBox": [
+      1080,
+      560
+    ]
+  },
+  "stages": [
+    {
+      "label": "Sources"
+    },
+    {
+      "label": "Harvest"
+    },
+    {
+      "label": "Extract"
+    },
+    {
+      "label": "Decide"
+    },
+    {
+      "label": "Earn"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "youtube",
+      "type": "external",
+      "label": "Creator channels",
+      "sublabel": "4 YouTube channels",
+      "stage": 0,
+      "row": 0,
+      "tag": "public",
+      "width": 104
+    },
+    {
+      "id": "paid",
+      "type": "external",
+      "label": "Paid communities",
+      "sublabel": "Skool, Patreon",
+      "stage": 0,
+      "row": 2,
+      "tag": "you buy",
+      "width": 104
+    },
+    {
+      "id": "subs",
+      "type": "backend",
+      "label": "yt_learn",
+      "sublabel": "subtitles + metadata",
+      "stage": 1,
+      "row": 0,
+      "width": 104
+    },
+    {
+      "id": "links",
+      "type": "backend",
+      "label": "Link miner",
+      "sublabel": "descriptions",
+      "stage": 1,
+      "row": 1,
+      "width": 104
+    },
+    {
+      "id": "facts",
+      "type": "database",
+      "label": "Facts + steps",
+      "sublabel": "timestamped",
+      "stage": 2,
+      "row": 0,
+      "width": 104
+    },
+    {
+      "id": "workflows",
+      "type": "database",
+      "label": "Free workflows",
+      "sublabel": "manifest + hashes",
+      "stage": 2,
+      "row": 1,
+      "width": 104
+    },
+    {
+      "id": "products",
+      "type": "database",
+      "label": "Products",
+      "sublabel": "tiers and prices",
+      "stage": 2,
+      "row": 2,
+      "width": 104
+    },
+    {
+      "id": "capabilities",
+      "type": "backend",
+      "label": "Capability matrix",
+      "sublabel": "technique x backend",
+      "stage": 3,
+      "row": 1,
+      "tag": "graph",
+      "width": 104
+    },
+    {
+      "id": "ideas",
+      "type": "backend",
+      "label": "50 ideas",
+      "sublabel": "ideas.yaml",
+      "stage": 4,
+      "row": 0,
+      "width": 104
+    },
+    {
+      "id": "offers",
+      "type": "backend",
+      "label": "Offers",
+      "sublabel": "packages + prices",
+      "stage": 4,
+      "row": 1,
+      "width": 104
+    },
+    {
+      "id": "mrr",
+      "type": "database",
+      "label": "MRR + budget",
+      "sublabel": "unit economics",
+      "stage": 4,
+      "row": 2,
+      "tag": "estimates",
+      "width": 104
+    }
+  ],
+  "flows": [
+    {
+      "id": "subtitles",
+      "from": "youtube",
+      "to": "subs",
+      "label": "subtitles",
+      "variant": "emphasis",
+      "route": "straight"
+    },
+    {
+      "id": "descriptions",
+      "from": "youtube",
+      "to": "links",
+      "label": "descriptions"
+    },
+    {
+      "id": "mined",
+      "from": "subs",
+      "to": "facts",
+      "label": "mined facts",
+      "variant": "emphasis"
+    },
+    {
+      "id": "free-json",
+      "from": "links",
+      "to": "workflows",
+      "label": "free JSON"
+    },
+    {
+      "id": "prices",
+      "from": "paid",
+      "to": "products",
+      "label": "public prices",
+      "variant": "dashed"
+    },
+    {
+      "id": "techniques",
+      "from": "facts",
+      "to": "capabilities",
+      "label": "techniques",
+      "variant": "emphasis"
+    },
+    {
+      "id": "deps",
+      "from": "workflows",
+      "to": "capabilities",
+      "label": "deps",
+      "route": "straight",
+      "labelAt": [
+        611,
+        271
+      ]
+    },
+    {
+      "id": "unlocks",
+      "from": "capabilities",
+      "to": "offers",
+      "label": "unlocks",
+      "variant": "emphasis"
+    },
+    {
+      "id": "packaged",
+      "from": "ideas",
+      "to": "offers",
+      "label": "packaged",
+      "labelDy": 24
+    },
+    {
+      "id": "priced",
+      "from": "offers",
+      "to": "mrr",
+      "label": "priced",
+      "labelDy": 24
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Evidence first",
+      "items": [
+        "Every fact cites a video and timestamp",
+        "Workflows are stored with hash and source"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Boundaries",
+      "items": [
+        "Paid packs are bought, never scraped",
+        "Take the grammar, never the images"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Money",
+      "items": [
+        "MRR figures are modelled estimates",
+        "GPU and API costs come from real prices"
+      ]
+    }
+  ]
+}

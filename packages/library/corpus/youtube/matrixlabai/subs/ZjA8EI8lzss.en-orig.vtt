@@ -1,0 +1,128 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.910 align:start position:0%
+ 
+Workflow<00:00:00.520><c> is</c><00:00:00.640><c> simple.</c><00:00:01.040><c> We</c><00:00:01.160><c> don't</c><00:00:01.440><c> start</c><00:00:01.760><c> with</c>
+
+00:00:01.910 --> 00:00:01.920 align:start position:0%
+Workflow is simple. We don't start with
+ 
+
+00:00:01.920 --> 00:00:03.750 align:start position:0%
+Workflow is simple. We don't start with
+training,<00:00:02.400><c> we</c><00:00:02.520><c> start</c><00:00:02.840><c> with</c><00:00:03.040><c> the</c><00:00:03.160><c> data</c><00:00:03.520><c> set.</c>
+
+00:00:03.750 --> 00:00:03.760 align:start position:0%
+training, we start with the data set.
+ 
+
+00:00:03.760 --> 00:00:05.710 align:start position:0%
+training, we start with the data set.
+Most<00:00:04.080><c> people</c><00:00:04.400><c> want</c><00:00:04.640><c> to</c><00:00:04.720><c> jump</c><00:00:05.000><c> straight</c><00:00:05.440><c> into</c>
+
+00:00:05.710 --> 00:00:05.720 align:start position:0%
+Most people want to jump straight into
+ 
+
+00:00:05.720 --> 00:00:08.430 align:start position:0%
+Most people want to jump straight into
+training,<00:00:06.440><c> but</c><00:00:06.640><c> a</c><00:00:06.720><c> LoRA</c><00:00:07.160><c> is</c><00:00:07.440><c> only</c><00:00:07.800><c> as</c><00:00:08.000><c> good</c><00:00:08.280><c> as</c>
+
+00:00:08.430 --> 00:00:08.440 align:start position:0%
+training, but a LoRA is only as good as
+ 
+
+00:00:08.440 --> 00:00:10.430 align:start position:0%
+training, but a LoRA is only as good as
+the<00:00:08.560><c> data</c><00:00:08.880><c> set</c><00:00:09.200><c> under</c><00:00:09.480><c> it.</c><00:00:09.600><c> For</c><00:00:09.800><c> Ashley,</c><00:00:10.240><c> I'm</c>
+
+00:00:10.430 --> 00:00:10.440 align:start position:0%
+the data set under it. For Ashley, I'm
+ 
+
+00:00:10.440 --> 00:00:12.910 align:start position:0%
+the data set under it. For Ashley, I'm
+using<00:00:10.720><c> 34</c><00:00:11.320><c> images</c><00:00:11.760><c> of</c><00:00:11.920><c> the</c><00:00:12.040><c> same</c><00:00:12.400><c> character</c>
+
+00:00:12.910 --> 00:00:12.920 align:start position:0%
+using 34 images of the same character
+ 
+
+00:00:12.920 --> 00:00:14.790 align:start position:0%
+using 34 images of the same character
+from<00:00:13.120><c> different</c><00:00:13.480><c> angles</c><00:00:13.880><c> and</c><00:00:14.040><c> poses,</c><00:00:14.520><c> so</c><00:00:14.680><c> the</c>
+
+00:00:14.790 --> 00:00:14.800 align:start position:0%
+from different angles and poses, so the
+ 
+
+00:00:14.800 --> 00:00:17.070 align:start position:0%
+from different angles and poses, so the
+model<00:00:15.280><c> only</c><00:00:15.600><c> learns</c><00:00:16.040><c> one</c><00:00:16.280><c> identity</c><00:00:16.920><c> and</c>
+
+00:00:17.070 --> 00:00:17.080 align:start position:0%
+model only learns one identity and
+ 
+
+00:00:17.080 --> 00:00:18.950 align:start position:0%
+model only learns one identity and
+nothing<00:00:17.520><c> else.</c><00:00:17.920><c> And</c><00:00:18.040><c> here's</c><00:00:18.320><c> the</c><00:00:18.440><c> part</c><00:00:18.800><c> where</c>
+
+00:00:18.950 --> 00:00:18.960 align:start position:0%
+nothing else. And here's the part where
+ 
+
+00:00:18.960 --> 00:00:21.230 align:start position:0%
+nothing else. And here's the part where
+most<00:00:19.280><c> people</c><00:00:19.600><c> go</c><00:00:19.800><c> wrong.</c><00:00:20.120><c> They</c><00:00:20.320><c> just</c><00:00:20.680><c> train</c><00:00:21.040><c> on</c>
+
+00:00:21.230 --> 00:00:21.240 align:start position:0%
+most people go wrong. They just train on
+ 
+
+00:00:21.240 --> 00:00:23.550 align:start position:0%
+most people go wrong. They just train on
+a<00:00:21.320><c> raw</c><00:00:21.600><c> data</c><00:00:21.920><c> set.</c><00:00:22.320><c> I</c><00:00:22.480><c> mix</c><00:00:22.760><c> it</c><00:00:22.920><c> up.</c><00:00:23.120><c> Some</c><00:00:23.440><c> are</c>
+
+00:00:23.550 --> 00:00:23.560 align:start position:0%
+a raw data set. I mix it up. Some are
+ 
+
+00:00:23.560 --> 00:00:25.430 align:start position:0%
+a raw data set. I mix it up. Some are
+clean<00:00:23.880><c> for</c><00:00:24.040><c> the</c><00:00:24.120><c> sharp</c><00:00:24.440><c> detail</c><00:00:24.880><c> and</c><00:00:25.080><c> some</c><00:00:25.320><c> are</c>
+
+00:00:25.430 --> 00:00:25.440 align:start position:0%
+clean for the sharp detail and some are
+ 
+
+00:00:25.440 --> 00:00:27.030 align:start position:0%
+clean for the sharp detail and some are
+blurry<00:00:25.760><c> phone-style</c><00:00:26.360><c> shots</c><00:00:26.760><c> for</c><00:00:26.920><c> the</c>
+
+00:00:27.030 --> 00:00:27.040 align:start position:0%
+blurry phone-style shots for the
+ 
+
+00:00:27.040 --> 00:00:29.310 align:start position:0%
+blurry phone-style shots for the
+hyperrealistic<00:00:28.000><c> look.</c><00:00:28.480><c> The</c><00:00:28.560><c> more</c><00:00:28.800><c> types</c><00:00:29.160><c> of</c>
+
+00:00:29.310 --> 00:00:29.320 align:start position:0%
+hyperrealistic look. The more types of
+ 
+
+00:00:29.320 --> 00:00:31.830 align:start position:0%
+hyperrealistic look. The more types of
+images<00:00:29.880><c> you</c><00:00:30.040><c> feed</c><00:00:30.360><c> in,</c><00:00:30.640><c> the</c><00:00:30.760><c> more</c><00:00:31.000><c> flexibility</c>
+
+00:00:31.830 --> 00:00:31.840 align:start position:0%
+images you feed in, the more flexibility
+ 
+
+00:00:31.840 --> 00:00:34.759 align:start position:0%
+images you feed in, the more flexibility
+the<00:00:31.960><c> LoRA</c><00:00:32.240><c> gets.</c>
+
