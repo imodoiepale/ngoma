@@ -1,0 +1,3 @@
+# Workflow JSON is hashed byte-for-byte in workflows/manifest.json. With core.autocrlf the
+# working copy gets CRLF on checkout, the hash changes, and every workflow reads as tampered.
+workflows/** -text
