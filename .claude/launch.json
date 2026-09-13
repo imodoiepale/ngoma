@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "studio-ui",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "-w", "client", "--prefix", "packages/studio-ui", "--", "--port", "3210"],
+      "port": 3210
+    }
+  ]
+}

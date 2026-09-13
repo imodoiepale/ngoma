@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "id": "u01-ugc-ad-pack",
+  "title": "UGC ad pack",
+  "client": "_templates",
+  "source": {
+    "idea": "U01",
+    "offer": "20 UGC-style ads a month across the 10 formats"
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "refmod-create",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "preset": "identity"
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "character-video",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "voiceover",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "language": "en"
+        }
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "captions",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n7",
+      "kind": "export",
+      "position": {
+        "x": 1360,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "character",
+      "target": "n3",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e3",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e4",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n5",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e5",
+      "source": "n3",
+      "sourceHandle": "video",
+      "target": "n6",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e6",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n6",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e7",
+      "source": "n6",
+      "sourceHandle": "video",
+      "target": "n7",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [],
+  "family": "ugc",
+  "compliance": "AI disclosure; no fake testimonials"
+}

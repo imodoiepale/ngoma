@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "id": "m05-artist-digital-double",
+  "title": "Artist digital double",
+  "client": "_templates",
+  "source": {
+    "idea": "M05",
+    "offer": "Consented RefMod of the artist for monthly promo clips"
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "refmod-create",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "preset": "identity"
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "character-video",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "song",
+      "position": {
+        "x": 80,
+        "y": 500
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "lipsync",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n7",
+      "kind": "export",
+      "position": {
+        "x": 720,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "character",
+      "target": "n3",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e3",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e4",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n5",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e5",
+      "source": "n6",
+      "sourceHandle": "audio",
+      "target": "n5",
+      "targetHandle": "audio",
+      "type": "audio"
+    },
+    {
+      "id": "e6",
+      "source": "n5",
+      "sourceHandle": "video",
+      "target": "n7",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [],
+  "family": "music",
+  "compliance": "Signed release, revocable; watermark disclosure"
+}

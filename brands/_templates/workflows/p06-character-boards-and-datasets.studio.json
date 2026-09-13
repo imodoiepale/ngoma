@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "id": "p06-character-boards-and-datasets",
+  "title": "Character boards and datasets",
+  "client": "_templates",
+  "source": {
+    "idea": "P06",
+    "offer": "Consistent character board plus 40-image training dataset"
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "dataset",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "export",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "images",
+      "target": "n3",
+      "targetHandle": "media",
+      "type": "image"
+    }
+  ],
+  "gaps": [],
+  "family": "persona",
+  "compliance": "Fictional characters or signed release"
+}

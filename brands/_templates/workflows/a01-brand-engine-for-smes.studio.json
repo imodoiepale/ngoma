@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "id": "a01-brand-engine-for-smes",
+  "title": "Brand engine for SMEs",
+  "client": "_templates",
+  "source": {
+    "idea": "A01",
+    "offer": "Self-serve: upload logo, get a month of branded posts"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n1",
+      "kind": "brand-kit",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n2",
+      "kind": "compositor",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "ratio": "4:5"
+        }
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 500
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "image-hosted",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "profile": "daily_premium",
+          "ratio": "4:5"
+        }
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "export",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n3",
+      "sourceHandle": "images",
+      "target": "n2",
+      "targetHandle": "media",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "brand",
+      "target": "n2",
+      "targetHandle": "brand",
+      "type": "brand"
+    },
+    {
+      "id": "e3",
+      "source": "n5",
+      "sourceHandle": "text",
+      "target": "n4",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e4",
+      "source": "n2",
+      "sourceHandle": "image",
+      "target": "n4",
+      "targetHandle": "reference",
+      "type": "image"
+    },
+    {
+      "id": "e5",
+      "source": "n4",
+      "sourceHandle": "image",
+      "target": "n6",
+      "targetHandle": "media",
+      "type": "image"
+    }
+  ],
+  "gaps": [],
+  "family": "saas",
+  "compliance": "Claim-safety on generated copy"
+}

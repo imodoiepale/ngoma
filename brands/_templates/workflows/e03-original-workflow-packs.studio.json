@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "id": "e03-original-workflow-packs",
+  "title": "Original workflow packs",
+  "client": "_templates",
+  "source": {
+    "idea": "E03",
+    "offer": "Our own tested workflows with setup guides"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n1",
+      "kind": "unmapped",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "step": "register-workflow",
+        "params": {}
+      }
+    }
+  ],
+  "edges": [],
+  "gaps": [
+    {
+      "node": "n1",
+      "step": "register-workflow",
+      "reason": "no catalogue node runs 'register-workflow' yet"
+    }
+  ],
+  "family": "education",
+  "compliance": "Never bundle bought packs (Icekiub etc.)"
+}

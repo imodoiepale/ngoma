@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "id": "sheng-ad-to-whatsapp-status",
+  "title": "Sheng ad to WhatsApp Status",
+  "client": "ongea-pesa",
+  "source": {
+    "combined": [
+      "Sheng and Swahili fintech ads",
+      "WhatsApp Status daily"
+    ]
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "an2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {},
+        "part": "Sheng and Swahili fintech ads"
+      }
+    },
+    {
+      "id": "an1",
+      "kind": "refmod-create",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "preset": "identity"
+        },
+        "part": "Sheng and Swahili fintech ads"
+      }
+    },
+    {
+      "id": "an4",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {},
+        "part": "Sheng and Swahili fintech ads"
+      }
+    },
+    {
+      "id": "an3",
+      "kind": "voiceover",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "language": "en"
+        },
+        "part": "Sheng and Swahili fintech ads"
+      }
+    },
+    {
+      "id": "an6",
+      "kind": "brand-kit",
+      "position": {
+        "x": 80,
+        "y": 500
+      },
+      "data": {
+        "params": {},
+        "part": "Sheng and Swahili fintech ads"
+      }
+    },
+    {
+      "id": "an5",
+      "kind": "compositor",
+      "position": {
+        "x": 400,
+        "y": 500
+      },
+      "data": {
+        "params": {
+          "ratio": "4:5"
+        },
+        "part": "Sheng and Swahili fintech ads"
+      }
+    },
+    {
+      "id": "an7",
+      "kind": "claim-check",
+      "position": {
+        "x": 400,
+        "y": 710
+      },
+      "data": {
+        "params": {},
+        "part": "Sheng and Swahili fintech ads"
+      }
+    },
+    {
+      "id": "bn1",
+      "kind": "compositor",
+      "position": {
+        "x": 80,
+        "y": 990
+      },
+      "data": {
+        "params": {
+          "ratio": "4:5"
+        },
+        "part": "WhatsApp Status daily"
+      }
+    },
+    {
+      "id": "bn4",
+      "kind": "whatsapp-status",
+      "position": {
+        "x": 400,
+        "y": 990
+      },
+      "data": {
+        "params": {},
+        "part": "WhatsApp Status daily"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "an2",
+      "sourceHandle": "images",
+      "target": "an1",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "an4",
+      "sourceHandle": "text",
+      "target": "an3",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e3",
+      "source": "an2",
+      "sourceHandle": "images",
+      "target": "an5",
+      "targetHandle": "media",
+      "type": "image"
+    },
+    {
+      "id": "e4",
+      "source": "an6",
+      "sourceHandle": "brand",
+      "target": "an5",
+      "targetHandle": "brand",
+      "type": "brand"
+    },
+    {
+      "id": "e5",
+      "source": "an4",
+      "sourceHandle": "text",
+      "target": "an5",
+      "targetHandle": "copy",
+      "type": "text"
+    },
+    {
+      "id": "e6",
+      "source": "an4",
+      "sourceHandle": "text",
+      "target": "an7",
+      "targetHandle": "text",
+      "type": "text"
+    },
+    {
+      "id": "e7",
+      "source": "an5",
+      "sourceHandle": "image",
+      "target": "bn1",
+      "targetHandle": "media",
+      "type": "image",
+      "married": true
+    },
+    {
+      "id": "e8",
+      "source": "an6",
+      "sourceHandle": "brand",
+      "target": "bn1",
+      "targetHandle": "brand",
+      "type": "brand"
+    },
+    {
+      "id": "e9",
+      "source": "bn1",
+      "sourceHandle": "image",
+      "target": "bn4",
+      "targetHandle": "media",
+      "type": "image"
+    }
+  ],
+  "gaps": []
+}

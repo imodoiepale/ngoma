@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "id": "u02-tiktok-shop-product-videos",
+  "title": "TikTok Shop product videos",
+  "client": "_templates",
+  "source": {
+    "idea": "U02",
+    "offer": "15 product demo videos a month with hooks"
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "image-edit",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "refmod-create",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "preset": "identity"
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "character-video",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "captions",
+      "position": {
+        "x": 1360,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n7",
+      "kind": "export",
+      "position": {
+        "x": 1680,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n3",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e3",
+      "source": "n1",
+      "sourceHandle": "image",
+      "target": "n5",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e4",
+      "source": "n5",
+      "sourceHandle": "character",
+      "target": "n4",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e5",
+      "source": "n3",
+      "sourceHandle": "text",
+      "target": "n4",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e6",
+      "source": "n4",
+      "sourceHandle": "video",
+      "target": "n6",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e7",
+      "source": "n3",
+      "sourceHandle": "text",
+      "target": "n6",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e8",
+      "source": "n6",
+      "sourceHandle": "video",
+      "target": "n7",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [],
+  "family": "ugc",
+  "compliance": "Show real product; no false claims"
+}

@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "m06-event-vj-loops",
+  "title": "Event VJ loops",
+  "client": "_templates",
+  "source": {
+    "idea": "M06",
+    "offer": "30 minutes of on-theme visual loops per event"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "text-to-video",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "cut",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 8
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "export",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "video",
+      "target": "n3",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "sourceHandle": "video",
+      "target": "n4",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [],
+  "family": "music",
+  "compliance": "No third-party logos"
+}

@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "id": "p08-brand-ambassador-for-local-brands",
+  "title": "Brand ambassador for local brands",
+  "client": "_templates",
+  "source": {
+    "idea": "P08",
+    "offer": "A disclosed AI ambassador with a year of content"
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "refmod-create",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "preset": "identity"
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "character-video",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "voiceover",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "language": "en"
+        }
+      }
+    },
+    {
+      "id": "n7",
+      "kind": "brand-kit",
+      "position": {
+        "x": 80,
+        "y": 500
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "compositor",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "ratio": "4:5"
+        }
+      }
+    },
+    {
+      "id": "n8",
+      "kind": "export",
+      "position": {
+        "x": 1360,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "character",
+      "target": "n3",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e3",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e4",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n5",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e5",
+      "source": "n3",
+      "sourceHandle": "video",
+      "target": "n6",
+      "targetHandle": "media",
+      "type": "video"
+    },
+    {
+      "id": "e6",
+      "source": "n7",
+      "sourceHandle": "brand",
+      "target": "n6",
+      "targetHandle": "brand",
+      "type": "brand"
+    },
+    {
+      "id": "e7",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n6",
+      "targetHandle": "copy",
+      "type": "text"
+    },
+    {
+      "id": "e8",
+      "source": "n6",
+      "sourceHandle": "image",
+      "target": "n8",
+      "targetHandle": "media",
+      "type": "image"
+    }
+  ],
+  "gaps": [],
+  "family": "persona",
+  "compliance": "Disclosure; ASA/CA advertising codes"
+}

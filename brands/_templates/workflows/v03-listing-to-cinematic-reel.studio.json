@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "id": "v03-listing-to-cinematic-reel",
+  "title": "Listing to cinematic reel",
+  "client": "_templates",
+  "source": {
+    "idea": "V03",
+    "offer": "Raw listing photos turned into a 30-second cinematic reel"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "image-to-video",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "text-to-video",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "voiceover",
+      "position": {
+        "x": 400,
+        "y": 500
+      },
+      "data": {
+        "params": {
+          "language": "en"
+        }
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "export",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n3",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "sourceHandle": "text",
+      "target": "n4",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e4",
+      "source": "n3",
+      "sourceHandle": "text",
+      "target": "n5",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e5",
+      "source": "n4",
+      "sourceHandle": "video",
+      "target": "n6",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [],
+  "family": "volume",
+  "compliance": "No misleading property claims"
+}

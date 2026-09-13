@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "id": "v01-1-000-images-a-day",
+  "title": "1,000 images a day",
+  "client": "_templates",
+  "source": {
+    "idea": "V01",
+    "offer": "Daily pack of 1,000 on-brand images, delivered by 9am"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "klein-t2i",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "count": 45
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "brand-kit",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "compositor",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "ratio": "4:5"
+        }
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "export",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "image",
+      "target": "n3",
+      "targetHandle": "media",
+      "type": "image"
+    },
+    {
+      "id": "e3",
+      "source": "n4",
+      "sourceHandle": "brand",
+      "target": "n3",
+      "targetHandle": "brand",
+      "type": "brand"
+    },
+    {
+      "id": "e4",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "copy",
+      "type": "text"
+    },
+    {
+      "id": "e5",
+      "source": "n3",
+      "sourceHandle": "image",
+      "target": "n5",
+      "targetHandle": "media",
+      "type": "image"
+    }
+  ],
+  "gaps": [],
+  "family": "volume",
+  "compliance": "Client supplies rights to logos and products"
+}

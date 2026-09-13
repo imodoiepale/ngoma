@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "id": "u04-sheng-and-swahili-fintech-ads",
+  "title": "Sheng and Swahili fintech ads",
+  "client": "_templates",
+  "source": {
+    "idea": "U04",
+    "offer": "Local-language UGC ads with claim-safety review"
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "refmod-create",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "preset": "identity"
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "voiceover",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "language": "en"
+        }
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "brand-kit",
+      "position": {
+        "x": 80,
+        "y": 500
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "compositor",
+      "position": {
+        "x": 400,
+        "y": 500
+      },
+      "data": {
+        "params": {
+          "ratio": "4:5"
+        }
+      }
+    },
+    {
+      "id": "n7",
+      "kind": "claim-check",
+      "position": {
+        "x": 400,
+        "y": 710
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n8",
+      "kind": "export",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e3",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n5",
+      "targetHandle": "media",
+      "type": "image"
+    },
+    {
+      "id": "e4",
+      "source": "n6",
+      "sourceHandle": "brand",
+      "target": "n5",
+      "targetHandle": "brand",
+      "type": "brand"
+    },
+    {
+      "id": "e5",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n5",
+      "targetHandle": "copy",
+      "type": "text"
+    },
+    {
+      "id": "e6",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n7",
+      "targetHandle": "text",
+      "type": "text"
+    },
+    {
+      "id": "e7",
+      "source": "n5",
+      "sourceHandle": "image",
+      "target": "n8",
+      "targetHandle": "media",
+      "type": "image"
+    }
+  ],
+  "gaps": [],
+  "family": "ugc",
+  "compliance": "No returns or rate promises; CBK/CA rules"
+}

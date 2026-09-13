@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "id": "e01-ai-creator-lab-community",
+  "title": "AI creator lab community",
+  "client": "_templates",
+  "source": {
+    "idea": "E01",
+    "offer": "Monthly membership: our own workflows, weekly builds, job board"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "course",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "text",
+      "type": "text"
+    }
+  ],
+  "gaps": [],
+  "family": "education",
+  "compliance": "Only our original workflows; no resale of paid packs"
+}

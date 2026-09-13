@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "id": "s03-interior-and-architecture-visuals",
+  "title": "Interior and architecture visuals",
+  "client": "_templates",
+  "source": {
+    "idea": "S03",
+    "offer": "Renders and walkthrough clips from sketches or empty rooms"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "image-edit",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "image-to-video",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "export",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n3",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e3",
+      "source": "n1",
+      "sourceHandle": "image",
+      "target": "n4",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e4",
+      "source": "n3",
+      "sourceHandle": "text",
+      "target": "n4",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e5",
+      "source": "n4",
+      "sourceHandle": "video",
+      "target": "n5",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [],
+  "family": "service",
+  "compliance": "Mark as concept visuals"
+}

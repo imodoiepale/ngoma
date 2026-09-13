@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "id": "e02-course-on-whop",
+  "title": "Course on Whop",
+  "client": "_templates",
+  "source": {
+    "idea": "E02",
+    "offer": "ComfyUI-to-income course with the studio's lessons"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "course",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "text",
+      "type": "text"
+    }
+  ],
+  "gaps": [],
+  "family": "education",
+  "compliance": "No income guarantees"
+}

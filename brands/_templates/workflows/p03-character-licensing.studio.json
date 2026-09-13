@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "id": "p03-character-licensing",
+  "title": "Character licensing",
+  "client": "_templates",
+  "source": {
+    "idea": "P03",
+    "offer": "Exclusive monthly rights to a consistent AI character in one category"
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "refmod-create",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "preset": "identity"
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "character-video",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "carousel",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "slides": 6
+        }
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "export",
+      "position": {
+        "x": 720,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "character",
+      "target": "n3",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e3",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e4",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n5",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e5",
+      "source": "n5",
+      "sourceHandle": "images",
+      "target": "n6",
+      "targetHandle": "media",
+      "type": "image"
+    }
+  ],
+  "gaps": [],
+  "family": "persona",
+  "compliance": "Written licence terms"
+}

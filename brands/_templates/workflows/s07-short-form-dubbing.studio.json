@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "id": "s07-short-form-dubbing",
+  "title": "Short-form dubbing",
+  "client": "_templates",
+  "source": {
+    "idea": "S07",
+    "offer": "Dub and re-caption 20 shorts a month"
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "transcribe",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "translate",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "language": "sw"
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "voiceover",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "language": "en"
+        }
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "lipsync",
+      "position": {
+        "x": 1360,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "captions",
+      "position": {
+        "x": 1680,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n7",
+      "kind": "export",
+      "position": {
+        "x": 2000,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "media",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "text",
+      "type": "text"
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "sourceHandle": "text",
+      "target": "n4",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e4",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n5",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e5",
+      "source": "n4",
+      "sourceHandle": "audio",
+      "target": "n5",
+      "targetHandle": "audio",
+      "type": "audio"
+    },
+    {
+      "id": "e6",
+      "source": "n5",
+      "sourceHandle": "video",
+      "target": "n6",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e7",
+      "source": "n3",
+      "sourceHandle": "text",
+      "target": "n6",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e8",
+      "source": "n6",
+      "sourceHandle": "video",
+      "target": "n7",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [
+    {
+      "node": "n3",
+      "step": "translate",
+      "reason": "No translation adapter yet; write the script in the target language."
+    }
+  ],
+  "family": "service",
+  "compliance": "Original creator permission"
+}

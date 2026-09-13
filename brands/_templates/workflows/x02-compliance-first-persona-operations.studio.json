@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "id": "x02-compliance-first-persona-operations",
+  "title": "Compliance-first persona operations",
+  "client": "_templates",
+  "source": {
+    "idea": "X02",
+    "offer": "SFW teaser content, scheduling and a compliance audit trail"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "carousel",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "slides": 6
+        }
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "postiz",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "status": "draft"
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "analytics",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "images",
+      "target": "n3",
+      "targetHandle": "media",
+      "type": "image"
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "sourceHandle": "post",
+      "target": "n4",
+      "targetHandle": "post",
+      "type": "post"
+    }
+  ],
+  "gaps": [],
+  "family": "adult",
+  "compliance": "Same hard gates as X01; SFW deliverables only"
+}

@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "id": "m01-full-length-music-video",
+  "title": "Full-length music video",
+  "client": "_templates",
+  "source": {
+    "idea": "M01",
+    "offer": "3-4 minute music video with infinite-length H3, SCAIL motion and relit VFX"
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "long-video",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 30
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "motion-transfer",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "relight",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n7",
+      "kind": "song",
+      "position": {
+        "x": 80,
+        "y": 500
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "lipsync",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n8",
+      "kind": "cut",
+      "position": {
+        "x": 720,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "seconds": 8
+        }
+      }
+    },
+    {
+      "id": "n9",
+      "kind": "export",
+      "position": {
+        "x": 1040,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n3",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e3",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n4",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e4",
+      "source": "n1",
+      "sourceHandle": "video",
+      "target": "n4",
+      "targetHandle": "motion",
+      "type": "video"
+    },
+    {
+      "id": "e5",
+      "source": "n4",
+      "sourceHandle": "video",
+      "target": "n5",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e6",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n6",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e7",
+      "source": "n7",
+      "sourceHandle": "audio",
+      "target": "n6",
+      "targetHandle": "audio",
+      "type": "audio"
+    },
+    {
+      "id": "e8",
+      "source": "n6",
+      "sourceHandle": "video",
+      "target": "n8",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e9",
+      "source": "n8",
+      "sourceHandle": "video",
+      "target": "n9",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [
+    {
+      "node": "n5",
+      "step": "relight",
+      "reason": "No video relight workflow in the library yet."
+    }
+  ],
+  "family": "music",
+  "compliance": "Artist consent for any likeness; licensed audio"
+}

@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "id": "s04-archive-restore-and-upscale",
+  "title": "Archive restore and upscale",
+  "client": "_templates",
+  "source": {
+    "idea": "S04",
+    "offer": "Restore, colourise and upscale old photos and footage"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "video-clip",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "upscale-video",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "restore",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "export",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "video",
+      "target": "n1",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e2",
+      "source": "n4",
+      "sourceHandle": "images",
+      "target": "n3",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "sourceHandle": "image",
+      "target": "n5",
+      "targetHandle": "media",
+      "type": "image"
+    }
+  ],
+  "gaps": [
+    {
+      "node": "n3",
+      "step": "restore",
+      "reason": "No restoration workflow in the library yet."
+    }
+  ],
+  "family": "service",
+  "compliance": "Owner consent"
+}

@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "id": "s05-training-avatar-videos",
+  "title": "Training avatar videos",
+  "client": "_templates",
+  "source": {
+    "idea": "S05",
+    "offer": "Consented presenter avatar for 10 training videos a month"
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "refmod-create",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "preset": "identity"
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "song",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "lipsync",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 500
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "voiceover",
+      "position": {
+        "x": 400,
+        "y": 500
+      },
+      "data": {
+        "params": {
+          "language": "en"
+        }
+      }
+    },
+    {
+      "id": "n7",
+      "kind": "motion-graphics",
+      "position": {
+        "x": 400,
+        "y": 710
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n8",
+      "kind": "export",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n1",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n3",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e3",
+      "source": "n4",
+      "sourceHandle": "audio",
+      "target": "n3",
+      "targetHandle": "audio",
+      "type": "audio"
+    },
+    {
+      "id": "e4",
+      "source": "n6",
+      "sourceHandle": "text",
+      "target": "n5",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e5",
+      "source": "n6",
+      "sourceHandle": "text",
+      "target": "n7",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e6",
+      "source": "n7",
+      "sourceHandle": "video",
+      "target": "n8",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [
+    {
+      "node": "n7",
+      "step": "motion-graphics",
+      "reason": "HyperFrames/Remotion renderer is planned, not built."
+    }
+  ],
+  "family": "service",
+  "compliance": "Presenter release"
+}

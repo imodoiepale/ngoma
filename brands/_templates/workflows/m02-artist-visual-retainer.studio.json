@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "id": "m02-artist-visual-retainer",
+  "title": "Artist visual retainer",
+  "client": "_templates",
+  "source": {
+    "idea": "M02",
+    "offer": "4 visualizers, 1 lyric video and cover art a month"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "motion-graphics",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "image-to-video",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "brand-kit",
+      "position": {
+        "x": 80,
+        "y": 500
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "compositor",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "ratio": "4:5"
+        }
+      }
+    },
+    {
+      "id": "n7",
+      "kind": "export",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e2",
+      "source": "n4",
+      "sourceHandle": "images",
+      "target": "n3",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e3",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e4",
+      "source": "n3",
+      "sourceHandle": "video",
+      "target": "n5",
+      "targetHandle": "media",
+      "type": "video"
+    },
+    {
+      "id": "e5",
+      "source": "n6",
+      "sourceHandle": "brand",
+      "target": "n5",
+      "targetHandle": "brand",
+      "type": "brand"
+    },
+    {
+      "id": "e6",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n5",
+      "targetHandle": "copy",
+      "type": "text"
+    },
+    {
+      "id": "e7",
+      "source": "n5",
+      "sourceHandle": "image",
+      "target": "n7",
+      "targetHandle": "media",
+      "type": "image"
+    }
+  ],
+  "gaps": [
+    {
+      "node": "n1",
+      "step": "motion-graphics",
+      "reason": "HyperFrames/Remotion renderer is planned, not built."
+    }
+  ],
+  "family": "music",
+  "compliance": "Licensed audio only"
+}

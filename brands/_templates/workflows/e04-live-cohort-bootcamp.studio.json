@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "id": "e04-live-cohort-bootcamp",
+  "title": "Live cohort bootcamp",
+  "client": "_templates",
+  "source": {
+    "idea": "E04",
+    "offer": "4-week cohort ending with a paying client"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "course",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "text",
+      "type": "text"
+    }
+  ],
+  "gaps": [],
+  "family": "education",
+  "compliance": "No earnings claims"
+}

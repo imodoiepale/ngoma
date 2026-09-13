@@ -18,6 +18,24 @@ uv run studio.py test            # 36 end-to-end tests, no key/GPU/network
 uv run studio.py loop            # the whole pipeline on fixture data
 ```
 
+### Studio canvas and workflows
+
+The studio UI (`packages/studio-ui`) is a node canvas organised by client. Every client in
+`brands/` has its own workflows, and `brands/_templates/` holds one ready-made workflow per
+business idea. You can start a workflow from an idea, a plain description, or by combining
+workflows so one result feeds the next. The canvas and the author share one node catalogue
+(`packages/studio-ui/catalog/nodes.json`), and any step the studio cannot run yet is shown as
+a gap.
+
+```bash
+npm install --prefix packages/studio-ui
+npm run dev --prefix packages/studio-ui
+uv run --with pyyaml packages/strategy/workflow_author.py --list
+uv run --with pyyaml packages/strategy/workflow_author.py --idea V02 --client ongea-pesa
+uv run --with pyyaml packages/strategy/workflow_author.py --combine M01 M04 --client epalle
+uv run --with pyyaml packages/strategy/workflow_author.py --check
+```
+
 - **`docs/ABOUT.md` — what this project is about and why it is built this way**
 - `docs/WHAT-THIS-DOES.md` — the system tour: what the system is and how it fits together**
 - `docs/ROADMAP.md` — every step to go live, in dependency order, with owners and gates

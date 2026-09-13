@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const shell = {
@@ -49,7 +50,9 @@ export default function Library() {
   };
 
   useEffect(() => {
-    load("");
+    // first load runs as a callback, not synchronously inside the effect body
+    const first = setTimeout(() => load(""), 0);
+    return () => clearTimeout(first);
   }, []);
 
   const stats = data?.stats;
@@ -78,9 +81,9 @@ export default function Library() {
           </p>
         </div>
         <nav style={{ display: "flex", gap: 14 }}>
-          <a href="/" style={{ color: "#d9deea" }}>
-            Canvas
-          </a>
+          <Link href="/" style={{ color: "#d9deea" }}>
+            Clients
+          </Link>
           <a href="/jobs" style={{ color: "#d9deea" }}>
             Jobs
           </a>

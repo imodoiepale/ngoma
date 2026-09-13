@@ -1,10 +1,71 @@
-"use client";
-import { useMemo,useState } from "react";
-const workflows=[
-{id:"dataset",name:"Character Dataset V1",type:"IMAGE",accent:"#d8a94a",status:"Safe / live=false",detail:"25 cached shots · 12 face · 13 body"},
-{id:"scail",name:"SCAIL-2 Replacement",type:"VIDEO",accent:"#7c8cff",status:"Ready",detail:"Reference + control video + SAM 3.1 mask"},
-{id:"h3",name:"MiniMax H3 Music Video",type:"VIDEO",accent:"#bb77ff",status:"Ready",detail:"Multi-reference · keyframes · motion context · extension"},
-{id:"ugc",name:"Localized UGC Studio",type:"CAMPAIGN",accent:"#50d4a8",status:"Ready",detail:"English · Kiswahili · Sheng · French"}];
-const sources=[["KiubAI","9 videos archived","H3 · SCAIL-2 · Krea2 · LoRA"],["DGI Kaos","2 lessons archived","Weavy masterclass · 10 UGC formats"],["Fanuel Leul","175 posts reviewed","Afrofuturism · ritual · future memory"],["Matrix Lab","25-shot graph + resources","Dataset · UGC cloner · prompts"]];
-const nodeData={dataset:[["01","Identity references","Drop 3–14 EPALLE images","input"],["02","Dataset prompt matrix","12 portraits / 13 body shots","prompt"],["03","MATRIX Dataset V1","1k · 3:4 · live=false","model"],["04","Review contact sheet","Accept / reject identity drift","output"]],scail:[["01","Reference character","Identity + wardrobe anchor","input"],["02","Control performance","Match framing and body coverage","input"],["03","SAM 3.1 + SCAIL-2","Replacement · 0.5 MP test","model"],["04","Motion review","Hands · occlusion · background","output"]],h3:[["01","Song + references","Locked master · face/body anchors","input"],["02","Director treatment","Beat map · lens · action · transition","prompt"],["03","MiniMax H3","24 fps · context · 8-step turbo","model"],["04","Sequence assembly","Overlap · trim · audio sync","output"]],ugc:[["01","Product evidence","Claim sheet · pack shots · audience","input"],["02","Format + language","Review / ASMR / proof / spectacle","prompt"],["03","Avatar performance","Gesture · cadence · product contact","model"],["04","Campaign variants","9:16 · captions · CTA · QA","output"]]};
-export default function Home(){const[active,setActive]=useState("h3"),[prompt,setPrompt]=useState("ASALI: a quiet prayer becomes a dust-gold sunrise over Nairobi. Charcoal wardrobe, 24mm establishing shot, restrained handheld performance, one flower motif."),[language,setLanguage]=useState("English + Kiswahili"),[status,setStatus]=useState("idle");const selected=useMemo(()=>workflows.find(w=>w.id===active),[active]);async function run(){setStatus("submitting");try{const response=await fetch("/api/generate",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({workflow_name:"smoke-test",dry_run:true,prompt,language,studio_template:active})});const data=await response.json();setStatus(response.ok?(data.message||data.status||"Dry run accepted"):(data.error||"Request failed"))}catch{setStatus("Studio API is not configured on this host")}}return <main className="studio-shell"><header className="topbar"><div className="brand"><span className="mark">E</span><div><strong>EPALLE STUDIO</strong><small>creative operating system</small></div></div><nav><button className="active">Canvas</button><button>Library</button><button>Jobs</button><a href="https://app.notion.com/p/3d3400e49d8e81f997a3c310685d7093?pvs=204" target="_blank">Notion ↗</a></nav><div className="runtime"><i/> RunPod · scale to zero</div></header><aside className="rail"><p className="eyebrow">WORKFLOWS</p>{workflows.map(w=><button key={w.id} onClick={()=>setActive(w.id)} className={active===w.id?"workflow active":"workflow"} style={{"--accent":w.accent}}><span className="wf-icon">{w.type[0]}</span><span><b>{w.name}</b><small>{w.status}</small></span></button>)}<p className="eyebrow sources-title">SOURCE LIBRARY</p>{sources.map(([name,count,tags])=><div className="source" key={name}><b>{name}</b><span>{count}</span><small>{tags}</small></div>)}</aside><section className="canvas"><div className="canvas-title"><div><span>{selected.type}</span><h1>{selected.name}</h1><p>{selected.detail}</p></div><div className="canvas-actions"><button>Save version</button><button className="run" onClick={run}>{status==="submitting"?"Checking…":"Run dry test"}</button></div></div><div className="flow" aria-label="Visual workflow canvas"><svg className="wires" viewBox="0 0 1200 600" preserveAspectRatio="none"><path d="M215 180 C300 180 280 345 390 345"/><path d="M525 345 C620 345 590 180 700 180"/><path d="M840 180 C930 180 900 345 1020 345"/></svg>{nodeData[active].map((n,i)=><article className={`node n${i+1} ${n[3]}`} key={n[0]}><div className="node-head"><span>{n[0]}</span><em>{n[3]}</em></div><h2>{n[1]}</h2><p>{n[2]}</p>{i===1&&<textarea value={prompt} onChange={e=>setPrompt(e.target.value)} aria-label="Creative prompt"/>}{active==="ugc"&&i===1&&<select value={language} onChange={e=>setLanguage(e.target.value)}><option>English + Kiswahili</option><option>Sheng blend</option><option>French</option><option>English</option></select>}<div className="ports"><i/><i/></div></article>)}<div className="zoom">− <b>72%</b> +</div></div><footer className="jobbar"><span><i className={status==="idle"?"muted":""}/>{status==="idle"?"Ready. Dry run is the default.":status}</span><span>GPU A6000 · 48 GB</span><span>Models verified · 103.2 GB</span><span>Archive · counts in Library</span></footer></section></main>}
+import Link from "next/link";
+import { TEMPLATES, listClients, listWorkflows, loadCatalog } from "../lib/studio";
+import { WorkflowTile } from "../components/WorkflowTile";
+
+export const dynamic = "force-dynamic";
+
+const FAMILY = {
+  volume: "Volume content", ugc: "UGC ads", persona: "AI influencer and AI model", music: "Music",
+  service: "Productised services", education: "Education and community", saas: "Software", adult: "Fictional 18+ (gated)",
+};
+
+export default async function Home() {
+  const [clients, templates, catalog] = await Promise.all([listClients(), listWorkflows(TEMPLATES), loadCatalog()]);
+  const families = Object.entries(FAMILY)
+    .map(([key, label]) => ({ key, label, items: templates.filter((t) => t.family === key) }))
+    .filter((f) => f.items.length);
+
+  return (
+    <main className="lobby">
+      <header className="lobby-head">
+        <span className="wordmark">EPALLE Studio</span>
+        <nav>
+          <Link href="/library">Library</Link>
+          <Link href="/jobs">Jobs</Link>
+        </nav>
+      </header>
+
+      <section className="lobby-intro">
+        <h1>Clients</h1>
+        <p>Each client has its own workflows. Open one to edit it on the canvas, or start a new one from an idea, a description, or by combining workflows you already have.</p>
+      </section>
+
+      {clients.map((c) => (
+        <section key={c.id} className="client-row" style={{ "--client": c.accent }}>
+          <div className="client-meta">
+            <span className="client-swatch" aria-hidden />
+            <h2>{c.name}</h2>
+            <span className="client-count">{c.workflows.length} workflows</span>
+            <Link className="btn btn-quiet" href={`/c/${c.id}`}>Open workspace</Link>
+          </div>
+          <div className="tile-strip">
+            {c.workflows.map((w) => (
+              <WorkflowTile key={w.id} href={`/c/${c.id}/w/${w.id}`} wf={w} catalog={catalog} />
+            ))}
+            <Link className="tile tile-new" href={`/c/${c.id}`}>
+              <span>New workflow</span>
+              <small>From an idea, a description, or by combining</small>
+            </Link>
+          </div>
+        </section>
+      ))}
+
+      <section className="templates">
+        <div className="templates-head">
+          <h2>Idea templates</h2>
+          <p>{templates.length} ready-made pipelines, one for each business idea. Open one to see how it runs, then use it for a client.</p>
+        </div>
+        {families.map((f) => (
+          <div key={f.key} className="family">
+            <h3>{f.label}</h3>
+            <div className="tile-grid">
+              {f.items.map((w) => (
+                <WorkflowTile key={w.id} href={`/c/${TEMPLATES}/w/${w.id}`} wf={w} catalog={catalog} compact />
+              ))}
+            </div>
+          </div>
+        ))}
+      </section>
+    </main>
+  );
+}

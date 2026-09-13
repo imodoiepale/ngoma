@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "id": "s06-explainer-videos",
+  "title": "Explainer videos",
+  "client": "_templates",
+  "source": {
+    "idea": "S06",
+    "offer": "Two 90-second explainers a month"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "motion-graphics",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "voiceover",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "language": "en"
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "export",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e3",
+      "source": "n1",
+      "sourceHandle": "video",
+      "target": "n4",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [
+    {
+      "node": "n1",
+      "step": "motion-graphics",
+      "reason": "HyperFrames/Remotion renderer is planned, not built."
+    }
+  ],
+  "family": "service",
+  "compliance": "Fact-checked claims"
+}

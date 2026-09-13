@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "id": "m08-stock-b-roll-subscription",
+  "title": "Stock B-roll subscription",
+  "client": "_templates",
+  "source": {
+    "idea": "M08",
+    "offer": "Monthly drop of 100 royalty-free African-set AI B-roll clips"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n2",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "text-to-video",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "upscale-video",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "export",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "video",
+      "target": "n3",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "sourceHandle": "video",
+      "target": "n4",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [],
+  "family": "music",
+  "compliance": "Model licences must allow commercial output"
+}

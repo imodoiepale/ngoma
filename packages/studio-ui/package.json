@@ -3,13 +3,11 @@
     "version": "1.0.0",
     "private": true,
     "workspaces": [
-        "packages/*",
         "client"
     ],
     "scripts": {
-        "dev:app": "npm run dev -w client",
-        "build:app": "npm run build -w client",
-        "build:lib": "npm run build -w packages/workflow-builder",
+        "dev": "npm run dev -w client",
+        "build": "npm run build -w client",
         "install:all": "npm install"
     }
 }

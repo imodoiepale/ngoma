@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 
 const shell = {
@@ -51,10 +52,14 @@ export default function Jobs() {
   }, []);
 
   useEffect(() => {
-    load();
-    if (!auto) return undefined;
+    // first load runs as a callback, not synchronously inside the effect body
+    const first = setTimeout(load, 0);
+    if (!auto) return () => clearTimeout(first);
     const timer = setInterval(load, 20000);
-    return () => clearInterval(timer);
+    return () => {
+      clearTimeout(first);
+      clearInterval(timer);
+    };
   }, [load, auto]);
 
   return (
@@ -101,9 +106,9 @@ export default function Jobs() {
           >
             Refresh
           </button>
-          <a href="/" style={{ color: "#d9deea" }}>
-            Canvas
-          </a>
+          <Link href="/" style={{ color: "#d9deea" }}>
+            Clients
+          </Link>
           <a href="/library" style={{ color: "#d9deea" }}>
             Library
           </a>

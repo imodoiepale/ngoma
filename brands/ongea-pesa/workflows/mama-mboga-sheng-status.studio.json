@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "id": "mama-mboga-sheng-status",
+  "title": "Mama mboga Sheng status",
+  "client": "ongea-pesa",
+  "source": {
+    "brief": "Sheng WhatsApp status ad for a mama mboga paying with M-Pesa"
+  },
+  "created": "2026-09-13",
+  "consent_required": true,
+  "nodes": [
+    {
+      "id": "n3",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n2",
+      "kind": "refmod-create",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "preset": "identity"
+        }
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "text": "Sheng WhatsApp status ad for a mama mboga paying with M-Pesa"
+        }
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "character-video",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "seconds": 5
+        }
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "claim-check",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n6",
+      "kind": "voiceover",
+      "position": {
+        "x": 720,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "language": "sheng"
+        }
+      }
+    },
+    {
+      "id": "n7",
+      "kind": "whatsapp-status",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "n3",
+      "sourceHandle": "images",
+      "target": "n2",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "sourceHandle": "character",
+      "target": "n1",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e3",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e4",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n5",
+      "targetHandle": "text",
+      "type": "text"
+    },
+    {
+      "id": "e5",
+      "source": "n5",
+      "sourceHandle": "text",
+      "target": "n6",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e6",
+      "source": "n1",
+      "sourceHandle": "video",
+      "target": "n7",
+      "targetHandle": "media",
+      "type": "video"
+    },
+    {
+      "id": "e7",
+      "source": "n5",
+      "sourceHandle": "text",
+      "target": "n7",
+      "targetHandle": "caption",
+      "type": "text"
+    }
+  ],
+  "gaps": []
+}

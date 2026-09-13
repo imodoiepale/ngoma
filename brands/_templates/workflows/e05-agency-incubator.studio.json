@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "id": "e05-agency-incubator",
+  "title": "Agency incubator",
+  "client": "_templates",
+  "source": {
+    "idea": "E05",
+    "offer": "Done-with-you setup of this studio for their team"
+  },
+  "created": "2026-09-13",
+  "consent_required": false,
+  "nodes": [
+    {
+      "id": "n1",
+      "kind": "unmapped",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "step": "studio",
+        "params": {}
+      }
+    }
+  ],
+  "edges": [],
+  "gaps": [
+    {
+      "node": "n1",
+      "step": "studio",
+      "reason": "no catalogue node runs 'studio' yet"
+    }
+  ],
+  "family": "education",
+  "compliance": "Clear licence of our code"
+}
