@@ -73,6 +73,7 @@ TECHNIQUE_HINTS = [
     "text to video", "video to video", "first frame last frame", "keyframe", "depth map",
     "openpose", "pose transfer", "motion transfer", "latent", "denoise", "refiner",
     "prompt travel", "regional prompting", "batch", "dataset", "captioning", "detailer",
+    "refmod", "ref mod", "reference to video", "identity", "audio ref",
 ]
 
 # DGI Kaos and the UGC-format material carry creative vocabulary, which is what actually
@@ -320,6 +321,17 @@ def learn_video(url_or_id: str, channel_key: str | None = None) -> HarvestReport
         return report
     info = staging / f"{vid}.info.json"
     meta = json.loads(info.read_text(encoding="utf-8")) if info.exists() else {}
+    if not meta.get("title"):
+        # yt-dlp sometimes writes the subtitles but not the info.json (seen on 2K6-OtV_Vbc),
+        # which filed the video under "unsorted" with a null title. Ask for metadata directly.
+        r = _ytdlp(["-J", "--skip-download", f"https://www.youtube.com/watch?v={vid}"], timeout=300)
+        try:
+            meta = json.loads(r.stdout) if r.returncode == 0 and r.stdout.strip() else {}
+        except json.JSONDecodeError:
+            meta = {}
+    if not meta.get("title"):
+        report.status = "partial"
+        report.notes.append("WARNING: no video metadata; title and channel are unknown")
     key = channel_key or _channel_key_for(meta)
     cdir = CORPUS / key / "subs"
     cdir.mkdir(parents=True, exist_ok=True)
@@ -330,7 +342,7 @@ def learn_video(url_or_id: str, channel_key: str | None = None) -> HarvestReport
         keep = ("id", "title", "channel", "channel_id", "uploader_id", "upload_date",
                 "duration", "view_count", "like_count", "comment_count", "tags",
                 "categories", "chapters", "description", "webpage_url")
-        (cdir / info.name).write_text(
+        (cdir / f"{vid}.info.json").write_text(
             json.dumps({k: meta.get(k) for k in keep}, indent=2, ensure_ascii=False),
             encoding="utf-8")
     subs = sorted(cdir.glob(f"{vid}*.vtt"))

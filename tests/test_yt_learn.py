@@ -72,3 +72,53 @@ def test_evidence_lookup_ignores_spaces_and_hyphens():
     nodes = {"node_pack:sage-attention": {"kind": "node_pack", "label": "sage-attention"}}
     assert _find(nodes, "sage attention") == ["node_pack:sage-attention"]
     assert _find(nodes, "SageAttention") == ["node_pack:sage-attention"]
+
+
+def test_a_video_is_never_filed_without_its_title(monkeypatch, tmp_path):
+    """yt-dlp wrote subtitles but no info.json for 2K6-OtV_Vbc, and the video landed in
+    `unsorted/` with title null. Metadata must be fetched another way, not left empty."""
+    import subprocess
+    vid = "2K6-OtV_Vbc"
+    monkeypatch.setattr(yt_learn, "REPO", tmp_path)
+    monkeypatch.setattr(yt_learn, "CORPUS", tmp_path / "youtube")
+    monkeypatch.setattr(yt_learn, "load_channels", lambda: {"channels": [], "subtitle_langs": ["en"]})
+
+    def fake_subs(video_id, dest, langs):
+        dest.mkdir(parents=True, exist_ok=True)
+        (dest / f"{video_id}.en.vtt").write_text(
+            "WEBVTT\n\n00:00:01.000 --> 00:00:03.000\nsearch for create H3 ref from folder\n",
+            encoding="utf-8")
+        return [dest / f"{video_id}.en.vtt"]          # note: no info.json written
+
+    meta = {"id": vid, "title": "How to Create a RefMod for MiniMax H3",
+            "channel": "Dainamo", "channel_id": "UCb_A1zvd9iXCigO8ekgJW2A", "uploader_id": "@DainamoLabs"}
+    monkeypatch.setattr(yt_learn, "fetch_subs", fake_subs)
+    monkeypatch.setattr(yt_learn, "_ytdlp", lambda args, timeout=900: subprocess.CompletedProcess(
+        args, 0, stdout=json.dumps(meta), stderr=""))
+
+    rep = yt_learn.learn_video(f"https://www.youtube.com/watch?v={vid}")
+    assert rep.status == "ok", rep.notes
+    rec = json.loads((tmp_path / "youtube" / "facts.jsonl").read_text(encoding="utf-8"))
+    assert rec["title"] == meta["title"] and rec["channel"] == "dainamolabs"
+    assert (tmp_path / "youtube" / "dainamolabs" / "subs" / f"{vid}.info.json").exists()
+
+
+def test_every_manifest_workflow_exists_and_matches_its_hash():
+    import hashlib
+    man = json.loads((REPO / "workflows" / "manifest.json").read_text(encoding="utf-8"))
+    assert man["count"] == len(man["workflows"])
+    for w in man["workflows"]:
+        p = REPO / w["canonical"]
+        assert p.exists(), w["canonical"]
+        assert hashlib.sha256(p.read_bytes()).hexdigest() == w["sha256"], w["canonical"]
+
+
+def test_refmod_workflows_name_the_node_repos_they_need():
+    man = json.loads((REPO / "workflows" / "manifest.json").read_text(encoding="utf-8"))
+    by = {Path(w["canonical"]).name: w for w in man["workflows"]}
+    gen = by["dainamo-refmod-generate.json"]
+    assert {"Luisacaotica/ComfyUI-MiniMaxH3Mod", "xmarre/ComfyUI-Spectrum-MiniMax-H3",
+            "comfyui-kjnodes"} <= set(gen["node_packs"])
+    assert "minimax_h3_ref2va_pruned_fp8_scaled.safetensors" in gen["models"]
+    create = by["franckyb-refmod-create-from-folder.json"]
+    assert "FranckyB/ComfyUI-H3RefModPicker" in create["node_packs"]

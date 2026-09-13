@@ -1,0 +1,45 @@
+{
+  "id": "2K6-OtV_Vbc",
+  "title": "How to Create a RefMod for MiniMax H3 — No Training Required",
+  "channel": "Dainamo",
+  "channel_id": "UCb_A1zvd9iXCigO8ekgJW2A",
+  "uploader_id": "@DainamoLabs",
+  "upload_date": "20260912",
+  "duration": 391,
+  "view_count": 6271,
+  "like_count": 178,
+  "comment_count": 36,
+  "tags": [],
+  "categories": [
+    "Science & Technology"
+  ],
+  "chapters": [
+    {
+      "start_time": 0,
+      "title": "Downloading Custom Nodes",
+      "end_time": 80
+    },
+    {
+      "start_time": 80,
+      "title": "Creating the RefMod",
+      "end_time": 201
+    },
+    {
+      "start_time": 201,
+      "title": "Generating a video",
+      "end_time": 322
+    },
+    {
+      "start_time": 322,
+      "title": "Comparing outputs",
+      "end_time": 360
+    },
+    {
+      "start_time": 360,
+      "title": "Outro",
+      "end_time": 391
+    }
+  ],
+  "description": "In this video, I take a look at RefMods for MiniMax H3, explain how they differ from LoRAs, and walk through creating one from my own reference footage. I also test how well it preserves identity and whether RefMods are a practical alternative to traditional LoRA training.\n\n\n\nComfyUI-MiniMaxH3Mod - https://github.com/Luisacaotica/ComfyUI-MiniMaxH3Mod\n\nComfyUI-H3RefMods - https://github.com/FranckyB/ComfyUI-H3RefModPicker (this was updated after the video was posted)\n\nComfyUI-Spectrum-MiniMax-H3 - https://github.com/xmarre/ComfyUI-Spectrum-MiniMax-H3\n\nWorkflow: https://huggingface.co/datasets/malcolmrey/workflows/blob/main/H3/workflow_minimaxh3_refmod.json\n\n\nChapters: \n\n0:00 - Downloading Custom Nodes\n1:20 - Creating the RefMod\n3:21 - Generating a video \n5:22 - Comparing outputs\n6:00 - Outro\n\n\n#ai #diffusion #minimaxai #comfyui",
+  "webpage_url": "https://www.youtube.com/watch?v=2K6-OtV_Vbc"
+}

@@ -15,8 +15,8 @@
     "kj nodes": 1
   },
   "model": {
+    "minimax-h3": 3,
     "veo": 3,
-    "minimax-h3": 2,
     "scail-2": 1,
     "ideogram": 1,
     "kling": 1,
@@ -26,13 +26,18 @@
   },
   "technique": {
     "text to video": 7,
+    "latent": 2,
     "text to image": 2,
     "upscale": 2,
-    "latent": 1,
     "lora training": 1,
     "lora": 1,
     "dataset": 1,
-    "batch": 1
+    "batch": 1,
+    "refmod": 1,
+    "ref mod": 1,
+    "captioning": 1,
+    "identity": 1,
+    "audio ref": 1
   },
   "setting": {
     "frame=15": 1

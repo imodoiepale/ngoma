@@ -1,0 +1,23 @@
+In this video, I take a look at RefMods for MiniMax H3, explain how they differ from LoRAs, and walk through creating one from my own reference footage. I also test how well it preserves identity and whether RefMods are a practical alternative to traditional LoRA training.
+
+
+
+ComfyUI-MiniMaxH3Mod - https://github.com/Luisacaotica/ComfyUI-MiniMaxH3Mod
+
+ComfyUI-H3RefMods - https://github.com/FranckyB/ComfyUI-H3RefModPicker (this was updated after the video was posted)
+
+ComfyUI-Spectrum-MiniMax-H3 - https://github.com/xmarre/ComfyUI-Spectrum-MiniMax-H3
+
+Workflow: https://huggingface.co/datasets/malcolmrey/workflows/blob/main/H3/workflow_minimaxh3_refmod.json
+
+
+Chapters: 
+
+0:00 - Downloading Custom Nodes
+1:20 - Creating the RefMod
+3:21 - Generating a video 
+5:22 - Comparing outputs
+6:00 - Outro
+
+
+#ai #diffusion #minimaxai #comfyui

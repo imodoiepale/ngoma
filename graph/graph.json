@@ -1855,7 +1855,7 @@
    "label": "INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2",
    "collection": "icekiub",
    "node_count": 65,
-   "sha256": "12c9a08ec1834f869fe042e4866d0fca24aafe2a5c642c6baa07da4f084accd8",
+   "sha256": "12175d23018e67e2bbfe6092bcfb85499bc20469ba2a6eab0f606f4f15428373",
    "sources": 1
   },
   {
@@ -1904,7 +1904,7 @@
    "label": "INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2",
    "collection": "icekiub",
    "node_count": 62,
-   "sha256": "f9df8de06c784e15686700d5f977a1dd0d5bd3781bbf10c9e727baf0e5849aec",
+   "sha256": "10e248be155dd302f68565084e8c8bbcc389ba19835db3df945b1536e98e02f4",
    "sources": 1
   },
   {
@@ -2753,6 +2753,123 @@
    "sources": 1
   },
   {
+   "id": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "kind": "workflow",
+   "label": "dainamo-refmod-generate",
+   "collection": "h3-refmods",
+   "node_count": 21,
+   "sha256": "693de2e8bb91af30150e9f6b5d953ebd33f0856f85bf1e9172207f8192b349a0",
+   "sources": 1
+  },
+  {
+   "id": "collection:h3-refmods",
+   "kind": "collection",
+   "label": "h3-refmods"
+  },
+  {
+   "id": "node_pack:comfyui-minimaxh3mod",
+   "kind": "node_pack",
+   "label": "comfyui-minimaxh3mod"
+  },
+  {
+   "id": "node_pack:comfyui-spectrum-minimax-h3",
+   "kind": "node_pack",
+   "label": "comfyui-spectrum-minimax-h3"
+  },
+  {
+   "id": "node_type:MiniMaxH3RefModApply",
+   "kind": "node_type",
+   "label": "MiniMaxH3RefModApply"
+  },
+  {
+   "id": "node_type:MiniMaxH3RefModsLoader",
+   "kind": "node_type",
+   "label": "MiniMaxH3RefModsLoader"
+  },
+  {
+   "id": "node_type:Power Lora Loader (rgthree)",
+   "kind": "node_type",
+   "label": "Power Lora Loader (rgthree)"
+  },
+  {
+   "id": "node_type:SpectrumApplyMiniMaxH3",
+   "kind": "node_type",
+   "label": "SpectrumApplyMiniMaxH3"
+  },
+  {
+   "id": "model_file:minimax_h3_ref2va_pruned_fp8_scaled.safetensors",
+   "kind": "model_file",
+   "label": "minimax_h3_ref2va_pruned_fp8_scaled.safetensors"
+  },
+  {
+   "id": "workflow:workflows/h3-refmods/franckyb-refmod-create-from-folder.json",
+   "kind": "workflow",
+   "label": "franckyb-refmod-create-from-folder",
+   "collection": "h3-refmods",
+   "node_count": 3,
+   "sha256": "db44ba80d5f76a9e42e3830dbd9eb9f216db562b31c446b08c98ddb38a119773",
+   "sources": 1
+  },
+  {
+   "id": "node_pack:comfyui-h3refmodpicker",
+   "kind": "node_pack",
+   "label": "comfyui-h3refmodpicker"
+  },
+  {
+   "id": "node_type:H3RefModCreateFromFolder",
+   "kind": "node_type",
+   "label": "H3RefModCreateFromFolder"
+  },
+  {
+   "id": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "kind": "workflow",
+   "label": "franckyb-refmod-picker-example",
+   "collection": "h3-refmods",
+   "node_count": 27,
+   "sha256": "644abe5e5f964921eb41f0acf5be07af142167fea010bcb0bf1ae11cafbc0ce8",
+   "sources": 1
+  },
+  {
+   "id": "node_type:5de66fca-61c2-4807-80b1-f5b3e27e6769",
+   "kind": "node_type",
+   "label": "5de66fca-61c2-4807-80b1-f5b3e27e6769"
+  },
+  {
+   "id": "node_type:H3RefModApplySimple",
+   "kind": "node_type",
+   "label": "H3RefModApplySimple"
+  },
+  {
+   "id": "node_type:H3RefModVisualPicker",
+   "kind": "node_type",
+   "label": "H3RefModVisualPicker"
+  },
+  {
+   "id": "node_type:LoadLoraPlus",
+   "kind": "node_type",
+   "label": "LoadLoraPlus"
+  },
+  {
+   "id": "model_file:minimaxh3_adamdriver_v1_refmod.safetensors",
+   "kind": "model_file",
+   "label": "minimaxh3_adamdriver_v1_refmod.safetensors"
+  },
+  {
+   "id": "model:minimaxh3-adamdriver-v1-refmod",
+   "kind": "model",
+   "label": "minimaxh3-adamdriver-v1-refmod"
+  },
+  {
+   "id": "model_file:minimaxh3_aimeegarcia_v1_refmod.safetensors",
+   "kind": "model_file",
+   "label": "minimaxh3_aimeegarcia_v1_refmod.safetensors"
+  },
+  {
+   "id": "model:minimaxh3-aimeegarcia-v1-refmod",
+   "kind": "model",
+   "label": "minimaxh3-aimeegarcia-v1-refmod"
+  },
+  {
    "id": "video:nKGIQf8-AV4",
    "kind": "video",
    "label": "How to install Qwen 3.8 27B on your PC ( Local LLM with LM Studio)",
@@ -3167,6 +3284,43 @@
    "id": "version:torch 2.8.0",
    "kind": "version",
    "label": "torch 2.8.0"
+  },
+  {
+   "id": "video:2K6-OtV_Vbc",
+   "kind": "video",
+   "label": "How to Create a RefMod for MiniMax H3 — No Training Required",
+   "url": "https://www.youtube.com/watch?v=2K6-OtV_Vbc",
+   "channel": "dainamo"
+  },
+  {
+   "id": "channel:dainamo",
+   "kind": "channel",
+   "label": "dainamo"
+  },
+  {
+   "id": "technique:refmod",
+   "kind": "technique",
+   "label": "refmod"
+  },
+  {
+   "id": "technique:ref mod",
+   "kind": "technique",
+   "label": "ref mod"
+  },
+  {
+   "id": "technique:captioning",
+   "kind": "technique",
+   "label": "captioning"
+  },
+  {
+   "id": "technique:identity",
+   "kind": "technique",
+   "label": "identity"
+  },
+  {
+   "id": "technique:audio ref",
+   "kind": "technique",
+   "label": "audio ref"
   },
   {
    "id": "brand:epalle",
@@ -13176,6 +13330,371 @@
    "dst": "model_file:wan_2.1_vae.safetensors"
   },
   {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "belongs_to",
+   "dst": "collection:h3-refmods"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-minimaxh3mod"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-spectrum-minimax-h3"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "requires",
+   "dst": "node_pack:rgthree-comfy"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:BasicGuider"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:BasicScheduler"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:ComfyMathExpression"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:CreateVideo"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:KSamplerSelect"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:MiniMaxH3ImageToVideo"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:MiniMaxH3RefModApply"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:MiniMaxH3RefModsLoader"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:Power Lora Loader (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveFloat"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:RandomNoise"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:SamplerCustomAdvanced"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:SaveVideo"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:SpectrumApplyMiniMaxH3"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecodeAudio"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_audio_vae_fp32.safetensors"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_ref2va_pruned_fp8_scaled.safetensors"
+  },
+  {
+   "src": "model_file:minimax_h3_ref2va_pruned_fp8_scaled.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:minimax-h3-ref2va"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_video_vae_fp16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/dainamo-refmod-generate.json",
+   "rel": "requires",
+   "dst": "model_file:qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-create-from-folder.json",
+   "rel": "belongs_to",
+   "dst": "collection:h3-refmods"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-create-from-folder.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-create-from-folder.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-h3refmodpicker"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-create-from-folder.json",
+   "rel": "uses",
+   "dst": "node_type:H3RefModCreateFromFolder"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-create-from-folder.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-create-from-folder.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_audio_vae_fp32.safetensors"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-create-from-folder.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_video_vae_fp16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "belongs_to",
+   "dst": "collection:h3-refmods"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-h3refmodpicker"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:5de66fca-61c2-4807-80b1-f5b3e27e6769"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:BasicGuider"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:BasicScheduler"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:ComfyMathExpression"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:CreateVideo"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:H3RefModApplySimple"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:H3RefModVisualPicker"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:KSamplerSelect"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:LoadLoraPlus"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:MiniMaxH3ImageToVideo"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:MiniMaxH3SigmaShift"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:ModelAttentionBackend"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveInt"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveStringMultiline"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:RandomNoise"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:Reroute"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:ResolutionSelector"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:SamplerCustomAdvanced"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:SaveVideo"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecodeAudio"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_audio_vae_fp32.safetensors"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_fl2va_pruned_int8_convrot.safetensors"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_video_vae_fp16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "requires",
+   "dst": "model_file:minimaxh3_adamdriver_v1_refmod.safetensors"
+  },
+  {
+   "src": "model_file:minimaxh3_adamdriver_v1_refmod.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:minimaxh3-adamdriver-v1-refmod"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "requires",
+   "dst": "model_file:minimaxh3_aimeegarcia_v1_refmod.safetensors"
+  },
+  {
+   "src": "model_file:minimaxh3_aimeegarcia_v1_refmod.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:minimaxh3-aimeegarcia-v1-refmod"
+  },
+  {
+   "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
+   "rel": "requires",
+   "dst": "model_file:qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+  },
+  {
    "src": "video:nKGIQf8-AV4",
    "rel": "belongs_to",
    "dst": "channel:kiubai"
@@ -14283,6 +14802,95 @@
      "video": "9APXcBMpbgU",
      "t": "00:08:14",
      "quote": "comfy UI desktop is using Torch 2.8.0"
+    }
+   ]
+  },
+  {
+   "src": "video:2K6-OtV_Vbc",
+   "rel": "belongs_to",
+   "dst": "channel:dainamo"
+  },
+  {
+   "src": "video:2K6-OtV_Vbc",
+   "rel": "mentions",
+   "dst": "model:minimax-h3",
+   "evidence": [
+    {
+     "video": "2K6-OtV_Vbc",
+     "t": "00:00:00",
+     "quote": "How to Create a RefMod for MiniMax H3 — No Training Required"
+    }
+   ]
+  },
+  {
+   "src": "video:2K6-OtV_Vbc",
+   "rel": "mentions",
+   "dst": "technique:refmod",
+   "evidence": [
+    {
+     "video": "2K6-OtV_Vbc",
+     "t": "00:00:00",
+     "quote": "How to Create a RefMod for MiniMax H3 — No Training Required"
+    }
+   ]
+  },
+  {
+   "src": "video:2K6-OtV_Vbc",
+   "rel": "mentions",
+   "dst": "technique:ref mod",
+   "evidence": [
+    {
+     "video": "2K6-OtV_Vbc",
+     "t": "00:00:01",
+     "quote": "how to train a ref mod for Miniax H3."
+    }
+   ]
+  },
+  {
+   "src": "video:2K6-OtV_Vbc",
+   "rel": "mentions",
+   "dst": "technique:captioning",
+   "evidence": [
+    {
+     "video": "2K6-OtV_Vbc",
+     "t": "00:01:59",
+     "quote": "folder. No captioning is needed. You can"
+    }
+   ]
+  },
+  {
+   "src": "video:2K6-OtV_Vbc",
+   "rel": "mentions",
+   "dst": "technique:identity",
+   "evidence": [
+    {
+     "video": "2K6-OtV_Vbc",
+     "t": "00:02:40",
+     "quote": "I will leave it at identity and code."
+    }
+   ]
+  },
+  {
+   "src": "video:2K6-OtV_Vbc",
+   "rel": "mentions",
+   "dst": "technique:latent",
+   "evidence": [
+    {
+     "video": "2K6-OtV_Vbc",
+     "t": "00:04:38",
+     "quote": "them into latent representations. Those"
+    }
+   ]
+  },
+  {
+   "src": "video:2K6-OtV_Vbc",
+   "rel": "mentions",
+   "dst": "technique:audio ref",
+   "evidence": [
+    {
+     "video": "2K6-OtV_Vbc",
+     "t": "00:05:36",
+     "quote": "to fix that, such as with an audio ref"
     }
    ]
   },

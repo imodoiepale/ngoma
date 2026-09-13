@@ -217,6 +217,17 @@ channels:
       KJNodes Patch Sage Attention node it recommends is the one
       infra/runpod/guard_kjnodes_sage.py bypasses on torch 2.11+. See docs/SAGE-ATTENTION.md.
 
+  - key: dainamo
+    name: Dainamo (DainamoLabs)
+    tier: proposed
+    verified: true          # probed 2026-09-13
+    url: https://www.youtube.com/channel/UCb_A1zvd9iXCigO8ekgJW2A
+    topics: [minimax-h3, refmods, character-consistency, comfyui]
+    why: >
+      Sent directly: "How to Create a RefMod for MiniMax H3 - No Training Required"
+      (2K6-OtV_Vbc). Its workflow and the picker's examples are in workflows/h3-refmods/.
+      See docs/H3-REFMODS.md.
+
 # Single videos already tracked in packages/library/manifests/monitored-sources.json.
 # yt-learn resolves each to its uploader channel before monitoring.
 # All three resolved on 2026-09-12 and their channels are now first-class entries above.
