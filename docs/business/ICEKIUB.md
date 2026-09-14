@@ -32,6 +32,10 @@ There are 16 Icekiub workflows in `workflows/icekiub/`, registered in `workflows
 - LTX2 T2V and LTX 2.3 "KlingKiller" pose/depth
 - QWEN ICY Faceswap, QWEN Image Unleashed, and the QWEN NSFW Klein faceswap
 
+Plus one custom node pack, **ICYLM** (`workflows/icekiub/nodes/ICYLM/`): ComfyUI nodes that
+call a local LM Studio server (`http://127.0.0.1:1234`) to caption or prompt from an image,
+video frames or audio. Needs `requests`, `Pillow`, `numpy` and `opencv-python`.
+
 Note that the NSFW faceswap workflow is **never** used on real people (see
 `brands/_business/ideas.yaml` X01 hard gates).
 
