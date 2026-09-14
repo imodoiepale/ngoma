@@ -88,10 +88,45 @@ def test_bind_api_format():
     assert len(log) == 3
 
 
-def test_bind_unknown_port_is_reported_as_unknown():
+def test_no_engine_port_map_has_unknown_ports_left():
+    for kind in ports.ENGINE_KINDS:
+        assert ports.load_port_map(KIND_TO_REL[kind])["unknown"] == [], kind
+
+
+def test_bind_unknown_port_is_reported():
     rel = KIND_TO_REL["lipsync"]
-    _, log = ports.bind(_graph(rel), ports.load_port_map(rel), {"audio": "voice.wav"})
-    assert log == ["skipped audio: listed as unknown in the port map"]
+    pm = ports.load_port_map(rel)
+    pm["unknown"] = ["mood: not wired"]
+    _, log = ports.bind(_graph(rel), pm, {"mood": "x"})
+    assert log == ["skipped mood: listed as unknown in the port map"]
+
+
+def test_lipsync_audio_reads_the_whole_track_from_a_wrapped_video():
+    rel = KIND_TO_REL["lipsync"]
+    pm = ports.load_port_map(rel)
+    assert pm["inputs"]["audio"]["transform"] == "audio_to_video"
+    bound, _ = ports.bind(_graph(rel), pm, {"audio": "studio/voice.mp4"})
+    wv = {str(n["id"]): n for n in bound["nodes"]}["155"]["widgets_values"]
+    assert wv["video"] == "studio/voice.mp4" and wv["skip_first_frames"] == 0 and wv["frame_load_cap"] == 0
+
+
+def test_h3_identity_is_line_one_and_references_follow():
+    rel = KIND_TO_REL["h3-reference-image"]
+    bound, _ = ports.bind(_graph(rel), ports.load_port_map(rel), {"references": ["studio/dress.png", "studio/room.png"],
+                                                                 "identity": "studio/sheet.png"})
+    node = {str(n["id"]): n for n in bound["nodes"]}["81"]
+    assert node["widgets_values"][1] == "studio/sheet.png\nstudio/dress.png\nstudio/room.png"
+
+
+def test_consistent_room_switches_on_the_room_group_and_takes_the_lora():
+    rel = KIND_TO_REL["consistent-room"]
+    graph = _graph(rel)
+    by_id = {str(n["id"]): n for n in graph["nodes"]}
+    assert by_id["238"]["mode"] == 4
+    bound, _ = ports.bind(graph, ports.load_port_map(rel), {"room": "studio/room.png", "character_lora": "lead.safetensors", "image": "x"})
+    b = {str(n["id"]): n for n in bound["nodes"]}
+    assert b["238"]["widgets_values"][0] == "studio/room.png" and b["238"]["mode"] == 0 and b["239"]["mode"] == 0
+    assert b["361"]["widgets_values"][0] == "lead.safetensors"
 
 
 def test_wrong_sha_is_reported(tmp_path, monkeypatch):

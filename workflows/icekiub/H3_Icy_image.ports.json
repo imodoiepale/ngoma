@@ -3,12 +3,21 @@
   "sha256": "573f845255ee77523ae97196d66a80ab3f844c96aec2f5c0a0595d821a04dfa0",
   "format": "ui",
   "inputs": {
+    "identity": {
+      "node": "81",
+      "class": "IcyMultiRefLoader",
+      "field": "media",
+      "widget_index": 1,
+      "line": 0,
+      "note": "Line 1 of the IcyMultiRefLoader list is Picture 1, the identity. Files must be in the ComfyUI input folder; the runner uploads them first."
+    },
     "references": {
       "node": "81",
       "class": "IcyMultiRefLoader",
       "field": "media",
       "widget_index": 1,
-      "note": "One reference filename per line (newline separated), files inside the ComfyUI input folder (widget 0 selects 'input'/'output'). Slot order matters: line 1 is Picture 1 (identity), line 2 is Picture 2 (composition). Up to 5 lines reach MiniMaxH3ReferenceToVideo 27 (ref_image_0..4), 4 reach the prompt compiler 93."
+      "line_from": 1,
+      "note": "Lines 2-5: composition, outfit, room. Up to 5 reach MiniMaxH3ReferenceToVideo 27; 4 reach the prompt compiler 93."
     }
   },
   "prompt": {
@@ -39,9 +48,7 @@
       "note": "No SaveImage in this workflow. Node 62 previews the 1x skin-contrast upscaled result (node 40 previews the raw decode). Preview files land in ComfyUI temp/; the runner must fetch them via /view?type=temp or a human should replace node 62 with SaveImage."
     }
   },
-  "unknown": [
-    "character: this workflow has no RefMod loader and no single character image node; identity comes from the first line of the `references` list (IcyMultiRefLoader 81). Put the character's identity image first in `references` instead."
-  ],
+  "unknown": [],
   "notes": [
     "ICYLMStudioMultimodalPrompt 93 needs a local LM Studio server; widget 0 currently reads '<no models found - start LM Studio server>'.",
     "Output size: MiniMaxH3ReferenceToVideo 27 widgets 1 and 2 (1344x768); IcyMegapixelResize 26 governs reference scaling."

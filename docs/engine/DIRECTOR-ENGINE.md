@@ -24,8 +24,8 @@ ratio. Add a profile by adding a block to `profiles.yaml`; the tests check its k
 `packages/engine/director.py` is deterministic: the same brief always gives the same graph.
 
 1. **References.** One input node per reference collection. A role whose references are
-   owned or licensed data (or a real person with a written release) gets a character sheet
-   and a RefMod character. Anyone else gets a declared gap, never a face.
+   owned or licensed data (or a real person with a written release) gets a character sheet,
+   which H3 reads as its identity picture. Anyone else gets a declared gap, never a face.
 2. **Storyboard.** One brief node per scene, named by the profile's beats, placed at the
    scene hints you gave ("rooftop at golden hour").
 3. **Stills.** Per scene, K angle nodes (3, 5, 10 or 20) from the camera table, each with a
@@ -33,11 +33,13 @@ ratio. Add a profile by adding a block to `profiles.yaml`; the tests check its k
    character, the generator is H3 reference image; without, Krea 2.
 4. **Pick.** A `pick` step keeps up to k. Nothing downstream runs until you choose.
 5. **Dressing.** Wardrobe, room and jewellery steps attach only when a collection with
-   owned or licensed rights is present.
+   owned or licensed rights is present. The room step needs a trained LoRA for the lead
+   (`roles[].lora`); without one the location is a gap and stays in the prompt.
 6. **Motion.** Still to video for the scene's seconds, or motion control when a reference
    clip is attached. VFX you name become steps where a step exists (`upscale`) and gaps
    where none does (`relight`, anything unknown).
-7. **Edit and ending.** Cut, captions, a voiceover when the profile narrates, then export.
+7. **Edit and ending.** Cut, a voiceover of every scene's brief when the profile narrates,
+   captions timed to that voiceover, then export.
    Publishing steps exist only if you ask and always need a person.
 
 ## Talking to it
@@ -80,8 +82,12 @@ outputs and they were fetched. Queued is not success.
 
 `workflows/<pack>/<name>.ports.json` says which ComfyUI node receives each studio port,
 the prompt, the negative, the seed and the count, and which node saves the output. See
-[PORT-MAPS.md](PORT-MAPS.md). `python` steps (cut, captions, voiceover) are recorded, not run,
-by the engine for now; run them from their own CLIs.
+[PORT-MAPS.md](PORT-MAPS.md). Before a live submission the runner uploads every bound file to
+ComfyUI's input folder (`ComfyClient.upload`, `/upload/image`) and converts where a map says so.
+
+Cut, voiceover, captions and export run on this machine (`packages/engine/edit.py`: ffmpeg,
+`voice/tts.py`, `voice/mux.py`). A voiceover from ElevenLabs or OpenAI spends, so its stage
+goes through the same approval as a GPU stage.
 
 ## References
 
@@ -92,8 +98,18 @@ lists what each kind of reference can drive.
 
 ## Voice
 
-The microphone button uses the browser's own speech recognition when it has one, else
-records a clip and transcribes it locally with whisper. An ElevenLabs conversational agent
-can front the same `/api/director` endpoint through client-side tools once
-`set_secret.py elevenlabs` holds a key and you have an agent id; nothing is wired to a paid
-voice service by default.
+The microphone button talks to the **EPALLE Studio Director** agent on ElevenLabs. The
+agent has ten client tools (`packages/voice/elevenlabs_agent.py`): `director_say`,
+`add_scene`, `set_angles`, `set_look`, `set_kind`, `attach_reference`, `keep_candidates`,
+`set_run_mode`, `run_stage`, `workflow_status`. They run in the browser
+(`components/VoiceDirector.js`) and go through `/api/director` and `/api/run`, so a spoken
+"run it" meets the same approvals and budget as a click. A test keeps the two tool lists equal.
+
+```bash
+uv run --with pyyaml python packages/voice/elevenlabs_agent.py sync        # create or update the agent and tools
+uv run --with pyyaml python packages/voice/elevenlabs_agent.py signed-url  # what /api/voice/session hands the browser
+```
+
+The key stays in the vault (`set_secret.py elevenlabs`); the browser only gets a short-lived
+signed URL. Ids live in `brands/_presets/voice-agent.json`. If the agent cannot be reached,
+the button falls back to the browser's own speech recognition.

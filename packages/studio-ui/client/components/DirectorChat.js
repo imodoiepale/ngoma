@@ -5,7 +5,7 @@ import VoiceDirector from "./VoiceDirector";
 
 // The director's chat. Every line you send changes the brief; the workflow is rebuilt from
 // it and the canvas redraws. The same endpoint serves the voice agent.
-export default function DirectorChat({ client, workflow, session, initial = [], onWorkflow, onClose }) {
+export default function DirectorChat({ client, workflow, session, initial = [], onWorkflow, onRun, getStatus, onClose }) {
   const [lines, setLines] = useState(initial.length ? initial : [{ who: "director", text: "Tell me scenes, angles, wardrobe, a look, or a kind of piece. Say \"run the next stage\" when you are ready." }]);
   const [text, setText] = useState("");
   const [busy, setBusy] = useState(false);
@@ -38,7 +38,7 @@ export default function DirectorChat({ client, workflow, session, initial = [], 
       <div className="inspector-head">
         <h3>Director</h3>
         <div className="director-tools">
-          <VoiceDirector onUtterance={(t) => send(t)} />
+          <VoiceDirector onUtterance={(t) => send(t)} onRun={onRun} getStatus={getStatus} />
           <button className="icon-btn" onClick={onClose} aria-label="Close director">×</button>
         </div>
       </div>

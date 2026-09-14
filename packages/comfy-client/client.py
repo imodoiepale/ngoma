@@ -289,6 +289,27 @@ class ComfyClient:
         cid = str(uuid.uuid4())
         return self._post("/prompt", {"prompt": graph, "client_id": cid})
 
+    def upload(self, path: Any, subfolder: str = "studio", overwrite: bool = True) -> str:
+        """Put a local file in ComfyUI's input folder. Returns the name a loader widget expects
+        (`studio/name.png`). ComfyUI's /upload/image accepts any file type, video included."""
+        from pathlib import Path as _P
+        if self.backend == "serverless":
+            raise ComfyError("the serverless worker has no input folder; run engine stages on the pod")
+        p = _P(path)
+        boundary = uuid.uuid4().hex
+        head = (f'--{boundary}\r\nContent-Disposition: form-data; name="image"; filename="{p.name}"\r\n'
+                f'Content-Type: application/octet-stream\r\n\r\n').encode()
+        tail = (f'\r\n--{boundary}\r\nContent-Disposition: form-data; name="subfolder"\r\n\r\n{subfolder}\r\n'
+                f'--{boundary}\r\nContent-Disposition: form-data; name="overwrite"\r\n\r\n{"true" if overwrite else "false"}\r\n'
+                f'--{boundary}--\r\n').encode()
+        req = urllib.request.Request(f"{self.base_url}/upload/image", data=head + p.read_bytes() + tail,
+                                     headers={"Content-Type": f"multipart/form-data; boundary={boundary}",
+                                              "User-Agent": "epalle-studio/1.0"})
+        with urllib.request.urlopen(req, timeout=600) as resp:
+            d = json.loads(resp.read())
+        name, sub = d.get("name") or p.name, d.get("subfolder") or ""
+        return f"{sub}/{name}" if sub else name
+
     def wait(self, prompt_id: str, poll_s: float = 2.0, max_s: int = 3600) -> dict[str, Any]:
         """Poll until the graph genuinely completes. Queued is not success."""
         t0 = time.time()

@@ -8,7 +8,11 @@
       "class": "LoadImage",
       "field": "image",
       "widget_index": 0,
-      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). Feeds VAEEncode 239 -> ReferenceLatent 229 'ROOM' used by the character sampler 350. Group 'Load Room images' (nodes 236/238/240 and VAEEncodes 237/239/241) is bypassed (mode 4) in the shipped file: set 238 and 239 to mode 0 to use a supplied room. Otherwise the room is generated from the description in CLIPTextEncode 343."
+      "note": "LoadImage 238 feeds VAEEncode 239 -> ReferenceLatent 229 'ROOM'. The shipped file bypasses 238/239; binding a room switches both on (mode 0).",
+      "enable_nodes": [
+        "238",
+        "239"
+      ]
     }
   },
   "prompt": {
@@ -44,12 +48,19 @@
       "note": "Character placed in the room (sampler 350). Room-only outputs: SaveImage 339 (base room) and 291, 364, 365, 366, 367 (room angles); SaveImage 369 is the bypassed face-detailer pass."
     }
   },
-  "unknown": [
-    "image: the character identity comes from a trained LoRA (LoraLoaderModelOnly 361, title 'CHARACTER LORA (TRAIN YOUR OWN)'), not from an image; there is no character image loader in this workflow."
-  ],
+  "unknown": [],
   "notes": [
     "LoadImage 363 'Room for angles' is not wired to anything.",
     "Angle prompts live in CLIPTextEncode 307, 314, 322, 327, 359 (mis-titled 'Negative Prompt').",
     "Base-room text: CLIPTextEncode 343 (Klein path); the QWEN base-room group is bypassed."
-  ]
+  ],
+  "params": {
+    "character_lora": {
+      "node": "361",
+      "class": "LoraLoaderModelOnly",
+      "field": "lora_name",
+      "widget_index": 0,
+      "note": "The character identity in this workflow is a trained Klein LoRA, not an image. Put the LoRA file in models/loras on the pod."
+    }
+  }
 }

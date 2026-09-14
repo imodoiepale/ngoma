@@ -1,0 +1,18 @@
+{
+  "agent_id": "agent_3001m2fw29yze7tbjdy9kpb4k4y2",
+  "name": "EPALLE Studio Director",
+  "llm": "gemini-2.5-flash",
+  "voice_id": "21m00Tcm4TlvDq8ikWAM",
+  "tools": {
+    "director_say": "tool_8301m2fw22v4edpbe67nk0gtgevz",
+    "add_scene": "tool_8601m2fw23jyehxvqzss5dr14nka",
+    "set_angles": "tool_2501m2fw2491f6wbmtkejb59v7nc",
+    "set_look": "tool_1401m2fw24z0fzttm5ed8acxbn2v",
+    "set_kind": "tool_4001m2fw25r1e71aaatea6dyzbg5",
+    "attach_reference": "tool_7601m2fw26fafexsnq6gtcs38qcn",
+    "keep_candidates": "tool_8701m2fw2760fc2sswy5yex5m610",
+    "set_run_mode": "tool_3901m2fw27wdf5qvjhkcpsgy4xp1",
+    "run_stage": "tool_7201m2fw28hwe9ws9qr1f8bnb9v8",
+    "workflow_status": "tool_1901m2fw297yfzmv6awy87hz6m5j"
+  }
+}

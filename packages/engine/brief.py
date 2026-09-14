@@ -31,6 +31,7 @@ class Role:
     consent: bool = False
     fictional: bool = True
     ref_collection: str = ""        # a RefCollection name with the role's photos
+    lora: str = ""                  # a trained character LoRA file on the pod, when one exists
 
 
 @dataclass

@@ -30,14 +30,15 @@ fragments, never a port.
 | raw clips | `cut` Cut and loop | `video` | trimmed, looped and picked | owned or licensed data |
 | a finished image | `compositor` Brand compositor | `media` | exact copy, logo and palette laid on top | owned or licensed data |
 | a finished clip | `captions` Captions | `video` | burned-in subtitles from the script | owned or licensed data |
+| a voiceover or music track | `captions` Captions | `audio` | the soundtrack the subtitles are timed to | owned or licensed data |
 | a clip with speech | `transcribe` Transcribe | `media` | timed text to cut, caption or translate from | owned or licensed data |
 | an image or a video for `media` | `postiz` Schedule post | `media` | Instagram, TikTok and more through Postiz, as a draft | owned or licensed data |
 | an image or a video for `media` | `whatsapp-status` WhatsApp Status | `media` | Through OpenWA, after approval | owned or licensed data |
 | an image or a video for `media` | `export` Export files | `media` | Masters and manifest for the client | owned or licensed data |
 | a pose or depth reference | `krea2-t2i` Krea 2 realism image | `pose` | composition control for the generation | owned or licensed data |
-| face, body, outfit and room photos | `h3-reference-image` H3 reference image | `references` | an H3 still that keeps all four | consent |
+| a character sheet or one clear photo | `h3-reference-image` H3 reference image | `identity` | Picture 1: who the still is of | consent |
+| outfit, pose and room photos | `h3-reference-image` H3 reference image | `references` | Pictures 2 to 5: what the still keeps around them | consent |
 | one photo | `character-sheet` Character sheet | `image` | four views of the character, ready for H3 references | consent |
-| one shot of the character | `consistent-room` Consistent room | `image` | the subject that gets placed in the room | owned or licensed data |
 | one photo of the room or background | `consistent-room` Consistent room | `room` | the same room across every angle and scene | owned or licensed data |
 | a pose or edge map | `zimage-controlnet` Z-Image base + turbo | `control` | ControlNet composition for the generation | owned or licensed data |
 | one photo of the person to dress | `wardrobe` Change outfit | `image` | the body that keeps its face, pose and room | owned or licensed data |
@@ -57,4 +58,4 @@ fragments, never a port.
 | one or more images for `candidates` | `pick` Your pick | `candidates` | Choose the keepers from the candidates; nothing downstream runs until you do | owned or licensed data |
 | a video clip for `candidates` | `pick-video` Your pick (video) | `candidates` | Choose the clips to keep | owned or licensed data |
 
-47 rows: 13 need consent, 33 need owned or licensed data, 1 inspiration only.
+48 rows: 14 need consent, 33 need owned or licensed data, 1 inspiration only.

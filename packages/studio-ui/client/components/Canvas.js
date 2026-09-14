@@ -196,20 +196,30 @@ function Editor({ client, initial, catalog }) {
     if (res.ok) replace(await res.json());
   }
 
-  async function runStage() {
+  // Returns what happened in words, so the voice director can say it back.
+  async function runStage(which = stage) {
     setRunning(true);
     try {
       const res = await fetch("/api/run", { method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ client: client.id, workflow: initial.id, stage, mode, approveAs: mode === "dry-run" ? undefined : "human" }) });
+        body: JSON.stringify({ client: client.id, workflow: initial.id, stage: which, mode, approveAs: mode === "dry-run" ? undefined : "human" }) });
       const data = await res.json().catch(() => ({}));
-      if (!res.ok) { flash(data.error || "The stage did not run."); return; }
+      if (!res.ok) { const msg = data.error || "The stage did not run."; flash(msg); return msg; }
       const done = (data.results || []).filter((r) => r.status === "completed").length;
-      flash(data.note || `${data.stage || "stage"}: ${data.results?.length || 0} step(s), ${done} completed under ${data.mode}.${data.pending_picks?.length ? ` ${data.pending_picks.length} pick(s) waiting for you.` : ""}`);
+      const msg = data.note || `${data.stage || "stage"}: ${data.results?.length || 0} step(s), ${done} completed under ${data.mode}.${data.pending_picks?.length ? ` ${data.pending_picks.length} pick(s) waiting for you.` : ""}`;
+      flash(msg);
       await reload();
+      return msg;
     } finally {
       setRunning(false);
     }
   }
+
+  const workflowStatus = () => ({
+    title: wf.title, run_mode: mode, look: wf.preset || wf.source?.engine?.preset, kind: wf.source?.engine?.profile,
+    stages: (wf.stages || []).map((s) => s.id),
+    pending_picks: (wf.nodes || []).filter((n) => ["pick", "pick-video"].includes(n.kind) && !n.data?.picked?.length).map((n) => n.id),
+    gaps: (wf.gaps || []).map((g) => g.reason || g.note || g.id).slice(0, 12),
+  });
 
   const portType = useCallback((nodeId, handle, dir) => {
     const n = nodes.find((x) => x.id === nodeId);
@@ -294,7 +304,7 @@ function Editor({ client, initial, catalog }) {
                   {wf.stages.map((s) => <option key={s.id} value={s.id}>{s.label}</option>)}
                 </select>
               )}
-              <button className="btn" onClick={runStage} disabled={running} title={mode === "dry-run" ? "Writes what would run; nothing is submitted" : "Needs your approval; spends GPU time"}>
+              <button className="btn" onClick={() => runStage()} disabled={running} title={mode === "dry-run" ? "Writes what would run; nothing is submitted" : "Needs your approval; spends GPU time"}>
                 {running ? "Running…" : mode === "dry-run" ? "Dry-run stage" : "Run stage"}
               </button>
               <button className="btn btn-quiet" onClick={() => setDirector((d) => !d)} aria-pressed={director}>Director</button>
@@ -336,7 +346,8 @@ function Editor({ client, initial, catalog }) {
 
       {director && !readOnly && !picking && (
         <DirectorChat client={client.id} workflow={initial.id} session={sessionId}
-          onWorkflow={(next) => replace(next)} onClose={() => setDirector(false)} />
+          onWorkflow={(next) => replace(next)} onRun={(s) => runStage(s)} getStatus={workflowStatus}
+          onClose={() => setDirector(false)} />
       )}
 
       {picking && selectedNode && (

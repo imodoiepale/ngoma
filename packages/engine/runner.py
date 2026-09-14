@@ -159,9 +159,12 @@ def run_node(client: str, wf: dict[str, Any], node: dict[str, Any], mode: str, b
         _record(node, res)
         return res
     if be["kind"] in ("python", "publish"):
-        res = {"run_id": run_id, "status": "dry-run" if mode == "dry-run" else "skipped",
-               "note": f"{be['kind']} step {be.get('module')} is not run by the engine yet; run it from the studio CLI",
-               "cost_estimate": est, "finished": _now()}
+        if be["kind"] == "python" and node["kind"] in LOCAL_STEPS:
+            res = {"run_id": run_id, **_run_local(client, wf, node, mode, run_id), "cost_estimate": est, "finished": _now()}
+        else:
+            res = {"run_id": run_id, "status": "dry-run" if mode == "dry-run" else "skipped",
+                   "note": f"{be['kind']} step {be.get('module')} is not run by the engine; publishing goes through a person",
+                   "cost_estimate": est, "finished": _now()}
         _manifest(client, wf, node, run_id, res)
         _record(node, res)
         return res
@@ -190,6 +193,9 @@ def run_node(client: str, wf: dict[str, Any], node: dict[str, Any], mode: str, b
         bindings["prompt"] = d["prompt"]
     if d.get("negative"):
         bindings["negative"] = d["negative"]
+    for key, value in (d.get("params") or {}).items():
+        if key in pm.get("params", {}) and value not in (None, ""):
+            bindings[key] = value
     base_seed = int(d.get("seed") or (int(hashlib.sha256(node["id"].encode()).hexdigest(), 16) % 10_000_000))
     payload = {"backend": backend, "workflow": be["workflow"], "bindings": bindings, "seeds": [base_seed + i for i in range(variants)],
                "cost_estimate": est, "started": _now()}
@@ -204,6 +210,14 @@ def run_node(client: str, wf: dict[str, Any], node: dict[str, Any], mode: str, b
     comfy = factory(backend)
     files, shas, log, prompt_ids, status, detail = [], [], [], [], "completed", ""
     t0 = time.time()
+    try:
+        bindings = {**bindings, **_stage_inputs(comfy, pm, bindings, run_dir(client, wf["id"], node["id"], run_id) / "inputs")}
+    except Exception as e:  # noqa: BLE001 - an upload or conversion failure is the node's error, not a crash
+        res = {"run_id": run_id, "status": "error", "detail": f"could not put inputs on the pod: {e}", **payload, "finished": _now()}
+        _manifest(client, wf, node, run_id, res)
+        _record(node, res)
+        return res
+    payload["uploaded"] = {k: bindings[k] for k in pm["inputs"] if k in bindings}
     for seed in payload["seeds"]:
         g, changes = ports.bind(json.loads(json.dumps(graph)), pm, {**bindings, "seed": seed, "count": 1})
         log += changes
@@ -227,6 +241,72 @@ def run_node(client: str, wf: dict[str, Any], node: dict[str, Any], mode: str, b
     _manifest(client, wf, node, run_id, res)
     _record(node, res)
     return res
+
+
+def _stage_inputs(comfy: Any, pm: dict[str, Any], bindings: dict[str, Any], scratch: Path) -> dict[str, Any]:
+    """Upload every file an input port binds into ComfyUI's input folder, converting first where
+    the port map says so. Returns the bindings rewritten to the names ComfyUI loaders expect."""
+    import edit
+    out: dict[str, Any] = {}
+    for key, ref in pm["inputs"].items():
+        if key not in bindings:
+            continue
+        value = bindings[key]
+        names = []
+        for rel in (value if isinstance(value, list) else [value]):
+            src = BRANDS.parent / rel
+            if not src.is_file():
+                raise RunError(f"{key}: {rel} is not a file")
+            if ref.get("transform") == "audio_to_video":
+                src = edit.audio_to_video(src, scratch / f"{src.stem}.mp4")
+            names.append(comfy.upload(src))
+        out[key] = names if isinstance(value, list) else names[0]
+    return out
+
+
+# steps this machine runs itself (packages/engine/edit.py); publishing never runs here
+LOCAL_STEPS = {"voiceover", "cut", "captions", "export"}
+
+
+def _feeder_text(wf: dict[str, Any], node: dict[str, Any], port: str) -> str:
+    by_id = {n["id"]: n for n in wf["nodes"]}
+    parts = [by_id[e["source"]]["data"].get("params", {}).get("text") or ""
+             for e in wf["edges"] if e["target"] == node["id"] and e["targetHandle"] == port and e["source"] in by_id]
+    return "\n\n".join(p.strip() for p in parts if p.strip())
+
+
+def _run_local(client: str, wf: dict[str, Any], node: dict[str, Any], mode: str, run_id: str) -> dict[str, Any]:
+    import edit
+    dry = mode == "dry-run"
+    ups = upstream_files(wf, node)
+    dest = run_dir(client, wf["id"], node["id"], run_id)
+    params = node["data"].get("params") or {}
+    feeders = {e["targetHandle"] for e in wf["edges"] if e["target"] == node["id"]}
+    kind = node["kind"]
+    need = {"cut": "video", "captions": "video", "export": "media"}.get(kind)
+    if need and not ups.get(need):
+        if dry and need in feeders:
+            return {"status": "dry-run", "files": [], "note": f"would {kind} what the upstream {need} steps make"}
+        return {"status": "blocked", "files": [], "note": f"input {need} has nothing to feed it yet"}
+    absolute = lambda rels: [BRANDS.parent / r for r in rels]  # noqa: E731
+    try:
+        if kind == "voiceover":
+            lang = params.get("language") or (wf.get("source", {}).get("engine") or {}).get("language") or "en"
+            out = edit.voiceover(_feeder_text(wf, node, "script"), lang, dest / "voiceover.mp3", params.get("provider"), dry_run=dry)
+        elif kind == "cut":
+            out = edit.concat(absolute(ups["video"]), dest / "cut.mp4", params.get("seconds"), dry_run=dry)
+        elif kind == "captions":
+            audio = absolute(ups.get("audio", []))[:1]
+            if not audio and "audio" in feeders and not dry:
+                return {"status": "blocked", "files": [], "note": "the voiceover has not been made yet"}
+            out = edit.captions(absolute(ups["video"])[-1], audio[0] if audio else None,
+                                _feeder_text(wf, node, "script") or None, dest / "captioned.mp4", dry_run=dry)
+        else:
+            out = edit.export(absolute(ups["media"]), dest / "export", dry_run=dry)
+    except (edit.EditError, OSError) as e:
+        return {"status": "error", "files": [], "note": str(e)}
+    out["files"] = [str(Path(f).resolve().relative_to(BRANDS.parent.resolve())).replace("\\", "/") for f in out.get("files", [])]
+    return out
 
 
 def _default_factory(backend: str) -> Any:
@@ -289,7 +369,9 @@ def run_stage(client: str, workflow_id: str, stage: str, mode: str | None = None
     if not nodes:
         raise RunError(f"no stage {stage!r} in {workflow_id}")
 
-    spends = [n for n in nodes if cat["by_kind"].get(n["kind"], {}).get("backend", {}).get("kind") == "comfy"]
+    # GPU steps, and narration from a paid voice (ElevenLabs bills per character)
+    spends = [n for n in nodes if cat["by_kind"].get(n["kind"], {}).get("backend", {}).get("kind") == "comfy"
+              or (n["kind"] == "voiceover" and (n["data"].get("params") or {}).get("provider", "elevenlabs") in ("elevenlabs", "openai"))]
     publishes = [n for n in nodes if n["kind"] in PUBLISH_KINDS]
     gate: dict[str, Any] = {"ok": True}
     if mode != "dry-run" and spends:

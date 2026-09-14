@@ -142,6 +142,7 @@ def plan(brief: EngineBrief, cat: dict[str, Any] | None = None) -> dict[str, Any
         ref_nodes[r.name] = b.node(refs, INPUT_KINDS.get(r.kind, "reference-images"), r.name,
                                    params={"folder": r.path or f"brands/{brief.client}/references/{r.name}",
                                            "file": r.path}, ref=r.__dict__.copy())
+    # the character sheet is the identity: H3 reads it as Picture 1 of its reference list
     characters: dict[str, dict[str, Any]] = {}
     for role in brief.roles:
         src = ref_nodes.get(role.ref_collection)
@@ -151,9 +152,7 @@ def plan(brief: EngineBrief, cat: dict[str, Any] | None = None) -> dict[str, Any
         if role.consent or (role.fictional and rc and rc.may_feed()):
             sheet = b.node(refs, "character-sheet", role.name, role=role.name)
             b.link(src, "images", sheet, "image")
-            ch = b.node(refs, "refmod-create", role.name, role=role.name)
-            b.link(src, "images", ch, "images")
-            characters[role.name] = ch
+            characters[role.name] = sheet
         else:
             b.gap(refs, f"character-{role.name}", f"role {role.name}: no consent release and not a fictional persona "
                                                     "built from owned references, so no likeness step runs")
@@ -174,7 +173,7 @@ def plan(brief: EngineBrief, cat: dict[str, Any] | None = None) -> dict[str, Any
                         variant_count=brief.seeds_per_angle, why=f"{shot.camera} angle of {sc.title} in the {p['label']} grammar")
             if lead:
                 g = b.node(st, "h3-reference-image", f"a{shot.angle}", role=sc.roles[0], **data)
-                b.link(lead, "character", g, "character")
+                b.link(lead, "sheet", g, "identity")
                 b.link(brief_node, "text", g, "prompt")
             else:
                 g = b.node(st, "krea2-t2i", f"a{shot.angle}", **data)
@@ -193,9 +192,17 @@ def plan(brief: EngineBrief, cat: dict[str, Any] | None = None) -> dict[str, Any
             b.link(current, port, w, "image"); b.link(ref_nodes[sc.wardrobe], "images", w, "clothes")
             current, port = w, "image"
         if sc.location:
-            room = b.node(dress, "consistent-room", "", scene=sc.n)
-            b.link(current, port, room, "image"); b.link(ref_nodes[sc.location], "images", room, "room")
-            current, port = room, "image"
+            # Consistent Room carries the character as a trained LoRA, not an image
+            lead_role = next((r for r in brief.roles if sc.roles and r.name == sc.roles[0]), None)
+            if lead_role and lead_role.lora:
+                room = b.node(dress, "consistent-room", "", scene=sc.n, role=lead_role.name,
+                              params={"character_lora": lead_role.lora},
+                              why=f"{lead_role.name} re-rendered from their LoRA inside {sc.location}")
+                b.link(ref_nodes[sc.location], "images", room, "room"); b.link(brief_node, "text", room, "prompt")
+                current, port = room, "image"
+            else:
+                b.gap(dress, f"room-{sc.location}", f"location {sc.location}: Consistent Room needs a trained character "
+                                                   "LoRA for the lead; the setting stays in the prompt until one exists")
         if sc.jewellery:
             j = b.node(dress, "image-edit", "jewellery", scene=sc.n, params={"instruction": f"add the jewellery from {sc.jewellery}"})
             b.link(current, port, j, "image"); b.link(brief_node, "text", j, "prompt")
@@ -229,6 +236,14 @@ def plan(brief: EngineBrief, cat: dict[str, Any] | None = None) -> dict[str, Any
         b.link(f, "video", cut, "video")
     caps = b.node(ed, "captions", "")
     b.link(cut, "video", caps, "video")
+    briefs = [n for n in b.nodes if n["kind"] == "brief"]
+    if prof["narration"] != "none":
+        vo = b.node(ed, "voiceover", "", why=prof["narration"], params={"language": brief.language or "en", "provider": "elevenlabs"})
+        for bn in briefs:
+            b.link(bn, "text", vo, "script")
+        b.link(vo, "audio", caps, "audio")
+    for bn in briefs:
+        b.link(bn, "text", caps, "script")
     out = b.stage("publish", "Publish")
     for o in brief.outputs or ["export"]:
         if o == "export":
@@ -237,9 +252,6 @@ def plan(brief: EngineBrief, cat: dict[str, Any] | None = None) -> dict[str, Any
         elif o in ("postiz", "whatsapp-status"):
             pub = b.node(out, o, "")
             b.link(caps, "video", pub, "media")
-    if prof["narration"] != "none":
-        vo = b.node(ed, "voiceover", "", why=prof["narration"])
-        b.link(b.nodes[[n["id"] for n in b.nodes].index(f"storyboard.brief.s1")], "text", vo, "script")
     return b.finish(brief.title, {"engine": brief.to_dict()})
 
 

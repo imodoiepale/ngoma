@@ -63,18 +63,18 @@ Studio ports come from the catalogue. "-" means the workflow has no such widget.
 | Kind | Workflow | Inputs mapped | Unknown | prompt | negative | seed | count | Output node |
 |---|---|---|---|---|---|---|---|---|
 | krea2-t2i | icekiub/Krea2Icy_-Subs_1.1 | pose -> LoadImage 19 (bypassed control path) | - | CLIPTextEncode 12 | CLIPTextEncode 6 | KSampler 3 | EmptyLatentImage 18 | SaveImage 1 |
-| h3-reference-image | icekiub/H3_Icy_image | references -> IcyMultiRefLoader 81 (newline list) | character (no RefMod loader; identity = first reference) | PrimitiveStringMultiline 50 via LM Studio compiler 93 | - | RandomNoise 6 | EmptyLatentImage 53 | PreviewImage 62 (no SaveImage) |
+| h3-reference-image | icekiub/H3_Icy_image | identity -> IcyMultiRefLoader 81 line 1; references -> lines 2-5 | - | PrimitiveStringMultiline 50 via LM Studio compiler 93 | - | RandomNoise 6 | EmptyLatentImage 53 | PreviewImage 62 (no SaveImage) |
 | character-sheet | icekiub/icy_ref_character_sheet_for_minimax | image -> LoadImage 2220 | - | CLIPTextEncode 2234 | CLIPTextEncode 2239 | RandomNoise 2242 | EmptyFlux2LatentImage 2241 | SaveImage 2249 |
 | refmod-create | h3-refmods/franckyb-refmod-create-from-folder | images -> H3RefModCreateFromFolder 32 `folder` (a folder path, not a file) | - | - | - | - | - | node 32 writes the RefMod (`name` widget 3) |
 | wardrobe | icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3 | image -> LoadImage 15, clothes -> LoadImage 19 (extra slots 27, 26) | - | CLIPTextEncode 6 | - (ConditioningZeroOut) | KSampler 3 | EmptyLatentImage 9 | PreviewImage 4 (no SaveImage) |
-| consistent-room | icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs | room -> LoadImage 238 (bypassed group) | image (character is a trained LoRA, node 361) | PrimitiveStringMultiline 178 | CLIPTextEncode 170 | ClownsharKSampler_Beta 350 [7] | EmptyFlux2LatentImage 351 | SaveImage 173 (+ room/angle saves) |
+| consistent-room | icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs | room -> LoadImage 238 (enables 238/239); param character_lora -> LoraLoaderModelOnly 361 | - | PrimitiveStringMultiline 178 | CLIPTextEncode 170 | ClownsharKSampler_Beta 350 [7] | EmptyFlux2LatentImage 351 | SaveImage 173 (+ room/angle saves) |
 | image-edit | icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v1_ | image -> LoadImage 122 | - | TextEncodeQwenImageEditPlus 3 | - (ConditioningZeroOut) | KSampler 27 | EmptyLatentImage 81 | SaveImage 120 |
 | image-to-video | icekiub/I2V_Infinite_extender_-_SUBS_-_Icekiub_v1 | image -> LoadImage 33 | - | CLIPTextEncode 189 | CLIPTextEncode 186 | KSamplerAdvanced 190 [1] (loop 294 same) | - | VHS_VideoCombine 244 (full video) |
 | motion-control | icekiub/Motion_Control_Icy_-SUBS | character -> BetterImageLoader 161 [1], video -> VHS_LoadVideo 33 `video` | - | CLIPTextEncode 3 | CLIPTextEncode 4 | KSampler 154 (loop 174 same) | - | VHS_VideoCombine 181 (clean, with audio) |
 | upscale-video | h3/NEW_-_V2V_Latent_Motion_Transfer_with_upscale_and_de-rope_ | video -> VHS_LoadVideo 1 `video` | - | PrimitiveStringMultiline 121 | - | RandomNoise 30 (pass 2: 146) | - | VHS_VideoCombine 143 (de-roped) |
 | klein-t2i | api-tests/klein-t2i-test (API format) | - | - | 4 `text` | 5 `text` | 8 `seed` | 7 `batch_size` | SaveImage 10 |
 | carousel | icekiub/Carousel_Pose_changer_-_Icekiub_V1.7 | image -> LoadImage 13 | - | CR Prompt List 16 [1] (one pose per line) | CLIPTextEncode 8 | KSampler 9 | - (one image per line) | SaveImage 10 |
-| lipsync | MiniMax-H3-Simple-WF/IMG-_-Audio-To-Video | image -> LoadImage 139 | audio (no LoadAudio; audio comes from VHS_LoadVideo 155's soundtrack) | PrimitiveStringMultiline 142 | - | RandomNoise 129 | - | SaveVideo 92 |
+| lipsync | MiniMax-H3-Simple-WF/IMG-_-Audio-To-Video | image -> LoadImage 139; audio -> VHS_LoadVideo 155 `video` (audio_to_video) | - | PrimitiveStringMultiline 142 | - | RandomNoise 129 | - | SaveVideo 92 |
 | character-video | h3-refmods/dainamo-refmod-generate | character -> MiniMaxH3RefModsLoader 200 [1] (RefMod name) | - | MiniMaxH3ImageToVideo 127 [0] | - | RandomNoise 128 | - | SaveVideo 136 |
 
 Things a human must still do (see each map's `notes`):
@@ -83,11 +83,13 @@ Things a human must still do (see each map's `notes`):
   local LM Studio server; there is no SaveImage (output is a PreviewImage in `temp/`).
 - **wardrobe**: model-vs-clothes loader assignment is inferred from canvas layout (no node titles);
   no SaveImage either.
-- **consistent-room**: the supplied room only takes effect after un-bypassing nodes 238/239; the
-  character comes from a LoRA, so `image` cannot be driven.
+- **consistent-room**: binding `room` switches nodes 238/239 on (`enable_nodes`). The character is
+  a trained LoRA, not an image: the `character_lora` parameter sets LoraLoaderModelOnly 361, and
+  the director only adds this step when the role has a `lora`; otherwise the room is a gap.
 - **krea2-t2i**: the pose/depth control group is bypassed in the shipped file.
-- **lipsync**: replace `VHS_LoadVideo` 155 with `LoadAudio` (or ship the voice inside a video) before
-  the `audio` port can be driven.
+- **lipsync**: the voice is read from VHS_LoadVideo 155's soundtrack. The `audio` port carries
+  `transform: audio_to_video`: the runner wraps the audio in a black video with ffmpeg, uploads
+  it, and `set` resets `skip_first_frames` and `frame_load_cap` to 0 so the whole track plays.
 - **character-video** / **refmod-create**: RefMods only from references the client owns
   (`docs/H3-REFMODS.md`); the `MiniMaxH3RefModsLoader` field name is inferred from widget layout.
 - **upscale-video**: performer references (LoadImage 64 and 108) are not studio ports; set by hand.

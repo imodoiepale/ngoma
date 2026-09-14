@@ -13,86 +13,78 @@
     },
     {
       "id": "e2",
-      "source": "refs.reference-images.avatar-lead",
-      "sourceHandle": "images",
-      "target": "refs.refmod-create.lead",
-      "targetHandle": "images",
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene1.h3-reference-image.a1",
+      "targetHandle": "identity",
       "type": "image"
     },
     {
       "id": "e3",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
       "target": "scene1.h3-reference-image.a1",
-      "targetHandle": "character",
-      "type": "character"
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e4",
-      "source": "storyboard.brief.s1",
-      "sourceHandle": "text",
-      "target": "scene1.h3-reference-image.a1",
-      "targetHandle": "prompt",
-      "type": "text"
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene1.h3-reference-image.a2",
+      "targetHandle": "identity",
+      "type": "image"
     },
     {
       "id": "e5",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
       "target": "scene1.h3-reference-image.a2",
-      "targetHandle": "character",
-      "type": "character"
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e6",
-      "source": "storyboard.brief.s1",
-      "sourceHandle": "text",
-      "target": "scene1.h3-reference-image.a2",
-      "targetHandle": "prompt",
-      "type": "text"
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene1.h3-reference-image.a3",
+      "targetHandle": "identity",
+      "type": "image"
     },
     {
       "id": "e7",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
       "target": "scene1.h3-reference-image.a3",
-      "targetHandle": "character",
-      "type": "character"
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e8",
-      "source": "storyboard.brief.s1",
-      "sourceHandle": "text",
-      "target": "scene1.h3-reference-image.a3",
-      "targetHandle": "prompt",
-      "type": "text"
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene1.h3-reference-image.a4",
+      "targetHandle": "identity",
+      "type": "image"
     },
     {
       "id": "e9",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
       "target": "scene1.h3-reference-image.a4",
-      "targetHandle": "character",
-      "type": "character"
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e10",
-      "source": "storyboard.brief.s1",
-      "sourceHandle": "text",
-      "target": "scene1.h3-reference-image.a4",
-      "targetHandle": "prompt",
-      "type": "text"
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene1.h3-reference-image.a5",
+      "targetHandle": "identity",
+      "type": "image"
     },
     {
       "id": "e11",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene1.h3-reference-image.a5",
-      "targetHandle": "character",
-      "type": "character"
-    },
-    {
-      "id": "e12",
       "source": "storyboard.brief.s1",
       "sourceHandle": "text",
       "target": "scene1.h3-reference-image.a5",
@@ -100,7 +92,7 @@
       "type": "text"
     },
     {
-      "id": "e13",
+      "id": "e12",
       "source": "scene1.h3-reference-image.a1",
       "sourceHandle": "image",
       "target": "scene1.pick.keep",
@@ -108,7 +100,7 @@
       "type": "image"
     },
     {
-      "id": "e14",
+      "id": "e13",
       "source": "scene1.h3-reference-image.a2",
       "sourceHandle": "image",
       "target": "scene1.pick.keep",
@@ -116,7 +108,7 @@
       "type": "image"
     },
     {
-      "id": "e15",
+      "id": "e14",
       "source": "scene1.h3-reference-image.a3",
       "sourceHandle": "image",
       "target": "scene1.pick.keep",
@@ -124,7 +116,7 @@
       "type": "image"
     },
     {
-      "id": "e16",
+      "id": "e15",
       "source": "scene1.h3-reference-image.a4",
       "sourceHandle": "image",
       "target": "scene1.pick.keep",
@@ -132,7 +124,7 @@
       "type": "image"
     },
     {
-      "id": "e17",
+      "id": "e16",
       "source": "scene1.h3-reference-image.a5",
       "sourceHandle": "image",
       "target": "scene1.pick.keep",
@@ -140,7 +132,7 @@
       "type": "image"
     },
     {
-      "id": "e18",
+      "id": "e17",
       "source": "scene1.pick.keep",
       "sourceHandle": "chosen",
       "target": "scene1-dress.wardrobe",
@@ -148,7 +140,7 @@
       "type": "image"
     },
     {
-      "id": "e19",
+      "id": "e18",
       "source": "refs.reference-images.wardrobe-red",
       "sourceHandle": "images",
       "target": "scene1-dress.wardrobe",
@@ -156,31 +148,15 @@
       "type": "image"
     },
     {
-      "id": "e20",
+      "id": "e19",
       "source": "scene1-dress.wardrobe",
-      "sourceHandle": "image",
-      "target": "scene1-dress.consistent-room",
-      "targetHandle": "image",
-      "type": "image"
-    },
-    {
-      "id": "e21",
-      "source": "refs.reference-images.location-rooftop",
-      "sourceHandle": "images",
-      "target": "scene1-dress.consistent-room",
-      "targetHandle": "room",
-      "type": "image"
-    },
-    {
-      "id": "e22",
-      "source": "scene1-dress.consistent-room",
       "sourceHandle": "image",
       "target": "scene1-motion.image-to-video",
       "targetHandle": "image",
       "type": "image"
     },
     {
-      "id": "e23",
+      "id": "e20",
       "source": "storyboard.brief.s1",
       "sourceHandle": "text",
       "target": "scene1-motion.image-to-video",
@@ -188,7 +164,7 @@
       "type": "text"
     },
     {
-      "id": "e24",
+      "id": "e21",
       "source": "scene1-motion.image-to-video",
       "sourceHandle": "video",
       "target": "scene1-motion.upscale-video.upscale",
@@ -196,7 +172,7 @@
       "type": "video"
     },
     {
-      "id": "e25",
+      "id": "e22",
       "source": "scene1-motion.upscale-video.upscale",
       "sourceHandle": "video",
       "target": "scene1-motion.relight.relight",
@@ -204,87 +180,87 @@
       "type": "video"
     },
     {
-      "id": "e26",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
+      "id": "e23",
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
       "target": "scene2.h3-reference-image.a1",
-      "targetHandle": "character",
-      "type": "character"
+      "targetHandle": "identity",
+      "type": "image"
+    },
+    {
+      "id": "e24",
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "scene2.h3-reference-image.a1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e25",
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene2.h3-reference-image.a2",
+      "targetHandle": "identity",
+      "type": "image"
+    },
+    {
+      "id": "e26",
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "scene2.h3-reference-image.a2",
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e27",
-      "source": "storyboard.brief.s2",
-      "sourceHandle": "text",
-      "target": "scene2.h3-reference-image.a1",
-      "targetHandle": "prompt",
-      "type": "text"
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene2.h3-reference-image.a3",
+      "targetHandle": "identity",
+      "type": "image"
     },
     {
       "id": "e28",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene2.h3-reference-image.a2",
-      "targetHandle": "character",
-      "type": "character"
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "scene2.h3-reference-image.a3",
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e29",
-      "source": "storyboard.brief.s2",
-      "sourceHandle": "text",
-      "target": "scene2.h3-reference-image.a2",
-      "targetHandle": "prompt",
-      "type": "text"
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene2.h3-reference-image.a4",
+      "targetHandle": "identity",
+      "type": "image"
     },
     {
       "id": "e30",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene2.h3-reference-image.a3",
-      "targetHandle": "character",
-      "type": "character"
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "scene2.h3-reference-image.a4",
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e31",
-      "source": "storyboard.brief.s2",
-      "sourceHandle": "text",
-      "target": "scene2.h3-reference-image.a3",
-      "targetHandle": "prompt",
-      "type": "text"
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene2.h3-reference-image.a5",
+      "targetHandle": "identity",
+      "type": "image"
     },
     {
       "id": "e32",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene2.h3-reference-image.a4",
-      "targetHandle": "character",
-      "type": "character"
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "scene2.h3-reference-image.a5",
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e33",
-      "source": "storyboard.brief.s2",
-      "sourceHandle": "text",
-      "target": "scene2.h3-reference-image.a4",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e34",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene2.h3-reference-image.a5",
-      "targetHandle": "character",
-      "type": "character"
-    },
-    {
-      "id": "e35",
-      "source": "storyboard.brief.s2",
-      "sourceHandle": "text",
-      "target": "scene2.h3-reference-image.a5",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e36",
       "source": "scene2.h3-reference-image.a1",
       "sourceHandle": "image",
       "target": "scene2.pick.keep",
@@ -292,7 +268,7 @@
       "type": "image"
     },
     {
-      "id": "e37",
+      "id": "e34",
       "source": "scene2.h3-reference-image.a2",
       "sourceHandle": "image",
       "target": "scene2.pick.keep",
@@ -300,7 +276,7 @@
       "type": "image"
     },
     {
-      "id": "e38",
+      "id": "e35",
       "source": "scene2.h3-reference-image.a3",
       "sourceHandle": "image",
       "target": "scene2.pick.keep",
@@ -308,7 +284,7 @@
       "type": "image"
     },
     {
-      "id": "e39",
+      "id": "e36",
       "source": "scene2.h3-reference-image.a4",
       "sourceHandle": "image",
       "target": "scene2.pick.keep",
@@ -316,7 +292,7 @@
       "type": "image"
     },
     {
-      "id": "e40",
+      "id": "e37",
       "source": "scene2.h3-reference-image.a5",
       "sourceHandle": "image",
       "target": "scene2.pick.keep",
@@ -324,7 +300,7 @@
       "type": "image"
     },
     {
-      "id": "e41",
+      "id": "e38",
       "source": "scene2.pick.keep",
       "sourceHandle": "chosen",
       "target": "scene2-dress.wardrobe",
@@ -332,7 +308,7 @@
       "type": "image"
     },
     {
-      "id": "e42",
+      "id": "e39",
       "source": "refs.reference-images.wardrobe-red",
       "sourceHandle": "images",
       "target": "scene2-dress.wardrobe",
@@ -340,31 +316,15 @@
       "type": "image"
     },
     {
-      "id": "e43",
+      "id": "e40",
       "source": "scene2-dress.wardrobe",
-      "sourceHandle": "image",
-      "target": "scene2-dress.consistent-room",
-      "targetHandle": "image",
-      "type": "image"
-    },
-    {
-      "id": "e44",
-      "source": "refs.reference-images.location-rooftop",
-      "sourceHandle": "images",
-      "target": "scene2-dress.consistent-room",
-      "targetHandle": "room",
-      "type": "image"
-    },
-    {
-      "id": "e45",
-      "source": "scene2-dress.consistent-room",
       "sourceHandle": "image",
       "target": "scene2-motion.image-to-video",
       "targetHandle": "image",
       "type": "image"
     },
     {
-      "id": "e46",
+      "id": "e41",
       "source": "storyboard.brief.s2",
       "sourceHandle": "text",
       "target": "scene2-motion.image-to-video",
@@ -372,7 +332,7 @@
       "type": "text"
     },
     {
-      "id": "e47",
+      "id": "e42",
       "source": "scene2-motion.image-to-video",
       "sourceHandle": "video",
       "target": "scene2-motion.upscale-video.upscale",
@@ -380,7 +340,7 @@
       "type": "video"
     },
     {
-      "id": "e48",
+      "id": "e43",
       "source": "scene2-motion.upscale-video.upscale",
       "sourceHandle": "video",
       "target": "scene2-motion.relight.relight",
@@ -388,87 +348,87 @@
       "type": "video"
     },
     {
-      "id": "e49",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
+      "id": "e44",
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
       "target": "scene3.h3-reference-image.a1",
-      "targetHandle": "character",
-      "type": "character"
+      "targetHandle": "identity",
+      "type": "image"
+    },
+    {
+      "id": "e45",
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "scene3.h3-reference-image.a1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e46",
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene3.h3-reference-image.a2",
+      "targetHandle": "identity",
+      "type": "image"
+    },
+    {
+      "id": "e47",
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "scene3.h3-reference-image.a2",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e48",
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene3.h3-reference-image.a3",
+      "targetHandle": "identity",
+      "type": "image"
+    },
+    {
+      "id": "e49",
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "scene3.h3-reference-image.a3",
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e50",
-      "source": "storyboard.brief.s3",
-      "sourceHandle": "text",
-      "target": "scene3.h3-reference-image.a1",
-      "targetHandle": "prompt",
-      "type": "text"
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene3.h3-reference-image.a4",
+      "targetHandle": "identity",
+      "type": "image"
     },
     {
       "id": "e51",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene3.h3-reference-image.a2",
-      "targetHandle": "character",
-      "type": "character"
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "scene3.h3-reference-image.a4",
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e52",
-      "source": "storyboard.brief.s3",
-      "sourceHandle": "text",
-      "target": "scene3.h3-reference-image.a2",
-      "targetHandle": "prompt",
-      "type": "text"
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene3.h3-reference-image.a5",
+      "targetHandle": "identity",
+      "type": "image"
     },
     {
       "id": "e53",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene3.h3-reference-image.a3",
-      "targetHandle": "character",
-      "type": "character"
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "scene3.h3-reference-image.a5",
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e54",
-      "source": "storyboard.brief.s3",
-      "sourceHandle": "text",
-      "target": "scene3.h3-reference-image.a3",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e55",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene3.h3-reference-image.a4",
-      "targetHandle": "character",
-      "type": "character"
-    },
-    {
-      "id": "e56",
-      "source": "storyboard.brief.s3",
-      "sourceHandle": "text",
-      "target": "scene3.h3-reference-image.a4",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e57",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene3.h3-reference-image.a5",
-      "targetHandle": "character",
-      "type": "character"
-    },
-    {
-      "id": "e58",
-      "source": "storyboard.brief.s3",
-      "sourceHandle": "text",
-      "target": "scene3.h3-reference-image.a5",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e59",
       "source": "scene3.h3-reference-image.a1",
       "sourceHandle": "image",
       "target": "scene3.pick.keep",
@@ -476,7 +436,7 @@
       "type": "image"
     },
     {
-      "id": "e60",
+      "id": "e55",
       "source": "scene3.h3-reference-image.a2",
       "sourceHandle": "image",
       "target": "scene3.pick.keep",
@@ -484,7 +444,7 @@
       "type": "image"
     },
     {
-      "id": "e61",
+      "id": "e56",
       "source": "scene3.h3-reference-image.a3",
       "sourceHandle": "image",
       "target": "scene3.pick.keep",
@@ -492,7 +452,7 @@
       "type": "image"
     },
     {
-      "id": "e62",
+      "id": "e57",
       "source": "scene3.h3-reference-image.a4",
       "sourceHandle": "image",
       "target": "scene3.pick.keep",
@@ -500,7 +460,7 @@
       "type": "image"
     },
     {
-      "id": "e63",
+      "id": "e58",
       "source": "scene3.h3-reference-image.a5",
       "sourceHandle": "image",
       "target": "scene3.pick.keep",
@@ -508,7 +468,7 @@
       "type": "image"
     },
     {
-      "id": "e64",
+      "id": "e59",
       "source": "scene3.pick.keep",
       "sourceHandle": "chosen",
       "target": "scene3-dress.wardrobe",
@@ -516,7 +476,7 @@
       "type": "image"
     },
     {
-      "id": "e65",
+      "id": "e60",
       "source": "refs.reference-images.wardrobe-red",
       "sourceHandle": "images",
       "target": "scene3-dress.wardrobe",
@@ -524,31 +484,15 @@
       "type": "image"
     },
     {
-      "id": "e66",
+      "id": "e61",
       "source": "scene3-dress.wardrobe",
-      "sourceHandle": "image",
-      "target": "scene3-dress.consistent-room",
-      "targetHandle": "image",
-      "type": "image"
-    },
-    {
-      "id": "e67",
-      "source": "refs.reference-images.location-rooftop",
-      "sourceHandle": "images",
-      "target": "scene3-dress.consistent-room",
-      "targetHandle": "room",
-      "type": "image"
-    },
-    {
-      "id": "e68",
-      "source": "scene3-dress.consistent-room",
       "sourceHandle": "image",
       "target": "scene3-motion.image-to-video",
       "targetHandle": "image",
       "type": "image"
     },
     {
-      "id": "e69",
+      "id": "e62",
       "source": "storyboard.brief.s3",
       "sourceHandle": "text",
       "target": "scene3-motion.image-to-video",
@@ -556,7 +500,7 @@
       "type": "text"
     },
     {
-      "id": "e70",
+      "id": "e63",
       "source": "scene3-motion.image-to-video",
       "sourceHandle": "video",
       "target": "scene3-motion.upscale-video.upscale",
@@ -564,7 +508,7 @@
       "type": "video"
     },
     {
-      "id": "e71",
+      "id": "e64",
       "source": "scene3-motion.upscale-video.upscale",
       "sourceHandle": "video",
       "target": "scene3-motion.relight.relight",
@@ -572,87 +516,87 @@
       "type": "video"
     },
     {
-      "id": "e72",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
+      "id": "e65",
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
       "target": "scene4.h3-reference-image.a1",
-      "targetHandle": "character",
-      "type": "character"
+      "targetHandle": "identity",
+      "type": "image"
+    },
+    {
+      "id": "e66",
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "scene4.h3-reference-image.a1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e67",
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene4.h3-reference-image.a2",
+      "targetHandle": "identity",
+      "type": "image"
+    },
+    {
+      "id": "e68",
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "scene4.h3-reference-image.a2",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e69",
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene4.h3-reference-image.a3",
+      "targetHandle": "identity",
+      "type": "image"
+    },
+    {
+      "id": "e70",
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "scene4.h3-reference-image.a3",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e71",
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene4.h3-reference-image.a4",
+      "targetHandle": "identity",
+      "type": "image"
+    },
+    {
+      "id": "e72",
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "scene4.h3-reference-image.a4",
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e73",
-      "source": "storyboard.brief.s4",
-      "sourceHandle": "text",
-      "target": "scene4.h3-reference-image.a1",
-      "targetHandle": "prompt",
-      "type": "text"
+      "source": "refs.character-sheet.lead",
+      "sourceHandle": "sheet",
+      "target": "scene4.h3-reference-image.a5",
+      "targetHandle": "identity",
+      "type": "image"
     },
     {
       "id": "e74",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene4.h3-reference-image.a2",
-      "targetHandle": "character",
-      "type": "character"
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "scene4.h3-reference-image.a5",
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e75",
-      "source": "storyboard.brief.s4",
-      "sourceHandle": "text",
-      "target": "scene4.h3-reference-image.a2",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e76",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene4.h3-reference-image.a3",
-      "targetHandle": "character",
-      "type": "character"
-    },
-    {
-      "id": "e77",
-      "source": "storyboard.brief.s4",
-      "sourceHandle": "text",
-      "target": "scene4.h3-reference-image.a3",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e78",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene4.h3-reference-image.a4",
-      "targetHandle": "character",
-      "type": "character"
-    },
-    {
-      "id": "e79",
-      "source": "storyboard.brief.s4",
-      "sourceHandle": "text",
-      "target": "scene4.h3-reference-image.a4",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e80",
-      "source": "refs.refmod-create.lead",
-      "sourceHandle": "character",
-      "target": "scene4.h3-reference-image.a5",
-      "targetHandle": "character",
-      "type": "character"
-    },
-    {
-      "id": "e81",
-      "source": "storyboard.brief.s4",
-      "sourceHandle": "text",
-      "target": "scene4.h3-reference-image.a5",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e82",
       "source": "scene4.h3-reference-image.a1",
       "sourceHandle": "image",
       "target": "scene4.pick.keep",
@@ -660,7 +604,7 @@
       "type": "image"
     },
     {
-      "id": "e83",
+      "id": "e76",
       "source": "scene4.h3-reference-image.a2",
       "sourceHandle": "image",
       "target": "scene4.pick.keep",
@@ -668,7 +612,7 @@
       "type": "image"
     },
     {
-      "id": "e84",
+      "id": "e77",
       "source": "scene4.h3-reference-image.a3",
       "sourceHandle": "image",
       "target": "scene4.pick.keep",
@@ -676,7 +620,7 @@
       "type": "image"
     },
     {
-      "id": "e85",
+      "id": "e78",
       "source": "scene4.h3-reference-image.a4",
       "sourceHandle": "image",
       "target": "scene4.pick.keep",
@@ -684,7 +628,7 @@
       "type": "image"
     },
     {
-      "id": "e86",
+      "id": "e79",
       "source": "scene4.h3-reference-image.a5",
       "sourceHandle": "image",
       "target": "scene4.pick.keep",
@@ -692,7 +636,7 @@
       "type": "image"
     },
     {
-      "id": "e87",
+      "id": "e80",
       "source": "scene4.pick.keep",
       "sourceHandle": "chosen",
       "target": "scene4-dress.wardrobe",
@@ -700,7 +644,7 @@
       "type": "image"
     },
     {
-      "id": "e88",
+      "id": "e81",
       "source": "refs.reference-images.wardrobe-red",
       "sourceHandle": "images",
       "target": "scene4-dress.wardrobe",
@@ -708,31 +652,15 @@
       "type": "image"
     },
     {
-      "id": "e89",
+      "id": "e82",
       "source": "scene4-dress.wardrobe",
-      "sourceHandle": "image",
-      "target": "scene4-dress.consistent-room",
-      "targetHandle": "image",
-      "type": "image"
-    },
-    {
-      "id": "e90",
-      "source": "refs.reference-images.location-rooftop",
-      "sourceHandle": "images",
-      "target": "scene4-dress.consistent-room",
-      "targetHandle": "room",
-      "type": "image"
-    },
-    {
-      "id": "e91",
-      "source": "scene4-dress.consistent-room",
       "sourceHandle": "image",
       "target": "scene4-motion.image-to-video",
       "targetHandle": "image",
       "type": "image"
     },
     {
-      "id": "e92",
+      "id": "e83",
       "source": "storyboard.brief.s4",
       "sourceHandle": "text",
       "target": "scene4-motion.image-to-video",
@@ -740,7 +668,7 @@
       "type": "text"
     },
     {
-      "id": "e93",
+      "id": "e84",
       "source": "scene4-motion.image-to-video",
       "sourceHandle": "video",
       "target": "scene4-motion.upscale-video.upscale",
@@ -748,7 +676,7 @@
       "type": "video"
     },
     {
-      "id": "e94",
+      "id": "e85",
       "source": "scene4-motion.upscale-video.upscale",
       "sourceHandle": "video",
       "target": "scene4-motion.relight.relight",
@@ -756,7 +684,7 @@
       "type": "video"
     },
     {
-      "id": "e95",
+      "id": "e86",
       "source": "scene1-motion.relight.relight",
       "sourceHandle": "video",
       "target": "edit.cut",
@@ -764,7 +692,7 @@
       "type": "video"
     },
     {
-      "id": "e96",
+      "id": "e87",
       "source": "scene2-motion.relight.relight",
       "sourceHandle": "video",
       "target": "edit.cut",
@@ -772,7 +700,7 @@
       "type": "video"
     },
     {
-      "id": "e97",
+      "id": "e88",
       "source": "scene3-motion.relight.relight",
       "sourceHandle": "video",
       "target": "edit.cut",
@@ -780,7 +708,7 @@
       "type": "video"
     },
     {
-      "id": "e98",
+      "id": "e89",
       "source": "scene4-motion.relight.relight",
       "sourceHandle": "video",
       "target": "edit.cut",
@@ -788,7 +716,7 @@
       "type": "video"
     },
     {
-      "id": "e99",
+      "id": "e90",
       "source": "edit.cut",
       "sourceHandle": "video",
       "target": "edit.captions",
@@ -796,7 +724,39 @@
       "type": "video"
     },
     {
-      "id": "e100",
+      "id": "e91",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
+      "target": "edit.captions",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e92",
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "edit.captions",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e93",
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "edit.captions",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e94",
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "edit.captions",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e95",
       "source": "edit.captions",
       "sourceHandle": "video",
       "target": "publish.export",
@@ -806,9 +766,19 @@
   ],
   "gaps": [
     {
+      "node": "scene1-dress.unmapped.room-location-rooftop",
+      "reason": "location location-rooftop: Consistent Room needs a trained character LoRA for the lead; the setting stays in the prompt until one exists",
+      "step": "room-location-rooftop"
+    },
+    {
       "node": "scene1-motion.relight.relight",
       "reason": "No video relight workflow in the library yet.",
       "step": "relight"
+    },
+    {
+      "node": "scene2-dress.unmapped.room-location-rooftop",
+      "reason": "location location-rooftop: Consistent Room needs a trained character LoRA for the lead; the setting stays in the prompt until one exists",
+      "step": "room-location-rooftop"
     },
     {
       "node": "scene2-motion.relight.relight",
@@ -816,9 +786,19 @@
       "step": "relight"
     },
     {
+      "node": "scene3-dress.unmapped.room-location-rooftop",
+      "reason": "location location-rooftop: Consistent Room needs a trained character LoRA for the lead; the setting stays in the prompt until one exists",
+      "step": "room-location-rooftop"
+    },
+    {
       "node": "scene3-motion.relight.relight",
       "reason": "No video relight workflow in the library yet.",
       "step": "relight"
+    },
+    {
+      "node": "scene4-dress.unmapped.room-location-rooftop",
+      "reason": "location location-rooftop: Consistent Room needs a trained character LoRA for the lead; the setting stays in the prompt until one exists",
+      "step": "room-location-rooftop"
     },
     {
       "node": "scene4-motion.relight.relight",
@@ -931,21 +911,6 @@
       "position": {
         "x": 400,
         "y": 80
-      }
-    },
-    {
-      "data": {
-        "params": {
-          "preset": "identity"
-        },
-        "role": "lead",
-        "stage": "refs"
-      },
-      "id": "refs.refmod-create.lead",
-      "kind": "refmod-create",
-      "position": {
-        "x": 400,
-        "y": 290
       }
     },
     {
@@ -1087,20 +1052,20 @@
       "id": "scene1-dress.wardrobe",
       "kind": "wardrobe",
       "position": {
-        "x": 80,
+        "x": 400,
         "y": 2750
       }
     },
     {
       "data": {
         "params": {},
-        "scene": 1,
-        "stage": "scene1-dress"
+        "stage": "scene1-dress",
+        "step": "room-location-rooftop"
       },
-      "id": "scene1-dress.consistent-room",
-      "kind": "consistent-room",
+      "id": "scene1-dress.unmapped.room-location-rooftop",
+      "kind": "unmapped",
       "position": {
-        "x": 400,
+        "x": 80,
         "y": 2750
       }
     },
@@ -1285,20 +1250,20 @@
       "id": "scene2-dress.wardrobe",
       "kind": "wardrobe",
       "position": {
-        "x": 80,
+        "x": 400,
         "y": 4160
       }
     },
     {
       "data": {
         "params": {},
-        "scene": 2,
-        "stage": "scene2-dress"
+        "stage": "scene2-dress",
+        "step": "room-location-rooftop"
       },
-      "id": "scene2-dress.consistent-room",
-      "kind": "consistent-room",
+      "id": "scene2-dress.unmapped.room-location-rooftop",
+      "kind": "unmapped",
       "position": {
-        "x": 400,
+        "x": 80,
         "y": 4160
       }
     },
@@ -1483,20 +1448,20 @@
       "id": "scene3-dress.wardrobe",
       "kind": "wardrobe",
       "position": {
-        "x": 80,
+        "x": 400,
         "y": 5570
       }
     },
     {
       "data": {
         "params": {},
-        "scene": 3,
-        "stage": "scene3-dress"
+        "stage": "scene3-dress",
+        "step": "room-location-rooftop"
       },
-      "id": "scene3-dress.consistent-room",
-      "kind": "consistent-room",
+      "id": "scene3-dress.unmapped.room-location-rooftop",
+      "kind": "unmapped",
       "position": {
-        "x": 400,
+        "x": 80,
         "y": 5570
       }
     },
@@ -1681,20 +1646,20 @@
       "id": "scene4-dress.wardrobe",
       "kind": "wardrobe",
       "position": {
-        "x": 80,
+        "x": 400,
         "y": 6980
       }
     },
     {
       "data": {
         "params": {},
-        "scene": 4,
-        "stage": "scene4-dress"
+        "stage": "scene4-dress",
+        "step": "room-location-rooftop"
       },
-      "id": "scene4-dress.consistent-room",
-      "kind": "consistent-room",
+      "id": "scene4-dress.unmapped.room-location-rooftop",
+      "kind": "unmapped",
       "position": {
-        "x": 400,
+        "x": 80,
         "y": 6980
       }
     },
@@ -1836,6 +1801,7 @@
         {
           "consent": false,
           "fictional": true,
+          "lora": "",
           "name": "lead",
           "ref_collection": "avatar-lead"
         }

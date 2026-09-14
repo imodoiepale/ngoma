@@ -38,6 +38,8 @@ ENGINE_KINDS = [
 
 # the single-value slots a map may carry besides the studio `inputs`
 SLOTS = ("prompt", "negative", "seed", "count")
+# file conversions the runner applies before a value is bound (see runner._prepare_file)
+TRANSFORMS = ("audio_to_video",)
 REQUIRED_KEYS = ("workflow", "sha256", "format", "inputs", "outputs", "unknown", "notes")
 
 
@@ -65,6 +67,15 @@ def _check_ref(name: str, ref: Any, fmt: str) -> None:
             raise PortMapError(f"{name}: missing string '{key}'")
     if fmt == "ui" and "widget_index" in ref and not isinstance(ref["widget_index"], int):
         raise PortMapError(f"{name}: widget_index must be an int")
+    for key in ("line", "line_from"):
+        if key in ref and (not isinstance(ref[key], int) or ref[key] < 0):
+            raise PortMapError(f"{name}: {key} must be a non-negative int")
+    if "transform" in ref and ref["transform"] not in TRANSFORMS:
+        raise PortMapError(f"{name}: transform must be one of {TRANSFORMS}")
+    if "set" in ref and not isinstance(ref["set"], dict):
+        raise PortMapError(f"{name}: set must be an object of extra widget values")
+    if "enable_nodes" in ref and not (isinstance(ref["enable_nodes"], list) and all(isinstance(x, str) for x in ref["enable_nodes"])):
+        raise PortMapError(f"{name}: enable_nodes must be a list of node id strings")
 
 
 def load_port_map(workflow_rel: str) -> dict[str, Any]:
@@ -92,6 +103,10 @@ def load_port_map(workflow_rel: str) -> dict[str, Any]:
     for slot in SLOTS:
         if slot in pm:
             _check_ref(f"{path.name} {slot}", pm[slot], pm["format"])
+    if not isinstance(pm.get("params", {}), dict):
+        raise PortMapError(f"{path.name}: params must be an object")
+    for key, ref in pm.get("params", {}).items():
+        _check_ref(f"{path.name} params.{key}", ref, pm["format"])
     for port, ref in pm["outputs"].items():
         if not isinstance(ref, dict) or not isinstance(ref.get("node"), str) or not ref.get("class"):
             raise PortMapError(f"{path.name} outputs.{port}: needs string 'node' and 'class'")
@@ -134,6 +149,7 @@ def _refs(pm: dict[str, Any]) -> list[tuple[str, dict[str, Any]]]:
     out: list[tuple[str, dict[str, Any]]] = []
     out += [(f"inputs.{k}", v) for k, v in pm["inputs"].items()]
     out += [(slot, pm[slot]) for slot in SLOTS if slot in pm]
+    out += [(f"params.{k}", v) for k, v in pm.get("params", {}).items()]
     out += [(f"outputs.{k}", v) for k, v in pm["outputs"].items()]
     return out
 
@@ -197,6 +213,14 @@ def validate_port_maps(catalog: dict[str, Any]) -> list[str]:
                     problems.append(f"{tag}: {name} widget_index {ref['widget_index']} out of range for node {ref['node']}")
             if fmt == "api" and not name.startswith("outputs.") and ref["field"] not in (node.get("inputs") or {}):
                 problems.append(f"{tag}: {name} field '{ref['field']}' not in node {ref['node']} inputs")
+            for extra in ref.get("enable_nodes", []):
+                if extra not in ids:
+                    problems.append(f"{tag}: {name} enable_nodes names node {extra} which does not exist")
+            if ref.get("set") and fmt == "ui" and not isinstance(node.get("widgets_values"), dict):
+                problems.append(f"{tag}: {name} uses `set` but node {ref['node']} widgets are not keyed by name")
+        for key in pm.get("params", {}):
+            if key not in {p["key"] for p in spec.get("params", [])}:
+                problems.append(f"{tag}: params.{key} is not a parameter of this kind")
 
         unknown_text = " ".join(pm["unknown"])
         for port in spec.get("inputs", []):
@@ -246,11 +270,18 @@ def bind(graph: dict[str, Any], pm: dict[str, Any], bindings: dict[str, Any]) ->
     g = copy.deepcopy(graph)
     fmt = "ui" if "nodes" in g and isinstance(g["nodes"], list) else "api"
     log: list[str] = []
+    # several studio ports can share one multi-line widget (identity on line 0, references after)
+    lines: dict[tuple[str, str, Any], dict[str, Any]] = {}
     for key, value in bindings.items():
         if key in SLOTS and key in pm:
             ref = pm[key]
         elif key in pm["inputs"]:
             ref = pm["inputs"][key]
+        elif key in pm.get("params", {}):
+            ref = pm["params"][key]
+            if value in (None, ""):
+                log.append(f"skipped {key}: empty parameter keeps the workflow's own value")
+                continue
         else:
             why = "listed as unknown in the port map" if any(
                 u.split(":", 1)[0].strip() == key for u in pm.get("unknown", [])) else "not in the port map"
@@ -260,5 +291,25 @@ def bind(graph: dict[str, Any], pm: dict[str, Any], bindings: dict[str, Any]) ->
         if node is None:
             log.append(f"skipped {key}: node {ref['node']} not found in workflow")
             continue
-        _set_value(node, ref, fmt, value, key, log)
+        if "line" in ref or "line_from" in ref:
+            group = lines.setdefault((ref["node"], ref["field"], ref.get("widget_index")), {"ref": ref, "node": node, "by_line": {}})
+            values = value if isinstance(value, list) else [value]
+            if "line" in ref:
+                group["by_line"][ref["line"]] = str(values[0])
+            else:
+                for i, v in enumerate(values):
+                    group["by_line"][ref["line_from"] + i] = str(v)
+            continue
+        if _set_value(node, ref, fmt, value, key, log):
+            for field, extra in (ref.get("set") or {}).items():
+                _set_value(node, {**ref, "field": field, "widget_index": None}, fmt, extra, f"{key}.{field}", log)
+            for nid in ref.get("enable_nodes", []):
+                other, _ = _find_node(g, nid)
+                if other is not None and fmt == "ui":
+                    other["mode"] = 0
+                    log.append(f"enabled node {nid} for {key}")
+    for (nid, _field, _idx), group in lines.items():
+        by_line = group["by_line"]
+        text = "\n".join(by_line[i] for i in sorted(by_line))
+        _set_value(group["node"], group["ref"], fmt, text, f"lines@{nid}", log)
     return g, log
