@@ -1,0 +1,49 @@
+{
+  "workflow": "icekiub/H3_Icy_image.json",
+  "sha256": "573f845255ee77523ae97196d66a80ab3f844c96aec2f5c0a0595d821a04dfa0",
+  "format": "ui",
+  "inputs": {
+    "references": {
+      "node": "81",
+      "class": "IcyMultiRefLoader",
+      "field": "media",
+      "widget_index": 1,
+      "note": "One reference filename per line (newline separated), files inside the ComfyUI input folder (widget 0 selects 'input'/'output'). Slot order matters: line 1 is Picture 1 (identity), line 2 is Picture 2 (composition). Up to 5 lines reach MiniMaxH3ReferenceToVideo 27 (ref_image_0..4), 4 reach the prompt compiler 93."
+    }
+  },
+  "prompt": {
+    "node": "50",
+    "class": "PrimitiveStringMultiline",
+    "field": "value",
+    "widget_index": 0,
+    "note": "Human intent. It is compiled by ICYLMStudioMultimodalPrompt 93 (LM Studio must be running) into the final H3 prompt shown in ShowText 43, which feeds node 27. To bypass the compiler, write the final prompt into node 27 widget 0 and unlink its prompt input."
+  },
+  "seed": {
+    "node": "6",
+    "class": "RandomNoise",
+    "field": "noise_seed",
+    "widget_index": 0
+  },
+  "count": {
+    "node": "53",
+    "class": "EmptyLatentImage",
+    "field": "batch_size",
+    "widget_index": 2,
+    "note": "Width/height of node 53 are wired from node 27."
+  },
+  "outputs": {
+    "image": {
+      "node": "62",
+      "class": "PreviewImage",
+      "kind": "image",
+      "note": "No SaveImage in this workflow. Node 62 previews the 1x skin-contrast upscaled result (node 40 previews the raw decode). Preview files land in ComfyUI temp/; the runner must fetch them via /view?type=temp or a human should replace node 62 with SaveImage."
+    }
+  },
+  "unknown": [
+    "character: this workflow has no RefMod loader and no single character image node; identity comes from the first line of the `references` list (IcyMultiRefLoader 81). Put the character's identity image first in `references` instead."
+  ],
+  "notes": [
+    "ICYLMStudioMultimodalPrompt 93 needs a local LM Studio server; widget 0 currently reads '<no models found - start LM Studio server>'.",
+    "Output size: MiniMaxH3ReferenceToVideo 27 widgets 1 and 2 (1344x768); IcyMegapixelResize 26 governs reference scaling."
+  ]
+}

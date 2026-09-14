@@ -1,0 +1,46 @@
+{
+  "workflow": "icekiub/I2V_Infinite_extender_-_SUBS_-_Icekiub_v1.json",
+  "sha256": "493027d46458a72bb96bfc9054c654212516d791ce85ef257a429af9953349ca",
+  "format": "ui",
+  "inputs": {
+    "image": {
+      "node": "33",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). Start frame; resized to 960 by node 188."
+    }
+  },
+  "prompt": {
+    "node": "189",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0
+  },
+  "negative": {
+    "node": "186",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0
+  },
+  "seed": {
+    "node": "190",
+    "class": "KSamplerAdvanced",
+    "field": "noise_seed",
+    "widget_index": 1,
+    "note": "First-segment high-noise sampler. The loop sampler 294 carries the same seed at widget 1; set both for full determinism."
+  },
+  "outputs": {
+    "video": {
+      "node": "244",
+      "class": "VHS_VideoCombine",
+      "kind": "video",
+      "note": "Full extended video from easy forLoopEnd 243. Node 32 saves only the first segment, node 290 saves each loop segment."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "Length: PrimitiveInt 245 'Length of Animation (Seconds)' widget 0 (15); framerate PrimitiveInt 300 (16); overlap PrimitiveInt 248 (10); frames per segment PrimitiveInt 246 (81).",
+    "No batch count: one video per run."
+  ]
+}

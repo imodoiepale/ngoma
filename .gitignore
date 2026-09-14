@@ -54,6 +54,10 @@ brands/*/calendar/plan-180d.*
 # needs; the 39.6 MB source PDF is not.
 *.pdf
 
+# director engine results: images and clips the runner made, plus their manifests.
+# Operational output, often large; the workflow file records what ran and where it landed.
+brands/*/runs/
+
 # graphify: the semantic cache is regenerable; the report, graph and manifest are kept
 graphify-out/cache/
 .graphify_python

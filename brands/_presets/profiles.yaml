@@ -1,0 +1,97 @@
+# Director profiles: what KIND of piece this is and how a director of that kind works.
+# A profile gives the beat sheet (how scenes are named and paced), the narration contract,
+# the consistency locks every scene prompt must repeat, the default aesthetic preset, the
+# generator route and the negatives. A preset (directors.yaml) is the look; a profile is
+# the craft. Both are grammar. No profile names a person.
+#
+# The stickman profile follows the shape of kaomei/stickman-video-director (MIT): copy in,
+# a confirmed beat sheet, then one locked prompt per scene, re-composed per aspect ratio.
+version: 1
+profiles:
+  lookbook:
+    label: Lookbook
+    for: one persona across places and outfits; fashion, personal brand, AI influencer
+    beats: [arrival, first look, detail, movement, turn, closing portrait]
+    default_scenes: 4
+    default_preset: minimal-editorial
+    seconds: [4, 6]
+    narration: none
+    generator: character
+    locks: [same face and body, same hair, wardrobe as attached, one light source per scene]
+    negatives: [text, logos, watermark, extra fingers, duplicate person]
+    aspect: {"9:16": "vertical, figure centred, headroom for captions", "16:9": "figure off-centre, wide environment", "1:1": "tight, centred"}
+  stickman-explainer:
+    label: Stickman explainer
+    for: knowledge, how-to and motivational shorts drawn as a stick figure with one accent colour
+    beats: [hook, problem, first idea, second idea, twist, payoff]
+    default_scenes: 6
+    default_preset: minimal-editorial
+    seconds: [10]
+    narration: "english voiceover, 130 to 150 words a minute, one sentence per beat"
+    generator: text
+    locks: [one stick figure with a round head and 4px lines, flat background in the theme colour,
+            at most three accent colours, same line weight in every scene, on-screen words in the same type]
+    theme: {light: "white canvas, black figure", dark: "black canvas, white figure"}
+    negatives: [photoreal, shading, gradients, extra characters, cluttered background, tiny text]
+    aspect: {"9:16": "stacked reveals, big centred figure, phone-readable words", "16:9": "side-to-side staging, split-screen compares", "1:1": "centred, radial motion, clear margins"}
+  childrens-song:
+    label: Children's song
+    for: sing-along videos for 2 to 7 year olds; bright, repetitive, safe
+    beats: [meet the characters, first verse, chorus, second verse, chorus, goodbye wave]
+    default_scenes: 6
+    default_preset: symmetry-pastel
+    seconds: [8, 8, 10]
+    narration: "sung lyrics, simple words, repeat the chorus exactly"
+    generator: text
+    locks: [same three characters with the same shapes and colours, rounded everything, daytime,
+            lyrics on screen in a large friendly type, gentle bounce on every beat]
+    negatives: [scary, dark, sharp objects, realistic faces, fast strobe, text smaller than a fifth of the frame]
+    aspect: {"16:9": "wide stage, characters side by side", "9:16": "characters stacked, chorus words at the bottom", "1:1": "one character centred per beat"}
+  2d-animation:
+    label: 2D animation short
+    for: a short story in flat 2D animation
+    beats: [world, want, obstacle, attempt, turn, resolution]
+    default_scenes: 6
+    default_preset: symmetry-pastel
+    seconds: [6, 8]
+    narration: "optional voiceover; visual storytelling first"
+    generator: text
+    locks: [flat colour, thick clean outlines, same character sheet every scene, limited palette of five colours, 12 frames a second feel]
+    negatives: [photoreal, 3D render, motion blur, gradients]
+    aspect: {"16:9": "cinematic staging", "9:16": "vertical panels", "1:1": "centred vignette"}
+  music-video:
+    label: Music video
+    for: a full song with performance and story scenes
+    beats: [intro, verse one, pre-chorus, chorus, verse two, bridge, final chorus, outro]
+    default_scenes: 8
+    default_preset: kinetic-music-video
+    seconds: [6, 8, 12]
+    narration: "the song is the voice; lip-sync on performance beats"
+    generator: character
+    locks: [the artist's look as attached, one location per beat, cut on the beat, chorus scenes share a colour]
+    negatives: [text, logos, watermark, other performers]
+    aspect: {"16:9": "performance wide, story close", "9:16": "performance close, vertical story", "1:1": "centred performance"}
+  ugc-ad:
+    label: UGC ad
+    for: a creator-style product ad with a hook, a demo and a call to action
+    beats: [hook, problem, product, demo, proof, call to action]
+    default_scenes: 6
+    default_preset: handheld-verite
+    seconds: [3, 4, 5]
+    narration: "spoken to camera, first person, one claim per beat, claim-checked"
+    generator: character
+    locks: [the same creator, the real product as attached, phone-shot feel, natural light]
+    negatives: [studio polish, stock footage look, fake testimonials, price claims not in the brief]
+    aspect: {"9:16": "phone vertical, face and product", "16:9": "landscape demo", "1:1": "product centred"}
+  product-demo:
+    label: Product demo
+    for: a product turned in the hand and shown in use, no faces needed
+    beats: [reveal, detail, in use, benefit, outro]
+    default_scenes: 5
+    default_preset: high-key-beauty
+    seconds: [4, 5]
+    narration: "optional voiceover reading the benefits"
+    generator: text
+    locks: [the real product as attached, consistent colour, same surface, packaging text exact]
+    negatives: [invented labels, wrong colours, hands with extra fingers]
+    aspect: {"1:1": "product centred", "9:16": "product tall", "16:9": "product on a surface"}

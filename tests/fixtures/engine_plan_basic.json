@@ -1,0 +1,1960 @@
+{
+  "client": "epalle",
+  "consent_required": true,
+  "created": "engine",
+  "edges": [
+    {
+      "id": "e1",
+      "source": "refs.reference-images.avatar-lead",
+      "sourceHandle": "images",
+      "target": "refs.character-sheet.lead",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "refs.reference-images.avatar-lead",
+      "sourceHandle": "images",
+      "target": "refs.refmod-create.lead",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e3",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene1.h3-reference-image.a1",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e4",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
+      "target": "scene1.h3-reference-image.a1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e5",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene1.h3-reference-image.a2",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e6",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
+      "target": "scene1.h3-reference-image.a2",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e7",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene1.h3-reference-image.a3",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e8",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
+      "target": "scene1.h3-reference-image.a3",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e9",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene1.h3-reference-image.a4",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e10",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
+      "target": "scene1.h3-reference-image.a4",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e11",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene1.h3-reference-image.a5",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e12",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
+      "target": "scene1.h3-reference-image.a5",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e13",
+      "source": "scene1.h3-reference-image.a1",
+      "sourceHandle": "image",
+      "target": "scene1.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e14",
+      "source": "scene1.h3-reference-image.a2",
+      "sourceHandle": "image",
+      "target": "scene1.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e15",
+      "source": "scene1.h3-reference-image.a3",
+      "sourceHandle": "image",
+      "target": "scene1.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e16",
+      "source": "scene1.h3-reference-image.a4",
+      "sourceHandle": "image",
+      "target": "scene1.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e17",
+      "source": "scene1.h3-reference-image.a5",
+      "sourceHandle": "image",
+      "target": "scene1.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e18",
+      "source": "scene1.pick.keep",
+      "sourceHandle": "chosen",
+      "target": "scene1-dress.wardrobe",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e19",
+      "source": "refs.reference-images.wardrobe-red",
+      "sourceHandle": "images",
+      "target": "scene1-dress.wardrobe",
+      "targetHandle": "clothes",
+      "type": "image"
+    },
+    {
+      "id": "e20",
+      "source": "scene1-dress.wardrobe",
+      "sourceHandle": "image",
+      "target": "scene1-dress.consistent-room",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e21",
+      "source": "refs.reference-images.location-rooftop",
+      "sourceHandle": "images",
+      "target": "scene1-dress.consistent-room",
+      "targetHandle": "room",
+      "type": "image"
+    },
+    {
+      "id": "e22",
+      "source": "scene1-dress.consistent-room",
+      "sourceHandle": "image",
+      "target": "scene1-motion.image-to-video",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e23",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
+      "target": "scene1-motion.image-to-video",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e24",
+      "source": "scene1-motion.image-to-video",
+      "sourceHandle": "video",
+      "target": "scene1-motion.upscale-video.upscale",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e25",
+      "source": "scene1-motion.upscale-video.upscale",
+      "sourceHandle": "video",
+      "target": "scene1-motion.relight.relight",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e26",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene2.h3-reference-image.a1",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e27",
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "scene2.h3-reference-image.a1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e28",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene2.h3-reference-image.a2",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e29",
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "scene2.h3-reference-image.a2",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e30",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene2.h3-reference-image.a3",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e31",
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "scene2.h3-reference-image.a3",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e32",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene2.h3-reference-image.a4",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e33",
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "scene2.h3-reference-image.a4",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e34",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene2.h3-reference-image.a5",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e35",
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "scene2.h3-reference-image.a5",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e36",
+      "source": "scene2.h3-reference-image.a1",
+      "sourceHandle": "image",
+      "target": "scene2.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e37",
+      "source": "scene2.h3-reference-image.a2",
+      "sourceHandle": "image",
+      "target": "scene2.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e38",
+      "source": "scene2.h3-reference-image.a3",
+      "sourceHandle": "image",
+      "target": "scene2.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e39",
+      "source": "scene2.h3-reference-image.a4",
+      "sourceHandle": "image",
+      "target": "scene2.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e40",
+      "source": "scene2.h3-reference-image.a5",
+      "sourceHandle": "image",
+      "target": "scene2.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e41",
+      "source": "scene2.pick.keep",
+      "sourceHandle": "chosen",
+      "target": "scene2-dress.wardrobe",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e42",
+      "source": "refs.reference-images.wardrobe-red",
+      "sourceHandle": "images",
+      "target": "scene2-dress.wardrobe",
+      "targetHandle": "clothes",
+      "type": "image"
+    },
+    {
+      "id": "e43",
+      "source": "scene2-dress.wardrobe",
+      "sourceHandle": "image",
+      "target": "scene2-dress.consistent-room",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e44",
+      "source": "refs.reference-images.location-rooftop",
+      "sourceHandle": "images",
+      "target": "scene2-dress.consistent-room",
+      "targetHandle": "room",
+      "type": "image"
+    },
+    {
+      "id": "e45",
+      "source": "scene2-dress.consistent-room",
+      "sourceHandle": "image",
+      "target": "scene2-motion.image-to-video",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e46",
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "scene2-motion.image-to-video",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e47",
+      "source": "scene2-motion.image-to-video",
+      "sourceHandle": "video",
+      "target": "scene2-motion.upscale-video.upscale",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e48",
+      "source": "scene2-motion.upscale-video.upscale",
+      "sourceHandle": "video",
+      "target": "scene2-motion.relight.relight",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e49",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene3.h3-reference-image.a1",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e50",
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "scene3.h3-reference-image.a1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e51",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene3.h3-reference-image.a2",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e52",
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "scene3.h3-reference-image.a2",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e53",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene3.h3-reference-image.a3",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e54",
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "scene3.h3-reference-image.a3",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e55",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene3.h3-reference-image.a4",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e56",
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "scene3.h3-reference-image.a4",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e57",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene3.h3-reference-image.a5",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e58",
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "scene3.h3-reference-image.a5",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e59",
+      "source": "scene3.h3-reference-image.a1",
+      "sourceHandle": "image",
+      "target": "scene3.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e60",
+      "source": "scene3.h3-reference-image.a2",
+      "sourceHandle": "image",
+      "target": "scene3.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e61",
+      "source": "scene3.h3-reference-image.a3",
+      "sourceHandle": "image",
+      "target": "scene3.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e62",
+      "source": "scene3.h3-reference-image.a4",
+      "sourceHandle": "image",
+      "target": "scene3.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e63",
+      "source": "scene3.h3-reference-image.a5",
+      "sourceHandle": "image",
+      "target": "scene3.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e64",
+      "source": "scene3.pick.keep",
+      "sourceHandle": "chosen",
+      "target": "scene3-dress.wardrobe",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e65",
+      "source": "refs.reference-images.wardrobe-red",
+      "sourceHandle": "images",
+      "target": "scene3-dress.wardrobe",
+      "targetHandle": "clothes",
+      "type": "image"
+    },
+    {
+      "id": "e66",
+      "source": "scene3-dress.wardrobe",
+      "sourceHandle": "image",
+      "target": "scene3-dress.consistent-room",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e67",
+      "source": "refs.reference-images.location-rooftop",
+      "sourceHandle": "images",
+      "target": "scene3-dress.consistent-room",
+      "targetHandle": "room",
+      "type": "image"
+    },
+    {
+      "id": "e68",
+      "source": "scene3-dress.consistent-room",
+      "sourceHandle": "image",
+      "target": "scene3-motion.image-to-video",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e69",
+      "source": "storyboard.brief.s3",
+      "sourceHandle": "text",
+      "target": "scene3-motion.image-to-video",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e70",
+      "source": "scene3-motion.image-to-video",
+      "sourceHandle": "video",
+      "target": "scene3-motion.upscale-video.upscale",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e71",
+      "source": "scene3-motion.upscale-video.upscale",
+      "sourceHandle": "video",
+      "target": "scene3-motion.relight.relight",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e72",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene4.h3-reference-image.a1",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e73",
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "scene4.h3-reference-image.a1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e74",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene4.h3-reference-image.a2",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e75",
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "scene4.h3-reference-image.a2",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e76",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene4.h3-reference-image.a3",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e77",
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "scene4.h3-reference-image.a3",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e78",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene4.h3-reference-image.a4",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e79",
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "scene4.h3-reference-image.a4",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e80",
+      "source": "refs.refmod-create.lead",
+      "sourceHandle": "character",
+      "target": "scene4.h3-reference-image.a5",
+      "targetHandle": "character",
+      "type": "character"
+    },
+    {
+      "id": "e81",
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "scene4.h3-reference-image.a5",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e82",
+      "source": "scene4.h3-reference-image.a1",
+      "sourceHandle": "image",
+      "target": "scene4.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e83",
+      "source": "scene4.h3-reference-image.a2",
+      "sourceHandle": "image",
+      "target": "scene4.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e84",
+      "source": "scene4.h3-reference-image.a3",
+      "sourceHandle": "image",
+      "target": "scene4.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e85",
+      "source": "scene4.h3-reference-image.a4",
+      "sourceHandle": "image",
+      "target": "scene4.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e86",
+      "source": "scene4.h3-reference-image.a5",
+      "sourceHandle": "image",
+      "target": "scene4.pick.keep",
+      "targetHandle": "candidates",
+      "type": "image"
+    },
+    {
+      "id": "e87",
+      "source": "scene4.pick.keep",
+      "sourceHandle": "chosen",
+      "target": "scene4-dress.wardrobe",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e88",
+      "source": "refs.reference-images.wardrobe-red",
+      "sourceHandle": "images",
+      "target": "scene4-dress.wardrobe",
+      "targetHandle": "clothes",
+      "type": "image"
+    },
+    {
+      "id": "e89",
+      "source": "scene4-dress.wardrobe",
+      "sourceHandle": "image",
+      "target": "scene4-dress.consistent-room",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e90",
+      "source": "refs.reference-images.location-rooftop",
+      "sourceHandle": "images",
+      "target": "scene4-dress.consistent-room",
+      "targetHandle": "room",
+      "type": "image"
+    },
+    {
+      "id": "e91",
+      "source": "scene4-dress.consistent-room",
+      "sourceHandle": "image",
+      "target": "scene4-motion.image-to-video",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e92",
+      "source": "storyboard.brief.s4",
+      "sourceHandle": "text",
+      "target": "scene4-motion.image-to-video",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e93",
+      "source": "scene4-motion.image-to-video",
+      "sourceHandle": "video",
+      "target": "scene4-motion.upscale-video.upscale",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e94",
+      "source": "scene4-motion.upscale-video.upscale",
+      "sourceHandle": "video",
+      "target": "scene4-motion.relight.relight",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e95",
+      "source": "scene1-motion.relight.relight",
+      "sourceHandle": "video",
+      "target": "edit.cut",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e96",
+      "source": "scene2-motion.relight.relight",
+      "sourceHandle": "video",
+      "target": "edit.cut",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e97",
+      "source": "scene3-motion.relight.relight",
+      "sourceHandle": "video",
+      "target": "edit.cut",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e98",
+      "source": "scene4-motion.relight.relight",
+      "sourceHandle": "video",
+      "target": "edit.cut",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e99",
+      "source": "edit.cut",
+      "sourceHandle": "video",
+      "target": "edit.captions",
+      "targetHandle": "video",
+      "type": "video"
+    },
+    {
+      "id": "e100",
+      "source": "edit.captions",
+      "sourceHandle": "video",
+      "target": "publish.export",
+      "targetHandle": "media",
+      "type": "video"
+    }
+  ],
+  "gaps": [
+    {
+      "node": "scene1-motion.relight.relight",
+      "reason": "No video relight workflow in the library yet.",
+      "step": "relight"
+    },
+    {
+      "node": "scene2-motion.relight.relight",
+      "reason": "No video relight workflow in the library yet.",
+      "step": "relight"
+    },
+    {
+      "node": "scene3-motion.relight.relight",
+      "reason": "No video relight workflow in the library yet.",
+      "step": "relight"
+    },
+    {
+      "node": "scene4-motion.relight.relight",
+      "reason": "No video relight workflow in the library yet.",
+      "step": "relight"
+    }
+  ],
+  "id": "rooftop-dusk-lookbook",
+  "nodes": [
+    {
+      "data": {
+        "params": {
+          "folder": "brands/epalle/references/avatar-lead"
+        },
+        "ref": {
+          "consent": false,
+          "count": 24,
+          "kind": "image",
+          "name": "avatar-lead",
+          "path": "",
+          "rights": "owned",
+          "use": "data"
+        },
+        "stage": "refs"
+      },
+      "id": "refs.reference-images.avatar-lead",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "folder": "brands/epalle/references/wardrobe-red"
+        },
+        "ref": {
+          "consent": false,
+          "count": 6,
+          "kind": "image",
+          "name": "wardrobe-red",
+          "path": "",
+          "rights": "owned",
+          "use": "data"
+        },
+        "stage": "refs"
+      },
+      "id": "refs.reference-images.wardrobe-red",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 290
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "folder": "brands/epalle/references/location-rooftop"
+        },
+        "ref": {
+          "consent": false,
+          "count": 3,
+          "kind": "image",
+          "name": "location-rooftop",
+          "path": "",
+          "rights": "licensed",
+          "use": "data"
+        },
+        "stage": "refs"
+      },
+      "id": "refs.reference-images.location-rooftop",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 500
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "folder": "brands/epalle/references/mood-neon"
+        },
+        "ref": {
+          "consent": false,
+          "count": 40,
+          "kind": "image",
+          "name": "mood-neon",
+          "path": "",
+          "rights": "unclear",
+          "use": "inspiration"
+        },
+        "stage": "refs"
+      },
+      "id": "refs.reference-images.mood-neon",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 710
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "role": "lead",
+        "stage": "refs"
+      },
+      "id": "refs.character-sheet.lead",
+      "kind": "character-sheet",
+      "position": {
+        "x": 400,
+        "y": 80
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "preset": "identity"
+        },
+        "role": "lead",
+        "stage": "refs"
+      },
+      "id": "refs.refmod-create.lead",
+      "kind": "refmod-create",
+      "position": {
+        "x": 400,
+        "y": 290
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "text": "Scene 1 (arrival): rooftop at golden hour. figure alone in a corridor of light"
+        },
+        "scene": 1,
+        "stage": "storyboard"
+      },
+      "id": "storyboard.brief.s1",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 970
+      }
+    },
+    {
+      "data": {
+        "camera": "wide",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 1 (arrival): rooftop at golden hour. figure alone in a corridor of light. wide establishing shot, full body in the environment. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 1,
+        "shot": 1,
+        "stage": "scene1",
+        "variant_count": 1,
+        "why": "wide angle of Scene 1 (arrival) in the Neon noir grammar"
+      },
+      "id": "scene1.h3-reference-image.a1",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 1860
+      }
+    },
+    {
+      "data": {
+        "camera": "medium",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 1 (arrival): rooftop at golden hour. figure alone in a corridor of light. medium shot, waist up. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 1,
+        "shot": 2,
+        "stage": "scene1",
+        "variant_count": 1,
+        "why": "medium angle of Scene 1 (arrival) in the Neon noir grammar"
+      },
+      "id": "scene1.h3-reference-image.a2",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 2070
+      }
+    },
+    {
+      "data": {
+        "camera": "close",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 1 (arrival): rooftop at golden hour. figure alone in a corridor of light. close-up on the face, shallow depth of field. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 1,
+        "shot": 3,
+        "stage": "scene1",
+        "variant_count": 1,
+        "why": "close angle of Scene 1 (arrival) in the Neon noir grammar"
+      },
+      "id": "scene1.h3-reference-image.a3",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 2280
+      }
+    },
+    {
+      "data": {
+        "camera": "three-quarter",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 1 (arrival): rooftop at golden hour. figure alone in a corridor of light. three-quarter angle, slightly off axis. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 1,
+        "shot": 4,
+        "stage": "scene1",
+        "variant_count": 1,
+        "why": "three-quarter angle of Scene 1 (arrival) in the Neon noir grammar"
+      },
+      "id": "scene1.h3-reference-image.a4",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 2490
+      }
+    },
+    {
+      "data": {
+        "camera": "low",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 1 (arrival): rooftop at golden hour. figure alone in a corridor of light. low angle looking up, subject dominant. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 1,
+        "shot": 5,
+        "stage": "scene1",
+        "variant_count": 1,
+        "why": "low angle of Scene 1 (arrival) in the Neon noir grammar"
+      },
+      "id": "scene1.h3-reference-image.a5",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 400,
+        "y": 1860
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "k": 3
+        },
+        "scene": 1,
+        "stage": "scene1"
+      },
+      "id": "scene1.pick.keep",
+      "kind": "pick",
+      "position": {
+        "x": 720,
+        "y": 1860
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 1,
+        "stage": "scene1-dress"
+      },
+      "id": "scene1-dress.wardrobe",
+      "kind": "wardrobe",
+      "position": {
+        "x": 80,
+        "y": 2750
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 1,
+        "stage": "scene1-dress"
+      },
+      "id": "scene1-dress.consistent-room",
+      "kind": "consistent-room",
+      "position": {
+        "x": 400,
+        "y": 2750
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "seconds": 4
+        },
+        "scene": 1,
+        "stage": "scene1-motion",
+        "why": "still to 4s video in the Neon noir pacing"
+      },
+      "id": "scene1-motion.image-to-video",
+      "kind": "image-to-video",
+      "position": {
+        "x": 80,
+        "y": 3010
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 1,
+        "stage": "scene1-motion"
+      },
+      "id": "scene1-motion.upscale-video.upscale",
+      "kind": "upscale-video",
+      "position": {
+        "x": 400,
+        "y": 3010
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 1,
+        "stage": "scene1-motion"
+      },
+      "id": "scene1-motion.relight.relight",
+      "kind": "relight",
+      "position": {
+        "x": 720,
+        "y": 3010
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "text": "Scene 2 (first look): wet street under neon. back to camera then turn"
+        },
+        "scene": 2,
+        "stage": "storyboard"
+      },
+      "id": "storyboard.brief.s2",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 1180
+      }
+    },
+    {
+      "data": {
+        "camera": "wide",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 2 (first look): wet street under neon. back to camera then turn. wide establishing shot, full body in the environment. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 2,
+        "shot": 1,
+        "stage": "scene2",
+        "variant_count": 1,
+        "why": "wide angle of Scene 2 (first look) in the Neon noir grammar"
+      },
+      "id": "scene2.h3-reference-image.a1",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 3270
+      }
+    },
+    {
+      "data": {
+        "camera": "medium",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 2 (first look): wet street under neon. back to camera then turn. medium shot, waist up. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 2,
+        "shot": 2,
+        "stage": "scene2",
+        "variant_count": 1,
+        "why": "medium angle of Scene 2 (first look) in the Neon noir grammar"
+      },
+      "id": "scene2.h3-reference-image.a2",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 3480
+      }
+    },
+    {
+      "data": {
+        "camera": "close",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 2 (first look): wet street under neon. back to camera then turn. close-up on the face, shallow depth of field. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 2,
+        "shot": 3,
+        "stage": "scene2",
+        "variant_count": 1,
+        "why": "close angle of Scene 2 (first look) in the Neon noir grammar"
+      },
+      "id": "scene2.h3-reference-image.a3",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 3690
+      }
+    },
+    {
+      "data": {
+        "camera": "three-quarter",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 2 (first look): wet street under neon. back to camera then turn. three-quarter angle, slightly off axis. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 2,
+        "shot": 4,
+        "stage": "scene2",
+        "variant_count": 1,
+        "why": "three-quarter angle of Scene 2 (first look) in the Neon noir grammar"
+      },
+      "id": "scene2.h3-reference-image.a4",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 3900
+      }
+    },
+    {
+      "data": {
+        "camera": "low",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 2 (first look): wet street under neon. back to camera then turn. low angle looking up, subject dominant. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 2,
+        "shot": 5,
+        "stage": "scene2",
+        "variant_count": 1,
+        "why": "low angle of Scene 2 (first look) in the Neon noir grammar"
+      },
+      "id": "scene2.h3-reference-image.a5",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 400,
+        "y": 3270
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "k": 3
+        },
+        "scene": 2,
+        "stage": "scene2"
+      },
+      "id": "scene2.pick.keep",
+      "kind": "pick",
+      "position": {
+        "x": 720,
+        "y": 3270
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 2,
+        "stage": "scene2-dress"
+      },
+      "id": "scene2-dress.wardrobe",
+      "kind": "wardrobe",
+      "position": {
+        "x": 80,
+        "y": 4160
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 2,
+        "stage": "scene2-dress"
+      },
+      "id": "scene2-dress.consistent-room",
+      "kind": "consistent-room",
+      "position": {
+        "x": 400,
+        "y": 4160
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "seconds": 6
+        },
+        "scene": 2,
+        "stage": "scene2-motion",
+        "why": "still to 6s video in the Neon noir pacing"
+      },
+      "id": "scene2-motion.image-to-video",
+      "kind": "image-to-video",
+      "position": {
+        "x": 80,
+        "y": 4420
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 2,
+        "stage": "scene2-motion"
+      },
+      "id": "scene2-motion.upscale-video.upscale",
+      "kind": "upscale-video",
+      "position": {
+        "x": 400,
+        "y": 4420
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 2,
+        "stage": "scene2-motion"
+      },
+      "id": "scene2-motion.relight.relight",
+      "kind": "relight",
+      "position": {
+        "x": 720,
+        "y": 4420
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "text": "Scene 3 (detail): hotel corridor. figure alone in a corridor of light"
+        },
+        "scene": 3,
+        "stage": "storyboard"
+      },
+      "id": "storyboard.brief.s3",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 1390
+      }
+    },
+    {
+      "data": {
+        "camera": "wide",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 3 (detail): hotel corridor. figure alone in a corridor of light. wide establishing shot, full body in the environment. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 3,
+        "shot": 1,
+        "stage": "scene3",
+        "variant_count": 1,
+        "why": "wide angle of Scene 3 (detail) in the Neon noir grammar"
+      },
+      "id": "scene3.h3-reference-image.a1",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 4680
+      }
+    },
+    {
+      "data": {
+        "camera": "medium",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 3 (detail): hotel corridor. figure alone in a corridor of light. medium shot, waist up. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 3,
+        "shot": 2,
+        "stage": "scene3",
+        "variant_count": 1,
+        "why": "medium angle of Scene 3 (detail) in the Neon noir grammar"
+      },
+      "id": "scene3.h3-reference-image.a2",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 4890
+      }
+    },
+    {
+      "data": {
+        "camera": "close",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 3 (detail): hotel corridor. figure alone in a corridor of light. close-up on the face, shallow depth of field. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 3,
+        "shot": 3,
+        "stage": "scene3",
+        "variant_count": 1,
+        "why": "close angle of Scene 3 (detail) in the Neon noir grammar"
+      },
+      "id": "scene3.h3-reference-image.a3",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 5100
+      }
+    },
+    {
+      "data": {
+        "camera": "three-quarter",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 3 (detail): hotel corridor. figure alone in a corridor of light. three-quarter angle, slightly off axis. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 3,
+        "shot": 4,
+        "stage": "scene3",
+        "variant_count": 1,
+        "why": "three-quarter angle of Scene 3 (detail) in the Neon noir grammar"
+      },
+      "id": "scene3.h3-reference-image.a4",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 5310
+      }
+    },
+    {
+      "data": {
+        "camera": "low",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 3 (detail): hotel corridor. figure alone in a corridor of light. low angle looking up, subject dominant. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 3,
+        "shot": 5,
+        "stage": "scene3",
+        "variant_count": 1,
+        "why": "low angle of Scene 3 (detail) in the Neon noir grammar"
+      },
+      "id": "scene3.h3-reference-image.a5",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 400,
+        "y": 4680
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "k": 3
+        },
+        "scene": 3,
+        "stage": "scene3"
+      },
+      "id": "scene3.pick.keep",
+      "kind": "pick",
+      "position": {
+        "x": 720,
+        "y": 4680
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 3,
+        "stage": "scene3-dress"
+      },
+      "id": "scene3-dress.wardrobe",
+      "kind": "wardrobe",
+      "position": {
+        "x": 80,
+        "y": 5570
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 3,
+        "stage": "scene3-dress"
+      },
+      "id": "scene3-dress.consistent-room",
+      "kind": "consistent-room",
+      "position": {
+        "x": 400,
+        "y": 5570
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "seconds": 4
+        },
+        "scene": 3,
+        "stage": "scene3-motion",
+        "why": "still to 4s video in the Neon noir pacing"
+      },
+      "id": "scene3-motion.image-to-video",
+      "kind": "image-to-video",
+      "position": {
+        "x": 80,
+        "y": 5830
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 3,
+        "stage": "scene3-motion"
+      },
+      "id": "scene3-motion.upscale-video.upscale",
+      "kind": "upscale-video",
+      "position": {
+        "x": 400,
+        "y": 5830
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 3,
+        "stage": "scene3-motion"
+      },
+      "id": "scene3-motion.relight.relight",
+      "kind": "relight",
+      "position": {
+        "x": 720,
+        "y": 5830
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "text": "Scene 4 (movement): rooftop again, night. back to camera then turn"
+        },
+        "scene": 4,
+        "stage": "storyboard"
+      },
+      "id": "storyboard.brief.s4",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 1600
+      }
+    },
+    {
+      "data": {
+        "camera": "wide",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 4 (movement): rooftop again, night. back to camera then turn. wide establishing shot, full body in the environment. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 4,
+        "shot": 1,
+        "stage": "scene4",
+        "variant_count": 1,
+        "why": "wide angle of Scene 4 (movement) in the Neon noir grammar"
+      },
+      "id": "scene4.h3-reference-image.a1",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 6090
+      }
+    },
+    {
+      "data": {
+        "camera": "medium",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 4 (movement): rooftop again, night. back to camera then turn. medium shot, waist up. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 4,
+        "shot": 2,
+        "stage": "scene4",
+        "variant_count": 1,
+        "why": "medium angle of Scene 4 (movement) in the Neon noir grammar"
+      },
+      "id": "scene4.h3-reference-image.a2",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 6300
+      }
+    },
+    {
+      "data": {
+        "camera": "close",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 4 (movement): rooftop again, night. back to camera then turn. close-up on the face, shallow depth of field. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 4,
+        "shot": 3,
+        "stage": "scene4",
+        "variant_count": 1,
+        "why": "close angle of Scene 4 (movement) in the Neon noir grammar"
+      },
+      "id": "scene4.h3-reference-image.a3",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 6510
+      }
+    },
+    {
+      "data": {
+        "camera": "three-quarter",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 4 (movement): rooftop again, night. back to camera then turn. three-quarter angle, slightly off axis. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 4,
+        "shot": 4,
+        "stage": "scene4",
+        "variant_count": 1,
+        "why": "three-quarter angle of Scene 4 (movement) in the Neon noir grammar"
+      },
+      "id": "scene4.h3-reference-image.a4",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 80,
+        "y": 6720
+      }
+    },
+    {
+      "data": {
+        "camera": "low",
+        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
+        "params": {},
+        "prompt": "Scene 4 (movement): rooftop again, night. back to camera then turn. low angle looking up, subject dominant. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+        "role": "lead",
+        "scene": 4,
+        "shot": 5,
+        "stage": "scene4",
+        "variant_count": 1,
+        "why": "low angle of Scene 4 (movement) in the Neon noir grammar"
+      },
+      "id": "scene4.h3-reference-image.a5",
+      "kind": "h3-reference-image",
+      "position": {
+        "x": 400,
+        "y": 6090
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "k": 3
+        },
+        "scene": 4,
+        "stage": "scene4"
+      },
+      "id": "scene4.pick.keep",
+      "kind": "pick",
+      "position": {
+        "x": 720,
+        "y": 6090
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 4,
+        "stage": "scene4-dress"
+      },
+      "id": "scene4-dress.wardrobe",
+      "kind": "wardrobe",
+      "position": {
+        "x": 80,
+        "y": 6980
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 4,
+        "stage": "scene4-dress"
+      },
+      "id": "scene4-dress.consistent-room",
+      "kind": "consistent-room",
+      "position": {
+        "x": 400,
+        "y": 6980
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "seconds": 6
+        },
+        "scene": 4,
+        "stage": "scene4-motion",
+        "why": "still to 6s video in the Neon noir pacing"
+      },
+      "id": "scene4-motion.image-to-video",
+      "kind": "image-to-video",
+      "position": {
+        "x": 80,
+        "y": 7240
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 4,
+        "stage": "scene4-motion"
+      },
+      "id": "scene4-motion.upscale-video.upscale",
+      "kind": "upscale-video",
+      "position": {
+        "x": 400,
+        "y": 7240
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "scene": 4,
+        "stage": "scene4-motion"
+      },
+      "id": "scene4-motion.relight.relight",
+      "kind": "relight",
+      "position": {
+        "x": 720,
+        "y": 7240
+      }
+    },
+    {
+      "data": {
+        "params": {
+          "seconds": 8
+        },
+        "stage": "edit"
+      },
+      "id": "edit.cut",
+      "kind": "cut",
+      "position": {
+        "x": 80,
+        "y": 7500
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "stage": "edit"
+      },
+      "id": "edit.captions",
+      "kind": "captions",
+      "position": {
+        "x": 400,
+        "y": 7500
+      }
+    },
+    {
+      "data": {
+        "params": {},
+        "stage": "publish"
+      },
+      "id": "publish.export",
+      "kind": "export",
+      "position": {
+        "x": 80,
+        "y": 7760
+      }
+    }
+  ],
+  "preset": "neon-noir",
+  "run_mode": "dry-run",
+  "source": {
+    "engine": {
+      "adult": false,
+      "angles_per_scene": 5,
+      "client": "epalle",
+      "idea": "a lookbook of one persona across a city evening",
+      "language": null,
+      "outputs": [
+        "export"
+      ],
+      "preset": "neon-noir",
+      "profile": "lookbook",
+      "ratio": "9:16",
+      "refs": [
+        {
+          "consent": false,
+          "count": 24,
+          "kind": "image",
+          "name": "avatar-lead",
+          "path": "",
+          "rights": "owned",
+          "use": "data"
+        },
+        {
+          "consent": false,
+          "count": 6,
+          "kind": "image",
+          "name": "wardrobe-red",
+          "path": "",
+          "rights": "owned",
+          "use": "data"
+        },
+        {
+          "consent": false,
+          "count": 3,
+          "kind": "image",
+          "name": "location-rooftop",
+          "path": "",
+          "rights": "licensed",
+          "use": "data"
+        },
+        {
+          "consent": false,
+          "count": 40,
+          "kind": "image",
+          "name": "mood-neon",
+          "path": "",
+          "rights": "unclear",
+          "use": "inspiration"
+        }
+      ],
+      "roles": [
+        {
+          "consent": false,
+          "fictional": true,
+          "name": "lead",
+          "ref_collection": "avatar-lead"
+        }
+      ],
+      "run_mode": "dry-run",
+      "scene_hints": [
+        "rooftop at golden hour",
+        "wet street under neon",
+        "hotel corridor",
+        "rooftop again, night"
+      ],
+      "scenes": 4,
+      "seeds_per_angle": 1,
+      "theme": null,
+      "title": "Rooftop dusk lookbook",
+      "vfx": [
+        "upscale",
+        "relight"
+      ],
+      "video_seconds": [
+        4,
+        6
+      ]
+    }
+  },
+  "stages": [
+    {
+      "id": "refs",
+      "label": "References",
+      "order": 1
+    },
+    {
+      "id": "storyboard",
+      "label": "Storyboard",
+      "order": 2
+    },
+    {
+      "id": "scene1",
+      "label": "Scene 1 (arrival) stills",
+      "order": 3,
+      "scene": 1
+    },
+    {
+      "id": "scene1-dress",
+      "label": "Scene 1 (arrival) dressing",
+      "order": 4,
+      "scene": 1
+    },
+    {
+      "id": "scene1-motion",
+      "label": "Scene 1 (arrival) motion",
+      "order": 5,
+      "scene": 1
+    },
+    {
+      "id": "scene2",
+      "label": "Scene 2 (first look) stills",
+      "order": 6,
+      "scene": 2
+    },
+    {
+      "id": "scene2-dress",
+      "label": "Scene 2 (first look) dressing",
+      "order": 7,
+      "scene": 2
+    },
+    {
+      "id": "scene2-motion",
+      "label": "Scene 2 (first look) motion",
+      "order": 8,
+      "scene": 2
+    },
+    {
+      "id": "scene3",
+      "label": "Scene 3 (detail) stills",
+      "order": 9,
+      "scene": 3
+    },
+    {
+      "id": "scene3-dress",
+      "label": "Scene 3 (detail) dressing",
+      "order": 10,
+      "scene": 3
+    },
+    {
+      "id": "scene3-motion",
+      "label": "Scene 3 (detail) motion",
+      "order": 11,
+      "scene": 3
+    },
+    {
+      "id": "scene4",
+      "label": "Scene 4 (movement) stills",
+      "order": 12,
+      "scene": 4
+    },
+    {
+      "id": "scene4-dress",
+      "label": "Scene 4 (movement) dressing",
+      "order": 13,
+      "scene": 4
+    },
+    {
+      "id": "scene4-motion",
+      "label": "Scene 4 (movement) motion",
+      "order": 14,
+      "scene": 4
+    },
+    {
+      "id": "edit",
+      "label": "Edit",
+      "order": 15
+    },
+    {
+      "id": "publish",
+      "label": "Publish",
+      "order": 16
+    }
+  ],
+  "title": "Rooftop dusk lookbook",
+  "version": 2
+}

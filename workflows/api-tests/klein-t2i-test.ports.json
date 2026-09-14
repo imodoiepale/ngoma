@@ -1,0 +1,38 @@
+{
+  "workflow": "api-tests/klein-t2i-test.json",
+  "sha256": "01bd88756f2d3136dad9f2dc931e3282ecf81ecdebf2de0b0b57d94335afb751",
+  "format": "api",
+  "inputs": {},
+  "prompt": {
+    "node": "4",
+    "class": "CLIPTextEncode",
+    "field": "text"
+  },
+  "negative": {
+    "node": "5",
+    "class": "CLIPTextEncode",
+    "field": "text"
+  },
+  "seed": {
+    "node": "8",
+    "class": "KSampler",
+    "field": "seed"
+  },
+  "count": {
+    "node": "7",
+    "class": "EmptyFlux2LatentImage",
+    "field": "batch_size"
+  },
+  "outputs": {
+    "image": {
+      "node": "10",
+      "class": "SaveImage",
+      "kind": "image",
+      "note": "filename_prefix 'epalle/klein-t2i-test'."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "API-format graph: values live in inputs[field]. Guidance is FluxGuidance 6 'guidance'."
+  ]
+}

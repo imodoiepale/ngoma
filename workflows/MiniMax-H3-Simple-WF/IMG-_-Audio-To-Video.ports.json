@@ -1,0 +1,42 @@
+{
+  "workflow": "MiniMax-H3-Simple-WF/IMG-_-Audio-To-Video.json",
+  "sha256": "29740458378afa7fdef77d1d5a26f51da1c6853caaba740a78d6b99b80dbb68f",
+  "format": "ui",
+  "inputs": {
+    "image": {
+      "node": "139",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). Picture 1 (ref_image_0). LoadImage 157 is Picture 2 (ref_image_1, environment)."
+    }
+  },
+  "prompt": {
+    "node": "142",
+    "class": "PrimitiveStringMultiline",
+    "field": "value",
+    "widget_index": 0,
+    "note": "Title 'Input Text (Prompt)'."
+  },
+  "seed": {
+    "node": "129",
+    "class": "RandomNoise",
+    "field": "noise_seed",
+    "widget_index": 0
+  },
+  "outputs": {
+    "video": {
+      "node": "92",
+      "class": "SaveVideo",
+      "kind": "video",
+      "note": "filename_prefix 'video/MiniMax_H3'."
+    }
+  },
+  "unknown": [
+    "audio: there is no LoadAudio node. The audio reference (ref_audio_0 on node 136) is the soundtrack of VHS_LoadVideo 155 (a VIDEO file, frame_load_cap 250, skip_first_frames 600); an audio-only file will not load there. A human must replace node 155 with LoadAudio or supply a video that carries the voice track."
+  ],
+  "notes": [
+    "Duration: PrimitiveFloat 132 widget 0 (seconds) -> ComfyMathExpression 131 -> length.",
+    "Size: ResolutionSelector 115 (16:9, 0.4 MP)."
+  ]
+}

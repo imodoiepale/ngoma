@@ -210,6 +210,7 @@ def main() -> None:
     ap.add_argument("--language", help="force a language instead of auto-detecting")
     ap.add_argument("--out", type=Path)
     ap.add_argument("--check", action="store_true", help="report whether ASR is usable")
+    ap.add_argument("--json", action="store_true", help="print only the brief as JSON (for the studio's director)")
     a = ap.parse_args()
 
     if a.check:
@@ -228,6 +229,9 @@ def main() -> None:
     else:
         ap.error("pass an audio file, or --text for a dry parse, or --check")
 
+    if a.json:
+        print(json.dumps(b.to_dict(), ensure_ascii=False))
+        return
     print(render(b))
     out = a.out or REPO / "out" / "spoken-brief.json"
     out.parent.mkdir(parents=True, exist_ok=True)

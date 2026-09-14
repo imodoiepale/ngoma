@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 
 const MODES = [
+  { id: "direct", label: "Direct it", hint: "Talk to the director. Scenes, angles, picks and videos grow as you speak." },
   { id: "idea", label: "From an idea", hint: "Start from one of the 50 costed ideas." },
   { id: "brief", label: "Describe it", hint: "Say what to make in plain words. The studio picks the steps." },
   { id: "combine", label: "Combine workflows", hint: "Chain workflows so one result feeds the next." },
@@ -25,6 +26,15 @@ export default function ClientWorkspace({ client, ideas, workflows }) {
   async function create(e) {
     e.preventDefault();
     setState({ busy: true, error: "" });
+    if (mode === "direct") {
+      const session = `d${Date.now().toString(36)}`;
+      const res = await fetch("/api/director", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ client, session, message: brief }) });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) { setState({ busy: false, error: data.error || "The director did not answer." }); return; }
+      router.push(`/c/${client}/w/${data.workflow.id}`);
+      return;
+    }
     const body = { mode, client, title, idea, brief, refs: picked };
     const res = await fetch("/api/author", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
     const data = await res.json().catch(() => ({}));
@@ -58,6 +68,13 @@ export default function ClientWorkspace({ client, ideas, workflows }) {
             </select>
           </label>
         )}
+        {mode === "direct" && (
+          <label className="field">
+            <span>What are we making? Name the kind of piece and the look if you know them.</span>
+            <textarea rows={3} value={brief} onChange={(e) => setBrief(e.target.value)}
+              placeholder="A lookbook of one persona across a city evening, neon noir, five angles per scene" />
+          </label>
+        )}
         {mode === "brief" && (
           <label className="field">
             <span>What should this make?</span>
@@ -81,14 +98,16 @@ export default function ClientWorkspace({ client, ideas, workflows }) {
             </div>
           </fieldset>
         )}
-        <label className="field field-title">
-          <span>Title (optional)</span>
-          <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Named after the idea if empty" />
-        </label>
+        {mode !== "direct" && (
+          <label className="field field-title">
+            <span>Title (optional)</span>
+            <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Named after the idea if empty" />
+          </label>
+        )}
         <div className="creator-actions">
           {state.error && <p className="error" role="alert">{state.error}</p>}
-          <button className="btn btn-primary" disabled={state.busy || (mode === "combine" && picked.length < 2)}>
-            {state.busy ? "Creating workflow…" : "Create workflow"}
+          <button className="btn btn-primary" disabled={state.busy || (mode === "combine" && picked.length < 2) || (mode === "direct" && brief.trim().length < 4)}>
+            {state.busy ? (mode === "direct" ? "Directing…" : "Creating workflow…") : mode === "direct" ? "Start directing" : "Create workflow"}
           </button>
         </div>
       </div>

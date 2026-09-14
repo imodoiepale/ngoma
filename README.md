@@ -18,6 +18,20 @@ uv run studio.py test            # the full suite, no key/GPU/network
 uv run studio.py loop            # the whole pipeline on fixture data
 ```
 
+### The Director Engine
+
+Talk, and a branching production workflow grows: references → storyboard → angles per scene →
+your pick → clips → wardrobe, location, jewellery → edit → export. Choose a kind of piece
+(lookbook, stickman explainer, children's song, music video, UGC ad…) and a look (neon noir,
+symmetric pastel, handheld vérité…); both are grammar, never a likeness. Run modes: dry run,
+approve each stage, or auto with pauses at your picks. [Read how it works](docs/engine/DIRECTOR-ENGINE.md).
+
+```bash
+uv run --with pyyaml python packages/engine/cli.py say --client epalle --session s1 --text "a lookbook across a city evening, neon noir"
+uv run --with pyyaml python packages/engine/cli.py run --client epalle --workflow <id> --stage next     # dry-run by default
+uv run --with pyyaml python packages/engine/cli.py possibilities
+```
+
 ### What the studio can make, and what it would earn
 
 | Read | What it holds |

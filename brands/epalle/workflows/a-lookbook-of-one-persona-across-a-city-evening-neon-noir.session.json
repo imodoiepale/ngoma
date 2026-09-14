@@ -1,0 +1,162 @@
+{
+  "id": "dtest1",
+  "client": "epalle",
+  "workflow_id": "a-lookbook-of-one-persona-across-a-city-evening-neon-noir",
+  "brief": {
+    "client": "epalle",
+    "title": "a lookbook of one persona across a city evening, neon noir",
+    "idea": "a lookbook of one persona across a city evening, neon noir",
+    "profile": "lookbook",
+    "preset": "neon-noir",
+    "ratio": "9:16",
+    "theme": null,
+    "scenes": 5,
+    "scene_hints": [
+      "",
+      "",
+      "",
+      "",
+      "a market at dawn"
+    ],
+    "angles_per_scene": 5,
+    "seeds_per_angle": 1,
+    "video_seconds": [
+      4,
+      6
+    ],
+    "vfx": [],
+    "roles": [],
+    "refs": [],
+    "adult": false,
+    "outputs": [
+      "export"
+    ],
+    "language": null,
+    "run_mode": "dry-run"
+  },
+  "utterances": [
+    "a lookbook of one persona across a city evening, neon noir",
+    "give me 5 angles per scene",
+    "use the neon noir look",
+    "add a scene at a market at dawn"
+  ],
+  "version": 4,
+  "history": [
+    {
+      "client": "epalle",
+      "title": "a lookbook of one persona across a city evening, neon noir",
+      "idea": "a lookbook of one persona across a city evening, neon noir",
+      "profile": "lookbook",
+      "preset": "minimal-editorial",
+      "ratio": "9:16",
+      "theme": null,
+      "scenes": 3,
+      "scene_hints": [],
+      "angles_per_scene": 5,
+      "seeds_per_angle": 1,
+      "video_seconds": [
+        4
+      ],
+      "vfx": [],
+      "roles": [],
+      "refs": [],
+      "adult": false,
+      "outputs": [
+        "export"
+      ],
+      "language": null,
+      "run_mode": "dry-run"
+    },
+    {
+      "client": "epalle",
+      "title": "a lookbook of one persona across a city evening, neon noir",
+      "idea": "a lookbook of one persona across a city evening, neon noir",
+      "profile": "lookbook",
+      "preset": "minimal-editorial",
+      "ratio": "9:16",
+      "theme": null,
+      "scenes": 4,
+      "scene_hints": [],
+      "angles_per_scene": 5,
+      "seeds_per_angle": 1,
+      "video_seconds": [
+        4,
+        6
+      ],
+      "vfx": [],
+      "roles": [],
+      "refs": [],
+      "adult": false,
+      "outputs": [
+        "export"
+      ],
+      "language": null,
+      "run_mode": "dry-run"
+    },
+    {
+      "client": "epalle",
+      "title": "a lookbook of one persona across a city evening, neon noir",
+      "idea": "a lookbook of one persona across a city evening, neon noir",
+      "profile": "lookbook",
+      "preset": "minimal-editorial",
+      "ratio": "9:16",
+      "theme": null,
+      "scenes": 4,
+      "scene_hints": [],
+      "angles_per_scene": 5,
+      "seeds_per_angle": 1,
+      "video_seconds": [
+        4,
+        6
+      ],
+      "vfx": [],
+      "roles": [],
+      "refs": [],
+      "adult": false,
+      "outputs": [
+        "export"
+      ],
+      "language": null,
+      "run_mode": "dry-run"
+    },
+    {
+      "client": "epalle",
+      "title": "a lookbook of one persona across a city evening, neon noir",
+      "idea": "a lookbook of one persona across a city evening, neon noir",
+      "profile": "lookbook",
+      "preset": "neon-noir",
+      "ratio": "9:16",
+      "theme": null,
+      "scenes": 4,
+      "scene_hints": [
+        "",
+        "",
+        "",
+        "",
+        "a market at dawn"
+      ],
+      "angles_per_scene": 5,
+      "seeds_per_angle": 1,
+      "video_seconds": [
+        4,
+        6
+      ],
+      "vfx": [],
+      "roles": [],
+      "refs": [],
+      "adult": false,
+      "outputs": [
+        "export"
+      ],
+      "language": null,
+      "run_mode": "dry-run"
+    }
+  ],
+  "pending_picks": [
+    "scene1.pick.keep",
+    "scene2.pick.keep",
+    "scene3.pick.keep",
+    "scene4.pick.keep",
+    "scene5.pick.keep"
+  ]
+}

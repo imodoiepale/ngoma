@@ -12,6 +12,16 @@ Node kinds:  workflow · node_type · node_pack · model_file · model · collec
              video · channel · technique · creative · style · brand
 Edge kinds:  uses · provided_by · requires · belongs_to · mentions · evidence_for
 
+The studio layer sits on top, so "what can a reference feed, and which ComfyUI workflow
+actually runs that step" is one walk instead of three file reads:
+
+Node kinds:  step (one per catalogue kind) · studio_workflow · studio_node · idea ·
+             preset · profile · reference_collection
+Edge kinds:  contains (studio_workflow→studio_node) · runs_step (studio_node→step) ·
+             backed_by (step→workflow) · feeds (step→step, by port type) ·
+             uses_step (idea→step) · styled_by (studio_workflow→preset) ·
+             directed_as (studio_workflow→profile) · references (studio_workflow→reference_collection)
+
 Output: graph/graph.json + graph/GRAPH_REPORT.md, queryable via graph_query.py.
 """
 from __future__ import annotations
@@ -29,6 +39,12 @@ GRAPH = REPO / "graph"
 MANIFEST = REPO / "workflows" / "manifest.json"
 YT_FACTS = REPO / "packages" / "library" / "corpus" / "youtube" / "facts.jsonl"
 STYLES = REPO / "brands"
+CATALOG = REPO / "packages" / "studio-ui" / "catalog" / "nodes.json"
+IDEAS = REPO / "brands" / "_business" / "ideas.yaml"
+PRESETS = REPO / "brands" / "_presets" / "directors.yaml"
+PROFILES = REPO / "brands" / "_presets" / "profiles.yaml"
+TEMPLATES = REPO / "brands" / "_templates" / "workflows"
+REF_MEDIA_EXT = {".png", ".jpg", ".jpeg", ".webp", ".mp4", ".mov"}
 
 # Node types shipped with ComfyUI core carry no cnr_id, so absence of a pack is not
 # absence of a dependency — it usually means "core". Recorded explicitly.
@@ -201,7 +217,151 @@ def build() -> Graph:
             sid = f"style:{brand}/{p.stem}"
             g.node(sid, "style", label=p.stem, brand=brand)
             g.edge(sid, "belongs_to", f"brand:{brand}")
+
+    add_studio_layer(g)
     return g
+
+
+# ---------------------------------------------------------------- the studio layer
+
+def _yaml(path: Path) -> dict[str, Any]:
+    """YAML is optional here: without pyyaml the ideas, presets and profiles are skipped,
+    and the graph still builds. Nothing is guessed in their place."""
+    if not path.exists():
+        return {}
+    try:
+        import yaml
+    except ImportError:
+        return {}
+    return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+
+
+def _step_accepts(port: dict[str, Any], media_accepts: list[str]) -> list[str]:
+    return list(media_accepts) if port.get("id") == "media" else [port["type"]]
+
+
+def _read_collection_meta(folder: Path) -> dict[str, Any]:
+    meta: dict[str, Any] = {}
+    f = folder / "collection.json"
+    if f.exists():
+        try:
+            meta = json.loads(f.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            meta = {}
+    files = [p for p in folder.rglob("*") if p.is_file() and p.suffix.lower() in REF_MEDIA_EXT]
+    return {"use": meta.get("use", "inspiration"), "rights": meta.get("rights", "unclear"),
+            "kind": meta.get("kind", "image"), "consent": bool(meta.get("consent", False)),
+            "source": meta.get("source", "harvest" if (folder / "posts.jsonl").exists() else "manual"),
+            "count": len(files), "path": folder.relative_to(REPO).as_posix()}
+
+
+def add_studio_layer(g: Graph) -> None:
+    if not CATALOG.exists():
+        return
+    cat = json.loads(CATALOG.read_text(encoding="utf-8"))
+    media_accepts = cat.get("media_ports", {}).get("accepts", ["image", "video"])
+    by_kind = {n["kind"]: n for n in cat["nodes"]}
+
+    # ---- steps: one per catalogue kind, backed by the comfy workflow that runs it ----
+    for n in cat["nodes"]:
+        accepts = sorted({t for p in n.get("inputs", []) for t in _step_accepts(p, media_accepts)})
+        emits = sorted({o["type"] for o in n.get("outputs", [])})
+        sid = f"step:{n['kind']}"
+        g.node(sid, "step", label=n["label"], category=n["category"], backend=n["backend"]["kind"],
+               accepts=accepts, emits=emits, consent=bool(n.get("consent")), adult=bool(n.get("adult")),
+               inputs=[{"id": p["id"], "type": p["type"]} for p in n.get("inputs", [])])
+        wf_path = n["backend"].get("workflow")
+        if wf_path:
+            wid = f"workflow:workflows/{wf_path}"
+            if wid in g.nodes:
+                g.edge(sid, "backed_by", wid)
+            else:
+                g.nodes[sid]["backend_workflow"] = wf_path   # declared but not in the manifest
+
+    # ---- feeds: A -> B when some output of A fits some input port of B ----
+    for a in cat["nodes"]:
+        for b in cat["nodes"]:
+            if a["kind"] == b["kind"]:
+                continue
+            outs = {o["type"] for o in a.get("outputs", [])}
+            if any(t in outs for p in b.get("inputs", []) for t in _step_accepts(p, media_accepts)):
+                g.edge(f"step:{a['kind']}", "feeds", f"step:{b['kind']}")
+
+    # ---- presets and profiles ----
+    for key, p in (_yaml(PRESETS).get("presets") or {}).items():
+        g.node(f"preset:{key}", "preset", label=p.get("label", key))
+    for key, p in (_yaml(PROFILES).get("profiles") or {}).items():
+        g.node(f"profile:{key}", "profile", label=p.get("label", key),
+               default_preset=p.get("default_preset"), generator=p.get("generator"))
+        if p.get("default_preset"):
+            g.node(f"preset:{p['default_preset']}", "preset", label=p["default_preset"])
+            g.edge(f"profile:{key}", "styled_by", f"preset:{p['default_preset']}")
+
+    # ---- reference collections: any folder with a collection.json or a harvest ----
+    for folder in sorted(STYLES.glob("*/references/*/")):
+        brand = folder.parents[1].name
+        if brand.startswith("_"):
+            continue
+        if not ((folder / "collection.json").exists() or (folder / "posts.jsonl").exists()):
+            continue
+        meta = _read_collection_meta(folder)
+        g.node(f"reference_collection:{brand}/{folder.name}", "reference_collection",
+               label=folder.name, brand=brand, **meta)
+        g.node(f"brand:{brand}", "brand", label=brand)
+        g.edge(f"reference_collection:{brand}/{folder.name}", "belongs_to", f"brand:{brand}")
+
+    # ---- studio workflows and their nodes ----
+    for path in sorted(STYLES.glob("*/workflows/*.studio.json")):
+        client = path.parents[1].name
+        try:
+            wf = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        wf_id = wf.get("id") or path.name.removesuffix(".studio.json")
+        wid = f"studio_workflow:{client}/{wf_id}"
+        source = wf.get("source") or {}
+        g.node(wid, "studio_workflow", label=wf.get("title") or wf_id, client=client,
+               path=path.relative_to(REPO).as_posix(), idea=source.get("idea"),
+               gaps=len(wf.get("gaps") or []), node_count=len(wf.get("nodes") or []))
+        if source.get("idea"):
+            g.node(f"idea:{source['idea']}", "idea", label=source["idea"])
+            g.edge(wid, "belongs_to", f"idea:{source['idea']}")
+        if wf.get("preset"):
+            g.node(f"preset:{wf['preset']}", "preset", label=wf["preset"])
+            g.edge(wid, "styled_by", f"preset:{wf['preset']}")
+        engine = source.get("engine") if isinstance(source.get("engine"), dict) else {}
+        if engine.get("profile"):
+            g.node(f"profile:{engine['profile']}", "profile", label=engine["profile"])
+            g.edge(wid, "directed_as", f"profile:{engine['profile']}")
+
+        for n in wf.get("nodes") or []:
+            data = n.get("data") or {}
+            nid = f"studio_node:{client}/{wf_id}/{n['id']}"
+            g.node(nid, "studio_node", label=n["kind"], stage=data.get("stage"), scene=data.get("scene"))
+            g.edge(wid, "contains", nid)
+            step = n["kind"] if n["kind"] in by_kind else data.get("step")
+            if step in by_kind:
+                g.edge(nid, "runs_step", f"step:{step}")
+            ref = data.get("ref") if isinstance(data.get("ref"), dict) else {}
+            if n["kind"] == "reference-images" and ref.get("name"):
+                rid = f"reference_collection:{client}/{ref['name']}"
+                if rid in g.nodes:
+                    g.edge(wid, "references", rid)
+
+    # ---- ideas, each using the steps of its template workflow ----
+    for idea in _yaml(IDEAS).get("ideas") or []:
+        iid = f"idea:{idea['id']}"
+        g.node(iid, "idea", label=idea.get("name", idea["id"]), family=idea.get("family"),
+               pipeline=list(idea.get("pipeline") or []))
+        for t in sorted(TEMPLATES.glob(f"{idea['id'].lower()}-*.studio.json")):
+            try:
+                twf = json.loads(t.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                continue
+            for n in twf.get("nodes") or []:
+                step = n["kind"] if n["kind"] in by_kind else (n.get("data") or {}).get("step")
+                if step in by_kind:
+                    g.edge(iid, "uses_step", f"step:{step}")
 
 
 def report(g: Graph) -> str:
@@ -259,11 +419,23 @@ def report(g: Graph) -> str:
         f"- {len(set(corroborated))} concepts appear BOTH as a workflow dependency and in a",
         "  creator transcript: " + ", ".join(f"`{x}`" for x in sorted(set(corroborated))[:20]),
         "",
+        "## Studio layer",
+        f"- {kinds.get('step', 0)} steps from the catalogue, {rels.get('backed_by', 0)} backed by a ComfyUI workflow",
+        f"  in the manifest, {rels.get('feeds', 0)} `feeds` edges by port type",
+        f"- {kinds.get('studio_workflow', 0)} studio workflows holding {kinds.get('studio_node', 0)} nodes;",
+        f"  {kinds.get('idea', 0)} ideas, {kinds.get('preset', 0)} presets, {kinds.get('profile', 0)} profiles,",
+        f"  {kinds.get('reference_collection', 0)} reference collections",
+        "- step ports come straight from `packages/studio-ui/catalog/nodes.json`; a `feeds` edge is a",
+        "  type match, not a promise the result looks good",
+        "",
         "## Queries",
         "```bash",
         "uv run packages/library/graph_query.py deps workflows/icekiub/Carousel_Pose_changer.json",
         "uv run packages/library/graph_query.py dependents comfyui-kjnodes",
         "uv run packages/library/graph_query.py evidence flux-2-klein",
+        "uv run packages/library/graph_query.py can-feed image",
+        "uv run packages/library/graph_query.py paths reference-images image-to-video",
+        "uv run packages/library/graph_query.py refs epalle",
         "```",
     ]
     return "\n".join(L)

@@ -1,0 +1,50 @@
+{
+  "workflow": "icekiub/icy_ref_character_sheet_for_minimax.json",
+  "sha256": "d9f347b92aa0060df32314f0e167c26217543589dcc081fd97fa62d8dac08b9c",
+  "format": "ui",
+  "inputs": {
+    "image": {
+      "node": "2220",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). Node title 'Character Reference'."
+    }
+  },
+  "prompt": {
+    "node": "2234",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0,
+    "note": "Default: 'Convert the character in the image to a Character Sheet showing a face close-up, front, side and back full body views'. Keep that instruction if you change it."
+  },
+  "negative": {
+    "node": "2239",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0
+  },
+  "seed": {
+    "node": "2242",
+    "class": "RandomNoise",
+    "field": "noise_seed",
+    "widget_index": 0
+  },
+  "count": {
+    "node": "2241",
+    "class": "EmptyFlux2LatentImage",
+    "field": "batch_size",
+    "widget_index": 2
+  },
+  "outputs": {
+    "sheet": {
+      "node": "2249",
+      "class": "SaveImage",
+      "kind": "image"
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "Sheet size is EmptyFlux2LatentImage 2241 widgets 0 and 1 (1680x1024); QuadView LoRA 2212."
+  ]
+}

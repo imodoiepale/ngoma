@@ -7,6 +7,12 @@ The two questions the plan set as the Phase 3 gate:
 
 Plus `evidence <concept>` — where a creator actually talked about it, with the
 timestamp, so a claim can be checked rather than trusted.
+
+The studio layer adds three questions about references and steps:
+
+    can-feed <type>        which steps accept an image / video / audio / text input?
+    paths <from> <to>      how does one step reach another, by port type (BFS over `feeds`)?
+    refs <brand>           the brand's reference collections with use, rights and count
 """
 from __future__ import annotations
 
@@ -131,20 +137,119 @@ def stats() -> int:
     return 0
 
 
+# ---------------------------------------------------------------- studio layer
+
+def steps_accepting(nodes: dict[str, dict[str, Any]], port_type: str) -> dict[str, list[dict[str, Any]]]:
+    """Steps with an input port that takes `port_type`, grouped by catalogue category."""
+    out: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for n in nodes.values():
+        if n["kind"] == "step" and port_type in (n.get("accepts") or []):
+            out[n.get("category") or "?"].append(n)
+    return {k: sorted(v, key=lambda x: x["id"]) for k, v in sorted(out.items())}
+
+
+def can_feed(port_type: str) -> int:
+    nodes, _ = load()
+    groups = steps_accepting(nodes, port_type)
+    if not groups:
+        print(f"no step accepts {port_type!r} (try image, video, audio, text, brand, character)")
+        return 1
+    total = sum(len(v) for v in groups.values())
+    print(f"=== {total} step(s) accept {port_type}")
+    for cat, steps in groups.items():
+        print(f"\n  {cat}:")
+        for s in steps:
+            ports = ", ".join(p["id"] for p in s.get("inputs", [])
+                              if p["type"] == port_type or (p["id"] == "media" and port_type in ("image", "video")))
+            flag = " [consent]" if s.get("consent") else ""
+            print(f"    - {s['id'].removeprefix('step:'):<20} {s['label']}  (port: {ports}){flag}")
+    return 0
+
+
+def find_paths(nodes: dict[str, dict[str, Any]], edges: list[dict[str, Any]], src: str, dst: str,
+               depth: int = 6, limit: int = 5) -> list[list[str]]:
+    """Shortest simple paths over `feeds`, as step kinds. BFS, so shorter paths come first."""
+    a, b = f"step:{src}", f"step:{dst}"
+    if a not in nodes or b not in nodes:
+        return []
+    nxt: dict[str, list[str]] = defaultdict(list)
+    for e in edges:
+        if e["rel"] == "feeds":
+            nxt[e["src"]].append(e["dst"])
+    for k in nxt:
+        nxt[k].sort()
+    found: list[list[str]] = []
+    frontier: list[list[str]] = [[a]]
+    while frontier and len(found) < limit:
+        nxt_frontier: list[list[str]] = []
+        for path in frontier:
+            for n in nxt.get(path[-1], []):
+                if n in path:
+                    continue
+                if n == b:
+                    found.append(path + [n])
+                    if len(found) >= limit:
+                        break
+                elif len(path) < depth:
+                    nxt_frontier.append(path + [n])
+            if len(found) >= limit:
+                break
+        frontier = nxt_frontier
+    return [[p.removeprefix("step:") for p in path] for path in found]
+
+
+def paths(src: str, dst: str) -> int:
+    nodes, edges = load()
+    for s in (src, dst):
+        if f"step:{s}" not in nodes:
+            print(f"no step {s!r} in the catalogue")
+            return 1
+    found = find_paths(nodes, edges, src, dst)
+    if not found:
+        print(f"no path from {src} to {dst} within 6 steps")
+        return 1
+    print(f"=== {len(found)} path(s) from {src} to {dst}")
+    for p in found:
+        print("  " + " -> ".join(p))
+    return 0
+
+
+def refs(brand: str) -> int:
+    nodes, _ = load()
+    cols = sorted((n for n in nodes.values()
+                   if n["kind"] == "reference_collection" and n.get("brand") == brand), key=lambda n: n["id"])
+    if not cols:
+        print(f"no reference collections for {brand!r} (a folder needs collection.json or posts.jsonl)")
+        return 1
+    print(f"=== {len(cols)} reference collection(s) for {brand}")
+    for c in cols:
+        print(f"  - {c['label']:<28} {c.get('kind', '?'):<6} use={c.get('use', '?'):<12} "
+              f"rights={c.get('rights', '?'):<9} consent={'yes' if c.get('consent') else 'no':<3} "
+              f"{c.get('count', 0):>4} files")
+    return 0
+
+
+USAGE = "usage: graph_query.py {deps|dependents|evidence|stats|can-feed|paths|refs} [target] [target2]"
+
+
 def main() -> None:
     if len(sys.argv) >= 2 and sys.argv[1] in ("-h", "--help"):
         print(__doc__)
-        print("usage: graph_query.py {deps|dependents|evidence|stats} [target]")
+        print(USAGE)
         raise SystemExit(0)
     if len(sys.argv) < 2:
         print(__doc__)
-        print("usage: graph_query.py {deps|dependents|evidence|stats} [target]")
+        print(USAGE)
         raise SystemExit(2)
     cmd = sys.argv[1]
     arg = sys.argv[2] if len(sys.argv) > 2 else ""
-    fns = {"deps": deps, "dependents": dependents, "evidence": evidence}
+    fns = {"deps": deps, "dependents": dependents, "evidence": evidence, "can-feed": can_feed, "refs": refs}
     if cmd == "stats":
         raise SystemExit(stats())
+    if cmd == "paths":
+        if len(sys.argv) < 4:
+            raise SystemExit("paths needs <from-kind> <to-kind>")
+        raise SystemExit(paths(sys.argv[2], sys.argv[3]))
     if cmd not in fns:
         raise SystemExit(f"unknown command {cmd!r}")
     if not arg:

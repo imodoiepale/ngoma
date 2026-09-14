@@ -1,0 +1,136 @@
+# Director presets: an aesthetic as grammar. Framing, lens, palette, pacing, blocking, grade,
+# motion. Never a person's face, voice or name in a prompt; `inspired_by` describes a public
+# style in our own words so the studio can explain a choice, and it is never sent to a model.
+version: 1
+cameras:            # the angle table; expand_angles slices it to 3, 5, 10 or 20
+  - {id: wide, prompt: "wide establishing shot, full body in the environment"}
+  - {id: medium, prompt: "medium shot, waist up"}
+  - {id: close, prompt: "close-up on the face, shallow depth of field"}
+  - {id: three-quarter, prompt: "three-quarter angle, slightly off axis"}
+  - {id: low, prompt: "low angle looking up, subject dominant"}
+  - {id: over-shoulder, prompt: "over-the-shoulder framing, foreground blur"}
+  - {id: profile, prompt: "clean profile, side lighting"}
+  - {id: high, prompt: "high angle looking down"}
+  - {id: detail, prompt: "extreme close-up detail: hands, fabric, jewellery"}
+  - {id: top, prompt: "top-down overhead"}
+  - {id: dutch, prompt: "dutch tilt, unsettled horizon"}
+  - {id: reflection, prompt: "framed through a reflection or window"}
+  - {id: silhouette, prompt: "backlit silhouette, rim light only"}
+  - {id: long-lens, prompt: "compressed long-lens shot from far away"}
+  - {id: tracking, prompt: "side-on tracking frame, subject mid-stride"}
+  - {id: two-shot, prompt: "two-shot with a second figure in frame"}
+  - {id: insert, prompt: "insert shot of an object the subject touches"}
+  - {id: mirror, prompt: "mirror shot, subject and reflection"}
+  - {id: doorway, prompt: "framed in a doorway, layered depth"}
+  - {id: hero, prompt: "hero portrait, centred, direct eyeline"}
+presets:
+  symmetry-pastel:
+    label: Symmetric pastel
+    inspired_by: planimetric tableaux, dollhouse symmetry, storybook colour
+    framing: [centred one-point perspective, symmetric tableau, flat frontal]
+    lens: 40mm, deep focus
+    palette: [pastel pink, mint, mustard, powder blue]
+    pacing: static frames, whip pans between them
+    blocking: [frontal, characters face the lens, arranged like a diorama]
+    grade: lifted blacks, flat and even
+    motion: lateral dolly, never handheld
+    negatives: [handheld shake, dutch tilt, lens flare, harsh shadows]
+  neon-noir:
+    label: Neon noir
+    inspired_by: rain-slick city nights, sodium and cyan, slow push-ins
+    framing: [wide with the figure small in the city, tight silhouette against neon]
+    lens: 35mm anamorphic
+    palette: [sodium orange, cyan, magenta neon, wet black]
+    pacing: slow, held, one push-in per scene
+    blocking: [figure alone in a corridor of light, back to camera then turn]
+    grade: crushed shadows with colour in them, teal-magenta split
+    motion: slow push-in on a dolly
+    negatives: [daylight, pastel, flat lighting, busy crowds]
+  handheld-verite:
+    label: Handheld vérité
+    inspired_by: documentary intimacy, natural light, breathing frame
+    framing: [imperfect handheld medium, snap zoom to detail]
+    lens: 24mm, wide and close
+    palette: [natural daylight, skin tones, muted greens]
+    pacing: quick, jump cuts, cut on movement
+    blocking: [subject ignores the camera, mid-action]
+    grade: natural, slightly warm, film grain
+    motion: handheld, following
+    negatives: [studio lighting, posed symmetry, glossy skin]
+  one-take:
+    label: One take
+    inspired_by: a single continuous steadicam move through staged space
+    framing: [continuous moving master, reveals through doorways]
+    lens: 28mm
+    palette: [warm interiors, cool exteriors]
+    pacing: continuous, no cuts, beats by blocking
+    blocking: [choreographed walk-through, characters enter and exit frame]
+    grade: neutral, slight contrast
+    motion: steadicam glide
+    negatives: [jump cuts, static tripod, montage]
+  high-key-beauty:
+    label: High-key beauty
+    inspired_by: white cyclorama, butterfly light, macro skin and fabric detail
+    framing: [centred beauty portrait, macro detail insert]
+    lens: 85mm and 100mm macro
+    palette: [white, ivory, soft peach, one accent colour]
+    pacing: slow, held, breathing
+    blocking: [subject to camera, small turns of the head]
+    grade: bright, clean, no crushed blacks
+    motion: locked off, minimal
+    negatives: [dark shadows, grain, clutter, wide angles]
+  anamorphic-epic:
+    label: Anamorphic epic
+    inspired_by: 2.39 vistas, horizontal flares, scale and silence
+    framing: [extreme wide with a tiny figure, low horizon, slow reveal]
+    lens: 50mm anamorphic, 2.39:1
+    palette: [desert gold, storm grey, deep blue hour]
+    pacing: very slow, long holds
+    blocking: [figure walks into the landscape, stops, looks]
+    grade: rich contrast, warm highlights, cool shadows
+    motion: slow crane and drone
+    negatives: [close handheld, busy interiors, pastel]
+  kinetic-music-video:
+    label: Kinetic music video
+    inspired_by: cuts on the beat, strobe, crash zooms, performance energy
+    framing: [performance to camera, crash-zoom close-ups, wide dance floor]
+    lens: 24mm to 85mm, fast changes
+    palette: [saturated primaries, strobe white, black]
+    pacing: cut on every beat, doubles on the chorus
+    blocking: [performer owns the frame, dancers enter on the drop]
+    grade: punchy, saturated, hard contrast
+    motion: crash zoom, whip pan, handheld energy
+    negatives: [slow holds, muted palette, static wide]
+  minimal-editorial:
+    label: Minimal editorial
+    inspired_by: fashion-film restraint, negative space, one idea per shot
+    framing: [subject off-centre in negative space, still frames]
+    lens: 50mm
+    palette: [charcoal, ivory, one muted accent]
+    pacing: composed stillness, long holds
+    blocking: [one figure, one gesture, held]
+    grade: matte, soft contrast, natural skin
+    motion: held, subtle drift
+    negatives: [busy frames, multiple subjects, glossy skin, flare]
+  retro-vhs:
+    label: Retro VHS
+    inspired_by: 4:3 home video, chroma bleed, zoom-lens wobble
+    framing: [4:3, slightly too close, awkward crop]
+    lens: camcorder zoom
+    palette: [faded magenta, teal bleed, blown highlights]
+    pacing: rough, in-camera cuts
+    blocking: [candid, caught mid-sentence]
+    grade: VHS softness, tracking lines, date stamp feel
+    motion: hand-held zoom in and out
+    negatives: [clean digital sharpness, cinematic grading, widescreen]
+  golden-hour-romance:
+    label: Golden hour romance
+    inspired_by: backlit sun, long lenses, slow motion, breath and hair in the light
+    framing: [backlit medium close-up, long-lens wide at sunset]
+    lens: 85mm to 135mm
+    palette: [gold, amber, soft rose, dusk blue]
+    pacing: slow motion, gentle dissolves
+    blocking: [subject turns into the light, walks toward camera]
+    grade: warm, lifted, soft halation
+    motion: slow motion, gentle push
+    negatives: [harsh noon light, cold grade, fast cuts]

@@ -1,0 +1,40 @@
+{
+  "workflow": "h3-refmods/dainamo-refmod-generate.json",
+  "sha256": "693de2e8bb91af30150e9f6b5d953ebd33f0856f85bf1e9172207f8192b349a0",
+  "format": "ui",
+  "inputs": {
+    "character": {
+      "node": "200",
+      "class": "MiniMaxH3RefModsLoader",
+      "field": "refmod_1",
+      "widget_index": 1,
+      "note": "Expects a RefMod NAME (no extension) from the ComfyUI refmods folder, e.g. 'minimaxh3_alanrickman_v1_refmod'. Widget 0 enables the loader; widgets 2/3 are the strengths; slots 2..8 repeat at widgets 4, 7, 10, ... Field name is inferred from the widget layout (node pack ComfyUI-MiniMaxH3Mod is not vendored)."
+    }
+  },
+  "prompt": {
+    "node": "127",
+    "class": "MiniMaxH3ImageToVideo",
+    "field": "prompt",
+    "widget_index": 0,
+    "note": "Must follow the H3 subject_definitions / integrated_multimodal_description protocol and name the RefMod subject."
+  },
+  "seed": {
+    "node": "128",
+    "class": "RandomNoise",
+    "field": "noise_seed",
+    "widget_index": 0
+  },
+  "outputs": {
+    "video": {
+      "node": "136",
+      "class": "SaveVideo",
+      "kind": "video",
+      "note": "filename_prefix 'video/minimaxh3_alanrickman'; set per client."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "Duration: PrimitiveFloat 121 widget 0 (seconds) -> ComfyMathExpression 123 -> length of node 127.",
+    "The shipped file names a RefMod of a public figure; never run it as-is (docs/H3-REFMODS.md)."
+  ]
+}

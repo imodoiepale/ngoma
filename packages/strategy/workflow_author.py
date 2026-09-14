@@ -291,12 +291,26 @@ def layout_lanes(nodes: list[dict[str, Any]], edges: list[dict[str, Any]],
         lanes.setdefault(order.get((n.get("data") or {}).get("stage"), len(order)), []).append(n)
     y = y0
     for lane in sorted(lanes):
-        rows: dict[int, int] = {}
+        # a depth column with many siblings (twenty angles) becomes a grid, ROWS deep, and the
+        # columns to its right move over so nothing overlaps
+        ROWS = 4
+        per_col: dict[int, int] = {}
+        for n in lanes[lane]:
+            per_col[depth[n["id"]]] = per_col.get(depth[n["id"]], 0) + 1
+        x_of: dict[int, int] = {}
+        x = 80
+        for col in sorted(per_col):
+            x_of[col] = x
+            x += 320 * max(1, -(-per_col[col] // ROWS))
+        seen: dict[int, int] = {}
+        tallest = 1
         for n in lanes[lane]:
             col = depth[n["id"]]
-            rows[col] = rows.get(col, 0) + 1
-            n["position"] = {"x": 80 + col * 320, "y": y + (rows[col] - 1) * 210}
-        y += 260 + (max(rows.values()) - 1) * 210
+            i = seen.get(col, 0)
+            seen[col] = i + 1
+            n["position"] = {"x": x_of[col] + (i // ROWS) * 320, "y": y + (i % ROWS) * 210}
+            tallest = max(tallest, min(per_col[col], ROWS))
+        y += 260 + (tallest - 1) * 210
 
 
 def _cycle(nodes: list[dict[str, Any]], edges: list[dict[str, Any]]) -> list[str] | None:

@@ -1,0 +1,40 @@
+{
+  "workflow": "h3/NEW_-_V2V_Latent_Motion_Transfer_with_upscale_and_de-rope_.json",
+  "sha256": "8b1bb14494c5d5dd47f70d54cfa7efe698f20f12e3e3253af68868ed22502329",
+  "format": "ui",
+  "inputs": {
+    "video": {
+      "node": "1",
+      "class": "VHS_LoadVideo",
+      "field": "video",
+      "note": "widgets_values is a dict; key 'video' is a filename in the ComfyUI input folder. Shipped settings force 24 fps, 1280x704, frame_load_cap 107, skip_first_frames 6; the source audio (slot 2) is reused for pass 1 and muxed into the outputs."
+    }
+  },
+  "prompt": {
+    "node": "121",
+    "class": "PrimitiveStringMultiline",
+    "field": "value",
+    "widget_index": 0,
+    "note": "Feeds both MiniMaxH3ReferenceToVideo passes (20 and 131). Must follow the H3 subject_definitions / <Picture 1> / <Video 1> protocol."
+  },
+  "seed": {
+    "node": "30",
+    "class": "RandomNoise",
+    "field": "noise_seed",
+    "widget_index": 0,
+    "note": "Pass 1. Pass 2 seed is RandomNoise 146 widget 0."
+  },
+  "outputs": {
+    "video": {
+      "node": "143",
+      "class": "VHS_VideoCombine",
+      "kind": "video",
+      "note": "De-roped final from H3ExactRecover 135. Node 103 saves a 3-way comparison stack."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "Performer replacement references: LoadImage 64 (ref_image_0) and LoadImage 108 (ref_image_1) are not studio ports of the upscale-video kind; set them by hand when replacing performers.",
+    "Pass 2 output size: MiniMaxH3ReferenceToVideo 131 widgets 1 and 2 (1920x1056), length widget 3."
+  ]
+}

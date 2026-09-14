@@ -1,0 +1,46 @@
+{
+  "workflow": "icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json",
+  "sha256": "f60d69d0c0c27c5dd5434214201bd084c72f41b6a85f95c847139182d84ef633",
+  "format": "ui",
+  "inputs": {
+    "image": {
+      "node": "13",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first)."
+    }
+  },
+  "prompt": {
+    "node": "16",
+    "class": "CR Prompt List",
+    "field": "prompt_list",
+    "widget_index": 1,
+    "note": "One pose per line; each line becomes one image (max_rows widget 4 = 51). Widgets 0 and 2 are prefix/suffix strings, widget 3 start_index."
+  },
+  "negative": {
+    "node": "8",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0
+  },
+  "seed": {
+    "node": "9",
+    "class": "KSampler",
+    "field": "seed",
+    "widget_index": 0
+  },
+  "outputs": {
+    "images": {
+      "node": "10",
+      "class": "SaveImage",
+      "kind": "image",
+      "note": "One file per prompt line. SaveImage 35 is the bypassed detail pass."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "No batch count: the number of images equals the number of lines in the prompt list.",
+    "Character LoRA: LoraLoaderModelOnly 19 widget 0."
+  ]
+}

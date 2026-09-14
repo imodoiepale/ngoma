@@ -1,0 +1,53 @@
+{
+  "workflow": "icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+  "sha256": "668d451db8441c732e65ba5edf8da4b4c6ab6d167ed148187154ee8a9d756e74",
+  "format": "ui",
+  "inputs": {
+    "image": {
+      "node": "15",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). The model/character photo: the loader placed on its own above the row of clothing loaders; second image in the ReferenceLatent chain (5 -> 17 -> 34 -> 35)."
+    },
+    "clothes": {
+      "node": "19",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). First clothing reference (first ReferenceLatent 5). Extra clothing slots: LoadImage 27 (third) and LoadImage 26 (fourth); leave them or fill with more pieces."
+    }
+  },
+  "prompt": {
+    "node": "6",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0,
+    "note": "Default 'place the pieces of clothing, hat and glasses on the model'."
+  },
+  "seed": {
+    "node": "3",
+    "class": "KSampler",
+    "field": "seed",
+    "widget_index": 0
+  },
+  "count": {
+    "node": "9",
+    "class": "EmptyLatentImage",
+    "field": "batch_size",
+    "widget_index": 2
+  },
+  "outputs": {
+    "image": {
+      "node": "4",
+      "class": "PreviewImage",
+      "kind": "image",
+      "note": "No SaveImage in this workflow; node 4 previews the decoded result (temp/). Runner fetches via /view?type=temp or a human swaps in SaveImage."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "The loaders carry no titles; the model-vs-clothes assignment is inferred from canvas layout and filenames (15 = generated character shot). Verify once on the pod.",
+    "Negative is ConditioningZeroOut 2 (no text). All four references are resized to 1024 by ImageResizeKJv2 24/25/28/29."
+  ]
+}

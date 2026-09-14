@@ -1,0 +1,50 @@
+{
+  "workflow": "icekiub/Krea2Icy_-Subs_1.1.json",
+  "sha256": "0fa0a3e70feebff76645d40517ea029537453242a4bea1af61b2ed6a93249cd9",
+  "format": "ui",
+  "inputs": {
+    "pose": {
+      "node": "19",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). Depth-control path: nodes 19, 4, 5, 10 and 13 are bypassed (mode 4) in the shipped file; set their mode to 0 to make the pose take effect."
+    }
+  },
+  "prompt": {
+    "node": "12",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0
+  },
+  "negative": {
+    "node": "6",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0
+  },
+  "seed": {
+    "node": "3",
+    "class": "KSampler",
+    "field": "seed",
+    "widget_index": 0
+  },
+  "count": {
+    "node": "18",
+    "class": "EmptyLatentImage",
+    "field": "batch_size",
+    "widget_index": 2
+  },
+  "outputs": {
+    "image": {
+      "node": "1",
+      "class": "SaveImage",
+      "kind": "image"
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "Resolution is EmptyLatentImage 18 widgets 0 and 1 (1440x1920).",
+    "Krea2 turbo LoRAs 7 and 8 are bypassed; LoRAs 9 and 11 are active realism/character LoRAs."
+  ]
+}

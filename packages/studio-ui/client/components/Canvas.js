@@ -8,8 +8,49 @@ import ReactFlow, {
 } from "reactflow";
 import "reactflow/dist/style.css";
 import StudioNode from "./StudioNode";
+import DirectorChat from "./DirectorChat";
+import PickGrid from "./PickGrid";
 
-const nodeTypes = { studio: StudioNode };
+const RUN_MODES = [["dry-run", "Dry run", "Nothing runs or spends"], ["stage-approval", "Approve", "You approve each stage's cost before it runs"], ["auto", "Auto", "One approval; pauses at your picks and before publishing"]];
+
+// A stage label drawn on the canvas, one per lane. It never receives clicks.
+function LaneLabel({ data }) {
+  return <div className="lane-label">{data.label}</div>;
+}
+const nodeTypes = { studio: StudioNode, lane: LaneLabel };
+
+function laneNodes(wf) {
+  if (!wf.stages?.length) return [];
+  const byStage = {};
+  for (const n of wf.nodes) {
+    const s = n.data?.stage;
+    if (!s) continue;
+    byStage[s] = Math.min(byStage[s] ?? Infinity, n.position.y);
+  }
+  return wf.stages.filter((s) => byStage[s.id] != null).map((s) => ({
+    id: `lane:${s.id}`, type: "lane", position: { x: 20, y: byStage[s.id] - 34 }, draggable: false, selectable: false, connectable: false,
+    data: { label: s.label }, style: { zIndex: -1 },
+  }));
+}
+
+// What a pick step can choose from: every result of every step feeding it.
+function candidatesFor(wf, byKind, pickId) {
+  const out = [];
+  for (const e of wf.edges) {
+    if (e.target !== pickId) continue;
+    const src = wf.nodes.find((n) => n.id === e.source);
+    if (!src) continue;
+    const label = [byKind[src.kind]?.label, src.data?.camera].filter(Boolean).join(" · ");
+    const done = (src.data?.results || []).filter((r) => r.status === "completed");
+    if (done.length) {
+      for (const r of done) r.files.forEach((f, i) => out.push({ id: `${src.id}#${r.run_id}#${i}`, file: f, video: /\.(mp4|webm|mov)$/i.test(f), label: `${label} #${i + 1}` }));
+    } else {
+      const n = Number(src.data?.variant_count || 1);
+      for (let i = 0; i < n; i++) out.push({ id: `${src.id}#pending#${i}`, file: null, label: `${label} (not made yet)` });
+    }
+  }
+  return out;
+}
 
 function toFlow(wf, byKind, types) {
   const gapNodes = new Set((wf.gaps || []).map((g) => g.node));
@@ -27,13 +68,13 @@ function toFlow(wf, byKind, types) {
     animated: !!e.married,
     style: { stroke: types[e.type]?.color || "#777", strokeWidth: e.married ? 2.4 : 1.6 },
   }));
-  return { nodes, edges };
+  return { nodes: nodes.concat(laneNodes(wf)), edges };
 }
 
 function fromFlow(initial, nodes, edges) {
   return {
     ...initial,
-    nodes: nodes.map((n) => {
+    nodes: nodes.filter((n) => n.type === "studio").map((n) => {
       const { kind, spec, types, gap, ...rest } = n.data;
       return { id: n.id, kind, position: { x: Math.round(n.position.x), y: Math.round(n.position.y) }, data: { ...rest, params: n.data.params } };
     }),
@@ -126,11 +167,49 @@ function Editor({ client, initial, catalog }) {
   const [title, setTitle] = useState(initial.title);
   const [plan, setPlan] = useState(null);
   const [toast, setToast] = useState("");
+  const [wf, setWf] = useState(initial);
+  const [mode, setMode] = useState(initial.run_mode || "dry-run");
+  const [director, setDirector] = useState(!!initial.source?.engine);
+  const [stage, setStage] = useState("next");
+  const [running, setRunning] = useState(false);
+  const [picking, setPicking] = useState(null);
   const wrap = useRef(null);
   const flow = useReactFlow();
   const readOnly = !!client.templates;
+  const sessionId = initial.source?.engine?.session || initial.id;
 
   const flash = (msg) => { setToast(msg); setTimeout(() => setToast(""), 2600); };
+
+  // The director or the runner rewrote the file: redraw everything from it.
+  const replace = useCallback((next) => {
+    setWf(next);
+    setTitle(next.title);
+    setMode(next.run_mode || "dry-run");
+    const f = toFlow(next, byKind, catalog.types);
+    setNodes(f.nodes);
+    setEdges(f.edges);
+    setTimeout(() => flow.fitView({ padding: 0.2 }), 50);
+  }, [byKind, catalog.types, setNodes, setEdges, flow]);
+
+  async function reload() {
+    const res = await fetch(`/api/workflows/${client.id}/${initial.id}`);
+    if (res.ok) replace(await res.json());
+  }
+
+  async function runStage() {
+    setRunning(true);
+    try {
+      const res = await fetch("/api/run", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ client: client.id, workflow: initial.id, stage, mode, approveAs: mode === "dry-run" ? undefined : "human" }) });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) { flash(data.error || "The stage did not run."); return; }
+      const done = (data.results || []).filter((r) => r.status === "completed").length;
+      flash(data.note || `${data.stage || "stage"}: ${data.results?.length || 0} step(s), ${done} completed under ${data.mode}.${data.pending_picks?.length ? ` ${data.pending_picks.length} pick(s) waiting for you.` : ""}`);
+      await reload();
+    } finally {
+      setRunning(false);
+    }
+  }
 
   const portType = useCallback((nodeId, handle, dir) => {
     const n = nodes.find((x) => x.id === nodeId);
@@ -169,7 +248,7 @@ function Editor({ client, initial, catalog }) {
     if (kind) addNode(kind, flow.screenToFlowPosition({ x: e.clientX, y: e.clientY }));
   }, [addNode, flow]);
 
-  const current = () => ({ ...fromFlow(initial, nodes, edges), title });
+  const current = () => ({ ...fromFlow(wf, nodes, edges), title, run_mode: mode });
 
   async function save() {
     const res = await fetch(`/api/workflows/${client.id}/${initial.id}`, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(current()) });
@@ -196,11 +275,31 @@ function Editor({ client, initial, catalog }) {
         <span className="sep" aria-hidden>/</span>
         <input className="title-input" value={title} onChange={(e) => setTitle(e.target.value)} aria-label="Workflow title" readOnly={readOnly} />
         <span className="topbar-stats">
-          {nodes.length} steps
+          {nodes.filter((n) => n.type === "studio").length} steps
           {initial.source?.combined && <span className="chip">Combined</span>}
+          {wf.source?.engine && <span className="chip">Directed</span>}
           {nodes.some((n) => n.data.gap) && <span className="chip chip-gap">{nodes.filter((n) => n.data.gap).length} not runnable yet</span>}
         </span>
         <div className="topbar-actions">
+          {!readOnly && (
+            <>
+              <span className="mode-toggle" role="radiogroup" aria-label="Run mode">
+                {RUN_MODES.map(([id, label, hint]) => (
+                  <button key={id} type="button" role="radio" aria-checked={mode === id} title={hint} className={`${mode === id ? "is-on " : ""}mode-${id}`} onClick={() => setMode(id)}>{label}</button>
+                ))}
+              </span>
+              {!!wf.stages?.length && (
+                <select className="stage-pick" value={stage} onChange={(e) => setStage(e.target.value)} aria-label="Stage to run">
+                  <option value="next">Next stage</option>
+                  {wf.stages.map((s) => <option key={s.id} value={s.id}>{s.label}</option>)}
+                </select>
+              )}
+              <button className="btn" onClick={runStage} disabled={running} title={mode === "dry-run" ? "Writes what would run; nothing is submitted" : "Needs your approval; spends GPU time"}>
+                {running ? "Running…" : mode === "dry-run" ? "Dry-run stage" : "Run stage"}
+              </button>
+              <button className="btn btn-quiet" onClick={() => setDirector((d) => !d)} aria-pressed={director}>Director</button>
+            </>
+          )}
           <button className="btn btn-quiet" onClick={check}>Check run plan</button>
           {readOnly
             ? <Link className="btn btn-primary" href="/">Use for a client from their workspace</Link>
@@ -215,7 +314,7 @@ function Editor({ client, initial, catalog }) {
           nodes={nodes} edges={edges} nodeTypes={nodeTypes}
           onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} onConnect={onConnect}
           isValidConnection={isValidConnection}
-          onNodeClick={(_, n) => setSelected(n.id)} onPaneClick={() => setSelected(null)}
+          onNodeClick={(_, n) => { if (n.type !== "studio") return; setSelected(n.id); setPicking(byKind[n.data.kind]?.category === "decide" ? n.id : null); }} onPaneClick={() => { setSelected(null); setPicking(null); }}
           nodesDraggable={!readOnly} nodesConnectable={!readOnly} elementsSelectable
           fitView fitViewOptions={{ padding: 0.2 }} minZoom={0.2} maxZoom={1.8}
           proOptions={{ hideAttribution: true }} deleteKeyCode={readOnly ? null : ["Delete", "Backspace"]}
@@ -235,7 +334,19 @@ function Editor({ client, initial, catalog }) {
         </div>
       </div>
 
-      {selectedNode && (
+      {director && !readOnly && !picking && (
+        <DirectorChat client={client.id} workflow={initial.id} session={sessionId}
+          onWorkflow={(next) => replace(next)} onClose={() => setDirector(false)} />
+      )}
+
+      {picking && selectedNode && (
+        <PickGrid client={client.id} workflow={initial.id} node={{ id: selectedNode.id, data: selectedNode.data }}
+          candidates={candidatesFor(current(), byKind, selectedNode.id)}
+          onPicked={async (picked) => { flash(`Kept ${picked.length}.`); setPicking(null); await reload(); }}
+          onClose={() => setPicking(null)} />
+      )}
+
+      {selectedNode && !picking && !director && (
         <Inspector node={selectedNode} catalog={catalog}
           onClose={() => setSelected(null)}
           onDelete={() => { if (readOnly) return; setNodes((ns) => ns.filter((n) => n.id !== selected)); setEdges((es) => es.filter((e) => e.source !== selected && e.target !== selected)); setSelected(null); }}
@@ -249,7 +360,7 @@ function Editor({ client, initial, catalog }) {
             <h3>Run plan</h3>
             <button className="icon-btn" onClick={() => setPlan(null)} aria-label="Close run plan">×</button>
           </div>
-          <p className="muted">{plan.ready} ready, {plan.blocked} not runnable yet. {plan.note}</p>
+          <p className="muted">{plan.ready} ready, {plan.blocked} not runnable yet{plan.waiting ? `, ${plan.waiting} waiting for your pick` : ""}. {plan.note}</p>
           {plan.consent && <p className="notice">This workflow uses faces or characters. Get consent before running it.</p>}
           <ol className="plan-list">
             {plan.steps.map((s) => (

@@ -1,0 +1,53 @@
+{
+  "workflow": "icekiub/Motion_Control_Icy_-SUBS.json",
+  "sha256": "0ab7d77255b8cb3a8edac85e75d0dc77b733493f7cef5f1e9798e042a7e7623f",
+  "format": "ui",
+  "inputs": {
+    "character": {
+      "node": "161",
+      "class": "BetterImageLoader",
+      "field": "image",
+      "widget_index": 1,
+      "note": "Reference image filename; widget 0 'folder' selects 'input' or 'output' (shipped value 'output'). Set widget 0 to 'input' for an uploaded file."
+    },
+    "video": {
+      "node": "33",
+      "class": "VHS_LoadVideo",
+      "field": "video",
+      "note": "widgets_values is a dict; key 'video' is a filename in the ComfyUI input folder. The pose video drives motion and its soundtrack is muxed onto the result."
+    }
+  },
+  "prompt": {
+    "node": "3",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0
+  },
+  "negative": {
+    "node": "4",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0
+  },
+  "seed": {
+    "node": "154",
+    "class": "KSampler",
+    "field": "seed",
+    "widget_index": 0,
+    "note": "First chunk; loop sampler 174 widget 0 carries the same seed."
+  },
+  "outputs": {
+    "video": {
+      "node": "181",
+      "class": "VHS_VideoCombine",
+      "kind": "video",
+      "note": "Clean result with audio (loop output 200). Node 208 is a side-by-side with the pose video; node 8 and 88 are first-chunk previews."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "CLIPTextEncode 87 ('woman') is the SAM3 subject-tracking prompt, not the generation prompt.",
+    "Resolution preset: PrimitiveInt 201 (1..5) selects among PrimitiveInt 205/204/206/207/203.",
+    "Subgraph 864826b7 'Video Stitch' has no nodes of its own."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "client": "epalle",
+  "title": "Rooftop dusk lookbook",
+  "idea": "a lookbook of one persona across a city evening",
+  "preset": "neon-noir",
+  "scenes": 4,
+  "scene_hints": ["rooftop at golden hour", "wet street under neon", "hotel corridor", "rooftop again, night"],
+  "angles_per_scene": 5,
+  "seeds_per_angle": 1,
+  "video_seconds": [4, 6],
+  "vfx": ["upscale", "relight"],
+  "roles": [{"name": "lead", "consent": false, "fictional": true, "ref_collection": "avatar-lead"}],
+  "refs": [
+    {"name": "avatar-lead", "kind": "image", "use": "data", "rights": "owned", "consent": false, "count": 24},
+    {"name": "wardrobe-red", "kind": "image", "use": "data", "rights": "owned", "count": 6},
+    {"name": "location-rooftop", "kind": "image", "use": "data", "rights": "licensed", "count": 3},
+    {"name": "mood-neon", "kind": "image", "use": "inspiration", "rights": "unclear", "count": 40}
+  ],
+  "outputs": ["export"],
+  "run_mode": "dry-run"
+}

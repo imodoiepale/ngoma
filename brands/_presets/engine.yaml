@@ -1,0 +1,22 @@
+# The director engine's spending limits. A human raises these; the engine never does.
+worker: engine
+budget_usd: 0          # total the engine may spend on GPU time before a human raises it
+gpu: a100-80gb         # rate key in packages/strategy/unit_economics.GPU_RATES
+# seconds of GPU per unit, by step. `measured` came from a pod run; `assumed` is a
+# planning figure until a run replaces it (runner writes actual seconds into each manifest).
+seconds_per_unit:
+  klein-t2i:            {seconds: 8.1,  basis: measured, source: infra/runpod/verification-summary.md}
+  krea2-t2i:            {seconds: 12,   basis: assumed}
+  h3-reference-image:   {seconds: 20,   basis: assumed}
+  character-sheet:      {seconds: 15,   basis: assumed}
+  refmod-create:        {seconds: 30,   basis: assumed}
+  carousel:             {seconds: 10,   basis: assumed}
+  wardrobe:             {seconds: 12,   basis: assumed}
+  consistent-room:      {seconds: 14,   basis: assumed}
+  image-edit:           {seconds: 10,   basis: assumed}
+  image-to-video:       {seconds: 90,   basis: assumed, per: second_of_video}
+  character-video:      {seconds: 120,  basis: assumed, per: second_of_video}
+  long-video:           {seconds: 120,  basis: assumed, per: second_of_video}
+  motion-control:       {seconds: 150,  basis: assumed, per: second_of_video}
+  lipsync:              {seconds: 120,  basis: assumed, per: second_of_video}
+  upscale-video:        {seconds: 60,   basis: assumed, per: second_of_video}

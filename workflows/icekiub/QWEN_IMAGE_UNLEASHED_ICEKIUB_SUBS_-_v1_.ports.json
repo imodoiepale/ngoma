@@ -1,0 +1,48 @@
+{
+  "workflow": "icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v1_.json",
+  "sha256": "288684572ec16f118b917ce7adfcfc90dfbf33eaed46f12287029bb49d6b3584",
+  "format": "ui",
+  "inputs": {
+    "image": {
+      "node": "122",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). Resized to 1328 by ImageResizeKJv2 84."
+    }
+  },
+  "prompt": {
+    "node": "3",
+    "class": "TextEncodeQwenImageEditPlus",
+    "field": "prompt",
+    "widget_index": 0,
+    "note": "The edit instruction, e.g. 'make the top larger'."
+  },
+  "seed": {
+    "node": "27",
+    "class": "KSampler",
+    "field": "seed",
+    "widget_index": 0,
+    "note": "Main edit sampler. KSampler 92 is a fixed-seed 0.3-denoise refiner."
+  },
+  "count": {
+    "node": "81",
+    "class": "EmptyLatentImage",
+    "field": "batch_size",
+    "widget_index": 2,
+    "note": "Width/height of node 81 are wired from the image size."
+  },
+  "outputs": {
+    "image": {
+      "node": "120",
+      "class": "SaveImage",
+      "kind": "image"
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "No negative text: KSampler 27's negative is ConditioningZeroOut 8.",
+    "LoadImageListFromDir 119 (empty path) and the z_image_turbo group (109/116/117/118) are alternate paths; 116-118 are bypassed.",
+    "Checkpoint 74 'Qwen-Rapid-AIO-NSFW-v18' is the edit model; review before client use."
+  ]
+}

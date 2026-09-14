@@ -51,6 +51,8 @@ ALWAYS_HUMAN = {
     "brand_change",      # changes what the brand is
     "credential_change",
     "delete",
+    "engine_run",        # one approval to let the director engine run a whole workflow
+    "engine_stage",      # one approval per stage when the engine is in stage-approval mode
 }
 
 # Task types a worker may take unattended, given budget.

@@ -1,0 +1,28 @@
+{
+  "workflow": "h3-refmods/franckyb-refmod-create-from-folder.json",
+  "sha256": "db44ba80d5f76a9e42e3830dbd9eb9f216db562b31c446b08c98ddb38a119773",
+  "format": "ui",
+  "inputs": {
+    "images": {
+      "node": "32",
+      "class": "H3RefModCreateFromFolder",
+      "field": "folder",
+      "widget_index": 0,
+      "note": "Expects a FOLDER PATH on the ComfyUI host containing the character's reference images (videos/audio also accepted), not a single file. Widget 1 'use_subfolders', widget 2 'use_folder_as_name'."
+    }
+  },
+  "outputs": {
+    "character": {
+      "node": "32",
+      "class": "H3RefModCreateFromFolder",
+      "kind": "character",
+      "note": "The node itself writes the RefMod file when widget 25 'save' is true; the RefMod name is widget 3 'name' (default 'name_refMod'), optional subfolder widget 26."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "No prompt, seed or batch: this is a one-shot extraction. Widget 4 'extraction_preset' (identity_encode), widget 5 'concept_type' (identity), widget 7 'mode' (Full Reference).",
+    "The runner must set widget 3 'name' per character so RefMods do not overwrite each other.",
+    "Rights: build RefMods only from references the client owns (docs/H3-REFMODS.md)."
+  ]
+}

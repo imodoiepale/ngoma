@@ -1,9 +1,9 @@
 # Graph Report — EPALLE Studio corpus (2026-09-14)
 
 ## Summary
-- 1127 nodes · 3705 edges
-- node kinds: node_type 300, video 216, model 160, model_file 146, workflow 72, node_pack 54, setting 49, style 35, creative 26, technique 24, collection 13, gpu 8, hardware 8, channel 7, version 7, brand 2
-- edge kinds: uses 1834, requires 783, mentions 591, belongs_to 469, provided_by 28
+- 1680 nodes · 5893 edges
+- node kinds: studio_node 372, node_type 300, video 216, model 160, model_file 146, workflow 72, studio_workflow 60, node_pack 54, step 54, idea 50, setting 49, style 35, creative 26, technique 24, collection 13, preset 10, gpu 8, hardware 8, channel 7, version 7, profile 7, brand 2
+- edge kinds: uses 1834, feeds 1087, requires 783, mentions 591, belongs_to 525, contains 372, runs_step 368, uses_step 268, provided_by 28, backed_by 28, styled_by 8, directed_as 1
 - 591 edges carry transcript evidence (video id + timestamp + quote)
 
 ## Extraction provenance
@@ -69,9 +69,21 @@
 - 6 concepts appear BOTH as a workflow dependency and in a
   creator transcript: `comfyui-custom-scripts`, `comfyui-impact-pack`, `comfyui-kjnodes`, `comfyui-sam3`, `comfyui-videohelpersuite`, `comfyui_essentials`
 
+## Studio layer
+- 54 steps from the catalogue, 28 backed by a ComfyUI workflow
+  in the manifest, 1087 `feeds` edges by port type
+- 60 studio workflows holding 372 nodes;
+  50 ideas, 10 presets, 7 profiles,
+  0 reference collections
+- step ports come straight from `packages/studio-ui/catalog/nodes.json`; a `feeds` edge is a
+  type match, not a promise the result looks good
+
 ## Queries
 ```bash
 uv run packages/library/graph_query.py deps workflows/icekiub/Carousel_Pose_changer.json
 uv run packages/library/graph_query.py dependents comfyui-kjnodes
 uv run packages/library/graph_query.py evidence flux-2-klein
+uv run packages/library/graph_query.py can-feed image
+uv run packages/library/graph_query.py paths reference-images image-to-video
+uv run packages/library/graph_query.py refs epalle
 ```
