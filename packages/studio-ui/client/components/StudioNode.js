@@ -23,6 +23,7 @@ function StudioNode({ data, selected }) {
     <div className={`snode${gap ? " is-gap" : ""}${selected ? " is-selected" : ""}`}>
       <div className="snode-head">
         <b>{spec.label}</b>
+        {spec.adult && <span className="snode-flag" title="18+ line only: fictional adults, separate entity">18+</span>}
         {spec.consent && <span className="snode-flag" title="Consent needed">Consent</span>}
       </div>
       <div className="snode-preview" style={{ "--out": colour(outType) }}>

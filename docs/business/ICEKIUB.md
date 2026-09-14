@@ -1,5 +1,8 @@
 # Buying Icekiub: what you get, what we already have, how we absorb it
 
+**Bought, 2026-09-14.** The Skool classroom (22 lessons) is imported. Every workflow, node
+pack, model link and lesson note is in [ICEKIUB-SKOOL.md](ICEKIUB-SKOOL.md).
+
 ## Where it is sold
 
 - **Whop:** [ComfyUI/AI Tech - Icekiub AI](https://whop.com/icekiub/). The public page on

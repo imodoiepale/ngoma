@@ -1,9 +1,9 @@
-# Graph Report — EPALLE Studio corpus (2026-09-13)
+# Graph Report — EPALLE Studio corpus (2026-09-14)
 
 ## Summary
-- 940 nodes · 2872 edges
-- node kinds: node_type 266, video 216, model 100, model_file 84, workflow 51, setting 49, node_pack 44, style 35, creative 26, technique 24, collection 13, gpu 8, hardware 8, channel 7, version 7, brand 2
-- edge kinds: uses 1358, mentions 591, requires 509, belongs_to 386, provided_by 28
+- 1127 nodes · 3705 edges
+- node kinds: node_type 300, video 216, model 160, model_file 146, workflow 72, node_pack 54, setting 49, style 35, creative 26, technique 24, collection 13, gpu 8, hardware 8, channel 7, version 7, brand 2
+- edge kinds: uses 1834, requires 783, mentions 591, belongs_to 469, provided_by 28
 - 591 edges carry transcript evidence (video id + timestamp + quote)
 
 ## Extraction provenance
@@ -15,21 +15,21 @@
   linked to a pack when its workflow declares exactly one, so attribution is never guessed.
 
 ## God nodes — node packs (what everything depends on)
-- `comfy-core` — 79 connections
-- `comfyui-kjnodes` — 33 connections
-- `comfyui-videohelpersuite` — 30 connections
+- `comfy-core` — 100 connections
+- `comfyui-kjnodes` — 53 connections
+- `comfyui-videohelpersuite` — 36 connections
+- `rgthree-comfy` — 16 connections
+- `comfyui-impact-pack` — 13 connections
+- `res4lyf` — 12 connections
+- `comfyui_controlnet_aux` — 11 connections
 - `comfyui-h3-motion-context` — 10 connections
+- `comfyui-easy-use` — 9 connections
 - `comfyui-solattn_triton` — 8 connections
-- `rgthree-comfy` — 8 connections
+- `comfyui-custom-scripts` — 8 connections
+- `efficiency-nodes-comfyui` — 8 connections
 - `comfyui_comfyroll_customnodes` — 7 connections
 - `face-detailer` — 7 connections
-- `comfyui-impact-pack` — 6 connections
-- `comfyui-easy-use` — 5 connections
-- `res4lyf` — 5 connections
-- `comfyui_controlnet_aux` — 5 connections
-- `efficiency-nodes-comfyui` — 5 connections
-- `sage-attention` — 5 connections
-- `maskvidexperiments` — 4 connections
+- `comfyui-inspire-pack` — 6 connections
 
 ## God nodes — models
 - `z-image-turbo` — 25 connections
@@ -40,30 +40,30 @@
 - `flux-2-klein` — 5 connections
 - `scail-2` — 4 connections
 - `veo` — 4 connections
+- `flux-2-klein-9b` — 3 connections
 - `kling` — 3 connections
 - `midjourney` — 3 connections
 - `minimax-h3-video-vae` — 2 connections
 - `minimax-h3-ref2va` — 2 connections
-- `flux-2-klein-9b` — 2 connections
+- `rife47` — 2 connections
 - `qwen-image` — 2 connections
-- `ideogram` — 2 connections
 
 ## Most-used node types
-- `VAELoader` — 49 connections
-- `CLIPLoader` — 47 connections
-- `UNETLoader` — 47 connections
-- `VAEDecode` — 46 connections
-- `LoadImage` — 38 connections
-- `LoraLoaderModelOnly` — 34 connections
-- `CLIPTextEncode` — 30 connections
-- `VHS_VideoCombine` — 26 connections
-- `KSamplerSelect` — 24 connections
-- `RandomNoise` — 24 connections
-- `SamplerCustomAdvanced` — 24 connections
-- `PathchSageAttentionKJ` — 23 connections
-- `KSampler` — 23 connections
-- `BasicGuider` — 22 connections
-- `BasicScheduler` — 20 connections
+- `VAELoader` — 67 connections
+- `CLIPLoader` — 65 connections
+- `UNETLoader` — 64 connections
+- `VAEDecode` — 62 connections
+- `LoadImage` — 54 connections
+- `CLIPTextEncode` — 49 connections
+- `LoraLoaderModelOnly` — 48 connections
+- `PathchSageAttentionKJ` — 40 connections
+- `PreviewImage` — 38 connections
+- `KSampler` — 34 connections
+- `VHS_VideoCombine` — 31 connections
+- `MarkdownNote` — 31 connections
+- `ImageResizeKJv2` — 29 connections
+- `VAEEncode` — 27 connections
+- `KSamplerSelect` — 26 connections
 
 ## Corroboration
 - 6 concepts appear BOTH as a workflow dependency and in a

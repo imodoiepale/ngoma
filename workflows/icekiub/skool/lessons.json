@@ -1,0 +1,621 @@
+{
+  "source": "skool.com/ai-tech-and-comfyui-workflows-2226 classroom: Sub Workflows",
+  "captured_at": "2026-09-14T08:44:29.903Z",
+  "lessons": [
+    {
+      "path": [
+        "NEW - Icy realism H3 Loras Checkpoints"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=242bbf09f51f4c9d909df2f5c9322789",
+      "title": "NEW - Icy realism H3 Loras Checkpoints",
+      "video_link": null,
+      "video_minutes": null,
+      "hosted_video": false,
+      "description": "I recommend trying and selecting the one you prefer, I like 5850 personally.\n\nhttps://drive.google.com/drive/folders/1j1DyuI8APJ8h8KhM9f35rjrYEVJ3LgiP?usp=sharing",
+      "links": [
+        "https://drive.google.com/drive/folders/1j1DyuI8APJ8h8KhM9f35rjrYEVJ3LgiP?usp=sharing"
+      ],
+      "resources": []
+    },
+    {
+      "path": [
+        "Custom nodes"
+      ],
+      "section": true
+    },
+    {
+      "path": [
+        "Custom nodes",
+        "Updated Icy-Hider for subs"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=4752f5761eaf4e40a5ca7a05fa25ba7f",
+      "title": "Updated Icy-Hider for subs",
+      "video_link": null,
+      "video_minutes": null,
+      "hosted_video": true,
+      "description": "Icy hider is a privacy cover custom node i made that will let you hide images and videos easily in comfyui. let me know how it works! Just drop the contents of the zip in your comfyui/custom_nodes folder and you'll be good to go!",
+      "links": [],
+      "resources": [
+        {
+          "title": "Icy-Hider",
+          "file_name": "ComfyUI-IcyHider-icekiub.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Video Related"
+      ],
+      "section": true
+    },
+    {
+      "path": [
+        "Video Related",
+        "(BEST) SCAIL 2 Motion Control"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=f8b082faef4e4ad6941bd7fc4162cb57",
+      "title": "(BEST) SCAIL 2 Motion Control",
+      "video_link": null,
+      "video_minutes": null,
+      "hosted_video": true,
+      "description": "Best motion control model was released not long ago and it's great",
+      "links": [],
+      "resources": [
+        {
+          "title": "Motion control icy subs",
+          "file_name": "Motion Control Icy -SUBS.json",
+          "link": null,
+          "content_type": "application/json"
+        },
+        {
+          "title": "Krea gen + scail motion control",
+          "file_name": "Krea gen + scail motion control subs.json",
+          "link": null,
+          "content_type": "application/json"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Video Related",
+        "ICY ANIMATE WORKFLOW"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=9675be8f118a42709eeee60fd464b05e",
+      "title": "ICY ANIMATE WORKFLOW",
+      "video_link": "https://www.youtube.com/watch?v=Yj1SJtWZvE8",
+      "video_minutes": 7.7,
+      "hosted_video": false,
+      "description": "Load your image and video, and run the Klein Swap. Might take a couple tries to get the good first frame, nothing I can do about that (model skill issue)\n\nIf you do not want to use Klein swap, connect the load image directly to the Set_Referenceimage\n\nWhen you're happy with your first frame, lock the seed and activate the preprocessing group and run the workflow\n\nThe higher the resolution, the higher the processing time. You will need to do some basic math to determine how many frames you do per sampler, this amount you can do per sampler will depend on your available amount of VRAM. The more you have the more frames you can do at once. For example, using a RTX PRO 6000 you can do as many frames as you want at once.\n\nI recommend starting medium res (3) with 81 frames chunks (5seconds) per sampler and go up or down from there depending on your hardware and chosen resolution.\n\nyou will need access to sam3 and klein for all to work guide in blue node isnt fully updated\n\nKlein (ask for access)\nDiffusion_models: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors\ntext_encoders: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors\nvae: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors\n\nWan Animate\nDiffusion_models: https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/resolve/main/Wan22Animate/Wan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors\n\nvae https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors\n\ntext_encoders: https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors\n\nclip_vision/ https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors\n\nWanAnimate_relight_lora_fp16.safetensors https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/LoRAs/Wan22_relight/WanAnimate_relight_lora_fp16.safetensors\n\nspeed lora https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors",
+      "links": [
+        "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors",
+        "https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/resolve/main/Wan22Animate/Wan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors",
+        "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/LoRAs/Wan22_relight/WanAnimate_relight_lora_fp16.safetensors",
+        "https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors"
+      ],
+      "resources": [
+        {
+          "title": "Icy Animate subs",
+          "file_name": "Icyanimatesubs.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Video Related",
+        "WAN 2.2 Lora Based Faceswap"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=0fd8fc2c84fb4611ac724894f2e7e379",
+      "title": "WAN 2.2 Lora Based Faceswap",
+      "video_link": null,
+      "video_minutes": 12.8,
+      "hosted_video": true,
+      "description": "A WAN 2.2 low noise character Lora is required for this to work but I think it's one of the better solutions out there right now \n\nI created a node that will automatically download tiktoks without the usual watermark and run the video thru the workflow, simply place the folder in your custom nodes folder and it should work right away, if it doesn't install the requirements in your setup. \n\nThis is mostly a faceswap pipeline, hair color, body and clothes will be from the original video, select your reference videos with that in mind. \n\nA nsfw version that will not affect the original body is in the works and will be coming later (idk when) \n\nWe use WAN 2.2 T2V not I2V make sure you get that right\n\nWorkflow and tiktok node in the zip \n\nMy character on the left in the samples\n\nThe video for this will be coming today or tomorrow\n\nWAN 2.2 T2V: https://huggingface.co/icekiub/WAN-2.2-T2V-FP8-NON-SCALED/resolve/main/WAN2.2t2vLOWNOISEFP8.safetensors\n\n4step: https://huggingface.co/lightx2v/Wan2.2-Lightning/resolve/main/Wan2.2-T2V-A14B-4steps-lora-250928/low_noise_model.safetensors\n\ntext encoder: https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors\n\nvae: https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/vae/wan_2.1_vae.safetensors",
+      "links": [
+        "https://huggingface.co/icekiub/WAN-2.2-T2V-FP8-NON-SCALED/resolve/main/WAN2.2t2vLOWNOISEFP8.safetensors",
+        "https://huggingface.co/lightx2v/Wan2.2-Lightning/resolve/main/Wan2.2-T2V-A14B-4steps-lora-250928/low_noise_model.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/vae/wan_2.1_vae.safetensors"
+      ],
+      "resources": [
+        {
+          "title": "WAN Lora Faceswap Subs",
+          "file_name": "wan faceswap with tiktok node.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Video Related",
+        "WAN 2.2 IMAGE TO VIDEO"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=41e311a0eb1343b08180881f7660ee89",
+      "title": "WAN 2.2 IMAGE TO VIDEO",
+      "video_link": null,
+      "video_minutes": 4.7,
+      "hosted_video": true,
+      "description": "This workflow will let you take your images from static to full of life! The free version lets you do the usual 5 seconds while the sub version is currently set up to do 15 seconds or more. \n\nLike I said in the video, you can implement the infinite video loop yourself if you do not wish to subscribe. I quickly explain the logic and how to do it in the video and you can join the discord if you want more guidance!\n\nThe infinite extender is an optimized version reducing nodes by like 80%, but I haven`t found a way to update the prompt for every loop so only use if you do not want to change the prompt across you different clips\n\nModels; \n\nDiffusion Models\nwan2.2_i2v_high_noise_14B_fp8_scaled.safetensors: https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/resolve/main/I2V/Wan2_2-I2V-A14B-HIGH_fp8_e4m3fn_scaled_KJ.safetensors\n\nwan2.2_i2v_low_noise_14B_fp8_scaled.safetensors: https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/resolve/main/I2V/Wan2_2-I2V-A14B-LOW_fp8_e4m3fn_scaled_KJ.safetensors\n\nVae & Text encoders\nwan_2.1_vae.safetensors: https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors\n\numt5_xxl_fp8_e4m3fn_scaled.safetensors: https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors\n\nclip_vision_h.safetensors: https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors\n\nLoras\nlightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors: https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors\n\nWan_2_2_I2V_A14B_HIGH_lightx2v_MoE_distill_lora_rank_64_bf16.safetensors: https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/LoRAs/Wan22_Lightx2v/Wan_2_2_I2V_A14B_HIGH_lightx2v_MoE_distill_lora_rank_64_bf16.safetensors\n\nwan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors: https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors\n\nWan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors: https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors",
+      "links": [
+        "https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/resolve/main/I2V/Wan2_2-I2V-A14B-HIGH_fp8_e4m3fn_scaled_KJ.safetensors",
+        "https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/resolve/main/I2V/Wan2_2-I2V-A14B-LOW_fp8_e4m3fn_scaled_KJ.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors",
+        "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
+        "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/LoRAs/Wan22_Lightx2v/Wan_2_2_I2V_A14B_HIGH_lightx2v_MoE_distill_lora_rank_64_bf16.safetensors",
+        "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/loras/wan2.2_i2v_lightx2v_4steps_lora_v1_low_noise.safetensors",
+        "https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors"
+      ],
+      "resources": [
+        {
+          "title": "I2V infinite",
+          "file_name": "I2V infinite.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Content generation related"
+      ],
+      "section": true
+    },
+    {
+      "path": [
+        "Content generation related",
+        "NEW - Minimax reference based Image generation"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=0d044c8f6d8c4e2c95a22d443f4ffd25",
+      "title": "NEW - Minimax reference based Image generation",
+      "video_link": null,
+      "video_minutes": null,
+      "hosted_video": false,
+      "description": "How it works: We use the hybrid FL2VA/REF2VA model with references to create a consistent character (face and body), add clothing and environment references (cosplay/bedroom) and then we send everything to a Local LLM (Qwen 3.8 27b running in LLama cpp in my case) armed with a foolproof system prompt that will generate custom prompts based on the inputs we provide. We do get plasticky skin in some instances but it's nothing a quick upscale with Klein or Krea can't fix. Even better if you have a LoRA trained already. \n\nThis specifically covers the initial generation tho not the full upscale pipeline.\nNot using the 8steps lora should grant better image quality but will be slower\n\nThe most important part in this workflow is the prompting, in my case, the LLM I use for the prompting is running on my second computer on the same network which means I don't need to share VRAM between Comfy and LM studio. \n\nThis will not be the case for most people so you should check unload_after in my LM studio node if you don't have a lot of VRAM to spare.\n\nYou need to install LM studio and download the LLM you want to use to use the node properly, it will not work without that. Your base URL will be 127.0.0.1:1234\n\nI am releasing this before the showcase video is up but the vid will explain the details more in depth for easy understanding\n\nThis workflow contains 2 of my custom nodes: Icy multiref loader & Icy multimodal Prompt\nJust drop the folders in your custom nodes folder, they should work right away\n\nI highly recommend Sageattention for a 2x speed boost if you have supported hardware.\nThis might not work as well on Runpod due to the local LLM part but there are ways, just hit me up.\n\nMain model: https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models/resolve/main/minimax_h3_hybrid_fl2va_ref2va_b25-49-int8.safetensors\n\nClip: https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors\n\n8steps lora: https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/main/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors\n\nSingle image VAE:https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE/blob/main/minimax_h3_t1_image_vae_step1597.safetensors\n\nAudio VAE (Not used but needed): https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors\nRealism lora: https://civitai.red/models/2200329/galaxyace-lora?modelVersionId=3201619\n\nSkin upscale(upscale_models): https://openmodeldb.info/models/1x-SkinContrast-High-SuperUltraCompact\n\nThis is for images but a video reference version is already mostly working just ironing out the kinks!\n\nCouple more examples below",
+      "links": [
+        "https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models/resolve/main/minimax_h3_hybrid_fl2va_ref2va_b25-49-int8.safetensors",
+        "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/main/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+        "https://huggingface.co/Mamad8/MiniMax-H3-Image-VAE/blob/main/minimax_h3_t1_image_vae_step1597.safetensors",
+        "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors",
+        "https://civitai.red/models/2200329/galaxyace-lora?modelVersionId=3201619",
+        "https://openmodeldb.info/models/1x-SkinContrast-High-SuperUltraCompact"
+      ],
+      "resources": [
+        {
+          "title": "H3 icy image workflow",
+          "file_name": "H3 Icy image.json",
+          "link": null,
+          "content_type": "application/json"
+        },
+        {
+          "title": "3 custom nodes",
+          "file_name": "icy custom nodes.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Content generation related",
+        "NEW - Reference based character sheet"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=1acd0b35ad4649619e349a0b034bc0b2",
+      "title": "NEW - Reference based character sheet",
+      "video_link": null,
+      "video_minutes": null,
+      "hosted_video": false,
+      "description": "Klein Reference based Character sheet workflow for Minimax reference based generations\nModel: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors\n\nNongated Klein: https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/files\nText encoder: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors\n\nvae: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors\n Sheet lora: https://huggingface.co/Alissonerdx/CharacterSheet/blob/main/QuadView_klein9b_v1.safetensors",
+      "links": [
+        "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors",
+        "https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/files",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors",
+        "https://huggingface.co/Alissonerdx/CharacterSheet/blob/main/QuadView_klein9b_v1.safetensors"
+      ],
+      "resources": [
+        {
+          "title": "icy ref character sheet",
+          "file_name": "icy ref character sheet for minimax.json",
+          "link": null,
+          "content_type": "application/json"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Content generation related",
+        "Icy reference motion control pack (SFW)"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=fd9deacaa2c847f4ab5fbd0592c14735",
+      "title": "Icy reference motion control pack (SFW)",
+      "video_link": null,
+      "video_minutes": null,
+      "hosted_video": true,
+      "description": "1300 tiktok dance/talking/thirst trap videos with creator name if you need more of them.\nThese can be used with SCAIL or Animate to get good motion control based videos. There is also some talking videos in there for those who have that as a niche.\nThe next pack will be more nsfw focused\n\nLink: https://drive.google.com/file/d/1iG0K1t07IaCPVJ4yJgxk4T9dkHTtnjBE/view?usp=sharing\n\nPassword: icy",
+      "links": [
+        "https://drive.google.com/file/d/1iG0K1t07IaCPVJ4yJgxk4T9dkHTtnjBE/view?usp=sharing"
+      ],
+      "resources": []
+    },
+    {
+      "path": [
+        "Content generation related",
+        "NEW BEST - Icy Krea2"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=71730f223d4b4fc8b919d882479edb39",
+      "title": "NEW BEST - Icy Krea2",
+      "video_link": "https://youtu.be/Td_-mvqVqjM",
+      "video_minutes": 8.8,
+      "hosted_video": false,
+      "description": "Krea2 turbo: https://huggingface.co/Comfy-Org/Krea-2/resolve/main/diffusion_models/krea2_turbo_fp8_scaled.safetensors\n\nText encoder: https://huggingface.co/Comfy-Org/Krea-2/resolve/main/text_encoders/qwen3vl_4b_fp8_scaled.safetensors\n\nvae: https://huggingface.co/Comfy-Org/Krea-2/resolve/main/vae/qwen_image_vae.safetensors\n\nControlnet custom nodes: https://github.com/facok/comfyui-krea2-controlnet\n\nMY ICYrealism lora:  https://drive.google.com/drive/folders/15otV3rVKjxUpkunUKrC5maz4nKAyU1eG?usp=sharing\n\nYou can also use the Wan2.1 vae for this model, can get sharper results\n\nIcy LM custom node included",
+      "links": [
+        "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/diffusion_models/krea2_turbo_fp8_scaled.safetensors",
+        "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+        "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/vae/qwen_image_vae.safetensors",
+        "https://github.com/facok/comfyui-krea2-controlnet",
+        "https://drive.google.com/drive/folders/15otV3rVKjxUpkunUKrC5maz4nKAyU1eG?usp=sharing"
+      ],
+      "resources": [
+        {
+          "title": "Krea2icy Subs no autoprompt",
+          "file_name": "Krea2Icy -Subs 1.1.json",
+          "link": null,
+          "content_type": "application/json"
+        },
+        {
+          "title": "Icy LM node",
+          "file_name": "ICYLM.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        },
+        {
+          "title": "Krea2icy with prompting",
+          "file_name": "Krea2icysubs- with Lm prompting.json",
+          "link": null,
+          "content_type": "application/json"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Content generation related",
+        "Consistent Background Klein workflow"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=2aed2feb6a1b4ba7b6765f216c75aad3",
+      "title": "Consistent Background Klein workflow",
+      "video_link": "https://youtu.be/DjNmqaUJcQk",
+      "video_minutes": 13,
+      "hosted_video": false,
+      "description": "This heavily requested workflow will let you generate images with consistent rooms and backgrounds.\n\nLet me know how it works for you! I will be updating it actively in the next coming days\nCouple of disclaimers\nThe workflow is based mostly on Klein and is not perfect\n\nDepending on the base image, it will sometimes generate gibberish. Either fix your prompt or change the base image.\n\nYou will need a lora Klein lora if you want the best possible likeness to your character. \n\nIf you do no want to train a lora, you can run other faceswapping solutions on the results you get\n\nAngles and final image gen:\nKlein : https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensorsif \nif no access on HF: https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/file/view/master/flux-2-klein-9b-fp8.safetensors?status=2\ntext_encoders: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors\nvae: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors\n\nThe room can be real or generated with whatever model you want. I used qwen so this is what I will provide:\nQWEN IMAGE 2512: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_2512_fp8_e4m3fn.safetensors\nQwen text encoder: https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors\nvae: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors\n8step lora: https://huggingface.co/Osrivers/Qwen-Image-Lightning-8steps-V2.0-bf16.safetensors/tree/main",
+      "links": [
+        "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensorsif",
+        "https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/file/view/master/flux-2-klein-9b-fp8.safetensors?status=2",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors",
+        "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_2512_fp8_e4m3fn.safetensorsqwen",
+        "https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensorsvae",
+        "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors4step",
+        "https://huggingface.co/Osrivers/Qwen-Image-Lightning-8steps-V2.0-bf16.safetensors/tree/main",
+        "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_2512_fp8_e4m3fn.safetensors",
+        "https://huggingface.co/Comfy-Org/HunyuanVideo_1.5_repackaged/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors"
+      ],
+      "resources": [
+        {
+          "title": "Consistent Room v3.1- Icekiub Subs",
+          "file_name": "Consistent Room WF v3.1- Icekiub Subs.json",
+          "link": null,
+          "content_type": "application/json"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Content generation related",
+        "ZIB + ZIT with controlnet workflow"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=f2318be36a1f4a8394812dc40dbe283e",
+      "title": "ZIB + ZIT with controlnet workflow",
+      "video_link": null,
+      "video_minutes": 14.4,
+      "hosted_video": true,
+      "description": "This pipeline uses Z-image Base for initial generation and turbo for the final refinement. Also going over ZIB training in the vid. Controlnet is not covered in the vid but it's only a matter of activating the group, putting in your reference image and running the WF. Adherence with CN is not perfect, I didn't train the model so I can't do anything about that part specifically unfortunately\n\nOtherwise enjoy!\nLinks:\nAll for ZIB: https://huggingface.co/Comfy-Org/z_image/tree/main/split_files\nAll for ZIT: https://huggingface.co/Comfy-Org/z_image_turbo/tree/main/split_files\n*8 steps ZIB (ComfyUI one): https://huggingface.co/alibaba-pai/Z-Image-Fun-Lora-Distill/tree/main\nControlnet model: https://huggingface.co/alibaba-pai/Z-Image-Fun-Controlnet-Union-2.1/blob/main/Z-Image-Fun-Controlnet-Union-2.1-lite.safetensors",
+      "links": [
+        "https://huggingface.co/Comfy-Org/z_image/tree/main/split_files",
+        "https://huggingface.co/Comfy-Org/z_image_turbo/tree/main/split_files",
+        "https://huggingface.co/alibaba-pai/Z-Image-Fun-Lora-Distill/tree/main",
+        "https://huggingface.co/alibaba-pai/Z-Image-Fun-Controlnet-Union-2.1/blob/main/Z-Image-Fun-Controlnet-Union-2.1-lite.safetensors"
+      ],
+      "resources": [
+        {
+          "title": "ZIB + ZIT Subs",
+          "file_name": "ZIBZIT Controlnet.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Content generation related",
+        "Unc. I2I workflow (Klein) UPDATED"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=bc1f2b51bfca4cd4ac24ceda749f8b63",
+      "title": "Unc. I2I workflow (Klein) UPDATED",
+      "video_link": null,
+      "video_minutes": 8.2,
+      "hosted_video": true,
+      "description": "This new workflow will let you recreate ANY image (nsf too) you want with your character as the main star. This can be used with a single image or with a lora. Obviously using a LoRa trained on Flux Klein will yield better results. \n\nThe best part is that you can change the image's feature only with prompting, no complex inpainting needed.\n\nI can't show the nsf results of this workflow on here but the results have been showcased in the discord for those who want to see.\n\nEnjoy!\n\nModel: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors\n\nNongated Klein: https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/files\n\nText encoder: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors\n\nvae: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors\nfaceswap boost lora : https://civitai.com/models/2027766/bfs-best-face-swap",
+      "links": [
+        "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors",
+        "https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/files",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors",
+        "https://civitai.com/models/2027766/bfs-best-face-swap"
+      ],
+      "resources": [
+        {
+          "title": "I2I Klein subs",
+          "file_name": "I2I Klein subs.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        },
+        {
+          "title": "Faceswap",
+          "file_name": "I2I no lora faceswap subs.json",
+          "link": null,
+          "content_type": "application/json"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Content generation related",
+        "Infinite wardrobe for your character (Multi Ref)"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=c3b29c12b1bd4cfd993b07a488aa3c9c",
+      "title": "Infinite wardrobe for your character (Multi Ref)",
+      "video_link": "https://youtu.be/t_-oHMkXQqU",
+      "video_minutes": 9.6,
+      "hosted_video": false,
+      "description": "This Klein 9B workflow will let you easily change the clothing on a specific image based on one or multiple references. Will work will any type of clothing if the reference is laid out properly and at a high enough resolution! \n\nSub version includes multi reference input for more customization \nOnly activate the reference you need\nRunpod Free credits for new users: https://www.runpod.io?ref=52lcrcf7\nMy Discord: discord.gg/Ju2fs9wcPC \nAI Influencer SuperHub discord: discord.gg/8JJjSzDePs\n--\n\nModel: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors\n\nNongated Klein: https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/files\nText encoder: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors\n\nvae: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors\nfaceswap boost lora : https://civitai.com/models/2027766/bfs-best-face-swap",
+      "links": [
+        "https://www.runpod.io?ref=52lcrcf7",
+        "http://discord.gg/Ju2fs9wcPC",
+        "http://discord.gg/8JJjSzDePs",
+        "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors",
+        "https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/files",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors",
+        "https://civitai.com/models/2027766/bfs-best-face-swap"
+      ],
+      "resources": [
+        {
+          "title": "AnyClothes9B - Subs - Icekiub V1.3",
+          "file_name": "Any Clothes 9B - Subs - Icekiub V1.3.json",
+          "link": null,
+          "content_type": "application/json"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Content generation related",
+        "IG Carousel pose generator"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=a9eba4f672924abaab1324e084f656d8",
+      "title": "IG Carousel pose generator",
+      "video_link": null,
+      "video_minutes": 8.3,
+      "hosted_video": true,
+      "description": "This workflow will let you prompt for the pose you want and generate it in seconds without affecting the background of your original images (most of the time) \n\nDon't have a vid on this yet but it's quite simple to use, upload your image, put in your prompt(s) and generate. \n\nThere is also the option to apply your Klein character lora if you have one.Using a Klein lora with this workflow will significantly improve your results/Likeness of your character\n\nThere are no limits to the amount of prompts you can add, just make sure every prompt is on a new line in the CR prompt List node and that there are no spaces between the lines. \n\nYou can use the same simple prompt formula I use, simply describe the new pose, no need for multi sentence prompts\n\nThis is specifically aimed at carousel content where there shouldn't be drastic changes across images\n\nThe workflow uses the newer KV version of Flux Klein 9B but the original version should work just as good\n\nKlein (ask for access)\n\nKlein KV:https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv/blob/main/flux-2-klein-9b-kv.safetensors\nKlein original: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors\n\nif no access: https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/file/view/master/flux-2-klein-9b-fp8.safetensors?status=2\ntext_encoders: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors\nvae: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors",
+      "links": [
+        "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv/blob/main/flux-2-klein-9b-kv.safetensors",
+        "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors",
+        "https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/file/view/master/flux-2-klein-9b-fp8.safetensors?status=2",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors"
+      ],
+      "resources": [
+        {
+          "title": "Carousel Pose changer subs",
+          "file_name": "Carousel Pose changer - Icekiub V1.7(1).zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Content generation related",
+        "NSFW Surgery WF (SDXL Inpaint)"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=e32158db0a0c4115aed694f5f058268e",
+      "title": "NSFW Surgery WF (SDXL Inpaint)",
+      "video_link": null,
+      "video_minutes": null,
+      "hosted_video": false,
+      "description": "I can not share any type of images of this workflow for REASONS but it is made to repair mangled body parts after censored models generations. It only works with images, not videos.\n\nYou can use whatever SDXL models you want like for enhancement like biglustv16, waiIllustriousSDXL_v140, lustifySDXLNSFW_ggwpV7, ect\n\nThe zip contains: \nthe detections models to drop in comfyui/models/ultralytics/bbox and the unsafe-torch folder to drop in custom_nodes \n\nthe workflows",
+      "links": [],
+      "resources": [
+        {
+          "title": "SURGERY SDXL Inpaint",
+          "file_name": "SurgeryWF SUBS.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Dataset related"
+      ],
+      "section": true
+    },
+    {
+      "path": [
+        "Dataset related",
+        "AI influencer dataset AIO (Klein)"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=8a9f4bcc93a0449bacb0b84dc408d8ee",
+      "title": "AI influencer dataset AIO (Klein)",
+      "video_link": null,
+      "video_minutes": 9.7,
+      "hosted_video": true,
+      "description": "Using this workflow, you should be able to get a good dataset to train your LoRA on, I have many video on how to do this locally and using runpod. \n\nAll the prompts can be changed to generate the type of images you want, just make sure you have one prompt per line in the CR prompt list node\n\nThis sub version includes further ZIT upscaling for those not satisfied with the flux klein details! \n\nLoad image version has been added\n\nRemember that as a sub you have access to a dedicated channel in the discord to ask questions and troubleshoot issues. Make sure to link your account in the sidebar to the left.\n\nModel: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors\nText encoder: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors\nvae: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors\n\nZimage:https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors\nqwen3_4b.safetensors: https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors\n\nultrafluxvae: https://huggingface.co/Owen777/UltraFlux-v1/resolve/main/vae/diffusion_pytorch_model.safetensors",
+      "links": [
+        "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors",
+        "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors",
+        "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors",
+        "https://huggingface.co/Owen777/UltraFlux-v1/resolve/main/vae/diffusion_pytorch_model.safetensors"
+      ],
+      "resources": [
+        {
+          "title": "InfluencerdatasetAIO subs",
+          "file_name": "InfluencerdatasetAIO subs.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Dataset related",
+        "AI influencer dataset AIO (Qwen)"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=ebc1716d2ab146dea313bb1ccf9cbe2b",
+      "title": "AI influencer dataset AIO (Qwen)",
+      "video_link": null,
+      "video_minutes": 6.3,
+      "hosted_video": true,
+      "description": "This workflow uses Z-image turbo, Qwen Image Edit, SAM3 and optionally Chroma for different type of content. I recommend a 5090 and good amount of RAM to run it efficiently but it will work on lower tier hardware although a bit slower as you won;t be able to swap the models on the fly as efficently.\n\nThe free workflow contains what's needed to generate your base image and do the full head swap directly on your Z-image generated image. \n\nSub workflows has angles generator, further up-scaling and Batch processing options (comingsoon)\n\nSAM 3 might require a huggingface key to access. I covered this is my flux2 lora training video.\n\nAngles are available in one of my free workflows somewhere\n\nMake sure to use FP8 of GGUF Quantization if you have limited VRAM\n\nqwen_image_edit_2509_fp8_e4m3fn.safetensors: https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors\n\nZimage:https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors\n\nChromaHD: https://huggingface.co/lodestones/Chroma1-HD/resolve/main/Chroma1-HD.safetensors\n\nVAE & Text Encoders\nqwen_image_vae.safetensors: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors\n\nqwen_2.5_vl_7b_fp8_scaled.safetensors: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors\n\nt5xxl: use normal one or this unchained one https://huggingface.co/Kaoru8/T5XXL-Unchained/tree/main\nLoras\n\nQwen-Image-Lightning-4steps-V2.0.safetensors:https://huggingface.co/lightx2v/Qwen-Image-Lightning/tree/main\n\nqwen3_4b.safetensors: https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors\n\nultrafluxvae: https://huggingface.co/Owen777/UltraFlux-v1/resolve/main/vae/diffusion_pytorch_model.safetensors\n\nchromaheun: https://civitai.com/models/2032955?modelVersionId=2300965",
+      "links": [
+        "https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors",
+        "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors",
+        "https://huggingface.co/lodestones/Chroma1-HD/resolve/main/Chroma1-HD.safetensors",
+        "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors",
+        "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "https://huggingface.co/Kaoru8/T5XXL-Unchained/tree/main",
+        "https://huggingface.co/lightx2v/Qwen-Image-Lightning/tree/main",
+        "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/text_encoders/qwen_3_4b.safetensors",
+        "https://huggingface.co/Owen777/UltraFlux-v1/resolve/main/vae/diffusion_pytorch_model.safetensors",
+        "https://civitai.com/models/2032955?modelVersionId=2300965"
+      ],
+      "resources": [
+        {
+          "title": "InfluencerdatasetAIO subs qwen",
+          "file_name": "InfluencerdatasetAIO subsQWEN.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Dataset related",
+        "Change faces with QWEN IMAGE EDIT"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=432301a0c15f4a1580a92d82f1e32bea",
+      "title": "Change faces with QWEN IMAGE EDIT",
+      "video_link": null,
+      "video_minutes": 3.9,
+      "hosted_video": true,
+      "description": "This workflow will let you make seamless faceswaps on base images using the powerful QWEN Image edit model. \n\nI integrated a positional rotation matcher to increase likeness with varying levels of effectiveness so turn it off if it affects likeness too much!\n\nThere is also a batch processing feature that will apply the faceswapping to all the images in your selected folder.\n\nModels: \n\nDiffusion Models\nqwen_image_edit_2509_fp8_e4m3fn.safetensors: https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors\nVAE & Text Encoders\n\nqwen_image_vae.safetensors: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors\n\nqwen_2.5_vl_7b_fp8_scaled.safetensors: https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors\nLoras\n\nQwen-Image-Lightning-4steps-V1.0.safetensors: https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Lightning-4steps-V1.0.safetensors\n\nlenovoqwen.safetensors: https://huggingface.co/Danrisi/Lenovo_Qwen/resolve/main/lenovo.safetensors\n\nQwen-Image-Lightning-8steps-V1.0.safetensors: https://huggingface.co/Osrivers/Qwen-Image-Edit-Lightning-8steps-V1.0.safetensors/resolve/main/Qwen-Image-Edit-Lightning-8steps-V1.0.safetensors",
+      "links": [
+        "https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/resolve/main/split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors",
+        "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/vae/qwen_image_vae.safetensors",
+        "https://huggingface.co/Comfy-Org/Qwen-Image_ComfyUI/resolve/main/split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+        "https://huggingface.co/lightx2v/Qwen-Image-Lightning/resolve/main/Qwen-Image-Lightning-4steps-V1.0.safetensors",
+        "https://huggingface.co/Danrisi/Lenovo_Qwen/resolve/main/lenovo.safetensors",
+        "https://huggingface.co/Osrivers/Qwen-Image-Edit-Lightning-8steps-V1.0.safetensors/resolve/main/Qwen-Image-Edit-Lightning-8steps-V1.0.safetensors"
+      ],
+      "resources": [
+        {
+          "title": "Faceswapping with QWEN IMAGE EDIT",
+          "file_name": "Faceswapping with QWEN IMAGE EDIT.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Dataset related",
+        "Uncensored captioning for datasets"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=9506cbab61e945ef8bea735250dd3329",
+      "title": "Uncensored captioning for datasets",
+      "video_link": null,
+      "video_minutes": null,
+      "hosted_video": false,
+      "description": "What's up gang lot of people asked for this so here is an uncensored workflow to caption your images locally using the Huihui abliterated (uncensored) version of QWEN3VL. \n\nThis is based on a node I created so add the ComfyUI-IcyQwen3 folder to your custom_nodes folder and install requirements with pip -r requirements.txt if you're missing some\n\nThe preselected fp8 version should be able to run on around 8gb of VRAM but you can select the non fp8 version and quantize it to 4bit if you need it to be smaller\n\nCaptioning can be slow on windows but is blazing fast on Linux (Including runpod) it's a architecture diff nothing I can do about it. \n\nJust set the path to your dataset folder and Queue up the workflow. Super easy!\n\nMy node can also be used to caption videos, just plug the video frames in the frames input and select the video setting. You can specify exactly what you want the captioning to be focused on were you can input text.\n\nIt can also be used to skip captioning in your workflows altogether by using a reference image. Many uses cases!\n\nThe free version will use the QWEN3 vl node available thru ComfyUi manager if you prefer using that.",
+      "links": [],
+      "resources": [
+        {
+          "title": "Captioning subs",
+          "file_name": "Captioning subs.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Dataset related",
+        "Klein Watermark removal"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=7507a067aa2c4bf88ba7ff0bdf18d235",
+      "title": "Klein Watermark removal",
+      "video_link": null,
+      "video_minutes": null,
+      "hosted_video": false,
+      "description": "This workflow will let you remove any watermark from any image, can be useful when re-purposing ICY content from ICY platforms in image to image pipelines. Simple but works well\n\nIncludes a single image and batch version",
+      "links": [],
+      "resources": [
+        {
+          "title": "Klein watermark",
+          "file_name": "Klein watermark.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ]
+    },
+    {
+      "path": [
+        "Dataset related",
+        "Edit ANYTHING (Phr00t Qwen image edit)"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=7f0721ddf593421d90a499affa310c9e",
+      "title": "Edit ANYTHING (Phr00t Qwen image edit)",
+      "video_link": null,
+      "video_minutes": null,
+      "hosted_video": true,
+      "description": "This powerful workflow uses a finetuned AIO version of Qwen Image Edit that was trained on content that could not be considered censored. This will let you do a lot of things that the original qwen image edit will not let you do.\n\nThis pipeline can be extremely useful to generate non-sfw datasets for your AI-influencer Lora trainings and other related material.\n\nThe workflow uses V18 as I had it made before the v19 release but you will be able to choose the version you want from the repo below!\n\nAIO checkpoints: https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/tree/main\n\nThis AIO contains the transformer, text encoder and Vae, so you don't need anything extra to run it.\n\nThe difference between the sub and free worfklows are those 2 things: \nZturbo upscaling and extra batch processing if you need to do a specific edit on multiple images. \n\nI show the zturbo upscale setup at the end if you want to remake it for free, cheers!",
+      "links": [
+        "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO/tree/main"
+      ],
+      "resources": [
+        {
+          "title": "QWEN IMAGE UNLEASHED",
+          "file_name": "QWEN IMAGE UNLEASHED ICEKIUB SUBS - v2.json",
+          "link": null,
+          "content_type": "application/json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "id": "83b926c7-5c54-45b1-85ca-f40e1445f5cb",
+  "revision": 0,
+  "last_node_id": 19,
+  "last_link_id": 29,
+  "nodes": [
+    {
+      "id": 4,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1660,
+        1460
+      ],
+      "size": [
+        650,
+        460
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            12
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "f2838ed5e59de4d73cde5c98354b87a8d3200190",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "A top-down, close-up shot of a nude woman lying on her back on a bed with white sheets. Her arms are raised above her head, and her body is positioned in a way that prominently displays her chest, abdomen, and genital area. The skin is wet with lubrication, and the genital region is clearly visible, with the vulva and clitoris in focus. The woman’s breasts are large and round, with visible areolas and nipples. Her pubic area has dark pubic hair, and the vaginal opening is slightly open, with the inner labia and clitoris visible. The lighting is soft and natural, highlighting the texture and contours of her skin. The background is minimal, with a white pillow and a dark object partially visible in the corner. The image captures a moment of intimacy and sensuality, with the woman’s body in a relaxed and open position."
+      ],
+      "color": "rgba(0,0,0,.8)",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 8,
+      "type": "StringConcatenate",
+      "pos": [
+        2390,
+        1490
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string_a",
+          "type": "STRING",
+          "widget": {
+            "name": "string_a"
+          },
+          "link": 11
+        },
+        {
+          "name": "string_b",
+          "type": "STRING",
+          "widget": {
+            "name": "string_b"
+          },
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            18
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.13.0",
+        "Node name for S&R": "StringConcatenate",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "",
+        "",
+        ","
+      ],
+      "color": "rgba(0,0,0,.8)",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 11,
+      "type": "SaveImageTextDataSetToFolder",
+      "pos": [
+        2390,
+        1560
+      ],
+      "size": [
+        354.51666870117185,
+        106
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 29
+        },
+        {
+          "name": "texts",
+          "type": "STRING",
+          "widget": {
+            "name": "texts"
+          },
+          "link": 18
+        },
+        {
+          "name": "folder_name",
+          "type": "STRING",
+          "widget": {
+            "name": "folder_name"
+          },
+          "link": 20
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": 21
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.13.0",
+        "Node name for S&R": "SaveImageTextDataSetToFolder",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "",
+        "dataset",
+        "image"
+      ],
+      "color": "rgba(0,0,0,.8)",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 7,
+      "type": "PrimitiveString",
+      "pos": [
+        1250,
+        2410
+      ],
+      "size": [
+        390,
+        60
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            11,
+            20,
+            21
+          ]
+        }
+      ],
+      "title": "Character name / Trigger word",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.13.0",
+        "Node name for S&R": "PrimitiveString",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "Laura"
+      ],
+      "color": "#af3535",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 1,
+      "type": "IcyQwen3AllInOne",
+      "pos": [
+        1240,
+        1720
+      ],
+      "size": [
+        400,
+        632
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 26
+        },
+        {
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 27
+        },
+        {
+          "name": "frames",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 25
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "STRING",
+          "links": [
+            5
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IcyQwen3AllInOne",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "Qwen3-VL-4B-Instruct-abliterated-FP8",
+        "none",
+        "auto",
+        "sdpa",
+        "single",
+        "Describe the images in detail including sexually explicit images, only output the prompt",
+        0,
+        "fixed",
+        false,
+        true,
+        1003520,
+        200704,
+        1,
+        32,
+        512,
+        0.7,
+        0.8,
+        20,
+        true,
+        false,
+        "\n---\n",
+        false
+      ],
+      "color": "rgba(0,0,0,.8)",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 17,
+      "type": "Label (rgthree)",
+      "pos": [
+        890,
+        2060
+      ],
+      "size": [
+        59.75,
+        25
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "video",
+      "properties": {
+        "fontSize": 25,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "angle": 0,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 16,
+      "type": "Label (rgthree)",
+      "pos": [
+        890,
+        1180
+      ],
+      "size": [
+        65.30000305175781,
+        25
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "single",
+      "properties": {
+        "fontSize": 25,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "angle": 0,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 15,
+      "type": "LoadImage",
+      "pos": [
+        780,
+        1280
+      ],
+      "size": [
+        310,
+        326
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            26
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.13.0",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "ComfyUI_00934_.png",
+        "image"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "Label (rgthree)",
+      "pos": [
+        890,
+        1670
+      ],
+      "size": [
+        61.150001525878906,
+        25
+      ],
+      "flags": {
+        "allow_interaction": true
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "batch",
+      "properties": {
+        "fontSize": 25,
+        "fontFamily": "Arial",
+        "fontColor": "#ffffff",
+        "textAlign": "left",
+        "backgroundColor": "transparent",
+        "padding": 0,
+        "borderRadius": 0,
+        "angle": 0,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "color": "#fff0",
+      "bgcolor": "#fff0"
+    },
+    {
+      "id": 14,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        810,
+        2150
+      ],
+      "size": [
+        241.86666870117188,
+        440.92492607047967
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            25
+          ]
+        },
+        {
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        },
+        {
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "1.7.9",
+        "Node name for S&R": "VHS_LoadVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": {
+        "video": "0i049npmuusjxx3vtft3k_source.mp4",
+        "force_rate": 0,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 0,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "format": "AnimateDiff",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "0i049npmuusjxx3vtft3k_source.mp4",
+            "type": "input",
+            "format": "video/mp4",
+            "force_rate": 0,
+            "custom_width": 0,
+            "custom_height": 0,
+            "frame_load_cap": 0,
+            "skip_first_frames": 0,
+            "select_every_nth": 1
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "PreviewImage",
+      "pos": [
+        1660,
+        1980
+      ],
+      "size": [
+        650,
+        490
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 28
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.13.0",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [],
+      "color": "rgba(0,0,0,.8)",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 18,
+      "type": "LoadImageListFromDir //Inspire",
+      "pos": [
+        730,
+        1740
+      ],
+      "size": [
+        390,
+        200
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": [
+            27,
+            28,
+            29
+          ]
+        },
+        {
+          "name": "MASK",
+          "shape": 6,
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "FILE PATH",
+          "shape": 6,
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        },
+        "cnr_id": "comfyui-inspire-pack",
+        "ver": "1.23.0",
+        "Node name for S&R": "LoadImageListFromDir //Inspire"
+      },
+      "widgets_values": [
+        "E:\\ComfyUI\\output\\lora_dataset",
+        0,
+        0,
+        false,
+        "None"
+      ],
+      "color": "rgba(0,0,0,.8)",
+      "bgcolor": "rgba(24,24,27,.9)"
+    }
+  ],
+  "links": [
+    [
+      5,
+      1,
+      0,
+      4,
+      0,
+      "STRING"
+    ],
+    [
+      11,
+      7,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      12,
+      4,
+      0,
+      8,
+      1,
+      "STRING"
+    ],
+    [
+      18,
+      8,
+      0,
+      11,
+      1,
+      "STRING"
+    ],
+    [
+      20,
+      7,
+      0,
+      11,
+      2,
+      "STRING"
+    ],
+    [
+      21,
+      7,
+      0,
+      11,
+      3,
+      "STRING"
+    ],
+    [
+      25,
+      14,
+      0,
+      1,
+      2,
+      "IMAGE"
+    ],
+    [
+      26,
+      15,
+      0,
+      1,
+      0,
+      "IMAGE"
+    ],
+    [
+      27,
+      18,
+      0,
+      1,
+      1,
+      "IMAGE"
+    ],
+    [
+      28,
+      18,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      29,
+      18,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 0.7890726972554083,
+      "offset": [
+        -545.975306270835,
+        -997.019857351915
+      ]
+    },
+    "frontendVersion": "1.38.14",
+    "VHS_latentpreview": true,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

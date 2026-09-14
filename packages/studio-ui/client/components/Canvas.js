@@ -92,6 +92,7 @@ function Inspector({ node, catalog, onParam, onDelete, onClose }) {
         <dt>Runs on</dt><dd className={be?.kind === "gap" || !spec ? "gap-text" : ""}>{runs}</dd>
         {node.data.part && (<><dt>From</dt><dd>{node.data.part}</dd></>)}
       </dl>
+      {spec?.adult && <p className="notice">18+ line only: fictional adults, a separate entity, never on Ongea Pesa or EPALLE work.</p>}
       {spec?.consent && <p className="notice">Only owned or consented likenesses may go into this step.</p>}
       {spec?.params?.map((p) => (
         <label key={p.key} className="field">

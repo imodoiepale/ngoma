@@ -1,0 +1,6 @@
+.github/workflows/publish.yml
+README.md
+__init__.py
+js/icy_hider.js
+nodes.py
+pyproject.toml

@@ -1,0 +1,15 @@
+[project]
+name = "ComfyUI-IcyHider"
+description = "Hide previews on selected ComfyUI node classes with sidebar controls, right-click hidden-state actions, and cover/blur modes."
+version = "4.1.0"
+dependencies = []
+keywords = ["comfyui", "privacy", "nsfw", "blur", "hide", "preview"]
+
+[project.urls]
+Repository = "https://github.com/icekiub-ai/ComfyUI-IcyHider"
+
+[tool.comfy]
+PublisherId = "icekiub"
+DisplayName = "ComfyUI IcyHider"
+Icon = "❄️"
+

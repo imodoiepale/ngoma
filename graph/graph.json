@@ -2870,6 +2870,1025 @@
    "label": "minimaxh3-aimeegarcia-v1-refmod"
   },
   {
+   "id": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "kind": "workflow",
+   "label": "Krea_gen_+_scail_motion_control_subs",
+   "collection": "icekiub",
+   "node_count": 101,
+   "sha256": "c167e507687a3f35695c361209112723ffa7840b126c6dda1893b0089744c0ea",
+   "sources": 2
+  },
+  {
+   "id": "node_pack:comfyui-krea2-controlnet",
+   "kind": "node_pack",
+   "label": "comfyui-krea2-controlnet"
+  },
+  {
+   "id": "node_pack:comfyui-mediamixer",
+   "kind": "node_pack",
+   "label": "comfyui-mediamixer"
+  },
+  {
+   "id": "node_pack:icylm",
+   "kind": "node_pack",
+   "label": "icylm"
+  },
+  {
+   "id": "node_type:ComfySwitchNode",
+   "kind": "node_type",
+   "label": "ComfySwitchNode"
+  },
+  {
+   "id": "node_type:FirstFrameSelector",
+   "kind": "node_type",
+   "label": "FirstFrameSelector"
+  },
+  {
+   "id": "node_type:ICYLMStudioMultimodalPrompt",
+   "kind": "node_type",
+   "label": "ICYLMStudioMultimodalPrompt"
+  },
+  {
+   "id": "node_type:Krea2ControlApply",
+   "kind": "node_type",
+   "label": "Krea2ControlApply"
+  },
+  {
+   "id": "node_type:Krea2ControlImageEncode",
+   "kind": "node_type",
+   "label": "Krea2ControlImageEncode"
+  },
+  {
+   "id": "node_type:Krea2ControlLoRALoader",
+   "kind": "node_type",
+   "label": "Krea2ControlLoRALoader"
+  },
+  {
+   "id": "node_type:ShowText|pysssss",
+   "kind": "node_type",
+   "label": "ShowText|pysssss"
+  },
+  {
+   "id": "node_type:VHS_VideoInfoSource",
+   "kind": "node_type",
+   "label": "VHS_VideoInfoSource"
+  },
+  {
+   "id": "model_file:Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+   "kind": "model_file",
+   "label": "Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors"
+  },
+  {
+   "id": "model:huihui-qwen3-vl-4b-instruct-abliterated",
+   "kind": "model",
+   "label": "huihui-qwen3-vl-4b-instruct-abliterated"
+  },
+  {
+   "id": "model_file:Krea2_Raw_convrot_int8mixed.safetensors",
+   "kind": "model_file",
+   "label": "Krea2_Raw_convrot_int8mixed.safetensors"
+  },
+  {
+   "id": "model:krea2-raw-int8mixed",
+   "kind": "model",
+   "label": "krea2-raw-int8mixed"
+  },
+  {
+   "id": "model_file:Loratest56_000000600.safetensors",
+   "kind": "model_file",
+   "label": "Loratest56_000000600.safetensors"
+  },
+  {
+   "id": "model:loratest56-000000600",
+   "kind": "model",
+   "label": "loratest56-000000600"
+  },
+  {
+   "id": "model_file:depth-control-lora.safetensors",
+   "kind": "model_file",
+   "label": "depth-control-lora.safetensors"
+  },
+  {
+   "id": "model:depth-control-lora",
+   "kind": "model",
+   "label": "depth-control-lora"
+  },
+  {
+   "id": "model_file:icyrealismKREA.safetensors",
+   "kind": "model_file",
+   "label": "icyrealismKREA.safetensors"
+  },
+  {
+   "id": "model:icyrealismkrea",
+   "kind": "model",
+   "label": "icyrealismkrea"
+  },
+  {
+   "id": "model_file:krea2Icydildov2_000004000.safetensors",
+   "kind": "model_file",
+   "label": "krea2Icydildov2_000004000.safetensors"
+  },
+  {
+   "id": "model:krea2icydildov2-000004000",
+   "kind": "model",
+   "label": "krea2icydildov2-000004000"
+  },
+  {
+   "id": "model_file:krea2RealVae_v10.safetensors",
+   "kind": "model_file",
+   "label": "krea2RealVae_v10.safetensors"
+  },
+  {
+   "id": "model:krea2realvae-v10",
+   "kind": "model",
+   "label": "krea2realvae-v10"
+  },
+  {
+   "id": "model_file:krea2_turbo_lora_rank_64_bf16.safetensors",
+   "kind": "model_file",
+   "label": "krea2_turbo_lora_rank_64_bf16.safetensors"
+  },
+  {
+   "id": "model:krea2-turbo-lora-rank-64",
+   "kind": "model",
+   "label": "krea2-turbo-lora-rank-64"
+  },
+  {
+   "id": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "kind": "workflow",
+   "label": "Motion_Control_Icy_-SUBS",
+   "collection": "icekiub",
+   "node_count": 62,
+   "sha256": "0ab7d77255b8cb3a8edac85e75d0dc77b733493f7cef5f1e9798e042a7e7623f",
+   "sources": 2
+  },
+  {
+   "id": "node_type:864826b7-0005-4cae-8b68-c1b313d72d1a",
+   "kind": "node_type",
+   "label": "864826b7-0005-4cae-8b68-c1b313d72d1a"
+  },
+  {
+   "id": "node_type:BetterImageLoader",
+   "kind": "node_type",
+   "label": "BetterImageLoader"
+  },
+  {
+   "id": "model_file:11_Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors",
+   "kind": "model_file",
+   "label": "11_Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors"
+  },
+  {
+   "id": "model:11-wan21-i2v-14b-lightx2v-cfg-step-distill-lora-rank64-fixed",
+   "kind": "model",
+   "label": "11-wan21-i2v-14b-lightx2v-cfg-step-distill-lora-rank64-fixed"
+  },
+  {
+   "id": "model_file:153_my_first_lora_v1_000000600_low_noise.safetensors",
+   "kind": "model_file",
+   "label": "153_my_first_lora_v1_000000600_low_noise.safetensors"
+  },
+  {
+   "id": "model:153-my-first-lora-v1-000000600-low-noise",
+   "kind": "model",
+   "label": "153-my-first-lora-v1-000000600-low-noise"
+  },
+  {
+   "id": "model_file:74_wan2.1_14B_SCAIL_2_fp8_scaled.safetensors",
+   "kind": "model_file",
+   "label": "74_wan2.1_14B_SCAIL_2_fp8_scaled.safetensors"
+  },
+  {
+   "id": "model:74-wan2.1-14b-scail-2",
+   "kind": "model",
+   "label": "74-wan2.1-14b-scail-2"
+  },
+  {
+   "id": "model_file:86_sam3.1_multiplex_fp16.safetensors",
+   "kind": "model_file",
+   "label": "86_sam3.1_multiplex_fp16.safetensors"
+  },
+  {
+   "id": "model:86-sam3.1-multiplex",
+   "kind": "model",
+   "label": "86-sam3.1-multiplex"
+  },
+  {
+   "id": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "kind": "workflow",
+   "label": "ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4",
+   "collection": "icekiub",
+   "node_count": 127,
+   "sha256": "14cd142f7d859064858215e20229258595b296907adf2e9a3ae4d641fe30ac5a",
+   "sources": 2
+  },
+  {
+   "id": "node_pack:wananimate-enhancer",
+   "kind": "node_pack",
+   "label": "wananimate-enhancer"
+  },
+  {
+   "id": "node_type:11009ff9-6e74-4187-8960-7578de422096",
+   "kind": "node_type",
+   "label": "11009ff9-6e74-4187-8960-7578de422096"
+  },
+  {
+   "id": "node_type:5a14a7b7-d035-4b17-95ea-155376545791",
+   "kind": "node_type",
+   "label": "5a14a7b7-d035-4b17-95ea-155376545791"
+  },
+  {
+   "id": "node_type:8acf1d0b-eb19-4ab6-9ecc-45b8d9ce7c84",
+   "kind": "node_type",
+   "label": "8acf1d0b-eb19-4ab6-9ecc-45b8d9ce7c84"
+  },
+  {
+   "id": "node_type:BlockifyMask",
+   "kind": "node_type",
+   "label": "BlockifyMask"
+  },
+  {
+   "id": "node_type:ContextWindowsManual",
+   "kind": "node_type",
+   "label": "ContextWindowsManual"
+  },
+  {
+   "id": "node_type:SAM3Segmentation",
+   "kind": "node_type",
+   "label": "SAM3Segmentation"
+  },
+  {
+   "id": "node_type:TrimVideoLatent",
+   "kind": "node_type",
+   "label": "TrimVideoLatent"
+  },
+  {
+   "id": "node_type:WanAnimateModelEnhancer",
+   "kind": "node_type",
+   "label": "WanAnimateModelEnhancer"
+  },
+  {
+   "id": "node_type:WanAnimateToVideoEnhanced",
+   "kind": "node_type",
+   "label": "WanAnimateToVideoEnhanced"
+  },
+  {
+   "id": "node_type:easy imageCropFromMask",
+   "kind": "node_type",
+   "label": "easy imageCropFromMask"
+  },
+  {
+   "id": "node_type:f2235c0c-fbaa-4ab8-a036-5bac660db085",
+   "kind": "node_type",
+   "label": "f2235c0c-fbaa-4ab8-a036-5bac660db085"
+  },
+  {
+   "id": "node_type:ffa76bb4-c7e7-4fd8-9875-27a64d7f6c9e",
+   "kind": "node_type",
+   "label": "ffa76bb4-c7e7-4fd8-9875-27a64d7f6c9e"
+  },
+  {
+   "id": "model_file:Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors",
+   "kind": "model_file",
+   "label": "Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors"
+  },
+  {
+   "id": "model:wan2-2-animate-14b-kj",
+   "kind": "model",
+   "label": "wan2-2-animate-14b-kj"
+  },
+  {
+   "id": "model_file:Wan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors",
+   "kind": "model_file",
+   "label": "Wan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors"
+  },
+  {
+   "id": "model:wan2-2-animate-14b-kj-v2",
+   "kind": "model",
+   "label": "wan2-2-animate-14b-kj-v2"
+  },
+  {
+   "id": "model_file:WanAnimate_relight_lora_fp16.safetensors",
+   "kind": "model_file",
+   "label": "WanAnimate_relight_lora_fp16.safetensors"
+  },
+  {
+   "id": "model:wananimate-relight-lora",
+   "kind": "model",
+   "label": "wananimate-relight-lora"
+  },
+  {
+   "id": "model_file:flux-2-klein-9b.safetensors",
+   "kind": "model_file",
+   "label": "flux-2-klein-9b.safetensors"
+  },
+  {
+   "id": "model_file:lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
+   "kind": "model_file",
+   "label": "lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors"
+  },
+  {
+   "id": "model:lightx2v-i2v-14b-480p-cfg-step-distill-rank64",
+   "kind": "model",
+   "label": "lightx2v-i2v-14b-480p-cfg-step-distill-rank64"
+  },
+  {
+   "id": "model_file:nWan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors",
+   "kind": "model_file",
+   "label": "nWan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors"
+  },
+  {
+   "id": "model:nwan2-2-animate-14b-kj-v2",
+   "kind": "model",
+   "label": "nwan2-2-animate-14b-kj-v2"
+  },
+  {
+   "id": "model_file:nWanAnimate_relight_lora_fp16.safetensors",
+   "kind": "model_file",
+   "label": "nWanAnimate_relight_lora_fp16.safetensors"
+  },
+  {
+   "id": "model:nwananimate-relight-lora",
+   "kind": "model",
+   "label": "nwananimate-relight-lora"
+  },
+  {
+   "id": "model_file:nclip_vision_h.safetensors",
+   "kind": "model_file",
+   "label": "nclip_vision_h.safetensors"
+  },
+  {
+   "id": "model:nclip-vision-h",
+   "kind": "model",
+   "label": "nclip-vision-h"
+  },
+  {
+   "id": "model_file:numt5_xxl_fp8_e4m3fn_scaled.safetensors",
+   "kind": "model_file",
+   "label": "numt5_xxl_fp8_e4m3fn_scaled.safetensors"
+  },
+  {
+   "id": "model:numt5-xxl",
+   "kind": "model",
+   "label": "numt5-xxl"
+  },
+  {
+   "id": "model_file:nwan_2.1_vae.safetensors",
+   "kind": "model_file",
+   "label": "nwan_2.1_vae.safetensors"
+  },
+  {
+   "id": "model:nwan-2.1-vae",
+   "kind": "model",
+   "label": "nwan-2.1-vae"
+  },
+  {
+   "id": "model_file:rife47.pt",
+   "kind": "model_file",
+   "label": "rife47.pt"
+  },
+  {
+   "id": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "kind": "workflow",
+   "label": "ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4",
+   "collection": "icekiub",
+   "node_count": 127,
+   "sha256": "6a0a23bbf9b64b3d13c7c2c2703e36c12e3e815f95fe12d45f26692093b2c4c6",
+   "sources": 2
+  },
+  {
+   "id": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "kind": "workflow",
+   "label": "WANT2VLora_Faceswap_-_Icekiub_v1",
+   "collection": "icekiub",
+   "node_count": 22,
+   "sha256": "21ec1eb77ae3b83837b4db44b2b606cd64484d3842d7df2d77c412e7fd792cdc",
+   "sources": 2
+  },
+  {
+   "id": "node_pack:comfyui-icytiktokdownloader",
+   "kind": "node_pack",
+   "label": "comfyui-icytiktokdownloader"
+  },
+  {
+   "id": "node_type:IcyTikTokDownloader",
+   "kind": "node_type",
+   "label": "IcyTikTokDownloader"
+  },
+  {
+   "id": "node_type:VHS_LoadVideoPath",
+   "kind": "node_type",
+   "label": "VHS_LoadVideoPath"
+  },
+  {
+   "id": "model_file:WAN2.2t2vLOWNOISEFP8.safetensors",
+   "kind": "model_file",
+   "label": "WAN2.2t2vLOWNOISEFP8.safetensors"
+  },
+  {
+   "id": "model:wan2.2t2vlownoisefp8",
+   "kind": "model",
+   "label": "wan2.2t2vlownoisefp8"
+  },
+  {
+   "id": "model_file:low_noise_model.safetensors",
+   "kind": "model_file",
+   "label": "low_noise_model.safetensors"
+  },
+  {
+   "id": "model:low-noise-model",
+   "kind": "model",
+   "label": "low-noise-model"
+  },
+  {
+   "id": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "kind": "workflow",
+   "label": "H3_Icy_image",
+   "collection": "icekiub",
+   "node_count": 26,
+   "sha256": "573f845255ee77523ae97196d66a80ab3f844c96aec2f5c0a0595d821a04dfa0",
+   "sources": 2
+  },
+  {
+   "id": "node_pack:betterimage_loader",
+   "kind": "node_pack",
+   "label": "betterimage_loader"
+  },
+  {
+   "id": "node_pack:icymegapixelresize",
+   "kind": "node_pack",
+   "label": "icymegapixelresize"
+  },
+  {
+   "id": "node_type:IcyMegapixelResize",
+   "kind": "node_type",
+   "label": "IcyMegapixelResize"
+  },
+  {
+   "id": "node_type:IcyMultiRefLoader",
+   "kind": "node_type",
+   "label": "IcyMultiRefLoader"
+  },
+  {
+   "id": "model_file:1xSkinContrast-SuperUltraCompact.pt",
+   "kind": "model_file",
+   "label": "1xSkinContrast-SuperUltraCompact.pt"
+  },
+  {
+   "id": "model:1xskincontrast-superultracompact",
+   "kind": "model",
+   "label": "1xskincontrast-superultracompact"
+  },
+  {
+   "id": "model_file:H3-GalaxyAce.safetensors",
+   "kind": "model_file",
+   "label": "H3-GalaxyAce.safetensors"
+  },
+  {
+   "id": "model:h3-galaxyace",
+   "kind": "model",
+   "label": "h3-galaxyace"
+  },
+  {
+   "id": "model_file:MysticXXX_MMH3-V1.safetensors",
+   "kind": "model_file",
+   "label": "MysticXXX_MMH3-V1.safetensors"
+  },
+  {
+   "id": "model:mysticxxx-mmh3-v1",
+   "kind": "model",
+   "label": "mysticxxx-mmh3-v1"
+  },
+  {
+   "id": "model_file:VBVR_H3_attn_only.safetensors",
+   "kind": "model_file",
+   "label": "VBVR_H3_attn_only.safetensors"
+  },
+  {
+   "id": "model:vbvr-h3-attn-only",
+   "kind": "model",
+   "label": "vbvr-h3-attn-only"
+  },
+  {
+   "id": "model_file:h3-realism-people-t2v-i2v-r2v.safetensors",
+   "kind": "model_file",
+   "label": "h3-realism-people-t2v-i2v-r2v.safetensors"
+  },
+  {
+   "id": "model:h3-realism-people-t2v-i2v-r2v",
+   "kind": "model",
+   "label": "h3-realism-people-t2v-i2v-r2v"
+  },
+  {
+   "id": "model_file:minimax_h3_hybrid_fl2va_ref2va_b25-49-int8.safetensors",
+   "kind": "model_file",
+   "label": "minimax_h3_hybrid_fl2va_ref2va_b25-49-int8.safetensors"
+  },
+  {
+   "id": "model:minimax-h3-hybrid-fl2va-ref2va-b25-49",
+   "kind": "model",
+   "label": "minimax-h3-hybrid-fl2va-ref2va-b25-49"
+  },
+  {
+   "id": "model_file:minimax_h3_t1_image_vae_step1597.safetensors",
+   "kind": "model_file",
+   "label": "minimax_h3_t1_image_vae_step1597.safetensors"
+  },
+  {
+   "id": "model:minimax-h3-t1-image-vae-step1597",
+   "kind": "model",
+   "label": "minimax-h3-t1-image-vae-step1597"
+  },
+  {
+   "id": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "kind": "workflow",
+   "label": "icy_ref_character_sheet_for_minimax",
+   "collection": "icekiub",
+   "node_count": 20,
+   "sha256": "d9f347b92aa0060df32314f0e167c26217543589dcc081fd97fa62d8dac08b9c",
+   "sources": 2
+  },
+  {
+   "id": "model_file:QuadView_klein9b_v1.safetensors",
+   "kind": "model_file",
+   "label": "QuadView_klein9b_v1.safetensors"
+  },
+  {
+   "id": "model:quadview-klein9b-v1",
+   "kind": "model",
+   "label": "quadview-klein9b-v1"
+  },
+  {
+   "id": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "kind": "workflow",
+   "label": "Krea2Icy_-Subs_1.1",
+   "collection": "icekiub",
+   "node_count": 19,
+   "sha256": "0fa0a3e70feebff76645d40517ea029537453242a4bea1af61b2ed6a93249cd9",
+   "sources": 2
+  },
+  {
+   "id": "model_file:krea2_turbo_fp8_scaled.safetensors",
+   "kind": "model_file",
+   "label": "krea2_turbo_fp8_scaled.safetensors"
+  },
+  {
+   "id": "model:krea2-turbo",
+   "kind": "model",
+   "label": "krea2-turbo"
+  },
+  {
+   "id": "model_file:krea2filterbypass3.safetensors",
+   "kind": "model_file",
+   "label": "krea2filterbypass3.safetensors"
+  },
+  {
+   "id": "model:krea2filterbypass3",
+   "kind": "model",
+   "label": "krea2filterbypass3"
+  },
+  {
+   "id": "model_file:lourta2krea_copy_000000750.safetensors",
+   "kind": "model_file",
+   "label": "lourta2krea_copy_000000750.safetensors"
+  },
+  {
+   "id": "model:lourta2krea-copy-000000750",
+   "kind": "model",
+   "label": "lourta2krea-copy-000000750"
+  },
+  {
+   "id": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "kind": "workflow",
+   "label": "Krea2icysubs-_with_Lm_prompting",
+   "collection": "icekiub",
+   "node_count": 29,
+   "sha256": "27413fa5a547829dd5af0c9492c1acceaedb7c424fd729bee31eeb13984fd2b3",
+   "sources": 2
+  },
+  {
+   "id": "node_pack:comfyui-krea2t-enhancer",
+   "kind": "node_pack",
+   "label": "comfyui-krea2t-enhancer"
+  },
+  {
+   "id": "node_type:ComfyUI-Krea2T-Enhancer",
+   "kind": "node_type",
+   "label": "ComfyUI-Krea2T-Enhancer"
+  },
+  {
+   "id": "model_file:11_lourta2krea_copy_000000750.safetensors",
+   "kind": "model_file",
+   "label": "11_lourta2krea_copy_000000750.safetensors"
+  },
+  {
+   "id": "model:11-lourta2krea-copy-000000750",
+   "kind": "model",
+   "label": "11-lourta2krea-copy-000000750"
+  },
+  {
+   "id": "model_file:17_krea2_turbo_fp8_scaled.safetensors",
+   "kind": "model_file",
+   "label": "17_krea2_turbo_fp8_scaled.safetensors"
+  },
+  {
+   "id": "model:17-krea2-turbo",
+   "kind": "model",
+   "label": "17-krea2-turbo"
+  },
+  {
+   "id": "model_file:3_icyrealismKREA.safetensors",
+   "kind": "model_file",
+   "label": "3_icyrealismKREA.safetensors"
+  },
+  {
+   "id": "model:3-icyrealismkrea",
+   "kind": "model",
+   "label": "3-icyrealismkrea"
+  },
+  {
+   "id": "model_file:Loratest56_000001650.safetensors",
+   "kind": "model_file",
+   "label": "Loratest56_000001650.safetensors"
+  },
+  {
+   "id": "model:loratest56-000001650",
+   "kind": "model",
+   "label": "loratest56-000001650"
+  },
+  {
+   "id": "model_file:qwen3vl_4b_fp8_scaled.safetensors",
+   "kind": "model_file",
+   "label": "qwen3vl_4b_fp8_scaled.safetensors"
+  },
+  {
+   "id": "model:qwen3vl-4b",
+   "kind": "model",
+   "label": "qwen3vl-4b"
+  },
+  {
+   "id": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "kind": "workflow",
+   "label": "Consistent_Room_WF_v3.1-_Icekiub_Subs",
+   "collection": "icekiub",
+   "node_count": 73,
+   "sha256": "78ee20c53bb420f700db42f64536015dbde0453d8c4ed25d7c20a703851b6efb",
+   "sources": 2
+  },
+  {
+   "id": "node_type:StringConcatenate",
+   "kind": "node_type",
+   "label": "StringConcatenate"
+  },
+  {
+   "id": "model_file:Flux.Fazze-step00000200.safetensors",
+   "kind": "model_file",
+   "label": "Flux.Fazze-step00000200.safetensors"
+  },
+  {
+   "id": "model:flux.fazze-step00000200",
+   "kind": "model",
+   "label": "flux.fazze-step00000200"
+  },
+  {
+   "id": "model_file:Qwen25VL7B_nvfp4_fixedBF16.safetensors",
+   "kind": "model_file",
+   "label": "Qwen25VL7B_nvfp4_fixedBF16.safetensors"
+  },
+  {
+   "id": "model:qwen25vl7b-nvfp4-fixedbf16",
+   "kind": "model",
+   "label": "qwen25vl7b-nvfp4-fixedbf16"
+  },
+  {
+   "id": "model_file:face_yolov8m.pt",
+   "kind": "model_file",
+   "label": "face_yolov8m.pt"
+  },
+  {
+   "id": "model:face-yolov8m",
+   "kind": "model",
+   "label": "face-yolov8m"
+  },
+  {
+   "id": "model_file:flux2-klein9b-lora-mlsharp-3d-repair.safetensors",
+   "kind": "model_file",
+   "label": "flux2-klein9b-lora-mlsharp-3d-repair.safetensors"
+  },
+  {
+   "id": "model:flux2-klein9b-lora-mlsharp-3d-repair",
+   "kind": "model",
+   "label": "flux2-klein9b-lora-mlsharp-3d-repair"
+  },
+  {
+   "id": "model_file:qwen_image_2512_fp8_e4m3fn.safetensors",
+   "kind": "model_file",
+   "label": "qwen_image_2512_fp8_e4m3fn.safetensors"
+  },
+  {
+   "id": "model:qwen-image-2512",
+   "kind": "model",
+   "label": "qwen-image-2512"
+  },
+  {
+   "id": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "kind": "workflow",
+   "label": "zbase+zit+control_-_icekiub_v1",
+   "collection": "icekiub",
+   "node_count": 26,
+   "sha256": "c9be88126bdc859d334b425559ae1b5b3d458f4573405295cf13226116f32704",
+   "sources": 2
+  },
+  {
+   "id": "node_type:ModelPatchLoader",
+   "kind": "node_type",
+   "label": "ModelPatchLoader"
+  },
+  {
+   "id": "node_type:ZImageFunControlnet",
+   "kind": "node_type",
+   "label": "ZImageFunControlnet"
+  },
+  {
+   "id": "model_file:LOURTA_000000700.safetensors",
+   "kind": "model_file",
+   "label": "LOURTA_000000700.safetensors"
+  },
+  {
+   "id": "model:lourta-000000700",
+   "kind": "model",
+   "label": "lourta-000000700"
+  },
+  {
+   "id": "model_file:Z-Image-Fun-Controlnet-Union-2.1-lite.safetensors",
+   "kind": "model_file",
+   "label": "Z-Image-Fun-Controlnet-Union-2.1-lite.safetensors"
+  },
+  {
+   "id": "model:z-image-fun-controlnet-union-2.1-lite",
+   "kind": "model",
+   "label": "z-image-fun-controlnet-union-2.1-lite"
+  },
+  {
+   "id": "model_file:Z-Image-Fun-Lora-Distill-8-Steps-2602-ComfyUI.safetensors",
+   "kind": "model_file",
+   "label": "Z-Image-Fun-Lora-Distill-8-Steps-2602-ComfyUI.safetensors"
+  },
+  {
+   "id": "model:z-image-fun-lora-distill-8-steps-2602-comfyui",
+   "kind": "model",
+   "label": "z-image-fun-lora-distill-8-steps-2602-comfyui"
+  },
+  {
+   "id": "model_file:nicegirls_zimagebase.safetensors",
+   "kind": "model_file",
+   "label": "nicegirls_zimagebase.safetensors"
+  },
+  {
+   "id": "model:nicegirls-zimagebase",
+   "kind": "model",
+   "label": "nicegirls-zimagebase"
+  },
+  {
+   "id": "model_file:z_image_bf16.safetensors",
+   "kind": "model_file",
+   "label": "z_image_bf16.safetensors"
+  },
+  {
+   "id": "model:z-image",
+   "kind": "model",
+   "label": "z-image"
+  },
+  {
+   "id": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "kind": "workflow",
+   "label": "Image_to_image_Klein_edit_-_Icekiub_v1.5",
+   "collection": "icekiub",
+   "node_count": 25,
+   "sha256": "454d2120649eff04b2648f373ae58c70a8112b9ab15f4ee3008179d1ff0c5455",
+   "sources": 2
+  },
+  {
+   "id": "model_file:Lora_lora_000000500.safetensors",
+   "kind": "model_file",
+   "label": "Lora_lora_000000500.safetensors"
+  },
+  {
+   "id": "model:lora-lora-000000500",
+   "kind": "model",
+   "label": "lora-lora-000000500"
+  },
+  {
+   "id": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "kind": "workflow",
+   "label": "Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5",
+   "collection": "icekiub",
+   "node_count": 25,
+   "sha256": "b4404198e394324a3038c4b3ddfaa0e3e28eaaf606467deb8f2f50d5ce5ffb45",
+   "sources": 2
+  },
+  {
+   "id": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "kind": "workflow",
+   "label": "I2I_no_lora_faceswap_subs",
+   "collection": "icekiub",
+   "node_count": 29,
+   "sha256": "e005997094562903cb98fc6d56d574625e68c206d1fb45f7bf53a75915a7f9d5",
+   "sources": 2
+  },
+  {
+   "id": "model_file:RealESRGAN_x2plus.pt",
+   "kind": "model_file",
+   "label": "RealESRGAN_x2plus.pt"
+  },
+  {
+   "id": "model:realesrgan-x2plus",
+   "kind": "model",
+   "label": "realesrgan-x2plus"
+  },
+  {
+   "id": "model_file:head_swap_flux-klein_9b_000003500.safetensors",
+   "kind": "model_file",
+   "label": "head_swap_flux-klein_9b_000003500.safetensors"
+  },
+  {
+   "id": "model:head-swap-flux-klein-9b-000003500",
+   "kind": "model",
+   "label": "head-swap-flux-klein-9b-000003500"
+  },
+  {
+   "id": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "kind": "workflow",
+   "label": "Any_Clothes_9B_-_Subs_-_Icekiub_V1.3",
+   "collection": "icekiub",
+   "node_count": 26,
+   "sha256": "668d451db8441c732e65ba5edf8da4b4c6ab6d167ed148187154ee8a9d756e74",
+   "sources": 2
+  },
+  {
+   "id": "model_file:smallflux2.safetensors",
+   "kind": "model_file",
+   "label": "smallflux2.safetensors"
+  },
+  {
+   "id": "model:smallflux2",
+   "kind": "model",
+   "label": "smallflux2"
+  },
+  {
+   "id": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "kind": "workflow",
+   "label": "NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1",
+   "collection": "icekiub",
+   "node_count": 27,
+   "sha256": "27432acec5f99aba9e64bd162c7c5f03ca24912e7de4c633538ac6e42b3afec8",
+   "sources": 2
+  },
+  {
+   "id": "model_file:adetailerFootYolov8x_v20.pt",
+   "kind": "model_file",
+   "label": "adetailerFootYolov8x_v20.pt"
+  },
+  {
+   "id": "model:adetailerfootyolov8x-v20",
+   "kind": "model",
+   "label": "adetailerfootyolov8x-v20"
+  },
+  {
+   "id": "model_file:assdetailer-seg.pt",
+   "kind": "model_file",
+   "label": "assdetailer-seg.pt"
+  },
+  {
+   "id": "model:assdetailer-seg",
+   "kind": "model",
+   "label": "assdetailer-seg"
+  },
+  {
+   "id": "model_file:female_breast-v4.2.pt",
+   "kind": "model_file",
+   "label": "female_breast-v4.2.pt"
+  },
+  {
+   "id": "model:female-breast-v4.2",
+   "kind": "model",
+   "label": "female-breast-v4.2"
+  },
+  {
+   "id": "model_file:illustriousRealismBy_v10VAE.safetensors",
+   "kind": "model_file",
+   "label": "illustriousRealismBy_v10VAE.safetensors"
+  },
+  {
+   "id": "model:illustriousrealismby-v10vae",
+   "kind": "model",
+   "label": "illustriousrealismby-v10vae"
+  },
+  {
+   "id": "model_file:pussyV2.pt",
+   "kind": "model_file",
+   "label": "pussyV2.pt"
+  },
+  {
+   "id": "model:pussyv2",
+   "kind": "model",
+   "label": "pussyv2"
+  },
+  {
+   "id": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "kind": "workflow",
+   "label": "NSFW_SURGERY_SUBS_-_ICEKIUB_v1",
+   "collection": "icekiub",
+   "node_count": 27,
+   "sha256": "fc82b593a398733f00ec7fcc525be785c75ce36ba71c101684fd6a5163324430",
+   "sources": 2
+  },
+  {
+   "id": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "kind": "workflow",
+   "label": "AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5",
+   "collection": "icekiub",
+   "node_count": 12,
+   "sha256": "f0fb6221fa24988bf2c23f4d6db8b28ba8a7dec5458439d3addcfa3c2bd29753",
+   "sources": 2
+  },
+  {
+   "id": "node_pack:comfyui-icyqwen3",
+   "kind": "node_pack",
+   "label": "comfyui-icyqwen3"
+  },
+  {
+   "id": "node_type:IcyQwen3AllInOne",
+   "kind": "node_type",
+   "label": "IcyQwen3AllInOne"
+  },
+  {
+   "id": "node_type:PrimitiveString",
+   "kind": "node_type",
+   "label": "PrimitiveString"
+  },
+  {
+   "id": "node_type:SaveImageTextDataSetToFolder",
+   "kind": "node_type",
+   "label": "SaveImageTextDataSetToFolder"
+  },
+  {
+   "id": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "kind": "workflow",
+   "label": "KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1",
+   "collection": "icekiub",
+   "node_count": 16,
+   "sha256": "ad19ab57439812ce5302d3ada3fb13403bfef0f04742a6452264e05f855a4cb8",
+   "sources": 2
+  },
+  {
+   "id": "node_pack:mikey_nodes",
+   "kind": "node_pack",
+   "label": "mikey_nodes"
+  },
+  {
+   "id": "node_type:Batch Load Images",
+   "kind": "node_type",
+   "label": "Batch Load Images"
+  },
+  {
+   "id": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "kind": "workflow",
+   "label": "KLEIN_-_watermark_removal_-_ICEKIUB_V1",
+   "collection": "icekiub",
+   "node_count": 16,
+   "sha256": "a6f527e25412857173ea43fe6a88e73b295b115670dda79625de037904e4a7b0",
+   "sources": 2
+  },
+  {
+   "id": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "kind": "workflow",
+   "label": "QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2",
+   "collection": "icekiub",
+   "node_count": 26,
+   "sha256": "9d5485554ac2cbb4f1b873d325edf2e9bc7635df6d688db085bc4554114c7dab",
+   "sources": 2
+  },
+  {
+   "id": "model_file:Qwen-Rapid-AIO-NSFW-v23.safetensors",
+   "kind": "model_file",
+   "label": "Qwen-Rapid-AIO-NSFW-v23.safetensors"
+  },
+  {
+   "id": "model:qwen-rapid-aio-nsfw-v23",
+   "kind": "model",
+   "label": "qwen-rapid-aio-nsfw-v23"
+  },
+  {
+   "id": "model_file:klein_snofs_v1_1.safetensors",
+   "kind": "model_file",
+   "label": "klein_snofs_v1_1.safetensors"
+  },
+  {
+   "id": "model:klein-snofs-v1-1",
+   "kind": "model",
+   "label": "klein-snofs-v1-1"
+  },
+  {
    "id": "video:nKGIQf8-AV4",
    "kind": "video",
    "label": "How to install Qwen 3.8 27B on your PC ( Local LLM with LM Studio)",
@@ -15522,6 +16541,4171 @@
    "src": "workflow:workflows/h3-refmods/franckyb-refmod-picker-example.json",
    "rel": "requires",
    "dst": "model_file:qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-custom-scripts"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-easy-use"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-impact-pack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-krea2-controlnet"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-logic"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-mediamixer"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-videohelpersuite"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui_controlnet_aux"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui_nvidia_rtx_nodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:icylm"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:res4lyf"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:AIO_Preprocessor"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPVisionEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPVisionLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:CheckpointLoaderSimple"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ClownOptions_DetailBoost_Beta"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ClownsharKSampler_Beta"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ComfySwitchNode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:DiffusionModelLoaderKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:FirstFrameSelector"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:Float"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:GetImageRangeFromBatch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:GetNode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ICYLMStudioMultimodalPrompt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ImagePass"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ImageStitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ImpactSwitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:Krea2ControlApply"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:Krea2ControlImageEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:Krea2ControlLoRALoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:MathExpression|pysssss"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ModelSamplingSD3"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:Note"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveInt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveNode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveStringMultiline"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:RTXVideoSuperResolution"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ResolutionSelector"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:SAM3_VideoTrack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:SCAIL2ColoredMask"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:SetNode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ShowText|pysssss"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_LoadVideo"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_VideoCombine"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_VideoInfoLoaded"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_VideoInfoSource"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:WanSCAILToVideo"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:easy batchAnything"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:easy forLoopEnd"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "uses",
+   "dst": "node_type:easy forLoopStart"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors"
+  },
+  {
+   "src": "model_file:Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:huihui-qwen3-vl-4b-instruct-abliterated"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:Krea2_Raw_convrot_int8mixed.safetensors"
+  },
+  {
+   "src": "model_file:Krea2_Raw_convrot_int8mixed.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:krea2-raw-int8mixed"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:Loratest56_000000600.safetensors"
+  },
+  {
+   "src": "model_file:Loratest56_000000600.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:loratest56-000000600"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:clip_vision_h.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:depth-control-lora.safetensors"
+  },
+  {
+   "src": "model_file:depth-control-lora.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:depth-control-lora"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:icyrealismKREA.safetensors"
+  },
+  {
+   "src": "model_file:icyrealismKREA.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:icyrealismkrea"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:krea2Icydildov2_000004000.safetensors"
+  },
+  {
+   "src": "model_file:krea2Icydildov2_000004000.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:krea2icydildov2-000004000"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:krea2RealVae_v10.safetensors"
+  },
+  {
+   "src": "model_file:krea2RealVae_v10.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:krea2realvae-v10"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:krea2_turbo_lora_rank_64_bf16.safetensors"
+  },
+  {
+   "src": "model_file:krea2_turbo_lora_rank_64_bf16.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:krea2-turbo-lora-rank-64"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:my_first_lora_v1_000000600_low_noise.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:sam3.1_multiplex_fp16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:slop_twerk_LowNoise_merged3_7_v2.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:wan2.1_14B_SCAIL_2_fp8_scaled.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:wan2.2_i2v_A14b_low_noise_lora_rank64_lightx2v_4step_1022.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+   "rel": "requires",
+   "dst": "model_file:wan_2.1_vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-custom-scripts"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-easy-use"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-impact-pack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-videohelpersuite"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:864826b7-0005-4cae-8b68-c1b313d72d1a"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:BetterImageLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPVisionEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPVisionLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:CheckpointLoaderSimple"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:DiffusionModelLoaderKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:GetImageRangeFromBatch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:GetNode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:ImageStitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:ImpactSwitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:MathExpression|pysssss"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:ModelSamplingSD3"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveInt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveNode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:SAM3_VideoTrack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:SCAIL2ColoredMask"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:SetNode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_LoadVideo"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_VideoCombine"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:WanSCAILToVideo"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:easy batchAnything"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:easy forLoopEnd"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "uses",
+   "dst": "node_type:easy forLoopStart"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "model_file:11_Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors"
+  },
+  {
+   "src": "model_file:11_Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:11-wan21-i2v-14b-lightx2v-cfg-step-distill-lora-rank64-fixed"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "model_file:153_my_first_lora_v1_000000600_low_noise.safetensors"
+  },
+  {
+   "src": "model_file:153_my_first_lora_v1_000000600_low_noise.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:153-my-first-lora-v1-000000600-low-noise"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "model_file:74_wan2.1_14B_SCAIL_2_fp8_scaled.safetensors"
+  },
+  {
+   "src": "model_file:74_wan2.1_14B_SCAIL_2_fp8_scaled.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:74-wan2.1-14b-scail-2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "model_file:86_sam3.1_multiplex_fp16.safetensors"
+  },
+  {
+   "src": "model_file:86_sam3.1_multiplex_fp16.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:86-sam3.1-multiplex"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "model_file:Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "model_file:clip_vision_h.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "model_file:my_first_lora_v1_000000600_low_noise.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "model_file:sam3.1_multiplex_fp16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "model_file:umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "model_file:wan2.1_14B_SCAIL_2_fp8_scaled.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+   "rel": "requires",
+   "dst": "model_file:wan_2.1_vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-easy-use"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-frame-interpolation"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-impact-pack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-sam3"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-videohelpersuite"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui_controlnet_aux"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:res4lyf"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:wananimate-enhancer"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:11009ff9-6e74-4187-8960-7578de422096"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:5a14a7b7-d035-4b17-95ea-155376545791"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:8acf1d0b-eb19-4ab6-9ecc-45b8d9ce7c84"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:BlockifyMask"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPVisionEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPVisionLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ContextWindowsManual"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:DWPreprocessor"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:DrawMaskOnImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyFlux2LatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:Fast Groups Bypasser (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:Frame Select"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:Frames Concat"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:GetImageSize"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:GetNode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ImageFromBatch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ImageScaleBy"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ImageStitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ImpactSwitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:Label (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:MaskComposite"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ModelSamplingSD3"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveInt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:RIFE VFI"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ReferenceLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:SAM3Segmentation"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:SetNode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:TrimVideoLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_LoadVideo"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_VideoCombine"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_VideoInfoLoaded"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:WanAnimateModelEnhancer"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:WanAnimateToVideoEnhanced"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:WanContextWindowsManual"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:easy imageCropFromMask"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:f2235c0c-fbaa-4ab8-a036-5bac660db085"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ffa76bb4-c7e7-4fd8-9875-27a64d7f6c9e"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors"
+  },
+  {
+   "src": "model_file:Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:wan2-2-animate-14b-kj"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:Wan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors"
+  },
+  {
+   "src": "model_file:Wan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:wan2-2-animate-14b-kj-v2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:WanAnimate_relight_lora_fp16.safetensors"
+  },
+  {
+   "src": "model_file:WanAnimate_relight_lora_fp16.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:wananimate-relight-lora"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:clip_vision_h.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:dw-ll_ucoco_384_bs5.torchscript.pt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b-fp8.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b.safetensors"
+  },
+  {
+   "src": "model_file:flux-2-klein-9b.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:flux-2-klein-9b"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:flux2-vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors"
+  },
+  {
+   "src": "model_file:lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:lightx2v-i2v-14b-480p-cfg-step-distill-rank64"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:nWan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors"
+  },
+  {
+   "src": "model_file:nWan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:nwan2-2-animate-14b-kj-v2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:nWanAnimate_relight_lora_fp16.safetensors"
+  },
+  {
+   "src": "model_file:nWanAnimate_relight_lora_fp16.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:nwananimate-relight-lora"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:nclip_vision_h.safetensors"
+  },
+  {
+   "src": "model_file:nclip_vision_h.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:nclip-vision-h"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:numt5_xxl_fp8_e4m3fn_scaled.safetensors"
+  },
+  {
+   "src": "model_file:numt5_xxl_fp8_e4m3fn_scaled.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:numt5-xxl"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:nwan_2.1_vae.safetensors"
+  },
+  {
+   "src": "model_file:nwan_2.1_vae.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:nwan-2.1-vae"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_8b_fp8mixed.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:rife47.pt"
+  },
+  {
+   "src": "model_file:rife47.pt",
+   "rel": "belongs_to",
+   "dst": "model:rife47"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:wan_2.1_vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:yolox_l.torchscript.pt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-easy-use"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-frame-interpolation"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-impact-pack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-sam3"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-videohelpersuite"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui_controlnet_aux"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:res4lyf"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "node_pack:wananimate-enhancer"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:11009ff9-6e74-4187-8960-7578de422096"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:5a14a7b7-d035-4b17-95ea-155376545791"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:8acf1d0b-eb19-4ab6-9ecc-45b8d9ce7c84"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:BlockifyMask"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPVisionEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPVisionLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ContextWindowsManual"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:DWPreprocessor"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:DrawMaskOnImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyFlux2LatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:Fast Groups Bypasser (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:Frame Select"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:Frames Concat"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:GetImageSize"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:GetNode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ImageFromBatch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ImageScaleBy"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ImageStitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ImpactSwitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:Label (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ModelSamplingSD3"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveInt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:RIFE VFI"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ReferenceLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:SAM3Segmentation"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:SetNode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:TrimVideoLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_LoadVideo"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_VideoCombine"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_VideoInfoLoaded"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:WanAnimateModelEnhancer"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:WanAnimateToVideoEnhanced"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:WanContextWindowsManual"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:easy imageCropFromMask"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:f2235c0c-fbaa-4ab8-a036-5bac660db085"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "uses",
+   "dst": "node_type:ffa76bb4-c7e7-4fd8-9875-27a64d7f6c9e"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:Wan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:WanAnimate_relight_lora_fp16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:clip_vision_h.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:dw-ll_ucoco_384_bs5.torchscript.pt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b-fp8.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:flux2-vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:nWan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:nWanAnimate_relight_lora_fp16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:nclip_vision_h.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:numt5_xxl_fp8_e4m3fn_scaled.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:nwan_2.1_vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_8b_fp8mixed.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:rife47.pt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:wan_2.1_vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+   "rel": "requires",
+   "dst": "model_file:yolox_l.torchscript.pt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-frame-interpolation"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-icytiktokdownloader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-videohelpersuite"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:res4lyf"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:ClownsharKSampler_Beta"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:IcyTikTokDownloader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:ImageStitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:ModelSamplingSD3"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:RIFE VFI"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_LoadVideo"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_LoadVideoPath"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_VideoCombine"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:WAN2.2t2vLOWNOISEFP8.safetensors"
+  },
+  {
+   "src": "model_file:WAN2.2t2vLOWNOISEFP8.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:wan2.2t2vlownoisefp8"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:low_noise_model.safetensors"
+  },
+  {
+   "src": "model_file:low_noise_model.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:low-noise-model"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:my_first_lora_v1_000000600_low_noise.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:rife47.pt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:wan_2.1_vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "node_pack:betterimage_loader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-custom-scripts"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "node_pack:icylm"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "node_pack:icymegapixelresize"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "node_pack:rgthree-comfy"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:BasicGuider"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:BasicScheduler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:ICYLMStudioMultimodalPrompt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:IcyMegapixelResize"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:IcyMultiRefLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:ImageUpscaleWithModel"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:KSamplerSelect"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:MiniMaxH3ReferenceToVideo"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:MiniMaxH3SigmaShift"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:Power Lora Loader (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveStringMultiline"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:RandomNoise"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:SamplerCustomAdvanced"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:ShowText|pysssss"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:UpscaleModelLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "model_file:1xSkinContrast-SuperUltraCompact.pt"
+  },
+  {
+   "src": "model_file:1xSkinContrast-SuperUltraCompact.pt",
+   "rel": "belongs_to",
+   "dst": "model:1xskincontrast-superultracompact"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "model_file:H3-GalaxyAce.safetensors"
+  },
+  {
+   "src": "model_file:H3-GalaxyAce.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:h3-galaxyace"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "model_file:MysticXXX_MMH3-V1.safetensors"
+  },
+  {
+   "src": "model_file:MysticXXX_MMH3-V1.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:mysticxxx-mmh3-v1"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "model_file:VBVR_H3_attn_only.safetensors"
+  },
+  {
+   "src": "model_file:VBVR_H3_attn_only.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:vbvr-h3-attn-only"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "model_file:h3-realism-people-t2v-i2v-r2v.safetensors"
+  },
+  {
+   "src": "model_file:h3-realism-people-t2v-i2v-r2v.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:h3-realism-people-t2v-i2v-r2v"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_audio_vae_fp32.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_hybrid_fl2va_ref2va_b25-49-int8.safetensors"
+  },
+  {
+   "src": "model_file:minimax_h3_hybrid_fl2va_ref2va_b25-49-int8.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:minimax-h3-hybrid-fl2va-ref2va-b25-49"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_t1_image_vae_step1597.safetensors"
+  },
+  {
+   "src": "model_file:minimax_h3_t1_image_vae_step1597.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:minimax-h3-t1-image-vae-step1597"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "model_file:minimax_h3_video_vae_fp16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/H3_Icy_image.json",
+   "rel": "requires",
+   "dst": "model_file:qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:BasicScheduler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:CFGGuider"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyFlux2LatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:KSamplerSelect"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:RandomNoise"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:ReferenceLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:SamplerCustomAdvanced"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "requires",
+   "dst": "model_file:QuadView_klein9b_v1.safetensors"
+  },
+  {
+   "src": "model_file:QuadView_klein9b_v1.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:quadview-klein9b-v1"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b-fp8.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "requires",
+   "dst": "model_file:flux2-vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/icy_ref_character_sheet_for_minimax.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_8b_fp8mixed.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-krea2-controlnet"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui_controlnet_aux"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:AIO_Preprocessor"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:Krea2ControlApply"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:Krea2ControlImageEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:Krea2ControlLoRALoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "model_file:Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "model_file:depth-control-lora.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "model_file:icyrealismKREA.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "model_file:krea2_turbo_fp8_scaled.safetensors"
+  },
+  {
+   "src": "model_file:krea2_turbo_fp8_scaled.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:krea2-turbo"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "model_file:krea2_turbo_lora_rank_64_bf16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "model_file:krea2filterbypass3.safetensors"
+  },
+  {
+   "src": "model_file:krea2filterbypass3.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:krea2filterbypass3"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "model_file:lourta2krea_copy_000000750.safetensors"
+  },
+  {
+   "src": "model_file:lourta2krea_copy_000000750.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:lourta2krea-copy-000000750"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+   "rel": "requires",
+   "dst": "model_file:wan_2.1_vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-custom-scripts"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-krea2-controlnet"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-krea2t-enhancer"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui_controlnet_aux"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "node_pack:icylm"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "node_pack:res4lyf"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:AIO_Preprocessor"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:ClownsharKSampler_Beta"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:ComfyUI-Krea2T-Enhancer"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:ICYLMStudioMultimodalPrompt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:ImagePass"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:Krea2ControlApply"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:Krea2ControlImageEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:Krea2ControlLoRALoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:Note"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveStringMultiline"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:ResolutionSelector"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:ShowText|pysssss"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "model_file:11_lourta2krea_copy_000000750.safetensors"
+  },
+  {
+   "src": "model_file:11_lourta2krea_copy_000000750.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:11-lourta2krea-copy-000000750"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "model_file:17_krea2_turbo_fp8_scaled.safetensors"
+  },
+  {
+   "src": "model_file:17_krea2_turbo_fp8_scaled.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:17-krea2-turbo"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "model_file:3_icyrealismKREA.safetensors"
+  },
+  {
+   "src": "model_file:3_icyrealismKREA.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:3-icyrealismkrea"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "model_file:Loratest56_000001650.safetensors"
+  },
+  {
+   "src": "model_file:Loratest56_000001650.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:loratest56-000001650"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "model_file:depth-control-lora.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "model_file:icyrealismKREA.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "model_file:krea2_turbo_fp8_scaled.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "model_file:krea2filterbypass3.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "model_file:qwen3vl_4b_fp8_scaled.safetensors"
+  },
+  {
+   "src": "model_file:qwen3vl_4b_fp8_scaled.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:qwen3vl-4b"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+   "rel": "requires",
+   "dst": "model_file:wan_2.1_vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-impact-pack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-impact-subpack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "node_pack:res4lyf"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:ClownsharKSampler_Beta"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyFlux2LatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:FaceDetailer"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:Fast Groups Bypasser (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveStringMultiline"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:ReferenceLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:StringConcatenate"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:UltralyticsDetectorProvider"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "model_file:Flux.Fazze-step00000200.safetensors"
+  },
+  {
+   "src": "model_file:Flux.Fazze-step00000200.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:flux.fazze-step00000200"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "model_file:Qwen-Image-Lightning-8steps-V2.0-bf16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "model_file:Qwen25VL7B_nvfp4_fixedBF16.safetensors"
+  },
+  {
+   "src": "model_file:Qwen25VL7B_nvfp4_fixedBF16.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:qwen25vl7b-nvfp4-fixedbf16"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "model_file:face_yolov8m.pt"
+  },
+  {
+   "src": "model_file:face_yolov8m.pt",
+   "rel": "belongs_to",
+   "dst": "model:face-yolov8m"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b-fp8.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "model_file:flux2-klein9b-lora-mlsharp-3d-repair.safetensors"
+  },
+  {
+   "src": "model_file:flux2-klein9b-lora-mlsharp-3d-repair.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:flux2-klein9b-lora-mlsharp-3d-repair"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "model_file:flux2-vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_8b_fp8mixed.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_image_2512_fp8_e4m3fn.safetensors"
+  },
+  {
+   "src": "model_file:qwen_image_2512_fp8_e4m3fn.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:qwen-image-2512"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_image_vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui_controlnet_aux"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:res4lyf"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:rgthree-comfy"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:AIO_Preprocessor"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:ClownsharKSampler_Beta"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:EmptySD3LatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:Image Comparer (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:ModelPatchLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "uses",
+   "dst": "node_type:ZImageFunControlnet"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:LOURTA_000000700.safetensors"
+  },
+  {
+   "src": "model_file:LOURTA_000000700.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:lourta-000000700"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:Z-Image-Fun-Controlnet-Union-2.1-lite.safetensors"
+  },
+  {
+   "src": "model_file:Z-Image-Fun-Controlnet-Union-2.1-lite.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:z-image-fun-controlnet-union-2.1-lite"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:Z-Image-Fun-Lora-Distill-8-Steps-2602-ComfyUI.safetensors"
+  },
+  {
+   "src": "model_file:Z-Image-Fun-Lora-Distill-8-Steps-2602-ComfyUI.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:z-image-fun-lora-distill-8-steps-2602-comfyui"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:nicegirls_zimagebase.safetensors"
+  },
+  {
+   "src": "model_file:nicegirls_zimagebase.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:nicegirls-zimagebase"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_4b.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:ultrafluxvae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:z_image_bf16.safetensors"
+  },
+  {
+   "src": "model_file:z_image_bf16.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:z-image"
+  },
+  {
+   "src": "workflow:workflows/icekiub/zbase+zit+control_-_icekiub_v1.json",
+   "rel": "requires",
+   "dst": "model_file:z_image_turbo_bf16.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:rgthree-comfy"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:GetImageSize"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:Image Comparer (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:ImageStitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:ReferenceLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "model_file:Lora_lora_000000500.safetensors"
+  },
+  {
+   "src": "model_file:Lora_lora_000000500.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:lora-lora-000000500"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b-fp8.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "model_file:flux2-vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_8b_fp8mixed.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-inspire-pack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:rgthree-comfy"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:GetImageSize"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:Image Comparer (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:ImageStitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImageListFromDir //Inspire"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:ReferenceLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "model_file:Lora_lora_000000500.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b-fp8.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "model_file:flux2-vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_8b_fp8mixed.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "requires",
+   "dst": "node_pack:rgthree-comfy"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:GetImageSize"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:Image Comparer (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ImageStitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ImageUpscaleWithModel"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:ReferenceLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:UpscaleModelLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "requires",
+   "dst": "model_file:RealESRGAN_x2plus.pt"
+  },
+  {
+   "src": "model_file:RealESRGAN_x2plus.pt",
+   "rel": "belongs_to",
+   "dst": "model:realesrgan-x2plus"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b-fp8.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "requires",
+   "dst": "model_file:flux2-vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "requires",
+   "dst": "model_file:head_swap_flux-klein_9b_000003500.safetensors"
+  },
+  {
+   "src": "model_file:head_swap_flux-klein_9b_000003500.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:head-swap-flux-klein-9b-000003500"
+  },
+  {
+   "src": "workflow:workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_8b_fp8mixed.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:ConditioningZeroOut"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:ReferenceLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b-fp8.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_8b_fp8mixed.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+   "rel": "requires",
+   "dst": "model_file:smallflux2.safetensors"
+  },
+  {
+   "src": "model_file:smallflux2.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:smallflux2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-impact-pack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-impact-subpack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-inspire-pack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:rgthree-comfy"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:CheckpointLoaderSimple"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:FaceDetailer"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:Fast Groups Bypasser (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:Image Comparer (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:Label (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImageListFromDir //Inspire"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:UltralyticsDetectorProvider"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "model_file:adetailerFootYolov8x_v20.pt"
+  },
+  {
+   "src": "model_file:adetailerFootYolov8x_v20.pt",
+   "rel": "belongs_to",
+   "dst": "model:adetailerfootyolov8x-v20"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "model_file:assdetailer-seg.pt"
+  },
+  {
+   "src": "model_file:assdetailer-seg.pt",
+   "rel": "belongs_to",
+   "dst": "model:assdetailer-seg"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "model_file:female_breast-v4.2.pt"
+  },
+  {
+   "src": "model_file:female_breast-v4.2.pt",
+   "rel": "belongs_to",
+   "dst": "model:female-breast-v4.2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "model_file:illustriousRealismBy_v10VAE.safetensors"
+  },
+  {
+   "src": "model_file:illustriousRealismBy_v10VAE.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:illustriousrealismby-v10vae"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "model_file:pussyV2.pt"
+  },
+  {
+   "src": "model_file:pussyV2.pt",
+   "rel": "belongs_to",
+   "dst": "model:pussyv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-impact-pack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-impact-subpack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "node_pack:rgthree-comfy"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:CheckpointLoaderSimple"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:FaceDetailer"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:Fast Groups Bypasser (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:Image Comparer (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:Label (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "uses",
+   "dst": "node_type:UltralyticsDetectorProvider"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "model_file:adetailerFootYolov8x_v20.pt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "model_file:assdetailer-seg.pt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "model_file:female_breast-v4.2.pt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "model_file:illustriousRealismBy_v10VAE.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+   "rel": "requires",
+   "dst": "model_file:pussyV2.pt"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-custom-scripts"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-icyqwen3"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-inspire-pack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-videohelpersuite"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:IcyQwen3AllInOne"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:Label (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImageListFromDir //Inspire"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:PrimitiveString"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImageTextDataSetToFolder"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:ShowText|pysssss"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:StringConcatenate"
+  },
+  {
+   "src": "workflow:workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+   "rel": "uses",
+   "dst": "node_type:VHS_LoadVideo"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "node_pack:efficiency-nodes-comfyui"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "node_pack:mikey_nodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:Batch Load Images"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:GetImageSize"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:ImageStitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler (Efficient)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:ReferenceLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b-fp8.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "model_file:flux2-vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_8b_fp8mixed.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "node_pack:efficiency-nodes-comfyui"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:GetImageSize"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:ImageStitch"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler (Efficient)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:ReferenceLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b-fp8.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "model_file:flux2-vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_8b_fp8mixed.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "belongs_to",
+   "dst": "collection:icekiub"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "requires",
+   "dst": "node_pack:comfy-core"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-inspire-pack"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "requires",
+   "dst": "node_pack:comfyui-kjnodes"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "requires",
+   "dst": "node_pack:efficiency-nodes-comfyui"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "requires",
+   "dst": "node_pack:rgthree-comfy"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:CLIPTextEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:CheckpointLoaderSimple"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:ConditioningZeroOut"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:EmptyLatentImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:Fast Groups Bypasser (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:Image Comparer (rgthree)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:ImageResizeKJv2"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:ImageScaleToTotalPixels"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:KSampler (Efficient)"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:LoadImageListFromDir //Inspire"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:LoraLoaderModelOnly"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:MarkdownNote"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:PathchSageAttentionKJ"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:PreviewImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:ReferenceLatent"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:SaveImage"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:TextEncodeQwenImageEditPlus"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:UNETLoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:VAEDecode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:VAEEncode"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "uses",
+   "dst": "node_type:VAELoader"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "requires",
+   "dst": "model_file:Qwen-Rapid-AIO-NSFW-v23.safetensors"
+  },
+  {
+   "src": "model_file:Qwen-Rapid-AIO-NSFW-v23.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:qwen-rapid-aio-nsfw-v23"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "requires",
+   "dst": "model_file:flux-2-klein-9b-fp8.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "requires",
+   "dst": "model_file:flux2-vae.safetensors"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "requires",
+   "dst": "model_file:klein_snofs_v1_1.safetensors"
+  },
+  {
+   "src": "model_file:klein_snofs_v1_1.safetensors",
+   "rel": "belongs_to",
+   "dst": "model:klein-snofs-v1-1"
+  },
+  {
+   "src": "workflow:workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+   "rel": "requires",
+   "dst": "model_file:qwen_3_8b_fp8mixed.safetensors"
   },
   {
    "src": "video:nKGIQf8-AV4",

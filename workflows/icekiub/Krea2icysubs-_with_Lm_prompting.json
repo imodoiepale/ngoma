@@ -1,0 +1,1815 @@
+{
+  "id": "1ea535d0-3367-47b0-b132-f7993624f512",
+  "revision": 0,
+  "last_node_id": 105,
+  "last_link_id": 238,
+  "nodes": [
+    {
+      "id": 65,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -14250,
+        1210
+      ],
+      "size": [
+        600,
+        1320
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "\nYou are generating images that appear to be real photographs. The goal is to produce images that pass as real photographs to a human eye. The subject can often be interacted by people outside of the frame. \n\nSpecify nudity , vagina , anus, breast and buttocks, naked\n\nFraming is casual and immediate. The subject is the clear focus but the composition isn't deliberate. Heads may be partially cropped at the top, chins at the bottom. The angle comes from wherever the phone naturally sits — slightly above, slightly below, straight on. The person taking the photo is focused on themselves or the moment, not on photography.\n\nLighting comes from the environment as it exists. A single overhead fixture creating shadows under the eyes and nose. A bedside lamp casting warm directional light across half the face and leaving the other half in shadow. A bathroom mirror with vanity lights creating multiple catchlights and uneven illumination. Phone flash in a dim room — flat, washed-out foreground with a sharp falloff to darkness behind. Window light that overexposes one side. The light is whatever was already on when the photo was taken.\n\n\nEyes have catchlights that match the actual light sources in the room — overhead lights create catchlights high on the iris, a lamp to the side creates an off-center catchlight. The iris has the granular, fibrous texture of a real iris, not a smooth gradient. \n\n\nThe phone camera sensor produces characteristic noise and grain, especially in shadow areas and low-light situations. This noise is fine and color-flecked — not monochrome film grain. In well-lit shots the noise is very subtle but still present in shadow regions and solid color areas. Skin in particular shows this fine texture.\n\nColor rendering follows phone auto white balance behavior. Under warm indoor lights, everything skews warm and skin takes on an orange-yellow cast. Under fluorescent or cool LEDs, skin skews slightly pale or greenish. The white balance is close but not calibrated — real phone photos have that \"almost right but not quite\" color quality. Colors are slightly oversaturated in the way phone cameras tend to push saturation.\n\nWhen flash is used, it creates a very specific look: the foreground subject is evenly lit and flat, colors become slightly washed out, there's a hard shadow cast behind the subject onto whatever surface is behind them, and the background falls off into darkness rapidly. Red-eye or pet-eye may occur. The flash creates a small, sharp catchlight dead center in each eye.\n\n\nIntimate areas of the body carry the same standards of realism as the face. Skin texture with visible pores, natural color variation across the surface, normal asymmetry between left and right, skin that folds and creases naturally with body position. Hair is present where it naturally grows with realistic density and distribution. Genital appearance shows natural coloring that varies across the surface, visible texture, normal asymmetry, the specific anatomical details that differentiate real tissue from idealized representation.\n\nClothing, when present, shows real fabric behavior — wrinkles at stress points, slight sagging, straps that aren't perfectly parallel, hems that curl, the way fabric actually drapes on a body that's sitting or lying down. Colors may be slightly faded from washing.\n\n\n\nonly output the prompt as one natural language paragraph nothing else\n\nshe has long black hair, grey eyes,skinny waist, wide hips,trigger word: lourt4, no tattoos, young woman, \n\nClothing, when present, shows real fabric behavior — wrinkles at stress points, slight sagging, straps that aren't perfectly parallel, hems that curl, the way fabric actually drapes on a body that's sitting or lying down. Colors may be slightly faded from washing.\n\n\nonly output the prompt in json formatting no ```json\n0-1000 normalized bounding boxes\n\nexample output: \n\n{\n  \"high_level_description\": \"A cinematic 35mm film photograph of a lone wooden sailboat on a glassy lake at sunset, the boat on a right-third vertical with the horizon at the lower third, in a cool muted blue palette.\",\n  \"style_description\": {\n    \"aesthetics\": \"Cinematic, minimal, serene, quiet stillness.\",\n    \"lighting\": \"Cool overcast dusk light with a small warm sun low at the horizon; muted and low-contrast.\",\n    \"photo\": \"35mm motion-picture film still, 16:9 framing, subtle grain, slightly desaturated.\",\n    \"medium\": \"Photograph.\",\n\n  },\n  \"compositional_deconstruction\": {\n    \"background\": \"Windless evening on a wide lake; horizon at the lower third. Dusty blue-violet sky with a small amber sun at the horizon and a thin gold streak across the glassy teal water. Subtle 35mm grain.\",\n    \"elements\": [\n      { \"type\": \"obj\", \"bbox\": [y_min, x_min, y_max, x_max],\n        \"desc\": \"Lone wooden sailboat on the right-third vertical in the midground, dark varnished hull and a single tall mast with a slack white sail hanging limp in the still air. No visible crew.\" },\n      { \"type\": \"obj\",\n        \"desc\": \"Mirror-perfect reflection of the sailboat and its mast doubling straight down into the glassy teal water directly beneath the hull.\" },\n      { \"type\": \"obj\",\n        \"desc\": \"Out-of-focus reed tips slicing into the lower-left foreground, soft dark blades against the teal water, blurred from proximity to the camera.\" }\n    ]\n  }\n}"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "VAELoader",
+      "pos": [
+        -10420,
+        1810
+      ],
+      "size": [
+        270,
+        70
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            119,
+            188
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "wan_2.1_vae.safetensors"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "EmptyLatentImage",
+      "pos": [
+        -9670,
+        2490
+      ],
+      "size": [
+        270,
+        170
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 27
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 28
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            122
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "EmptyLatentImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        1024,
+        1440,
+        1
+      ]
+    },
+    {
+      "id": 69,
+      "type": "Krea2ControlImageEncode",
+      "pos": [
+        -9630,
+        1420
+      ],
+      "size": [
+        330,
+        250
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "control_image",
+          "type": "IMAGE",
+          "link": 147
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 119
+        },
+        {
+          "name": "latent",
+          "shape": 7,
+          "type": "LATENT",
+          "link": 122
+        }
+      ],
+      "outputs": [
+        {
+          "name": "control_latent",
+          "type": "LATENT",
+          "links": [
+            124,
+            234
+          ]
+        },
+        {
+          "name": "encoded_control_image",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "aux_id": "facok/comfyui-krea2-controlnet",
+        "ver": "79ebfd3bd80d2180b334dd7ce57f3c9ddaa0848f",
+        "Node name for S&R": "Krea2ControlImageEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "match_latent_size",
+        "lanczos",
+        "disabled",
+        "rgb",
+        "none",
+        false,
+        "independent_images"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -9210,
+        1420
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 210
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "widget": {
+            "name": "text"
+          },
+          "link": 209
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            232
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "A young woman with long black hair pulled back in a ponytail and piercing grey eyes stands leaning casually against an old wooden door with louvered shutters, framed by rough stone walls and a rustic wooden lintel above. She has wide hips and large breasts, wearing a pink braided bikini top and a sheer pink sarong wrapped around her waist that drapes loosely to reveal her legs. Sunlight hits her skin from the side, creating visible pores and natural texture on her face and body, with slight asymmetry in her features. Her grey eyes have bright catchlights reflecting the sun. The fabric of her clothing shows realistic wrinkles at stress points where it folds against her hips. The image has a casual phone camera aesthetic with subtle grain in the shadows and slightly warm tones from the sunlight hitting the stone and wood behind her."
+      ],
+      "color": "#009933"
+    },
+    {
+      "id": 37,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -9210,
+        1680
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 51
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            233
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "blurry, volumetric lighting, god rays, cinematic lighting, soft shadows, glowing eyes, unnatural colors, neon lights, double exposure, halo effect, light leaks, overexposed, plastic skin, rubbery, waxy, sallow, mottled, blemished, floating hair, glowing eyes, smooth texture, perfect symmetry, cartoonish, neon lights, halo effect"
+      ],
+      "color": "#009933"
+    },
+    {
+      "id": 92,
+      "type": "ImagePass",
+      "pos": [
+        -10240,
+        2800
+      ],
+      "size": [
+        140,
+        30
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 237
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            170,
+            171
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.3.4",
+        "Node name for S&R": "ImagePass",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 94,
+      "type": "VAEDecode",
+      "pos": [
+        -9190,
+        1920
+      ],
+      "size": [
+        140,
+        50
+      ],
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 235
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 188
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            190
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.26.0",
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 22,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -11020,
+        2290
+      ],
+      "size": [
+        550,
+        410
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 187
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            209
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "\n\nA young woman with long black hair and striking grey eyes stands in a full-body shot against a plain white wall, wearing an intricate Rayquaza-themed cosplay that features deep blue and purple fabric with gold trim accents, dragon-like wing details on her back, and perhaps a tail or horns. Her body type emphasizes wide hips and large breasts, creating a curvaceous silhouette as she poses casually with the phone camera held at a natural angle from slightly above, capturing fine grain and color-flecked noise in the shadows of her costume folds and skin texture. The white wall provides even lighting that gives her skin a warm orange-yellow cast under auto white balance, while colors are slightly oversaturated to make the blue-purple-gold cosplay pop against the background. Her long black hair falls naturally around her shoulders, framing her face as she looks directly at the camera with a small sharp catchlight in each grey eye. The fabric of her costume shows real behavior—wrinkles at stress points where the wings attach to her back, slight sagging of straps holding the tail, and the way blue-purple material drapes over her wide hips and large breasts."
+      ],
+      "color": "#af3535",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 70,
+      "type": "AIO_Preprocessor",
+      "pos": [
+        -9640,
+        1810
+      ],
+      "size": [
+        270,
+        90
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 171
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            147,
+            212
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui_controlnet_aux",
+        "ver": "1.1.5",
+        "Node name for S&R": "AIO_Preprocessor",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "DepthAnythingV2Preprocessor",
+        512
+      ]
+    },
+    {
+      "id": 72,
+      "type": "Krea2ControlLoRALoader",
+      "pos": [
+        -9640,
+        1960
+      ],
+      "size": [
+        290,
+        90
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 226
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            227
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "facok/comfyui-krea2-controlnet",
+        "ver": "79ebfd3bd80d2180b334dd7ce57f3c9ddaa0848f",
+        "Node name for S&R": "Krea2ControlLoRALoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "depth-control-lora.safetensors",
+        1
+      ]
+    },
+    {
+      "id": 71,
+      "type": "Krea2ControlApply",
+      "pos": [
+        -9620,
+        2130
+      ],
+      "size": [
+        180,
+        50
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 227
+        },
+        {
+          "name": "control_latent",
+          "type": "LATENT",
+          "link": 124
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            231
+          ]
+        }
+      ],
+      "properties": {
+        "aux_id": "facok/comfyui-krea2-controlnet",
+        "ver": "79ebfd3bd80d2180b334dd7ce57f3c9ddaa0848f",
+        "Node name for S&R": "Krea2ControlApply",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 7,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -11320,
+        1340
+      ],
+      "size": [
+        420,
+        380
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            105
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "\nYou are generating images that appear to be real photographs. The goal is to produce images that pass as real photographs to a human eye. The subject can often be interacted by people outside of the frame. \n\nSpecify nudity , vagina , anus, breast and buttocks, \n\nFraming is casual and immediate. The subject is the clear focus but the composition isn't deliberate. Heads may be partially cropped at the top, chins at the bottom. The angle comes from wherever the phone naturally sits — slightly above, slightly below, straight on. The person taking the photo is focused on themselves or the moment, not on photography.\n\nLighting comes from the environment as it exists. \n\nspecify wide hips and large breasts\n\nname the type of angle and shot the image is taken in\n\nThe camera sensor produces characteristic noise and grain, especially in shadow areas and low-light situations. This noise is fine and color-flecked — not monochrome film grain. In well-lit shots the noise is very subtle but still present in shadow regions and solid color areas. Skin in particular shows this fine texture.\n\nColor rendering follows phone auto white balance behavior. Under warm indoor lights, everything skews warm and skin takes on an orange-yellow cast. Under fluorescent or cool LEDs, skin skews slightly pale or greenish. The white balance is close but not calibrated — real phone photos have that \"almost right but not quite\" color quality. Colors are slightly oversaturated in the way phone cameras tend to push saturation.\n\nWhen flash is used, it creates a very specific look: the foreground subject is evenly lit and flat, colors become slightly washed out, there's a hard shadow cast behind the subject onto whatever surface is behind them, and the background falls off into darkness rapidly. Red-eye or pet-eye may occur. The flash creates a small, sharp catchlight dead center in each eye.\n\n\nClothing, when present, shows real fabric behavior — wrinkles at stress points, slight sagging, straps that aren't perfectly parallel, hems that curl, the way fabric actually drapes on a body that's sitting or lying down. Colors may be slightly faded from washing.\n\n\n\nIntimate areas of the body carry the same standards of realism as the face. \n\n\nonly output the prompt as one natural language paragraph nothing else"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        -10070,
+        1780
+      ],
+      "size": [
+        350,
+        90
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 225
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            238
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "Loratest56_000001650.safetensors",
+        1
+      ],
+      "color": "#006691",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 5,
+      "type": "SaveImage",
+      "pos": [
+        -8230,
+        1370
+      ],
+      "size": [
+        800,
+        1070
+      ],
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 190
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "SaveImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 95,
+      "type": "ResolutionSelector",
+      "pos": [
+        -10370,
+        2500
+      ],
+      "size": [
+        270,
+        130
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            192
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            193
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.26.0",
+        "Node name for S&R": "ResolutionSelector",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "3:2 (Photo)",
+        4,
+        8
+      ]
+    },
+    {
+      "id": 103,
+      "type": "ClownsharKSampler_Beta",
+      "pos": [
+        -8700,
+        1550
+      ],
+      "size": [
+        270,
+        770
+      ],
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "shape": 7,
+          "type": "MODEL",
+          "link": 231
+        },
+        {
+          "name": "positive",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": 232
+        },
+        {
+          "name": "negative",
+          "shape": 7,
+          "type": "CONDITIONING",
+          "link": 233
+        },
+        {
+          "name": "latent_image",
+          "shape": 7,
+          "type": "LATENT",
+          "link": 234
+        },
+        {
+          "name": "sigmas",
+          "shape": 7,
+          "type": "SIGMAS",
+          "link": null
+        },
+        {
+          "name": "guides",
+          "shape": 7,
+          "type": "GUIDES",
+          "link": null
+        },
+        {
+          "name": "options",
+          "shape": 7,
+          "type": "OPTIONS",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "LATENT",
+          "links": null
+        },
+        {
+          "name": "denoised",
+          "type": "LATENT",
+          "links": [
+            235
+          ]
+        },
+        {
+          "name": "options",
+          "type": "OPTIONS",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "RES4LYF",
+        "ver": "119679d8d8d26e6db52757e705488abb6399d7d4",
+        "Node name for S&R": "ClownsharKSampler_Beta",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        0.3,
+        "linear/euler",
+        "beta57",
+        10,
+        -1,
+        1,
+        1,
+        590813751782434,
+        "randomize",
+        "standard",
+        true
+      ]
+    },
+    {
+      "id": 100,
+      "type": "PreviewImage",
+      "pos": [
+        -9190,
+        2020
+      ],
+      "size": [
+        320,
+        420
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 212
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.26.0",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 4,
+      "type": "ICYLMStudioMultimodalPrompt",
+      "pos": [
+        -10870,
+        1340
+      ],
+      "size": [
+        400,
+        880
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 236
+        },
+        {
+          "name": "frames",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "system_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "system_prompt"
+          },
+          "link": 105
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response_text",
+          "type": "STRING",
+          "links": [
+            187
+          ]
+        },
+        {
+          "name": "debug_json",
+          "type": "STRING",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ICYLMStudioMultimodalPrompt",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "http://192.168.2.20:1234",
+        "huihui-qwopus3.5-9b-v3-abliterated",
+        "",
+        "You are a helpful multimodal assistant.",
+        "Describe what you see and hear.",
+        false,
+        14080,
+        -1,
+        0,
+        0.2,
+        0.95,
+        8191,
+        603736039,
+        "fixed",
+        false,
+        true,
+        true,
+        120,
+        "",
+        8,
+        "evenly_spaced",
+        ""
+      ],
+      "color": "#009933"
+    },
+    {
+      "id": 10,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        -11310,
+        1780
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "PrimitiveStringMultiline",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "she has long black hair, grey eyes, young woman, specify wide hips and large breasts for her body type, \nfull body shot rayquaza themed intricate cosplay, in front of white wall"
+      ]
+    },
+    {
+      "id": 104,
+      "type": "LoadImage",
+      "pos": [
+        -11920,
+        1350
+      ],
+      "size": [
+        580,
+        800
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            236,
+            237
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "⚡Load Image⚡",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.26.0",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "-2660b990-380b-4871-88ee-bfbfa175560e.png",
+        "image"
+      ],
+      "color": "#009933"
+    },
+    {
+      "id": 17,
+      "type": "UNETLoader",
+      "pos": [
+        -10420,
+        1380
+      ],
+      "size": [
+        270,
+        140
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            221
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "UNETLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "krea2_turbo_fp8_scaled.safetensors",
+        "default"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "CLIPLoader",
+      "pos": [
+        -10410,
+        1580
+      ],
+      "size": [
+        260,
+        110
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            51,
+            210
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "CLIPLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "krea2",
+        "default"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "PathchSageAttentionKJ",
+      "pos": [
+        -10060,
+        1420
+      ],
+      "size": [
+        320,
+        120
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 221
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            224
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.3.4",
+        "Node name for S&R": "PathchSageAttentionKJ",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "auto",
+        true
+      ]
+    },
+    {
+      "id": 101,
+      "type": "ComfyUI-Krea2T-Enhancer",
+      "pos": [
+        -10070,
+        1620
+      ],
+      "size": [
+        290,
+        110
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 224
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            225
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-krea2t-enhancer",
+        "ver": "1.1.0",
+        "Node name for S&R": "ComfyUI-Krea2T-Enhancer",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        true,
+        0.45,
+        false
+      ]
+    },
+    {
+      "id": 78,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        -10070,
+        1940
+      ],
+      "size": [
+        350,
+        90
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 238
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            215
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "icyrealismKREA.safetensors",
+        1
+      ],
+      "color": "#006691",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 74,
+      "type": "LoraLoaderModelOnly",
+      "pos": [
+        -10060,
+        2100
+      ],
+      "size": [
+        350,
+        90
+      ],
+      "flags": {},
+      "order": 23,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 215
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            226
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.20.1",
+        "Node name for S&R": "LoraLoaderModelOnly",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "krea2filterbypass3.safetensors",
+        1
+      ],
+      "color": "#006691",
+      "bgcolor": "rgba(24,24,27,.9)"
+    },
+    {
+      "id": 16,
+      "type": "ImageResizeKJv2",
+      "pos": [
+        -10040,
+        2470
+      ],
+      "size": [
+        270,
+        350
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 170
+        },
+        {
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 192
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 193
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            27
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            28
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.3.4",
+        "Node name for S&R": "ImageResizeKJv2",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        1440,
+        1920,
+        "nearest-exact",
+        "resize",
+        "0, 0, 0",
+        "center",
+        2,
+        "cpu"
+      ]
+    },
+    {
+      "id": 105,
+      "type": "Note",
+      "pos": [
+        -11880,
+        2230
+      ],
+      "size": [
+        550,
+        150
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "BRUH",
+      "properties": {
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {}
+        }
+      },
+      "widgets_values": [
+        " ▄█   ▄████████    ▄████████    ▄█   ▄█▄  ▄█  ███    █▄  ▀█████████▄  \n███  ███    ███   ███    ███   ███ ▄███▀ ███  ███    ███   ███    ███ \n███▌ ███    █▀    ███    █▀    ███▐██▀   ███▌ ███    ███   ███    ███ \n███▌ ███         ▄███▄▄▄      ▄█████▀    ███▌ ███    ███  ▄███▄▄▄██▀  \n███▌ ███        ▀▀███▀▀▀     ▀▀█████▄    ███▌ ███    ███ ▀▀███▀▀▀██▄  \n███  ███    █▄    ███    █▄    ███▐██▄   ███  ███    ███   ███    ██▄ \n███  ███    ███   ███    ███   ███ ▀███▄ ███  ███    ███   ███    ███ \n█▀   ████████▀    ██████████   ███   ▀█▀ █▀   ████████▀  ▄█████████▀   BABY\n                               ▀                                      \n"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    }
+  ],
+  "links": [
+    [
+      6,
+      10,
+      0,
+      4,
+      4,
+      "STRING"
+    ],
+    [
+      27,
+      16,
+      1,
+      20,
+      0,
+      "INT"
+    ],
+    [
+      28,
+      16,
+      2,
+      20,
+      1,
+      "INT"
+    ],
+    [
+      51,
+      23,
+      0,
+      37,
+      0,
+      "CLIP"
+    ],
+    [
+      105,
+      7,
+      0,
+      4,
+      3,
+      "STRING"
+    ],
+    [
+      119,
+      15,
+      0,
+      69,
+      1,
+      "VAE"
+    ],
+    [
+      122,
+      20,
+      0,
+      69,
+      2,
+      "LATENT"
+    ],
+    [
+      124,
+      69,
+      0,
+      71,
+      1,
+      "LATENT"
+    ],
+    [
+      147,
+      70,
+      0,
+      69,
+      0,
+      "IMAGE"
+    ],
+    [
+      170,
+      92,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ],
+    [
+      171,
+      92,
+      0,
+      70,
+      0,
+      "IMAGE"
+    ],
+    [
+      187,
+      4,
+      0,
+      22,
+      0,
+      "STRING"
+    ],
+    [
+      188,
+      15,
+      0,
+      94,
+      1,
+      "VAE"
+    ],
+    [
+      190,
+      94,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      192,
+      95,
+      0,
+      16,
+      2,
+      "INT"
+    ],
+    [
+      193,
+      95,
+      1,
+      16,
+      3,
+      "INT"
+    ],
+    [
+      209,
+      22,
+      0,
+      18,
+      1,
+      "STRING"
+    ],
+    [
+      210,
+      23,
+      0,
+      18,
+      0,
+      "CLIP"
+    ],
+    [
+      212,
+      70,
+      0,
+      100,
+      0,
+      "IMAGE"
+    ],
+    [
+      215,
+      78,
+      0,
+      74,
+      0,
+      "MODEL"
+    ],
+    [
+      221,
+      17,
+      0,
+      6,
+      0,
+      "MODEL"
+    ],
+    [
+      224,
+      6,
+      0,
+      101,
+      0,
+      "MODEL"
+    ],
+    [
+      225,
+      101,
+      0,
+      11,
+      0,
+      "MODEL"
+    ],
+    [
+      226,
+      74,
+      0,
+      72,
+      0,
+      "MODEL"
+    ],
+    [
+      227,
+      72,
+      0,
+      71,
+      0,
+      "MODEL"
+    ],
+    [
+      231,
+      71,
+      0,
+      103,
+      0,
+      "MODEL"
+    ],
+    [
+      232,
+      18,
+      0,
+      103,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      233,
+      37,
+      0,
+      103,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      234,
+      69,
+      0,
+      103,
+      3,
+      "LATENT"
+    ],
+    [
+      235,
+      103,
+      1,
+      94,
+      0,
+      "LATENT"
+    ],
+    [
+      236,
+      104,
+      0,
+      4,
+      0,
+      "IMAGE"
+    ],
+    [
+      237,
+      104,
+      0,
+      92,
+      0,
+      "IMAGE"
+    ],
+    [
+      238,
+      11,
+      0,
+      78,
+      0,
+      "MODEL"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "controlnet",
+      "bounding": [
+        -9660,
+        1310,
+        390,
+        970
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Group",
+      "bounding": [
+        -10090,
+        1310,
+        410,
+        1070
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 3,
+      "title": "Group",
+      "bounding": [
+        -10430,
+        1310,
+        310,
+        590
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 4,
+      "title": "Group",
+      "bounding": [
+        -9220,
+        1310,
+        1820,
+        1170
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 0.700803933310739,
+      "offset": [
+        12472.431044947472,
+        -1096.555027941058
+      ]
+    },
+    "frontendVersion": "1.45.19",
+    "VHS_latentpreview": true,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "anomalous_hashes": {
+      "17_krea2_turbo_fp8_scaled.safetensors": {
+        "hash": "",
+        "size": 13141730784
+      },
+      "11_lourta2krea_copy_000000750.safetensors": {
+        "hash": "",
+        "size": 228587784
+      },
+      "3_icyrealismKREA.safetensors": {
+        "hash": "",
+        "size": 228587728
+      }
+    }
+  },
+  "version": 0.4
+}

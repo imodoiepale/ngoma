@@ -35,6 +35,15 @@ CLASS_PACK: dict[str, str] = {
         "MiniMaxH3RefModsAxis", "MiniMaxH3RefModApply", "MiniMaxH3RefModStepCurve",
         "MiniMaxH3RefModConfig", "MiniMaxH3RefModContinuumBridge", "MiniMaxH3RefModBridgeDisarm")},
     "SpectrumApplyMiniMaxH3": "xmarre/ComfyUI-Spectrum-MiniMax-H3",
+    # Icekiub's own packs (bought on Skool), read from each pack's NODE_CLASS_MAPPINGS on 2026-09-14.
+    **{k: "icekiub/ICYLM" for k in (
+        "ICYLMStudioModels", "ICYLMStudioMultimodalPrompt", "ICYLMStudioModelControl",
+        "ICYLMStudioSelectModel")},
+    **{k: "icekiub/betterimage_loader" for k in ("IcyImageLoader", "IcyMultiRefLoader")},
+    "IcyMegapixelResize": "icekiub/icymegapixelresize",
+    "IcyQwen3AllInOne": "icekiub/ComfyUI-IcyQwen3",
+    **{k: "icekiub/ComfyUI-icyTikTokDownloader" for k in (
+        "IcyTikTokDownloader", "IcyTikTokDownloaderSimple")},
 }
 
 CORE_TYPES = {

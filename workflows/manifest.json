@@ -1,5 +1,5 @@
 {
-  "count": 51,
+  "count": 72,
   "workflows": [
     {
       "sha256": "c0bbd994675e0134e55677c41ff3233582a70fb6d7f66cb8236b0228355b2fcf",
@@ -2698,6 +2698,1150 @@
         "ModelAttentionBackend",
         "ResolutionSelector"
       ]
+    },
+    {
+      "sha256": "c167e507687a3f35695c361209112723ffa7840b126c6dda1893b0089744c0ea",
+      "bytes": 132319,
+      "node_count": 101,
+      "node_types": [
+        "AIO_Preprocessor",
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "CLIPVisionEncode",
+        "CLIPVisionLoader",
+        "CheckpointLoaderSimple",
+        "ClownOptions_DetailBoost_Beta",
+        "ClownsharKSampler_Beta",
+        "ComfySwitchNode",
+        "DiffusionModelLoaderKJ",
+        "EmptyLatentImage",
+        "FirstFrameSelector",
+        "Float",
+        "GetImageRangeFromBatch",
+        "GetNode",
+        "ICYLMStudioMultimodalPrompt",
+        "ImagePass",
+        "ImageResizeKJv2",
+        "ImageStitch",
+        "ImpactSwitch",
+        "KSampler",
+        "Krea2ControlApply",
+        "Krea2ControlImageEncode",
+        "Krea2ControlLoRALoader",
+        "LoadImage",
+        "LoraLoaderModelOnly",
+        "MathExpression|pysssss",
+        "ModelSamplingSD3",
+        "Note",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "PrimitiveInt",
+        "PrimitiveNode",
+        "PrimitiveStringMultiline",
+        "RTXVideoSuperResolution",
+        "ResolutionSelector",
+        "SAM3_VideoTrack",
+        "SCAIL2ColoredMask",
+        "SaveImage",
+        "SetNode",
+        "ShowText|pysssss",
+        "UNETLoader",
+        "VAEDecode",
+        "VAELoader",
+        "VHS_LoadVideo",
+        "VHS_VideoCombine",
+        "VHS_VideoInfoLoaded",
+        "VHS_VideoInfoSource",
+        "WanSCAILToVideo",
+        "easy batchAnything",
+        "easy forLoopEnd",
+        "easy forLoopStart"
+      ],
+      "node_packs": [
+        "ComfyUI-MediaMixer",
+        "RES4LYF",
+        "comfy-core",
+        "comfyui-custom-scripts",
+        "comfyui-easy-use",
+        "comfyui-impact-pack",
+        "comfyui-kjnodes",
+        "comfyui-logic",
+        "comfyui-videohelpersuite",
+        "comfyui_controlnet_aux",
+        "comfyui_nvidia_rtx_nodes",
+        "facok/comfyui-krea2-controlnet",
+        "icekiub/ICYLM",
+        "kijai/ComfyUI-KJNodes"
+      ],
+      "models": [
+        "Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+        "Krea2_Raw_convrot_int8mixed.safetensors",
+        "Loratest56_000000600.safetensors",
+        "clip_vision_h.safetensors",
+        "depth-control-lora.safetensors",
+        "icyrealismKREA.safetensors",
+        "krea2Icydildov2_000004000.safetensors",
+        "krea2RealVae_v10.safetensors",
+        "krea2_turbo_lora_rank_64_bf16.safetensors",
+        "my_first_lora_v1_000000600_low_noise.safetensors",
+        "sam3.1_multiplex_fp16.safetensors",
+        "slop_twerk_LowNoise_merged3_7_v2.safetensors",
+        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "wan2.1_14B_SCAIL_2_fp8_scaled.safetensors",
+        "wan2.2_i2v_A14b_low_noise_lora_rank64_lightx2v_4step_1022.safetensors",
+        "wan_2.1_vae.safetensors"
+      ],
+      "unattributed_node_types": [
+        "PrimitiveNode"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=f8b082faef4e4ad6941bd7fc4162cb57",
+        "skool-file:Krea gen + scail motion control subs.json"
+      ],
+      "file": "icekiub/Krea_gen_+_scail_motion_control_subs.json",
+      "canonical": "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
+    },
+    {
+      "sha256": "0ab7d77255b8cb3a8edac85e75d0dc77b733493f7cef5f1e9798e042a7e7623f",
+      "bytes": 85438,
+      "node_count": 62,
+      "node_types": [
+        "864826b7-0005-4cae-8b68-c1b313d72d1a",
+        "BetterImageLoader",
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "CLIPVisionEncode",
+        "CLIPVisionLoader",
+        "CheckpointLoaderSimple",
+        "DiffusionModelLoaderKJ",
+        "GetImageRangeFromBatch",
+        "GetNode",
+        "ImageResizeKJv2",
+        "ImageStitch",
+        "ImpactSwitch",
+        "KSampler",
+        "LoraLoaderModelOnly",
+        "MathExpression|pysssss",
+        "ModelSamplingSD3",
+        "PreviewImage",
+        "PrimitiveInt",
+        "PrimitiveNode",
+        "SAM3_VideoTrack",
+        "SCAIL2ColoredMask",
+        "SetNode",
+        "VAEDecode",
+        "VAELoader",
+        "VHS_LoadVideo",
+        "VHS_VideoCombine",
+        "WanSCAILToVideo",
+        "easy batchAnything",
+        "easy forLoopEnd",
+        "easy forLoopStart"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-custom-scripts",
+        "comfyui-easy-use",
+        "comfyui-impact-pack",
+        "comfyui-kjnodes",
+        "comfyui-videohelpersuite",
+        "kijai/ComfyUI-KJNodes"
+      ],
+      "models": [
+        "11_Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors",
+        "153_my_first_lora_v1_000000600_low_noise.safetensors",
+        "74_wan2.1_14B_SCAIL_2_fp8_scaled.safetensors",
+        "86_sam3.1_multiplex_fp16.safetensors",
+        "Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors",
+        "clip_vision_h.safetensors",
+        "my_first_lora_v1_000000600_low_noise.safetensors",
+        "sam3.1_multiplex_fp16.safetensors",
+        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "wan2.1_14B_SCAIL_2_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors"
+      ],
+      "unattributed_node_types": [
+        "BetterImageLoader",
+        "PrimitiveNode"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=f8b082faef4e4ad6941bd7fc4162cb57",
+        "skool-file:Motion Control Icy -SUBS.json"
+      ],
+      "file": "icekiub/Motion_Control_Icy_-SUBS.json",
+      "canonical": "workflows/icekiub/Motion_Control_Icy_-SUBS.json"
+    },
+    {
+      "sha256": "14cd142f7d859064858215e20229258595b296907adf2e9a3ae4d641fe30ac5a",
+      "bytes": 258618,
+      "node_count": 127,
+      "node_types": [
+        "11009ff9-6e74-4187-8960-7578de422096",
+        "5a14a7b7-d035-4b17-95ea-155376545791",
+        "8acf1d0b-eb19-4ab6-9ecc-45b8d9ce7c84",
+        "BlockifyMask",
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "CLIPVisionEncode",
+        "CLIPVisionLoader",
+        "ContextWindowsManual",
+        "DWPreprocessor",
+        "DrawMaskOnImage",
+        "EmptyFlux2LatentImage",
+        "Fast Groups Bypasser (rgthree)",
+        "Frame Select",
+        "Frames Concat",
+        "GetImageSize",
+        "GetNode",
+        "ImageFromBatch",
+        "ImageResizeKJv2",
+        "ImageScaleBy",
+        "ImageStitch",
+        "ImpactSwitch",
+        "KSampler",
+        "Label (rgthree)",
+        "LoadImage",
+        "LoraLoaderModelOnly",
+        "MarkdownNote",
+        "MaskComposite",
+        "ModelSamplingSD3",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "PrimitiveInt",
+        "RIFE VFI",
+        "ReferenceLatent",
+        "SAM3Segmentation",
+        "SetNode",
+        "TrimVideoLatent",
+        "UNETLoader",
+        "VAEDecode",
+        "VAEEncode",
+        "VAELoader",
+        "VHS_LoadVideo",
+        "VHS_VideoCombine",
+        "VHS_VideoInfoLoaded",
+        "WanAnimateModelEnhancer",
+        "WanAnimateToVideoEnhanced",
+        "WanContextWindowsManual",
+        "easy imageCropFromMask",
+        "f2235c0c-fbaa-4ab8-a036-5bac660db085",
+        "ffa76bb4-c7e7-4fd8-9875-27a64d7f6c9e"
+      ],
+      "node_packs": [
+        "RES4LYF",
+        "comfy-core",
+        "comfyui-easy-use",
+        "comfyui-frame-interpolation",
+        "comfyui-impact-pack",
+        "comfyui-kjnodes",
+        "comfyui-videohelpersuite",
+        "comfyui_controlnet_aux",
+        "comfyui_sam3",
+        "wananimate-enhancer"
+      ],
+      "models": [
+        "Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors",
+        "Wan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors",
+        "WanAnimate_relight_lora_fp16.safetensors",
+        "clip_vision_h.safetensors",
+        "dw-ll_ucoco_384_bs5.torchscript.pt",
+        "flux-2-klein-9b-fp8.safetensors",
+        "flux-2-klein-9b.safetensors",
+        "flux2-vae.safetensors",
+        "lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
+        "nWan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors",
+        "nWanAnimate_relight_lora_fp16.safetensors",
+        "nclip_vision_h.safetensors",
+        "numt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "nwan_2.1_vae.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors",
+        "rife47.pt",
+        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "yolox_l.torchscript.pt"
+      ],
+      "unattributed_node_types": [
+        "Fast Groups Bypasser (rgthree)",
+        "GetNode",
+        "Label (rgthree)",
+        "SetNode"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=9675be8f118a42709eeee60fd464b05e",
+        "skool-file:ICY WAN ANIMATE - Face Only -prer- Icekiub V4.json"
+      ],
+      "file": "icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+      "canonical": "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json"
+    },
+    {
+      "sha256": "6a0a23bbf9b64b3d13c7c2c2703e36c12e3e815f95fe12d45f26692093b2c4c6",
+      "bytes": 258999,
+      "node_count": 127,
+      "node_types": [
+        "11009ff9-6e74-4187-8960-7578de422096",
+        "5a14a7b7-d035-4b17-95ea-155376545791",
+        "8acf1d0b-eb19-4ab6-9ecc-45b8d9ce7c84",
+        "BlockifyMask",
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "CLIPVisionEncode",
+        "CLIPVisionLoader",
+        "ContextWindowsManual",
+        "DWPreprocessor",
+        "DrawMaskOnImage",
+        "EmptyFlux2LatentImage",
+        "Fast Groups Bypasser (rgthree)",
+        "Frame Select",
+        "Frames Concat",
+        "GetImageSize",
+        "GetNode",
+        "ImageFromBatch",
+        "ImageResizeKJv2",
+        "ImageScaleBy",
+        "ImageStitch",
+        "ImpactSwitch",
+        "KSampler",
+        "Label (rgthree)",
+        "LoadImage",
+        "LoraLoaderModelOnly",
+        "MarkdownNote",
+        "ModelSamplingSD3",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "PrimitiveInt",
+        "RIFE VFI",
+        "ReferenceLatent",
+        "SAM3Segmentation",
+        "SetNode",
+        "TrimVideoLatent",
+        "UNETLoader",
+        "VAEDecode",
+        "VAEEncode",
+        "VAELoader",
+        "VHS_LoadVideo",
+        "VHS_VideoCombine",
+        "VHS_VideoInfoLoaded",
+        "WanAnimateModelEnhancer",
+        "WanAnimateToVideoEnhanced",
+        "WanContextWindowsManual",
+        "easy imageCropFromMask",
+        "f2235c0c-fbaa-4ab8-a036-5bac660db085",
+        "ffa76bb4-c7e7-4fd8-9875-27a64d7f6c9e"
+      ],
+      "node_packs": [
+        "RES4LYF",
+        "comfy-core",
+        "comfyui-easy-use",
+        "comfyui-frame-interpolation",
+        "comfyui-impact-pack",
+        "comfyui-kjnodes",
+        "comfyui-videohelpersuite",
+        "comfyui_controlnet_aux",
+        "comfyui_sam3",
+        "wananimate-enhancer"
+      ],
+      "models": [
+        "Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors",
+        "Wan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors",
+        "WanAnimate_relight_lora_fp16.safetensors",
+        "clip_vision_h.safetensors",
+        "dw-ll_ucoco_384_bs5.torchscript.pt",
+        "flux-2-klein-9b-fp8.safetensors",
+        "flux2-vae.safetensors",
+        "lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
+        "nWan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors",
+        "nWanAnimate_relight_lora_fp16.safetensors",
+        "nclip_vision_h.safetensors",
+        "numt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "nwan_2.1_vae.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors",
+        "rife47.pt",
+        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "yolox_l.torchscript.pt"
+      ],
+      "unattributed_node_types": [
+        "Fast Groups Bypasser (rgthree)",
+        "GetNode",
+        "Label (rgthree)",
+        "SetNode"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=9675be8f118a42709eeee60fd464b05e",
+        "skool-file:ICY WAN ANIMATE - Full Body Swap -prer- Icekiub V4.json"
+      ],
+      "file": "icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+      "canonical": "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json"
+    },
+    {
+      "sha256": "21ec1eb77ae3b83837b4db44b2b606cd64484d3842d7df2d77c412e7fd792cdc",
+      "bytes": 34795,
+      "node_count": 22,
+      "node_types": [
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "ClownsharKSampler_Beta",
+        "IcyTikTokDownloader",
+        "ImageResizeKJv2",
+        "ImageStitch",
+        "LoraLoaderModelOnly",
+        "ModelSamplingSD3",
+        "PathchSageAttentionKJ",
+        "RIFE VFI",
+        "UNETLoader",
+        "VAEDecode",
+        "VAEEncode",
+        "VAELoader",
+        "VHS_LoadVideo",
+        "VHS_LoadVideoPath",
+        "VHS_VideoCombine"
+      ],
+      "node_packs": [
+        "RES4LYF",
+        "comfy-core",
+        "comfyui-frame-interpolation",
+        "comfyui-kjnodes",
+        "comfyui-videohelpersuite",
+        "icekiub/ComfyUI-icyTikTokDownloader"
+      ],
+      "models": [
+        "WAN2.2t2vLOWNOISEFP8.safetensors",
+        "low_noise_model.safetensors",
+        "my_first_lora_v1_000000600_low_noise.safetensors",
+        "rife47.pt",
+        "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+        "wan_2.1_vae.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=0fd8fc2c84fb4611ac724894f2e7e379",
+        "skool-file:WANT2VLora Faceswap - Icekiub v1.json"
+      ],
+      "file": "icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+      "canonical": "workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json"
+    },
+    {
+      "sha256": "573f845255ee77523ae97196d66a80ab3f844c96aec2f5c0a0595d821a04dfa0",
+      "bytes": 52056,
+      "node_count": 26,
+      "node_types": [
+        "BasicGuider",
+        "BasicScheduler",
+        "CLIPLoader",
+        "EmptyLatentImage",
+        "ICYLMStudioMultimodalPrompt",
+        "IcyMegapixelResize",
+        "IcyMultiRefLoader",
+        "ImageUpscaleWithModel",
+        "KSamplerSelect",
+        "MarkdownNote",
+        "MiniMaxH3ReferenceToVideo",
+        "MiniMaxH3SigmaShift",
+        "PathchSageAttentionKJ",
+        "Power Lora Loader (rgthree)",
+        "PreviewImage",
+        "PrimitiveStringMultiline",
+        "RandomNoise",
+        "SamplerCustomAdvanced",
+        "ShowText|pysssss",
+        "UNETLoader",
+        "UpscaleModelLoader",
+        "VAEDecode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-custom-scripts",
+        "comfyui-kjnodes",
+        "icekiub/ICYLM",
+        "icekiub/betterimage_loader",
+        "icekiub/icymegapixelresize",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "1xSkinContrast-SuperUltraCompact.pt",
+        "H3-GalaxyAce.safetensors",
+        "MysticXXX_MMH3-V1.safetensors",
+        "VBVR_H3_attn_only.safetensors",
+        "h3-realism-people-t2v-i2v-r2v.safetensors",
+        "minimax_h3_audio_vae_fp32.safetensors",
+        "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+        "minimax_h3_hybrid_fl2va_ref2va_b25-49-int8.safetensors",
+        "minimax_h3_t1_image_vae_step1597.safetensors",
+        "minimax_h3_video_vae_fp16.safetensors",
+        "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=0d044c8f6d8c4e2c95a22d443f4ffd25",
+        "skool-file:H3 Icy image.json"
+      ],
+      "file": "icekiub/H3_Icy_image.json",
+      "canonical": "workflows/icekiub/H3_Icy_image.json"
+    },
+    {
+      "sha256": "d9f347b92aa0060df32314f0e167c26217543589dcc081fd97fa62d8dac08b9c",
+      "bytes": 25319,
+      "node_count": 20,
+      "node_types": [
+        "BasicScheduler",
+        "CFGGuider",
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "EmptyFlux2LatentImage",
+        "ImageResizeKJv2",
+        "KSamplerSelect",
+        "LoadImage",
+        "LoraLoaderModelOnly",
+        "MarkdownNote",
+        "PathchSageAttentionKJ",
+        "RandomNoise",
+        "ReferenceLatent",
+        "SamplerCustomAdvanced",
+        "SaveImage",
+        "UNETLoader",
+        "VAEDecode",
+        "VAEEncode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-kjnodes"
+      ],
+      "models": [
+        "QuadView_klein9b_v1.safetensors",
+        "flux-2-klein-9b-fp8.safetensors",
+        "flux2-vae.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=1acd0b35ad4649619e349a0b034bc0b2",
+        "skool-file:icy ref character sheet for minimax.json"
+      ],
+      "file": "icekiub/icy_ref_character_sheet_for_minimax.json",
+      "canonical": "workflows/icekiub/icy_ref_character_sheet_for_minimax.json"
+    },
+    {
+      "sha256": "0fa0a3e70feebff76645d40517ea029537453242a4bea1af61b2ed6a93249cd9",
+      "bytes": 20611,
+      "node_count": 19,
+      "node_types": [
+        "AIO_Preprocessor",
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "EmptyLatentImage",
+        "KSampler",
+        "Krea2ControlApply",
+        "Krea2ControlImageEncode",
+        "Krea2ControlLoRALoader",
+        "LoadImage",
+        "LoraLoaderModelOnly",
+        "PathchSageAttentionKJ",
+        "SaveImage",
+        "UNETLoader",
+        "VAEDecode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-kjnodes",
+        "comfyui_controlnet_aux",
+        "facok/comfyui-krea2-controlnet"
+      ],
+      "models": [
+        "Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+        "depth-control-lora.safetensors",
+        "icyrealismKREA.safetensors",
+        "krea2_turbo_fp8_scaled.safetensors",
+        "krea2_turbo_lora_rank_64_bf16.safetensors",
+        "krea2filterbypass3.safetensors",
+        "lourta2krea_copy_000000750.safetensors",
+        "wan_2.1_vae.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=71730f223d4b4fc8b919d882479edb39",
+        "skool-file:Krea2Icy -Subs 1.1.json"
+      ],
+      "file": "icekiub/Krea2Icy_-Subs_1.1.json",
+      "canonical": "workflows/icekiub/Krea2Icy_-Subs_1.1.json"
+    },
+    {
+      "sha256": "27413fa5a547829dd5af0c9492c1acceaedb7c424fd729bee31eeb13984fd2b3",
+      "bytes": 44099,
+      "node_count": 29,
+      "node_types": [
+        "AIO_Preprocessor",
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "ClownsharKSampler_Beta",
+        "ComfyUI-Krea2T-Enhancer",
+        "EmptyLatentImage",
+        "ICYLMStudioMultimodalPrompt",
+        "ImagePass",
+        "ImageResizeKJv2",
+        "Krea2ControlApply",
+        "Krea2ControlImageEncode",
+        "Krea2ControlLoRALoader",
+        "LoadImage",
+        "LoraLoaderModelOnly",
+        "Note",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "PrimitiveStringMultiline",
+        "ResolutionSelector",
+        "SaveImage",
+        "ShowText|pysssss",
+        "UNETLoader",
+        "VAEDecode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "RES4LYF",
+        "comfy-core",
+        "comfyui-custom-scripts",
+        "comfyui-kjnodes",
+        "comfyui-krea2t-enhancer",
+        "comfyui_controlnet_aux",
+        "facok/comfyui-krea2-controlnet",
+        "icekiub/ICYLM"
+      ],
+      "models": [
+        "11_lourta2krea_copy_000000750.safetensors",
+        "17_krea2_turbo_fp8_scaled.safetensors",
+        "3_icyrealismKREA.safetensors",
+        "Loratest56_000001650.safetensors",
+        "depth-control-lora.safetensors",
+        "icyrealismKREA.safetensors",
+        "krea2_turbo_fp8_scaled.safetensors",
+        "krea2filterbypass3.safetensors",
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=71730f223d4b4fc8b919d882479edb39",
+        "skool-file:Krea2icysubs- with Lm prompting.json"
+      ],
+      "file": "icekiub/Krea2icysubs-_with_Lm_prompting.json",
+      "canonical": "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json"
+    },
+    {
+      "sha256": "78ee20c53bb420f700db42f64536015dbde0453d8c4ed25d7c20a703851b6efb",
+      "bytes": 88336,
+      "node_count": 73,
+      "node_types": [
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "ClownsharKSampler_Beta",
+        "EmptyFlux2LatentImage",
+        "EmptyLatentImage",
+        "FaceDetailer",
+        "Fast Groups Bypasser (rgthree)",
+        "KSampler",
+        "LoadImage",
+        "LoraLoaderModelOnly",
+        "MarkdownNote",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "PrimitiveStringMultiline",
+        "ReferenceLatent",
+        "SaveImage",
+        "StringConcatenate",
+        "UNETLoader",
+        "UltralyticsDetectorProvider",
+        "VAEDecode",
+        "VAEEncode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "RES4LYF",
+        "comfy-core",
+        "comfyui-impact-pack",
+        "comfyui-impact-subpack",
+        "comfyui-kjnodes"
+      ],
+      "models": [
+        "Flux.Fazze-step00000200.safetensors",
+        "Qwen-Image-Lightning-8steps-V2.0-bf16.safetensors",
+        "Qwen25VL7B_nvfp4_fixedBF16.safetensors",
+        "face_yolov8m.pt",
+        "flux-2-klein-9b-fp8.safetensors",
+        "flux2-klein9b-lora-mlsharp-3d-repair.safetensors",
+        "flux2-vae.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors",
+        "qwen_image_2512_fp8_e4m3fn.safetensors",
+        "qwen_image_vae.safetensors"
+      ],
+      "unattributed_node_types": [
+        "Fast Groups Bypasser (rgthree)"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=2aed2feb6a1b4ba7b6765f216c75aad3",
+        "skool-file:Consistent Room WF v3.1- Icekiub Subs.json"
+      ],
+      "file": "icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+      "canonical": "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json"
+    },
+    {
+      "sha256": "c9be88126bdc859d334b425559ae1b5b3d458f4573405295cf13226116f32704",
+      "bytes": 29819,
+      "node_count": 26,
+      "node_types": [
+        "AIO_Preprocessor",
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "ClownsharKSampler_Beta",
+        "EmptySD3LatentImage",
+        "Image Comparer (rgthree)",
+        "LoadImage",
+        "LoraLoaderModelOnly",
+        "MarkdownNote",
+        "ModelPatchLoader",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "SaveImage",
+        "UNETLoader",
+        "VAEDecode",
+        "VAELoader",
+        "ZImageFunControlnet"
+      ],
+      "node_packs": [
+        "RES4LYF",
+        "comfy-core",
+        "comfyui-kjnodes",
+        "comfyui_controlnet_aux",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "LOURTA_000000700.safetensors",
+        "Z-Image-Fun-Controlnet-Union-2.1-lite.safetensors",
+        "Z-Image-Fun-Lora-Distill-8-Steps-2602-ComfyUI.safetensors",
+        "nicegirls_zimagebase.safetensors",
+        "qwen_3_4b.safetensors",
+        "ultrafluxvae.safetensors",
+        "z_image_bf16.safetensors",
+        "z_image_turbo_bf16.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=f2318be36a1f4a8394812dc40dbe283e",
+        "skool-file:zbase+zit+control - icekiub v1.json"
+      ],
+      "file": "icekiub/zbase+zit+control_-_icekiub_v1.json",
+      "canonical": "workflows/icekiub/zbase+zit+control_-_icekiub_v1.json"
+    },
+    {
+      "sha256": "454d2120649eff04b2648f373ae58c70a8112b9ab15f4ee3008179d1ff0c5455",
+      "bytes": 29707,
+      "node_count": 25,
+      "node_types": [
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "EmptyLatentImage",
+        "GetImageSize",
+        "Image Comparer (rgthree)",
+        "ImageResizeKJv2",
+        "ImageStitch",
+        "KSampler",
+        "LoadImage",
+        "LoraLoaderModelOnly",
+        "MarkdownNote",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "ReferenceLatent",
+        "UNETLoader",
+        "VAEDecode",
+        "VAEEncode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-kjnodes",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "Lora_lora_000000500.safetensors",
+        "flux-2-klein-9b-fp8.safetensors",
+        "flux2-vae.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=bc1f2b51bfca4cd4ac24ceda749f8b63",
+        "skool-file:Image to image Klein edit  - Icekiub v1.5.json"
+      ],
+      "file": "icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+      "canonical": "workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json"
+    },
+    {
+      "sha256": "b4404198e394324a3038c4b3ddfaa0e3e28eaaf606467deb8f2f50d5ce5ffb45",
+      "bytes": 30261,
+      "node_count": 25,
+      "node_types": [
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "EmptyLatentImage",
+        "GetImageSize",
+        "Image Comparer (rgthree)",
+        "ImageResizeKJv2",
+        "ImageStitch",
+        "KSampler",
+        "LoadImage",
+        "LoadImageListFromDir //Inspire",
+        "LoraLoaderModelOnly",
+        "MarkdownNote",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "ReferenceLatent",
+        "UNETLoader",
+        "VAEDecode",
+        "VAEEncode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-inspire-pack",
+        "comfyui-kjnodes",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "Lora_lora_000000500.safetensors",
+        "flux-2-klein-9b-fp8.safetensors",
+        "flux2-vae.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=bc1f2b51bfca4cd4ac24ceda749f8b63",
+        "skool-file:Image to image Klein edit - batch - Icekiub v1.5.json"
+      ],
+      "file": "icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+      "canonical": "workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json"
+    },
+    {
+      "sha256": "e005997094562903cb98fc6d56d574625e68c206d1fb45f7bf53a75915a7f9d5",
+      "bytes": 34424,
+      "node_count": 29,
+      "node_types": [
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "EmptyLatentImage",
+        "GetImageSize",
+        "Image Comparer (rgthree)",
+        "ImageResizeKJv2",
+        "ImageStitch",
+        "ImageUpscaleWithModel",
+        "KSampler",
+        "LoadImage",
+        "LoraLoaderModelOnly",
+        "MarkdownNote",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "ReferenceLatent",
+        "UNETLoader",
+        "UpscaleModelLoader",
+        "VAEDecode",
+        "VAEEncode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-kjnodes",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "RealESRGAN_x2plus.pt",
+        "flux-2-klein-9b-fp8.safetensors",
+        "flux2-vae.safetensors",
+        "head_swap_flux-klein_9b_000003500.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=bc1f2b51bfca4cd4ac24ceda749f8b63",
+        "skool-file:I2I no lora faceswap subs.json"
+      ],
+      "file": "icekiub/I2I_no_lora_faceswap_subs.json",
+      "canonical": "workflows/icekiub/I2I_no_lora_faceswap_subs.json"
+    },
+    {
+      "sha256": "668d451db8441c732e65ba5edf8da4b4c6ab6d167ed148187154ee8a9d756e74",
+      "bytes": 27825,
+      "node_count": 26,
+      "node_types": [
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "ConditioningZeroOut",
+        "EmptyLatentImage",
+        "ImageResizeKJv2",
+        "KSampler",
+        "LoadImage",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "ReferenceLatent",
+        "UNETLoader",
+        "VAEDecode",
+        "VAEEncode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-kjnodes"
+      ],
+      "models": [
+        "flux-2-klein-9b-fp8.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors",
+        "smallflux2.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=c3b29c12b1bd4cfd993b07a488aa3c9c",
+        "skool-file:Any Clothes 9B - Subs - Icekiub V1.3.json"
+      ],
+      "file": "icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+      "canonical": "workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json"
+    },
+    {
+      "sha256": "27432acec5f99aba9e64bd162c7c5f03ca24912e7de4c633538ac6e42b3afec8",
+      "bytes": 37761,
+      "node_count": 27,
+      "node_types": [
+        "CLIPTextEncode",
+        "CheckpointLoaderSimple",
+        "FaceDetailer",
+        "Fast Groups Bypasser (rgthree)",
+        "Image Comparer (rgthree)",
+        "ImageResizeKJv2",
+        "Label (rgthree)",
+        "LoadImageListFromDir //Inspire",
+        "PreviewImage",
+        "SaveImage",
+        "UltralyticsDetectorProvider"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-impact-pack",
+        "comfyui-impact-subpack",
+        "comfyui-inspire-pack",
+        "comfyui-kjnodes",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "adetailerFootYolov8x_v20.pt",
+        "assdetailer-seg.pt",
+        "female_breast-v4.2.pt",
+        "illustriousRealismBy_v10VAE.safetensors",
+        "pussyV2.pt"
+      ],
+      "unattributed_node_types": [
+        "Fast Groups Bypasser (rgthree)",
+        "Label (rgthree)"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=e32158db0a0c4115aed694f5f058268e",
+        "skool-file:NSFW BATCH SURGERY SUBS - ICEKIUB v1.json"
+      ],
+      "file": "icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+      "canonical": "workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json"
+    },
+    {
+      "sha256": "fc82b593a398733f00ec7fcc525be785c75ce36ba71c101684fd6a5163324430",
+      "bytes": 37695,
+      "node_count": 27,
+      "node_types": [
+        "CLIPTextEncode",
+        "CheckpointLoaderSimple",
+        "FaceDetailer",
+        "Fast Groups Bypasser (rgthree)",
+        "Image Comparer (rgthree)",
+        "ImageResizeKJv2",
+        "Label (rgthree)",
+        "LoadImage",
+        "PreviewImage",
+        "SaveImage",
+        "UltralyticsDetectorProvider"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-impact-pack",
+        "comfyui-impact-subpack",
+        "comfyui-kjnodes",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "adetailerFootYolov8x_v20.pt",
+        "assdetailer-seg.pt",
+        "female_breast-v4.2.pt",
+        "illustriousRealismBy_v10VAE.safetensors",
+        "pussyV2.pt"
+      ],
+      "unattributed_node_types": [
+        "Fast Groups Bypasser (rgthree)",
+        "Label (rgthree)"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=e32158db0a0c4115aed694f5f058268e",
+        "skool-file:NSFW SURGERY SUBS - ICEKIUB v1.json"
+      ],
+      "file": "icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json",
+      "canonical": "workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json"
+    },
+    {
+      "sha256": "f0fb6221fa24988bf2c23f4d6db8b28ba8a7dec5458439d3addcfa3c2bd29753",
+      "bytes": 15313,
+      "node_count": 12,
+      "node_types": [
+        "IcyQwen3AllInOne",
+        "Label (rgthree)",
+        "LoadImage",
+        "LoadImageListFromDir //Inspire",
+        "PreviewImage",
+        "PrimitiveString",
+        "SaveImageTextDataSetToFolder",
+        "ShowText|pysssss",
+        "StringConcatenate",
+        "VHS_LoadVideo"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-custom-scripts",
+        "comfyui-inspire-pack",
+        "comfyui-videohelpersuite",
+        "icekiub/ComfyUI-IcyQwen3"
+      ],
+      "models": [],
+      "unattributed_node_types": [
+        "Label (rgthree)"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=9506cbab61e945ef8bea735250dd3329",
+        "skool-file:AIO - Uncensored captioning workflow - subs - icekiub v1.5.json"
+      ],
+      "file": "icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+      "canonical": "workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json"
+    },
+    {
+      "sha256": "ad19ab57439812ce5302d3ada3fb13403bfef0f04742a6452264e05f855a4cb8",
+      "bytes": 20116,
+      "node_count": 16,
+      "node_types": [
+        "Batch Load Images",
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "EmptyLatentImage",
+        "GetImageSize",
+        "ImageStitch",
+        "KSampler (Efficient)",
+        "MarkdownNote",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "ReferenceLatent",
+        "SaveImage",
+        "UNETLoader",
+        "VAEEncode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-kjnodes",
+        "efficiency-nodes-comfyui",
+        "mikey_nodes"
+      ],
+      "models": [
+        "flux-2-klein-9b-fp8.safetensors",
+        "flux2-vae.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=7507a067aa2c4bf88ba7ff0bdf18d235",
+        "skool-file:KLEIN - batch watermark removal - ICEKIUB V1 (1).json"
+      ],
+      "file": "icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+      "canonical": "workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json"
+    },
+    {
+      "sha256": "a6f527e25412857173ea43fe6a88e73b295b115670dda79625de037904e4a7b0",
+      "bytes": 20531,
+      "node_count": 16,
+      "node_types": [
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "EmptyLatentImage",
+        "GetImageSize",
+        "ImageStitch",
+        "KSampler (Efficient)",
+        "LoadImage",
+        "MarkdownNote",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "ReferenceLatent",
+        "SaveImage",
+        "UNETLoader",
+        "VAEEncode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-kjnodes",
+        "efficiency-nodes-comfyui"
+      ],
+      "models": [
+        "flux-2-klein-9b-fp8.safetensors",
+        "flux2-vae.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=7507a067aa2c4bf88ba7ff0bdf18d235",
+        "skool-file:KLEIN - watermark removal - ICEKIUB V1 (1).json"
+      ],
+      "file": "icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+      "canonical": "workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json"
+    },
+    {
+      "sha256": "9d5485554ac2cbb4f1b873d325edf2e9bc7635df6d688db085bc4554114c7dab",
+      "bytes": 32486,
+      "node_count": 26,
+      "node_types": [
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "CheckpointLoaderSimple",
+        "ConditioningZeroOut",
+        "EmptyLatentImage",
+        "Fast Groups Bypasser (rgthree)",
+        "Image Comparer (rgthree)",
+        "ImageResizeKJv2",
+        "ImageScaleToTotalPixels",
+        "KSampler",
+        "KSampler (Efficient)",
+        "LoadImage",
+        "LoadImageListFromDir //Inspire",
+        "LoraLoaderModelOnly",
+        "MarkdownNote",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "ReferenceLatent",
+        "SaveImage",
+        "TextEncodeQwenImageEditPlus",
+        "UNETLoader",
+        "VAEDecode",
+        "VAEEncode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-inspire-pack",
+        "comfyui-kjnodes",
+        "efficiency-nodes-comfyui",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "Qwen-Rapid-AIO-NSFW-v23.safetensors",
+        "flux-2-klein-9b-fp8.safetensors",
+        "flux2-vae.safetensors",
+        "klein_snofs_v1_1.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors"
+      ],
+      "unattributed_node_types": [
+        "Fast Groups Bypasser (rgthree)"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=7f0721ddf593421d90a499affa310c9e",
+        "skool-file:QWEN IMAGE UNLEASHED ICEKIUB SUBS - v2.json"
+      ],
+      "file": "icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+      "canonical": "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json"
     }
   ]
 }

@@ -1,0 +1,24 @@
+# ComfyUI-IcyQwen3 Requirements
+# Qwen3-VL Abliterated Model Support
+
+# Core dependencies
+transformers>=4.57.0
+accelerate>=0.26.0
+safetensors>=0.4.0
+
+# For image/video processing
+pillow>=10.0.0
+numpy>=1.24.0
+
+# For quantization support (optional but recommended)
+bitsandbytes>=0.42.0
+
+# For faster video loading (optional)
+# decord>=0.6.0  # Uncomment if you need faster video processing
+
+# Flash Attention 2 (optional, for speed)
+# flash-attn>=2.5.0  # Uncomment if your GPU supports it (Ampere+)
+
+# Note: torch and cuda are expected to be installed by ComfyUI
+# The qwen-vl-utils package is not needed for Qwen3-VL as the 
+# processor handles everything directly
