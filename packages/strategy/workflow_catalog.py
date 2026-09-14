@@ -185,7 +185,7 @@ def render(data: dict[str, Any]) -> str:
         be = n["backend"]
         runs = {"comfy": f"ComfyUI `{be.get('workflow')}`", "python": f"studio code `{be.get('module')}`",
                 "publish": f"publisher `{be.get('module')}`", "router": "hosted model (OpenRouter)", "input": "you provide it",
-                "brand": "brand.yaml", "gap": f"not runnable yet: {be.get('reason')}"}[be["kind"]]
+                "brand": "brand.yaml", "human": "a person decides", "gap": f"not runnable yet: {be.get('reason')}"}[be["kind"]]
         L.append(f"| **{n['label']}** (`{n['kind']}`) | {runs} | {', '.join(sorted(data['ideas_by_kind'].get(n['kind'], []))) or '—'} |")
     return "\n".join(L).rstrip() + "\n"
 

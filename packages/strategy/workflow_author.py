@@ -157,6 +157,18 @@ def _slug(title: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")[:60] or "workflow"
 
 
+RUN_MODES = ("dry-run", "stage-approval", "auto")
+
+
+def _node_key(node: dict[str, Any]) -> tuple[Any, ...]:
+    """What makes two nodes of one kind distinct: the scene, shot, variant and role they serve.
+
+    A brief or an idea never sets these, so those workflows keep one node per kind. The
+    director engine sets them, so a workflow can hold twenty angle nodes of one generator."""
+    d = node.get("data") or {}
+    return (node["kind"], d.get("scene"), d.get("shot"), d.get("variant"), d.get("role"))
+
+
 def author(steps: list[str], title: str, client: str, source: dict[str, Any],
            language: str | None = None, cat: dict[str, Any] | None = None) -> dict[str, Any]:
     cat = cat or load_catalog()
@@ -220,7 +232,7 @@ def author(steps: list[str], title: str, client: str, source: dict[str, Any],
             nodes.append(node)
             gaps.append({"node": node["id"], "step": step, "reason": f"no catalogue node runs '{step}' yet"})
             continue
-        if any(n["kind"] == spec["kind"] for n in nodes):
+        if any(_node_key(n) == (spec["kind"], None, None, None, None) for n in nodes):
             continue
         connect(add(spec["kind"]))
 
@@ -251,6 +263,70 @@ def layout(nodes: list[dict[str, Any]], edges: list[dict[str, Any]], y0: int = 8
         col = depth[n["id"]]
         rows[col] = rows.get(col, 0) + 1
         n["position"] = {"x": 80 + col * 320, "y": y0 + (rows[col] - 1) * 210}
+
+
+def _depths(nodes: list[dict[str, Any]], edges: list[dict[str, Any]]) -> dict[str, int]:
+    depth = {n["id"]: 0 for n in nodes}
+    for _ in range(len(nodes)):
+        changed = False
+        for e in edges:
+            if e["source"] in depth and e["target"] in depth and depth[e["source"]] + 1 > depth[e["target"]]:
+                depth[e["target"]] = depth[e["source"]] + 1
+                changed = True
+        if not changed:
+            break
+    return depth
+
+
+def layout_lanes(nodes: list[dict[str, Any]], edges: list[dict[str, Any]],
+                 stages: list[dict[str, Any]], y0: int = 80) -> None:
+    """One horizontal lane per stage, in stage order; inside a lane, left to right by depth.
+
+    Nodes with no stage go in a lane of their own at the bottom. Rows within a lane are
+    210 px apart, lanes 260 px apart plus whatever the tallest lane needs."""
+    order = {s["id"]: i for i, s in enumerate(sorted(stages, key=lambda s: s.get("order", 0)))}
+    depth = _depths(nodes, edges)
+    lanes: dict[int, list[dict[str, Any]]] = {}
+    for n in nodes:
+        lanes.setdefault(order.get((n.get("data") or {}).get("stage"), len(order)), []).append(n)
+    y = y0
+    for lane in sorted(lanes):
+        rows: dict[int, int] = {}
+        for n in lanes[lane]:
+            col = depth[n["id"]]
+            rows[col] = rows.get(col, 0) + 1
+            n["position"] = {"x": 80 + col * 320, "y": y + (rows[col] - 1) * 210}
+        y += 260 + (max(rows.values()) - 1) * 210
+
+
+def _cycle(nodes: list[dict[str, Any]], edges: list[dict[str, Any]]) -> list[str] | None:
+    out: dict[str, list[str]] = {n["id"]: [] for n in nodes}
+    for e in edges:
+        if e["source"] in out and e["target"] in out:
+            out[e["source"]].append(e["target"])
+    state: dict[str, int] = {}
+    path: list[str] = []
+
+    def visit(v: str) -> list[str] | None:
+        state[v] = 1
+        path.append(v)
+        for w in out[v]:
+            if state.get(w) == 1:
+                return path[path.index(w):] + [w]
+            if w not in state:
+                found = visit(w)
+                if found:
+                    return found
+        path.pop()
+        state[v] = 2
+        return None
+
+    for v in out:
+        if v not in state:
+            found = visit(v)
+            if found:
+                return found
+    return None
 
 
 # ---------------------------------------------------------------- combining
@@ -397,6 +473,19 @@ def validate(wf: dict[str, Any], cat: dict[str, Any] | None = None) -> list[str]
             problems.append(f"{n['id']}: ComfyUI workflow {be['workflow']} is not in workflows/manifest.json")
         if be["kind"] == "gap" and n["id"] not in declared_gaps:
             problems.append(f"{n['id']}: {n['kind']} has no backend but is not declared as a gap")
+        if be["kind"] == "human" and spec.get("category") != "decide":
+            problems.append(f"{n['id']}: only a decide step may have a human backend")
+        if spec.get("category") == "decide":
+            k = (n.get("data") or {}).get("params", {}).get("k")
+            feeders = [ids[e["source"]] for e in wf.get("edges", []) if e["target"] == n["id"] and e["source"] in ids]
+            offered = sum(int((f.get("data") or {}).get("variant_count") or 1) for f in feeders)
+            if feeders and isinstance(k, (int, float)) and k > offered:
+                problems.append(f"{n['id']}: asks to keep {int(k)} but only {offered} candidate(s) feed it")
+    if wf.get("run_mode") is not None and wf["run_mode"] not in RUN_MODES:
+        problems.append(f"run_mode must be one of {', '.join(RUN_MODES)}")
+    loop = _cycle(wf.get("nodes", []), wf.get("edges", []))
+    if loop:
+        problems.append("steps feed back into themselves: " + " -> ".join(loop))
     for e in wf.get("edges", []):
         s, t = ids.get(e["source"]), ids.get(e["target"])
         if not s or not t:

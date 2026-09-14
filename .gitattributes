@@ -1,3 +1,7 @@
 # Workflow JSON is hashed byte-for-byte in workflows/manifest.json. With core.autocrlf the
 # working copy gets CRLF on checkout, the hash changes, and every workflow reads as tampered.
 workflows/** -text
+
+# generated text kept LF so regeneration tests compare content, not line endings
+docs/diagrams/ideas/*.json text eol=lf
+docs/diagrams/ideas/*.html text eol=lf

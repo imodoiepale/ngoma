@@ -28,7 +28,7 @@ function StudioNode({ data, selected }) {
       </div>
       <div className="snode-preview" style={{ "--out": colour(outType) }}>
         <span>{types[outType]?.label || "Result"}</span>
-        <small>{ready ? { input: "You provide", brand: "Brand kit", comfy: "ComfyUI", router: "Hosted model", python: "Studio code", publish: "Draft" }[spec.backend.kind] : "Not runnable yet"}</small>
+        <small>{ready ? { input: "You provide", brand: "Brand kit", comfy: "ComfyUI", router: "Hosted model", python: "Studio code", publish: "Draft", human: "You choose" }[spec.backend.kind] : "Not runnable yet"}</small>
       </div>
       <div className="snode-ports">
         <div className="col">

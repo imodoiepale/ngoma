@@ -42,7 +42,8 @@ def test_one_ir_per_idea_and_nothing_else():
 def test_ir_regenerates_byte_identically(idea_id):
     row = ROWS[idea_id]
     ir = d.build(row.idea, row, d.load_template(idea_id), CATALOG)
-    assert ir_path(idea_id).read_bytes() == d.dumps(ir).encode("utf-8"), \
+    # git may hand the file back with CRLF on Windows; the content is what must not drift
+    assert ir_path(idea_id).read_bytes().replace(b"\r\n", b"\n") == d.dumps(ir).encode("utf-8"), \
         f"{idea_id} drifted; run: uv run --quiet --with pyyaml python packages/strategy/idea_diagrams.py --deliver"
 
 

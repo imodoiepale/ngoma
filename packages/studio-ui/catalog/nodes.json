@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "note": "One node catalogue for the studio canvas and packages/strategy/workflow_author.py. A node's backend says what actually runs it: a ComfyUI workflow from workflows/manifest.json, a hosted router profile, a Python module in this repo, a publisher, or `gap` when nothing in the studio can do it yet. Gaps are shown, never faked.",
+  "note": "One node catalogue for the studio canvas and packages/strategy/workflow_author.py. A node's backend says what actually runs it: a ComfyUI workflow from workflows/manifest.json, a hosted router profile, a Python module in this repo, a publisher, `human` for a decision only a person makes, or `gap` when nothing in the studio can do it yet. Gaps are shown, never faked.",
   "types": {
     "text": {"label": "Text", "color": "#E2BE6A"},
     "image": {"label": "Image", "color": "#7DB4F5"},
@@ -16,7 +16,8 @@
     {"id": "edit", "label": "Edit"},
     {"id": "brand", "label": "Brand and copy"},
     {"id": "voice", "label": "Voice"},
-    {"id": "publish", "label": "Publish"}
+    {"id": "publish", "label": "Publish"},
+    {"id": "decide", "label": "Decide"}
   ],
   "nodes": [
     {"kind": "brief", "label": "Brief", "category": "inputs", "blurb": "What this piece should say and to whom",
@@ -248,7 +249,16 @@
      "backend": {"kind": "comfy", "workflow": "icekiub/Motion_Control_Icy_-SUBS.json"}, "consent": true, "steps": ["motion-control", "scail2-icy"]},
     {"kind": "wan-lora-faceswap", "label": "Video face swap (WAN LoRA)", "category": "generate", "blurb": "WAN 2.2 T2V low-noise character LoRA over a source clip",
      "inputs": [{"id": "video", "type": "video"}, {"id": "character", "type": "character"}], "outputs": [{"id": "video", "type": "video"}], "params": [],
-     "backend": {"kind": "comfy", "workflow": "icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json"}, "consent": true, "steps": ["wan-lora-faceswap", "video-faceswap"]}
+     "backend": {"kind": "comfy", "workflow": "icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json"}, "consent": true, "steps": ["wan-lora-faceswap", "video-faceswap"]},
+
+    {"kind": "pick", "label": "Your pick", "category": "decide", "blurb": "Choose the keepers from the candidates; nothing downstream runs until you do",
+     "inputs": [{"id": "candidates", "type": "image"}], "outputs": [{"id": "chosen", "type": "image"}],
+     "params": [{"key": "k", "label": "How many to keep", "type": "number", "default": 5}],
+     "backend": {"kind": "human"}, "steps": ["pick", "pick-images"]},
+    {"kind": "pick-video", "label": "Your pick (video)", "category": "decide", "blurb": "Choose the clips to keep",
+     "inputs": [{"id": "candidates", "type": "video"}], "outputs": [{"id": "chosen", "type": "video"}],
+     "params": [{"key": "k", "label": "How many to keep", "type": "number", "default": 3}],
+     "backend": {"kind": "human"}, "steps": ["pick-video", "pick-clips"]}
   ],
   "media_ports": {"note": "Ports named `media` accept image or video.", "accepts": ["image", "video"]}
 }

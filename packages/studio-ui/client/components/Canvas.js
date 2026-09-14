@@ -17,7 +17,9 @@ function toFlow(wf, byKind, types) {
     id: n.id,
     type: "studio",
     position: n.position,
-    data: { kind: n.kind, params: n.data?.params || {}, step: n.data?.step, part: n.data?.part, spec: byKind[n.kind] || null, types, gap: gapNodes.has(n.id) },
+    // Everything the engine wrote on a node (scene, shot, variant_count, results, picked, why...)
+    // rides along untouched so a save from the canvas never loses it.
+    data: { ...(n.data || {}), kind: n.kind, params: n.data?.params || {}, spec: byKind[n.kind] || null, types, gap: gapNodes.has(n.id) },
   }));
   const edges = wf.edges.map((e) => ({
     id: e.id, source: e.source, sourceHandle: e.sourceHandle, target: e.target, targetHandle: e.targetHandle,
@@ -31,10 +33,10 @@ function toFlow(wf, byKind, types) {
 function fromFlow(initial, nodes, edges) {
   return {
     ...initial,
-    nodes: nodes.map((n) => ({
-      id: n.id, kind: n.data.kind, position: { x: Math.round(n.position.x), y: Math.round(n.position.y) },
-      data: { params: n.data.params, ...(n.data.step ? { step: n.data.step } : {}), ...(n.data.part ? { part: n.data.part } : {}) },
-    })),
+    nodes: nodes.map((n) => {
+      const { kind, spec, types, gap, ...rest } = n.data;
+      return { id: n.id, kind, position: { x: Math.round(n.position.x), y: Math.round(n.position.y) }, data: { ...rest, params: n.data.params } };
+    }),
     edges: edges.map((e) => ({
       id: e.id, source: e.source, sourceHandle: e.sourceHandle, target: e.target, targetHandle: e.targetHandle,
       type: e.data?.type, ...(e.data?.married ? { married: true } : {}),
@@ -80,7 +82,8 @@ function Inspector({ node, catalog, onParam, onDelete, onClose }) {
   const be = spec?.backend;
   const runs = !spec ? `No catalogue node runs '${node.data.step}' yet.`
     : { input: "You provide this.", brand: "Read from the client's brand.yaml.", comfy: `ComfyUI workflow: ${be.workflow}`,
-        router: "Hosted image model through OpenRouter.", python: `Runs ${be.module}`, publish: `Creates a draft through ${be.module}`, gap: be.reason }[be.kind];
+        router: "Hosted image model through OpenRouter.", python: `Runs ${be.module}`, publish: `Creates a draft through ${be.module}`,
+        human: "Waits for you to choose. Nothing downstream runs until you do.", gap: be.reason }[be.kind];
   return (
     <aside className="panel inspector" aria-label="Step settings">
       <div className="inspector-head">

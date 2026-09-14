@@ -115,6 +115,33 @@ function accepts(port, outType, catalog) {
   return port.type === outType;
 }
 
+export const RUN_MODES = ["dry-run", "stage-approval", "auto"];
+
+// Depth-first search; returns the first loop found as a list of node ids, or null.
+function findCycle(nodes, edges) {
+  const out = new Map(nodes.map((n) => [n.id, []]));
+  for (const e of edges) if (out.has(e.source) && out.has(e.target)) out.get(e.source).push(e.target);
+  const state = new Map();
+  const path = [];
+  const visit = (v) => {
+    state.set(v, 1); path.push(v);
+    for (const w of out.get(v)) {
+      if (state.get(w) === 1) return path.slice(path.indexOf(w)).concat(w);
+      if (!state.has(w)) { const f = visit(w); if (f) return f; }
+    }
+    path.pop(); state.set(v, 2);
+    return null;
+  };
+  for (const v of out.keys()) if (!state.has(v)) { const f = visit(v); if (f) return f; }
+  return null;
+}
+
+// A decide step that nobody has answered yet. It is waiting, not broken.
+export function pendingPicks(wf, catalog) {
+  const byKind = Object.fromEntries(catalog.nodes.map((n) => [n.kind, n]));
+  return wf.nodes.filter((n) => byKind[n.kind]?.category === "decide" && !(n.data?.picked || []).length).map((n) => n.id);
+}
+
 export function validateWorkflow(wf, catalog) {
   const problems = [];
   const byKind = Object.fromEntries(catalog.nodes.map((n) => [n.kind, n]));
@@ -130,7 +157,17 @@ export function validateWorkflow(wf, catalog) {
     const spec = byKind[n.kind];
     if (!spec) problems.push(`${n.id}: unknown node type ${n.kind}.`);
     else if (spec.backend.kind === "gap" && !declared.has(n.id)) problems.push(`${n.id}: ${spec.label} cannot run yet and must be listed as a gap.`);
+    else if (spec.backend.kind === "human" && spec.category !== "decide") problems.push(`${n.id}: only a decide step may wait on a person.`);
+    if (spec?.category === "decide") {
+      const k = n.data?.params?.k;
+      const feeders = wf.edges.filter((e) => e.target === n.id).map((e) => ids.get(e.source)).filter(Boolean);
+      const offered = feeders.reduce((s, f) => s + Number(f.data?.variant_count || 1), 0);
+      if (feeders.length && typeof k === "number" && k > offered) problems.push(`${n.id}: asks to keep ${k} but only ${offered} candidate(s) feed it.`);
+    }
   }
+  if (wf.run_mode != null && !RUN_MODES.includes(wf.run_mode)) problems.push(`run_mode must be one of ${RUN_MODES.join(", ")}.`);
+  const loop = findCycle(wf.nodes, wf.edges);
+  if (loop) problems.push(`Steps feed back into themselves: ${loop.join(" -> ")}.`);
   for (const e of wf.edges) {
     const s = ids.get(e.source), t = ids.get(e.target);
     if (!s || !t) { problems.push(`${e.id}: a link points at a missing node.`); continue; }
@@ -175,7 +212,7 @@ export async function writeWorkflow(client, id, wf) {
     ...wf,
     id,
     client,
-    version: 1,
+    version: wf.version === 2 ? 2 : 1,
     gaps: computeGaps(wf, catalog),
     consent_required: wf.nodes.some((n) => byKind[n.kind]?.consent),
     updated: new Date().toISOString().slice(0, 10),
@@ -203,15 +240,18 @@ export function runPlan(wf, catalog) {
       router: `Hosted model, profile ${n.data?.params?.profile || be.profile}.`,
       python: `Runs ${be.module}.`,
       publish: `Creates a draft through ${be.module}.`,
+      human: (n.data?.picked || []).length ? `You kept ${n.data.picked.length}.` : "Waiting for your pick.",
       gap: be.reason,
     }[be.kind];
-    const status = nodeGaps.length ? "blocked" : be.kind === "input" ? "input" : "ready";
+    const status = nodeGaps.length ? "blocked" : be.kind === "input" ? "input"
+      : be.kind === "human" ? ((n.data?.picked || []).length ? "ready" : "waiting") : "ready";
     return { id: n.id, label: spec.label, status, detail: nodeGaps.length ? nodeGaps.join(" ") : runs, consent: !!spec.consent, backend: be.kind };
   });
   return {
     steps,
     ready: steps.filter((s) => s.status === "ready").length,
     blocked: steps.filter((s) => s.status === "blocked").length,
+    waiting: steps.filter((s) => s.status === "waiting").length,
     consent: steps.some((s) => s.consent),
     note: "Check only. Nothing runs, spends money or publishes from this screen.",
   };

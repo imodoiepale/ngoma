@@ -205,3 +205,5 @@ Models column: *all fetchable* means every model it names is in `infra/runpod/do
 | **Animate a character (WAN)** (`wan-animate`) | ComfyUI `icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json` | — |
 | **Motion control (SCAIL 2)** (`motion-control`) | ComfyUI `icekiub/Motion_Control_Icy_-SUBS.json` | M01, U07 |
 | **Video face swap (WAN LoRA)** (`wan-lora-faceswap`) | ComfyUI `icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json` | — |
+| **Your pick** (`pick`) | a person decides | — |
+| **Your pick (video)** (`pick-video`) | a person decides | — |
