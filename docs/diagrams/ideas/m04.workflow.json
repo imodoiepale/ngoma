@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "M04 Release rollout kit",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    },
+    {
+      "id": "publish",
+      "label": "Publish (draft first)"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n4",
+    "n6"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n3",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Brand kit"
+    },
+    {
+      "id": "n1",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Brand compositor",
+      "sublabel": "compositor.py",
+      "width": 132
+    },
+    {
+      "id": "n5",
+      "lane": "you",
+      "col": 2,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n4",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Image to video (WAN)",
+      "sublabel": "I2V Infinite…",
+      "width": 160
+    },
+    {
+      "id": "n6",
+      "lane": "publish",
+      "col": 3,
+      "type": "external",
+      "label": "WhatsApp Status",
+      "sublabel": "whatsapp.py",
+      "width": 128
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n1",
+      "label": "brand"
+    },
+    {
+      "from": "n1",
+      "to": "n4",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n5",
+      "to": "n4",
+      "label": "text"
+    },
+    {
+      "from": "n4",
+      "to": "n6",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n5",
+      "to": "n6",
+      "label": "text"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $350/mo",
+        "Base revenue $2,800/mo",
+        "Margin 65%",
+        "First cash 14 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

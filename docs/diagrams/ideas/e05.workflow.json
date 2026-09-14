@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "E05 Agency incubator",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "gaps",
+      "label": "Not runnable yet",
+      "variant": "exception"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "n1",
+      "lane": "gaps",
+      "col": 0,
+      "type": "security",
+      "label": "Studio",
+      "sublabel": "no node yet",
+      "tag": "gap"
+    }
+  ],
+  "edges": [],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $500/mo",
+        "Base revenue $2,000/mo",
+        "Margin 82%",
+        "First cash 30 days"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "Gap: Studio not built",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

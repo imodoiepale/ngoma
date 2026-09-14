@@ -9,7 +9,7 @@
       "Release rollout kit"
     ]
   },
-  "created": "2026-09-13",
+  "created": "2026-09-14",
   "consent_required": true,
   "nodes": [
     {
@@ -52,13 +52,15 @@
     },
     {
       "id": "an4",
-      "kind": "motion-transfer",
+      "kind": "motion-control",
       "position": {
         "x": 720,
         "y": 80
       },
       "data": {
-        "params": {},
+        "params": {
+          "variant": "motion control"
+        },
         "part": "Full-length music video"
       }
     },
@@ -187,7 +189,7 @@
       "source": "an2",
       "sourceHandle": "images",
       "target": "an4",
-      "targetHandle": "image",
+      "targetHandle": "character",
       "type": "image"
     },
     {
@@ -195,7 +197,7 @@
       "source": "an1",
       "sourceHandle": "video",
       "target": "an4",
-      "targetHandle": "motion",
+      "targetHandle": "video",
       "type": "video"
     },
     {

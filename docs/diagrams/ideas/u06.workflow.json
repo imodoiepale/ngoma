@@ -1,0 +1,139 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "U06 Multilingual spokesperson",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n3",
+    "n7"
+  ],
+  "nodes": [
+    {
+      "id": "n6",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n5",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Voiceover",
+      "sublabel": "tts.py"
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "RefMod character",
+      "sublabel": "franckyb refmod…",
+      "tag": "consent",
+      "width": 132
+    },
+    {
+      "id": "n4",
+      "lane": "you",
+      "col": 2,
+      "type": "frontend",
+      "label": "Song"
+    },
+    {
+      "id": "n7",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Image + audio to video",
+      "sublabel": "IMG Audio To Video",
+      "tag": "consent",
+      "width": 176
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image"
+    },
+    {
+      "from": "n2",
+      "to": "n3",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n4",
+      "to": "n3",
+      "label": "audio"
+    },
+    {
+      "from": "n6",
+      "to": "n5",
+      "label": "text"
+    },
+    {
+      "from": "n3",
+      "to": "n7",
+      "label": "video",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $900/mo",
+        "Base revenue $3,600/mo",
+        "Margin 72%",
+        "First cash 21 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Consent on file before any likeness",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

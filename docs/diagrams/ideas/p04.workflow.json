@@ -1,0 +1,127 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "P04 Persona as a service",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    },
+    {
+      "id": "publish",
+      "label": "Publish (draft first)"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n4",
+    "n5"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Character dataset",
+      "sublabel": "INFLUENCER Dataset…",
+      "tag": "consent",
+      "width": 140
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "RefMod character",
+      "sublabel": "franckyb refmod…",
+      "tag": "consent",
+      "width": 132
+    },
+    {
+      "id": "n4",
+      "lane": "publish",
+      "col": 2,
+      "type": "external",
+      "label": "Schedule post",
+      "sublabel": "postiz.py",
+      "width": 112
+    },
+    {
+      "id": "n5",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Learn from results",
+      "sublabel": "collect.py",
+      "width": 148
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n1",
+      "to": "n3",
+      "label": "image"
+    },
+    {
+      "from": "n1",
+      "to": "n4",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n4",
+      "to": "n5",
+      "label": "post",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $2,000/mo",
+        "Base revenue $4,000/mo",
+        "Margin 79%",
+        "First cash 30 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Consent on file before any likeness",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

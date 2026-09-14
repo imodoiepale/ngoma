@@ -7,7 +7,7 @@
     "idea": "S01",
     "offer": "A consistent-character file from client-owned references"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-14",
   "consent_required": true,
   "nodes": [
     {
@@ -36,7 +36,7 @@
     },
     {
       "id": "n3",
-      "kind": "lora-train",
+      "kind": "caption-dataset",
       "position": {
         "x": 400,
         "y": 290
@@ -47,10 +47,21 @@
     },
     {
       "id": "n4",
-      "kind": "export",
+      "kind": "lora-train",
       "position": {
         "x": 400,
         "y": 500
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "export",
+      "position": {
+        "x": 400,
+        "y": 710
       },
       "data": {
         "params": {}
@@ -71,7 +82,7 @@
       "source": "n2",
       "sourceHandle": "images",
       "target": "n3",
-      "targetHandle": "images",
+      "targetHandle": "media",
       "type": "image"
     },
     {
@@ -79,13 +90,21 @@
       "source": "n2",
       "sourceHandle": "images",
       "target": "n4",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e4",
+      "source": "n2",
+      "sourceHandle": "images",
+      "target": "n5",
       "targetHandle": "media",
       "type": "image"
     }
   ],
   "gaps": [
     {
-      "node": "n3",
+      "node": "n4",
       "step": "lora-train",
       "reason": "No LoRA training workflow in the library yet (ai-toolkit runs outside ComfyUI). Use RefMod character instead."
     }

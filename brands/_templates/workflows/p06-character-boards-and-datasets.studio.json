@@ -7,7 +7,7 @@
     "idea": "P06",
     "offer": "Consistent character board plus 40-image training dataset"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-14",
   "consent_required": true,
   "nodes": [
     {
@@ -23,7 +23,7 @@
     },
     {
       "id": "n1",
-      "kind": "dataset",
+      "kind": "character-sheet",
       "position": {
         "x": 400,
         "y": 80
@@ -34,10 +34,32 @@
     },
     {
       "id": "n3",
-      "kind": "export",
+      "kind": "dataset",
       "position": {
         "x": 720,
         "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "caption-dataset",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "export",
+      "position": {
+        "x": 1040,
+        "y": 290
       },
       "data": {
         "params": {}
@@ -50,14 +72,30 @@
       "source": "n2",
       "sourceHandle": "images",
       "target": "n1",
-      "targetHandle": "images",
+      "targetHandle": "image",
       "type": "image"
     },
     {
       "id": "e2",
       "source": "n1",
-      "sourceHandle": "images",
+      "sourceHandle": "sheet",
       "target": "n3",
+      "targetHandle": "images",
+      "type": "image"
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "sourceHandle": "images",
+      "target": "n4",
+      "targetHandle": "media",
+      "type": "image"
+    },
+    {
+      "id": "e4",
+      "source": "n3",
+      "sourceHandle": "images",
+      "target": "n5",
       "targetHandle": "media",
       "type": "image"
     }

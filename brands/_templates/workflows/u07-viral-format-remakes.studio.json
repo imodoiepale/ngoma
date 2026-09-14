@@ -7,7 +7,7 @@
     "idea": "U07",
     "offer": "Re-make trending reel structures with the brand's own assets"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-14",
   "consent_required": true,
   "nodes": [
     {
@@ -35,7 +35,7 @@
       }
     },
     {
-      "id": "n5",
+      "id": "n4",
       "kind": "reference-images",
       "position": {
         "x": 80,
@@ -46,28 +46,26 @@
       }
     },
     {
-      "id": "n4",
-      "kind": "refmod-create",
+      "id": "n5",
+      "kind": "video-clip",
+      "position": {
+        "x": 80,
+        "y": 500
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "motion-control",
       "position": {
         "x": 400,
         "y": 290
       },
       "data": {
         "params": {
-          "preset": "identity"
-        }
-      }
-    },
-    {
-      "id": "n3",
-      "kind": "character-video",
-      "position": {
-        "x": 720,
-        "y": 80
-      },
-      "data": {
-        "params": {
-          "seconds": 5
+          "variant": "motion control"
         }
       }
     },
@@ -75,7 +73,7 @@
       "id": "n6",
       "kind": "export",
       "position": {
-        "x": 1040,
+        "x": 720,
         "y": 80
       },
       "data": {
@@ -94,30 +92,22 @@
     },
     {
       "id": "e2",
-      "source": "n5",
+      "source": "n4",
       "sourceHandle": "images",
-      "target": "n4",
-      "targetHandle": "images",
+      "target": "n3",
+      "targetHandle": "character",
       "type": "image"
     },
     {
       "id": "e3",
-      "source": "n4",
-      "sourceHandle": "character",
+      "source": "n5",
+      "sourceHandle": "video",
       "target": "n3",
-      "targetHandle": "character",
-      "type": "character"
+      "targetHandle": "video",
+      "type": "video"
     },
     {
       "id": "e4",
-      "source": "n1",
-      "sourceHandle": "text",
-      "target": "n3",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e5",
       "source": "n3",
       "sourceHandle": "video",
       "target": "n6",

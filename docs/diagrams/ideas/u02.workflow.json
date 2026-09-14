@@ -1,0 +1,161 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "U02 TikTok Shop product videos",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n5",
+    "n4",
+    "n6",
+    "n7"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n3",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Image edit",
+      "sublabel": "QWEN IMAGE UNLEASHED",
+      "width": 140
+    },
+    {
+      "id": "n5",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "RefMod character",
+      "sublabel": "franckyb refmod…",
+      "tag": "consent",
+      "width": 132
+    },
+    {
+      "id": "n4",
+      "lane": "gpu",
+      "col": 3,
+      "type": "cloud",
+      "label": "Character video (H3)",
+      "sublabel": "dainamo refmod…",
+      "width": 160
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 4,
+      "type": "backend",
+      "label": "Captions",
+      "sublabel": "mux.py"
+    },
+    {
+      "id": "n7",
+      "lane": "studio",
+      "col": 5,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n1",
+      "label": "text"
+    },
+    {
+      "from": "n1",
+      "to": "n5",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n5",
+      "to": "n4",
+      "label": "character",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n4",
+      "label": "text"
+    },
+    {
+      "from": "n4",
+      "to": "n6",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n6",
+      "label": "text"
+    },
+    {
+      "from": "n6",
+      "to": "n7",
+      "label": "video",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $800/mo",
+        "Base revenue $6,400/mo",
+        "Margin 72%",
+        "First cash 10 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Consent on file before any likeness",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

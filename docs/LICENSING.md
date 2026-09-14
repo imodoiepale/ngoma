@@ -8,8 +8,9 @@ required for the workflows it teaches to actually run.
 |---|---|---|---|
 | `work/h3/` — ComfyUI H3 Motion Context MultiRef (37 nodes) | **GPL-3.0** | `Codex\...\work\h3\` | NOT in this repo |
 | `work/matrix-power-nodes/` — MATRIX / WaveSpeed nodes | MIT (Matrix Lab, 2026) | `Codex\...\work\matrix-power-nodes\` | NOT in this repo |
+| MATRIX-LAB-Nodes 0.4.0 and MATRIX Krea 2 Workflow 1.1.0 (JsonMatrixLab on GitHub) | **proprietary**: no copy, modify, distribute or *use* without a written agreement | `Documents\COMFY\MatrixLab` (reference only) | NOT in this repo; practices only, see `docs/NODE-PACK-PRACTICES.md` |
 | `packages/studio-ui/` | MIT (forked from SamurAIGPT/Vibe-Workflow) | here | ported |
-| Icekiub workflow JSONs (`workflows/icekiub/`) | **unstated** — Patreon/Skool paid packs | here | see below |
+| Icekiub workflow JSONs and node packs (`workflows/icekiub/`) | **unstated**: bought on Skool, 2026-09-14 | here | internal use only, see below |
 | This repo's own code | choose one — currently unlicensed | here | **decide** |
 
 ## The GPL-3.0 problem

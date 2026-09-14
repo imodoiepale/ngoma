@@ -79,7 +79,7 @@ Feeding all of it:
 | `memory` | bitemporal facts — what worked, when, and what superseded it | yes |
 | `orchestrator` | goals, tasks, budgets, approvals, audit; dispatch to a worker runtime | yes (dry-run) |
 | `publish` | Postiz (social), OpenWA (WhatsApp Status), Whop (course). Draft by default. | yes (dry-run) |
-| `studio-ui` | Next.js canvas, library browser, job view. Ported from the earlier EPALLE studio. | yes |
+| `studio-ui` | Node canvas organised by client. 52 steps typed by what they carry (text, image, video, audio, brand, character); a workflow starts from an idea, a plain brief, or by chaining workflows. Gaps, consent and 18+ are shown on the step. | yes |
 
 Almost everything works with no API key at all. That is deliberate — you can plan a full
 month, validate every workflow, analyse every reference and inspect every payload before
@@ -106,10 +106,34 @@ brand-specific.
 
 ---
 
+## From workflow to offer
+
+The studio connects four layers, and each one is generated from the one below it:
+
+| Layer | Where | What it answers |
+|---|---|---|
+| Workflows | `workflows/manifest.json`, [`docs/workflows/WORKFLOWS.md`](workflows/WORKFLOWS.md) | 72 ComfyUI graphs (free, community, and the bought Icekiub classroom), each fingerprinted with its node packs and models |
+| Steps | `packages/studio-ui/catalog/nodes.json` | 52 canvas steps. A step names exactly what runs it: a manifest workflow, studio code, a hosted model, a publisher, or `gap` |
+| Pipelines | `brands/_templates/workflows/` | One studio workflow per idea, built from the idea's pipeline, validated for port types and declared gaps |
+| Offers | `brands/_business/ideas.yaml`, [`docs/proposals/`](proposals/README.md), [`docs/diagrams/ideas/`](diagrams/ideas/README.md) | 50 costed ideas, a proposal and a diagram for each |
+
+Models for the pod come from the same manifest: `infra/runpod/plan_models.py` extracts every
+model file with the loader that names it and resolves its source from exact Hugging Face links
+already in the repo (workflow notes, lesson notes, docs), then public repo listings. A creator's
+own trained LoRA is marked private and never swapped for a lookalike; `download_planned.py`
+fetches only what is resolved.
+
+Bought material (the Icekiub Skool classroom) is imported by
+`packages/library/tools/import_skool_pack.py`: workflows are registered with their lesson as
+source, node packs are attributed from their own code, model weights stay out of git, and a pack
+that switches off PyTorch's safe loading is never imported.
+
+---
+
 ## The knowledge layer
 
-`graph/` holds a typed graph of 602 nodes and 2,077 edges built from the 50 deduped
-ComfyUI workflows and 22 mined creator transcripts.
+`graph/` holds a typed graph (1,127 nodes and 3,705 edges at the last build) of the ComfyUI
+workflows, their node packs and models, and mined creator transcripts.
 
 It answers questions that are structural, not textual:
 
@@ -158,6 +182,11 @@ Not style preferences. Each exists because violating it produced a real failure 
 - **Run ComfyUI serverless.** The RunPod endpoint has never completed a generation — only
   `IN_QUEUE`. Pod-side execution is proven; serverless is not.
 - **Carousel pose generation.** `flux-2-klein-9b-kv` is licence-gated on HuggingFace.
+- **Run the bought and newer workflows.** None of the 72 workflows' pipelines for the 50 ideas
+  has run end to end on a GPU. 22 model files have no source found yet and 16 are creators'
+  private LoRAs (`infra/runpod/download-plan.json`); gated repos also need `HF_TOKEN`.
+- **Five canvas steps have no backend:** LoRA training, video relight, photo restoration,
+  translation and motion graphics. Ideas that need them say so in their proposal.
 - **Enumerate Instagram references.** Needs the OpenCLI browser extension connected.
 - **Learn from real results.** The analytics and memory loop is built and tested, but it
   refuses per-grammar claims below 6 posts per grammar — correctly, since at 3 posts it
@@ -176,7 +205,7 @@ Full register with owners: `docs/BLOCKERS.md`.
 uv run studio.py doctor        # what is present, reachable and blocked
 uv run studio.py plan          # plan all 30 Ongea Pesa ideas — costs nothing
 uv run studio.py graph         # rebuild the knowledge graph
-uv run studio.py test          # 36 end-to-end tests
+uv run studio.py test          # the full suite, no key, GPU or network
 uv run studio.py loop          # the whole learning loop on fixture data
 
 uv run --with pillow --with pyyaml packages/compositor/compositor.py \

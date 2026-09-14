@@ -1,0 +1,102 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "V06 WhatsApp Status daily",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "publish",
+      "label": "Publish (draft first)"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n4"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n3",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Brand kit"
+    },
+    {
+      "id": "n1",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Brand compositor",
+      "sublabel": "compositor.py",
+      "width": 132
+    },
+    {
+      "id": "n4",
+      "lane": "publish",
+      "col": 2,
+      "type": "external",
+      "label": "WhatsApp Status",
+      "sublabel": "whatsapp.py",
+      "width": 128
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n1",
+      "label": "brand"
+    },
+    {
+      "from": "n1",
+      "to": "n4",
+      "label": "image",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $25/mo",
+        "Base revenue $2,000/mo",
+        "Margin 67%",
+        "First cash 7 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

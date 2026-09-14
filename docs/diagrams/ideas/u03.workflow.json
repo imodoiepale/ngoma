@@ -1,0 +1,134 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "U03 Hook testing retainer",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n3",
+    "n6"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n5",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n1",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Hook variants",
+      "sublabel": "study.py",
+      "width": 112
+    },
+    {
+      "id": "n4",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "RefMod character",
+      "sublabel": "franckyb refmod…",
+      "tag": "consent",
+      "width": 132
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Character video (H3)",
+      "sublabel": "dainamo refmod…",
+      "width": 160
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n5",
+      "to": "n4",
+      "label": "image"
+    },
+    {
+      "from": "n4",
+      "to": "n3",
+      "label": "character"
+    },
+    {
+      "from": "n1",
+      "to": "n3",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n6",
+      "label": "video",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $900/mo",
+        "Base revenue $4,500/mo",
+        "Margin 74%",
+        "First cash 10 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Consent on file before any likeness",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

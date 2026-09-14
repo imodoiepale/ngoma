@@ -1,0 +1,108 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "V05 E-commerce model photos",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n3",
+    "n4"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Change outfit",
+      "sublabel": "Any Clothes 9B",
+      "width": 112
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Face swap",
+      "sublabel": "QWEN Faceswap",
+      "tag": "consent",
+      "width": 100
+    },
+    {
+      "id": "n4",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n1",
+      "to": "n3",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n4",
+      "label": "image",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $600/mo",
+        "Base revenue $4,800/mo",
+        "Margin 76%",
+        "First cash 14 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Consent on file before any likeness",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

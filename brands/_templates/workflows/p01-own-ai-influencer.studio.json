@@ -7,12 +7,12 @@
     "idea": "P01",
     "offer": "A consistent SFW persona with an audience, sold as sponsorships"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-14",
   "consent_required": true,
   "nodes": [
     {
       "id": "n2",
-      "kind": "reference-images",
+      "kind": "brief",
       "position": {
         "x": 80,
         "y": 80
@@ -23,9 +23,22 @@
     },
     {
       "id": "n1",
-      "kind": "dataset",
+      "kind": "krea2-t2i",
       "position": {
         "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "variant": "no autoprompt"
+        }
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "dataset",
+      "position": {
+        "x": 720,
         "y": 80
       },
       "data": {
@@ -33,11 +46,22 @@
       }
     },
     {
-      "id": "n3",
+      "id": "n4",
+      "kind": "caption-dataset",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
       "kind": "refmod-create",
       "position": {
-        "x": 720,
-        "y": 80
+        "x": 1040,
+        "y": 290
       },
       "data": {
         "params": {
@@ -46,11 +70,11 @@
       }
     },
     {
-      "id": "n4",
+      "id": "n6",
       "kind": "carousel",
       "position": {
-        "x": 720,
-        "y": 290
+        "x": 1040,
+        "y": 500
       },
       "data": {
         "params": {
@@ -59,21 +83,10 @@
       }
     },
     {
-      "id": "n6",
-      "kind": "brief",
-      "position": {
-        "x": 80,
-        "y": 290
-      },
-      "data": {
-        "params": {}
-      }
-    },
-    {
-      "id": "n5",
+      "id": "n7",
       "kind": "long-video",
       "position": {
-        "x": 1040,
+        "x": 1360,
         "y": 80
       },
       "data": {
@@ -83,10 +96,10 @@
       }
     },
     {
-      "id": "n7",
+      "id": "n8",
       "kind": "export",
       "position": {
-        "x": 1360,
+        "x": 1680,
         "y": 80
       },
       "data": {
@@ -98,48 +111,64 @@
     {
       "id": "e1",
       "source": "n2",
-      "sourceHandle": "images",
+      "sourceHandle": "text",
       "target": "n1",
-      "targetHandle": "images",
-      "type": "image"
+      "targetHandle": "prompt",
+      "type": "text"
     },
     {
       "id": "e2",
       "source": "n1",
-      "sourceHandle": "images",
+      "sourceHandle": "image",
       "target": "n3",
       "targetHandle": "images",
       "type": "image"
     },
     {
       "id": "e3",
-      "source": "n1",
+      "source": "n3",
       "sourceHandle": "images",
       "target": "n4",
-      "targetHandle": "image",
+      "targetHandle": "media",
       "type": "image"
     },
     {
       "id": "e4",
-      "source": "n4",
+      "source": "n3",
       "sourceHandle": "images",
       "target": "n5",
-      "targetHandle": "image",
+      "targetHandle": "images",
       "type": "image"
     },
     {
       "id": "e5",
+      "source": "n3",
+      "sourceHandle": "images",
+      "target": "n6",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e6",
       "source": "n6",
-      "sourceHandle": "text",
-      "target": "n5",
+      "sourceHandle": "images",
+      "target": "n7",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e7",
+      "source": "n4",
+      "sourceHandle": "captions",
+      "target": "n7",
       "targetHandle": "prompt",
       "type": "text"
     },
     {
-      "id": "e6",
-      "source": "n5",
+      "id": "e8",
+      "source": "n7",
       "sourceHandle": "video",
-      "target": "n7",
+      "target": "n8",
       "targetHandle": "media",
       "type": "video"
     }

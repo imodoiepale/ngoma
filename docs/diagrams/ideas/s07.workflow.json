@@ -1,0 +1,171 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "S07 Short-form dubbing",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    },
+    {
+      "id": "gaps",
+      "label": "Not runnable yet",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "n7"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n1",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Transcribe",
+      "sublabel": "transcribe.py",
+      "width": 100
+    },
+    {
+      "id": "n4",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Voiceover",
+      "sublabel": "tts.py"
+    },
+    {
+      "id": "n3",
+      "lane": "gaps",
+      "col": 2,
+      "type": "security",
+      "label": "Translate",
+      "sublabel": "not built yet",
+      "tag": "gap",
+      "width": 100
+    },
+    {
+      "id": "n5",
+      "lane": "gpu",
+      "col": 3,
+      "type": "cloud",
+      "label": "Image + audio to video",
+      "sublabel": "IMG Audio To Video",
+      "tag": "consent",
+      "width": 176
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 4,
+      "type": "backend",
+      "label": "Captions",
+      "sublabel": "mux.py"
+    },
+    {
+      "id": "n7",
+      "lane": "studio",
+      "col": 5,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n1",
+      "to": "n3",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n4",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n2",
+      "to": "n5",
+      "label": "image"
+    },
+    {
+      "from": "n4",
+      "to": "n5",
+      "label": "audio",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n5",
+      "to": "n6",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n6",
+      "label": "text",
+      "variant": "dashed"
+    },
+    {
+      "from": "n6",
+      "to": "n7",
+      "label": "video",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $500/mo",
+        "Base revenue $4,000/mo",
+        "Margin 71%",
+        "First cash 14 days"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "Consent on file before any likeness",
+        "Gap: Translate not built",
+        "Dry-run until approved"
+      ]
+    }
+  ]
+}

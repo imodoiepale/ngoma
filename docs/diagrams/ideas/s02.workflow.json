@@ -1,0 +1,146 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "S02 Product photography replacement",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    },
+    {
+      "id": "gaps",
+      "label": "Not runnable yet",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "n5",
+    "n4",
+    "n6",
+    "n7"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n3",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Image edit",
+      "sublabel": "QWEN IMAGE UNLEASHED",
+      "width": 140
+    },
+    {
+      "id": "n5",
+      "lane": "you",
+      "col": 2,
+      "type": "frontend",
+      "label": "Video clip"
+    },
+    {
+      "id": "n6",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Upscale video",
+      "sublabel": "V2V Latent Motion…",
+      "width": 128
+    },
+    {
+      "id": "n4",
+      "lane": "gaps",
+      "col": 2,
+      "type": "security",
+      "label": "Relight",
+      "sublabel": "not built yet",
+      "tag": "gap",
+      "width": 100
+    },
+    {
+      "id": "n7",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image"
+    },
+    {
+      "from": "n3",
+      "to": "n1",
+      "label": "text"
+    },
+    {
+      "from": "n5",
+      "to": "n4",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n4",
+      "to": "n6",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n6",
+      "to": "n7",
+      "label": "video",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $900/mo",
+        "Base revenue $4,500/mo",
+        "Margin 82%",
+        "First cash 14 days"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "Gap: Relight not built",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

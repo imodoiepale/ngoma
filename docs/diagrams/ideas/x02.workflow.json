@@ -1,0 +1,111 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "X02 Compliance-first persona operations",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    },
+    {
+      "id": "publish",
+      "label": "Publish (draft first)"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n3",
+    "n4"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Carousel poses",
+      "sublabel": "Carousel Pose…",
+      "width": 120
+    },
+    {
+      "id": "n3",
+      "lane": "publish",
+      "col": 2,
+      "type": "external",
+      "label": "Schedule post",
+      "sublabel": "postiz.py",
+      "width": 112
+    },
+    {
+      "id": "n4",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Learn from results",
+      "sublabel": "collect.py",
+      "width": 148
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n1",
+      "to": "n3",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n4",
+      "label": "post",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $1,000/mo",
+        "Base revenue $2,000/mo",
+        "Margin 80%",
+        "First cash 45 days"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "18+: fictional adults only",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

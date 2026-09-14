@@ -1,0 +1,143 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "V04 Restaurant content retainer",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n3",
+    "n4",
+    "n6"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Flux Klein text to…",
+      "sublabel": "klein t2i test",
+      "width": 156
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Image to video (WAN)",
+      "sublabel": "I2V Infinite…",
+      "width": 160
+    },
+    {
+      "id": "n5",
+      "lane": "you",
+      "col": 3,
+      "type": "frontend",
+      "label": "Brand kit"
+    },
+    {
+      "id": "n4",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Brand compositor",
+      "sublabel": "compositor.py",
+      "width": 132
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 4,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n1",
+      "to": "n3",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n2",
+      "to": "n3",
+      "label": "text"
+    },
+    {
+      "from": "n3",
+      "to": "n4",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n5",
+      "to": "n4",
+      "label": "brand"
+    },
+    {
+      "from": "n2",
+      "to": "n4",
+      "label": "text"
+    },
+    {
+      "from": "n4",
+      "to": "n6",
+      "label": "image",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $250/mo",
+        "Base revenue $5,000/mo",
+        "Margin 55%",
+        "First cash 10 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

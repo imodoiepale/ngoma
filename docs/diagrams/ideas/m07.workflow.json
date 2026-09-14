@@ -1,0 +1,180 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "M07 Label visual package",
+    "locale": "en",
+    "quality_profile": "standard"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    },
+    {
+      "id": "publish",
+      "label": "Publish (draft first)"
+    },
+    {
+      "id": "gaps",
+      "label": "Not runnable yet",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n3",
+    "n7",
+    "n8"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n1",
+      "lane": "gaps",
+      "col": 0,
+      "type": "security",
+      "label": "Motion graphics",
+      "sublabel": "not built yet",
+      "tag": "gap",
+      "width": 128
+    },
+    {
+      "id": "n4",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n7",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Cut and loop",
+      "sublabel": "mux.py",
+      "width": 104
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Image to video (WAN)",
+      "sublabel": "I2V Infinite…",
+      "width": 160
+    },
+    {
+      "id": "n8",
+      "lane": "publish",
+      "col": 1,
+      "type": "external",
+      "label": "WhatsApp Status",
+      "sublabel": "whatsapp.py",
+      "width": 128
+    },
+    {
+      "id": "n6",
+      "lane": "you",
+      "col": 2,
+      "type": "frontend",
+      "label": "Brand kit"
+    },
+    {
+      "id": "n5",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Brand compositor",
+      "sublabel": "compositor.py",
+      "width": 132
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "text",
+      "variant": "dashed"
+    },
+    {
+      "from": "n4",
+      "to": "n3",
+      "label": "image"
+    },
+    {
+      "from": "n2",
+      "to": "n3",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n5",
+      "label": "video"
+    },
+    {
+      "from": "n6",
+      "to": "n5",
+      "label": "brand"
+    },
+    {
+      "from": "n2",
+      "to": "n5",
+      "label": "text"
+    },
+    {
+      "from": "n3",
+      "to": "n7",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n7",
+      "to": "n8",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n2",
+      "to": "n8",
+      "label": "text"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $4,000/mo",
+        "Base revenue $4,000/mo",
+        "Margin 79%",
+        "First cash 60 days"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "Gap: Motion graphics not built",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

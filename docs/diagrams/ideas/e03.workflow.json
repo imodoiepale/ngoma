@@ -1,0 +1,50 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "E03 Original workflow packs",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "gaps",
+      "label": "Not runnable yet",
+      "variant": "exception"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "n1",
+      "lane": "gaps",
+      "col": 0,
+      "type": "security",
+      "label": "Register workflow",
+      "sublabel": "no node yet",
+      "tag": "gap",
+      "width": 140
+    }
+  ],
+  "edges": [],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $39 per unit",
+        "Base revenue $2,340/mo",
+        "Margin 84%",
+        "First cash 21 days"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "Gap: Register workflow not built",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "X01 Fictional 18+ persona subscription",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    },
+    {
+      "id": "gaps",
+      "label": "Not runnable yet",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n5",
+    "n6"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Character dataset",
+      "sublabel": "INFLUENCER Dataset…",
+      "tag": "consent",
+      "width": 140
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Caption a dataset",
+      "sublabel": "Uncensored…",
+      "width": 140
+    },
+    {
+      "id": "n4",
+      "lane": "gaps",
+      "col": 2,
+      "type": "security",
+      "label": "LoRA training",
+      "sublabel": "not built yet",
+      "tag": "gap, consent",
+      "width": 112
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    },
+    {
+      "id": "n5",
+      "lane": "gpu",
+      "col": 3,
+      "type": "cloud",
+      "label": "Carousel poses",
+      "sublabel": "Carousel Pose…",
+      "width": 120
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n1",
+      "to": "n3",
+      "label": "image"
+    },
+    {
+      "from": "n1",
+      "to": "n4",
+      "label": "image",
+      "variant": "dashed"
+    },
+    {
+      "from": "n1",
+      "to": "n5",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n5",
+      "to": "n6",
+      "label": "image",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $10 per unit",
+        "Base revenue $4,000/mo",
+        "Margin 87%",
+        "First cash 60 days"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "18+: fictional adults only",
+        "Consent on file before any likeness",
+        "Gap: LoRA training not built",
+        "Dry-run until approved"
+      ]
+    }
+  ]
+}

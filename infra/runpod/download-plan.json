@@ -1,377 +1,1986 @@
 {
+  "generated_by": "infra/runpod/plan_models.py",
+  "online": true,
+  "counts": {
+    "resolved": 73,
+    "auto_download": 1,
+    "creator_private": 16,
+    "manual": 14,
+    "unresolved": 22
+  },
   "resolved": [
     {
-      "file": "Wan21-14B-SCAIL-preview_fp8_scaled_mixed.safetensors",
-      "folder": "diffusion_models",
-      "workflow_count": 2,
-      "used_by": [
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
-      ],
-      "repo": "Kijai/WanVideo_comfy_fp8_scaled",
-      "repo_path": "SCAIL/Wan21-14B-SCAIL-preview_fp8_scaled_mixed.safetensors",
-      "all_matches": [
-        [
-          "Kijai/WanVideo_comfy_fp8_scaled",
-          "SCAIL/Wan21-14B-SCAIL-preview_fp8_scaled_mixed.safetensors"
-        ]
-      ]
-    },
-    {
-      "file": "dw-ll_ucoco_384_bs5.torchscript.pt",
-      "folder": "unknown",
-      "workflow_count": 2,
-      "used_by": [
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
-      ],
-      "repo": "hr16/DWPose-TorchScript-BatchSize5",
-      "repo_path": "dw-ll_ucoco_384_bs5.torchscript.pt",
-      "all_matches": [
-        [
-          "hr16/DWPose-TorchScript-BatchSize5",
-          "dw-ll_ucoco_384_bs5.torchscript.pt"
-        ]
-      ]
-    },
-    {
-      "file": "flux-2-klein-9b-fp8.safetensors",
-      "folder": "diffusion_models",
-      "workflow_count": 2,
-      "used_by": [
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
-      ],
-      "repo": "black-forest-labs/FLUX.2-klein-9b-fp8",
-      "repo_path": "flux-2-klein-9b-fp8.safetensors",
-      "all_matches": [
-        [
-          "black-forest-labs/FLUX.2-klein-9b-fp8",
-          "flux-2-klein-9b-fp8.safetensors"
-        ]
-      ]
-    },
-    {
-      "file": "flux-2-klein-9b-kv.safetensors",
-      "folder": "diffusion_models",
-      "workflow_count": 1,
-      "used_by": [
-        "local-comfy/IG Carousel pose generator/Carousel Pose changer.json"
-      ],
-      "repo": "black-forest-labs/FLUX.2-klein-9b-kv",
-      "repo_path": "flux-2-klein-9b-kv.safetensors",
-      "all_matches": [
-        [
-          "black-forest-labs/FLUX.2-klein-9b-kv",
-          "flux-2-klein-9b-kv.safetensors"
-        ]
-      ]
-    },
-    {
-      "file": "flux2-vae.safetensors",
+      "file": "minimax_h3_audio_vae_fp32.safetensors",
       "folder": "vae",
-      "workflow_count": 3,
-      "used_by": [
-        "local-comfy/IG Carousel pose generator/Carousel Pose changer.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      "loaders": [
+        "4c314f31-ecda-4b08-ae98-faaba1bf613f",
+        "VAELoader"
       ],
-      "repo": "Comfy-Org/flux2-klein-9B",
-      "repo_path": "split_files/vae/flux2-vae.safetensors",
-      "all_matches": [
-        [
-          "Comfy-Org/flux2-klein-9B",
-          "split_files/vae/flux2-vae.safetensors"
-        ]
-      ]
-    },
-    {
-      "file": "minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
-      "folder": "loras",
-      "workflow_count": 1,
+      "workflow_count": 24,
       "used_by": [
-        "aininja/MiniMax-Long-Video-&-Extend-Video/1-KeyFrames/1-KEYFRAMES.json"
-      ],
-      "repo": "Comfy-Org/MiniMax-H3",
-      "repo_path": "loras/minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
-      "all_matches": [
-        [
-          "Comfy-Org/MiniMax-H3",
-          "loras/minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors"
-        ]
-      ]
-    },
-    {
-      "file": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
-      "folder": "loras",
-      "workflow_count": 1,
-      "used_by": [
-        "aininja/MiniMax-Long-Video-&-Extend-Video/5-Video-Extend-No-Reference-Image.json"
+        "workflows/1-KeyFrames/1-KEYFRAMES.json",
+        "workflows/3-Image-To-Long-Video/3-Image-To-Long-Video.json",
+        "workflows/4-Video-Extend-with-Reference-Image/4-Video-Extend-with-Reference-Image.json",
+        "workflows/MiniMax-H3-Simple-WF/FLF-Workflow-With-Sol-Atten-_-Sage-Atten.json",
+        "workflows/MiniMax-H3-Simple-WF/IMG-_-Audio-To-Video.json",
+        "workflows/MiniMax-H3-Simple-WF/Video-Character-Replace.json",
+        "workflows/MiniMax-Long-Video-&-Extend-Video/2-Text-To-Long-Video.json",
+        "workflows/MiniMax-Long-Video-&-Extend-Video/5-Video-Extend-No-Reference-Image.json",
+        "workflows/Workflow-1/Workflow-1-updated.json",
+        "workflows/Workflow-1/Workflow-1.json",
+        "workflows/Workflow-2/Workflow-2-Updated.json",
+        "workflows/Workflow-2/Workflow-2.json",
+        "workflows/h3-refmods/dainamo-refmod-generate.json",
+        "workflows/h3-refmods/franckyb-refmod-create-from-folder.json",
+        "workflows/h3/NEW_-_2MP_De-Rope_Continuation_-_Working_Example.json",
+        "workflows/h3/NEW_-_AV_Extension.json",
+        "workflows/h3/NEW_-_Music_Video.json",
+        "workflows/h3/NEW_-_V2V_Latent_Motion_Transfer_with_upscale_and_de-rope_.json",
+        "workflows/h3/OLD_-_Hybrid_Extension.json",
+        "workflows/h3/OLD_-_Motion_Context_-_Advanced.json",
+        "workflows/h3/OLD_-_Motion_Context_-_Simple.json",
+        "workflows/h3/UTILITY_-_AV_Bridge.json",
+        "workflows/h3/UTILITY_-_Custom_Keyframes.json",
+        "workflows/icekiub/H3_Icy_image.json"
       ],
       "repo": "Comfy-Org/MiniMax-H3",
-      "repo_path": "loras/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
-      "all_matches": [
-        [
-          "Comfy-Org/MiniMax-H3",
-          "loras/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors"
-        ]
-      ]
-    },
-    {
-      "file": "minimax_h3_video_vae_fp16.safetensors",
-      "folder": "vae",
-      "workflow_count": 7,
-      "used_by": [
-        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1-updated.json",
-        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1.json",
-        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2-Updated.json",
-        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2.json",
-        "aininja/MiniMax-H3-Simple-WF/FLF-Workflow-With-Sol-Atten-&-Sage-Atten.json",
-        "aininja/MiniMax-H3-Simple-WF/IMG-&-Audio-To-Video.json",
-        "aininja/MiniMax-H3-Simple-WF/Video-Character-Replace.json"
-      ],
-      "repo": "Comfy-Org/MiniMax-H3",
-      "repo_path": "vae/minimax_h3_video_vae_fp16.safetensors",
-      "all_matches": [
-        [
-          "Comfy-Org/MiniMax-H3",
-          "vae/minimax_h3_video_vae_fp16.safetensors"
-        ]
-      ]
-    },
-    {
-      "file": "model.onnx",
-      "folder": "unknown",
-      "workflow_count": 2,
-      "used_by": [
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
-      ],
-      "repo": "Wan-AI/Wan2.2-Animate-14B",
-      "repo_path": "xlm-roberta-large/onnx/model.onnx",
-      "all_matches": [
-        [
-          "Wan-AI/Wan2.2-Animate-14B",
-          "xlm-roberta-large/onnx/model.onnx"
-        ]
-      ]
-    },
-    {
-      "file": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
-      "folder": "diffusion_models",
-      "workflow_count": 14,
-      "used_by": [
-        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1-updated.json",
-        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1.json",
-        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2-Updated.json",
-        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2.json",
-        "aininja/MiniMax-H3-Simple-WF/FLF-Workflow-With-Sol-Atten-&-Sage-Atten.json",
-        "aininja/MiniMax-H3-Simple-WF/IMG-&-Audio-To-Video.json",
-        "aininja/MiniMax-H3-Simple-WF/Video-Character-Replace.json",
-        "aininja/MiniMax-Long-Video-&-Extend-Video/1-KeyFrames/1-KEYFRAMES.json",
-        "aininja/MiniMax-Long-Video-&-Extend-Video/2-Text-To-Long-Video.json",
-        "aininja/MiniMax-Long-Video-&-Extend-Video/3-Image-To-Long-Video/3-Image-To-Long-Video.json",
-        "aininja/MiniMax-Long-Video-&-Extend-Video/4-Video-Extend-with-Reference-Image/4-Video-Extend-with-Reference-Image.json",
-        "aininja/MiniMax-Long-Video-&-Extend-Video/5-Video-Extend-No-Reference-Image.json",
-        "h3/NEW - 2MP De-Rope Continuation - Working Example.json",
-        "h3/UTILITY - Custom Keyframes.json"
-      ],
-      "repo": "Comfy-Org/MiniMax-H3",
-      "repo_path": "text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
-      "all_matches": [
-        [
-          "Comfy-Org/MiniMax-H3",
-          "text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors"
-        ]
-      ]
+      "repo_path": "vae/minimax_h3_audio_vae_fp32.safetensors",
+      "evidence": "workflows/h3/NEW_-_2MP_De-Rope_Continuation_-_Working_Example.json"
     },
     {
       "file": "qwen_3_8b_fp8mixed.safetensors",
       "folder": "text_encoders",
-      "workflow_count": 3,
+      "loaders": [
+        "CLIPLoader"
+      ],
+      "workflow_count": 24,
       "used_by": [
-        "local-comfy/IG Carousel pose generator/Carousel Pose changer.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+        "workflows/api-tests/klein-ishona-400.json",
+        "workflows/api-tests/klein-ishona-600.json",
+        "workflows/api-tests/klein-t2i-sage-guard-test.json",
+        "workflows/api-tests/klein-t2i-test.json",
+        "workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+        "workflows/icekiub/Carousel_Pose_changer.json",
+        "workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json",
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+        "workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
+        "workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+        "workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+        "workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+        "workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+        "workflows/icekiub/KleinDataset_-_Icekiub_freelo.json",
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json",
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json",
+        "workflows/icekiub/icy_ref_character_sheet_for_minimax.json"
       ],
       "repo": "Comfy-Org/flux2-klein-9B",
       "repo_path": "split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
-      "all_matches": [
-        [
-          "Comfy-Org/flux2-klein-9B",
-          "split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors"
-        ]
-      ]
+      "evidence": "workflows/icekiub/Carousel_Pose_changer.json"
     },
     {
-      "file": "umt5-xxl-enc-fp8_e4m3fn.safetensors",
+      "file": "flux2-vae.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "VAELoader"
+      ],
+      "workflow_count": 23,
+      "used_by": [
+        "workflows/api-tests/klein-ishona-400.json",
+        "workflows/api-tests/klein-ishona-600.json",
+        "workflows/api-tests/klein-t2i-sage-guard-test.json",
+        "workflows/api-tests/klein-t2i-test.json",
+        "workflows/icekiub/Carousel_Pose_changer.json",
+        "workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json",
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+        "workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
+        "workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+        "workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+        "workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+        "workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+        "workflows/icekiub/KleinDataset_-_Icekiub_freelo.json",
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json",
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json",
+        "workflows/icekiub/icy_ref_character_sheet_for_minimax.json"
+      ],
+      "repo": "Comfy-Org/flux2-dev",
+      "repo_path": "split_files/vae/flux2-vae.safetensors",
+      "evidence": "workflows/icekiub/Carousel_Pose_changer.json"
+    },
+    {
+      "file": "flux-2-klein-9b-fp8.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 20,
+      "used_by": [
+        "workflows/api-tests/klein-ishona-400.json",
+        "workflows/api-tests/klein-ishona-600.json",
+        "workflows/api-tests/klein-t2i-sage-guard-test.json",
+        "workflows/api-tests/klein-t2i-test.json",
+        "workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+        "workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
+        "workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+        "workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+        "workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+        "workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+        "workflows/icekiub/KleinDataset_-_Icekiub_freelo.json",
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json",
+        "workflows/icekiub/icy_ref_character_sheet_for_minimax.json"
+      ],
+      "repo": "black-forest-labs/FLUX.2-klein-9b-fp8",
+      "repo_path": "flux-2-klein-9b-fp8.safetensors",
+      "evidence": "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json"
+    },
+    {
+      "file": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "4c314f31-ecda-4b08-ae98-faaba1bf613f",
+        "CLIPLoader"
+      ],
+      "workflow_count": 16,
+      "used_by": [
+        "workflows/1-KeyFrames/1-KEYFRAMES.json",
+        "workflows/3-Image-To-Long-Video/3-Image-To-Long-Video.json",
+        "workflows/4-Video-Extend-with-Reference-Image/4-Video-Extend-with-Reference-Image.json",
+        "workflows/MiniMax-H3-Simple-WF/FLF-Workflow-With-Sol-Atten-_-Sage-Atten.json",
+        "workflows/MiniMax-H3-Simple-WF/IMG-_-Audio-To-Video.json",
+        "workflows/MiniMax-H3-Simple-WF/Video-Character-Replace.json",
+        "workflows/MiniMax-Long-Video-&-Extend-Video/2-Text-To-Long-Video.json",
+        "workflows/MiniMax-Long-Video-&-Extend-Video/5-Video-Extend-No-Reference-Image.json",
+        "workflows/Workflow-1/Workflow-1-updated.json",
+        "workflows/Workflow-1/Workflow-1.json",
+        "workflows/Workflow-2/Workflow-2-Updated.json",
+        "workflows/Workflow-2/Workflow-2.json",
+        "workflows/h3-refmods/dainamo-refmod-generate.json",
+        "workflows/h3/NEW_-_2MP_De-Rope_Continuation_-_Working_Example.json",
+        "workflows/h3/UTILITY_-_Custom_Keyframes.json",
+        "workflows/icekiub/H3_Icy_image.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "evidence": "workflows/h3/NEW_-_2MP_De-Rope_Continuation_-_Working_Example.json"
+    },
+    {
+      "file": "wan_2.1_vae.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "VAELoader",
+        "WanVideoVAELoader"
+      ],
+      "workflow_count": 15,
+      "used_by": [
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/IcyMotion_Free_v3.json",
+        "workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+        "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+        "workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+        "workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+        "workflows/scail2/SCAIL-2_Animation.json",
+        "workflows/scail2/SCAIL-2_Animation_WAN-Context-Windows.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-char.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-ref.json",
+        "workflows/scail2/SCAIL-2_Replacement.json"
+      ],
+      "repo": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+      "repo_path": "split_files/vae/wan_2.1_vae.safetensors",
+      "evidence": "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json"
+    },
+    {
+      "file": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 14,
+      "used_by": [
+        "workflows/3-Image-To-Long-Video/3-Image-To-Long-Video.json",
+        "workflows/4-Video-Extend-with-Reference-Image/4-Video-Extend-with-Reference-Image.json",
+        "workflows/MiniMax-H3-Simple-WF/IMG-_-Audio-To-Video.json",
+        "workflows/MiniMax-H3-Simple-WF/Video-Character-Replace.json",
+        "workflows/MiniMax-Long-Video-&-Extend-Video/5-Video-Extend-No-Reference-Image.json",
+        "workflows/Workflow-1/Workflow-1-updated.json",
+        "workflows/Workflow-1/Workflow-1.json",
+        "workflows/Workflow-2/Workflow-2-Updated.json",
+        "workflows/Workflow-2/Workflow-2.json",
+        "workflows/h3/NEW_-_AV_Extension.json",
+        "workflows/h3/NEW_-_Music_Video.json",
+        "workflows/h3/OLD_-_Hybrid_Extension.json",
+        "workflows/h3/OLD_-_Motion_Context_-_Advanced.json",
+        "workflows/h3/UTILITY_-_AV_Bridge.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "evidence": "workflows/MiniMax-H3-Simple-WF/IMG-_-Audio-To-Video.json"
+    },
+    {
+      "file": "minimax_h3_video_vae_int8_convrot.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "VAELoader"
+      ],
+      "workflow_count": 14,
+      "used_by": [
+        "workflows/1-KeyFrames/1-KEYFRAMES.json",
+        "workflows/3-Image-To-Long-Video/3-Image-To-Long-Video.json",
+        "workflows/4-Video-Extend-with-Reference-Image/4-Video-Extend-with-Reference-Image.json",
+        "workflows/MiniMax-Long-Video-&-Extend-Video/2-Text-To-Long-Video.json",
+        "workflows/MiniMax-Long-Video-&-Extend-Video/5-Video-Extend-No-Reference-Image.json",
+        "workflows/h3/NEW_-_2MP_De-Rope_Continuation_-_Working_Example.json",
+        "workflows/h3/NEW_-_AV_Extension.json",
+        "workflows/h3/NEW_-_Music_Video.json",
+        "workflows/h3/NEW_-_V2V_Latent_Motion_Transfer_with_upscale_and_de-rope_.json",
+        "workflows/h3/OLD_-_Hybrid_Extension.json",
+        "workflows/h3/OLD_-_Motion_Context_-_Advanced.json",
+        "workflows/h3/OLD_-_Motion_Context_-_Simple.json",
+        "workflows/h3/UTILITY_-_AV_Bridge.json",
+        "workflows/h3/UTILITY_-_Custom_Keyframes.json"
+      ],
+      "repo": "Kijai/MiniMax-H3-experimental",
+      "repo_path": "minimax_h3_video_vae_int8_convrot.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "clip_vision_h.safetensors",
+      "folder": "clip_vision",
+      "loaders": [
+        "CLIPVisionLoader"
+      ],
+      "workflow_count": 12,
+      "used_by": [
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/IcyMotion_Free_v3.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+        "workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+        "workflows/scail2/SCAIL-2_Animation.json",
+        "workflows/scail2/SCAIL-2_Animation_WAN-Context-Windows.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-char.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-ref.json",
+        "workflows/scail2/SCAIL-2_Replacement.json"
+      ],
+      "repo": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+      "repo_path": "split_files/clip_vision/clip_vision_h.safetensors",
+      "evidence": "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json"
+    },
+    {
+      "file": "sam3.1_multiplex_fp16.safetensors",
+      "folder": "checkpoints",
+      "loaders": [
+        "CheckpointLoaderSimple"
+      ],
+      "workflow_count": 12,
+      "used_by": [
+        "workflows/Workflow-1/Workflow-1-updated.json",
+        "workflows/Workflow-1/Workflow-1.json",
+        "workflows/Workflow-2/Workflow-2-Updated.json",
+        "workflows/Workflow-2/Workflow-2.json",
+        "workflows/icekiub/IcyMotion_Free_v3.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+        "workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+        "workflows/scail2/SCAIL-2_Animation.json",
+        "workflows/scail2/SCAIL-2_Animation_WAN-Context-Windows.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-char.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-ref.json",
+        "workflows/scail2/SCAIL-2_Replacement.json"
+      ],
+      "repo": "Comfy-Org/sam3.1",
+      "repo_path": "checkpoints/sam3.1_multiplex_fp16.safetensors",
+      "evidence": "workflows/scail2/SCAIL-2_Animation.json"
+    },
+    {
+      "file": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
       "folder": "text_encoders",
-      "workflow_count": 2,
-      "used_by": [
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      "loaders": [
+        "CLIPLoader"
       ],
-      "repo": "Kijai/WanVideo_comfy",
-      "repo_path": "umt5-xxl-enc-fp8_e4m3fn.safetensors",
-      "all_matches": [
-        [
-          "Kijai/WanVideo_comfy",
-          "umt5-xxl-enc-fp8_e4m3fn.safetensors"
-        ]
-      ]
+      "workflow_count": 11,
+      "used_by": [
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/IcyMotion_Free_v3.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+        "workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+        "workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json",
+        "workflows/scail2/SCAIL-2_Animation.json",
+        "workflows/scail2/SCAIL-2_Animation_WAN-Context-Windows.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-char.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-ref.json",
+        "workflows/scail2/SCAIL-2_Replacement.json"
+      ],
+      "repo": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+      "repo_path": "split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+      "evidence": "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json"
     },
     {
-      "file": "vitpose_h_wholebody_model.onnx",
-      "folder": "detection",
-      "workflow_count": 2,
-      "used_by": [
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      "file": "minimax_h3_video_vae_fp16.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "4c314f31-ecda-4b08-ae98-faaba1bf613f",
+        "VAELoader"
       ],
-      "repo": "Kijai/vitpose_comfy",
-      "repo_path": "onnx/vitpose_h_wholebody_model.onnx",
-      "all_matches": [
-        [
-          "Kijai/vitpose_comfy",
-          "onnx/vitpose_h_wholebody_model.onnx"
-        ]
-      ]
+      "workflow_count": 10,
+      "used_by": [
+        "workflows/MiniMax-H3-Simple-WF/FLF-Workflow-With-Sol-Atten-_-Sage-Atten.json",
+        "workflows/MiniMax-H3-Simple-WF/IMG-_-Audio-To-Video.json",
+        "workflows/MiniMax-H3-Simple-WF/Video-Character-Replace.json",
+        "workflows/Workflow-1/Workflow-1-updated.json",
+        "workflows/Workflow-1/Workflow-1.json",
+        "workflows/Workflow-2/Workflow-2-Updated.json",
+        "workflows/Workflow-2/Workflow-2.json",
+        "workflows/h3-refmods/dainamo-refmod-generate.json",
+        "workflows/h3-refmods/franckyb-refmod-create-from-folder.json",
+        "workflows/icekiub/H3_Icy_image.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "vae/minimax_h3_video_vae_fp16.safetensors",
+      "evidence": "workflows/h3-refmods/franckyb-refmod-picker-example.json"
+    },
+    {
+      "file": "minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 9,
+      "used_by": [
+        "workflows/3-Image-To-Long-Video/3-Image-To-Long-Video.json",
+        "workflows/4-Video-Extend-with-Reference-Image/4-Video-Extend-with-Reference-Image.json",
+        "workflows/MiniMax-Long-Video-&-Extend-Video/2-Text-To-Long-Video.json",
+        "workflows/Workflow-2/Workflow-2-Updated.json",
+        "workflows/Workflow-2/Workflow-2.json",
+        "workflows/h3/NEW_-_2MP_De-Rope_Continuation_-_Working_Example.json",
+        "workflows/h3/OLD_-_Hybrid_Extension.json",
+        "workflows/h3/OLD_-_Motion_Context_-_Advanced.json",
+        "workflows/h3/OLD_-_Motion_Context_-_Simple.json"
+      ],
+      "repo": "Kijai/MiniMax-H3_comfy",
+      "repo_path": "loras/minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 8,
+      "used_by": [
+        "workflows/1-KeyFrames/1-KEYFRAMES.json",
+        "workflows/MiniMax-Long-Video-&-Extend-Video/2-Text-To-Long-Video.json",
+        "workflows/Workflow-1/Workflow-1-updated.json",
+        "workflows/Workflow-1/Workflow-1.json",
+        "workflows/h3/NEW_-_2MP_De-Rope_Continuation_-_Working_Example.json",
+        "workflows/h3/NEW_-_V2V_Latent_Motion_Transfer_with_upscale_and_de-rope_.json",
+        "workflows/h3/OLD_-_Motion_Context_-_Simple.json",
+        "workflows/h3/UTILITY_-_Custom_Keyframes.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "evidence": "workflows/MiniMax-H3-Simple-WF/FLF-Workflow-With-Sol-Atten-_-Sage-Atten.json"
+    },
+    {
+      "file": "wan2.1_14B_SCAIL_2_fp8_scaled.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "DiffusionModelLoaderKJ",
+        "UNETLoader"
+      ],
+      "workflow_count": 8,
+      "used_by": [
+        "workflows/icekiub/IcyMotion_Free_v3.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+        "workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+        "workflows/scail2/SCAIL-2_Animation.json",
+        "workflows/scail2/SCAIL-2_Animation_WAN-Context-Windows.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-char.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-ref.json",
+        "workflows/scail2/SCAIL-2_Replacement.json"
+      ],
+      "repo": "Comfy-Org/SCAIL-2",
+      "repo_path": "diffusion_models/wan2.1_14B_SCAIL_2_fp8_scaled.safetensors",
+      "evidence": "workflows/scail2/SCAIL-2_Animation.json"
+    },
+    {
+      "file": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "folder": "text_encoders",
+      "loaders": [
+        "CLIPLoader"
+      ],
+      "workflow_count": 7,
+      "used_by": [
+        "workflows/h3/NEW_-_AV_Extension.json",
+        "workflows/h3/NEW_-_Music_Video.json",
+        "workflows/h3/NEW_-_V2V_Latent_Motion_Transfer_with_upscale_and_de-rope_.json",
+        "workflows/h3/OLD_-_Hybrid_Extension.json",
+        "workflows/h3/OLD_-_Motion_Context_-_Advanced.json",
+        "workflows/h3/OLD_-_Motion_Context_-_Simple.json",
+        "workflows/h3/UTILITY_-_AV_Bridge.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 5,
+      "used_by": [
+        "workflows/scail2/SCAIL-2_Animation.json",
+        "workflows/scail2/SCAIL-2_Animation_WAN-Context-Windows.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-char.json",
+        "workflows/scail2/SCAIL-2_Animation_multi-ref.json",
+        "workflows/scail2/SCAIL-2_Replacement.json"
+      ],
+      "repo": "lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v",
+      "repo_path": "loras/Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "dw-ll_ucoco_384_bs5.torchscript.pt",
+      "folder": "unknown",
+      "loaders": [
+        "DWPreprocessor"
+      ],
+      "workflow_count": 5,
+      "used_by": [
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+      ],
+      "repo": "hr16/DWPose-TorchScript-BatchSize5",
+      "repo_path": "dw-ll_ucoco_384_bs5.torchscript.pt",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "folder": "text_encoders",
+      "loaders": [
+        "CLIPLoader",
+        "CLIPLoaderMultiGPU"
+      ],
+      "workflow_count": 5,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json",
+        "workflows/icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json",
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json"
+      ],
+      "repo": "Comfy-Org/Qwen-Image_ComfyUI",
+      "repo_path": "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "evidence": "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json"
     },
     {
       "file": "yolox_l.torchscript.pt",
       "folder": "detection",
-      "workflow_count": 2,
+      "loaders": [
+        "DWPreprocessor"
+      ],
+      "workflow_count": 5,
       "used_by": [
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
       ],
       "repo": "hr16/yolox-onnx",
       "repo_path": "yolox_l.torchscript.pt",
-      "all_matches": [
-        [
-          "hr16/yolox-onnx",
-          "yolox_l.torchscript.pt"
-        ]
-      ]
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "z_image_turbo_bf16.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 5,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json",
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v1_.json",
+        "workflows/icekiub/zbase+zit+control_-_icekiub_v1.json"
+      ],
+      "repo": "Comfy-Org/z_image_turbo",
+      "repo_path": "split_files/diffusion_models/z_image_turbo_bf16.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "qwen_image_vae.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "VAELoader"
+      ],
+      "workflow_count": 4,
+      "used_by": [
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json",
+        "workflows/icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json",
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json"
+      ],
+      "repo": "Comfy-Org/Qwen-Image_ComfyUI",
+      "repo_path": "split_files/vae/qwen_image_vae.safetensors",
+      "evidence": "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json"
+    },
+    {
+      "file": "face_yolov8m.pt",
+      "folder": "detection",
+      "loaders": [
+        "UltralyticsDetectorProvider"
+      ],
+      "workflow_count": 3,
+      "used_by": [
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json",
+        "workflows/icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json"
+      ],
+      "repo": "Bingsu/adetailer",
+      "repo_path": "face_yolov8m.pt",
+      "evidence": "packages/library/corpus/youtube/loratech/subs/OZe6UwPqr4g.description"
+    },
+    {
+      "file": "flux-2-klein-9b-kv.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 3,
+      "used_by": [
+        "workflows/icekiub/Carousel_Pose_changer.json",
+        "workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json",
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+      ],
+      "repo": "black-forest-labs/FLUX.2-klein-9b-kv",
+      "repo_path": "flux-2-klein-9b-kv.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "LoraLoaderModelOnly",
+        "Power Lora Loader (rgthree)"
+      ],
+      "workflow_count": 3,
+      "used_by": [
+        "workflows/h3/NEW_-_AV_Extension.json",
+        "workflows/h3/NEW_-_Music_Video.json",
+        "workflows/icekiub/H3_Icy_image.json"
+      ],
+      "repo": "lightx2v/Minimax-h3-Turbo",
+      "repo_path": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "qwen_3_4b.safetensors",
+      "folder": "text_encoders",
+      "loaders": [
+        "CLIPLoader"
+      ],
+      "workflow_count": 3,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json",
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v1_.json",
+        "workflows/icekiub/zbase+zit+control_-_icekiub_v1.json"
+      ],
+      "repo": "Comfy-Org/z_image_turbo",
+      "repo_path": "split_files/text_encoders/qwen_3_4b.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "Qwen-Image-Lightning-4steps-V1.0.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json",
+        "workflows/icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json"
+      ],
+      "repo": "lightx2v/Qwen-Image-Lightning",
+      "repo_path": "Qwen-Image-Lightning-4steps-V1.0.safetensors",
+      "evidence": "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json"
+    },
+    {
+      "file": "Qwen-Image-Lightning-4steps-V2.0-bf16.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json",
+        "workflows/icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json"
+      ],
+      "repo": "lightx2v/Qwen-Image-Lightning",
+      "repo_path": "Qwen-Image-Lightning-4steps-V2.0-bf16.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "Qwen-Image-Lightning-8steps-V2.0-bf16.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json"
+      ],
+      "repo": "lightx2v/Qwen-Image-Lightning",
+      "repo_path": "Qwen-Image-Lightning-8steps-V2.0-bf16.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "Wan21-14B-SCAIL-preview_fp8_scaled_mixed.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "WanVideoModelLoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "Kijai/WanVideo_comfy_fp8_scaled",
+      "repo_path": "SCAIL/Wan21-14B-SCAIL-preview_fp8_scaled_mixed.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json"
+      ],
+      "repo": "Kijai/WanVideo_comfy_fp8_scaled",
+      "repo_path": "Wan22Animate/Wan2_2-Animate-14B_fp8_e4m3fn_scaled_KJ.safetensors",
+      "evidence": "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json"
+    },
+    {
+      "file": "Wan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json"
+      ],
+      "repo": "Kijai/WanVideo_comfy_fp8_scaled",
+      "repo_path": "Wan22Animate/Wan2_2-Animate-14B_fp8_scaled_e4m3fn_KJ_v2.safetensors",
+      "evidence": "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json"
+    },
+    {
+      "file": "WanAnimate_relight_lora_fp16.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json"
+      ],
+      "repo": "Kijai/WanVideo_comfy",
+      "repo_path": "WanAnimate_relight_lora_fp16.safetensors",
+      "evidence": "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json"
+    },
+    {
+      "file": "assdetailer-seg.pt",
+      "folder": "unknown",
+      "loaders": [
+        "UltralyticsDetectorProvider"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+        "workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json"
+      ],
+      "repo": "Bryan32/Adetailer",
+      "repo_path": "assdetailer-seg.pt",
+      "evidence": "filename match in the repo's public listing"
+    },
+    {
+      "file": "illustriousRealismBy_v10VAE.safetensors",
+      "folder": "checkpoints",
+      "loaders": [
+        "CheckpointLoaderSimple"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+        "workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json"
+      ],
+      "repo": "Tenofas/ComfyUI",
+      "repo_path": "checkpoints/illustriousRealismBy_v10VAE.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "krea2_turbo_fp8_scaled.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+        "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json"
+      ],
+      "repo": "Comfy-Org/Krea-2",
+      "repo_path": "diffusion_models/krea2_turbo_fp8_scaled.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "krea2_turbo_lora_rank_64_bf16.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
+      ],
+      "repo": "Comfy-Org/Krea-2",
+      "repo_path": "loras/krea2_turbo_lora_rank_64_bf16.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json"
+      ],
+      "repo": "Kijai/WanVideo_comfy",
+      "repo_path": "Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
+      "evidence": "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json"
+    },
+    {
+      "file": "ltx-2-19b-dev-fp8.safetensors",
+      "folder": "checkpoints",
+      "loaders": [
+        "CheckpointLoaderSimple",
+        "LTXAVTextEncoderLoader",
+        "LTXVAudioVAELoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/LTX2-T2V_-_ICY.json",
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+      ],
+      "repo": "Lightricks/LTX-2",
+      "repo_path": "ltx-2-19b-dev-fp8.safetensors",
+      "evidence": "workflows/icekiub/LTX2-T2V_-_ICY.json"
+    },
+    {
+      "file": "ltx-2-19b-distilled-lora-384.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/LTX2-T2V_-_ICY.json",
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+      ],
+      "repo": "Lightricks/LTX-2",
+      "repo_path": "ltx-2-19b-distilled-lora-384.safetensors",
+      "evidence": "workflows/icekiub/LTX2-T2V_-_ICY.json"
+    },
+    {
+      "file": "minimax_h3_fl2v_lightx2v_turbo_8step_v1.0_resized_avg_rank_24_bf16.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/Workflow-1/Workflow-1-updated.json",
+        "workflows/Workflow-1/Workflow-1.json"
+      ],
+      "repo": "Kijai/MiniMax-H3_comfy",
+      "repo_path": "loras/minimax_h3_fl2v_lightx2v_turbo_8step_v1.0_resized_avg_rank_24_bf16.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "model.onnx",
+      "folder": "unknown",
+      "loaders": [
+        "OnnxDetectionModelLoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "Wan-AI/Wan2.2-Animate-14B",
+      "repo_path": "xlm-roberta-large/onnx/model.onnx",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "qwen_image_2512_fp8_e4m3fn.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json"
+      ],
+      "repo": "Comfy-Org/Qwen-Image_ComfyUI",
+      "repo_path": "split_files/diffusion_models/qwen_image_2512_fp8_e4m3fn.safetensors",
+      "evidence": "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json"
+    },
+    {
+      "file": "qwen_image_edit_2509_fp8_e4m3fn.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json",
+        "workflows/icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json"
+      ],
+      "repo": "Comfy-Org/Qwen-Image-Edit_ComfyUI",
+      "repo_path": "split_files/diffusion_models/qwen_image_edit_2509_fp8_e4m3fn.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "qwen_image_edit_fp8_e4m3fn.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json",
+        "workflows/icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json"
+      ],
+      "repo": "Comfy-Org/Qwen-Image-Edit_ComfyUI",
+      "repo_path": "split_files/diffusion_models/qwen_image_edit_fp8_e4m3fn.safetensors",
+      "evidence": "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json"
+    },
+    {
+      "file": "umt5-xxl-enc-fp8_e4m3fn.safetensors",
+      "folder": "text_encoders",
+      "loaders": [
+        "LoadWanVideoT5TextEncoder"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "Kijai/WanVideo_comfy",
+      "repo_path": "umt5-xxl-enc-fp8_e4m3fn.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "vitpose_h_wholebody_model.onnx",
+      "folder": "detection",
+      "loaders": [
+        "OnnxDetectionModelLoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+      ],
+      "repo": "Kijai/vitpose_comfy",
+      "repo_path": "onnx/vitpose_h_wholebody_model.onnx",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "wan2.2_i2v_A14b_low_noise_lora_rank64_lightx2v_4step_1022.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/IcyMotion_Free_v3.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
+      ],
+      "repo": "lightx2v/Wan2.2-Distill-Loras",
+      "repo_path": "wan2.2_i2v_A14b_low_noise_lora_rank64_lightx2v_4step_1022.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "4xFaceUpDAT.pth",
+      "folder": "upscale_models",
+      "loaders": [
+        "UpscaleModelLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json"
+      ],
+      "repo": "Tenofas/ComfyUI",
+      "repo_path": "upscale_models/4xFaceUpDAT.pth",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "Chroma1-HD.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json"
+      ],
+      "repo": "lodestones/Chroma1-HD",
+      "repo_path": "Chroma1-HD.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "QuadView_klein9b_v1.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/icy_ref_character_sheet_for_minimax.json"
+      ],
+      "repo": "Alissonerdx/CharacterSheet",
+      "repo_path": "QuadView_klein9b_v1.safetensors",
+      "evidence": "workflows/icekiub/icy_ref_character_sheet_for_minimax.json"
+    },
+    {
+      "file": "Qwen-Rapid-AIO-NSFW-v18.safetensors",
+      "folder": "checkpoints",
+      "loaders": [
+        "CheckpointLoaderSimple"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v1_.json"
+      ],
+      "repo": "Phr00t/Qwen-Image-Edit-Rapid-AIO",
+      "repo_path": "v18/Qwen-Rapid-AIO-NSFW-v18.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "Qwen-Rapid-AIO-NSFW-v23.safetensors",
+      "folder": "checkpoints",
+      "loaders": [
+        "CheckpointLoaderSimple"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json"
+      ],
+      "repo": "Phr00t/Qwen-Image-Edit-Rapid-AIO",
+      "repo_path": "v23/Qwen-Rapid-AIO-NSFW-v23.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "WAN2.2t2vLOWNOISEFP8.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json"
+      ],
+      "repo": "icekiub/WAN-2.2-T2V-FP8-NON-SCALED",
+      "repo_path": "WAN2.2t2vLOWNOISEFP8.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "Z-Image-Fun-Controlnet-Union-2.1-lite.safetensors",
+      "folder": "controlnet",
+      "loaders": [
+        "ModelPatchLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/zbase+zit+control_-_icekiub_v1.json"
+      ],
+      "repo": "alibaba-pai/Z-Image-Fun-Controlnet-Union-2.1",
+      "repo_path": "Z-Image-Fun-Controlnet-Union-2.1-lite.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "Z-Image-Fun-Lora-Distill-8-Steps-2602-ComfyUI.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/zbase+zit+control_-_icekiub_v1.json"
+      ],
+      "repo": "alibaba-pai/Z-Image-Fun-Lora-Distill",
+      "repo_path": "Z-Image-Fun-Lora-Distill-8-Steps-2602-ComfyUI.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "depth_anything_v2_vitl.pth",
+      "folder": "unknown",
+      "loaders": [
+        "DepthAnythingV2Preprocessor"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+      ],
+      "repo": "depth-anything/Depth-Anything-V2-Large",
+      "repo_path": "depth_anything_v2_vitl.pth",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "gemma_3_12B_it.safetensors",
+      "folder": "unknown",
+      "loaders": [
+        "LTXAVTextEncoderLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/LTX2-T2V_-_ICY.json"
+      ],
+      "repo": "Comfy-Org/ltx-2",
+      "repo_path": "split_files/text_encoders/gemma_3_12B_it.safetensors",
+      "evidence": "workflows/icekiub/LTX2-T2V_-_ICY.json"
+    },
+    {
+      "file": "gemma_3_12B_it_fp4_mixed.safetensors",
+      "folder": "unknown",
+      "loaders": [
+        "LTXAVTextEncoderLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+      ],
+      "repo": "Comfy-Org/ltx-2",
+      "repo_path": "split_files/text_encoders/gemma_3_12B_it_fp4_mixed.safetensors",
+      "evidence": "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+    },
+    {
+      "file": "low_noise_model.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json"
+      ],
+      "repo": "lightx2v/Wan2.2-Lightning",
+      "repo_path": "Wan2.2-T2V-A14B-4steps-lora-250928/low_noise_model.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "ltx-2-19b-lora-camera-control-dolly-left.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/LTX2-T2V_-_ICY.json"
+      ],
+      "repo": "Lightricks/LTX-2-19b-LoRA-Camera-Control-Dolly-Left",
+      "repo_path": "ltx-2-19b-lora-camera-control-dolly-left.safetensors",
+      "evidence": "workflows/icekiub/LTX2-T2V_-_ICY.json"
+    },
+    {
+      "file": "ltx-2-spatial-upscaler-x2-1.0.safetensors",
+      "folder": "upscale_models",
+      "loaders": [
+        "LatentUpscaleModelLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/LTX2-T2V_-_ICY.json"
+      ],
+      "repo": "Lightricks/LTX-2",
+      "repo_path": "ltx-2-spatial-upscaler-x2-1.0.safetensors",
+      "evidence": "workflows/icekiub/LTX2-T2V_-_ICY.json"
+    },
+    {
+      "file": "minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/1-KeyFrames/1-KEYFRAMES.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "loras/minimax_h3_fl2v_turbo_4step_v1.0_768p_comfyui_bf16.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/h3/NEW_-_V2V_Latent_Motion_Transfer_with_upscale_and_de-rope_.json"
+      ],
+      "repo": "lightx2v/Minimax-h3-Turbo",
+      "repo_path": "minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "minimax_h3_hybrid_fl2va_ref2va_b25-49-int8.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/H3_Icy_image.json"
+      ],
+      "repo": "smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models",
+      "repo_path": "minimax_h3_hybrid_fl2va_ref2va_b25-49-int8.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/MiniMax-Long-Video-&-Extend-Video/5-Video-Extend-No-Reference-Image.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "loras/minimax_h3_ref2v_turbo_4step_v0.1_comfyui_bf16.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "minimax_h3_ref2va_pruned_fp8_scaled.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/h3-refmods/dainamo-refmod-generate.json"
+      ],
+      "repo": "Comfy-Org/MiniMax-H3",
+      "repo_path": "diffusion_models/minimax_h3_ref2va_pruned_fp8_scaled.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "minimax_h3_t1_image_vae_step1597.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "VAELoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/H3_Icy_image.json"
+      ],
+      "repo": "Mamad8/MiniMax-H3-Image-VAE",
+      "repo_path": "minimax_h3_t1_image_vae_step1597.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "qwen3vl_4b_fp8_scaled.safetensors",
+      "folder": "text_encoders",
+      "loaders": [
+        "CLIPLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json"
+      ],
+      "repo": "Comfy-Org/Krea-2",
+      "repo_path": "text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
+      "file": "qwen_image_fp8_hq.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json"
+      ],
+      "repo": "Comfy-Org/Qwen-Image_ComfyUI",
+      "repo_path": "split_files/diffusion_models/qwen_image_fp8_hq.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "sam3.pt",
+      "folder": "checkpoints",
+      "loaders": [
+        "LoadSAM3Model"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json"
+      ],
+      "repo": "facebook/sam3",
+      "repo_path": "sam3.pt",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "t5xxl_fp8_e4m3fn_scaled.safetensors",
+      "folder": "text_encoders",
+      "loaders": [
+        "CLIPLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json"
+      ],
+      "repo": "comfyanonymous/flux_text_encoders",
+      "repo_path": "t5xxl_fp8_e4m3fn_scaled.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "z_image_bf16.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/zbase+zit+control_-_icekiub_v1.json"
+      ],
+      "repo": "Comfy-Org/z_image",
+      "repo_path": "split_files/diffusion_models/z_image_bf16.safetensors",
+      "evidence": "download-plan.json (earlier resolution)"
     }
   ],
   "auto_download": [
     {
       "file": "rife47.pth",
       "folder": "rife",
-      "workflow_count": 2,
+      "loaders": [
+        "RIFE VFI"
+      ],
+      "workflow_count": 5,
       "used_by": [
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json"
       ]
     }
   ],
   "creator_private": [
     {
-      "file": "Lora_lora_000000600.safetensors",
+      "file": "my_first_lora_v1_000000600_low_noise.safetensors",
       "folder": "loras",
-      "workflow_count": 1,
+      "loaders": [
+        "LoraLoaderModelOnly",
+        "WanVideoLoraSelect"
+      ],
+      "workflow_count": 6,
       "used_by": [
-        "local-comfy/IG Carousel pose generator/Carousel Pose changer.json"
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/IcyMotion_Free_v3.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+        "workflows/icekiub/Motion_Control_Icy_-SUBS.json",
+        "workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json"
       ]
     },
     {
-      "file": "my_first_lora_v1_000000600_low_noise.safetensors",
+      "file": "Lora_lora_000000600.safetensors",
       "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
       "workflow_count": 3,
       "used_by": [
-        "local-comfy/01.  NEW WORKFLOWS/SCAIL 2 overview/IcyMotion Free v3.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+        "workflows/icekiub/Carousel_Pose_changer.json",
+        "workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json",
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+      ]
+    },
+    {
+      "file": "Lora_lora_000000500.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+        "workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json"
       ]
     },
     {
       "file": "slop_twerk_LowNoise_merged3_7_v2.safetensors",
       "folder": "loras",
-      "workflow_count": 1,
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
       "used_by": [
-        "local-comfy/01.  NEW WORKFLOWS/SCAIL 2 overview/IcyMotion Free v3.json"
+        "workflows/icekiub/IcyMotion_Free_v3.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
       ]
     },
     {
       "file": "wan2.1_SCAIL_2_DPO_lora_bf16(1).safetensors",
       "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/IcyMotion_Free_v3.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
+      ]
+    },
+    {
+      "file": "IceQWENv2_000000600.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
       "workflow_count": 1,
       "used_by": [
-        "local-comfy/01.  NEW WORKFLOWS/SCAIL 2 overview/IcyMotion Free v3.json"
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json"
+      ]
+    },
+    {
+      "file": "LOURTALTX_000001000.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+      ]
+    },
+    {
+      "file": "LOURTA_000000700.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/zbase+zit+control_-_icekiub_v1.json"
+      ]
+    },
+    {
+      "file": "Loratest56_000000600.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
+      ]
+    },
+    {
+      "file": "Loratest56_000001650.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json"
+      ]
+    },
+    {
+      "file": "RemyTurbov2_000000500.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v1_.json"
+      ]
+    },
+    {
+      "file": "head_swap_flux-klein_9b_000003500.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/I2I_no_lora_faceswap_subs.json"
+      ]
+    },
+    {
+      "file": "ishona_xo1_000000400.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/api-tests/klein-ishona-400.json"
+      ]
+    },
+    {
+      "file": "ishona_xo1_000000600.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/api-tests/klein-ishona-600.json"
+      ]
+    },
+    {
+      "file": "krea2Icydildov2_000004000.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
+      ]
+    },
+    {
+      "file": "lourta2krea_copy_000000750.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Krea2Icy_-Subs_1.1.json"
+      ]
+    }
+  ],
+  "manual": [
+    {
+      "file": "depth-control-lora.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "Krea2ControlLoRALoader"
+      ],
+      "workflow_count": 3,
+      "used_by": [
+        "workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+        "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
+      ],
+      "look_at": [
+        "https://drive.google.com/drive/folders/15otV3rVKjxUpkunUKrC5maz4nKAyU1eG?usp=sharing"
+      ]
+    },
+    {
+      "file": "icyrealismKREA.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 3,
+      "used_by": [
+        "workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+        "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
+      ],
+      "look_at": [
+        "https://drive.google.com/drive/folders/15otV3rVKjxUpkunUKrC5maz4nKAyU1eG?usp=sharing"
+      ]
+    },
+    {
+      "file": "Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+      "folder": "text_encoders",
+      "loaders": [
+        "CLIPLoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
+      ],
+      "look_at": [
+        "https://drive.google.com/drive/folders/15otV3rVKjxUpkunUKrC5maz4nKAyU1eG?usp=sharing"
+      ]
+    },
+    {
+      "file": "krea2filterbypass3.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+        "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json"
+      ],
+      "look_at": [
+        "https://drive.google.com/drive/folders/15otV3rVKjxUpkunUKrC5maz4nKAyU1eG?usp=sharing"
+      ]
+    },
+    {
+      "file": "1xSkinContrast-SuperUltraCompact.pth",
+      "folder": "upscale_models",
+      "loaders": [
+        "UpscaleModelLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/H3_Icy_image.json"
+      ],
+      "look_at": [
+        "https://civitai.red/models/2200329/galaxyace-lora?modelVersionId=3201619",
+        "https://openmodeldb.info/models/1x-SkinContrast-High-SuperUltraCompact"
+      ]
+    },
+    {
+      "file": "Flux.Fazze-step00000200.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json"
+      ],
+      "look_at": [
+        "https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/file/view/master/flux-2-klein-9b-fp8.safetensors?status=2"
+      ]
+    },
+    {
+      "file": "H3-GalaxyAce.safetensors",
+      "folder": "unknown",
+      "loaders": [
+        "Power Lora Loader (rgthree)"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/H3_Icy_image.json"
+      ],
+      "look_at": [
+        "https://civitai.red/models/2200329/galaxyace-lora?modelVersionId=3201619",
+        "https://openmodeldb.info/models/1x-SkinContrast-High-SuperUltraCompact"
+      ]
+    },
+    {
+      "file": "MysticXXX_MMH3-V1.safetensors",
+      "folder": "unknown",
+      "loaders": [
+        "Power Lora Loader (rgthree)"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/H3_Icy_image.json"
+      ],
+      "look_at": [
+        "https://civitai.red/models/2200329/galaxyace-lora?modelVersionId=3201619",
+        "https://openmodeldb.info/models/1x-SkinContrast-High-SuperUltraCompact"
+      ]
+    },
+    {
+      "file": "Qwen25VL7B_nvfp4_fixedBF16.safetensors",
+      "folder": "text_encoders",
+      "loaders": [
+        "CLIPLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json"
+      ],
+      "look_at": [
+        "https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/file/view/master/flux-2-klein-9b-fp8.safetensors?status=2"
+      ]
+    },
+    {
+      "file": "RealESRGAN_x2plus.pth",
+      "folder": "upscale_models",
+      "loaders": [
+        "UpscaleModelLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/I2I_no_lora_faceswap_subs.json"
+      ],
+      "look_at": [
+        "https://civitai.com/models/2027766/bfs-best-face-swap",
+        "https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/files"
+      ]
+    },
+    {
+      "file": "VBVR_H3_attn_only.safetensors",
+      "folder": "unknown",
+      "loaders": [
+        "Power Lora Loader (rgthree)"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/H3_Icy_image.json"
+      ],
+      "look_at": [
+        "https://civitai.red/models/2200329/galaxyace-lora?modelVersionId=3201619",
+        "https://openmodeldb.info/models/1x-SkinContrast-High-SuperUltraCompact"
+      ]
+    },
+    {
+      "file": "flux2-klein9b-lora-mlsharp-3d-repair.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json"
+      ],
+      "look_at": [
+        "https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/file/view/master/flux-2-klein-9b-fp8.safetensors?status=2"
+      ]
+    },
+    {
+      "file": "h3-realism-people-t2v-i2v-r2v.safetensors",
+      "folder": "unknown",
+      "loaders": [
+        "Power Lora Loader (rgthree)"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/H3_Icy_image.json"
+      ],
+      "look_at": [
+        "https://civitai.red/models/2200329/galaxyace-lora?modelVersionId=3201619",
+        "https://openmodeldb.info/models/1x-SkinContrast-High-SuperUltraCompact"
+      ]
+    },
+    {
+      "file": "smallflux2.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "VAELoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json"
+      ],
+      "look_at": [
+        "https://civitai.com/models/2027766/bfs-best-face-swap",
+        "https://modelscope.cn/models/black-forest-labs/FLUX.2-klein-9b-fp8/files"
       ]
     }
   ],
   "unresolved": [
     {
+      "file": "ultrafluxvae.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "VAELoader"
+      ],
+      "workflow_count": 5,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json",
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v1_.json",
+        "workflows/icekiub/zbase+zit+control_-_icekiub_v1.json"
+      ]
+    },
+    {
       "file": "Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors",
       "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly",
+        "WanVideoLoraSelect"
+      ],
+      "workflow_count": 3,
+      "used_by": [
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/Motion_Control_Icy_-SUBS.json"
+      ]
+    },
+    {
+      "file": "1GIRL_QWEN_V3.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
       "workflow_count": 2,
       "used_by": [
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/ICY SCAIL 2.0 Subs - icekiub v2.json",
-        "local-comfy/Motion Control workflow with WAN SCAIL + FLUX KLEIN/comfyui-scail-docker/workflows/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json"
+        "workflows/icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json",
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v1_.json"
       ]
     },
     {
-      "file": "minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy.safetensors",
-      "folder": "loras",
-      "workflow_count": 9,
-      "used_by": [
-        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2-Updated.json",
-        "aininja/Face-&-Body Swap/Workflow-2/Workflow-2.json",
-        "aininja/MiniMax-Long-Video-&-Extend-Video/2-Text-To-Long-Video.json",
-        "aininja/MiniMax-Long-Video-&-Extend-Video/3-Image-To-Long-Video/3-Image-To-Long-Video.json",
-        "aininja/MiniMax-Long-Video-&-Extend-Video/4-Video-Extend-with-Reference-Image/4-Video-Extend-with-Reference-Image.json",
-        "h3/NEW - 2MP De-Rope Continuation - Working Example.json",
-        "h3/OLD - Hybrid Extension.json",
-        "h3/OLD - Motion Context - Advanced.json",
-        "h3/OLD - Motion Context - Simple.json"
-      ]
-    },
-    {
-      "file": "minimax_h3_fl2v_lightx2v_turbo_8step_v1.0_resized_avg_rank_24_bf16.safetensors",
-      "folder": "loras",
+      "file": "adetailerFootYolov8x_v20.pt",
+      "folder": "detection",
+      "loaders": [
+        "UltralyticsDetectorProvider"
+      ],
       "workflow_count": 2,
       "used_by": [
-        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1-updated.json",
-        "aininja/Face-&-Body Swap/Workflow-1/Workflow-1.json"
+        "workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+        "workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json"
       ]
     },
     {
-      "file": "minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors",
-      "folder": "loras",
-      "workflow_count": 1,
+      "file": "female_breast-v4.2.pt",
+      "folder": "unknown",
+      "loaders": [
+        "UltralyticsDetectorProvider"
+      ],
+      "workflow_count": 2,
       "used_by": [
-        "h3/NEW - V2V Latent Motion Transfer (with upscale and de-rope).json"
-      ]
-    },
-    {
-      "file": "minimax_h3_fl2va_pruned_INT4Q.safetensors",
-      "folder": "diffusion_models",
-      "workflow_count": 1,
-      "used_by": [
-        "aininja/MiniMax-H3-Simple-WF/FLF-Workflow-With-Sol-Atten-&-Sage-Atten.json"
+        "workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+        "workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json"
       ]
     },
     {
       "file": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
       "folder": "upscale_models",
+      "loaders": [
+        "MinimaxH3LatentUpscaler3D"
+      ],
       "workflow_count": 2,
       "used_by": [
-        "h3/NEW - 2MP De-Rope Continuation - Working Example.json",
-        "h3/NEW - V2V Latent Motion Transfer (with upscale and de-rope).json"
+        "workflows/h3/NEW_-_2MP_De-Rope_Continuation_-_Working_Example.json",
+        "workflows/h3/NEW_-_V2V_Latent_Motion_Transfer_with_upscale_and_de-rope_.json"
       ]
     },
     {
-      "file": "wan2.2_i2v_A14b_low_noise_lora_rank64_lightx2v_4step_1022.safetensors",
-      "folder": "loras",
+      "file": "pussyV2.pt",
+      "folder": "unknown",
+      "loaders": [
+        "UltralyticsDetectorProvider"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+        "workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json"
+      ]
+    },
+    {
+      "file": "4xFFHQDAT.pth",
+      "folder": "upscale_models",
+      "loaders": [
+        "UpscaleModelLoader"
+      ],
       "workflow_count": 1,
       "used_by": [
-        "local-comfy/01.  NEW WORKFLOWS/SCAIL 2 overview/IcyMotion Free v3.json"
+        "workflows/icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json"
+      ]
+    },
+    {
+      "file": "Krea2_Raw_convrot_int8mixed.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
+      ]
+    },
+    {
+      "file": "Qwen-MysticXXX-v1.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json"
+      ]
+    },
+    {
+      "file": "Qwen_Snofs_1_3.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json"
+      ]
+    },
+    {
+      "file": "chroma-flash-heun_r64-fp32.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json"
+      ]
+    },
+    {
+      "file": "flux-2-klein-9b.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json"
+      ]
+    },
+    {
+      "file": "klein_snofs_v1_1.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json"
+      ]
+    },
+    {
+      "file": "krea2RealVae_v10.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "VAELoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json"
+      ]
+    },
+    {
+      "file": "ltx-2.3-22b-dev-fp8.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "LTXAVTextEncoderLoader",
+        "LTXVAudioVAELoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+      ]
+    },
+    {
+      "file": "ltx-2.3-22b-distilled-fp8.safetensors",
+      "folder": "checkpoints",
+      "loaders": [
+        "CheckpointLoaderSimple"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+      ]
+    },
+    {
+      "file": "ltx-2.3-22b-ic-lora-union-control-ref0.5.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LTXICLoRALoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json"
+      ]
+    },
+    {
+      "file": "minimax_h3_fl2va_pruned_INT4Q.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "4c314f31-ecda-4b08-ae98-faaba1bf613f"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/MiniMax-H3-Simple-WF/FLF-Workflow-With-Sol-Atten-_-Sage-Atten.json"
+      ]
+    },
+    {
+      "file": "minimaxh3_adamdriver_v1_refmod.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "H3RefModVisualPicker"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/h3-refmods/franckyb-refmod-picker-example.json"
+      ]
+    },
+    {
+      "file": "minimaxh3_aimeegarcia_v1_refmod.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "H3RefModVisualPicker"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/h3-refmods/franckyb-refmod-picker-example.json"
+      ]
+    },
+    {
+      "file": "nicegirls_zimagebase.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/zbase+zit+control_-_icekiub_v1.json"
       ]
     }
   ],
   "repo_errors": {
-    "styler00dollar/VSGAN-tensorrt-docker": "HTTP 404"
+    "styler00dollar/VSGAN-tensorrt-docker": "HTTP 401",
+    "Comfy-Org/Chroma1-HD_ComfyUI": "HTTP 401"
   }
 }

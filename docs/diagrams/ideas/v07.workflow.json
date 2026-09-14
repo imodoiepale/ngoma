@@ -1,0 +1,157 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "V07 Faceless shorts channel",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    },
+    {
+      "id": "gaps",
+      "label": "Not runnable yet",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n4",
+    "n6",
+    "n7"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n5",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n3",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Voiceover",
+      "sublabel": "tts.py"
+    },
+    {
+      "id": "n4",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Image to video (WAN)",
+      "sublabel": "I2V Infinite…",
+      "width": 160
+    },
+    {
+      "id": "n1",
+      "lane": "gaps",
+      "col": 1,
+      "type": "security",
+      "label": "Motion graphics",
+      "sublabel": "not built yet",
+      "tag": "gap",
+      "width": 128
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Captions",
+      "sublabel": "mux.py"
+    },
+    {
+      "id": "n7",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "text",
+      "variant": "dashed"
+    },
+    {
+      "from": "n2",
+      "to": "n3",
+      "label": "text"
+    },
+    {
+      "from": "n5",
+      "to": "n4",
+      "label": "image"
+    },
+    {
+      "from": "n2",
+      "to": "n4",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n4",
+      "to": "n6",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n2",
+      "to": "n6",
+      "label": "text"
+    },
+    {
+      "from": "n6",
+      "to": "n7",
+      "label": "video",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $600/mo",
+        "Base revenue $3,600/mo",
+        "Margin 73%",
+        "First cash 14 days"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "Gap: Motion graphics not built",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

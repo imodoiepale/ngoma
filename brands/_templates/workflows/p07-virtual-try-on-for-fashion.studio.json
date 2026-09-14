@@ -7,7 +7,7 @@
     "idea": "P07",
     "offer": "Customers' chosen outfits on consistent models, 200 looks a month"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-14",
   "consent_required": false,
   "nodes": [
     {
@@ -22,19 +22,8 @@
       }
     },
     {
-      "id": "n3",
-      "kind": "brief",
-      "position": {
-        "x": 80,
-        "y": 290
-      },
-      "data": {
-        "params": {}
-      }
-    },
-    {
       "id": "n1",
-      "kind": "image-edit",
+      "kind": "wardrobe",
       "position": {
         "x": 400,
         "y": 80
@@ -45,9 +34,31 @@
     },
     {
       "id": "n4",
-      "kind": "export",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "image-edit",
       "position": {
         "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "export",
+      "position": {
+        "x": 1040,
         "y": 80
       },
       "data": {
@@ -66,17 +77,33 @@
     },
     {
       "id": "e2",
-      "source": "n3",
-      "sourceHandle": "text",
+      "source": "n2",
+      "sourceHandle": "images",
       "target": "n1",
-      "targetHandle": "prompt",
-      "type": "text"
+      "targetHandle": "clothes",
+      "type": "image"
     },
     {
       "id": "e3",
       "source": "n1",
       "sourceHandle": "image",
-      "target": "n4",
+      "target": "n3",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e4",
+      "source": "n4",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e5",
+      "source": "n3",
+      "sourceHandle": "image",
+      "target": "n5",
       "targetHandle": "media",
       "type": "image"
     }

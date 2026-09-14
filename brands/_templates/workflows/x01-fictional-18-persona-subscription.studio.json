@@ -7,7 +7,7 @@
     "idea": "X01",
     "offer": "Subscription to a fully fictional adult persona on a platform that allows disclosed AI content"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-14",
   "consent_required": true,
   "nodes": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "id": "n3",
-      "kind": "lora-train",
+      "kind": "caption-dataset",
       "position": {
         "x": 720,
         "y": 80
@@ -45,10 +45,21 @@
     },
     {
       "id": "n4",
-      "kind": "carousel",
+      "kind": "lora-train",
       "position": {
         "x": 720,
         "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n5",
+      "kind": "carousel",
+      "position": {
+        "x": 720,
+        "y": 500
       },
       "data": {
         "params": {
@@ -57,7 +68,7 @@
       }
     },
     {
-      "id": "n5",
+      "id": "n6",
       "kind": "export",
       "position": {
         "x": 1040,
@@ -82,7 +93,7 @@
       "source": "n1",
       "sourceHandle": "images",
       "target": "n3",
-      "targetHandle": "images",
+      "targetHandle": "media",
       "type": "image"
     },
     {
@@ -90,21 +101,29 @@
       "source": "n1",
       "sourceHandle": "images",
       "target": "n4",
-      "targetHandle": "image",
+      "targetHandle": "images",
       "type": "image"
     },
     {
       "id": "e4",
-      "source": "n4",
+      "source": "n1",
       "sourceHandle": "images",
       "target": "n5",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e5",
+      "source": "n5",
+      "sourceHandle": "images",
+      "target": "n6",
       "targetHandle": "media",
       "type": "image"
     }
   ],
   "gaps": [
     {
-      "node": "n3",
+      "node": "n4",
       "step": "lora-train",
       "reason": "No LoRA training workflow in the library yet (ai-toolkit runs outside ComfyUI). Use RefMod character instead."
     }

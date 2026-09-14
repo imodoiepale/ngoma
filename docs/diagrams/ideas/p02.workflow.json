@@ -1,0 +1,98 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "P02 Merch with the AI model",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n4"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n3",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Brand kit"
+    },
+    {
+      "id": "n1",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Brand compositor",
+      "sublabel": "compositor.py",
+      "width": 132
+    },
+    {
+      "id": "n4",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n1",
+      "label": "brand"
+    },
+    {
+      "from": "n1",
+      "to": "n4",
+      "label": "image",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $12 per unit",
+        "Base revenue $1,800/mo",
+        "Margin 85%",
+        "First cash 60 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

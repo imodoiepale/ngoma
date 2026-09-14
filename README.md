@@ -14,8 +14,30 @@ Secrets live in Windows DPAPI via `infra/runpod/set_secret.py` (stored outside t
 uv run studio.py doctor          # what is installed, reachable and blocked
 uv run studio.py plan            # plan all 30 Ongea Pesa ideas (costs nothing)
 uv run studio.py check           # fail if anything secret-shaped is tracked
-uv run studio.py test            # 36 end-to-end tests, no key/GPU/network
+uv run studio.py test            # the full suite, no key/GPU/network
 uv run studio.py loop            # the whole pipeline on fixture data
+```
+
+### What the studio can make, and what it would earn
+
+| Read | What it holds |
+|---|---|
+| [`docs/workflows/WORKFLOWS.md`](docs/workflows/WORKFLOWS.md) | All 72 ComfyUI workflows: what each does, what it makes possible, which canvas step runs it, which ideas use it, whether its models can be fetched |
+| [`docs/proposals/`](docs/proposals/README.md) | A proposal for each of the 50 ideas: buyer, offer, delivery steps, costed scenarios, what is not ready, first 30 days |
+| [`docs/diagrams/ideas/`](docs/diagrams/ideas/README.md) | An Archify diagram per idea, generated from its studio template |
+| [`docs/business/IDEAS-50.md`](docs/business/IDEAS-50.md), [`OFFERS.md`](docs/business/OFFERS.md) | The costed idea table and the offers to sell first |
+| [`docs/business/ICEKIUB-SKOOL.md`](docs/business/ICEKIUB-SKOOL.md) | The bought Icekiub classroom: every lesson, workflow, node pack and model link |
+| [`infra/runpod/download-plan.json`](infra/runpod/download-plan.json) | Every model the workflows name, with its source or the reason it has none |
+| [`docs/NODE-PACK-PRACTICES.md`](docs/NODE-PACK-PRACTICES.md) | How to build a node pack people can trust, learned from MATRIX LAB's releases, and what we build next |
+
+All of these are generated from the data they describe, and tests fail when one falls behind:
+
+```bash
+uv run python infra/runpod/plan_models.py --online
+uv run python packages/strategy/workflow_catalog.py --check
+uv run --with pyyaml python packages/strategy/proposals.py
+uv run --with pyyaml python packages/strategy/idea_diagrams.py --deliver
+uv run python packages/library/tools/import_skool_pack.py
 ```
 
 ### Studio canvas and workflows
@@ -62,4 +84,4 @@ uv run --with pyyaml packages/strategy/workflow_author.py --check
 | `analytics` | pull Instagram/Postiz metrics, attribute them to briefs, derive learnings |
 | `memory` | bitemporal facts: what worked, when, and what superseded it |
 | `orchestrator` | goals, tasks, budgets, approvals, audit; dispatch to Claude/Codex/local/Hermes |
-| `studio-ui` | Next.js canvas (ported) |
+| `studio-ui` | Weavy-style node canvas per client: 52 steps, 50 idea templates, combine workflows, dry-run plan |

@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "U07 Viral format remakes",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    }
+  ],
+  "mainPath": [
+    "n4",
+    "n3",
+    "n6"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n4",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n1",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Hook variants",
+      "sublabel": "study.py",
+      "width": 112
+    },
+    {
+      "id": "n5",
+      "lane": "you",
+      "col": 2,
+      "type": "frontend",
+      "label": "Video clip"
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Motion control",
+      "sublabel": "SCAIL 2",
+      "tag": "consent",
+      "width": 120
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "text"
+    },
+    {
+      "from": "n4",
+      "to": "n3",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n5",
+      "to": "n3",
+      "label": "video"
+    },
+    {
+      "from": "n3",
+      "to": "n6",
+      "label": "video",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $600/mo",
+        "Base revenue $4,800/mo",
+        "Margin 66%",
+        "First cash 10 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Consent on file before any likeness",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "S08 Podcast to shorts",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n5",
+    "n6"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n1",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Transcribe",
+      "sublabel": "transcribe.py",
+      "width": 100
+    },
+    {
+      "id": "n4",
+      "lane": "you",
+      "col": 2,
+      "type": "frontend",
+      "label": "Video clip"
+    },
+    {
+      "id": "n3",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Cut and loop",
+      "sublabel": "mux.py",
+      "width": 104
+    },
+    {
+      "id": "n5",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Captions",
+      "sublabel": "mux.py"
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 4,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n4",
+      "to": "n3",
+      "label": "video"
+    },
+    {
+      "from": "n3",
+      "to": "n5",
+      "label": "video"
+    },
+    {
+      "from": "n1",
+      "to": "n5",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n5",
+      "to": "n6",
+      "label": "video",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $350/mo",
+        "Base revenue $3,500/mo",
+        "Margin 66%",
+        "First cash 7 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

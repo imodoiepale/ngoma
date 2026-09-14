@@ -1,0 +1,130 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "A01 Brand engine for SMEs",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "hosted",
+      "label": "Hosted model"
+    }
+  ],
+  "mainPath": [
+    "n1",
+    "n2",
+    "n4",
+    "n6"
+  ],
+  "nodes": [
+    {
+      "id": "n3",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n1",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Brand kit"
+    },
+    {
+      "id": "n2",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Brand compositor",
+      "sublabel": "compositor.py",
+      "width": 132
+    },
+    {
+      "id": "n5",
+      "lane": "you",
+      "col": 2,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n4",
+      "lane": "hosted",
+      "col": 2,
+      "type": "external",
+      "label": "Image (hosted)",
+      "sublabel": "daily_premium",
+      "width": 120
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n3",
+      "to": "n2",
+      "label": "image"
+    },
+    {
+      "from": "n1",
+      "to": "n2",
+      "label": "brand",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n5",
+      "to": "n4",
+      "label": "text"
+    },
+    {
+      "from": "n2",
+      "to": "n4",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n4",
+      "to": "n6",
+      "label": "image",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $29/mo",
+        "Base revenue $4,350/mo",
+        "Margin 75%",
+        "First cash 60 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

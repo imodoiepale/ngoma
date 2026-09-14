@@ -1,0 +1,113 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "A02 M-Pesa pay-per-post credits",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gaps",
+      "label": "Not runnable yet",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "n3",
+    "n2",
+    "n5"
+  ],
+  "nodes": [
+    {
+      "id": "n3",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n1",
+      "lane": "gaps",
+      "col": 0,
+      "type": "security",
+      "label": "Ongea pesa",
+      "sublabel": "no node yet",
+      "tag": "gap"
+    },
+    {
+      "id": "n4",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Brand kit"
+    },
+    {
+      "id": "n2",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Brand compositor",
+      "sublabel": "compositor.py",
+      "width": 132
+    },
+    {
+      "id": "n5",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n3",
+      "to": "n2",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n4",
+      "to": "n2",
+      "label": "brand"
+    },
+    {
+      "from": "n2",
+      "to": "n5",
+      "label": "image",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $0 per unit",
+        "Base revenue $1,170/mo",
+        "Margin 30%",
+        "First cash 45 days"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "Gap: Ongea pesa not built",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "V03 Listing to cinematic reel",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    }
+  ],
+  "mainPath": [
+    "n3",
+    "n4",
+    "n6"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n3",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n5",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Voiceover",
+      "sublabel": "tts.py"
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Image to video (WAN)",
+      "sublabel": "I2V Infinite…",
+      "width": 160
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    },
+    {
+      "id": "n4",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Text to video (LTX)",
+      "sublabel": "LTX2 T2V",
+      "width": 156
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image"
+    },
+    {
+      "from": "n3",
+      "to": "n1",
+      "label": "text"
+    },
+    {
+      "from": "n3",
+      "to": "n4",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n5",
+      "label": "text"
+    },
+    {
+      "from": "n4",
+      "to": "n6",
+      "label": "video",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $49/mo",
+        "Base revenue $2,940/mo",
+        "Margin 67%",
+        "First cash 7 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

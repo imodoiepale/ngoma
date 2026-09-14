@@ -1,0 +1,173 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "P01 Own AI influencer",
+    "locale": "en",
+    "quality_profile": "standard"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 0,
+      "type": "cloud",
+      "label": "Krea 2 realism image",
+      "sublabel": "Krea2Icy 1.1",
+      "width": 160
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Character dataset",
+      "sublabel": "INFLUENCER Dataset…",
+      "tag": "consent",
+      "width": 140
+    },
+    {
+      "id": "n4",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Caption a dataset",
+      "sublabel": "Uncensored…",
+      "width": 140
+    },
+    {
+      "id": "n5",
+      "lane": "gpu",
+      "col": 3,
+      "type": "cloud",
+      "label": "RefMod character",
+      "sublabel": "franckyb refmod…",
+      "tag": "consent",
+      "width": 132
+    },
+    {
+      "id": "n6",
+      "lane": "gpu",
+      "col": 4,
+      "type": "cloud",
+      "label": "Carousel poses",
+      "sublabel": "Carousel Pose…",
+      "width": 120
+    },
+    {
+      "id": "n8",
+      "lane": "studio",
+      "col": 5,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    },
+    {
+      "id": "n7",
+      "lane": "gpu",
+      "col": 5,
+      "type": "cloud",
+      "label": "Long video (H3)",
+      "sublabel": "3 Image To Long…",
+      "width": 128
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n1",
+      "to": "n3",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n4",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n5",
+      "label": "image"
+    },
+    {
+      "from": "n3",
+      "to": "n6",
+      "label": "image"
+    },
+    {
+      "from": "n6",
+      "to": "n7",
+      "label": "image"
+    },
+    {
+      "from": "n4",
+      "to": "n7",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n7",
+      "to": "n8",
+      "label": "video",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $300/mo",
+        "Base revenue $1,200/mo",
+        "Margin 69%",
+        "First cash 90 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Consent on file before any likeness",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

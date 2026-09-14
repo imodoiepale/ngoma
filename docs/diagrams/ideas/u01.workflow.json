@@ -1,0 +1,153 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "U01 UGC ad pack",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n3",
+    "n6",
+    "n7"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n4",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n5",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Voiceover",
+      "sublabel": "tts.py"
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "RefMod character",
+      "sublabel": "franckyb refmod…",
+      "tag": "consent",
+      "width": 132
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Character video (H3)",
+      "sublabel": "dainamo refmod…",
+      "width": 160
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Captions",
+      "sublabel": "mux.py"
+    },
+    {
+      "id": "n7",
+      "lane": "studio",
+      "col": 4,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n1",
+      "to": "n3",
+      "label": "character",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n4",
+      "to": "n3",
+      "label": "text"
+    },
+    {
+      "from": "n4",
+      "to": "n5",
+      "label": "text"
+    },
+    {
+      "from": "n3",
+      "to": "n6",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n4",
+      "to": "n6",
+      "label": "text"
+    },
+    {
+      "from": "n6",
+      "to": "n7",
+      "label": "video",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $1,200/mo",
+        "Base revenue $7,200/mo",
+        "Margin 78%",
+        "First cash 14 days"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Rules",
+      "items": [
+        "Consent on file before any likeness",
+        "Dry-run until approved",
+        "Logo composited, never generated"
+      ]
+    }
+  ]
+}

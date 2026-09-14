@@ -7,7 +7,7 @@
     "idea": "M01",
     "offer": "3-4 minute music video with infinite-length H3, SCAIL motion and relit VFX"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-14",
   "consent_required": true,
   "nodes": [
     {
@@ -47,13 +47,15 @@
     },
     {
       "id": "n4",
-      "kind": "motion-transfer",
+      "kind": "motion-control",
       "position": {
         "x": 720,
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {
+          "variant": "motion control"
+        }
       }
     },
     {
@@ -136,7 +138,7 @@
       "source": "n2",
       "sourceHandle": "images",
       "target": "n4",
-      "targetHandle": "image",
+      "targetHandle": "character",
       "type": "image"
     },
     {
@@ -144,7 +146,7 @@
       "source": "n1",
       "sourceHandle": "video",
       "target": "n4",
-      "targetHandle": "motion",
+      "targetHandle": "video",
       "type": "video"
     },
     {

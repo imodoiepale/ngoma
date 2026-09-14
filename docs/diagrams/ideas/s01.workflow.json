@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "S01 RefMod or LoRA as a service",
+    "locale": "en",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    },
+    {
+      "id": "gaps",
+      "label": "Not runnable yet",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n5",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "RefMod character",
+      "sublabel": "franckyb refmod…",
+      "tag": "consent",
+      "width": 132
+    },
+    {
+      "id": "n4",
+      "lane": "gaps",
+      "col": 1,
+      "type": "security",
+      "label": "LoRA training",
+      "sublabel": "not built yet",
+      "tag": "gap, consent",
+      "width": 112
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Caption a dataset",
+      "sublabel": "Uncensored…",
+      "width": 140
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n2",
+      "to": "n3",
+      "label": "image"
+    },
+    {
+      "from": "n2",
+      "to": "n4",
+      "label": "image",
+      "variant": "dashed"
+    },
+    {
+      "from": "n2",
+      "to": "n5",
+      "label": "image"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $150 per unit",
+        "Base revenue $3,000/mo",
+        "Margin 83%",
+        "First cash 7 days"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "Consent on file before any likeness",
+        "Gap: LoRA training not built",
+        "Dry-run until approved"
+      ]
+    }
+  ]
+}

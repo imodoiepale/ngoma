@@ -1,0 +1,186 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "M01 Full-length music video",
+    "locale": "en",
+    "quality_profile": "standard"
+  },
+  "lanes": [
+    {
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "gpu",
+      "label": "ComfyUI on the pod"
+    },
+    {
+      "id": "gaps",
+      "label": "Not runnable yet",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "n2",
+    "n1",
+    "n4",
+    "n5"
+  ],
+  "nodes": [
+    {
+      "id": "n2",
+      "lane": "you",
+      "col": 0,
+      "type": "frontend",
+      "label": "Reference images",
+      "width": 132
+    },
+    {
+      "id": "n3",
+      "lane": "you",
+      "col": 1,
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n1",
+      "lane": "gpu",
+      "col": 1,
+      "type": "cloud",
+      "label": "Long video (H3)",
+      "sublabel": "3 Image To Long…",
+      "width": 128
+    },
+    {
+      "id": "n7",
+      "lane": "you",
+      "col": 2,
+      "type": "frontend",
+      "label": "Song"
+    },
+    {
+      "id": "n8",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Cut and loop",
+      "sublabel": "mux.py",
+      "width": 104
+    },
+    {
+      "id": "n6",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Image + audio to video",
+      "sublabel": "IMG Audio To Video",
+      "tag": "consent",
+      "width": 176
+    },
+    {
+      "id": "n9",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    },
+    {
+      "id": "n4",
+      "lane": "gpu",
+      "col": 3,
+      "type": "cloud",
+      "label": "Motion control",
+      "sublabel": "SCAIL 2",
+      "tag": "consent",
+      "width": 120
+    },
+    {
+      "id": "n5",
+      "lane": "gaps",
+      "col": 3,
+      "type": "security",
+      "label": "Relight",
+      "sublabel": "not built yet",
+      "tag": "gap",
+      "width": 100
+    }
+  ],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "image",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n3",
+      "to": "n1",
+      "label": "text"
+    },
+    {
+      "from": "n2",
+      "to": "n4",
+      "label": "image"
+    },
+    {
+      "from": "n1",
+      "to": "n4",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n4",
+      "to": "n5",
+      "label": "video",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n2",
+      "to": "n6",
+      "label": "image"
+    },
+    {
+      "from": "n7",
+      "to": "n6",
+      "label": "audio"
+    },
+    {
+      "from": "n6",
+      "to": "n8",
+      "label": "video"
+    },
+    {
+      "from": "n8",
+      "to": "n9",
+      "label": "video"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Numbers (base)",
+      "items": [
+        "Price $3,000 per unit",
+        "Base revenue $3,000/mo",
+        "Margin 68%",
+        "First cash 30 days"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Rules",
+      "items": [
+        "Consent on file before any likeness",
+        "Gap: Relight not built",
+        "Dry-run until approved"
+      ]
+    }
+  ]
+}

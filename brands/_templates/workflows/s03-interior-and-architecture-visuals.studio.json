@@ -7,7 +7,7 @@
     "idea": "S03",
     "offer": "Renders and walkthrough clips from sketches or empty rooms"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-14",
   "consent_required": false,
   "nodes": [
     {
@@ -22,19 +22,8 @@
       }
     },
     {
-      "id": "n3",
-      "kind": "brief",
-      "position": {
-        "x": 80,
-        "y": 290
-      },
-      "data": {
-        "params": {}
-      }
-    },
-    {
       "id": "n1",
-      "kind": "image-edit",
+      "kind": "consistent-room",
       "position": {
         "x": 400,
         "y": 80
@@ -45,6 +34,17 @@
     },
     {
       "id": "n4",
+      "kind": "brief",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
       "kind": "image-to-video",
       "position": {
         "x": 720,
@@ -79,31 +79,31 @@
     },
     {
       "id": "e2",
-      "source": "n3",
-      "sourceHandle": "text",
+      "source": "n2",
+      "sourceHandle": "images",
       "target": "n1",
-      "targetHandle": "prompt",
-      "type": "text"
+      "targetHandle": "room",
+      "type": "image"
     },
     {
       "id": "e3",
       "source": "n1",
       "sourceHandle": "image",
-      "target": "n4",
+      "target": "n3",
       "targetHandle": "image",
       "type": "image"
     },
     {
       "id": "e4",
-      "source": "n3",
+      "source": "n4",
       "sourceHandle": "text",
-      "target": "n4",
+      "target": "n3",
       "targetHandle": "prompt",
       "type": "text"
     },
     {
       "id": "e5",
-      "source": "n4",
+      "source": "n3",
       "sourceHandle": "video",
       "target": "n5",
       "targetHandle": "media",

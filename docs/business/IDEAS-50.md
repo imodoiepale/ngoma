@@ -33,7 +33,7 @@ Nobody runs 50 ideas at once. Use the table to pick 3-5 with fast first cash, hi
 
 **V04 Restaurant content retainer.** 60 food visuals and 8 reels a month, Swahili and English captions. Pipeline: `qwen-image → wan-i2v → compositor` on **pod**. Evidence: Ongea Pesa calendar (Mama Mboga, Mandazi) proves the local-vernacular format. Risk: Food must match the real menu. Compliance: Label AI-generated food imagery.
 
-**V05 E-commerce model photos.** Every SKU on AI models in 4 poses, white and lifestyle backgrounds. Pipeline: `klein-edit → faceswap-consented → upscale` on **pod**. Evidence: ArtificialQuotient 'AI fashion models for e-commerce' (2.6k views); KiubAI infinite wardrobe workflow. Risk: Garment fidelity; returns if colours drift. Compliance: Fictional or licensed models only.
+**V05 E-commerce model photos.** Every SKU on AI models in 4 poses, white and lifestyle backgrounds. Pipeline: `wardrobe → faceswap-consented` on **pod**. Evidence: ArtificialQuotient 'AI fashion models for e-commerce' (2.6k views); KiubAI infinite wardrobe workflow. Risk: Garment fidelity; returns if colours drift. Compliance: Fictional or licensed models only.
 
 **V06 WhatsApp Status daily.** One branded Status a day, scheduled through OpenWA. Pipeline: `compositor → openwa` on **hosted**. Evidence: OpenWA publishing already built; M-Pesa-native market. Risk: WhatsApp number bans if volume is careless. Compliance: Opt-in contacts only.
 
@@ -65,7 +65,7 @@ Nobody runs 50 ideas at once. Use the table to pick 3-5 with fast first cash, hi
 
 **U06 Multilingual spokesperson.** One consented spokesperson, lip-synced in EN/SW/FR. Pipeline: `refmod-consented → lipsync → tts` on **pod**. Evidence: ArtificialQuotient 'Grok lip sync with consistent characters' (105k views). Risk: Consent paperwork per face. Compliance: Signed likeness release; disclose AI.
 
-**U07 Viral format remakes.** Re-make trending reel structures with the brand's own assets. Pipeline: `reel-analysis → h3-ref2va` on **pod**. Evidence: MatrixLab 'Copy viral AI reels in seconds with Claude' (16k). Risk: Copying too closely invites takedowns. Compliance: Grammar only, never the original footage.
+**U07 Viral format remakes.** Re-make trending reel structures with the brand's own assets. Pipeline: `reel-analysis → motion-control` on **pod**. Evidence: MatrixLab 'Copy viral AI reels in seconds with Claude' (16k). Risk: Copying too closely invites takedowns. Compliance: Grammar only, never the original footage.
 
 ## AI influencer / AI model as a business
 
@@ -81,7 +81,7 @@ Nobody runs 50 ideas at once. Use the table to pick 3-5 with fast first cash, hi
 | P08 | **Brand ambassador for local brands** | Kenyan banks, telcos, FMCG | $2,500 | $386 | $0 · $2,500 · $7,500 | $1,964 | 79% | $800 | 0.4 mo | 90 d |
 | P09 | **Personalised persona greetings** | Fans of the persona (units = videos) | $15 | $3 | $300 · $1,800 · $7,500 | $1,464 | 81% | $100 | 0.1 mo | 45 d |
 
-**P01 Own AI influencer.** A consistent SFW persona with an audience, sold as sponsorships. Pipeline: `dataset-aio → lora-or-refmod → carousel → reels` on **pod**. Evidence: MatrixLab 'Ultra realistic AI influencer from scratch' (27k); LoRAtech ban-proofing video. Risk: Audience growth takes months; account bans. Compliance: Label as AI; platform synthetic-media rules.
+**P01 Own AI influencer.** A consistent SFW persona with an audience, sold as sponsorships. Pipeline: `krea2 → dataset-aio → caption-dataset → lora-or-refmod → carousel → reels` on **pod**. Evidence: MatrixLab 'Ultra realistic AI influencer from scratch' (27k); LoRAtech ban-proofing video. Risk: Audience growth takes months; account bans. Compliance: Label as AI; platform synthetic-media rules.
 
 **P02 Merch with the AI model.** Print-on-demand apparel and posters featuring the persona (units = orders). Pipeline: `compositor → print-on-demand` on **hosted**. Evidence: price_usd here is margin per order after print-on-demand cost. Risk: Needs the audience from P01 first. Compliance: Own persona IP only; no trademark mashups.
 
@@ -91,9 +91,9 @@ Nobody runs 50 ideas at once. Use the table to pick 3-5 with fast first cash, hi
 
 **P05 Realism fix setup.** Install our realism and anti-slop pipeline, then monthly tuning. Pipeline: `realism-img2img → upscale` on **pod**. Evidence: LoRAtech 'AI influencers are getting banned, I built a ComfyUI fix'; 'real life locations, no AI slop'. Risk: Buyers may resell the method. Compliance: SFW accounts only.
 
-**P06 Character boards and datasets.** Consistent character board plus 40-image training dataset. Pipeline: `character-board → dataset-aio` on **pod**. Evidence: MatrixLab 'Character board makes your AI influencer 100% consistent'; 'Dataset from 3 photos'. Risk: Low price, needs volume. Compliance: Fictional characters or signed release.
+**P06 Character boards and datasets.** Consistent character board plus 40-image training dataset. Pipeline: `character-sheet → dataset-aio → caption-dataset` on **pod**. Evidence: MatrixLab 'Character board makes your AI influencer 100% consistent'; 'Dataset from 3 photos'. Risk: Low price, needs volume. Compliance: Fictional characters or signed release.
 
-**P07 Virtual try-on for fashion.** Customers' chosen outfits on consistent models, 200 looks a month. Pipeline: `infinite-wardrobe → klein-edit` on **pod**. Evidence: KiubAI 'Infinite wardrobe for your character' free workflow. Risk: Fit accuracy expectations. Compliance: Fictional models.
+**P07 Virtual try-on for fashion.** Customers' chosen outfits on consistent models, 200 looks a month. Pipeline: `wardrobe → klein-edit` on **pod**. Evidence: KiubAI 'Infinite wardrobe for your character' free workflow. Risk: Fit accuracy expectations. Compliance: Fictional models.
 
 **P08 Brand ambassador for local brands.** A disclosed AI ambassador with a year of content. Pipeline: `refmod → h3-ref2va → tts-sw → compositor` on **pod**. Evidence: Ongea Pesa system is the working proof to show procurement. Risk: Procurement cycles; reputational caution. Compliance: Disclosure; ASA/CA advertising codes.
 
@@ -112,7 +112,7 @@ Nobody runs 50 ideas at once. Use the table to pick 3-5 with fast first cash, hi
 | M07 | **Label visual package** | Small labels with 5+ artists | $4,000 | $632 | $0 · $4,000 · $8,000 | $3,168 | 79% | $500 | 0.2 mo | 60 d |
 | M08 | **Stock B-roll subscription** | Editors and creators (units = subscribers) | $19 | $1 | $380 · $2,850 · $11,400 | $2,590 | 91% | $300 | 0.1 mo | 45 d |
 
-**M01 Full-length music video.** 3-4 minute music video with infinite-length H3, SCAIL motion and relit VFX. Pipeline: `h3-infinite → scail-motion → relight → lipsync → edit` on **pod**. Evidence: LoRAtech 'MiniMax H3 infinite length videos (low VRAM)' (59k); ArtificialQuotient Beeble relight (3.5k). Risk: Long renders; quality bar is high. Compliance: Artist consent for any likeness; licensed audio.
+**M01 Full-length music video.** 3-4 minute music video with infinite-length H3, SCAIL motion and relit VFX. Pipeline: `h3-infinite → motion-control → relight → lipsync → edit` on **pod**. Evidence: LoRAtech 'MiniMax H3 infinite length videos (low VRAM)' (59k); ArtificialQuotient Beeble relight (3.5k). Risk: Long renders; quality bar is high. Compliance: Artist consent for any likeness; licensed audio.
 
 **M02 Artist visual retainer.** 4 visualizers, 1 lyric video and cover art a month. Pipeline: `hyperframes → wan-i2v → compositor` on **pod**. Evidence: ArtificialQuotient Revid music-to-video and OpenArt lip-sync music videos. Risk: Artists have thin budgets. Compliance: Licensed audio only.
 
@@ -141,11 +141,11 @@ Nobody runs 50 ideas at once. Use the table to pick 3-5 with fast first cash, hi
 | S07 | **Short-form dubbing** | Creators expanding to Swahili and French | $500 | $138 | $1,000 · $4,000 · $12,500 | $2,854 | 71% | $150 | 0.1 mo | 14 d |
 | S08 | **Podcast to shorts** | Podcasters | $350 | $117 | $1,050 · $3,500 · $10,500 | $2,299 | 66% | $80 | 0.0 mo | 7 d |
 
-**S01 RefMod or LoRA as a service.** A consistent-character file from client-owned references. Pipeline: `refmod → ai-toolkit-lora` on **pod**. Evidence: KiubAI Klein 9B LoRA training (4.7k); LoRAtech character LoRA series; RefMods in seconds. Risk: Commoditising fast. Compliance: Consent proof required before training.
+**S01 RefMod or LoRA as a service.** A consistent-character file from client-owned references. Pipeline: `refmod → caption-dataset → ai-toolkit-lora` on **pod**. Evidence: KiubAI Klein 9B LoRA training (4.7k); LoRAtech character LoRA series; RefMods in seconds. Risk: Commoditising fast. Compliance: Consent proof required before training.
 
 **S02 Product photography replacement.** Unlimited product shots from 3 phone photos per SKU. Pipeline: `klein-edit → relight → upscale` on **pod**. Evidence: ArtificialQuotient RiverFlow product photos (643); Krea 2 image-to-image (LoRAtech 10k). Risk: Label and text accuracy on packaging. Compliance: Real product appearance.
 
-**S03 Interior and architecture visuals.** Renders and walkthrough clips from sketches or empty rooms. Pipeline: `klein-consistent-room → wan-i2v` on **pod**. Evidence: KiubAI 'Consistent room and backgrounds with ComfyUI and Flux Klein' (2.7k). Risk: Measurement accuracy expectations. Compliance: Mark as concept visuals.
+**S03 Interior and architecture visuals.** Renders and walkthrough clips from sketches or empty rooms. Pipeline: `consistent-room → wan-i2v` on **pod**. Evidence: KiubAI 'Consistent room and backgrounds with ComfyUI and Flux Klein' (2.7k). Risk: Measurement accuracy expectations. Compliance: Mark as concept visuals.
 
 **S04 Archive restore and upscale.** Restore, colourise and upscale old photos and footage. Pipeline: `upscale → restore` on **pod**. Evidence: LoRAtech upscale workflow build-along (9.2k). Risk: Faces must stay truthful. Compliance: Owner consent.
 
@@ -198,6 +198,6 @@ Nobody runs 50 ideas at once. Use the table to pick 3-5 with fast first cash, hi
 | X01 | **Fictional 18+ persona subscription** | Adult subscribers on AI-permitting platforms (units = subscribers) | $10 | $1 | $500 · $4,000 · $20,000 | $3,468 | 87% | $700 | 0.2 mo | 60 d |
 | X02 | **Compliance-first persona operations** | Operators of fictional 18+ personas | $1,000 | $158 | $0 · $2,000 · $6,000 | $1,604 | 80% | $300 | 0.2 mo | 45 d |
 
-**X01 Fictional 18+ persona subscription.** Subscription to a fully fictional adult persona on a platform that allows disclosed AI content. Pipeline: `dataset-fictional → lora → carousel` on **pod**. Evidence: LoRAtech and KiubAI build OFM-style persona pipelines; plan only, no explicit content produced here. Risk: Platform policy changes; payment processor risk; brand contamination. Compliance: HARD GATES: fictional adults only, never real or look-alike people, no minors or youthful styling, AI disclosure, platform ToS, separate entity/accounts/payments, never on Ongea Pesa or EPALLE infrastructure.
+**X01 Fictional 18+ persona subscription.** Subscription to a fully fictional adult persona on a platform that allows disclosed AI content. Pipeline: `dataset-fictional → caption-dataset → lora → carousel` on **pod**. Evidence: LoRAtech and KiubAI build OFM-style persona pipelines; plan only, no explicit content produced here. Risk: Platform policy changes; payment processor risk; brand contamination. Compliance: HARD GATES: fictional adults only, never real or look-alike people, no minors or youthful styling, AI disclosure, platform ToS, separate entity/accounts/payments, never on Ongea Pesa or EPALLE infrastructure.
 
 **X02 Compliance-first persona operations.** SFW teaser content, scheduling and a compliance audit trail. Pipeline: `carousel → postiz → audit-log` on **pod**. Evidence: Hash-chained audit log in packages/orchestrator already records who approved what. Risk: Reputational risk to the studio. Compliance: Same hard gates as X01; SFW deliverables only.

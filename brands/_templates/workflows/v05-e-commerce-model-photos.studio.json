@@ -7,7 +7,7 @@
     "idea": "V05",
     "offer": "Every SKU on AI models in 4 poses, white and lifestyle backgrounds"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-14",
   "consent_required": true,
   "nodes": [
     {
@@ -22,19 +22,8 @@
       }
     },
     {
-      "id": "n3",
-      "kind": "brief",
-      "position": {
-        "x": 80,
-        "y": 290
-      },
-      "data": {
-        "params": {}
-      }
-    },
-    {
       "id": "n1",
-      "kind": "image-edit",
+      "kind": "wardrobe",
       "position": {
         "x": 400,
         "y": 80
@@ -44,7 +33,7 @@
       }
     },
     {
-      "id": "n4",
+      "id": "n3",
       "kind": "faceswap",
       "position": {
         "x": 720,
@@ -55,33 +44,11 @@
       }
     },
     {
-      "id": "n6",
-      "kind": "video-clip",
-      "position": {
-        "x": 80,
-        "y": 500
-      },
-      "data": {
-        "params": {}
-      }
-    },
-    {
-      "id": "n5",
-      "kind": "upscale-video",
-      "position": {
-        "x": 400,
-        "y": 290
-      },
-      "data": {
-        "params": {}
-      }
-    },
-    {
-      "id": "n7",
+      "id": "n4",
       "kind": "export",
       "position": {
-        "x": 720,
-        "y": 290
+        "x": 1040,
+        "y": 80
       },
       "data": {
         "params": {}
@@ -99,17 +66,17 @@
     },
     {
       "id": "e2",
-      "source": "n3",
-      "sourceHandle": "text",
+      "source": "n2",
+      "sourceHandle": "images",
       "target": "n1",
-      "targetHandle": "prompt",
-      "type": "text"
+      "targetHandle": "clothes",
+      "type": "image"
     },
     {
       "id": "e3",
       "source": "n1",
       "sourceHandle": "image",
-      "target": "n4",
+      "target": "n3",
       "targetHandle": "image",
       "type": "image"
     },
@@ -117,25 +84,17 @@
       "id": "e4",
       "source": "n1",
       "sourceHandle": "image",
-      "target": "n4",
+      "target": "n3",
       "targetHandle": "face",
       "type": "image"
     },
     {
       "id": "e5",
-      "source": "n6",
-      "sourceHandle": "video",
-      "target": "n5",
-      "targetHandle": "video",
-      "type": "video"
-    },
-    {
-      "id": "e6",
-      "source": "n5",
-      "sourceHandle": "video",
-      "target": "n7",
+      "source": "n3",
+      "sourceHandle": "image",
+      "target": "n4",
       "targetHandle": "media",
-      "type": "video"
+      "type": "image"
     }
   ],
   "gaps": [],
