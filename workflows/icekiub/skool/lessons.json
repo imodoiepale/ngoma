@@ -1,6 +1,6 @@
 {
   "source": "skool.com/ai-tech-and-comfyui-workflows-2226 classroom: Sub Workflows",
-  "captured_at": "2026-09-14T08:44:29.903Z",
+  "captured_at": "2026-09-18T07:40:48.143Z",
   "lessons": [
     {
       "path": [
@@ -467,10 +467,10 @@
     {
       "path": [
         "Dataset related",
-        "AI influencer dataset AIO (Klein)"
+        "OLD- -AI influencer dataset AIO (Klein)"
       ],
       "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=8a9f4bcc93a0449bacb0b84dc408d8ee",
-      "title": "AI influencer dataset AIO (Klein)",
+      "title": "OLD- -AI influencer dataset AIO (Klein)",
       "video_link": null,
       "video_minutes": 9.7,
       "hosted_video": true,
@@ -495,10 +495,10 @@
     {
       "path": [
         "Dataset related",
-        "AI influencer dataset AIO (Qwen)"
+        "Old - AI influencer dataset AIO (Qwen)"
       ],
       "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=ebc1716d2ab146dea313bb1ccf9cbe2b",
-      "title": "AI influencer dataset AIO (Qwen)",
+      "title": "Old - AI influencer dataset AIO (Qwen)",
       "video_link": null,
       "video_minutes": 6.3,
       "hosted_video": true,
@@ -523,6 +523,47 @@
           "content_type": "application/x-zip-compressed"
         }
       ]
+    },
+    {
+      "path": [
+        "Dataset related",
+        "NEW - AI influencer dataset AIO (Klein)"
+      ],
+      "lesson_url": "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=8a08f9daabd84370b525ca56f67550cf",
+      "title": "NEW - AI influencer dataset AIO (Klein)",
+      "video_link": "https://youtu.be/ngjy4EgknOc",
+      "video_minutes": 7.6,
+      "hosted_video": false,
+      "description": "Using this workflow, you should be able to get a good dataset to train your LoRA on, I have many video on how to do this locally and using runpod.\n\nAll the prompts can be changed to generate the type of images you want, just make sure you have one prompt per line in the CR prompt list node\n\nThis sub version includes further KREA 2 upscaling for those not satisfied with the flux klein details!\n\nRemember that as a sub you have access to a dedicated channel in the discord to ask questions and troubleshoot issues. Make sure to link your account in the sidebar to the left.\n\nKlein: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors\nText encoder: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors\nvae: https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors\nKrea2 turbo: https://huggingface.co/Comfy-Org/Krea-2/resolve/main/diffusion_models/krea2_turbo_fp8_scaled.safetensors\n\nText encoder: https://huggingface.co/Comfy-Org/Krea-2/resolve/main/text_encoders/qwen3vl_4b_fp8_scaled.safetensors\n\nvae: https://huggingface.co/Comfy-Org/Krea-2/resolve/main/vae/qwen_image_vae.safetensors\nThe captioning workflow is based on my icylm LM studio node. You need LM studio to make it work. Make sure to reset the node to get default settings.\nLM studio installation https://youtu.be/nKGIQf8-AV4",
+      "links": [
+        "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/blob/main/flux-2-klein-9b-fp8.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
+        "https://huggingface.co/Comfy-Org/flux2-klein-9B/resolve/main/split_files/vae/flux2-vae.safetensors",
+        "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/diffusion_models/krea2_turbo_fp8_scaled.safetensors",
+        "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+        "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/vae/qwen_image_vae.safetensors"
+      ],
+      "resources": [
+        {
+          "title": "Icy - Dataset gen - Klein - subs",
+          "file_name": "Icy - Dataset gen - Klein - subs.json",
+          "link": null,
+          "content_type": "application/json"
+        },
+        {
+          "title": "Captioning workflow",
+          "file_name": "captioning workflow .json",
+          "link": null,
+          "content_type": "application/json"
+        },
+        {
+          "title": "icynodesv2.1",
+          "file_name": "icynodesv2.1.zip",
+          "link": null,
+          "content_type": "application/x-zip-compressed"
+        }
+      ],
+      "added": "2026-09-16"
     },
     {
       "path": [

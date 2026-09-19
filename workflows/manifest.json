@@ -1,5 +1,5 @@
 {
-  "count": 72,
+  "count": 73,
   "workflows": [
     {
       "sha256": "c0bbd994675e0134e55677c41ff3233582a70fb6d7f66cb8236b0228355b2fcf",
@@ -3842,6 +3842,68 @@
       ],
       "file": "icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
       "canonical": "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json"
+    },
+    {
+      "sha256": "8071d5563aaf22bb44af02e409487f520f426c9a783471ddd56257da09341b41",
+      "bytes": 106088,
+      "node_count": 69,
+      "node_types": [
+        "CLIPLoader",
+        "CLIPTextEncode",
+        "CR Prompt List",
+        "ConditioningZeroOut",
+        "EmptyLatentImage",
+        "FaceAnalysisModels",
+        "FaceBoundingBox",
+        "IcyMegapixelResize",
+        "Image Comparer (rgthree)",
+        "ImageResizeKJv2",
+        "ImageScaleBy",
+        "ImageUpscaleWithModel",
+        "ImpactImageBatchToImageList",
+        "KSampler",
+        "Label (rgthree)",
+        "LoadImage",
+        "LoraLoaderModelOnly",
+        "PathchSageAttentionKJ",
+        "PreviewImage",
+        "ReferenceLatent",
+        "SaveImage",
+        "UNETLoader",
+        "UpscaleModelLoader",
+        "VAEDecode",
+        "VAEEncode",
+        "VAELoader"
+      ],
+      "node_packs": [
+        "ComfyUI_Comfyroll_CustomNodes",
+        "comfy-core",
+        "comfyui-impact-pack",
+        "comfyui-kjnodes",
+        "comfyui_faceanalysis",
+        "icekiub/icymegapixelresize",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "4xNomosWebPhoto_RealPLKSR.safetensors",
+        "Breast_Implanter_v5.0_exp_2770081.safetensors",
+        "Krea2-HD-vae.safetensors",
+        "bfs_head_v1_flux-klein_9b_step3750_rank64.safetensors",
+        "flux-2-klein-9b-fp8.safetensors",
+        "flux2-vae.safetensors",
+        "krea2_turbo_fp8_scaled.safetensors",
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors"
+      ],
+      "unattributed_node_types": [
+        "Label (rgthree)"
+      ],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=8a08f9daabd84370b525ca56f67550cf",
+        "skool-file:Icy - Dataset gen - Klein - subs.json"
+      ],
+      "file": "icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json",
+      "canonical": "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json"
     }
   ]
 }

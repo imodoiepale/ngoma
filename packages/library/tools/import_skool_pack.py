@@ -51,8 +51,10 @@ LESSON_DIR = {
     "Infinite wardrobe for your character (Multi Ref)": "content-generation/infinite-wardrobe-multi-ref",
     "IG Carousel pose generator": "content-generation/ig-carousel-pose-generator",
     "NSFW Surgery WF (SDXL Inpaint)": "content-generation/nsfw-surgery-sdxl-inpaint",
-    "AI influencer dataset AIO (Klein)": "dataset-related/ai-influencer-dataset-aio-klein",
-    "AI influencer dataset AIO (Qwen)": "dataset-related/ai-influencer-dataset-aio-qwen",
+    "NEW - AI influencer dataset AIO (Klein)": "dataset-related/ai-influencer-dataset-aio-klein-v2",
+    # renamed on Skool 2026-09-16 when the Krea 2 version above replaced them
+    "OLD- -AI influencer dataset AIO (Klein)": "dataset-related/ai-influencer-dataset-aio-klein",
+    "Old - AI influencer dataset AIO (Qwen)": "dataset-related/ai-influencer-dataset-aio-qwen",
     "Change faces with QWEN IMAGE EDIT": "dataset-related/qwen-image-edit-faceswap",
     "Uncensored captioning for datasets": "dataset-related/uncensored-captioning",
     "Klein Watermark removal": "dataset-related/klein-watermark-removal",
@@ -64,8 +66,9 @@ ADULT = {"NSFW Surgery WF (SDXL Inpaint)", "Unc. I2I workflow (Klein) UPDATED",
 # Steps that put a face or a character into an image or video.
 CONSENT = {"ICY ANIMATE WORKFLOW", "WAN 2.2 Lora Based Faceswap", "Change faces with QWEN IMAGE EDIT",
            "Unc. I2I workflow (Klein) UPDATED", "NEW - Minimax reference based Image generation",
-           "NEW - Reference based character sheet", "AI influencer dataset AIO (Klein)",
-           "AI influencer dataset AIO (Qwen)", "(BEST) SCAIL 2 Motion Control"}
+           "NEW - Reference based character sheet", "NEW - AI influencer dataset AIO (Klein)",
+           "OLD- -AI influencer dataset AIO (Klein)", "Old - AI influencer dataset AIO (Qwen)",
+           "(BEST) SCAIL 2 Motion Control"}
 NEVER_IMPORT = {"comfyui-unsafe-torch": "patches torch.load so any model file can run code"}
 SKIP_DIRS = {"__pycache__", ".git", ".zcode"}
 MODEL_EXT = {".pt", ".pth", ".safetensors", ".ckpt", ".gguf", ".bin", ".onnx"}
