@@ -134,3 +134,38 @@ presets:
     grade: warm, lifted, soft halation
     motion: slow motion, gentle push
     negatives: [harsh noon light, cold grade, fast cuts]
+  # The three below come from the AiKAMI creator guides (docs/creators/aikami/NOTES.md), in our
+  # words. The guides name films and directors; the presets name the rendering.
+  papercraft-relief:
+    label: Papercraft relief
+    inspired_by: cut-paper relief illustration, a paper theatre photographed as a real physical set
+    framing: [wide of the whole paper set from the doorway, three-quarter close-up on a flat card figure, insert on a paper prop]
+    lens: 35mm on a paper set, shallow depth of field with gentle focus falloff into the rear layers
+    palette: [restrained muted palette, one or two saturated accents, flat solid fills only]
+    pacing: gentle, smooth and cinematic, no stop-motion stutter
+    blocking: [flat card standees in true parallax layers, figures rigid and on-model, props as separate sheets]
+    grade: matte uncoated cardstock with visible paper tooth and fibrous cut edges, tone changes by swapping a sheet never by shading, one soft directional light dropping short real shadows onto the layer beneath, fine film grain
+    motion: characters move with paper weight, hinged flat sections not cloth, never inflate into 3D, never bend like rubber, never morph
+    negatives: [gloss, metal sheen, glass, specular highlight, gradients, airbrush, 3D CGI look, photorealistic skin, melting paper edges, lens flare, camera shake]
+  painterly-cel:
+    label: Painterly cel
+    inspired_by: 3D cel-shaded painterly animation with hand-painted brushwork and graphic line accents
+    framing: [cinematic anamorphic wide of the city, dynamic low three-quarter hero angle, extreme macro close-up on a detail]
+    lens: anamorphic, 2.39:1, kinetic
+    palette: [neon cyan, magenta and red against wet black, warm amber on skin, comic-book colour blocking]
+    pacing: multi-cut sequences, whip zooms and hard cuts on action, calm holds between chases
+    blocking: [one hero subject owning the frame, vehicles and figures placed by a spatial line, counts stated]
+    grade: bold hand-painted brushstrokes, confident graphic line accents, visible canvas texture, heavy motion blur and speed lines on fast beats
+    motion: dynamic kinetic camera, whip zoom, aerial over-the-shoulder descents, tracking backward ahead of the subject
+    negatives: [photoreal skin, smooth plastic 3D render, duplicate subjects, text, watermark, flat untextured fills]
+  impact-slow-motion:
+    label: Impact slow motion
+    inspired_by: a designed speed curve, full speed into a crisp slow-motion impact beat and back
+    framing: [extreme low shot at ground level on the trigger, lateral truck locked on the subject mid-body, extreme close-up on the face travelling backward at their speed]
+    lens: long lens, shallow depth of field, 35mm film texture
+    palette: [muted cool grade, one warm subject colour, hard specular highlights on skin and sweat]
+    pacing: normal speed to the trigger, ramp to roughly ten percent, ramp back for the finish
+    blocking: [one athlete alone in the space, the action crosses the lens, the finish holds wide]
+    grade: organic film grain, gentle halation on highlights, high detail, strong natural contrast with no fill
+    motion: normal speed, then just as the exact trigger moment lands the speed ramps to roughly 10% slow motion with a kinetic move that sells the beat, then ramps back up to normal as the action continues
+    negatives: [motion blur during the slow-motion section, smeared or blurred slow motion, additional people, spectators, text, logos, letterboxing, warping of limbs]

@@ -7,7 +7,7 @@
     "idea": "P04",
     "offer": "Build and run a persona end to end: content, posting, reporting"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -29,7 +29,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "dataset-aio"
       }
     },
     {
@@ -42,7 +43,8 @@
       "data": {
         "params": {
           "preset": "identity"
-        }
+        },
+        "alias": "refmod"
       }
     },
     {

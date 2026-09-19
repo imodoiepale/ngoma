@@ -2,6 +2,7 @@
 
     plan   --client C --brief brief.json [--save]        a brief becomes a workflow
     say    --client C --session S --text "..."           one utterance grows the workflow
+    describe --client C --text "..." [--session S]       a sentence becomes (or extends) a workflow
     run    --client C --workflow W --stage S [--mode M]   run a stage under its mode
     possibilities                                        what each kind of reference can drive
     ports-check                                          every engine step has a port map
@@ -47,6 +48,44 @@ def cmd_say(a: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_describe(a: argparse.Namespace) -> int:
+    """The describe bar's contract; see session.describe. A refused brief (a person's name,
+    an unknown client, nothing to add) is a JSON `error` and exit code 2, never a traceback."""
+    import session
+    answers: dict[str, str] = {}
+    for kv in a.answer or []:
+        if "=" not in kv:
+            print(json.dumps({"error": f"--answer wants key=value, got {kv!r}", "refused": False}), file=sys.stdout)
+            return 2
+        k, v = kv.split("=", 1)
+        answers[k.strip()] = v.strip()
+    try:
+        out = session.describe(a.client, a.text, session_id=a.session, workflow_id=a.workflow, mode=a.mode, answers=answers)
+    except session.DescribeError as e:
+        err = {"error": str(e), "refused": "names a person" in str(e), "route": None, "id": None,
+               "questions": [], "continuations": [], "plan": None, "reply": str(e)}
+        print(json.dumps(err, ensure_ascii=False) if a.json else f"refused: {e}")
+        return 2
+    except Exception as e:  # an unknown client, a validation failure: still a clean message
+        err = {"error": f"{type(e).__name__}: {e}", "refused": False, "route": None, "id": None,
+               "questions": [], "continuations": [], "plan": None, "reply": str(e)}
+        print(json.dumps(err, ensure_ascii=False) if a.json else f"error: {e}")
+        return 1
+    if a.json:
+        print(json.dumps(out, indent=2, ensure_ascii=False, default=str))
+        return 0
+    print(out["reply"])
+    for s in out["plan"]["steps"]:
+        flag = " (each)" if s["each"] else ""
+        params = ", ".join(f"{k}={v}" for k, v in s["params"].items() if v not in (None, "", {}))
+        print(f"  {s['id']:<6} {s['step']:<24} {s['status']:<12}{flag}{'  ' + params if params else ''}")
+    for q in out["questions"]:
+        print(f"  ? {q['key']}: {q['prompt']} {q.get('options') or ''}")
+    for c in out["continuations"]:
+        print(f"  + could continue with {c['step']}{'@each' if c.get('each') else ''} {c.get('params') or ''} est ${c['estimate']['usd']}")
+    return 0
+
+
 def cmd_run(a: argparse.Namespace) -> int:
     import runner
     out = runner.run_stage(a.client, a.workflow, a.stage, mode=a.mode, backend=a.backend, approve_as=a.approve_as)
@@ -75,6 +114,7 @@ def main() -> int:
                                  epilog="flags by command:\n"
                                         "  plan  --brief FILE [--client C] [--json]\n"
                                         "  say   --client C --session S --text T [--workflow W] [--json]\n"
+                                        "  describe --client C --text T [--session S] [--workflow W] [--mode plan|create|direct] [--answer k=v] [--json]\n"
                                         "  run   --client C --workflow W --stage S [--mode M] [--backend B] [--approve-as NAME]")
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("plan", help="a brief file becomes a workflow")
@@ -89,6 +129,15 @@ def main() -> int:
     s.add_argument("--text", required=True)
     s.add_argument("--json", action="store_true")
     s.set_defaults(fn=cmd_say)
+    d = sub.add_parser("describe", help="a sentence becomes a workflow, or extends one")
+    d.add_argument("--client", required=True, help="workspace id (a folder in brands/ with brand.yaml)")
+    d.add_argument("--text", required=True, help="what to make, in plain words; or `carousel@each slides=10`")
+    d.add_argument("--session", help="session id; a second describe with the same id extends the workflow")
+    d.add_argument("--workflow", help="workflow id to extend")
+    d.add_argument("--mode", default="create", choices=["plan", "create", "direct"], help="plan writes nothing; direct forces the director")
+    d.add_argument("--answer", action="append", metavar="KEY=VALUE", help="answer a question: collection=red-dress, slides=10, persona=..., kind=carousel")
+    d.add_argument("--json", action="store_true")
+    d.set_defaults(fn=cmd_describe)
     r = sub.add_parser("run", help="run one stage of a workflow under its mode")
     r.add_argument("--client", required=True)
     r.add_argument("--workflow", required=True)

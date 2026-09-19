@@ -20,7 +20,7 @@ Studio template: [`v02-carousel-from-one-photo.studio.json`](../../brands/_templ
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
 | Reference images | you provide |  | — |
-| Carousel poses | ComfyUI on the pod | `workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json` | — |
+| Carousel poses | ComfyUI on the pod | `workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json` (needs setup: BLOCKERS 3) | — |
 | Brand kit | brand.yaml |  | — |
 | Brand compositor | studio code | `packages/compositor/compositor.py` | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
@@ -41,6 +41,7 @@ Setup budget $150. Fixed monthly spend $60. First cash in about 10 days.
 
 ## What is not ready
 
+- **Carousel poses** needs setup (`docs/BLOCKERS.md` item 3): UNETLoader 1 loads flux-2-klein-9b-kv.safetensors, licence-gated on HuggingFace: accept the FLUX.2 Klein 9B licence or switch the loader to the fp8 variant. LoraLoaderModelOnly 19 also names the creator's private Lora_lora_000000600.safetensors (infra/runpod/download-plan.json creator_private).
 - Models with no public source yet (see `infra/runpod/download-plan.json`): Lora_lora_000000600.safetensors
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
 

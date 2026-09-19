@@ -354,6 +354,9 @@ def build(idea: dict[str, Any], costed: business_os.Costed, template: dict[str, 
         if entry.get("adult"):
             tags.append("18+")
             flags["adult"] = True
+        if entry.get("needs_setup") and lanes[i] != "gaps":
+            # bound, but a gated model or missing server (docs/BLOCKERS.md item) must be cleared first
+            tags.append("setup")
         if n["kind"] in ("brand-kit", "compositor"):
             flags["brand"] = True
         node = {"id": i, "lane": lanes[i], "col": col[i], "type": NODE_TYPE[backend[i]],

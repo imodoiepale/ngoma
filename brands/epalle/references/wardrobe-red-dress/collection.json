@@ -1,0 +1,12 @@
+{
+  "name": "wardrobe-red-dress",
+  "use": "data",
+  "rights": "owned",
+  "kind": "image",
+  "consent": false,
+  "source": "manual",
+  "notes": [
+    "engine binds this folder after 'wardrobe from my red-dress'",
+    "fictional persona, geometric colour fields, no real-person likeness"
+  ]
+}

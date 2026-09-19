@@ -3,6 +3,9 @@
 Input is what a person downloaded, not a scrape: the lesson capture
 (`icekiub-skool-lessons.json`) and each lesson's files, staged one folder per lesson under
 Documents/COMFY/Icekiub-Skool. Re-running is safe; identical bytes are recognised by hash.
+Every run writes workflows/icekiub/skool/import-record.json (what each lesson held). A lesson
+whose staging folder is gone is listed from that record, checked against the manifest and
+workflows/icekiub/nodes, and the report says so; nothing is invented for it.
 
 - Workflows go to workflows/icekiub/ and are registered with their Skool lesson as source.
 - Icekiub's custom node packs go to workflows/icekiub/nodes/.
@@ -70,6 +73,10 @@ CONSENT = {"ICY ANIMATE WORKFLOW", "WAN 2.2 Lora Based Faceswap", "Change faces 
            "OLD- -AI influencer dataset AIO (Klein)", "Old - AI influencer dataset AIO (Qwen)",
            "(BEST) SCAIL 2 Motion Control"}
 NEVER_IMPORT = {"comfyui-unsafe-torch": "patches torch.load so any model file can run code"}
+RECORD = DEST / "skool" / "import-record.json"
+# Packs whose node classes icynodes (2026-09-16) also registers. Install one or the other in a
+# ComfyUI, never both; the standalone folders are kept as the record of what each lesson shipped.
+SUPERSEDED_BY_ICYNODES = ["betterimage_loader", "ICYLM", "icymegapixelresize", "ComfyUI-IcyHider-icekiub"]
 SKIP_DIRS = {"__pycache__", ".git", ".zcode"}
 MODEL_EXT = {".pt", ".pth", ".safetensors", ".ckpt", ".gguf", ".bin", ".onnx"}
 
@@ -128,6 +135,7 @@ def run(source: Path = DEFAULT_SOURCE, dry_run: bool = False) -> tuple[dict[str,
     doc = json.loads(capture.read_text(encoding="utf-8"))
     man = json.loads(rw.MANIFEST.read_text(encoding="utf-8"))
     by_sha = {w["sha256"]: w for w in man["workflows"]}
+    record = json.loads(RECORD.read_text(encoding="utf-8")) if RECORD.exists() else {}
     report: list[dict[str, Any]] = []
     for lesson in doc["lessons"]:
         if lesson.get("section"):
@@ -140,7 +148,12 @@ def run(source: Path = DEFAULT_SOURCE, dry_run: bool = False) -> tuple[dict[str,
         d = source / LESSON_DIR[title]
         expected = [r["file_name"] for r in lesson.get("resources", []) if r.get("file_name")]
         if expected and not (d.exists() and any(d.iterdir())):
-            entry["held_back"].append("not downloaded yet: " + ", ".join(expected))
+            held = _from_record(lesson, record, by_sha)
+            if held:
+                entry.update(held)
+                entry["note"] = "listed from an earlier import (`skool/import-record.json`); the staging folder is no longer on disk"
+            else:
+                entry["held_back"].append("not downloaded yet: " + ", ".join(expected))
             continue
         if not d.exists():
             continue
@@ -175,7 +188,35 @@ def run(source: Path = DEFAULT_SOURCE, dry_run: bool = False) -> tuple[dict[str,
         LESSONS_OUT.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(capture, LESSONS_OUT)
         DOC.write_text(render(doc, report), encoding="utf-8")
+        RECORD.write_text(json.dumps(_record(report, record), indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return doc, report
+
+
+def _record(report: list[dict[str, Any]], previous: dict[str, Any]) -> dict[str, Any]:
+    """What each lesson held after this run, keyed by lesson URL. A lesson listed from the record
+    keeps its earlier entry; a lesson read from staging replaces it."""
+    out = dict(previous)
+    for e in report:
+        url = e["lesson"].get("lesson_url")
+        if not url or e.get("note"):
+            continue
+        out[url] = {"title": e["lesson"]["title"],
+                    "workflows": [w["canonical"] for w in e["workflows"]],
+                    "packs": list(e["packs"]),
+                    "held_back": [h for h in e["held_back"] if not h.startswith("not downloaded yet")]}
+    return out
+
+
+def _from_record(lesson: dict[str, Any], record: dict[str, Any], by_sha: dict[str, Any]) -> dict[str, Any] | None:
+    """The earlier import's entry for this lesson, checked against what is on disk now: only
+    workflows still in the manifest and packs still under workflows/icekiub/nodes are listed."""
+    rec = record.get(lesson.get("lesson_url") or "")
+    if not rec:
+        return None
+    by_canonical = {w["canonical"]: w for w in by_sha.values()}
+    return {"workflows": [{**by_canonical[c], "status": "already held"} for c in rec["workflows"] if c in by_canonical],
+            "packs": [p for p in rec["packs"] if (NODES / p / "__init__.py").exists()],
+            "held_back": list(rec.get("held_back", []))}
 
 
 def _gate(title: str) -> list[str]:
@@ -198,9 +239,15 @@ def render(doc: dict[str, Any], report: list[dict[str, Any]]) -> str:
          "or published (`docs/LICENSING.md`). Model files are not in git; the links below say where "
          "each one comes from.", "",
          f"**{len(report)} lessons, {imported + held} workflows ({imported} new, {held} we already "
-         f"held), {len(packs)} node packs:** {', '.join(f'`{p}`' for p in packs)}.", "",
-         "Re-import after downloading more:", "", "```bash",
-         "uv run python packages/library/tools/import_skool_pack.py", "```", ""]
+         f"held), {len(packs)} node packs:** {', '.join(f'`{p}`' for p in packs)}.", ""]
+    if "icynodes" in packs:
+        L += [f"`icynodes` (MIT, 2026-09-16) registers the same node classes as "
+              f"{', '.join(f'`{p}`' for p in SUPERSEDED_BY_ICYNODES if p in packs)} and adds "
+              "`PromptListFromFolder` and `IcyVideoLoader`. Install `icynodes` **or** the standalone "
+              "folders in a ComfyUI, never both; the standalone folders stay here as the record of "
+              "what each lesson shipped.", ""]
+    L += ["Re-import after downloading more:", "", "```bash",
+          "uv run python packages/library/tools/import_skool_pack.py", "```", ""]
     section = None
     for e in report:
         les = e["lesson"]
@@ -227,6 +274,8 @@ def render(doc: dict[str, Any], report: list[dict[str, Any]]) -> str:
             L.append("- Links:")
             L += [f"  - {u}" for u in les["links"]]
         L += [f"- Held back: {h}" for h in e["held_back"]]
+        if e.get("note"):
+            L.append(f"- Record: {e['note']}")
         if les.get("description"):
             L += ["", "Lesson notes:", ""]
             L += [f"> {line}" if line.strip() else ">" for line in les["description"].splitlines()]

@@ -7,30 +7,43 @@
     "idea": "E03",
     "offer": "Our own tested workflows with setup guides"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
-      "id": "n1",
-      "kind": "unmapped",
+      "id": "n2",
+      "kind": "brief",
       "position": {
         "x": 80,
         "y": 80
       },
       "data": {
-        "step": "register-workflow",
+        "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "register-workflow",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
         "params": {}
       }
     }
   ],
-  "edges": [],
-  "gaps": [
+  "edges": [
     {
-      "node": "n1",
-      "step": "register-workflow",
-      "reason": "no catalogue node runs 'register-workflow' yet"
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "text",
+      "type": "text"
     }
   ],
+  "gaps": [],
   "family": "education",
   "compliance": "Never bundle bought packs (Icekiub etc.)"
 }

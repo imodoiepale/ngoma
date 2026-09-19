@@ -7,7 +7,7 @@
     "idea": "M01",
     "offer": "3-4 minute music video with infinite-length H3, SCAIL motion and relit VFX"
   },
-  "created": "2026-09-14",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -42,7 +42,8 @@
       "data": {
         "params": {
           "seconds": 30
-        }
+        },
+        "alias": "h3-infinite"
       }
     },
     {
@@ -101,7 +102,8 @@
       "data": {
         "params": {
           "seconds": 8
-        }
+        },
+        "alias": "edit"
       }
     },
     {

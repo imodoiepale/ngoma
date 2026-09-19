@@ -1074,6 +1074,7 @@
         "params": {
           "seconds": 4
         },
+        "prompt": "0-4s: wide with the figure small in the city, slow push-in on a dolly, Scene 1 (arrival): rooftop at golden hour, figure alone in a corridor of light.\nStyle: 35mm anamorphic; palette sodium orange, cyan, magenta neon, wet black; crushed shadows with colour in them, teal-magenta split.\nHold constant across the whole clip: same face and body; same hair; wardrobe as attached; one light source per scene; vertical, figure centred, headroom for captions.\nAudio: sound effects and diegetic sound only. No music. No dialogue. No subtitles.\nStrictly exclude: no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person.",
         "scene": 1,
         "stage": "scene1-motion",
         "why": "still to 4s video in the Neon noir pacing"
@@ -1272,6 +1273,7 @@
         "params": {
           "seconds": 6
         },
+        "prompt": "0-6s: tight silhouette against neon, slow push-in on a dolly, Scene 2 (first look): wet street under neon, back to camera then turn.\nStyle: 35mm anamorphic; palette sodium orange, cyan, magenta neon, wet black; crushed shadows with colour in them, teal-magenta split.\nHold constant across the whole clip: same face and body; same hair; wardrobe as attached; one light source per scene; vertical, figure centred, headroom for captions.\nAudio: sound effects and diegetic sound only. No music. No dialogue. No subtitles.\nStrictly exclude: no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person.",
         "scene": 2,
         "stage": "scene2-motion",
         "why": "still to 6s video in the Neon noir pacing"
@@ -1470,6 +1472,7 @@
         "params": {
           "seconds": 4
         },
+        "prompt": "0-4s: wide with the figure small in the city, slow push-in on a dolly, Scene 3 (detail): hotel corridor, figure alone in a corridor of light.\nStyle: 35mm anamorphic; palette sodium orange, cyan, magenta neon, wet black; crushed shadows with colour in them, teal-magenta split.\nHold constant across the whole clip: same face and body; same hair; wardrobe as attached; one light source per scene; vertical, figure centred, headroom for captions.\nAudio: sound effects and diegetic sound only. No music. No dialogue. No subtitles.\nStrictly exclude: no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person.",
         "scene": 3,
         "stage": "scene3-motion",
         "why": "still to 4s video in the Neon noir pacing"
@@ -1668,6 +1671,7 @@
         "params": {
           "seconds": 6
         },
+        "prompt": "0-6s: tight silhouette against neon, slow push-in on a dolly, Scene 4 (movement): rooftop again, night, back to camera then turn.\nStyle: 35mm anamorphic; palette sodium orange, cyan, magenta neon, wet black; crushed shadows with colour in them, teal-magenta split.\nHold constant across the whole clip: same face and body; same hair; wardrobe as attached; one light source per scene; vertical, figure centred, headroom for captions.\nAudio: sound effects and diegetic sound only. No music. No dialogue. No subtitles.\nStrictly exclude: no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person.",
         "scene": 4,
         "stage": "scene4-motion",
         "why": "still to 6s video in the Neon noir pacing"

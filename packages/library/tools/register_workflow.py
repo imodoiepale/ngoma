@@ -44,6 +44,10 @@ CLASS_PACK: dict[str, str] = {
     "IcyQwen3AllInOne": "icekiub/ComfyUI-IcyQwen3",
     **{k: "icekiub/ComfyUI-icyTikTokDownloader" for k in (
         "IcyTikTokDownloader", "IcyTikTokDownloaderSimple")},
+    # icynodes (2026-09-16) merges ICYLM, betterimage_loader, icymegapixelresize and IcyHider under
+    # the same class names, and adds this one. Only the new class is attributed to the merged pack.
+    "PromptListFromFolder": "icekiub/icynodes",
+    "IcyVideoLoader": "icekiub/icynodes",
 }
 
 CORE_TYPES = {

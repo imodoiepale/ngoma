@@ -1,0 +1,6 @@
+av
+numpy
+opencv-python
+Pillow
+requests
+torch

@@ -7,7 +7,7 @@
     "idea": "P02",
     "offer": "Print-on-demand apparel and posters featuring the persona (units = orders)"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -53,7 +53,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "print-on-demand"
       }
     }
   ],

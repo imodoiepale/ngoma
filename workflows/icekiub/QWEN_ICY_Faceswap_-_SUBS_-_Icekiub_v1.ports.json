@@ -1,0 +1,58 @@
+{
+  "workflow": "icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json",
+  "sha256": "81b7c3eeaa4659bfd5d17108579f7bbbf60833127a84b253adf4d5074fb357d0",
+  "format": "ui",
+  "inputs": {
+    "image": {
+      "node": "789",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). The body/source image (single-image mode: ImpactSwitch 790 select = 1). Feeds ImageResizeKJv2 657 -> FaceDetailer 722 and FaceBoundingBox 830. One image per run: the runner loops when the node fans out (`each`)."
+    },
+    "face": {
+      "node": "788",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). The consented face reference. Feeds ImageResizeKJv2 809 -> TextEncodeQwenImageEditPlus 807 (orientation match, KSampler 819) and ImpactSwitch 823 -> FaceBoundingBox 831 -> TextEncodeQwenImageEditPlus 174. Binds once for every item of a batch."
+    }
+  },
+  "prompt": {
+    "node": "174",
+    "class": "TextEncodeQwenImageEditPlus",
+    "field": "prompt",
+    "widget_index": 0,
+    "note": "Default 'Adjust the source image lighting and skin tone to ensure the new face fit in the new body seamlessly ...'. Leave empty to keep it."
+  },
+  "negative": {
+    "node": "111",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0,
+    "note": "Empty by default; the negative of FaceDetailer 722, KSampler 819 and the bypassed UltimateSDUpscale 775."
+  },
+  "seed": {
+    "node": "722",
+    "class": "FaceDetailer",
+    "field": "seed",
+    "widget_index": 3,
+    "note": "widgets_values: [guide_size 512, guide_size_for true, max_size 1024, seed, control 'fixed', steps 4, cfg 1, ...]. KSampler (Efficient) 819 widget 0 is the seed of the head-orientation pass and keeps its own value."
+  },
+  "outputs": {
+    "image": {
+      "node": "821",
+      "class": "SaveImage",
+      "kind": "image",
+      "note": "The FaceDetailer 722 result. SaveImage 827 is the bypassed UltimateSDUpscale pass (node 775, mode 4)."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "Batch folder mode exists inside the workflow: LoadImageListFromDir //Inspire 787 (widget 0 = a folder path on the pod's disk) selected by ImpactSwitch 790 = 2. The engine binds the single image and loops per item instead, so every item has its own seed, manifest entry and group; the folder loader would hide the item list from the runner.",
+    "ImpactSwitch 823 = 2 routes the face through the orientation-match pass (KSampler 819, prompt 807 'Rotate the head for exact positional rotation'); set it to 1 to use the face reference as uploaded.",
+    "No batch count: EmptyLatentImage 808 batch_size only sizes the orientation pass; one output per run.",
+    "LoRAs: Qwen-Image-Lightning-4steps (89) and 1GIRL_QWEN_V3 at 0.51 (785) on qwen_image_edit_2509_fp8; face detector bbox/face_yolov8m.pt (723), insightface (829), 4xFaceUpDAT.pth (804).",
+    "Consent step: the runner refuses to run it unless every reference collection feeding it has collection.json with rights owned, licensed or fictional, and consent: true for a real person (docs/engine/BATCHES.md). Real faces only with a written release."
+  ]
+}

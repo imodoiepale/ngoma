@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Who Director helps">
+  <defs>
+    <linearGradient id="who-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0A0A"/>
+      <stop offset="1" stop-color="#14110D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#who-bg)" rx="24"/>
+  <text x="48" y="48" fill="#F5F0E8" font-family="Georgia, serif" font-size="22">Who this is for</text>
+  <text x="48" y="74" fill="#A89B7C" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">Eight families. Fifty costed offers. One studio. The pipeline does not care which brand you open.</text>
+
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <rect x="40" y="104" width="270" height="170" rx="16" fill="#1C1812" stroke="#3F3A32"/>
+    <text x="60" y="138" fill="#F0D78C" font-size="14" font-weight="700">Agencies &amp; SMMs</text>
+    <text x="60" y="164" fill="#D9D0BE" font-size="12">1,000 on-brand stills a day.</text>
+    <text x="60" y="184" fill="#D9D0BE" font-size="12">Carousels from one product photo.</text>
+    <text x="60" y="204" fill="#D9D0BE" font-size="12">Thumbnails, covers, retainers.</text>
+    <text x="60" y="240" fill="#86EFAC" font-size="11">V01 · V02 · V08</text>
+
+    <rect x="330" y="104" width="270" height="170" rx="16" fill="#1C1812" stroke="#3F3A32"/>
+    <text x="350" y="138" fill="#F0D78C" font-size="14" font-weight="700">Local businesses</text>
+    <text x="350" y="164" fill="#D9D0BE" font-size="12">Restaurants, real estate, shops.</text>
+    <text x="350" y="184" fill="#D9D0BE" font-size="12">WhatsApp Status every morning.</text>
+    <text x="350" y="204" fill="#D9D0BE" font-size="12">Sheng and Kiswahili captions.</text>
+    <text x="350" y="240" fill="#86EFAC" font-size="11">V03 · V04 · V06 · U04</text>
+
+    <rect x="620" y="104" width="270" height="170" rx="16" fill="#1C1812" stroke="#3F3A32"/>
+    <text x="640" y="138" fill="#F0D78C" font-size="14" font-weight="700">Fashion &amp; D2C</text>
+    <text x="640" y="164" fill="#D9D0BE" font-size="12">Every SKU on a fictional model.</text>
+    <text x="640" y="184" fill="#D9D0BE" font-size="12">Wardrobe swap, try-on, lookbooks.</text>
+    <text x="640" y="204" fill="#D9D0BE" font-size="12">Identity locked across a batch.</text>
+    <text x="640" y="240" fill="#86EFAC" font-size="11">V05 · P07 · P02</text>
+
+    <rect x="910" y="104" width="250" height="170" rx="16" fill="#1C1812" stroke="#3F3A32"/>
+    <text x="930" y="138" fill="#F0D78C" font-size="14" font-weight="700">Artists &amp; labels</text>
+    <text x="930" y="164" fill="#D9D0BE" font-size="12">Full-length music videos.</text>
+    <text x="930" y="184" fill="#D9D0BE" font-size="12">Spotify Canvas, VJ loops.</text>
+    <text x="930" y="204" fill="#D9D0BE" font-size="12">Artist digital doubles.</text>
+    <text x="930" y="240" fill="#86EFAC" font-size="11">M01M08</text>
+
+    <rect x="40" y="294" width="270" height="186" rx="16" fill="#1C1812" stroke="#3F3A32"/>
+    <text x="60" y="328" fill="#F0D78C" font-size="14" font-weight="700">UGC / performance</text>
+    <text x="60" y="354" fill="#D9D0BE" font-size="12">Ad packs, hook tests, dubs.</text>
+    <text x="60" y="374" fill="#D9D0BE" font-size="12">TikTok Shop product clips.</text>
+    <text x="60" y="394" fill="#D9D0BE" font-size="12">App-install demo ads.</text>
+    <text x="60" y="430" fill="#86EFAC" font-size="11">U01U07</text>
+
+    <rect x="330" y="294" width="270" height="186" rx="16" fill="#1C1812" stroke="#3F3A32"/>
+    <text x="350" y="328" fill="#F0D78C" font-size="14" font-weight="700">Persona operators</text>
+    <text x="350" y="354" fill="#D9D0BE" font-size="12">Own an AI influencer.</text>
+    <text x="350" y="374" fill="#D9D0BE" font-size="12">Character boards and LoRAs.</text>
+    <text x="350" y="394" fill="#D9D0BE" font-size="12">Licensing and greetings.</text>
+    <text x="350" y="430" fill="#86EFAC" font-size="11">P01P09 · S01</text>
+
+    <rect x="620" y="294" width="270" height="186" rx="16" fill="#1C1812" stroke="#3F3A32"/>
+    <text x="640" y="328" fill="#F0D78C" font-size="14" font-weight="700">Studios &amp; agencies</text>
+    <text x="640" y="354" fill="#D9D0BE" font-size="12">Image API, brand engine.</text>
+    <text x="640" y="374" fill="#D9D0BE" font-size="12">Workflow packs, bootcamps.</text>
+    <text x="640" y="394" fill="#D9D0BE" font-size="12">Product photography replacement.</text>
+    <text x="640" y="430" fill="#86EFAC" font-size="11">A01A03 · E01E05 · S02S08</text>
+
+    <rect x="910" y="294" width="250" height="186" rx="16" fill="#1C1812" stroke="#7F1D1D"/>
+    <text x="930" y="328" fill="#FCA5A5" font-size="14" font-weight="700">18+ fiction only</text>
+    <text x="930" y="354" fill="#D9D0BE" font-size="12">Adult fictional personas.</text>
+    <text x="930" y="374" fill="#D9D0BE" font-size="12">Separate entity and payments.</text>
+    <text x="930" y="394" fill="#D9D0BE" font-size="12">Never on client brand infra.</text>
+    <text x="930" y="430" fill="#FCA5A5" font-size="11">X01 · X02 · gated</text>
+  </g>
+</svg>

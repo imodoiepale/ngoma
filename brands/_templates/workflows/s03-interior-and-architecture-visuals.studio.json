@@ -7,7 +7,7 @@
     "idea": "S03",
     "offer": "Renders and walkthrough clips from sketches or empty rooms"
   },
-  "created": "2026-09-14",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -29,7 +29,9 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {
+          "character_lora": ""
+        }
       }
     },
     {
@@ -53,7 +55,8 @@
       "data": {
         "params": {
           "seconds": 5
-        }
+        },
+        "alias": "wan-i2v"
       }
     },
     {
@@ -74,19 +77,11 @@
       "source": "n2",
       "sourceHandle": "images",
       "target": "n1",
-      "targetHandle": "image",
-      "type": "image"
-    },
-    {
-      "id": "e2",
-      "source": "n2",
-      "sourceHandle": "images",
-      "target": "n1",
       "targetHandle": "room",
       "type": "image"
     },
     {
-      "id": "e3",
+      "id": "e2",
       "source": "n1",
       "sourceHandle": "image",
       "target": "n3",
@@ -94,7 +89,7 @@
       "type": "image"
     },
     {
-      "id": "e4",
+      "id": "e3",
       "source": "n4",
       "sourceHandle": "text",
       "target": "n3",
@@ -102,7 +97,7 @@
       "type": "text"
     },
     {
-      "id": "e5",
+      "id": "e4",
       "source": "n3",
       "sourceHandle": "video",
       "target": "n5",

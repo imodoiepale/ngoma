@@ -1,0 +1,204 @@
+{
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=242bbf09f51f4c9d909df2f5c9322789": {
+    "title": "NEW - Icy realism H3 Loras Checkpoints",
+    "workflows": [],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=4752f5761eaf4e40a5ca7a05fa25ba7f": {
+    "title": "Updated Icy-Hider for subs",
+    "workflows": [],
+    "packs": [
+      "ComfyUI-IcyHider-icekiub"
+    ],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=f8b082faef4e4ad6941bd7fc4162cb57": {
+    "title": "(BEST) SCAIL 2 Motion Control",
+    "workflows": [
+      "workflows/icekiub/Krea_gen_+_scail_motion_control_subs.json",
+      "workflows/icekiub/Motion_Control_Icy_-SUBS.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=9675be8f118a42709eeee60fd464b05e": {
+    "title": "ICY ANIMATE WORKFLOW",
+    "workflows": [
+      "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+      "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=0fd8fc2c84fb4611ac724894f2e7e379": {
+    "title": "WAN 2.2 Lora Based Faceswap",
+    "workflows": [
+      "workflows/icekiub/WANT2VLora_Faceswap_-_Icekiub_v1.json"
+    ],
+    "packs": [
+      "ComfyUI-icyTikTokDownloader"
+    ],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=41e311a0eb1343b08180881f7660ee89": {
+    "title": "WAN 2.2 IMAGE TO VIDEO",
+    "workflows": [
+      "workflows/icekiub/I2V_Infinite_extender_-_SUBS_-_Icekiub_v1.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=0d044c8f6d8c4e2c95a22d443f4ffd25": {
+    "title": "NEW - Minimax reference based Image generation",
+    "workflows": [
+      "workflows/icekiub/H3_Icy_image.json"
+    ],
+    "packs": [
+      "betterimage_loader",
+      "ICYLM",
+      "icymegapixelresize"
+    ],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=1acd0b35ad4649619e349a0b034bc0b2": {
+    "title": "NEW - Reference based character sheet",
+    "workflows": [
+      "workflows/icekiub/icy_ref_character_sheet_for_minimax.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=fd9deacaa2c847f4ab5fbd0592c14735": {
+    "title": "Icy reference motion control pack (SFW)",
+    "workflows": [],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=71730f223d4b4fc8b919d882479edb39": {
+    "title": "NEW BEST - Icy Krea2",
+    "workflows": [
+      "workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+      "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=2aed2feb6a1b4ba7b6765f216c75aad3": {
+    "title": "Consistent Background Klein workflow",
+    "workflows": [
+      "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=f2318be36a1f4a8394812dc40dbe283e": {
+    "title": "ZIB + ZIT with controlnet workflow",
+    "workflows": [
+      "workflows/icekiub/zbase+zit+control_-_icekiub_v1.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=bc1f2b51bfca4cd4ac24ceda749f8b63": {
+    "title": "Unc. I2I workflow (Klein) UPDATED",
+    "workflows": [
+      "workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+      "workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+      "workflows/icekiub/I2I_no_lora_faceswap_subs.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=c3b29c12b1bd4cfd993b07a488aa3c9c": {
+    "title": "Infinite wardrobe for your character (Multi Ref)",
+    "workflows": [
+      "workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=a9eba4f672924abaab1324e084f656d8": {
+    "title": "IG Carousel pose generator",
+    "workflows": [
+      "workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=e32158db0a0c4115aed694f5f058268e": {
+    "title": "NSFW Surgery WF (SDXL Inpaint)",
+    "workflows": [
+      "workflows/icekiub/NSFW_BATCH_SURGERY_SUBS_-_ICEKIUB_v1.json",
+      "workflows/icekiub/NSFW_SURGERY_SUBS_-_ICEKIUB_v1.json"
+    ],
+    "packs": [],
+    "held_back": [
+      "comfyui-unsafe-torch (patches torch.load so any model file can run code)",
+      "model files kept out of git: Anzhcs WomanFace v05 1024 y8n.pt, Eyeful_v1.pt, assdetailer-seg.pt, face_yolov8m.pt, pussyV2.pt"
+    ]
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=8a9f4bcc93a0449bacb0b84dc408d8ee": {
+    "title": "OLD- -AI influencer dataset AIO (Klein)",
+    "workflows": [
+      "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
+      "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=ebc1716d2ab146dea313bb1ccf9cbe2b": {
+    "title": "Old - AI influencer dataset AIO (Qwen)",
+    "workflows": [
+      "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=8a08f9daabd84370b525ca56f67550cf": {
+    "title": "NEW - AI influencer dataset AIO (Klein)",
+    "workflows": [
+      "workflows/icekiub/captioning_workflow.json",
+      "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json"
+    ],
+    "packs": [
+      "icynodes"
+    ],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=432301a0c15f4a1580a92d82f1e32bea": {
+    "title": "Change faces with QWEN IMAGE EDIT",
+    "workflows": [
+      "workflows/icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=9506cbab61e945ef8bea735250dd3329": {
+    "title": "Uncensored captioning for datasets",
+    "workflows": [
+      "workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json"
+    ],
+    "packs": [
+      "ComfyUI-IcyQwen3"
+    ],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=7507a067aa2c4bf88ba7ff0bdf18d235": {
+    "title": "Klein Watermark removal",
+    "workflows": [
+      "workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+      "workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json"
+    ],
+    "packs": [],
+    "held_back": []
+  },
+  "https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=7f0721ddf593421d90a499affa310c9e": {
+    "title": "Edit ANYTHING (Phr00t Qwen image edit)",
+    "workflows": [
+      "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json"
+    ],
+    "packs": [],
+    "held_back": []
+  }
+}

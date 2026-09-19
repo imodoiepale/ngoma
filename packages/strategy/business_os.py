@@ -72,6 +72,8 @@ def load(path: Path = IDEAS) -> dict[str, Any]:
                 problems.append(f"{i['id']}: {k} must be a non-negative number")
         if i["family"] == "adult" and "HARD GATES" not in i["compliance"] and "hard gates" not in i["compliance"]:
             problems.append(f"{i['id']}: adult ideas must state their hard compliance gates")
+        if "decisions" in i and not (isinstance(i["decisions"], list) and all(isinstance(d, str) and d.strip() for d in i["decisions"])):
+            problems.append(f"{i['id']}: decisions must be a list of non-empty strings")
     if problems:
         raise IdeaError("; ".join(problems))
     return doc
@@ -164,6 +166,8 @@ def render_ideas(doc: dict[str, Any], rows: list[Costed]) -> str:
             out += [f"**{i['id']} {i['name']}.** {i['offer']}. Pipeline: `{' → '.join(map(str, i['pipeline']))}` "
                     f"on **{i['backend']}**. Evidence: {i['evidence']}. Risk: {i['risk']}. "
                     f"Compliance: {i['compliance']}.", ""]
+            for d in i.get("decisions") or []:
+                out += [f"- Decision: {d}", ""]
     return "\n".join(out)
 
 

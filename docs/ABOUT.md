@@ -149,19 +149,22 @@ authorisation, financial claims, security, secrets, budgets, approval policy —
 auto-authored regardless of evidence. Automating the thing that decides what may be
 published is how an automated system removes its own brakes.
 
-## Two brands, on purpose
+## Two workspaces first, on purpose
 
-**Ongea Pesa** — voice-activated M-Pesa, by NSAIT. Fintech, Kenyan, five languages, real
-regulatory exposure. Claim safety is a first-class field: no rate or return claims, no
-implied Safaricom endorsement, no real till numbers.
-
-**EPALLE** — a music project. Charcoal, ivory, dust gold. A six-stage narrative arc where
+**EPALLE**, a music project. Charcoal, ivory, dust gold. A six-stage narrative arc where
 the palette itself is the story: dust gold is *withheld* until gratitude, so its arrival
 means something. That is the difference between a colour scheme and direction.
 
-Two brands that share nothing — different industries, different output, different
-ethics — was the point. It forces every brand-specific assumption out of the pipeline and
-into `brands/<key>/`. A third brand is a directory.
+**Ongea Pesa**, voice-activated M-Pesa, by NSAIT. Fintech, Kenyan, five languages, real
+regulatory exposure. Claim safety is a first-class field: no rate or return claims, no
+implied Safaricom endorsement, no real till numbers.
+
+Two brands that share nothing (different industries, different output, different ethics)
+was the point. It forces every brand-specific assumption out of the pipeline and into
+`brands/<key>/`. That is what lets the studio be general: a workspace is a directory with a
+`brand.yaml`, `python packages/strategy/workspace.py new <key> --name "..."` scaffolds one
+from the documented minimum, and the same pipeline, the same gates and the same Director
+serve it. Director Studio is the proposed name for the studio all the workspaces share.
 
 ## Where it stands
 
@@ -176,5 +179,5 @@ list of what works.
 
 ## The one-line version
 
-A content studio where the model is allowed to be creative and the code is not allowed to
-be wrong.
+A creative studio for any brand where the model is allowed to be creative and the code is
+not allowed to be wrong.

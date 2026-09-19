@@ -20,11 +20,11 @@ Studio template: [`u05-app-install-demo-ads.studio.json`](../../brands/_template
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
 | Brief | you provide |  | — |
-| Motion graphics | not runnable yet | HyperFrames/Remotion renderer is planned, not built. | — |
+| Motion graphics | studio code | `packages/video/motion_graphics.py` | — |
 | Voiceover | studio code | `packages/voice/tts.py` | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
-67% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -40,15 +40,20 @@ Setup budget $200. Fixed monthly spend $50. First cash in about 14 days.
 
 ## What is not ready
 
-- **Motion graphics**: HyperFrames/Remotion renderer is planned, not built.
+- Nothing structural. Every step has a backend and every model it names has a source; it still needs a live run.
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: `hyperframes` and `phone-mockup` both resolve to the motion-graphics node, still a declared gap (packages/video/motion_graphics.py). The voice-over is bound; the demo cannot ship without the renderer.
+- 2026-09-20 (W6): bound to packages/video/motion_graphics.py; `background.phone: true` with a `screen` image draws the phone mock-up and the typed lines run over it. The demo ships from the app screenshots and the voiceover.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 2 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch mobile app startups with the pilot; target the low scenario (1 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

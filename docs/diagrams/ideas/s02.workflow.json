@@ -18,18 +18,12 @@
     {
       "id": "gpu",
       "label": "ComfyUI on the pod"
-    },
-    {
-      "id": "gaps",
-      "label": "Not runnable yet",
-      "variant": "exception"
     }
   ],
   "mainPath": [
     "n5",
     "n4",
-    "n6",
-    "n7"
+    "n6"
   ],
   "nodes": [
     {
@@ -65,31 +59,21 @@
     },
     {
       "id": "n6",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
+    },
+    {
+      "id": "n4",
       "lane": "gpu",
       "col": 2,
       "type": "cloud",
       "label": "Upscale video",
       "sublabel": "V2V Latent Motion…",
       "width": 128
-    },
-    {
-      "id": "n4",
-      "lane": "gaps",
-      "col": 2,
-      "type": "security",
-      "label": "Relight",
-      "sublabel": "not built yet",
-      "tag": "gap",
-      "width": 100
-    },
-    {
-      "id": "n7",
-      "lane": "studio",
-      "col": 3,
-      "type": "backend",
-      "label": "Export files",
-      "sublabel": "compositor.py",
-      "width": 104
     }
   ],
   "edges": [
@@ -114,12 +98,6 @@
       "to": "n6",
       "label": "video",
       "variant": "emphasis"
-    },
-    {
-      "from": "n6",
-      "to": "n7",
-      "label": "video",
-      "variant": "emphasis"
     }
   ],
   "cards": [
@@ -134,10 +112,9 @@
       ]
     },
     {
-      "dot": "rose",
+      "dot": "amber",
       "title": "Rules",
       "items": [
-        "Gap: Relight not built",
         "Dry-run until approved",
         "Logo composited, never generated"
       ]

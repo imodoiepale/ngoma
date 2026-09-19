@@ -13,6 +13,9 @@
 #   first_cash_days  realistic days to the first payment
 #   labor_hours      optional: human hours per client (or unit) per month; defaults by family
 #                    in business_os.LABOR_HOURS, priced at an assumed $15/h
+#   decisions        optional: dated notes on how a pipeline gap was closed or why it stays open
+#                    (which real step replaced it, or the exact workflow/module/API still missing);
+#                    rendered into the proposal and IDEAS-50.md so the gap is never vague
 #
 # ALL FIGURES ARE PLANNING ESTIMATES (2026-09-13), not forecasts. Throughput anchors:
 # images 444/GPU-h MEASURED (Klein T2I on the pod); video ~20 five-second clips/GPU-h and
@@ -69,7 +72,9 @@ ideas:
      offer: "Daily faceless short: script, voice, visuals, captions", pipeline: [hyperframes, tts, wan-i2v, captions],
      backend: pod, price_usd: 600, clients: [2, 6, 20], gpu_hours: 10, api_usd: 15, setup_usd: 200, fixed_usd: 50,
      first_cash_days: 14, risk: "Platform demonetises low-effort AI content", compliance: "Disclose synthetic media",
-     evidence: "ArtificialQuotient: Viblo faceless shorts (10k), FacelessReels review (13k)"}
+     evidence: "ArtificialQuotient: Viblo faceless shorts (10k), FacelessReels review (13k)",
+     decisions: ["2026-09-20: `hyperframes` (kinetic type) stays a declared gap until packages/video/motion_graphics.py exists; voice, WAN visuals and burned-in captions are bound, so a shorts pipeline without kinetic type can ship.",
+                 "2026-09-20 (W6): kinetic type is bound to packages/video/motion_graphics.py (a spec of timed lines from the brief, kit colours, ffmpeg encode); to lay it over the WAN clip instead, wire the clip into its optional background input on the canvas. No declared gap left."]}
   - {id: V08, family: volume, name: "Thumbnail and cover retainer", buyer: "YouTubers and podcasters",
      offer: "Up to 30 thumbnails a month with 3 variants each for A/B tests", pipeline: [nano-banana-2, compositor],
      backend: hosted, price_usd: 300, clients: [3, 12, 40], gpu_hours: 0, api_usd: 6.3, setup_usd: 50, fixed_usd: 20,
@@ -101,7 +106,9 @@ ideas:
      offer: "Voice-over phone-mockup demos in 3 lengths", pipeline: [hyperframes, tts, phone-mockup],
      backend: hosted, price_usd: 1000, clients: [1, 4, 10], gpu_hours: 2, api_usd: 20, setup_usd: 200, fixed_usd: 50,
      first_cash_days: 14, risk: "Needs real screen recordings", compliance: "Show real app behaviour",
-     evidence: "ArtificialQuotient 'Hyperframes + Claude motion graphics' (18k)"}
+     evidence: "ArtificialQuotient 'Hyperframes + Claude motion graphics' (18k)",
+     decisions: ["2026-09-20: `hyperframes` and `phone-mockup` both resolve to the motion-graphics node, still a declared gap (packages/video/motion_graphics.py). The voice-over is bound; the demo cannot ship without the renderer.",
+                 "2026-09-20 (W6): bound to packages/video/motion_graphics.py; `background.phone: true` with a `screen` image draws the phone mock-up and the typed lines run over it. The demo ships from the app screenshots and the voiceover."]}
   - {id: U06, family: ugc, name: "Multilingual spokesperson", buyer: "Brands selling in East Africa and francophone markets",
      offer: "One consented spokesperson, lip-synced in EN/SW/FR", pipeline: [refmod-consented, lipsync, tts],
      backend: pod, price_usd: 900, clients: [1, 4, 10], gpu_hours: 10, api_usd: 25, setup_usd: 300, fixed_usd: 60,
@@ -165,12 +172,16 @@ ideas:
      offer: "3-4 minute music video with infinite-length H3, SCAIL motion and relit VFX", pipeline: [h3-infinite, motion-control, relight, lipsync, edit],
      backend: pod, price_usd: 3000, clients: [0, 1, 3], labor_hours: 40, gpu_hours: 40, api_usd: 30, setup_usd: 500, fixed_usd: 100,
      first_cash_days: 30, risk: "Long renders; quality bar is high", compliance: "Artist consent for any likeness; licensed audio",
-     evidence: "LoRAtech 'MiniMax H3 infinite length videos (low VRAM)' (59k); ArtificialQuotient Beeble relight (3.5k)"}
+     evidence: "LoRAtech 'MiniMax H3 infinite length videos (low VRAM)' (59k); ArtificialQuotient Beeble relight (3.5k)",
+     decisions: ["2026-09-20: `relight` stays a declared gap. Closing it needs a video relight ComfyUI workflow (IC-Light video or a Beeble SwitchLight-style graph) registered in workflows/manifest.json with a .ports.json; sell the video without the relight pass until then.",
+                 "2026-09-20 (W6): checked the one 'relight' the library has: WanAnimate_relight_lora_fp16.safetensors inside the two ICY WAN ANIMATE V4 graphs. It only matches a swapped character's light to the driving clip during a body or face swap and cannot change the light on footage, so binding it would fake the step. Still a gap; the exact missing thing is on the catalogue node (IC-Light video or SwitchLight graph with video, light_direction and prompt ports)."]}
   - {id: M02, family: music, name: "Artist visual retainer", buyer: "Artists releasing monthly",
      offer: "4 visualizers, 1 lyric video and cover art a month", pipeline: [hyperframes, wan-i2v, compositor],
      backend: pod, price_usd: 900, clients: [1, 4, 12], gpu_hours: 10, api_usd: 10, setup_usd: 200, fixed_usd: 60,
      first_cash_days: 21, risk: "Artists have thin budgets", compliance: "Licensed audio only",
-     evidence: "ArtificialQuotient Revid music-to-video and OpenArt lip-sync music videos"}
+     evidence: "ArtificialQuotient Revid music-to-video and OpenArt lip-sync music videos",
+     decisions: ["2026-09-20: `hyperframes` (motion graphics) stays a declared gap until packages/video/motion_graphics.py wraps a HyperFrames or Remotion renderer; the visualizers ship from WAN image-to-video and the compositor meanwhile.",
+                 "2026-09-20 (W6): `hyperframes` now runs on packages/video/motion_graphics.py (Pillow frames, ffmpeg encode, brand-kit colours; typed text, kinetic type, lower thirds, phone mock-ups). No Node renderer is installed or required; HyperFrames/Remotion stay a documented upgrade path for spring and per-glyph animation. Lyric videos are a spec of timed lines; the engine does not run this python step as a stage yet (runner LOCAL_STEPS), it is run from the command line."]}
   - {id: M03, family: music, name: "Spotify Canvas and loops", buyer: "Artists and labels (per release)",
      offer: "8-second Canvas loops for every track on a release", pipeline: [wan-i2v, loop-edit],
      backend: pod, price_usd: 200, clients: [3, 15, 50], labor_hours: 1.5, gpu_hours: 1, api_usd: 0, setup_usd: 80, fixed_usd: 20,
@@ -191,7 +202,9 @@ ideas:
   - {id: M07, family: music, name: "Label visual package", buyer: "Small labels with 5+ artists",
      offer: "Monthly visual retainer across the roster", pipeline: [M02, M03, M04],
      backend: pod, price_usd: 4000, clients: [0, 1, 2], gpu_hours: 50, api_usd: 50, setup_usd: 500, fixed_usd: 200,
-     first_cash_days: 60, risk: "Concentration on one client", compliance: "Licensed audio; artist consent", evidence: "Bundles M02-M04 at scale"}
+     first_cash_days: 60, risk: "Concentration on one client", compliance: "Licensed audio; artist consent", evidence: "Bundles M02-M04 at scale",
+     decisions: ["2026-09-20: inherits M02's motion-graphics gap (packages/video/motion_graphics.py not built); everything else in the bundle is bound.",
+                 "2026-09-20 (W6): M02's motion-graphics step is bound to packages/video/motion_graphics.py, so the bundle has no declared gap left."]}
   - {id: M08, family: music, name: "Stock B-roll subscription", buyer: "Editors and creators (units = subscribers)",
      offer: "Monthly drop of 100 royalty-free African-set AI B-roll clips", pipeline: [wan-t2v, ltx, upscale],
      backend: pod, price_usd: 19, clients: [20, 150, 600], labor_hours: 0.02, gpu_hours: 0.05, api_usd: 0, setup_usd: 300, fixed_usd: 60,
@@ -203,12 +216,15 @@ ideas:
      offer: "A consistent-character file from client-owned references", pipeline: [refmod, caption-dataset, ai-toolkit-lora],
      backend: pod, price_usd: 150, clients: [4, 20, 60], labor_hours: 1, gpu_hours: 1, api_usd: 0, setup_usd: 100, fixed_usd: 30,
      first_cash_days: 7, risk: "Commoditising fast", compliance: "Consent proof required before training",
-     evidence: "KiubAI Klein 9B LoRA training (4.7k); LoRAtech character LoRA series; RefMods in seconds"}
+     evidence: "KiubAI Klein 9B LoRA training (4.7k); LoRAtech character LoRA series; RefMods in seconds",
+     decisions: ["2026-09-20: `ai-toolkit-lora` stays a declared gap because the LoRA is the product being sold; RefMod (refmod-create, H3) is the deliverable we can make today and the offer says so. Closing the gap needs a python job module (proposed packages/engine/lora_train.py) that runs ostris/ai-toolkit on the pod from the captioned dataset.",
+                 "2026-09-20 (W6): `ai-toolkit-lora` is bound to packages/engine/lora_train.py: rights gate (owned or licensed data, fictional or consented), ai-toolkit config.yaml, captions from the caption-dataset step, pod launch.sh and manifest. It never trains: the run is started by hand on the pod and needs an ai-toolkit clone plus the Klein 9B base model there (needs_setup, BLOCKERS 3). RefMod remains the same-day deliverable."]}
   - {id: S02, family: service, name: "Product photography replacement", buyer: "Retailers paying for studio shoots",
-     offer: "Unlimited product shots from 3 phone photos per SKU", pipeline: [klein-edit, relight, upscale],
+     offer: "Unlimited product shots from 3 phone photos per SKU", pipeline: [klein-edit, product-relight, upscale],
      backend: pod, price_usd: 900, clients: [1, 5, 15], gpu_hours: 10, api_usd: 0, setup_usd: 250, fixed_usd: 60,
      first_cash_days: 14, risk: "Label and text accuracy on packaging", compliance: "Real product appearance",
-     evidence: "ArtificialQuotient RiverFlow product photos (643); Krea 2 image-to-image (LoRAtech 10k)"}
+     evidence: "ArtificialQuotient RiverFlow product photos (643); Krea 2 image-to-image (LoRAtech 10k)",
+     decisions: ["2026-09-20: the video `relight` gap was the wrong step for stills; the pipeline now uses `product-relight`, which the Qwen image-edit workflow already runs by instruction (same node as klein-edit, so the template shows one edit step)."]}
   - {id: S03, family: service, name: "Interior and architecture visuals", buyer: "Architects, developers, interior designers",
      offer: "Renders and walkthrough clips from sketches or empty rooms", pipeline: [consistent-room, wan-i2v],
      backend: pod, price_usd: 1000, clients: [1, 4, 10], gpu_hours: 10, api_usd: 0, setup_usd: 250, fixed_usd: 50,
@@ -217,22 +233,29 @@ ideas:
   - {id: S04, family: service, name: "Archive restore and upscale", buyer: "Families, churches, media houses",
      offer: "Restore, colourise and upscale old photos and footage", pipeline: [upscale, restore],
      backend: pod, price_usd: 400, clients: [2, 8, 25], gpu_hours: 4, api_usd: 0, setup_usd: 100, fixed_usd: 20,
-     first_cash_days: 7, risk: "Faces must stay truthful", compliance: "Owner consent", evidence: "LoRAtech upscale workflow build-along (9.2k)"}
+     first_cash_days: 7, risk: "Faces must stay truthful", compliance: "Owner consent", evidence: "LoRAtech upscale workflow build-along (9.2k)",
+     decisions: ["2026-09-20: `restore` runs interim on the Qwen image-edit workflow with a fixed restore instruction (keep every face as it is). A dedicated restoration graph (face restoration plus colourise) is still missing from workflows/manifest.json; add it and re-point the `restore` node when it lands."]}
   - {id: S05, family: service, name: "Training avatar videos", buyer: "HR teams and NGOs",
      offer: "Consented presenter avatar for 10 training videos a month", pipeline: [refmod-consented, lipsync, tts, hyperframes],
      backend: pod, price_usd: 1200, clients: [1, 3, 8], gpu_hours: 12, api_usd: 20, setup_usd: 300, fixed_usd: 60,
      first_cash_days: 30, risk: "Competes with Synthesia and HeyGen", compliance: "Presenter release",
-     evidence: "ArtificialQuotient Synthesia and HeyGen tutorials show paid demand; ours runs on open models"}
+     evidence: "ArtificialQuotient Synthesia and HeyGen tutorials show paid demand; ours runs on open models",
+     decisions: ["2026-09-20: `hyperframes` (title cards and lower thirds) stays a declared gap until packages/video/motion_graphics.py exists; the avatar, voice and lip-sync steps are bound.",
+                 "2026-09-20 (W6): `hyperframes` is bound to packages/video/motion_graphics.py; the lip-synced avatar clip feeds its optional background input, so title cards and lower thirds render over the presenter. No declared gap left."]}
   - {id: S06, family: service, name: "Explainer videos", buyer: "Startups, NGOs, public health programmes",
      offer: "Two 90-second explainers a month", pipeline: [hyperframes, remotion, tts],
      backend: hosted, price_usd: 1500, clients: [1, 3, 8], gpu_hours: 2, api_usd: 30, setup_usd: 200, fixed_usd: 50,
      first_cash_days: 21, risk: "Script and research time dominates", compliance: "Fact-checked claims",
-     evidence: "ArtificialQuotient 'Remotion with Claude Code' (15k) and Vox-style explainer tutorial"}
+     evidence: "ArtificialQuotient 'Remotion with Claude Code' (15k) and Vox-style explainer tutorial",
+     decisions: ["2026-09-20: `hyperframes` and `remotion` both resolve to the motion-graphics node, still a declared gap: packages/video/motion_graphics.py wrapping a Remotion project or HyperFrames is the one missing module. Do not sell this idea before it exists.",
+                 "2026-09-20 (W6): both steps resolve to the motion-graphics node, now bound to packages/video/motion_graphics.py (Pillow and ffmpeg, no Node). A 90-second explainer is a spec of timed lines over colour, image or footage backgrounds plus the voiceover; richer animation (springs, per-glyph, 3D) still means adding a Remotion or HyperFrames renderer behind the same spec, documented in the module."]}
   - {id: S07, family: service, name: "Short-form dubbing", buyer: "Creators expanding to Swahili and French",
      offer: "Dub and re-caption 20 shorts a month", pipeline: [transcribe, translate, tts, lipsync, captions],
      backend: pod, price_usd: 500, clients: [2, 8, 25], gpu_hours: 5, api_usd: 15, setup_usd: 150, fixed_usd: 40,
      first_cash_days: 14, risk: "Voice quality in Sheng", compliance: "Original creator permission",
-     evidence: "packages/voice transcribe + TTS bake-off already built"}
+     evidence: "packages/voice transcribe + TTS bake-off already built",
+     decisions: ["2026-09-20: `translate` stays a declared gap: packages/voice/translate.py (an OpenRouter chat call with the key the image-router already uses) is the missing module. Until then the translator is a person and the dub runs from the translated script.",
+                 "2026-09-20 (W6): `translate` is bound to packages/voice/translate.py: OpenRouter chat completion through the vault key, .txt/.srt/.json in and out, a glossary of brand terms masked as placeholders so they come back untouched, and a claim check that refuses a translation whose numbers, glossary terms or money-promise flags differ from the source. Dry-run prints the request and sends nothing; a Sheng target is refused unless --sheng-reviewed. Needs OPENROUTER_API_KEY in the vault to run live."]}
   - {id: S08, family: service, name: "Podcast to shorts", buyer: "Podcasters",
      offer: "30 captioned clips a month from long episodes", pipeline: [transcribe, clip-select, captions],
      backend: hosted, price_usd: 350, clients: [3, 10, 30], gpu_hours: 1, api_usd: 8, setup_usd: 80, fixed_usd: 30,
@@ -254,16 +277,18 @@ ideas:
      offer: "Our own tested workflows with setup guides", pipeline: [register-workflow],
      backend: hosted, price_usd: 39, clients: [10, 60, 200], gpu_hours: 0, api_usd: 0, setup_usd: 150, fixed_usd: 20,
      first_cash_days: 21, risk: "Free alternatives on Discord", compliance: "Never bundle bought packs (Icekiub etc.)",
-     evidence: "Icekiub and LoRAtech monetise packs; our epalle-nodes pack is original"}
+     evidence: "Icekiub and LoRAtech monetise packs; our epalle-nodes pack is original",
+     decisions: ["2026-09-20: `register-workflow` is now a catalogue step on packages/library/tools/register_workflow.py (attribution and sha256 into workflows/manifest.json). The engine does not execute this python step yet (runner LOCAL_STEPS); it is run from the command line."]}
   - {id: E04, family: education, name: "Live cohort bootcamp", buyer: "Freelancers wanting clients (units = seats)",
      offer: "4-week cohort ending with a paying client", pipeline: [community],
      backend: hosted, price_usd: 100, clients: [5, 20, 60], labor_hours: 1, gpu_hours: 0, api_usd: 0, setup_usd: 200, fixed_usd: 60,
      first_cash_days: 45, risk: "Delivery time heavy", compliance: "No earnings claims", evidence: "price_usd is seat price spread per month"}
   - {id: E05, family: education, name: "Agency incubator", buyer: "Small agencies adopting AI",
-     offer: "Done-with-you setup of this studio for their team", pipeline: [studio],
+     offer: "Done-with-you setup of this studio for their team", pipeline: [studio-handoff, community],
      backend: pod, price_usd: 500, clients: [1, 4, 10], gpu_hours: 2, api_usd: 5, setup_usd: 200, fixed_usd: 40,
      first_cash_days: 30, risk: "Creates competitors", compliance: "Clear licence of our code",
-     evidence: "The studio itself is the product demo"}
+     evidence: "The studio itself is the product demo",
+     decisions: ["2026-09-20: the vague `studio` step became `studio-handoff` (studio.py doctor and check on the team's install, the handoff report) plus the Whop `community` channel for the done-with-you weeks. The engine does not execute studio.py as a stage yet; it is run on the client's machine."]}
 
   # ---------------------------------------------------------------- saas
   - {id: A01, family: saas, name: "Brand engine for SMEs", buyer: "Small businesses",
@@ -272,15 +297,17 @@ ideas:
      first_cash_days: 60, risk: "Software build effort and support", compliance: "Claim-safety on generated copy",
      evidence: "Ongea Pesa brand engine generalised"}
   - {id: A02, family: saas, name: "M-Pesa pay-per-post credits", buyer: "Informal traders (units = posts)",
-     offer: "Pay KES 50 via M-Pesa for one branded post", pipeline: [ongea-pesa, compositor],
+     offer: "Pay KES 50 via M-Pesa for one branded post", pipeline: [nano-banana-2, compositor],
      backend: hosted, price_usd: 0.39, clients: [500, 3000, 12000], labor_hours: 0.01, gpu_hours: 0, api_usd: 0.07, setup_usd: 800, fixed_usd: 100,
      first_cash_days: 45, risk: "Payments integration and fraud", compliance: "CBK payment rules; Daraja terms",
-     evidence: "Ongea Pesa voice M-Pesa product is the payment rail"}
+     evidence: "Ongea Pesa voice M-Pesa product is the payment rail",
+     decisions: ["2026-09-20: the `ongea-pesa` payment step left the content pipeline. Collecting KES 50 is the Ongea Pesa product's job (Safaricom Daraja STK push) before an order reaches the studio; no module in packages/ talks to Daraja and a payment gate is not a creative step. The studio side is the hosted image plus the compositor."]}
   - {id: A03, family: saas, name: "Image API for agencies", buyer: "Agencies and app builders (units = 1,000 images)",
      offer: "Branded image generation API at a flat per-thousand price", pipeline: [comfy-client, compositor],
      backend: pod, price_usd: 25, clients: [10, 60, 250], labor_hours: 0.1, gpu_hours: 2.5, api_usd: 0, setup_usd: 600, fixed_usd: 150,
      first_cash_days: 45, risk: "Uptime and serverless not yet proven", compliance: "Acceptable-use policy; abuse monitoring",
-     evidence: "Unit cost ~$4 per 1,000 images on the pod vs $70 hosted"}
+     evidence: "Unit cost ~$4 per 1,000 images on the pod vs $70 hosted",
+     decisions: ["2026-09-20: `comfy-client` is now the `comfy-api` catalogue step on packages/comfy-client/client.py (pod or serverless submission with pre-flight validation). Serverless has never returned COMPLETED (docs/BLOCKERS.md item 2); prove it with the smoke test before selling."]}
 
   # ---------------------------------------------------------------- adult
   - {id: X01, family: adult, name: "Fictional 18+ persona subscription", buyer: "Adult subscribers on AI-permitting platforms (units = subscribers)",
@@ -288,7 +315,9 @@ ideas:
      backend: pod, price_usd: 10, clients: [50, 400, 2000], labor_hours: 0.02, gpu_hours: 0.02, api_usd: 0, setup_usd: 700, fixed_usd: 200,
      first_cash_days: 60, risk: "Platform policy changes; payment processor risk; brand contamination",
      compliance: "HARD GATES: fictional adults only, never real or look-alike people, no minors or youthful styling, AI disclosure, platform ToS, separate entity/accounts/payments, never on Ongea Pesa or EPALLE infrastructure",
-     evidence: "LoRAtech and KiubAI build OFM-style persona pipelines; plan only, no explicit content produced here"}
+     evidence: "LoRAtech and KiubAI build OFM-style persona pipelines; plan only, no explicit content produced here",
+     decisions: ["2026-09-20: `lora` stays a declared gap (same missing ai-toolkit job module as S01); the dataset and captions exist to train it, so RefMod is not substituted here. Plan only until the module and the separate entity exist.",
+                 "2026-09-20 (W6): `lora` is bound to packages/engine/lora_train.py (same module as S01); the caption-dataset output feeds its captions input. The rights gate demands a fictional collection (no real-person likeness) with owned data, and the run itself still needs ai-toolkit and the base model on the pod (needs_setup, BLOCKERS 3). The separate entity and hard gates are unchanged; still plan only."]}
   - {id: X02, family: adult, name: "Compliance-first persona operations", buyer: "Operators of fictional 18+ personas",
      offer: "SFW teaser content, scheduling and a compliance audit trail", pipeline: [carousel, postiz, audit-log],
      backend: pod, price_usd: 1000, clients: [0, 2, 6], gpu_hours: 8, api_usd: 5, setup_usd: 300, fixed_usd: 80,

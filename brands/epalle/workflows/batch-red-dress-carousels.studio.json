@@ -1,0 +1,436 @@
+{
+  "version": 1,
+  "id": "batch-red-dress-carousels",
+  "title": "Batch: red-dress references to carousels (dry-run proof)",
+  "client": "epalle",
+  "source": {
+    "pattern": "batch fan-out",
+    "brief": "change the character in my reference images to our persona, then make a carousel of 10 slides for each",
+    "doc": "docs/engine/BATCHES.md"
+  },
+  "created": "2026-09-20",
+  "consent_required": true,
+  "run_mode": "dry-run",
+  "stages": [
+    {
+      "id": "refs",
+      "label": "References",
+      "order": 1
+    },
+    {
+      "id": "swap",
+      "label": "Character swap, one per reference",
+      "order": 2
+    },
+    {
+      "id": "carousels",
+      "label": "Carousel per swapped image",
+      "order": 3
+    },
+    {
+      "id": "finish",
+      "label": "Brand and export as posts",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "refs.batch",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "folder": "brands/epalle/references/red-dress"
+        },
+        "stage": "refs",
+        "label": "The batch: N owned or fictional reference images (the folder needs collection.json)",
+        "results": [
+          {
+            "run_id": "provided",
+            "status": "provided",
+            "files": [
+              "brands/epalle/references/red-dress/look-a.png",
+              "brands/epalle/references/red-dress/look-b.png",
+              "brands/epalle/references/red-dress/look-c.png"
+            ],
+            "finished": "2026-09-19T22:16:36+00:00",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "refs.persona",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 290
+      },
+      "data": {
+        "params": {
+          "folder": "brands/epalle/references/red-dress"
+        },
+        "stage": "refs",
+        "label": "The persona: one face reference, owned or fictional; a real person only with a written release",
+        "results": [
+          {
+            "run_id": "provided",
+            "status": "provided",
+            "files": [
+              "brands/epalle/references/red-dress/look-a.png",
+              "brands/epalle/references/red-dress/look-b.png",
+              "brands/epalle/references/red-dress/look-c.png"
+            ],
+            "finished": "2026-09-19T22:16:36+00:00",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "refs.brand-kit",
+      "kind": "brand-kit",
+      "position": {
+        "x": 80,
+        "y": 500
+      },
+      "data": {
+        "params": {},
+        "stage": "refs",
+        "results": [
+          {
+            "run_id": "provided",
+            "status": "provided",
+            "files": [],
+            "finished": "2026-09-19T22:16:36+00:00",
+            "note": "brand.yaml"
+          }
+        ]
+      }
+    },
+    {
+      "id": "swap.character-swap",
+      "kind": "klein-headswap",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {},
+        "each": true,
+        "stage": "swap",
+        "label": "character-swap@each: one head swap per reference image, the persona face bound to every item",
+        "results": [
+          {
+            "run_id": "r-20260920-011636-aracter-swap",
+            "status": "dry-run",
+            "files": [],
+            "groups": [
+              "0",
+              "1",
+              "2"
+            ],
+            "backend": "pod",
+            "comfy_workflow": "icekiub/I2I_no_lora_faceswap_subs.json",
+            "each_port": "image",
+            "bindings": {
+              "face": [
+                "brands/epalle/references/red-dress/look-a.png",
+                "brands/epalle/references/red-dress/look-b.png",
+                "brands/epalle/references/red-dress/look-c.png"
+              ]
+            },
+            "item_count": 3,
+            "items": [
+              {
+                "index": 0,
+                "group": "0",
+                "input": "brands/epalle/references/red-dress/look-a.png",
+                "from": "refs.batch",
+                "seeds": [
+                  6469694
+                ],
+                "status": "dry-run",
+                "files": [],
+                "sha256": [],
+                "prompt_ids": []
+              },
+              {
+                "index": 1,
+                "group": "1",
+                "input": "brands/epalle/references/red-dress/look-b.png",
+                "from": "refs.batch",
+                "seeds": [
+                  6469695
+                ],
+                "status": "dry-run",
+                "files": [],
+                "sha256": [],
+                "prompt_ids": []
+              },
+              {
+                "index": 2,
+                "group": "2",
+                "input": "brands/epalle/references/red-dress/look-c.png",
+                "from": "refs.batch",
+                "seeds": [
+                  6469696
+                ],
+                "status": "dry-run",
+                "files": [],
+                "sha256": [],
+                "prompt_ids": []
+              }
+            ],
+            "layout": "items/<index>/",
+            "seeds": [
+              6469694,
+              6469695,
+              6469696
+            ],
+            "cost_estimate": {
+              "usd": 0.0164,
+              "gpu_seconds": 36.0,
+              "basis": "assumed",
+              "rate": "A100 80GB $1.64/h (assumed)",
+              "items": 3,
+              "per_item_gpu_seconds": 12.0,
+              "per": "image",
+              "formula": "12 s x 1 unit(s) x 3 item(s)"
+            },
+            "started": "2026-09-19T22:16:36+00:00",
+            "note": "would run klein-headswap once per item: 3 item(s) x 1 variant(s), about 36.0 GPU s (assumed)",
+            "finished": "2026-09-19T22:16:36+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "carousels.carousel",
+      "kind": "carousel",
+      "position": {
+        "x": 720,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "slides": 10
+        },
+        "each": true,
+        "stage": "carousels",
+        "label": "carousel@each: 10 pose slides per swapped image; each item keeps its source group",
+        "results": [
+          {
+            "run_id": "r-20260920-011642-els-carousel",
+            "status": "dry-run",
+            "files": [],
+            "groups": [
+              "0",
+              "1",
+              "2"
+            ],
+            "backend": "pod",
+            "comfy_workflow": "icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json",
+            "each_port": "image",
+            "bindings": {
+              "prompt": "standing, facing camera, relaxed, hands at sides\nthree-quarter turn to the left, looking at camera\nseated, leaning forward, elbows on knees\nwalking towards camera, mid-stride\nprofile view, looking off frame\nclose-up, head and shoulders, soft smile\nback to camera, looking over the shoulder\nleaning against a wall, arms crossed\nhands in pockets, weight on one leg\nsitting on the floor, legs to one side"
+            },
+            "item_count": 3,
+            "items": [
+              {
+                "index": 0,
+                "group": "0",
+                "input": "<swap.character-swap#0>",
+                "from": "swap.character-swap",
+                "seeds": [
+                  5790594
+                ],
+                "status": "dry-run",
+                "files": [],
+                "sha256": [],
+                "prompt_ids": []
+              },
+              {
+                "index": 1,
+                "group": "1",
+                "input": "<swap.character-swap#1>",
+                "from": "swap.character-swap",
+                "seeds": [
+                  5790595
+                ],
+                "status": "dry-run",
+                "files": [],
+                "sha256": [],
+                "prompt_ids": []
+              },
+              {
+                "index": 2,
+                "group": "2",
+                "input": "<swap.character-swap#2>",
+                "from": "swap.character-swap",
+                "seeds": [
+                  5790596
+                ],
+                "status": "dry-run",
+                "files": [],
+                "sha256": [],
+                "prompt_ids": []
+              }
+            ],
+            "layout": "items/<index>/",
+            "seeds": [
+              5790594,
+              5790595,
+              5790596
+            ],
+            "cost_estimate": {
+              "usd": 0.1367,
+              "gpu_seconds": 300.0,
+              "basis": "assumed",
+              "rate": "A100 80GB $1.64/h (assumed)",
+              "items": 3,
+              "per_item_gpu_seconds": 100.0,
+              "per": "slide",
+              "formula": "10 s x 10 unit(s) x 3 item(s)",
+              "slides": 10
+            },
+            "started": "2026-09-19T22:16:42+00:00",
+            "note": "would run carousel once per item: 3 item(s) x 1 variant(s), about 300.0 GPU s (assumed)",
+            "finished": "2026-09-19T22:16:42+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "finish.compositor",
+      "kind": "compositor",
+      "position": {
+        "x": 1040,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "ratio": "4:5"
+        },
+        "stage": "finish",
+        "label": "Logo and exact copy on every slide, numbered within its post",
+        "results": [
+          {
+            "run_id": "r-20260920-011644-h-compositor",
+            "status": "dry-run",
+            "files": [],
+            "expected": {
+              "groups": [
+                "0",
+                "1",
+                "2"
+              ]
+            },
+            "note": "would composite what the upstream media steps make with the epalle kit (logo + exact copy), ratio 4:5 across 3 post(s); blocked until fixed: brand.yaml logo.min_width_pct is 0: this brand declares no mark to place on every asset, so the compositor has nothing to composite; give it a lockup or drop the compositor step",
+            "cost_estimate": {
+              "usd": 0.0,
+              "gpu_seconds": 0,
+              "basis": "none",
+              "items": 1,
+              "note": "compositor uses no GPU time in this model"
+            },
+            "finished": "2026-09-19T22:16:44+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "id": "finish.export",
+      "kind": "export",
+      "position": {
+        "x": 1360,
+        "y": 80
+      },
+      "data": {
+        "params": {},
+        "stage": "finish",
+        "label": "posts/<group>/slide-<n>.png: one folder per source image, ready to publish",
+        "results": [
+          {
+            "run_id": "r-20260920-011644-inish-export",
+            "status": "dry-run",
+            "files": [],
+            "layout": "posts/<group>/slide-<n>",
+            "expected": {
+              "groups": [
+                "0",
+                "1",
+                "2"
+              ]
+            },
+            "note": "would export what the upstream steps make as 3 post folder(s) posts/<group>/slide-<n> for groups 0, 1, 2",
+            "cost_estimate": {
+              "usd": 0.0,
+              "gpu_seconds": 0,
+              "basis": "none",
+              "items": 1,
+              "note": "export uses no GPU time in this model"
+            },
+            "finished": "2026-09-19T22:16:44+00:00"
+          }
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "refs.batch",
+      "sourceHandle": "images",
+      "target": "swap.character-swap",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e2",
+      "source": "refs.persona",
+      "sourceHandle": "images",
+      "target": "swap.character-swap",
+      "targetHandle": "face",
+      "type": "image"
+    },
+    {
+      "id": "e3",
+      "source": "swap.character-swap",
+      "sourceHandle": "image",
+      "target": "carousels.carousel",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e4",
+      "source": "carousels.carousel",
+      "sourceHandle": "images",
+      "target": "finish.compositor",
+      "targetHandle": "media",
+      "type": "image"
+    },
+    {
+      "id": "e5",
+      "source": "refs.brand-kit",
+      "sourceHandle": "brand",
+      "target": "finish.compositor",
+      "targetHandle": "brand",
+      "type": "brand"
+    },
+    {
+      "id": "e6",
+      "source": "finish.compositor",
+      "sourceHandle": "image",
+      "target": "finish.export",
+      "targetHandle": "media",
+      "type": "image"
+    }
+  ],
+  "gaps": [],
+  "family": "volume",
+  "compliance": "References owned, licensed or fictional with collection.json; a real face only with a written release recorded as consent: true. The runner refuses the swap step otherwise."
+}

@@ -19,13 +19,13 @@ Studio template: [`a03-image-api-for-agencies.studio.json`](../../brands/_templa
 
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
-| comfy-client | not runnable yet | no catalogue node runs 'comfy-client' yet | — |
-| Reference images | you provide |  | — |
+| Brief | you provide |  | — |
+| Image job (API client) | studio code | `packages/comfy-client/client.py` | — |
 | Brand kit | brand.yaml |  | — |
 | Brand compositor | studio code | `packages/compositor/compositor.py` | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
-67% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -41,15 +41,19 @@ Setup budget $600. Fixed monthly spend $150. First cash in about 45 days.
 
 ## What is not ready
 
-- **comfy-client**: no catalogue node runs 'comfy-client' yet
+- Nothing structural. Every step has a backend and every model it names has a source; it still needs a live run.
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: `comfy-client` is now the `comfy-api` catalogue step on packages/comfy-client/client.py (pod or serverless submission with pre-flight validation). Serverless has never returned COMPLETED (docs/BLOCKERS.md item 2); prove it with the smoke test before selling.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 2.5 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch agencies and app builders with the pilot; target the low scenario (10 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

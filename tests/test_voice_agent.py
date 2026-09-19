@@ -54,3 +54,13 @@ def test_saved_agent_state_holds_ids_not_secrets():
     assert not re.search(r"sk_[0-9a-f]{20,}", text)
     state = json.loads(text)
     assert state["agent_id"] and set(state["tools"]) == {t["name"] for t in ea.tools()}
+
+
+def test_saved_agent_state_name_matches_the_module():
+    """`sync` writes AGENT_NAME into the state file; a rename in the module without the
+    preset following it would show the old product name in the ElevenLabs dashboard."""
+    if not ea.STATE.exists():
+        return
+    state = json.loads(ea.STATE.read_text(encoding="utf-8"))
+    assert state["name"] == ea.AGENT_NAME
+    assert (state["llm"], state["voice_id"]) == (ea.LLM, ea.VOICE_ID)

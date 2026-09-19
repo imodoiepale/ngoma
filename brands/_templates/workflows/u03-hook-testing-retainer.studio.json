@@ -7,7 +7,7 @@
     "idea": "U03",
     "offer": "50 hook variants a month for one winning ad"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -31,7 +31,8 @@
       "data": {
         "params": {
           "count": 10
-        }
+        },
+        "alias": "hook-variants"
       }
     },
     {
@@ -68,7 +69,8 @@
       "data": {
         "params": {
           "seconds": 5
-        }
+        },
+        "alias": "h3-ref2va"
       }
     },
     {

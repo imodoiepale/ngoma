@@ -1,0 +1,12 @@
+{
+  "name": "red-dress",
+  "use": "data",
+  "rights": "owned",
+  "kind": "image",
+  "consent": false,
+  "source": "manual",
+  "notes": [
+    "fixture for the RunPod proof",
+    "fictional persona, geometric colour fields, no real-person likeness"
+  ]
+}

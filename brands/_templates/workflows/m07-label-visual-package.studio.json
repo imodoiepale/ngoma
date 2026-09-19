@@ -7,7 +7,7 @@
     "idea": "M07",
     "offer": "Monthly visual retainer across the roster"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -29,7 +29,12 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {
+          "aspect": "9:16",
+          "duration": 6,
+          "style": "headline"
+        },
+        "alias": "hyperframes"
       }
     },
     {
@@ -53,7 +58,8 @@
       "data": {
         "params": {
           "seconds": 5
-        }
+        },
+        "alias": "wan-i2v"
       }
     },
     {
@@ -90,7 +96,8 @@
       "data": {
         "params": {
           "seconds": 8
-        }
+        },
+        "alias": "loop-edit"
       }
     },
     {
@@ -101,7 +108,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "openwa"
       }
     }
   ],
@@ -179,13 +187,7 @@
       "type": "text"
     }
   ],
-  "gaps": [
-    {
-      "node": "n1",
-      "step": "motion-graphics",
-      "reason": "HyperFrames/Remotion renderer is planned, not built."
-    }
-  ],
+  "gaps": [],
   "family": "music",
   "compliance": "Licensed audio; artist consent"
 }

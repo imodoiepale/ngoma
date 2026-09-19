@@ -34,6 +34,10 @@ ENGINE_KINDS = [
     "carousel",
     "lipsync",
     "character-video",
+    # batch pattern (docs/engine/BATCHES.md): the consent-flagged swap steps
+    "klein-headswap",
+    "klein-i2i",
+    "faceswap",
 ]
 
 # the single-value slots a map may carry besides the studio `inputs`

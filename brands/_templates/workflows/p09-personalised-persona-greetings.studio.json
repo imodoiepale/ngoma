@@ -7,7 +7,7 @@
     "idea": "P09",
     "offer": "Short personalised greeting videos"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -31,7 +31,8 @@
       "data": {
         "params": {
           "preset": "identity"
-        }
+        },
+        "alias": "refmod"
       }
     },
     {
@@ -76,8 +77,10 @@
       },
       "data": {
         "params": {
-          "language": "en"
-        }
+          "language": "en",
+          "provider": "elevenlabs"
+        },
+        "alias": "tts"
       }
     },
     {

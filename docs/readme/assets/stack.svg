@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-label="Four layers from ComfyUI workflows to costed offers">
+  <defs>
+    <linearGradient id="stack-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0A0A"/>
+      <stop offset="1" stop-color="#14110D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#stack-bg)" rx="24"/>
+  <text x="48" y="48" fill="#F5F0E8" font-family="Georgia, serif" font-size="22">Four layers, each generated from the one below</text>
+  <text x="48" y="74" fill="#A89B7C" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">A capability is Ready, Needs setup, or a declared Gap. Nothing is faked.</text>
+
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <rect x="48" y="100" width="1104" height="64" rx="12" fill="#1C1812" stroke="#C9A227" stroke-opacity="0.4"/>
+    <text x="72" y="128" fill="#F0D78C" font-size="16" font-weight="700">Offers</text>
+    <text x="72" y="148" fill="#D9D0BE" font-size="12">50 costed ideas · proposals · diagrams · brands/_business/ideas.yaml</text>
+
+    <rect x="48" y="176" width="1104" height="64" rx="12" fill="#1C1812" stroke="#C9A227" stroke-opacity="0.35"/>
+    <text x="72" y="204" fill="#F0D78C" font-size="16" font-weight="700">Pipelines</text>
+    <text x="72" y="224" fill="#D9D0BE" font-size="12">One *.studio.json template per idea · brands/_templates/workflows/</text>
+
+    <rect x="48" y="252" width="1104" height="64" rx="12" fill="#1C1812" stroke="#22C55E" stroke-opacity="0.35"/>
+    <text x="72" y="280" fill="#86EFAC" font-size="16" font-weight="700">Steps</text>
+    <text x="72" y="300" fill="#D9D0BE" font-size="12">Canvas catalogue · typed ports · consent and 18+ on the node · packages/studio-ui/catalog/nodes.json</text>
+
+    <rect x="48" y="328" width="1104" height="64" rx="12" fill="#1C1812" stroke="#22C55E" stroke-opacity="0.45"/>
+    <text x="72" y="356" fill="#86EFAC" font-size="16" font-weight="700">Open backends</text>
+    <text x="72" y="376" fill="#D9D0BE" font-size="12">ComfyUI graphs + port maps + model plan · local, RunPod pod, or hosted peer · workflows/manifest.json</text>
+  </g>
+</svg>

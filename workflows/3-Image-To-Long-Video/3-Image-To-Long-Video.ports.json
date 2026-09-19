@@ -1,0 +1,45 @@
+{
+  "workflow": "3-Image-To-Long-Video/3-Image-To-Long-Video.json",
+  "sha256": "27994f94c265390f869f4b78901f4514a7c05f2541d7ec73e26524287176f588",
+  "format": "ui",
+  "inputs": {
+    "image": {
+      "node": "910",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "CHARACTER REF 1 (face / identity), given to every clip as <Picture 1>. LoadImage 911 is REF 2 (full body / wardrobe, <Picture 2>) and is not a studio port: the same file works, a second one set by hand holds identity better. LoadImage expects a filename inside the ComfyUI input folder (upload first)."
+    }
+  },
+  "prompt": {
+    "node": "110",
+    "class": "MiniMaxH3ReferenceToVideo",
+    "field": "prompt",
+    "widget_index": 0,
+    "note": "Clip 1 prompt in the H3 structured form (subject_definitions / summary / retention_analysis / detailed_description; see Note 938 'Director Prompt'). The clip 2 continuation prompt is node 200 widget 0 and is not bound: edit it so the scene continues."
+  },
+  "seed": {
+    "node": "120",
+    "class": "RandomNoise",
+    "field": "noise_seed",
+    "widget_index": 0,
+    "note": "Clip 1. Clip 2 uses RandomNoise 210; clips 3-6 (310, 410, 510, 610) are bypassed with their groups."
+  },
+  "outputs": {
+    "video": {
+      "node": "800",
+      "class": "VHS_VideoCombine",
+      "kind": "video",
+      "note": "FINAL STITCHED VIDEO (save_output true, output/video/motion_context, h264 crf 19, with the cumulative audio from AudioConcat 231/631). VHS_VideoCombine 133 and 223 are temp previews of clips 1 and 2; 323-623 belong to the bypassed clips."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "Length: PrimitiveFloat 101 'GLOBAL CLIP DURATION' (8 s) is per clip, converted to an H3-valid frame count by ComfyMathExpression 102. Two clips are active (1 and 2); clips 3-6 are bypassed groups, enabled top to bottom with Fast Groups Bypasser 901. Total = clips x duration minus the 39-frame overlap (PrimitiveInt 940). The studio `seconds` parameter is not bound because it is per clip, not total.",
+    "Context: PrimitiveInt 939 'GLOBAL CONTEXT FRAMES' 39 (H3-native boundaries listed in Note 941). Steps: PrimitiveInt 936 = 4 with the lightx2v turbo LoRA 935.",
+    "Resolution: ResolutionSelector 100 (16:9, 0.4 MP).",
+    "Models: minimax_h3_ref2va_pruned_int8_convrot (UNETLoader 1), minimax_h3_video_vae_int8_convrot (3), minimax_h3_audio_vae_fp32 (4), qwen3vl_32b_minimax_h3_nvfp4_awq text encoder (2), minimax_h3_fl2v_lightx2v_turbo_4step LoRA (935). SageAttention / SolAttn patches 932-934 are bypassed.",
+    "The full-previous-audio reference switches (920-924, Fast Groups Muter 931) are OFF by default and experimental (Note 913).",
+    "Shipped prompts describe a demo scene; the studio prompt replaces clip 1 only."
+  ]
+}

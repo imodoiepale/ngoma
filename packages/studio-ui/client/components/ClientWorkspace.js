@@ -32,7 +32,7 @@ export default function ClientWorkspace({ client, ideas, workflows }) {
         body: JSON.stringify({ client, session, message: brief }) });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) { setState({ busy: false, error: data.error || "The director did not answer." }); return; }
-      router.push(`/c/${client}/w/${data.workflow.id}`);
+      router.push(`/w/${client}/f/${data.workflow.id}`);
       return;
     }
     const body = { mode, client, title, idea, brief, refs: picked };
@@ -42,7 +42,7 @@ export default function ClientWorkspace({ client, ideas, workflows }) {
       setState({ busy: false, error: data.error || "Could not create the workflow." });
       return;
     }
-    router.push(`/c/${client}/w/${data.id}`);
+    router.push(`/w/${client}/f/${data.id}`);
   }
 
   return (
@@ -63,7 +63,7 @@ export default function ClientWorkspace({ client, ideas, workflows }) {
             <span>Idea</span>
             <select value={idea} onChange={(e) => setIdea(e.target.value)}>
               {ideas.map((i) => (
-                <option key={i.id} value={i.id}>{i.id} · {i.title}</option>
+                <option key={i.id} value={i.id}>{i.id}: {i.title}</option>
               ))}
             </select>
           </label>
@@ -107,7 +107,7 @@ export default function ClientWorkspace({ client, ideas, workflows }) {
         <div className="creator-actions">
           {state.error && <p className="error" role="alert">{state.error}</p>}
           <button className="btn btn-primary" disabled={state.busy || (mode === "combine" && picked.length < 2) || (mode === "direct" && brief.trim().length < 4)}>
-            {state.busy ? (mode === "direct" ? "Directing…" : "Creating workflow…") : mode === "direct" ? "Start directing" : "Create workflow"}
+            {state.busy ? (mode === "direct" ? "Directing" : "Creating workflow") : mode === "direct" ? "Start directing" : "Create on canvas"}
           </button>
         </div>
       </div>

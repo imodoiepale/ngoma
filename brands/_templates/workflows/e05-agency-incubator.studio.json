@@ -7,30 +7,63 @@
     "idea": "E05",
     "offer": "Done-with-you setup of this studio for their team"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
-      "id": "n1",
-      "kind": "unmapped",
+      "id": "n2",
+      "kind": "brief",
       "position": {
         "x": 80,
         "y": 80
       },
       "data": {
-        "step": "studio",
         "params": {}
+      }
+    },
+    {
+      "id": "n1",
+      "kind": "studio-handoff",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {}
+      }
+    },
+    {
+      "id": "n3",
+      "kind": "course",
+      "position": {
+        "x": 400,
+        "y": 290
+      },
+      "data": {
+        "params": {},
+        "alias": "community"
       }
     }
   ],
-  "edges": [],
-  "gaps": [
+  "edges": [
     {
-      "node": "n1",
-      "step": "studio",
-      "reason": "no catalogue node runs 'studio' yet"
+      "id": "e1",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "text",
+      "type": "text"
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "text",
+      "type": "text"
     }
   ],
+  "gaps": [],
   "family": "education",
   "compliance": "Clear licence of our code"
 }

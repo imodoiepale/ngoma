@@ -1,6 +1,6 @@
 {
   "agent_id": "agent_3001m2fw29yze7tbjdy9kpb4k4y2",
-  "name": "EPALLE Studio Director",
+  "name": "Director",
   "llm": "gemini-2.5-flash",
   "voice_id": "21m00Tcm4TlvDq8ikWAM",
   "tools": {

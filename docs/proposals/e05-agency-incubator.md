@@ -19,9 +19,11 @@ Studio template: [`e05-agency-incubator.studio.json`](../../brands/_templates/wo
 
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
-| studio | not runnable yet | no catalogue node runs 'studio' yet | — |
+| Brief | you provide |  | — |
+| Studio handoff | studio code | `studio.py` | — |
+| Publish to Whop | publisher (draft first) | `packages/publish/whop/whop_publish.py` | — |
 
-0% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -37,15 +39,19 @@ Setup budget $200. Fixed monthly spend $40. First cash in about 30 days.
 
 ## What is not ready
 
-- **studio**: no catalogue node runs 'studio' yet
+- Nothing structural. Every step has a backend and every model it names has a source; it still needs a live run.
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: the vague `studio` step became `studio-handoff` (studio.py doctor and check on the team's install, the handoff report) plus the Whop `community` channel for the done-with-you weeks. The engine does not execute studio.py as a stage yet; it is run on the client's machine.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 2 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch small agencies adopting ai with the pilot; target the low scenario (1 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

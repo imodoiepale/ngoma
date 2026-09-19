@@ -7,7 +7,7 @@
     "idea": "M03",
     "offer": "8-second Canvas loops for every track on a release"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -42,7 +42,8 @@
       "data": {
         "params": {
           "seconds": 5
-        }
+        },
+        "alias": "wan-i2v"
       }
     },
     {
@@ -55,7 +56,8 @@
       "data": {
         "params": {
           "seconds": 8
-        }
+        },
+        "alias": "loop-edit"
       }
     },
     {

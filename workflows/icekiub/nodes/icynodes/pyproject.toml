@@ -1,0 +1,16 @@
+[project]
+name = "icynodes"
+description = "Icekiub node suite: Icy media loaders (image/multi-ref/video with gallery UI), LM Studio prompt nodes, preview-hiding sidebar, folder prompt lists, and megapixel resize — all in one pack."
+version = "1.0.0"
+dependencies = ["av", "numpy", "opencv-python", "Pillow", "requests", "torch"]
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["comfyui", "loader", "lmstudio", "privacy", "resize", "prompt"]
+
+[project.urls]
+Repository = "https://github.com/icekiub-ai/icynodes"
+
+[tool.comfy]
+PublisherId = "icekiub"
+DisplayName = "IcyNodes"
+Icon = "❄️"

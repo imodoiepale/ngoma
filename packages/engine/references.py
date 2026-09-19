@@ -100,7 +100,9 @@ def read_collection(brand: str, name: str) -> RefCollection:
     meta: dict[str, Any] = {}
     f = folder / COLLECTION_FILE
     if f.exists():
-        meta = json.loads(f.read_text(encoding="utf-8"))
+        # utf-8-sig: PowerShell's `Set-Content -Encoding utf8` writes a BOM, and json.loads
+        # rejects one. A hand-edited collection.json must not fail a run over its first byte.
+        meta = json.loads(f.read_text(encoding="utf-8-sig"))
     files = _media_files(folder)
     kind = meta.get("kind") or ("video" if files and all(p.suffix.lower() in VIDEO_EXT for p in files) else "image")
     return RefCollection(name=name, kind=kind, use=meta.get("use", "inspiration"),

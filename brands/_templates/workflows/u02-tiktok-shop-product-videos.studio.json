@@ -7,7 +7,7 @@
     "idea": "U02",
     "offer": "15 product demo videos a month with hooks"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -40,7 +40,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "product-relight"
       }
     },
     {
@@ -66,7 +67,8 @@
       "data": {
         "params": {
           "seconds": 5
-        }
+        },
+        "alias": "h3-ref2va"
       }
     },
     {

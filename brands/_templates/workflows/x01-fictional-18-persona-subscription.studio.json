@@ -7,7 +7,7 @@
     "idea": "X01",
     "offer": "Subscription to a fully fictional adult persona on a platform that allows disclosed AI content"
   },
-  "created": "2026-09-14",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -29,7 +29,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "dataset-fictional"
       }
     },
     {
@@ -47,11 +48,17 @@
       "id": "n4",
       "kind": "lora-train",
       "position": {
-        "x": 720,
-        "y": 290
+        "x": 1040,
+        "y": 80
       },
       "data": {
-        "params": {}
+        "params": {
+          "trigger": "",
+          "base": "klein-9b",
+          "steps": 3000,
+          "rank": 16
+        },
+        "alias": "lora"
       }
     },
     {
@@ -59,7 +66,7 @@
       "kind": "carousel",
       "position": {
         "x": 720,
-        "y": 500
+        "y": 290
       },
       "data": {
         "params": {
@@ -72,7 +79,7 @@
       "kind": "export",
       "position": {
         "x": 1040,
-        "y": 80
+        "y": 290
       },
       "data": {
         "params": {}
@@ -106,6 +113,14 @@
     },
     {
       "id": "e4",
+      "source": "n3",
+      "sourceHandle": "captions",
+      "target": "n4",
+      "targetHandle": "captions",
+      "type": "text"
+    },
+    {
+      "id": "e5",
       "source": "n1",
       "sourceHandle": "images",
       "target": "n5",
@@ -113,7 +128,7 @@
       "type": "image"
     },
     {
-      "id": "e5",
+      "id": "e6",
       "source": "n5",
       "sourceHandle": "images",
       "target": "n6",
@@ -121,13 +136,7 @@
       "type": "image"
     }
   ],
-  "gaps": [
-    {
-      "node": "n4",
-      "step": "lora-train",
-      "reason": "No LoRA training workflow in the library yet (ai-toolkit runs outside ComfyUI). Use RefMod character instead."
-    }
-  ],
+  "gaps": [],
   "family": "adult",
   "compliance": "HARD GATES: fictional adults only, never real or look-alike people, no minors or youthful styling, AI disclosure, platform ToS, separate entity/accounts/payments, never on Ongea Pesa or EPALLE infrastructure"
 }

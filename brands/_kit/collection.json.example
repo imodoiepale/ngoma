@@ -1,0 +1,14 @@
+{
+  "name": "example-collection",
+  "use": "inspiration",
+  "rights": "unclear",
+  "kind": "image",
+  "consent": false,
+  "source": "manual",
+  "created": "{{date}}",
+  "notes": [
+    "use: inspiration shapes prompts only; use: data feeds a node port and needs rights owned or licensed",
+    "consent: true only when a real person shown here has signed a written release; record where it is kept",
+    "a folder with no collection.json is treated as inspiration only, rights unclear, no consent"
+  ]
+}

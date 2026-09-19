@@ -2,18 +2,27 @@
 worker: engine
 budget_usd: 0          # total the engine may spend on GPU time before a human raises it
 gpu: a100-80gb         # rate key in packages/strategy/unit_economics.GPU_RATES
+# Fan-out safety cap: a node marked `each` refuses to run when more items than this reach
+# its iterated port (a 500-image folder is a decision, not an accident). docs/engine/BATCHES.md
+max_items: 100
 # seconds of GPU per unit, by step. `measured` came from a pod run; `assumed` is a
 # planning figure until a run replaces it (runner writes actual seconds into each manifest).
+# `per` says what the unit is: one image by default, `second_of_video` for video steps,
+# `slide` for the carousel (one pose line = one output image). A fan-out multiplies the
+# node's estimate by its item count: estimate = seconds x units x items.
 seconds_per_unit:
   klein-t2i:            {seconds: 8.1,  basis: measured, source: infra/runpod/verification-summary.md}
   krea2-t2i:            {seconds: 12,   basis: assumed}
   h3-reference-image:   {seconds: 20,   basis: assumed}
   character-sheet:      {seconds: 15,   basis: assumed}
   refmod-create:        {seconds: 30,   basis: assumed}
-  carousel:             {seconds: 10,   basis: assumed}
+  carousel:             {seconds: 10,   basis: assumed, per: slide}
   wardrobe:             {seconds: 12,   basis: assumed}
   consistent-room:      {seconds: 14,   basis: assumed}
   image-edit:           {seconds: 10,   basis: assumed}
+  klein-headswap:       {seconds: 12,   basis: assumed}
+  klein-i2i:            {seconds: 12,   basis: assumed}
+  faceswap:             {seconds: 15,   basis: assumed}
   image-to-video:       {seconds: 90,   basis: assumed, per: second_of_video}
   character-video:      {seconds: 120,  basis: assumed, per: second_of_video}
   long-video:           {seconds: 120,  basis: assumed, per: second_of_video}

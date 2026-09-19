@@ -23,10 +23,12 @@ import pytest
 
 REPO = Path(__file__).resolve().parents[1]
 DOCS = [
-    "README.md", "docs/ROADMAP.md", "docs/SETUP.md", "docs/WHAT-THIS-DOES.md",
-    "docs/BLOCKERS.md", "shared-skills/approved/content-studio/SKILL.md",
+    "README.md", "docs/ABOUT.md", "docs/ROADMAP.md", "docs/SETUP.md", "docs/WHAT-THIS-DOES.md",
+    "docs/BLOCKERS.md", "docs/engine/DIRECTOR-ENGINE.md", "docs/engine/DESCRIBE.md", "brands/_kit/README.md",
+    "shared-skills/approved/content-studio/SKILL.md",
+    ".claude/skills/content-studio/SKILL.md", ".claude/skills/workflow-author/SKILL.md",
     "infra/postiz/README.md", "infra/openwa/README.md", "infra/hermes/README.md",
-    "infra/memory/README.md",
+    "infra/memory/README.md", "infra/runpod/README.md",
 ]
 SCRIPT_RE = re.compile(r"((?:packages|infra|tests)/[\w\-/.]+\.py|\bstudio\.py)")
 # Scripts whose --help cannot run here for a reason unrelated to the docs being right.
@@ -41,8 +43,16 @@ def help_text(script: str) -> tuple[int, str]:
     return r.returncode, (r.stdout or "") + (r.stderr or "")
 
 
-def documented_commands() -> list[tuple[str, str, str]]:
-    found: dict[tuple[str, str], str] = {}
+def is_reference(script: str, prefix: str, tail: str) -> bool:
+    """A bare `packages/x.py` in backticks with nothing after it names a module, not a
+    command a person runs; a tests/ file is a pytest target. Both must exist, nothing more."""
+    if script.startswith("tests/"):
+        return True
+    return not tail and prefix.rstrip().endswith("`")
+
+
+def documented_commands() -> list[tuple[str, str, str, bool]]:
+    found: dict[tuple[str, str], tuple[str, bool]] = {}
     for rel in DOCS:
         p = REPO / rel
         if not p.exists():
@@ -52,25 +62,26 @@ def documented_commands() -> list[tuple[str, str, str]]:
             if not m:
                 continue
             tail = re.split(r"[`|#]|\s{3,}|\(", line[m.end():])[0].strip()
-            found.setdefault((m.group(1), tail), rel)
-    return [(script, tail, rel) for (script, tail), rel in sorted(found.items())]
+            ref = is_reference(m.group(1), line[:m.start()], tail)
+            found.setdefault((m.group(1), tail), (rel, ref))
+    return [(script, tail, rel, ref) for (script, tail), (rel, ref) in sorted(found.items())]
 
 
 COMMANDS = documented_commands()
 
 
 def test_docs_cite_at_least_the_core_commands():
-    scripts = {s for s, _, _ in COMMANDS}
-    for must in ("studio.py", "infra/runpod/set_secret.py",
+    scripts = {s for s, _, _, ref in COMMANDS if not ref}
+    for must in ("studio.py", "infra/runpod/set_secret.py", "packages/strategy/workspace.py",
                  "packages/comfy-client/client.py", "packages/publish/postiz.py"):
         assert must in scripts, f"docs no longer mention {must}; the parser may be broken"
 
 
-@pytest.mark.parametrize("script,tail,doc", COMMANDS,
-                         ids=[f"{d}:{s} {t}"[:90] for s, t, d in COMMANDS])
-def test_documented_command_resolves(script, tail, doc):
+@pytest.mark.parametrize("script,tail,doc,ref", COMMANDS,
+                         ids=[f"{d}:{s} {t}"[:90] for s, t, d, _ in COMMANDS])
+def test_documented_command_resolves(script, tail, doc, ref):
     assert (REPO / script).exists(), f"{doc} cites {script}, which does not exist"
-    if script in HELP_EXEMPT:
+    if ref or script in HELP_EXEMPT:
         return
     code, text = help_text(script)
     assert "usage" in text.lower(), f"{script} --help did not print usage (exit {code}):\n{text[-400:]}"

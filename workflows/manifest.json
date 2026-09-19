@@ -1,5 +1,5 @@
 {
-  "count": 73,
+  "count": 74,
   "workflows": [
     {
       "sha256": "c0bbd994675e0134e55677c41ff3233582a70fb6d7f66cb8236b0228355b2fcf",
@@ -3904,6 +3904,34 @@
       ],
       "file": "icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json",
       "canonical": "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json"
+    },
+    {
+      "sha256": "f6e62f272ec294576160c35e0e61cd593be6bfab3d64fe1a2d0575ea28e222f4",
+      "bytes": 26744,
+      "node_count": 7,
+      "node_types": [
+        "ICYLMStudioMultimodalPrompt",
+        "ImageResizeKJv2",
+        "LoadImageListFromDir //Inspire",
+        "PreviewImage",
+        "SaveImageTextDataSetToFolder",
+        "SaveText|pysssss",
+        "ShowText|pysssss"
+      ],
+      "node_packs": [
+        "comfy-core",
+        "comfyui-custom-scripts",
+        "comfyui-inspire-pack",
+        "comfyui-kjnodes",
+        "icekiub/ICYLM"
+      ],
+      "models": [],
+      "sources": [
+        "skool:https://www.skool.com/ai-tech-and-comfyui-workflows-2226/classroom/bc89a535?md=8a08f9daabd84370b525ca56f67550cf",
+        "skool-file:captioning workflow .json"
+      ],
+      "file": "icekiub/captioning_workflow.json",
+      "canonical": "workflows/icekiub/captioning_workflow.json"
     }
   ]
 }

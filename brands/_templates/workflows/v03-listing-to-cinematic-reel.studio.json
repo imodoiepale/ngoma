@@ -7,7 +7,7 @@
     "idea": "V03",
     "offer": "Raw listing photos turned into a 30-second cinematic reel"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -42,7 +42,8 @@
       "data": {
         "params": {
           "seconds": 5
-        }
+        },
+        "alias": "wan-i2v"
       }
     },
     {
@@ -55,7 +56,8 @@
       "data": {
         "params": {
           "seconds": 5
-        }
+        },
+        "alias": "ltx"
       }
     },
     {
@@ -67,7 +69,8 @@
       },
       "data": {
         "params": {
-          "language": "en"
+          "language": "en",
+          "provider": "elevenlabs"
         }
       }
     },

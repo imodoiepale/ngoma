@@ -1,0 +1,13 @@
+{
+  "runs": [
+    {
+      "date": "2026-09-12T18:44:50.357461+00:00",
+      "input_tokens": 765930,
+      "output_tokens": 0,
+      "files": 287,
+      "note": "token figures are combined subagent usage; the harness does not split in/out"
+    }
+  ],
+  "total_input_tokens": 765930,
+  "total_output_tokens": 0
+}

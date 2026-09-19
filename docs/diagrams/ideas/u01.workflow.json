@@ -123,6 +123,11 @@
       "label": "text"
     },
     {
+      "from": "n5",
+      "to": "n6",
+      "label": "audio"
+    },
+    {
       "from": "n6",
       "to": "n7",
       "label": "video",

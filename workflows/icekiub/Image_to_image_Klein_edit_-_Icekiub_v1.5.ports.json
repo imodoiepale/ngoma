@@ -1,0 +1,56 @@
+{
+  "workflow": "icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+  "sha256": "454d2120649eff04b2648f373ae58c70a8112b9ab15f4ee3008179d1ff0c5455",
+  "format": "ui",
+  "inputs": {
+    "image": {
+      "node": "11",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). Image 1: the reference to recreate; feeds ImageResizeKJv2 30 -> VAEEncode 7 -> ReferenceLatent 8 (with prompt 13), GetImageSize 9 -> EmptyLatentImage 10, and the comparer 3. One image per run: the runner loops when the node fans out (`each`)."
+    }
+  },
+  "prompt": {
+    "node": "13",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0,
+    "note": "Default 'Remove and replace the head and hair in the image 1, keep everything else consistent ...' plus a character description. Describe the character here; the LoRA carries the identity."
+  },
+  "negative": {
+    "node": "12",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0,
+    "note": "Empty by default; feeds KSampler 31 negative."
+  },
+  "seed": {
+    "node": "31",
+    "class": "KSampler",
+    "field": "seed",
+    "widget_index": 0
+  },
+  "count": {
+    "node": "10",
+    "class": "EmptyLatentImage",
+    "field": "batch_size",
+    "widget_index": 2,
+    "note": "Width and height are wired from GetImageSize 9; only batch_size is a free widget."
+  },
+  "outputs": {
+    "image": {
+      "node": "2",
+      "class": "PreviewImage",
+      "kind": "image",
+      "note": "No SaveImage in this workflow; node 2 previews the decoded result (temp/). PreviewImage 1 is the stitched before/after strip. Runner fetches via /view?type=temp or a human swaps in SaveImage."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "The character is a trained LoRA (LoraLoaderModelOnly 26, Lora_lora_000000500.safetensors) plus a second reference LoadImage 16 -> VAEEncode 6 -> ReferenceLatent 5. Neither is a studio port of this kind: set the LoRA name and the character shot by hand on the pod, or through a RefMod/LoRA step, before running.",
+    "Parameter `mode: batch` names the sibling workflow icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json, which replaces LoadImage 11 with LoadImageListFromDir //Inspire 33 (a folder path on the pod's disk). The engine binds this single-image file and loops per item instead, so the item list, seeds and manifests stay under the runner's control.",
+    "The catalogue marks this node adult: true (Icekiub pack); it needs review before it is offered generally.",
+    "Consent step: the runner refuses to run it unless every reference collection feeding it has collection.json with rights owned, licensed or fictional, and consent: true for a real person (docs/engine/BATCHES.md)."
+  ]
+}

@@ -1,14 +1,22 @@
-// Server-side access to the studio's clients and workflows. The files in the repo are the
-// database: brands/<client>/workflows/*.studio.json, written by this app and by
+// Server-side access to the studio's workspaces and workflows. The files in the repo are the
+// database: brands/<workspace>/workflows/*.studio.json, written by this app and by
 // packages/strategy/workflow_author.py alike. Validation here mirrors the Python author's,
 // so a workflow saved from the canvas is one the author can also read.
+//
+// "client" and "workspace" name the same thing (a folder under brands/ with a brand.yaml);
+// the older name survives in function names the API routes depend on.
 import fs from "node:fs/promises";
 import path from "node:path";
+import { parseYaml, dig } from "./yaml-lite";
+import { isEach, validateWorkflow, computeGaps } from "./graph";
 
 export const REPO = process.env.STUDIO_REPO || path.resolve(process.cwd(), "../../..");
 const BRANDS = path.join(REPO, "brands");
 export const TEMPLATES = "_templates";
 const ID = /^[a-z0-9][a-z0-9_-]{0,79}$/;
+const IMAGE = /\.(png|jpe?g|webp)$/i;
+const VIDEO = /\.(mp4|webm|mov)$/i;
+const DEFAULT_ACCENT = "#C9A45C";
 
 export class StudioError extends Error {
   constructor(message, status = 400) {
@@ -22,38 +30,86 @@ export async function loadCatalog() {
   return JSON.parse(raw);
 }
 
+// Pure graph logic (the validation mirror, gaps, plan, tool inputs) lives in ./graph so the
+// canvas can run it in the browser too.
+export { RUN_MODES, EACH_BACKENDS, EACH_SUFFIX, splitEach, isEach, iteratedPort, canEach, pendingPicks, validateWorkflow, computeGaps, toolInputs, runPlan, continuationsFor } from "./graph";
+
+// ---------------------------------------------------------------- workspaces
+
+function relLuminance(hex) {
+  const m = /^#?([0-9a-f]{6})$/i.exec(hex || "");
+  if (!m) return 0;
+  const [r, g, b] = [0, 2, 4].map((i) => {
+    const c = parseInt(m[1].slice(i, i + 2), 16) / 255;
+    return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+  });
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+
+function pickAccent(brand) {
+  const flat = [];
+  const walk = (o, keyPath) => {
+    if (!o || typeof o !== "object") return;
+    for (const [k, v] of Object.entries(o)) {
+      if (typeof v === "string" && /^#[0-9a-f]{6}$/i.test(v)) flat.push([`${keyPath}${k}`.toLowerCase(), v]);
+      else if (v && typeof v === "object" && !Array.isArray(v)) walk(v, `${keyPath}${k}.`);
+    }
+  };
+  walk(brand.palette || {}, "");
+  const byKey = (re) => flat.find(([k]) => re.test(k.split(".").pop()))?.[1];
+  const usable = (hex) => hex && relLuminance(hex) > 0.09 && relLuminance(hex) < 0.85;
+  const cands = [byKey(/^(ui_)?accent$/), byKey(/^primary$/), byKey(/gold|emerald|mint|cyan|accent/)].filter(usable);
+  return cands[0] || DEFAULT_ACCENT;
+}
+
 function brandInfo(yamlText, id) {
-  const lines = yamlText.split(/\r?\n/);
-  let name = lines.find((l) => /^(name|display_name):\s*\S/.test(l));
-  if (!name) {
-    const b = lines.findIndex((l) => /^brand:\s*$/.test(l));
-    if (b >= 0) name = lines.slice(b + 1).find((l) => /^\s+name:\s*\S/.test(l));
+  let brand = {};
+  try { brand = parseYaml(yamlText) || {}; } catch { brand = {}; }
+  const name = brand.display_name || brand.name || dig(brand, "brand.name");
+  const accent = pickAccent(brand);
+  const palette = [];
+  const measured = dig(brand, "palette.measured");
+  if (measured && typeof measured === "object") {
+    for (const [k, v] of Object.entries(measured)) if (typeof v === "string" && /^#[0-9a-f]{6}$/i.test(v)) palette.push({ key: k, hex: v });
   }
-  const clean = name ? name.split(":").slice(1).join(":").split("#")[0].trim().replace(/^["']|["']$/g, "") : "";
-  const accent = (yamlText.match(/accent[a-z_]*:\s*["']?(#[0-9A-Fa-f]{6})/) || [])[1];
+  const langs = dig(brand, "languages.supported");
   return {
-    name: clean || id.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
-    accent: accent || "#C9A45C",
+    name: typeof name === "string" && name ? name : id.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
+    accent,
+    accentInk: relLuminance(accent) > 0.35 ? "#15120b" : "#f7f4ee",
+    kind: typeof brand.kind === "string" ? brand.kind : (brand.product ? "product" : "brand"),
+    tagline: dig(brand, "positioning.tagline") || dig(brand, "positioning.premise") || brand.product || "",
+    logo: dig(brand, "logo.master") || null,
+    logoRule: dig(brand, "logo.rule") || null,
+    palette: palette.slice(0, 8),
+    languages: Array.isArray(langs) ? langs.map(String) : [],
+    disclosure: dig(brand, "claim_safety.disclosure") || null,
+    // The 18+ gate: a workspace opts in explicitly in its brand.yaml. Nothing else enables it.
+    adult: brand.adult === true || brand.allow_adult === true || brand.eighteen_plus === true,
   };
 }
 
 export async function workflowDir(client) {
   if (client === TEMPLATES) return path.join(BRANDS, TEMPLATES, "workflows");
-  if (!ID.test(client || "")) throw new StudioError("That client id is not valid.");
+  if (!ID.test(client || "")) throw new StudioError("That workspace id is not valid.");
   try {
     await fs.access(path.join(BRANDS, client, "brand.yaml"));
   } catch {
-    throw new StudioError(`There is no client called ${client}.`, 404);
+    throw new StudioError(`There is no workspace called ${client}.`, 404);
   }
   return path.join(BRANDS, client, "workflows");
 }
 
 export async function getClient(client) {
-  if (client === TEMPLATES) return { id: TEMPLATES, name: "Idea templates", accent: "#C9A45C", templates: true };
+  if (client === TEMPLATES) {
+    return { id: TEMPLATES, name: "Templates", accent: DEFAULT_ACCENT, accentInk: "#15120b", templates: true, adult: false, palette: [], languages: [] };
+  }
   await workflowDir(client);
   const yamlText = await fs.readFile(path.join(BRANDS, client, "brand.yaml"), "utf8");
   return { id: client, ...brandInfo(yamlText, client) };
 }
+
+export const getWorkspace = getClient;
 
 export async function listClients() {
   const entries = await fs.readdir(BRANDS, { withFileTypes: true });
@@ -64,8 +120,41 @@ export async function listClients() {
       const c = await getClient(e.name);
       out.push({ ...c, workflows: await listWorkflows(e.name) });
     } catch {
-      // folders without brand.yaml are not clients
+      // folders without brand.yaml are not workspaces
     }
+  }
+  return out;
+}
+
+export const listWorkspaces = listClients;
+
+// Reference collections: brands/<ws>/references/<name>/ with a collection.json that states
+// use, rights and consent. A folder without one is listed as unverified.
+export async function listReferences(client) {
+  if (client === TEMPLATES) return [];
+  await workflowDir(client);
+  const root = path.join(BRANDS, client, "references");
+  let dirs = [];
+  try { dirs = (await fs.readdir(root, { withFileTypes: true })).filter((d) => d.isDirectory()); } catch { return []; }
+  const out = [];
+  for (const d of dirs) {
+    const folder = path.join(root, d.name);
+    let meta = null;
+    try { meta = JSON.parse(await fs.readFile(path.join(folder, "collection.json"), "utf8")); } catch { meta = null; }
+    let files = [];
+    try { files = (await fs.readdir(folder)).filter((f) => IMAGE.test(f) || VIDEO.test(f)).sort(); } catch { files = []; }
+    out.push({
+      name: d.name,
+      folder: `brands/${client}/references/${d.name}`,
+      count: files.length,
+      files: files.slice(0, 6).map((f) => `brands/${client}/references/${d.name}/${f}`),
+      kind: meta?.kind || (files.some((f) => VIDEO.test(f)) ? "video" : "image"),
+      use: meta?.use || null,
+      rights: meta?.rights || null,
+      consent: meta?.consent === true,
+      verified: !!meta,
+      notes: Array.isArray(meta?.notes) ? meta.notes : [],
+    });
   }
   return out;
 }
@@ -90,11 +179,15 @@ export async function listWorkflows(client) {
         nodes: wf.nodes.length,
         gaps: (wf.gaps || []).length,
         consent: !!wf.consent_required,
+        adult: wf.family === "adult" || !!wf.source?.engine?.adult,
         kinds: wf.nodes.map((n) => n.kind),
+        each: wf.nodes.filter((n) => isEach(n)).length,
         combined: !!(wf.source && wf.source.combined),
+        tool: wf.tool?.enabled ? { title: wf.tool.title || wf.title, inputs: (wf.tool.inputs || []).length } : null,
+        updated: wf.updated || wf.created || null,
       });
     } catch {
-      out.push({ id: f.replace(/\.studio\.json$/, ""), title: f, broken: true, kinds: [], nodes: 0, gaps: 0 });
+      out.push({ id: f.replace(/\.studio\.json$/, ""), title: f, broken: true, kinds: [], nodes: 0, gaps: 0, each: 0 });
     }
   }
   return out;
@@ -108,99 +201,6 @@ export async function readWorkflow(client, id) {
   } catch {
     throw new StudioError(`There is no workflow called ${id} for ${client}.`, 404);
   }
-}
-
-function accepts(port, outType, catalog) {
-  if (port.id === "media") return catalog.media_ports.accepts.includes(outType);
-  return port.type === outType;
-}
-
-export const RUN_MODES = ["dry-run", "stage-approval", "auto"];
-
-// Depth-first search; returns the first loop found as a list of node ids, or null.
-function findCycle(nodes, edges) {
-  const out = new Map(nodes.map((n) => [n.id, []]));
-  for (const e of edges) if (out.has(e.source) && out.has(e.target)) out.get(e.source).push(e.target);
-  const state = new Map();
-  const path = [];
-  const visit = (v) => {
-    state.set(v, 1); path.push(v);
-    for (const w of out.get(v)) {
-      if (state.get(w) === 1) return path.slice(path.indexOf(w)).concat(w);
-      if (!state.has(w)) { const f = visit(w); if (f) return f; }
-    }
-    path.pop(); state.set(v, 2);
-    return null;
-  };
-  for (const v of out.keys()) if (!state.has(v)) { const f = visit(v); if (f) return f; }
-  return null;
-}
-
-// A decide step that nobody has answered yet. It is waiting, not broken.
-export function pendingPicks(wf, catalog) {
-  const byKind = Object.fromEntries(catalog.nodes.map((n) => [n.kind, n]));
-  return wf.nodes.filter((n) => byKind[n.kind]?.category === "decide" && !(n.data?.picked || []).length).map((n) => n.id);
-}
-
-export function validateWorkflow(wf, catalog) {
-  const problems = [];
-  const byKind = Object.fromEntries(catalog.nodes.map((n) => [n.kind, n]));
-  if (!wf || !Array.isArray(wf.nodes) || !Array.isArray(wf.edges)) return ["A workflow needs nodes and links."];
-  const ids = new Map(wf.nodes.map((n) => [n.id, n]));
-  if (ids.size !== wf.nodes.length) problems.push("Two nodes share an id.");
-  const declared = new Set((wf.gaps || []).map((g) => g.node));
-  for (const n of wf.nodes) {
-    if (n.kind === "unmapped") {
-      if (!declared.has(n.id)) problems.push(`${n.id}: an unmapped step must be listed as a gap.`);
-      continue;
-    }
-    const spec = byKind[n.kind];
-    if (!spec) problems.push(`${n.id}: unknown node type ${n.kind}.`);
-    else if (spec.backend.kind === "gap" && !declared.has(n.id)) problems.push(`${n.id}: ${spec.label} cannot run yet and must be listed as a gap.`);
-    else if (spec.backend.kind === "human" && spec.category !== "decide") problems.push(`${n.id}: only a decide step may wait on a person.`);
-    if (spec?.category === "decide") {
-      const k = n.data?.params?.k;
-      const feeders = wf.edges.filter((e) => e.target === n.id).map((e) => ids.get(e.source)).filter(Boolean);
-      const offered = feeders.reduce((s, f) => s + Number(f.data?.variant_count || 1), 0);
-      if (feeders.length && typeof k === "number" && k > offered) problems.push(`${n.id}: asks to keep ${k} but only ${offered} candidate(s) feed it.`);
-    }
-  }
-  if (wf.run_mode != null && !RUN_MODES.includes(wf.run_mode)) problems.push(`run_mode must be one of ${RUN_MODES.join(", ")}.`);
-  const loop = findCycle(wf.nodes, wf.edges);
-  if (loop) problems.push(`Steps feed back into themselves: ${loop.join(" -> ")}.`);
-  for (const e of wf.edges) {
-    const s = ids.get(e.source), t = ids.get(e.target);
-    if (!s || !t) { problems.push(`${e.id}: a link points at a missing node.`); continue; }
-    const ss = byKind[s.kind], ts = byKind[t.kind];
-    if (!ss || !ts) continue;
-    const out = ss.outputs.find((o) => o.id === e.sourceHandle);
-    const port = ts.inputs.find((p) => p.id === e.targetHandle);
-    if (!out || !port) problems.push(`${e.id}: a link uses a port that does not exist.`);
-    else if (!accepts(port, out.type, catalog)) problems.push(`${e.id}: ${out.type} cannot feed ${ts.label} ${port.id}.`);
-  }
-  return problems;
-}
-
-// Gaps are recomputed on save so the file always states what cannot run.
-export function computeGaps(wf, catalog) {
-  const byKind = Object.fromEntries(catalog.nodes.map((n) => [n.kind, n]));
-  const gaps = [];
-  for (const n of wf.nodes) {
-    if (n.kind === "unmapped") {
-      gaps.push({ node: n.id, step: n.data?.step || "unmapped", reason: `No catalogue node runs '${n.data?.step}' yet.` });
-      continue;
-    }
-    const spec = byKind[n.kind];
-    if (!spec) continue;
-    if (spec.backend.kind === "gap") gaps.push({ node: n.id, step: n.kind, reason: spec.backend.reason });
-    for (const p of spec.inputs) {
-      if (p.optional) continue;
-      if (!wf.edges.some((e) => e.target === n.id && e.targetHandle === p.id)) {
-        gaps.push({ node: n.id, step: n.kind, reason: `Needs a ${p.id === "media" ? "image or video" : p.type} input.` });
-      }
-    }
-  }
-  return gaps;
 }
 
 export async function writeWorkflow(client, id, wf) {
@@ -222,37 +222,4 @@ export async function writeWorkflow(client, id, wf) {
   await fs.mkdir(dir, { recursive: true });
   await fs.writeFile(path.join(dir, `${id}.studio.json`), JSON.stringify(clean, null, 2) + "\n", "utf8");
   return clean;
-}
-
-// What would happen if this ran. Nothing is executed and nothing is spent.
-export function runPlan(wf, catalog) {
-  const byKind = Object.fromEntries(catalog.nodes.map((n) => [n.kind, n]));
-  const gaps = computeGaps(wf, catalog);
-  const steps = wf.nodes.map((n) => {
-    const spec = byKind[n.kind];
-    const nodeGaps = gaps.filter((g) => g.node === n.id).map((g) => g.reason);
-    if (!spec) return { id: n.id, label: n.data?.step || n.kind, status: "blocked", detail: nodeGaps.join(" ") };
-    const be = spec.backend;
-    const runs = {
-      input: "You provide this.",
-      brand: "Read from brand.yaml.",
-      comfy: `ComfyUI: workflows/${be.workflow}`,
-      router: `Hosted model, profile ${n.data?.params?.profile || be.profile}.`,
-      python: `Runs ${be.module}.`,
-      publish: `Creates a draft through ${be.module}.`,
-      human: (n.data?.picked || []).length ? `You kept ${n.data.picked.length}.` : "Waiting for your pick.",
-      gap: be.reason,
-    }[be.kind];
-    const status = nodeGaps.length ? "blocked" : be.kind === "input" ? "input"
-      : be.kind === "human" ? ((n.data?.picked || []).length ? "ready" : "waiting") : "ready";
-    return { id: n.id, label: spec.label, status, detail: nodeGaps.length ? nodeGaps.join(" ") : runs, consent: !!spec.consent, backend: be.kind };
-  });
-  return {
-    steps,
-    ready: steps.filter((s) => s.status === "ready").length,
-    blocked: steps.filter((s) => s.status === "blocked").length,
-    waiting: steps.filter((s) => s.status === "waiting").length,
-    consent: steps.some((s) => s.consent),
-    note: "Check only. Nothing runs, spends money or publishes from this screen.",
-  };
 }

@@ -20,7 +20,7 @@ Studio template: [`m07-label-visual-package.studio.json`](../../brands/_template
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
 | Brief | you provide |  | — |
-| Motion graphics | not runnable yet | HyperFrames/Remotion renderer is planned, not built. | — |
+| Motion graphics | studio code | `packages/video/motion_graphics.py` | — |
 | Reference images | you provide |  | — |
 | Image to video (WAN) | ComfyUI on the pod | `workflows/icekiub/I2V_Infinite_extender_-_SUBS_-_Icekiub_v1.json` | — |
 | Brand kit | brand.yaml |  | — |
@@ -28,7 +28,7 @@ Studio template: [`m07-label-visual-package.studio.json`](../../brands/_template
 | Cut and loop | studio code | `packages/voice/mux.py` | — |
 | WhatsApp Status | publisher (draft first) | `packages/publish/whatsapp.py` | — |
 
-80% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -44,15 +44,20 @@ Setup budget $500. Fixed monthly spend $200. First cash in about 60 days.
 
 ## What is not ready
 
-- **Motion graphics**: HyperFrames/Remotion renderer is planned, not built.
+- Nothing structural. Every step has a backend and every model it names has a source; it still needs a live run.
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: inherits M02's motion-graphics gap (packages/video/motion_graphics.py not built); everything else in the bundle is bound.
+- 2026-09-20 (W6): M02's motion-graphics step is bound to packages/video/motion_graphics.py, so the bundle has no declared gap left.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 50 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch small labels with 5+ artists with the pilot; target the low scenario (0 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

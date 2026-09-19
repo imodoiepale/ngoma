@@ -20,7 +20,7 @@ Studio template: [`x02-compliance-first-persona-operations.studio.json`](../../b
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
 | Reference images | you provide |  | — |
-| Carousel poses | ComfyUI on the pod | `workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json` | — |
+| Carousel poses | ComfyUI on the pod | `workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json` (needs setup: BLOCKERS 3) | — |
 | Schedule post | publisher (draft first) | `packages/publish/postiz.py` | — |
 | Learn from results | studio code | `packages/analytics/collect.py` | — |
 
@@ -40,6 +40,7 @@ Setup budget $300. Fixed monthly spend $80. First cash in about 45 days.
 
 ## What is not ready
 
+- **Carousel poses** needs setup (`docs/BLOCKERS.md` item 3): UNETLoader 1 loads flux-2-klein-9b-kv.safetensors, licence-gated on HuggingFace: accept the FLUX.2 Klein 9B licence or switch the loader to the fp8 variant. LoraLoaderModelOnly 19 also names the creator's private Lora_lora_000000600.safetensors (infra/runpod/download-plan.json creator_private).
 - Models with no public source yet (see `infra/runpod/download-plan.json`): Lora_lora_000000600.safetensors
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
 

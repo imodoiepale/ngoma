@@ -20,13 +20,13 @@ Studio template: [`x01-fictional-18-persona-subscription.studio.json`](../../bra
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
 | Reference images | you provide |  | — |
-| Character dataset | ComfyUI on the pod | `workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json` | Consent |
+| Character dataset | ComfyUI on the pod | `workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json` | Consent |
 | Caption a dataset | ComfyUI on the pod | `workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json` | — |
-| LoRA training | not runnable yet | No LoRA training workflow in the library yet (ai-toolkit runs outside ComfyUI). Use RefMod character instead. | Consent |
-| Carousel poses | ComfyUI on the pod | `workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json` | — |
+| LoRA training | studio code | `packages/engine/lora_train.py` (needs setup: BLOCKERS 3) | Consent |
+| Carousel poses | ComfyUI on the pod | `workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json` (needs setup: BLOCKERS 3) | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
-80% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -42,16 +42,22 @@ Setup budget $700. Fixed monthly spend $200. First cash in about 60 days.
 
 ## What is not ready
 
-- **LoRA training**: No LoRA training workflow in the library yet (ai-toolkit runs outside ComfyUI). Use RefMod character instead.
+- **LoRA training** needs setup (`docs/BLOCKERS.md` item 3): The pod has no ostris/ai-toolkit clone at /workspace/epalle/ai-toolkit and setup-pod.sh does not install one; the Klein 9B base model it trains against is the licence-gated FLUX.2 file (accept the licence, then infra/runpod/download_planned.py). lora_train.py writes the config and launch.sh and refuses nothing else; the run is started by hand on the pod (module docstring lists what must exist there).
+- **Carousel poses** needs setup (`docs/BLOCKERS.md` item 3): UNETLoader 1 loads flux-2-klein-9b-kv.safetensors, licence-gated on HuggingFace: accept the FLUX.2 Klein 9B licence or switch the loader to the fp8 variant. LoraLoaderModelOnly 19 also names the creator's private Lora_lora_000000600.safetensors (infra/runpod/download-plan.json creator_private).
 - Models with no public source yet (see `infra/runpod/download-plan.json`): Lora_lora_000000600.safetensors, ultrafluxvae.safetensors
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: `lora` stays a declared gap (same missing ai-toolkit job module as S01); the dataset and captions exist to train it, so RefMod is not substituted here. Plan only until the module and the separate entity exist.
+- 2026-09-20 (W6): `lora` is bound to packages/engine/lora_train.py (same module as S01); the caption-dataset output feeds its captions input. The rights gate demands a fictional collection (no real-person likeness) with owned data, and the run itself still needs ai-toolkit and the base model on the pod (needs_setup, BLOCKERS 3). The separate entity and hard gates are unchanged; still plan only.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 0.02 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch adult subscribers on ai-permitting platforms with the pilot; target the low scenario (50 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

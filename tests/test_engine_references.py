@@ -117,6 +117,23 @@ def test_write_and_read_collection_round_trip(tmp_path, monkeypatch):
         refs.read_collection("acme", "missing")
 
 
+def test_read_collection_tolerates_a_utf8_bom(tmp_path, monkeypatch):
+    """PowerShell's `Set-Content -Encoding utf8` prefixes a BOM; a run must not fail on it
+    (BLOCKERS 21). The two epalle fixtures are also asserted BOM-free."""
+    monkeypatch.setattr(refs, "BRANDS", tmp_path / "brands")
+    folder = refs.collection_dir("acme", "bom")
+    folder.mkdir(parents=True)
+    body = json.dumps({"name": "bom", "use": "data", "rights": "owned", "consent": True}, indent=2)
+    (folder / refs.COLLECTION_FILE).write_bytes(b"\xef\xbb\xbf" + body.encode("utf-8"))
+    (folder / "a.png").write_bytes(b"x")
+    col = refs.read_collection("acme", "bom")
+    assert (col.use, col.rights, col.consent, col.count) == ("data", "owned", True, 1)
+    for name in ("red-dress", "wardrobe-red-dress"):
+        f = REPO / "brands" / "epalle" / "references" / name / refs.COLLECTION_FILE
+        if f.exists():
+            assert not f.read_bytes().startswith(b"\xef\xbb\xbf"), f"{f} starts with a BOM"
+
+
 def test_search_terms_become_pinterest_urls_and_urls_pass_through():
     assert refs.search_url("neon street portrait") == "https://www.pinterest.com/search/pins/?q=neon+street+portrait"
     assert refs.search_url("https://www.pinterest.com/pin/1/") == "https://www.pinterest.com/pin/1/"

@@ -7,7 +7,7 @@
     "idea": "V08",
     "offer": "Up to 30 thumbnails a month with 3 variants each for A/B tests"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -32,7 +32,8 @@
         "params": {
           "profile": "daily_premium",
           "ratio": "4:5"
-        }
+        },
+        "alias": "nano-banana-2"
       }
     },
     {

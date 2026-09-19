@@ -1,0 +1,62 @@
+{
+  "workflow": "icekiub/I2I_no_lora_faceswap_subs.json",
+  "sha256": "e005997094562903cb98fc6d56d574625e68c206d1fb45f7bf53a75915a7f9d5",
+  "format": "ui",
+  "inputs": {
+    "image": {
+      "node": "11",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). Picture 1: the base image whose head is replaced. Feeds ImageResizeKJv2 30 -> VAEEncode 7 -> ReferenceLatent 8 (with the head_swap prompt 13), the bypassed upscale chain 23/22 -> GetImageSize 9 -> EmptyLatentImage 10, and the comparer 3. One image per run: the runner loops when the node fans out (`each`)."
+    },
+    "face": {
+      "node": "16",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "LoadImage expects a filename inside the ComfyUI input folder (upload first). Picture 2: the face/head reference of the persona. Feeds ImageResizeKJv2 29 -> VAEEncode 6 -> ReferenceLatent 5. Binds once for every item of a batch."
+    }
+  },
+  "prompt": {
+    "node": "13",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0,
+    "note": "Default is the head_swap instruction ('start with Picture 1 as the base image ... replace it with the head from Picture 2 ...'). Leave empty to keep it."
+  },
+  "negative": {
+    "node": "12",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0,
+    "note": "Empty by default; feeds KSampler 31 negative."
+  },
+  "seed": {
+    "node": "31",
+    "class": "KSampler",
+    "field": "seed",
+    "widget_index": 0
+  },
+  "count": {
+    "node": "10",
+    "class": "EmptyLatentImage",
+    "field": "batch_size",
+    "widget_index": 2,
+    "note": "Width and height are wired from GetImageSize 9; only batch_size is a free widget."
+  },
+  "outputs": {
+    "image": {
+      "node": "2",
+      "class": "PreviewImage",
+      "kind": "image",
+      "note": "No SaveImage in this workflow; node 2 previews the decoded result (temp/). PreviewImage 1 is the stitched before/after strip. Runner fetches via /view?type=temp or a human swaps in SaveImage."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "The swap is driven by LoraLoaderModelOnly 26 (head_swap_flux-klein_9b_000003500.safetensors) on flux-2-klein-9b-fp8; no character LoRA is needed, one face reference is enough.",
+    "The RealESRGAN upscale of Picture 1 (nodes 24, 23, 22) is bypassed in the shipped file; the latent size then follows the resized base image.",
+    "Consent step: the runner refuses to run it unless every reference collection feeding it has collection.json with rights owned, licensed or fictional, and consent: true for a real person (docs/engine/BATCHES.md)."
+  ]
+}

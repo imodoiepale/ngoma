@@ -23,7 +23,7 @@ Studio template: [`p03-character-licensing.studio.json`](../../brands/_templates
 | RefMod character | ComfyUI on the pod | `workflows/h3-refmods/franckyb-refmod-create-from-folder.json` | Consent |
 | Brief | you provide |  | — |
 | Character video (H3) | ComfyUI on the pod | `workflows/h3-refmods/dainamo-refmod-generate.json` | — |
-| Carousel poses | ComfyUI on the pod | `workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json` | — |
+| Carousel poses | ComfyUI on the pod | `workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json` (needs setup: BLOCKERS 3) | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
 100% of the working steps run today.
@@ -42,6 +42,7 @@ Setup budget $300. Fixed monthly spend $60. First cash in about 45 days.
 
 ## What is not ready
 
+- **Carousel poses** needs setup (`docs/BLOCKERS.md` item 3): UNETLoader 1 loads flux-2-klein-9b-kv.safetensors, licence-gated on HuggingFace: accept the FLUX.2 Klein 9B licence or switch the loader to the fp8 variant. LoraLoaderModelOnly 19 also names the creator's private Lora_lora_000000600.safetensors (infra/runpod/download-plan.json creator_private).
 - Models with no public source yet (see `infra/runpod/download-plan.json`): Lora_lora_000000600.safetensors
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
 

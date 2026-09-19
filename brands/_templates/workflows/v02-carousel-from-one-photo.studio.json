@@ -7,7 +7,7 @@
     "idea": "V02",
     "offer": "30 ready carousels a month from each product photo"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -31,7 +31,8 @@
       "data": {
         "params": {
           "slides": 6
-        }
+        },
+        "alias": "carousel-pose-changer"
       }
     },
     {

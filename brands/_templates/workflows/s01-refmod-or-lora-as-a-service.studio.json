@@ -7,7 +7,7 @@
     "idea": "S01",
     "offer": "A consistent-character file from client-owned references"
   },
-  "created": "2026-09-14",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -31,7 +31,8 @@
       "data": {
         "params": {
           "preset": "identity"
-        }
+        },
+        "alias": "refmod"
       }
     },
     {
@@ -49,11 +50,17 @@
       "id": "n4",
       "kind": "lora-train",
       "position": {
-        "x": 400,
-        "y": 500
+        "x": 720,
+        "y": 80
       },
       "data": {
-        "params": {}
+        "params": {
+          "trigger": "",
+          "base": "klein-9b",
+          "steps": 3000,
+          "rank": 16
+        },
+        "alias": "ai-toolkit-lora"
       }
     },
     {
@@ -61,7 +68,7 @@
       "kind": "export",
       "position": {
         "x": 400,
-        "y": 710
+        "y": 500
       },
       "data": {
         "params": {}
@@ -95,6 +102,14 @@
     },
     {
       "id": "e4",
+      "source": "n3",
+      "sourceHandle": "captions",
+      "target": "n4",
+      "targetHandle": "captions",
+      "type": "text"
+    },
+    {
+      "id": "e5",
       "source": "n2",
       "sourceHandle": "images",
       "target": "n5",
@@ -102,13 +117,7 @@
       "type": "image"
     }
   ],
-  "gaps": [
-    {
-      "node": "n4",
-      "step": "lora-train",
-      "reason": "No LoRA training workflow in the library yet (ai-toolkit runs outside ComfyUI). Use RefMod character instead."
-    }
-  ],
+  "gaps": [],
   "family": "service",
   "compliance": "Consent proof required before training"
 }

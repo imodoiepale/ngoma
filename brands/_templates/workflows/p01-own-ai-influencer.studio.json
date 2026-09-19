@@ -7,7 +7,7 @@
     "idea": "P01",
     "offer": "A consistent SFW persona with an audience, sold as sponsorships"
   },
-  "created": "2026-09-14",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -31,7 +31,8 @@
       "data": {
         "params": {
           "variant": "no autoprompt"
-        }
+        },
+        "alias": "krea2"
       }
     },
     {
@@ -42,7 +43,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "dataset-aio"
       }
     },
     {
@@ -66,7 +68,8 @@
       "data": {
         "params": {
           "preset": "identity"
-        }
+        },
+        "alias": "lora-or-refmod"
       }
     },
     {
@@ -92,7 +95,8 @@
       "data": {
         "params": {
           "seconds": 30
-        }
+        },
+        "alias": "reels"
       }
     },
     {

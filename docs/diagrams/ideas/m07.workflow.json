@@ -22,11 +22,6 @@
     {
       "id": "publish",
       "label": "Publish (draft first)"
-    },
-    {
-      "id": "gaps",
-      "label": "Not runnable yet",
-      "variant": "exception"
     }
   ],
   "mainPath": [
@@ -45,12 +40,11 @@
     },
     {
       "id": "n1",
-      "lane": "gaps",
+      "lane": "studio",
       "col": 0,
-      "type": "security",
+      "type": "backend",
       "label": "Motion graphics",
-      "sublabel": "not built yet",
-      "tag": "gap",
+      "sublabel": "motion_graphics.py",
       "width": 128
     },
     {
@@ -109,8 +103,7 @@
     {
       "from": "n2",
       "to": "n1",
-      "label": "text",
-      "variant": "dashed"
+      "label": "text"
     },
     {
       "from": "n4",
@@ -168,10 +161,9 @@
       ]
     },
     {
-      "dot": "rose",
+      "dot": "amber",
       "title": "Rules",
       "items": [
-        "Gap: Motion graphics not built",
         "Dry-run until approved",
         "Logo composited, never generated"
       ]

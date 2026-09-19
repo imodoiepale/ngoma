@@ -7,7 +7,7 @@
     "idea": "U06",
     "offer": "One consented spokesperson, lip-synced in EN/SW/FR"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -31,7 +31,8 @@
       "data": {
         "params": {
           "preset": "identity"
-        }
+        },
+        "alias": "refmod-consented"
       }
     },
     {
@@ -76,8 +77,10 @@
       },
       "data": {
         "params": {
-          "language": "en"
-        }
+          "language": "en",
+          "provider": "elevenlabs"
+        },
+        "alias": "tts"
       }
     },
     {

@@ -21,13 +21,13 @@ Studio template: [`s07-short-form-dubbing.studio.json`](../../brands/_templates/
 |---|---|---|---|
 | Reference images | you provide |  | — |
 | Transcribe | studio code | `packages/voice/transcribe.py` | — |
-| Translate | not runnable yet | No translation adapter yet; write the script in the target language. | — |
+| Translate | studio code | `packages/voice/translate.py` | — |
 | Voiceover | studio code | `packages/voice/tts.py` | — |
 | Image and audio to video | ComfyUI on the pod | `workflows/MiniMax-H3-Simple-WF/IMG-_-Audio-To-Video.json` | Consent |
 | Captions | studio code | `packages/voice/mux.py` | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
-83% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -43,15 +43,20 @@ Setup budget $150. Fixed monthly spend $40. First cash in about 14 days.
 
 ## What is not ready
 
-- **Translate**: No translation adapter yet; write the script in the target language.
+- Nothing structural. Every step has a backend and every model it names has a source; it still needs a live run.
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: `translate` stays a declared gap: packages/voice/translate.py (an OpenRouter chat call with the key the image-router already uses) is the missing module. Until then the translator is a person and the dub runs from the translated script.
+- 2026-09-20 (W6): `translate` is bound to packages/voice/translate.py: OpenRouter chat completion through the vault key, .txt/.srt/.json in and out, a glossary of brand terms masked as placeholders so they come back untouched, and a claim check that refuses a translation whose numbers, glossary terms or money-promise flags differ from the source. Dry-run prints the request and sends nothing; a Sheng target is refused unless --sheng-reviewed. Needs OPENROUTER_API_KEY in the vault to run live.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 5 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch creators expanding to swahili and french with the pilot; target the low scenario (2 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

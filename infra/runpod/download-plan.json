@@ -1,14 +1,89 @@
 {
   "generated_by": "infra/runpod/plan_models.py",
-  "online": true,
+  "online": false,
   "counts": {
     "resolved": 73,
     "auto_download": 1,
     "creator_private": 16,
     "manual": 14,
-    "unresolved": 22
+    "unresolved": 26
   },
   "resolved": [
+    {
+      "file": "qwen_3_8b_fp8mixed.safetensors",
+      "folder": "text_encoders",
+      "loaders": [
+        "CLIPLoader"
+      ],
+      "workflow_count": 25,
+      "used_by": [
+        "workflows/api-tests/klein-ishona-400.json",
+        "workflows/api-tests/klein-ishona-600.json",
+        "workflows/api-tests/klein-t2i-sage-guard-test.json",
+        "workflows/api-tests/klein-t2i-test.json",
+        "workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+        "workflows/icekiub/Carousel_Pose_changer.json",
+        "workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json",
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+        "workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
+        "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json",
+        "workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+        "workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+        "workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+        "workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+        "workflows/icekiub/KleinDataset_-_Icekiub_freelo.json",
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json",
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json",
+        "workflows/icekiub/icy_ref_character_sheet_for_minimax.json"
+      ],
+      "repo": "Comfy-Org/flux2-klein-9B",
+      "repo_path": "split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
+      "evidence": "workflows/icekiub/Carousel_Pose_changer.json"
+    },
+    {
+      "file": "flux2-vae.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "VAELoader"
+      ],
+      "workflow_count": 24,
+      "used_by": [
+        "workflows/api-tests/klein-ishona-400.json",
+        "workflows/api-tests/klein-ishona-600.json",
+        "workflows/api-tests/klein-t2i-sage-guard-test.json",
+        "workflows/api-tests/klein-t2i-test.json",
+        "workflows/icekiub/Carousel_Pose_changer.json",
+        "workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json",
+        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
+        "workflows/icekiub/I2I_no_lora_faceswap_subs.json",
+        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
+        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
+        "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json",
+        "workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
+        "workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
+        "workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
+        "workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
+        "workflows/icekiub/KleinDataset_-_Icekiub_freelo.json",
+        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json",
+        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
+        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json",
+        "workflows/icekiub/icy_ref_character_sheet_for_minimax.json"
+      ],
+      "repo": "Comfy-Org/flux2-dev",
+      "repo_path": "split_files/vae/flux2-vae.safetensors",
+      "evidence": "workflows/icekiub/Carousel_Pose_changer.json"
+    },
     {
       "file": "minimax_h3_audio_vae_fp32.safetensors",
       "folder": "vae",
@@ -48,85 +123,12 @@
       "evidence": "workflows/h3/NEW_-_2MP_De-Rope_Continuation_-_Working_Example.json"
     },
     {
-      "file": "qwen_3_8b_fp8mixed.safetensors",
-      "folder": "text_encoders",
-      "loaders": [
-        "CLIPLoader"
-      ],
-      "workflow_count": 24,
-      "used_by": [
-        "workflows/api-tests/klein-ishona-400.json",
-        "workflows/api-tests/klein-ishona-600.json",
-        "workflows/api-tests/klein-t2i-sage-guard-test.json",
-        "workflows/api-tests/klein-t2i-test.json",
-        "workflows/icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
-        "workflows/icekiub/Carousel_Pose_changer.json",
-        "workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json",
-        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
-        "workflows/icekiub/I2I_no_lora_faceswap_subs.json",
-        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
-        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
-        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
-        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
-        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
-        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
-        "workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
-        "workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
-        "workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
-        "workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
-        "workflows/icekiub/KleinDataset_-_Icekiub_freelo.json",
-        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json",
-        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
-        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json",
-        "workflows/icekiub/icy_ref_character_sheet_for_minimax.json"
-      ],
-      "repo": "Comfy-Org/flux2-klein-9B",
-      "repo_path": "split_files/text_encoders/qwen_3_8b_fp8mixed.safetensors",
-      "evidence": "workflows/icekiub/Carousel_Pose_changer.json"
-    },
-    {
-      "file": "flux2-vae.safetensors",
-      "folder": "vae",
-      "loaders": [
-        "VAELoader"
-      ],
-      "workflow_count": 23,
-      "used_by": [
-        "workflows/api-tests/klein-ishona-400.json",
-        "workflows/api-tests/klein-ishona-600.json",
-        "workflows/api-tests/klein-t2i-sage-guard-test.json",
-        "workflows/api-tests/klein-t2i-test.json",
-        "workflows/icekiub/Carousel_Pose_changer.json",
-        "workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json",
-        "workflows/icekiub/Consistent_Room_WF_v3.1-_Icekiub_Subs.json",
-        "workflows/icekiub/I2I_no_lora_faceswap_subs.json",
-        "workflows/icekiub/ICY_SCAIL_2.0_Subs_-_icekiub_v2.json",
-        "workflows/icekiub/ICY_SCAIL_2_0_Subs_-_icekiub_v2.json",
-        "workflows/icekiub/ICY_WAN_ANIMATE_-_Face_Only_-prer-_Icekiub_V4.json",
-        "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
-        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
-        "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
-        "workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
-        "workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
-        "workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
-        "workflows/icekiub/KLEIN_-_watermark_removal_-_ICEKIUB_V1.json",
-        "workflows/icekiub/KleinDataset_-_Icekiub_freelo.json",
-        "workflows/icekiub/LTX2.3KlingKiller_pose_depth_simplified_-_Icekiub_v2.json",
-        "workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v2.json",
-        "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json",
-        "workflows/icekiub/icy_ref_character_sheet_for_minimax.json"
-      ],
-      "repo": "Comfy-Org/flux2-dev",
-      "repo_path": "split_files/vae/flux2-vae.safetensors",
-      "evidence": "workflows/icekiub/Carousel_Pose_changer.json"
-    },
-    {
       "file": "flux-2-klein-9b-fp8.safetensors",
       "folder": "diffusion_models",
       "loaders": [
         "UNETLoader"
       ],
-      "workflow_count": 20,
+      "workflow_count": 21,
       "used_by": [
         "workflows/api-tests/klein-ishona-400.json",
         "workflows/api-tests/klein-ishona-600.json",
@@ -140,6 +142,7 @@
         "workflows/icekiub/ICY_WAN_ANIMATE_-_Full_Body_Swap_-prer-_Icekiub_V4.json",
         "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json",
         "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
+        "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json",
         "workflows/icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5.json",
         "workflows/icekiub/Image_to_image_Klein_edit_-_batch_-_Icekiub_v1.5.json",
         "workflows/icekiub/KLEIN_-_batch_watermark_removal_-_ICEKIUB_V1.json",
@@ -590,6 +593,22 @@
       "evidence": "workflows/icekiub/skool/lessons.json"
     },
     {
+      "file": "krea2_turbo_fp8_scaled.safetensors",
+      "folder": "diffusion_models",
+      "loaders": [
+        "UNETLoader"
+      ],
+      "workflow_count": 3,
+      "used_by": [
+        "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json",
+        "workflows/icekiub/Krea2Icy_-Subs_1.1.json",
+        "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json"
+      ],
+      "repo": "Comfy-Org/Krea-2",
+      "repo_path": "diffusion_models/krea2_turbo_fp8_scaled.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
+    },
+    {
       "file": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
       "folder": "diffusion_models",
       "loaders": [
@@ -740,7 +759,7 @@
       ],
       "repo": "Bryan32/Adetailer",
       "repo_path": "assdetailer-seg.pt",
-      "evidence": "filename match in the repo's public listing"
+      "evidence": "download-plan.json (earlier resolution)"
     },
     {
       "file": "illustriousRealismBy_v10VAE.safetensors",
@@ -756,21 +775,6 @@
       "repo": "Tenofas/ComfyUI",
       "repo_path": "checkpoints/illustriousRealismBy_v10VAE.safetensors",
       "evidence": "download-plan.json (earlier resolution)"
-    },
-    {
-      "file": "krea2_turbo_fp8_scaled.safetensors",
-      "folder": "diffusion_models",
-      "loaders": [
-        "UNETLoader"
-      ],
-      "workflow_count": 2,
-      "used_by": [
-        "workflows/icekiub/Krea2Icy_-Subs_1.1.json",
-        "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json"
-      ],
-      "repo": "Comfy-Org/Krea-2",
-      "repo_path": "diffusion_models/krea2_turbo_fp8_scaled.safetensors",
-      "evidence": "workflows/icekiub/skool/lessons.json"
     },
     {
       "file": "krea2_turbo_lora_rank_64_bf16.safetensors",
@@ -863,6 +867,21 @@
       "repo": "Wan-AI/Wan2.2-Animate-14B",
       "repo_path": "xlm-roberta-large/onnx/model.onnx",
       "evidence": "download-plan.json (earlier resolution)"
+    },
+    {
+      "file": "qwen3vl_4b_fp8_scaled.safetensors",
+      "folder": "text_encoders",
+      "loaders": [
+        "CLIPLoader"
+      ],
+      "workflow_count": 2,
+      "used_by": [
+        "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json",
+        "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json"
+      ],
+      "repo": "Comfy-Org/Krea-2",
+      "repo_path": "text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+      "evidence": "workflows/icekiub/skool/lessons.json"
     },
     {
       "file": "qwen_image_2512_fp8_e4m3fn.safetensors",
@@ -1232,20 +1251,6 @@
       ],
       "repo": "Mamad8/MiniMax-H3-Image-VAE",
       "repo_path": "minimax_h3_t1_image_vae_step1597.safetensors",
-      "evidence": "workflows/icekiub/skool/lessons.json"
-    },
-    {
-      "file": "qwen3vl_4b_fp8_scaled.safetensors",
-      "folder": "text_encoders",
-      "loaders": [
-        "CLIPLoader"
-      ],
-      "workflow_count": 1,
-      "used_by": [
-        "workflows/icekiub/Krea2icysubs-_with_Lm_prompting.json"
-      ],
-      "repo": "Comfy-Org/Krea-2",
-      "repo_path": "text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
       "evidence": "workflows/icekiub/skool/lessons.json"
     },
     {
@@ -1824,6 +1829,39 @@
       ]
     },
     {
+      "file": "4xNomosWebPhoto_RealPLKSR.safetensors",
+      "folder": "upscale_models",
+      "loaders": [
+        "UpscaleModelLoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json"
+      ]
+    },
+    {
+      "file": "Breast_Implanter_v5.0_exp_2770081.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json"
+      ]
+    },
+    {
+      "file": "Krea2-HD-vae.safetensors",
+      "folder": "vae",
+      "loaders": [
+        "VAELoader"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json"
+      ]
+    },
+    {
       "file": "Krea2_Raw_convrot_int8mixed.safetensors",
       "folder": "diffusion_models",
       "loaders": [
@@ -1854,6 +1892,17 @@
       "workflow_count": 1,
       "used_by": [
         "workflows/icekiub/QWEN_Nsfw_Klein_faceswap_-_icekiub_v1.json"
+      ]
+    },
+    {
+      "file": "bfs_head_v1_flux-klein_9b_step3750_rank64.safetensors",
+      "folder": "loras",
+      "loaders": [
+        "LoraLoaderModelOnly"
+      ],
+      "workflow_count": 1,
+      "used_by": [
+        "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json"
       ]
     },
     {
@@ -1979,8 +2028,5 @@
       ]
     }
   ],
-  "repo_errors": {
-    "styler00dollar/VSGAN-tensorrt-docker": "HTTP 401",
-    "Comfy-Org/Chroma1-HD_ComfyUI": "HTTP 401"
-  }
+  "repo_errors": {}
 }

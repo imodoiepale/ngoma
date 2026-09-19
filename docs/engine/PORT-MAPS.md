@@ -6,7 +6,7 @@ beside `<name>.json`). It tells the runner which ComfyUI node and widget holds e
 in the engine guesses node ids at run time: if a map does not name a node, the runner cannot drive
 that port.
 
-Code: `packages/engine/ports.py`. Check: `uv run --quiet --with pyyaml python packages/engine/cli.py ports-check`
+Code: `packages/engine/ports.py`. Check: `python packages/engine/cli.py ports-check`
 (or `tests/test_engine_ports.py`).
 
 ## Schema
@@ -76,6 +76,13 @@ Studio ports come from the catalogue. "-" means the workflow has no such widget.
 | carousel | icekiub/Carousel_Pose_changer_-_Icekiub_V1.7 | image -> LoadImage 13 | - | CR Prompt List 16 [1] (one pose per line) | CLIPTextEncode 8 | KSampler 9 | - (one image per line) | SaveImage 10 |
 | lipsync | MiniMax-H3-Simple-WF/IMG-_-Audio-To-Video | image -> LoadImage 139; audio -> VHS_LoadVideo 155 `video` (audio_to_video) | - | PrimitiveStringMultiline 142 | - | RandomNoise 129 | - | SaveVideo 92 |
 | character-video | h3-refmods/dainamo-refmod-generate | character -> MiniMaxH3RefModsLoader 200 [1] (RefMod name) | - | MiniMaxH3ImageToVideo 127 [0] | - | RandomNoise 128 | - | SaveVideo 136 |
+| klein-headswap (`character-swap`) | icekiub/I2I_no_lora_faceswap_subs | image -> LoadImage 11 (Picture 1, the base), face -> LoadImage 16 (Picture 2, the persona head) | - | CLIPTextEncode 13 (head_swap instruction) | CLIPTextEncode 12 | KSampler 31 | EmptyLatentImage 10 [2] | PreviewImage 2 (no SaveImage; 1 is the before/after strip) |
+| klein-i2i | icekiub/Image_to_image_Klein_edit_-_Icekiub_v1.5 | image -> LoadImage 11 (the reference to recreate) | - | CLIPTextEncode 13 (character description) | CLIPTextEncode 12 | KSampler 31 | EmptyLatentImage 10 [2] | PreviewImage 2 (no SaveImage; 1 is the before/after strip) |
+| faceswap | icekiub/QWEN_ICY_Faceswap_-_SUBS_-_Icekiub_v1 | image -> LoadImage 789 (body, ImpactSwitch 790 = 1), face -> LoadImage 788 | - | TextEncodeQwenImageEditPlus 174 | CLIPTextEncode 111 | FaceDetailer 722 [3] | - (one output per run) | SaveImage 821 (827 is the bypassed upscale pass) |
+| text-to-video | icekiub/LTX2-T2V_-_ICY | - (text only, no LoadImage) | - | CLIPTextEncode 121 | CLIPTextEncode 110 | RandomNoise 115 (upscale pass 114 fixed) | - | VHS_VideoCombine 140 (with LTX audio; `save_output` false -> temp/) |
+| caption-dataset | icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5 | media -> LoadImage 15 (single mode); param folder -> LoadImageListFromDir 18 (batch mode) | - | IcyQwen3AllInOne 1 [5] (caption instruction) | - | IcyQwen3AllInOne 1 [6] | - | SaveImageTextDataSetToFolder 11 (image + .txt pairs, kind text) |
+| long-video | 3-Image-To-Long-Video/3-Image-To-Long-Video | image -> LoadImage 910 (REF 1, identity; REF 2 LoadImage 911 set by hand) | - | MiniMaxH3ReferenceToVideo 110 [0] (clip 1) | - | RandomNoise 120 (clip 1; clip 2 is 210) | - | VHS_VideoCombine 800 (stitched, with audio) |
+| dataset | icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2 | images -> LoadImage 409 (one reference; `each` for a folder) | - | CR Prompt List 152 [1] (one shot per line) | CLIPTextEncode 157 | KSampler 154 | - (images = prompt lines) | PreviewImage 166 (every SaveImage bypassed; enable 408 for output/) |
 
 Things a human must still do (see each map's `notes`):
 
@@ -93,3 +100,23 @@ Things a human must still do (see each map's `notes`):
 - **character-video** / **refmod-create**: RefMods only from references the client owns
   (`docs/H3-REFMODS.md`); the `MiniMaxH3RefModsLoader` field name is inferred from widget layout.
 - **upscale-video**: performer references (LoadImage 64 and 108) are not studio ports; set by hand.
+- **klein-headswap** / **klein-i2i** / **faceswap**: consent steps. The runner refuses a live
+  submission unless every reference collection feeding them has a `collection.json` with
+  `rights` owned, licensed or fictional, and `consent: true` for a real person
+  (`docs/engine/BATCHES.md`). Both Klein maps output a PreviewImage in `temp/`; klein-i2i also
+  needs its character LoRA (LoraLoaderModelOnly 26) and second reference (LoadImage 16) set by
+  hand, and ships `adult: true` in the catalogue. Each of the three has a folder-batch mode
+  inside the workflow (LoadImageListFromDir); the engine binds the single-image path and loops
+  per item instead, so items, seeds and manifests stay under the runner's control.
+- **text-to-video** / **long-video**: the `seconds` parameter is not bound. LTX2 wants a frame
+  count (PrimitiveInt 112, `24 * seconds + 1`); the long video's duration is per clip
+  (PrimitiveFloat 101) with clips 3-6 as bypassed groups, and the clip 2 prompt (node 200) is
+  edited by hand so the scene continues.
+- **caption-dataset**: the single/batch/video mode widget (IcyQwen3AllInOne 1 [4]) is a list the
+  runner does not flip; the shipped file captions one image. Set the trigger word
+  (PrimitiveString 7) before a run. This model is local; BLOCKERS 15 concerns
+  `captioning_workflow.json`, not this file.
+- **dataset**: the second prompt list (CR Prompt List 385) and the full-body prompt
+  (CLIPTextEncode 333) ship with explicit body descriptions; clear or rewrite them before SFW
+  client work. The Z-Image detail groups are bypassed and need `ultrafluxvae.safetensors`,
+  which the download plan does not resolve.

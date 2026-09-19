@@ -18,18 +18,13 @@
     {
       "id": "gpu",
       "label": "ComfyUI on the pod"
-    },
-    {
-      "id": "gaps",
-      "label": "Not runnable yet",
-      "variant": "exception"
     }
   ],
   "mainPath": [
     "n2",
     "n1",
-    "n5",
-    "n6"
+    "n3",
+    "n4"
   ],
   "nodes": [
     {
@@ -61,22 +56,13 @@
     },
     {
       "id": "n4",
-      "lane": "gaps",
-      "col": 2,
-      "type": "security",
-      "label": "LoRA training",
-      "sublabel": "not built yet",
-      "tag": "gap, consent",
-      "width": 112
-    },
-    {
-      "id": "n6",
       "lane": "studio",
       "col": 3,
       "type": "backend",
-      "label": "Export files",
-      "sublabel": "compositor.py",
-      "width": 104
+      "label": "LoRA training",
+      "sublabel": "lora_train.py",
+      "tag": "consent, setup",
+      "width": 112
     },
     {
       "id": "n5",
@@ -85,7 +71,17 @@
       "type": "cloud",
       "label": "Carousel poses",
       "sublabel": "Carousel Pose…",
+      "tag": "setup",
       "width": 120
+    },
+    {
+      "id": "n6",
+      "lane": "studio",
+      "col": 4,
+      "type": "backend",
+      "label": "Export files",
+      "sublabel": "compositor.py",
+      "width": 104
     }
   ],
   "edges": [
@@ -98,25 +94,29 @@
     {
       "from": "n1",
       "to": "n3",
-      "label": "image"
+      "label": "image",
+      "variant": "emphasis"
     },
     {
       "from": "n1",
       "to": "n4",
-      "label": "image",
-      "variant": "dashed"
+      "label": "image"
+    },
+    {
+      "from": "n3",
+      "to": "n4",
+      "label": "text",
+      "variant": "emphasis"
     },
     {
       "from": "n1",
       "to": "n5",
-      "label": "image",
-      "variant": "emphasis"
+      "label": "image"
     },
     {
       "from": "n5",
       "to": "n6",
-      "label": "image",
-      "variant": "emphasis"
+      "label": "image"
     }
   ],
   "cards": [
@@ -136,7 +136,6 @@
       "items": [
         "18+: fictional adults only",
         "Consent on file before any likeness",
-        "Gap: LoRA training not built",
         "Dry-run until approved"
       ]
     }

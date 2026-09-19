@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "id": "batch-character-to-carousels",
+  "title": "Batch: character swap on every reference, then a carousel per result",
+  "client": "_templates",
+  "source": {
+    "pattern": "batch fan-out",
+    "brief": "change the character in my reference images to our persona, then make a carousel of 10 slides for each",
+    "doc": "docs/engine/BATCHES.md"
+  },
+  "created": "2026-09-20",
+  "consent_required": true,
+  "run_mode": "dry-run",
+  "stages": [
+    {"id": "refs", "label": "References", "order": 1},
+    {"id": "swap", "label": "Character swap, one per reference", "order": 2},
+    {"id": "carousels", "label": "Carousel per swapped image", "order": 3},
+    {"id": "finish", "label": "Brand and export as posts", "order": 4}
+  ],
+  "nodes": [
+    {
+      "id": "refs.batch",
+      "kind": "reference-images",
+      "position": {"x": 80, "y": 80},
+      "data": {
+        "params": {"folder": "brands/<workspace>/references/<collection>"},
+        "stage": "refs",
+        "label": "The batch: N owned or fictional reference images (the folder needs collection.json)"
+      }
+    },
+    {
+      "id": "refs.persona",
+      "kind": "reference-images",
+      "position": {"x": 80, "y": 290},
+      "data": {
+        "params": {"folder": "brands/<workspace>/references/<persona-face>"},
+        "stage": "refs",
+        "label": "The persona: one face reference, owned or fictional; a real person only with a written release"
+      }
+    },
+    {
+      "id": "refs.brand-kit",
+      "kind": "brand-kit",
+      "position": {"x": 80, "y": 500},
+      "data": {"params": {}, "stage": "refs"}
+    },
+    {
+      "id": "swap.character-swap",
+      "kind": "klein-headswap",
+      "position": {"x": 400, "y": 80},
+      "data": {
+        "params": {},
+        "each": true,
+        "stage": "swap",
+        "label": "character-swap@each: one head swap per reference image, the persona face bound to every item"
+      }
+    },
+    {
+      "id": "carousels.carousel",
+      "kind": "carousel",
+      "position": {"x": 720, "y": 80},
+      "data": {
+        "params": {"slides": 10},
+        "each": true,
+        "stage": "carousels",
+        "label": "carousel@each: 10 pose slides per swapped image; each item keeps its source group"
+      }
+    },
+    {
+      "id": "finish.compositor",
+      "kind": "compositor",
+      "position": {"x": 1040, "y": 80},
+      "data": {
+        "params": {"ratio": "4:5"},
+        "stage": "finish",
+        "label": "Logo and exact copy on every slide, numbered within its post"
+      }
+    },
+    {
+      "id": "finish.export",
+      "kind": "export",
+      "position": {"x": 1360, "y": 80},
+      "data": {
+        "params": {},
+        "stage": "finish",
+        "label": "posts/<group>/slide-<n>.png: one folder per source image, ready to publish"
+      }
+    }
+  ],
+  "edges": [
+    {"id": "e1", "source": "refs.batch", "sourceHandle": "images", "target": "swap.character-swap", "targetHandle": "image", "type": "image"},
+    {"id": "e2", "source": "refs.persona", "sourceHandle": "images", "target": "swap.character-swap", "targetHandle": "face", "type": "image"},
+    {"id": "e3", "source": "swap.character-swap", "sourceHandle": "image", "target": "carousels.carousel", "targetHandle": "image", "type": "image"},
+    {"id": "e4", "source": "carousels.carousel", "sourceHandle": "images", "target": "finish.compositor", "targetHandle": "media", "type": "image"},
+    {"id": "e5", "source": "refs.brand-kit", "sourceHandle": "brand", "target": "finish.compositor", "targetHandle": "brand", "type": "brand"},
+    {"id": "e6", "source": "finish.compositor", "sourceHandle": "image", "target": "finish.export", "targetHandle": "media", "type": "image"}
+  ],
+  "gaps": [],
+  "family": "volume",
+  "compliance": "References owned, licensed or fictional with collection.json; a real face only with a written release recorded as consent: true. The runner refuses the swap step otherwise."
+}

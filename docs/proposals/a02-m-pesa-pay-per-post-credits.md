@@ -19,13 +19,13 @@ Studio template: [`a02-m-pesa-pay-per-post-credits.studio.json`](../../brands/_t
 
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
-| ongea-pesa | not runnable yet | no catalogue node runs 'ongea-pesa' yet | — |
-| Reference images | you provide |  | — |
+| Brief | you provide |  | — |
+| Image (hosted) | hosted model | `daily_premium` | — |
 | Brand kit | brand.yaml |  | — |
 | Brand compositor | studio code | `packages/compositor/compositor.py` | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
-67% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -41,15 +41,19 @@ Setup budget $800. Fixed monthly spend $100. First cash in about 45 days.
 
 ## What is not ready
 
-- **ongea-pesa**: no catalogue node runs 'ongea-pesa' yet
+- Nothing structural. Every step has a backend and every model it names has a source; it still needs a live run.
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: the `ongea-pesa` payment step left the content pipeline. Collecting KES 50 is the Ongea Pesa product's job (Safaricom Daraja STK push) before an order reaches the studio; no module in packages/ talks to Daraja and a payment gate is not a creative step. The studio side is the hosted image plus the compositor.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 0 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch informal traders with the pilot; target the low scenario (500 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

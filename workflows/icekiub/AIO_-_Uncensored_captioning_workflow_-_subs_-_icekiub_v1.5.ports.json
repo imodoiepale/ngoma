@@ -1,0 +1,50 @@
+{
+  "workflow": "icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json",
+  "sha256": "f0fb6221fa24988bf2c23f4d6db8b28ba8a7dec5458439d3addcfa3c2bd29753",
+  "format": "ui",
+  "inputs": {
+    "media": {
+      "node": "15",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "Single-image mode (IcyQwen3AllInOne 1 widget 4 = 'single', as shipped). LoadImage expects a filename inside the ComfyUI input folder (upload first). For a whole dataset use the `folder` parameter and switch widget 4 to 'batch'; VHS_LoadVideo 14 is the 'video' mode (frames captioned together)."
+    }
+  },
+  "params": {
+    "folder": {
+      "node": "18",
+      "class": "LoadImageListFromDir //Inspire",
+      "field": "directory",
+      "widget_index": 0,
+      "note": "A folder on the ComfyUI machine (shipped: E:\\ComfyUI\\output\\lora_dataset). Only read when IcyQwen3AllInOne 1 widget 4 is 'batch'; the runner does not flip that widget."
+    }
+  },
+  "prompt": {
+    "node": "1",
+    "class": "IcyQwen3AllInOne",
+    "field": "prompt",
+    "widget_index": 5,
+    "note": "The caption instruction. The shipped text asks for sexually explicit descriptions; the studio prompt replaces it (for SFW datasets: describe pose, framing, wardrobe, lighting and background, never the person's identity)."
+  },
+  "seed": {
+    "node": "1",
+    "class": "IcyQwen3AllInOne",
+    "field": "seed",
+    "widget_index": 6
+  },
+  "outputs": {
+    "captions": {
+      "node": "11",
+      "class": "SaveImageTextDataSetToFolder",
+      "kind": "text",
+      "note": "Writes image + .txt pairs into output/<trigger word> (folder_name and filename_prefix are wired from PrimitiveString 7). The caption is StringConcatenate 8: trigger word, then the model text. ShowText 4 and PreviewImage 5 only display."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "Trigger word / character name: PrimitiveString 7 widget 0 (shipped: 'Laura'); set it to the persona's token before a run.",
+    "Model: Qwen3-VL-4B-Instruct-abliterated-FP8 loaded by IcyQwen3AllInOne 1 widget 0 (icekiub/ComfyUI-IcyQwen3); local, no LM Studio server needed (BLOCKERS 15 concerns captioning_workflow.json, not this file).",
+    "Mode widget (IcyQwen3AllInOne 1 widget 4) is a list widget, so the runner cannot switch single/batch/video for you; the shipped file captions one image."
+  ]
+}

@@ -21,7 +21,7 @@ Studio template: [`p06-character-boards-and-datasets.studio.json`](../../brands/
 |---|---|---|---|
 | Reference images | you provide |  | — |
 | Character sheet | ComfyUI on the pod | `workflows/icekiub/icy_ref_character_sheet_for_minimax.json` | Consent |
-| Character dataset | ComfyUI on the pod | `workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json` | Consent |
+| Character dataset | ComfyUI on the pod | `workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json` | Consent |
 | Caption a dataset | ComfyUI on the pod | `workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json` | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 

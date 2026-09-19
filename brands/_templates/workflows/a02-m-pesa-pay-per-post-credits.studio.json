@@ -7,24 +7,38 @@
     "idea": "A02",
     "offer": "Pay KES 50 via M-Pesa for one branded post"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
-      "id": "n1",
-      "kind": "unmapped",
+      "id": "n2",
+      "kind": "brief",
       "position": {
         "x": 80,
         "y": 80
       },
       "data": {
-        "step": "ongea-pesa",
         "params": {}
       }
     },
     {
-      "id": "n3",
-      "kind": "reference-images",
+      "id": "n1",
+      "kind": "image-hosted",
+      "position": {
+        "x": 400,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "profile": "daily_premium",
+          "ratio": "4:5"
+        },
+        "alias": "nano-banana-2"
+      }
+    },
+    {
+      "id": "n4",
+      "kind": "brand-kit",
       "position": {
         "x": 80,
         "y": 290
@@ -34,21 +48,10 @@
       }
     },
     {
-      "id": "n4",
-      "kind": "brand-kit",
-      "position": {
-        "x": 80,
-        "y": 500
-      },
-      "data": {
-        "params": {}
-      }
-    },
-    {
-      "id": "n2",
+      "id": "n3",
       "kind": "compositor",
       "position": {
-        "x": 400,
+        "x": 720,
         "y": 80
       },
       "data": {
@@ -61,7 +64,7 @@
       "id": "n5",
       "kind": "export",
       "position": {
-        "x": 720,
+        "x": 1040,
         "y": 80
       },
       "data": {
@@ -72,36 +75,46 @@
   "edges": [
     {
       "id": "e1",
-      "source": "n3",
-      "sourceHandle": "images",
-      "target": "n2",
+      "source": "n2",
+      "sourceHandle": "text",
+      "target": "n1",
+      "targetHandle": "prompt",
+      "type": "text"
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "sourceHandle": "image",
+      "target": "n3",
       "targetHandle": "media",
       "type": "image"
     },
     {
-      "id": "e2",
+      "id": "e3",
       "source": "n4",
       "sourceHandle": "brand",
-      "target": "n2",
+      "target": "n3",
       "targetHandle": "brand",
       "type": "brand"
     },
     {
-      "id": "e3",
+      "id": "e4",
       "source": "n2",
+      "sourceHandle": "text",
+      "target": "n3",
+      "targetHandle": "copy",
+      "type": "text"
+    },
+    {
+      "id": "e5",
+      "source": "n3",
       "sourceHandle": "image",
       "target": "n5",
       "targetHandle": "media",
       "type": "image"
     }
   ],
-  "gaps": [
-    {
-      "node": "n1",
-      "step": "ongea-pesa",
-      "reason": "no catalogue node runs 'ongea-pesa' yet"
-    }
-  ],
+  "gaps": [],
   "family": "saas",
   "compliance": "CBK payment rules; Daraja terms"
 }

@@ -15,7 +15,7 @@ fragments, never a port.
 | one photo of the avatar or product | `carousel` Carousel poses | `image` | bulk pose change: a whole consistent photoset from that one photo | owned or licensed data |
 | a handful of photos of one character | `dataset` Character dataset | `images` | a 40-image training set and character board | consent |
 | 12 or more photos of one person | `refmod-create` RefMod character | `images` | a reusable character file, no training | consent |
-| one or more images for `images` | `lora-train` LoRA training | `images` | Train a character LoRA | consent |
+| one or more images for `images` | `lora-train` LoRA training | `images` | Plans an ostris/ai-toolkit character LoRA job from an owned, fictional or consented reference collection: rights gate, config.yaml, captions, pod launch command and manifest. Training itself runs on the pod from launch.sh, by a person | consent |
 | the target image | `faceswap` Face swap | `image` | everything but the face stays | consent |
 | one face photo | `faceswap` Face swap | `face` | identity swap; consented faces only | consent |
 | one still | `long-video` Long video (H3) | `image` | a long, extended clip that starts from it | owned or licensed data |
@@ -28,6 +28,7 @@ fragments, never a port.
 | an old or damaged photo | `restore` Restore photo | `image` | repair, colourise and sharpen | owned or licensed data |
 | a video clip for `video` | `relight` Relight | `video` | Change the light on footage | owned or licensed data |
 | raw clips | `cut` Cut and loop | `video` | trimmed, looped and picked | owned or licensed data |
+| a video clip for `background` | `motion-graphics` Motion graphics | `background` | Typed text, kinetic type, lower thirds and phone mock-ups from a JSON spec, drawn with Pillow in the brand kit's colours and encoded by ffmpeg; over footage when a clip is wired in. No GPU, no Node | owned or licensed data |
 | a finished image | `compositor` Brand compositor | `media` | exact copy, logo and palette laid on top | owned or licensed data |
 | a finished clip | `captions` Captions | `video` | burned-in subtitles from the script | owned or licensed data |
 | a voiceover or music track | `captions` Captions | `audio` | the soundtrack the subtitles are timed to | owned or licensed data |
@@ -58,4 +59,4 @@ fragments, never a port.
 | one or more images for `candidates` | `pick` Your pick | `candidates` | Choose the keepers from the candidates; nothing downstream runs until you do | owned or licensed data |
 | a video clip for `candidates` | `pick-video` Your pick (video) | `candidates` | Choose the clips to keep | owned or licensed data |
 
-48 rows: 14 need consent, 33 need owned or licensed data, 1 inspiration only.
+49 rows: 14 need consent, 34 need owned or licensed data, 1 inspiration only.

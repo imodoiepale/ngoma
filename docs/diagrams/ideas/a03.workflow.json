@@ -14,36 +14,21 @@
     {
       "id": "studio",
       "label": "Studio code"
-    },
-    {
-      "id": "gaps",
-      "label": "Not runnable yet",
-      "variant": "exception"
     }
   ],
   "mainPath": [
-    "n3",
     "n2",
+    "n1",
+    "n3",
     "n5"
   ],
   "nodes": [
     {
-      "id": "n3",
+      "id": "n2",
       "lane": "you",
       "col": 0,
       "type": "frontend",
-      "label": "Reference images",
-      "width": 132
-    },
-    {
-      "id": "n1",
-      "lane": "gaps",
-      "col": 0,
-      "type": "security",
-      "label": "Comfy client",
-      "sublabel": "no node yet",
-      "tag": "gap",
-      "width": 104
+      "label": "Brief"
     },
     {
       "id": "n4",
@@ -53,9 +38,18 @@
       "label": "Brand kit"
     },
     {
-      "id": "n2",
+      "id": "n1",
       "lane": "studio",
       "col": 1,
+      "type": "backend",
+      "label": "Image job (API client)",
+      "sublabel": "client.py",
+      "width": 176
+    },
+    {
+      "id": "n3",
+      "lane": "studio",
+      "col": 2,
       "type": "backend",
       "label": "Brand compositor",
       "sublabel": "compositor.py",
@@ -64,7 +58,7 @@
     {
       "id": "n5",
       "lane": "studio",
-      "col": 2,
+      "col": 3,
       "type": "backend",
       "label": "Export files",
       "sublabel": "compositor.py",
@@ -73,18 +67,29 @@
   ],
   "edges": [
     {
-      "from": "n3",
-      "to": "n2",
+      "from": "n2",
+      "to": "n1",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n1",
+      "to": "n3",
       "label": "image",
       "variant": "emphasis"
     },
     {
       "from": "n4",
-      "to": "n2",
+      "to": "n3",
       "label": "brand"
     },
     {
       "from": "n2",
+      "to": "n3",
+      "label": "text"
+    },
+    {
+      "from": "n3",
       "to": "n5",
       "label": "image",
       "variant": "emphasis"
@@ -102,10 +107,9 @@
       ]
     },
     {
-      "dot": "rose",
+      "dot": "amber",
       "title": "Rules",
       "items": [
-        "Gap: Comfy client not built",
         "Dry-run until approved",
         "Logo composited, never generated"
       ]

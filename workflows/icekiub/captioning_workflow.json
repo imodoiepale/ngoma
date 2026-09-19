@@ -1,0 +1,594 @@
+{
+  "id": "5bd2cfa6-d2a0-4282-9873-562c23655a47",
+  "revision": 0,
+  "last_node_id": 18,
+  "last_link_id": 26,
+  "nodes": [
+    {
+      "id": 11,
+      "type": "SaveImageTextDataSetToFolder",
+      "pos": [
+        302.65585482834035,
+        -1444.6910299325395
+      ],
+      "size": [
+        360,
+        200
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 10
+        },
+        {
+          "name": "texts",
+          "shape": 7,
+          "type": "STRING",
+          "link": 22
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.24.0",
+        "Node name for S&R": "SaveImageTextDataSetToFolder",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "l0ra",
+        "image",
+        "overwrite"
+      ],
+      "widgets_values_named": {
+        "folder_name": "l0ra",
+        "filename_prefix": "image",
+        "mode": "overwrite"
+      }
+    },
+    {
+      "id": 10,
+      "type": "SaveText|pysssss",
+      "pos": [
+        295.31148549116233,
+        -1726.4750953604043
+      ],
+      "size": [
+        352.74824937669723,
+        203.18125012668747
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "SaveText|pysssss",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "output",
+        "img.txt",
+        "append",
+        true
+      ],
+      "widgets_values_named": {
+        "root_dir": "output",
+        "file": "img.txt",
+        "append": "append",
+        "insert": true
+      }
+    },
+    {
+      "id": 17,
+      "type": "ICYLMStudioMultimodalPrompt",
+      "pos": [
+        -975.481611988103,
+        -1756.1373116806813
+      ],
+      "size": [
+        412.5333251953125,
+        1343.11669921875
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "showAdvanced": true,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 25
+        },
+        {
+          "name": "image2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "image8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "frames",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "response_text",
+          "type": "STRING",
+          "links": [
+            20,
+            21,
+            22
+          ]
+        },
+        {
+          "name": "debug_json",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ICYLMStudioMultimodalPrompt",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "27ccb0920352c0c37b3a96441873c8d37bd52fb6",
+        "qwen",
+        "You are a dataset captioner for a character LoRA on Krea 2. You will be shown\nphotos of the same subject — one image at a time. For each image, output exactly\none caption and nothing else.\n\n# CORE PRINCIPLE\nCaption what training should make prompt-controllable; omit what should be baked\ninto the model. Anything constant across the dataset is identity, is carried by\nthe trigger word, and is never written. Anything that varies from image to image\nmust always be written, using exactly the same words every time it appears.\n\n# IDENTITY — NEVER WRITE\n- The subject's name, or any description of face and body (features, skin tone,\n  age, ethnicity, build).\n- Anything on this bake-in list: <e.g. \"shoulder-length auburn hair, green eyes\">\n- Opinions or mood words (\"beautiful\", \"stunning\"). Describe only what is visible.\n- Image quality, compression, watermarks, artifacts.\n\n# RECURRING OPTIONAL ITEMS — ALWAYS TAG\nThese appear in many images but must stay promptable, never baked in:\n  <item — fixed phrase(s), e.g. \"earrings — 'gold hoop earrings' / 'pearl\n  earrings' / 'diamond stud earrings'\"; \"glasses — 'round black glasses'\">\nFor every item on this list:\n- If visible in any way (partially, out of focus, catching light), name it using\n  ONLY its fixed phrase. Never paraphrase, never improvise another wording.\n- If its absence is clearly visible (e.g. bare ears, no glasses on face), state\n  \"no <item>\".\n- Never skip a present item, never invent an absent one. If unsure whether it is\n  visible, leave it out entirely.\nAny other visible accessory not on the list (hat, necklace, watch, nail color)\nis still described plainly — detachable items are always promptable.\n\n# ALWAYS DESCRIBE WHEN VISIBLE AND VARIABLE\n- Hair styling (updo, ponytail, waves, straight); omit if the same in every image.\n- Outfit: garment types, colors, notable fit or fabric; footwear if visible.\n- Pose, action, gaze direction, expression.\n- Framing: close-up, head-and-shoulders portrait, waist-up, knee-up, or full-body.\n- Setting and background: the elements needed to recreate the scene.\n- Lighting: golden hour, studio lighting, direct flash, soft window light, neon\n  night lighting — Krea 2 responds strongly to lighting language, so include it\n  whenever it shapes the image.\n- Photo look: the photographic style, e.g. \"candid smartphone photo\", \"editorial\n  fashion photograph\", \"shot on 35mm film\", \"amateur flash photo\", \"studio\n  portrait on seamless backdrop\". Always include this — it is a main control\n  axis of the model.\n\n# STYLE RULES\n- Natural, flowing descriptive prose — the way Krea 2 was trained. 2–4\n  sentences, roughly 40–90 words. Full sentences, no comma-separated tag lists.\n- Present tense, describing the image as a scene: subject and action first, then\n  clothing and accessories, then setting, lighting, and photo look.\n- Begin every caption with the trigger token: <cl4r4>\n- Concrete visual language only. No metaphors, no lens jargon beyond the photo\n  look, no synonyms — the same thing must always get the same words.\n- Output the caption only: no quotes, no labels, no alternatives, no\n  explanations. When uncertain something is visible, omit it rather than guess.\n",
+        "prompt",
+        5,
+        "fixed",
+        1,
+        0.8,
+        5008,
+        "low",
+        true,
+        true,
+        true,
+        8,
+        1,
+        "evenly_spaced",
+        "frames",
+        24,
+        false,
+        "transcript",
+        "",
+        "http://192.168.2.20:8080",
+        170,
+        false,
+        37376,
+        false,
+        true,
+        ""
+      ],
+      "widgets_values_named": {
+        "model": "27ccb0920352c0c37b3a96441873c8d37bd52fb6",
+        "model_override": "qwen",
+        "system_prompt": "You are a dataset captioner for a character LoRA on Krea 2. You will be shown\nphotos of the same subject — one image at a time. For each image, output exactly\none caption and nothing else.\n\n# CORE PRINCIPLE\nCaption what training should make prompt-controllable; omit what should be baked\ninto the model. Anything constant across the dataset is identity, is carried by\nthe trigger word, and is never written. Anything that varies from image to image\nmust always be written, using exactly the same words every time it appears.\n\n# IDENTITY — NEVER WRITE\n- The subject's name, or any description of face and body (features, skin tone,\n  age, ethnicity, build).\n- Anything on this bake-in list: <e.g. \"shoulder-length auburn hair, green eyes\">\n- Opinions or mood words (\"beautiful\", \"stunning\"). Describe only what is visible.\n- Image quality, compression, watermarks, artifacts.\n\n# RECURRING OPTIONAL ITEMS — ALWAYS TAG\nThese appear in many images but must stay promptable, never baked in:\n  <item — fixed phrase(s), e.g. \"earrings — 'gold hoop earrings' / 'pearl\n  earrings' / 'diamond stud earrings'\"; \"glasses — 'round black glasses'\">\nFor every item on this list:\n- If visible in any way (partially, out of focus, catching light), name it using\n  ONLY its fixed phrase. Never paraphrase, never improvise another wording.\n- If its absence is clearly visible (e.g. bare ears, no glasses on face), state\n  \"no <item>\".\n- Never skip a present item, never invent an absent one. If unsure whether it is\n  visible, leave it out entirely.\nAny other visible accessory not on the list (hat, necklace, watch, nail color)\nis still described plainly — detachable items are always promptable.\n\n# ALWAYS DESCRIBE WHEN VISIBLE AND VARIABLE\n- Hair styling (updo, ponytail, waves, straight); omit if the same in every image.\n- Outfit: garment types, colors, notable fit or fabric; footwear if visible.\n- Pose, action, gaze direction, expression.\n- Framing: close-up, head-and-shoulders portrait, waist-up, knee-up, or full-body.\n- Setting and background: the elements needed to recreate the scene.\n- Lighting: golden hour, studio lighting, direct flash, soft window light, neon\n  night lighting — Krea 2 responds strongly to lighting language, so include it\n  whenever it shapes the image.\n- Photo look: the photographic style, e.g. \"candid smartphone photo\", \"editorial\n  fashion photograph\", \"shot on 35mm film\", \"amateur flash photo\", \"studio\n  portrait on seamless backdrop\". Always include this — it is a main control\n  axis of the model.\n\n# STYLE RULES\n- Natural, flowing descriptive prose — the way Krea 2 was trained. 2–4\n  sentences, roughly 40–90 words. Full sentences, no comma-separated tag lists.\n- Present tense, describing the image as a scene: subject and action first, then\n  clothing and accessories, then setting, lighting, and photo look.\n- Begin every caption with the trigger token: <cl4r4>\n- Concrete visual language only. No metaphors, no lens jargon beyond the photo\n  look, no synonyms — the same thing must always get the same words.\n- Output the caption only: no quotes, no labels, no alternatives, no\n  explanations. When uncertain something is visible, omit it rather than guess.\n",
+        "prompt": "prompt",
+        "seed": 5,
+        "control_after_generate": "fixed",
+        "temperature": 1,
+        "top_p": 0.8,
+        "max_tokens": 5008,
+        "thinking": "low",
+        "only_after_think_tag": true,
+        "enable_cache": true,
+        "clear_cache": true,
+        "video_path": 8,
+        "video_frames_to_process": 1,
+        "video_frame_mode": "evenly_spaced",
+        "frames_as": "frames",
+        "video_fps": 24,
+        "audio_path": false,
+        "audio_as": "transcript",
+        "audio_transcript": "",
+        "base_url": "http://192.168.2.20:8080",
+        "timeout_seconds": 170,
+        "auto_load_model": false,
+        "load_context_length": 37376,
+        "stream_response": false,
+        "unload_after": true,
+        "ICYLM Status": ""
+      }
+    },
+    {
+      "id": 18,
+      "type": "ImageResizeKJv2",
+      "pos": [
+        -1327.9269297991095,
+        -1674.9115501431684
+      ],
+      "size": [
+        270,
+        286
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 26
+        },
+        {
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            25
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "1.4.9",
+        "Node name for S&R": "ImageResizeKJv2"
+      },
+      "widgets_values": [
+        512,
+        512,
+        "nearest-exact",
+        "resize",
+        "0, 0, 0",
+        "center",
+        2,
+        "cpu"
+      ],
+      "widgets_values_named": {
+        "width": 512,
+        "height": 512,
+        "upscale_method": "nearest-exact",
+        "keep_proportion": "resize",
+        "pad_color": "0, 0, 0",
+        "crop_position": "center",
+        "divisible_by": 2,
+        "device": "cpu"
+      }
+    },
+    {
+      "id": 14,
+      "type": "PreviewImage",
+      "pos": [
+        -1362.4237173859674,
+        -1327.913907312524
+      ],
+      "size": [
+        297.355976892484,
+        615.6838964647928
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 14
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            26
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.24.0",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 13,
+      "type": "ShowText|pysssss",
+      "pos": [
+        -508.65259616638843,
+        -1764.2316025557402
+      ],
+      "size": [
+        760,
+        990.0000000000008
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 20
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-custom-scripts",
+        "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+        "Node name for S&R": "ShowText|pysssss",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "<cl4r4> A waist-up studio portrait of a woman standing front-facing with a neutral expression, arms resting at her sides. She wears a black long-sleeve knit dress with a deep V-neck and three front buttons, gold hoop earrings, and no glasses. Her hair falls straight down past her shoulders. Soft even studio lighting falls on a plain cream seamless backdrop, giving a clean editorial studio look.",
+        "<cl4r4> A woman with long straight red hair stands turned away from the camera, looking back over her bare shoulder with a blank, unsmiling expression. She wears a textured black off-the-shoulder top with long sleeves and a buttoned front, with no earrings or glasses visible. A plain white wall behind her catches a hard cast shadow of her silhouette, lit by direct flash. The image reads as a candid amateur flash photograph, slightly grainy and loosely posed.",
+        "<cl4r4> A low-angle waist-up shot of the subject leaning back against a plain white wall, tilting her head down to look toward the camera with a relaxed, half-lidded gaze. She wears a black buttoned knit cardigan over a black dress, with a thin gold chain necklace at the throat, and long straight auburn hair with lighter streaks falling past the shoulders. The lighting is flat and soft, consistent with a candid indoor smartphone photo.",
+        "<cl4r4> Waist-up framing cropped at the lips, the subject stands facing forward with hands clasped low in frame, long straight auburn hair draped forward over the shoulders. She wears a fitted black knit cardigan with a deep V neckline and front buttons, paired with a black skirt, a thin gold chain necklace at the throat, and a small ring on one finger. The setting is a plain white wall under soft, even indoor light, shot as a casual indoor photograph.",
+        "<cl4r4> A three-quarter profile portrait with the head tilted and the gaze lifted away from the camera, one hand drawn up to the chin. She wears a long black knit cardigan over a black dress, dark burgundy nail polish, and gold hoop earrings catching the light. The background is a plain white wall corner under soft, diffuse indoor light, giving the image the look of a softly focused fashion portrait on a minimal backdrop.",
+        "<cl4r4> A close-up profile beauty portrait of a woman turned in side view, eyes open and gazing forward with a neutral expression and lips slightly parted. Her long hair is wet and slicked straight, falling forward and back around the face, with no earrings and no glasses. The background is a plain off-white textured wall lit by soft, diffuse light. Shot as an editorial beauty photograph with shallow depth of field.",
+        "<cl4r4> A tight profile close-up of a woman facing right, her wet hair slicked straight back with fine flyaways along the scalp and cheek. She gazes forward with a neutral expression, lips slightly parted, set against a plain cream seamless backdrop. Soft, even studio light rakes across the face, rendering skin texture in crisp high-resolution detail. Editorial beauty-photograph look.",
+        "<cl4r4> A close-up, head-and-shoulders portrait of the subject facing the camera with a neutral expression and a slight head tilt, set against a plain off-white wall. Long straight hair falls over both shoulders, a thin gold hoop earring catches the light at one ear, and no glasses are present. She wears a light cream top, mostly out of frame. Soft diffused window light wraps the face evenly, rendered as a candid soft-focus digital portrait.",
+        "<cl4r4> A head-and-shoulders beauty portrait, the subject turned slightly away with a neutral expression and gaze cast off to the side, lips softly parted. Long straight hair falls over both shoulders, framing the face. No jewelry or glasses are visible. The backdrop is a plain off-white wall under soft diffused studio light. Editorial beauty photograph, high-key, shallow depth of field.",
+        "<cl4r4> A woman lies back against a pale off-white wall, her head tilted up and gazing down toward the camera with a relaxed, neutral expression. Long straight auburn hair falls in a center part framing her face, and a thin gold hoop earring catches the light at her ear. Soft diffused window light washes over the scene in a candid, low-angle close-up smartphone portrait."
+      ],
+      "widgets_values_named": {
+        "text_0": "<cl4r4> A waist-up studio portrait of a woman standing front-facing with a neutral expression, arms resting at her sides. She wears a black long-sleeve knit dress with a deep V-neck and three front buttons, gold hoop earrings, and no glasses. Her hair falls straight down past her shoulders. Soft even studio lighting falls on a plain cream seamless backdrop, giving a clean editorial studio look.",
+        "text_1": "<cl4r4> A woman with long straight red hair stands turned away from the camera, looking back over her bare shoulder with a blank, unsmiling expression. She wears a textured black off-the-shoulder top with long sleeves and a buttoned front, with no earrings or glasses visible. A plain white wall behind her catches a hard cast shadow of her silhouette, lit by direct flash. The image reads as a candid amateur flash photograph, slightly grainy and loosely posed.",
+        "text_2": "<cl4r4> A low-angle waist-up shot of the subject leaning back against a plain white wall, tilting her head down to look toward the camera with a relaxed, half-lidded gaze. She wears a black buttoned knit cardigan over a black dress, with a thin gold chain necklace at the throat, and long straight auburn hair with lighter streaks falling past the shoulders. The lighting is flat and soft, consistent with a candid indoor smartphone photo.",
+        "text_3": "<cl4r4> Waist-up framing cropped at the lips, the subject stands facing forward with hands clasped low in frame, long straight auburn hair draped forward over the shoulders. She wears a fitted black knit cardigan with a deep V neckline and front buttons, paired with a black skirt, a thin gold chain necklace at the throat, and a small ring on one finger. The setting is a plain white wall under soft, even indoor light, shot as a casual indoor photograph.",
+        "text_4": "<cl4r4> A three-quarter profile portrait with the head tilted and the gaze lifted away from the camera, one hand drawn up to the chin. She wears a long black knit cardigan over a black dress, dark burgundy nail polish, and gold hoop earrings catching the light. The background is a plain white wall corner under soft, diffuse indoor light, giving the image the look of a softly focused fashion portrait on a minimal backdrop.",
+        "text_5": "<cl4r4> A close-up profile beauty portrait of a woman turned in side view, eyes open and gazing forward with a neutral expression and lips slightly parted. Her long hair is wet and slicked straight, falling forward and back around the face, with no earrings and no glasses. The background is a plain off-white textured wall lit by soft, diffuse light. Shot as an editorial beauty photograph with shallow depth of field.",
+        "text_6": "<cl4r4> A tight profile close-up of a woman facing right, her wet hair slicked straight back with fine flyaways along the scalp and cheek. She gazes forward with a neutral expression, lips slightly parted, set against a plain cream seamless backdrop. Soft, even studio light rakes across the face, rendering skin texture in crisp high-resolution detail. Editorial beauty-photograph look.",
+        "text_7": "<cl4r4> A close-up, head-and-shoulders portrait of the subject facing the camera with a neutral expression and a slight head tilt, set against a plain off-white wall. Long straight hair falls over both shoulders, a thin gold hoop earring catches the light at one ear, and no glasses are present. She wears a light cream top, mostly out of frame. Soft diffused window light wraps the face evenly, rendered as a candid soft-focus digital portrait.",
+        "text_8": "<cl4r4> A head-and-shoulders beauty portrait, the subject turned slightly away with a neutral expression and gaze cast off to the side, lips softly parted. Long straight hair falls over both shoulders, framing the face. No jewelry or glasses are visible. The backdrop is a plain off-white wall under soft diffused studio light. Editorial beauty photograph, high-key, shallow depth of field.",
+        "text_9": "<cl4r4> A woman lies back against a pale off-white wall, her head tilted up and gazing down toward the camera with a relaxed, neutral expression. Long straight auburn hair falls in a center part framing her face, and a thin gold hoop earring catches the light at her ear. Soft diffused window light washes over the scene in a candid, low-angle close-up smartphone portrait."
+      }
+    },
+    {
+      "id": 3,
+      "type": "LoadImageListFromDir //Inspire",
+      "pos": [
+        -1767.0405993332156,
+        -1688.355053105032
+      ],
+      "size": [
+        330,
+        217.80033641930277
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": [
+            10,
+            14
+          ]
+        },
+        {
+          "name": "MASK",
+          "shape": 6,
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "FILE PATH",
+          "shape": 6,
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-inspire-pack",
+        "ver": "1.23.0",
+        "Node name for S&R": "LoadImageListFromDir //Inspire",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.7"
+        }
+      },
+      "widgets_values": [
+        "G:\\datasset\\datatasset",
+        862,
+        0,
+        false,
+        "None"
+      ],
+      "widgets_values_named": {
+        "directory": "G:\\datasset\\datatasset",
+        "image_load_cap": 862,
+        "start_index": 0,
+        "load_always": false,
+        "sort_method": "None"
+      }
+    }
+  ],
+  "links": [
+    [
+      10,
+      3,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      14,
+      3,
+      0,
+      14,
+      0,
+      "IMAGE"
+    ],
+    [
+      20,
+      17,
+      0,
+      13,
+      0,
+      "STRING"
+    ],
+    [
+      21,
+      17,
+      0,
+      10,
+      0,
+      "STRING"
+    ],
+    [
+      22,
+      17,
+      0,
+      11,
+      1,
+      "STRING"
+    ],
+    [
+      25,
+      18,
+      0,
+      17,
+      0,
+      "IMAGE"
+    ],
+    [
+      26,
+      14,
+      0,
+      18,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 0.5730855330117334,
+      "offset": [
+        2269.9486349583262,
+        2766.080102575608
+      ]
+    },
+    "frontendVersion": "1.51.10",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

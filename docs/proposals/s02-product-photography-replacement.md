@@ -23,11 +23,10 @@ Studio template: [`s02-product-photography-replacement.studio.json`](../../brand
 | Brief | you provide |  | — |
 | Image edit | ComfyUI on the pod | `workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v1_.json` | — |
 | Video clip | you provide |  | — |
-| Relight | not runnable yet | No video relight workflow in the library yet. | — |
 | Upscale video | ComfyUI on the pod | `workflows/h3/NEW_-_V2V_Latent_Motion_Transfer_with_upscale_and_de-rope_.json` | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
-75% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -43,16 +42,19 @@ Setup budget $250. Fixed monthly spend $60. First cash in about 14 days.
 
 ## What is not ready
 
-- **Relight**: No video relight workflow in the library yet.
 - Models with no public source yet (see `infra/runpod/download-plan.json`): 1GIRL_QWEN_V3.safetensors, RemyTurbov2_000000500.safetensors, minimax_h3_latent_upscaler_3d_fp16.safetensors, ultrafluxvae.safetensors
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: the video `relight` gap was the wrong step for stills; the pipeline now uses `product-relight`, which the Qwen image-edit workflow already runs by instruction (same node as klein-edit, so the template shows one edit step).
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 10 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch retailers paying for studio shoots with the pilot; target the low scenario (1 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

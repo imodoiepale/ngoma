@@ -21,10 +21,10 @@ Studio template: [`p01-own-ai-influencer.studio.json`](../../brands/_templates/w
 |---|---|---|---|
 | Brief | you provide |  | — |
 | Krea 2 realism image | ComfyUI on the pod | `workflows/icekiub/Krea2Icy_-Subs_1.1.json` | — |
-| Character dataset | ComfyUI on the pod | `workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json` | Consent |
+| Character dataset | ComfyUI on the pod | `workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json` | Consent |
 | Caption a dataset | ComfyUI on the pod | `workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json` | — |
 | RefMod character | ComfyUI on the pod | `workflows/h3-refmods/franckyb-refmod-create-from-folder.json` | Consent |
-| Carousel poses | ComfyUI on the pod | `workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json` | — |
+| Carousel poses | ComfyUI on the pod | `workflows/icekiub/Carousel_Pose_changer_-_Icekiub_V1.7.json` (needs setup: BLOCKERS 3) | — |
 | Long video (H3) | ComfyUI on the pod | `workflows/3-Image-To-Long-Video/3-Image-To-Long-Video.json` | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
@@ -44,6 +44,7 @@ Setup budget $600. Fixed monthly spend $150. First cash in about 90 days.
 
 ## What is not ready
 
+- **Carousel poses** needs setup (`docs/BLOCKERS.md` item 3): UNETLoader 1 loads flux-2-klein-9b-kv.safetensors, licence-gated on HuggingFace: accept the FLUX.2 Klein 9B licence or switch the loader to the fp8 variant. LoraLoaderModelOnly 19 also names the creator's private Lora_lora_000000600.safetensors (infra/runpod/download-plan.json creator_private).
 - Models with no public source yet (see `infra/runpod/download-plan.json`): Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors, Lora_lora_000000600.safetensors, depth-control-lora.safetensors, icyrealismKREA.safetensors, krea2filterbypass3.safetensors, lourta2krea_copy_000000750.safetensors, ultrafluxvae.safetensors
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
 

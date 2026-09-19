@@ -18,16 +18,12 @@
     {
       "id": "gpu",
       "label": "ComfyUI on the pod"
-    },
-    {
-      "id": "gaps",
-      "label": "Not runnable yet",
-      "variant": "exception"
     }
   ],
   "mainPath": [
     "n2",
-    "n1"
+    "n3",
+    "n4"
   ],
   "nodes": [
     {
@@ -59,12 +55,12 @@
     },
     {
       "id": "n4",
-      "lane": "gaps",
-      "col": 1,
-      "type": "security",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
       "label": "LoRA training",
-      "sublabel": "not built yet",
-      "tag": "gap, consent",
+      "sublabel": "lora_train.py",
+      "tag": "consent, setup",
       "width": 112
     },
     {
@@ -81,19 +77,24 @@
     {
       "from": "n2",
       "to": "n1",
+      "label": "image"
+    },
+    {
+      "from": "n2",
+      "to": "n3",
       "label": "image",
       "variant": "emphasis"
     },
     {
       "from": "n2",
-      "to": "n3",
+      "to": "n4",
       "label": "image"
     },
     {
-      "from": "n2",
+      "from": "n3",
       "to": "n4",
-      "label": "image",
-      "variant": "dashed"
+      "label": "text",
+      "variant": "emphasis"
     },
     {
       "from": "n2",
@@ -113,12 +114,12 @@
       ]
     },
     {
-      "dot": "rose",
+      "dot": "amber",
       "title": "Rules",
       "items": [
         "Consent on file before any likeness",
-        "Gap: LoRA training not built",
-        "Dry-run until approved"
+        "Dry-run until approved",
+        "Logo composited, never generated"
       ]
     }
   ]

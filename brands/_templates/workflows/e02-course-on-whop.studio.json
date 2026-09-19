@@ -7,7 +7,7 @@
     "idea": "E02",
     "offer": "ComfyUI-to-income course with the studio's lessons"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -29,7 +29,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "whop-publish"
       }
     }
   ],

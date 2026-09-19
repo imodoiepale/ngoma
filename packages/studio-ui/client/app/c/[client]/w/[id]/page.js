@@ -1,17 +1,7 @@
-import { notFound } from "next/navigation";
-import { getClient, loadCatalog, readWorkflow } from "../../../../../lib/studio";
-import Canvas from "../../../../../components/Canvas";
+import { redirect } from "next/navigation";
 
-export const dynamic = "force-dynamic";
-
-export default async function WorkflowPage({ params }) {
+// The old address. Workflows live at /w/<workspace>/f/<id> now.
+export default async function LegacyWorkflowPage({ params }) {
   const { client, id } = await params;
-  let info, wf;
-  try {
-    [info, wf] = await Promise.all([getClient(client), readWorkflow(client, id)]);
-  } catch {
-    notFound();
-  }
-  const catalog = await loadCatalog();
-  return <Canvas client={info} initial={wf} catalog={catalog} />;
+  redirect(`/w/${client}/f/${id}`);
 }

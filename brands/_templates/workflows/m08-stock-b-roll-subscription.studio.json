@@ -7,7 +7,7 @@
     "idea": "M08",
     "offer": "Monthly drop of 100 royalty-free African-set AI B-roll clips"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -31,7 +31,8 @@
       "data": {
         "params": {
           "seconds": 5
-        }
+        },
+        "alias": "wan-t2v"
       }
     },
     {
@@ -42,7 +43,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "upscale"
       }
     },
     {

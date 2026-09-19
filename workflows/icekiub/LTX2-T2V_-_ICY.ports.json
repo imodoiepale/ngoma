@@ -1,0 +1,42 @@
+{
+  "workflow": "icekiub/LTX2-T2V_-_ICY.json",
+  "sha256": "065525d349f4260e88af6df86c742b95e267b9511a7101c0c7ea4e5d8e8d3ce7",
+  "format": "ui",
+  "inputs": {},
+  "prompt": {
+    "node": "121",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0,
+    "note": "Positive prompt for both passes (LTXVConditioning 107 feeds the base sampler 113 and, through LTXVCropGuides 102, the spatial-upscale sampler 119). Text-to-video only: there is no LoadImage in this graph."
+  },
+  "negative": {
+    "node": "110",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0
+  },
+  "seed": {
+    "node": "115",
+    "class": "RandomNoise",
+    "field": "noise_seed",
+    "widget_index": 0,
+    "note": "Base pass. The spatial-upscale pass RandomNoise 114 keeps its own seed (0, fixed)."
+  },
+  "outputs": {
+    "video": {
+      "node": "140",
+      "class": "VHS_VideoCombine",
+      "kind": "video",
+      "note": "Upscaled video with the LTX audio track (VAEDecodeTiled 126 + LTXVAudioVAEDecode 127). save_output is false in the shipped file, so the mp4 lands in ComfyUI temp/; set widgets_values.save_output to true for a file in output/."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "Length: PrimitiveInt 112 'Length' widget 0 is a frame count (240 at PrimitiveInt 137 frame rate 24 = 10 s). The studio `seconds` parameter is not bound because the widget wants frames; set 24 * seconds + 1 by hand.",
+    "Resolution: EmptyImage 111 (720x1280) scaled by 0.5 in ImageScaleBy 104 sets the base size (GetImageSize 105); the LTXVLatentUpsampler 118 pass doubles it with ltx-2-spatial-upscaler-x2-1.0.",
+    "Models: ltx-2-19b-dev-fp8 checkpoint (130) with the ltx-2-19b-distilled-lora-384 LoRA (131, 141); gemma_3_12B_it text encoder (99). The camera-control dolly LoRAs 132 and 133 are bypassed.",
+    "No batch count: one video per run.",
+    "The shipped prompt (121) and negative (110) are the creator's demo text; the studio prompt replaces both."
+  ]
+}

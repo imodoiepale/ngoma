@@ -14,11 +14,6 @@
     {
       "id": "studio",
       "label": "Studio code"
-    },
-    {
-      "id": "gaps",
-      "label": "Not runnable yet",
-      "variant": "exception"
     }
   ],
   "mainPath": [
@@ -35,27 +30,26 @@
       "label": "Brief"
     },
     {
-      "id": "n3",
+      "id": "n1",
       "lane": "studio",
       "col": 1,
+      "type": "backend",
+      "label": "Motion graphics",
+      "sublabel": "motion_graphics.py",
+      "width": 128
+    },
+    {
+      "id": "n3",
+      "lane": "studio",
+      "col": 2,
       "type": "backend",
       "label": "Voiceover",
       "sublabel": "tts.py"
     },
     {
-      "id": "n1",
-      "lane": "gaps",
-      "col": 1,
-      "type": "security",
-      "label": "Motion graphics",
-      "sublabel": "not built yet",
-      "tag": "gap",
-      "width": 128
-    },
-    {
       "id": "n4",
       "lane": "studio",
-      "col": 2,
+      "col": 3,
       "type": "backend",
       "label": "Export files",
       "sublabel": "compositor.py",
@@ -93,10 +87,9 @@
       ]
     },
     {
-      "dot": "rose",
+      "dot": "amber",
       "title": "Rules",
       "items": [
-        "Gap: Motion graphics not built",
         "Dry-run until approved",
         "Logo composited, never generated"
       ]

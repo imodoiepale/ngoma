@@ -20,14 +20,14 @@ Studio template: [`v07-faceless-shorts-channel.studio.json`](../../brands/_templ
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
 | Brief | you provide |  | — |
-| Motion graphics | not runnable yet | HyperFrames/Remotion renderer is planned, not built. | — |
+| Motion graphics | studio code | `packages/video/motion_graphics.py` | — |
 | Voiceover | studio code | `packages/voice/tts.py` | — |
 | Reference images | you provide |  | — |
 | Image to video (WAN) | ComfyUI on the pod | `workflows/icekiub/I2V_Infinite_extender_-_SUBS_-_Icekiub_v1.json` | — |
 | Captions | studio code | `packages/voice/mux.py` | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
-80% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -43,15 +43,20 @@ Setup budget $200. Fixed monthly spend $50. First cash in about 14 days.
 
 ## What is not ready
 
-- **Motion graphics**: HyperFrames/Remotion renderer is planned, not built.
+- Nothing structural. Every step has a backend and every model it names has a source; it still needs a live run.
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: `hyperframes` (kinetic type) stays a declared gap until packages/video/motion_graphics.py exists; voice, WAN visuals and burned-in captions are bound, so a shorts pipeline without kinetic type can ship.
+- 2026-09-20 (W6): kinetic type is bound to packages/video/motion_graphics.py (a spec of timed lines from the brief, kit colours, ffmpeg encode); to lay it over the WAN clip instead, wire the clip into its optional background input on the canvas. No declared gap left.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 10 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch channel owners and niche publishers with the pilot; target the low scenario (2 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

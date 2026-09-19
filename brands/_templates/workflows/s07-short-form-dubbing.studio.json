@@ -7,7 +7,7 @@
     "idea": "S07",
     "offer": "Dub and re-caption 20 shorts a month"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -41,7 +41,9 @@
       },
       "data": {
         "params": {
-          "language": "sw"
+          "source": "en",
+          "language": "sw",
+          "glossary": ""
         }
       }
     },
@@ -54,8 +56,10 @@
       },
       "data": {
         "params": {
-          "language": "en"
-        }
+          "language": "en",
+          "provider": "elevenlabs"
+        },
+        "alias": "tts"
       }
     },
     {
@@ -151,6 +155,14 @@
     },
     {
       "id": "e8",
+      "source": "n4",
+      "sourceHandle": "audio",
+      "target": "n6",
+      "targetHandle": "audio",
+      "type": "audio"
+    },
+    {
+      "id": "e9",
       "source": "n6",
       "sourceHandle": "video",
       "target": "n7",
@@ -158,13 +170,7 @@
       "type": "video"
     }
   ],
-  "gaps": [
-    {
-      "node": "n3",
-      "step": "translate",
-      "reason": "No translation adapter yet; write the script in the target language."
-    }
-  ],
+  "gaps": [],
   "family": "service",
   "compliance": "Original creator permission"
 }

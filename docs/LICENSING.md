@@ -11,6 +11,10 @@ required for the workflows it teaches to actually run.
 | MATRIX-LAB-Nodes 0.4.0 and MATRIX Krea 2 Workflow 1.1.0 (JsonMatrixLab on GitHub) | **proprietary**: no copy, modify, distribute or *use* without a written agreement | `Documents\COMFY\MatrixLab` (reference only) | NOT in this repo; practices only, see `docs/NODE-PACK-PRACTICES.md` |
 | `packages/studio-ui/` | MIT (forked from SamurAIGPT/Vibe-Workflow) | here | ported |
 | Icekiub workflow JSONs and node packs (`workflows/icekiub/`) | **unstated**: bought on Skool, 2026-09-14 | here | internal use only, see below |
+| `workflows/icekiub/nodes/icynodes/` (merged pack, 2026-09-16) | **MIT** per its `pyproject.toml`; the only Icekiub artefact with a stated licence | here | the standalone folders it merges stay unstated |
+| AiKAMI "AI Creator Series" guides, Days 1 to 7 (`docs/creators/aikami/source/`) | free public guides by @buck_the_aikami, no licence stated | here | study material, internal reference only, never redistributed |
+| PJ Accetturo's Nexus skill (`docs/creators/pjaccetturo/`) | published publicly as a paste-in prompt, no licence stated | here | study material; our skills restate the method in our own words |
+| "alexya-batch-api" Claude skill, v1.2.0 (`docs/creators/alexya/source/alexya-batch.skill`) | no author and no licence stated; hosted-API client for alexya.ai | here | study material, internal reference only, never redistributed; the client is not run or ported |
 | This repo's own code | choose one — currently unlicensed | here | **decide** |
 
 ## The GPL-3.0 problem
@@ -44,6 +48,15 @@ Absence of a licence means no distribution rights by default — not permission.
 They are fine as a private reference and as something you run. Do **not** redistribute them
 in the course, a template pack, or a public repo without the author's permission. If this
 repo ever goes public, they must come out or be replaced with graphs built from scratch.
+
+Two practical notes from the 2026-09-19 import:
+
+- `icynodes` registers the same node classes as `betterimage_loader`, `ICYLM`,
+  `icymegapixelresize` and `ComfyUI-IcyHider-icekiub`. Install one or the other in a ComfyUI,
+  never both.
+- `captioning_workflow.json` ships with the Icy LM Studio node pointed at Icekiub's own LAN
+  (`http://192.168.2.20:8080`). Re-point it at your LM Studio server before running; it will
+  not, and must not, reach his machine.
 
 ## Your own code
 

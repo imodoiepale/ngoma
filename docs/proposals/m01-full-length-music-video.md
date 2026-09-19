@@ -45,9 +45,14 @@ Setup budget $500. Fixed monthly spend $100. First cash in about 30 days.
 
 ## What is not ready
 
-- **Relight**: No video relight workflow in the library yet.
+- **Relight**: No video relight workflow in the library yet. Missing: a video relight ComfyUI workflow (IC-Light video, e.g. kijai/ComfyUI-IC-Light with a per-frame light map, or a Beeble SwitchLight-style graph) registered in workflows/manifest.json with a .ports.json exposing video, light_direction and prompt. Checked 2026-09-20: the only 'relight' in workflows/manifest.json is WanAnimate_relight_lora_fp16.safetensors inside the two ICY WAN ANIMATE V4 graphs, a LoRA that matches a swapped character's lighting to the driving clip during a body or face swap; it cannot change the light on footage, so it is not bound. For stills the image-edit step already relights by instruction (product-relight)
 - Models with no public source yet (see `infra/runpod/download-plan.json`): Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64_fixed.safetensors, my_first_lora_v1_000000600_low_noise.safetensors
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: `relight` stays a declared gap. Closing it needs a video relight ComfyUI workflow (IC-Light video or a Beeble SwitchLight-style graph) registered in workflows/manifest.json with a .ports.json; sell the video without the relight pass until then.
+- 2026-09-20 (W6): checked the one 'relight' the library has: WanAnimate_relight_lora_fp16.safetensors inside the two ICY WAN ANIMATE V4 graphs. It only matches a swapped character's light to the driving clip during a body or face swap and cannot change the light on footage, so binding it would fake the step. Still a gap; the exact missing thing is on the catalogue node (IC-Light video or SwitchLight graph with video, light_direction and prompt ports).
 
 ## First 30 days
 

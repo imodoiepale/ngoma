@@ -7,7 +7,7 @@
     "idea": "P08",
     "offer": "A disclosed AI ambassador with a year of content"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -31,7 +31,8 @@
       "data": {
         "params": {
           "preset": "identity"
-        }
+        },
+        "alias": "refmod"
       }
     },
     {
@@ -55,7 +56,8 @@
       "data": {
         "params": {
           "seconds": 5
-        }
+        },
+        "alias": "h3-ref2va"
       }
     },
     {
@@ -67,8 +69,10 @@
       },
       "data": {
         "params": {
-          "language": "en"
-        }
+          "language": "en",
+          "provider": "elevenlabs"
+        },
+        "alias": "tts-sw"
       }
     },
     {

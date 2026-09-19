@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Cost of 1,000 stills: hosted credits versus open weights on a GPU">
+  <defs>
+    <linearGradient id="cost-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0A0A"/>
+      <stop offset="1" stop-color="#16120C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" fill="url(#cost-bg)" rx="24"/>
+  <text x="48" y="48" fill="#F5F0E8" font-family="Georgia, serif" font-size="22">What 1,000 stills actually cost</text>
+  <text x="48" y="74" fill="#A89B7C" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">Hosted credits expire. Open weights bill GPU seconds. Our Klein text-to-image run: 45 images in 364.87 s ’ 444 / hour.</text>
+
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <!-- hosted bar -->
+    <text x="48" y="130" fill="#FCA5A5" font-size="13" font-weight="700">Hosted flagship 4K  ~ $240</text>
+    <rect x="48" y="142" width="1040" height="28" rx="8" fill="#7F1D1D"/>
+    <text x="60" y="161" fill="#FEE2E2" font-size="12">Nano Banana Pro class · ~$0.24 / 4K still · credits reset monthly</text>
+
+    <text x="48" y="202" fill="#FCD34D" font-size="13" font-weight="700">Hosted daily stills  ~ $70</text>
+    <rect x="48" y="214" width="304" height="28" rx="8" fill="#854D0E"/>
+    <text x="60" y="233" fill="#FEF3C7" font-size="12">Nano Banana 2 · ~$0.07 / still</text>
+
+    <text x="48" y="274" fill="#86EFAC" font-size="13" font-weight="700">This studio, open weights  ~ $4</text>
+    <rect x="48" y="286" width="22" height="28" rx="6" fill="#166534"/>
+    <text x="80" y="305" fill="#BBF7D0" font-size="12">FLUX.2 Klein on an A100 · measured 444/h · ~2.3 GPU-h + load · $1.64/h planning rate</text>
+  </g>
+</svg>

@@ -22,10 +22,10 @@ Studio template: [`s04-archive-restore-and-upscale.studio.json`](../../brands/_t
 | Video clip | you provide |  | — |
 | Upscale video | ComfyUI on the pod | `workflows/h3/NEW_-_V2V_Latent_Motion_Transfer_with_upscale_and_de-rope_.json` | — |
 | Reference images | you provide |  | — |
-| Restore photo | not runnable yet | No restoration workflow in the library yet. | — |
+| Restore photo | ComfyUI on the pod | `workflows/icekiub/QWEN_IMAGE_UNLEASHED_ICEKIUB_SUBS_-_v1_.json` | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
-67% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -41,16 +41,19 @@ Setup budget $100. Fixed monthly spend $20. First cash in about 7 days.
 
 ## What is not ready
 
-- **Restore photo**: No restoration workflow in the library yet.
-- Models with no public source yet (see `infra/runpod/download-plan.json`): minimax_h3_latent_upscaler_3d_fp16.safetensors
+- Models with no public source yet (see `infra/runpod/download-plan.json`): 1GIRL_QWEN_V3.safetensors, RemyTurbov2_000000500.safetensors, minimax_h3_latent_upscaler_3d_fp16.safetensors, ultrafluxvae.safetensors
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: `restore` runs interim on the Qwen image-edit workflow with a fixed restore instruction (keep every face as it is). A dedicated restoration graph (face restoration plus colourise) is still missing from workflows/manifest.json; add it and re-point the `restore` node when it lands.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 4 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch families, churches, media houses with the pilot; target the low scenario (2 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

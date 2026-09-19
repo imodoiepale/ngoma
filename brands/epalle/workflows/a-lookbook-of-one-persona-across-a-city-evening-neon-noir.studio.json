@@ -12,23 +12,26 @@
       "preset": "neon-noir",
       "ratio": "9:16",
       "theme": null,
-      "scenes": 5,
-      "scene_hints": [
-        "",
-        "",
-        "",
-        "",
-        "a market at dawn"
-      ],
-      "angles_per_scene": 5,
+      "scenes": 2,
+      "scene_hints": [],
+      "angles_per_scene": 3,
       "seeds_per_angle": 1,
       "video_seconds": [
-        4,
-        6
+        4
       ],
       "vfx": [],
       "roles": [],
-      "refs": [],
+      "refs": [
+        {
+          "name": "wardrobe-red-dress",
+          "kind": "image",
+          "use": "data",
+          "rights": "owned",
+          "consent": false,
+          "path": "",
+          "count": 0
+        }
+      ],
       "adult": false,
       "outputs": [
         "export"
@@ -58,77 +61,76 @@
       "scene": 1
     },
     {
+      "id": "scene1-dress",
+      "label": "Scene 1 (arrival) dressing",
+      "order": 4,
+      "scene": 1
+    },
+    {
       "id": "scene1-motion",
       "label": "Scene 1 (arrival) motion",
-      "order": 4,
+      "order": 5,
       "scene": 1
     },
     {
       "id": "scene2",
       "label": "Scene 2 (first look) stills",
-      "order": 5,
+      "order": 6,
+      "scene": 2
+    },
+    {
+      "id": "scene2-dress",
+      "label": "Scene 2 (first look) dressing",
+      "order": 7,
       "scene": 2
     },
     {
       "id": "scene2-motion",
       "label": "Scene 2 (first look) motion",
-      "order": 6,
-      "scene": 2
-    },
-    {
-      "id": "scene3",
-      "label": "Scene 3 (detail) stills",
-      "order": 7,
-      "scene": 3
-    },
-    {
-      "id": "scene3-motion",
-      "label": "Scene 3 (detail) motion",
       "order": 8,
-      "scene": 3
-    },
-    {
-      "id": "scene4",
-      "label": "Scene 4 (movement) stills",
-      "order": 9,
-      "scene": 4
-    },
-    {
-      "id": "scene4-motion",
-      "label": "Scene 4 (movement) motion",
-      "order": 10,
-      "scene": 4
-    },
-    {
-      "id": "scene5",
-      "label": "Scene 5 (turn) stills",
-      "order": 11,
-      "scene": 5
-    },
-    {
-      "id": "scene5-motion",
-      "label": "Scene 5 (turn) motion",
-      "order": 12,
-      "scene": 5
+      "scene": 2
     },
     {
       "id": "edit",
       "label": "Edit",
-      "order": 13
+      "order": 9
     },
     {
       "id": "publish",
       "label": "Publish",
-      "order": 14
+      "order": 10
     }
   ],
   "nodes": [
+    {
+      "id": "refs.reference-images.wardrobe-red-dress",
+      "kind": "reference-images",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "params": {
+          "folder": "brands/epalle/references/wardrobe-red-dress"
+        },
+        "stage": "refs",
+        "ref": {
+          "name": "wardrobe-red-dress",
+          "kind": "image",
+          "use": "data",
+          "rights": "owned",
+          "consent": false,
+          "path": "",
+          "count": 0
+        }
+      }
+    },
     {
       "id": "storyboard.brief.s1",
       "kind": "brief",
       "position": {
         "x": 80,
-        "y": 80
+        "y": 340
       },
       "data": {
         "params": {
@@ -143,7 +145,7 @@
       "kind": "krea2-t2i",
       "position": {
         "x": 80,
-        "y": 970
+        "y": 810
       },
       "data": {
         "params": {
@@ -159,7 +161,7 @@
         "why": "wide angle of Scene 1 (arrival) in the Neon noir grammar",
         "results": [
           {
-            "run_id": "r-20260914-141825-krea2-t2i-a1",
+            "run_id": "r-20260919-235540-krea2-t2i-a1",
             "status": "dry-run",
             "files": [],
             "backend": "pod",
@@ -177,8 +179,8 @@
               "basis": "assumed",
               "rate": "A100 80GB $1.64/h (assumed)"
             },
-            "started": "2026-09-14T11:18:25+00:00",
-            "finished": "2026-09-14T11:18:25+00:00"
+            "started": "2026-09-19T20:55:40+00:00",
+            "finished": "2026-09-19T20:55:40+00:00"
           }
         ]
       }
@@ -188,7 +190,7 @@
       "kind": "krea2-t2i",
       "position": {
         "x": 80,
-        "y": 1180
+        "y": 1020
       },
       "data": {
         "params": {
@@ -204,7 +206,7 @@
         "why": "medium angle of Scene 1 (arrival) in the Neon noir grammar",
         "results": [
           {
-            "run_id": "r-20260914-141825-krea2-t2i-a2",
+            "run_id": "r-20260919-235540-krea2-t2i-a2",
             "status": "dry-run",
             "files": [],
             "backend": "pod",
@@ -222,8 +224,8 @@
               "basis": "assumed",
               "rate": "A100 80GB $1.64/h (assumed)"
             },
-            "started": "2026-09-14T11:18:25+00:00",
-            "finished": "2026-09-14T11:18:25+00:00"
+            "started": "2026-09-19T20:55:40+00:00",
+            "finished": "2026-09-19T20:55:40+00:00"
           }
         ]
       }
@@ -233,7 +235,7 @@
       "kind": "krea2-t2i",
       "position": {
         "x": 80,
-        "y": 1390
+        "y": 1230
       },
       "data": {
         "params": {
@@ -249,7 +251,7 @@
         "why": "close angle of Scene 1 (arrival) in the Neon noir grammar",
         "results": [
           {
-            "run_id": "r-20260914-141825-krea2-t2i-a3",
+            "run_id": "r-20260919-235540-krea2-t2i-a3",
             "status": "dry-run",
             "files": [],
             "backend": "pod",
@@ -267,98 +269,8 @@
               "basis": "assumed",
               "rate": "A100 80GB $1.64/h (assumed)"
             },
-            "started": "2026-09-14T11:18:25+00:00",
-            "finished": "2026-09-14T11:18:25+00:00"
-          }
-        ]
-      }
-    },
-    {
-      "id": "scene1.krea2-t2i.a4",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 1600
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene1",
-        "scene": 1,
-        "shot": 4,
-        "camera": "three-quarter",
-        "prompt": "Scene 1 (arrival): arrival beat of: a lookbook of one persona across a city evening, neon noir. figure alone in a corridor of light. three-quarter angle, slightly off axis. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "three-quarter angle of Scene 1 (arrival) in the Neon noir grammar",
-        "results": [
-          {
-            "run_id": "r-20260914-141825-krea2-t2i-a4",
-            "status": "dry-run",
-            "files": [],
-            "backend": "pod",
-            "workflow": "icekiub/Krea2Icy_-Subs_1.1.json",
-            "bindings": {
-              "prompt": "Scene 1 (arrival): arrival beat of: a lookbook of one persona across a city evening, neon noir. figure alone in a corridor of light. three-quarter angle, slightly off axis. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-              "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person"
-            },
-            "seeds": [
-              6871433
-            ],
-            "cost_estimate": {
-              "usd": 0.0055,
-              "gpu_seconds": 12.0,
-              "basis": "assumed",
-              "rate": "A100 80GB $1.64/h (assumed)"
-            },
-            "started": "2026-09-14T11:18:25+00:00",
-            "finished": "2026-09-14T11:18:25+00:00"
-          }
-        ]
-      }
-    },
-    {
-      "id": "scene1.krea2-t2i.a5",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 400,
-        "y": 970
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene1",
-        "scene": 1,
-        "shot": 5,
-        "camera": "low",
-        "prompt": "Scene 1 (arrival): arrival beat of: a lookbook of one persona across a city evening, neon noir. figure alone in a corridor of light. low angle looking up, subject dominant. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "low angle of Scene 1 (arrival) in the Neon noir grammar",
-        "results": [
-          {
-            "run_id": "r-20260914-141825-krea2-t2i-a5",
-            "status": "dry-run",
-            "files": [],
-            "backend": "pod",
-            "workflow": "icekiub/Krea2Icy_-Subs_1.1.json",
-            "bindings": {
-              "prompt": "Scene 1 (arrival): arrival beat of: a lookbook of one persona across a city evening, neon noir. figure alone in a corridor of light. low angle looking up, subject dominant. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-              "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person"
-            },
-            "seeds": [
-              3602114
-            ],
-            "cost_estimate": {
-              "usd": 0.0055,
-              "gpu_seconds": 12.0,
-              "basis": "assumed",
-              "rate": "A100 80GB $1.64/h (assumed)"
-            },
-            "started": "2026-09-14T11:18:25+00:00",
-            "finished": "2026-09-14T11:18:25+00:00"
+            "started": "2026-09-19T20:55:40+00:00",
+            "finished": "2026-09-19T20:55:40+00:00"
           }
         ]
       }
@@ -367,15 +279,55 @@
       "id": "scene1.pick.keep",
       "kind": "pick",
       "position": {
-        "x": 720,
-        "y": 970
+        "x": 400,
+        "y": 810
       },
       "data": {
         "params": {
           "k": 3
         },
         "stage": "scene1",
-        "scene": 1
+        "scene": 1,
+        "picked": [
+          "scene1.krea2-t2i.a1#pending#0"
+        ]
+      }
+    },
+    {
+      "id": "scene1-dress.wardrobe",
+      "kind": "wardrobe",
+      "position": {
+        "x": 80,
+        "y": 1490
+      },
+      "data": {
+        "params": {},
+        "stage": "scene1-dress",
+        "scene": 1,
+        "results": [
+          {
+            "run_id": "r-20260919-235542-ess-wardrobe",
+            "status": "dry-run",
+            "files": [],
+            "backend": "pod",
+            "workflow": "icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+            "bindings": {
+              "image": "<scene1.pick.keep>",
+              "clothes": "<refs.reference-images.wardrobe-red-dress>"
+            },
+            "seeds": [
+              1004787
+            ],
+            "cost_estimate": {
+              "usd": 0.0055,
+              "gpu_seconds": 12.0,
+              "basis": "assumed",
+              "rate": "A100 80GB $1.64/h (assumed)"
+            },
+            "started": "2026-09-19T20:55:42+00:00",
+            "finished": "2026-09-19T20:55:42+00:00"
+          }
+        ]
       }
     },
     {
@@ -383,7 +335,7 @@
       "kind": "image-to-video",
       "position": {
         "x": 80,
-        "y": 1860
+        "y": 1750
       },
       "data": {
         "params": {
@@ -391,7 +343,32 @@
         },
         "stage": "scene1-motion",
         "scene": 1,
-        "why": "still to 4s video in the Neon noir pacing"
+        "prompt": "0-4s: wide with the figure small in the city, slow push-in on a dolly, Scene 1 (arrival): arrival beat of: a lookbook of one persona across a city evening, neon noir, figure alone in a corridor of light.\nStyle: 35mm anamorphic; palette sodium orange, cyan, magenta neon, wet black; crushed shadows with colour in them, teal-magenta split.\nHold constant across the whole clip: same face and body; same hair; wardrobe as attached; one light source per scene; vertical, figure centred, headroom for captions.\nAudio: sound effects and diegetic sound only. No music. No dialogue. No subtitles.\nStrictly exclude: no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person.",
+        "why": "still to 4s video in the Neon noir pacing",
+        "results": [
+          {
+            "run_id": "r-20260919-235542-age-to-video",
+            "status": "dry-run",
+            "files": [],
+            "backend": "pod",
+            "workflow": "icekiub/I2V_Infinite_extender_-_SUBS_-_Icekiub_v1.json",
+            "bindings": {
+              "image": "<scene1-dress.wardrobe>",
+              "prompt": "0-4s: wide with the figure small in the city, slow push-in on a dolly, Scene 1 (arrival): arrival beat of: a lookbook of one persona across a city evening, neon noir, figure alone in a corridor of light.\nStyle: 35mm anamorphic; palette sodium orange, cyan, magenta neon, wet black; crushed shadows with colour in them, teal-magenta split.\nHold constant across the whole clip: same face and body; same hair; wardrobe as attached; one light source per scene; vertical, figure centred, headroom for captions.\nAudio: sound effects and diegetic sound only. No music. No dialogue. No subtitles.\nStrictly exclude: no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person."
+            },
+            "seeds": [
+              2959110
+            ],
+            "cost_estimate": {
+              "usd": 0.164,
+              "gpu_seconds": 360.0,
+              "basis": "assumed",
+              "rate": "A100 80GB $1.64/h (assumed)"
+            },
+            "started": "2026-09-19T20:55:42+00:00",
+            "finished": "2026-09-19T20:55:42+00:00"
+          }
+        ]
       }
     },
     {
@@ -399,7 +376,7 @@
       "kind": "brief",
       "position": {
         "x": 80,
-        "y": 290
+        "y": 550
       },
       "data": {
         "params": {
@@ -414,7 +391,7 @@
       "kind": "krea2-t2i",
       "position": {
         "x": 80,
-        "y": 2120
+        "y": 2010
       },
       "data": {
         "params": {
@@ -427,7 +404,31 @@
         "prompt": "Scene 2 (first look): first look beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. wide establishing shot, full body in the environment. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
         "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
         "variant_count": 1,
-        "why": "wide angle of Scene 2 (first look) in the Neon noir grammar"
+        "why": "wide angle of Scene 2 (first look) in the Neon noir grammar",
+        "results": [
+          {
+            "run_id": "r-20260919-235543-krea2-t2i-a1",
+            "status": "dry-run",
+            "files": [],
+            "backend": "pod",
+            "workflow": "icekiub/Krea2Icy_-Subs_1.1.json",
+            "bindings": {
+              "prompt": "Scene 2 (first look): first look beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. wide establishing shot, full body in the environment. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+              "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person"
+            },
+            "seeds": [
+              5171474
+            ],
+            "cost_estimate": {
+              "usd": 0.0055,
+              "gpu_seconds": 12.0,
+              "basis": "assumed",
+              "rate": "A100 80GB $1.64/h (assumed)"
+            },
+            "started": "2026-09-19T20:55:43+00:00",
+            "finished": "2026-09-19T20:55:43+00:00"
+          }
+        ]
       }
     },
     {
@@ -435,7 +436,7 @@
       "kind": "krea2-t2i",
       "position": {
         "x": 80,
-        "y": 2330
+        "y": 2220
       },
       "data": {
         "params": {
@@ -448,7 +449,31 @@
         "prompt": "Scene 2 (first look): first look beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. medium shot, waist up. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
         "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
         "variant_count": 1,
-        "why": "medium angle of Scene 2 (first look) in the Neon noir grammar"
+        "why": "medium angle of Scene 2 (first look) in the Neon noir grammar",
+        "results": [
+          {
+            "run_id": "r-20260919-235543-krea2-t2i-a2",
+            "status": "dry-run",
+            "files": [],
+            "backend": "pod",
+            "workflow": "icekiub/Krea2Icy_-Subs_1.1.json",
+            "bindings": {
+              "prompt": "Scene 2 (first look): first look beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. medium shot, waist up. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+              "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person"
+            },
+            "seeds": [
+              7592850
+            ],
+            "cost_estimate": {
+              "usd": 0.0055,
+              "gpu_seconds": 12.0,
+              "basis": "assumed",
+              "rate": "A100 80GB $1.64/h (assumed)"
+            },
+            "started": "2026-09-19T20:55:43+00:00",
+            "finished": "2026-09-19T20:55:43+00:00"
+          }
+        ]
       }
     },
     {
@@ -456,7 +481,7 @@
       "kind": "krea2-t2i",
       "position": {
         "x": 80,
-        "y": 2540
+        "y": 2430
       },
       "data": {
         "params": {
@@ -469,64 +494,86 @@
         "prompt": "Scene 2 (first look): first look beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. close-up on the face, shallow depth of field. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
         "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
         "variant_count": 1,
-        "why": "close angle of Scene 2 (first look) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene2.krea2-t2i.a4",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 2750
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene2",
-        "scene": 2,
-        "shot": 4,
-        "camera": "three-quarter",
-        "prompt": "Scene 2 (first look): first look beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. three-quarter angle, slightly off axis. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "three-quarter angle of Scene 2 (first look) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene2.krea2-t2i.a5",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 400,
-        "y": 2120
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene2",
-        "scene": 2,
-        "shot": 5,
-        "camera": "low",
-        "prompt": "Scene 2 (first look): first look beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. low angle looking up, subject dominant. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "low angle of Scene 2 (first look) in the Neon noir grammar"
+        "why": "close angle of Scene 2 (first look) in the Neon noir grammar",
+        "results": [
+          {
+            "run_id": "r-20260919-235543-krea2-t2i-a3",
+            "status": "dry-run",
+            "files": [],
+            "backend": "pod",
+            "workflow": "icekiub/Krea2Icy_-Subs_1.1.json",
+            "bindings": {
+              "prompt": "Scene 2 (first look): first look beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. close-up on the face, shallow depth of field. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
+              "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person"
+            },
+            "seeds": [
+              5230459
+            ],
+            "cost_estimate": {
+              "usd": 0.0055,
+              "gpu_seconds": 12.0,
+              "basis": "assumed",
+              "rate": "A100 80GB $1.64/h (assumed)"
+            },
+            "started": "2026-09-19T20:55:43+00:00",
+            "finished": "2026-09-19T20:55:43+00:00"
+          }
+        ]
       }
     },
     {
       "id": "scene2.pick.keep",
       "kind": "pick",
       "position": {
-        "x": 720,
-        "y": 2120
+        "x": 400,
+        "y": 2010
       },
       "data": {
         "params": {
           "k": 3
         },
         "stage": "scene2",
-        "scene": 2
+        "scene": 2,
+        "picked": [
+          "scene2.krea2-t2i.a1#pending#0"
+        ]
+      }
+    },
+    {
+      "id": "scene2-dress.wardrobe",
+      "kind": "wardrobe",
+      "position": {
+        "x": 80,
+        "y": 2690
+      },
+      "data": {
+        "params": {},
+        "stage": "scene2-dress",
+        "scene": 2,
+        "results": [
+          {
+            "run_id": "r-20260919-235543-ess-wardrobe",
+            "status": "dry-run",
+            "files": [],
+            "backend": "pod",
+            "workflow": "icekiub/Any_Clothes_9B_-_Subs_-_Icekiub_V1.3.json",
+            "bindings": {
+              "image": "<scene2.pick.keep>",
+              "clothes": "<refs.reference-images.wardrobe-red-dress>"
+            },
+            "seeds": [
+              2309630
+            ],
+            "cost_estimate": {
+              "usd": 0.0055,
+              "gpu_seconds": 12.0,
+              "basis": "assumed",
+              "rate": "A100 80GB $1.64/h (assumed)"
+            },
+            "started": "2026-09-19T20:55:43+00:00",
+            "finished": "2026-09-19T20:55:43+00:00"
+          }
+        ]
       }
     },
     {
@@ -534,468 +581,40 @@
       "kind": "image-to-video",
       "position": {
         "x": 80,
-        "y": 3010
+        "y": 2950
       },
       "data": {
         "params": {
-          "seconds": 6
+          "seconds": 4
         },
         "stage": "scene2-motion",
         "scene": 2,
-        "why": "still to 6s video in the Neon noir pacing"
-      }
-    },
-    {
-      "id": "storyboard.brief.s3",
-      "kind": "brief",
-      "position": {
-        "x": 80,
-        "y": 500
-      },
-      "data": {
-        "params": {
-          "text": "Scene 3 (detail): detail beat of: a lookbook of one persona across a city evening, neon noir. figure alone in a corridor of light"
-        },
-        "stage": "storyboard",
-        "scene": 3
-      }
-    },
-    {
-      "id": "scene3.krea2-t2i.a1",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 3270
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene3",
-        "scene": 3,
-        "shot": 1,
-        "camera": "wide",
-        "prompt": "Scene 3 (detail): detail beat of: a lookbook of one persona across a city evening, neon noir. figure alone in a corridor of light. wide establishing shot, full body in the environment. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "wide angle of Scene 3 (detail) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene3.krea2-t2i.a2",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 3480
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene3",
-        "scene": 3,
-        "shot": 2,
-        "camera": "medium",
-        "prompt": "Scene 3 (detail): detail beat of: a lookbook of one persona across a city evening, neon noir. figure alone in a corridor of light. medium shot, waist up. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "medium angle of Scene 3 (detail) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene3.krea2-t2i.a3",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 3690
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene3",
-        "scene": 3,
-        "shot": 3,
-        "camera": "close",
-        "prompt": "Scene 3 (detail): detail beat of: a lookbook of one persona across a city evening, neon noir. figure alone in a corridor of light. close-up on the face, shallow depth of field. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "close angle of Scene 3 (detail) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene3.krea2-t2i.a4",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 3900
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene3",
-        "scene": 3,
-        "shot": 4,
-        "camera": "three-quarter",
-        "prompt": "Scene 3 (detail): detail beat of: a lookbook of one persona across a city evening, neon noir. figure alone in a corridor of light. three-quarter angle, slightly off axis. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "three-quarter angle of Scene 3 (detail) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene3.krea2-t2i.a5",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 400,
-        "y": 3270
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene3",
-        "scene": 3,
-        "shot": 5,
-        "camera": "low",
-        "prompt": "Scene 3 (detail): detail beat of: a lookbook of one persona across a city evening, neon noir. figure alone in a corridor of light. low angle looking up, subject dominant. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "low angle of Scene 3 (detail) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene3.pick.keep",
-      "kind": "pick",
-      "position": {
-        "x": 720,
-        "y": 3270
-      },
-      "data": {
-        "params": {
-          "k": 3
-        },
-        "stage": "scene3",
-        "scene": 3
-      }
-    },
-    {
-      "id": "scene3-motion.image-to-video",
-      "kind": "image-to-video",
-      "position": {
-        "x": 80,
-        "y": 4160
-      },
-      "data": {
-        "params": {
-          "seconds": 4
-        },
-        "stage": "scene3-motion",
-        "scene": 3,
-        "why": "still to 4s video in the Neon noir pacing"
-      }
-    },
-    {
-      "id": "storyboard.brief.s4",
-      "kind": "brief",
-      "position": {
-        "x": 80,
-        "y": 710
-      },
-      "data": {
-        "params": {
-          "text": "Scene 4 (movement): movement beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn"
-        },
-        "stage": "storyboard",
-        "scene": 4
-      }
-    },
-    {
-      "id": "scene4.krea2-t2i.a1",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 4420
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene4",
-        "scene": 4,
-        "shot": 1,
-        "camera": "wide",
-        "prompt": "Scene 4 (movement): movement beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. wide establishing shot, full body in the environment. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "wide angle of Scene 4 (movement) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene4.krea2-t2i.a2",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 4630
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene4",
-        "scene": 4,
-        "shot": 2,
-        "camera": "medium",
-        "prompt": "Scene 4 (movement): movement beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. medium shot, waist up. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "medium angle of Scene 4 (movement) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene4.krea2-t2i.a3",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 4840
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene4",
-        "scene": 4,
-        "shot": 3,
-        "camera": "close",
-        "prompt": "Scene 4 (movement): movement beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. close-up on the face, shallow depth of field. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "close angle of Scene 4 (movement) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene4.krea2-t2i.a4",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 5050
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene4",
-        "scene": 4,
-        "shot": 4,
-        "camera": "three-quarter",
-        "prompt": "Scene 4 (movement): movement beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. three-quarter angle, slightly off axis. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "three-quarter angle of Scene 4 (movement) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene4.krea2-t2i.a5",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 400,
-        "y": 4420
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene4",
-        "scene": 4,
-        "shot": 5,
-        "camera": "low",
-        "prompt": "Scene 4 (movement): movement beat of: a lookbook of one persona across a city evening, neon noir. back to camera then turn. low angle looking up, subject dominant. tight silhouette against neon. back to camera then turn. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "low angle of Scene 4 (movement) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene4.pick.keep",
-      "kind": "pick",
-      "position": {
-        "x": 720,
-        "y": 4420
-      },
-      "data": {
-        "params": {
-          "k": 3
-        },
-        "stage": "scene4",
-        "scene": 4
-      }
-    },
-    {
-      "id": "scene4-motion.image-to-video",
-      "kind": "image-to-video",
-      "position": {
-        "x": 80,
-        "y": 5310
-      },
-      "data": {
-        "params": {
-          "seconds": 6
-        },
-        "stage": "scene4-motion",
-        "scene": 4,
-        "why": "still to 6s video in the Neon noir pacing"
-      }
-    },
-    {
-      "id": "storyboard.brief.s5",
-      "kind": "brief",
-      "position": {
-        "x": 400,
-        "y": 80
-      },
-      "data": {
-        "params": {
-          "text": "Scene 5 (turn): a market at dawn. figure alone in a corridor of light"
-        },
-        "stage": "storyboard",
-        "scene": 5
-      }
-    },
-    {
-      "id": "scene5.krea2-t2i.a1",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 5570
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene5",
-        "scene": 5,
-        "shot": 1,
-        "camera": "wide",
-        "prompt": "Scene 5 (turn): a market at dawn. figure alone in a corridor of light. wide establishing shot, full body in the environment. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "wide angle of Scene 5 (turn) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene5.krea2-t2i.a2",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 5780
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene5",
-        "scene": 5,
-        "shot": 2,
-        "camera": "medium",
-        "prompt": "Scene 5 (turn): a market at dawn. figure alone in a corridor of light. medium shot, waist up. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "medium angle of Scene 5 (turn) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene5.krea2-t2i.a3",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 5990
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene5",
-        "scene": 5,
-        "shot": 3,
-        "camera": "close",
-        "prompt": "Scene 5 (turn): a market at dawn. figure alone in a corridor of light. close-up on the face, shallow depth of field. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "close angle of Scene 5 (turn) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene5.krea2-t2i.a4",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 80,
-        "y": 6200
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene5",
-        "scene": 5,
-        "shot": 4,
-        "camera": "three-quarter",
-        "prompt": "Scene 5 (turn): a market at dawn. figure alone in a corridor of light. three-quarter angle, slightly off axis. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "three-quarter angle of Scene 5 (turn) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene5.krea2-t2i.a5",
-      "kind": "krea2-t2i",
-      "position": {
-        "x": 400,
-        "y": 5570
-      },
-      "data": {
-        "params": {
-          "variant": "no autoprompt"
-        },
-        "stage": "scene5",
-        "scene": 5,
-        "shot": 5,
-        "camera": "low",
-        "prompt": "Scene 5 (turn): a market at dawn. figure alone in a corridor of light. low angle looking up, subject dominant. wide with the figure small in the city. figure alone in a corridor of light. shot on 35mm anamorphic. palette: sodium orange, cyan, magenta neon, wet black. crushed shadows with colour in them, teal-magenta split. slow push-in on a dolly. same face and body. same hair. wardrobe as attached. one light source per scene. vertical, figure centred, headroom for captions",
-        "negative": "no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person",
-        "variant_count": 1,
-        "why": "low angle of Scene 5 (turn) in the Neon noir grammar"
-      }
-    },
-    {
-      "id": "scene5.pick.keep",
-      "kind": "pick",
-      "position": {
-        "x": 720,
-        "y": 5570
-      },
-      "data": {
-        "params": {
-          "k": 3
-        },
-        "stage": "scene5",
-        "scene": 5
-      }
-    },
-    {
-      "id": "scene5-motion.image-to-video",
-      "kind": "image-to-video",
-      "position": {
-        "x": 80,
-        "y": 6460
-      },
-      "data": {
-        "params": {
-          "seconds": 4
-        },
-        "stage": "scene5-motion",
-        "scene": 5,
-        "why": "still to 4s video in the Neon noir pacing"
+        "prompt": "0-4s: tight silhouette against neon, slow push-in on a dolly, Scene 2 (first look): first look beat of: a lookbook of one persona across a city evening, neon noir, back to camera then turn.\nStyle: 35mm anamorphic; palette sodium orange, cyan, magenta neon, wet black; crushed shadows with colour in them, teal-magenta split.\nHold constant across the whole clip: same face and body; same hair; wardrobe as attached; one light source per scene; vertical, figure centred, headroom for captions.\nAudio: sound effects and diegetic sound only. No music. No dialogue. No subtitles.\nStrictly exclude: no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person.",
+        "why": "still to 4s video in the Neon noir pacing",
+        "results": [
+          {
+            "run_id": "r-20260919-235544-age-to-video",
+            "status": "dry-run",
+            "files": [],
+            "backend": "pod",
+            "workflow": "icekiub/I2V_Infinite_extender_-_SUBS_-_Icekiub_v1.json",
+            "bindings": {
+              "image": "<scene2-dress.wardrobe>",
+              "prompt": "0-4s: tight silhouette against neon, slow push-in on a dolly, Scene 2 (first look): first look beat of: a lookbook of one persona across a city evening, neon noir, back to camera then turn.\nStyle: 35mm anamorphic; palette sodium orange, cyan, magenta neon, wet black; crushed shadows with colour in them, teal-magenta split.\nHold constant across the whole clip: same face and body; same hair; wardrobe as attached; one light source per scene; vertical, figure centred, headroom for captions.\nAudio: sound effects and diegetic sound only. No music. No dialogue. No subtitles.\nStrictly exclude: no daylight, no pastel, no flat lighting, no busy crowds, no text, no logos, no watermark, no extra fingers, no duplicate person."
+            },
+            "seeds": [
+              7588853
+            ],
+            "cost_estimate": {
+              "usd": 0.164,
+              "gpu_seconds": 360.0,
+              "basis": "assumed",
+              "rate": "A100 80GB $1.64/h (assumed)"
+            },
+            "started": "2026-09-19T20:55:44+00:00",
+            "finished": "2026-09-19T20:55:44+00:00"
+          }
+        ]
       }
     },
     {
@@ -1003,13 +622,28 @@
       "kind": "cut",
       "position": {
         "x": 80,
-        "y": 6720
+        "y": 3210
       },
       "data": {
         "params": {
           "seconds": 8
         },
-        "stage": "edit"
+        "stage": "edit",
+        "results": [
+          {
+            "run_id": "r-20260919-235544-edit-cut",
+            "status": "dry-run",
+            "files": [],
+            "note": "would cut what the upstream video steps make",
+            "cost_estimate": {
+              "usd": 0.0,
+              "gpu_seconds": 0,
+              "basis": "none",
+              "note": "cut uses no GPU time in this model"
+            },
+            "finished": "2026-09-19T20:55:44+00:00"
+          }
+        ]
       }
     },
     {
@@ -1017,11 +651,26 @@
       "kind": "captions",
       "position": {
         "x": 400,
-        "y": 6720
+        "y": 3210
       },
       "data": {
         "params": {},
-        "stage": "edit"
+        "stage": "edit",
+        "results": [
+          {
+            "run_id": "r-20260919-235544-dit-captions",
+            "status": "dry-run",
+            "files": [],
+            "note": "would captions what the upstream video steps make",
+            "cost_estimate": {
+              "usd": 0.0,
+              "gpu_seconds": 0,
+              "basis": "none",
+              "note": "captions uses no GPU time in this model"
+            },
+            "finished": "2026-09-19T20:55:44+00:00"
+          }
+        ]
       }
     },
     {
@@ -1029,11 +678,26 @@
       "kind": "export",
       "position": {
         "x": 80,
-        "y": 6980
+        "y": 3470
       },
       "data": {
         "params": {},
-        "stage": "publish"
+        "stage": "publish",
+        "results": [
+          {
+            "run_id": "r-20260919-235545-blish-export",
+            "status": "dry-run",
+            "files": [],
+            "note": "would export what the upstream media steps make",
+            "cost_estimate": {
+              "usd": 0.0,
+              "gpu_seconds": 0,
+              "basis": "none",
+              "note": "export uses no GPU time in this model"
+            },
+            "finished": "2026-09-19T20:55:45+00:00"
+          }
+        ]
       }
     }
   ],
@@ -1064,22 +728,6 @@
     },
     {
       "id": "e4",
-      "source": "storyboard.brief.s1",
-      "sourceHandle": "text",
-      "target": "scene1.krea2-t2i.a4",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e5",
-      "source": "storyboard.brief.s1",
-      "sourceHandle": "text",
-      "target": "scene1.krea2-t2i.a5",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e6",
       "source": "scene1.krea2-t2i.a1",
       "sourceHandle": "image",
       "target": "scene1.pick.keep",
@@ -1087,7 +735,7 @@
       "type": "image"
     },
     {
-      "id": "e7",
+      "id": "e5",
       "source": "scene1.krea2-t2i.a2",
       "sourceHandle": "image",
       "target": "scene1.pick.keep",
@@ -1095,7 +743,7 @@
       "type": "image"
     },
     {
-      "id": "e8",
+      "id": "e6",
       "source": "scene1.krea2-t2i.a3",
       "sourceHandle": "image",
       "target": "scene1.pick.keep",
@@ -1103,31 +751,31 @@
       "type": "image"
     },
     {
-      "id": "e9",
-      "source": "scene1.krea2-t2i.a4",
-      "sourceHandle": "image",
-      "target": "scene1.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e10",
-      "source": "scene1.krea2-t2i.a5",
-      "sourceHandle": "image",
-      "target": "scene1.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e11",
+      "id": "e7",
       "source": "scene1.pick.keep",
       "sourceHandle": "chosen",
+      "target": "scene1-dress.wardrobe",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e8",
+      "source": "refs.reference-images.wardrobe-red-dress",
+      "sourceHandle": "images",
+      "target": "scene1-dress.wardrobe",
+      "targetHandle": "clothes",
+      "type": "image"
+    },
+    {
+      "id": "e9",
+      "source": "scene1-dress.wardrobe",
+      "sourceHandle": "image",
       "target": "scene1-motion.image-to-video",
       "targetHandle": "image",
       "type": "image"
     },
     {
-      "id": "e12",
+      "id": "e10",
       "source": "storyboard.brief.s1",
       "sourceHandle": "text",
       "target": "scene1-motion.image-to-video",
@@ -1135,7 +783,7 @@
       "type": "text"
     },
     {
-      "id": "e13",
+      "id": "e11",
       "source": "storyboard.brief.s2",
       "sourceHandle": "text",
       "target": "scene2.krea2-t2i.a1",
@@ -1143,7 +791,7 @@
       "type": "text"
     },
     {
-      "id": "e14",
+      "id": "e12",
       "source": "storyboard.brief.s2",
       "sourceHandle": "text",
       "target": "scene2.krea2-t2i.a2",
@@ -1151,7 +799,7 @@
       "type": "text"
     },
     {
-      "id": "e15",
+      "id": "e13",
       "source": "storyboard.brief.s2",
       "sourceHandle": "text",
       "target": "scene2.krea2-t2i.a3",
@@ -1159,23 +807,7 @@
       "type": "text"
     },
     {
-      "id": "e16",
-      "source": "storyboard.brief.s2",
-      "sourceHandle": "text",
-      "target": "scene2.krea2-t2i.a4",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e17",
-      "source": "storyboard.brief.s2",
-      "sourceHandle": "text",
-      "target": "scene2.krea2-t2i.a5",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e18",
+      "id": "e14",
       "source": "scene2.krea2-t2i.a1",
       "sourceHandle": "image",
       "target": "scene2.pick.keep",
@@ -1183,7 +815,7 @@
       "type": "image"
     },
     {
-      "id": "e19",
+      "id": "e15",
       "source": "scene2.krea2-t2i.a2",
       "sourceHandle": "image",
       "target": "scene2.pick.keep",
@@ -1191,7 +823,7 @@
       "type": "image"
     },
     {
-      "id": "e20",
+      "id": "e16",
       "source": "scene2.krea2-t2i.a3",
       "sourceHandle": "image",
       "target": "scene2.pick.keep",
@@ -1199,31 +831,31 @@
       "type": "image"
     },
     {
-      "id": "e21",
-      "source": "scene2.krea2-t2i.a4",
-      "sourceHandle": "image",
-      "target": "scene2.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e22",
-      "source": "scene2.krea2-t2i.a5",
-      "sourceHandle": "image",
-      "target": "scene2.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e23",
+      "id": "e17",
       "source": "scene2.pick.keep",
       "sourceHandle": "chosen",
+      "target": "scene2-dress.wardrobe",
+      "targetHandle": "image",
+      "type": "image"
+    },
+    {
+      "id": "e18",
+      "source": "refs.reference-images.wardrobe-red-dress",
+      "sourceHandle": "images",
+      "target": "scene2-dress.wardrobe",
+      "targetHandle": "clothes",
+      "type": "image"
+    },
+    {
+      "id": "e19",
+      "source": "scene2-dress.wardrobe",
+      "sourceHandle": "image",
       "target": "scene2-motion.image-to-video",
       "targetHandle": "image",
       "type": "image"
     },
     {
-      "id": "e24",
+      "id": "e20",
       "source": "storyboard.brief.s2",
       "sourceHandle": "text",
       "target": "scene2-motion.image-to-video",
@@ -1231,295 +863,7 @@
       "type": "text"
     },
     {
-      "id": "e25",
-      "source": "storyboard.brief.s3",
-      "sourceHandle": "text",
-      "target": "scene3.krea2-t2i.a1",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e26",
-      "source": "storyboard.brief.s3",
-      "sourceHandle": "text",
-      "target": "scene3.krea2-t2i.a2",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e27",
-      "source": "storyboard.brief.s3",
-      "sourceHandle": "text",
-      "target": "scene3.krea2-t2i.a3",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e28",
-      "source": "storyboard.brief.s3",
-      "sourceHandle": "text",
-      "target": "scene3.krea2-t2i.a4",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e29",
-      "source": "storyboard.brief.s3",
-      "sourceHandle": "text",
-      "target": "scene3.krea2-t2i.a5",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e30",
-      "source": "scene3.krea2-t2i.a1",
-      "sourceHandle": "image",
-      "target": "scene3.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e31",
-      "source": "scene3.krea2-t2i.a2",
-      "sourceHandle": "image",
-      "target": "scene3.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e32",
-      "source": "scene3.krea2-t2i.a3",
-      "sourceHandle": "image",
-      "target": "scene3.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e33",
-      "source": "scene3.krea2-t2i.a4",
-      "sourceHandle": "image",
-      "target": "scene3.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e34",
-      "source": "scene3.krea2-t2i.a5",
-      "sourceHandle": "image",
-      "target": "scene3.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e35",
-      "source": "scene3.pick.keep",
-      "sourceHandle": "chosen",
-      "target": "scene3-motion.image-to-video",
-      "targetHandle": "image",
-      "type": "image"
-    },
-    {
-      "id": "e36",
-      "source": "storyboard.brief.s3",
-      "sourceHandle": "text",
-      "target": "scene3-motion.image-to-video",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e37",
-      "source": "storyboard.brief.s4",
-      "sourceHandle": "text",
-      "target": "scene4.krea2-t2i.a1",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e38",
-      "source": "storyboard.brief.s4",
-      "sourceHandle": "text",
-      "target": "scene4.krea2-t2i.a2",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e39",
-      "source": "storyboard.brief.s4",
-      "sourceHandle": "text",
-      "target": "scene4.krea2-t2i.a3",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e40",
-      "source": "storyboard.brief.s4",
-      "sourceHandle": "text",
-      "target": "scene4.krea2-t2i.a4",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e41",
-      "source": "storyboard.brief.s4",
-      "sourceHandle": "text",
-      "target": "scene4.krea2-t2i.a5",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e42",
-      "source": "scene4.krea2-t2i.a1",
-      "sourceHandle": "image",
-      "target": "scene4.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e43",
-      "source": "scene4.krea2-t2i.a2",
-      "sourceHandle": "image",
-      "target": "scene4.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e44",
-      "source": "scene4.krea2-t2i.a3",
-      "sourceHandle": "image",
-      "target": "scene4.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e45",
-      "source": "scene4.krea2-t2i.a4",
-      "sourceHandle": "image",
-      "target": "scene4.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e46",
-      "source": "scene4.krea2-t2i.a5",
-      "sourceHandle": "image",
-      "target": "scene4.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e47",
-      "source": "scene4.pick.keep",
-      "sourceHandle": "chosen",
-      "target": "scene4-motion.image-to-video",
-      "targetHandle": "image",
-      "type": "image"
-    },
-    {
-      "id": "e48",
-      "source": "storyboard.brief.s4",
-      "sourceHandle": "text",
-      "target": "scene4-motion.image-to-video",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e49",
-      "source": "storyboard.brief.s5",
-      "sourceHandle": "text",
-      "target": "scene5.krea2-t2i.a1",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e50",
-      "source": "storyboard.brief.s5",
-      "sourceHandle": "text",
-      "target": "scene5.krea2-t2i.a2",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e51",
-      "source": "storyboard.brief.s5",
-      "sourceHandle": "text",
-      "target": "scene5.krea2-t2i.a3",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e52",
-      "source": "storyboard.brief.s5",
-      "sourceHandle": "text",
-      "target": "scene5.krea2-t2i.a4",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e53",
-      "source": "storyboard.brief.s5",
-      "sourceHandle": "text",
-      "target": "scene5.krea2-t2i.a5",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e54",
-      "source": "scene5.krea2-t2i.a1",
-      "sourceHandle": "image",
-      "target": "scene5.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e55",
-      "source": "scene5.krea2-t2i.a2",
-      "sourceHandle": "image",
-      "target": "scene5.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e56",
-      "source": "scene5.krea2-t2i.a3",
-      "sourceHandle": "image",
-      "target": "scene5.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e57",
-      "source": "scene5.krea2-t2i.a4",
-      "sourceHandle": "image",
-      "target": "scene5.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e58",
-      "source": "scene5.krea2-t2i.a5",
-      "sourceHandle": "image",
-      "target": "scene5.pick.keep",
-      "targetHandle": "candidates",
-      "type": "image"
-    },
-    {
-      "id": "e59",
-      "source": "scene5.pick.keep",
-      "sourceHandle": "chosen",
-      "target": "scene5-motion.image-to-video",
-      "targetHandle": "image",
-      "type": "image"
-    },
-    {
-      "id": "e60",
-      "source": "storyboard.brief.s5",
-      "sourceHandle": "text",
-      "target": "scene5-motion.image-to-video",
-      "targetHandle": "prompt",
-      "type": "text"
-    },
-    {
-      "id": "e61",
+      "id": "e21",
       "source": "scene1-motion.image-to-video",
       "sourceHandle": "video",
       "target": "edit.cut",
@@ -1527,7 +871,7 @@
       "type": "video"
     },
     {
-      "id": "e62",
+      "id": "e22",
       "source": "scene2-motion.image-to-video",
       "sourceHandle": "video",
       "target": "edit.cut",
@@ -1535,31 +879,7 @@
       "type": "video"
     },
     {
-      "id": "e63",
-      "source": "scene3-motion.image-to-video",
-      "sourceHandle": "video",
-      "target": "edit.cut",
-      "targetHandle": "video",
-      "type": "video"
-    },
-    {
-      "id": "e64",
-      "source": "scene4-motion.image-to-video",
-      "sourceHandle": "video",
-      "target": "edit.cut",
-      "targetHandle": "video",
-      "type": "video"
-    },
-    {
-      "id": "e65",
-      "source": "scene5-motion.image-to-video",
-      "sourceHandle": "video",
-      "target": "edit.cut",
-      "targetHandle": "video",
-      "type": "video"
-    },
-    {
-      "id": "e66",
+      "id": "e23",
       "source": "edit.cut",
       "sourceHandle": "video",
       "target": "edit.captions",
@@ -1567,7 +887,23 @@
       "type": "video"
     },
     {
-      "id": "e67",
+      "id": "e24",
+      "source": "storyboard.brief.s1",
+      "sourceHandle": "text",
+      "target": "edit.captions",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e25",
+      "source": "storyboard.brief.s2",
+      "sourceHandle": "text",
+      "target": "edit.captions",
+      "targetHandle": "script",
+      "type": "text"
+    },
+    {
+      "id": "e26",
       "source": "edit.captions",
       "sourceHandle": "video",
       "target": "publish.export",

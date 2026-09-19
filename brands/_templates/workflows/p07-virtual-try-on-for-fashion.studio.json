@@ -7,7 +7,7 @@
     "idea": "P07",
     "offer": "Customers' chosen outfits on consistent models, 200 looks a month"
   },
-  "created": "2026-09-14",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -51,7 +51,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "klein-edit"
       }
     },
     {

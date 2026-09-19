@@ -7,7 +7,7 @@
     "idea": "S04",
     "offer": "Restore, colourise and upscale old photos and footage"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -29,7 +29,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "upscale"
       }
     },
     {
@@ -51,7 +52,9 @@
         "y": 290
       },
       "data": {
-        "params": {}
+        "params": {
+          "instruction": "Restore this old photograph: repair scratches, tears and fading, remove dust and noise, colourise naturally, keep every face exactly as it is."
+        }
       }
     },
     {
@@ -92,13 +95,7 @@
       "type": "image"
     }
   ],
-  "gaps": [
-    {
-      "node": "n3",
-      "step": "restore",
-      "reason": "No restoration workflow in the library yet."
-    }
-  ],
+  "gaps": [],
   "family": "service",
   "compliance": "Owner consent"
 }

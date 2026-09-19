@@ -14,7 +14,7 @@ REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "packages" / "strategy"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import workflow_author as wa  # noqa: E402
-from presets import cameras, compose_prompt, negatives, node_params, preset, scene_fragments  # noqa: E402
+from presets import FORBIDDEN, cameras, compose_motion_prompt, compose_prompt, negatives, node_params, preset, scene_fragments  # noqa: E402
 from profiles import aspect_note, beat, lock_fragments, profile  # noqa: E402
 from brief import EngineBrief, RefCollection, Role, Scene, ShotSpec, check_brief  # noqa: E402
 
@@ -127,6 +127,12 @@ def expand_angles(scene: Scene, k: int, preset_name: str) -> list[ShotSpec]:
 
 def plan(brief: EngineBrief, cat: dict[str, Any] | None = None) -> dict[str, Any]:
     problems = check_brief(brief)
+    # A pasted guide prompt ("in the style of <director>", "shot by <cinematographer>") is refused
+    # here, before any node exists, for the same reason presets are: the look, never the name.
+    for field_name, value in (("idea", brief.idea), ("title", brief.title), *((f"scene_hints[{i}]", h) for i, h in enumerate(brief.scene_hints or []))):
+        m = FORBIDDEN.search(value or "")
+        if m:
+            problems.append(f"{field_name} names a person or a likeness ({m.group(0)!r}); describe the look instead")
     if problems:
         raise DirectorError("; ".join(problems))
     b = Builder(brief, cat)
@@ -211,12 +217,16 @@ def plan(brief: EngineBrief, cat: dict[str, Any] | None = None) -> dict[str, Any
         # motion
         mo = b.stage(f"scene{sc.n}-motion", f"{sc.title} motion", scene=sc.n)
         clip = next((ref_nodes[r.name] for r in brief.by_purpose("motion") if r.may_feed()), None)
+        # the beat is built from the setting; the blocking is passed once, as its own part
+        motion_prompt = compose_motion_prompt(f"{sc.title}: {sc.setting}", p, sc.duration_s, locks, neg,
+                                              framing=sc.framing, blocking=sc.blocking)
         if clip:
-            v = b.node(mo, "motion-control", "", scene=sc.n, why="a reference clip drives the motion")
+            v = b.node(mo, "motion-control", "", scene=sc.n, prompt=motion_prompt,
+                       why="a reference clip drives the motion; the prompt holds style, counts and excludes")
             b.link(current, port, v, "character"); b.link(clip, "video", v, "video")
         else:
             v = b.node(mo, "image-to-video", "", scene=sc.n, params=node_params(p, "image-to-video", sc.duration_s),
-                       why=f"still to {sc.duration_s}s video in the {p['label']} pacing")
+                       prompt=motion_prompt, why=f"still to {sc.duration_s}s video in the {p['label']} pacing")
             b.link(current, port, v, "image"); b.link(brief_node, "text", v, "prompt")
         vcur, vport = v, "video"
         for fx in brief.vfx:

@@ -8,23 +8,62 @@
   },
   "lanes": [
     {
-      "id": "gaps",
-      "label": "Not runnable yet",
-      "variant": "exception"
+      "id": "you",
+      "label": "You provide"
+    },
+    {
+      "id": "studio",
+      "label": "Studio code"
+    },
+    {
+      "id": "publish",
+      "label": "Publish (draft first)"
     }
+  ],
+  "mainPath": [
+    "n2",
+    "n1"
   ],
   "nodes": [
     {
-      "id": "n1",
-      "lane": "gaps",
+      "id": "n2",
+      "lane": "you",
       "col": 0,
-      "type": "security",
-      "label": "Studio",
-      "sublabel": "no node yet",
-      "tag": "gap"
+      "type": "frontend",
+      "label": "Brief"
+    },
+    {
+      "id": "n1",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Studio handoff",
+      "sublabel": "studio.py",
+      "width": 120
+    },
+    {
+      "id": "n3",
+      "lane": "publish",
+      "col": 1,
+      "type": "external",
+      "label": "Publish to Whop",
+      "sublabel": "whop_publish.py",
+      "width": 128
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "from": "n2",
+      "to": "n1",
+      "label": "text",
+      "variant": "emphasis"
+    },
+    {
+      "from": "n2",
+      "to": "n3",
+      "label": "text"
+    }
+  ],
   "cards": [
     {
       "dot": "emerald",
@@ -37,10 +76,9 @@
       ]
     },
     {
-      "dot": "rose",
+      "dot": "amber",
       "title": "Rules",
       "items": [
-        "Gap: Studio not built",
         "Dry-run until approved",
         "Logo composited, never generated"
       ]

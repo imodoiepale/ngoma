@@ -95,6 +95,81 @@ def test_forbidden_words_are_refused(tmp_path):
     presets.load_presets.cache_clear()
 
 
+@pytest.mark.parametrize("text", [
+    "fincher", "Deakins", "malick", "wong kar-wai", "Wong Kar Wai", "gerwig", "cuaron", "Cuarón", "lubezki",
+    "snyder", "coppola", "noe", "Noé",
+    "shot by a famous cinematographer", "in the style of a famous director", "directed by someone",
+])
+def test_forbidden_refuses_the_names_and_attribution_phrases_the_guides_use(text):
+    assert presets.FORBIDDEN.search(f"a wide shot {text} at dusk"), text
+
+
+@pytest.mark.parametrize("text", ["snow", "no", "no daylight", "coppa", "shot on 35mm", "nolanesque", "noel", "the style block"])
+def test_forbidden_leaves_innocent_words_alone(text):
+    assert not presets.FORBIDDEN.search(text), text
+
+
+def test_a_brief_that_names_a_director_is_refused_before_any_node_exists():
+    with pytest.raises(director.DirectorError, match="names a person"):
+        director.plan(brief(idea="a city evening in the style of Fincher"))
+    with pytest.raises(director.DirectorError, match="scene_hints\\[1\\] names a person"):
+        director.plan(brief(scene_hints=["rooftop", "wet street shot by Deakins"]))
+
+
+def test_compose_motion_prompt_is_deterministic_and_has_the_beat_structure():
+    p = presets.preset("impact-slow-motion")
+    locks = ["same face and body", "wardrobe as attached", "vertical, figure centred"]
+    neg = "no text, no logos, no spectators"
+    args = ("Scene 1 (arrival): a sprinter leaves the blocks", p, 6, locks, neg)
+    a = presets.compose_motion_prompt(*args, framing=p["framing"][0], blocking=p["blocking"][0])
+    b = presets.compose_motion_prompt(*args, framing=p["framing"][0], blocking=p["blocking"][0])
+    assert a == b
+    lines = a.split("\n")
+    assert lines[0].startswith("0-6s: ") and p["motion"] in lines[0] and p["framing"][0] in lines[0] and p["blocking"][0] in lines[0]
+    assert lines[1].startswith("Style: ") and p["lens"] in lines[1] and p["grade"] in lines[1]
+    assert lines[2].startswith("Hold constant across the whole clip: ") and all(lock in lines[2] for lock in locks)
+    assert lines[3] == "Audio: sound effects and diegetic sound only. No music. No dialogue. No subtitles."
+    assert lines[4] == f"Strictly exclude: {neg}."
+    assert "\u2014" not in a and not presets.FORBIDDEN.search(a)
+    # without locks or negatives the two optional lines are simply absent
+    short = presets.compose_motion_prompt("a still", p, 4, [], "")
+    assert short.startswith("0-4s: ") and "Hold constant" not in short and "Strictly exclude" not in short
+
+
+@pytest.mark.parametrize("name", ["papercraft-relief", "painterly-cel", "impact-slow-motion"])
+def test_the_presets_from_the_creator_guides_load_as_grammar(name):
+    p = presets.preset(name)
+    assert all(k in p for k in presets.GRAMMAR_KEYS)
+    assert presets.scene_fragments(p, 0) and presets.negatives(p).startswith("no ")
+    assert not presets.FORBIDDEN.search(" ".join(str(v) for v in p.values()))
+    wf = director.plan(brief(preset=name))
+    motion = [n for n in wf["nodes"] if n["kind"] in ("image-to-video", "motion-control")]
+    assert motion and all(p["motion"] in n["data"]["prompt"] for n in motion)
+
+
+def test_the_motion_prompt_says_the_blocking_exactly_once():
+    wf = director.plan(brief())
+    for sc in director.storyboard(brief()):
+        node = next(n for n in wf["nodes"] if n["kind"] == "image-to-video" and n["data"]["scene"] == sc.n)
+        beat = node["data"]["prompt"].split("\n")[0]
+        assert beat.count(sc.blocking) == 1, beat
+        assert sc.setting in beat and sc.framing in beat
+
+
+def test_a_motion_clip_routes_the_scene_through_motion_control_with_a_prompt():
+    b = brief(refs=[*FIXTURE["refs"], {"name": "motion-dance", "kind": "video", "use": "data", "rights": "owned"}])
+    wf = director.plan(b)
+    mc = [n for n in wf["nodes"] if n["kind"] == "motion-control"]
+    assert len(mc) == 4 and not any(n["kind"] == "image-to-video" for n in wf["nodes"])
+    for n in mc:
+        assert n["data"]["prompt"].startswith("0-") and "prompt" in n["data"]["why"]
+        assert any(e["target"] == n["id"] and e["source"] == "refs.video-clip.motion-dance" for e in wf["edges"])
+    assert wa.validate(wf) == []
+    # an unowned clip may not feed the step, so the scene falls back to still-to-video
+    b = brief(refs=[*FIXTURE["refs"], {"name": "motion-dance", "kind": "video", "use": "data", "rights": "unclear"}])
+    assert not any(n["kind"] == "motion-control" for n in director.plan(b)["nodes"])
+
+
 def test_intents_are_recognised():
     i = session.intent
     assert i("add a scene at a rooftop at golden hour").name == "add_scene"

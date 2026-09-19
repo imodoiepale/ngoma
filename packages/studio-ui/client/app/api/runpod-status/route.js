@@ -2,7 +2,7 @@ export const dynamic = "force-dynamic";
 
 // Cloudflare fronts the RunPod API and rejects requests without a conventional
 // User-Agent with error 1010.
-const UA = "epalle-studio/1.0 (+https://runpod.io)";
+const UA = "director-studio/1.0 (+https://runpod.io)";
 const REST = "https://rest.runpod.io/v1";
 
 const VOLUME_ID = process.env.RUNPOD_VOLUME_ID || "7y7jyghmua";
@@ -91,7 +91,7 @@ export async function GET() {
         name: volume.name,
         size: volume.size,
         dataCenterId: volume.dataCenterId,
-        isEpalle: volume.id === VOLUME_ID,
+        isStudioVolume: volume.id === VOLUME_ID,
       })),
       endpoints: asArray(endpoints).map((endpoint) => ({
         id: endpoint.id,

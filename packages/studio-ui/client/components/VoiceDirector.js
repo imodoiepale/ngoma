@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import { ConversationProvider, useConversation } from "@elevenlabs/react";
 
-// Talk to the director out loud. The ElevenLabs agent ("EPALLE Studio Director") listens and
+// Talk to the director out loud. The ElevenLabs agent (the studio's director agent) listens and
 // speaks; its tools run here in the browser and go through the same /api/director and /api/run
 // gates as typing. Tool names must match packages/voice/elevenlabs_agent.py (a test checks).
 // If the agent is not reachable, the button falls back to the browser's own speech recognition.

@@ -18,16 +18,11 @@
     {
       "id": "gpu",
       "label": "ComfyUI on the pod"
-    },
-    {
-      "id": "gaps",
-      "label": "Not runnable yet",
-      "variant": "exception"
     }
   ],
   "mainPath": [
     "n2",
-    "n4",
+    "n3",
     "n6",
     "n7"
   ],
@@ -48,12 +43,13 @@
       "width": 132
     },
     {
-      "id": "n3",
+      "id": "n1",
       "lane": "studio",
       "col": 1,
       "type": "backend",
-      "label": "Voiceover",
-      "sublabel": "tts.py"
+      "label": "Motion graphics",
+      "sublabel": "motion_graphics.py",
+      "width": 128
     },
     {
       "id": "n4",
@@ -65,19 +61,17 @@
       "width": 160
     },
     {
-      "id": "n1",
-      "lane": "gaps",
-      "col": 1,
-      "type": "security",
-      "label": "Motion graphics",
-      "sublabel": "not built yet",
-      "tag": "gap",
-      "width": 128
+      "id": "n3",
+      "lane": "studio",
+      "col": 2,
+      "type": "backend",
+      "label": "Voiceover",
+      "sublabel": "tts.py"
     },
     {
       "id": "n6",
       "lane": "studio",
-      "col": 2,
+      "col": 3,
       "type": "backend",
       "label": "Captions",
       "sublabel": "mux.py"
@@ -85,7 +79,7 @@
     {
       "id": "n7",
       "lane": "studio",
-      "col": 3,
+      "col": 4,
       "type": "backend",
       "label": "Export files",
       "sublabel": "compositor.py",
@@ -96,13 +90,13 @@
     {
       "from": "n2",
       "to": "n1",
-      "label": "text",
-      "variant": "dashed"
+      "label": "text"
     },
     {
       "from": "n2",
       "to": "n3",
-      "label": "text"
+      "label": "text",
+      "variant": "emphasis"
     },
     {
       "from": "n5",
@@ -112,19 +106,23 @@
     {
       "from": "n2",
       "to": "n4",
-      "label": "text",
-      "variant": "emphasis"
+      "label": "text"
     },
     {
       "from": "n4",
       "to": "n6",
-      "label": "video",
-      "variant": "emphasis"
+      "label": "video"
     },
     {
       "from": "n2",
       "to": "n6",
       "label": "text"
+    },
+    {
+      "from": "n3",
+      "to": "n6",
+      "label": "audio",
+      "variant": "emphasis"
     },
     {
       "from": "n6",
@@ -145,10 +143,9 @@
       ]
     },
     {
-      "dot": "rose",
+      "dot": "amber",
       "title": "Rules",
       "items": [
-        "Gap: Motion graphics not built",
         "Dry-run until approved",
         "Logo composited, never generated"
       ]

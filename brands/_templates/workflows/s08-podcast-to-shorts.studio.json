@@ -7,7 +7,7 @@
     "idea": "S08",
     "offer": "30 captioned clips a month from long episodes"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -53,7 +53,8 @@
       "data": {
         "params": {
           "seconds": 8
-        }
+        },
+        "alias": "clip-select"
       }
     },
     {

@@ -1,6 +1,21 @@
 # Blockers
 
-Open items that gate real use. Each says who owns it.
+Open items that gate real use. Each says who owns it. Items 16 to 23 are the decisions and
+gaps opened by the general creative studio design
+(`docs/superpowers/specs/2026-09-20-general-creative-studio-design.md`); 17, 21 and 22
+were closed in the consolidation pass after its five workstreams landed.
+
+## Local proof — cleared 2026-09-19, no spend
+
+These were verified on this machine. They are not live GPU proof.
+
+- Local gates: `python -m pytest -q` (592 passed on 2026-09-19; 837 on 2026-09-20 with the workspace, fan-out and describe tests, while the Stage 4 workstreams are still landing), `python packages/engine/cli.py ports-check`, `python packages/strategy/workflow_author.py --check` (60 workflows, including S03 after the unknown-handle fix), `python studio.py check`.
+- Workspaces: `python packages/strategy/workspace.py check epalle` and `check ongea-pesa` both pass (warnings only). A scaffold into a temporary root passes `check` (`tests/test_workspace.py`).
+- Director dry-run session `rp1` on client `epalle`, workflow `a-lookbook-of-one-persona-across-a-city-evening-neon-noir`: every stage wrote `status: dry-run` manifests under `brands/epalle/runs/` (gitignored). Nothing was submitted.
+- Fixture wardrobe stills: `brands/epalle/references/red-dress/` and `wardrobe-red-dress/` (owned, fictional, geometric colour fields, no real-person likeness).
+- `--stage next` now treats a dry-run result as finished, and skips a stage that is only waiting on an unmade pick, so the runbook loop can reach later scenes.
+
+Still required before a paid pod run: items 1 and 3, plus 14 and 15 below. `python infra/runpod/set_secret.py --list` on 2026-09-19 showed RunPod and Hugging Face unset. `provision_pod.py --status` was not run (no key). `budget_usd` in `brands/_presets/engine.yaml` is still 0.
 
 ## 1. Leaked credentials — YOU, before any live run
 Three valid secrets sit in plaintext in `Documents\Codex\2026-09-06\what-this-release-does-accepts-up-2\`:
@@ -14,11 +29,25 @@ valid. Rotate, then store new values via `infra/runpod/set_secret.py` (Windows D
 ## 2. RunPod serverless has never completed a generation — ME, Phase 4 follow-up
 Endpoint `ugtmfoidpnh8pd`. Only recorded result: `{"status":"IN_QUEUE"}`. Pod-side
 execution IS proven (364.87 s / 45 images). Prove serverless with
-`infra/runpod/smoke-test.json` before any scheduled workload depends on it: `uv run packages/comfy-client/client.py smoke --backend serverless --live` passes only on COMPLETED with files.
+`infra/runpod/smoke-test.json` before any scheduled workload depends on it: `python packages/comfy-client/client.py smoke --backend serverless --live` passes only on COMPLETED with files.
 
 ## 3. FLUX.2 Klein 9B KV is licence-gated — YOU
-Blocks `carousel_pose`, which the router selects for 12 of the 30 seeded ideas. Accept the
-licence on the HuggingFace model page, or switch that profile to the fp8 variant.
+Blocks `carousel_pose`, which the router selects for 12 of the 30 seeded ideas, and the
+`carousel` step the batch pattern (character swap, then a carousel per result) and the
+persona ideas depend on. Accept the licence on the HuggingFace model page, or switch that
+profile to the fp8 variant.
+
+The same licence gates `lora-train` (S01, X01; `packages/engine/lora_train.py`), which
+trains against the Klein 9B base. Concrete prerequisites, in order:
+1. Accept the FLUX.2 Klein licence on Hugging Face with the account whose `HF_TOKEN` the
+   pod will carry; ai-toolkit pulls the text encoder and VAE from that repo at run time.
+2. `infra/runpod/setup-pod.sh` now clones `ostris/ai-toolkit` into
+   `/workspace/epalle/ai-toolkit` and installs its requirements into the ComfyUI venv
+   (idempotent; a failure there is a warning). Re-run it on the pod once.
+3. The base file on the volume: `download_planned.py` with `HF_TOKEN` set.
+The engine never trains: the `lora-train` step writes `config.yaml` and `launch.sh` in
+dry-run and records `blocked` in live mode; a person runs `launch.sh` on the pod
+(`infra/runpod/README.md`, "Training").
 
 ## 4. Instagram enumeration needs the OpenCLI extension — YOU
 `agent-reach doctor --json` currently reports instagram `active_backend: null`. Enable the
@@ -33,7 +62,7 @@ goes through the Meta Graph API, which requires ALL of:
   3. a Meta app with instagram_content_publish, pages_show_list and instagram_basic,
      live rather than in development mode
 Then: deploy `infra/postiz/` on the VPS, connect the channel in the UI, and
-`uv run packages/publish/postiz.py channels` will show its integration id.
+`python packages/publish/postiz.py channels` will show its integration id.
 Prove the pipeline on a throwaway Business account first.
 Postiz auto-publish goes through the Graph API, which requires an IG Professional account
 linked to a Facebook Page via Meta Business Suite. Creating and linking accounts is yours.
@@ -118,3 +147,91 @@ Still genuinely absent:
 Meta AI via OpenWA as an image provider. Region-gated, no job ids, ToS-fragile, and it
 would be the only provider with no reproducibility guarantee. Revisit only once Phases
 0-6 are stable.
+
+## 14. Engine budget is still 0 — YOU, before any live GPU stage
+`brands/_presets/engine.yaml` has `budget_usd: 0`. The engine never raises it. At 0 the
+control plane refuses every live stage before anything is submitted, including every
+fan-out stage (a 50-item batch is one approval with one total). Raise it to 10 (or
+another figure you accept), then add or re-add the worker so the copy in the control
+plane matches:
+
+```
+python packages/orchestrator/control.py workers
+python packages/orchestrator/control.py add-worker --name engine --runtime local --role "director engine" --budget 10
+```
+
+## 15. LM Studio is not on the pod — YOU, before captioning or the H3 reference route
+Two graphs call an LM Studio server the pod does not have: `H3_Icy_image.json` and
+`workflows/icekiub/captioning_workflow.json`. The lookbook proof without a character
+role uses Krea 2 and does not need this. Dataset captioning (`caption-dataset`, used by
+P01, P06, S01 and X01) does. For H3 and captioning: LM Studio on this PC over Tailscale,
+or an OpenAI-compatible server on the pod. See `infra/runpod/README.md` section 5.
+
+## 16. Product name — YOU (the second reference product is confirmed)
+The README now leads with **Director** (open creative studio). The git folder is still
+`Director`; that word never covered music videos, WhatsApp Status, LoRAs, or the 50 offers.
+The design docs, the workspace scaffold, the ElevenLabs agent display strings and
+`brands/_presets/voice-agent.json` say **Director Studio**, which remains proposed. Confirm
+Director, Director Studio, or name the one you want. Then the UI wordmark, `package.json` name,
+User-Agent and `EPALLE_*` env names change (W1, with `EPALLE_*` still read as fallbacks).
+
+Resolved: you confirmed **Weavy.ai** (node-based workflow creation) as the second reference
+product alongside Higgsfield. The spec's Part 1 reading of it stands.
+
+## 17. ~~`uv` is not on PATH, and two things still assume it~~ — RESOLVED 2026-09-20
+Every doc command is written for plain `python`, and the two places that shelled out to `uv`
+now fall back:
+- `studio.py` tasks `plan`, `test`, `graph` and `loop` prefer `uv run --with ...` when `uv`
+  is on PATH and otherwise run the same scripts with the interpreter that launched
+  `studio.py` (`sys.executable`); `tests/test_studio_runner.py` pins both branches.
+- The studio UI's API routes spawn through `lib/python.js`, which honours `STUDIO_PYTHON`
+  and defaults to `python` (`docs/engine/DESCRIBE.md`).
+Installing `uv` is optional; it only saves the one-time `pip install pyyaml pillow pytest`.
+
+## 18. Credits or per-deliverable pricing — YOU
+Higgsfield sells credits that expire; the 50 ideas price per deliverable. Internally the
+unit stays USD with a measured-or-assumed basis either way, and `budget_usd` stays a hard
+cap. Decide whether credits are sold at all before the Jobs and Budget page shows a unit.
+
+## 19. Real-person face swap — YOU, confirm the policy
+Current answer: never without a written release recorded in `collection.json`
+(`consent: true`, and a note saying where the release is kept). The step catalogue flags
+`faceswap`, `klein-headswap` (`character-swap`), `refmod-create`, `dataset` and `lipsync`
+as consent steps; the runner's run-time half of the gate (block a live submission whose
+collection lacks `use: data`, `rights: owned|licensed` and `consent: true` for a real
+person) is W3's. Confirm this is the policy, or define the release process it should check.
+No exception for public figures, customers, staff or friends.
+
+## 20. `adult: true` nodes in the general catalogue — YOU
+`klein-i2i` and the other Icekiub nodes marked `adult: true` are the best fit for
+"recreate each reference with the character as subject". Decide whether Explore offers
+them behind the existing 18+ gate or hides them from the general catalogue. Either way they
+never run on a client workspace's infrastructure.
+
+## 21. ~~Two `collection.json` fixtures start with a UTF-8 BOM~~ — RESOLVED 2026-09-20
+`brands/epalle/references/red-dress/collection.json` and `wardrobe-red-dress/collection.json`
+are BOM-free (byte-checked) and `workspace.py check epalle` no longer warns. The root cause
+is also gone: `packages/engine/references.py read_collection` reads `utf-8-sig`, so a
+`collection.json` written by PowerShell's `Set-Content -Encoding utf8` cannot fail a run
+again (`tests/test_engine_references.py::test_read_collection_tolerates_a_utf8_bom`, which
+also asserts the two fixtures stay BOM-free).
+
+## 22. ~~Skills are mirrored from `shared-skills/approved/`~~ — RESOLVED 2026-09-20
+`studio.py skills-sync` copies `shared-skills/approved/*` over `.claude/skills/` and
+`.agents/skills/`. The approved copies of `content-studio` and `workflow-author` now hold the
+workspace and `python` wording, and a sync was run: all three trees are identical, so the
+next sync is a no-op. Edit `shared-skills/approved/` first, then sync; never the mirrors.
+
+## 23. `relight` for video is the last capability gap across the 50 ideas — ME
+Every other step the 50 ideas name either runs, is port-mapped, or states its blocker on the
+template and the proposal (`tests/test_ideas_gaps.py` pins the count per idea). `relight` on
+footage (M01's relit VFX pass; the `vfx relight` utterance) has no backend: the catalogue node
+is `backend.kind: gap`. Stills are covered: S02's `product-relight` runs on the Qwen
+`image-edit` node by instruction. Closing it needs an IC-Light video graph
+(`kijai/ComfyUI-IC-Light` with a per-frame light map) or a Beeble SwitchLight-style
+relighting workflow in `workflows/`, registered in `workflows/manifest.json` with a
+`.ports.json` exposing `video`, `light_direction` and `prompt` (`docs/engine/PORT-MAPS.md`),
+then the node's backend switched from `gap` to that workflow. The WanAnimate relight LoRA in
+the two ICY WAN ANIMATE V4 graphs is not it: it matches a swapped character to the driving
+clip and cannot change the light on footage. Until then the step stays a declared gap and
+M01 sells without the relight pass.

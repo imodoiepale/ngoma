@@ -22,10 +22,10 @@ Studio template: [`s01-refmod-or-lora-as-a-service.studio.json`](../../brands/_t
 | Reference images | you provide |  | — |
 | RefMod character | ComfyUI on the pod | `workflows/h3-refmods/franckyb-refmod-create-from-folder.json` | Consent |
 | Caption a dataset | ComfyUI on the pod | `workflows/icekiub/AIO_-_Uncensored_captioning_workflow_-_subs_-_icekiub_v1.5.json` | — |
-| LoRA training | not runnable yet | No LoRA training workflow in the library yet (ai-toolkit runs outside ComfyUI). Use RefMod character instead. | Consent |
+| LoRA training | studio code | `packages/engine/lora_train.py` (needs setup: BLOCKERS 3) | Consent |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
-75% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -41,15 +41,20 @@ Setup budget $100. Fixed monthly spend $30. First cash in about 7 days.
 
 ## What is not ready
 
-- **LoRA training**: No LoRA training workflow in the library yet (ai-toolkit runs outside ComfyUI). Use RefMod character instead.
+- **LoRA training** needs setup (`docs/BLOCKERS.md` item 3): The pod has no ostris/ai-toolkit clone at /workspace/epalle/ai-toolkit and setup-pod.sh does not install one; the Klein 9B base model it trains against is the licence-gated FLUX.2 file (accept the licence, then infra/runpod/download_planned.py). lora_train.py writes the config and launch.sh and refuses nothing else; the run is started by hand on the pod (module docstring lists what must exist there).
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: `ai-toolkit-lora` stays a declared gap because the LoRA is the product being sold; RefMod (refmod-create, H3) is the deliverable we can make today and the offer says so. Closing the gap needs a python job module (proposed packages/engine/lora_train.py) that runs ostris/ai-toolkit on the pod from the captioned dataset.
+- 2026-09-20 (W6): `ai-toolkit-lora` is bound to packages/engine/lora_train.py: rights gate (owned or licensed data, fictional or consented), ai-toolkit config.yaml, captions from the caption-dataset step, pod launch.sh and manifest. It never trains: the run is started by hand on the pod and needs an ai-toolkit clone plus the Klein 9B base model there (needs_setup, BLOCKERS 3). RefMod remains the same-day deliverable.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 1 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch creators and brands with the pilot; target the low scenario (4 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

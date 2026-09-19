@@ -53,6 +53,9 @@ brands/*/calendar/plan-180d.*
 # Large reference material. The style grammars derived from this are what the repo
 # needs; the 39.6 MB source PDF is not.
 *.pdf
+# Except the creator study guides (AiKAMI Days 1-7, ~67 MB total), committed by decision on
+# 2026-09-19 so the notes under docs/creators can be checked against their source.
+!docs/creators/**/*.pdf
 
 # director engine results: images and clips the runner made, plus their manifests.
 # Operational output, often large; the workflow file records what ran and where it landed.

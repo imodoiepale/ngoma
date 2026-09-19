@@ -7,7 +7,7 @@
     "idea": "S02",
     "offer": "Unlimited product shots from 3 phone photos per SKU"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -40,7 +40,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "klein-edit"
       }
     },
     {
@@ -56,31 +57,21 @@
     },
     {
       "id": "n4",
-      "kind": "relight",
+      "kind": "upscale-video",
       "position": {
         "x": 400,
         "y": 290
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "upscale"
       }
     },
     {
       "id": "n6",
-      "kind": "upscale-video",
-      "position": {
-        "x": 720,
-        "y": 80
-      },
-      "data": {
-        "params": {}
-      }
-    },
-    {
-      "id": "n7",
       "kind": "export",
       "position": {
-        "x": 1040,
+        "x": 720,
         "y": 80
       },
       "data": {
@@ -118,25 +109,11 @@
       "source": "n4",
       "sourceHandle": "video",
       "target": "n6",
-      "targetHandle": "video",
-      "type": "video"
-    },
-    {
-      "id": "e5",
-      "source": "n6",
-      "sourceHandle": "video",
-      "target": "n7",
       "targetHandle": "media",
       "type": "video"
     }
   ],
-  "gaps": [
-    {
-      "node": "n4",
-      "step": "relight",
-      "reason": "No video relight workflow in the library yet."
-    }
-  ],
+  "gaps": [],
   "family": "service",
   "compliance": "Real product appearance"
 }

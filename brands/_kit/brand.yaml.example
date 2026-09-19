@@ -1,0 +1,86 @@
+# {{name}} - workspace kit
+#
+# Written by packages/strategy/workspace.py on {{date}}. Every value below is a starting
+# point, not a measurement. Before the first run: measure the palette from the real
+# product (site, app screens, packaging, logo master), put the logo master at the path
+# under `logo.master`, and replace the placeholder copy under `positioning`.
+#
+# Which keys the studio reads today:
+#   brand, display_name         workflow_author.clients(), studio-ui lib/studio.js
+#   palette.measured.accent     the workspace accent in the UI
+#   palette.measured            brandkit, compositor (palette checks)
+#   logo.master, logo.rule      brandkit, compositor (composited, never drawn)
+#   positioning.*               compositor copy block (tagline, promise, cta, attribution)
+#   claim_safety.disclosure     compositor disclosure line; brandkit request
+#   languages.primary           brandkit language mix
+#   masters                     compositor output sizes
+# `kind`, `voice`, `typography` are read by people and by the skills, not by code yet.
+
+brand: {{key}}
+display_name: "{{name}}"
+kind: {{kind}}              # music | fintech | fashion | agency | product | education | other
+
+positioning:
+  tagline: "{{name}}"                  # replace: the headline the compositor sets
+  promise: "What the brand does, in one plain sentence."
+  attribution_line: "{{name_upper}}"
+  ctas: ["Learn more"]
+
+palette:
+  # Measure these. A palette accepted from a document has been wrong twice in this repo.
+  measured:
+    ground:   "#0B0B0B"     # dark canvas
+    surface:  "#F4F1EA"     # light canvas
+    accent:   "{{accent}}"  # the one action colour; the UI uses it as the workspace accent
+    hairline: "#262626"
+  rules:
+    - "One accent per composition."
+    - "Body text on ground must be >= #EDEDED; on surface <= #263331. Verify 4.5:1 before export."
+    - "These values are placeholders until measured from the real product."
+
+logo:
+  master: assets/logo/{{key}}-logo.png   # put the file here; nothing generates it
+  rule: COMPOSITE_ONLY
+  note: >
+    The logo is never generated, redrawn, described to an image model, or approximated.
+    It is composited from the master after generation. Any output whose base image
+    contains logo-like marks is rejected, not patched.
+  min_width_pct: 12          # of canvas width
+  clear_space_ratio: 0.5     # of lockup height on all sides
+  safe_corners: [bottom_left, bottom_right]
+
+typography:
+  headline: {family_stack: ["Inter Tight", "Inter", "Helvetica Neue", sans-serif], weight: 700, case: upper, tracking: -0.02}
+  subhead:  {family_stack: ["Inter", "Helvetica Neue", sans-serif], weight: 600, case: sentence, tracking: 0}
+  body:     {family_stack: ["Inter", sans-serif], weight: 400}
+  micro:    {family_stack: ["IBM Plex Mono", monospace], weight: 400, case: upper, tracking: 0.08}
+  rule: "All copy is composited in code from the brief. Image models render no text."
+
+voice:
+  register: "plain, direct, second person"
+  tone: ["confident", "specific", "warm"]
+  never:
+    - "superlatives without a number behind them"
+    - "claims the product cannot back"
+    - "a real person's name as endorsement"
+
+languages:
+  primary: en
+  supported: [en]
+
+masters:
+  "1:1":  [3840, 3840]
+  "4:5":  [3072, 3840]
+  "3:4":  [2880, 3840]
+  "9:16": [2160, 3840]
+  "16:9": [3840, 2160]
+
+claim_safety:
+  forbidden:
+    - "Using a real person's likeness without a written release."
+    - "Naming a living person as a collaborator, endorser or source."
+    - "Reproducing an identifiable shot, location or composition from reference material."
+  required:
+    - "AI-generated imagery carries the disclosure string below."
+  disclosure: "AI-assisted imagery."
+  separation_of_duties: "A generating agent may not approve its own claim_class: sensitive or pitch item."

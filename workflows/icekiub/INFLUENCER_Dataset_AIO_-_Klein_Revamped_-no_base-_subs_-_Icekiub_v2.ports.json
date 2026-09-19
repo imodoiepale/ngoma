@@ -1,0 +1,50 @@
+{
+  "workflow": "icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json",
+  "sha256": "10e248be155dd302f68565084e8c8bbcc389ba19835db3df945b1536e98e02f4",
+  "format": "ui",
+  "inputs": {
+    "images": {
+      "node": "409",
+      "class": "LoadImage",
+      "field": "image",
+      "widget_index": 0,
+      "note": "One reference image of the character (resized to 1024 by ImageResizeKJv2 410, then VAE-encoded as the ReferenceLatent for every dataset shot). A folder runs once per file with `each`. LoadImage expects a filename inside the ComfyUI input folder (upload first)."
+    }
+  },
+  "prompt": {
+    "node": "152",
+    "class": "CR Prompt List",
+    "field": "prompt_list",
+    "widget_index": 1,
+    "note": "One shot description per line = one dataset image (CLIPTextEncode 328 -> ReferenceLatent 349/335 -> KSampler 154). Widgets 0 and 2 are prefix/suffix, 3 start_index, 4 max_rows. The second list, CR Prompt List 385 (KSampler 390, PreviewImage 381), is not bound; its prefix widget 0 ships with an explicit body description and must be cleared by hand."
+  },
+  "negative": {
+    "node": "157",
+    "class": "CLIPTextEncode",
+    "field": "text",
+    "widget_index": 0
+  },
+  "seed": {
+    "node": "154",
+    "class": "KSampler",
+    "field": "seed",
+    "widget_index": 0,
+    "note": "Main dataset pass. KSampler 403 (derived full-body shot) and 390 (second list) keep their own seeds."
+  },
+  "outputs": {
+    "images": {
+      "node": "166",
+      "class": "PreviewImage",
+      "kind": "image",
+      "note": "PreviewImage (temp): every SaveImage in the file is bypassed (407 for the second list, 408 for this pass). Turn SaveImage 408 on for files in output/. PreviewImage 253 shows the derived full-body shot, 254 the stitched reference board, 381 the second list."
+    }
+  },
+  "unknown": [],
+  "notes": [
+    "Models: flux-2-klein-9b-fp8 (UNETLoader 1, no licence gate; the KV variant is the gated one), flux2-vae (2), qwen_3_8b_fp8mixed (CLIPLoader 37). All fetchable per infra/runpod/download-plan.json.",
+    "The Z-Image detail groups (UNETLoader 367 z_image_turbo_bf16, VAELoader 368 ultrafluxvae.safetensors, CLIPLoader 369, KSampler (Efficient) 372/395, SaveImage 399/400) are bypassed; ultrafluxvae.safetensors is unresolved in the download plan and only needed if they are enabled.",
+    "CLIPTextEncode 333 (prompt for the derived full-body shot, KSampler 403) ships with an explicit body description: rewrite it to a neutral full-body description before SFW client work.",
+    "No batch count: images = lines in the prompt list.",
+    "This is the -no_base- build (takes a loaded image); the sibling INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json generates its base portrait from a prompt (CLIPTextEncode 6) and has no image input."
+  ]
+}

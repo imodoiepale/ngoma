@@ -20,7 +20,7 @@ Studio template: [`p04-persona-as-a-service.studio.json`](../../brands/_template
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
 | Reference images | you provide |  | — |
-| Character dataset | ComfyUI on the pod | `workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json` | Consent |
+| Character dataset | ComfyUI on the pod | `workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json` | Consent |
 | RefMod character | ComfyUI on the pod | `workflows/h3-refmods/franckyb-refmod-create-from-folder.json` | Consent |
 | Schedule post | publisher (draft first) | `packages/publish/postiz.py` | — |
 | Learn from results | studio code | `packages/analytics/collect.py` | — |

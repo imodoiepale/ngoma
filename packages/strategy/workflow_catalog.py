@@ -75,6 +75,8 @@ DESCRIPTIONS: dict[str, tuple[str, str, str]] = {
     "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-_Subs_-_Icekiub_v2.json": ("Icekiub dataset", "All-in-one influencer dataset with Klein plus Z-Image upscale.", "A 40-image LoRA dataset and character board from one reference."),
     "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Klein_Revamped_-no_base-_subs_-_Icekiub_v2.json": ("Icekiub dataset", "Dataset AIO starting from a loaded image instead of a generated base.", "Datasets for an existing character photo."),
     "workflows/icekiub/INFLUENCER_Dataset_AIO_-_Subs_-_Icekiub_v1.1.json": ("Icekiub dataset", "Qwen/Z-Image dataset AIO with SAM3 head swap, angles and Chroma.", "Datasets with varied angles on high-VRAM cards."),
+    "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json": ("Icekiub dataset", "Current dataset AIO (2026-09-16): Klein 9B stills from a prompt list, Klein head-swap LoRA for likeness, face analysis, then a Krea 2 turbo upscale.", "The recommended 40-image Krea 2 / Klein LoRA dataset from one owned or fictional reference."),
+    "workflows/icekiub/captioning_workflow.json": ("Icekiub dataset", "Captions a dataset folder through the Icy LM Studio multimodal node with a Krea 2 LoRA captioner system prompt; writes image and text pairs.", "Trigger-word captions for a Krea 2 character LoRA; needs a local LM Studio server (re-point the node's base URL)."),
     "workflows/icekiub/IcyMotion_Free_v3.json": ("Icekiub motion", "Free IcyMotion v3 motion-control graph.", "Try motion control before the subs builds."),
     "workflows/icekiub/KleinDataset_-_Icekiub_freelo.json": ("Icekiub dataset", "Free Klein dataset graph.", "Small datasets on lighter hardware."),
     "workflows/icekiub/LTX2-T2V_-_ICY.json": ("Icekiub video", "LTX 2 text-to-video.", "Shots from a prompt alone: VJ loops and B-roll."),
@@ -106,6 +108,23 @@ DESCRIPTIONS: dict[str, tuple[str, str, str]] = {
 }
 
 
+def port_map_exists(canonical: str) -> bool:
+    """A hand-written `<stem>.ports.json` sits next to the workflow (docs/engine/PORT-MAPS.md)."""
+    return (REPO / canonical).with_suffix(".ports.json").exists()
+
+
+def readiness(node: dict[str, Any]) -> str:
+    """The three honest badges: Ready, Needs setup, Gap. Never a fourth."""
+    be = node["backend"]
+    if be["kind"] == "gap":
+        return "Gap"
+    if node.get("needs_setup"):
+        return f"Needs setup (BLOCKERS {node['needs_setup']['blocker']})"
+    if be["kind"] == "comfy" and not port_map_exists("workflows/" + be["workflow"]):
+        return "Needs setup (no port map)"
+    return "Ready"
+
+
 def load() -> dict[str, Any]:
     man = json.loads(MANIFEST.read_text(encoding="utf-8"))["workflows"]
     cat = json.loads(CATALOG.read_text(encoding="utf-8"))["nodes"]
@@ -131,7 +150,7 @@ def load() -> dict[str, Any]:
                      "nodes": w["node_count"], "packs": [p for p in w["node_packs"] if p != "comfy-core"],
                      "models": status.get(c, set()), "skool": any(s.startswith("skool:") for s in w.get("sources", [])),
                      "adult": any(n.get("adult") for n in steps) or fam.endswith("18+"),
-                     "consent": any(n.get("consent") for n in steps)})
+                     "consent": any(n.get("consent") for n in steps), "port_map": port_map_exists(c)})
     return {"rows": rows, "catalog": cat, "ideas_by_kind": ideas_by_kind}
 
 
@@ -160,33 +179,48 @@ def render(data: dict[str, Any]) -> str:
          "alternates or older versions kept for comparison. Gates: **Consent** = owned, consented or fictional "
          "likenesses only. **18+** = fictional-adult line only, separate entity.", "",
          "Models column: *all fetchable* means every model it names is in `infra/runpod/download-plan.json` with a "
-         "source. Anything else says what is missing.", ""]
+         "source. Anything else says what is missing. Port map: a `.ports.json` beside the workflow tells the runner "
+         "where studio inputs land (`docs/engine/PORT-MAPS.md`); without one the step is bound but cannot be driven.", ""]
     families: dict[str, list[dict[str, Any]]] = {}
     for r in rows:
         families.setdefault(r["family"], []).append(r)
-    L += ["## Summary", "", "| Family | Workflows | Run a studio step | Used by ideas |", "|---|---|---|---|"]
+    L += ["## Summary", "", "| Family | Workflows | Run a studio step | Port-mapped | Used by ideas |", "|---|---|---|---|---|"]
     for fam, rs in sorted(families.items()):
         ideas = sorted({i for r in rs for i in r["ideas"]})
-        L.append(f"| {fam} | {len(rs)} | {sum(1 for r in rs if r['steps'])} | {', '.join(ideas) or '—'} |")
+        L.append(f"| {fam} | {len(rs)} | {sum(1 for r in rs if r['steps'])} | {sum(1 for r in rs if r['port_map'])} | "
+                 f"{', '.join(ideas) or '—'} |")
     L.append("")
     for fam, rs in sorted(families.items()):
-        L += [f"## {fam}", "", "| Workflow | What it does | What it makes possible | Studio step | Ideas | Nodes | Models | Gate |",
-              "|---|---|---|---|---|---|---|---|"]
+        L += [f"## {fam}", "", "| Workflow | What it does | What it makes possible | Studio step | Ideas | Nodes | Models | Port map | Gate |",
+              "|---|---|---|---|---|---|---|---|---|"]
         for r in sorted(rs, key=lambda r: r["canonical"]):
             gate = " ".join(g for g, on in (("18+", r["adult"]), ("Consent", r["consent"])) if on) or "—"
             step = ", ".join(f"`{n['kind']}`" for n in r["steps"]) or "library only"
             name = Path(r["canonical"]).stem.replace("_", " ")
             L.append(f"| [{name}](../../{r['canonical']}){' (bought)' if r['skool'] else ''} | {r['does']} | {r['enables']} | "
-                     f"{step} | {', '.join(r['ideas']) or '—'} | {r['nodes']} | {_models(r['models'])} | {gate} |")
+                     f"{step} | {', '.join(r['ideas']) or '—'} | {r['nodes']} | {_models(r['models'])} | "
+                     f"{'yes' if r['port_map'] else '—'} | {gate} |")
         L.append("")
     L += ["## Studio steps and the ideas that use them", "",
-          "| Step | Runs on | Ideas |", "|---|---|---|"]
+          "Readiness is one of three badges. **Ready**: bound and, for ComfyUI, port-mapped. **Needs setup**: bound, but "
+          "a gated model or missing server (the `docs/BLOCKERS.md` item) or no port map yet. **Gap**: nothing runs it; "
+          "the *Missing* column names the exact workflow, module or API that would.", "",
+          "| Step | Runs on | Readiness | Missing | Ideas |", "|---|---|---|---|---|"]
     for n in data["catalog"]:
         be = n["backend"]
         runs = {"comfy": f"ComfyUI `{be.get('workflow')}`", "python": f"studio code `{be.get('module')}`",
                 "publish": f"publisher `{be.get('module')}`", "router": "hosted model (OpenRouter)", "input": "you provide it",
                 "brand": "brand.yaml", "human": "a person decides", "gap": f"not runnable yet: {be.get('reason')}"}[be["kind"]]
-        L.append(f"| **{n['label']}** (`{n['kind']}`) | {runs} | {', '.join(sorted(data['ideas_by_kind'].get(n['kind'], []))) or '—'} |")
+        missing = be.get("missing") or (n.get("needs_setup") or {}).get("what") or "—"
+        L.append(f"| **{n['label']}** (`{n['kind']}`) | {runs} | {readiness(n)} | {missing} | "
+                 f"{', '.join(sorted(data['ideas_by_kind'].get(n['kind'], []))) or '—'} |")
+    gaps = [n for n in data["catalog"] if n["backend"]["kind"] == "gap"]
+    L += ["", "## Declared gaps", "",
+          f"{len(gaps)} catalogue steps have no backend. Each names what would close it; nothing else counts as a gap.", ""]
+    for n in gaps:
+        ideas = sorted(data["ideas_by_kind"].get(n["kind"], []))
+        L.append(f"- **{n['label']}** (`{n['kind']}`, ideas {', '.join(ideas) or 'none'}): {n['backend']['reason']} "
+                 f"Missing: {n['backend'].get('missing', 'not stated')}")
     return "\n".join(L).rstrip() + "\n"
 
 

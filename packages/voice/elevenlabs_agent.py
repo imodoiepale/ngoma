@@ -26,7 +26,7 @@ import yaml
 REPO = Path(__file__).resolve().parents[2]
 API = "https://api.elevenlabs.io"
 STATE = REPO / "brands" / "_presets" / "voice-agent.json"
-AGENT_NAME = "EPALLE Studio Director"
+AGENT_NAME = "Director"                # display name on ElevenLabs; the product name (BLOCKERS 16, resolved)
 VOICE_ID = "21m00Tcm4TlvDq8ikWAM"      # the same default voice packages/voice/tts.py uses
 LLM = "gemini-2.5-flash"
 
@@ -75,8 +75,8 @@ def tools() -> list[dict[str, Any]]:
     ]
 
 
-PROMPT = """You are the director's assistant inside EPALLE Studio, a production studio that turns an idea into images and video.
-The person talking to you is directing a piece. Your job is to turn what they say into studio actions with your tools, then say briefly what changed.
+PROMPT = """You are the director's assistant inside Director, a creative studio that turns an idea into images and video for any brand.
+The person talking to you is directing a piece in one brand's workspace. Your job is to turn what they say into studio actions with your tools, then say briefly what changed.
 
 How to work:
 - Call workflow_status at the start and whenever you need stage ids or pick step ids. Never invent ids.
@@ -98,7 +98,7 @@ def tool_config(t: dict[str, Any]) -> dict[str, Any]:
 
 
 def agent_config(tool_ids: list[str]) -> dict[str, Any]:
-    return {"name": AGENT_NAME, "tags": ["epalle-studio", "director"],
+    return {"name": AGENT_NAME, "tags": ["director-studio", "director"],
             "conversation_config": {
                 "agent": {"first_message": FIRST_MESSAGE, "language": "en",
                           "prompt": {"prompt": PROMPT, "llm": LLM, "temperature": 0.3, "tool_ids": tool_ids}},

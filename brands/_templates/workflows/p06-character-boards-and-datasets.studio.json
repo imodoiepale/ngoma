@@ -7,7 +7,7 @@
     "idea": "P06",
     "offer": "Consistent character board plus 40-image training dataset"
   },
-  "created": "2026-09-14",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -40,7 +40,8 @@
         "y": 80
       },
       "data": {
-        "params": {}
+        "params": {},
+        "alias": "dataset-aio"
       }
     },
     {

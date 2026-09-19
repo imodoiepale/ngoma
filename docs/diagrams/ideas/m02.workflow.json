@@ -18,11 +18,6 @@
     {
       "id": "gpu",
       "label": "ComfyUI on the pod"
-    },
-    {
-      "id": "gaps",
-      "label": "Not runnable yet",
-      "variant": "exception"
     }
   ],
   "mainPath": [
@@ -48,6 +43,15 @@
       "width": 132
     },
     {
+      "id": "n1",
+      "lane": "studio",
+      "col": 1,
+      "type": "backend",
+      "label": "Motion graphics",
+      "sublabel": "motion_graphics.py",
+      "width": 128
+    },
+    {
       "id": "n3",
       "lane": "gpu",
       "col": 1,
@@ -55,16 +59,6 @@
       "label": "Image to video (WAN)",
       "sublabel": "I2V Infinite…",
       "width": 160
-    },
-    {
-      "id": "n1",
-      "lane": "gaps",
-      "col": 1,
-      "type": "security",
-      "label": "Motion graphics",
-      "sublabel": "not built yet",
-      "tag": "gap",
-      "width": 128
     },
     {
       "id": "n6",
@@ -96,8 +90,7 @@
     {
       "from": "n2",
       "to": "n1",
-      "label": "text",
-      "variant": "dashed"
+      "label": "text"
     },
     {
       "from": "n4",
@@ -145,10 +138,9 @@
       ]
     },
     {
-      "dot": "rose",
+      "dot": "amber",
       "title": "Rules",
       "items": [
-        "Gap: Motion graphics not built",
         "Dry-run until approved",
         "Logo composited, never generated"
       ]

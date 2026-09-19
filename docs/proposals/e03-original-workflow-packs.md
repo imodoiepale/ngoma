@@ -19,9 +19,10 @@ Studio template: [`e03-original-workflow-packs.studio.json`](../../brands/_templ
 
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
-| register-workflow | not runnable yet | no catalogue node runs 'register-workflow' yet | — |
+| Brief | you provide |  | — |
+| Register workflow pack | studio code | `packages/library/tools/register_workflow.py` | — |
 
-0% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -37,15 +38,19 @@ Setup budget $150. Fixed monthly spend $20. First cash in about 21 days.
 
 ## What is not ready
 
-- **register-workflow**: no catalogue node runs 'register-workflow' yet
+- Nothing structural. Every step has a backend and every model it names has a source; it still needs a live run.
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: `register-workflow` is now a catalogue step on packages/library/tools/register_workflow.py (attribution and sha256 into workflows/manifest.json). The engine does not execute this python step yet (runner LOCAL_STEPS); it is run from the command line.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 0 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch comfyui users with the pilot; target the low scenario (10 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

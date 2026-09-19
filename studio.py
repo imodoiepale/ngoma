@@ -2,7 +2,7 @@
 """Task runner for the studio.
 
 `make` is not installed on this machine, so this is the entry point rather than a
-Makefile. Run with `uv run studio.py <task>`.
+Makefile. Run with `python studio.py <task>`.
 
     check          fail if anything secret-shaped is tracked by git
     skills-sync    mirror shared-skills/approved into every runtime's skills dir
@@ -11,6 +11,11 @@ Makefile. Run with `uv run studio.py <task>`.
     test           run the end-to-end suite (no key, no GPU, no network)
     loop           full pipeline on fixture data: plan -> analytics -> memory -> curator
     doctor         what is installed, reachable and blocked, right now
+
+graph, plan, test and loop run Python scripts. When `uv` is on PATH they go through
+`uv run --with <dep> ...`, which resolves pyyaml/pytest/pillow without a global install.
+When it is not, they run with the interpreter executing this file (`sys.executable`), so
+`python -m pip install pyyaml pillow pytest` once and `python studio.py test` works.
 """
 from __future__ import annotations
 
@@ -43,6 +48,23 @@ SKILL_TARGETS = [".claude/skills", ".agents/skills"]
 def _run(cmd: list[str], **kw) -> subprocess.CompletedProcess[str]:
     return subprocess.run(cmd, cwd=REPO, text=True, encoding="utf-8",
                           errors="replace", env=ENV, **kw)
+
+
+def _python(*args: str, with_: tuple[str, ...] = ()) -> list[str]:
+    """The command that runs a Python script or module here.
+
+    `uv` when it is on PATH: `uv run --quiet [--with dep]... <args>`, with `python` inserted
+    before a `-m module` so the module runs in the resolved environment. Otherwise the
+    interpreter running this file, which must already have the deps installed (BLOCKERS 17).
+    """
+    if shutil.which("uv"):
+        cmd = ["uv", "run", "--quiet"]
+        for dep in with_:
+            cmd += ["--with", dep]
+        if args and args[0].startswith("-"):
+            cmd.append("python")
+        return cmd + list(args)
+    return [sys.executable, *args]
 
 
 def check() -> int:
@@ -82,17 +104,15 @@ def skills_sync() -> int:
 
 
 def graph() -> int:
-    return _run(["uv", "run", "--quiet", "packages/library/graph_build.py"]).returncode
+    return _run(_python("packages/library/graph_build.py")).returncode
 
 
 def plan() -> int:
-    return _run(["uv", "run", "--quiet", "--with", "pyyaml",
-                 "packages/image-router/router.py", "--plan-all"]).returncode
+    return _run(_python("packages/image-router/router.py", "--plan-all", with_=("pyyaml",))).returncode
 
 
 def test() -> int:
-    return _run(["uv", "run", "--quiet", "--with", "pytest", "--with", "pillow",
-                 "--with", "pyyaml", "python", "-m", "pytest", "tests/", "-q"]).returncode
+    return _run(_python("-m", "pytest", "tests/", "-q", with_=("pytest", "pillow", "pyyaml"))).returncode
 
 
 def loop() -> int:
@@ -101,24 +121,19 @@ def loop() -> int:
     plan_md = REPO / "brands" / brand / "calendar" / "plan-loop.md"
     data = REPO / "out" / "analytics" / f"{brand}-loop.jsonl"
     steps = [
-        ("plan 180 days", ["uv", "run", "--quiet", "--with", "pyyaml",
-                           "packages/strategy/plan.py", "--brand", brand,
-                           "--days", "180", "--start", "2026-03-01",
-                           "--out", str(plan_md)]),
-        ("collect fixture analytics", ["uv", "run", "--quiet",
-                                       "packages/analytics/collect.py", "fixture",
-                                       "--brand", brand, "--plan",
-                                       str(plan_md.with_suffix(".json")),
-                                       "--out", str(data)]),
-        ("derive learnings -> memory", ["uv", "run", "--quiet",
-                                        "packages/analytics/learn.py", "--brand", brand,
-                                        "--data", str(data), "--metric", "saves",
-                                        "--audience", "kenyan professionals", "--write"]),
-        ("what memory believes", ["uv", "run", "--quiet", "packages/memory/store.py",
-                                  "believed", "--brand", brand]),
-        ("curator verdict", ["uv", "run", "--quiet",
-                             "packages/strategy/skill_curator.py", "evaluate",
-                             "--subject", "kenyan_meme_original"]),
+        ("plan 180 days", _python("packages/strategy/plan.py", "--brand", brand,
+                                  "--days", "180", "--start", "2026-03-01",
+                                  "--out", str(plan_md), with_=("pyyaml",))),
+        ("collect fixture analytics", _python("packages/analytics/collect.py", "fixture",
+                                              "--brand", brand, "--plan",
+                                              str(plan_md.with_suffix(".json")),
+                                              "--out", str(data))),
+        ("derive learnings -> memory", _python("packages/analytics/learn.py", "--brand", brand,
+                                               "--data", str(data), "--metric", "saves",
+                                               "--audience", "kenyan professionals", "--write")),
+        ("what memory believes", _python("packages/memory/store.py", "believed", "--brand", brand)),
+        ("curator verdict", _python("packages/strategy/skill_curator.py", "evaluate",
+                                    "--subject", "kenyan_meme_original")),
     ]
     bar = "=" * 66
     for i, (label, cmd) in enumerate(steps, 1):
@@ -152,7 +167,7 @@ def doctor() -> int:
         d = json.loads(gj.read_text(encoding="utf-8"))
         print(f"  graph            {len(d['nodes'])} nodes, {len(d['edges'])} edges")
     else:
-        print("  graph            NOT BUILT — run: uv run studio.py graph")
+        print("  graph            NOT BUILT — run: python studio.py graph")
     mf = REPO / "workflows" / "manifest.json"
     if mf.exists():
         print(f"  workflows        {json.loads(mf.read_text(encoding='utf-8'))['count']}")

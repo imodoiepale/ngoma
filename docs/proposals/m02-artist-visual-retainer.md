@@ -20,14 +20,14 @@ Studio template: [`m02-artist-visual-retainer.studio.json`](../../brands/_templa
 | Step | Runs on | Detail | Gate |
 |---|---|---|---|
 | Brief | you provide |  | — |
-| Motion graphics | not runnable yet | HyperFrames/Remotion renderer is planned, not built. | — |
+| Motion graphics | studio code | `packages/video/motion_graphics.py` | — |
 | Reference images | you provide |  | — |
 | Image to video (WAN) | ComfyUI on the pod | `workflows/icekiub/I2V_Infinite_extender_-_SUBS_-_Icekiub_v1.json` | — |
 | Brand kit | brand.yaml |  | — |
 | Brand compositor | studio code | `packages/compositor/compositor.py` | — |
 | Export files | studio code | `packages/compositor/compositor.py` | — |
 
-75% of the working steps run today.
+100% of the working steps run today.
 
 ## Numbers
 
@@ -43,15 +43,20 @@ Setup budget $200. Fixed monthly spend $60. First cash in about 21 days.
 
 ## What is not ready
 
-- **Motion graphics**: HyperFrames/Remotion renderer is planned, not built.
+- Nothing structural. Every step has a backend and every model it names has a source; it still needs a live run.
 - No step has been run end to end on a GPU for this offer yet. Queued is not success.
+
+## Decisions on the gaps
+
+- 2026-09-20: `hyperframes` (motion graphics) stays a declared gap until packages/video/motion_graphics.py wraps a HyperFrames or Remotion renderer; the visualizers ship from WAN image-to-video and the compositor meanwhile.
+- 2026-09-20 (W6): `hyperframes` now runs on packages/video/motion_graphics.py (Pillow frames, ffmpeg encode, brand-kit colours; typed text, kinetic type, lower thirds, phone mock-ups). No Node renderer is installed or required; HyperFrames/Remotion stay a documented upgrade path for spring and per-glyph animation. Lyric videos are a spec of timed lines; the engine does not run this python step as a stage yet (runner LOCAL_STEPS), it is run from the command line.
 
 ## First 30 days
 
 1. **Week 1: prove it.** Run the template on the pod with owned or fictional inputs; record real GPU minutes and replace the 10 GPU-hour estimate.
 2. **Week 2: pilot.** One client at a reduced price in exchange for a case study and permission to show results.
 3. **Weeks 3-4: sell.** Pitch artists releasing monthly with the pilot; target the low scenario (1 clients) before scaling.
-4. **Close the gaps** listed above, or sell the version without those steps and say so.
+4. **Automate** the recurring delivery with the studio canvas and the dry-run plan check.
 
 ## Risks and rules
 

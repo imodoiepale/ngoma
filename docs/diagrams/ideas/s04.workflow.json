@@ -18,11 +18,6 @@
     {
       "id": "gpu",
       "label": "ComfyUI on the pod"
-    },
-    {
-      "id": "gaps",
-      "label": "Not runnable yet",
-      "variant": "exception"
     }
   ],
   "mainPath": [
@@ -56,16 +51,6 @@
       "width": 128
     },
     {
-      "id": "n3",
-      "lane": "gaps",
-      "col": 1,
-      "type": "security",
-      "label": "Restore photo",
-      "sublabel": "not built yet",
-      "tag": "gap",
-      "width": 112
-    },
-    {
       "id": "n5",
       "lane": "studio",
       "col": 2,
@@ -73,6 +58,15 @@
       "label": "Export files",
       "sublabel": "compositor.py",
       "width": 104
+    },
+    {
+      "id": "n3",
+      "lane": "gpu",
+      "col": 2,
+      "type": "cloud",
+      "label": "Restore photo",
+      "sublabel": "QWEN IMAGE UNLEASHED",
+      "width": 140
     }
   ],
   "edges": [
@@ -106,10 +100,9 @@
       ]
     },
     {
-      "dot": "rose",
+      "dot": "amber",
       "title": "Rules",
       "items": [
-        "Gap: Restore photo not built",
         "Dry-run until approved",
         "Logo composited, never generated"
       ]

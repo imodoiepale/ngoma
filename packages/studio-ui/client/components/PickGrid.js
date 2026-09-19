@@ -49,7 +49,7 @@ export default function PickGrid({ client, workflow, node, candidates, onPicked,
       {error && <p className="error" role="alert">{error}</p>}
       <div className="creator-actions">
         <span className="muted">{chosen.size} chosen</span>
-        <button className="btn btn-primary" onClick={confirm} disabled={busy || !chosen.size}>{busy ? "Saving…" : "Keep these"}</button>
+        <button className="btn btn-primary" onClick={confirm} disabled={busy || !chosen.size}>{busy ? "Saving" : "Keep these"}</button>
       </div>
     </aside>
   );

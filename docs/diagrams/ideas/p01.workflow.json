@@ -81,6 +81,7 @@
       "type": "cloud",
       "label": "Carousel poses",
       "sublabel": "Carousel Pose…",
+      "tag": "setup",
       "width": 120
     },
     {

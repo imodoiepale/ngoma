@@ -7,7 +7,7 @@
     "idea": "V04",
     "offer": "60 food visuals and 8 reels a month, Swahili and English captions"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -31,7 +31,8 @@
       "data": {
         "params": {
           "count": 45
-        }
+        },
+        "alias": "qwen-image"
       }
     },
     {
@@ -44,7 +45,8 @@
       "data": {
         "params": {
           "seconds": 5
-        }
+        },
+        "alias": "wan-i2v"
       }
     },
     {

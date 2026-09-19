@@ -7,7 +7,7 @@
     "idea": "S05",
     "offer": "Consented presenter avatar for 10 training videos a month"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": true,
   "nodes": [
     {
@@ -31,7 +31,8 @@
       "data": {
         "params": {
           "preset": "identity"
-        }
+        },
+        "alias": "refmod-consented"
       }
     },
     {
@@ -76,26 +77,33 @@
       },
       "data": {
         "params": {
-          "language": "en"
-        }
+          "language": "en",
+          "provider": "elevenlabs"
+        },
+        "alias": "tts"
       }
     },
     {
       "id": "n7",
       "kind": "motion-graphics",
       "position": {
-        "x": 400,
-        "y": 710
+        "x": 720,
+        "y": 80
       },
       "data": {
-        "params": {}
+        "params": {
+          "aspect": "9:16",
+          "duration": 6,
+          "style": "headline"
+        },
+        "alias": "hyperframes"
       }
     },
     {
       "id": "n8",
       "kind": "export",
       "position": {
-        "x": 720,
+        "x": 1040,
         "y": 80
       },
       "data": {
@@ -146,6 +154,14 @@
     },
     {
       "id": "e6",
+      "source": "n3",
+      "sourceHandle": "video",
+      "target": "n7",
+      "targetHandle": "background",
+      "type": "video"
+    },
+    {
+      "id": "e7",
       "source": "n7",
       "sourceHandle": "video",
       "target": "n8",
@@ -153,13 +169,7 @@
       "type": "video"
     }
   ],
-  "gaps": [
-    {
-      "node": "n7",
-      "step": "motion-graphics",
-      "reason": "HyperFrames/Remotion renderer is planned, not built."
-    }
-  ],
+  "gaps": [],
   "family": "service",
   "compliance": "Presenter release"
 }

@@ -7,7 +7,7 @@
     "idea": "M06",
     "offer": "30 minutes of on-theme visual loops per event"
   },
-  "created": "2026-09-13",
+  "created": "2026-09-20",
   "consent_required": false,
   "nodes": [
     {
@@ -31,7 +31,8 @@
       "data": {
         "params": {
           "seconds": 5
-        }
+        },
+        "alias": "wan-t2v"
       }
     },
     {
@@ -44,7 +45,8 @@
       "data": {
         "params": {
           "seconds": 8
-        }
+        },
+        "alias": "loop-edit"
       }
     },
     {

@@ -1,261 +1,88 @@
-"use client";
-
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { loadPricing } from "../../lib/pricing";
+import { loadCapabilities } from "../../lib/capabilities";
+import { listRuns, spendSummary } from "../../lib/runs";
+import { fmtUsd } from "../../lib/estimate";
+import { Shell } from "../../components/Shell";
+import PodStatus from "../../components/PodStatus";
 
-const shell = {
-  minHeight: "100vh",
-  background: "#090b10",
-  color: "#eef1f7",
-  padding: "36px",
-  fontFamily: "Inter, sans-serif",
-};
-const card = {
-  border: "1px solid #242936",
-  borderRadius: 18,
-  padding: 22,
-  background: "#10131a",
-  marginBottom: 18,
-};
-const muted = { color: "#9ca3b5" };
+export const dynamic = "force-dynamic";
 
-const STATUS_COLOR = {
-  RUNNING: "#5ddc9a",
-  EXITED: "#8f96a8",
-  TERMINATED: "#d97b7b",
-  PENDING: "#e0c46a",
-};
-
-function Row({ label, children }) {
+// Jobs and budget: the cap a person set, what has been spent (estimated and measured), the
+// GPU rate, what still needs setup, the recent runs, and the pods right now. No credits, no
+// upsell: USD and a basis on every figure.
+export default async function Jobs() {
+  const [pricing, caps, spend, runs] = await Promise.all([loadPricing(), loadCapabilities(), spendSummary(), listRuns()]);
+  const setup = caps.capabilities.filter((c) => c.status === "needs-setup");
+  const recent = runs.slice(0, 20);
   return (
-    <div style={{ display: "flex", gap: 10, padding: "5px 0", flexWrap: "wrap" }}>
-      <span style={{ ...muted, minWidth: 150 }}>{label}</span>
-      <span>{children}</span>
-    </div>
-  );
-}
+    <Shell current="/jobs" crumbs={[{ label: "Jobs" }]}>
+      <section className="page-head">
+        <p className="eyebrow">Jobs and budget</p>
+        <h1>What it costs, what ran, what is running.</h1>
+        <p className="lede">The budget cap lives in brands/_presets/engine.yaml and only a person changes it. Estimates come from seconds-per-unit figures marked measured or assumed. Queued is not success; a run counts when its manifest says completed.</p>
+      </section>
 
-export default function Jobs() {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
-  const [auto, setAuto] = useState(true);
+      <div className="stats" style={{ marginBottom: 20 }}>
+        <div className="stat"><b>{fmtUsd(pricing.budget_usd)}</b><small>budget cap {pricing.budget_usd === 0 ? "(nothing live runs)" : ""}</small></div>
+        <div className="stat"><b>{fmtUsd(spend.estimated_usd)}</b><small>spent to date <span className="basis basis-assumed">estimated</span></small></div>
+        <div className="stat"><b>{Math.round(spend.measured_gpu_seconds)}s</b><small>GPU measured <span className="basis basis-measured">measured</span></small></div>
+        <div className="stat"><b>{spend.live_runs}</b><small>live runs, {spend.dry_runs} dry, {spend.partial} partial</small></div>
+        <div className="stat"><b>${pricing.rate.usd_per_hour}/h</b><small>{pricing.rate.name} <span className={`basis basis-${pricing.rate.basis}`}>{pricing.rate.basis}</span></small></div>
+      </div>
 
-  const load = useCallback(async () => {
-    try {
-      const response = await fetch("/api/runpod-status");
-      const payload = await response.json();
-      setData(payload);
-      setError(payload.ok ? null : payload.error || "status unavailable");
-    } catch (exception) {
-      setError(String(exception));
-    }
-  }, []);
-
-  useEffect(() => {
-    // first load runs as a callback, not synchronously inside the effect body
-    const first = setTimeout(load, 0);
-    if (!auto) return () => clearTimeout(first);
-    const timer = setInterval(load, 20000);
-    return () => {
-      clearTimeout(first);
-      clearInterval(timer);
-    };
-  }, [load, auto]);
-
-  return (
-    <main style={shell}>
-      <header
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          marginBottom: 26,
-          flexWrap: "wrap",
-          gap: 14,
-        }}
-      >
-        <div>
-          <small style={{ color: "#8f96a8" }}>EPALLE STUDIO</small>
-          <h1 style={{ fontSize: 32, margin: "8px 0" }}>RunPod jobs</h1>
-          <p style={muted}>
-            {data?.fetchedAt
-              ? `live · fetched ${new Date(data.fetchedAt).toLocaleTimeString()}`
-              : "connecting…"}
-          </p>
-        </div>
-        <nav style={{ display: "flex", gap: 14, alignItems: "center" }}>
-          <label style={{ ...muted, fontSize: 14 }}>
-            <input
-              type="checkbox"
-              checked={auto}
-              onChange={(event) => setAuto(event.target.checked)}
-              style={{ marginRight: 6 }}
-            />
-            auto-refresh
-          </label>
-          <button
-            onClick={load}
-            style={{
-              padding: "8px 16px",
-              borderRadius: 10,
-              border: "1px solid #413678",
-              background: "#2b2350",
-              color: "#cfc6ff",
-              cursor: "pointer",
-            }}
-          >
-            Refresh
-          </button>
-          <Link href="/" style={{ color: "#d9deea" }}>
-            Clients
-          </Link>
-          <a href="/library" style={{ color: "#d9deea" }}>
-            Library
-          </a>
-        </nav>
-      </header>
-
-      {error ? (
-        <section style={{ ...card, borderColor: "#6b2b2b", background: "#1a1113" }}>
-          <h2 style={{ fontSize: 18, marginTop: 0 }}>Status unavailable</h2>
-          <p style={{ color: "#e2b4b4", whiteSpace: "pre-wrap" }}>{error}</p>
+      <div className="jobs-grid">
+        <section className="panel-card">
+          <h2>Seconds per unit</h2>
+          <p className="muted" style={{ marginTop: 0 }}>From {pricing.source}. A measured figure came from a pod run; an assumed one is a planning number until a run replaces it.</p>
+          {Object.entries(pricing.seconds_per_unit).map(([k, v]) => (
+            <div key={k} className="kv"><span>{k}</span><b>{v.seconds}s{v.per === "second_of_video" ? " per second of video" : ""}</b><span className={`basis basis-${v.basis}`}>{v.basis}</span><span className="muted">{fmtUsd((v.seconds / 3600) * pricing.rate.usd_per_hour)}</span></div>
+          ))}
         </section>
-      ) : null}
+        <section className="panel-card">
+          <h2>Needs setup ({setup.length})</h2>
+          <p className="muted" style={{ marginTop: 0 }}>Steps bound to a backend with something missing. Each line names the piece.</p>
+          <ul className="plan-list">
+            {setup.map((c) => <li key={c.kind} className="plan-waiting"><Link href={`/explore/${c.kind}`} style={{ fontWeight: 600, textDecoration: "none" }}>{c.label}</Link>{c.reasons.map((r, i) => <small key={i}>{r}</small>)}</li>)}
+            {!setup.length && <li className="plan-ready"><small>Every bound step is ready.</small></li>}
+          </ul>
+        </section>
+        <section className="panel-card">
+          <h2>By workspace</h2>
+          {Object.entries(spend.by_workspace).map(([ws, s]) => (
+            <div key={ws} className="kv"><span><Link href={`/w/${ws}`}>{ws}</Link></span><b>{fmtUsd(s.estimated_usd)}</b><span className="muted">{s.live_runs} live, {s.dry_runs} dry</span></div>
+          ))}
+          {!Object.keys(spend.by_workspace).length && <p className="muted">No runs recorded yet.</p>}
+          <h2 style={{ marginTop: 16 }}>Posture</h2>
+          <div className="kv"><span>Default mode</span><b>dry-run</b></div>
+          <div className="kv"><span>Live runs</span><b>a person approves the estimate first</b></div>
+          <div className="kv"><span>Faces</span><b>owned or consented references only; the runner refuses others</b></div>
+          <div className="kv"><span>Publishing</span><b>drafts only; a person posts</b></div>
+        </section>
+      </div>
 
-      {data?.ok ? (
-        <>
-          <section
-            style={{
-              ...card,
-              borderColor: data.runningPods ? "#3d5c46" : "#242936",
-              background: data.runningPods ? "#101a14" : "#10131a",
-            }}
-          >
-            <h2 style={{ fontSize: 18, marginTop: 0 }}>Spend right now</h2>
-            <Row label="Running pods">
-              <b>{data.runningPods}</b>
-            </Row>
-            <Row label="GPU cost">
-              <b style={{ color: data.runningCostPerHr ? "#e0c46a" : "#5ddc9a" }}>
-                ${data.runningCostPerHr.toFixed(3)}/hr
-              </b>
-              {data.runningCostPerHr ? (
-                <span style={{ ...muted, marginLeft: 10 }}>
-                  ≈ ${(data.runningCostPerHr * 24).toFixed(2)}/day if left running
-                </span>
-              ) : null}
-            </Row>
-            <p style={{ ...muted, marginBottom: 0, fontSize: 14 }}>
-              Network volume storage bills continuously and is not included above.
-            </p>
-          </section>
-
-          <section style={card}>
-            <h2 style={{ fontSize: 18, marginTop: 0 }}>Pods</h2>
-            {data.pods.length === 0 ? (
-              <p style={muted}>No pods.</p>
-            ) : (
-              data.pods.map((pod) => (
-                <div
-                  key={pod.id}
-                  style={{
-                    borderTop: "1px solid #1c212c",
-                    paddingTop: 12,
-                    marginTop: 12,
-                  }}
-                >
-                  <div style={{ display: "flex", gap: 12, alignItems: "baseline" }}>
-                    <b>{pod.name}</b>
-                    <span
-                      style={{
-                        color: STATUS_COLOR[pod.status] || "#9ca3b5",
-                        fontSize: 13,
-                        border: "1px solid #242936",
-                        borderRadius: 999,
-                        padding: "2px 10px",
-                      }}
-                    >
-                      {pod.status}
-                    </span>
-                    <span style={{ ...muted, fontSize: 13 }}>{pod.id}</span>
-                  </div>
-                  <Row label="GPU">
-                    {pod.gpu || "unassigned"}
-                    {pod.gpuCount ? ` ×${pod.gpuCount}` : ""}
-                  </Row>
-                  <Row label="Cost">${pod.costPerHr}/hr</Row>
-                  {pod.publicIp ? <Row label="Public IP">{pod.publicIp}</Row> : null}
-                  {pod.portMappings ? (
-                    <Row label="Ports">
-                      {Object.entries(pod.portMappings)
-                        .map(([from, to]) => `${from}→${to}`)
-                        .join("  ")}
-                    </Row>
-                  ) : null}
-                  <Row label="Volume">{pod.volume || "none"}</Row>
-                </div>
-              ))
-            )}
-          </section>
-
-          <section style={card}>
-            <h2 style={{ fontSize: 18, marginTop: 0 }}>Network volumes</h2>
-            {data.volumes.map((volume) => (
-              <Row key={volume.id} label={volume.name}>
-                {volume.size} GB · {volume.dataCenterId} · {volume.id}
-                {volume.isEpalle ? (
-                  <span style={{ color: "#5ddc9a", marginLeft: 8 }}>EPALLE</span>
-                ) : null}
-              </Row>
-            ))}
-          </section>
-
-          <section style={card}>
-            <h2 style={{ fontSize: 18, marginTop: 0 }}>Serverless endpoints</h2>
-            {data.endpoints.map((endpoint) => (
-              <div key={endpoint.id} style={{ marginBottom: 12 }}>
-                <b>{endpoint.name}</b>{" "}
-                <span style={{ ...muted, fontSize: 13 }}>{endpoint.id}</span>
-                <Row label="GPU types">
-                  {(endpoint.gpuTypeIds || []).join(", ") || "any"}
-                </Row>
-                <Row label="Workers">
-                  min {endpoint.workersMin} · max {endpoint.workersMax}
-                  {endpoint.workersStandby ? (
-                    <span style={{ color: "#e0c46a", marginLeft: 8 }}>
-                      standby {endpoint.workersStandby} (billed while idle)
-                    </span>
-                  ) : null}
-                </Row>
-                <Row label="Idle timeout">{endpoint.idleTimeout}s</Row>
-                <Row label="Volume">{endpoint.networkVolumeId || "none"}</Row>
+      <section className="row" aria-labelledby="recent-h">
+        <div className="row-head"><h2 id="recent-h">Recent runs</h2><p>{runs.length} manifests under brands/*/runs.</p></div>
+        {recent.length ? (
+          <div className="panel-card" style={{ padding: "4px 18px" }}>
+            {recent.map((r) => (
+              <div key={`${r.workspace}-${r.run_id}`} className="kv" style={{ alignItems: "center" }}>
+                <span>{r.finished ? new Date(r.finished).toLocaleString() : ""}</span>
+                <Link href={`${r.canvas}?node=${encodeURIComponent(r.node)}`} style={{ fontWeight: 600, textDecoration: "none" }}>{r.kind}{r.items ? ` each ${r.itemCount}` : ""}</Link>
+                <span className="muted">{r.workspace} / {r.workflow}</span>
+                <span className={`snode-status ${r.status}`}>{r.status}</span>
+                {r.cost_estimate && <span className="muted">est {fmtUsd(r.cost_estimate.usd)} <i className="basis">{r.cost_estimate.basis}</i></span>}
+                {r.gpu_seconds_actual != null && <span className="muted">measured {r.gpu_seconds_actual}s</span>}
               </div>
             ))}
-            {data.endpointHealth ? (
-              <>
-                <Row label="Workers now">
-                  {JSON.stringify(data.endpointHealth.workers || {})}
-                </Row>
-                <Row label="Jobs">
-                  {JSON.stringify(data.endpointHealth.jobs || {})}
-                </Row>
-              </>
-            ) : (
-              <p style={{ ...muted, fontSize: 14 }}>
-                Endpoint health not reported.
-              </p>
-            )}
-          </section>
+          </div>
+        ) : <div className="empty"><b>No runs yet.</b>Dry-run a stage on any canvas and its manifest appears here.</div>}
+      </section>
 
-          <section style={{ ...card, borderColor: "#413678", background: "#151126" }}>
-            <h2 style={{ fontSize: 18, marginTop: 0 }}>Safety posture</h2>
-            <Row label="Dataset graph">live=false until deliberately enabled</Row>
-            <Row label="Serverless default">dry_run=true</Row>
-            <Row label="Paid provider nodes">rejected by the API handler</Row>
-            <Row label="Concurrency">one admitted operation at a time</Row>
-          </section>
-        </>
-      ) : null}
-    </main>
+      <section className="row" aria-labelledby="pods-h">
+        <div className="row-head"><h2 id="pods-h">Pods right now</h2><p>From the RunPod account when RUNPOD_API_KEY is set on the server. Storage bills continuously and is not in the hourly figure.</p></div>
+        <PodStatus />
+      </section>
+    </Shell>
   );
 }

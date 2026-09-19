@@ -5,8 +5,8 @@ const display = Fraunces({ subsets: ["latin"], variable: "--font-display", displ
 const ui = Manrope({ subsets: ["latin"], variable: "--font-ui", display: "swap" });
 
 export const metadata = {
-  title: "EPALLE Studio",
-  description: "Client workflows on a node canvas: ideas become pipelines you can edit, combine and check.",
+  title: "Director",
+  description: "A node canvas for any brand: describe what you want, wire the steps, run them with a cost you can see.",
 };
 
 export default function RootLayout({ children }) {

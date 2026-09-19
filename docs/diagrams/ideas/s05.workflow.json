@@ -18,15 +18,11 @@
     {
       "id": "gpu",
       "label": "ComfyUI on the pod"
-    },
-    {
-      "id": "gaps",
-      "label": "Not runnable yet",
-      "variant": "exception"
     }
   ],
   "mainPath": [
-    "n6",
+    "n2",
+    "n3",
     "n7",
     "n8"
   ],
@@ -83,18 +79,17 @@
     },
     {
       "id": "n7",
-      "lane": "gaps",
-      "col": 2,
-      "type": "security",
+      "lane": "studio",
+      "col": 3,
+      "type": "backend",
       "label": "Motion graphics",
-      "sublabel": "not built yet",
-      "tag": "gap",
+      "sublabel": "motion_graphics.py",
       "width": 128
     },
     {
       "id": "n8",
       "lane": "studio",
-      "col": 3,
+      "col": 4,
       "type": "backend",
       "label": "Export files",
       "sublabel": "compositor.py",
@@ -110,7 +105,8 @@
     {
       "from": "n2",
       "to": "n3",
-      "label": "image"
+      "label": "image",
+      "variant": "emphasis"
     },
     {
       "from": "n4",
@@ -125,7 +121,12 @@
     {
       "from": "n6",
       "to": "n7",
-      "label": "text",
+      "label": "text"
+    },
+    {
+      "from": "n3",
+      "to": "n7",
+      "label": "video",
       "variant": "emphasis"
     },
     {
@@ -147,12 +148,12 @@
       ]
     },
     {
-      "dot": "rose",
+      "dot": "amber",
       "title": "Rules",
       "items": [
         "Consent on file before any likeness",
-        "Gap: Motion graphics not built",
-        "Dry-run until approved"
+        "Dry-run until approved",
+        "Logo composited, never generated"
       ]
     }
   ]

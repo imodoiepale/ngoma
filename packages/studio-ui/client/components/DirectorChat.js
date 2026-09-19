@@ -50,7 +50,7 @@ export default function DirectorChat({ client, workflow, session, initial = [], 
       </ol>
       <form className="director-input" onSubmit={(e) => { e.preventDefault(); send(); }}>
         <input value={text} onChange={(e) => setText(e.target.value)} placeholder="add a scene at a rooftop at golden hour, 5 angles" aria-label="Say something to the director" disabled={busy} />
-        <button className="btn btn-primary" disabled={busy || !text.trim()}>{busy ? "…" : "Say"}</button>
+        <button className="btn btn-primary" disabled={busy || !text.trim()}>{busy ? "Sending" : "Say"}</button>
       </form>
     </aside>
   );
