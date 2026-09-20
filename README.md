@@ -6,7 +6,7 @@
   <strong>A sentence in. A costed, on-brand production pipeline out.</strong><br/>
   Open weights on your GPU. Hosted models when you want them. Nothing spends or publishes until you say yes.
 </p>
-
+    
 <p align="center">
   <img src="https://img.shields.io/badge/python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.12"/>
   <img src="https://img.shields.io/badge/ComfyUI-open_weights-F97316?style=for-the-badge" alt="ComfyUI"/>
@@ -330,6 +330,7 @@ Design: [`docs/superpowers/specs/2026-09-20-general-creative-studio-design.md`](
 ---
 
 ## What it cannot do yet
+
 
 Honest, because a list of what is broken is worth more than a list of what works.
 
