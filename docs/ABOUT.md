@@ -164,7 +164,7 @@ was the point. It forces every brand-specific assumption out of the pipeline and
 `brands/<key>/`. That is what lets the studio be general: a workspace is a directory with a
 `brand.yaml`, `python packages/strategy/workspace.py new <key> --name "..."` scaffolds one
 from the documented minimum, and the same pipeline, the same gates and the same Director
-serve it. Director Studio is the proposed name for the studio all the workspaces share.
+serve it. Director is the name of the studio all the workspaces share.
 
 ## Where it stands
 

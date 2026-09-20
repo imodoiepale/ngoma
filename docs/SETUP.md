@@ -17,7 +17,8 @@ Present on this machine (verified 2026-09-20):
 If you install `uv`, `uv run --with pyyaml python <script>` runs the same scripts without a
 global install. The `studio.py` tasks `plan`, `test`, `graph` and `loop` prefer `uv run`
 when it is on PATH and otherwise run the same scripts with the interpreter that launched
-`studio.py`, so they work here once the three packages below are installed. The studio
+`studio.py` (one printed line says so), so they work here once the three packages below are
+installed. The studio
 UI's API routes spawn Python through `lib/python.js`, which honours `STUDIO_PYTHON` and
 falls back to `python` (`docs/BLOCKERS.md`, item 17).
 

@@ -3,7 +3,8 @@
 Open items that gate real use. Each says who owns it. Items 16 to 23 are the decisions and
 gaps opened by the general creative studio design
 (`docs/superpowers/specs/2026-09-20-general-creative-studio-design.md`); 17, 21 and 22
-were closed in the consolidation pass after its five workstreams landed.
+were closed in the consolidation pass after its five workstreams landed, and 16 when the
+product was named **Director**.
 
 ## Local proof — cleared 2026-09-19, no spend
 
@@ -167,23 +168,30 @@ role uses Krea 2 and does not need this. Dataset captioning (`caption-dataset`, 
 P01, P06, S01 and X01) does. For H3 and captioning: LM Studio on this PC over Tailscale,
 or an OpenAI-compatible server on the pod. See `infra/runpod/README.md` section 5.
 
-## 16. Product name — YOU (the second reference product is confirmed)
-The README now leads with **Director** (open creative studio). The git folder is still
-`Director`; that word never covered music videos, WhatsApp Status, LoRAs, or the 50 offers.
-The design docs, the workspace scaffold, the ElevenLabs agent display strings and
-`brands/_presets/voice-agent.json` say **Director Studio**, which remains proposed. Confirm
-Director, Director Studio, or name the one you want. Then the UI wordmark, `package.json` name,
-User-Agent and `EPALLE_*` env names change (W1, with `EPALLE_*` still read as fallbacks).
+## 16. ~~Product name~~ — RESOLVED 2026-09-20
+You chose **Director**. The README leads with it, and every product string now says it: the
+UI wordmark (`components/Shell.js`, `components/Canvas.js`), the page titles (`app/layout.js`
+and the two workspace pages), `package.json` name `director-studio` (npm names are lowercase),
+the UI route User-Agent `director-studio/1.0`, the ElevenLabs agent (`AGENT_NAME = "Director"`
+in `packages/voice/elevenlabs_agent.py`, with `brands/_presets/voice-agent.json` carrying the
+same name; `tests/test_voice_agent.py` pins the two together), the design spec, the skills and
+the docs. The git folder is still `ngoma` (a drum; that word never covered music videos,
+WhatsApp Status, LoRAs, or the 50 offers) and stays so with the GitHub remote and the
+`graphify-out` paths: a path, not a name. "Director Engine" (`docs/engine/DIRECTOR-ENGINE.md`,
+`packages/engine/director.py`) keeps its name as the engine subsystem. Still W1: the
+`epalle-studio/1.0` User-Agent in the Python adapters and the `EPALLE_*` env names (read as
+fallbacks once `STUDIO_*` lands).
 
-Resolved: you confirmed **Weavy.ai** (node-based workflow creation) as the second reference
-product alongside Higgsfield. The spec's Part 1 reading of it stands.
+Also resolved: you confirmed **Weavy.ai** (node-based workflow creation) as the second
+reference product alongside Higgsfield. The spec's Part 1 reading of it stands.
 
 ## 17. ~~`uv` is not on PATH, and two things still assume it~~ — RESOLVED 2026-09-20
 Every doc command is written for plain `python`, and the two places that shelled out to `uv`
 now fall back:
 - `studio.py` tasks `plan`, `test`, `graph` and `loop` prefer `uv run --with ...` when `uv`
   is on PATH and otherwise run the same scripts with the interpreter that launched
-  `studio.py` (`sys.executable`); `tests/test_studio_runner.py` pins both branches.
+  `studio.py` (`sys.executable`), printing one line saying so and which deps that
+  interpreter must already have; `tests/test_studio_runner.py` pins both branches.
 - The studio UI's API routes spawn through `lib/python.js`, which honours `STUDIO_PYTHON`
   and defaults to `python` (`docs/engine/DESCRIBE.md`).
 Installing `uv` is optional; it only saves the one-time `pip install pyyaml pillow pytest`.

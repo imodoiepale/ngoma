@@ -14,7 +14,7 @@ EPALLE is a persistent creative-production environment for character datasets, l
 
 ## Interfaces
 
-- EPALLE Studio canvas: `/` on port 3000.
+- Studio canvas (now Director): `/` on port 3000.
 - Workflow library: `/library` on port 3000.
 - Job status: `/jobs` on port 3000.
 - Vibe-Workflow node editor: `/workflow` on port 3000.

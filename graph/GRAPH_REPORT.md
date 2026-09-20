@@ -1,4 +1,4 @@
-# Graph Report — EPALLE Studio corpus (2026-09-14)
+# Graph Report — Director library corpus (2026-09-14)
 
 ## Summary
 - 1680 nodes · 5893 edges

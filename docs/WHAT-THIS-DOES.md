@@ -1,6 +1,6 @@
 # What this repo does
 
-Director Studio is a creative studio for any brand. You open a workspace, give it an idea, a
+Director is a creative studio for any brand. You open a workspace, give it an idea, a
 song, a brief or a calendar, and it produces finished, on-brand assets and a schedule. The
 same pipeline serves a music project, a fintech app and whatever workspace comes next;
 nothing in it is brand-specific.

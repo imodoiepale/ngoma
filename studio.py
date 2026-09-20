@@ -43,6 +43,7 @@ SECRET_EXCLUDES = [":(exclude)docs/*", ":(exclude)shared-skills/*",
                    ":(exclude).claude/*", ":(exclude).agents/*", ":(exclude)studio.py"]
 
 SKILL_TARGETS = [".claude/skills", ".agents/skills"]
+_NOTICED: list[bool] = []  # the uv fallback notice prints once per invocation, not per step
 
 
 def _run(cmd: list[str], **kw) -> subprocess.CompletedProcess[str]:
@@ -64,6 +65,11 @@ def _python(*args: str, with_: tuple[str, ...] = ()) -> list[str]:
         if args and args[0].startswith("-"):
             cmd.append("python")
         return cmd + list(args)
+    if not _NOTICED:
+        _NOTICED.append(True)
+        # stdout on purpose: PowerShell 5 turns native stderr under `2>&1` into red error records.
+        print(f"uv not on PATH; running with {sys.executable} (deps must be installed: "
+              f"{', '.join(with_) or 'none needed'})", flush=True)
     return [sys.executable, *args]
 
 

@@ -390,7 +390,7 @@ def report(g: Graph) -> str:
     ]
 
     L = [
-        f"# Graph Report — EPALLE Studio corpus ({date.today()})",
+        f"# Graph Report — Director library corpus ({date.today()})",
         "",
         "## Summary",
         f"- {len(g.nodes)} nodes · {len(g.edges)} edges",

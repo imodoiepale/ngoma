@@ -1,6 +1,6 @@
-# EPALLE Studio UI
+# Studio UI origins (the Director canvas, first built for the EPALLE workspace)
 
-This project adapts the MIT-licensed Vibe-Workflow codebase into an EPALLE-specific node canvas for character datasets, SCAIL-2 replacement, MiniMax H3 music videos and localized UGC.
+This project adapts the MIT-licensed Vibe-Workflow codebase into a node canvas, first for the EPALLE workspace, for character datasets, SCAIL-2 replacement, MiniMax H3 music videos and localized UGC.
 
 ## Local start
 

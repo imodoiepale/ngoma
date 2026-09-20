@@ -125,7 +125,7 @@ Carousels, reels, character consistency, batches and video all need ComfyUI.
 
 ---
 
-## Stage 4: Director Studio, the general creative studio, in progress
+## Stage 4: Director, the general creative studio, in progress
 
 The design (`docs/superpowers/specs/2026-09-20-general-creative-studio-design.md`) turns the
 two-brand tool into a studio for any workspace. Five workstreams run in parallel with
@@ -138,7 +138,7 @@ explicit file ownership; each is done when its acceptance commands pass.
 | 4.3 | W3 Batch runtime: per-item loop, seeds, `partial`, `posts/<group>/` export, `max_items`, cost with items, the run-time rights gate, three port maps, the batch template | ME | a dry run of the template writes `items[]` of length 3 against `brands/epalle/references/red-dress` |
 | 4.4 | W4 The 50 ideas: close the gap groups G1 to G9 in bulk or state the exact blocker per idea | ME | `workflow_author.py --all-ideas && --check`, `workflow_catalog.py --check`, `cli.py ports-check` pass, with a before-and-after gap table |
 | 4.5 | W5 Workspaces and docs: `workspace.py new / list / check`, `brands/_kit/`, docs and skills speak of workspaces | ME | `python packages/strategy/workspace.py new demo-brand --name "Demo Brand" --dry-run` prints the plan; `python -m pytest -q tests/test_workspace.py tests/test_docs_commands.py` is green |
-| 4.6 | Confirm the product name, and that "Wavy AI" means Weavy | YOU | `docs/BLOCKERS.md` item 16 |
+| 4.6 | ~~Confirm the product name, and that "Wavy AI" means Weavy~~ done 2026-09-20: **Director**, and **Weavy.ai** | YOU | `docs/BLOCKERS.md` item 16 |
 | 4.7 | Decide credits versus per-deliverable pricing | YOU | `docs/BLOCKERS.md` item 18 |
 | 4.8 | Confirm the real-person face swap policy | YOU | `docs/BLOCKERS.md` item 19 |
 | 4.9 | Decide whether `adult: true` nodes appear in Explore behind the 18+ gate or stay hidden | YOU | `docs/BLOCKERS.md` item 20 |
@@ -243,7 +243,7 @@ Two decisions block this, and both are yours.
 3. OpenRouter key and credit
 4. Accept the Klein KV licence
 5. Raise `budget_usd` above 0 before any live GPU stage
-6. Confirm the product name (Director Studio) and that "Wavy AI" means Weavy
+6. ~~Confirm the product name and that "Wavy AI" means Weavy~~ — done: **Director**, and Weavy.ai (BLOCKERS 16)
 7. Decide credits versus per-deliverable pricing
 8. Confirm the real-person face swap policy: never without a written release
 9. Decide whether the `adult: true` nodes are offered behind the 18+ gate or hidden

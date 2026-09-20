@@ -1,4 +1,4 @@
-# Director Studio: a general creative studio, any brand, any capability
+# Director: a general creative studio, any brand, any capability
 
 ## Context
 
@@ -55,8 +55,12 @@ https://www.figma.com/solutions/figma-ai-tool-weave/ ,
 https://www.figma.com/blog/connecting-figma-and-weave/ ,
 https://help.figma.com/hc/en-us/articles/39582753756695-What-s-new-from-Config-2026).
 This repo's README already describes its canvas as "Weavy-style". The rest of this document
-treats Weavy as the second reference. **Decision for the user:** confirm that "Wavy AI"
-means Weavy, or name the product meant.
+treats Weavy as the second reference. ~~**Decision for the user:** confirm that "Wavy AI"
+means Weavy, or name the product meant.~~
+
+**2026-09-20, confirmed by the user:** the reference product is **Weavy.ai**: the node canvas
+and node-based workflow creation. The Part 1 reading below stands as written
+(`docs/BLOCKERS.md` item 16).
 
 ### How they are organised
 
@@ -449,10 +453,10 @@ say what to do next, and every number on screen honest about its basis.
 
 ### Brand-agnostic rename plan
 
-Proposed product name: **Director Studio** (the repo is `Director`). EPALLE stays the first
-workspace, Ongea Pesa the second. **This is a decision for the user.** Mechanics, once
-decided, in W1 and W5: wordmark and `layout.js` title; `package.json` name; User-Agent
-`Director-studio/1.0` in the UI route and `runner.py`; env names `STUDIO_LIBRARY_DB` and
+Product name: **Director** (decided 2026-09-20; the repo folder stays `ngoma`). EPALLE stays
+the first workspace, Ongea Pesa the second. Mechanics, in W1 and W5: wordmark and
+`layout.js` title; `package.json` name `director-studio`; User-Agent
+`director-studio/1.0` in the UI route and `runner.py`; env names `STUDIO_LIBRARY_DB` and
 `STUDIO_WORKFLOW_DIR` with the `EPALLE_*` names still read as fallbacks; the adult notice
 becomes "never on a client workspace's infrastructure"; the ElevenLabs agent display name;
 `EPALLE-README.md` folded into `packages/studio-ui/README.md`; `SEED` stays as it is (it
@@ -602,8 +606,8 @@ Plus a table in the PR description: idea, gaps before, gaps after, what closed e
 ### W5. Multi-brand generalisation and docs
 
 Goal: a scaffold that creates a workspace in one command; a documented minimum
-`brand.yaml` and `collection.json`; docs that describe Director Studio (pending the name
-decision) with EPALLE and Ongea Pesa as workspaces; BLOCKERS and ROADMAP updated with this
+`brand.yaml` and `collection.json`; docs that describe Director with EPALLE and Ongea Pesa
+as workspaces; BLOCKERS and ROADMAP updated with this
 spec's items; skills updated to speak of workspaces.
 
 Owns: `packages/strategy/workspace.py` (new: `new <key> --name --accent --kind`, `list`,
@@ -646,8 +650,9 @@ graphify update .
 
 ## Decisions only the user can make
 
-1. **Product name.** Director Studio is proposed; EPALLE stays the first workspace.
-2. **"Wavy AI".** Confirm it means Weavy (now Figma Weave), or name the product.
+1. **Product name.** Decided: **Director**. EPALLE stays the first workspace.
+2. **"Wavy AI".** Decided 2026-09-20: it means **Weavy.ai** (node canvas, node-based
+   workflow creation; now Figma Weave). Recorded in `docs/BLOCKERS.md` item 16.
 3. **Credits.** Whether to sell credits at all, or price per deliverable as the ideas do.
    Internally the unit stays USD with a measured or assumed basis either way.
 4. **Real-person face swap.** Current answer: never without a written release recorded in

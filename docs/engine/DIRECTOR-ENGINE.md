@@ -147,9 +147,10 @@ collection in a workspace.
 
 ## Voice
 
-The microphone button talks to the **Director Studio Director** agent on ElevenLabs (the name
-is a display string in `packages/voice/elevenlabs_agent.py`; the saved agent id in
-`brands/_presets/voice-agent.json` keeps its current name until the next `sync`). The
+The microphone button talks to the **Director** agent on ElevenLabs (the name is
+`AGENT_NAME` in `packages/voice/elevenlabs_agent.py`; `brands/_presets/voice-agent.json`
+records the same name and the saved agent id, and the next `sync` pushes the display name
+to the dashboard). The
 agent has ten client tools (`packages/voice/elevenlabs_agent.py`): `director_say`,
 `add_scene`, `set_angles`, `set_look`, `set_kind`, `attach_reference`, `keep_candidates`,
 `set_run_mode`, `run_stage`, `workflow_status`. They run in the browser
