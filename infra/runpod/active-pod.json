@@ -1,8 +1,10 @@
 {
-  "pod_id": "rl4rktj2fpnphn",
-  "gpu": "NVIDIA A100-SXM4-80GB",
-  "price_per_hr": 1.39,
-  "datacenter": "US-KS-2",
-  "network_volume": "7y7jyghmua",
-  "created_at": "2026-09-06T14:08:57Z"
+  "pod_id": "u0rccyaj40w5no",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "price_per_hr": 1.69,
+  "datacenter": "US-NC-2",
+  "network_volume": "t023496m3n",
+  "image": "runpod/comfyui:cuda12.8",
+  "name": "director-comfyui",
+  "created_at": "2026-09-20T03:07:04Z"
 }

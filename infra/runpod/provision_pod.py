@@ -15,6 +15,10 @@ Usage:
     python provision_pod.py --max-price 1.50       # refuse anything more expensive
     python provision_pod.py --status               # show current pods
     python provision_pod.py --stop <pod_id>        # stop a pod (ends GPU billing)
+
+After a pod is RUNNING, bind models + restart Comfy with:
+    python one_click.py
+    python one_click.py --create --full            # provision if needed, install nodes, download gaps
 """
 
 from __future__ import annotations
@@ -32,10 +36,12 @@ PUBKEY_PATH = HERE.parent / "epalle_runpod_ed25519.pub"
 SPEC_PATH = HERE.parent / "runpod-pod-spec.json"
 STATE_PATH = HERE / "active-pod.json"
 
-IMAGE = "runpod/pytorch:1.0.3-cu1281-torch291-ubuntu2404"
-POD_NAME = "epalle-studio-dev-2"
-PORTS = ["8188/http", "3000/http", "8888/http", "22/tcp"]
-CONTAINER_DISK_GB = 40
+# Official ComfyUI template (comfyui-base). Blackwell cards need the cuda12.8 tag.
+# https://docs.runpod.io/tutorials/pods/comfyui
+IMAGE = "runpod/comfyui:cuda12.8"
+POD_NAME = "director-comfyui"
+PORTS = ["8188/http", "8080/http", "8888/http", "22/tcp"]
+CONTAINER_DISK_GB = 50
 BOOT_TIMEOUT_S = 600
 
 
@@ -73,26 +79,54 @@ def available_gpus(client: RunPod, datacenter: str, min_vram: int) -> list[dict]
     return options
 
 
-def create(client: RunPod, gpu: dict, dry_run: bool) -> dict | None:
+def _hf_token() -> str:
+    sys.path.insert(0, str(HERE.parents[1] / "packages" / "common"))
+    import vault
+    return (vault.get("HF_TOKEN") or "").strip()
+
+
+def create(
+    client: RunPod,
+    gpu: dict,
+    dry_run: bool,
+    volume_id: str,
+    image: str = IMAGE,
+    name: str = POD_NAME,
+) -> dict | None:
     if not PUBKEY_PATH.exists():
         raise RuntimeError(f"missing SSH public key at {PUBKEY_PATH}")
+    if not volume_id:
+        raise RuntimeError("network volume id is required (create the volume first)")
+
+    env = {
+        "PUBLIC_KEY": PUBKEY_PATH.read_text(encoding="utf-8").strip(),
+        "JUPYTER_PASSWORD": "director",
+    }
+    hf = _hf_token()
+    if hf:
+        env["HF_TOKEN"] = hf
+        env["HUGGING_FACE_HUB_TOKEN"] = hf
 
     body = {
-        "name": POD_NAME,
+        "name": name,
         "gpuTypeIds": [gpu["id"]],
         "gpuCount": 1,
-        "imageName": IMAGE,
-        "networkVolumeId": VOLUME_ID,
+        "imageName": image,
+        "networkVolumeId": volume_id,
         "volumeMountPath": "/workspace",
         "containerDiskInGb": CONTAINER_DISK_GB,
         "ports": PORTS,
-        "env": {"PUBLIC_KEY": PUBKEY_PATH.read_text(encoding="utf-8").strip()},
+        "env": env,
         "supportPublicIp": True,
         "computeType": "GPU",
         "cloudType": "SECURE",
     }
 
-    redacted = {**body, "env": {"PUBLIC_KEY": "<ssh public key>"}}
+    redacted_env = {"PUBLIC_KEY": "<ssh public key>", "JUPYTER_PASSWORD": "<set>"}
+    if hf:
+        redacted_env["HF_TOKEN"] = "<set>"
+        redacted_env["HUGGING_FACE_HUB_TOKEN"] = "<set>"
+    redacted = {**body, "env": redacted_env}
     print(json.dumps(redacted, indent=2))
 
     if dry_run:
@@ -105,8 +139,8 @@ def create(client: RunPod, gpu: dict, dry_run: bool) -> dict | None:
     if not pod_id:
         raise RuntimeError(f"create returned no id: {json.dumps(pod)[:400]}")
 
-    # Persist the spec and the active pod so later steps and the watcher can find it.
-    SPEC_PATH.write_text(json.dumps(body, indent=2) + "\n", encoding="utf-8")
+    # Persist the spec without secrets, and the active pod for later steps.
+    SPEC_PATH.write_text(json.dumps(redacted, indent=2) + "\n", encoding="utf-8")
     STATE_PATH.write_text(
         json.dumps(
             {
@@ -114,7 +148,9 @@ def create(client: RunPod, gpu: dict, dry_run: bool) -> dict | None:
                 "gpu": gpu["id"],
                 "price_per_hr": gpu["price"],
                 "datacenter": DATACENTER,
-                "network_volume": VOLUME_ID,
+                "network_volume": volume_id,
+                "image": image,
+                "name": name,
                 "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
             },
             indent=2,
@@ -176,6 +212,11 @@ def main() -> int:
                         help="refuse to create above this hourly price")
     parser.add_argument("--gpu", help="force a specific GPU type id")
     parser.add_argument("--datacenter", default=DATACENTER)
+    parser.add_argument("--volume-id", default=VOLUME_ID,
+                        help="network volume to attach (required for create)")
+    parser.add_argument("--image", default=IMAGE,
+                        help="container image (official ComfyUI template by default)")
+    parser.add_argument("--name", default=POD_NAME)
     args = parser.parse_args()
 
     client = RunPod()
@@ -227,7 +268,10 @@ def main() -> int:
         return 1
 
     try:
-        pod = create(client, chosen, args.plan)
+        pod = create(
+            client, chosen, args.plan, args.volume_id,
+            image=args.image, name=args.name,
+        )
     except RunPodError as exc:
         print(f"create failed: {exc}", file=sys.stderr)
         return 1

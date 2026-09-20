@@ -21,7 +21,7 @@ import ResultsDrawer from "./canvas/ResultsDrawer";
 import ReferenceIntake from "./refs/ReferenceIntake";
 import { purposeForRole } from "./refs/RefStack";
 import { REF_KINDS } from "./StudioNode";
-import { CanvasContext } from "./canvas/context";
+import { CanvasContext } from "./canvas/context.js";
 import { stepsToGraph } from "./canvas/localDraft";
 import { byKindOf, computeGaps, continuationsFor, iteratedPort, pendingPicks, runPlan, validateWorkflow } from "../lib/graph";
 import { estimateNode, estimateWorkflow, fmtUsd } from "../lib/estimate";

@@ -1,0 +1,36 @@
+# Point the official RunPod ComfyUI template at the network-volume model store.
+# Unknown keys are ignored by older Comfy builds; known keys must match folder_paths.
+epalle_persistent:
+  base_path: /workspace/epalle/models
+  is_default: true
+  checkpoints: checkpoints
+  configs: configs
+  loras: loras
+  vae: vae
+  text_encoders: text_encoders
+  diffusion_models: diffusion_models
+  unet: unet
+  clip: clip
+  clip_vision: clip_vision
+  style_models: style_models
+  embeddings: embeddings
+  diffusers: diffusers
+  vae_approx: vae_approx
+  controlnet: controlnet
+  gligen: gligen
+  upscale_models: upscale_models
+  latent_upscale_models: latent_upscale_models
+  hypernetworks: hypernetworks
+  photomaker: photomaker
+  classifiers: classifiers
+  model_patches: model_patches
+  audio_encoders: audio_encoders
+  detection: detection
+  rife: rife
+  insightface: insightface
+  ultralytics: ultralytics
+  sams: sams
+  ipadapter: ipadapter
+  animatediff_models: animatediff_models
+  animatediff_motion_lora: animatediff_motion_lora
+  onnx: onnx

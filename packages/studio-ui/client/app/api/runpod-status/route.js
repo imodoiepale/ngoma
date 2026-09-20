@@ -5,8 +5,8 @@ export const dynamic = "force-dynamic";
 const UA = "director-studio/1.0 (+https://runpod.io)";
 const REST = "https://rest.runpod.io/v1";
 
-const VOLUME_ID = process.env.RUNPOD_VOLUME_ID || "7y7jyghmua";
-const ENDPOINT_ID = process.env.RUNPOD_ENDPOINT_ID || "ugtmfoidpnh8pd";
+const VOLUME_ID = process.env.RUNPOD_VOLUME_ID || "";
+const ENDPOINT_ID = process.env.RUNPOD_ENDPOINT_ID || "";
 
 async function rest(path, token) {
   const response = await fetch(`${REST}${path}`, {
@@ -51,6 +51,7 @@ export async function GET() {
     // Serverless health is a different host from the control-plane REST API.
     let health = null;
     try {
+      if (!ENDPOINT_ID) throw new Error("no studio endpoint configured");
       const response = await fetch(
         `https://api.runpod.ai/v2/${ENDPOINT_ID}/health`,
         {

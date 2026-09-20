@@ -1,6 +1,6 @@
 # The director engine's spending limits. A human raises these; the engine never does.
 worker: engine
-budget_usd: 0          # total the engine may spend on GPU time before a human raises it
+budget_usd: 10         # raised for the Director image-pod proof; the engine never raises this
 gpu: a100-80gb         # rate key in packages/strategy/unit_economics.GPU_RATES
 # Fan-out safety cap: a node marked `each` refuses to run when more items than this reach
 # its iterated port (a 500-image folder is a decision, not an accident). docs/engine/BATCHES.md

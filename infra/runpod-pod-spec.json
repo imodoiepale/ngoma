@@ -1,0 +1,26 @@
+{
+  "name": "director-comfyui",
+  "gpuTypeIds": [
+    "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  ],
+  "gpuCount": 1,
+  "imageName": "runpod/comfyui:cuda12.8",
+  "networkVolumeId": "t023496m3n",
+  "volumeMountPath": "/workspace",
+  "containerDiskInGb": 50,
+  "ports": [
+    "8188/http",
+    "8080/http",
+    "8888/http",
+    "22/tcp"
+  ],
+  "env": {
+    "PUBLIC_KEY": "<ssh public key>",
+    "JUPYTER_PASSWORD": "<set>",
+    "HF_TOKEN": "<set>",
+    "HUGGING_FACE_HUB_TOKEN": "<set>"
+  },
+  "supportPublicIp": true,
+  "computeType": "GPU",
+  "cloudType": "SECURE"
+}

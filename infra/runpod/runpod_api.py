@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import time
 import urllib.error
@@ -38,12 +39,13 @@ TOKEN_CANDIDATES = [
 REST_BASE = "https://rest.runpod.io/v1"
 GRAPHQL_URL = "https://api.runpod.io/graphql"
 
-# EPALLE fixed resources.
-VOLUME_ID = "7y7jyghmua"
-DATACENTER = "US-KS-2"
-ENDPOINT_ID = "ugtmfoidpnh8pd"
-TEMPLATE_ID = "s7eg4zafj9"
-POD_ID = "eeoldxyxnd0o1z"
+# Director studio resources. Override after a create; do not fall back to the
+# old EPALLE account IDs (7y7jyghmua / ugtmfoidpnh8pd) — they are another user.
+VOLUME_ID = os.environ.get("RUNPOD_VOLUME_ID") or "t023496m3n"
+DATACENTER = os.environ.get("RUNPOD_DATACENTER") or "US-NC-2"
+ENDPOINT_ID = os.environ.get("RUNPOD_ENDPOINT_ID") or ""
+TEMPLATE_ID = os.environ.get("RUNPOD_TEMPLATE_ID") or ""
+POD_ID = os.environ.get("RUNPOD_POD_ID") or "u0rccyaj40w5no"
 
 MAX_RETRIES = 4
 
@@ -257,6 +259,14 @@ class RunPod:
     def create_pod(self, body: dict) -> dict:
         return self.rest("POST", "/pods", body=body)
 
+    def create_volume(self, name: str, size: int, datacenter: str) -> dict:
+        return self.rest("POST", "/networkvolumes", body={
+            "name": name, "size": size, "dataCenterId": datacenter,
+        })
+
+    def resize_volume(self, volume_id: str, size: int) -> dict:
+        return self.rest("PATCH", f"/networkvolumes/{volume_id}", body={"size": size})
+
     def update_endpoint_gpus(self, endpoint_id: str, gpu_ids: str) -> dict:
         """Widen the serverless endpoint's accepted GPU list. GraphQL only."""
         return self.graphql(
@@ -367,6 +377,16 @@ def cmd_capacity(client: RunPod, args) -> int:
     return cmd_gpu_types(client, args)
 
 
+def cmd_resize(client: RunPod, args) -> int:
+    volume_id = args.volume or VOLUME_ID
+    if volume_id in {"b738wmm9q9", "km6hgw06vl"}:
+        print("refusing to resize a DepthMe volume", file=sys.stderr)
+        return 2
+    result = client.resize_volume(volume_id, args.size)
+    print(json.dumps({k: result.get(k) for k in ("id", "name", "size", "dataCenterId")}, indent=2))
+    return 0
+
+
 COMMANDS = {
     "whoami": cmd_whoami,
     "volumes": cmd_volumes,
@@ -374,6 +394,7 @@ COMMANDS = {
     "endpoint": cmd_endpoint,
     "gpu-types": cmd_gpu_types,
     "capacity": cmd_capacity,
+    "resize": cmd_resize,
 }
 
 
@@ -383,6 +404,8 @@ def main() -> int:
     parser.add_argument("--datacenter", default=DATACENTER)
     parser.add_argument("--min-vram", type=int, default=40)
     parser.add_argument("--verbose", action="store_true")
+    parser.add_argument("--volume", default=VOLUME_ID, help="network volume id for resize")
+    parser.add_argument("--size", type=int, default=600, help="target GB for resize")
     args = parser.parse_args()
 
     client = RunPod(verbose=args.verbose)

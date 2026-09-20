@@ -1,5 +1,18 @@
 # EPALLE RunPod deployment
 
+## One-click Director pod (current account)
+
+Do not use the old EPALLE volume/pod IDs below. Current resources are network volume `t023496m3n` (600 GB, US-NC-2) and pod `u0rccyaj40w5no` (`runpod/comfyui:cuda12.8`, ComfyUI v0.33.4).
+
+From the repo on your machine, this provisions the official ComfyUI template if needed, binds every model folder on the volume (including `upscale_models`) into Comfy, restarts it so loaders see the files, and can install node packs plus resume downloads:
+
+```powershell
+python infra/runpod/one_click.py
+python infra/runpod/one_click.py --create --full
+```
+
+`director-template.json` is the RunPod image spec (official ComfyUI + ports). The models, custom nodes, and workflows live on the network volume; `one_click.py` is what makes a new pod actually use them. Comfy UI Refresh does not pick up a newly added model folder — bind + restart is required.
+
 ## Provisioned resources
 
 - Persistent network volume: `epalle-studio` (`7y7jyghmua`), 200 GB, US-KS-2.

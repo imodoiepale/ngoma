@@ -21,9 +21,10 @@ import json
 import os
 import sys
 import time
+import urllib.request
 from pathlib import Path
 
-MODELS_ROOT = Path(os.environ.get("EPALLE_MODELS", "/workspace/epalle/ComfyUI/models"))
+MODELS_ROOT = Path(os.environ.get("EPALLE_MODELS", "/workspace/epalle/models"))
 
 # hf_hub_download caches to ~/.cache/huggingface by default, which on a RunPod pod is
 # the small container disk (40 GB), not the network volume. Large weights then fail
@@ -69,6 +70,12 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--all", action="store_true",
                         help="download arch-incompatible weights too")
+    parser.add_argument(
+        "--only",
+        nargs="+",
+        default=None,
+        help="download only these filenames (skip the rest of the plan)",
+    )
     args = parser.parse_args()
 
     try:
@@ -89,13 +96,26 @@ def main() -> int:
     print(f"planned items : {len(items)}\n")
 
     results = []
-    for item in sorted(items, key=lambda i: -i["workflow_count"]):
+    for item in sorted(items, key=lambda i: -i.get("workflow_count", 0)):
         name = item["file"]
+        if args.only and name not in args.only:
+            continue
+        if not item.get("repo") or not item.get("repo_path"):
+            if not item.get("url"):
+                results.append({"file": name, "status": "unresolved_source"})
+                print(f"[skip] {name}  (no huggingface repo)")
+                continue
         folder = FOLDER_FIXUP.get(item["folder"], item["folder"])
         target_dir = MODELS_ROOT / folder
         target = target_dir / name
 
         if target.exists() and target.stat().st_size > 0:
+            if name == "minimax_h3_ref2va_pruned_fp8_scaled.safetensors":
+                alias_dir = target_dir / "MinimaxH3"
+                alias_dir.mkdir(parents=True, exist_ok=True)
+                alias = alias_dir / name
+                if not alias.exists():
+                    os.symlink(target, alias)
             results.append({"file": name, "status": "already_present",
                             "bytes": target.stat().st_size, "path": str(target)})
             print(f"[have] {name}")
@@ -108,8 +128,8 @@ def main() -> int:
             print(f"[skip] {name}  (Blackwell-only format, GPU is {capability})")
             continue
 
-        print(f"[get ] {name}\n         {item['repo']} :: {item['repo_path']}"
-              f"\n         -> models/{folder}/")
+        source = item.get("url") or f"{item.get('repo')} :: {item.get('repo_path')}"
+        print(f"[get ] {name}\n         {source}\n         -> models/{folder}/")
         if args.dry_run:
             results.append({"file": name, "status": "dry_run"})
             continue
@@ -117,25 +137,31 @@ def main() -> int:
         target_dir.mkdir(parents=True, exist_ok=True)
         started = time.time()
         try:
-            # Download straight into a staging dir on the volume rather than through
-            # the shared blob cache. The cache stores each file as a symlink into
-            # blobs/, and hardlinking out of that onto this network filesystem failed;
-            # it also doubled the space used. local_dir writes the real file, and
-            # os.replace within one filesystem is atomic.
             staging = MODELS_ROOT.parent / ".downloads"
             staging.mkdir(parents=True, exist_ok=True)
-            fetched = Path(
-                hf_hub_download(
-                    repo_id=item["repo"],
-                    filename=item["repo_path"],
-                    token=token,
-                    local_dir=str(staging),
+            if item.get("url") and not item.get("repo"):
+                fetched = staging / name
+                urllib.request.urlretrieve(item["url"], fetched)
+            else:
+                fetched = Path(
+                    hf_hub_download(
+                        repo_id=item["repo"],
+                        filename=item["repo_path"],
+                        token=token,
+                        local_dir=str(staging),
+                    )
                 )
-            )
             if not fetched.exists():
                 raise FileNotFoundError(f"hf_hub_download returned missing {fetched}")
             os.replace(fetched, target)
             size = target.stat().st_size
+            if name == "minimax_h3_ref2va_pruned_fp8_scaled.safetensors":
+                alias_dir = target_dir / "MinimaxH3"
+                alias_dir.mkdir(parents=True, exist_ok=True)
+                alias = alias_dir / name
+                if not alias.exists():
+                    os.symlink(target, alias)
+                    print(f"         alias {alias}")
             results.append({"file": name, "status": "downloaded", "bytes": size,
                             "path": str(target), "seconds": round(time.time() - started)})
             print(f"         ok {size/1073741824:.2f} GB in "

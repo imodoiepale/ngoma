@@ -2,7 +2,7 @@
 
 import { memo, useContext, useState } from "react";
 import { Handle, Position } from "reactflow";
-import { CanvasContext } from "./canvas/context";
+import { CanvasContext } from "./canvas/context.js";
 import RefStack from "./refs/RefStack";
 import { fmtUsd, latestResult } from "../lib/estimate";
 

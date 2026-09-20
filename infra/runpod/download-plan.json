@@ -158,7 +158,7 @@
     },
     {
       "file": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
-      "folder": "diffusion_models",
+      "folder": "text_encoders",
       "loaders": [
         "4c314f31-ecda-4b08-ae98-faaba1bf613f",
         "CLIPLoader"
@@ -1589,10 +1589,9 @@
       "used_by": [
         "workflows/icekiub/H3_Icy_image.json"
       ],
-      "look_at": [
-        "https://civitai.red/models/2200329/galaxyace-lora?modelVersionId=3201619",
-        "https://openmodeldb.info/models/1x-SkinContrast-High-SuperUltraCompact"
-      ]
+      "repo": "risunobushi/1xSkinContrast",
+      "repo_path": "1xSkinContrast-SuperUltraCompact.pth",
+      "evidence": "openmodeldb 1x-SkinContrast-SuperUltraCompact sha256 2713e618"
     },
     {
       "file": "Flux.Fazze-step00000200.safetensors",
@@ -1837,7 +1836,8 @@
       "workflow_count": 1,
       "used_by": [
         "workflows/icekiub/Icy_-_Dataset_gen_-_Klein_-_subs.json"
-      ]
+      ],
+      "url": "https://github.com/Phhofm/models/releases/download/4xNomosWebPhoto_RealPLKSR/4xNomosWebPhoto_RealPLKSR.safetensors"
     },
     {
       "file": "Breast_Implanter_v5.0_exp_2770081.safetensors",

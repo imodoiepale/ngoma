@@ -1,0 +1,11 @@
+{
+  "name": "director-comfyui",
+  "imageName": "runpod/comfyui:cuda12.8",
+  "containerDiskInGb": 50,
+  "volumeMountPath": "/workspace",
+  "ports": "8188/http,8080/http,8888/http,22/tcp",
+  "env": {
+    "JUPYTER_PASSWORD": "director"
+  },
+  "notes": "Official ComfyUI template. Attach network volume t023496m3n (600 GB, US-NC-2), then from the repo run: python infra/runpod/one_click.py --full. Models, node packs, and workflows live on the volume; one_click binds every Comfy model folder (including upscale_models) so loaders never see an empty list."
+}
