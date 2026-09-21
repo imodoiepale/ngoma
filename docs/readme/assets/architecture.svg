@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-label="Director system architecture: Studio, engine, image-router, ComfyUI, compositor">
+  <defs>
+    <linearGradient id="arch-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A0A0A"/>
+      <stop offset="1" stop-color="#14110D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="480" fill="url(#arch-bg)" rx="24"/>
+  <text x="48" y="48" fill="#F5F0E8" font-family="Georgia, serif" font-size="22">System layout</text>
+  <text x="48" y="74" fill="#A89B7C" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">Studio and author write studio.json. Engine routes. Hosted models sit beside the pod. Code composites. You approve.</text>
+
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <rect x="48" y="104" width="340" height="88" rx="14" fill="#1C1812" stroke="#C9A227" stroke-opacity="0.45"/>
+    <text x="218" y="142" text-anchor="middle" fill="#F0D78C" font-size="14" font-weight="700">Studio canvas :3000</text>
+    <text x="218" y="164" text-anchor="middle" fill="#D9D0BE" font-size="12">packages/studio-ui</text>
+
+    <rect x="812" y="104" width="340" height="88" rx="14" fill="#1C1812" stroke="#C9A227" stroke-opacity="0.45"/>
+    <text x="982" y="142" text-anchor="middle" fill="#F0D78C" font-size="14" font-weight="700">workflow_author / say</text>
+    <text x="982" y="164" text-anchor="middle" fill="#D9D0BE" font-size="12">packages/strategy, packages/engine</text>
+
+    <rect x="330" y="228" width="540" height="88" rx="14" fill="#1C1812" stroke="#C9A227" stroke-opacity="0.55"/>
+    <text x="600" y="266" text-anchor="middle" fill="#F0D78C" font-size="14" font-weight="700">Engine runner, ports, cost</text>
+    <text x="600" y="288" text-anchor="middle" fill="#D9D0BE" font-size="12">packages/engine - dry-run default, budget_usd cap</text>
+
+    <rect x="48" y="352" width="340" height="88" rx="14" fill="#1C1812" stroke="#22C55E" stroke-opacity="0.45"/>
+    <text x="218" y="390" text-anchor="middle" fill="#86EFAC" font-size="14" font-weight="700">OpenRouter peer</text>
+    <text x="218" y="412" text-anchor="middle" fill="#D9D0BE" font-size="12">packages/image-router</text>
+
+    <rect x="430" y="352" width="340" height="88" rx="14" fill="#1C1812" stroke="#22C55E" stroke-opacity="0.55"/>
+    <text x="600" y="390" text-anchor="middle" fill="#86EFAC" font-size="14" font-weight="700">ComfyUI on RunPod</text>
+    <text x="600" y="412" text-anchor="middle" fill="#D9D0BE" font-size="12">comfy-client - COMPLETED with files only</text>
+
+    <rect x="812" y="352" width="340" height="88" rx="14" fill="#1C1812" stroke="#C9A227" stroke-opacity="0.45"/>
+    <text x="982" y="390" text-anchor="middle" fill="#F0D78C" font-size="14" font-weight="700">Compositor + publish draft</text>
+    <text x="982" y="412" text-anchor="middle" fill="#D9D0BE" font-size="12">logo, type, contrast, sha256 sidecar</text>
+  </g>
+
+  <g stroke="#C9A227" stroke-width="2" fill="none">
+    <path d="M218 192 V228"/>
+    <path d="M982 192 V228"/>
+    <path d="M600 316 V348"/>
+    <path d="M430 272 H218 V348"/>
+    <path d="M770 272 H982 V348"/>
+  </g>
+</svg>

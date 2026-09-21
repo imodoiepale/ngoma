@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "infra/runpod/download-plan.json": {
-    "mtime": 1789873528.435431,
-    "ast_hash": "ddb53aaf9ddefe8e88f9bea5790a07af",
+    "mtime": 1789874884.4854634,
+    "ast_hash": "022c08399c0008e64720d47f4f8fe8e4",
     "semantic_hash": ""
   },
   "infra/runpod/download-workflow-models.py": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "infra/runpod/download_planned.py": {
-    "mtime": 1789873603.814515,
-    "ast_hash": "9d877921bd4c9a2f0f758580d9d85838",
+    "mtime": 1789983186.9212773,
+    "ast_hash": "eb5d88fd36bc04840593b0fc2fd142fc",
     "semantic_hash": ""
   },
   "infra/runpod/guard_kjnodes_sage.py": {
@@ -130,8 +130,8 @@
     "semantic_hash": ""
   },
   "infra/runpod/setup-pod.sh": {
-    "mtime": 1789860768.949651,
-    "ast_hash": "a55071912ad4102d0fdf6b301c3935ef",
+    "mtime": 1789983255.6266696,
+    "ast_hash": "4ae4c03b43b0ec0113592658960aff29",
     "semantic_hash": ""
   },
   "infra/runpod/smoke-test.json": {
@@ -150,8 +150,8 @@
     "semantic_hash": ""
   },
   "infra/runpod/sync-workflows.ps1": {
-    "mtime": 1789848223.9399238,
-    "ast_hash": "04510069707d5854966f0f2733cde040",
+    "mtime": 1789983266.6128218,
+    "ast_hash": "f83b34af67a0afdc53b8bfd3e244489f",
     "semantic_hash": ""
   },
   "packages/analytics/collect.py": {
@@ -890,8 +890,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1789864288.5348005,
-    "ast_hash": "053be5d1cc2423db35237152fba13fb2",
+    "mtime": 1789983171.289736,
+    "ast_hash": "9a3a371b268f8a16aab4df60968758d9",
     "semantic_hash": ""
   },
   "brands/epalle/FINDINGS.md": {
@@ -1195,8 +1195,8 @@
     "semantic_hash": ""
   },
   "infra/runpod/README.md": {
-    "mtime": 1789874710.7257967,
-    "ast_hash": "69549187bfaebdf4263ca994e927a2d4",
+    "mtime": 1789983291.1855085,
+    "ast_hash": "629f7df1766db1b9667aaf0e8ce33e9b",
     "semantic_hash": ""
   },
   "infra/runpod/verification-summary.md": {
@@ -5220,8 +5220,8 @@
     "semantic_hash": ""
   },
   "docs/readme/assets/cost.svg": {
-    "mtime": 1789860304.6092856,
-    "ast_hash": "ea142f9ddd68747d1834b55ab3fd2a9e",
+    "mtime": 1789983138.1307588,
+    "ast_hash": "1c41330a9149b0c5c61c584eac94eb50",
     "semantic_hash": ""
   },
   "docs/readme/assets/director-hero.png": {
@@ -5240,8 +5240,8 @@
     "semantic_hash": ""
   },
   "docs/readme/assets/pipeline.svg": {
-    "mtime": 1789860289.926541,
-    "ast_hash": "9762f3b455142775d04e24c9ff2d0832",
+    "mtime": 1789983128.8523307,
+    "ast_hash": "fb37599d7224b7e60218a05cc1010501",
     "semantic_hash": ""
   },
   "docs/readme/assets/stack.svg": {
@@ -5250,8 +5250,8 @@
     "semantic_hash": ""
   },
   "docs/readme/assets/who.svg": {
-    "mtime": 1789860299.5053937,
-    "ast_hash": "f1103d2f31beb5d8b360a29d346d3a01",
+    "mtime": 1789983144.4603808,
+    "ast_hash": "2b1003b294e6cf1da127f52c82072b70",
     "semantic_hash": ""
   },
   "docs/readme/assets/wordmark.svg": {
@@ -5370,8 +5370,8 @@
     "semantic_hash": ""
   },
   "infra/runpod/extra_model_paths.yaml": {
-    "mtime": 1789870720.451392,
-    "ast_hash": "a45e7d7567594b7bfad3f3b57a50cf04",
+    "mtime": 1789983107.4478514,
+    "ast_hash": "ca8b7a6d4532c9eb20cbbfff1cc3f1c9",
     "semantic_hash": ""
   },
   "work/ui-proof/comfy-stats.png": {
@@ -5385,18 +5385,18 @@
     "semantic_hash": ""
   },
   "infra/runpod/bootstrap_director.py": {
-    "mtime": 1789874183.653907,
-    "ast_hash": "ba53046ea8507deb1078e7da07447c7a",
+    "mtime": 1789983333.9643254,
+    "ast_hash": "3c366cc64d6341e8c3648f049ff26cc8",
     "semantic_hash": ""
   },
   "infra/runpod/copy-h3-extras.py": {
-    "mtime": 1789874704.18113,
-    "ast_hash": "5a92cfde965e195847d23f2421e79fdf",
+    "mtime": 1789983206.9386408,
+    "ast_hash": "9dd46f34101c67ec03e470c6d4ad5b98",
     "semantic_hash": ""
   },
   "infra/runpod/director-template.json": {
-    "mtime": 1789873589.184687,
-    "ast_hash": "2f4699a638b1ef642b5cf40049357e51",
+    "mtime": 1789983293.0579557,
+    "ast_hash": "cba6fb97d7eb5a23c457f7e5f945f834",
     "semantic_hash": ""
   },
   "infra/runpod/download-krea-missing.py": {
@@ -5405,13 +5405,13 @@
     "semantic_hash": ""
   },
   "infra/runpod/install-template-nodes.py": {
-    "mtime": 1789867515.8302217,
-    "ast_hash": "6189f41bf15ff8493db4fb05f12ee353",
+    "mtime": 1789983160.908327,
+    "ast_hash": "2227570ba02397eae52be99eb3aa7c9d",
     "semantic_hash": ""
   },
   "infra/runpod/one_click.py": {
-    "mtime": 1789873561.0803945,
-    "ast_hash": "c0670b6c98317f727ebaf9249a1055ec",
+    "mtime": 1789983333.9643254,
+    "ast_hash": "ca922718f930f4208735b5e49cea005b",
     "semantic_hash": ""
   },
   "infra/runpod/patch-kj-minimax.py": {
@@ -5422,6 +5422,21 @@
   "infra/runpod/restart-template-comfy.sh": {
     "mtime": 1789868768.043258,
     "ast_hash": "c48ff01991be7c96a739e9a8cc89c62f",
+    "semantic_hash": ""
+  },
+  "infra/runpod/comfy.settings.json": {
+    "mtime": 1789983107.4589849,
+    "ast_hash": "a09ccb63d87bc3fd08445d2da17e46b3",
+    "semantic_hash": ""
+  },
+  "tmp_check_readme_images.py": {
+    "mtime": 1789983202.718744,
+    "ast_hash": "bd0f857fab1d7bc2106235eb38861e5b",
+    "semantic_hash": ""
+  },
+  "docs/readme/assets/architecture.svg": {
+    "mtime": 1789983144.4487,
+    "ast_hash": "58344142078bcef678fd58b9e44a0808",
     "semantic_hash": ""
   }
 }

@@ -1,16 +1,16 @@
 # Graph Report - ngoma  (2026-09-21)
 
 ## Corpus Check
-- 906 files · ~5,002,277 words
+- 909 files · ~5,017,591 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5055 nodes · 8407 edges · 499 communities (254 shown, 245 thin omitted)
-- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 395 edges (avg confidence: 0.75)
+- 5115 nodes · 8532 edges · 491 communities (248 shown, 243 thin omitted)
+- Extraction: 95% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 385 edges (avg confidence: 0.75)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `566e4f0a`
+- Built from commit: `a786156a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -430,20 +430,17 @@
 - The blocks, with the rules for each
 - Vocabulary: the dials and what each one does
 - profiles.py
-- Three-Figure Background Triangle (bride, mirror-self, rival)
 - test_fan_out_contract.py
 - AiKAMI, "AI Creator Series" Days 1 to 7: what we take, what we leave
 - "alexya-batch-api" skill: what we take, what we leave
 - EPALLE Stated Visual Language (charcoal / ivory / dust gold, never pure black)
 - Slide 1 - Four-Panel Narrative Carousel Sheet
 - Style block
-- cli.py
 - web/iclm_ui.js
 - writeWorkflow
 - Shot prompt architect
 - _PreviewSink
 - Lesson 04-02 — Treatment and Animatic (ASALI pilot)
-- FakeComfy
 - nodes_megapixel.py
 - ❄️ IcyNodes
 - PJ Accetturo's Nexus skill
@@ -479,7 +476,6 @@
 - audit_models.py
 - 7Hfn8g-httk.md
 - yaml-lite.js
-- DirectorChat.js
 - _pod_start_comfy_now.sh
 - _probe_origin.py
 - start_volume_download.py
@@ -489,7 +485,6 @@
 - _pod_status_and_start_comfy.sh
 - run_node
 - test_fan_out_contract.py
-- test_idea_diagrams.py
 - collection_rights
 - upstream_items
 - combine
@@ -498,15 +493,12 @@
 - eOhomP4vees.md
 - session/route.js
 - restart-template-comfy.sh
-- FMnBEyQSPGQ.md
 - copy-h3-extras.py
-- test_docs_generated.py
-- audit_models.py
 - Gh0Wvpzji1M.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `EPALLE Studio x Ongea Pesa Autonomous Content Company Design` - 44 edges
-2. `RunPod` - 34 edges
+2. `RunPod` - 35 edges
 3. `EngineBrief` - 31 edges
 4. `fmtUsd()` - 29 edges
 5. `GalleryViewer` - 23 edges
@@ -525,8 +517,8 @@
   brands/ongea-pesa/styles/kenyan_meme_original.yaml → docs/ABOUT.md
 - `epalle-graphiti MCP service` --semantically_similar_to--> `Typed Corpus Knowledge Graph (602 nodes, 2077 edges)`  [INFERRED] [semantically similar]
   infra/memory/docker-compose.yml → docs/WHAT-THIS-DOES.md
-- `Reference-Ad Numbers Are Evidence About Their Marketing` --semantically_similar_to--> `Evidence of a Claim, Not Proof It Works`  [INFERRED] [semantically similar]
-  packages/publish/whop/lessons/03-02-claim-safe-scripts.md → docs/WHAT-THIS-DOES.md
+- `Report Retrieved vs Expected Counts` --semantically_similar_to--> `epalle-studio-api Scale-to-Zero Endpoint`  [INFERRED] [semantically similar]
+  packages/publish/whop/lessons/05-02-archive-search-and-daily-source-watch.md → infra/runpod/README.md
 
 ## Import Cycles
 - None detected.
@@ -548,7 +540,7 @@
 - **Publishing path to Instagram/WhatsApp** — publish_package, postiz, openwa, instagram_business_requirement, packages_publish_whatsapp_py [EXTRACTED 1.00]
 - **ASALI arc shot generation system** — brands_epalle_brand_asali_arc, epalle_styles_index, brands_epalle_styles_asali_03_doubt_style, brands_epalle_brand_palette, brands_epalle_brand_lighting_setups [EXTRACTED 1.00]
 
-## Communities (499 total, 245 thin omitted)
+## Communities (491 total, 243 thin omitted)
 
 ### Community 0 - "workers.py"
 Cohesion: 0.06
@@ -564,7 +556,7 @@ Nodes (73): backend_ready(), _cli(), harvest(), HarvestError, _int(), _kind(), _
 
 ### Community 3 - "RunPod"
 Cohesion: 0.06
-Nodes (47): main(), mapped_ssh(), pick_pod(), print_urls(), Path, run_bootstrap(), scp_base(), ssh_base() (+39 more)
+Nodes (53): main(), mapped_ssh(), maybe_publish_template(), pick_pod(), print_urls(), Path, Build the volume payload: workflows tree, Icekiub packs, presets, workflow-api., run_bootstrap() (+45 more)
 
 ### Community 4 - "ONGEA Light Marketing Landing Page Mockup"
 Cohesion: 0.09
@@ -579,16 +571,16 @@ Cohesion: 0.05
 Nodes (42): autoprefixer, @babel/cli, @babel/preset-env, @babel/preset-react, dependencies, axios, react-hot-toast, react-icons (+34 more)
 
 ### Community 7 - "postiz.py"
-Cohesion: 0.11
-Nodes (40): AnalyticsError, attach_briefs(), collect_fixture(), collect_instagram(), collect_postiz(), _get(), instagram_insights(), instagram_media() (+32 more)
+Cohesion: 0.24
+Nodes (21): _base_url(), build_payload(), Draft, _drafts_from_plan(), idempotency_key(), integrations(), _key(), main() (+13 more)
 
 ### Community 8 - "dependencies"
 Cohesion: 0.06
 Nodes (35): @elevenlabs/react, eslint, eslint-config-next, next, dependencies, axios, @elevenlabs/react, next (+27 more)
 
 ### Community 9 - "test_pipeline.py"
-Cohesion: 0.07
-Nodes (27): date, load_brand(), fixture_posts(), Any, Fixture generator shared by the analytics tests.  Wraps packages/analytics/col, End-to-end tests for the studio.  Runs the whole pipeline against real repo da, An unclassified kind would default to whichever gate is convenient., A task spec is data; data must not choose what executes. (+19 more)
+Cohesion: 0.06
+Nodes (24): date, fixture_posts(), Any, Fixture generator shared by the analytics tests.  Wraps packages/analytics/col, End-to-end tests for the studio.  Runs the whole pipeline against real repo da, An unclassified kind would default to whichever gate is convenient., A task spec is data; data must not choose what executes., A calendar pointing at a nonexistent grammar must fail loudly, not silently. (+16 more)
 
 ### Community 10 - "mux.py"
 Cohesion: 0.10
@@ -596,7 +588,7 @@ Nodes (30): _ass_time(), dimensions(), duration(), main(), mux(), MuxError, MuxR
 
 ### Community 11 - "ComfyClient"
 Cohesion: 0.07
-Nodes (36): _cli(), ComfyClient, ComfyError, _count_nodes(), Any, Backend, RuntimeError, ComfyUI execution client — one interface, four backends.      local       127. (+28 more)
+Nodes (35): _cli(), ComfyClient, ComfyError, _count_nodes(), Any, Backend, RuntimeError, ComfyUI execution client — one interface, four backends.      local       127. (+27 more)
 
 ### Community 12 - "Ancestral Pulse treatment"
 Cohesion: 0.09
@@ -608,7 +600,7 @@ Nodes (43): brand_doc(), _brands(), check(), check_collection(), create(), descr
 
 ### Community 14 - "EPALLE RunPod Deployment"
 Cohesion: 0.10
-Nodes (26): Dry-Run By Default, Queued Is Not Success, extra_model_paths.yaml pointing at volume models/, Accept a List of GPU Types, Not One, manifests/ — pinned node commits and pip freeze, Lesson 01-02 Persistent RunPod Architecture, Volume Recovery Drill, Separate the Machine from the Data (+18 more)
+Nodes (27): Dry-Run By Default, Queued Is Not Success, extra_model_paths.yaml pointing at volume models/, Accept a List of GPU Types, Not One, manifests/ — pinned node commits and pip freeze, Lesson 01-02 Persistent RunPod Architecture, Volume Recovery Drill, Separate the Machine from the Data (+19 more)
 
 ### Community 15 - "Content Studio skill"
 Cohesion: 0.11
@@ -619,8 +611,8 @@ Cohesion: 0.20
 Nodes (16): check_auth(), find_by_title(), lesson_payload(), main(), print_plan(), publish(), RuntimeError, Walk a cursor-paginated list endpoint and return every item. (+8 more)
 
 ### Community 17 - "EPALLE Studio x Ongea Pesa Autonomous Content Company Design"
-Cohesion: 0.07
-Nodes (48): agent-reach, packages/analytics, carousel_pose Workflow, Codex CLI, packages/comfy-client (4 backends), comfyui-scail-docker (pinned 0.3.26), packages/compositor, EPALLE Studio x Ongea Pesa Autonomous Content Company Design (+40 more)
+Cohesion: 0.33
+Nodes (5): Dataset Workflow V1, Shot Acceptance Criteria (identity drift), matrix-power-nodes (compiler-generated, MIT), Semantic Retry Guard Against Double Billing, WhatsApp Send Safeguards (8/day cap, 10-min gap, --i-mean-it, idempotency)
 
 ### Community 18 - "Ongea Pesa brand"
 Cohesion: 0.23
@@ -636,43 +628,43 @@ Nodes (24): ComfyUI client, image-router backend routing (hosted vs comfy), Stan
 
 ### Community 21 - "composite"
 Cohesion: 0.18
-Nodes (19): FreeTypeFont, ImageDraw, _cli(), composite(), CompositeResult, CompositorError, contrast_ratio(), _cover_resize() (+11 more)
+Nodes (19): _cli(), composite(), CompositeResult, CompositorError, contrast_ratio(), _cover_resize(), _find_font(), _hex() (+11 more)
 
 ### Community 22 - "content-studio Skill"
-Cohesion: 0.13
-Nodes (19): AiorBust — unresolved, Creator Channel Registry, DGI Kaos, Hearmeman (HearmemanAI) — unresolved, KiubAI (Icekiub), Subtitle Policy (en/sw/fr + faster-whisper fallback), Lesson 03-01 Ten UGC Formats, core / proposed / unresolved Channel Tiering (+11 more)
+Cohesion: 0.16
+Nodes (14): packages/strategy/study.py, Twelve-Sample Floor for Grammar Derivation, Take the Grammar, Never the Images, Reference-Ad Numbers Are Evidence About Their Marketing, KiubAI (Icekiub), Reference Gathering Never Engagement, Evidence of a Claim, Not Proof It Works, graph_query.py (deps / dependents / evidence) (+6 more)
 
 ### Community 23 - "analyze.py"
 Cohesion: 0.22
 Nodes (19): analyse_image(), analyse_video(), _aspect_name(), check_against_brand(), _dist(), Features, _ffprobe(), _hex() (+11 more)
 
 ### Community 24 - "whatsapp.py"
-Cohesion: 0.23
-Nodes (19): _base(), _headers(), key_for(), _load_state(), main(), _post(), preflight(), Any (+11 more)
+Cohesion: 0.21
+Nodes (20): _base(), _headers(), key_for(), _load_state(), main(), _post(), preflight(), Any (+12 more)
 
 ### Community 25 - "Node Pack Source Registry"
-Cohesion: 0.22
-Nodes (9): Unknown Is Not OK (three-state validation), CR Prompt List (batch driver, comfyroll), comfyui-h3-motion-context (GPL-3.0), comfyui-kjnodes (31 dependent workflows), docs/LICENSING.md, Node Pack Source Registry, comfyui-videohelpersuite (29 dependent workflows), Node Packs Have Two IDs (cnr_id vs aux_id) (+1 more)
+Cohesion: 0.20
+Nodes (10): Two Independent Locks on Paid Provider Nodes, comfyui-h3-motion-context (GPL-3.0), comfyui-kjnodes (31 dependent workflows), docs/LICENSING.md, matrix-power-nodes (WaveSpeed paid provider surface), Node Pack Source Registry, packages/image-router/pricing.py, comfyui-videohelpersuite (29 dependent workflows) (+2 more)
 
 ### Community 26 - "EPALLE Studio x Ongea Pesa Monorepo"
 Cohesion: 0.13
 Nodes (18): packages/library/graph_build.py, The Creative Brief (performer, product, audience, language, claims, rights), Research Library as Private Study Material, Lesson: Safety, Rights and the Creative Brief, Reuse Structure, Not Expression, Synthetic Voice Consent Rules, Content Company Design Spec 2026-09-12, EPALLE Studio x Ongea Pesa Monorepo (+10 more)
 
 ### Community 27 - "router.py"
-Cohesion: 0.22
-Nodes (18): GenRequest, Provider-agnostic request. The router maps this onto a concrete endpoint., choose(), _cli(), execute(), _execute_hosted(), _pick_comfy_profile(), Plan (+10 more)
+Cohesion: 0.21
+Nodes (18): choose(), _cli(), execute(), _execute_hosted(), _pick_comfy_profile(), Plan, Any, Backend (+10 more)
 
 ### Community 28 - "build_request"
-Cohesion: 0.21
-Nodes (12): Brand, BrandError, build_prompt(), build_request(), _cli(), _load_yaml(), Any, Path (+4 more)
+Cohesion: 0.20
+Nodes (15): Brand, BrandError, build_prompt(), build_request(), _cli(), GenRequest, load_brand(), _load_yaml() (+7 more)
 
 ### Community 29 - "tts.py"
 Cohesion: 0.27
 Nodes (17): available(), bake_off(), _duration(), _edge_tts(), _elevenlabs(), main(), _openai(), _piper() (+9 more)
 
 ### Community 30 - "Neo4j + Graphiti Memory Stack (docker-compose)"
-Cohesion: 0.14
-Nodes (14): AI-assisted imagery disclosure field, Agents Create, Code Validates, Humans Approve, Dust Gold Withheld Until Gratitude, EPALLE (music project), Ongea Pesa (voice-activated M-Pesa, NSAIT), Sheng Voiceover Refusal, Skill Curator Promotion Gates, Two Brands On Purpose (brand-agnostic pipeline) (+6 more)
+Cohesion: 0.29
+Nodes (8): Bitemporal Memory, Skill Curator Promotion Gates, epalle-graphiti MCP service, Localhost-Only Port Binding with SSH Tunnel, Neo4j + Graphiti Memory Stack (docker-compose), epalle-neo4j service, packages/memory/store.py (SQLite, no-key default), memory package
 
 ### Community 31 - "Licensing"
 Cohesion: 0.11
@@ -695,8 +687,8 @@ Cohesion: 0.07
 Nodes (75): _base_seed(), _behind_pick(), _bindings_common(), _carousel_prompt(), collection_rights(), _collections_feeding(), declared_rights(), _default_factory() (+67 more)
 
 ### Community 36 - "Lesson 03-02 Claim-Safe Scripts"
-Cohesion: 0.16
-Nodes (8): A folder of references. `use: data` feeds generation directly; `inspiration` onl, RefCollection, _feature(), References: what a folder of images lets the engine do, and the gate it must pas, test_consent_ports_need_a_release_and_owned_data_feeds(), test_features_to_fragments_is_deterministic_and_empty_on_an_empty_file(), test_unclear_rights_never_feed_a_port(), test_write_and_read_collection_round_trip()
+Cohesion: 0.07
+Nodes (43): agent-reach, packages/analytics, carousel_pose Workflow, Codex CLI, packages/comfy-client (4 backends), comfyui-scail-docker (pinned 0.3.26), packages/compositor, EPALLE Studio x Ongea Pesa Autonomous Content Company Design (+35 more)
 
 ### Community 37 - "yt_learn / pin_harvest / ig_harvest harvesters"
 Cohesion: 0.17
@@ -731,12 +723,12 @@ Cohesion: 0.29
 Nodes (11): Brief, build(), load_grammar(), main(), Any, Path, _ratio_for(), Content plan — briefs a generator can actually execute.  Takes a brand, its ca (+3 more)
 
 ### Community 45 - "RefCollection"
-Cohesion: 0.07
-Nodes (41): budget_usd(), config(), estimate(), estimate_node(), estimate_nodes(), max_items(), Any, What a step would cost before it runs. Every figure says whether it was measured (+33 more)
+Cohesion: 0.05
+Nodes (54): budget_usd(), config(), estimate(), estimate_node(), estimate_nodes(), max_items(), Any, What a step would cost before it runs. Every figure says whether it was measured (+46 more)
 
 ### Community 46 - "idea_diagrams.py"
-Cohesion: 0.10
-Nodes (44): _archify(), archify_home(), build(), cards(), _clip(), deliver(), describe(), dumps() (+36 more)
+Cohesion: 0.06
+Nodes (71): cost(), Costed, costed_all(), IdeaError, labor_hours(), load(), main(), _money() (+63 more)
 
 ### Community 47 - "Ongea Pesa Style Index (24 grammars)"
 Cohesion: 0.25
@@ -747,8 +739,8 @@ Cohesion: 0.18
 Nodes (11): Leaked Credential Rotation Step, Memory Layer Deployment Guide, Bitemporal Facts Model, Graphiti MCP Server (127.0.0.1:8010), Graphiti + Neo4j Projection, _scrub() Secret-Shaped Key Guard, packages/memory/store.py (SQLite bitemporal store), Windows DPAPI Secret Storage (+3 more)
 
 ### Community 49 - "epalle-studio-api Scale-to-Zero Endpoint"
-Cohesion: 0.23
-Nodes (9): Lesson 05-02 Archive, Search and Daily Source Watch, A Documented Watcher Is Not Automation, EPALLE Studio (Next.js), Index Is Derived, Rebuild Often, RunPod Verification Summary, Library SQLite FTS Index, EPALLE Creative Studio Library, Report Only Changes (+1 more)
+Cohesion: 0.18
+Nodes (12): Lesson 05-02 Archive, Search and Daily Source Watch, A Documented Watcher Is Not Automation, EPALLE Studio (Next.js), Report Retrieved vs Expected Counts, Index Is Derived, Rebuild Often, RunPod Verification Summary, Library SQLite FTS Index, EPALLE Creative Studio Library (+4 more)
 
 ### Community 50 - "icy_hider.js"
 Cohesion: 0.09
@@ -767,8 +759,8 @@ Cohesion: 0.09
 Nodes (38): _audio_input_signature(), _audio_input_to_base64(), _build_cache_key(), _build_multimodal_content(), _capture_metrics(), _console(), _fetch_model_ids(), _frames_to_jpeg_data_urls() (+30 more)
 
 ### Community 54 - "EPALLE Vision Analysis Findings"
-Cohesion: 0.16
-Nodes (18): ASALI Stage 02 — Labour Grammar, EPALLE Shared Grammar Preamble (fashion film register), Negative: no pure black shadow without detail, ASALI (pilot song, no master on disk), Crushed Blacks Drift in Shipped Cover Art, EPALLE Vision Analysis Findings, Flowers Falling (cover art + 9 MOV clips), Frame Rate and Audio Master Lock (+10 more)
+Cohesion: 0.17
+Nodes (17): ASALI Stage 02 — Labour Grammar, EPALLE Shared Grammar Preamble (fashion film register), Negative: no pure black shadow without detail, ASALI (pilot song, no master on disk), Crushed Blacks Drift in Shipped Cover Art, EPALLE Vision Analysis Findings, Flowers Falling (cover art + 9 MOV clips), Frame Rate and Audio Master Lock (+9 more)
 
 ### Community 55 - "workflow_author.py"
 Cohesion: 0.19
@@ -791,8 +783,8 @@ Cohesion: 0.12
 Nodes (25): addMediaEntries(), applyMultiSelection(), applySelection(), beforeRegisterNodeDef(), buildMediaList(), findWidget(), formatDate(), GalleryViewer (+17 more)
 
 ### Community 60 - "Postiz on a Hostinger VPS"
-Cohesion: 0.40
-Nodes (6): packages/strategy/study.py, Twelve-Sample Floor for Grammar Derivation, Take the Grammar, Never the Images, Reference-Ad Numbers Are Evidence About Their Marketing, Six-Posts-Per-Grammar Analytics Floor, strategy package
+Cohesion: 0.20
+Nodes (19): AnalyticsError, attach_briefs(), collect_fixture(), collect_instagram(), collect_postiz(), _get(), instagram_insights(), instagram_media() (+11 more)
 
 ### Community 61 - "lora_train.py"
 Cohesion: 0.08
@@ -803,16 +795,16 @@ Cohesion: 0.08
 Nodes (70): addIcyContextMenuOption(), addNodeIdsToHiddenState(), applyBlurAmountSettingValue(), applyEnabledSettingValue(), applyHideModeSettingValue(), applyTargetNodeClassesSettingValue(), applyVueHidden(), autoDetectTargetClassesFromGraph() (+62 more)
 
 ### Community 63 - "Take the Grammar, Never the Images"
-Cohesion: 0.27
-Nodes (20): bind_folder(), bind_models(), comfy_python(), copy_h3_extras(), copy_workflows(), find_comfy(), inherit_pid1_token(), install_nodes() (+12 more)
+Cohesion: 0.08
+Nodes (52): bind_folder(), bind_models(), comfy_python(), copy_h3_extras(), copy_workflow_inputs(), copy_workflow_tree(), copy_workflows(), find_comfy() (+44 more)
 
 ### Community 64 - "Content generation related"
 Cohesion: 0.05
 Nodes (36): After you subscribe, Buying Icekiub: what you get, what we already have, how we absorb it, Rules that stay in force, (BEST) SCAIL 2 Motion Control, Change faces with QWEN IMAGE EDIT, Consistent Background Klein workflow, Content generation related, Custom nodes (+28 more)
 
 ### Community 65 - "plan_models.py"
-Cohesion: 0.16
-Nodes (9): build(), harvest(), listings(), main(), Any, basename -> folders, loaders, workflows and Skool lessons that ask for it., Exact HF URLs found anywhere in the repo, and each Skool lesson's non-HF model p, required() (+1 more)
+Cohesion: 0.12
+Nodes (13): extract(), folder_for(), main(), Return (node_type, model_filename) pairs from a UI-format or API-format graph., build(), harvest(), listings(), main() (+5 more)
 
 ### Community 66 - "install-sageattention.sh"
 Cohesion: 0.33
@@ -835,8 +827,8 @@ Cohesion: 0.08
 Nodes (16): IcyTikTokDownloader, IcyTikTokDownloaderSimple, Icy TikTok Video Downloader Node for ComfyUI Downloads TikTok videos without wa, Download TikTok video using ssstik.io method., Download TikTok video using snaptik.app method., Download TikTok video using yt-dlp library., Download file from URL to output path., Extract audio from video file and save as WAV.         Returns the path to the (+8 more)
 
 ### Community 71 - "Models Make Pictures, Code Makes Brands"
-Cohesion: 0.20
-Nodes (10): Composite the Logo, Never Regenerate It, Models Make Pictures, Code Makes Brands, Style Grammar (fix the system, vary the subject), Hosted and Open-Source Are Peers, Not a Hierarchy, TUDOR Poster Prompt Method, brandkit package, compositor package, image-router package (+2 more)
+Cohesion: 0.15
+Nodes (17): Composite the Logo, Never Regenerate It, Models Make Pictures, Code Makes Brands, Style Grammar (fix the system, vary the subject), Unknown Is Not OK (three-state validation), CR Prompt List (batch driver, comfyroll), content-studio Skill, Control Plane vs Worker Runtime Separation, Hash-Chained Audit Log (+9 more)
 
 ### Community 72 - "analyse"
 Cohesion: 0.60
@@ -851,8 +843,8 @@ Cohesion: 0.07
 Nodes (29): Contributing, Disclaimer, Download Methods, Example Workflow, ✨ Features, File Structure, Frame Output Format, Frame Rate Control (+21 more)
 
 ### Community 75 - "download_planned.py"
-Cohesion: 0.83
-Nodes (3): gpu_capability(), main(), needs_blackwell()
+Cohesion: 0.12
+Nodes (12): A folder of references. `use: data` feeds generation directly; `inspiration` onl, RefCollection, gate(), ValueError, May this collection feed a port of this type? `media` ports take image or video., ReferenceError, _feature(), References: what a folder of images lets the engine do, and the gate it must pas (+4 more)
 
 ### Community 76 - "retry_last_without_sage.py"
 Cohesion: 0.83
@@ -895,20 +887,20 @@ Cohesion: 0.10
 Nodes (10): Grok AI Lip Sync Tutorial With Consistent Characters: Make Long AI Videos In Minutes!, Minimax H3 reference based Image generation (No more loras), Consistent character LoRA training using AI-toolkit (Flux Klein 9B), I Tested Every MiniMax H3 Speed Up So You Don't Have To, Build a ComfyUI Workflow and Actually Understand It | Build With Me [EP. 1], Build A Krea 2 Character LoRA From Scratch Using ComfyUI, Create Full Instagram Carousels From 1 Photo With This ComfyUI Workflow (It's Free), This ComfyUI Model is way better than Nano Banana (+2 more)
 
 ### Community 103 - "workflow_fetch.py"
-Cohesion: 0.27
-Nodes (10): analyse(), graph_nodes(), NotAWorkflow, Any, Path, ValueError, Register a ComfyUI workflow file in workflows/manifest.json.  One implementati, Add or replace the manifest entry for `path` (which must live under workflows/). (+2 more)
+Cohesion: 0.16
+Nodes (19): direct_url(), fetch_one(), FetchRefused, main(), Any, ValueError, Download the free workflow files creators link under their videos.  Reads `cor, Blob pages -> raw bytes. Refuses anything outside the allowlist. (+11 more)
 
 ### Community 104 - "unit_economics.py"
-Cohesion: 0.16
-Nodes (13): Cost, gpu_batch_cost(), hosted_batch_cost(), hours_for(), mrr_range(), Rate, Unit economics for the studio's offers: what a deliverable costs to make, and wh, The anchor offer, costed both ways so the cheaper backend is visible, not assume (+5 more)
+Cohesion: 0.24
+Nodes (16): draft_candidate(), evaluate(), Evidence, gather(), is_protected(), main(), propose(), Any (+8 more)
 
 ### Community 105 - "The practices worth adopting"
 Cohesion: 0.12
 Nodes (15): 10. Privacy-safe output as a first-class node, 11. Small operator conventions that prevent mistakes, 1. A node is a thin, generated declaration over a versioned core block, 2. A machine-readable manifest is the truth about an artifact, 3. Contracts are enforced at the socket boundary, 4. Failures are classified by the user's next safe action, 5. Model assets are pinned: exact path, pinned revision, size and SHA-256, 6. Compatibility aliases keep old saved workflows loading (+7 more)
 
 ### Community 106 - "import_skool_pack.py"
-Cohesion: 0.12
-Nodes (20): copy_pack(), _from_record(), _gate(), main(), node_packs(), Any, Path, RuntimeError (+12 more)
+Cohesion: 0.20
+Nodes (19): copy_pack(), _from_record(), _gate(), main(), node_packs(), Any, Path, RuntimeError (+11 more)
 
 ### Community 107 - "test_business_os.py"
 Cohesion: 0.13
@@ -935,8 +927,8 @@ Cohesion: 0.14
 Nodes (12): How this fits the studio, MiniMax H3 RefMods: consistent characters without training a LoRA, Models (sizes from HuggingFace, 2026-09-13), Next steps, Node packs, The steps (chapter timestamps), What a RefMod is, What we downloaded (+4 more)
 
 ### Community 113 - "test_docs_generated.py"
-Cohesion: 0.33
-Nodes (12): build(), build_all(), _m(), main(), model_status(), Any, Path, A proposal for each of the 50 ideas, built from the numbers and pipelines the st (+4 more)
+Cohesion: 0.20
+Nodes (13): EPALLE Brand Kit, ASALI Narrative Arc, EPALLE Song Catalogue, EPALLE Forbidden Looks, One Focal Length Per Piece, EPALLE Lighting Setups (downward_soft, raking_window, open_shade), EPALLE Three-Value Palette (charcoal/ivory/dust gold), Study Ethics: Take Grammar Not Shots (+5 more)
 
 ### Community 114 - "ComfyUI-IcyHider"
 Cohesion: 0.17
@@ -1235,8 +1227,8 @@ Cohesion: 0.21
 Nodes (14): CreateBar(), CHOICES, filesFromDrop(), fmtBytes(), PURPOSES, ReferenceIntake(), RIGHTS_LABEL, rightsChip() (+6 more)
 
 ### Community 282 - "7Hfn8g-httk.md"
-Cohesion: 0.20
-Nodes (13): EPALLE Brand Kit, ASALI Narrative Arc, EPALLE Song Catalogue, EPALLE Forbidden Looks, One Focal Length Per Piece, EPALLE Lighting Setups (downward_soft, raking_window, open_shade), EPALLE Three-Value Palette (charcoal/ivory/dust gold), Study Ethics: Take Grammar Not Shots (+5 more)
+Cohesion: 0.26
+Nodes (13): architecture(), cost(), font(), pipeline(), FreeTypeFont, ImageDraw, Rasterize README diagrams to PNG. GitHub renders these; SVG stays as source., rounded() (+5 more)
 
 ### Community 395 - "-------------------------------------------------------------"
 Cohesion: 0.04
@@ -1251,8 +1243,8 @@ Cohesion: 0.11
 Nodes (16): icynodes — unified bundle of the icekiub custom node packs.  Merges, with node n, IcyImageLoader, IcyMultiRefLoader, IcyVideoLoader, _load_audio(), _load_video_frames(), _media_entries(), Image (+8 more)
 
 ### Community 398 - "references.py"
-Cohesion: 0.09
-Nodes (42): collection_dir(), _colour_name(), features_to_fragments(), gate(), is_reference_port(), list_collections(), _load_catalog(), _load_harvester() (+34 more)
+Cohesion: 0.16
+Nodes (26): collection_dir(), _colour_name(), features_to_fragments(), is_reference_port(), list_collections(), _load_catalog(), _load_harvester(), main() (+18 more)
 
 ### Community 399 - "elevenlabs_agent.py"
 Cohesion: 0.15
@@ -1263,8 +1255,8 @@ Cohesion: 0.12
 Nodes (15): brief(), The director engine: deterministic plans, presets as grammar, sessions that repl, A throwaway client so sessions never touch real brand folders., scratch_client(), test_a_brief_that_names_a_director_is_refused_before_any_node_exists(), test_a_motion_clip_routes_the_scene_through_motion_control_with_a_prompt(), test_a_real_person_without_a_release_gets_a_gap_not_a_face(), test_a_scene_without_a_consented_or_fictional_character_uses_a_text_generator() (+7 more)
 
 ### Community 401 - "test_engine_runner.py"
-Cohesion: 0.39
-Nodes (8): cost(), _run(), test_a_budget_of_zero_blocks_spending_even_when_approved(), test_a_stage_whose_inputs_were_never_made_is_blocked_not_faked(), test_an_input_that_is_not_on_disk_is_an_error_not_a_submission(), test_approved_stages_within_budget_run_and_complete(), test_auto_needs_one_engine_run_approval_then_stops_at_the_pick(), test_queued_or_timed_out_is_never_completed()
+Cohesion: 0.28
+Nodes (12): _caption_shape(), _captions(), derive(), Grammar, _load(), main(), Any, Path (+4 more)
 
 ### Community 402 - "THE NEXUS SKILL — Unified World, Camera & Performance System"
 Cohesion: 0.09
@@ -1275,12 +1267,12 @@ Cohesion: 0.20
 Nodes (19): check_brief(), EngineBrief, What the director engine is told, and what it decides. Plain dataclasses, JSON i, Role, add_role(), add_scene(), add_vfx(), attach_ref() (+11 more)
 
 ### Community 404 - "plan"
-Cohesion: 0.21
-Nodes (14): Scene, ShotSpec, branch_from_picks(), Builder, DirectorError, expand_angles(), _first(), plan() (+6 more)
+Cohesion: 0.11
+Nodes (32): Scene, ShotSpec, branch_from_picks(), Builder, DirectorError, expand_angles(), _first(), plan() (+24 more)
 
 ### Community 405 - "presets.py"
-Cohesion: 0.18
-Nodes (18): set_preset(), cameras(), compose_motion_prompt(), compose_prompt(), _cycle(), load_presets(), negatives(), node_params() (+10 more)
+Cohesion: 0.25
+Nodes (8): AiorBust — unresolved, Creator Channel Registry, DGI Kaos, Hearmeman (HearmemanAI) — unresolved, Subtitle Policy (en/sw/fr + faster-whisper fallback), Lesson 03-01 Ten UGC Formats, core / proposed / unresolved Channel Tiering, YouTube Rolling Auto-Sub Window / vtt_to_cues
 
 ### Community 407 - "Canvas.js"
 Cohesion: 0.16
@@ -1292,7 +1284,7 @@ Nodes (23): Describe: a sentence becomes a workflow, Node data keys the contract
 
 ### Community 409 - "edit.py"
 Cohesion: 0.25
-Nodes (11): Turned-Away Bride and Dark-Suited Rival in Mid-Ground, Candle Practicals as Warm Point Light Sources, Mourning-Opulence Mood (grief staged as ceremony), Wedding-Funeral Interior Set (aisle, chairs, candles, floral banks), Oval Mirror Reflection Revealing the Groom's Own Back, Three-Figure Background Triangle (bride, mirror-self, rival), Veiled Bride in Full Ivory Gown, Seen from Behind, Mirror Confrontation - Face Meets Its Own Reflection (+3 more)
+Nodes (8): apply_answers(), from_brief(), known_collections(), A swap needs the images to change and the face to put in; a wardrobe step needs, A plain-language brief becomes a workflow. `plan` is a `parse_brief` result to r, Reference collections on disk for a client: folders under brands/<client>/refere, Answers to the plan's questions change the plan in place and clear the question., _split_shared_inputs()
 
 ### Community 410 - "session.py"
 Cohesion: 0.15
@@ -1301,10 +1293,6 @@ Nodes (32): apply(), _continuations(), describe(), _director_preview(), estimate
 ### Community 411 - "server_routes_image_loader.py"
 Cohesion: 0.17
 Nodes (16): Yield (frame, source fps) pairs matching the load widgets, in VHS     order: for, _selected_video_frames(), _encode_preview_audio(), icy_list(), icy_thumb(), icy_vinfo(), _list_for_folder(), _make_thumbnail_sync() (+8 more)
-
-### Community 412 - "business_os.py"
-Cohesion: 0.28
-Nodes (14): Costed, costed_all(), IdeaError, labor_hours(), load(), main(), _money(), notion_rows() (+6 more)
 
 ### Community 413 - "studio.js"
 Cohesion: 0.18
@@ -1323,12 +1311,12 @@ Cohesion: 0.24
 Nodes (10): collect_txt_files(), PromptListFromFolder, Path, ComfyUI custom node: read .txt files from a folder and output them as a prompt l, Roots that a relative folder_path is resolved against, in order., Load every .txt file in a folder as a prompt list., read_text(), resolve_folder() (+2 more)
 
 ### Community 418 - "Any"
-Cohesion: 0.58
-Nodes (8): clone(), existing(), have(), log(), main(), pip_reqs(), Path, run()
+Cohesion: 0.48
+Nodes (11): clone(), existing(), fix_minimax_h3mod(), flatten_nested_pack(), have(), log(), main(), pip_reqs() (+3 more)
 
 ### Community 419 - "MAIN COVER ART - 'Someone Else' Single Cover"
-Cohesion: 0.11
-Nodes (34): Centred Frontal Symmetry with Single Seated Anchor, Composed Stillness / Fashion-Film Restraint, Crushed Pure-Black Surround (detail-free frame edges), Suspended Falling Petals, Film-Poster Grammar (title stack over a still, logline, tagline footer), Floral Head Substitution Motif (bouquet replacing the face), COVER ART - 'Flowers Falling' Single Cover, Letterspaced Small-Caps Logline ('a man attends the wedding-funeral...') (+26 more)
+Cohesion: 0.08
+Nodes (45): Turned-Away Bride and Dark-Suited Rival in Mid-Ground, Candle Practicals as Warm Point Light Sources, Centred Frontal Symmetry with Single Seated Anchor, Composed Stillness / Fashion-Film Restraint, Crushed Pure-Black Surround (detail-free frame edges), Suspended Falling Petals, Film-Poster Grammar (title stack over a still, logline, tagline footer), Floral Head Substitution Motif (bouquet replacing the face) (+37 more)
 
 ### Community 420 - "The blocks, with the rules for each"
 Cohesion: 0.18
@@ -1341,10 +1329,6 @@ Nodes (10): Camera angle, Camera body and film stock, by look, Camera movement, 
 ### Community 422 - "profiles.py"
 Cohesion: 0.31
 Nodes (10): set_profile(), aspect_note(), beat(), find(), load_profiles(), lock_fragments(), profile(), Any (+2 more)
-
-### Community 423 - "Three-Figure Background Triangle (bride, mirror-self, rival)"
-Cohesion: 0.25
-Nodes (8): Report Retrieved vs Expected Counts, Named Graphs, Not Arbitrary Graphs, Two Independent Locks on Paid Provider Nodes, matrix-power-nodes (WaveSpeed paid provider surface), packages/image-router/pricing.py, MATRIX Paid Provider Node Rejection, epalle-studio-api Scale-to-Zero Endpoint, workflow-api Named-Graph Allowlist
 
 ### Community 424 - "test_fan_out_contract.py"
 Cohesion: 0.10
@@ -1363,16 +1347,12 @@ Cohesion: 0.33
 Nodes (7): _edge(), _node(), The graph core the director engine needs: many nodes of one kind, picks, lanes,, test_layout_lanes_puts_each_stage_in_its_own_band(), test_loops_are_refused(), test_pick_cannot_keep_more_than_it_is_offered(), test_two_generators_of_one_kind_survive_when_they_serve_different_scenes()
 
 ### Community 428 - "Slide 1 - Four-Panel Narrative Carousel Sheet"
-Cohesion: 0.12
-Nodes (14): _authored(), _manifest_of(), _persona(), The runner: dry runs write manifests and submit nothing; modes gate spending; pi, An authored (stage-less) workflow for the scratch client, saved so run_stage can, _result(), test_a_workflow_without_stages_runs_as_one_stage_called_all(), test_claim_check_blocks_money_promises_and_passes_clean_copy() (+6 more)
+Cohesion: 0.05
+Nodes (40): Namespace, Any, cmd_describe(), cmd_plan(), cmd_ports_check(), cmd_possibilities(), cmd_run(), cmd_say() (+32 more)
 
 ### Community 429 - "Style block"
 Cohesion: 0.22
 Nodes (8): Output 1: character-sheet block, Output 2: location block, Output 3: the preset, Procedure, Repo rules, Style block, When it does not work, Worked example (from Day 7, in our words)
-
-### Community 430 - "cli.py"
-Cohesion: 0.38
-Nodes (10): Namespace, cmd_describe(), cmd_plan(), cmd_ports_check(), cmd_possibilities(), cmd_run(), cmd_say(), main() (+2 more)
 
 ### Community 432 - "web/iclm_ui.js"
 Cohesion: 0.44
@@ -1407,8 +1387,8 @@ Cohesion: 0.15
 Nodes (14): continuation(), Intent, matched_preset(), _n(), Intent rules for what a person says to the studio.  Two layers share this file, The FORBIDDEN rule at brief level: a person's name, a likeness or an attribution, now add captions and export" -> "captions and export"; "also a carousel for each, `director` when the sentence names a profile (a lookbook, an explainer, a music (+6 more)
 
 ### Community 448 - "Gh0Wvpzji1M.md"
-Cohesion: 0.12
-Nodes (17): apply_answers(), _find_known(), from_brief(), known_collections(), load_catalog(), _makes_media(), _number(), parse_brief() (+9 more)
+Cohesion: 0.18
+Nodes (11): _coerce(), _find_known(), _literal_steps(), _makes_media(), _number(), parse_brief(), Known collection names appearing in the text, longest match first, in text order, `carousel@each slides=10` (what the canvas sends) is steps and params, not prose (+3 more)
 
 ### Community 449 - "test_fan_out_contract.py"
 Cohesion: 0.24
@@ -1423,8 +1403,8 @@ Cohesion: 0.29
 Nodes (6): Files here, Minimum `brand.yaml`, Minimum `collection.json`, The first two workspaces, The workspace kit, What a workspace folder holds
 
 ### Community 452 - "audit_models.py"
-Cohesion: 0.33
-Nodes (7): Bitemporal Memory, epalle-graphiti MCP service, Localhost-Only Port Binding with SSH Tunnel, Neo4j + Graphiti Memory Stack (docker-compose), epalle-neo4j service, packages/memory/store.py (SQLite, no-key default), memory package
+Cohesion: 0.15
+Nodes (13): AI-assisted imagery disclosure field, Agents Create, Code Validates, Humans Approve, Dust Gold Withheld Until Gratitude, EPALLE (music project), Ongea Pesa (voice-activated M-Pesa, NSAIT), Sheng Voiceover Refusal, Two Brands On Purpose (brand-agnostic pipeline), Lesson 03-02 Claim-Safe Scripts (+5 more)
 
 ### Community 453 - "Palette.js"
 Cohesion: 0.17
@@ -1490,21 +1470,13 @@ Nodes (5): CommandK(), matches(), Palette(), READY, visibleNodes()
 Cohesion: 0.27
 Nodes (10): brandInfo(), pickAccent(), relLuminance(), dig(), flowList(), flowMap(), parseYaml(), scalar() (+2 more)
 
-### Community 474 - "DirectorChat.js"
-Cohesion: 0.24
-Nodes (16): draft_candidate(), evaluate(), Evidence, gather(), is_protected(), main(), propose(), Any (+8 more)
-
 ### Community 478 - "transcribe/route.js"
-Cohesion: 0.17
-Nodes (17): _accepts(), _coerce(), _cycle(), _depths(), _fans_out(), is_each(), iterated_port(), layout_lanes() (+9 more)
+Cohesion: 0.20
+Nodes (15): _accepts(), _cycle(), _depths(), _fans_out(), is_each(), iterated_port(), layout_lanes(), load_catalog() (+7 more)
 
 ### Community 479 - "session/route.js"
-Cohesion: 0.33
-Nodes (10): load(), main(), _models(), port_map_exists(), Any, Every workflow in the library: what it does, what it makes possible, and which i, A hand-written `<stem>.ports.json` sits next to the workflow (docs/engine/PORT-M, The three honest badges: Ready, Needs setup, Gap. Never a fourth. (+2 more)
-
-### Community 484 - "test_idea_diagrams.py"
-Cohesion: 0.20
-Nodes (8): Any, _edit_world(), A finished clip on every motion step and the pick made, so the edit stage has in, test_paid_narration_waits_for_approval(), test_publishing_always_needs_a_person(), test_the_edit_stage_cuts_narrates_and_captions_on_this_machine(), test_the_edit_stage_dry_run_calls_nothing_that_spends(), world()
+Cohesion: 0.16
+Nodes (11): load(), main(), _models(), port_map_exists(), Any, Every workflow in the library: what it does, what it makes possible, and which i, A hand-written `<stem>.ports.json` sits next to the workflow (docs/engine/PORT-M, The three honest badges: Ready, Needs setup, Gap. Never a fourth. (+3 more)
 
 ### Community 485 - "collection_rights"
 Cohesion: 0.67
@@ -1514,13 +1486,9 @@ Nodes (3): handler(), Single-owner RunPod worker; only installed API templates c
 Cohesion: 0.29
 Nodes (7): combine(), _final_media(), layout(), Left to right by depth; inputs in column 0., Marry workflows into one graph.      1. Every node id is prefixed with its par, The last node (by graph order) that outputs image or video, with that output por, _slug()
 
-### Community 490 - "eOhomP4vees.md"
-Cohesion: 0.31
-Nodes (9): direct_url(), fetch_one(), FetchRefused, main(), Any, ValueError, Download the free workflow files creators link under their videos.  Reads `cor, Blob pages -> raw bytes. Refuses anything outside the allowlist. (+1 more)
-
-### Community 497 - "audit_models.py"
+### Community 494 - "copy-h3-extras.py"
 Cohesion: 0.47
-Nodes (4): extract(), folder_for(), main(), Return (node_type, model_filename) pairs from a UI-format or API-format graph.
+Nodes (5): comfy_version(), ensure_h3_core(), fetch(), Path, Return True when native MiniMax extras already ship with this Comfy.
 
 ## Ambiguous Edges - Review These
 - `ComfyUI-H3-Motion-Context node pack` → `Comfy-Org MiniMax H3`  [AMBIGUOUS]
@@ -1539,7 +1507,7 @@ Nodes (4): extract(), folder_for(), main(), Return (node_type, model_filename) p
 ## Knowledge Gaps
 - **1244 isolated node(s):** `_pod_comfy_listen.sh script`, `_pod_start_comfy_now.sh script`, `PYTHONUNBUFFERED`, `_pod_start_download.sh script`, `HUGGING_FACE_HUB_TOKEN` (+1239 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **245 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **243 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -1557,4 +1525,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Near-White Ground with Deep Emerald Green Accent` and `Written Spec Claim: Emerald #30E0A8 Primary`?**
   _Edge tagged AMBIGUOUS (relation: semantically_similar_to) - confidence is low._
 - **Why does `ComfyClient` connect `ComfyClient` to `EPALLE Brand Kit`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._

@@ -1,30 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-label="Director pipeline from brief to published brand masters">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="pipeline-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0A0A0A"/>
       <stop offset="1" stop-color="#16120C"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="pipeline-gold" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#C9A227"/>
       <stop offset="1" stop-color="#F0D78C"/>
     </linearGradient>
-    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#166534"/>
-      <stop offset="1" stop-color="#22C55E"/>
-    </linearGradient>
-    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
-    </filter>
   </defs>
-  <rect width="1200" height="420" fill="url(#bg)" rx="24"/>
+  <rect width="1200" height="420" fill="url(#pipeline-bg)" rx="24"/>
   <text x="48" y="48" fill="#F5F0E8" font-family="Georgia, serif" font-size="22">From a sentence to a finished brand piece</text>
   <text x="48" y="74" fill="#A89B7C" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">Models make pictures. Code makes brands. Humans approve every spend and every post.</text>
 
-  <!-- boxes -->
-  <g font-family="ui-sans-serif, system-ui, sans-serif" filter="url(#soft)">
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
     <rect x="40" y="110" width="160" height="88" rx="14" fill="#1C1812" stroke="#C9A227" stroke-opacity="0.45"/>
     <text x="120" y="148" text-anchor="middle" fill="#F0D78C" font-size="13" font-weight="700">1. Describe</text>
-    <text x="120" y="170" text-anchor="middle" fill="#D9D0BE" font-size="11">brief · song · calendar</text>
+    <text x="120" y="170" text-anchor="middle" fill="#D9D0BE" font-size="11">brief - song - calendar</text>
 
     <rect x="240" y="110" width="160" height="88" rx="14" fill="#1C1812" stroke="#C9A227" stroke-opacity="0.45"/>
     <text x="320" y="148" text-anchor="middle" fill="#F0D78C" font-size="13" font-weight="700">2. Director</text>
@@ -32,7 +24,7 @@
 
     <rect x="440" y="110" width="160" height="88" rx="14" fill="#1C1812" stroke="#C9A227" stroke-opacity="0.45"/>
     <text x="520" y="148" text-anchor="middle" fill="#F0D78C" font-size="13" font-weight="700">3. Workflow</text>
-    <text x="520" y="170" text-anchor="middle" fill="#D9D0BE" font-size="11">steps · gaps · cost</text>
+    <text x="520" y="170" text-anchor="middle" fill="#D9D0BE" font-size="11">steps - gaps - cost</text>
 
     <rect x="640" y="110" width="160" height="88" rx="14" fill="#1C1812" stroke="#22C55E" stroke-opacity="0.55"/>
     <text x="720" y="148" text-anchor="middle" fill="#86EFAC" font-size="13" font-weight="700">4. Generate</text>
@@ -40,48 +32,46 @@
 
     <rect x="840" y="110" width="160" height="88" rx="14" fill="#1C1812" stroke="#C9A227" stroke-opacity="0.45"/>
     <text x="920" y="148" text-anchor="middle" fill="#F0D78C" font-size="13" font-weight="700">5. Composite</text>
-    <text x="920" y="170" text-anchor="middle" fill="#D9D0BE" font-size="11">logo · type · contrast</text>
+    <text x="920" y="170" text-anchor="middle" fill="#D9D0BE" font-size="11">logo - type - contrast</text>
 
-    <rect x="1000" y="110" width="160" height="88" rx="14" fill="#1C1812" stroke="#22C55E" stroke-opacity="0.55"/>
-    <text x="1080" y="148" text-anchor="middle" fill="#86EFAC" font-size="13" font-weight="700">6. Publish</text>
-    <text x="1080" y="170" text-anchor="middle" fill="#D9D0BE" font-size="11">draft until you say yes</text>
+    <rect x="1040" y="110" width="120" height="88" rx="14" fill="#1C1812" stroke="#22C55E" stroke-opacity="0.55"/>
+    <text x="1100" y="148" text-anchor="middle" fill="#86EFAC" font-size="13" font-weight="700">6. Publish</text>
+    <text x="1100" y="170" text-anchor="middle" fill="#D9D0BE" font-size="11">draft until yes</text>
   </g>
 
-  <!-- arrows -->
-  <g stroke="url(#gold)" stroke-width="2" fill="none">
+  <g stroke="url(#pipeline-gold)" stroke-width="2" fill="none">
     <path d="M200 154 H236"/>
     <path d="M400 154 H436"/>
     <path d="M600 154 H636"/>
     <path d="M800 154 H836"/>
-    <path d="M1000 154 H996" opacity="0"/>
+    <path d="M1000 154 H1036"/>
   </g>
   <g fill="#C9A227">
     <polygon points="232,154 224,149 224,159"/>
     <polygon points="432,154 424,149 424,159"/>
     <polygon points="632,154 624,149 624,159"/>
     <polygon points="832,154 824,149 824,159"/>
-    <polygon points="996,154 988,149 988,159"/>
+    <polygon points="1032,154 1024,149 1024,159"/>
   </g>
 
-  <!-- gates -->
   <g font-family="ui-sans-serif, system-ui, sans-serif">
     <rect x="40" y="230" width="340" height="150" rx="16" fill="#14110D" stroke="#3F3A32"/>
     <text x="60" y="262" fill="#F0D78C" font-size="13" font-weight="700">Workspace</text>
-    <text x="60" y="286" fill="#D9D0BE" font-size="12">brand.yaml · palette · logo master</text>
+    <text x="60" y="286" fill="#D9D0BE" font-size="12">brand.yaml, palette, logo master</text>
     <text x="60" y="306" fill="#D9D0BE" font-size="12">owned / licensed / fictional refs</text>
     <text x="60" y="326" fill="#D9D0BE" font-size="12">rights, consent, 18+ flags</text>
     <text x="60" y="354" fill="#A89B7C" font-size="11">Any brand. Nothing in the pipeline is client-specific.</text>
 
     <rect x="400" y="230" width="380" height="150" rx="16" fill="#14110D" stroke="#3F3A32"/>
     <text x="420" y="262" fill="#86EFAC" font-size="13" font-weight="700">Open GPU path</text>
-    <text x="420" y="286" fill="#D9D0BE" font-size="12">FLUX.2 Klein · Krea 2 · Qwen Image</text>
-    <text x="420" y="306" fill="#D9D0BE" font-size="12">WAN · LTX · SCAIL 2 · H3 RefMod</text>
+    <text x="420" y="286" fill="#D9D0BE" font-size="12">FLUX.2 Klein, Krea 2, Qwen Image</text>
+    <text x="420" y="306" fill="#D9D0BE" font-size="12">WAN, LTX, SCAIL 2, H3 RefMod</text>
     <text x="420" y="326" fill="#D9D0BE" font-size="12">Your pod. Your LoRAs. Your policy.</text>
     <text x="420" y="354" fill="#A89B7C" font-size="11">Measured: 444 Klein stills per A100 hour.</text>
 
     <rect x="800" y="230" width="360" height="150" rx="16" fill="#14110D" stroke="#3F3A32"/>
     <text x="820" y="262" fill="#F0D78C" font-size="13" font-weight="700">Hard gates</text>
-    <text x="820" y="286" fill="#D9D0BE" font-size="12">Dry-run by default · budget_usd = 0</text>
+    <text x="820" y="286" fill="#D9D0BE" font-size="12">Dry-run by default, budget_usd = 0</text>
     <text x="820" y="306" fill="#D9D0BE" font-size="12">Queued is not success</text>
     <text x="820" y="326" fill="#D9D0BE" font-size="12">Composite the logo, never regenerate it</text>
     <text x="820" y="354" fill="#A89B7C" font-size="11">Agents create. Code validates. You approve.</text>
