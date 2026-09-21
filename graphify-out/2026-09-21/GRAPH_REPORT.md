@@ -1,7 +1,7 @@
-# Graph Report - ngoma  (2026-09-21)
+# Graph Report - ngoma  (2026-09-20)
 
 ## Corpus Check
-- 906 files · ~5,002,277 words
+- 906 files · ~5,006,449 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `566e4f0a`
+- Built from commit: `ef6a1fa7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -892,7 +892,7 @@ Nodes (3): display, metadata, ui
 
 ### Community 97 - "CREATOR-INTEL.md"
 Cohesion: 0.10
-Nodes (10): Grok AI Lip Sync Tutorial With Consistent Characters: Make Long AI Videos In Minutes!, Minimax H3 reference based Image generation (No more loras), Consistent character LoRA training using AI-toolkit (Flux Klein 9B), I Tested Every MiniMax H3 Speed Up So You Don't Have To, Build a ComfyUI Workflow and Actually Understand It | Build With Me [EP. 1], Build A Krea 2 Character LoRA From Scratch Using ComfyUI, Create Full Instagram Carousels From 1 Photo With This ComfyUI Workflow (It's Free), This ComfyUI Model is way better than Nano Banana (+2 more)
+Nodes (10): Hyperframes + Claude = Insane AI Motion Graphics In Minutes! (Full Tutorial), Minimax H3 reference based Image generation (No more loras), Consistent character LoRA training using AI-toolkit (Flux Klein 9B), I Tested Every MiniMax H3 Speed Up So You Don't Have To, Build a ComfyUI Workflow and Actually Understand It | Build With Me [EP. 1], Build A Krea 2 Character LoRA From Scratch Using ComfyUI, Create Full Instagram Carousels From 1 Photo With This ComfyUI Workflow (It's Free), This ComfyUI Model is way better than Nano Banana (+2 more)
 
 ### Community 103 - "workflow_fetch.py"
 Cohesion: 0.27
